@@ -329,19 +329,32 @@ int main(int argc, const char * argv[]) {
         }
     }
     
+    int counter_Charge = -1; // Used to loop between min 0 and max 6
+    int counter_Spin = 0;
+    int counter_Walk = 0;
+    int l_origin_Test1 = 0;
+    int l_origin_Test2 = 0;
+    
+    g_elementaryparticle.clear();
+    g_elementaryforce.clear();
     for (int nloop = 0; nloop < initialElementaryParticles; nloop++)
         {
-        g_elementaryparticle.clear();
         int addElementaryparticle = add_elementaryparticle(g_elementaryparticle, g_dimension, phyDimensionsStart);
         if (addElementaryparticle)
             {
             std::cout << "Elementary particle addition failed!" << std::endl;
             return 1;
             }
+            //        counter_Charge = int( counter_Charge + 1 ) * ( 1 - div( counter_Charge, 6 ).quot);
+        counter_Charge++;
+        if(counter_Charge > 6) counter_Charge = 0;
+        counter_Spin = int(1 - counter_Spin);
+        std::cout << counter_Charge << std::endl;
+        g_elementaryparticle[0].SetCharge(counter_Charge);
+        g_elementaryparticle[0].SetSpin(counter_Spin);
         g_elementaryparticle[0].Creation();
         
         
-        g_elementaryforce.clear();
         int addElementaryforce = add_elementaryforce(g_elementaryforce, g_elementaryparticle, nloop);
         if (addElementaryforce)
             {
@@ -349,6 +362,32 @@ int main(int argc, const char * argv[]) {
             return 1;
             }
         g_elementaryforce[0].Creation();
+        
+        std::cout << "Size:" << g_elementaryparticle.size() << std::endl;
+        
+        while(counter_Walk <= (int(g_elementaryparticle.size()) - 4))
+            {
+            l_origin_Test1 = abs(int(g_elementaryparticle[counter_Walk].GetCharge()) - int(g_elementaryparticle[counter_Walk + 1].GetCharge()));
+            l_origin_Test2 = abs(int(g_elementaryparticle[counter_Walk].GetCharge()) - int(g_elementaryparticle[counter_Walk + 2].GetCharge()));
+            std::cout << "Test1:" << l_origin_Test1 << " Test2:" << l_origin_Test2 << std::endl;
+            if(l_origin_Test1 < l_origin_Test2)
+                {
+                iter_swap(g_elementaryparticle.begin() + (counter_Walk + 1), g_elementaryparticle.begin() + (counter_Walk + 2));
+                counter_Walk--;
+                if (counter_Walk < 0) counter_Walk = 0;
+                }
+            else
+                {
+                counter_Walk++;
+                }
+                //            std::cout << "Walk:" << counter_Walk << std::endl;
+            }
+        for(int xloop = 0;xloop < nloop; xloop++)
+            {
+            std::cout << "xloop:" << xloop << " nloop:" << nloop << std::endl;
+            std::cout << int(g_elementaryparticle[xloop].GetCharge());
+            }
+        std::cout << std::endl;
         }
     
     g_compositeparticle.clear();
