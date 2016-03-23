@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		161990451C7518D700EA6040 /* quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1619902E1C7518D700EA6040 /* quad.cpp */; };
 		161990471C7518D700EA6040 /* solid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990311C7518D700EA6040 /* solid.cpp */; };
 		161990481C7518D700EA6040 /* universe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990331C7518D700EA6040 /* universe.cpp */; };
+		165131E01CA1899600754DD0 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 165131DE1CA1899600754DD0 /* ResourcePath.mm */; };
 		168005C41C61FCB8007F5DF6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005C31C61FCB8007F5DF6 /* main.cpp */; };
 		168005D61C61FF7F007F5DF6 /* neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005D51C61FF7F007F5DF6 /* neuron.cpp */; };
 		168005D81C61FF9D007F5DF6 /* soma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005D71C61FF9D007F5DF6 /* soma.cpp */; };
@@ -107,6 +108,14 @@
 		161990321C7518D700EA6040 /* solid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solid.h; path = ../../homegrown/include/solid.h; sourceTree = "<group>"; };
 		161990331C7518D700EA6040 /* universe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = universe.cpp; path = ../../homegrown/include/universe.cpp; sourceTree = "<group>"; };
 		161990341C7518D700EA6040 /* universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = universe.h; path = ../../homegrown/include/universe.h; sourceTree = "<group>"; };
+		165131DD1CA1895500754DD0 /* BrainHarmonics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BrainHarmonics.plist; sourceTree = "<group>"; };
+		165131DE1CA1899600754DD0 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		165131DF1CA1899600754DD0 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		165131E21CA18A0C00754DD0 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		165131E31CA18A0C00754DD0 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		165131E41CA18A0C00754DD0 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		165131E51CA18A0C00754DD0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		165131E61CA1929A00754DD0 /* messages.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = messages.txt; sourceTree = "<group>"; };
 		168005C01C61FCB8007F5DF6 /* BrainHarmonics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrainHarmonics; sourceTree = BUILT_PRODUCTS_DIR; };
 		168005C31C61FCB8007F5DF6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		168005CA1C61FE1C007F5DF6 /* neuron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = neuron.hpp; sourceTree = "<group>"; };
@@ -146,9 +155,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		165131DC1CA1892900754DD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				165131DD1CA1895500754DD0 /* BrainHarmonics.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		165131E11CA189CF00754DD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				165131E61CA1929A00754DD0 /* messages.txt */,
+				165131E21CA18A0C00754DD0 /* cute_image.jpg */,
+				165131E31CA18A0C00754DD0 /* nice_music.ogg */,
+				165131E41CA18A0C00754DD0 /* sansation.ttf */,
+				165131E51CA18A0C00754DD0 /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		168005B71C61FCB8007F5DF6 = {
 			isa = PBXGroup;
 			children = (
+				165131E11CA189CF00754DD0 /* Resources */,
+				165131DC1CA1892900754DD0 /* Supporting Files */,
 				168005C21C61FCB8007F5DF6 /* BrainHarmonics */,
 				168005C11C61FCB8007F5DF6 /* Products */,
 			);
@@ -165,6 +196,8 @@
 		168005C21C61FCB8007F5DF6 /* BrainHarmonics */ = {
 			isa = PBXGroup;
 			children = (
+				165131DE1CA1899600754DD0 /* ResourcePath.mm */,
+				165131DF1CA1899600754DD0 /* ResourcePath.hpp */,
 				1619900F1C7518D700EA6040 /* abstraction.cpp */,
 				161990101C7518D700EA6040 /* abstraction.h */,
 				161990111C7518D700EA6040 /* apptimer.cpp */,
@@ -268,7 +301,7 @@
 		168005B81C61FCB8007F5DF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Paul Isaac's";
 				TargetAttributes = {
 					168005BF1C61FCB8007F5DF6 = {
@@ -277,7 +310,7 @@
 				};
 			};
 			buildConfigurationList = 168005BB1C61FCB8007F5DF6 /* Build configuration list for PBXProject "BrainHarmonics" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -332,6 +365,7 @@
 				168005E01C61FFFF007F5DF6 /* dendrite.cpp in Sources */,
 				168005E61C620050007F5DF6 /* neurotransmitter.cpp in Sources */,
 				168005E81C62006D007F5DF6 /* neuroreceptor.cpp in Sources */,
+				165131E01CA1899600754DD0 /* ResourcePath.mm in Sources */,
 				1619903D1C7518D700EA6040 /* law.cpp in Sources */,
 				161990481C7518D700EA6040 /* universe.cpp in Sources */,
 				160043CC1C7332B300871CD2 /* dendritecleft.cpp in Sources */,
@@ -344,11 +378,11 @@
 		168005C51C61FCB8007F5DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -358,12 +392,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -377,21 +412,56 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					/usr/local/Aria/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/usr/local/Aria/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOWS)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORKS)",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOWS)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORKS)",
+				);
 				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
 			};
 			name = Debug;
 		};
 		168005C61C61FCB8007F5DF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -401,12 +471,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -414,9 +485,44 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					/usr/local/Aria/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					/usr/local/Aria/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOWS)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORKS)",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOWS)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORKS)",
+				);
 				SDKROOT = macosx;
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
 			};
 			name = Release;
 		};
@@ -424,14 +530,47 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../homegrown/include\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../homegrown/lib\"";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../homegrown/include\"",
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainHarmonics/BrainHarmonics.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../homegrown/lib\"",
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -439,15 +578,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../homegrown/include\"";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../homegrown/lib\"";
-				ONLY_ACTIVE_ARCH = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../homegrown/include\"",
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainHarmonics/BrainHarmonics.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../homegrown/lib\"",
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};

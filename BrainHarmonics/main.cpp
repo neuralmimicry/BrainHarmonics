@@ -44,6 +44,11 @@
 #include <string>               /**< For handling strings                          */
 #include <vector>               /**< To use vectors, which automatically handle resizing, as arrays to keep track of instances */
 
+    // SFML
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>    /**< Graphics library http://sfml-dev.org          */
+#include "ResourcePath.hpp"
+
     // Homegrown add-ins
 #include <universe.h>           /**< Top of the tree, begin with Universe class    */
 #include <dimension.h>          /**< Add dimensions for spatial identification     */
@@ -112,149 +117,258 @@
 #define RAD2DEG 57.29577951f    /**< Avoids having to recalculate a constant 180/PI */
 #endif // RAD2DEG
 
+float g_speed;                      /**< Speed of robot */
+float g_deltaheading;               /**< Change current angle of robot by this amount */
+float g_toggle = 0;                 /**< Discover or localise */
+bool g_buttonPressed = false;
+
+bool msg_handling(std::vector <std::string> *m_messages, bool m_response, int m_ok, int m_fail)
+{
+    if(DEBUG_PROGRAM)
+        {
+        if(m_response)
+            {
+            std::cout << (*m_messages)[m_ok] << std::endl;
+            }
+        else
+            {
+            std::cout << (*m_messages)[m_fail] << std::endl;
+            sleep(1);
+            }
+        }
+    return true;
+}
 
     // Function to create a universe instance. Universes could be simulation, emulation, real or contemplative (What-if)
-int create_universe(std::vector<universe> &toAddto)
+int create_universe(std::vector<universe> *toAddto)
 {
         // First, there is nothing. Then there was something...
     double UniverseEnergy = 999999999;              /**< Defined energy level of Universe */
         // Begin with singularity
     universe myUniverse;                            /**< Create instance of Universe from Universe class */
-    toAddto.push_back(myUniverse);               /**< Store pointer to this instance of the Universe in a vector */
-    toAddto[toAddto.size()].SetEnergy(UniverseEnergy);
+    myUniverse.SetEnergy(UniverseEnergy);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
+    
     /**< Set an energy level and attempt to maintain physics laws by keeping the total in the Universe the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Adding dimensions enables physical and spatial calculations
-int add_dimension(std::vector<dimension> &toAddto, std::vector<universe> &aPartof, int arrayEntry)
+int add_dimension(std::vector<dimension> *toAddto, std::vector<universe> *aPartof, int arrayEntry)
 {
-    dimension myDimension(aPartof[arrayEntry]);
-    toAddto.push_back(myDimension);
+    dimension myDimension((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myDimension, &myDimension + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Each add_ function creates an instance of the respective class and links back to the base class
     // For definition of quarks and leptons when simulating real-world environment
-int add_elementaryparticle(std::vector<elementaryparticle> &toAddto, std::vector<dimension> &aPartof, int arrayEntry)
+int add_elementaryparticle(std::vector<elementaryparticle> *toAddto, std::vector<dimension> *aPartof, int arrayEntry)
 {
-    elementaryparticle myElementaryparticle(aPartof[arrayEntry]);
-    toAddto.push_back(myElementaryparticle);
+    elementaryparticle myElementaryparticle((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myElementaryparticle, &myElementaryparticle + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // For real-world definition of protons & neutrons. Other combinations in artificial environments
-int add_compositeparticle(std::vector<compositeparticle> &toAddto, std::vector<elementaryparticle> &aPartof, int arrayEntry)
+int add_compositeparticle(std::vector<compositeparticle> *toAddto, std::vector<elementaryparticle> *aPartof, int arrayEntry)
 {
-    compositeparticle myCompositeparticle(aPartof[arrayEntry]);
-    toAddto.push_back(myCompositeparticle);
+    compositeparticle myCompositeparticle((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myCompositeparticle, &myCompositeparticle + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Methods in this class to define interaction. Which may be different between artificial, simulation and real environments
-int add_elementaryforce(std::vector<elementaryforce> &toAddto, std::vector<elementaryparticle> &aPartof, int arrayEntry)
+int add_elementaryforce(std::vector<elementaryforce> *toAddto, std::vector<elementaryparticle> *aPartof, int arrayEntry)
 {
-    elementaryforce myForce(aPartof[arrayEntry]);
-    toAddto.push_back(myForce);
+    elementaryforce myForce((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
-int add_compositeforce(std::vector<compositeforce> &toAddto, std::vector<compositeparticle> &aPartof, int arrayEntry)
+int add_compositeforce(std::vector<compositeforce> *toAddto, std::vector<compositeparticle> *aPartof, int arrayEntry)
 {
-    compositeforce myForce(aPartof[arrayEntry]);
-    toAddto.push_back(myForce);
+    compositeforce myForce((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Add methods to describe force interactions such as gravity
-int add_law(std::vector<compositeforce> &toAddto, int arrayEntry, std::vector<compositeparticle> &toAddto2, int arrayEntry2)
+int add_law(std::vector<compositeforce> *toAddto, int arrayEntry, std::vector<compositeparticle> *toAddto2, int arrayEntry2)
 {
         //    law myLaw(aPartof[arrayEntry], toAddto2[arrayEntry2]);
-        //    toAddto.push_back(myLaw);
+        // Use copy not push_back otherwise data is destroyed on exiting function
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Class for definition of periodic table of elements
-int add_matter(std::vector<matter> &toAddto, std::vector<compositeparticle> &aPartof, int arrayEntry)
+int add_matter(std::vector<matter> *toAddto, std::vector<compositeparticle> *aPartof, int arrayEntry)
 {
-    matter myMatter(aPartof[arrayEntry]);
-    toAddto.push_back(myMatter);
+    matter myMatter((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myMatter, &myMatter + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Description of material
-int add_solid(std::vector<solid> &toAddto, std::vector<matter> &aPartof, int arrayEntry)
+int add_solid(std::vector<solid> *toAddto, std::vector<matter> *aPartof, int arrayEntry)
 {
-    solid mySolid(aPartof[arrayEntry]);
-    toAddto.push_back(mySolid);
+    solid mySolid((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&mySolid, &mySolid + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Fundamental spatial element
-int add_point(std::vector<point> &toAddto, std::vector<dimension> &aPartof, int arrayEntry)
+int add_point(std::vector<point> *toAddto, std::vector<dimension> *aPartof, int arrayEntry)
 {
         // Begin with shape singularity
-    point myPoint(aPartof[arrayEntry]);
-    toAddto.push_back(myPoint);
+    point myPoint((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myPoint, &myPoint + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Complex shapes
-int add_polyhedron(std::vector<polyhedron> &toAddto, std::vector<solid> &aPartof, int arrayEntry)
+int add_polyhedron(std::vector<polyhedron> *toAddto, std::vector<solid> *aPartof, int arrayEntry)
 {
-    polyhedron myPolyhedron(aPartof[arrayEntry]);
-    toAddto.push_back(myPolyhedron);
+    polyhedron myPolyhedron((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myPolyhedron, &myPolyhedron + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Components of complex shapes
-int add_polygon(std::vector<polygon> &toAddto, std::vector<polyhedron> &aPartof, int arrayEntry)
+int add_polygon(std::vector<polygon> *toAddto, std::vector<polyhedron> *aPartof, int arrayEntry)
 {
-    polygon myPolygon(aPartof[arrayEntry]);
-    toAddto.push_back(myPolygon);
+    polygon myPolygon((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myPolygon, &myPolygon + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Base 2D shapes
-int add_quad(std::vector<quad> &toAddto, std::vector<polygon> &aPartof, int arrayEntry)
+int add_quad(std::vector<quad> *toAddto, std::vector<polygon> *aPartof, int arrayEntry)
 {
-    quad myQuad(aPartof[arrayEntry]);
-    toAddto.push_back(myQuad);
+    quad myQuad((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myQuad, &myQuad + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Component of shapes, straight, curved or complex
-int add_line(std::vector<line> &toAddto, std::vector<polygon> &aPartof, int arrayEntry)
+int add_line(std::vector<line> *toAddto, std::vector<polygon> *aPartof, int arrayEntry)
 {
-    line myLine(aPartof[arrayEntry]);
-    toAddto.push_back(myLine);
+    line myLine((*aPartof)[arrayEntry]);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myLine, &myLine + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Adding application timer temporarily until integrated into Dimension class
-int add_apptimer(std::vector<apptimer> &toAddto)
+int add_apptimer(std::vector<apptimer> *toAddto)
 {
     apptimer myApptimer;
-    toAddto.push_back(myApptimer);
+        // Use copy not push_back otherwise data is destroyed on exiting function
+    std::copy(&myApptimer, &myApptimer + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
+bool compare_swapelementaryparticle(std::vector<elementaryparticle> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
+{
+    bool l_switch = true;
+    int l_origin = (*origin)[l_origin_Swap].GetCharge();
+    int l_origin_Test1 = (*origin)[l_origin_Candidate1].GetCharge();
+    int l_origin_Test2 = (*origin)[l_origin_Candidate2].GetCharge();
+    int l_origin_Test3 = std::abs(l_origin - l_origin_Test1);
+    int l_origin_Test4 = std::abs(l_origin - l_origin_Test2);
+    int l_origin_Test5 = (3 - l_origin_Test3);
+    int l_origin_Test6 = (3 - l_origin_Test4);
+    
+        //    std::cout << l_origin << " " << l_origin_Test1 << " " << l_origin_Test2 << " " << l_origin_Test3 << " " << l_origin_Test4 << " " << l_origin_Test5 << " " << l_origin_Test6 << std::endl;
+    
+    l_switch = false;
+    
+    if(l_origin_Test5 > l_origin_Test6 && l_origin != l_origin_Candidate2)
+        {
+        iter_swap((*origin).begin() + l_origin_Candidate1, (*origin).begin() + l_origin_Candidate2);
+        l_switch = true;
+        }
+    
+    return l_switch;
+}
+
+bool compare_swapcompositeparticle(std::vector<compositeparticle> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
+{
+    bool l_switch = true;
+    int l_origin = (*origin)[l_origin_Swap].GetCharge();
+    int l_origin_Test1 = (*origin)[l_origin_Candidate1].GetCharge();
+    int l_origin_Test2 = (*origin)[l_origin_Candidate2].GetCharge();
+    int l_origin_Test3 = l_origin_Test1 - l_origin;
+    int l_origin_Test4 = l_origin_Test2 - l_origin;
+    int l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+    int l_origin_Test6 = l_origin_Test4 * l_origin_Test4;
+    
+    l_switch = false;
+    
+    if(l_origin_Test5 < l_origin_Test6)
+        {
+        iter_swap((*origin).begin() + l_origin_Candidate1, (*origin).begin() + l_origin_Candidate2);
+        l_switch = true;
+        }
+    
+    return l_switch;
+}
+
+    // Clear memory to cleanly exit application
+void exitCB()
+{
+    std::cout << "Exiting Program." << std::endl;
+    /* A pause for Any key to be pressed, only needed for Windows to stop console window closing*/
+    std::cin.get();
+    
+        // Clear vectors in reverse order to free-up memory before exiting
+    
+        // Remember to clear vectors / free memory before returning
+}
+
+int init(int argc, const char * argv[])
+{
+    atexit(exitCB);				/* Set application exit callback */
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
+    
+    int initialiseProgram = init(argc, argv);
+    if (initialiseProgram)
+        {
+        std::cout << "Program initialisation failed!" << std::endl;
+        return 1;
+        }
+    
+    
         // Index arrays for instances of classes described above
     std::vector <universe> g_universe;
     std::vector <dimension> g_dimension;
@@ -272,6 +386,15 @@ int main(int argc, const char * argv[]) {
     std::vector <point> g_point;
     std::vector <apptimer> g_apptimer;
     
+        // Arrays of SFML objects to be drawn on-screen.
+    std::vector <sf::Vertex> g_drawQuads;
+    std::vector <sf::Text> g_drawQuadText;
+    std::vector <sf::Vertex> g_drawLines;
+    std::vector <sf::Vertex> g_drawPoints;
+    
+        // SFML objects
+    sf::Font g_font;
+    sf::Text g_text;
     
     std::vector <neuron> g_neuron;                      /**< Neuron container for other neuron components  */
     std::vector <dendritecleft> g_dendritecleft;        /**< Dendritic synaptic cleft, input to the neuron */
@@ -299,15 +422,36 @@ int main(int argc, const char * argv[]) {
     const int phyDimensionsStart = 0;
     const int spaDimensionsStart = phyDimensionsStart + numDimensions[phyDimensionsStart];
     const int initialElementaryParticles = 100;
+    const int initialParticleAlignment = 500;
+    const int infiniteLoopPrevention = 1000;
     
-    std::cout << "Hello, World!\n";
+    double l_screenX = 900;            /**< Define graphics window size, X axis*/
+    double l_screenY = 750;            /**< Define graphics window size, Y axis*/
+    double l_scale = 0.05;             /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
+    std::string l_screenTitle = "Clustering";
+    std::stringstream l_title;
+    
+    if (!g_font.loadFromFile(resourcePath() + "DroidSans.ttf"))
+        {
+        std::cout << "Font failed to load!" << std::endl;
+            //        printf("File should be located in: %s", dir);
+        return 1;
+        }
+    
+        // Open SFML graphics window and add title
+    sf::RenderWindow window(sf::VideoMode(l_screenX, l_screenY), l_screenTitle);
+    g_text.setFont(g_font);
+    g_text.setCharacterSize(24);
+    g_text.setColor(sf::Color::Green);
+    g_text.setStyle(sf::Text::Bold);
+    g_text.setString("Initialising...");
     
         // Set-up the simulation environment. Currently a skeletal environment.
     std::cout << "The Big Bang..." << std::endl;
     
     g_universe.clear();    // Ensure vector is empty
     for (int nloop = 0; nloop <= numUniverses - 1 ; nloop++) {
-        int createUniverse = create_universe(g_universe);    // g_universe is a vector of pointers to each Universe instance
+        int createUniverse = create_universe(&g_universe);    // g_universe is a vector of pointers to each Universe instance
         if (createUniverse)
             {
             std::cout << "Universe creation failed!" << std::endl;
@@ -319,7 +463,7 @@ int main(int argc, const char * argv[]) {
     g_dimension.clear();    // Ensure vector is empty
     for (int ploop = 0; ploop <= numUniverses - 1; ploop++) {               // Cycle through universes allocating n dimensions
         for (int nloop = 0; nloop <= numDimensions[ploop] - 1; nloop++) {   // Visit create dimensions n times
-            int addDimension = add_dimension(g_dimension, g_universe, ploop);  // Add the dimension to the respective universe
+            int addDimension = add_dimension(&g_dimension, &g_universe, ploop);  // Connect the dimension to the respective universe
             if (addDimension)                                              // If return number is not 0 then an error occurred
                 {
                 std::cout << "Dimension addition failed!" << std::endl;    // Console output of error
@@ -332,14 +476,22 @@ int main(int argc, const char * argv[]) {
     int counter_Charge = -1; // Used to loop between min 0 and max 6
     int counter_Spin = 0;
     int counter_Walk = 0;
+    int counter_InfiniteLoopPrevention = 0;
+    int howMany_Particles = 0;
+    int current_Distance = 0;
+    int max_Distance = 0;
+    bool l_switch = true;
+    int l_origin = 0;
     int l_origin_Test1 = 0;
-    int l_origin_Test2 = 0;
+    int l_origin_Test3 = 0;
+    int l_origin_Test5 = 0;
+    double l_charge = 0;
     
     g_elementaryparticle.clear();
     g_elementaryforce.clear();
     for (int nloop = 0; nloop < initialElementaryParticles; nloop++)
         {
-        int addElementaryparticle = add_elementaryparticle(g_elementaryparticle, g_dimension, phyDimensionsStart);
+        int addElementaryparticle = add_elementaryparticle(&g_elementaryparticle, &g_dimension, phyDimensionsStart);
         if (addElementaryparticle)
             {
             std::cout << "Elementary particle addition failed!" << std::endl;
@@ -349,95 +501,226 @@ int main(int argc, const char * argv[]) {
         counter_Charge++;
         if(counter_Charge > 6) counter_Charge = 0;
         counter_Spin = int(1 - counter_Spin);
-        std::cout << counter_Charge << std::endl;
-        g_elementaryparticle[0].SetCharge(counter_Charge);
-        g_elementaryparticle[0].SetSpin(counter_Spin);
-        g_elementaryparticle[0].Creation();
+            //        std::cout << counter_Charge << std::endl;
+        if (!g_elementaryparticle.empty()) g_elementaryparticle.back().SetCharge(counter_Charge);
+        if (!g_elementaryparticle.empty()) g_elementaryparticle.back().SetSpin(counter_Spin);
+        if (!g_elementaryparticle.empty()) g_elementaryparticle.back().Creation();
         
         
-        int addElementaryforce = add_elementaryforce(g_elementaryforce, g_elementaryparticle, nloop);
+        int addElementaryforce = add_elementaryforce(&g_elementaryforce, &g_elementaryparticle, nloop);
         if (addElementaryforce)
             {
             std::cout << "Elementary force addition failed!" << std::endl;
             return 1;
             }
-        g_elementaryforce[0].Creation();
+        if (!g_elementaryforce.empty()) g_elementaryforce.back().Creation();
         
-        std::cout << "Size:" << g_elementaryparticle.size() << std::endl;
+        howMany_Particles = int(g_elementaryparticle.size());
         
-        while(counter_Walk <= (int(g_elementaryparticle.size()) - 4))
+            //        std::cout << "Size:" << howMany_Particles << std::endl;
+        for (int qloop = 0; qloop <= initialParticleAlignment * howMany_Particles; qloop++)
             {
-            l_origin_Test1 = abs(int(g_elementaryparticle[counter_Walk].GetCharge()) - int(g_elementaryparticle[counter_Walk + 1].GetCharge()));
-            l_origin_Test2 = abs(int(g_elementaryparticle[counter_Walk].GetCharge()) - int(g_elementaryparticle[counter_Walk + 2].GetCharge()));
-            std::cout << "Test1:" << l_origin_Test1 << " Test2:" << l_origin_Test2 << std::endl;
-            if(l_origin_Test1 < l_origin_Test2)
-                {
-                iter_swap(g_elementaryparticle.begin() + (counter_Walk + 1), g_elementaryparticle.begin() + (counter_Walk + 2));
-                counter_Walk--;
-                if (counter_Walk < 0) counter_Walk = 0;
-                }
-            else
-                {
-                counter_Walk++;
-                }
-                //            std::cout << "Walk:" << counter_Walk << std::endl;
+            
+            counter_Walk = 0;
+            current_Distance = 0;
+            counter_InfiniteLoopPrevention = 0;
+            
+            do {
+                counter_InfiniteLoopPrevention++;
+                max_Distance = current_Distance;
+                current_Distance = 0;
+                while(counter_Walk <= (howMany_Particles - 3))
+                    {
+                    l_switch = compare_swapelementaryparticle(&g_elementaryparticle, counter_Walk, counter_Walk + 1, counter_Walk + 2);
+                    if (l_switch) counter_Walk--; else counter_Walk++;
+                    if (counter_Walk < 0) counter_Walk = 0;
+                    
+                    l_origin = g_elementaryparticle[counter_Walk].GetCharge();
+                    l_origin_Test1 = g_elementaryparticle[counter_Walk + 1].GetCharge();
+                    l_origin_Test3 = l_origin_Test1 - l_origin;
+                    l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+                    current_Distance = current_Distance + l_origin_Test5;
+                    }
+            } while ( current_Distance < max_Distance && counter_InfiniteLoopPrevention < infiniteLoopPrevention);
+            
+            
+            counter_Walk = (howMany_Particles - 1);
+            current_Distance = 0;
+            counter_InfiniteLoopPrevention = 0;
+            
+            do {
+                counter_InfiniteLoopPrevention++;
+                max_Distance = current_Distance;
+                current_Distance = 0;
+                while(counter_Walk >= 2)
+                    {
+                    l_switch = compare_swapelementaryparticle(&g_elementaryparticle, counter_Walk, counter_Walk - 1, counter_Walk - 2);
+                    if (l_switch) counter_Walk++; else counter_Walk--;
+                    if (counter_Walk > (howMany_Particles - 1)) counter_Walk = (howMany_Particles - 1);
+                    
+                    l_origin = g_elementaryparticle[counter_Walk].GetCharge();
+                    l_origin_Test1 = g_elementaryparticle[counter_Walk - 1].GetCharge();
+                    l_origin_Test3 = l_origin_Test1 - l_origin;
+                    l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+                    current_Distance = current_Distance + l_origin_Test5;
+                    }
+            } while ( current_Distance < max_Distance && counter_InfiniteLoopPrevention < infiniteLoopPrevention);
             }
-        for(int xloop = 0;xloop < nloop; xloop++)
-            {
-            std::cout << "xloop:" << xloop << " nloop:" << nloop << std::endl;
-            std::cout << int(g_elementaryparticle[xloop].GetCharge());
-            }
-        std::cout << std::endl;
+        
         }
     
+    
+    for (int zloop = 0; zloop < int(g_elementaryparticle.size()); zloop++ )
+        {
+        std::cout << g_elementaryparticle[zloop].GetCharge() << " ";
+        }
+    std::cout << std::endl;
+    
     g_compositeparticle.clear();
-    int addCompositeparticle = add_compositeparticle(g_compositeparticle, g_elementaryparticle, 0);
+    int addCompositeparticle = add_compositeparticle(&g_compositeparticle, &g_elementaryparticle, int(g_elementaryparticle.size() - 1));
     if (addCompositeparticle)
         {
         std::cout << "Composite particle addition failed!" << std::endl;
         return 1;
         }
-    g_compositeparticle[0].Creation();
+    if (!g_compositeparticle.empty()) g_compositeparticle.back().Creation();
     
     g_compositeforce.clear();
-    int addCompositeforce = add_compositeforce(g_compositeforce, g_compositeparticle, 0);
+    int addCompositeforce = add_compositeforce(&g_compositeforce, &g_compositeparticle,  int(g_compositeparticle.size() - 1));
     if (addCompositeforce)
         {
         std::cout << "Composite force addition failed!" << std::endl;
         return 1;
         }
-    g_compositeforce[0].Creation();
+    if (!g_compositeforce.empty()) g_compositeforce.back().Creation();
     
     g_matter.clear();
-    int addMatter = add_matter(g_matter, g_compositeparticle, 0);
+    int addMatter = add_matter(&g_matter, &g_compositeparticle,  int(g_compositeparticle.size() - 1));
     if (addMatter)
         {
         std::cout << "Matter addition failed!" << std::endl;
         return 1;
         }
-    g_matter[0].Creation();
+    if (!g_matter.empty()) g_matter.back().Creation();
     
     g_point.clear();
     for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
-        int addPoint = add_point(g_point, g_dimension, nloop);
+        int addPoint = add_point(&g_point, &g_dimension, nloop);
         if (addPoint)
             {
             std::cout << "Point addition failed!" << std::endl;
             return 1;
             }
-        g_point[0].Creation();
+        if (!g_point.empty()) g_point.back().Creation();
+        if (!g_point.empty()) g_point.back().SetPointDifferential(0);  // Set first point to location zero.
     }
     
+    for (int eloop = 1; eloop < int(g_elementaryparticle.size()) - 1; eloop++)
+        {
+        
+        l_charge = double (3 - std::abs(int(g_elementaryparticle[eloop].GetCharge() - g_elementaryparticle[eloop - 1].GetCharge()))) / 3 ;
+        
+        for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
+            int addPoint = add_point(&g_point, &g_dimension, nloop);
+            if (addPoint)
+                {
+                std::cout << "Point addition failed!" << std::endl;
+                return 1;
+                }
+            if (!g_point.empty()) g_point.back().Creation();
+            g_point.back().SetPointPosition(g_point[g_point.size() - numDimensions[spaDimensionsStart] - 1].GetPointPosition() +l_charge);
+        }
+        }
     
+    int l_pointEnd = int(g_point.size()) - 1;
+    
+        // The program will loop whilst the graphics window is open
+    while(window.isOpen())
+        {
+            // SFML event handling to define what happens if the graphics window is closed
+        sf::Event event;
+        while (window.pollEvent(event))
+            {
+            if (event.type == sf::Event::Closed)
+                window.close();
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+                window.close();
+            }
+            }
+        
+            // Toggle between discover map and explore discovered map when mouse clicked
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            {
+            if(!g_buttonPressed)
+                {
+                g_toggle = 1 - g_toggle;
+                g_buttonPressed = true;
+                }
+            }
+        
+            // Prevents flapping of toggle when mouse button held down
+        if (!sf::Mouse::isButtonPressed(sf::Mouse::Left))
+            {
+            g_buttonPressed = false;
+            }
+        
+        
+            // Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
+        g_drawPoints.clear();
+        for(int n = 0; n < l_pointEnd; n++)
+            {
+            g_drawPoints.push_back(sf::Vertex(sf::Vector2f((g_point[n].GetPointPosition() * l_scale) + (l_screenX / 2), l_screenY - ((g_point[n].GetPointPosition() * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+            }
+        g_drawLines.clear();
+/*
+        for(int n = 0; n < l_lineEnd; n++)
+            {
+            g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_line[n].GetLineX1() * l_scale) + (l_screenX / 2), l_screenY - ((g_line[n].GetLineY1() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_point[n].GetXYTTL()),0,0,255)));
+            g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_line[n].GetLineX2() * l_scale) + (l_screenX / 2), l_screenY - ((g_line[n].GetLineY2() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_point[n].GetXYTTL()),0,0,255)));
+            }
+*/        
+        window.clear();
+        
+        window.draw(&g_drawQuads[0], g_drawQuads.size(), sf::Quads);
+        for (const auto& g_text : g_drawQuadText) { window.draw(g_text); }
+        
+        window.draw(&g_drawPoints[0], g_drawPoints.size(), sf::Points);
+        
+        window.draw(&g_drawLines[0], g_drawLines.size(), sf::Lines);
+        
+        l_title.str("");
+        l_title.clear();
+        l_title << "Clustering";
+        g_text.setString(l_title.str());
+        g_text.setCharacterSize(12);
+        g_text.setPosition(sf::Vector2f((l_screenX - (l_title.str().size() * 6)) / 2,0));
+        window.draw(g_text);
+        l_title.str("");
+        l_title.clear();
+        l_title << "Localise : Discover";
+        g_text.setString(l_title.str());
+        g_text.setCharacterSize(9);
+        g_text.setPosition(sf::Vector2f((l_screenX - (l_title.str().size() * 3)) / 2,55));
+        window.draw(g_text);
+        sf::RectangleShape toggleBackground(sf::Vector2f(50,25));
+        toggleBackground.setFillColor(sf::Color::Green);
+        toggleBackground.setPosition(sf::Vector2f((l_screenX / 2 ) - (20 / 2), 30));
+        window.draw(toggleBackground);
+        sf::RectangleShape toggleForground(sf::Vector2f(25,25));
+        toggleForground.setFillColor(sf::Color::Red);
+        toggleForground.setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 * g_toggle), 30));
+        window.draw(toggleForground);
+        window.display();
+        }
         // Empty vectors before exiting (in reverse of creation)
-    g_point.clear();
-    g_matter.clear();
-    g_compositeforce.clear();
-    g_compositeparticle.clear();
-    g_elementaryforce.clear();
-    g_elementaryparticle.clear();
-    g_dimension.clear();
-    g_universe.clear();
+        //    g_point.clear();
+        //    g_matter.clear();
+        //    g_compositeforce.clear();
+        //    g_compositeparticle.clear();
+        //    g_elementaryforce.clear();
+        //    g_elementaryparticle.clear();
+        //    g_dimension.clear();
+        //    g_universe.clear();
     
-    return 0;
+    return EXIT_SUCCESS;
 }
