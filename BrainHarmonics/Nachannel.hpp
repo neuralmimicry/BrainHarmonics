@@ -15,9 +15,9 @@ class Nachannel
 {
 public:
     /** Default constructor */
-    Nachannel();
+    Nachannel() {};
     /** Default destructor */
-    virtual ~Nachannel();
+    virtual ~Nachannel() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

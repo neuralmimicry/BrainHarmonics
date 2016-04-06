@@ -15,9 +15,9 @@ class membrane
 {
 public:
     /** Default constructor */
-    membrane();
+    membrane() {};
     /** Default destructor */
-    virtual ~membrane();
+    virtual ~membrane() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

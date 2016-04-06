@@ -15,9 +15,9 @@ class dendritebranch
 {
 public:
     /** Default constructor */
-    dendritebranch();
+    dendritebranch() {};
     /** Default destructor */
-    virtual ~dendritebranch();
+    virtual ~dendritebranch() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

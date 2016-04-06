@@ -15,9 +15,9 @@ class schwanncell
 {
 public:
     /** Default constructor */
-    schwanncell();
+    schwanncell() {};
     /** Default destructor */
-    virtual ~schwanncell();
+    virtual ~schwanncell() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

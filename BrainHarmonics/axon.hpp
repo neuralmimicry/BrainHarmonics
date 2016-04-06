@@ -15,9 +15,9 @@ class axon
 {
 public:
     /** Default constructor */
-    axon();
+    axon() {};
     /** Default destructor */
-    virtual ~axon();
+    virtual ~axon() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

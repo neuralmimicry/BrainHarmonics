@@ -15,9 +15,9 @@ class Cagate
 {
 public:
     /** Default constructor */
-    Cagate();
+    Cagate() {};
     /** Default destructor */
-    virtual ~Cagate();
+    virtual ~Cagate() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

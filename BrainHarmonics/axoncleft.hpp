@@ -15,9 +15,9 @@ class axoncleft
 {
 public:
     /** Default constructor */
-    axoncleft();
+    axoncleft() {};
     /** Default destructor */
-    virtual ~axoncleft();
+    virtual ~axoncleft() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

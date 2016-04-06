@@ -415,28 +415,33 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					/usr/local/Aria/include/,
+					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/usr/local/Aria/lib/,
+					/Users/pbisaacs/Developer/homegrown/lib/,
+					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOWS)",
+					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORKS)",
+					"$(SFML_NETWORK)",
+					"$(inherited)",
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOWS)",
+					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORKS)",
+					"$(SFML_NETWORK)",
+					"$(inherited)",
 				);
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
@@ -488,27 +493,32 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					/usr/local/Aria/include/,
+					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib/,
 					/usr/local/Aria/lib/,
+					/Users/pbisaacs/Developer/homegrown/lib/,
+					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOWS)",
+					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORKS)",
+					"$(SFML_NETWORK)",
+					"$(inherited)",
 				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOWS)",
+					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
-					"$(SFML_NETWORKS)",
+					"$(SFML_NETWORK)",
+					"$(inherited)",
 				);
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";

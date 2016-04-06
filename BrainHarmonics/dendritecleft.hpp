@@ -15,9 +15,9 @@ class dendritecleft
 {
 public:
     /** Default constructor */
-    dendritecleft();
+    dendritecleft() {};
     /** Default destructor */
-    virtual ~dendritecleft();
+    virtual ~dendritecleft() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

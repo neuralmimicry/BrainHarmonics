@@ -15,9 +15,9 @@ class neurotransmitter
 {
 public:
     /** Default constructor */
-    neurotransmitter();
+    neurotransmitter() {};
     /** Default destructor */
-    virtual ~neurotransmitter();
+    virtual ~neurotransmitter() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

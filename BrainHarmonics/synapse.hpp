@@ -15,9 +15,9 @@ class synapse
 {
 public:
     /** Default constructor */
-    synapse();
+    synapse() {};
     /** Default destructor */
-    virtual ~synapse();
+    virtual ~synapse() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

@@ -15,9 +15,9 @@ class myelinsheath
 {
 public:
     /** Default constructor */
-    myelinsheath();
+    myelinsheath() {};
     /** Default destructor */
-    virtual ~myelinsheath();
+    virtual ~myelinsheath() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

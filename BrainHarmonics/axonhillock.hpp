@@ -15,9 +15,9 @@ class axonhillock
 {
 public:
     /** Default constructor */
-    axonhillock();
+    axonhillock() {};
     /** Default destructor */
-    virtual ~axonhillock();
+    virtual ~axonhillock() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

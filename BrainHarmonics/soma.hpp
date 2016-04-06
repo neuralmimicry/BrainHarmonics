@@ -15,9 +15,9 @@ class soma
 {
 public:
     /** Default constructor */
-    soma();
+    soma() {};
     /** Default destructor */
-    virtual ~soma();
+    virtual ~soma() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

@@ -15,9 +15,9 @@ class neuron
 {
 public:
     /** Default constructor */
-    neuron();
+    neuron() {};
     /** Default destructor */
-    virtual ~neuron();
+    virtual ~neuron() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

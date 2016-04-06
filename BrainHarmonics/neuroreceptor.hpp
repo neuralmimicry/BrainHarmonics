@@ -15,9 +15,9 @@ class neuroreceptor
 {
 public:
     /** Default constructor */
-    neuroreceptor();
+    neuroreceptor() {};
     /** Default destructor */
-    virtual ~neuroreceptor();
+    virtual ~neuroreceptor() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

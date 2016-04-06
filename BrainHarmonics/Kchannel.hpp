@@ -15,9 +15,9 @@ class Kchannel
 {
 public:
     /** Default constructor */
-    Kchannel();
+    Kchannel() {};
     /** Default destructor */
-    virtual ~Kchannel();
+    virtual ~Kchannel() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

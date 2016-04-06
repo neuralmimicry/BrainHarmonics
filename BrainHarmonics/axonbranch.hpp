@@ -15,9 +15,9 @@ class axonbranch
 {
 public:
     /** Default constructor */
-    axonbranch();
+    axonbranch() {};
     /** Default destructor */
-    virtual ~axonbranch();
+    virtual ~axonbranch() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

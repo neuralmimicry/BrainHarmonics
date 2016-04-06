@@ -15,9 +15,9 @@ class synapticvesicle
 {
 public:
     /** Default constructor */
-    synapticvesicle();
+    synapticvesicle() {};
     /** Default destructor */
-    virtual ~synapticvesicle();
+    virtual ~synapticvesicle() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */
