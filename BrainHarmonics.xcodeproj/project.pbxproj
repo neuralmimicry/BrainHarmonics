@@ -14,6 +14,10 @@
 		160043CC1C7332B300871CD2 /* dendritecleft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043CA1C7332B300871CD2 /* dendritecleft.cpp */; };
 		160043CF1C7332CB00871CD2 /* axoncleft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043CD1C7332CB00871CD2 /* axoncleft.cpp */; };
 		160043D21C73349300871CD2 /* synapticvesicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043D01C73349300871CD2 /* synapticvesicle.cpp */; };
+		160ED7951CC22BAC007E655A /* multiscreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7931CC22BAC007E655A /* multiscreen.cpp */; };
+		160ED7981CC23AFF007E655A /* screen_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7961CC23AFF007E655A /* screen_0.cpp */; };
+		160ED79B1CC25CAF007E655A /* screen_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7991CC25CAF007E655A /* screen_1.cpp */; };
+		160ED79E1CC2639F007E655A /* screenlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160ED79C1CC2639F007E655A /* screenlist.cpp */; };
 		161990351C7518D700EA6040 /* abstraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1619900F1C7518D700EA6040 /* abstraction.cpp */; };
 		161990361C7518D700EA6040 /* apptimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990111C7518D700EA6040 /* apptimer.cpp */; };
 		161990371C7518D700EA6040 /* compositeforce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990131C7518D700EA6040 /* compositeforce.cpp */; };
@@ -45,6 +49,9 @@
 		168005E81C62006D007F5DF6 /* neuroreceptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005E71C62006D007F5DF6 /* neuroreceptor.cpp */; };
 		168005EA1C620085007F5DF6 /* synapse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005E91C620085007F5DF6 /* synapse.cpp */; };
 		168005ED1C620098007F5DF6 /* Cagate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005EB1C620098007F5DF6 /* Cagate.cpp */; };
+		16E3DFC21CBD46F000C7C2B1 /* spike.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E3DFC01CBD46F000C7C2B1 /* spike.cpp */; };
+		16F8F3641CBEE204002E2658 /* monomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3621CBEE204002E2658 /* monomer.cpp */; };
+		16F8F3671CBEE226002E2658 /* polymer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3651CBEE226002E2658 /* polymer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +81,14 @@
 		160043CE1C7332CB00871CD2 /* axoncleft.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = axoncleft.hpp; sourceTree = "<group>"; };
 		160043D01C73349300871CD2 /* synapticvesicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synapticvesicle.cpp; sourceTree = "<group>"; };
 		160043D11C73349300871CD2 /* synapticvesicle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = synapticvesicle.hpp; sourceTree = "<group>"; };
+		160ED7931CC22BAC007E655A /* multiscreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = multiscreen.cpp; path = ../../homegrown/include/multiscreen.cpp; sourceTree = "<group>"; };
+		160ED7941CC22BAC007E655A /* multiscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multiscreen.h; path = ../../homegrown/include/multiscreen.h; sourceTree = "<group>"; };
+		160ED7961CC23AFF007E655A /* screen_0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = screen_0.cpp; sourceTree = "<group>"; };
+		160ED7971CC23AFF007E655A /* screen_0.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = screen_0.hpp; sourceTree = "<group>"; };
+		160ED7991CC25CAF007E655A /* screen_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = screen_1.cpp; sourceTree = "<group>"; };
+		160ED79A1CC25CAF007E655A /* screen_1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = screen_1.hpp; sourceTree = "<group>"; };
+		160ED79C1CC2639F007E655A /* screenlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = screenlist.cpp; sourceTree = "<group>"; };
+		160ED79D1CC2639F007E655A /* screenlist.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = screenlist.hpp; sourceTree = "<group>"; };
 		1619900F1C7518D700EA6040 /* abstraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = abstraction.cpp; path = ../../homegrown/include/abstraction.cpp; sourceTree = "<group>"; };
 		161990101C7518D700EA6040 /* abstraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = abstraction.h; path = ../../homegrown/include/abstraction.h; sourceTree = "<group>"; };
 		161990111C7518D700EA6040 /* apptimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = apptimer.cpp; path = ../../homegrown/include/apptimer.cpp; sourceTree = "<group>"; };
@@ -142,6 +157,12 @@
 		168005E91C620085007F5DF6 /* synapse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synapse.cpp; sourceTree = "<group>"; };
 		168005EB1C620098007F5DF6 /* Cagate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cagate.cpp; sourceTree = "<group>"; };
 		168005EC1C620098007F5DF6 /* Cagate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cagate.hpp; sourceTree = "<group>"; };
+		16E3DFC01CBD46F000C7C2B1 /* spike.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike.cpp; sourceTree = "<group>"; };
+		16E3DFC11CBD46F000C7C2B1 /* spike.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spike.hpp; sourceTree = "<group>"; };
+		16F8F3621CBEE204002E2658 /* monomer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monomer.cpp; path = ../../homegrown/include/monomer.cpp; sourceTree = "<group>"; };
+		16F8F3631CBEE204002E2658 /* monomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monomer.h; path = ../../homegrown/include/monomer.h; sourceTree = "<group>"; };
+		16F8F3651CBEE226002E2658 /* polymer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polymer.cpp; path = ../../homegrown/include/polymer.cpp; sourceTree = "<group>"; };
+		16F8F3661CBEE226002E2658 /* polymer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polymer.h; path = ../../homegrown/include/polymer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +260,10 @@
 				161990251C7518D700EA6040 /* matter.h */,
 				160043C11C732F0000871CD2 /* membrane.cpp */,
 				160043C21C732F0000871CD2 /* membrane.hpp */,
+				16F8F3621CBEE204002E2658 /* monomer.cpp */,
+				16F8F3631CBEE204002E2658 /* monomer.h */,
+				160ED7931CC22BAC007E655A /* multiscreen.cpp */,
+				160ED7941CC22BAC007E655A /* multiscreen.h */,
 				160043BE1C73292E00871CD2 /* myelinsheath.cpp */,
 				160043BF1C73292E00871CD2 /* myelinsheath.hpp */,
 				168005E31C62003A007F5DF6 /* Nachannel.cpp */,
@@ -257,10 +282,18 @@
 				1619902B1C7518D700EA6040 /* polygon.h */,
 				1619902C1C7518D700EA6040 /* polyhedron.cpp */,
 				1619902D1C7518D700EA6040 /* polyhedron.h */,
+				16F8F3651CBEE226002E2658 /* polymer.cpp */,
+				16F8F3661CBEE226002E2658 /* polymer.h */,
 				1619902E1C7518D700EA6040 /* quad.cpp */,
 				1619902F1C7518D700EA6040 /* quad.h */,
 				168005DB1C61FFCD007F5DF6 /* schwanncell.cpp */,
 				168005CD1C61FE67007F5DF6 /* schwanncell.hpp */,
+				160ED7961CC23AFF007E655A /* screen_0.cpp */,
+				160ED7971CC23AFF007E655A /* screen_0.hpp */,
+				160ED7991CC25CAF007E655A /* screen_1.cpp */,
+				160ED79A1CC25CAF007E655A /* screen_1.hpp */,
+				160ED79C1CC2639F007E655A /* screenlist.cpp */,
+				160ED79D1CC2639F007E655A /* screenlist.hpp */,
 				161990311C7518D700EA6040 /* solid.cpp */,
 				161990321C7518D700EA6040 /* solid.h */,
 				168005D71C61FF9D007F5DF6 /* soma.cpp */,
@@ -271,6 +304,8 @@
 				160043D11C73349300871CD2 /* synapticvesicle.hpp */,
 				161990331C7518D700EA6040 /* universe.cpp */,
 				161990341C7518D700EA6040 /* universe.h */,
+				16E3DFC01CBD46F000C7C2B1 /* spike.cpp */,
+				16E3DFC11CBD46F000C7C2B1 /* spike.hpp */,
 			);
 			path = BrainHarmonics;
 			sourceTree = "<group>";
@@ -337,6 +372,7 @@
 				168005E21C620022007F5DF6 /* Kchannel.cpp in Sources */,
 				161990421C7518D700EA6040 /* point.cpp in Sources */,
 				168005D61C61FF7F007F5DF6 /* neuron.cpp in Sources */,
+				160ED79E1CC2639F007E655A /* screenlist.cpp in Sources */,
 				160043C31C732F0000871CD2 /* membrane.cpp in Sources */,
 				168005ED1C620098007F5DF6 /* Cagate.cpp in Sources */,
 				168005EA1C620085007F5DF6 /* synapse.cpp in Sources */,
@@ -350,12 +386,17 @@
 				1619903B1C7518D700EA6040 /* elementaryparticle.cpp in Sources */,
 				1619903A1C7518D700EA6040 /* elementaryforce.cpp in Sources */,
 				161990381C7518D700EA6040 /* compositeparticle.cpp in Sources */,
+				16F8F3671CBEE226002E2658 /* polymer.cpp in Sources */,
 				160043C91C73318B00871CD2 /* axonbranch.cpp in Sources */,
 				168005E41C62003A007F5DF6 /* Nachannel.cpp in Sources */,
 				161990391C7518D700EA6040 /* dimension.cpp in Sources */,
 				161990441C7518D700EA6040 /* polyhedron.cpp in Sources */,
 				161990351C7518D700EA6040 /* abstraction.cpp in Sources */,
+				160ED79B1CC25CAF007E655A /* screen_1.cpp in Sources */,
+				160ED7981CC23AFF007E655A /* screen_0.cpp in Sources */,
 				160043D21C73349300871CD2 /* synapticvesicle.cpp in Sources */,
+				16F8F3641CBEE204002E2658 /* monomer.cpp in Sources */,
+				16E3DFC21CBD46F000C7C2B1 /* spike.cpp in Sources */,
 				161990451C7518D700EA6040 /* quad.cpp in Sources */,
 				161990431C7518D700EA6040 /* polygon.cpp in Sources */,
 				168005DE1C61FFEA007F5DF6 /* axon.cpp in Sources */,
@@ -369,6 +410,7 @@
 				1619903D1C7518D700EA6040 /* law.cpp in Sources */,
 				161990481C7518D700EA6040 /* universe.cpp in Sources */,
 				160043CC1C7332B300871CD2 /* dendritecleft.cpp in Sources */,
+				160ED7951CC22BAC007E655A /* multiscreen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +439,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				FRAMEWORK_SEARCH_PATHS = "/Library/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -419,14 +461,14 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib/,
+					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(SFML_SYSTEM)",
 					"$(SFML_WINDOW)",
@@ -445,7 +487,7 @@
 				);
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
-				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_BINARY_TYPE = DYLIBS;
 				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
 				SFML_LINK_DYLIBS_PREFIX = "-l";
 				SFML_LINK_DYLIBS_SUFFIX = "";
@@ -481,7 +523,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				FRAMEWORK_SEARCH_PATHS = "/Library/Frameworks/**";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -497,13 +539,14 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib/,
+					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(SFML_SYSTEM)",
 					"$(SFML_WINDOW)",
@@ -522,7 +565,7 @@
 				);
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
-				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_BINARY_TYPE = DYLIBS;
 				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
 				SFML_LINK_DYLIBS_PREFIX = "-l";
 				SFML_LINK_DYLIBS_SUFFIX = "";

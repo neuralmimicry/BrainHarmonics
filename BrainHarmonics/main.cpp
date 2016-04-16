@@ -44,7 +44,7 @@
 #include <string>               /**< For handling strings                          */
 #include <vector>               /**< To use vectors, which automatically handle resizing, as arrays to keep track of instances */
 
-    // SFML
+    // SFML - Use DYLIBS not FRAMEWORKS. FRAMEWORKS had a problem with Text and missing symbols
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>    /**< Graphics library http://sfml-dev.org          */
 #include "ResourcePath.hpp"
@@ -58,6 +58,8 @@
 #include <compositeforce.h>     /**< Define Force interaction between Composites   */
 #include <law.h>                /**< Specify how Composites interact               */
 #include <matter.h>             /**< Composites form elements of periodic table    */
+#include <monomer.h>            /**< Composites form molecules                     */
+#include <polymer.h>            /**< Composites form molecules                     */
 #include <solid.h>              /**< Materials are a combination of Matter         */
 #include <polyhedron.h>         /**< Materials can be formed into multiDimensional shapes */
 #include <polygon.h>            /**< Complex shapes are a combination of simpler forms */
@@ -87,6 +89,7 @@
 #include "synapticvesicle.hpp"  /**< Synaptic vesicle, container of neurotransmitters */
 #include "Cagate.hpp"           /**< Calcium gate, component of Axon cleft         */
 #include "neurotransmitter.hpp" /**< Neurotransmitter, transfer component between clefts */
+#include "screenlist.hpp"       /**< Screen layouts                                */
 
 #ifndef DEBUG_PROGRAM
 #define DEBUG_PROGRAM true
@@ -146,21 +149,22 @@ int create_Universe(std::vector<Universe> *toAddto)
     double UniverseEnergy = 999999999;              /**< Defined energy level of Universe */
         // Begin with singularity
     Universe myUniverse;                            /**< Create instance of Universe from Universe class */
-    myUniverse.setEnergy(UniverseEnergy);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
-    
     /**< Set an energy level and attempt to maintain physics laws by keeping the total in the Universe the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */
+    myUniverse.setEnergy(UniverseEnergy);
+        // Use move not push_back otherwise data is destroyed on exiting function
+        //    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
+    std::move(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Adding Dimensions enables physical and spatial calculations
+    // Possible to use this as a basis for higher dimensionality if it becomes relevant
 int add_Dimension(std::vector<Dimension> *toAddto, std::vector<Universe> *aPartof, int arrayEntry)
 {
     Dimension myDimension((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myDimension, &myDimension + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myDimension, &myDimension + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -170,8 +174,8 @@ int add_Dimension(std::vector<Dimension> *toAddto, std::vector<Universe> *aParto
 int add_ElementaryParticle(std::vector<ElementaryParticle> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
 {
     ElementaryParticle myElementaryParticle((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myElementaryParticle, &myElementaryParticle + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myElementaryParticle, &myElementaryParticle + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -180,8 +184,8 @@ int add_ElementaryParticle(std::vector<ElementaryParticle> *toAddto, std::vector
 int add_CompositeParticle(std::vector<CompositeParticle> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
 {
     CompositeParticle myCompositeParticle((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myCompositeParticle, &myCompositeParticle + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myCompositeParticle, &myCompositeParticle + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -190,8 +194,8 @@ int add_CompositeParticle(std::vector<CompositeParticle> *toAddto, std::vector<E
 int add_ElementaryForce(std::vector<ElementaryForce> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
 {
     ElementaryForce myForce((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myForce, &myForce + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -199,17 +203,17 @@ int add_ElementaryForce(std::vector<ElementaryForce> *toAddto, std::vector<Eleme
 int add_CompositeForce(std::vector<CompositeForce> *toAddto, std::vector<CompositeParticle> *aPartof, int arrayEntry)
 {
     CompositeForce myForce((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myForce, &myForce + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
     // Add methods to describe Force interactions such as gravity
-int add_law(std::vector<CompositeForce> *toAddto, int arrayEntry, std::vector<CompositeParticle> *toAddto2, int arrayEntry2)
+int add_Law(std::vector<CompositeForce> *toAddto, int arrayEntry, std::vector<CompositeParticle> *toAddto2, int arrayEntry2)
 {
         //    law myLaw(aPartof[arrayEntry], toAddto2[arrayEntry2]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
+        // Use move not push_back otherwise data is destroyed on exiting function
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -218,8 +222,28 @@ int add_law(std::vector<CompositeForce> *toAddto, int arrayEntry, std::vector<Co
 int add_Matter(std::vector<Matter> *toAddto, std::vector<CompositeParticle> *aPartof, int arrayEntry)
 {
     Matter myMatter((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myMatter, &myMatter + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myMatter, &myMatter + 1, std::back_inserter(*toAddto));
+    
+    return 0;                       /**< Return Success = 0 */
+}
+
+    // Class for definition of simple molecules
+int add_Monomer(std::vector<Monomer> *toAddto, std::vector<Matter> *aPartof, int arrayEntry)
+{
+    Monomer myMonomer((*aPartof)[arrayEntry]);
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myMonomer, &myMonomer + 1, std::back_inserter(*toAddto));
+    
+    return 0;                       /**< Return Success = 0 */
+}
+
+    // Class for definition of complex molecules
+int add_Polymer(std::vector<Polymer> *toAddto, std::vector<Monomer> *aPartof, int arrayEntry)
+{
+    Polymer myPolymer((*aPartof)[arrayEntry]);
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myPolymer, &myPolymer + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -228,8 +252,8 @@ int add_Matter(std::vector<Matter> *toAddto, std::vector<CompositeParticle> *aPa
 int add_Solid(std::vector<Solid> *toAddto, std::vector<Matter> *aPartof, int arrayEntry)
 {
     Solid mySolid((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&mySolid, &mySolid + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&mySolid, &mySolid + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -239,8 +263,8 @@ int add_Point(std::vector<Point> *toAddto, std::vector<Dimension> *aPartof, int 
 {
         // Begin with shape singularity
     Point myPoint((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myPoint, &myPoint + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myPoint, &myPoint + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -249,8 +273,8 @@ int add_Point(std::vector<Point> *toAddto, std::vector<Dimension> *aPartof, int 
 int add_Polyhedron(std::vector<Polyhedron> *toAddto, std::vector<Solid> *aPartof, int arrayEntry)
 {
     Polyhedron myPolyhedron((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myPolyhedron, &myPolyhedron + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myPolyhedron, &myPolyhedron + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -259,8 +283,8 @@ int add_Polyhedron(std::vector<Polyhedron> *toAddto, std::vector<Solid> *aPartof
 int add_Polygon(std::vector<Polygon> *toAddto, std::vector<Polyhedron> *aPartof, int arrayEntry)
 {
     Polygon myPolygon((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myPolygon, &myPolygon + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myPolygon, &myPolygon + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -269,8 +293,8 @@ int add_Polygon(std::vector<Polygon> *toAddto, std::vector<Polyhedron> *aPartof,
 int add_Quad(std::vector<Quad> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
 {
     Quad myQuad((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myQuad, &myQuad + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myQuad, &myQuad + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -279,8 +303,8 @@ int add_Quad(std::vector<Quad> *toAddto, std::vector<Polygon> *aPartof, int arra
 int add_Line(std::vector<Line> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
 {
     Line myLine((*aPartof)[arrayEntry]);
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myLine, &myLine + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myLine, &myLine + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -289,12 +313,13 @@ int add_Line(std::vector<Line> *toAddto, std::vector<Polygon> *aPartof, int arra
 int add_Apptimer(std::vector<Apptimer> *toAddto)
 {
     Apptimer myApptimer;
-        // Use copy not push_back otherwise data is destroyed on exiting function
-    std::copy(&myApptimer, &myApptimer + 1, std::back_inserter(*toAddto));
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::move(&myApptimer, &myApptimer + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
+    // Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 bool compare_swapElementaryParticle(std::vector<ElementaryParticle> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
     bool l_switch = true;
@@ -306,19 +331,20 @@ bool compare_swapElementaryParticle(std::vector<ElementaryParticle> *origin, int
     int l_origin_Test5 = (3 - l_origin_Test3);
     int l_origin_Test6 = (3 - l_origin_Test4);
     
-        //    std::cout << l_origin << " " << l_origin_Test1 << " " << l_origin_Test2 << " " << l_origin_Test3 << " " << l_origin_Test4 << " " << l_origin_Test5 << " " << l_origin_Test6 << std::endl;
-    
     l_switch = false;
     
     if(l_origin_Test5 > l_origin_Test6 && l_origin != l_origin_Candidate2)
         {
+            //        std::cout << "Before: " << l_origin << " " << l_origin_Test1 << " " << l_origin_Test2 << std::endl;
         iter_swap((*origin).begin() + l_origin_Candidate1, (*origin).begin() + l_origin_Candidate2);
+            //        std::cout << "After : " << (*origin)[l_origin_Swap].getCharge() << " " << (*origin)[l_origin_Candidate1].getCharge() << " " << (*origin)[l_origin_Candidate2].getCharge() << std::endl;
         l_switch = true;
         }
     
-    return l_switch;
+    return l_switch; // Return answering whether or not an exchange occurred
 }
 
+    // Test which Candidate is closest in the charge values and move that Candidate next to the Origin.
 bool compare_swapCompositeParticle(std::vector<CompositeParticle> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
     bool l_switch = true;
@@ -338,7 +364,7 @@ bool compare_swapCompositeParticle(std::vector<CompositeParticle> *origin, int l
         l_switch = true;
         }
     
-    return l_switch;
+    return l_switch; // Return answering whether or not an exchange occurred
 }
 
     // Clear memory to cleanly exit application
@@ -370,32 +396,38 @@ int main(int argc, const char * argv[]) {
     
     
         // Index arrays for instances of classes described above
-    std::vector <Universe> g_Universe;
-    std::vector <Dimension> g_Dimension;
-    std::vector <ElementaryParticle> g_ElementaryParticle;
-    std::vector <CompositeParticle> g_CompositeParticle;
-    std::vector <ElementaryForce> g_ElementaryForce;
-    std::vector <CompositeForce> g_CompositeForce;
-    std::vector <Law> g_Law;
-    std::vector <Matter> g_Matter;
-    std::vector <Solid> g_Solid;
-    std::vector <Polyhedron> g_Polyhedron;
-    std::vector <Polygon> g_Polygon;
-    std::vector <Quad> g_Quad;
-    std::vector <Line> g_Line;
-    std::vector <Point> g_Point;
-    std::vector <Apptimer> g_Apptimer;
-    
+    std::vector <Universe>           g_Universe;           /**< Top of the tree, begin with Universe class    */
+    std::vector <Dimension>          g_Dimension;          /**< Add Dimensions for spatial identification     */
+    std::vector <ElementaryParticle> g_ElementaryParticle; /**< Follow with the creation of quarks/leptons    */
+    std::vector <CompositeParticle>  g_CompositeParticle;  /**< Basic interactions form protons/neutrons      */
+    std::vector <ElementaryForce>    g_ElementaryForce;    /**< Define Force interaction between fundamentals */
+    std::vector <CompositeForce>     g_CompositeForce;     /**< Define Force interaction between Composites   */
+    std::vector <Law>                g_Law;                /**< Specify how Composites interact               */
+    std::vector <Matter>             g_Matter;             /**< Composites form elements of periodic table    */
+    std::vector <Monomer>            g_Monomer;            /**< Composites form molecules                     */
+    std::vector <Polymer>            g_Polymer;            /**< Composites form complex molecules             */
+    std::vector <Solid>              g_Solid;              /**< Materials are a combination of Matter         */
+    std::vector <Polyhedron>         g_Polyhedron;         /**< Materials can be formed into multiDimensional shapes */
+    std::vector <Polygon>            g_Polygon;            /**< Complex shapes are a combination of simpler forms */
+    std::vector <Quad>               g_Quad;               /**< Reducing high Dimensions to lower             */
+    std::vector <Line>               g_Line;               /**< Further reduction                             */
+    std::vector <Point>              g_Point;              /**< Fundamental spatial description               */
+//    std::vector <Node>               g_Node;               /**< Node class for A* search                      */
+    std::vector <Apptimer>           g_Apptimer;           /**< Interim function describing time before inclusion as Dimension */
+
         // Arrays of SFML objects to be drawn on-screen.
-    std::vector <sf::Vertex> g_drawQuads;
-    std::vector <sf::Text> g_drawQuadText;
-    std::vector <sf::Vertex> g_drawLines;
-    std::vector <sf::Vertex> g_drawPoints;
+    std::vector<MultiScreen*>        g_screens;
+    int g_screen = 0;
+    std::vector <sf::Vertex>         g_drawQuads;
+    std::vector <sf::Text>           g_drawQuadText;
+    std::vector <sf::Vertex>         g_drawLines;
+    std::vector <sf::Vertex>         g_drawPoints;
     
         // SFML objects
     sf::Font g_font;
     sf::Text g_text;
-    
+
+        // Higher level of abstraction. Initial naming.
     std::vector <neuron> g_neuron;                      /**< Neuron container for other neuron components  */
     std::vector <dendritecleft> g_dendritecleft;        /**< Dendritic synaptic cleft, input to the neuron */
     std::vector <neuroreceptor> g_neuroreceptor;        /**< Neuroreceptor, component of dendritic cleft   */
@@ -421,13 +453,15 @@ int main(int argc, const char * argv[]) {
     const int numDimensions [numUniverses] = {1, 4};    // U1 = Physical, U2 = Spatial X,Y,Z & Time
     const int phyDimensionsStart = 0;
     const int spaDimensionsStart = phyDimensionsStart + numDimensions[phyDimensionsStart];
-    const int initialElementaryParticles = 100;
-    const int initialParticleAlignment = 500;
-    const int infiniteLoopPrevention = 1000;
+    const int initialElementaryParticles = 50;
+    const int initialParticleAlignment = 200;
+    const int infiniteLoopPrevention = 800;
+    
+    int addStatus;
     
     double l_screenX = 900;            /**< Define graphics window size, X axis*/
     double l_screenY = 750;            /**< Define graphics window size, Y axis*/
-    double l_scale = 0.05;             /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
+    double l_scale = 1;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
     std::string l_screenTitle = "Clustering";
     std::stringstream l_title;
     
@@ -438,21 +472,31 @@ int main(int argc, const char * argv[]) {
         return 1;
         }
     
-        // Open SFML graphics window and add title
+        // Open SFML graphics windows and add title
     sf::RenderWindow window(sf::VideoMode(l_screenX, l_screenY), l_screenTitle);
+        // Prepare screens
+    Screen_0 screen0;
+    g_screens.push_back(&screen0);
+    Screen_1 screen1;
+    g_screens.push_back(&screen1);
+    
     g_text.setFont(g_font);
     g_text.setCharacterSize(24);
-    g_text.setColor(sf::Color::Green);
+        // Fill & Outline replaces deprecated setColor. Also means DYLIBS is used now not FRAMEWORKS for linking
+    g_text.setFillColor(sf::Color::Green);
+    g_text.setOutlineColor(sf::Color::Green);
     g_text.setStyle(sf::Text::Bold);
     g_text.setString("Initialising...");
     
         // Set-up the simulation environment. Currently a skeletal environment.
     std::cout << "The Big Bang..." << std::endl;
     
+        // g_Universe is a vector of pointers to the Universe objects.
     g_Universe.clear();    // Ensure vector is empty
     for (int nloop = 0; nloop <= numUniverses - 1 ; nloop++) {
-        int createUniverse = create_Universe(&g_Universe);    // g_Universe is a vector of pointers to each Universe instance
-        if (createUniverse)
+            // Pass the g_Universe address to the create function to keep all Universes within the same vector
+        addStatus = create_Universe(&g_Universe);
+        if (addStatus)
             {
             std::cout << "Universe creation failed!" << std::endl;
             return 1;
@@ -463,8 +507,8 @@ int main(int argc, const char * argv[]) {
     g_Dimension.clear();    // Ensure vector is empty
     for (int ploop = 0; ploop <= numUniverses - 1; ploop++) {               // Cycle through Universes allocating n Dimensions
         for (int nloop = 0; nloop <= numDimensions[ploop] - 1; nloop++) {   // Visit create Dimensions n times
-            int addDimension = add_Dimension(&g_Dimension, &g_Universe, ploop);  // Connect the Dimension to the respective Universe
-            if (addDimension)                                              // If return number is not 0 then an error occurred
+            addStatus = add_Dimension(&g_Dimension, &g_Universe, ploop);  // Connect the Dimension to the respective Universe
+            if (addStatus)                                              // If return number is not 0 then an error occurred
                 {
                 std::cout << "Dimension addition failed!" << std::endl;    // Console output of error
                 return 1;
@@ -487,12 +531,13 @@ int main(int argc, const char * argv[]) {
     int l_origin_Test5 = 0;
     double l_charge = 0;
     
+        // Create new Elementary Particles - Quarks etc
     g_ElementaryParticle.clear();
     g_ElementaryForce.clear();
     for (int nloop = 0; nloop < initialElementaryParticles; nloop++)
         {
-        int addElementaryParticle = add_ElementaryParticle(&g_ElementaryParticle, &g_Dimension, phyDimensionsStart);
-        if (addElementaryParticle)
+        addStatus = add_ElementaryParticle(&g_ElementaryParticle, &g_Dimension, phyDimensionsStart);
+        if (addStatus)
             {
             std::cout << "Elementary Particle addition failed!" << std::endl;
             return 1;
@@ -502,13 +547,15 @@ int main(int argc, const char * argv[]) {
         if(counter_Charge > 6) counter_Charge = 0;
         counter_Spin = int(1 - counter_Spin);
             //        std::cout << counter_Charge << std::endl;
+            // Try to ensure we get variations of particles. Not all one type by changing Charge and Spin.
+        if (!g_ElementaryParticle.empty()) g_ElementaryParticle.back().resetElementaryParticle();
         if (!g_ElementaryParticle.empty()) g_ElementaryParticle.back().setCharge(counter_Charge);
         if (!g_ElementaryParticle.empty()) g_ElementaryParticle.back().setSpin(counter_Spin);
         if (!g_ElementaryParticle.empty()) g_ElementaryParticle.back().creation();
         
-        
-        int addElementaryForce = add_ElementaryForce(&g_ElementaryForce, &g_ElementaryParticle, nloop);
-        if (addElementaryForce)
+            // Bind a Force object to each Particle
+        int addStatus = add_ElementaryForce(&g_ElementaryForce, &g_ElementaryParticle, nloop);
+        if (addStatus)
             {
             std::cout << "Elementary Force addition failed!" << std::endl;
             return 1;
@@ -518,6 +565,7 @@ int main(int argc, const char * argv[]) {
         howMany_Particles = int(g_ElementaryParticle.size());
         
             //        std::cout << "Size:" << howMany_Particles << std::endl;
+            // Rearrange new Particles in an order closer to how they're likely to interact.
         for (int qloop = 0; qloop <= initialParticleAlignment * howMany_Particles; qloop++)
             {
             
@@ -532,7 +580,7 @@ int main(int argc, const char * argv[]) {
                 while(counter_Walk <= (howMany_Particles - 3))
                     {
                     l_switch = compare_swapElementaryParticle(&g_ElementaryParticle, counter_Walk, counter_Walk + 1, counter_Walk + 2);
-                    if (l_switch) counter_Walk--; else counter_Walk++;
+                    if (l_switch) counter_Walk--; else counter_Walk++;// If Switch occurred retest previous Origin
                     if (counter_Walk < 0) counter_Walk = 0;
                     
                     l_origin = g_ElementaryParticle[counter_Walk].getCharge();
@@ -576,9 +624,10 @@ int main(int argc, const char * argv[]) {
         }
     std::cout << std::endl;
     
+        // Make Composite Particles - Protons, Neutrons
     g_CompositeParticle.clear();
-    int addCompositeParticle = add_CompositeParticle(&g_CompositeParticle, &g_ElementaryParticle, int(g_ElementaryParticle.size() - 1));
-    if (addCompositeParticle)
+    addStatus = add_CompositeParticle(&g_CompositeParticle, &g_ElementaryParticle, int(g_ElementaryParticle.size() - 1));
+    if (addStatus)
         {
         std::cout << "Composite Particle addition failed!" << std::endl;
         return 1;
@@ -586,57 +635,138 @@ int main(int argc, const char * argv[]) {
     if (!g_CompositeParticle.empty()) g_CompositeParticle.back().creation();
     
     g_CompositeForce.clear();
-    int addCompositeForce = add_CompositeForce(&g_CompositeForce, &g_CompositeParticle,  int(g_CompositeParticle.size() - 1));
-    if (addCompositeForce)
+    addStatus = add_CompositeForce(&g_CompositeForce, &g_CompositeParticle,  int(g_CompositeParticle.size() - 1));
+    if (addStatus)
         {
         std::cout << "Composite Force addition failed!" << std::endl;
         return 1;
         }
     if (!g_CompositeForce.empty()) g_CompositeForce.back().creation();
     
+        // Make Elements - Hydrogen, Helium, Lithium etc
     g_Matter.clear();
-    int addMatter = add_Matter(&g_Matter, &g_CompositeParticle,  int(g_CompositeParticle.size() - 1));
-    if (addMatter)
+    addStatus = add_Matter(&g_Matter, &g_CompositeParticle,  int(g_CompositeParticle.size() - 1));
+    if (addStatus)
         {
         std::cout << "Matter addition failed!" << std::endl;
         return 1;
         }
     if (!g_Matter.empty()) g_Matter.back().creation();
     
+        // Make Monomers - Carbohydrates/Sugars etc
+    g_Monomer.clear();
+    addStatus = add_Monomer(&g_Monomer, &g_Matter,  int(g_Matter.size() - 1));
+    if (addStatus)
+        {
+        std::cout << "Monomer addition failed!" << std::endl;
+        return 1;
+        }
+    if (!g_Monomer.empty()) g_Monomer.back().creation();
+    
+    g_Polymer.clear();
+    addStatus = add_Polymer(&g_Polymer, &g_Monomer,  int(g_Monomer.size() - 1));
+    if (addStatus)
+        {
+        std::cout << "Polymer addition failed!" << std::endl;
+        return 1;
+        }
+    if (!g_Polymer.empty()) g_Polymer.back().creation();
+    
     g_Point.clear();
     for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
-        int addPoint = add_Point(&g_Point, &g_Dimension, nloop);
-        if (addPoint)
+            //        std::cout << "Dimension Loop: " << nloop << " ";
+        addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+        if (addStatus)
             {
             std::cout << "Point addition failed!" << std::endl;
             return 1;
             }
         if (!g_Point.empty()) g_Point.back().creation();
-        if (!g_Point.empty()) g_Point.back().setPointDifferential(0);  // Set first point to location zero.
+        if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
     }
+        //    std::cout << std::endl;
+    double d;
+    double r;
+    double s;
+    double t;
+    double pOrigin;
+    double xd;
+    double yd;
+    double zd;
+    double pointDistance;
+    double pointDistance2;
+    double effect;
     
     for (int eloop = 1; eloop < int(g_ElementaryParticle.size()) - 1; eloop++)
         {
         
-        l_charge = double (3 - std::abs(int(g_ElementaryParticle[eloop].getCharge() - g_ElementaryParticle[eloop - 1].getCharge()))) / 3 ;
+        l_charge = double (3 - std::abs(int(g_ElementaryParticle[eloop].getCharge() - g_ElementaryParticle[eloop - 1].getCharge())));
         
         for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
-            int addPoint = add_Point(&g_Point, &g_Dimension, nloop);
-            if (addPoint)
+            addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+            if (addStatus)
                 {
                 std::cout << "Point addition failed!" << std::endl;
                 return 1;
                 }
-            if (!g_Point.empty()) g_Point.back().Creation();
-            g_Point.back().setPointPosition(g_Point[g_Point.size() - numDimensions[spaDimensionsStart] - 1].getPointPosition() +l_charge);
+            if (!g_Point.empty()) g_Point.back().creation();
+            if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise point to location zero.
+            
+                // To calculate the position on the surface of a sphere is:
+                // ( where r is radius and s & t are angles in Radians. The Origin is 0,0,0 )
+                // x = r * cos(s) * sin(t)
+                // y = r * sin(s) * sin(t)
+                // z = r * cos(t)
+            
+                // radians = angleInDegrees * Math.PI / 180
+            
+            d = 0;
+            r = l_charge;
+                // This angle to later be dynamic to adjust for different particle types
+            s = 135 * DEG2RAD; // in Radians
+            t = 135 * DEG2RAD; // in Radians
+            pOrigin = g_Point[g_Point.size() - numDimensions[spaDimensionsStart] - 1].getPointPosition();
+                // std::cout << "nloop:" << nloop << std::endl;
+
+                // Loop through each dimension to calculate position on the surface of a sphere
+                // The sphere takes the previous particle as it's Origin and the radius is related to the charge.
+                // The position on the surface will be affected by proximity to other particles.
+            switch(nloop)
+            {
+                case 1:
+                {
+                d = r * cos(s) * sin(t);
+                break;
+                }
+                case 2:
+                {
+                d = r * sin(s) * sin(t);
+                break;
+                }
+                case 3:
+                {
+                d = r * cos(t);
+                break;
+                }
+                case 4:
+                {
+                d = 0;
+                break;
+                }
+            }
+
+            d = d + pOrigin;
+                // std::cout << "d:" << d << " r:" << r << " s:" << s << " t:" << t << std::endl;
+            g_Point.back().setPointPosition(d);
         }
         }
     
     int l_pointEnd = int(g_Point.size()) - 1;
     
         // The program will loop whilst the graphics window is open
-    while(window.isOpen())
+    while(g_screen >= 0)
         {
+        g_screen = g_screens[g_screen]->runScreen(window);
             // SFML event handling to define what happens if the graphics window is closed
         sf::Event event;
         while (window.pollEvent(event))
@@ -663,22 +793,49 @@ int main(int argc, const char * argv[]) {
             {
             g_buttonPressed = false;
             }
-        
+        /*
+         // Early calculation for colliding elementary particles and the effect on direction and acceleration
+        for(int n = 0; n < l_pointEnd; n = n + 4)
+            {
+            for(int p = 0; p < l_pointEnd; p = p + 4)
+                {
+                if(n != p)
+                    {
+                    xd = g_Point[p].getPointPosition() - g_Point[n].getPointPosition();
+                    yd = g_Point[p + 1].getPointPosition() - g_Point[n + 1].getPointPosition();
+                    zd = g_Point[p + 2].getPointPosition() - g_Point[n + 2].getPointPosition();
+                    pointDistance2 = (xd * xd + yd * yd + zd * zd);
+                    effect = 1 + (1 / pointDistance2);
+                    g_Point[n].setPointDifferential(g_Point[n].getPointDifferential() * effect);
+                    g_Point[p].setPointDifferential(g_Point[p].getPointDifferential() * effect);
+                    g_Point[n + 1].setPointDifferential(g_Point[n + 1].getPointDifferential() * effect);
+                    g_Point[p + 1].setPointDifferential(g_Point[p + 1].getPointDifferential() * effect);
+                    g_Point[n + 2].setPointDifferential(g_Point[n + 2].getPointDifferential() * effect);
+                    g_Point[p + 2].setPointDifferential(g_Point[p + 2].getPointDifferential() * effect);
+                    }
+                }
+            }
+*/
+        for(int n = 0; n < l_pointEnd; n++)
+            {
+            g_Point[n].pointPoll(1);
+            g_Point[n].overflowPoll();
+            }
         
             // Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
         g_drawPoints.clear();
-        for(int n = 0; n < l_pointEnd; n++)
+        for(int n = 0; n < l_pointEnd; n = n + 4)
             {
-            g_drawPoints.push_back(sf::Vertex(sf::Vector2f((g_Point[n].getPointPosition() * l_scale) + (l_screenX / 2), l_screenY - ((g_Point[n].getPointPosition() * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+            g_drawPoints.push_back(sf::Vertex(sf::Vector2f((g_Point[n].getPointPosition() * l_scale) + (l_screenX / 2), l_screenY - ((g_Point[n + 1].getPointPosition() * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
             }
         g_drawLines.clear();
-/*
-        for(int n = 0; n < l_LineEnd; n++)
-            {
-            g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_Line[n].GetLineX1() * l_scale) + (l_screenX / 2), l_screenY - ((g_Line[n].GetLineY1() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_Point[n].GetXYTTL()),0,0,255)));
-            g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_Line[n].GetLineX2() * l_scale) + (l_screenX / 2), l_screenY - ((g_Line[n].GetLineY2() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_Point[n].GetXYTTL()),0,0,255)));
-            }
-*/        
+        /*
+         for(int n = 0; n < l_LineEnd; n++)
+         {
+         g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_Line[n].GetLineX1() * l_scale) + (l_screenX / 2), l_screenY - ((g_Line[n].GetLineY1() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_Point[n].GetXYTTL()),0,0,255)));
+         g_drawLines.push_back(sf::Vertex(sf::Vector2f((g_Line[n].GetLineX2() * l_scale) + (l_screenX / 2), l_screenY - ((g_Line[n].GetLineY2() * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) * g_Point[n].GetXYTTL()),0,0,255)));
+         }
+         */
         window.clear();
         
         window.draw(&g_drawQuads[0], g_drawQuads.size(), sf::Quads);
@@ -713,6 +870,7 @@ int main(int argc, const char * argv[]) {
         window.display();
         }
         // Empty vectors before exiting (in reverse of creation)
+        //    for(int dloop = int(g_Point.size()); dloop > 0; --dloop) delete (&g_Point[dloop - 1]);
         //    g_Point.clear();
         //    g_Matter.clear();
         //    g_CompositeForce.clear();
