@@ -49,6 +49,21 @@
 #include <SFML/Graphics.hpp>    /**< Graphics library http://sfml-dev.org          */
 #include "ResourcePath.hpp"
 
+/* Can't use GLUT on El Capitan - poor headers
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#include <GLUT/glut.h>
+#else
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+#endif
+*/
+
     // Homegrown add-ins
 #include <universe.h>           /**< Top of the tree, begin with Universe class    */
 #include <dimension.h>          /**< Add Dimensions for spatial identification     */
@@ -89,7 +104,9 @@
 #include "synapticvesicle.hpp"  /**< Synaptic vesicle, container of neurotransmitters */
 #include "Cagate.hpp"           /**< Calcium gate, component of Axon cleft         */
 #include "neurotransmitter.hpp" /**< Neurotransmitter, transfer component between clefts */
-#include "screenlist.hpp"       /**< Screen layouts                                */
+#include "multiscreen.h"        /**< Screen layouts                                */
+    //#include "screen_0.hpp"         /**< Screen layouts                                */
+    //#include "screen_1.hpp"         /**< Screen layouts                                */
 
 #ifndef DEBUG_PROGRAM
 #define DEBUG_PROGRAM true
@@ -319,6 +336,39 @@ int add_Apptimer(std::vector<Apptimer> *toAddto)
     return 0;                       /**< Return Success = 0 */
 }
 
+int add_SFMLRectangle(std::vector<sf::RectangleShape> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
+{
+    sf::RectangleShape mySFMLRectangle;
+    mySFMLRectangle.setSize(sf::Vector2f(1,1));
+    mySFMLRectangle.setOutlineColor(sf::Color::Green);
+    mySFMLRectangle.setOutlineThickness(1);
+    mySFMLRectangle.setFillColor(sf::Color::Green);
+    mySFMLRectangle.setPosition(sf::Vector2f(0,0));
+    
+    std::move(&mySFMLRectangle, &mySFMLRectangle + 1, std::back_inserter(*toAddto));
+    
+    return 0;                       /**< Return Success = 0 */
+}
+
+int add_SFMLText(std::vector<sf::Text> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry, sf::Font *font)
+{
+    sf::Text mySFMLText;
+    std::stringstream l_displayString;
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << " ";
+    mySFMLText.setFont(*font);
+    mySFMLText.setString(l_displayString.str());
+    mySFMLText.setCharacterSize(10);
+        // Fill & Outline replaces deprecated setColor. Also means DYLIBS is used now not FRAMEWORKS for linking
+    mySFMLText.setFillColor(sf::Color::Green);
+    mySFMLText.setOutlineColor(sf::Color::Green);
+    mySFMLText.setStyle(sf::Text::Bold);
+    
+    std::move(&mySFMLText, &mySFMLText + 1, std::back_inserter(*toAddto));
+    
+    return 0;                       /**< Return Success = 0 */
+}
     // Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 bool compare_swapElementaryParticle(std::vector<ElementaryParticle> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
@@ -367,6 +417,199 @@ bool compare_swapCompositeParticle(std::vector<CompositeParticle> *origin, int l
     return l_switch; // Return answering whether or not an exchange occurred
 }
 
+class Screen_0 : public MultiScreen
+{
+public:
+    /** Default constructor */
+    Screen_0();
+    /** Default destructor */
+    virtual ~Screen_0() {};
+    void creation();
+    virtual int runScreen(sf::RenderWindow &app);
+    
+protected:
+private:
+    bool m_onScreen; //!< Member variable "m_onScreen"
+};
+
+Screen_0::Screen_0()
+{
+    m_onScreen = false;
+}
+void Screen_0::creation() {std::cout << "Screen 0 created." << std::endl; }
+
+int Screen_0::runScreen(sf::RenderWindow &app)
+{
+    sf::Event Event;
+    bool Running = true;
+    sf::Font Font;
+    sf::Text Menu1;
+    sf::Text Menu2;
+    sf::Text Menu3;
+    sf::Text Menu4;
+    int menu = 0;
+    
+    if (!Font.loadFromFile(resourcePath() + "DroidSans.ttf"))
+        {
+        std::cerr << "Error loading font." << std::endl;
+        return (-1);
+        }
+    Menu1.setFont(Font);
+    Menu1.setCharacterSize(20);
+    Menu1.setString("Add item");
+    Menu1.setPosition({ 280.f, 160.f });
+    
+    Menu2.setFont(Font);
+    Menu2.setCharacterSize(20);
+    Menu2.setString("Remove item");
+    Menu2.setPosition({ 280.f, 220.f });
+    
+    Menu3.setFont(Font);
+    Menu3.setCharacterSize(20);
+    Menu3.setString("Up level");
+    Menu3.setPosition({ 280.f, 280.f });
+    
+    Menu4.setFont(Font);
+    Menu4.setCharacterSize(20);
+    Menu4.setString("Down level");
+    Menu4.setPosition({ 280.f, 320.f });
+    
+    while (Running)
+        {
+        while(app.pollEvent(Event))
+            {
+                // Window closed
+            if (Event.type == sf::Event::Closed)
+                {
+                return (-1);
+                }
+            }
+        if (menu == 0)
+            {
+            Menu1.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu1.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu2.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu2.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu3.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu3.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu4.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu4.setFillColor(sf::Color(255, 0, 0, 255));
+            }
+        else
+            {
+            Menu1.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu1.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu2.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu2.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu3.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu3.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu4.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu4.setFillColor(sf::Color(255, 255, 255, 255));
+            }
+        
+        app.clear();
+        app.display();
+        }
+    return (-1);
+}
+
+class Screen_1 : public MultiScreen
+{
+public:
+    /** Default constructor */
+    Screen_1();
+    /** Default destructor */
+    virtual ~Screen_1() {};
+    void creation();
+    virtual int runScreen(sf::RenderWindow &app);
+    
+protected:
+private:
+    bool m_onScreen; //!< Member variable "m_onScreen"
+};
+
+Screen_1::Screen_1()
+{
+    m_onScreen = false;
+}
+void Screen_1::creation() {std::cout << "Screen 0 created." << std::endl; }
+
+int Screen_1::runScreen(sf::RenderWindow &app)
+{
+    sf::Event Event;
+    bool Running = true;
+    sf::Font Font;
+    sf::Text Menu1;
+    sf::Text Menu2;
+    sf::Text Menu3;
+    sf::Text Menu4;
+    int menu = 0;
+    
+    if (!Font.loadFromFile(resourcePath() + "DroidSans.ttf"))
+        {
+        std::cerr << "Error loading font." << std::endl;
+        return (-1);
+        }
+    Menu1.setFont(Font);
+    Menu1.setCharacterSize(20);
+    Menu1.setString("Add item");
+    Menu1.setPosition({ 280.f, 160.f });
+    
+    Menu2.setFont(Font);
+    Menu2.setCharacterSize(20);
+    Menu2.setString("Remove item");
+    Menu2.setPosition({ 280.f, 220.f });
+    
+    Menu3.setFont(Font);
+    Menu3.setCharacterSize(20);
+    Menu3.setString("Up level");
+    Menu3.setPosition({ 280.f, 280.f });
+    
+    Menu4.setFont(Font);
+    Menu4.setCharacterSize(20);
+    Menu4.setString("Down level");
+    Menu4.setPosition({ 280.f, 320.f });
+    
+    while (Running)
+        {
+        while(app.pollEvent(Event))
+            {
+                // Window closed
+            if (Event.type == sf::Event::Closed)
+                {
+                return (-1);
+                }
+            }
+        if (menu == 0)
+            {
+            Menu1.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu1.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu2.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu2.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu3.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu3.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu4.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu4.setFillColor(sf::Color(255, 0, 0, 255));
+            }
+        else
+            {
+            Menu1.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu1.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu2.setOutlineColor(sf::Color(255, 0, 0, 255));
+            Menu2.setFillColor(sf::Color(255, 0, 0, 255));
+            Menu3.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu3.setFillColor(sf::Color(255, 255, 255, 255));
+            Menu4.setOutlineColor(sf::Color(255, 255, 255, 255));
+            Menu4.setFillColor(sf::Color(255, 255, 255, 255));
+            }
+        
+        app.clear();
+        app.display();
+        }
+    return (-1);
+}
+
+
     // Clear memory to cleanly exit application
 void exitCB()
 {
@@ -412,21 +655,23 @@ int main(int argc, const char * argv[]) {
     std::vector <Quad>               g_Quad;               /**< Reducing high Dimensions to lower             */
     std::vector <Line>               g_Line;               /**< Further reduction                             */
     std::vector <Point>              g_Point;              /**< Fundamental spatial description               */
-//    std::vector <Node>               g_Node;               /**< Node class for A* search                      */
+        //    std::vector <Node>               g_Node;               /**< Node class for A* search                      */
     std::vector <Apptimer>           g_Apptimer;           /**< Interim function describing time before inclusion as Dimension */
-
+    
         // Arrays of SFML objects to be drawn on-screen.
-    std::vector<MultiScreen*>        g_screens;
+    std::vector<MultiScreen*>             g_screens;
     int g_screen = 0;
-    std::vector <sf::Vertex>         g_drawQuads;
-    std::vector <sf::Text>           g_drawQuadText;
-    std::vector <sf::Vertex>         g_drawLines;
-    std::vector <sf::Vertex>         g_drawPoints;
+    std::vector <sf::RectangleShape>      g_drawRectangles;
+    std::vector <sf::Vertex>              g_drawQuads;
+    std::vector <sf::Text>                g_drawText;
+    std::vector <sf::Vertex>              g_drawLines;
+    std::vector <sf::Vertex>              g_drawPoints;
     
         // SFML objects
     sf::Font g_font;
-    sf::Text g_text;
-
+    
+    sf::Vector2u screenSize;
+    
         // Higher level of abstraction. Initial naming.
     std::vector <neuron> g_neuron;                      /**< Neuron container for other neuron components  */
     std::vector <dendritecleft> g_dendritecleft;        /**< Dendritic synaptic cleft, input to the neuron */
@@ -449,21 +694,22 @@ int main(int argc, const char * argv[]) {
     std::vector <neurotransmitter> g_neurotransmitter;  /**< Neurotransmitter, transfer component between clefts */
     
     
-    const int numUniverses = 2;     // Physical material and spatial references
-    const int numDimensions [numUniverses] = {1, 4};    // U1 = Physical, U2 = Spatial X,Y,Z & Time
-    const int phyDimensionsStart = 0;
-    const int spaDimensionsStart = phyDimensionsStart + numDimensions[phyDimensionsStart];
-    const int initialElementaryParticles = 50;
+    const int numUniverses = 3;     // Internal display, Physical material and spatial references
+    const int numDimensions [numUniverses] = {2, 1, 4};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time
+    const int intDimensionsStart = 0;
+    const int phyDimensionsStart = intDimensionsStart + numDimensions[0];
+    const int spaDimensionsStart = phyDimensionsStart + numDimensions[1];
+    const int initialElementaryParticles = 100;
     const int initialParticleAlignment = 200;
     const int infiniteLoopPrevention = 800;
     
     int addStatus;
     
-    double l_screenX = 900;            /**< Define graphics window size, X axis*/
-    double l_screenY = 750;            /**< Define graphics window size, Y axis*/
-    double l_scale = 1;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
+    double l_screenX = 925;            /**< Define graphics window size, X axis*/
+    double l_screenY = 800;            /**< Define graphics window size, Y axis*/
+    double l_scale = 200;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
     std::string l_screenTitle = "Clustering";
-    std::stringstream l_title;
+    std::stringstream l_displayString;
     
     if (!g_font.loadFromFile(resourcePath() + "DroidSans.ttf"))
         {
@@ -473,23 +719,123 @@ int main(int argc, const char * argv[]) {
         }
     
         // Open SFML graphics windows and add title
-    sf::RenderWindow window(sf::VideoMode(l_screenX, l_screenY), l_screenTitle);
+    screenSize.x = l_screenX;
+    screenSize.y = l_screenY;
+    sf::RenderWindow window(sf::VideoMode(l_screenX, l_screenY), l_screenTitle, sf::Style::Resize);
+    window.setSize(screenSize);
+    screenSize = window.getSize();
+    l_screenX = double(screenSize.x);
+    l_screenY = double(screenSize.y);
+    
         // Prepare screens
+    
+        // Group quads
+        // Bind a Rectangle object
+    for(int nloop = 0; nloop < 10; nloop++)
+        {
+        addStatus = add_SFMLRectangle(&g_drawRectangles, &g_Dimension, 0);
+        if (addStatus)
+            {
+            std::cout << "Rectangle addition failed!" << std::endl;
+            return 1;
+            }
+        }
+    
+    for(int nloop = 0; nloop < 9; nloop++)
+        {
+        g_drawRectangles[nloop].setSize(sf::Vector2f(100,25));
+        g_drawRectangles[nloop].setOutlineColor(sf::Color::Red);
+        g_drawRectangles[nloop].setOutlineThickness(1);
+        g_drawRectangles[nloop].setFillColor(sf::Color::Transparent);
+        g_drawRectangles[nloop].setPosition(sf::Vector2f(800, 25 * (nloop + 2)));
+        }
+    
+    g_drawRectangles[9].setSize(sf::Vector2f(100,225));
+    g_drawRectangles[9].setOutlineColor(sf::Color::Green);
+    g_drawRectangles[9].setOutlineThickness(2);
+    g_drawRectangles[9].setFillColor(sf::Color::Transparent);
+    g_drawRectangles[9].setPosition(sf::Vector2f(800, 225));
+    
+        // Bind a Text object
+    for(int nloop = 0; nloop < 10; nloop++)
+        {
+        addStatus = add_SFMLText(&g_drawText, &g_Dimension, 0, &g_font);
+        if (addStatus)
+            {
+            std::cout << "Text addition failed!" << std::endl;
+            return 1;
+            }
+        }
+    
+        // Build display text
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Initialising...";
+    g_drawText[0].setFont(g_font);
+    g_drawText[0].setCharacterSize(24);
+    g_drawText[0].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Read Only";
+    g_drawText[1].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Level";
+    g_drawText[2].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "TOP";
+    g_drawText[3].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "< ^ v >";
+    g_drawText[4].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Quantity";
+    g_drawText[5].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "0000";
+    g_drawText[6].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Patterns";
+    g_drawText[7].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "0000";
+    g_drawText[8].setString(l_displayString.str());
+    
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << "Zoom";
+    g_drawText[9].setString(l_displayString.str());
+    
+        // No GLUT on El Capitan - poort headers
+        //    glMatrixMode(GL_PROJECTION); // Setup OpenGL calls (for 3D use)
+    
     Screen_0 screen0;
     g_screens.push_back(&screen0);
     Screen_1 screen1;
     g_screens.push_back(&screen1);
     
-    g_text.setFont(g_font);
-    g_text.setCharacterSize(24);
-        // Fill & Outline replaces deprecated setColor. Also means DYLIBS is used now not FRAMEWORKS for linking
-    g_text.setFillColor(sf::Color::Green);
-    g_text.setOutlineColor(sf::Color::Green);
-    g_text.setStyle(sf::Text::Bold);
-    g_text.setString("Initialising...");
+    window.clear();
+        //    window.pushGLStates();
+    window.draw(g_drawText[0]);
+        //    window.popGLStates();
+    window.display();
     
         // Set-up the simulation environment. Currently a skeletal environment.
-    std::cout << "The Big Bang..." << std::endl;
+    std::cout << "The Big Bang..." << g_drawText.size() << std::endl;
     
         // g_Universe is a vector of pointers to the Universe objects.
     g_Universe.clear();    // Ensure vector is empty
@@ -521,6 +867,7 @@ int main(int argc, const char * argv[]) {
     int counter_Spin = 0;
     int counter_Walk = 0;
     int counter_InfiniteLoopPrevention = 0;
+    int l_spaPointBase = 0; // Base of data points (Moves because of use by internal graphics for points control too
     int howMany_Particles = 0;
     int current_Distance = 0;
     int max_Distance = 0;
@@ -673,8 +1020,50 @@ int main(int argc, const char * argv[]) {
     if (!g_Polymer.empty()) g_Polymer.back().creation();
     
     g_Point.clear();
-    for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
-            //        std::cout << "Dimension Loop: " << nloop << " ";
+    
+        // Add points to control application screen positions
+    l_spaPointBase = 0;
+    for (int zloop = 0; zloop < int(g_drawRectangles.size()) + int(g_drawText.size()); zloop++)
+        {
+        for (int nloop = intDimensionsStart; nloop < phyDimensionsStart; nloop++)
+            {
+            addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+            if (addStatus)
+                {
+                std::cout << "Point addition failed!" << std::endl;
+                return 1;
+                }
+            if (!g_Point.empty()) g_Point.back().creation();
+            if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
+            l_spaPointBase++;
+        }
+        }
+    std::cout << "spaPointBase: " << l_spaPointBase << std::endl;
+    
+    g_Point[0].setPointPosition(800);    g_Point[1].setPointPosition(25);   // Rectangle 1
+    g_Point[2].setPointPosition(800);    g_Point[3].setPointPosition(50);   // Rectangle 2
+    g_Point[4].setPointPosition(800);    g_Point[5].setPointPosition(75);   // Rectangle 3
+    g_Point[6].setPointPosition(800);    g_Point[7].setPointPosition(100);  // Rectangle 4
+    g_Point[8].setPointPosition(800);    g_Point[9].setPointPosition(125);  // Rectangle 5
+    g_Point[10].setPointPosition(800);   g_Point[11].setPointPosition(150); // Rectangle 6
+    g_Point[12].setPointPosition(800);   g_Point[13].setPointPosition(175); // Rectangle 7
+    g_Point[14].setPointPosition(800);   g_Point[15].setPointPosition(200); // Rectangle 8
+    g_Point[16].setPointPosition(800);   g_Point[17].setPointPosition(225); // Rectangle 9
+    g_Point[18].setPointPosition(800);   g_Point[19].setPointPosition(25);  // Rectangle 10
+    g_Point[20].setPointPosition(400);   g_Point[21].setPointPosition(0);   // Text 1
+    g_Point[22].setPointPosition(800);   g_Point[23].setPointPosition(25);  // Text 2
+    g_Point[24].setPointPosition(800);   g_Point[25].setPointPosition(50);  // Text 3
+    g_Point[26].setPointPosition(800);   g_Point[27].setPointPosition(75);  // Text 4
+    g_Point[28].setPointPosition(800);   g_Point[29].setPointPosition(100); // Text 5
+    g_Point[30].setPointPosition(800);   g_Point[31].setPointPosition(125); // Text 6
+    g_Point[32].setPointPosition(800);   g_Point[33].setPointPosition(150); // Text 7
+    g_Point[34].setPointPosition(800);   g_Point[35].setPointPosition(175); // Text 8
+    g_Point[36].setPointPosition(800);   g_Point[37].setPointPosition(200); // Text 9
+    g_Point[38].setPointPosition(800);   g_Point[39].setPointPosition(225); // Text 10
+    
+    for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + numDimensions[2]; nloop++)
+        {
+        std::cout << "Dimension Loop: " << nloop << " ";
         addStatus = add_Point(&g_Point, &g_Dimension, nloop);
         if (addStatus)
             {
@@ -684,7 +1073,7 @@ int main(int argc, const char * argv[]) {
         if (!g_Point.empty()) g_Point.back().creation();
         if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
     }
-        //    std::cout << std::endl;
+        std::cout << std::endl;
     double d;
     double r;
     double s;
@@ -697,12 +1086,12 @@ int main(int argc, const char * argv[]) {
     double pointDistance2;
     double effect;
     
-    for (int eloop = 1; eloop < int(g_ElementaryParticle.size()) - 1; eloop++)
+    for (int eloop = 1; eloop < int(g_ElementaryParticle.size()); eloop++)
         {
         
         l_charge = double (3 - std::abs(int(g_ElementaryParticle[eloop].getCharge() - g_ElementaryParticle[eloop - 1].getCharge())));
         
-        for (int nloop = numDimensions[phyDimensionsStart]; nloop <= numDimensions[spaDimensionsStart]; nloop++) {
+        for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + numDimensions[2]; nloop++) {
             addStatus = add_Point(&g_Point, &g_Dimension, nloop);
             if (addStatus)
                 {
@@ -723,59 +1112,106 @@ int main(int argc, const char * argv[]) {
             d = 0;
             r = l_charge;
                 // This angle to later be dynamic to adjust for different particle types
-            s = 135 * DEG2RAD; // in Radians
-            t = 135 * DEG2RAD; // in Radians
-            pOrigin = g_Point[g_Point.size() - numDimensions[spaDimensionsStart] - 1].getPointPosition();
+            s = 30 * DEG2RAD; // in Radians
+            t = 90 * DEG2RAD; // in Radians
+            pOrigin = g_Point[(g_Point.size() - numDimensions[2]) - 1].getPointPosition();
                 // std::cout << "nloop:" << nloop << std::endl;
-
+            
                 // Loop through each dimension to calculate position on the surface of a sphere
                 // The sphere takes the previous particle as it's Origin and the radius is related to the charge.
                 // The position on the surface will be affected by proximity to other particles.
-            switch(nloop)
+            switch(nloop - spaDimensionsStart)
             {
-                case 1:
+                case 0:
                 {
                 d = r * cos(s) * sin(t);
                 break;
                 }
-                case 2:
+                case 1:
                 {
                 d = r * sin(s) * sin(t);
                 break;
                 }
-                case 3:
+                case 2:
                 {
                 d = r * cos(t);
                 break;
                 }
-                case 4:
+                case 3:
                 {
                 d = 0;
                 break;
                 }
             }
-
+            
             d = d + pOrigin;
                 // std::cout << "d:" << d << " r:" << r << " s:" << s << " t:" << t << std::endl;
             g_Point.back().setPointPosition(d);
         }
         }
     
-    int l_pointEnd = int(g_Point.size()) - 1;
+    int l_pointStart = int(l_spaPointBase);
+    int l_pointEnd = int(g_Point.size());
     
         // The program will loop whilst the graphics window is open
     while(g_screen >= 0)
         {
-        g_screen = g_screens[g_screen]->runScreen(window);
+            // Prepared for multiscreen
+            //        g_screen = g_screens[g_screen]->runScreen(window);
             // SFML event handling to define what happens if the graphics window is closed
         sf::Event event;
         while (window.pollEvent(event))
             {
             if (event.type == sf::Event::Closed)
+                {
                 window.close();
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                window.close();
-            }
+                g_screen = -1;
+                break;
+                }
+            if (event.type == sf::Event::Resized)
+                {
+                screenSize = window.getSize();
+                l_screenX = double(screenSize.x);
+                l_screenY = double(screenSize.y);
+                if(l_screenX < 400)
+                    {
+                    l_screenX = 400;
+                    screenSize.x = l_screenX;
+                    }
+                if(l_screenY < 400)
+                    {
+                    l_screenY = 400;
+                    screenSize.y = l_screenY;
+                    }
+                window.setSize(screenSize);
+                screenSize = window.getSize();
+                l_screenX = double(screenSize.x);
+                l_screenY = double(screenSize.y);
+                }
+            if (event.type == sf::Event::KeyPressed)
+                {
+                switch (event.key.code)
+                    {
+                        case sf::Keyboard::Escape:
+                        window.close();
+                        return (0);
+                        break;
+                        case sf::Keyboard::Up:
+                            //                        posy -= movement_step;
+                        break;
+                        case sf::Keyboard::Down:
+                            //                        posy += movement_step;
+                        break;
+                        case sf::Keyboard::Left:
+                            //                        posx -= movement_step;
+                        break;
+                        case sf::Keyboard::Right:
+                            //                        posx += movement_step;
+                        break;
+                        default:
+                        break;
+                    }
+                }
             }
         
             // Toggle between discover map and explore discovered map when mouse clicked
@@ -795,38 +1231,41 @@ int main(int argc, const char * argv[]) {
             }
         /*
          // Early calculation for colliding elementary particles and the effect on direction and acceleration
-        for(int n = 0; n < l_pointEnd; n = n + 4)
+         for(int n = 0; n < l_pointEnd; n = n + 4)
+         {
+         for(int p = 0; p < l_pointEnd; p = p + 4)
+         {
+         if(n != p)
+         {
+         xd = g_Point[p].getPointPosition() - g_Point[n].getPointPosition();
+         yd = g_Point[p + 1].getPointPosition() - g_Point[n + 1].getPointPosition();
+         zd = g_Point[p + 2].getPointPosition() - g_Point[n + 2].getPointPosition();
+         pointDistance2 = (xd * xd + yd * yd + zd * zd);
+         effect = 1 + (1 / pointDistance2);
+         g_Point[n].setPointDifferential(g_Point[n].getPointDifferential() * effect);
+         g_Point[p].setPointDifferential(g_Point[p].getPointDifferential() * effect);
+         g_Point[n + 1].setPointDifferential(g_Point[n + 1].getPointDifferential() * effect);
+         g_Point[p + 1].setPointDifferential(g_Point[p + 1].getPointDifferential() * effect);
+         g_Point[n + 2].setPointDifferential(g_Point[n + 2].getPointDifferential() * effect);
+         g_Point[p + 2].setPointDifferential(g_Point[p + 2].getPointDifferential() * effect);
+         }
+         }
+         }
+         */
+        for(int n = l_pointStart; n < l_pointEnd; n++)
             {
-            for(int p = 0; p < l_pointEnd; p = p + 4)
-                {
-                if(n != p)
-                    {
-                    xd = g_Point[p].getPointPosition() - g_Point[n].getPointPosition();
-                    yd = g_Point[p + 1].getPointPosition() - g_Point[n + 1].getPointPosition();
-                    zd = g_Point[p + 2].getPointPosition() - g_Point[n + 2].getPointPosition();
-                    pointDistance2 = (xd * xd + yd * yd + zd * zd);
-                    effect = 1 + (1 / pointDistance2);
-                    g_Point[n].setPointDifferential(g_Point[n].getPointDifferential() * effect);
-                    g_Point[p].setPointDifferential(g_Point[p].getPointDifferential() * effect);
-                    g_Point[n + 1].setPointDifferential(g_Point[n + 1].getPointDifferential() * effect);
-                    g_Point[p + 1].setPointDifferential(g_Point[p + 1].getPointDifferential() * effect);
-                    g_Point[n + 2].setPointDifferential(g_Point[n + 2].getPointDifferential() * effect);
-                    g_Point[p + 2].setPointDifferential(g_Point[p + 2].getPointDifferential() * effect);
-                    }
-                }
-            }
-*/
-        for(int n = 0; n < l_pointEnd; n++)
-            {
+                //            std::cout << n << " ";
             g_Point[n].pointPoll(1);
             g_Point[n].overflowPoll();
             }
+            //        std::cout << std::endl;
         
             // Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
         g_drawPoints.clear();
-        for(int n = 0; n < l_pointEnd; n = n + 4)
+        for(int n = l_pointStart; n < l_pointEnd; n = n + numDimensions[2])
             {
-            g_drawPoints.push_back(sf::Vertex(sf::Vector2f((g_Point[n].getPointPosition() * l_scale) + (l_screenX / 2), l_screenY - ((g_Point[n + 1].getPointPosition() * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+            g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2), l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+                //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
             }
         g_drawLines.clear();
         /*
@@ -838,47 +1277,50 @@ int main(int argc, const char * argv[]) {
          */
         window.clear();
         
+            //        window.pushGLStates();
         window.draw(&g_drawQuads[0], g_drawQuads.size(), sf::Quads);
-        for (const auto& g_text : g_drawQuadText) { window.draw(g_text); }
+            //        window.popGLStates();
         
+            //        window.pushGLStates();
         window.draw(&g_drawPoints[0], g_drawPoints.size(), sf::Points);
+            //        window.popGLStates();
         
+            //        window.pushGLStates();
         window.draw(&g_drawLines[0], g_drawLines.size(), sf::Lines);
+            //        window.popGLStates();
         
-        l_title.str("");
-        l_title.clear();
-        l_title << "Clustering";
-        g_text.setString(l_title.str());
-        g_text.setCharacterSize(12);
-        g_text.setPosition(sf::Vector2f((l_screenX - (l_title.str().size() * 6)) / 2,0));
-        window.draw(g_text);
-        l_title.str("");
-        l_title.clear();
-        l_title << "Localise : Discover";
-        g_text.setString(l_title.str());
-        g_text.setCharacterSize(9);
-        g_text.setPosition(sf::Vector2f((l_screenX - (l_title.str().size() * 3)) / 2,55));
-        window.draw(g_text);
-        sf::RectangleShape toggleBackground(sf::Vector2f(50,25));
-        toggleBackground.setFillColor(sf::Color::Green);
-        toggleBackground.setPosition(sf::Vector2f((l_screenX / 2 ) - (20 / 2), 30));
-        window.draw(toggleBackground);
-        sf::RectangleShape toggleForground(sf::Vector2f(25,25));
-        toggleForground.setFillColor(sf::Color::Red);
-        toggleForground.setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 * g_toggle), 30));
-        window.draw(toggleForground);
+            // Group quads
+            //        g_drawRectangles[1].setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 * g_toggle), 30));
+        
+        for(int loopRectangles = 0; loopRectangles < int(g_drawRectangles.size()); loopRectangles++)
+            {
+            g_drawRectangles[loopRectangles].setPosition(g_Point[loopRectangles * 2].getPointPosition(), g_Point[(loopRectangles * 2) + 1].getPointPosition());
+                //            window.pushGLStates();
+            window.draw(g_drawRectangles[loopRectangles]);
+                //            window.popGLStates();
+            }
+        
+        for(int loopText = 1; loopText < int(g_drawText.size()); loopText++)
+            {
+            g_drawText[loopText].setPosition(g_Point[(loopText * 2) + (int(g_drawRectangles.size())*2)].getPointPosition(), g_Point[(loopText * 2) + 1 + (int(g_drawRectangles.size())*2)].getPointPosition());
+                //            window.pushGLStates();
+            window.draw(g_drawText[loopText]);
+                //            window.popGLStates();
+                //            std::cout << "X:" << g_Point[(loopText * 2) + (int(g_drawRectangles.size())*2)].getPointPosition() << " Y:" << g_Point[(loopText * 2) + 1 + (int(g_drawRectangles.size())*2)].getPointPosition() << std::endl;
+            }
+        
         window.display();
         }
         // Empty vectors before exiting (in reverse of creation)
         //    for(int dloop = int(g_Point.size()); dloop > 0; --dloop) delete (&g_Point[dloop - 1]);
-        //    g_Point.clear();
-        //    g_Matter.clear();
-        //    g_CompositeForce.clear();
-        //    g_CompositeParticle.clear();
-        //    g_ElementaryForce.clear();
-        //    g_ElementaryParticle.clear();
-        //    g_Dimension.clear();
-        //    g_Universe.clear();
+            g_Point.clear();
+            g_Matter.clear();
+            g_CompositeForce.clear();
+            g_CompositeParticle.clear();
+            g_ElementaryForce.clear();
+            g_ElementaryParticle.clear();
+           g_Dimension.clear();
+            g_Universe.clear();
     
     return EXIT_SUCCESS;
 }
