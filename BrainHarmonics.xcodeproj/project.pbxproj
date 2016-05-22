@@ -31,6 +31,10 @@
 		161990451C7518D700EA6040 /* quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1619902E1C7518D700EA6040 /* quad.cpp */; };
 		161990471C7518D700EA6040 /* solid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990311C7518D700EA6040 /* solid.cpp */; };
 		161990481C7518D700EA6040 /* universe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990331C7518D700EA6040 /* universe.cpp */; };
+		1631594D1CF2362B00E98186 /* localtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1631594B1CF2362B00E98186 /* localtime.cpp */; };
+		164FB31D1CF0C251000A7235 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31A1CF0C251000A7235 /* Cocoa.framework */; };
+		164FB31E1CF0C251000A7235 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31B1CF0C251000A7235 /* GLUT.framework */; };
+		164FB31F1CF0C251000A7235 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31C1CF0C251000A7235 /* OpenGL.framework */; };
 		165131E01CA1899600754DD0 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 165131DE1CA1899600754DD0 /* ResourcePath.mm */; };
 		168005C41C61FCB8007F5DF6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005C31C61FCB8007F5DF6 /* main.cpp */; };
 		168005D61C61FF7F007F5DF6 /* neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005D51C61FF7F007F5DF6 /* neuron.cpp */; };
@@ -47,6 +51,8 @@
 		168005ED1C620098007F5DF6 /* Cagate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005EB1C620098007F5DF6 /* Cagate.cpp */; };
 		168610B61CC2D1DE00F09001 /* multiscreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168610B41CC2D1DE00F09001 /* multiscreen.cpp */; };
 		16E3DFC21CBD46F000C7C2B1 /* spike.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16E3DFC01CBD46F000C7C2B1 /* spike.cpp */; };
+		16F8828F1CD1648600BE00B2 /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F8828D1CD1648600BE00B2 /* customer.cpp */; };
+		16F882921CD164B900BE00B2 /* warehouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F882901CD164B900BE00B2 /* warehouse.cpp */; };
 		16F8F3641CBEE204002E2658 /* monomer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3621CBEE204002E2658 /* monomer.cpp */; };
 		16F8F3671CBEE226002E2658 /* polymer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3651CBEE226002E2658 /* polymer.cpp */; };
 /* End PBXBuildFile section */
@@ -112,6 +118,13 @@
 		161990321C7518D700EA6040 /* solid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solid.h; path = ../../homegrown/include/solid.h; sourceTree = "<group>"; };
 		161990331C7518D700EA6040 /* universe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = universe.cpp; path = ../../homegrown/include/universe.cpp; sourceTree = "<group>"; };
 		161990341C7518D700EA6040 /* universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = universe.h; path = ../../homegrown/include/universe.h; sourceTree = "<group>"; };
+		1631594B1CF2362B00E98186 /* localtime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = localtime.cpp; sourceTree = "<group>"; };
+		1631594C1CF2362B00E98186 /* localtime.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = localtime.hpp; sourceTree = "<group>"; };
+		163FF45C1CDFC1FF002B7DE9 /* ccpx1.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccpx1.in; sourceTree = "<group>"; };
+		163FF45D1CDFC1FF002B7DE9 /* ccpx11.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccpx11.in; sourceTree = "<group>"; };
+		164FB31A1CF0C251000A7235 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
+		164FB31B1CF0C251000A7235 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		164FB31C1CF0C251000A7235 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		165131DD1CA1895500754DD0 /* BrainHarmonics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BrainHarmonics.plist; sourceTree = "<group>"; };
 		165131DE1CA1899600754DD0 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		165131DF1CA1899600754DD0 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
@@ -120,6 +133,7 @@
 		165131E41CA18A0C00754DD0 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		165131E51CA18A0C00754DD0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		165131E61CA1929A00754DD0 /* messages.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = messages.txt; sourceTree = "<group>"; };
+		1673F22E1CDD238000E156D9 /* pycompute.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = pycompute.py; path = DerivedData/Build/Products/Debug/pycompute.py; sourceTree = SOURCE_ROOT; };
 		168005C01C61FCB8007F5DF6 /* BrainHarmonics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrainHarmonics; sourceTree = BUILT_PRODUCTS_DIR; };
 		168005C31C61FCB8007F5DF6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		168005CA1C61FE1C007F5DF6 /* neuron.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = neuron.hpp; sourceTree = "<group>"; };
@@ -150,6 +164,10 @@
 		168610B51CC2D1DE00F09001 /* multiscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiscreen.h; sourceTree = "<group>"; };
 		16E3DFC01CBD46F000C7C2B1 /* spike.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike.cpp; sourceTree = "<group>"; };
 		16E3DFC11CBD46F000C7C2B1 /* spike.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spike.hpp; sourceTree = "<group>"; };
+		16F8828D1CD1648600BE00B2 /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = customer.cpp; path = ../../homegrown/include/customer.cpp; sourceTree = "<group>"; };
+		16F8828E1CD1648600BE00B2 /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = customer.h; path = ../../homegrown/include/customer.h; sourceTree = "<group>"; };
+		16F882901CD164B900BE00B2 /* warehouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = warehouse.cpp; path = ../../homegrown/include/warehouse.cpp; sourceTree = "<group>"; };
+		16F882911CD164B900BE00B2 /* warehouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = warehouse.h; path = ../../homegrown/include/warehouse.h; sourceTree = "<group>"; };
 		16F8F3621CBEE204002E2658 /* monomer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monomer.cpp; path = ../../homegrown/include/monomer.cpp; sourceTree = "<group>"; };
 		16F8F3631CBEE204002E2658 /* monomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monomer.h; path = ../../homegrown/include/monomer.h; sourceTree = "<group>"; };
 		16F8F3651CBEE226002E2658 /* polymer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polymer.cpp; path = ../../homegrown/include/polymer.cpp; sourceTree = "<group>"; };
@@ -161,6 +179,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164FB31E1CF0C251000A7235 /* GLUT.framework in Frameworks */,
+				164FB31D1CF0C251000A7235 /* Cocoa.framework in Frameworks */,
+				164FB31F1CF0C251000A7235 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +191,9 @@
 		165131DC1CA1892900754DD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				163FF45C1CDFC1FF002B7DE9 /* ccpx1.in */,
+				163FF45D1CDFC1FF002B7DE9 /* ccpx11.in */,
+				1673F22E1CDD238000E156D9 /* pycompute.py */,
 				165131DD1CA1895500754DD0 /* BrainHarmonics.plist */,
 			);
 			name = "Supporting Files";
@@ -190,6 +214,9 @@
 		168005B71C61FCB8007F5DF6 = {
 			isa = PBXGroup;
 			children = (
+				164FB31A1CF0C251000A7235 /* Cocoa.framework */,
+				164FB31B1CF0C251000A7235 /* GLUT.framework */,
+				164FB31C1CF0C251000A7235 /* OpenGL.framework */,
 				165131E11CA189CF00754DD0 /* Resources */,
 				165131DC1CA1892900754DD0 /* Supporting Files */,
 				168005C21C61FCB8007F5DF6 /* BrainHarmonics */,
@@ -225,10 +252,14 @@
 				168005EB1C620098007F5DF6 /* Cagate.cpp */,
 				168005EC1C620098007F5DF6 /* Cagate.hpp */,
 				161990131C7518D700EA6040 /* compositeforce.cpp */,
+				16F882901CD164B900BE00B2 /* warehouse.cpp */,
+				16F882911CD164B900BE00B2 /* warehouse.h */,
 				161990141C7518D700EA6040 /* compositeforce.h */,
 				161990151C7518D700EA6040 /* compositeparticle.cpp */,
 				161990161C7518D700EA6040 /* compositeparticle.h */,
 				168005DF1C61FFFF007F5DF6 /* dendrite.cpp */,
+				16F8828D1CD1648600BE00B2 /* customer.cpp */,
+				16F8828E1CD1648600BE00B2 /* customer.h */,
 				168005CF1C61FE8C007F5DF6 /* dendrite.hpp */,
 				160043C41C73317600871CD2 /* dendritebranch.cpp */,
 				160043C51C73317600871CD2 /* dendritebranch.hpp */,
@@ -289,6 +320,8 @@
 				160043D11C73349300871CD2 /* synapticvesicle.hpp */,
 				161990331C7518D700EA6040 /* universe.cpp */,
 				161990341C7518D700EA6040 /* universe.h */,
+				1631594B1CF2362B00E98186 /* localtime.cpp */,
+				1631594C1CF2362B00E98186 /* localtime.hpp */,
 				16E3DFC01CBD46F000C7C2B1 /* spike.cpp */,
 				16E3DFC11CBD46F000C7C2B1 /* spike.hpp */,
 			);
@@ -369,9 +402,11 @@
 				168005D81C61FF9D007F5DF6 /* soma.cpp in Sources */,
 				1619903B1C7518D700EA6040 /* elementaryparticle.cpp in Sources */,
 				1619903A1C7518D700EA6040 /* elementaryforce.cpp in Sources */,
+				1631594D1CF2362B00E98186 /* localtime.cpp in Sources */,
 				161990381C7518D700EA6040 /* compositeparticle.cpp in Sources */,
 				16F8F3671CBEE226002E2658 /* polymer.cpp in Sources */,
 				160043C91C73318B00871CD2 /* axonbranch.cpp in Sources */,
+				16F882921CD164B900BE00B2 /* warehouse.cpp in Sources */,
 				168005E41C62003A007F5DF6 /* Nachannel.cpp in Sources */,
 				161990391C7518D700EA6040 /* dimension.cpp in Sources */,
 				161990441C7518D700EA6040 /* polyhedron.cpp in Sources */,
@@ -382,6 +417,7 @@
 				161990451C7518D700EA6040 /* quad.cpp in Sources */,
 				161990431C7518D700EA6040 /* polygon.cpp in Sources */,
 				168005DE1C61FFEA007F5DF6 /* axon.cpp in Sources */,
+				16F8828F1CD1648600BE00B2 /* customer.cpp in Sources */,
 				161990371C7518D700EA6040 /* compositeforce.cpp in Sources */,
 				161990471C7518D700EA6040 /* solid.cpp in Sources */,
 				1619903E1C7518D700EA6040 /* line.cpp in Sources */,
@@ -403,69 +439,103 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				APP_BINARY_TYPE = FRAMEWORKS;
+				APP_COREFOUNDATION = "$(APP_LINK_PREFIX) CoreFoundation$(APP_LINK_SUFFIX)";
+				APP_FOUNDATION = "$(APP_LINK_PREFIX) Foundation$(APP_LINK_SUFFIX)";
+				APP_IOKIT = "$(APP_LINK_PREFIX) IOKit$(APP_LINK_SUFFIX)";
+				APP_LINK_FRAMEWORKS_PREFIX = "-framework";
+				APP_LINK_FRAMEWORKS_SUFFIX = "";
+				APP_LINK_PREFIX = "$(APP_LINK_$(APP_BINARY_TYPE)_PREFIX)";
+				APP_PYTHON = "$(APP_LINK_PREFIX) Python$(APP_LINK_SUFFIX)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
 				CODE_SIGN_IDENTITY = "";
+				CONCERTDIR = /Users/pbisaacs/Applications/IBM/ILOG/CPLEX_Studio125/concert;
 				COPY_PHASE_STRIP = YES;
+				CPLEX = "$(CPLEX_LINK_PREFIX) cplex$(CPLEX_LINK_SUFFIX)";
+				CPLEXDIR = /Users/pbisaacs/Applications/IBM/ILOG/CPLEX_Studio125/cplex;
+				CPLEX_BINARY_TYPE = DYLIBS;
+				CPLEX_CONCERT = "$(CPLEX_LINK_PREFIX) concert$(CPLEX_LINK_SUFFIX)";
+				CPLEX_ILO = "$(CPLEX_LINK_PREFIX) ilocplex$(CPLEX_LINK_SUFFIX)";
+				CPLEX_LINK_DYLIBS_PREFIX = "-l";
+				CPLEX_LINK_PREFIX = "$(CPLEX_LINK_$(CPLEX_BINARY_TYPE)_PREFIX)";
+				CPLEX_LINK_SUFFIX = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					/Library/Frameworks/,
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include/,
+					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/,
+					"/System/Library/Frameworks/Python.framework//Versions/2.7/Extras/lib/python/numpy/core/include/",
 					/usr/local/Aria/include/,
+					/usr/local/include/,
 					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
+					"$CPLEXDIR/include/**",
+					"$CONCERTDIR/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
+					"$(CPLEXDIR)/lib/x86-64_darwin/static_pic/",
+					"$(CONCERTDIR)/lib/x86-64_darwin/static_pic/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_LDFLAGS = (
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-					"$(inherited)",
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DIL_STD";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-O0",
+					"-m64",
+					"-O",
+					"-fPIC",
+					"-fpermissive",
+					"-DNDEBUG",
 				);
-				"OTHER_LDFLAGS[arch=*]" = (
+				OTHER_LDFLAGS = (
+					"$(APP_PYTHON)",
+					"$(APP_FOUNDATION)",
+					"$(APP_COREFOUNDATION)",
+					"$(APP_IOKIT)",
 					"$(SFML_SYSTEM)",
 					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
+					"$(CPLEX_ILO)",
+					"$(CPLEX_CONCERT)",
+					"$(CPLEX)",
 					"$(inherited)",
 				);
 				SDKROOT = macosx;
@@ -481,6 +551,7 @@
 				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -488,63 +559,99 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				APP_BINARY_TYPE = FRAMEWORKS;
+				APP_COREFOUNDATION = "$(APP_LINK_PREFIX) CoreFoundation$(APP_LINK_SUFFIX)";
+				APP_FOUNDATION = "$(APP_LINK_PREFIX) Foundation$(APP_LINK_SUFFIX)";
+				APP_IOKIT = "$(APP_LINK_PREFIX) IOKit$(APP_LINK_SUFFIX)";
+				APP_LINK_FRAMEWORKS_PREFIX = "-framework";
+				APP_LINK_FRAMEWORKS_SUFFIX = "";
+				APP_LINK_PREFIX = "$(APP_LINK_$(APP_BINARY_TYPE)_PREFIX)";
+				APP_PYTHON = "$(APP_LINK_PREFIX) Python$(APP_LINK_SUFFIX)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
 				CODE_SIGN_IDENTITY = "";
+				CONCERTDIR = /Users/pbisaacs/Applications/IBM/ILOG/CPLEX_Studio125/concert;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				CPLEX = "$(CPLEX_LINK_PREFIX) cplex$(CPLEX_LINK_SUFFIX)";
+				CPLEXDIR = /Users/pbisaacs/Applications/IBM/ILOG/CPLEX_Studio125/cplex;
+				CPLEX_BINARY_TYPE = DYLIBS;
+				CPLEX_CONCERT = "$(CPLEX_LINK_PREFIX) concert$(CPLEX_LINK_SUFFIX)";
+				CPLEX_ILO = "$(CPLEX_LINK_PREFIX) ilocplex$(CPLEX_LINK_SUFFIX)";
+				CPLEX_LINK_DYLIBS_PREFIX = "-l";
+				CPLEX_LINK_PREFIX = "$(CPLEX_LINK_$(CPLEX_BINARY_TYPE)_PREFIX)";
+				CPLEX_LINK_SUFFIX = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					/Library/Frameworks/,
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include/,
+					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/,
+					"/System/Library/Frameworks/Python.framework//Versions/2.7/Extras/lib/python/numpy/core/include/",
 					/usr/local/Aria/include/,
+					/usr/local/include/,
 					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
+					"$CPLEXDIR/include/**",
+					"$CONCERTDIR/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
+					"$(CPLEXDIR)/lib/x86-64_darwin/static_pic/",
+					"$(CONCERTDIR)/lib/x86-64_darwin/static_pic/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
-				OTHER_LDFLAGS = (
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-					"$(inherited)",
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DIL_STD";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-O0",
+					"-m64",
+					"-O",
+					"-fPIC",
+					"-fpermissive",
+					"-DNDEBUG",
 				);
-				"OTHER_LDFLAGS[arch=*]" = (
+				OTHER_LDFLAGS = (
+					"$(APP_PYTHON)",
+					"$(APP_FOUNDATION)",
+					"$(APP_COREFOUNDATION)",
+					"$(APP_IOKIT)",
 					"$(SFML_SYSTEM)",
 					"$(SFML_WINDOW)",
 					"$(SFML_GRAPHICS)",
 					"$(SFML_AUDIO)",
 					"$(SFML_NETWORK)",
+					"$(CPLEX_ILO)",
+					"$(CPLEX_CONCERT)",
+					"$(CPLEX)",
 					"$(inherited)",
 				);
 				SDKROOT = macosx;
@@ -560,53 +667,33 @@
 				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 		168005C81C61FCB8007F5DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../homegrown/include\"",
-					/usr/local/include/,
-					"$(inherited)",
-				);
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BrainHarmonics/BrainHarmonics.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../homegrown/lib\"",
-					/usr/local/lib/,
-					"$(inherited)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-				);
-				"OTHER_LDFLAGS[arch=*]" = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -614,46 +701,25 @@
 		168005C91C61FCB8007F5DF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = NO;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = NO;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../homegrown/include\"",
-					/usr/local/include/,
-					"$(inherited)",
-				);
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BrainHarmonics/BrainHarmonics.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../homegrown/lib\"",
-					/usr/local/lib/,
-					"$(inherited)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-				);
-				"OTHER_LDFLAGS[arch=*]" = (
-					"$(inherited)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
-				VALID_ARCHS = "i386 x86_64";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

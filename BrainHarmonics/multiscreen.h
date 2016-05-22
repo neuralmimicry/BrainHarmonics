@@ -19,7 +19,7 @@
 
 #include <iostream>
 #include "SFML/Graphics.hpp"
-#include "ResourcePath.hpp"
+    //#include "ResourcePath.hpp"
 
 class MultiScreen
 {
