@@ -10,14 +10,15 @@
 #define neurotransmitter_hpp
 
 #include <iostream>
+#include "polymer.h"
 
-class neurotransmitter
+class Neurotransmitter : public Polymer
 {
 public:
     /** Default constructor */
-    neurotransmitter() {};
+    Neurotransmitter(const Polymer& p) : Polymer(p) {};
     /** Default destructor */
-    virtual ~neurotransmitter() {};
+    virtual ~Neurotransmitter() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */

@@ -23,9 +23,9 @@ public:
      */
     unsigned int GetCounter() { return m_Counter; }
     double GetEnergy() { return m_Energy; }
-    /** Set m_Counter
-     * \param val New value to set
-     */
+    double getDendriteLength() { return m_dendriteLength; }
+
+    void setDendriteLength(double val) { m_dendriteLength = val; }
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Dendrite created." << std::endl; }
@@ -33,6 +33,8 @@ protected:
 private:
     unsigned int m_Counter; //!< Member variable "m_Counter"
     double m_Energy; //!< Member variable "m_Energy"
+                     // Length in micro-metres, typical 10-400 between branches
+    double m_dendriteLength;  //!< Member variable "m_dendriteLength"
 };
 
 #endif /* dendrite_hpp */

@@ -117,6 +117,7 @@
 #include "synapticvesicle.hpp"  /**< Synaptic vesicle, container of neurotransmitters */
 #include "Cagate.hpp"           /**< Calcium gate, component of Axon cleft         */
 #include "neurotransmitter.hpp" /**< Neurotransmitter, transfer component between clefts */
+#include "spike.hpp"            /**< Spikes                                        */
 #include "multiscreen.h"        /**< Screen layouts                                */
 
 #ifndef DEBUG_PROGRAM
@@ -354,6 +355,16 @@ int add_Neuron(std::vector<neuron> *toAddto)
     std::copy(&myNeuron, &myNeuron + 1, std::back_inserter(*toAddto));
     
         //    std::cout << "Neuron added." << std::endl;
+    return 0;                       /**< Return Success = 0 */
+}
+
+int add_Spike(std::vector<Spike> *toAddto)
+{
+    Spike mySpike;
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::copy(&mySpike, &mySpike + 1, std::back_inserter(*toAddto));
+    
+        //    std::cout << "Spike added." << std::endl;
     return 0;                       /**< Return Success = 0 */
 }
 
@@ -937,7 +948,7 @@ int main(int argc, const char * argv[]) {
         // Higher level of abstraction. Initial naming.
     std::vector <neuron> g_neuron;                      /**< Neuron container for other neuron components  */
     std::vector <dendritecleft> g_dendritecleft;        /**< Dendritic synaptic cleft, input to the neuron */
-    std::vector <neuroreceptor> g_neuroreceptor;        /**< Neuroreceptor, component of dendritic cleft   */
+    std::vector <Neuroreceptor> g_neuroreceptor;        /**< Neuroreceptor, component of dendritic cleft   */
     std::vector <synapse> g_synapse;                    /**< Synapse, area of stimulus transmission/reception */
     std::vector <membrane> g_membrane;                  /**< Membrane, outer component of the neuron       */
     std::vector <Kchannel> g_Kchannel;                  /**< Potassium channel, component of the membrane  */
@@ -953,19 +964,21 @@ int main(int argc, const char * argv[]) {
     std::vector <axoncleft> g_axoncleft;                /**< Axon synaptic cleft, output area of neuron    */
     std::vector <synapticvesicle> g_synapticvesicle;    /**< Synaptic vesicle, container of neurotransmitters */
     std::vector <Cagate> g_Cagate;                      /**< Calcium gate, component of Axon cleft         */
-    std::vector <neurotransmitter> g_neurotransmitter;  /**< Neurotransmitter, transfer component between clefts */
+    std::vector <Neurotransmitter> g_neurotransmitter;  /**< Neurotransmitter, transfer component between clefts */
+    std::vector <Spike> g_Spike;                        /**< Spike */
     
         //CCP Abstraction
     std::vector <Warehouse> g_warehouse;                /**< Warehouse container                           */
     std::vector <Customer> g_customer;                  /**< Customer container                            */
     std::vector <int> nodeList;
 
-    const int numUniverses = 4;     // Internal display, Physical material and spatial references
-    const int numDimensions [numUniverses] = {2, 1, 4, 2};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP
+    const int numUniverses = 5;     // Internal display, Physical material and spatial references
+    const int numDimensions [numUniverses] = {2, 1, 4, 2, 2};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP, U5 = Spikes
     const int intDimensionsStart = 0;
     const int phyDimensionsStart = intDimensionsStart + numDimensions[0];
     const int spaDimensionsStart = phyDimensionsStart + numDimensions[1];
     const int ccpDimensionsStart = spaDimensionsStart + numDimensions[2];
+    const int spkDimensionsStart = ccpDimensionsStart + numDimensions[2];
     const int initialElementaryParticles = 100;
     const int initialParticleAlignment = 200;
     const int infiniteLoopPrevention = 800;
@@ -1411,6 +1424,17 @@ int main(int argc, const char * argv[]) {
     
     std::cout << g_Polymer.size() << " polymer addresses created." << std::endl;
     
+    g_Spike.clear();
+    addStatus = add_Spike(&g_Spike);
+    if (addStatus)
+        {
+        std::cout << "Spike addition failed!" << std::endl;
+        return EXIT_FAILURE;
+        }
+    if (!g_Spike.empty()) g_Spike.back().creation();
+    
+    std::cout << g_Spike.size() << " spike addresses created." << std::endl;
+    
     g_Point.clear();
     
         // Add points to control application screen positions. Screen is two dimensions so two point values.
@@ -1850,6 +1874,29 @@ int main(int argc, const char * argv[]) {
     
     
     int l_ccpPointEnd = int(g_Point.size());
+    int l_spkPointStart = int(g_Point.size());
+    
+    for(int zloop = 0; zloop < 300; zloop++)
+        {
+        for (int nloop = spkDimensionsStart; nloop < spkDimensionsStart + numDimensions[4]; nloop++)
+            {
+
+        addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+        if (addStatus)
+            {
+            std::cout << "Point addition failed!" << std::endl;
+            return EXIT_FAILURE;
+            }
+        if (!g_Point.empty()) g_Point.back().creation();
+        if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
+            if (!g_Point.empty()) g_Point.back().setPointPosition(zloop);
+        }
+        g_Point.back().setPointPosition(g_Spike[0].pollSpike());
+            //        std::cout << g_Point.back().getPointPosition() << ", ";
+        }
+        //    std::cout << std::endl;
+    
+    int l_spkPointEnd = int(g_Point.size());
     int l_pointEnd = int(g_Point.size());
     
         // The program will loop whilst the graphics window is open
@@ -1934,7 +1981,7 @@ int main(int argc, const char * argv[]) {
                 {
                 pauseLoop = 0;
                 sleep(3);
-                std::cout << "Actual: " << time(0) << " Virtual: " << g_Universe[0].theTimeNow() << std::endl;
+                    //                std::cout << "Actual: " << time(0) << " Virtual: " << g_Universe[0].theTimeNow() << std::endl;
                 }
         /*
         for(int ploop = 0; ploop < 10000; ploop++)
@@ -2101,6 +2148,12 @@ int main(int argc, const char * argv[]) {
             g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(128,255,128,255)));
                 //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
             }
+        for(int n = l_spkPointStart; n < l_spkPointEnd; n = n + numDimensions[4])
+            {
+            g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(255,0,0,255)));
+                //            std::cout << g_Point[n].getPointPosition() << ":" << g_Point[n+1].getPointPosition() << ", ";
+            }
+            //        std::cout << std::endl;
         g_drawLines.clear();
         /*
          for(int n = 0; n < l_LineEnd; n++)

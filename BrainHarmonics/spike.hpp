@@ -22,19 +22,38 @@
 class Spike
 {
 public:
-    Spike();
-    virtual ~Spike();
-    
-    double pollSpike(double percentComplete)
+    Spike()
     {
-    m_spikeHeight = 0;
-    for(double nloop = 0; nloop < percentComplete; nloop++ )
+    
+    };
+    virtual ~Spike()
+    {
+    
+    };
+    
+    double getSpikeHeightReset() { return m_spikeHeightReset; }
+    double setSpikeHeightReset(double val) { m_spikeHeightReset = val; }
+    void spikeReset() { m_spikeHeight = m_spikeHeightReset; }
+    
+    double pollSpike()
+    {
+    m_spikeLoop++;
+    if(m_spikeLoop > 100)
         {
-        if(nloop < m_attackLength) m_spikeHeight = m_spikeHeight + ((m_attackPeak - m_attackBegin) / m_attackLength);
-        if(nloop > m_attackLength && nloop < (m_attackLength + m_sustainLength)) m_spikeHeight = m_spikeHeight + ((m_attackPeak - m_sustain) / m_sustainLength);
-        if(nloop > ( m_attackLength + m_sustainLength ) && nloop < (m_attackLength + m_sustainLength + m_refactoryLength)) m_spikeHeight = m_spikeHeight + ((m_sustain - m_refactoryBegin) / m_sustainLength);
+        m_spikeLoop = 0;
+        spikeReset();
         }
+    
+        m_spikeHeight = ((((m_attackPeak - m_attackBegin) / m_attackLength)) * m_spikeLoop) * (m_spikeLoop < m_attackLength);
+        if(m_spikeLoop > m_attackLength && m_spikeLoop < (m_attackLength + m_sustainLength)) m_spikeHeight =((m_attackPeak - m_sustain) / m_sustainLength);
+        if(m_spikeLoop > ( m_attackLength + m_sustainLength ) && m_spikeLoop < (m_attackLength + m_sustainLength + m_refactoryLength)) m_spikeHeight = ((m_sustain - m_refactoryBegin) / m_sustainLength);
+    
     return m_spikeHeight;
+    }
+    
+    void creation()
+    {
+    
     }
     
 protected:
@@ -49,5 +68,7 @@ private:
     double m_refactoryLength = 20;
     double m_refactoryEnd =8;
     double m_spikeHeight = 0;
+    double m_spikeHeightReset = 0;
+    double m_spikeLoop = 0;
 };
 #endif /* spike_hpp */
