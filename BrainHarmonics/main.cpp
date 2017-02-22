@@ -55,18 +55,18 @@
 #include <numpy/arrayobject.h>
 
     // GLUT on El Capitan - poor headers
- #ifdef __APPLE__
- #include <GLUT/glut.h>
- #include <OpenGL/gl.h>
- #include <OpenGL/glu.h>
- #else
- #ifdef _WIN32
- #include <windows.h>
- #endif
- #include <GL/gl.h>
- #include <GL/glu.h>
- #include <GL/glut.h>
- #endif
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+#endif
 
     // To use the std:: files
     //#define IL_STD
@@ -107,13 +107,14 @@
 #include "Nachannel.hpp"        /**< Sodium channel, component of the membrane     */
 #include "dendrite.hpp"         /**< Dendrite, pre-Soma component of a neuron      */
 #include "dendritebranch.hpp"   /**< Dendrite branch, division/join of dendrites   */
+#include "dendritespine.hpp"    /**< Dendrite spine, proto synapse support         */
 #include "soma.hpp"             /**< Soma, component of a neuron                   */
 #include "axonhillock.hpp"      /**< Axon Hillock, component of Soma               */
 #include "axon.hpp"             /**< Axon, connected to Axon Hillock               */
 #include "axonbranch.hpp"       /**< Axon branch, division/join of Axon            */
 #include "myelinsheath.hpp"     /**< Myelin sheath, wraps around Axon              */
 #include "schwanncell.hpp"      /**< Schwann Cell, component of a Myelin sheath    */
-#include "axoncleft.hpp"        /**< Axon synaptic cleft, output area of neuron    */
+#include "axonbouton.hpp"        /**< Axon synaptic cleft, output area of neuron    */
 #include "synapticvesicle.hpp"  /**< Synaptic vesicle, container of neurotransmitters */
 #include "Cagate.hpp"           /**< Calcium gate, component of Axon cleft         */
 #include "neurotransmitter.hpp" /**< Neurotransmitter, transfer component between clefts */
@@ -368,6 +369,16 @@ int add_Spike(std::vector<Spike> *toAddto)
     return 0;                       /**< Return Success = 0 */
 }
 
+int add_Dendrite(std::vector<dendrite> *toAddto)
+{
+    dendrite myDendrite;
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::copy(&myDendrite, &myDendrite + 1, std::back_inserter(*toAddto));
+    
+        //    std::cout << "Dendrite added." << std::endl;
+    return 0;                       /**< Return Success = 0 */
+}
+
     // Each add_ function creates an instance of the respective class and links back to the base class
     // For definition of Warehouses and Customers when simulating CPP environment
 int add_Warehouse(std::vector<Warehouse> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
@@ -477,9 +488,9 @@ int distanceBetweenNodes(std::vector<Point> *nodesQuery, std::vector<int> *nodes
     double actualDistance;
     double angleRAD;
     double angleDEG;
-
+    
         //    std::cout << "Received nodes: " << (*nodesList)[0] << ", " << (*nodesList)[1] << ", " << (*nodesList)[2] << ", " << (*nodesList)[3] << std::endl;
-
+    
     firstX = (*nodesQuery)[(*nodesList)[0]].getPointPosition();
     firstY = (*nodesQuery)[(*nodesList)[1]].getPointPosition();
     secondX = (*nodesQuery)[(*nodesList)[2]].getPointPosition();
@@ -517,53 +528,53 @@ int distanceBetweenNodes(std::vector<Point> *nodesQuery, std::vector<int> *nodes
             //        diffX = 0;
             //        diffY = 0;
         
-/*
-        if(desiredDistance < actualDistance)
-            {
-            diffX = sin(angleRAD);
-            diffY = cos(angleRAD);
-            }
-
-        if(desiredDistance > actualDistance)
-            {
-            diffX = sin(angleRAD + ONERAD);
-            diffY = cos(angleRAD + ONERAD);
-            }
-*/
+        /*
+         if(desiredDistance < actualDistance)
+         {
+         diffX = sin(angleRAD);
+         diffY = cos(angleRAD);
+         }
+         
+         if(desiredDistance > actualDistance)
+         {
+         diffX = sin(angleRAD + ONERAD);
+         diffY = cos(angleRAD + ONERAD);
+         }
+         */
         diffX = actualDistance * cos(diffX / actualDistance);
         diffY = actualDistance * sin(diffY / actualDistance);
         
         
             //                  std::cout << "(" << firstX << "," << firstY << ") (" << secondX << "," << secondY << ") " << desiredDistance << ":" << direction << " <" << angleDEG << " = (" << diffX << "," << diffY << ")" << std::endl;
-/*
-        if(desiredDistance != 0)
-            {
-            if((actualDistance / desiredDistance) > 0.95 && (actualDistance / desiredDistance) < 1.05)
-                {
-                (*nodesQuery)[(*nodesList)[0]].setPointDifferential(0);
-                (*nodesQuery)[(*nodesList)[0]].setPointMove(0);
-                (*nodesQuery)[(*nodesList)[1]].setPointDifferential(0);
-                (*nodesQuery)[(*nodesList)[1]].setPointMove(0);
- */
-                /*
-                 (*nodesQuery)[(*nodesList)[2]].setPointDifferential(0);
-                 (*nodesQuery)[(*nodesList)[2]].setPointMove(0);
-                 (*nodesQuery)[(*nodesList)[3]].setPointDifferential(0);
-                 (*nodesQuery)[(*nodesList)[3]].setPointMove(0);
-                 */
         /*
-                }
-            else
-                {
+         if(desiredDistance != 0)
+         {
+         if((actualDistance / desiredDistance) > 0.95 && (actualDistance / desiredDistance) < 1.05)
+         {
+         (*nodesQuery)[(*nodesList)[0]].setPointDifferential(0);
+         (*nodesQuery)[(*nodesList)[0]].setPointMove(0);
+         (*nodesQuery)[(*nodesList)[1]].setPointDifferential(0);
+         (*nodesQuery)[(*nodesList)[1]].setPointMove(0);
          */
-                (*nodesQuery)[(*nodesList)[0]].setPointDifferential((((*nodesQuery)[(*nodesList)[0]].getPointDifferential() + diffX)/2));
-                (*nodesQuery)[(*nodesList)[1]].setPointDifferential((((*nodesQuery)[(*nodesList)[1]].getPointDifferential() + diffY)/2));
-                    //                (*nodesQuery)[(*nodesList)[2]].setPointDifferential((((*nodesQuery)[(*nodesList)[2]].getPointDifferential() - diffX)/2));
-                    //                (*nodesQuery)[(*nodesList)[3]].setPointDifferential((((*nodesQuery)[(*nodesList)[3]].getPointDifferential() - diffY)/2));
-                
-                    //                std::cout << "Amended : " << (*nodesQuery)[(*nodesList)[0]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[1]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[2]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[3]].getPointDifferential() << std::endl;
-                    //                }
-                    //            }
+        /*
+         (*nodesQuery)[(*nodesList)[2]].setPointDifferential(0);
+         (*nodesQuery)[(*nodesList)[2]].setPointMove(0);
+         (*nodesQuery)[(*nodesList)[3]].setPointDifferential(0);
+         (*nodesQuery)[(*nodesList)[3]].setPointMove(0);
+         */
+        /*
+         }
+         else
+         {
+         */
+        (*nodesQuery)[(*nodesList)[0]].setPointDifferential((((*nodesQuery)[(*nodesList)[0]].getPointDifferential() + diffX)/2));
+        (*nodesQuery)[(*nodesList)[1]].setPointDifferential((((*nodesQuery)[(*nodesList)[1]].getPointDifferential() + diffY)/2));
+            //                (*nodesQuery)[(*nodesList)[2]].setPointDifferential((((*nodesQuery)[(*nodesList)[2]].getPointDifferential() - diffX)/2));
+            //                (*nodesQuery)[(*nodesList)[3]].setPointDifferential((((*nodesQuery)[(*nodesList)[3]].getPointDifferential() - diffY)/2));
+        
+            //                std::cout << "Amended : " << (*nodesQuery)[(*nodesList)[0]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[1]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[2]].getPointDifferential() << ", " << (*nodesQuery)[(*nodesList)[3]].getPointDifferential() << std::endl;
+            //                }
+            //            }
         }
     return EXIT_SUCCESS;
 }
@@ -896,7 +907,7 @@ int init(int argc, const char * argv[])
 {
     /* Initialise random seed */
     srand (time(NULL));
-
+    
     atexit(exitCB);				/* Set application exit callback */
     return 0;
 }
@@ -955,13 +966,14 @@ int main(int argc, const char * argv[]) {
     std::vector <Nachannel> g_Nachannel;                /**< Sodium channel, component of the membrane     */
     std::vector <dendrite>  g_dendrite;                 /**< Dendrite, pre-Soma component of a neuron      */
     std::vector <dendritebranch> g_dendritebranch;      /**< Dendrite branch, division/join of dendrites   */
+    std::vector <dendritespine> g_dendritespine;        /**< Dendrite spine, proto synapse support         */
     std::vector <soma> g_soma;                          /**< Soma, component of a neuron                   */
     std::vector <axonhillock> g_axonhillock;            /**< Axon Hillock, component of Soma               */
     std::vector <axon> g_axon;                          /**< Axon, connected to Axon Hillock               */
     std::vector <axonbranch> g_axonbranch;              /**< Axon branch, division/join of Axon            */
     std::vector <myelinsheath> g_myelinsheath;          /**< Myelin sheath, wraps around Axon              */
     std::vector <schwanncell> g_schwanncell;            /**< Schwann Cell, component of a Myelin sheath    */
-    std::vector <axoncleft> g_axoncleft;                /**< Axon synaptic cleft, output area of neuron    */
+    std::vector <axonbouton> g_axonbouton;                /**< Axon synaptic cleft, output area of neuron    */
     std::vector <synapticvesicle> g_synapticvesicle;    /**< Synaptic vesicle, container of neurotransmitters */
     std::vector <Cagate> g_Cagate;                      /**< Calcium gate, component of Axon cleft         */
     std::vector <Neurotransmitter> g_neurotransmitter;  /**< Neurotransmitter, transfer component between clefts */
@@ -971,19 +983,41 @@ int main(int argc, const char * argv[]) {
     std::vector <Warehouse> g_warehouse;                /**< Warehouse container                           */
     std::vector <Customer> g_customer;                  /**< Customer container                            */
     std::vector <int> nodeList;
+    
+    const int numUniverses = 8;     // Internal display, Physical material and spatial references
+    const int numDimensions [numUniverses] = {2, 1, 4, 2, 2, 3, 3, 3};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP, U5 = Spikes, U6 = Neurotransmitters, U7 = Connectome
 
-    const int numUniverses = 5;     // Internal display, Physical material and spatial references
-    const int numDimensions [numUniverses] = {2, 1, 4, 2, 2};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP, U5 = Spikes
     const int intDimensionsStart = 0;
+        // Physics dimensionality - calculating quark interactions
     const int phyDimensionsStart = intDimensionsStart + numDimensions[0];
+        // Spatial dimensionality - real world representation
     const int spaDimensionsStart = phyDimensionsStart + numDimensions[1];
+        // Customer delivery problem - separate project
     const int ccpDimensionsStart = spaDimensionsStart + numDimensions[2];
-    const int spkDimensionsStart = ccpDimensionsStart + numDimensions[2];
-    const int initialElementaryParticles = 100;
-    const int initialParticleAlignment = 200;
+        // Focus on spikes
+    const int spkDimensionsStart = ccpDimensionsStart + numDimensions[3];
+        // Focus on neurotransmitter calculations
+    const int ntrDimensionsStart = spkDimensionsStart + numDimensions[4];
+        // Focus on dendrite calculations
+    const int denDimensionsStart = ntrDimensionsStart + numDimensions[5];
+        // Focus on neuron calculations
+    const int nrnDimensionsStart = denDimensionsStart + numDimensions[6];
+
+        // Initial number of starting components for each subproject
+        // The Physics problem
+    const int initialElementaryParticles = 10;
+    const int initialParticleAlignment = 20;
     const int infiniteLoopPrevention = 800;
+
+        // The Warehouse/Customer delivery problem
     const int initialCustomers = 50;
-    const int initialCustomerAlignment = 200;
+    const int initialCustomerAlignment = 20;
+
+        // Brain calculations
+    const int initialNeurotransmitters = 100;
+    const int initialSpikes = 6;
+    const int initialDendrites = 20;
+    const int initialNeurons = 100;
     
     int addStatus;
     bool patternFound = false;
@@ -998,19 +1032,23 @@ int main(int argc, const char * argv[]) {
     int counter_Spin = 0;
     int counter_Walk = 0;
     int counter_InfiniteLoopPrevention = 0;
+
     int l_spaPointBase = 0; // Base of data points (Moves because of use by internal graphics for points control too
     int howMany_Particles = 0;
     int howMany_Customers = 0;
     int howMany_Warehouses = 0;
     int current_Distance = 0;
     int max_Distance = 0;
+
     int l_pointStart = 0;
     int l_ccpPointStart = 0;
+
     bool l_switch = true;
     int l_origin = 0;
     int l_origin_Test1 = 0;
     int l_origin_Test3 = 0;
     int l_origin_Test5 = 0;
+
     double l_charge = 0;
     double l_lastCharge = 0;
     int pauseLoop = 0;
@@ -1424,14 +1462,47 @@ int main(int argc, const char * argv[]) {
     
     std::cout << g_Polymer.size() << " polymer addresses created." << std::endl;
     
-    g_Spike.clear();
-    addStatus = add_Spike(&g_Spike);
-    if (addStatus)
+    g_neuron.clear();
+    for(int nloop = 0;nloop < initialNeurons; nloop++)
         {
-        std::cout << "Spike addition failed!" << std::endl;
-        return EXIT_FAILURE;
+        addStatus = add_Neuron(&g_neuron);
+        if (addStatus)
+            {
+            std::cout << "Neuron addition failed!" << std::endl;
+            return EXIT_FAILURE;
+            }
+        if (!g_neuron.empty()) g_neuron.back().Creation();
         }
-    if (!g_Spike.empty()) g_Spike.back().creation();
+    
+    std::cout << g_neuron.size() << " neuron addresses created." << std::endl;
+    
+    /*
+    g_dendrite.clear();
+    for(int nloop = 0;nloop < initialDendrites; nloop++)
+        {
+        addStatus = add_Dendrite(&g_dendrite);
+        if (addStatus)
+            {
+            std::cout << "Dendrite addition failed!" << std::endl;
+            return EXIT_FAILURE;
+            }
+        if (!g_dendrite.empty()) g_dendrite.back().Creation();
+        }
+    
+    std::cout << g_dendrite.size() << " dendrite addresses created." << std::endl;
+    */
+    
+    g_Spike.clear();
+    for(int nloop = 0;nloop < initialSpikes; nloop++)
+        {
+        addStatus = add_Spike(&g_Spike);
+        if (addStatus)
+            {
+            std::cout << "Spike addition failed!" << std::endl;
+            return EXIT_FAILURE;
+            }
+        if (!g_Spike.empty()) g_Spike.back().creation();
+        }
     
     std::cout << g_Spike.size() << " spike addresses created." << std::endl;
     
@@ -1874,27 +1945,35 @@ int main(int argc, const char * argv[]) {
     
     
     int l_ccpPointEnd = int(g_Point.size());
+        // End of CCP draw points
+    
+        // Start of Spike draw points
     int l_spkPointStart = int(g_Point.size());
     
-    for(int zloop = 0; zloop < 300; zloop++)
+    for(int qloop = 0; qloop < initialSpikes; qloop++)
         {
-        for (int nloop = spkDimensionsStart; nloop < spkDimensionsStart + numDimensions[4]; nloop++)
+        for(int zloop = 0; zloop < 300; zloop++)
             {
-
-        addStatus = add_Point(&g_Point, &g_Dimension, nloop);
-        if (addStatus)
-            {
-            std::cout << "Point addition failed!" << std::endl;
-            return EXIT_FAILURE;
+            for (int nloop = spkDimensionsStart; nloop < spkDimensionsStart + numDimensions[4]; nloop++)
+                {
+                
+                addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+                if (addStatus)
+                    {
+                    std::cout << "Point addition failed!" << std::endl;
+                    return EXIT_FAILURE;
+                    }
+                if (!g_Point.empty()) g_Point.back().creation();
+                if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
+                if (!g_Point.empty()) g_Point.back().setPointPosition(zloop);
+                
+                if(nloop == spkDimensionsStart) g_Point.back().setPointPosition(zloop);
+                if(nloop == spkDimensionsStart + 1) g_Point.back().setPointPosition(g_Spike[qloop].pollSpike() + (100 * qloop));
+                    //        std::cout << g_Point.back().getPointPosition() << ", ";
+                }
             }
-        if (!g_Point.empty()) g_Point.back().creation();
-        if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
-            if (!g_Point.empty()) g_Point.back().setPointPosition(zloop);
+            //    std::cout << std::endl;
         }
-        g_Point.back().setPointPosition(g_Spike[0].pollSpike());
-            //        std::cout << g_Point.back().getPointPosition() << ", ";
-        }
-        //    std::cout << std::endl;
     
     int l_spkPointEnd = int(g_Point.size());
     int l_pointEnd = int(g_Point.size());
@@ -1975,19 +2054,19 @@ int main(int argc, const char * argv[]) {
             {
             g_buttonPressed = false;
             }
-
+        
         pauseLoop++;
-            if(pauseLoop > 1000)
-                {
-                pauseLoop = 0;
-                sleep(3);
-                    //                std::cout << "Actual: " << time(0) << " Virtual: " << g_Universe[0].theTimeNow() << std::endl;
-                }
-        /*
-        for(int ploop = 0; ploop < 10000; ploop++)
+        if(pauseLoop > 1000)
             {
-            
+            pauseLoop = 0;
+            sleep(3);
+                //                std::cout << "Actual: " << time(0) << " Virtual: " << g_Universe[0].theTimeNow() << std::endl;
             }
+        /*
+         for(int ploop = 0; ploop < 10000; ploop++)
+         {
+         
+         }
          */
         /*
          // Early calculation for colliding elementary particles and the effect on direction and acceleration
@@ -2031,10 +2110,10 @@ int main(int argc, const char * argv[]) {
                 addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
                 
                     //                std::cout << "Retrieved : " << g_Point[nodeList[0]].getPointDifferential() << ", " << g_Point[nodeList[1]].getPointDifferential() << ", " << g_Point[nodeList[2]].getPointDifferential() << ", " << g_Point[nodeList[3]].getPointDifferential() << std::endl;
-
+                
                 }
             }
-
+        
         for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
             {
             l_demandCounter = 0;
@@ -2058,27 +2137,27 @@ int main(int argc, const char * argv[]) {
                     //                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " << g_customer[int((x - l_ccpPointStart)/2)].getAllocatedWarehouse() << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
                 }
             }
-
+        
         for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
             {
             for(int x = l_ccpPointStart + 100; x < l_ccpPointStart + 200; x = x + 2)
                 {
                 if (n != x)
                     {
-                l_desiredDistance = 100;
-                nodeList.clear();
-                nodeList.push_back(n);
-                nodeList.push_back(n + 1);
-                nodeList.push_back(x);
-                nodeList.push_back(x + 1);
-                
-                    //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
-                
-                addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
+                    l_desiredDistance = 100;
+                    nodeList.clear();
+                    nodeList.push_back(n);
+                    nodeList.push_back(n + 1);
+                    nodeList.push_back(x);
+                    nodeList.push_back(x + 1);
+                    
+                        //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
+                    
+                    addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
                     }
                 }
             }
-
+        
         pArgs = NULL;
         pArrayArgs = NULL;
         pTransferArray = NULL;
@@ -2204,6 +2283,8 @@ int main(int argc, const char * argv[]) {
     Py_XDECREF(pFunc);
     Py_DECREF(pModule);
     Py_Finalize();
+    g_dendrite.clear();
+    g_Spike.clear();
     g_Point.clear();
     g_Matter.clear();
     g_CompositeForce.clear();

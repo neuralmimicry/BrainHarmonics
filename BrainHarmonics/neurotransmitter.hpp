@@ -16,6 +16,7 @@ class Neurotransmitter : public Polymer
 {
 public:
     /** Default constructor */
+    Neurotransmitter() {};
     Neurotransmitter(const Polymer& p) : Polymer(p) {};
     /** Default destructor */
     virtual ~Neurotransmitter() {};

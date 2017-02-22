@@ -1,32 +1,33 @@
 //
-//  dendritebranch.hpp
+//  dendritespine.hpp
 //  BrainHarmonics
 //
-//  Created by Paul Isaac's on 16/02/16.
-//  Copyright © 2016 Paul Isaac's. All rights reserved.
+//  Created by Paul Isaac's on 08/02/17.
+//  Copyright © 2017 Paul Isaac's. All rights reserved.
 //
 
-#ifndef dendritebranch_hpp
-#define dendritebranch_hpp
+#ifndef dendritespine_hpp
+#define dendritespine_hpp
 
 #include <iostream>
+#include "dendritecleft.hpp"
 
-class dendritebranch
+class dendritespine
 {
 public:
     /** Default constructor */
-    dendritebranch()
+    dendritespine()
     {
-    dendritebranch(0);
+    dendritespine(0);
     }
     
-    dendritebranch(int val)
+    dendritespine(int val)
     {
     m_NeuronType = val;
     resetParameters();
     };
     /** Default destructor */
-    virtual ~dendritebranch() {};
+    virtual ~dendritespine() {};
     /** Access m_Counter
      * \return The current value of m_Counter
      */
@@ -37,7 +38,7 @@ public:
      */
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
-    void Creation() {std::cout << "Dendrite branch created." << std::endl; }
+    void Creation() {std::cout << "Dendrite spine created." << std::endl; }
     void resetParameters()
     {
     m_Volume = 100;
@@ -67,6 +68,7 @@ public:
             break;
             }
         }
+    
     }
 protected:
 private:
@@ -78,4 +80,4 @@ private:
     double m_Energy; //!< Member variable "m_Energy"
 };
 
-#endif /* dendritebranch_hpp */
+#endif /* dendritespine_hpp */

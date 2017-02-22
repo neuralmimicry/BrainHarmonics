@@ -10,6 +10,7 @@
 #define synapticvesicle_hpp
 
 #include <iostream>
+#include "neurotransmitter.hpp"
 
 class synapticvesicle
 {
@@ -33,6 +34,7 @@ protected:
 private:
     unsigned int m_Counter; //!< Member variable "m_Counter"
     double m_Energy; //!< Member variable "m_Energy"
+    Neurotransmitter m_neurotransmitter[10];
 };
 
 #endif /* synapticvesicle_hpp */
