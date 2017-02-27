@@ -12,7 +12,7 @@
 		160043C61C73317600871CD2 /* dendritebranch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043C41C73317600871CD2 /* dendritebranch.cpp */; };
 		160043C91C73318B00871CD2 /* axonbranch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043C71C73318B00871CD2 /* axonbranch.cpp */; };
 		160043CC1C7332B300871CD2 /* dendritecleft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043CA1C7332B300871CD2 /* dendritecleft.cpp */; };
-		160043CF1C7332CB00871CD2 /* axoncleft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043CD1C7332CB00871CD2 /* axoncleft.cpp */; };
+		160043CF1C7332CB00871CD2 /* axonbouton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043CD1C7332CB00871CD2 /* axonbouton.cpp */; };
 		160043D21C73349300871CD2 /* synapticvesicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 160043D01C73349300871CD2 /* synapticvesicle.cpp */; };
 		161990351C7518D700EA6040 /* abstraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1619900F1C7518D700EA6040 /* abstraction.cpp */; };
 		161990361C7518D700EA6040 /* apptimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 161990111C7518D700EA6040 /* apptimer.cpp */; };
@@ -36,6 +36,7 @@
 		164FB31E1CF0C251000A7235 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31B1CF0C251000A7235 /* GLUT.framework */; };
 		164FB31F1CF0C251000A7235 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31C1CF0C251000A7235 /* OpenGL.framework */; };
 		165131E01CA1899600754DD0 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 165131DE1CA1899600754DD0 /* ResourcePath.mm */; };
+		166364E71E4C6805002C459A /* dendritespine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 166364E51E4C6805002C459A /* dendritespine.cpp */; };
 		168005C41C61FCB8007F5DF6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005C31C61FCB8007F5DF6 /* main.cpp */; };
 		168005D61C61FF7F007F5DF6 /* neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005D51C61FF7F007F5DF6 /* neuron.cpp */; };
 		168005D81C61FF9D007F5DF6 /* soma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 168005D71C61FF9D007F5DF6 /* soma.cpp */; };
@@ -80,8 +81,8 @@
 		160043C81C73318B00871CD2 /* axonbranch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = axonbranch.hpp; sourceTree = "<group>"; };
 		160043CA1C7332B300871CD2 /* dendritecleft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendritecleft.cpp; sourceTree = "<group>"; };
 		160043CB1C7332B300871CD2 /* dendritecleft.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dendritecleft.hpp; sourceTree = "<group>"; };
-		160043CD1C7332CB00871CD2 /* axoncleft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axoncleft.cpp; sourceTree = "<group>"; };
-		160043CE1C7332CB00871CD2 /* axoncleft.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = axoncleft.hpp; sourceTree = "<group>"; };
+		160043CD1C7332CB00871CD2 /* axonbouton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axonbouton.cpp; sourceTree = "<group>"; };
+		160043CE1C7332CB00871CD2 /* axonbouton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = axonbouton.hpp; sourceTree = "<group>"; };
 		160043D01C73349300871CD2 /* synapticvesicle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synapticvesicle.cpp; sourceTree = "<group>"; };
 		160043D11C73349300871CD2 /* synapticvesicle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = synapticvesicle.hpp; sourceTree = "<group>"; };
 		1619900F1C7518D700EA6040 /* abstraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = abstraction.cpp; path = ../../homegrown/include/abstraction.cpp; sourceTree = "<group>"; };
@@ -133,6 +134,8 @@
 		165131E41CA18A0C00754DD0 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		165131E51CA18A0C00754DD0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		165131E61CA1929A00754DD0 /* messages.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = messages.txt; sourceTree = "<group>"; };
+		166364E51E4C6805002C459A /* dendritespine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendritespine.cpp; sourceTree = "<group>"; };
+		166364E61E4C6805002C459A /* dendritespine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dendritespine.hpp; sourceTree = "<group>"; };
 		1673F22E1CDD238000E156D9 /* pycompute.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = pycompute.py; path = DerivedData/Build/Products/Debug/pycompute.py; sourceTree = SOURCE_ROOT; };
 		168005C01C61FCB8007F5DF6 /* BrainHarmonics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrainHarmonics; sourceTree = BUILT_PRODUCTS_DIR; };
 		168005C31C61FCB8007F5DF6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -245,8 +248,8 @@
 				168005CE1C61FE7A007F5DF6 /* axon.hpp */,
 				160043C71C73318B00871CD2 /* axonbranch.cpp */,
 				160043C81C73318B00871CD2 /* axonbranch.hpp */,
-				160043CD1C7332CB00871CD2 /* axoncleft.cpp */,
-				160043CE1C7332CB00871CD2 /* axoncleft.hpp */,
+				160043CD1C7332CB00871CD2 /* axonbouton.cpp */,
+				160043CE1C7332CB00871CD2 /* axonbouton.hpp */,
 				168005D91C61FFB7007F5DF6 /* axonhillock.cpp */,
 				168005CC1C61FE48007F5DF6 /* axonhillock.hpp */,
 				168005EB1C620098007F5DF6 /* Cagate.cpp */,
@@ -265,6 +268,8 @@
 				160043C51C73317600871CD2 /* dendritebranch.hpp */,
 				160043CA1C7332B300871CD2 /* dendritecleft.cpp */,
 				160043CB1C7332B300871CD2 /* dendritecleft.hpp */,
+				166364E51E4C6805002C459A /* dendritespine.cpp */,
+				166364E61E4C6805002C459A /* dendritespine.hpp */,
 				161990171C7518D700EA6040 /* dimension.cpp */,
 				161990181C7518D700EA6040 /* dimension.h */,
 				161990191C7518D700EA6040 /* elementaryforce.cpp */,
@@ -398,8 +403,9 @@
 				160043C01C73292E00871CD2 /* myelinsheath.cpp in Sources */,
 				161990361C7518D700EA6040 /* apptimer.cpp in Sources */,
 				168005DC1C61FFCD007F5DF6 /* schwanncell.cpp in Sources */,
-				160043CF1C7332CB00871CD2 /* axoncleft.cpp in Sources */,
+				160043CF1C7332CB00871CD2 /* axonbouton.cpp in Sources */,
 				168005D81C61FF9D007F5DF6 /* soma.cpp in Sources */,
+				166364E71E4C6805002C459A /* dendritespine.cpp in Sources */,
 				1619903B1C7518D700EA6040 /* elementaryparticle.cpp in Sources */,
 				1619903A1C7518D700EA6040 /* elementaryforce.cpp in Sources */,
 				1631594D1CF2362B00E98186 /* localtime.cpp in Sources */,

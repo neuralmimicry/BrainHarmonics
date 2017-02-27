@@ -9,8 +9,10 @@
 #ifndef axonbranch_hpp
 #define axonbranch_hpp
 
+#include <chrono>
 #include <iostream>
 #include <vector>
+typedef std::chrono::high_resolution_clock Clock;
 
 class axonbranch
 {
@@ -66,14 +68,46 @@ public:
         }
     
     }
+    
+    int Update(std::chrono::time_point<std::chrono::high_resolution_clock> val)
+    {
+    m_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(val - m_oldClock).count();
+    if (m_duration < 0)
+        {
+        m_duration = 0;
+        }
+    if (m_duration > 1000)
+        {
+        
+        }
+        // Clock duration does not consider parallel or serial operation
+    m_oldClock = val;
+    return 0;
+    }
+
 protected:
 private:
     int m_NeuronType;
     int m_addStatus;
+    std::chrono::time_point<std::chrono::high_resolution_clock> m_oldClock;
+    int m_duration;
     double m_Volume;
     double m_SurfaceArea;
     unsigned int m_Counter; //!< Member variable "m_Counter"
     double m_Energy; //!< Member variable "m_Energy"
+    double m_TimeDilation;
+    double m_TimeThreshold;
+    struct s_CounterAdjustment
+    {
+    s_CounterAdjustment() : s_CounterBegin(std::chrono::high_resolution_clock::now()), s_PointToCounter(0), s_Pool(0), s_Interval(0), s_Shape(0) {}
+    std::chrono::time_point<std::chrono::high_resolution_clock> s_CounterBegin;
+    double* s_PointToCounter;
+    double s_Pool;
+    int s_Interval;
+    int s_Shape;
+    };
+    
+    std::vector<s_CounterAdjustment> m_TemporalAdjustment;
 };
 
 #endif /* axonbranch_hpp */

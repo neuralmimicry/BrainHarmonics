@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------*/
 /* @file      neuron.cpp                                                        */
-/* @details   Assign structure for scalar values                                */
+/* @details   Holding object for components of a neuron                         */
 /* @author    Paul Isaac's                                                      */
 /* @date      16.02.2016                                                        */
 /* @Copyright © 2016 Paul Isaac's. All rights reserved.                         */
