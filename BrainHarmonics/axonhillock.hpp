@@ -9,7 +9,7 @@
 #ifndef axonhillock_hpp
 #define axonhillock_hpp
 
-#include <algorithm>
+//#include <algorithm>
 #include <chrono>
 #include <iostream>
 #include "axon.hpp"
@@ -123,17 +123,10 @@ public:
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<axon>::iterator it = m_AxonList.begin(); it != m_AxonList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
 
     if (m_Energy > 0)
         {

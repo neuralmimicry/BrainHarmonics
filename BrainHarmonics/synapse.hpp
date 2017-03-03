@@ -1,32 +1,48 @@
-//
-//  synapse.hpp
-//  BrainHarmonics
-//
-//**  Created by Paul Isaac's on 03/02/16.
-//  Copyright © 2016 Paul Isaac's. All rights reserved.
-//
+    //
+    //  synapse.hpp
+    //  BrainHarmonics
+    //
+    //**  Created by Paul Isaac's on 03/02/16.
+    //  Copyright © 2016 Paul Isaac's. All rights reserved.
+    //
 
 #ifndef synapse_hpp
 #define synapse_hpp
 
-#include <algorithm>
+    //#include <algorithm>
 #include <chrono>
 #include <iostream>
 #include <vector>
+#include "polymer.h"
 #include "neurotransmitter.hpp"
 #include "neuroreceptor.hpp"
 typedef std::chrono::high_resolution_clock Clock;
 
-class synapse
+class synapse : Polymer
 {
 public:
-    /** Default constructor */
-    synapse() {};
+    synapse()
+    {
+    synapse(std::chrono::high_resolution_clock::now(), *new Polymer());
+    }
+    
+    synapse(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    synapse(eventTime, *new Polymer());
+    }
+    
+    synapse(const Polymer& p) : Polymer(p)
+    {
+    synapse(std::chrono::high_resolution_clock::now(), p);
+    }
+    
+    synapse(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, const Polymer& p) : Polymer(p)
+    {
+    resetParameters(eventTime);
+    }
     /** Default destructor */
     virtual ~synapse() {};
-    /** Access m_Counter
-     * \return The current value of m_Counter
-     */
+    
     unsigned int GetCounter() { return m_Counter; }
     double GetEnergy() { return m_Energy; }
     void AddEnergy(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, double val)
@@ -42,71 +58,66 @@ public:
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Synapse created." << std::endl; }
-    void resetParameters()
-    {
-    m_Energy = 0;
     
+    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    m_Counter = 0;
+    m_Energy = 0;
     }
-
-    void SendBareSpike()
+    
+    void SendBareSpike(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     m_Energy += 1000;
     }
     
-    int create_Neurotransmitter()
-    {
-    Neurotransmitter myNeurotransmitter;
-    m_NeurotransmitterList.push_back(myNeurotransmitter);
-    return 0;
-    }
-    
-    int add_Neurotransmitter(Neurotransmitter *val)
+    int add_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neurotransmitter *val)
     {
     m_NeurotransmitterList.push_back(*val);
     return 0;
     }
-
-    int remove_Neurotransmitter(Neurotransmitter *val)
+    
+    int create_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
-    m_NeurotransmitterList.erase(std::remove(m_NeurotransmitterList.begin(), m_NeurotransmitterList.end(), *val), m_NeurotransmitterList.end());
+    Neurotransmitter myNeurotransmitter(eventTime);
+    add_Neurotransmitter(eventTime, &myNeurotransmitter);
     return 0;
     }
     
-    void SendTransmitterSpike()
+    int remove_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neurotransmitter *val)
+    {
+        //m_NeurotransmitterList.erase(std::remove(m_NeurotransmitterList.begin(), m_NeurotransmitterList.end(), *val), m_NeurotransmitterList.end());
+    return 0;
+    }
+    
+    void SendTransmitterSpike(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     for (int nloop = 0; nloop < 100; nloop++)
         {
-            create_Neurotransmitter();
+        create_Neurotransmitter(eventTime);
         }
-    SendBareSpike();
+    SendBareSpike(eventTime);
     }
     
-    int add_Neuroreceptor(Neuroreceptor *val)
+    int add_Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neuroreceptor *val)
     {
     m_NeuroreceptorList.push_back(*val);
     return 0;
     }
     
-    int remove_Neuroreceptor(Neuroreceptor *val)
+    int remove_Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neuroreceptor *val)
     {
-    m_NeuroreceptorList.erase(std::remove(m_NeuroreceptorList.begin(), m_NeuroreceptorList.end(), *val), m_NeuroreceptorList.end());
+        //m_NeuroreceptorList.erase(std::remove(m_NeuroreceptorList.begin(), m_NeuroreceptorList.end(), *val), m_NeuroreceptorList.end());
     return 0;
     }
     
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
+    bool bindingFound;
     adjust_Counters(eventTime);
     
-#pragma omp parallel
+    for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
         {
-#pragma omp single nowait
-            {
-            for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
-                {
-#pragma omp task
-                it->Update(eventTime);
-                }
-            }
+        it->Update(eventTime);
         }
     
     if (m_Energy > 0)
@@ -125,7 +136,40 @@ public:
         }
     if (m_duration > 1000)
         {
-        
+        for(std::vector<Neuroreceptor>::iterator it_receptor = m_NeuroreceptorList.begin(); it_receptor != m_NeuroreceptorList.end(); ++it_receptor)
+            {
+            bindingFound = false;
+            for(std::vector<s_BindList>::iterator it_bindrec = m_BindList.begin(); it_bindrec != m_BindList.end(); ++it_bindrec)
+                {
+                if (it_bindrec->m_Neuroreceptor == &(*it_receptor))
+                    {
+                    bindingFound = true;
+                    }
+                }
+            if(!bindingFound)
+                {
+                for(std::vector<Neurotransmitter>::iterator it_transmitter = m_NeurotransmitterList.begin(); it_transmitter != m_NeurotransmitterList.end(); ++it_transmitter)
+                    {
+                    for(std::vector<s_BindList>::iterator it_bindrec = m_BindList.begin(); it_bindrec != m_BindList.end(); ++it_bindrec)
+                        {
+                        if (it_bindrec->m_Neurotransmitter == &(*it_transmitter))
+                            {
+                            bindingFound = true;
+                            }
+                        }
+                    if(!bindingFound)
+                        {
+                        if (it_receptor->CompatibilityCheck(it_transmitter->GetType()))
+                            {
+                            s_BindList newBinding;
+                            newBinding.m_Neuroreceptor = &(*it_receptor);
+                            newBinding.m_Neurotransmitter = &(*it_transmitter);
+                            m_BindList.push_back(newBinding);
+                            }
+                        }
+                    }
+                }
+            }
         }
         // Clock duration does not consider parallel or serial operation
     m_oldClock = eventTime;
@@ -220,6 +264,15 @@ private:
     double m_ReducedBy;
     std::vector<Neurotransmitter> m_NeurotransmitterList;
     std::vector<Neuroreceptor> m_NeuroreceptorList;
+    
+    struct s_BindList
+    {
+    Neurotransmitter* m_Neurotransmitter;
+    Neuroreceptor* m_Neuroreceptor;
+    };
+    
+    std::vector<s_BindList> m_BindList;
+    
 };
 
 #endif /* synapse_hpp */

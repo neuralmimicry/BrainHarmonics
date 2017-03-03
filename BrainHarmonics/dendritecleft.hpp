@@ -12,6 +12,7 @@
 #include <iostream>
 #include <vector>
 #include "neuroreceptor.hpp"
+#include "synapse.hpp"
 
 class dendritecleft
 {
@@ -80,41 +81,37 @@ public:
         }
     }
     
-    int growth(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    int ConnectSynapse(std::chrono::time_point<Clock> eventTime, synapse* link_synapse, double distance)
     {
-    if (m_Energy > (m_EnergyThreshold * .9))
-        {
-        add_TemporalAdjustment(eventTime, &m_Size, 1, 10000, 0);
-        }
-    if (m_Energy < (m_EnergyThreshold * .1))
-        {
-        add_TemporalAdjustment(eventTime, &m_Size, -1, 10000, 0);
-        }
-    if (m_Size < 1)
-        {
-        m_Size = 1;
-        }
-    if (m_Size > 50)
-        {
-        m_Size = 50;
-        }
+    s_SynapseDescription synapseConnection;
+    synapseConnection.s_Synapse = link_synapse;
+    synapseConnection.s_Distance = distance;
+    m_SynapseList.push_back(synapseConnection);
     return 0;
     }
-
+    
+    int growth_Surface(std::chrono::time_point<Clock> eventTime, double surf_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_SurfaceArea, surf_change, 100, 0);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+    
+    int growth_Volume(std::chrono::time_point<Clock> eventTime, double vol_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_Volume, vol_change, 100, 0);
+    int func_status = growth_Surface(eventTime, vol_change*0.1);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+    
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<Neuroreceptor>::iterator it = m_NeuroreceptorList.begin(); it != m_NeuroreceptorList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
     
     if (m_Energy < m_EnergyThreshold)
         {
@@ -131,7 +128,6 @@ public:
         }
     if (m_duration > 1000)
         {
-        growth(eventTime);
         m_EnergyThreshold = m_Size * 1000;
         }
 
@@ -238,6 +234,13 @@ private:
     
     std::vector<s_CounterAdjustment> m_TemporalAdjustment;
     std::vector<Neuroreceptor> m_NeuroreceptorList;
+
+    struct s_SynapseDescription
+    {
+    synapse* s_Synapse;
+    double s_Distance;
+    };
+    std::vector<s_SynapseDescription> m_SynapseList;
 };
 
 #endif /* dendritecleft_hpp */

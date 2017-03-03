@@ -9,7 +9,7 @@
 #ifndef neurotransmitter_hpp
 #define neurotransmitter_hpp
 
-#include <algorithm>
+//#include <algorithm>
 #include <chrono>
 #include <iostream>
 #include "polymer.h"
@@ -19,8 +19,26 @@ class Neurotransmitter : public Polymer
 {
 public:
     /** Default constructor */
-    Neurotransmitter() {};
-    Neurotransmitter(const Polymer& p) : Polymer(p) {};
+    Neurotransmitter()
+    {
+    Neurotransmitter(std::chrono::high_resolution_clock::now(), *new Polymer());
+    }
+    
+    Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    Neurotransmitter(eventTime, *new Polymer());
+    }
+    
+    Neurotransmitter(const Polymer& p) : Polymer(p)
+    {
+    Neurotransmitter(std::chrono::high_resolution_clock::now(), p);
+    }
+    
+    Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, const Polymer& p) : Polymer(p)
+    {
+    resetParameters(eventTime);
+    }
+    
     /** Default destructor */
     virtual ~Neurotransmitter() {};
     void AddEnergy(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, double val)
@@ -30,26 +48,44 @@ public:
     }
     unsigned int GetCounter() { return m_Counter; }
     double GetEnergy() { return m_Energy; }
-    /** Set m_Counter
-     * \param val New value to set
-     */
+    int GetType() { return m_TransmitterType; }
+
+    void SetType(int val) { m_TransmitterType = val; }
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Neurotransmitter created." << std::endl; }
     
+    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    m_Counter = 0;
+    AddEnergy(eventTime, 100);
+    m_EnergyThreshold = 2000;
+    m_Size = 1;
+    m_TransmitterType = 0;
+    switch(m_NeuronType)
+        {
+            case 0:
+            {
+            m_Size = 3;
+            break;
+            }
+            case 1:
+            {
+            m_Size = 2;
+            break;
+            }
+            case 2:
+            {
+            m_Size = 1;
+            break;
+            }
+        }
+    
+    }
+
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
-    
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
-                {
-#pragma omp task
-                }
-            }
-        }
     
     if (m_Energy > 0)
         {
@@ -136,14 +172,16 @@ public:
 protected:
 private:
     int m_NeuronType;
+    int m_TransmitterType;
     int m_addStatus;
     std::chrono::time_point<std::chrono::high_resolution_clock> m_oldClock;
     int m_duration;
     double m_Volume;
     double m_SurfaceArea;
+    double m_Size;
     unsigned int m_Counter; //!< Member variable "m_Counter"
     double m_Energy; //!< Member variable "m_Energy"
-    double m_axonlength;
+    double m_EnergyThreshold;
     double m_TimeDilation;
     double m_TimeThreshold;
     

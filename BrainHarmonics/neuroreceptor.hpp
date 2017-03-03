@@ -1,25 +1,25 @@
-//
-//  neuroreceptor.h
-//  BrainHarmonics
-//
-//  Created by Paul Isaac's on 03/02/16.
-//  Copyright © 2016 Paul Isaac's. All rights reserved.
-//
-// The Energy level used in this function only enables the receptor to activate.
-// It does not necessarily mean that a spike will flow through. It depends what
-// is waiting in the void beyond the membrane.
-//
-// Metabotropic Receptors and Ionotropic Receptor are possibilities
-// The type of receptor can be defined by polymer connection or stated
-// as an integer type.
-//
-// Metabotropic
-// 1: Receptive to GABA neurotransmitters
-// 2:
-// Ionotropic
-// 3: Cys-loop
-// 4: Glutamate receptor
-// 5: ATP-gated
+    //
+    //  neuroreceptor.h
+    //  BrainHarmonics
+    //
+    //  Created by Paul Isaac's on 03/02/16.
+    //  Copyright © 2016 Paul Isaac's. All rights reserved.
+    //
+    // The Energy level used in this function only enables the receptor to activate.
+    // It does not necessarily mean that a spike will flow through. It depends what
+    // is waiting in the void beyond the membrane.
+    //
+    // Metabotropic Receptors and Ionotropic Receptor are possibilities
+    // The type of receptor can be defined by polymer connection or stated
+    // as an integer type.
+    //
+    // Metabotropic
+    // 1: Receptive to GABA neurotransmitters
+    // 2:
+    // Ionotropic
+    // 3: Cys-loop
+    // 4: Glutamate receptor
+    // 5: ATP-gated
 
     // Type-3 Serotonin receptor (5HT3-R)
 
@@ -35,11 +35,25 @@ typedef std::chrono::high_resolution_clock Clock;
 class Neuroreceptor : public Polymer
 {
 public:
-    /** Default constructor */
+    Neuroreceptor()
+    {
+    Neuroreceptor(std::chrono::high_resolution_clock::now(), *new Polymer());
+    }
+    
+    Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    Neuroreceptor(eventTime, *new Polymer());
+    }
+    
+    Neuroreceptor(const Polymer& p) : Polymer(p)
+    {
+    Neuroreceptor(std::chrono::high_resolution_clock::now(), p);
+    }
+    
     Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, const Polymer& p) : Polymer(p)
     {
-        resetParameters(eventTime);
-    };
+    resetParameters(eventTime);
+    }
     /** Default destructor */
     virtual ~Neuroreceptor() {};
     /** Access m_Counter
@@ -108,20 +122,46 @@ public:
     m_oldClock = Clock::now();
     }
     
+    bool CompatibilityCheck(int neurotransmitterType)
+    {
+    switch(m_typeReceptor)
+        {
+            case 0:
+            {
+            if(neurotransmitterType >=0)
+                {
+                return true;
+                }
+            else
+                {
+                return false;
+                }
+            break;
+            }
+            case 1:
+            {
+            if(neurotransmitterType >=0)
+                {
+                return true;
+                }
+            else
+                {
+                return false;
+                }
+            break;
+            }
+            return false;
+        }
+    
+    }
+    
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
     
-#pragma omp parallel
+    for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
         {
-#pragma omp single nowait
-            {
-            for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
-                {
-#pragma omp task
-                it->Update(eventTime);
-                }
-            }
+        it->Update(eventTime);
         }
     
     if (m_Energy > 0)
@@ -132,7 +172,7 @@ public:
             it->AddEnergy(eventTime, m_Energy/m_NeurotransmitterList.size());
             }
         }
-
+    
     m_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - m_oldClock).count();
     if (m_duration < 0)
         {
@@ -154,7 +194,7 @@ public:
             setReceptorBindingState(false);
             }
         }
-
+    
         // Clock duration does not consider parallel or serial operation
     m_oldClock = eventTime;
     return 0;
@@ -176,44 +216,44 @@ public:
     int timeDifference;
     double incrementBy;
     /*
-    for(std::vector<s_CounterAdjustment>::iterator it = m_TemporalAdjustment.begin(); it != m_TemporalAdjustment.end(); ++it)
-        {
-        timeDifference = std::chrono::duration_cast<std::chrono::nanoseconds>(currentTime - it->s_CounterBegin).count();
-        if (timeDifference > 0)
-            {
-            incrementBy = 1;
-            switch(it->s_Shape)
-                {
-                    case 0:
-                    {
-                    incrementBy = it->s_Pool / (it->s_Interval / timeDifference);
-                    break;
-                    }
-                    case 1:
-                    {
-                    incrementBy = it->s_Pool / (it->s_Interval / timeDifference);
-                    break;
-                    }
-                }
-            it->s_Pool -= incrementBy;
-            if (it->s_Pool < 0 && incrementBy > 0)
-                {
-                incrementBy += it->s_Pool;
-                }
-            if (it->s_Pool > 0 && incrementBy < 0)
-                {
-                incrementBy -= it->s_Pool;
-                }
-            *it->s_PointToCounter += incrementBy;
-                // Increment in nanoseconds?? Is this the right scale factor
-            it->s_CounterBegin += std::chrono::nanoseconds(it->s_Interval);
-            }
-        else
-            {
-            it->s_Pool = 0;
-            }
-        
-        }
+     for(std::vector<s_CounterAdjustment>::iterator it = m_TemporalAdjustment.begin(); it != m_TemporalAdjustment.end(); ++it)
+     {
+     timeDifference = std::chrono::duration_cast<std::chrono::nanoseconds>(currentTime - it->s_CounterBegin).count();
+     if (timeDifference > 0)
+     {
+     incrementBy = 1;
+     switch(it->s_Shape)
+     {
+     case 0:
+     {
+     incrementBy = it->s_Pool / (it->s_Interval / timeDifference);
+     break;
+     }
+     case 1:
+     {
+     incrementBy = it->s_Pool / (it->s_Interval / timeDifference);
+     break;
+     }
+     }
+     it->s_Pool -= incrementBy;
+     if (it->s_Pool < 0 && incrementBy > 0)
+     {
+     incrementBy += it->s_Pool;
+     }
+     if (it->s_Pool > 0 && incrementBy < 0)
+     {
+     incrementBy -= it->s_Pool;
+     }
+     *it->s_PointToCounter += incrementBy;
+     // Increment in nanoseconds?? Is this the right scale factor
+     it->s_CounterBegin += std::chrono::nanoseconds(it->s_Interval);
+     }
+     else
+     {
+     it->s_Pool = 0;
+     }
+     
+     }
      */
         // Remove empty pools of adjustments
         //    m_TemporalAdjustment.erase(std::remove(m_TemporalAdjustment.begin(), m_TemporalAdjustment.end(), [&](s_CounterAdjustment const & counter) { return counter.s_Pool == 0; }), m_TemporalAdjustment.end());

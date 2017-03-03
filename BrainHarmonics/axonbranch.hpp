@@ -12,22 +12,38 @@
 #include <chrono>
 #include <iostream>
 #include <vector>
+#include "polymer.h"
 typedef std::chrono::high_resolution_clock Clock;
 
-class axonbranch
+class axonbranch : Polymer
 {
 public:
     /** Default constructor */
     axonbranch()
     {
-    axonbranch(0);
+    axonbranch(std::chrono::high_resolution_clock::now(), 0, *new Polymer());
     }
     
-    axonbranch(int val)
+    axonbranch(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    axonbranch(eventTime, 0, *new Polymer());
+    }
+    
+    axonbranch(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, int val)
+    {
+    axonbranch(eventTime, val, *new Polymer());
+    }
+    
+    axonbranch(const Polymer& p) : Polymer(p)
+    {
+    axonbranch(std::chrono::high_resolution_clock::now(), 0, p);
+    }
+    
+    axonbranch(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, int val, const Polymer& p) : Polymer(p)
     {
     m_NeuronType = val;
-    resetParameters();
-    };
+    resetParameters(eventTime);
+    }
     /** Default destructor */
     virtual ~axonbranch() {};
     /** Access m_Counter
@@ -41,7 +57,7 @@ public:
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Axon branch created." << std::endl; }
-    void resetParameters()
+    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     m_Volume = 100;
     m_SurfaceArea = 100;

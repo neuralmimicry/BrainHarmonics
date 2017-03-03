@@ -30,18 +30,18 @@ public:
     m_NeuronType = val;
     resetParameters(eventTime);
         // If every soma has an axonhillock, build an axonhillock for this soma
-    m_addStatus = add_Axonhillock();
+    m_addStatus = add_Axonhillock(eventTime);
     if(m_addStatus==0)
         {
-        std::cout << "Axonhillock energy: " << m_AxonHillockList[0].GetEnergy() << std::endl;
+        std::cout << "Axonhillock energy: " << m_AxonhillockList[0].GetEnergy() << std::endl;
         }
         // If every soma has a dendrite, build a couple of dendrites for this soma
-    m_addStatus = add_Dendrite();
+    m_addStatus = add_Dendrite(eventTime);
     if(m_addStatus==0)
         {
         std::cout << "Dendrite(0) energy: " << m_DendriteList[0].GetEnergy() << std::endl;
         }
-    m_addStatus = add_Dendrite();
+    m_addStatus = add_Dendrite(eventTime);
     if(m_addStatus==0)
         {
         std::cout << "Dendrite(1) energy: " << m_DendriteList[1].GetEnergy() << std::endl;
@@ -135,15 +135,15 @@ public:
      }
      */
     
-    int add_Axonhillock()
+    int add_Axonhillock(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
-    m_AxonhillockList.push_back(axonhillock(m_NeuronType));
+    m_AxonhillockList.push_back(axonhillock(eventTime, m_NeuronType));
     return 0;
     }
     
-    int add_Dendrite()
+    int add_Dendrite(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
-    m_DendriteList.push_back(dendrite(m_NeuronType));
+    m_DendriteList.push_back(dendrite(eventTime, m_NeuronType));
     return 0;
     }
     
@@ -151,11 +151,11 @@ public:
     {
     if (m_Energy > (m_EnergyThreshold * .9))
         {
-        add_TemporalAdjustment(eventTime, &m_Size, 1, 10000, 0)
+        add_TemporalAdjustment(eventTime, &m_Size, 1, 10000, 0);
         }
     if (m_Energy < (m_EnergyThreshold * .1))
         {
-        add_TemporalAdjustment(eventTime, &m_Size, -1, 10000, 0)
+        add_TemporalAdjustment(eventTime, &m_Size, -1, 10000, 0);
         }
     if (m_Size < 1)
         {
@@ -171,25 +171,14 @@ public:
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<axonhillock>::iterator it = m_AxonhillockList.begin(); it != m_AxonhillockList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-#pragma omp single nowait
-            {
             for(std::vector<dendrite>::iterator it = m_DendriteList.begin(); it != m_DendriteList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
     
     if (m_Energy < m_EnergyThreshold)
         {

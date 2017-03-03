@@ -14,11 +14,35 @@
 #include "neurotransmitter.hpp"
 typedef std::chrono::high_resolution_clock Clock;
 
-class synapticvesicle
+class synapticvesicle : Polymer
 {
 public:
     /** Default constructor */
-    synapticvesicle() {};
+    synapticvesicle()
+    {
+    synapticvesicle(Clock::now(), 0);
+    }
+    
+    synapticvesicle(std::chrono::time_point<Clock> eventTime)
+    {
+    synapticvesicle(eventTime, 0);
+    }
+    
+    synapticvesicle(std::chrono::time_point<Clock> eventTime, int val)
+    {
+    synapticvesicle(eventTime, val, *new Polymer());
+    }
+    
+    synapticvesicle(const Polymer& p) : Polymer(p)
+    {
+    synapticvesicle(Clock::now(), 0, p);
+    }
+    
+    synapticvesicle(std::chrono::time_point<Clock> eventTime, int val, const Polymer& p) : Polymer(p)
+    {
+    m_NeuronType = val;
+    resetParameters(eventTime);
+    }
     /** Default destructor */
     virtual ~synapticvesicle() {};
     /** Access m_Counter
@@ -26,6 +50,7 @@ public:
      */
     unsigned int GetCounter() { return m_Counter; }
     double GetEnergy() { return m_Energy; }
+    int GetReleaseState(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime) { return m_ReleaseState; }
     void AddEnergy(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, double val)
     {
     add_TemporalAdjustment(eventTime, &m_Energy, val, 100, 0);     // Add energy
@@ -34,22 +59,64 @@ public:
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Synaptic vesicle created." << std::endl; }
+
+    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    m_Volume = 100;
+    m_SurfaceArea = 100;
+    m_ReleaseState = 0;
+    switch(m_NeuronType)
+        {
+            case 0:
+            {
+            m_Volume = 100;
+            m_SurfaceArea = 100;
+            break;
+            }
+            case 1:
+            {
+            m_Volume = 100;
+            m_SurfaceArea = 100;
+            break;
+            }
+            case 2:
+            {
+            m_Volume = 100;
+            m_SurfaceArea = 100;
+            break;
+            }
+        }
+    
+    }
+    
+    int growth_Surface(std::chrono::time_point<Clock> eventTime, double surf_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_SurfaceArea, surf_change, 100, 0);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+    
+    int growth_Volume(std::chrono::time_point<Clock> eventTime, double vol_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_Volume, vol_change, 100, 0);
+    int func_status = growth_Surface(eventTime, vol_change*0.1);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+
+    void ReleaseNeurotransmitters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    {
+    
+    }
     
     int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     adjust_Counters(eventTime);
     
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
     
     if (m_Energy > 0)
         {
@@ -89,6 +156,7 @@ public:
     {
     int timeDifference;
     double incrementBy;
+    /*
     for(std::vector<s_CounterAdjustment>::iterator it = m_TemporalAdjustment.begin(); it != m_TemporalAdjustment.end(); ++it)
         {
         timeDifference = std::chrono::duration_cast<std::chrono::nanoseconds>(currentTime - it->s_CounterBegin).count();
@@ -127,6 +195,7 @@ public:
             }
         
         }
+     */
         // Remove empty pools of adjustments
         //    m_TemporalAdjustment.erase(std::remove(m_TemporalAdjustment.begin(), m_TemporalAdjustment.end(), [&](s_CounterAdjustment const & counter) { return counter.s_Pool == 0; }), m_TemporalAdjustment.end());
         // Remove adjusters when energy depleted
@@ -138,6 +207,7 @@ protected:
 private:
     int m_NeuronType;
     int m_addStatus;
+    int m_ReleaseState;
     std::chrono::time_point<std::chrono::high_resolution_clock> m_oldClock;
     int m_duration;
     double m_Volume;

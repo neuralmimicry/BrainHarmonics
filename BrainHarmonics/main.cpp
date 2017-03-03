@@ -30,7 +30,7 @@
     //}
 
     // Standard Template Libraries (STL)
-#include <algorithm>            /**< For max, min, sort function                   */
+//#include <algorithm>            /**< For max, min, sort function                   */
 #include <array>                /**< For array in CRC-32 call                      */
 #include <cstring>              /**< For handling strings                          */
 #include <cstdint>              /**< For byte handling in CRC-32                   */

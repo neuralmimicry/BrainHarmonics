@@ -163,17 +163,10 @@ public:
     {
     adjust_Counters(eventTime);
     
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<soma>::iterator it = m_SomaList.begin(); it != m_SomaList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
     
     m_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - m_oldClock).count();
     if (m_duration < 0)

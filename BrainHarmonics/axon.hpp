@@ -94,15 +94,15 @@ public:
         }
 */
     
-    int add_AxonBranch()
+    int add_AxonBranch(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
-    m_AxonBranchList.push_back(axonbranch(m_NeuronType));
+    m_AxonBranchList.push_back(axonbranch(eventTime, m_NeuronType));
     return 0;
     }
     
-    int add_AxonBouton()
+    int add_AxonBouton(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
-    m_AxonBoutonList.push_back(axonbouton(m_NeuronType));
+    m_AxonBoutonList.push_back(axonbouton(eventTime, m_NeuronType));
     return 0;
     }
     
@@ -132,25 +132,14 @@ public:
     {
     adjust_Counters(eventTime);
 
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<axonbranch>::iterator it = m_AxonBranchList.begin(); it != m_AxonBranchList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-#pragma omp single nowait
-            {
             for(std::vector<axonbouton>::iterator it = m_AxonBoutonList.begin(); it != m_AxonBoutonList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-        }
 
     if (m_Energy > 0)
         {

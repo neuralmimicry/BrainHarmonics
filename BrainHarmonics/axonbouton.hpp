@@ -11,25 +11,40 @@
 
 #include <chrono>
 #include <iostream>
-#include "synapticvesicle.hpp"
+#include "polymer.h"
 #include "synapse.hpp"
+#include "synapticvesicle.hpp"
 typedef std::chrono::high_resolution_clock Clock;
 
-class axonbouton
+class axonbouton : Polymer
 {
 public:
     /** Default constructor */
     axonbouton()
     {
-    axonbouton(0);
+    axonbouton(Clock::now(), 0);
     }
     
-    axonbouton(int val)
+    axonbouton(std::chrono::time_point<Clock> eventTime)
+    {
+    axonbouton(eventTime, 0);
+    }
+    
+    axonbouton(std::chrono::time_point<Clock> eventTime, int val)
+    {
+    axonbouton(eventTime, val, *new Polymer());
+    }
+    
+    axonbouton(const Polymer& p) : Polymer(p)
+    {
+    axonbouton(Clock::now(), 0, p);
+    }
+    
+    axonbouton(std::chrono::time_point<Clock> eventTime, int val, const Polymer& p) : Polymer(p)
     {
     m_NeuronType = val;
-    resetParameters();
-
-    };
+    resetParameters(eventTime);
+    }
     /** Default destructor */
     virtual ~axonbouton() {};
     /** Access m_Counter
@@ -45,7 +60,7 @@ public:
     void SetCounter(unsigned int val) { m_Counter = val; }
     void SetEnergy(double val) { m_Energy = val; }
     void Creation() {std::cout << "Axon bouton created." << std::endl; }
-    void resetParameters()
+    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
     {
     m_Volume = 100;
     m_SurfaceArea = 100;
@@ -73,29 +88,39 @@ public:
     
     }
     
-    int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
+    int ConnectSynapse(std::chrono::time_point<Clock> eventTime, synapse* link_synapse, double distance)
     {
+    s_SynapseDescription synapseConnection;
+    synapseConnection.s_Synapse = link_synapse;
+    synapseConnection.s_Distance = distance;
+    m_SynapseList.push_back(synapseConnection);
+    return 0;
+    }
+    
+    int growth_Surface(std::chrono::time_point<Clock> eventTime, double surf_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_SurfaceArea, surf_change, 100, 0);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+    
+    int growth_Volume(std::chrono::time_point<Clock> eventTime, double vol_change)
+    {
+    add_TemporalAdjustment(eventTime, &m_Volume, vol_change, 100, 0);
+    int func_status = growth_Surface(eventTime, vol_change*0.1);
+    add_TemporalAdjustment(eventTime, &m_Energy, -100, 100, 0);
+    return 0;
+    }
+    
+    int Update(std::chrono::time_point<Clock> eventTime)
+    {
+    int release_State;
     adjust_Counters(eventTime);
     
-#pragma omp parallel
-        {
-#pragma omp single nowait
-            {
             for(std::vector<synapticvesicle>::iterator it = m_SynapticVesicleList.begin(); it != m_SynapticVesicleList.end(); ++it)
                 {
-#pragma omp task
                 it->Update(eventTime);
                 }
-            }
-#pragma omp single nowait
-            {
-            for(std::vector<synapse>::iterator it = m_SynapseList.begin(); it != m_SynapseList.end(); ++it)
-                {
-#pragma omp task
-                it->Update(eventTime);
-                }
-            }
-        }
     
     if (m_Energy > 0)
         {
@@ -103,11 +128,6 @@ public:
             {
             add_TemporalAdjustment(eventTime, &m_Energy, (0-(m_Energy/2))/m_SynapticVesicleList.size(), 100, 1);   // redistribute energy
             it->AddEnergy(eventTime, m_Energy/m_SynapticVesicleList.size());
-            }
-        for(std::vector<synapse>::iterator it = m_SynapseList.begin(); it != m_SynapseList.end(); ++it)
-            {
-            add_TemporalAdjustment(eventTime, &m_Energy, (0-(m_Energy/2))/m_SynapseList.size(), 100, 1);   // redistribute energy
-            it->AddEnergy(eventTime, m_Energy/m_SynapseList.size());
             }
         }
     
@@ -118,7 +138,11 @@ public:
         }
     if (m_duration > 1000)
         {
-        
+        for(std::vector<synapticvesicle>::iterator it = m_SynapticVesicleList.begin(); it != m_SynapticVesicleList.end(); ++it)
+            {
+            add_TemporalAdjustment(eventTime, &m_Energy, (0-(m_Energy/2))/m_SynapticVesicleList.size(), 100, 1);   // redistribute energy
+            release_State = it->GetReleaseState(eventTime);
+            }
         }
         // Clock duration does not consider parallel or serial operation
     m_oldClock = eventTime;
@@ -212,7 +236,13 @@ private:
     
     std::vector<s_CounterAdjustment> m_TemporalAdjustment;
     std::vector<synapticvesicle> m_SynapticVesicleList;
-    std::vector<synapse> m_SynapseList;
+    
+    struct s_SynapseDescription
+    {
+    synapse* s_Synapse;
+    double s_Distance;
+    };
+    std::vector<s_SynapseDescription> m_SynapseList;
 };
 
 #endif /* axonbouton_hpp */
