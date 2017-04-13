@@ -33,18 +33,18 @@ public:
     m_addStatus = add_Axonhillock(eventTime);
     if(m_addStatus==0)
         {
-        std::cout << "Axonhillock energy: " << m_AxonhillockList[0].GetEnergy() << std::endl;
+            //        std::cout << "Axonhillock energy: " << m_AxonhillockList[0].GetEnergy() << std::endl;
         }
         // If every soma has a dendrite, build a couple of dendrites for this soma
     m_addStatus = add_Dendrite(eventTime);
     if(m_addStatus==0)
         {
-        std::cout << "Dendrite(0) energy: " << m_DendriteList[0].GetEnergy() << std::endl;
+            //        std::cout << "Dendrite(0) energy: " << m_DendriteList[0].GetEnergy() << std::endl;
         }
     m_addStatus = add_Dendrite(eventTime);
     if(m_addStatus==0)
         {
-        std::cout << "Dendrite(1) energy: " << m_DendriteList[1].GetEnergy() << std::endl;
+            //        std::cout << "Dendrite(1) energy: " << m_DendriteList[1].GetEnergy() << std::endl;
         }
     };
     /** Default destructor */

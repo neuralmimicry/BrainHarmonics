@@ -30,7 +30,7 @@
     //}
 
     // Standard Template Libraries (STL)
-//#include <algorithm>            /**< For max, min, sort function                   */
+    //#include <algorithm>            /**< For max, min, sort function                   */
 #include <array>                /**< For array in CRC-32 call                      */
 #include <cstring>              /**< For handling strings                          */
 #include <cstdint>              /**< For byte handling in CRC-32                   */
@@ -44,6 +44,21 @@
 #include <sstream>              /**< For stringstream input from console           */
 #include <string>               /**< For handling strings                          */
 #include <vector>               /**< To use vectors, which automatically handle resizing, as arrays to keep track of instances */
+
+    // libcaer c++ and Dynapse links
+#include <libcaercpp/devices/dynapse.hpp>
+    //#include <libcaer/libcaer.h>
+    //#include <libcaer/events/packetContainer.h>
+#include <libcaercpp/libcaer.hpp>
+#include <libcaercpp/events/packetContainer.hpp>
+#include <csignal>
+#include <atomic>
+
+#define DEFAULTBIASES "data/defaultbiases_values.txt"
+#define LOWPOWERBIASES "data/lowpowerbiases_values.txt"
+
+    // Port sniffer
+    //#include "sniffex.hpp"
 
     // SFML - Use DYLIBS not FRAMEWORKS. FRAMEWORKS had a problem with Text and missing symbols
 #include <SFML/Audio.hpp>
@@ -74,8 +89,8 @@
     //ILOSTLBEGIN
 
     // Homegrown add-ins
-#include <universe.h>           /**< Top of the tree, begin with Universe class    */
-#include <dimension.h>          /**< Add Dimensions for spatial identification     */
+#include <universe.hpp>         /**< Top of the tree, begin with Universe class    */
+#include <dimension.hpp>        /**< Add Dimensions for spatial identification     */
 #include <elementaryparticle.h> /**< Follow with the creation of quarks/leptons    */
 #include <compositeparticle.h>  /**< Basic interactions form protons/neutrons      */
 #include <elementaryforce.h>    /**< Define Force interaction between fundamentals */
@@ -93,9 +108,8 @@
 #include <node.h>               /**< Node class for A* search                      */
 #include <apptimer.h>           /**< Interim function describing time before inclusion as Dimension */
 
-    // CCP specific add-ins
-#include <customer.h>         /**< Details of customer                           */
-#include <warehouse.h>        /**< Details of warehouse                          */
+    // CCP and Example specific add-ins
+#include <orbital.hpp>          /**< Example of harmonic motion of particles       */
 
     // Application specific add-ins
 #include "neuron.hpp"           /**< Neuron container for other neuron components  */
@@ -158,6 +172,19 @@
 #define GRAVITY 6.67384e-11;
 #endif // GRAVITY
 
+struct caer_dynapse_info dynapse_info;
+
+    // Dynap-se shutdown
+static std::atomic_bool globalShutdown(false);
+
+static void globalShutdownSignalHandler(int signal) {
+        // Simply set the running flag to false on SIGTERM and SIGINT (CTRL+C) for global shutdown.
+    if (signal == SIGTERM || signal == SIGINT) {
+        globalShutdown.store(true);
+    }
+}
+
+
 float g_speed;                      /**< Speed of robot */
 float g_deltaheading;               /**< Change current angle of robot by this amount */
 float g_toggle = 0;                 /**< Discover or localise */
@@ -184,9 +211,9 @@ bool msg_handling(std::vector <std::string> *m_messages, bool m_response, int m_
 int create_Universe(std::vector<Universe> *toAddto)
 {
         // First, there is nothing. Then there was something...
-    double UniverseEnergy = 999999999;              /**< Defined energy level of Universe */
+    double UniverseEnergy = 999999999.0f;              /**< Defined energy level of Universe */
         // Begin with singularity
-    Universe myUniverse(0.9);                            /**< Create instance of Universe from Universe class */
+    Universe myUniverse(0.9f);                            /**< Create instance of Universe from Universe class */
     /**< Set an energy level and attempt to maintain physics laws by keeping the total in the Universe the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */
     myUniverse.setEnergy(UniverseEnergy);
         // Use move not push_back otherwise data is destroyed on exiting function
@@ -379,23 +406,42 @@ int add_Dendrite(std::vector<dendrite> *toAddto)
     return 0;                       /**< Return Success = 0 */
 }
 
-    // Each add_ function creates an instance of the respective class and links back to the base class
-    // For definition of Warehouses and Customers when simulating CPP environment
-int add_Warehouse(std::vector<Warehouse> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
+int add_Synapse(std::vector<synapse> *toAddto)
 {
-    Warehouse myWarehouse((*aPartof)[arrayEntry]);
+    synapse mySynapse;
         // Use move not push_back otherwise data is destroyed on exiting function
-    std::copy(&myWarehouse, &myWarehouse + 1, std::back_inserter(*toAddto));
+    std::copy(&mySynapse, &mySynapse + 1, std::back_inserter(*toAddto));
+    
+        //    std::cout << "Synapse added." << std::endl;
+    return 0;                       /**< Return Success = 0 */
+}
+
+    // Each add_ function creates an instance of the respective class and links back to the base class
+    // For definition of Neurons and Synapses when simulating CPP environment
+int add_Neuron(std::vector<Neuron> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
+{
+    Neuron myNeuron((*aPartof)[arrayEntry]);
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::copy(&myNeuron, &myNeuron + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
 
-    // For CPP definition of Customers. Other combinations in artificial environments
-int add_Customer(std::vector<Customer> *toAddto, std::vector<Warehouse> *aPartof, int arrayEntry)
+    // For CPP definition of Synapses. Other combinations in artificial environments
+int add_Synapse(std::vector<Synapse> *toAddto, std::vector<Neuron> *aPartof, int arrayEntry)
 {
-    Customer myCustomer((*aPartof)[arrayEntry]);
+    Synapse mySynapse((*aPartof)[arrayEntry]);
         // Use move not push_back otherwise data is destroyed on exiting function
-    std::copy(&myCustomer, &myCustomer + 1, std::back_inserter(*toAddto));
+    std::copy(&mySynapse, &mySynapse + 1, std::back_inserter(*toAddto));
+    
+    return 0;                       /**< Return Success = 0 */
+}
+
+int add_Orbital(std::vector<Orbital> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry, int orbType)
+{
+    Orbital myOrbital((*aPartof)[arrayEntry], std::chrono::high_resolution_clock::now(), orbType);
+        // Use move not push_back otherwise data is destroyed on exiting function
+    std::copy(&myOrbital, &myOrbital + 1, std::back_inserter(*toAddto));
     
     return 0;                       /**< Return Success = 0 */
 }
@@ -417,7 +463,7 @@ int add_SFMLRectangle(std::vector<sf::RectangleShape> *toAddto, std::vector<Dime
     mySFMLRectangle.setOutlineColor(sf::Color::Green);
     mySFMLRectangle.setOutlineThickness(1);
     mySFMLRectangle.setFillColor(sf::Color::Green);
-    mySFMLRectangle.setPosition(sf::Vector2f(0,0));
+    mySFMLRectangle.setPosition(sf::Vector2f(0.0f,0.0f));
     
     std::copy(&mySFMLRectangle, &mySFMLRectangle + 1, std::back_inserter(*toAddto));
     
@@ -453,8 +499,8 @@ bool compare_swapElementaryParticle(std::vector<ElementaryParticle> *origin, int
     int l_origin_Test2 = (*origin)[l_origin_Candidate2].getCharge();
     int l_origin_Test3 = std::abs(l_origin - l_origin_Test1);
     int l_origin_Test4 = std::abs(l_origin - l_origin_Test2);
-    int l_origin_Test5 = (3 - l_origin_Test3);
-    int l_origin_Test6 = (3 - l_origin_Test4);
+    int l_origin_Test5 = (3.0f - l_origin_Test3);
+    int l_origin_Test6 = (3.0f - l_origin_Test4);
     
     l_switch = false;
     
@@ -506,24 +552,24 @@ int distanceBetweenNodes(std::vector<Point> *nodesQuery, std::vector<int> *nodes
     
     if(firstX < secondX && firstY > secondY)
         {
-        angleDEG = angleDEG + 90;
+        angleDEG = angleDEG + 90.0f;
         }
     
     if(firstX > secondX && firstY > secondY)
         {
-        angleDEG = angleDEG + 180;
+        angleDEG = angleDEG + 180.0f;
         }
     
     if(firstX > secondX && firstY < secondY)
         {
-        angleDEG = angleDEG + 270;
+        angleDEG = angleDEG + 270.0f;
         }
     
     angleRAD = angleDEG * DEG2RAD;
     
     direction = actualDistance - desiredDistance;
     
-    if(direction > -1000 and direction < 1000)
+    if(direction > -1.0f and direction < 1.0f)
         {
             //        diffX = 0;
             //        diffY = 0;
@@ -567,8 +613,8 @@ int distanceBetweenNodes(std::vector<Point> *nodesQuery, std::vector<int> *nodes
          else
          {
          */
-        (*nodesQuery)[(*nodesList)[0]].setPointDifferential((((*nodesQuery)[(*nodesList)[0]].getPointDifferential() + diffX)/2));
-        (*nodesQuery)[(*nodesList)[1]].setPointDifferential((((*nodesQuery)[(*nodesList)[1]].getPointDifferential() + diffY)/2));
+        (*nodesQuery)[(*nodesList)[0]].setPointDifferential((((*nodesQuery)[(*nodesList)[0]].getPointDifferential() + diffX)/2.0f));
+        (*nodesQuery)[(*nodesList)[1]].setPointDifferential((((*nodesQuery)[(*nodesList)[1]].getPointDifferential() + diffY)/2.0f));
             //                (*nodesQuery)[(*nodesList)[2]].setPointDifferential((((*nodesQuery)[(*nodesList)[2]].getPointDifferential() - diffX)/2));
             //                (*nodesQuery)[(*nodesList)[3]].setPointDifferential((((*nodesQuery)[(*nodesList)[3]].getPointDifferential() - diffY)/2));
         
@@ -603,7 +649,7 @@ bool compare_swapCompositeParticle(std::vector<CompositeParticle> *origin, int l
 }
 
     // Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
-bool compare_swapCustomer(std::vector<Customer> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
+bool compare_swapSynapse(std::vector<Synapse> *origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
     bool l_switch = true;
     int l_origin = (*origin)[l_origin_Swap].getDemand();
@@ -668,8 +714,8 @@ bool analyseStream(std::vector<neuron> *neuronList, std::vector<Point> *aPoint, 
                 addStatus = add_Neuron(&(*neuronList));
                 neuronListSize++;
                 (*neuronList).back().setGateKeeper(feed);
-                (*neuronList).back().setChannelMin(feed - 1);
-                (*neuronList).back().setChannelMax(feed + 1);
+                (*neuronList).back().setChannelMin(feed - 1.0f);
+                (*neuronList).back().setChannelMax(feed + 1.0f);
                 (*neuronList).back().setCounter(neuralSequence);
                 neuronStimulated = true;
                     //                std::cout << "First Neuron: " << (*neuronList).back().getGateKeeper() << " Feed: " << feed << std::endl;
@@ -680,8 +726,8 @@ bool analyseStream(std::vector<neuron> *neuronList, std::vector<Point> *aPoint, 
             addStatus = add_Neuron(&(*neuronList));
             neuronListSize++;
             (*neuronList).back().setGateKeeper(feed);
-            (*neuronList).back().setChannelMin(feed - 1);
-            (*neuronList).back().setChannelMax(feed + 1);
+            (*neuronList).back().setChannelMin(feed - 1.0f);
+            (*neuronList).back().setChannelMax(feed + 1.0f);
             (*neuronList).back().setCounter(neuralSequence);
                 //            std::cout << "Extra Neuron: " << (*neuronList).back().getGateKeeper() << " Feed: " << feed << std::endl;
             }
@@ -694,6 +740,101 @@ bool analyseStream(std::vector<neuron> *neuronList, std::vector<Point> *aPoint, 
             }
         }
     return false;
+}
+
+
+void ClearDimensionSelection(std::vector<int> *DimensionList)
+{
+    DimensionList->clear();
+}
+
+void SelectDimension(const int PossibleDimensions[10], std::vector<int> *DimensionList, int whichDimension)
+{
+    int l_counter = 0;
+    for(int nloop = 0; nloop < 10; nloop++)
+        {
+        for(int zloop = 0; zloop < PossibleDimensions[nloop]; zloop++)
+            {
+            l_counter++;
+            if (zloop == whichDimension)
+                {
+                (*DimensionList).push_back(l_counter);
+                }
+            }
+        }
+}
+
+void SelectMultiDimensions(const int PossibleDimensions[10], std::vector<int> *DimensionList, int howManyDimensions)
+{
+    for(int nloop = 0; nloop < howManyDimensions; nloop++)
+        {
+        SelectDimension(PossibleDimensions, &(*DimensionList), nloop);
+        }
+    /*
+     std::cout << "Dimensions selected: ";
+     for(int zloop = 0; zloop < DimensionList->size(); zloop++)
+     {
+     std::cout << (*DimensionList)[zloop] << " ";
+     }
+     std::cout << std::endl;
+     */
+}
+
+
+bool ClearDynapse(caerDeviceHandle *usb_handle)
+{
+            // Let's take a look at the information we have on the device.
+        dynapse_info = caerDynapseInfoGet(*usb_handle);
+        
+        printf("%s --- ID: %d, Master: %d,  Logic: %d.\n",
+               dynapse_info.deviceString, dynapse_info.deviceID,
+               dynapse_info.deviceIsMaster, dynapse_info.logicVersion);
+        
+            // Let's turn on blocking data-get mode to avoid wasting resources.
+        caerDeviceConfigSet(*usb_handle, CAER_HOST_CONFIG_DATAEXCHANGE,
+                            CAER_HOST_CONFIG_DATAEXCHANGE_BLOCKING, true);
+        
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP,
+                            DYNAPSE_CONFIG_CHIP_RUN, true);
+        
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_AER, DYNAPSE_CONFIG_AER_RUN,
+                            true);
+            // chip id is DYNAPSE_CONFIG_DYNAPSE_U2
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID,
+                            DYNAPSE_CONFIG_DYNAPSE_U2);
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_MUX,
+                            DYNAPSE_CONFIG_MUX_FORCE_CHIP_BIAS_ENABLE, true);
+        
+        std::ifstream input( DEFAULTBIASES);
+        printf("Configuring silent biases...");
+        for (std::string line; getline(input, line);) {
+            int i_dec = atoi(line.c_str());
+            caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP,
+                                DYNAPSE_CONFIG_CHIP_CONTENT, i_dec);
+        }
+        input.close();
+        printf(" Done.\n");
+        
+        printf("Configuring sram content...");
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_DEFAULT_SRAM, DYNAPSE_CONFIG_DYNAPSE_U2, 0);
+        printf(" Done.\n");
+        
+        printf("Configuring cam content...");
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CLEAR_CAM, DYNAPSE_CONFIG_DYNAPSE_U2, 0);
+        printf(" Done.\n");
+        
+        
+        
+            // close config
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_RUN, false);
+        
+            //close aer communication
+        caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_AER, DYNAPSE_CONFIG_AER_RUN, false);
+            //caerDeviceDataStop(usb_handle);
+        
+    return true;
 }
 
 class Screen_0 : public MultiScreen
@@ -737,22 +878,22 @@ int Screen_0::runScreen(sf::RenderWindow &app)
     Menu1.setFont(Font);
     Menu1.setCharacterSize(20);
     Menu1.setString("Add item");
-    Menu1.setPosition( 280.f, 160.f );
+    Menu1.setPosition( 280.0f, 160.0f );
     
     Menu2.setFont(Font);
     Menu2.setCharacterSize(20);
     Menu2.setString("Remove item");
-    Menu2.setPosition( 280.f, 220.f );
+    Menu2.setPosition( 280.0f, 220.0f );
     
     Menu3.setFont(Font);
     Menu3.setCharacterSize(20);
     Menu3.setString("Up level");
-    Menu3.setPosition( 280.f, 280.f );
+    Menu3.setPosition( 280.0f, 280.0f );
     
     Menu4.setFont(Font);
     Menu4.setCharacterSize(20);
     Menu4.setString("Down level");
-    Menu4.setPosition( 280.f, 320.f );
+    Menu4.setPosition( 280.0f, 320.0f );
     
     while (Running)
         {
@@ -834,22 +975,22 @@ int Screen_1::runScreen(sf::RenderWindow &app)
     Menu1.setFont(Font);
     Menu1.setCharacterSize(20);
     Menu1.setString("Add item");
-    Menu1.setPosition( 280.f, 160.f );
+    Menu1.setPosition( 280.0f, 160.0f );
     
     Menu2.setFont(Font);
     Menu2.setCharacterSize(20);
     Menu2.setString("Remove item");
-    Menu2.setPosition( 280.f, 220.f );
+    Menu2.setPosition( 280.0f, 220.0f );
     
     Menu3.setFont(Font);
     Menu3.setCharacterSize(20);
     Menu3.setString("Up level");
-    Menu3.setPosition( 280.f, 280.f );
+    Menu3.setPosition( 280.0f, 280.0f );
     
     Menu4.setFont(Font);
     Menu4.setCharacterSize(20);
     Menu4.setString("Down level");
-    Menu4.setPosition( 280.f, 320.f );
+    Menu4.setPosition( 280.0f, 320.0f );
     
     while (Running)
         {
@@ -914,11 +1055,81 @@ int init(int argc, const char * argv[])
 
 int main(int argc, const char * argv[]) {
     
+    uint32_t genBits = 0;
+    uint8_t dx = 0;
+    uint8_t sx = 0;
+    uint8_t dy = 0;
+    uint8_t sy = 0;
+    uint16_t destinationCoreId;
+    std::string::size_type sz;
+    
+    
+    bool deviceAttached = true;
+    
     int initialiseProgram = init(argc, argv);
     if (initialiseProgram)
         {
         std::cout << "Program initialisation failed!" << std::endl;
         return EXIT_FAILURE;
+        }
+    
+        // Install Dynap-se signal handler for global shutdown.
+#if defined(_WIN32)
+    if (signal(SIGTERM, &globalShutdownSignalHandler) == SIG_ERR) {
+        caerLog(CAER_LOG_CRITICAL, "ShutdownAction", "Failed to set signal handler for SIGTERM. Error: %d.", errno);
+        return (EXIT_FAILURE);
+    }
+    
+    if (signal(SIGINT, &globalShutdownSignalHandler) == SIG_ERR) {
+        caerLog(CAER_LOG_CRITICAL, "ShutdownAction", "Failed to set signal handler for SIGINT. Error: %d.", errno);
+        return (EXIT_FAILURE);
+    }
+#else
+    struct sigaction shutdownAction;
+    
+    shutdownAction.sa_handler = &globalShutdownSignalHandler;
+    shutdownAction.sa_flags = 0;
+    sigemptyset(&shutdownAction.sa_mask);
+    sigaddset(&shutdownAction.sa_mask, SIGTERM);
+    sigaddset(&shutdownAction.sa_mask, SIGINT);
+    
+    if (sigaction(SIGTERM, &shutdownAction, NULL) == -1) {
+        caerLog(CAER_LOG_CRITICAL, "ShutdownAction",
+                "Failed to set signal handler for SIGTERM. Error: %d.", errno);
+        return (EXIT_FAILURE);
+    }
+    
+    if (sigaction(SIGINT, &shutdownAction, NULL) == -1) {
+        caerLog(CAER_LOG_CRITICAL, "ShutdownAction",
+                "Failed to set signal handler for SIGINT. Error: %d.", errno);
+        return (EXIT_FAILURE);
+    }
+#endif
+
+        // Verify connection to all Dynap-se boards/chips and then ensure the chips are set to a basic known configuration.
+        // Open the communication with Dynap-se, give it a device ID of 1, and don't care about USB bus or SN restrictions.
+    caerDeviceHandle usb_handle = caerDeviceOpen(1, CAER_DEVICE_DYNAPSE, 0, 0,
+                                                 NULL);
+    if (usb_handle == NULL) {
+        printf("No devices attached. Using simulation system only.");
+        deviceAttached = false;
+            //        return (EXIT_FAILURE);
+    }
+    
+    if(deviceAttached)
+        {
+            // Verify or amend code to ensure all chips are reset at the beginning
+        ClearDynapse(&usb_handle);
+        caerDeviceClose(&usb_handle);
+    
+        // Open the communication with Dynap-se, give it a device ID of 1, and don't care about USB bus or SN restrictions.
+    usb_handle = caerDeviceOpen(1, CAER_DEVICE_DYNAPSE, 0, 0,
+                                NULL);
+    if (usb_handle == NULL) {
+        printf("Device communication failed.");
+        deviceAttached = false;
+            //        return (EXIT_FAILURE);
+    }
         }
     
     
@@ -980,19 +1191,23 @@ int main(int argc, const char * argv[]) {
     std::vector <Spike> g_Spike;                        /**< Spike */
     
         //CCP Abstraction
-    std::vector <Warehouse> g_warehouse;                /**< Warehouse container                           */
-    std::vector <Customer> g_customer;                  /**< Customer container                            */
+    std::vector <Neuron> g_neuron;                /**< Neuron container                           */
+    std::vector <Synapse> g_synapse;                  /**< Synapse container                            */
     std::vector <int> nodeList;
     
-    const int numUniverses = 8;     // Internal display, Physical material and spatial references
-    const int numDimensions [numUniverses] = {2, 1, 4, 2, 2, 3, 3, 3};    // U1 = Internal X & Y, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP, U5 = Spikes, U6 = Neurotransmitters, U7 = Connectome
-
+    std::vector <Orbital> g_orbital;                    /**< Example of orbital timing                     */
+    
+    std::vector <int> g_selectedDimensions;
+    
+    const int numUniverses = 10;     // Internal display, Physical material and spatial references
+    const int numDimensions [numUniverses] = {3, 1, 4, 2, 2, 3, 3, 3, 3, 1};    // U1 = Internal X, Y & Z, U2 = Physical, U3 = Spatial X,Y,Z & Time, U4 = CPP, U5 = Spikes, U6 = Neurotransmitters, U7 = Connectome, U8 = Synapses, U9 = Orbital example
+    
     const int intDimensionsStart = 0;
         // Physics dimensionality - calculating quark interactions
     const int phyDimensionsStart = intDimensionsStart + numDimensions[0];
         // Spatial dimensionality - real world representation
     const int spaDimensionsStart = phyDimensionsStart + numDimensions[1];
-        // Customer delivery problem - separate project
+        // Synapse delivery problem - separate project
     const int ccpDimensionsStart = spaDimensionsStart + numDimensions[2];
         // Focus on spikes
     const int spkDimensionsStart = ccpDimensionsStart + numDimensions[3];
@@ -1002,29 +1217,65 @@ int main(int argc, const char * argv[]) {
     const int denDimensionsStart = ntrDimensionsStart + numDimensions[5];
         // Focus on neuron calculations
     const int nrnDimensionsStart = denDimensionsStart + numDimensions[6];
-
+        // Focus on synapse calculations
+    const int synDimensionsStart = nrnDimensionsStart + numDimensions[7];
+        // Focus on orbital example
+    const int orbDimensionsStart = synDimensionsStart + numDimensions[8];
+    
+    std::vector<int> DimensionList;
+    DimensionList.clear();
+    
         // Initial number of starting components for each subproject
         // The Physics problem
     const int initialElementaryParticles = 10;
     const int initialParticleAlignment = 20;
     const int infiniteLoopPrevention = 800;
-
-        // The Warehouse/Customer delivery problem
-    const int initialCustomers = 50;
-    const int initialCustomerAlignment = 20;
-
+    
+        // The Neuron/Synapse delivery problem
+    const int initialSynapses = 50;
+    const int initialSynapseAlignment = 20;
+    
+        // Orbital example
+    const int initialOrbitals = 500;
+    const int numOrbLayers = 6;
+    std::vector<int> OrbLayers;
+    OrbLayers.clear();
+    for (int nloop = 0; nloop < numOrbLayers; nloop++)
+        {
+        OrbLayers.push_back((initialOrbitals / numOrbLayers) * nloop);
+        std::cout << "Orb Layer: " << nloop << "  Start: " << OrbLayers[nloop] << std::endl;
+        }
+    OrbLayers.push_back(initialOrbitals + 1);
+    struct OrbConnection
+    {
+    int OrbOne;
+    int OrbTwo;
+    double OrbConnectionStrength;
+    double OrbConnectionModifier;
+    bool OrbSpike;
+    double OrbOnePosition;
+    double OrbTwoPosition;
+    };
+    std::vector<OrbConnection> OrbConnectionList;
+    OrbConnectionList.clear();
+    
+    double compareFirst;
+    double compareSecond;
+    
         // Brain calculations
-    const int initialNeurotransmitters = 100;
     const int initialSpikes = 6;
-    const int initialDendrites = 20;
-    const int initialNeurons = 100;
+    const int initialNeurons = 4096;
+    const int initialAxons = 4 * initialNeurons;
+    const int initialDendrites = 64 * initialNeurons;
+    const int initialSynapses = 64 * initialNeurons;
+    const int initialNeurotransmitters = 64 * initialAxons;
     
     int addStatus;
     bool patternFound = false;
     
-    double l_screenX = 925;            /**< Define graphics window size, X axis*/
-    double l_screenY = 800;            /**< Define graphics window size, Y axis*/
-    double l_scale = 300;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
+    double l_screenX = 1000.0f;            /**< Define graphics window size, X axis*/
+    double l_screenY = 800.0f;            /**< Define graphics window size, Y axis*/
+        //double l_scale = 300;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
     std::string l_screenTitle = "Clustering";
     std::stringstream l_displayString;
     
@@ -1032,23 +1283,23 @@ int main(int argc, const char * argv[]) {
     int counter_Spin = 0;
     int counter_Walk = 0;
     int counter_InfiniteLoopPrevention = 0;
-
+    
     int l_spaPointBase = 0; // Base of data points (Moves because of use by internal graphics for points control too
     int howMany_Particles = 0;
-    int howMany_Customers = 0;
-    int howMany_Warehouses = 0;
+    int howMany_Synapses = 0;
+    int howMany_Neurons = 0;
     int current_Distance = 0;
     int max_Distance = 0;
-
+    
     int l_pointStart = 0;
     int l_ccpPointStart = 0;
-
+    
     bool l_switch = true;
     int l_origin = 0;
     int l_origin_Test1 = 0;
     int l_origin_Test3 = 0;
     int l_origin_Test5 = 0;
-
+    
     double l_charge = 0;
     double l_lastCharge = 0;
     int pauseLoop = 0;
@@ -1064,39 +1315,56 @@ int main(int argc, const char * argv[]) {
     double pointDistance;
     double pointDistance2;
     double effect;
+    double calcX;
+    double calcY;
+    double calcZ;
+    double calcXoffset;
+    double calcYoffset;
+    double calcZoffset;
+    double calcXscale;
+    double calcYscale;
+    double calcZscale;
+    double colourMax;
+    int colourY;
     
     std::vector<std::string> l_inputData;
     
     char * l_dir = getcwd(NULL, 0);
     l_inputData.clear();
-    int numCustomers;
-    int initialWarehouses;
+    int numSynapses;
+    int initialNeurons;
     int paramCounter;
     std::string entry;
     std::string buf;
     std::istringstream iss("");
-    std::string::size_type sz;   // alias of size_t
+        //    std::string::size_type sz;   // alias of size_t
+    std::string textOptions[11][11];
+    int l_tabCycle = 0;
     
-    double l_customerX = 0;
-    double l_customerY = 0;
-    double l_warehouseX = 0;
-    double l_warehouseY = 0;
-    double l_desiredDistance = 0;
-    double l_demandCounter = 0;
-    double l_direction = 1;
-    double l_diffX = 0;
-    double l_diffX2 = 0;
-    double l_diffY = 0;
-    double l_diffY2 = 0;
-    double l_slope = 0;
-    double l_angleRAD = 0;
-    double l_angleDEG = 0;
-    double l_actualDistance = 0;
-    double l_minimumDistance = 1000;
+    double l_synapseX = 0.0f;
+    double l_synapseY = 0.0f;
+    double l_neuronX = 0.0f;
+    double l_neuronY = 0.0f;
+    double l_desiredDistance = 0.0f;
+    double l_demandCounter = 0.0f;
+    double l_direction = 1.0f;
+    double l_diffX = 0.0f;
+    double l_diffX2 = 0.0f;
+    double l_diffY = 0.0f;
+    double l_diffY2 = 0.0f;
+    double l_slope = 0.0f;
+    double l_angleRAD = 0.0f;
+    double l_angleDEG = 0.0f;
+    double l_actualDistance = 0.0f;
+    double l_minimumDistance = 0.1f;
     std::vector <double> l_transferArray;
     int NumRows = 0;
     int NumInputs = 0;
     
+    std::chrono::time_point<std::chrono::high_resolution_clock> eventTime;
+    std::chrono::time_point<std::chrono::high_resolution_clock> clockTime;
+    std::chrono::time_point<std::chrono::high_resolution_clock> lastClockTime;
+    std::chrono::time_point<std::chrono::high_resolution_clock> startTime;
     
         // CPLEX Environment
         //IloEnv cplexEnv;
@@ -1168,7 +1436,7 @@ int main(int argc, const char * argv[]) {
         // Group quads
         // Bind a Rectangle object
     g_drawRectangles.clear();
-    for(int nloop = 0; nloop < 10; nloop++)
+    for(int nloop = 0; nloop < 11; nloop++)
         {
         addStatus = add_SFMLRectangle(&g_drawRectangles, &g_Dimension, 0);
         if (addStatus)
@@ -1179,23 +1447,23 @@ int main(int argc, const char * argv[]) {
         }
     std::cout << g_drawRectangles.size() << " rectangle addresses created." << std::endl;
     
-    for(int nloop = 0; nloop < 9; nloop++)
+    for(int nloop = 0; nloop < 10; nloop++)
         {
-        g_drawRectangles[nloop].setSize(sf::Vector2f(100,25));
+        g_drawRectangles[nloop].setSize(sf::Vector2f(100.0f,25.0f));
         g_drawRectangles[nloop].setOutlineColor(sf::Color::Red);
-        g_drawRectangles[nloop].setOutlineThickness(1);
+        g_drawRectangles[nloop].setOutlineThickness(1.0f);
         g_drawRectangles[nloop].setFillColor(sf::Color::Transparent);
-        g_drawRectangles[nloop].setPosition(sf::Vector2f(800, 25 * (nloop + 2)));
+        g_drawRectangles[nloop].setPosition(sf::Vector2f(900.0f, 25.0f * (nloop + 2)));
         }
     
-    g_drawRectangles[9].setSize(sf::Vector2f(100,225));
-    g_drawRectangles[9].setOutlineColor(sf::Color::Green);
-    g_drawRectangles[9].setOutlineThickness(2);
-    g_drawRectangles[9].setFillColor(sf::Color::Transparent);
-    g_drawRectangles[9].setPosition(sf::Vector2f(800, 225));
+    g_drawRectangles[10].setSize(sf::Vector2f(100.0f,250.0f));
+    g_drawRectangles[10].setOutlineColor(sf::Color::Green);
+    g_drawRectangles[10].setOutlineThickness(2.0f);
+    g_drawRectangles[10].setFillColor(sf::Color::Transparent);
+    g_drawRectangles[10].setPosition(sf::Vector2f(900.0f, 275.0f));
     
         // Bind a Text object
-    for(int nloop = 0; nloop < 10; nloop++)
+    for(int nloop = 0; nloop < 11; nloop++)
         {
         addStatus = add_SFMLText(&g_drawText, &g_Dimension, 0, &g_font);
         if (addStatus)
@@ -1215,50 +1483,76 @@ int main(int argc, const char * argv[]) {
     g_drawText[0].setCharacterSize(24);
     g_drawText[0].setString(l_displayString.str());
     
+    textOptions[1][0] = "Read Only";
+    textOptions[1][1] = "Read Write";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "Read Only";
+    l_displayString << textOptions[1][0];
     g_drawText[1].setString(l_displayString.str());
     
+    textOptions[2][0] = "Level";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "Level";
+    l_displayString << textOptions[2][0];
     g_drawText[2].setString(l_displayString.str());
     
+    textOptions[3][0] = "TOP";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "TOP";
+    l_displayString << textOptions[3][0];
     g_drawText[3].setString(l_displayString.str());
     
+    textOptions[4][0] = "< ^ v >";
+    textOptions[4][1] = "<      ";
+    textOptions[4][2] = "  ^    ";
+    textOptions[4][3] = "    v  ";
+    textOptions[4][4] = "      >";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "< ^ v >";
+    l_displayString << textOptions[4][0];
     g_drawText[4].setString(l_displayString.str());
     
+    textOptions[5][0] = "Quantity";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "Quantity";
+    l_displayString << textOptions[5][0];
     g_drawText[5].setString(l_displayString.str());
     
+    textOptions[6][0] = "0000";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "0000";
+    l_displayString << textOptions[6][0];
     g_drawText[6].setString(l_displayString.str());
     
+    textOptions[7][0] = "Patterns";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "Patterns";
+    l_displayString << textOptions[7][0];
     g_drawText[7].setString(l_displayString.str());
     
+    textOptions[8][0] = "0000";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "0000";
+    l_displayString << textOptions[8][0];
     g_drawText[8].setString(l_displayString.str());
     
+    textOptions[9][0] = "ZOOM";
+    textOptions[9][1] = "PAN";
+    textOptions[9][2] = "ROTATE";
+    textOptions[9][3] = "MOVE";
+    textOptions[9][4] = "CHOOSE";
+    textOptions[9][5] = "MODIFY";
+    textOptions[9][6] = "TIME";
     l_displayString.str("");
     l_displayString.clear();
-    l_displayString << "Zoom";
+    l_displayString << textOptions[9][0];
     g_drawText[9].setString(l_displayString.str());
+    
+    textOptions[10][0] = "0000";
+    l_displayString.str("");
+    l_displayString.clear();
+    l_displayString << textOptions[10][0];
+    g_drawText[10].setString(l_displayString.str());
     
         // No GLUT on El Capitan - port headers
         //    glMatrixMode(GL_PROJECTION); // Setup OpenGL calls (for 3D use)
@@ -1477,20 +1771,20 @@ int main(int argc, const char * argv[]) {
     std::cout << g_neuron.size() << " neuron addresses created." << std::endl;
     
     /*
-    g_dendrite.clear();
-    for(int nloop = 0;nloop < initialDendrites; nloop++)
-        {
-        addStatus = add_Dendrite(&g_dendrite);
-        if (addStatus)
-            {
-            std::cout << "Dendrite addition failed!" << std::endl;
-            return EXIT_FAILURE;
-            }
-        if (!g_dendrite.empty()) g_dendrite.back().Creation();
-        }
-    
-    std::cout << g_dendrite.size() << " dendrite addresses created." << std::endl;
-    */
+     g_dendrite.clear();
+     for(int nloop = 0;nloop < initialDendrites; nloop++)
+     {
+     addStatus = add_Dendrite(&g_dendrite);
+     if (addStatus)
+     {
+     std::cout << "Dendrite addition failed!" << std::endl;
+     return EXIT_FAILURE;
+     }
+     if (!g_dendrite.empty()) g_dendrite.back().Creation();
+     }
+     
+     std::cout << g_dendrite.size() << " dendrite addresses created." << std::endl;
+     */
     
     g_Spike.clear();
     for(int nloop = 0;nloop < initialSpikes; nloop++)
@@ -1528,17 +1822,17 @@ int main(int argc, const char * argv[]) {
         }
     
         // Draw a few bounding box rectangles and text points for screen labelling
-    for (int nloop = 0; nloop < 39; nloop = nloop + 2)
+    for (int nloop = 0; nloop < 43; nloop = nloop + 2)
         {
-        g_Point[nloop].setPointPosition(800);
+        g_Point[nloop].setPointPosition(900.0f);
         }
-    for (int nloop = 1; nloop < 18; nloop = nloop + 2)
+    for (int nloop = 1; nloop < 21; nloop = nloop + 2)
         {
-        g_Point[nloop].setPointPosition((((nloop - 1)/2)+1) * 25);
-        g_Point[nloop + 22].setPointPosition((((nloop - 1)/2)+1) * 25);
+        g_Point[nloop].setPointPosition((((nloop - 1)/2)+1) * 25.0f);
+        g_Point[nloop + 24].setPointPosition((((nloop - 1)/2)+1) * 25.0f);
         }
-    g_Point[18].setPointPosition(800);   g_Point[19].setPointPosition(25);  // Rectangle 10
-    g_Point[20].setPointPosition(400);   g_Point[21].setPointPosition(0);   // Text 1
+    g_Point[22].setPointPosition(900.0f);   g_Point[23].setPointPosition(25.0f);  // Rectangle 11
+    g_Point[24].setPointPosition(400.0f);   g_Point[25].setPointPosition(0.0f);   // Text 1
     
         // After screen layout the second set of points is for the quantum environment
     for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + numDimensions[2]; nloop++)
@@ -1560,8 +1854,8 @@ int main(int argc, const char * argv[]) {
         l_charge = double (3 - std::abs(int(g_ElementaryParticle[eloop].getCharge() - g_ElementaryParticle[eloop - 1].getCharge())));
             //        std::cout << "Charge: " << l_charge << std::endl;
             // This angle to later be dynamic to adjust for different particle types and considering placement of existing particles
-        s = (s + (180 - ((l_charge * l_lastCharge) * 10)) * DEG2RAD) / 2; // in Radians
-        t = (t + (180 - ((l_charge * l_lastCharge) * 10)) * DEG2RAD) / 2; // in Radians
+        s = (s + (180.0f - ((l_charge * l_lastCharge) * 10.0f)) * DEG2RAD) / 2.0f; // in Radians
+        t = (t + (180.0f - ((l_charge * l_lastCharge) * 10.0f)) * DEG2RAD) / 2.0f; // in Radians
         radialDistance = l_charge;
         for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + numDimensions[2]; nloop++) {
             addStatus = add_Point(&g_Point, &g_Dimension, nloop);
@@ -1581,7 +1875,7 @@ int main(int argc, const char * argv[]) {
             
                 // radians = angleInDegrees * Math.PI / 180
             
-            distanceToMove = 0;
+            distanceToMove = 0.0f;
             pOrigin = g_Point[(g_Point.size() - numDimensions[2]) - 1].getPointPosition();
             
                 // Loop through each dimension to calculate position on the surface of a sphere
@@ -1606,7 +1900,7 @@ int main(int argc, const char * argv[]) {
                 }
                 case 3:
                 {
-                distanceToMove = 0;
+                distanceToMove = 0.0f;
                 break;
                 }
             }
@@ -1655,7 +1949,7 @@ int main(int argc, const char * argv[]) {
         return false;
         }
     
-        // Read number of customers and initial number of warehouses
+        // Read number of synapses and initial number of neurons
     entry = "";
     std::getline(dataFile, entry);
     iss.clear();
@@ -1673,25 +1967,25 @@ int main(int argc, const char * argv[]) {
             }
         }
     
-    numCustomers = std::stoi(l_inputData[0],&sz);
-    initialWarehouses = std::stoi(l_inputData[1],&sz);
+    numSynapses = std::stoi(l_inputData[0],&sz);
+    initialNeurons = std::stoi(l_inputData[1],&sz);
     
-        //    std::cout << numCustomers << " " << initialWarehouses << std::endl;
+        //    std::cout << numSynapses << " " << initialNeurons << std::endl;
     
-    g_warehouse.clear();
-        // Add initial 50 warehouses
+    g_neuron.clear();
+        // Add initial 50 neurons
     for(int nloop = 0; nloop < 50; nloop++)
         {
-        addStatus = add_Warehouse(&g_warehouse, &g_Dimension,  int(g_Dimension.size() - 1));
+        addStatus = add_Neuron(&g_neuron, &g_Dimension,  int(g_Dimension.size() - 1));
         if (addStatus)
             {
-            std::cout << "Warehouse addition failed!" << std::endl;
+            std::cout << "Neuron addition failed!" << std::endl;
             return EXIT_FAILURE;
             }
-        if (!g_warehouse.empty()) g_warehouse[0].creation();
+        if (!g_neuron.empty()) g_neuron[0].creation();
         }
     
-        // Read in customer demand data from file
+        // Read in synapse demand data from file
     l_inputData.clear();
     
     for(int nloop = 0; nloop < 5; nloop++)
@@ -1721,25 +2015,25 @@ int main(int argc, const char * argv[]) {
             }
         }
     
-    g_customer.clear();
+    g_synapse.clear();
     for(int nloop = 0; nloop < 50; nloop++)
         {
-            // Add customer demands
-        addStatus = add_Customer(&g_customer, &g_warehouse,  int(g_warehouse.size() - 1));
+            // Add synapse demands
+        addStatus = add_Synapse(&g_synapse, &g_neuron,  int(g_neuron.size() - 1));
         if (addStatus)
             {
-            std::cout << "Customer addition failed!" << std::endl;
+            std::cout << "Synapse addition failed!" << std::endl;
             return EXIT_FAILURE;
             }
-        if (!g_customer.empty() && !l_inputData[nloop].empty())
+        if (!g_synapse.empty() && !l_inputData[nloop].empty())
             {
-            g_customer.back().setDemand(std::stoi(l_inputData[nloop],&sz));
-            std::cout << "Customer: " << nloop << " Demand: " << g_customer.back().getDemand() << std::endl;
+            g_synapse.back().setDemand(std::stoi(l_inputData[nloop],&sz));
+                //            std::cout << "Synapse: " << nloop << " Demand: " << g_synapse.back().getDemand() << std::endl;
             }
         }
         //    std::cout << std::endl;
     
-        // Load capacity data to each warehouse
+        // Load capacity data to each neuron
     l_inputData.clear();
     
     for(int nloop = 0; nloop < 5; nloop++)
@@ -1772,10 +2066,10 @@ int main(int argc, const char * argv[]) {
     for(int nloop = 0; nloop < 50; nloop++)
         {
             //        std::cout << l_inputData[nloop] << " ";
-        if (!g_warehouse.empty() && !l_inputData[nloop].empty()) g_warehouse[nloop].setCapacity(std::stoi(l_inputData[nloop],&sz));
+        if (!g_neuron.empty() && !l_inputData[nloop].empty()) g_neuron[nloop].setCapacity(std::stoi(l_inputData[nloop],&sz));
         }
     
-        // Load distance data from 50 customers to each warehouse
+        // Load distance data from 50 synapses to each neuron
     l_inputData.clear();
     
     for(int xloop = 0; xloop < 50; xloop++)
@@ -1814,15 +2108,15 @@ int main(int argc, const char * argv[]) {
     iss.clear();
     dataFile.close();
     
-        // Transfer distance data to customer instances
+        // Transfer distance data to synapse instances
     for(int xloop = 0; xloop < 50; xloop++)
         {
         for(int nloop = 0; nloop < 50; nloop++)
             {
                 //            std::cout << l_inputData[(xloop * 50) + nloop] << " ";
-            if (!g_customer.empty() && !l_inputData[(xloop * 50) + nloop].empty())
+            if (!g_synapse.empty() && !l_inputData[(xloop * 50) + nloop].empty())
                 {
-                g_customer[xloop].addDistance(&g_warehouse[nloop], std::stod(l_inputData[(xloop * 50) + nloop],&sz));
+                g_synapse[xloop].addDistance(&g_neuron[nloop], std::stod(l_inputData[(xloop * 50) + nloop],&sz));
                 }
             }
         }
@@ -1832,18 +2126,18 @@ int main(int argc, const char * argv[]) {
     /*
      for(int nloop = 0; nloop < 50; nloop++)
      {
-     g_customer[nloop].getWarehouseList();
+     g_synapse[nloop].getNeuronList();
      }
      */
     
     
-    howMany_Customers = int(g_customer.size());
+    howMany_Synapses = int(g_synapse.size());
     
-    std::cout << howMany_Customers << " customers to consider." << std::endl;
+    std::cout << howMany_Synapses << " synapses to consider." << std::endl;
     
-        // Rearrange new Customers in an order closer to how they're likely to group with warehouses.
+        // Rearrange new Synapses in an order closer to how they're likely to group with neurons.
     /*
-     for (int qloop = 0; qloop <= initialCustomerAlignment * howMany_Customers; qloop++)
+     for (int qloop = 0; qloop <= initialSynapseAlignment * howMany_Synapses; qloop++)
      {
      
      counter_Walk = 0;
@@ -1854,14 +2148,14 @@ int main(int argc, const char * argv[]) {
      counter_InfiniteLoopPrevention++;
      max_Distance = current_Distance;
      current_Distance = 0;
-     while(counter_Walk <= (howMany_Customers - 3))
+     while(counter_Walk <= (howMany_Synapses - 3))
      {
-     l_switch = compare_swapCustomer(&g_customer, counter_Walk, counter_Walk + 1, counter_Walk + 2);
+     l_switch = compare_swapSynapse(&g_synapse, counter_Walk, counter_Walk + 1, counter_Walk + 2);
      if (l_switch) counter_Walk--; else counter_Walk++;// If Switch occurred retest previous Origin
      if (counter_Walk < 0) counter_Walk = 0;
      
-     l_origin = g_customer[counter_Walk].getDemand();
-     l_origin_Test1 = g_customer[counter_Walk + 1].getDemand();
+     l_origin = g_synapse[counter_Walk].getDemand();
+     l_origin_Test1 = g_synapse[counter_Walk + 1].getDemand();
      l_origin_Test3 = l_origin_Test1 - l_origin;
      l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
      current_Distance = current_Distance + l_origin_Test5;
@@ -1869,7 +2163,7 @@ int main(int argc, const char * argv[]) {
      } while ( current_Distance < max_Distance && counter_InfiniteLoopPrevention < infiniteLoopPrevention);
      
      
-     counter_Walk = (howMany_Customers - 1);
+     counter_Walk = (howMany_Synapses - 1);
      current_Distance = 0;
      counter_InfiniteLoopPrevention = 0;
      
@@ -1879,12 +2173,12 @@ int main(int argc, const char * argv[]) {
      current_Distance = 0;
      while(counter_Walk >= 2)
      {
-     l_switch = compare_swapCustomer(&g_customer, counter_Walk, counter_Walk - 1, counter_Walk - 2);
+     l_switch = compare_swapSynapse(&g_synapse, counter_Walk, counter_Walk - 1, counter_Walk - 2);
      if (l_switch) counter_Walk++; else counter_Walk--;
-     if (counter_Walk > (howMany_Customers - 1)) counter_Walk = (howMany_Customers - 1);
+     if (counter_Walk > (howMany_Synapses - 1)) counter_Walk = (howMany_Synapses - 1);
      
-     l_origin = g_customer[counter_Walk].getDemand();
-     l_origin_Test1 = g_customer[counter_Walk - 1].getDemand();
+     l_origin = g_synapse[counter_Walk].getDemand();
+     l_origin_Test1 = g_synapse[counter_Walk - 1].getDemand();
      l_origin_Test3 = l_origin_Test1 - l_origin;
      l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
      current_Distance = current_Distance + l_origin_Test5;
@@ -1897,18 +2191,37 @@ int main(int argc, const char * argv[]) {
     
     for(int nloop = 0; nloop < 50 ; nloop++)
         {
-        if(currentCapacity + g_customer[nloop].getDemand() <= maxCapacity)
+        if(currentCapacity + g_synapse[nloop].getDemand() <= maxCapacity)
             {
-            currentCapacity += g_customer[nloop].getDemand();
+            currentCapacity += g_synapse[nloop].getDemand();
             }
         }
     
+    g_orbital.clear();
+    
+    int pollCapture = 0;
+    
+        // Orbital function for interaction.
+    for (int zloop = 0; zloop < initialOrbitals; zloop++)
+        {
+        for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + numDimensions[9]; nloop++)
+            {
+            addStatus = add_Orbital(&g_orbital, &g_Dimension, nloop, 0);
+            if (addStatus)
+                {
+                std::cout << "Orbital addition failed!" << std::endl;
+                return EXIT_FAILURE;
+                }
+            if (!g_orbital.empty()) g_orbital.back().creation();
+            if (!g_orbital.empty()) g_orbital.back().SetPhase(TWORAD / zloop);
+            }
+        }
     
     
     l_pointStart = int(l_spaPointBase);
     l_ccpPointStart = int(g_Point.size());
     
-        // 50 customers and 50 possible warehouses
+        // 50 synapses and 50 possible neurons
     for(int xloop = 0; xloop < 100; xloop++)
         {
         for (int nloop = ccpDimensionsStart; nloop < ccpDimensionsStart + numDimensions[3]; nloop++)
@@ -1922,23 +2235,23 @@ int main(int argc, const char * argv[]) {
                 }
             if (!g_Point.empty()) g_Point.back().creation();
             if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
-                                                                // Customer points first
+                                                                // Synapse points first
             if(xloop < 50)
                 {
-                if (!g_Point.empty()) g_Point.back().setPointPosition(rand() % 500 + 100);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMin(100);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMinOverflow(2);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMax(600);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMaxOverflow(2);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPosition(rand() % 2 - 1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMin(-1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMinOverflow(2.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMax(1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMaxOverflow(2.0f);  // Initialise to ne coordinate.
                 }
             else
                 {
-                    // Warehouse points second
-                if (!g_Point.empty()) g_Point.back().setPointPosition(rand() % 500 + 100);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMin(100);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMinOverflow(2);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMax(600);  // Initialise to ne coordinate.
-                if (!g_Point.empty()) g_Point.back().setPointPositionMaxOverflow(2);  // Initialise to ne coordinate.
+                    // Neuron points second
+                if (!g_Point.empty()) g_Point.back().setPointPosition(rand() % 2 - 1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMin(-1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMinOverflow(2.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMax(1.0f);  // Initialise to ne coordinate.
+                if (!g_Point.empty()) g_Point.back().setPointPositionMaxOverflow(2.0f);  // Initialise to ne coordinate.
                 }
             }
         }
@@ -1968,7 +2281,7 @@ int main(int argc, const char * argv[]) {
                 if (!g_Point.empty()) g_Point.back().setPointPosition(zloop);
                 
                 if(nloop == spkDimensionsStart) g_Point.back().setPointPosition(zloop);
-                if(nloop == spkDimensionsStart + 1) g_Point.back().setPointPosition(g_Spike[qloop].pollSpike() + (100 * qloop));
+                if(nloop == spkDimensionsStart + 1) g_Point.back().setPointPosition(g_Spike[qloop].pollSpike() + (0.1f * qloop));
                     //        std::cout << g_Point.back().getPointPosition() << ", ";
                 }
             }
@@ -1976,17 +2289,217 @@ int main(int argc, const char * argv[]) {
         }
     
     int l_spkPointEnd = int(g_Point.size());
+        // End of CCP draw points
+    
+        // Start of Orbital draw points
+    int l_orbPointStart = int(g_Point.size());
+    
+    for(int qloop = 0; qloop < initialOrbitals; qloop++)
+        {
+        for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + numDimensions[9]; nloop++)
+            {
+            g_Dimension[nloop].setOffset(0);
+            g_Dimension[nloop].setScale(100);
+            addStatus = add_Point(&g_Point, &g_Dimension, nloop);
+            if (addStatus)
+                {
+                std::cout << "Point addition failed!" << std::endl;
+                return EXIT_FAILURE;
+                }
+            if (!g_Point.empty()) g_Point.back().creation();
+            if (!g_Point.empty()) g_Point.back().resetPoint();  // Initialise first point to location zero.
+            if (!g_Point.empty()) g_Point.back().setPointPosition(qloop);
+            }
+        }
+    
+    int l_orbPointEnd = int(g_Point.size());
+        // End of Orbital Points
     int l_pointEnd = int(g_Point.size());
     
+        // Configure Dynap-se, if attached to reflect simulation configuration
+    
+    if(deviceAttached)
+        {
+            // Let's take a look at the information we have on the device.
+        dynapse_info = caerDynapseInfoGet(usb_handle);
+        
+        printf("%s --- ID: %d, Master: %d,  Logic: %d.\n",
+               dynapse_info.deviceString, dynapse_info.deviceID,
+               dynapse_info.deviceIsMaster, dynapse_info.logicVersion);
+        
+        
+        caerDeviceConfigSet(usb_handle, CAER_HOST_CONFIG_DATAEXCHANGE, CAER_HOST_CONFIG_DATAEXCHANGE_BLOCKING, true);
+        
+        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_RUN, true);
+        
+        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_AER, DYNAPSE_CONFIG_AER_RUN, true);
+        
+        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
+        
+            // force chip to be enable even if aer is off
+        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_MUX, DYNAPSE_CONFIG_MUX_FORCE_CHIP_BIAS_ENABLE, true);
+        
+        printf("Configuring low power biases...");
+        std::ifstream inputbiases( LOWPOWERBIASES);
+        for (std::string line; getline(inputbiases, line);) {
+            int i_dec = atoi(line.c_str());
+            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP,
+                                DYNAPSE_CONFIG_CHIP_CONTENT, i_dec);
+        }
+        inputbiases.close();
+        printf(" Done.\n");
+        
+        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
+        
+        int sramId = 1;
+        
+        for(int coreId = 0; coreId < DYNAPSE_CONFIG_NUMCORES; coreId++)
+            {
+            destinationCoreId = 2^coreId;
+            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_MONITOR_NEU, coreId, 0); // core 0-3 neu 0
+            
+            for(int neuronId = 0; neuronId < DYNAPSE_CONFIG_NUMNEURONS_CORE; neuronId++)
+                {
+                if(((1 + neuronId) * ((neuronId % 3) > 0)) > 0 && ((1 + neuronId) * ((neuronId % 3) > 0)) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
+                    {
+                    genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28;
+                    caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
+                        // Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
+                        //caerDynapseWriteCam(usb_handle, neuronId, ((1 + neuronId) * ((neuronId % 3) > 0)), 0, DYNAPSE_CONFIG_CAMTYPE_F_EXC);
+                    }
+                if(neuronId > 2 && (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))) > 0 && (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
+                    {
+                    genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28;
+                    caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
+                        // Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
+                        //caerDynapseWriteCam(usb_handle, neuronId, (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))), 1, DYNAPSE_CONFIG_CAMTYPE_F_EXC);
+                    }
+                for(int innerLoop = 2; innerLoop < 7; innerLoop++)
+                    {
+                        //                    if(((int(neuronId / (2^(neuronId + 1))) + 8) * ((neuronId % 3) == 0)) > 0 && ((int(neuronId / (2^(innerLoop + 1))) + 8) * ((neuronId % 3) == 0)) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
+                        {
+                        genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28;
+                        caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
+                            //caerDynapseWriteCam(usb_handle, neuronId, ((int(neuronId / (2^(neuronId + 1))) + 8) * ((neuronId % 3) == 0)), innerLoop, DYNAPSE_CONFIG_CAMTYPE_F_EXC);
+                        }
+                    }
+                }
+            }
+        
+        
+        }
+
+    
+        // Now let's get start getting some data from the device. We just loop, no notification needed.
+    if(deviceAttached)
+        {
+    caerDeviceDataStart(usb_handle, NULL, NULL, NULL, NULL, NULL);
+    printf("Start connected devices...\n");
+        }
+    
         // The program will loop whilst the graphics window is open
+    clockTime = std::chrono::high_resolution_clock::now();
+    lastClockTime = clockTime;
+    eventTime = clockTime;
+    startTime = clockTime;
+    uint64_t dynapTime = 1000000000000;
+    int duration = 0;
+    caerEventPacketContainer packetContainer;
+    
     while(g_screen >= 0)
         {
             // Prepared for multiscreen
             //        g_screen = g_screens[g_screen]->runScreen(window);
             // SFML event handling to define what happens if the graphics window is closed
         sf::Event event;
+        
+        clockTime = std::chrono::high_resolution_clock::now();
+        
+        if(deviceAttached)
+            {
+                // Retrieve data from Dynap-se (if any)
+                //std::cout << "Retrieve data from device...";
+            packetContainer = caerDeviceDataGet(usb_handle);
+                //std::cout << " Complete." << std::endl;
+            }
+            //std::cout << clockTime.time_since_epoch().count() << std::endl;
+        duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
+        duration *= g_Dimension[0].getTime();
+            //std::cout << duration << std::endl;
+        eventTime += std::chrono::nanoseconds(duration);
+        lastClockTime = clockTime;
+        
+        if(deviceAttached)
+            {
+            if (packetContainer != NULL)
+                {
+                int32_t packetNum = caerEventPacketContainerGetEventPacketsNumber(packetContainer);
+                
+                    //printf("\nGot event container with %d packets (allocated).\n", packetNum);
+                
+                for (int32_t i = 0; i < packetNum; i++)
+                    {
+                    caerEventPacketHeader packetHeader = caerEventPacketContainerGetEventPacket(packetContainer, i);
+                    if (packetHeader == NULL)
+                        {
+                            //printf("Packet %d is empty (not present).\n", i);
+                        continue; // Skip if nothing there.
+                        }
+                    
+                        //printf("Packet %d of type %d -> size is %d.\n", i,
+                        //   caerEventPacketHeaderGetEventType(packetHeader),
+                        //   caerEventPacketHeaderGetEventNumber(packetHeader));
+                    
+                    if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
+                        {
+                        
+                        caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
+                        
+                            // read all events
+                        CAER_SPIKE_ITERATOR_ALL_START(evts)
+                        
+                        uint64_t ts = caerSpikeEventGetTimestamp(
+                                                                 caerSpikeIteratorElement);
+                        uint64_t neuronId = caerSpikeEventGetNeuronID(
+                                                                      caerSpikeIteratorElement);
+                        uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(
+                                                                              caerSpikeIteratorElement); // which core is from
+                        uint64_t coreId = caerSpikeEventGetChipID(
+                                                                  caerSpikeIteratorElement);// destination core (used as chip id)
+                        
+                            //                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
+                        if(ts < dynapTime)
+                            {
+                            dynapTime = ts;
+                            }
+                        uint64_t syncTime = (ts - dynapTime) * g_Dimension[0].getTime();
+                        if(int(std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - (startTime + std::chrono::microseconds(syncTime))).count()) < 0)
+                            {
+                            eventTime = startTime + std::chrono::microseconds(syncTime);
+                            }
+                        if(neuronId < g_orbital.size())
+                            {
+                        g_orbital[int(neuronId)].AddEnergy(startTime + std::chrono::microseconds(syncTime), 20000.0f);
+                            }
+                            //std::cout << int((neuronId)) << " ";
+                            
+                            //std::cout << int((neuronId % 6)) << " " << syncTime << " " << int(std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - (startTime + std::chrono::microseconds(syncTime))).count()) << "  " << g_orbital[int(neuronId % 6)].GetEnergy() << std::endl;
+                        CAER_SPIKE_ITERATOR_ALL_END
+                        }
+                    }
+                
+                caerEventPacketContainerFree(packetContainer);
+                }
+            }
+        
+            //pollCapture = sniffex(2,list<char>& {"sniffex","en0"});
+        
         while (window.pollEvent(event))
             {
+            l_displayString.str("");
+            l_displayString.clear();
+            l_displayString << textOptions[4][0];
+            g_drawText[4].setString(l_displayString.str());
             if (event.type == sf::Event::Closed)
                 {
                 window.close();
@@ -1998,14 +2511,14 @@ int main(int argc, const char * argv[]) {
                 screenSize = window.getSize();
                 l_screenX = double(screenSize.x);
                 l_screenY = double(screenSize.y);
-                if(l_screenX < 400)
+                if(l_screenX < 400.0f)
                     {
-                    l_screenX = 400;
+                    l_screenX = 400.0f;
                     screenSize.x = l_screenX;
                     }
-                if(l_screenY < 400)
+                if(l_screenY < 400.0f)
                     {
-                    l_screenY = 400;
+                    l_screenY = 400.0f;
                     screenSize.y = l_screenY;
                     }
                 window.setSize(screenSize);
@@ -2023,15 +2536,317 @@ int main(int argc, const char * argv[]) {
                         break;
                         case sf::Keyboard::Up:
                             //                        posy -= movement_step;
+                        l_displayString.str("");
+                        l_displayString.clear();
+                        l_displayString << textOptions[4][2];
+                        g_drawText[4].setString(l_displayString.str());
+                        switch(l_tabCycle)
+                        {
+                            case 0:    // Zoom
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incScale(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getScale());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 1:    // Pan
+                            DimensionList.clear();
+                            SelectDimension(numDimensions, &DimensionList, 1);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incOffset(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getOffset());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 2:    // Rotate
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 3:    // Move
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 4:    // Choose
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 5:    // Modify
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 6:    // Time
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incTime(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getTime());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                        }
                         break;
                         case sf::Keyboard::Down:
                             //                        posy += movement_step;
+                        l_displayString.str("");
+                        l_displayString.clear();
+                        l_displayString << textOptions[4][3];
+                        g_drawText[4].setString(l_displayString.str());
+                        switch(l_tabCycle)
+                        {
+                            case 0:    // Zoom
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decScale(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getScale());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 1:    // Pan
+                            DimensionList.clear();
+                            SelectDimension(numDimensions, &DimensionList, 1);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decOffset(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getOffset());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 2:    // Rotate
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 3:    // Move
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 4:    // Choose
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 5:    // Modify
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 6:    // Time
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decTime(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getTime());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                        }
                         break;
                         case sf::Keyboard::Left:
                             //                        posx -= movement_step;
+                        l_displayString.str("");
+                        l_displayString.clear();
+                        l_displayString << textOptions[4][1];
+                        g_drawText[4].setString(l_displayString.str());
+                        switch(l_tabCycle)
+                        {
+                            case 0:    // Zoom
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decScale(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getScale());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 1:    // Pan
+                            DimensionList.clear();
+                            SelectDimension(numDimensions, &DimensionList, 0);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decOffset(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getOffset());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 2:    // Rotate
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 3:    // Move
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 4:    // Choose
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 5:    // Modify
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 6:    // Time
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].decTime(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getTime());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                        }
                         break;
                         case sf::Keyboard::Right:
                             //                        posx += movement_step;
+                        l_displayString.str("");
+                        l_displayString.clear();
+                        l_displayString << textOptions[4][4];
+                        g_drawText[4].setString(l_displayString.str());
+                        switch(l_tabCycle)
+                        {
+                            case 0:    // Zoom
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incScale(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getScale());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 1:    // Pan
+                            DimensionList.clear();
+                            SelectDimension(numDimensions, &DimensionList, 0);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incOffset(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getOffset());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 2:    // Rotate
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 3:    // Move
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 4:    // Choose
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 5:    // Modify
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 6:    // Time
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            for(int qloop = 0; qloop < DimensionList.size(); qloop++)
+                                {
+                                g_Dimension[DimensionList[qloop]].incTime(10);
+                                }
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getTime());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                        }
+                        break;
+                        case sf::Keyboard::Tab:
+                        l_tabCycle++;
+                        if(l_tabCycle>6) {l_tabCycle = 0;}
+                        l_displayString.str("");
+                        l_displayString.clear();
+                        l_displayString << textOptions[9][l_tabCycle];
+                        g_drawText[9].setString(l_displayString.str());
+                        switch(l_tabCycle)
+                        {
+                            case 0:    // Zoom
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 3);
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getScale());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 1:    // Pan
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getOffset());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                            case 2:    // Rotate
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 3:    // Move
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 4:    // Choose
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 5:    // Modify
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 2);
+                            break;
+                            case 6:    // Time
+                            DimensionList.clear();
+                            SelectMultiDimensions(numDimensions, &DimensionList, 3);
+                            textOptions[10][0] = std::to_string(g_Dimension[DimensionList[0]].getTime());
+                            l_displayString.str("");
+                            l_displayString.clear();
+                            l_displayString << textOptions[10][0];
+                            g_drawText[10].setString(l_displayString.str());
+                            break;
+                        }
                         break;
                         default:
                         break;
@@ -2055,13 +2870,27 @@ int main(int argc, const char * argv[]) {
             g_buttonPressed = false;
             }
         
-        pauseLoop++;
-        if(pauseLoop > 1000)
+        for (int nloop = 0; nloop < initialOrbitals; nloop++)
             {
+            g_orbital[nloop].Update(eventTime);
+            }
+        
+        pauseLoop++;
+        if(pauseLoop > 50000)
+            {
+                // Synthetic periodic stimulus
+            if(!deviceAttached)
+                {
+                for (int nloop = 0; nloop < 6; nloop++)
+                    {
+                    g_orbital[nloop].AddEnergy(eventTime, 20000.0f);
+                    }
+                }
             pauseLoop = 0;
-            sleep(3);
+                //            sleep(2);
                 //                std::cout << "Actual: " << time(0) << " Virtual: " << g_Universe[0].theTimeNow() << std::endl;
             }
+        
         /*
          for(int ploop = 0; ploop < 10000; ploop++)
          {
@@ -2091,149 +2920,427 @@ int main(int argc, const char * argv[]) {
          }
          }
          */
-        
-        
-        
-        for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
+        for (int qloop = 0; qloop < OrbLayers.size() - 1; qloop++)
             {
-            for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+            for (int zloop = OrbLayers[qloop]; zloop <= (OrbLayers[qloop + 1]); zloop++)
                 {
-                l_desiredDistance = g_customer[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2));
-                nodeList.clear();
-                nodeList.push_back(x);
-                nodeList.push_back(x + 1);
-                nodeList.push_back(n);
-                nodeList.push_back(n + 1);
-                
-                    //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
-                
-                addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
-                
-                    //                std::cout << "Retrieved : " << g_Point[nodeList[0]].getPointDifferential() << ", " << g_Point[nodeList[1]].getPointDifferential() << ", " << g_Point[nodeList[2]].getPointDifferential() << ", " << g_Point[nodeList[3]].getPointDifferential() << std::endl;
-                
-                }
-            }
-        
-        for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
-            {
-            l_demandCounter = 0;
-            for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
-                {
-                l_desiredDistance = g_customer[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2));
-                nodeList.clear();
-                nodeList.push_back(n);
-                nodeList.push_back(n + 1);
-                nodeList.push_back(x);
-                nodeList.push_back(x + 1);
-                
-                    //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
-                
-                addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
-                
-                if(g_customer[int((x - l_ccpPointStart)/2)].getAllocatedWarehouse() == int( n - (l_ccpPointStart + 100 ))/2)
+                for (int nloop = OrbLayers[qloop]; nloop <= (OrbLayers[qloop + 1]); nloop++)
                     {
-                    l_demandCounter = l_demandCounter + g_customer[int((x - l_ccpPointStart)/2)].getDemand();
-                    }
-                    //                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " << g_customer[int((x - l_ccpPointStart)/2)].getAllocatedWarehouse() << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
-                }
-            }
-        
-        for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
-            {
-            for(int x = l_ccpPointStart + 100; x < l_ccpPointStart + 200; x = x + 2)
-                {
-                if (n != x)
-                    {
-                    l_desiredDistance = 100;
-                    nodeList.clear();
-                    nodeList.push_back(n);
-                    nodeList.push_back(n + 1);
-                    nodeList.push_back(x);
-                    nodeList.push_back(x + 1);
-                    
-                        //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
-                    
-                    addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
+                    if (zloop != nloop)
+                        {
+                        compareFirst = g_orbital[zloop].GetPosition() / g_orbital[nloop].GetPosition();
+                        if(0.5 - compareFirst > -0.1f && 0.5 - compareFirst < 0.1f)
+                            {
+                            if (zloop < nloop)
+                                {
+                                    // Start of stimulus emulation
+                                if(g_orbital[zloop].GetEnergy() > 1.0f)
+                                    {
+                                    g_orbital[zloop].DelEnergy(eventTime, 1.0f);
+                                        //g_orbital[nloop].AddEnergy(eventTime, 10.0f);
+                                        //iter_swap(g_orbital.begin() + (zloop), g_orbital.begin() + (zloop + 1));
+                                    OrbConnection myOrbConnection;
+                                    myOrbConnection.OrbOne = zloop;
+                                    myOrbConnection.OrbTwo = nloop;
+                                    myOrbConnection.OrbConnectionStrength = 5.0f;
+                                    myOrbConnection.OrbConnectionModifier = 1.0f;
+                                    myOrbConnection.OrbSpike = true;
+                                    myOrbConnection.OrbOnePosition = 0.0f;
+                                    myOrbConnection.OrbTwoPosition = 0.0f;
+                                    OrbConnectionList.push_back(myOrbConnection);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         
-        pArgs = NULL;
-        pArrayArgs = NULL;
-        pTransferArray = NULL;
-        pValue = NULL;
-        pArgs = PyTuple_New(2);
-            //        pValue = PyInt_FromLong(3);
-        npy_intp dims[2] = {2,15};
-        pArrayArgs = PyArray_SimpleNew(2, dims, NPY_INT);
-            // The pointer to the array data is accessed using PyArray_DATA()
-        pTransferArray = (int *) PyArray_DATA(pArrayArgs);
-            // Copy the data from the "array of arrays" to the contiguous numpy array.
-        l_transferArray.clear();
-        for (int tloop = l_ccpPointStart; tloop < l_ccpPointStart + 30; tloop++)
+        for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
             {
-            l_transferArray.push_back((int)round(g_Point[tloop].getPointPosition()));
-                //            std::cout << l_transferArray.back() << ", ";
+            for(int zloop = qloop + 1; zloop < OrbConnectionList.size(); zloop++)
+                {
+                if(OrbConnectionList[qloop].OrbOne == OrbConnectionList[zloop].OrbOne)
+                    {
+                    if(OrbConnectionList[qloop].OrbTwo == OrbConnectionList[zloop].OrbTwo)
+                        {
+                        OrbConnectionList[qloop].OrbConnectionStrength += OrbConnectionList[zloop].OrbConnectionStrength;
+                        OrbConnectionList[zloop].OrbConnectionStrength = 0.0f;
+                        OrbConnectionList[qloop].OrbConnectionModifier *= OrbConnectionList[zloop].OrbConnectionModifier;
+                        OrbConnectionList[zloop].OrbConnectionModifier = 0.0f;
+                        OrbConnectionList[qloop].OrbSpike = true;
+                        }
+                    }
+                }
             }
-            //        std::cout << std::endl;
-        std::memcpy(pTransferArray, &l_transferArray, sizeof(int) * 30);
-        PyTuple_SetItem(pArgs,0,pArrayArgs);
-        pValue = PyInt_FromLong(2);
-        PyTuple_SetItem(pArgs,1,pValue);
-        
-            //        pValue = PyObject_CallObject(pFunc, pArgs);
-        pValue = PyObject_CallObject(pFunc, pArgs);
-            //        Py_DECREF(pArgs);
-            //        Py_DECREF(pArrayArgs);
-        if (pValue != NULL) {
-                //            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
-                //            Py_DECREF(pValue);
-                //            Py_DECREF(pTransferArray);
-                //            pValue = NULL;
-        }
-        else {
-            Py_DECREF(pTransferArray);
-            Py_DECREF(pFunc);
-            Py_DECREF(pModule);
-            PyErr_Print();
-            fprintf(stderr,"Call failed\n");
-            return EXIT_FAILURE;
-        }
-        
-        for(int n = l_pointStart; n < l_pointEnd; n++)
+        if(pauseLoop % 1 == 0)
             {
-                //            std::cout << n << " ";
-            g_Point[n].pointPoll(1);
-            g_Point[n].overflowPoll();
+            OrbConnectionList.erase( std::remove_if(OrbConnectionList.begin(), OrbConnectionList.end(), []( const OrbConnection& item) { return (item.OrbConnectionStrength < 0.1f ); }), OrbConnectionList.end());
             }
-            //        std::cout << std::endl;
         
-        patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart, (l_ccpPointStart + 0) - numDimensions[2], numDimensions[2],1);
-        patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart + 1, (l_ccpPointStart + 1) - numDimensions[2], numDimensions[2],2);
-        patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart + 2, (l_ccpPointStart + 2) - numDimensions[2], numDimensions[2],3);
+        for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
+            {
+            if(OrbConnectionList[qloop].OrbSpike)
+                {
+                if(g_orbital[OrbConnectionList[qloop].OrbOne].GetEnergy() > (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier)
+                    {
+                    g_orbital[OrbConnectionList[qloop].OrbOne].DelEnergy(eventTime, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
+                    g_orbital[OrbConnectionList[qloop].OrbTwo].AddEnergy(eventTime, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
+                    }
+                else
+                    {
+                    g_orbital[OrbConnectionList[qloop].OrbOne].DelEnergy(eventTime, g_orbital[OrbConnectionList[qloop].OrbOne].GetEnergy());
+                    g_orbital[OrbConnectionList[qloop].OrbTwo].AddEnergy(eventTime, g_orbital[OrbConnectionList[qloop].OrbOne].GetEnergy());
+                    }
+                OrbConnectionList[qloop].OrbSpike = false;
+                }
+            else
+                {
+                OrbConnectionList[qloop].OrbConnectionStrength *= 0.99;
+                OrbConnectionList[qloop].OrbConnectionModifier *= 0.99;
+                }
+            }
+
+        if(pauseLoop % 2500 == 0)
+            {
+            std::cout << "Sending stimuli..." << std::endl;
+                //Send spike to Dynapse
+            genBits = 1 << 20; // CAM address (8 bits)
+            genBits += 0 << 18; // Core address (2 bits)
+            genBits += 0 << 16; // Hard code (2 bits)
+            genBits += 0 << 14; // Padding (2 bits)
+            genBits += 1 << 13; // Hard code (1 bits)
+            genBits += 0 << 10; // Padding (3 bits)
+            genBits += 0 << 9; // N/S Direction (1 bit)
+            genBits += 0 << 7; // Skip chips (2 bits)
+            genBits += 0 << 6; // E/W Direction (1 bit)
+            genBits += 0 << 4; // Skip chips (2 bits)
+            genBits += 1; // Core (4 bits)
+            
+
+            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, 0, 0); // core 0-3 neu 0
+            
+            genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | sy << 27 | dy << 25 | dx << 22 | sx << 24 | coreId << 28;
+
+            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
+            std::cout << "Sent stimuli." << std::endl;
+            }
         
-        patternFound = analyseStream(&g_neuron, &g_Point, l_ccpPointStart, (l_pointEnd + 0) - numDimensions[3], numDimensions[3],1);
-        patternFound = analyseStream(&g_neuron, &g_Point, l_ccpPointStart + 1, (l_pointEnd + 1) - numDimensions[3], numDimensions[3],2);
+            // Transfer orbital details to points
+        for (int nloop = l_orbPointStart; nloop < l_orbPointEnd; nloop++)
+            {
+            calcY = g_orbital[nloop - l_orbPointStart].GetPosition();
+            calcYoffset = g_Dimension[orbDimensionsStart + ((nloop - l_orbPointStart) % numDimensions[9])].getOffset();
+            calcYscale = g_Dimension[orbDimensionsStart + ((nloop - l_orbPointStart) % numDimensions[9])].getScale();
+            calcY = calcY + calcYoffset;
+            calcY = calcY * calcYscale;
+            
+            g_Point[nloop].setPointPosition(calcY);
+                //std::cout << calcX << "   ";
+            }
+            // std::cout << std::endl;
         
+        /*
+         for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
+         {
+         for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+         {
+         l_desiredDistance = g_synapse[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2.0f));
+         nodeList.clear();
+         nodeList.push_back(x);
+         nodeList.push_back(x + 1);
+         nodeList.push_back(n);
+         nodeList.push_back(n + 1);
+         
+         //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
+         
+         addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
+         
+         //                std::cout << "Retrieved : " << g_Point[nodeList[0]].getPointDifferential() << ", " << g_Point[nodeList[1]].getPointDifferential() << ", " << g_Point[nodeList[2]].getPointDifferential() << ", " << g_Point[nodeList[3]].getPointDifferential() << std::endl;
+         
+         }
+         }
+         
+         for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+         {
+         l_demandCounter = 0;
+         for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
+         {
+         l_desiredDistance = g_synapse[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2.0f));
+         nodeList.clear();
+         nodeList.push_back(n);
+         nodeList.push_back(n + 1);
+         nodeList.push_back(x);
+         nodeList.push_back(x + 1);
+         
+         //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
+         
+         addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
+         
+         if(g_synapse[int((x - l_ccpPointStart)/2)].getAllocatedNeuron() == int( n - (l_ccpPointStart + 100 ))/2)
+         {
+         l_demandCounter = l_demandCounter + g_synapse[int((x - l_ccpPointStart)/2)].getDemand();
+         }
+         //                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " << g_synapse[int((x - l_ccpPointStart)/2)].getAllocatedNeuron() << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
+         }
+         }
+         
+         for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+         {
+         for(int x = l_ccpPointStart + 100; x < l_ccpPointStart + 200; x = x + 2)
+         {
+         if (n != x)
+         {
+         l_desiredDistance = 0.1;
+         nodeList.clear();
+         nodeList.push_back(n);
+         nodeList.push_back(n + 1);
+         nodeList.push_back(x);
+         nodeList.push_back(x + 1);
+         
+         //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desiredDistance << std::endl;
+         
+         addStatus = distanceBetweenNodes(&g_Point, &nodeList, 2, l_desiredDistance);
+         }
+         }
+         }
+         
+         pArgs = NULL;
+         pArrayArgs = NULL;
+         pTransferArray = NULL;
+         pValue = NULL;
+         pArgs = PyTuple_New(2);
+         //        pValue = PyInt_FromLong(3);
+         npy_intp dims[2] = {2,15};
+         pArrayArgs = PyArray_SimpleNew(2, dims, NPY_INT);
+         // The pointer to the array data is accessed using PyArray_DATA()
+         pTransferArray = (int *) PyArray_DATA(pArrayArgs);
+         // Copy the data from the "array of arrays" to the contiguous numpy array.
+         l_transferArray.clear();
+         for (int tloop = l_ccpPointStart; tloop < l_ccpPointStart + 30; tloop++)
+         {
+         l_transferArray.push_back((int)round(g_Point[tloop].getPointPosition()));
+         //            std::cout << l_transferArray.back() << ", ";
+         }
+         //        std::cout << std::endl;
+         std::memcpy(pTransferArray, &l_transferArray, sizeof(int) * 30);
+         PyTuple_SetItem(pArgs,0,pArrayArgs);
+         pValue = PyInt_FromLong(2);
+         PyTuple_SetItem(pArgs,1,pValue);
+         
+         //        pValue = PyObject_CallObject(pFunc, pArgs);
+         pValue = PyObject_CallObject(pFunc, pArgs);
+         //        Py_DECREF(pArgs);
+         //        Py_DECREF(pArrayArgs);
+         if (pValue != NULL) {
+         //            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
+         //            Py_DECREF(pValue);
+         //            Py_DECREF(pTransferArray);
+         //            pValue = NULL;
+         }
+         else {
+         Py_DECREF(pTransferArray);
+         Py_DECREF(pFunc);
+         Py_DECREF(pModule);
+         PyErr_Print();
+         fprintf(stderr,"Call failed\n");
+         return EXIT_FAILURE;
+         }
+         
+         for(int n = l_pointStart; n < l_pointEnd; n++)
+         {
+         //            std::cout << n << " ";
+         g_Point[n].pointPoll(1);
+         g_Point[n].overflowPoll();
+         }
+         //        std::cout << std::endl;
+         */
+        /*
+         patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart, (l_ccpPointStart + 0) - numDimensions[2], numDimensions[2],1);
+         patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart + 1, (l_ccpPointStart + 1) - numDimensions[2], numDimensions[2],2);
+         patternFound = analyseStream(&g_neuron, &g_Point, l_pointStart + 2, (l_ccpPointStart + 2) - numDimensions[2], numDimensions[2],3);
+         
+         patternFound = analyseStream(&g_neuron, &g_Point, l_ccpPointStart, (l_pointEnd + 0) - numDimensions[3], numDimensions[3],1);
+         patternFound = analyseStream(&g_neuron, &g_Point, l_ccpPointStart + 1, (l_pointEnd + 1) - numDimensions[3], numDimensions[3],2);
+         */
             // Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
         g_drawPoints.clear();
-        for(int n = l_pointStart; n < l_ccpPointStart; n = n + numDimensions[2])
-            {
-            g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2), l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
-                //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
-            }
-        for(int n = l_ccpPointStart; n < l_ccpPointEnd; n = n + numDimensions[3])
-            {
-            g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(128,255,128,255)));
-                //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
-            }
-        for(int n = l_spkPointStart; n < l_spkPointEnd; n = n + numDimensions[4])
-            {
-            g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(255,0,0,255)));
-                //            std::cout << g_Point[n].getPointPosition() << ":" << g_Point[n+1].getPointPosition() << ", ";
-            }
+        /*
+         for(int n = l_pointStart; n < l_ccpPointStart; n = n + numDimensions[2])
+         {
+         calcX = g_Point[n].getPointPosition();
+         calcY = g_Point[n+1].getPointPosition();
+         calcZ = g_Point[n+2].getPointPosition();
+         calcXoffset = g_Dimension[0].getOffset();
+         calcYoffset = g_Dimension[1].getOffset();
+         calcZoffset = g_Dimension[2].getOffset();
+         calcXscale = g_Dimension[0].getScale();
+         calcYscale = g_Dimension[1].getScale();
+         calcZscale = g_Dimension[2].getScale();
+         calcX = calcX + calcXoffset;
+         calcY = calcY + calcYoffset;
+         calcZ = calcZ + calcZoffset;
+         calcX = calcX * calcXscale;
+         calcY = calcY * calcYscale;
+         calcZ = calcZ * calcZscale;
+         calcX = calcX / calcZ;
+         calcY = calcY / calcZ;
+         calcX = calcX + ( l_screenX / 2.0f);
+         calcY = l_screenY - (calcY + ( l_screenY / 2.0f));
+         
+         g_drawPoints.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,255,0,255)));
+         //g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2), l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+         //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
+         }
+         */
+        /*
+         for(int n = l_ccpPointStart; n < l_ccpPointEnd; n = n + numDimensions[3])
+         {
+         calcX = g_Point[n].getPointPosition();
+         calcY = g_Point[n+1].getPointPosition();
+         calcXoffset = g_Dimension[0].getOffset();
+         calcYoffset = g_Dimension[1].getOffset();
+         calcXscale = g_Dimension[0].getScale();
+         calcYscale = g_Dimension[1].getScale();
+         calcX = calcX + calcXoffset;
+         calcY = calcY + calcYoffset;
+         calcX = calcX * calcXscale;
+         calcY = calcY * calcYscale;
+         calcX = calcX + ( l_screenX / 2.0f);
+         calcY = l_screenY - (calcY + ( l_screenY / 2.0f));
+         
+         g_drawPoints.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(128,255,128,255)));
+         //g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(128,255,128,255)));
+         //            std::cout << n << " = " << ((g_Point[n].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenX / 2) << " : " << l_screenY - (((g_Point[n + 1].getPointPosition() / g_Point[n + 2].getPointPosition()) * l_scale) + (l_screenY / 2)) << std::endl;
+         }
+         */
+        /*
+         for(int n = l_spkPointStart; n < l_spkPointEnd; n = n + numDimensions[4])
+         {
+         calcX = g_Point[n].getPointPosition();
+         calcY = g_Point[n+1].getPointPosition();
+         calcXoffset = g_Dimension[0].getOffset();
+         calcYoffset = g_Dimension[1].getOffset();
+         calcXscale = g_Dimension[0].getScale();
+         calcYscale = g_Dimension[1].getScale();
+         calcX = calcX + calcXoffset;
+         calcY = calcY + calcYoffset;
+         calcX = calcX * calcXscale;
+         calcY = calcY * calcYscale;
+         calcX = calcX + ( l_screenX / 2.0f);
+         calcY = l_screenY - (calcY + ( l_screenY / 2.0f));
+         
+         g_drawPoints.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,0,0,255)));
+         //g_drawPoints.push_back(sf::Vertex(sf::Vector2f(((g_Point[n].getPointPosition()))+100, l_screenY - (((g_Point[n + 1].getPointPosition()))+100)), sf::Color(255,0,0,255)));
+         //            std::cout << g_Point[n].getPointPosition() << ":" << g_Point[n+1].getPointPosition() << ", ";
+         }
+         */
             //        std::cout << std::endl;
         g_drawLines.clear();
+        colourMax = 0.0f;
+        for(int n2 = 0; n2 <= l_orbPointEnd - l_orbPointStart; n2 = n2 + numDimensions[9])
+            {
+            if(g_orbital[n2].GetEnergy() > colourMax)
+                colourMax = g_orbital[n2].GetEnergy();
+            }
+        colourMax = 255.0f / colourMax;
+        for(int n = l_orbPointStart; n < l_orbPointEnd; n = n + numDimensions[9])
+            {
+            if(g_orbital[n - l_orbPointStart].GetEnergy() > 0)
+                {
+                calcX = ((2.0f / (l_orbPointEnd - l_orbPointStart)) * (n - l_orbPointStart)) - 1.0f;
+                    //std::cout << "X: " << calcX << std::endl;
+                calcY = g_Point[n].getPointPosition();
+                calcXoffset = g_Dimension[0].getOffset();
+                calcYoffset = g_Dimension[1].getOffset();
+                calcXscale = g_Dimension[0].getScale();
+                calcYscale = g_Dimension[1].getScale();
+                calcX = calcX + calcXoffset;
+                calcY = calcY + calcYoffset;
+                calcX = calcX * calcXscale;
+                calcY = calcY * calcYscale;
+                calcX = calcX * 320.0f;
+                calcY = calcY * 50.0f;
+                for (int zloop = 0; zloop < OrbLayers.size() - 1; zloop++)
+                    {
+                    if ((n - l_orbPointStart) >= OrbLayers[zloop] && (n - l_orbPointStart) < OrbLayers[zloop + 1])
+                        {
+                        calcX += (zloop * 10);
+                        }
+                    }
+                calcX = calcX + ( l_screenX / 2.0f);
+                calcY = l_screenY - (calcY + ( l_screenY / 2.0f));
+                colourY = int(colourMax * g_orbital[n - l_orbPointStart].GetEnergy());
+                
+                g_drawLines.push_back(sf::Vertex(sf::Vector2f(calcX, l_screenY - ( l_screenY / 2)), sf::Color(0,0,255,255)));
+                g_drawLines.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(int((g_Point[n].getPointPosition()+1)*127),colourY,255,255)));
+                    //std::cout << "X: " << calcX << "  Y: " << calcY << std::endl;
+                for (int zloop = 0; zloop < OrbConnectionList.size(); zloop++ )
+                    {
+                    if (n - l_orbPointStart == OrbConnectionList[zloop].OrbOne && g_orbital[OrbConnectionList[zloop].OrbOne].GetEnergy() > 0)
+                        {
+                        OrbConnectionList[zloop].OrbOnePosition = calcX;
+                        }
+                    if (n - l_orbPointStart == OrbConnectionList[zloop].OrbTwo && g_orbital[OrbConnectionList[zloop].OrbTwo].GetEnergy() > 0)
+                        {
+                        OrbConnectionList[zloop].OrbTwoPosition = calcX;
+                        }
+                    }
+                }
+            }
+        if(pauseLoop % 1 == 0)
+            {
+            double connectionLength = 0.0f;
+            for (int n = 0; n < OrbConnectionList.size(); n++ )
+                {
+                connectionLength = OrbConnectionList[n].OrbTwoPosition - OrbConnectionList[n].OrbOnePosition;
+                for (int z = n + 1; z < OrbConnectionList.size(); z++ )
+                    {
+                    if(connectionLength > OrbConnectionList[z].OrbTwoPosition - OrbConnectionList[z].OrbOnePosition)
+                        {
+                        iter_swap(OrbConnectionList.begin() + (n), OrbConnectionList.begin() + (z));
+                        }
+                    }
+                }
+            double xx2 = 0.0f;
+            for (int n = 0; n < OrbConnectionList.size(); n++ )
+                {
+                xx2 = OrbConnectionList[n].OrbTwoPosition;
+                for (int z = n + 1; z < OrbConnectionList.size(); z++ )
+                    {
+                    if(OrbConnectionList[z].OrbOnePosition >= xx2)
+                        {
+                        xx2 = OrbConnectionList[z].OrbTwoPosition;
+                        OrbConnectionList.insert(OrbConnectionList.begin() + (n + 1), OrbConnectionList[z]);
+                        iter_swap(OrbConnectionList.begin() + (n + 1), OrbConnectionList.begin() + (z + 1));
+                        OrbConnectionList.erase(OrbConnectionList.begin() + (z + 1));
+                        n++;
+                        }
+                    }
+                }
+            }
+        int yy = 350;
+        double xx = 0;
+        for (int n = 0; n < OrbConnectionList.size(); n++ )
+            {
+            if (OrbConnectionList[n].OrbOnePosition > 0.0f && OrbConnectionList[n].OrbTwoPosition > 0.0f && g_orbital[OrbConnectionList[n].OrbOne].GetEnergy() > 0 && g_orbital[OrbConnectionList[n].OrbTwo].GetEnergy() > 0)
+                {
+                if(yy > 0)
+                    {
+                    g_drawLines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbOnePosition, yy), sf::Color(g_orbital[OrbConnectionList[n].OrbOne].GetEnergy(),OrbConnectionList[n].OrbConnectionStrength,255,255)));
+                    g_drawLines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbTwoPosition, yy), sf::Color(g_orbital[OrbConnectionList[n].OrbTwo].GetEnergy(),OrbConnectionList[n].OrbConnectionStrength,255,255)));
+                    }
+                if (OrbConnectionList[n].OrbOnePosition >= xx)
+                    {
+                    xx = OrbConnectionList[n].OrbTwoPosition;
+                    }
+                else
+                    {
+                    xx = 0;
+                    yy--;
+                    }
+                }
+            }
         /*
          for(int n = 0; n < l_LineEnd; n++)
          {
@@ -2260,7 +3367,7 @@ int main(int argc, const char * argv[]) {
         
         for(int loopRectangles = 0; loopRectangles < int(g_drawRectangles.size()); loopRectangles++)
             {
-            g_drawRectangles[loopRectangles].setPosition(g_Point[loopRectangles * 2].getPointPosition(), g_Point[(loopRectangles * 2) + 1].getPointPosition());
+            g_drawRectangles[loopRectangles].setPosition(g_Point[loopRectangles * 2.0f].getPointPosition(), g_Point[(loopRectangles * 2.0f) + 1.0f].getPointPosition());
                 //            window.pushGLStates();
             window.draw(g_drawRectangles[loopRectangles]);
                 //            window.popGLStates();
@@ -2268,7 +3375,7 @@ int main(int argc, const char * argv[]) {
         
         for(int loopText = 1; loopText < int(g_drawText.size()); loopText++)
             {
-            g_drawText[loopText].setPosition(g_Point[(loopText * 2) + (int(g_drawRectangles.size())*2)].getPointPosition(), g_Point[(loopText * 2) + 1 + (int(g_drawRectangles.size())*2)].getPointPosition());
+            g_drawText[loopText].setPosition(g_Point[(loopText * 2.0f) + (int(g_drawRectangles.size()) * 2.0f)].getPointPosition(), g_Point[(loopText * 2.0f) + 1.0f + (int(g_drawRectangles.size()) * 2.0f)].getPointPosition());
                 //            window.pushGLStates();
             window.draw(g_drawText[loopText]);
                 //            window.popGLStates();
@@ -2277,13 +3384,20 @@ int main(int argc, const char * argv[]) {
         
         window.display();
         }
+    caerDeviceDataStop(usb_handle);
+    
+    caerDeviceClose(&usb_handle);
+    
+    printf("Dynap-se shutdown successful.\n");
         // Empty vectors before exiting (in reverse of creation)
         //    for(int dloop = int(g_Point.size()); dloop > 0; --dloop) delete (&g_Point[dloop - 1]);
     std::cout << "Clearing memory..." << std::endl;
     Py_XDECREF(pFunc);
     Py_DECREF(pModule);
     Py_Finalize();
+    g_orbital.clear();
     g_dendrite.clear();
+    g_neuron.clear();
     g_Spike.clear();
     g_Point.clear();
     g_Matter.clear();
