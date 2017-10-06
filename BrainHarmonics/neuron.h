@@ -9,231 +9,173 @@
 #ifndef BRAINHARMONICS_NEURON_H
 #define BRAINHARMONICS_NEURON_H
 
-#include <chrono>
-#include <iostream>
-#include <vector>
-#include "dimension.h"
-#include "soma.hpp"
-typedef std::chrono::high_resolution_clock Clock;
+#include "cognitivenetwork.h"
 
-class Neuron : public Dimension
+class Neuron : public CognitiveNetwork
 {
+    friend class Orbital;
 public:
-    /** Default constructor */
-    neuron(dimension& dimensionConnector) : dimension(dimensionConnector)
+    Neuron() : Neuron(0) {}
+    
+    Neuron(unsigned int object_type) : Neuron(object_type, std::chrono::high_resolution_clock::now()) {}
+    
+    Neuron(unsigned int object_type, std::chrono::time_point<Clock> event_time) : CognitiveNetwork() {}
+    
+    Neuron(unsigned int object_type, std::chrono::time_point<Clock> event_time, CognitiveNetwork& cognitivenetwork_connector) : CognitiveNetwork(cognitivenetwork_connector)
     {
-        // Default neuron type selected.
-    neuron(GetTime(), 0);
-    neuronCapacity = 0;                   // set initial type value
+        // Each neuron type will have its own parameter ranges. The default is 0
+    neuron_type = object_type;
+    time_object_created = event_time;
+        // Each new object has its default parameters set here.
+    ResetParameters(event_time);
+    
+        // Call to announce object creation
+    Creation(time_object_created, "Neuron", neuron_type);
+    object_disabled = true;
     }
-    
-    neuron(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, int val)
-    {
-    m_NeuronType = val;
-        // Each neuron type will have its own parameter ranges. The default is 0, Pyramidal neuron
-    resetParameters(eventTime);
-    m_Disabled = true;
-        // If every neuron has a soma, build a soma for this neuron
-        //m_addStatus = add_Soma(&m_SomaList);
-    m_addStatus = add_Soma(eventTime);
-    if(m_addStatus==0)
-        {
-            //        std::cout << "Soma energy: " << m_SomaList[0].GetEnergy() << std::endl;
-    m_Disabled = false;
-        }
-    };
-    /** Default destructor */
-    virtual ~neuron() {};
-    
-    unsigned int getCounter()         { return neuronCounter; }
-    int getCapacity()         { return neuronCapacity; }
-    void setCapacity(int val)         { neuronCapacity = val; }
-    int getUsage()         { return neuronUsage; }
-    void setUsage(int val)         { neuronUsage = val; }
 
-    int getCounter() { return m_Counter; }
-    double getEnergy() { return m_Energy; }
-    double getGateKeeper() { return m_GateKeeper; }
-    double getChannelMin() { return m_ChannelMin; }
-    double getChannelMax() { return m_ChannelMax; }
-    bool getDisabled() { return m_Disabled; }
-    int getNeuronType() { return m_NeuronType; }
-    double getRestingPotential() { return m_RestingPotential; }
-    int getNeuronDeviceTag() { return m_Tag; }
+    /** Default destructor */
+    virtual ~Neuron() {}
     
-    void AddEnergy(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, double val)
-    {
-    add_TemporalAdjustment(eventTime, &m_Energy, val, 100, 0);     // Add energy
-    add_TemporalAdjustment(eventTime, &m_Energy, -val, 1000, 1);   // Decay energy
-    }
-    void setCounter(int val) { m_Counter = val; }
-    void setEnergy(double val) { m_Energy = val; }
-    void setGateKeeper(double val) { m_GateKeeper = val; }
-    void setChannelMin(double val) { m_ChannelMin = val; }
-    void setChannelMax(double val) { m_ChannelMax = val; }
-    void setDisabled(bool val) { m_Disabled = val; }
-    void toggleDisabled() { m_Disabled = !m_Disabled; }
-    void setNeuronType(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, int val) { m_NeuronType = val; resetParameters(eventTime); }
-    void setNeuronDeviceTag(int val) { m_Tag = val; }
-    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    m_Counter = 0;
-    m_GateKeeper = 0;
-    m_ChannelMin = -1;
-    m_ChannelMax = 1;
-    AddEnergy(eventTime, 100);
-    m_EnergyThreshold = 2000;
-    m_Size = 1;
-    m_Spike = 1;
-    m_RestingPotential = -70; // in millivolts
-    m_Tag = 0;
-    switch(m_NeuronType)
-        {
-            case 0:
-            {
-            m_RestingPotential = -80;
-            m_Size = 3;
-            break;
-            }
-            case 1:
-            {
-            m_RestingPotential = -70;
-            m_Size = 2;
-            break;
-            }
-            case 2:
-            {
-            m_RestingPotential = -60;
-            m_Size = 1;
-            break;
-            }
-        }
+    unsigned int GetCounter(std::chrono::time_point<Clock> event_time)         { return neuronCounter; }
+    int GetCapacity(std::chrono::time_point<Clock> event_time)         { return neuronCapacity; }
+    void SetCapacity(std::chrono::time_point<Clock> event_time, int val)         { neuronCapacity = val; }
+    int GetUsage(std::chrono::time_point<Clock> event_time)         { return neuronUsage; }
+    void SetUsage(std::chrono::time_point<Clock> event_time, int val)         { neuronUsage = val; }
+
+    double GetEnergy(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_energy; }
+    double GetGateKeeper(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_GateKeeper; }
+    double GetChannelMin(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_ChannelMin; }
+    double GetChannelMax(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_ChannelMax; }
+    bool GetDisabled(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_disabled; }
+    int GetNeuronType(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return neuron_type; }
+    double GetRestingPotential(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_RestingPotential; }
+    int GetNeuronDeviceTag(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_Tag; }
     
-    }
-        //    void addConnection(std::vector<neuron*> val) { m_ConnectionList.push_back(&val); }
+    int GetSomaPool(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return soma_pool; }
+    int SetSomaPool(std::chrono::time_point<Clock> event_time, int set_pool) { soma_pool = set_pool; }
+
+    void SetCounter(std::chrono::time_point<Clock> event_time, int val) { m_Counter = val; }
+    void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }
+    void SetGateKeeper(std::chrono::time_point<Clock> event_time, double val) { m_GateKeeper = val; }
+    void SetChannelMin(std::chrono::time_point<Clock> event_time, double val) { m_ChannelMin = val; }
+    void SetChannelMax(std::chrono::time_point<Clock> event_time, double val) { m_ChannelMax = val; }
+    void SetDisabled(std::chrono::time_point<Clock> event_time, bool val) { object_disabled = val; }
+    void toggleDisabled(std::chrono::time_point<Clock> event_time) { object_disabled = !object_disabled; }
+    void SetNeuronType(std::chrono::time_point<Clock> event_time, int val) { neuron_type = val; ResetParameters(event_time); }
+    void SetNeuronDeviceTag(std::chrono::time_point<Clock> event_time, int val) { m_Tag = val; }
+    void SetObjectType(std::chrono::time_point<Clock> event_time, int object_type);
+
+    bool ResetParameters(std::chrono::time_point<Clock> event_time);
     
-    bool openGate(double val)
-    {
-    if((val >= m_ChannelMin && val <= m_ChannelMax) or m_Energy > 0.1)
-        {
-        if((val >= m_ChannelMin && val <= m_ChannelMax))
-            {
-            m_Energy = m_Energy + m_Spike;
-            return true;
-            }
-        }
-    else
-        {
-        m_Energy = m_Energy * 0.99;
-        }
-    return false;
-    }
+    bool OpenGate(std::chrono::time_point<Clock> event_time, double val);
     
-    void Creation()
-    {
-        //    std::cout << "Neuron created." << std::endl;
-    }
+    Neuron*  CreateSoma(std::chrono::time_point<Clock> event_time);
     
-    /*
-     int add_Soma (std::vector<soma> *toAddto)
-     {
-     soma mySoma(m_NeuronType);
-     std::copy(&mySoma, &mySoma + 1, std::back_inserter(*toAddto));
-     return 0;
-     }
-     */
-    int add_Soma(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    m_SomaList.push_back(soma(eventTime, m_NeuronType));
-    return 0;
-    }
+    std::vector<Neuron*> CreateSomas(std::chrono::time_point<Clock> event_time, int quantity);
     
-    int growth(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    if (m_Energy > (m_EnergyThreshold * .9))
-        {
-        add_TemporalAdjustment(eventTime, &m_Size, 1, 10000, 0);
-        }
-    if (m_Energy < (m_EnergyThreshold * .1))
-        {
-        add_TemporalAdjustment(eventTime, &m_Size, -1, 10000, 0);
-        }
-    if (m_Size < 1)
-        {
-        m_Size = 1;
-        }
-    if (m_Size > 50)
-        {
-        m_Size = 50;
-        }
-    return 0;
-    }
+    Neuron*  CloneSoma(std::chrono::time_point<Clock> event_time, Neuron* clone_object, double perfection_membership);
     
-    int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    adjust_Counters(eventTime);
+    std::vector<Neuron*> CloneSomas(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> cloning_list, double perfection_membership);
     
-            for(std::vector<soma>::iterator it = m_SomaList.begin(); it != m_SomaList.end(); ++it)
-                {
-                it->Update(eventTime);
-                }
+    Neuron*  DestroySoma(std::chrono::time_point<Clock> event_time, Neuron* destroy_object);
     
-    m_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - m_oldClock).count();
-    if (m_duration < 0)
-        {
-        m_duration = 0;
-        }
-    if (m_duration > 1000)
-        {
-        growth(eventTime);
-        m_EnergyThreshold = m_Size * 1000;
-        }
-        // Clock duration does not consider parallel or serial operation
-    m_oldClock = eventTime;
-    return 0;
-    }
-        
+    std::vector<Neuron*> DestroySomas(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> destruction_list);
+    
+    Neuron*  AddSoma(std::chrono::time_point<Clock> event_time, Neuron* add_object);
+    
+    std::vector<Neuron*> AddSomas(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> add_objects);
+    
+    Neuron*  RemoveSoma(std::chrono::time_point<Clock> event_time);
+    
+    std::vector<Neuron*> RemoveSomas(std::chrono::time_point<Clock> event_time, int quantity);
+    
+    Neuron*  GetSoma(std::chrono::time_point<Clock> event_time, int selector);
+    
+    std::vector<Neuron*> GetSomas(std::chrono::time_point<Clock> event_time);
+    
+    
+    Neuron*  CreateMembrane(std::chrono::time_point<Clock> event_time);
+    
+    std::vector<Neuron*> CreateMembranes(std::chrono::time_point<Clock> event_time, int quantity);
+    
+    Neuron*  CloneMembrane(std::chrono::time_point<Clock> event_time, Neuron* clone_object, double perfection_membership);
+    
+    std::vector<Neuron*> CloneMembranes(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> cloning_list, double perfection_membership);
+    
+    Neuron*  DestroyMembrane(std::chrono::time_point<Clock> event_time, Neuron* destroy_object);
+    
+    std::vector<Neuron*> DestroyMembranes(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> destruction_list);
+    
+    Neuron*  AddMembrane(std::chrono::time_point<Clock> event_time, Neuron* add_object);
+    
+    std::vector<Neuron*> AddMembranes(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> add_objects);
+    
+    Neuron*  RemoveMembrane(std::chrono::time_point<Clock> event_time);
+    
+    std::vector<Neuron*> RemoveMembranes(std::chrono::time_point<Clock> event_time, int quantity);
+    
+    Neuron*  GetMembrane(std::chrono::time_point<Clock> event_time, int selector);
+    
+    std::vector<Neuron*> GetMembranes(std::chrono::time_point<Clock> event_time);
+
+    int Growth(std::chrono::time_point<Clock> event_time);
+    
+    void UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> set_of_update_pointers, unsigned int pointer_type);
+    
+    void UpdateCycle2(std::chrono::time_point<Clock> event_time, std::vector<Universe*> set_of_update_pointers, unsigned int pointer_type);
+
+    int Update(std::chrono::time_point<Clock> event_time);
+    
+    std::vector<Universe*> GetVisualisationList() { return visualisation_list; }
+    
 protected:
+    std::vector<Neuron*> soma_list;
+    std::vector<Neuron*> membrane_list;
+    std::vector<Universe*> visualisation_list;
+
+    struct ObjectConnection
+    {
+    int object_one_type;
+    int object_one;
+    int object_two_type;
+    int object_two;
+    double object_connection_strength;
+    double object_connection_modifier;
+    double object_two_position;
+    };
     
+    std::vector<ObjectConnection> object_connection_list;
+
 private:
-    int m_NeuronType;
+    int neuron_type;
     int m_Tag;
-    double m_Size;
+    int membrane_pool = 1;
+    double object_size;
     double m_RestingPotential;
-    bool m_Disabled;
-    std::chrono::time_point<std::chrono::high_resolution_clock> m_oldClock;
-    int m_duration;
+    bool object_initialised;
+    bool object_disabled;
+    std::chrono::time_point<Clock> time_object_created;
+    std::chrono::time_point<Clock> previous_event_time;
+    int duration_since_last_event;
     int m_addStatus;
     int m_Counter; //!< Member variable "m_Counter"
-    double m_Energy; //!< Member variable "m_Energy"
-    double m_EnergyThreshold;
+    double object_energy; //!< Member variable "object_energy"
+    double object_energy_threshold;
     double m_Spike; //!< Member variable "m_Spike"
     double m_GateKeeper; //!< Member variable "m_GateKeeper"
     double m_ChannelMin; //!< Member variable "m_ChannelMin"
     double m_ChannelMax; //!< Member variable "m_ChannelMax"
-    std::vector<soma> m_SomaList;
+
     double m_TimeDilation;
     double m_TimeThreshold;
-    struct s_CounterAdjustment
-    {
-    s_CounterAdjustment() : s_CounterBegin(std::chrono::high_resolution_clock::now()), s_PointToCounter(0), s_Pool(0), s_Interval(0), s_Shape(0) {}
-    std::chrono::time_point<std::chrono::high_resolution_clock> s_CounterBegin;
-    double* s_PointToCounter;
-    double s_Pool;
-    int s_Interval;
-    int s_Shape;
-    };
     
-    std::vector<s_CounterAdjustment> m_TemporalAdjustment;
-};
-
-
-protected:
-private:
     unsigned int neuronCounter;           //!< Member variable "elementaryParticleCounter"
     int neuronCapacity;
     int neuronUsage;
-};
+    
+    int soma_pool = 1;
 
+};
 
 #endif /* BRAINHARMONICS_NEURON_H */

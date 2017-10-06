@@ -13,278 +13,137 @@
 #include <chrono>
 #include <iostream>
 #include <vector>
-#include "polymer.h"
-#include "neurotransmitter.h"
-#include "neuroreceptor.h"
-typedef std::chrono::high_resolution_clock Clock;
+#include "cognitivenetwork.h"
 
-class Synapse : Polymer
+class Synapse : public CognitiveNetwork
 {
 public:
-    Synapse()
+    Synapse() : Synapse(0) {}
+    
+    Synapse(unsigned int object_type) : Synapse(object_type, std::chrono::high_resolution_clock::now()) {}
+    
+    Synapse(unsigned int object_type, std::chrono::time_point<Clock> event_time) : CognitiveNetwork() {}
+    
+    Synapse(unsigned int object_type, std::chrono::time_point<Clock> event_time, CognitiveNetwork& cognitivenetwork_connector) : CognitiveNetwork(cognitivenetwork_connector)
     {
-    Synapse(GetTime(), *new Polymer());
+        // Each synapse type will have its own parameter ranges. The default is 0
+    synapse_type = object_type;
+    time_object_created = event_time;
+        // Each new object has its default parameters set here.
+    object_initialised = ResetParameters(event_time);
+    
+        // Call to announce object creation
+    Creation(time_object_created, "Synapse", synapse_type);
+    object_disabled = true;
     }
     
-    Synapse(std::chrono::time_point<Clock> eventTime)
-    {
-    Synapse(eventTime, *new Polymer());
-    }
-    
-    Synapse(const Polymer& p) : Polymer(p)
-    {
-    Synapse(GetTime(), p);
-    }
-    
-    Synapse(std::chrono::time_point<Clock> eventTime, const Polymer& p) : Polymer(p)
-    {
-    ResetParameters(eventTime);
-    }
     /** Default destructor */
-    virtual ~Synapse() {};
+    virtual ~Synapse() {}
     
-    unsigned int GetCounter() { return m_Counter; }
-    double GetEnergy() { return m_Energy; }
-    int GetTauCyclesAdd() { return m_TauCyclesAdd; }
-    int GetTauCyclesDecay() { return m_TauCyclesDecay; }
-    int GetChargeType() { return m_ChargeType; }
-    int GetDischargeType() { return m_DischargeType; }
-    int GetSynapseDeviceTag() { return m_Tag; }
+    double GetEnergy(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_energy; }
+    int GetTauCyclesAdd(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_TauCyclesAdd; }
+    int GetTauCyclesDecay(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_TauCyclesDecay; }
+    int GetChargeType(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_ChargeType; }
+    int GetDischargeType(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_DischargeType; }
+    int GetSynapseDeviceTag(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_Tag; }
     
-    void AddEnergy(std::chrono::time_point<Clock> eventTime, double val)
-    {
-    add_TemporalAdjustment(eventTime, &m_Energy, val, m_TauCyclesAdd, m_ChargeType);     // Add energy
-    add_TemporalAdjustment(eventTime, &m_Energy, -val, m_TauCyclesDecay, m_DischargeType);   // Decay energy
-    }
-    double GrabEnergy(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    add_TemporalAdjustment(eventTime, &m_Energy, -m_Energy, m_TauCyclesAdd, m_DischargeType);     // Grab energy
-    return m_Energy;
-    }
-    void SetCounter(unsigned int val) { m_Counter = val; }
-    void SetEnergy(double val) { m_Energy = val; }
-    void SetTauCyclesAdd(int val) { m_TauCyclesAdd = val; }
-    void SetTauCyclesDecay(int val) { m_TauCyclesDecay = val; }
-    void SetChargeType(int val) { m_ChargeType = val; }
-    void SetDischargeType(int val) { m_DischargeType = val; }
-    void Creation() {std::cout << "Synapse created." << std::endl; }
-    void SetSynapseDeviceTag(int val) { m_Tag = val; }
+    void SetCounter(std::chrono::time_point<Clock> event_time, unsigned int val) { m_Counter = val; }
+    void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }
+    void SetTauCyclesAdd(std::chrono::time_point<Clock> event_time, int val) { m_TauCyclesAdd = val; }
+    void SetTauCyclesDecay(std::chrono::time_point<Clock> event_time, int val) { m_TauCyclesDecay = val; }
+    void SetChargeType(std::chrono::time_point<Clock> event_time, int val) { m_ChargeType = val; }
+    void SetDischargeType(std::chrono::time_point<Clock> event_time, int val) { m_DischargeType = val; }
+
+    void SetSynapseDeviceTag(std::chrono::time_point<Clock> event_time, int val) { m_Tag = val; }
     
-    void resetParameters(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    m_Counter = 0;
-    m_Energy = 0;
-    m_TauCyclesAdd = 100; // Time frame that it takes for a value to be added (avoiding instantaneous addition)
-    m_TauCyclesDecay = 1000; // Time frame that it takes for a value to decay
-    m_ChargeType = 0;
-    m_DischargeType = 1;
-    synapseDemand = 0;                   /** set initial type value              */
-    }
+    bool ResetParameters(std::chrono::time_point<Clock> event_time);
     
-    int getDemand() { return synapseDemand; }
+    CognitiveNetwork*  CreateNeurotransmitter(std::chrono::time_point<Clock> event_time);
     
-    double getDistance(int val) { return (double)neuronList[val].distanceToNeuron; }
+    std::vector<CognitiveNetwork*> CreateNeurotransmitters(std::chrono::time_point<Clock> event_time, int quantity);
     
-    int getAllocatedNeuron() { synapseCounter = 0;
-        for ( auto it = neuronList.begin(); it != neuronList.end();  ++it) {
-            if((*it).synapseAllocated == false) synapseCounter++; else break;
-        }
-        return synapseCounter;
-    }
+    CognitiveNetwork*  CloneNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership);
     
-    double getMinimumDistance() { minimumDistance = 1000;
-        for ( auto it = neuronList.begin(); it != neuronList.end();  ++it) {
-            if((*it).distanceToNeuron != 0 && (*it).distanceToNeuron < minimumDistance) minimumDistance = (*it).distanceToNeuron;
-        }
-        return minimumDistance;
-    }
+    std::vector<CognitiveNetwork*> CloneNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership);
     
-    void getNeuronList() {
-        for ( auto it = neuronList.begin(); it != neuronList.end();  ++it) {
-            std::cout << (*it).distanceToNeuron << std::endl;
-        }
-    }
+    CognitiveNetwork*  DestroyNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object);
     
-    void setDemand(int val) { synapseDemand = val; }
+    std::vector<CognitiveNetwork*> DestroyNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list);
     
-    void setNeuron(int val) { neuronList[val].synapseAllocated = true; }
+    CognitiveNetwork*  AddNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object);
     
-    void addDistance(Neuron *neuron, double val)
-    {
-    NearbyNeuron addNeuron;
-    addNeuron.nearbyNeuron = neuron;
-    addNeuron.distanceToNeuron = val;
-        // Add 0.001 to avoid divide by zero
-    addNeuron.synapseGravitationalAttraction = synapseDemand / ( (val + 0.001) * (val + 0.001) );
-    addNeuron.synapseAllocated = false;
-    neuronList.push_back(addNeuron);
-    }
+    std::vector<CognitiveNetwork*> AddNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> add_objects);
     
-    void creation() { }
+    CognitiveNetwork*  RemoveNeurotransmitter(std::chrono::time_point<Clock> event_time);
     
-    unsigned int getCounter()         { return synapseCounter; }
+    std::vector<CognitiveNetwork*> RemoveNeurotransmitters(std::chrono::time_point<Clock> event_time, int quantity);
     
+    CognitiveNetwork*  GetNeurotransmitter(std::chrono::time_point<Clock> event_time, int selector);
+    
+    std::vector<CognitiveNetwork*> GetNeurotransmitters(std::chrono::time_point<Clock> event_time);
+
+    int GetDemand(std::chrono::time_point<Clock> event_time);
+    
+    double GetDistance(std::chrono::time_point<Clock> event_time, int val);
+    
+    int GetAllocatedSynapse(std::chrono::time_point<Clock> event_time);
+    
+    double GetMinimumDistance(std::chrono::time_point<Clock> event_time);
+    
+    void GetSynapseList(std::chrono::time_point<Clock> event_time);
+    
+    void SetDemand(std::chrono::time_point<Clock> event_time, int val);
+    
+    void SetNeuron(std::chrono::time_point<Clock> event_time, int val);
+    
+        //    void AddDistance(Neuron *synapse, double val);
+        
     /*
-     int add_ElementaryParticle(std::vector<ElementaryParticle> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
-     {
-     ElementaryParticle myElementaryParticle((*aPartof)[arrayEntry]);
-     // Use move not push_back otherwise data is destroyed on exiting function
-     std::copy(&myElementaryParticle, &myElementaryParticle + 1, std::back_inserter(*toAddto));
-     
-     return 0;
-     }
+     int AddSynapse(std::vector<Synapse> *toAddto, std::vector<CognitiveNetwork> *aPartof, int arrayEntry);
      */
     
 
-    void SendBareSpike(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    m_Energy += 1000;
-    }
+    void SendBareSpike(std::chrono::time_point<Clock> event_time);
     
-    int add_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neurotransmitter *val)
-    {
-    m_NeurotransmitterList.push_back(*val);
-    return 0;
-    }
+    void SendTransmitterSpike(std::chrono::time_point<Clock> event_time);
     
-    int create_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    Neurotransmitter myNeurotransmitter(eventTime);
-    add_Neurotransmitter(eventTime, &myNeurotransmitter);
-    return 0;
-    }
-    
-    int remove_Neurotransmitter(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neurotransmitter *val)
-    {
-        //m_NeurotransmitterList.erase(std::remove(m_NeurotransmitterList.begin(), m_NeurotransmitterList.end(), *val), m_NeurotransmitterList.end());
-    return 0;
-    }
-    
-    void SendTransmitterSpike(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    for (int nloop = 0; nloop < 100; nloop++)
-        {
-        create_Neurotransmitter(eventTime);
-        }
-    SendBareSpike(eventTime);
-    }
-    
-    int add_Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neuroreceptor *val)
-    {
-    m_NeuroreceptorList.push_back(*val);
-    return 0;
-    }
-    
-    int remove_Neuroreceptor(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime, Neuroreceptor *val)
-    {
-        //m_NeuroreceptorList.erase(std::remove(m_NeuroreceptorList.begin(), m_NeuroreceptorList.end(), *val), m_NeuroreceptorList.end());
-    return 0;
-    }
-    
-    int Update(std::chrono::time_point<std::chrono::high_resolution_clock> eventTime)
-    {
-    bool bindingFound;
-    adjust_Counters(eventTime);
-    
-    for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
-        {
-        it->Update(eventTime);
-        }
-    
-    if (m_Energy > 0)
-        {
-        for(std::vector<Neurotransmitter>::iterator it = m_NeurotransmitterList.begin(); it != m_NeurotransmitterList.end(); ++it)
-            {
-            add_TemporalAdjustment(eventTime, &m_Energy, (0-m_Energy)/m_NeurotransmitterList.size(), 100, 1);   // redistribute energy
-            it->AddEnergy(eventTime, m_Energy/m_NeurotransmitterList.size());
-            }
-        }
-    
-    m_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(eventTime - m_oldClock).count();
-    if (m_duration < 0)
-        {
-        m_duration = 0;
-        }
-    if (m_duration > 1000)
-        {
-        for(std::vector<Neuroreceptor>::iterator it_receptor = m_NeuroreceptorList.begin(); it_receptor != m_NeuroreceptorList.end(); ++it_receptor)
-            {
-            bindingFound = false;
-            for(std::vector<s_BindList>::iterator it_bindrec = m_BindList.begin(); it_bindrec != m_BindList.end(); ++it_bindrec)
-                {
-                if (it_bindrec->m_Neuroreceptor == &(*it_receptor))
-                    {
-                    bindingFound = true;
-                    }
-                }
-            if(!bindingFound)
-                {
-                for(std::vector<Neurotransmitter>::iterator it_transmitter = m_NeurotransmitterList.begin(); it_transmitter != m_NeurotransmitterList.end(); ++it_transmitter)
-                    {
-                    for(std::vector<s_BindList>::iterator it_bindrec = m_BindList.begin(); it_bindrec != m_BindList.end(); ++it_bindrec)
-                        {
-                        if (it_bindrec->m_Neurotransmitter == &(*it_transmitter))
-                            {
-                            bindingFound = true;
-                            }
-                        }
-                    if(!bindingFound)
-                        {
-                        if (it_receptor->CompatibilityCheck(it_transmitter->GetType()))
-                            {
-                            s_BindList newBinding;
-                            newBinding.m_Neuroreceptor = &(*it_receptor);
-                            newBinding.m_Neurotransmitter = &(*it_transmitter);
-                            m_BindList.push_back(newBinding);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        // Clock duration does not consider parallel or serial operation
-    m_oldClock = eventTime;
-    return 0;
-    }
+    int Update(std::chrono::time_point<Clock> event_time);
     
 protected:
+    std::vector<CognitiveNetwork*> neurotransmitter_list;
+
 private:
+    int synapse_type;
+    double object_size;
+    double object_energy;
+    double object_energy_threshold;
     int m_NeuronType;
+    int neurotransmitter_pool;
     int m_Tag;
     int m_addStatus;
     int m_TauCyclesAdd;
     int m_TauCyclesDecay;
     int m_ChargeType;
     int m_DischargeType;
-    std::chrono::time_point<std::chrono::high_resolution_clock> m_oldClock;
-    int m_duration;
+    bool object_disabled;
+    std::chrono::time_point<Clock> time_object_created;
+    std::chrono::time_point<Clock> previous_event_time;
+    int duration_since_last_event;
     double m_Volume;
     double m_SurfaceArea;
     unsigned int m_Counter; //!< Member variable "m_Counter"
-    double m_Energy; //!< Member variable "m_Energy"
     double m_axonlength;
     double m_TimeDilation;
     double m_TimeThreshold;
-    struct s_CounterAdjustment
-    {
-    s_CounterAdjustment() : s_CounterBegin(std::chrono::high_resolution_clock::now()), s_PointToCounter(0), s_Pool(0), s_Interval(0), s_Shape(0) {}
-    std::chrono::time_point<std::chrono::high_resolution_clock> s_CounterBegin;
-    double* s_PointToCounter;
-    double s_Pool;
-    int s_Interval;
-    int s_Shape;
-    };
-    
-    std::vector<s_CounterAdjustment> m_TemporalAdjustment;
+    bool object_initialised = false;
+
     double m_ReduceBy;
     double m_ReducedBy;
-    std::vector<Neurotransmitter> m_NeurotransmitterList;
-    std::vector<Neuroreceptor> m_NeuroreceptorList;
     
     struct s_BindList
     {
-    Neurotransmitter* m_Neurotransmitter;
-    Neuroreceptor* m_Neuroreceptor;
+        //    Neurotransmitter* neurotransmitter;
+        //    Neuroreceptor* neuroreceptor;
     };
     
     std::vector<s_BindList> m_BindList;
@@ -296,7 +155,7 @@ private:
     
     struct NearbyNeuron
     {
-    Neuron* nearbyNeuron;
+        // Neuron* nearbyNeuron;
     double distanceToNeuron;
     double synapseGravitationalAttraction;
     bool synapseAllocated;
@@ -305,22 +164,6 @@ private:
     std::vector<NearbyNeuron> neuronList;
     std::vector<NearbyNeuron>::iterator it;
 
-    
-};
-
-
-class Synapse : public Neuron
-{
-public:
-    /** Default constructor */
-    Synapse(Neuron& cw) : Neuron(cw) {
-            //std::cout << "Synapse connected to Neuron @ " << &cw << std::endl;
-        synapseDemand = 0;                   /** set initial type value              */
-            //        std::copy(&cw, &cw + 1, std::back_inserter(synapseneuronlist));
-        
-    };
-    /** Default destructor */
-    virtual ~Synapse() {};
     
 };
 

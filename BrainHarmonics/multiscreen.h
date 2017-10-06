@@ -14,12 +14,12 @@
 /* relate to real-world physics. This will then ease mapping between simulation,*/
 /* emulation and real-world universes.                                          */
 
-#ifndef MULTISCREEN_H
-#define MULTISCREEN_H
+#ifndef BRAINHARMONICS_MULTISCREEN_H
+#define BRAINHARMONICS_MULTISCREEN_H
 
 #include <iostream>
 #include "SFML/Graphics.hpp"
-    //#include "ResourcePath.hpp"
+    //#include "ResourcePath.h"
 
 class MultiScreen
 {
@@ -40,4 +40,4 @@ private:
 };
 
 
-#endif // MULTISCREEN_H
+#endif // BRAINHARMONICS_MULTISCREEN_H
