@@ -9,9 +9,31 @@ Folders created
 ~/Developer/CMakeFiles
 ~/Developer/BrainHarmonics
 
-How to build...
+Install CMake
 
-Install libpcap-dev
+sudo apt-get update
+sudo apt-get install build-essential cmake libgl1-mesa-dev libxt-dev libpcap-dev
+
+Install the VTK toolkit
+
+cd ~/Developer
+git clone git://vtk.org/VTK.git
+
+mkdir ~/Developer/VTK-build
+mkdir ~/Developer/VTK-Release-build
+mkdir ~/Developer/QT
+cd ~/Developer/VTK-build
+cmake ~/Developer/VTK
+
+cd ~/Developer/VTK-Release-build
+cmake -DCMAKE_BUILD_TYPE:STRING=Release ~/Developer/VTK
+
+cd ~/Developer/QT
+wget http://download.qt-project.org/official_releases/qt/5.9/5.9.2/qt-opensource-linux-x64-5.9.2.run
+chmod +x qt-opensource-linux-x64-5.9.2.run
+./qt-opensource-linux-x64-5.9.2.run
+
+How to build...
 
 Create a pcap cmake file...  FindPCAP.cmake
 
