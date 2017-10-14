@@ -1,0 +1,322 @@
+.TH "Synapse" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Synapse
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <synapse\&.h>\fP
+.PP
+Inherits \fBCognitiveNetwork\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSynapse\fP ()"
+.br
+.ti -1c
+.RI "\fBSynapse\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBSynapse\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBSynapse\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP &cognitivenetwork_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Synapse\fP ()"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetSynapseDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetSynapseDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBGetAllocatedSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetMinimumDistance\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBGetSynapseList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneurotransmitter_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 18 of file synapse\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Synapse::Synapse ()\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file synapse\&.h\&.
+.SS "Synapse::Synapse (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file synapse\&.h\&.
+.SS "Synapse::Synapse (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file synapse\&.h\&.
+.SS "Synapse::Synapse (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP & cognitivenetwork_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file synapse\&.h\&.
+.SS "virtual Synapse::~Synapse ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 41 of file synapse\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCognitiveNetwork\fP * Synapse::AddNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 124 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::AddNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 135 of file synapse\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Synapse::CloneNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 109 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::CloneNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 104 of file synapse\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Synapse::CreateNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 71 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::CreateNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 82 of file synapse\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Synapse::DestroyNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 119 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::DestroyNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 114 of file synapse\&.cc\&.
+.SS "int Synapse::GetAllocatedSynapse (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "int Synapse::GetChargeType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file synapse\&.h\&.
+.SS "int Synapse::GetDemand (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 180 of file synapse\&.cc\&.
+.SS "int Synapse::GetDischargeType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file synapse\&.h\&.
+.SS "double Synapse::GetDistance (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.SS "double Synapse::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 43 of file synapse\&.h\&.
+.SS "double Synapse::GetMinimumDistance (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "\fBCognitiveNetwork\fP * Synapse::GetNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 168 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::GetNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 173 of file synapse\&.cc\&.
+.SS "int Synapse::GetSynapseDeviceTag (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file synapse\&.h\&.
+.SS "void Synapse::GetSynapseList (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "int Synapse::GetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file synapse\&.h\&.
+.SS "int Synapse::GetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file synapse\&.h\&.
+.SS "\fBCognitiveNetwork\fP * Synapse::RemoveNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 157 of file synapse\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Synapse::RemoveNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 163 of file synapse\&.cc\&.
+.SS "bool Synapse::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+Set initial type value 
+.PP
+Definition at line 23 of file synapse\&.cc\&.
+.SS "void Synapse::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 234 of file synapse\&.cc\&.
+.SS "void Synapse::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 262 of file synapse\&.cc\&.
+.SS "void Synapse::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file synapse\&.h\&.
+.SS "void Synapse::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 50 of file synapse\&.h\&.
+.SS "void Synapse::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.PP
+Definition at line 205 of file synapse\&.cc\&.
+.SS "void Synapse::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file synapse\&.h\&.
+.SS "void Synapse::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file synapse\&.h\&.
+.SS "void Synapse::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.PP
+Definition at line 207 of file synapse\&.cc\&.
+.SS "void Synapse::SetSynapseDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file synapse\&.h\&.
+.SS "void Synapse::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file synapse\&.h\&.
+.SS "void Synapse::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file synapse\&.h\&.
+.SS "int Synapse::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 288 of file synapse\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> Synapse::neurotransmitter_list\fC [protected]\fP"
+
+.PP
+Definition at line 113 of file synapse\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

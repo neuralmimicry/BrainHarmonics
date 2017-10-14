@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_nachannel" kind="class" language="C++" prot="public">
+    <compoundname>Nachannel</compoundname>
+    <includes refid="nachannel_8h" local="no">nachannel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_nachannel_1a2e75dc9d20a13f13b4c955754b680ae1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Nachannel::m_Counter</definition>
+        <argsstring></argsstring>
+        <name>m_Counter</name>
+        <briefdescription>
+<para>Member variable &quot;m_Counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="34" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nachannel_1afce0acd60c7bd443ddf22c9bc5068987" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Nachannel::m_Energy</definition>
+        <argsstring></argsstring>
+        <name>m_Energy</name>
+        <briefdescription>
+<para>Member variable &quot;m_Energy&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="35" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nachannel_1afc63e7ec21ac4b022aa957fff168e335" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Nachannel::Nachannel</definition>
+        <argsstring>()</argsstring>
+        <name>Nachannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="18" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1a3fc055fbc658717a047ab2db91f0e548" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Nachannel::~Nachannel</definition>
+        <argsstring>()</argsstring>
+        <name>~Nachannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="20" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1ac4ffee3a22e8331e0109cb12c62ad874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Nachannel::GetCounter</definition>
+        <argsstring>()</argsstring>
+        <name>GetCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access m_Counter <simplesect kind="return"><para>The current value of m_Counter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="24" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1abcce60aa83cd6810d473adaa574d9f30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Nachannel::GetEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="25" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1a7936928a0fcdec32fb53f6bb5e55adeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nachannel::SetCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set m_Counter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value to Set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="29" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1abf68082fcbd8068ac1be9138d4fd469c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nachannel::SetEnergy</definition>
+        <argsstring>(double val)</argsstring>
+        <name>SetEnergy</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="30" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nachannel_1ac8bc353ddc4aa26f428ebfa78f2399b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nachannel::Creation</definition>
+        <argsstring>()</argsstring>
+        <name>Creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="31" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" line="15" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/nachannel.h" bodystart="14" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_nachannel_1ac8bc353ddc4aa26f428ebfa78f2399b2" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>Creation</name></member>
+      <member refid="class_nachannel_1ac4ffee3a22e8331e0109cb12c62ad874" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>GetCounter</name></member>
+      <member refid="class_nachannel_1abcce60aa83cd6810d473adaa574d9f30" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>GetEnergy</name></member>
+      <member refid="class_nachannel_1a2e75dc9d20a13f13b4c955754b680ae1" prot="private" virt="non-virtual"><scope>Nachannel</scope><name>m_Counter</name></member>
+      <member refid="class_nachannel_1afce0acd60c7bd443ddf22c9bc5068987" prot="private" virt="non-virtual"><scope>Nachannel</scope><name>m_Energy</name></member>
+      <member refid="class_nachannel_1afc63e7ec21ac4b022aa957fff168e335" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>Nachannel</name></member>
+      <member refid="class_nachannel_1a7936928a0fcdec32fb53f6bb5e55adeb" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>SetCounter</name></member>
+      <member refid="class_nachannel_1abf68082fcbd8068ac1be9138d4fd469c" prot="public" virt="non-virtual"><scope>Nachannel</scope><name>SetEnergy</name></member>
+      <member refid="class_nachannel_1a3fc055fbc658717a047ab2db91f0e548" prot="public" virt="virtual"><scope>Nachannel</scope><name>~Nachannel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

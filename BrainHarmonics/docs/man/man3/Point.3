@@ -1,0 +1,507 @@
+.TH "Point" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Point
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <point\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP ()"
+.br
+.ti -1c
+.RI "\fBPoint\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBPoint\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBPoint\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Point\fP ()"
+.br
+.ti -1c
+.RI "int \fBGetPointSeq\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointScale\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointPosition\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointPosition2\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointPositionMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointPositionMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointPositionMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointPositionMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointMove\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointMoveMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointMoveMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointMoveMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointMoveMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointDifferential\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointDifferentialMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointDifferentialMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBGetPointDifferentialMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< int > \fBGetPointDifferentialMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetPointTTL\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetPointTTLMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetPointTTLMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetPointTTLMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetPointTTLMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< double > \fBRespectLimits\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetPointSeq\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetPointScale\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointPositionMin\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointPositionMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointPositionMax\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointPositionMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointMove\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointMoveMin\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointMoveMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointMoveMax\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointMoveMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointDifferential\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointDifferentialMin\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointDifferentialMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointDifferentialMax\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointDifferentialMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)"
+.br
+.ti -1c
+.RI "void \fBSetPointTTL\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetPointTTLMin\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetPointTTLMinOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetPointTTLMax\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetPointTTLMaxOverflow\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBPointForcePoll\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBPoint\fP *opposingPoint)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBPointPoll\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBOverflowPoll\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBElementaryParticle\fP"
+.br
+.ti -1c
+.RI "class \fBElementaryForce\fP"
+.br
+.ti -1c
+.RI "class \fBCompositeForceParticle\fP"
+.br
+.ti -1c
+.RI "class \fBPolyhedron\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file point\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Point::Point ()\fC [inline]\fP"
+
+.PP
+Definition at line 34 of file point\&.h\&.
+.SS "Point::Point (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 36 of file point\&.h\&.
+.SS "Point::Point (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file point\&.h\&.
+.SS "Point::Point (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file point\&.h\&.
+.SS "virtual Point::~Point ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 56 of file point\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector<double> Point::GetPointDifferential (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 85 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointDifferentialMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 88 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointDifferentialMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 89 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointDifferentialMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 86 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointDifferentialMinOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 87 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointMove (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 79 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointMoveMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 82 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointMoveMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 83 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointMoveMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 80 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointMoveMinOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 81 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointPosition (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointPosition2 (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointPositionMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 76 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointPositionMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 77 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointPositionMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 74 of file point\&.h\&.
+.SS "std::vector<int> Point::GetPointPositionMinOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 75 of file point\&.h\&.
+.SS "std::vector<double> Point::GetPointScale (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file point\&.h\&.
+.SS "int Point::GetPointSeq (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+Access member variable values 
+.PP
+Definition at line 59 of file point\&.h\&.
+.SS "double Point::GetPointTTL (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 91 of file point\&.h\&.
+.SS "double Point::GetPointTTLMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 94 of file point\&.h\&.
+.SS "int Point::GetPointTTLMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 95 of file point\&.h\&.
+.SS "double Point::GetPointTTLMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 92 of file point\&.h\&.
+.SS "int Point::GetPointTTLMinOverflow (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 93 of file point\&.h\&.
+.SS "void Point::OverflowPoll (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 162 of file point\&.cc\&.
+.SS "void Point::PointForcePoll (std::chrono::time_point< \fBClock\fP > event_time, \fBPoint\fP * opposingPoint)"
+
+.PP
+Definition at line 101 of file point\&.cc\&.
+.SS "void Point::PointPoll (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+
+.PP
+Definition at line 150 of file point\&.cc\&.
+.SS "bool Point::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+Overflow options: 0 = Stay at Min/Max, 1 = Wrap, 2 = Bounce, 3 = Hidden, 4 = DestroyDimension, 5 = DestroyAllDimensions
+.PP
+Initialise to zero
+.PP
+Unique point sequence number
+.PP
+Size can vary greatly\&. Scaling groups points
+.PP
+\fBPoint\fP \fBDimension\fP value
+.PP
+Minimum value allowed for point
+.PP
+What to do if overflow - see above
+.PP
+Maximum value allowed for point
+.PP
+What to do if overflow - see above
+.PP
+How far to move the point value
+.PP
+Maximum change in movement
+.PP
+What to do if overflow - see above
+.PP
+Minimum change in movement
+.PP
+What to do if overflow - see above
+.PP
+Rate of change of movement
+.PP
+Minimum rate of change
+.PP
+What to do if overflow - see above
+.PP
+Maximum rate of change
+.PP
+What to do if overflow - see above
+.PP
+Time to live for point
+.PP
+Minimum TTL for point
+.PP
+What to do if overflow - see above
+.PP
+Maximum TTL for point
+.PP
+What to do if overflow - see above 
+.PP
+Definition at line 20 of file point\&.cc\&.
+.SS "std::vector<double> Point::RespectLimits (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+Set member variable values 
+.PP
+Definition at line 98 of file point\&.h\&.
+.SS "void Point::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+
+.PP
+Definition at line 92 of file point\&.cc\&.
+.SS "void Point::SetPointDifferential (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 140 of file point\&.h\&.
+.SS "void Point::SetPointDifferentialMax (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 143 of file point\&.h\&.
+.SS "void Point::SetPointDifferentialMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 144 of file point\&.h\&.
+.SS "void Point::SetPointDifferentialMin (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 141 of file point\&.h\&.
+.SS "void Point::SetPointDifferentialMinOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 142 of file point\&.h\&.
+.SS "void Point::SetPointMove (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 134 of file point\&.h\&.
+.SS "void Point::SetPointMoveMax (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 137 of file point\&.h\&.
+.SS "void Point::SetPointMoveMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 138 of file point\&.h\&.
+.SS "void Point::SetPointMoveMin (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 135 of file point\&.h\&.
+.SS "void Point::SetPointMoveMinOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 136 of file point\&.h\&.
+.SS "void Point::SetPointPosition (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 125 of file point\&.h\&.
+.SS "void Point::SetPointPositionMax (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 131 of file point\&.h\&.
+.SS "void Point::SetPointPositionMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 132 of file point\&.h\&.
+.SS "void Point::SetPointPositionMin (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 129 of file point\&.h\&.
+.SS "void Point::SetPointPositionMinOverflow (std::chrono::time_point< \fBClock\fP > event_time, std::vector< int > val)\fC [inline]\fP"
+
+.PP
+Definition at line 130 of file point\&.h\&.
+.SS "void Point::SetPointScale (std::chrono::time_point< \fBClock\fP > event_time, std::vector< double > val)\fC [inline]\fP"
+
+.PP
+Definition at line 124 of file point\&.h\&.
+.SS "void Point::SetPointSeq (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 122 of file point\&.h\&.
+.SS "void Point::SetPointTTL (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 146 of file point\&.h\&.
+.SS "void Point::SetPointTTLMax (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 149 of file point\&.h\&.
+.SS "void Point::SetPointTTLMaxOverflow (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 150 of file point\&.h\&.
+.SS "void Point::SetPointTTLMin (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 147 of file point\&.h\&.
+.SS "void Point::SetPointTTLMinOverflow (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 148 of file point\&.h\&.
+.SS "int Point::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 445 of file point\&.cc\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBCompositeForceParticle\fP\fC [friend]\fP"
+
+.PP
+Definition at line 30 of file point\&.h\&.
+.SS "friend class \fBElementaryForce\fP\fC [friend]\fP"
+
+.PP
+Definition at line 29 of file point\&.h\&.
+.SS "friend class \fBElementaryParticle\fP\fC [friend]\fP"
+
+.PP
+Definition at line 28 of file point\&.h\&.
+.SS "friend class \fBPolyhedron\fP\fC [friend]\fP"
+
+.PP
+Definition at line 31 of file point\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

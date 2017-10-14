@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_schwann_cell" kind="class" language="C++" prot="public">
+    <compoundname>SchwannCell</compoundname>
+    <basecompoundref refid="class_interneuron_space" prot="public" virt="non-virtual">InterneuronSpace</basecompoundref>
+    <includes refid="schwanncell_8h" local="no">schwanncell.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_schwann_cell_1a6a72f907dbb2b8516f2292e0d82f887d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SchwannCell::m_Counter</definition>
+        <argsstring></argsstring>
+        <name>m_Counter</name>
+        <briefdescription>
+<para>Member variable &quot;m_Counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="52" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1a16689a4b1f42cabe7de168440c815edd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SchwannCell::object_energy</definition>
+        <argsstring></argsstring>
+        <name>object_energy</name>
+        <briefdescription>
+<para>Member variable &quot;object_energy&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="53" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1a6b045b7f7bf629cd9f75b58c40f5b7c1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SchwannCell::schwanncell_type</definition>
+        <argsstring></argsstring>
+        <name>schwanncell_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="54" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1a3fe616a8aadf62602a0aeff0f3d4d491" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SchwannCell::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="55" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1aa9264dbe039d439956f94391769fda5f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SchwannCell::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="56" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1ac5c518c34e3c2afb70bc2780c1b74439" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; SchwannCell::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="57" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1acea7e2f40d807a2ca973c4c8de90c879" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; SchwannCell::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="58" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_schwann_cell_1ad2281f878b3aec7ce7ba31f27f698daa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SchwannCell::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="59" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_schwann_cell_1aab3414e0d6266c5b791a000c39359ca5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SchwannCell::SchwannCell</definition>
+        <argsstring>()</argsstring>
+        <name>SchwannCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="18" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1a1387a5d8b87e485a507c72a657ab2864" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SchwannCell::SchwannCell</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>SchwannCell</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="20" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1ad8e9f6343a3617a44d8a03e4edbc92d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SchwannCell::SchwannCell</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>SchwannCell</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="22" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1abaa1caff5e245ede16a538d1e1bcc1e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SchwannCell::SchwannCell</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, InterneuronSpace &amp;interneuronspace_connector)</argsstring>
+        <name>SchwannCell</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_interneuron_space" kindref="compound">InterneuronSpace</ref> &amp;</type>
+          <declname>interneuronspace_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="24" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="24" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1af98a51e1f9c191bb57282dbbb16dd2a9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SchwannCell::~SchwannCell</definition>
+        <argsstring>()</argsstring>
+        <name>~SchwannCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="36" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1af60de27e9658b2ca9973931c2175fe74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SchwannCell::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="38" column="1" bodyfile="BrainHarmonics/schwanncell.cc" bodystart="19" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1ab43faeb8f76529162985b2a0c53eb3f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SchwannCell::GetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="40" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1af6dd3963bc46763b34f2ee742a4c9fae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double SchwannCell::GetEnergy</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetEnergy</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="41" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1a067f87983cb937d5fdb882c267e27921" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void SchwannCell::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9">SetCounter</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set m_Counter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value to Set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="45" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1aadc0a342e29ccacbd8686b9431fb41c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SchwannCell::SetEnergy</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>SetEnergy</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="46" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_schwann_cell_1a765280afc21c2546ad6162db46089d40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SchwannCell::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/schwanncell.h" line="48" column="1" bodyfile="BrainHarmonics/schwanncell.cc" bodystart="58" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="341">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="340">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="341" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>SchwannCell</label>
+        <link refid="class_schwann_cell"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="345">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="345" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="344">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>SchwannCell</label>
+        <link refid="class_schwann_cell"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/schwanncell.h" line="17" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="16" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_cognitive_network_1a6af57693982286ac6a6831ca3010b760" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1afc92c9b378e7e0873d0164bc4f2635df" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveInputs</name></member>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_cognitive_network_1a8a9b533b89b7d62b21cf41bdf957ef14" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a6299433811b76f0ccb97cf69fe9bfb66" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCognitiveOutputs</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_cognitive_network_1ac6a7e01f097d0cb6434eb8fa7640c214" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1aeafe16b9f44ae1316c072a85e726ee83" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddInterneuronSpaces</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddMonomers</name></member>
+      <member refid="class_cognitive_network_1a8457342637fde2d814c54942c3367416" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddNeuron</name></member>
+      <member refid="class_cognitive_network_1ade928e3355db97d3c5d99501ff4a3b69" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddNeurons</name></member>
+      <member refid="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1ab6caa285c25568259ae935cf9e746af4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddOrbital</name></member>
+      <member refid="class_cognitive_network_1a9dbf4a9fab3b806d2bd6b2701b7a9548" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddOrbitals</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddSolids</name></member>
+      <member refid="class_cognitive_network_1a4bfdcd2affdfe2adb2da68dba60dff0e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddSynapse</name></member>
+      <member refid="class_cognitive_network_1a09d9e01cbd8596af7fac626ce2753643" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>AddSynapses</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>SchwannCell</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>SchwannCell</scope><name>AdjustCounters</name></member>
+      <member refid="class_cognitive_network_1ae590ecb77db0a876425b9b74bcfe2bce" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a9753f52c9e36ad44e9fac1d3e38a0770" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_cognitive_network_1a7d3252977440a9a5c004f748647ce885" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyGravitation</name></member>
+      <member refid="class_cognitive_network_1a7a55750d3c42a277c4ffe04a87ab3b19" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyStrong</name></member>
+      <member refid="class_cognitive_network_1af25bbd4f4d8f370cd2a48fd6db8302b9" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1a8b60fdb81d89a3a74d6c06cb29e7aad3" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a46a15b24bd61049fa1c4f635268086a1" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyWeak</name></member>
+      <member refid="class_cognitive_network_1ab8bc213d2806f0dc49c1284bf934fc24" prot="public" virt="virtual"><scope>SchwannCell</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_cognitive_network_1a058cb2b044d56268e36f153fac21084e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1aeaf2883b25dbf1eefd11c2d92efe8816" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1ab24f74115c11275f365245a4bb826c91" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a5734aa5378e9b701dca5e98017c1ea35" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1a1eef76439fffb9daaa3edc4e3c012831" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a5ee1d7b6df5bfe0048b4aea317c1974c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1abf42d64965d64836d6fcbd7ce33c8db4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneNeuron</name></member>
+      <member refid="class_cognitive_network_1a8852409e92434523ddbd48d699c5609f" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneNeurons</name></member>
+      <member refid="class_interneuron_space_1a96149bba4c6efd03586700a6fe86960a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a3defddf17eb839dbd799980f6116f895" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1aa8992740f25d46b0be3d9d8344c39f67" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneOrbital</name></member>
+      <member refid="class_cognitive_network_1a266b7baf2fd9d6b5c5652e251830020a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneOrbitals</name></member>
+      <member refid="class_cognitive_network_1a40f88d3ce9d386ee4db5c1e0ad84dad2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneSynapse</name></member>
+      <member refid="class_cognitive_network_1a82fe792704bcbf7df56b3023266f5f70" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CloneSynapses</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>cognitive_network_list</name></member>
+      <member refid="class_cognitive_network_1a5a46cefb188858fdc023df3abbac0a47" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>cognitiveinput_list</name></member>
+      <member refid="class_cognitive_network_1a3daddb316744336648d317e7f71ed371" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a167b15e33bcbca43cb0a516159e890f2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1ac7ba285d3468a929dac88756a2c4e4f9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a6ec49dcc8cc58cded71983291629179c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a7a57ad82736c0d8b03e7607b5c603b00" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>cognitiveoutput_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_cognitive_network_1add96197c3dc51d94d06edb480fbc4a38" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a0833f7b587f14e0c0778661a56bce957" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1ac220350499bd323bd8f24ff0050cd60d" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a002df11f4389a122fc140c186ab665c9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1af0dc86c7905baae6f2b5efb3a65b8819" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a2d671451d659079d5efb5cda10e48827" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1a9b5fcaf824d5b587775e7c44630affe6" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateNeuron</name></member>
+      <member refid="class_cognitive_network_1af9b2a136584c962e44114a7ee3d2804a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateNeurons</name></member>
+      <member refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a5e0a782afc45d75d57fef91dd5513546" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateOrbital</name></member>
+      <member refid="class_cognitive_network_1a46d4189cf3e6b9af6190abe7b79539b4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateOrbitals</name></member>
+      <member refid="class_cognitive_network_1ade8e9295b35790b136dca9084a1b7aa9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateSynapse</name></member>
+      <member refid="class_cognitive_network_1ae6ae16f401e7699032ac9459132763c0" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>CreateSynapses</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>Creation</name></member>
+      <member refid="class_cognitive_network_1a12e085cd47b7661190527fe55b6da8dc" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a00aa44de67dd0593a2498ce7a3b4c0f2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1a8475cf7277d25532bb31926e768600e8" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1ad08191cbab02f26f69d25bc7e6b5c1ee" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1acdda154177d3b3a92885c10f6b3dc274" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a718833496332e0471186c9a886005c4a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1ab3318f517da206ad4286b6cc22acf520" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyNeuron</name></member>
+      <member refid="class_cognitive_network_1af2f706043a0c227b93877e29b056f3c9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyNeurons</name></member>
+      <member refid="class_interneuron_space_1a41eb332165b0a67c3549bd73a8faa969" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a9543932ffea18cce46fdfbf0fbb85b1b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1aefecb3a2464f7f21449e522af5119c63" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyOrbital</name></member>
+      <member refid="class_cognitive_network_1a0ee8259d26e30779bf06471fb8a10bb5" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroyOrbitals</name></member>
+      <member refid="class_cognitive_network_1a08b87aa9a0823355ef7cef77414dc6dc" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroySynapse</name></member>
+      <member refid="class_cognitive_network_1a141e9e8e6337d42fc19edd75bb50e47b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>DestroySynapses</name></member>
+      <member refid="class_cognitive_network_1a79f0541fde6dd50f8e87f3f46d849b95" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>dimension_list</name></member>
+      <member refid="class_schwann_cell_1ad2281f878b3aec7ce7ba31f27f698daa" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>ExtendLife</name></member>
+      <member refid="class_interneuron_space_1a4b053dc94a921c8176d9f58d40169089" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetAllocatedInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a6bb3fc06029c260dd658d0db072625a7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCapacity</name></member>
+      <member refid="class_cognitive_network_1ab67da8690b83618d88f88411121d7071" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetChannelMax</name></member>
+      <member refid="class_cognitive_network_1ad7f5cc836340017d38c22b57e177fc91" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetChannelMin</name></member>
+      <member refid="class_interneuron_space_1a90a2c950dd426ed3f015e3c186e877fd" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetChargeType</name></member>
+      <member refid="class_cognitive_network_1a2ff68a0d11cdb29af2f05a69a11911a4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a92b896643b881e4030401e0f7fd256bf" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveInputs</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1af33f3ff9dd829da73d183d2624f24964" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveNetworkDeviceTag</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_cognitive_network_1a947fa4c50fecc4008d2bcfc96a272ffc" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1acdf847165899c36d6d9d6843ecc27218" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCognitiveOutputs</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_schwann_cell_1ab43faeb8f76529162985b2a0c53eb3f5" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>GetCounter</name></member>
+      <member refid="class_interneuron_space_1ae62237c3a84893c81e9998602ab16718" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDemand</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDimensions</name></member>
+      <member refid="class_cognitive_network_1aa64c93ecec84b57b25e1fdb173795f9b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDisabled</name></member>
+      <member refid="class_interneuron_space_1ae65bf091b84fa11459ef754ed1c7bf21" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDischargeType</name></member>
+      <member refid="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetDistance</name></member>
+      <member refid="class_cognitive_network_1a09e5a1c774c84529a7adfe56fadb7467" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a8c4e0454068f714691ae250f795cdb67" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_schwann_cell_1af6dd3963bc46763b34f2ee742a4c9fae" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>GetEnergy</name></member>
+      <member refid="class_cognitive_network_1a3a9be1c6697d063b0836cdcdc7a2600c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetGateKeeper</name></member>
+      <member refid="class_cognitive_network_1a4b5150310288c52f00ecb745ae9e7f86" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetGravitation</name></member>
+      <member refid="class_cognitive_network_1a0119d61e86ea6b84ad7f69f88d59d008" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetInterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a66b6683bab6872dfece6111a8ccfb1d7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetInterneuronSpaceDeviceTag</name></member>
+      <member refid="class_interneuron_space_1ae77729a0c140cfb8a9121e898be791b2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetInterneuronSpaceList</name></member>
+      <member refid="class_cognitive_network_1a4daf966882d527b784bd359794ad39ca" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetInterneuronSpaces</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetMatters</name></member>
+      <member refid="class_interneuron_space_1a243535a8f09f104c3a4488f6df4cfd57" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetMinimumDistance</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetMonomers</name></member>
+      <member refid="class_cognitive_network_1ac12f0af92d878d45dca7303dc065c383" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeuron</name></member>
+      <member refid="class_cognitive_network_1af81132245e486c496a055f54a5a520d0" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a0e9e37e976a7ca5ee625e2d7b36fd7ea" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeurons</name></member>
+      <member refid="class_interneuron_space_1a7a60c95c8706cbff3084e74b7b15d75c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeurotransmitter</name></member>
+      <member refid="class_cognitive_network_1a4e5b1d60cda4ddb4bd04d8dca42b7a5b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeurotransmitterPool</name></member>
+      <member refid="class_interneuron_space_1aaae45b76a4c059aae1e27bde3901371c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a1c92a8f6c42788cf8ca890f062f853a3" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetObjectType</name></member>
+      <member refid="class_cognitive_network_1a69655ef1e12bac5f74c2eb85c72720f4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetOrbital</name></member>
+      <member refid="class_cognitive_network_1af5995eaa4ba35c555a6b65d895451f25" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aa21d28ffc3b507236a7dad64663f6c42" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetOrbitals</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetPolymers</name></member>
+      <member refid="class_cognitive_network_1a03d744f9d0d420c1e044646bc6bd2552" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetRestingPotential</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetSolids</name></member>
+      <member refid="class_cognitive_network_1a277247686f8af159e7a7beb0ec379225" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetStrong</name></member>
+      <member refid="class_cognitive_network_1a942ca90561fedae46136de620accbfea" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1acfa5de663b3e686c4d9ea1a3bb483b11" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a1944aaa13667bc267e6ef44892da969d" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetSynapse</name></member>
+      <member refid="class_cognitive_network_1ae0068b9df823e1b10fed3c73f1cb4702" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1aa3376f2e7aed9639c2b5ba27aa6fb314" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetSynapses</name></member>
+      <member refid="class_interneuron_space_1abd37d409a97acca62d11576314bdfcf4" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetTauCyclesAdd</name></member>
+      <member refid="class_interneuron_space_1a1024eadca0b56be9b54593ea47c5879f" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetTauCyclesDecay</name></member>
+      <member refid="class_cognitive_network_1ad293916cfa0e454ef40d7e228d0dcba3" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>GetUsage</name></member>
+      <member refid="class_cognitive_network_1a761db75ac8eab7b4625e5a398891bd12" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetWeak</name></member>
+      <member refid="class_cognitive_network_1aa6342c390fe8e7c648b4c6bc8f93ba4a" prot="public" virt="virtual"><scope>SchwannCell</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_interneuron_space_1a4ad439037f087e7d5cb3e1d8c581ee5f" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a18d5d4920073a9a93ee3cb8f5efe9211" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a753903f3c74415922607846040ac50a6" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1aa87eb8c7186542989fccdadc594c5915" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>InterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1aaf69f6e0cc0084eb748ef1540c773f85" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>interneuronspace_list</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>IsDead</name></member>
+      <member refid="class_schwann_cell_1a6a72f907dbb2b8516f2292e0d82f887d" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>m_Counter</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>monomer_list</name></member>
+      <member refid="class_cognitive_network_1abbb9ff97e1b9cd61602d95f44c30132e" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>neuron_list</name></member>
+      <member refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>neurotransmitter_list</name></member>
+      <member refid="class_schwann_cell_1a3fe616a8aadf62602a0aeff0f3d4d491" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>object_disabled</name></member>
+      <member refid="class_schwann_cell_1a16689a4b1f42cabe7de168440c815edd" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>object_energy</name></member>
+      <member refid="class_schwann_cell_1aa9264dbe039d439956f94391769fda5f" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>object_initialised</name></member>
+      <member refid="class_cognitive_network_1a263efd10857d5507c0e889e48f7329fe" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>orbital_list</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>point_list</name></member>
+      <member refid="class_cognitive_network_1ac97c08a0af7dc0d02fbe059827b6be87" prot="public" virt="virtual"><scope>SchwannCell</scope><name>PollElementaryForce</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>polymer_list</name></member>
+      <member refid="class_schwann_cell_1acea7e2f40d807a2ca973c4c8de90c879" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>previous_event_time</name></member>
+      <member refid="class_cognitive_network_1af79bf7f8b61d5392df7a87bd444eb550" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1aaaf93e7c732b1e1e81060f82ff73c93a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1a9874b11ac465c84ccf7baab0a40fb84e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a2f4956b004c828f0165f28c03e089144" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1a04e38cea356f1c7ac31c4df5e19d759c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a994c5f93447a82429809c89aa08d3dc1" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1a33e911ec87d902a8fd8bb6d9e23c4261" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveNeuron</name></member>
+      <member refid="class_cognitive_network_1a130985ff0aa14b2a17fc2c589e65f868" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveNeurons</name></member>
+      <member refid="class_interneuron_space_1aa46b5ce238b49425a68fcfd53ba1d8b7" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a7b11f542ab7a3d293d5fcf5a1b522ac2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a6ed0e198f6dcfdd45d57df5d3ad5754c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveOrbital</name></member>
+      <member refid="class_cognitive_network_1af7834d400995607c2a5a5eac7b5e006d" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveOrbitals</name></member>
+      <member refid="class_cognitive_network_1a0764ede1c23caa7022a01657a0e3726b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveSynapse</name></member>
+      <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>RemoveSynapses</name></member>
+      <member refid="class_schwann_cell_1af60de27e9658b2ca9973931c2175fe74" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>ReturnEnergy</name></member>
+      <member refid="class_schwann_cell_1aab3414e0d6266c5b791a000c39359ca5" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>SchwannCell</name></member>
+      <member refid="class_schwann_cell_1a1387a5d8b87e485a507c72a657ab2864" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>SchwannCell</name></member>
+      <member refid="class_schwann_cell_1ad8e9f6343a3617a44d8a03e4edbc92d6" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>SchwannCell</name></member>
+      <member refid="class_schwann_cell_1abaa1caff5e245ede16a538d1e1bcc1e7" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>SchwannCell</name></member>
+      <member refid="class_schwann_cell_1a6b045b7f7bf629cd9f75b58c40f5b7c1" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>schwanncell_type</name></member>
+      <member refid="class_interneuron_space_1ab56b0336c9e53f7b448e9d35e617e8c0" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SendBareSpike</name></member>
+      <member refid="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SendTransmitterSpike</name></member>
+      <member refid="class_cognitive_network_1a055b3711835b8d134356298f8975f04d" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetCapacity</name></member>
+      <member refid="class_cognitive_network_1a9c208d66ee284adfceb3b2dd76532a00" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetChannelMax</name></member>
+      <member refid="class_cognitive_network_1a6e2a6ced4ede9a4eef721d6c5aac433c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetChannelMin</name></member>
+      <member refid="class_cognitive_network_1a99f801aeca299186cc706696696749b1" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetCharge</name></member>
+      <member refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetChargeType</name></member>
+      <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetCognitiveNetworkDeviceTag</name></member>
+      <member refid="class_schwann_cell_1a067f87983cb937d5fdb882c267e27921" prot="private" virt="virtual"><scope>SchwannCell</scope><name>SetCounter</name></member>
+      <member refid="class_cognitive_network_1a23c6a11d9f15a141f69a9779f174bfb3" prot="public" virt="non-virtual" ambiguityscope="CognitiveNetwork::"><scope>SchwannCell</scope><name>SetCounter</name></member>
+      <member refid="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetDemand</name></member>
+      <member refid="class_cognitive_network_1ac29e676c84244f5b64c0083a0efead28" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetDisabled</name></member>
+      <member refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetDischargeType</name></member>
+      <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_schwann_cell_1aadc0a342e29ccacbd8686b9431fb41c6" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>SetEnergy</name></member>
+      <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetGateKeeper</name></member>
+      <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetGravitation</name></member>
+      <member refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetInterneuronSpaceDeviceTag</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetLifespan</name></member>
+      <member refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeuron</name></member>
+      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetObjectType</name></member>
+      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetSpin</name></member>
+      <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrong</name></member>
+      <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetSynapsePool</name></member>
+      <member refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetTauCyclesAdd</name></member>
+      <member refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetTauCyclesDecay</name></member>
+      <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetUsage</name></member>
+      <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetWeak</name></member>
+      <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>solid_list</name></member>
+      <member refid="class_cognitive_network_1a9218de9d63b10b313df289d1312c81e0" prot="protected" virt="non-virtual"><scope>SchwannCell</scope><name>synapse_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_schwann_cell_1ac5c518c34e3c2afb70bc2780c1b74439" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>time_object_created</name></member>
+      <member refid="class_cognitive_network_1abeac08d7cbf9df4b36de40aa9301e978" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>toggleDisabled</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>Universe</name></member>
+      <member refid="class_schwann_cell_1a765280afc21c2546ad6162db46089d40" prot="private" virt="non-virtual"><scope>SchwannCell</scope><name>Update</name></member>
+      <member refid="class_cognitive_network_1aa37dda869174e4eef986cca4ce3e55d2" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>SchwannCell</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>UseEnergy</name></member>
+      <member refid="class_cognitive_network_1a17142cc6f0bb3894e63f6c66fa401778" prot="public" virt="virtual"><scope>SchwannCell</scope><name>~CognitiveNetwork</name></member>
+      <member refid="class_interneuron_space_1aff0056e3c60b7eff3ad4ca12f6756628" prot="public" virt="virtual"><scope>SchwannCell</scope><name>~InterneuronSpace</name></member>
+      <member refid="class_schwann_cell_1af98a51e1f9c191bb57282dbbb16dd2a9" prot="private" virt="virtual"><scope>SchwannCell</scope><name>~SchwannCell</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>SchwannCell</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

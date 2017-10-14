@@ -1,0 +1,1402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_polymer" kind="class" language="C++" prot="public">
+    <compoundname>Polymer</compoundname>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <basecompoundref refid="class_monomer" prot="public" virt="non-virtual">Monomer</basecompoundref>
+    <includes refid="carbohydrates_8h" local="no">carbohydrates.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_polymer_1a4687ca9273a4c34b5f32ab840d8cbf0d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::polymerCounter</definition>
+        <argsstring></argsstring>
+        <name>polymerCounter</name>
+        <briefdescription>
+<para>Member variable &quot;polymerCounter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="56" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1ac7b32509637c2164757728dbefd2ad77" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::polymer_counter</definition>
+        <argsstring></argsstring>
+        <name>polymer_counter</name>
+        <briefdescription>
+<para>Member variable &quot;polymer_counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="64" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1a8073d0650f9343960d4b199fb98640e3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Polymer::m_polymerLabel</definition>
+        <argsstring></argsstring>
+        <name>m_polymerLabel</name>
+        <briefdescription>
+<para>Member variable &quot;m_polymerLabel&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="65" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1afc5e38aa165f2e18ec1eac442edfaf90" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Polymer::polymer_type</definition>
+        <argsstring></argsstring>
+        <name>polymer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="66" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1a07ca6a3ab8d562229090657c3862d140" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Polymer::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="67" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1a88ec0b2b21fb475cc4de108d2e17cff9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Polymer::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="68" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1a7c6e20b697e1e0dade7158db402e6e4f" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Polymer::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="69" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1ab96f5cc44ebcf5edbe7ddad9bc553cf7" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Polymer::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="70" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polymer_1ab78fb6d122f0f8991477ca29d9cf1183" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Polymer::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="71" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="29" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="34" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="36" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="38" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/carbohydrates.h" line="49" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cellmembrane.h" line="29" column="1" bodyfile="BrainHarmonics/cellmembrane.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cellmembrane.h" line="34" column="1" bodyfile="BrainHarmonics/cellmembrane.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cellmembrane.h" line="36" column="1" bodyfile="BrainHarmonics/cellmembrane.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cellmembrane.h" line="38" column="1" bodyfile="BrainHarmonics/cellmembrane.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cellmembrane.h" line="49" column="1" bodyfile="BrainHarmonics/cellmembrane.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/combinationmolecules.h" line="29" column="1" bodyfile="BrainHarmonics/combinationmolecules.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/combinationmolecules.h" line="34" column="1" bodyfile="BrainHarmonics/combinationmolecules.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/combinationmolecules.h" line="36" column="1" bodyfile="BrainHarmonics/combinationmolecules.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/combinationmolecules.h" line="38" column="1" bodyfile="BrainHarmonics/combinationmolecules.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/combinationmolecules.h" line="49" column="1" bodyfile="BrainHarmonics/combinationmolecules.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cytoplasm.h" line="29" column="1" bodyfile="BrainHarmonics/cytoplasm.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cytoplasm.h" line="34" column="1" bodyfile="BrainHarmonics/cytoplasm.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cytoplasm.h" line="36" column="1" bodyfile="BrainHarmonics/cytoplasm.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cytoplasm.h" line="38" column="1" bodyfile="BrainHarmonics/cytoplasm.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/cytoplasm.h" line="49" column="1" bodyfile="BrainHarmonics/cytoplasm.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/golgiapparatus.h" line="29" column="1" bodyfile="BrainHarmonics/golgiapparatus.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/golgiapparatus.h" line="34" column="1" bodyfile="BrainHarmonics/golgiapparatus.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/golgiapparatus.h" line="36" column="1" bodyfile="BrainHarmonics/golgiapparatus.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/golgiapparatus.h" line="38" column="1" bodyfile="BrainHarmonics/golgiapparatus.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/golgiapparatus.h" line="49" column="1" bodyfile="BrainHarmonics/golgiapparatus.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/lipids.h" line="29" column="1" bodyfile="BrainHarmonics/lipids.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/lipids.h" line="34" column="1" bodyfile="BrainHarmonics/lipids.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/lipids.h" line="36" column="1" bodyfile="BrainHarmonics/lipids.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/lipids.h" line="38" column="1" bodyfile="BrainHarmonics/lipids.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/lipids.h" line="49" column="1" bodyfile="BrainHarmonics/lipids.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/mitochondria.h" line="29" column="1" bodyfile="BrainHarmonics/mitochondria.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/mitochondria.h" line="34" column="1" bodyfile="BrainHarmonics/mitochondria.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/mitochondria.h" line="36" column="1" bodyfile="BrainHarmonics/mitochondria.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/mitochondria.h" line="38" column="1" bodyfile="BrainHarmonics/mitochondria.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/mitochondria.h" line="49" column="1" bodyfile="BrainHarmonics/mitochondria.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleicacids.h" line="29" column="1" bodyfile="BrainHarmonics/nucleicacids.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleicacids.h" line="34" column="1" bodyfile="BrainHarmonics/nucleicacids.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleicacids.h" line="36" column="1" bodyfile="BrainHarmonics/nucleicacids.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleicacids.h" line="38" column="1" bodyfile="BrainHarmonics/nucleicacids.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleicacids.h" line="49" column="1" bodyfile="BrainHarmonics/nucleicacids.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleus.h" line="29" column="1" bodyfile="BrainHarmonics/nucleus.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleus.h" line="34" column="1" bodyfile="BrainHarmonics/nucleus.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleus.h" line="36" column="1" bodyfile="BrainHarmonics/nucleus.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleus.h" line="38" column="1" bodyfile="BrainHarmonics/nucleus.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/nucleus.h" line="49" column="1" bodyfile="BrainHarmonics/nucleus.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a0f7d915300bfec223c4025f8e9d4f46d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="28" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1adb35b8b7a5eae1e39187c0e525b0d9b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="30" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1af918b8776cfd76d9ae4611bf35d4192a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="32" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a53797e297c95b3bd934e1b8dd8c0c399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Universe &amp;universe_connector)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_universe" kindref="compound">Universe</ref> &amp;</type>
+          <declname>universe_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="34" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="34" bodyend="45"/>
+        <references refid="class_polymer_1aa20f1e5c79e8631afa291569d5030103" compoundref="polymer_8cc" startline="19" endline="56">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="47" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="47" bodyend="47"/>
+        <references refid="class_polymer_1aa20f1e5c79e8631afa291569d5030103" compoundref="polymer_8cc" startline="19" endline="56">ResetParameters</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aa20f1e5c79e8631afa291569d5030103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Polymer::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="49" column="1" bodyfile="BrainHarmonics/polymer.cc" bodystart="19" bodyend="56"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_polymer_1ac82f603c3010212122008c4ed3953045" compoundref="polymer_8cc" startline="58" endline="88">Update</referencedby>
+        <referencedby refid="class_polymer_1a53797e297c95b3bd934e1b8dd8c0c399" compoundref="polymer_8h" startline="34" endline="45">Polymer</referencedby>
+        <referencedby refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" compoundref="polymer_8h" startline="47" endline="47">~Polymer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ac33903f9b5d2c73d6ddadcb02ece323e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::GetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="51" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1500ffc682396af2f4306c7c7ea7fd87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Polymer::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55">SetCounter</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="53" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ab96200f701d9e2e63d22bdfd434e5ccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::SetPolymerLabel</definition>
+        <argsstring>(std::string val)</argsstring>
+        <name>SetPolymerLabel</name>
+        <param>
+          <type>std::string</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="55" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a80dbc65ac07e20dce3d9a2e9290c5e3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Polymer::GetPolymerLabel</definition>
+        <argsstring>()</argsstring>
+        <name>GetPolymerLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="57" column="1" bodyfile="BrainHarmonics/polymer.h" bodystart="57" bodyend="57"/>
+        <references refid="class_polymer_1ac82f603c3010212122008c4ed3953045" compoundref="polymer_8cc" startline="58" endline="88">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ac82f603c3010212122008c4ed3953045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Polymer::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polymer.h" line="59" column="1" bodyfile="BrainHarmonics/polymer.cc" bodystart="58" bodyend="88"/>
+        <references refid="class_polymer_1aa20f1e5c79e8631afa291569d5030103" compoundref="polymer_8cc" startline="19" endline="56">ResetParameters</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_polymer_1a80dbc65ac07e20dce3d9a2e9290c5e3b" compoundref="polymer_8h" startline="57" endline="57">GetPolymerLabel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polymer::Polymer</definition>
+        <argsstring>(Monomer &amp;mm)</argsstring>
+        <name>Polymer</name>
+        <param>
+          <type><ref refid="class_monomer" kindref="compound">Monomer</ref> &amp;</type>
+          <declname>mm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/proteins.h" line="29" column="1" bodyfile="BrainHarmonics/proteins.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polymer::~Polymer</definition>
+        <argsstring>()</argsstring>
+        <name>~Polymer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/proteins.h" line="34" column="1" bodyfile="BrainHarmonics/proteins.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polymer::getCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/proteins.h" line="36" column="1" bodyfile="BrainHarmonics/proteins.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::setCounter</definition>
+        <argsstring>(unsigned int val)</argsstring>
+        <name>setCounter</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/proteins.h" line="38" column="1" bodyfile="BrainHarmonics/proteins.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Polymer::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/proteins.h" line="49" column="1" bodyfile="BrainHarmonics/proteins.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="315">
+        <label>Polymer</label>
+        <link refid="class_polymer"/>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="316">
+        <label>Monomer</label>
+        <link refid="class_monomer"/>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="318">
+        <label>Polymer</label>
+        <link refid="class_polymer"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="320" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>Monomer</label>
+        <link refid="class_monomer"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/carbohydrates.h" line="25" column="1" bodyfile="BrainHarmonics/carbohydrates.h" bodystart="24" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddPolymers</name></member>
+      <member refid="class_monomer_1ac03023c0d1bb67e5f11091af7ad3735d" prot="public" virt="non-virtual"><scope>Polymer</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Polymer</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Polymer</scope><name>AdjustCounters</name></member>
+      <member refid="class_monomer_1ae64dfbf82610ae26427be9c824aef70f" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_monomer_1a4c3f9894ea57047789bec32602f033cb" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_monomer_1a8747945cc2f7abd7ce0885345ad14ebc" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyGravitation</name></member>
+      <member refid="class_monomer_1acba5091693082fdf2d28f1a5a4ae19a1" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyStrong</name></member>
+      <member refid="class_monomer_1aa186454670f7796e196509238d419a35" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_monomer_1a921f7add2d446b8670513220ace6c4b2" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_monomer_1a176a1a4dfed1eaddc6637bbfd2660aba" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyWeak</name></member>
+      <member refid="class_monomer_1a64f65c128ebc2428c42739c930696ea1" prot="public" virt="virtual"><scope>Polymer</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>cognitive_network_list</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>cognitive_network_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>Creation</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>Creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_polymer_1a1daba3eb2ba8428bf2f3e814668b155f" prot="public" virt="non-virtual"><scope>Polymer</scope><name>creation</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>dimension_list</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>dimension_list</name></member>
+      <member refid="class_polymer_1ab78fb6d122f0f8991477ca29d9cf1183" prot="private" virt="non-virtual"><scope>Polymer</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_polymer_1ac33903f9b5d2c73d6ddadcb02ece323e" prot="public" virt="non-virtual"><scope>Polymer</scope><name>GetCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" prot="public" virt="non-virtual"><scope>Polymer</scope><name>getCounter</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetDimensions</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetDimensions</name></member>
+      <member refid="class_monomer_1ad23f4829d66cb20401cc72a9d72ac320" prot="public" virt="virtual"><scope>Polymer</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_monomer_1a9b270cd1293bc9635813ead284bd3881" prot="public" virt="virtual"><scope>Polymer</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetEnergy</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetEnergy</name></member>
+      <member refid="class_monomer_1aa5f7b901e15c9a9eb6e1c3564cd06e4f" prot="public" virt="virtual"><scope>Polymer</scope><name>GetGravitation</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetPolymer</name></member>
+      <member refid="class_polymer_1a80dbc65ac07e20dce3d9a2e9290c5e3b" prot="public" virt="non-virtual"><scope>Polymer</scope><name>GetPolymerLabel</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>GetSolids</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>GetSolids</name></member>
+      <member refid="class_monomer_1aa35033340e88c46757d1d5ccba21a21e" prot="public" virt="virtual"><scope>Polymer</scope><name>GetStrong</name></member>
+      <member refid="class_monomer_1a4bc8b39086260e26a196b28b4fc6667f" prot="public" virt="virtual"><scope>Polymer</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_monomer_1a3b00168520f592098356f7cd3e663ad3" prot="public" virt="virtual"><scope>Polymer</scope><name>GetStrongResidual</name></member>
+      <member refid="class_monomer_1ac2070d7e39cd0b2a00aa6023ffd51f55" prot="public" virt="virtual"><scope>Polymer</scope><name>GetWeak</name></member>
+      <member refid="class_monomer_1aec6e42dde40c5b3142fab880eabb346a" prot="public" virt="virtual"><scope>Polymer</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>IsDead</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>IsDead</name></member>
+      <member refid="class_polymer_1a8073d0650f9343960d4b199fb98640e3" prot="private" virt="non-virtual"><scope>Polymer</scope><name>m_polymerLabel</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>matter_list</name></member>
+      <member refid="class_monomer_1a2b1f69caca47d8597e43300ae7076095" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Monomer</name></member>
+      <member refid="class_monomer_1af2249bf76132ee3802eaccb49b76fb96" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Monomer</name></member>
+      <member refid="class_monomer_1acab23e1c41e236417492da5c1e617b1a" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Monomer</name></member>
+      <member refid="class_monomer_1ae2b80466a0e724125aee173df34d1a6c" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Monomer</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>monomer_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>monomer_list</name></member>
+      <member refid="class_polymer_1a07ca6a3ab8d562229090657c3862d140" prot="private" virt="non-virtual"><scope>Polymer</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>object_energy</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>object_energy_threshold</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>object_energy_threshold</name></member>
+      <member refid="class_polymer_1a88ec0b2b21fb475cc4de108d2e17cff9" prot="private" virt="non-virtual"><scope>Polymer</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>object_size</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>object_size</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>point_list</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>point_list</name></member>
+      <member refid="class_monomer_1a5b2375df1e19abdf6045c475d2ac23ca" prot="public" virt="virtual"><scope>Polymer</scope><name>PollElementaryForce</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1a0f7d915300bfec223c4025f8e9d4f46d" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1adb35b8b7a5eae1e39187c0e525b0d9b1" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1af918b8776cfd76d9ae4611bf35d4192a" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1a53797e297c95b3bd934e1b8dd8c0c399" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ae77454a3908652e4df6a26b9cac509a5" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Polymer</name></member>
+      <member refid="class_polymer_1ac7b32509637c2164757728dbefd2ad77" prot="private" virt="non-virtual"><scope>Polymer</scope><name>polymer_counter</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>polymer_list</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>polymer_list</name></member>
+      <member refid="class_polymer_1afc5e38aa165f2e18ec1eac442edfaf90" prot="private" virt="non-virtual"><scope>Polymer</scope><name>polymer_type</name></member>
+      <member refid="class_polymer_1a4687ca9273a4c34b5f32ab840d8cbf0d" prot="private" virt="non-virtual"><scope>Polymer</scope><name>polymerCounter</name></member>
+      <member refid="class_polymer_1ab96f5cc44ebcf5edbe7ddad9bc553cf7" prot="private" virt="non-virtual"><scope>Polymer</scope><name>previous_event_time</name></member>
+      <member refid="class_polymer_1aa20f1e5c79e8631afa291569d5030103" prot="public" virt="non-virtual"><scope>Polymer</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>ReturnEnergy</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>ReturnEnergy</name></member>
+      <member refid="class_monomer_1a1ee35c888318e590082e6cd1772bb430" prot="public" virt="virtual"><scope>Polymer</scope><name>SetCharge</name></member>
+      <member refid="class_polymer_1a1500ffc682396af2f4306c7c7ea7fd87" prot="public" virt="virtual"><scope>Polymer</scope><name>SetCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" prot="public" virt="non-virtual"><scope>Polymer</scope><name>setCounter</name></member>
+      <member refid="class_monomer_1a50e41be601b31450a97bfd15950cfb3d" prot="public" virt="virtual"><scope>Polymer</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_monomer_1aa034728b74053ed3df452ddc8f1b46e8" prot="public" virt="virtual"><scope>Polymer</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>SetEnergy</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>SetEnergy</name></member>
+      <member refid="class_monomer_1ab38d44b27a46d5630aeb5e889f927c09" prot="public" virt="virtual"><scope>Polymer</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>SetLifespan</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>SetLifespan</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>SetObjectType</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>SetObjectType</name></member>
+      <member refid="class_polymer_1ab96200f701d9e2e63d22bdfd434e5ccb" prot="public" virt="non-virtual"><scope>Polymer</scope><name>SetPolymerLabel</name></member>
+      <member refid="class_monomer_1ad24a86a4c1ac62d1b0ce8040d6b08adf" prot="public" virt="virtual"><scope>Polymer</scope><name>SetSpin</name></member>
+      <member refid="class_monomer_1a10b864f6bcad43f11a2316dbbe4c4742" prot="public" virt="virtual"><scope>Polymer</scope><name>SetStrong</name></member>
+      <member refid="class_monomer_1ad9df06c1a8264bfdb514ef3ba04ef4c7" prot="public" virt="virtual"><scope>Polymer</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_monomer_1ae6ca57913da27fa749d33d1c4fed27ca" prot="public" virt="virtual"><scope>Polymer</scope><name>SetStrongResidual</name></member>
+      <member refid="class_monomer_1ad4fe1db33f493575281e1a2fb35004ca" prot="public" virt="virtual"><scope>Polymer</scope><name>SetWeak</name></member>
+      <member refid="class_monomer_1ab887d7cfd2ecb557efb3ace59852019c" prot="public" virt="virtual"><scope>Polymer</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_monomer_1ad792aeb859c72edbb17414bf00b8fd12" prot="protected" virt="non-virtual"><scope>Polymer</scope><name>solid_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_polymer_1a7c6e20b697e1e0dade7158db402e6e4f" prot="private" virt="non-virtual"><scope>Polymer</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>Universe</name></member>
+      <member refid="class_polymer_1ac82f603c3010212122008c4ed3953045" prot="public" virt="non-virtual"><scope>Polymer</scope><name>Update</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual" ambiguityscope="Monomer::"><scope>Polymer</scope><name>UseEnergy</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polymer</scope><name>UseEnergy</name></member>
+      <member refid="class_monomer_1a802bf239fc55d16783736393edbd6899" prot="public" virt="virtual"><scope>Polymer</scope><name>~Monomer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_polymer_1aac2b3983f375a5691c7d5ca1a79594d5" prot="public" virt="virtual"><scope>Polymer</scope><name>~Polymer</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Polymer</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

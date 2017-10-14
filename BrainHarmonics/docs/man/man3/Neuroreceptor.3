@@ -1,0 +1,281 @@
+.TH "Neuroreceptor" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Neuroreceptor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <neuroreceptor\&.h>\fP
+.PP
+Inherits \fBDendriteCleft\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNeuroreceptor\fP ()"
+.br
+.ti -1c
+.RI "\fBNeuroreceptor\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBNeuroreceptor\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBNeuroreceptor\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBDendriteCleft\fP &dendritecleft_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Neuroreceptor\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBGetReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBGetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetIons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.br
+.ti -1c
+.RI "void \fBToggleReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBToggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.br
+.ti -1c
+.RI "void \fBSetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetIons\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBCompatibilityCheck\fP (std::chrono::time_point< \fBClock\fP > event_time, int neurotransmitterType)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneurotransmitter_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 31 of file neuroreceptor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Neuroreceptor::Neuroreceptor ()\fC [inline]\fP"
+
+.PP
+Definition at line 34 of file neuroreceptor\&.h\&.
+.SS "Neuroreceptor::Neuroreceptor (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 36 of file neuroreceptor\&.h\&.
+.SS "Neuroreceptor::Neuroreceptor (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file neuroreceptor\&.h\&.
+.SS "Neuroreceptor::Neuroreceptor (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBDendriteCleft\fP & dendritecleft_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file neuroreceptor\&.h\&.
+.SS "virtual Neuroreceptor::~Neuroreceptor ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 51 of file neuroreceptor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::AddNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 118 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::AddNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 129 of file neuroreceptor\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::CloneNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 103 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::CloneNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 98 of file neuroreceptor\&.cc\&.
+.SS "bool Neuroreceptor::CompatibilityCheck (std::chrono::time_point< \fBClock\fP > event_time, int neurotransmitterType)"
+
+.PP
+Definition at line 173 of file neuroreceptor\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::CreateNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 65 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::CreateNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 76 of file neuroreceptor\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::DestroyNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 113 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::DestroyNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 108 of file neuroreceptor\&.cc\&.
+.SS "unsigned int Neuroreceptor::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file neuroreceptor\&.h\&.
+.SS "bool Neuroreceptor::GetDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file neuroreceptor\&.h\&.
+.SS "double Neuroreceptor::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file neuroreceptor\&.h\&.
+.SS "int Neuroreceptor::GetIons (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file neuroreceptor\&.h\&.
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::GetNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 162 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::GetNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 167 of file neuroreceptor\&.cc\&.
+.SS "bool Neuroreceptor::GetReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file neuroreceptor\&.h\&.
+.SS "int Neuroreceptor::GetReceptorType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file neuroreceptor\&.h\&.
+.SS "\fBCognitiveNetwork\fP * Neuroreceptor::RemoveNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 151 of file neuroreceptor\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Neuroreceptor::RemoveNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 157 of file neuroreceptor\&.cc\&.
+.SS "bool Neuroreceptor::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 20 of file neuroreceptor\&.cc\&.
+.SS "void Neuroreceptor::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBDendriteCleft\fP\&.
+.PP
+Definition at line 65 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::SetIons (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 67 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::SetReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+
+.PP
+Definition at line 60 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::SetReceptorType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::ToggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file neuroreceptor\&.h\&.
+.SS "void Neuroreceptor::ToggleReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file neuroreceptor\&.h\&.
+.SS "int Neuroreceptor::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 206 of file neuroreceptor\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> Neuroreceptor::neurotransmitter_list\fC [protected]\fP"
+
+.PP
+Definition at line 100 of file neuroreceptor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

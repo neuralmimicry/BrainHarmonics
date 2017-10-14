@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="screenlist_8hpp" kind="file" language="C++">
+    <compoundname>screenlist.hpp</compoundname>
+    <includes refid="multiscreen_8h" local="yes">multiscreen.h</includes>
+    <includes local="yes">screen_0.hpp</includes>
+    <includes local="yes">screen_1.hpp</includes>
+    <includedby refid="screenlist_8cpp" local="yes">BrainHarmonics/screenlist.cpp</includedby>
+    <incdepgraph>
+      <node id="1517">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1514">
+        <label>BrainHarmonics/screenlist.hpp</label>
+        <link refid="screenlist_8hpp"/>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>screen_1.hpp</label>
+      </node>
+      <node id="1516">
+        <label>iostream</label>
+      </node>
+      <node id="1518">
+        <label>screen_0.hpp</label>
+      </node>
+      <node id="1515">
+        <label>multiscreen.h</label>
+        <link refid="multiscreen_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1520">
+        <label>BrainHarmonics/screenlist.hpp</label>
+        <link refid="screenlist_8hpp"/>
+        <childnode refid="1521" relation="include">
+        </childnode>
+      </node>
+      <node id="1521">
+        <label>BrainHarmonics/screenlist.cpp</label>
+        <link refid="screenlist_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>screenlist.hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>16/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>screenlist_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>screenlist_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>group<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="multiscreen_8h" kindref="compound">multiscreen.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Include<sp/>each<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;screen_0.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;screen_1.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>screenlist_hpp<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/screenlist.hpp"/>
+  </compounddef>
+</doxygen>

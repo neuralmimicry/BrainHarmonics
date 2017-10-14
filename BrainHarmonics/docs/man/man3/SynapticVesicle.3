@@ -1,0 +1,232 @@
+.TH "SynapticVesicle" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SynapticVesicle
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <synapticvesicle\&.h>\fP
+.PP
+Inherits \fBAxonBouton\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSynapticVesicle\fP ()"
+.br
+.ti -1c
+.RI "\fBSynapticVesicle\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBSynapticVesicle\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBSynapticVesicle\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP &axonbouton_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~SynapticVesicle\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetReleaseState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowthSurface\fP (std::chrono::time_point< \fBClock\fP > event_time, double surf_change)"
+.br
+.ti -1c
+.RI "int \fBGrowthVolume\fP (std::chrono::time_point< \fBClock\fP > event_time, double vol_change)"
+.br
+.ti -1c
+.RI "void \fBReleaseNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneurotransmitter_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 16 of file synapticvesicle\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SynapticVesicle::SynapticVesicle ()\fC [inline]\fP"
+
+.PP
+Definition at line 19 of file synapticvesicle\&.h\&.
+.SS "SynapticVesicle::SynapticVesicle (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file synapticvesicle\&.h\&.
+.SS "SynapticVesicle::SynapticVesicle (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file synapticvesicle\&.h\&.
+.SS "SynapticVesicle::SynapticVesicle (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP & axonbouton_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file synapticvesicle\&.h\&.
+.SS "virtual SynapticVesicle::~SynapticVesicle ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 38 of file synapticvesicle\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::AddNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 115 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::AddNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 126 of file synapticvesicle\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::CloneNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 100 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::CloneNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 95 of file synapticvesicle\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::CreateNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 62 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::CreateNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 73 of file synapticvesicle\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::DestroyNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 110 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::DestroyNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 105 of file synapticvesicle\&.cc\&.
+.SS "unsigned int SynapticVesicle::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file synapticvesicle\&.h\&.
+.SS "double SynapticVesicle::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file synapticvesicle\&.h\&.
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::GetNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 159 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::GetNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 164 of file synapticvesicle\&.cc\&.
+.SS "int SynapticVesicle::GetReleaseState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file synapticvesicle\&.h\&.
+.SS "int SynapticVesicle::GrowthSurface (std::chrono::time_point< \fBClock\fP > event_time, double surf_change)"
+
+.PP
+Definition at line 171 of file synapticvesicle\&.cc\&.
+.SS "int SynapticVesicle::GrowthVolume (std::chrono::time_point< \fBClock\fP > event_time, double vol_change)"
+
+.PP
+Definition at line 178 of file synapticvesicle\&.cc\&.
+.SS "void SynapticVesicle::ReleaseNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 186 of file synapticvesicle\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * SynapticVesicle::RemoveNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 148 of file synapticvesicle\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > SynapticVesicle::RemoveNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 154 of file synapticvesicle\&.cc\&.
+.SS "bool SynapticVesicle::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 20 of file synapticvesicle\&.cc\&.
+.SS "void SynapticVesicle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBAxonBouton\fP\&.
+.PP
+Definition at line 44 of file synapticvesicle\&.h\&.
+.SS "void SynapticVesicle::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file synapticvesicle\&.h\&.
+.SS "int SynapticVesicle::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 191 of file synapticvesicle\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> SynapticVesicle::neurotransmitter_list\fC [protected]\fP"
+
+.PP
+Definition at line 82 of file synapticvesicle\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_dendrite_cleft_1_1s___synapse_description" kind="struct" language="C++" prot="private">
+    <compoundname>DendriteCleft::s_SynapseDescription</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_dendrite_cleft_1_1s___synapse_description_1aea656206c9efce730bb6cf3b651405dc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_synapse" kindref="compound">Synapse</ref> *</type>
+        <definition>Synapse* DendriteCleft::s_SynapseDescription::s_Synapse</definition>
+        <argsstring></argsstring>
+        <name>s_Synapse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" line="86" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_dendrite_cleft_1_1s___synapse_description_1ae821f7f77c2be059e8a63bcffbd065c9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DendriteCleft::s_SynapseDescription::s_Distance</definition>
+        <argsstring></argsstring>
+        <name>s_Distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" line="87" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="452">
+        <label>Dimension</label>
+      </node>
+      <node id="451">
+        <label>Synapse</label>
+        <link refid="class_synapse"/>
+        <childnode refid="452" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>DendriteCleft::s_SynapseDescription</label>
+        <childnode refid="451" relation="usage">
+          <edgelabel>s_Synapse</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" line="85" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/dendritecleft.h" bodystart="84" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct_dendrite_cleft_1_1s___synapse_description_1ae821f7f77c2be059e8a63bcffbd065c9" prot="public" virt="non-virtual"><scope>DendriteCleft::s_SynapseDescription</scope><name>s_Distance</name></member>
+      <member refid="struct_dendrite_cleft_1_1s___synapse_description_1aea656206c9efce730bb6cf3b651405dc" prot="public" virt="non-virtual"><scope>DendriteCleft::s_SynapseDescription</scope><name>s_Synapse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

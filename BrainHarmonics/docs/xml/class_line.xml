@@ -1,0 +1,1128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_line" kind="class" language="C++" prot="public">
+    <compoundname>Line</compoundname>
+    <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
+    <includes refid="line_8h" local="no">line.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_line_1a92cbc39dd66e02a0507132422a2a830c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Line::lineLineID</definition>
+        <argsstring></argsstring>
+        <name>lineLineID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="100" column="1" bodyfile="BrainHarmonics/line.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1aa5bac2c364a75b5212500dce6846ee0b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Line::line_type</definition>
+        <argsstring></argsstring>
+        <name>line_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="101" column="1" bodyfile="BrainHarmonics/line.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1ac581c18e7d6a976b14dd986d42cb8163" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineLineX1</definition>
+        <argsstring></argsstring>
+        <name>lineLineX1</name>
+        <briefdescription>
+<para>Member variable &quot;lineLineX1&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="102" column="1" bodyfile="BrainHarmonics/line.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a46e251350694d1bdf8425d9f9a24f896" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineLineY1</definition>
+        <argsstring></argsstring>
+        <name>lineLineY1</name>
+        <briefdescription>
+<para>Member variable &quot;lineLineY1&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="103" column="1" bodyfile="BrainHarmonics/line.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a795ef48c075a36f0dea1af10b5ff323d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineLineX2</definition>
+        <argsstring></argsstring>
+        <name>lineLineX2</name>
+        <briefdescription>
+<para>Member variable &quot;lineLineX2&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="104" column="1" bodyfile="BrainHarmonics/line.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1aa0f76375751fb3a75b9593161ecfc0e2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineLineY2</definition>
+        <argsstring></argsstring>
+        <name>lineLineY2</name>
+        <briefdescription>
+<para>Member variable &quot;lineLineY2&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="105" column="1" bodyfile="BrainHarmonics/line.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1afdf693a798435ec16076396f3631853e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineSlope</definition>
+        <argsstring></argsstring>
+        <name>lineSlope</name>
+        <briefdescription>
+<para>Member variable &quot;lineSlope&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="106" column="1" bodyfile="BrainHarmonics/line.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a35197c3051202d4c4f0bb7d122780368" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineYint</definition>
+        <argsstring></argsstring>
+        <name>lineYint</name>
+        <briefdescription>
+<para>Member variable &quot;lineYint&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="107" column="1" bodyfile="BrainHarmonics/line.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1afb3c20f2415b40bc800ae36796b2f7c7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Line::lineLineTTL</definition>
+        <argsstring></argsstring>
+        <name>lineLineTTL</name>
+        <briefdescription>
+<para>Member variable &quot;lineLineTTL&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="108" column="1" bodyfile="BrainHarmonics/line.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a46a8187d5ccc8bf0dc9bc041836f241f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Line::lineLineSeq</definition>
+        <argsstring></argsstring>
+        <name>lineLineSeq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="109" column="1" bodyfile="BrainHarmonics/line.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a4fb7e6f35d49e0113755913b5179f922" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Line::lineLineCounter</definition>
+        <argsstring></argsstring>
+        <name>lineLineCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="110" column="1" bodyfile="BrainHarmonics/line.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1ad1d89d2499cf9455fc2499078e0acc32" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Line::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="111" column="1" bodyfile="BrainHarmonics/line.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a1d6ddf845443fa6baa5d15d14baed9f8" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Line::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="112" column="1" bodyfile="BrainHarmonics/line.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1ab4c19eb7e67615c609de20d98a2d0b5f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Line::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="113" column="1" bodyfile="BrainHarmonics/line.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1ae9070a9da0afebb31910e31e62019301" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Line::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="114" column="1" bodyfile="BrainHarmonics/line.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line_1a53a3368bd95b126c281eea4736ebc282" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Line::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="115" column="1" bodyfile="BrainHarmonics/line.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>()</argsstring>
+        <name>Line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="28" column="1" bodyfile="BrainHarmonics/line.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a4e3242660d8d3c1aa43e932560840552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Line</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="30" column="1" bodyfile="BrainHarmonics/line.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a5330353765ab0f965a4293bdc7c3564a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Line</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="32" column="1" bodyfile="BrainHarmonics/line.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a740aacdf468a1519f9a01d9cbd1f9219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Line::Line</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Universe &amp;universe_connector)</argsstring>
+        <name>Line</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_universe" kindref="compound">Universe</ref> &amp;</type>
+          <declname>universe_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="34" column="1" bodyfile="BrainHarmonics/line.h" bodystart="34" bodyend="45"/>
+        <references refid="class_line_1af1756d1500ab0a5616313be6e213015a" compoundref="line_8cc" startline="19" endline="57">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a4a95bafcefa28672b3999deb011b9e50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Line::~Line</definition>
+        <argsstring>()</argsstring>
+        <name>~Line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="47" column="1" bodyfile="BrainHarmonics/line.h" bodystart="47" bodyend="47"/>
+        <references refid="class_line_1af1756d1500ab0a5616313be6e213015a" compoundref="line_8cc" startline="19" endline="57">ResetParameters</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1af1756d1500ab0a5616313be6e213015a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Line::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access lineCounter <simplesect kind="return"><para>The current value of lineCounter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="52" column="1" bodyfile="BrainHarmonics/line.cc" bodystart="19" bodyend="57"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
+        <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
+        <referencedby refid="class_line_1a8c6dece66f5cd93ce40134002a40f505" compoundref="line_8cc" startline="59" endline="93">Update</referencedby>
+        <referencedby refid="class_line_1a740aacdf468a1519f9a01d9cbd1f9219" compoundref="line_8h" startline="34" endline="45">Line</referencedby>
+        <referencedby refid="class_line_1a4a95bafcefa28672b3999deb011b9e50" compoundref="line_8h" startline="47" endline="47">~Line</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a20756feda4d42032955ec6cf12d89941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::GetLineID</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineID</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="54" column="1" bodyfile="BrainHarmonics/line.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a8752cfce7330fbeda936778b77e534d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineXYBubble</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineXYBubble</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="55" column="1" bodyfile="BrainHarmonics/line.h" bodystart="55" bodyend="55"/>
+        <references refid="class_line_1adc3c6c42d1b3d172e32fad59db2e3eaa" compoundref="line_8h" startline="58" endline="58">GetLineX1Y1Bubble</references>
+        <references refid="class_line_1a2432406f734963e4497541081a843131" compoundref="line_8h" startline="61" endline="61">GetLineX2Y2Bubble</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ab14245ec4348e925b6e0f860e9254308" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineX1</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineX1</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="56" column="1" bodyfile="BrainHarmonics/line.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ac09a53b36a300c38191269f110c73eb1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineY1</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineY1</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="57" column="1" bodyfile="BrainHarmonics/line.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1adc3c6c42d1b3d172e32fad59db2e3eaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineX1Y1Bubble</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineX1Y1Bubble</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="58" column="1" bodyfile="BrainHarmonics/line.h" bodystart="58" bodyend="58"/>
+        <referencedby refid="class_line_1a8752cfce7330fbeda936778b77e534d0" compoundref="line_8h" startline="55" endline="55">GetLineXYBubble</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a9cdf38d7aaeadfa35136dd417865c189" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineX2</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineX2</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="59" column="1" bodyfile="BrainHarmonics/line.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a6222d15f883f3183ec9eed085046916a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineY2</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineY2</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="60" column="1" bodyfile="BrainHarmonics/line.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a2432406f734963e4497541081a843131" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineX2Y2Bubble</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineX2Y2Bubble</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="61" column="1" bodyfile="BrainHarmonics/line.h" bodystart="61" bodyend="61"/>
+        <referencedby refid="class_line_1a8752cfce7330fbeda936778b77e534d0" compoundref="line_8h" startline="55" endline="55">GetLineXYBubble</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ac4a6e8f232b529169d91b9f44496933b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineXMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineXMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="62" column="1" bodyfile="BrainHarmonics/line.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ae8151f5f3b102924b09de686f536e220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineYMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineYMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="63" column="1" bodyfile="BrainHarmonics/line.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a1393a4dcd9fa9e1ab1653c37d76c8c3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineXMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineXMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="64" column="1" bodyfile="BrainHarmonics/line.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ab033cff3a24b67be829759d16f13c281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineYMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineYMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="65" column="1" bodyfile="BrainHarmonics/line.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a7b105f0af704489446cc93302c30813d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineMinOrdinal</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineMinOrdinal</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="66" column="1" bodyfile="BrainHarmonics/line.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a3fc7779998759b641ec2b7bc8515563a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineMaxOrdinal</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineMaxOrdinal</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="67" column="1" bodyfile="BrainHarmonics/line.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a2be3926d47a1a8849007a6c29a603dcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetSlope</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetSlope</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="68" column="1" bodyfile="BrainHarmonics/line.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a5319d68ecb254ff61e2a46d5928aec93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetYint</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetYint</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="69" column="1" bodyfile="BrainHarmonics/line.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a5b9419146093908e5c7d740ac384fe39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Line::GetLineTTL</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineTTL</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="70" column="1" bodyfile="BrainHarmonics/line.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a8764cb987ec4af839f30411dc47a835a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::GetLineSeq</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetLineSeq</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="71" column="1" bodyfile="BrainHarmonics/line.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ac13c6405cfd2a586633b5a5eece05fff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::GetLineCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) const</argsstring>
+        <name>GetLineCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="72" column="1" bodyfile="BrainHarmonics/line.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a4c9d571599ebc5e9b6090b54a338fbde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Line::GetInLine</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double X1, double Y1, double X2, double Y2, double Threshold)</argsstring>
+        <name>GetInLine</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>X1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Y1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>X2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Y2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="73" column="1" bodyfile="BrainHarmonics/line.h" bodystart="73" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1aaa634bf320b9d1c4becb4083cd8324d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineID</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>setLineID</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set lineCounter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="85" column="1" bodyfile="BrainHarmonics/line.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ab8df9f66bffc86994db3150a4eb8ed29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineX1</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setLineX1</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="86" column="1" bodyfile="BrainHarmonics/line.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1af236c5ddb0d125b388621b3597266a95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineY1</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setLineY1</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="87" column="1" bodyfile="BrainHarmonics/line.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ade959bc4d4f69bb421ed4f69c0d77fb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineX2</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setLineX2</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="88" column="1" bodyfile="BrainHarmonics/line.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a671f64c437fe1bef798476d93c675099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineY2</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setLineY2</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="89" column="1" bodyfile="BrainHarmonics/line.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a3fb9e9eab13d146feff0bc891709eaf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setSlope</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setSlope</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="90" column="1" bodyfile="BrainHarmonics/line.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ad966eb3f1bd4cb29976b3e97811c344f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setYint</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setYint</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="91" column="1" bodyfile="BrainHarmonics/line.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a602398c8c3131ec7236ccadbab8281d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineTTL</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>setLineTTL</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="92" column="1" bodyfile="BrainHarmonics/line.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a7c315c5ffdd4fa875918583738e2e157" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineSeq</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>setLineSeq</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="93" column="1" bodyfile="BrainHarmonics/line.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1ab98abcf3c8546e266ae5bbea243d8b8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line::setLineCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>setLineCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="94" column="1" bodyfile="BrainHarmonics/line.h" bodystart="94" bodyend="94"/>
+        <references refid="class_line_1a8c6dece66f5cd93ce40134002a40f505" compoundref="line_8cc" startline="59" endline="93">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_line_1a8c6dece66f5cd93ce40134002a40f505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Line::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/line.h" line="96" column="1" bodyfile="BrainHarmonics/line.cc" bodystart="59" bodyend="93"/>
+        <references refid="class_line_1af1756d1500ab0a5616313be6e213015a" compoundref="line_8cc" startline="19" endline="57">ResetParameters</references>
+        <references refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" compoundref="universe_8cc" startline="602" endline="602">Universe::AdjustCounters</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_line_1ab98abcf3c8546e266ae5bbea243d8b8d" compoundref="line_8h" startline="94" endline="94">setLineCounter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt; For Sine, Cosine, Fabs &amp; Sqrt functions </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="190">
+        <label>Line</label>
+        <link refid="class_line"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="192">
+        <label>Line</label>
+        <link refid="class_line"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="193" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/line.h" line="26" column="1" bodyfile="BrainHarmonics/line.h" bodystart="25" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>Line</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>Line</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>Line</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>Line</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>Line</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>Line</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>Line</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>Line</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>Line</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>Line</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>Line</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>Line</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>Line</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>Line</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>Line</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>Line</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>Line</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>Line</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>Line</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>Line</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Line</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Line</scope><name>AdjustCounters</name></member>
+      <member refid="class_universe_1a1f787da78fa196ba635db21a9e91dabb" prot="public" virt="virtual"><scope>Line</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_universe_1a4c36c1ab30db993307f88363dde5e8c5" prot="public" virt="virtual"><scope>Line</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a76c0b5e63c2a7d1988c44db341c3d64c" prot="public" virt="virtual"><scope>Line</scope><name>ApplyGravitation</name></member>
+      <member refid="class_universe_1a906a88b37f10bfa630bef49dfd0e907a" prot="public" virt="virtual"><scope>Line</scope><name>ApplyStrong</name></member>
+      <member refid="class_universe_1a62789bcff84bd750b0366004381e2fdd" prot="public" virt="virtual"><scope>Line</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_universe_1af7becebb347be9a85541d96a3eca1ca7" prot="public" virt="virtual"><scope>Line</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_universe_1a6d1226b3adec3c42a833afdbb6a65a92" prot="public" virt="virtual"><scope>Line</scope><name>ApplyWeak</name></member>
+      <member refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e" prot="public" virt="virtual"><scope>Line</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>Line</scope><name>cognitive_network_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>Line</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>Line</scope><name>Creation</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>Line</scope><name>dimension_list</name></member>
+      <member refid="class_line_1ab4c19eb7e67615c609de20d98a2d0b5f" prot="private" virt="non-virtual"><scope>Line</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>Line</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>Line</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>Line</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>Line</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>Line</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>Line</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>Line</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>Line</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetDimensions</name></member>
+      <member refid="class_universe_1a63b850ef3f3394313353109d222bf5d1" prot="public" virt="virtual"><scope>Line</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_universe_1a9f099605c082e7fa755787a6a8cab7ba" prot="public" virt="virtual"><scope>Line</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>Line</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>Line</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>Line</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>Line</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual"><scope>Line</scope><name>GetEnergy</name></member>
+      <member refid="class_universe_1ab0404e774ee0ed66b597ff5b8e989446" prot="public" virt="virtual"><scope>Line</scope><name>GetGravitation</name></member>
+      <member refid="class_line_1a4c9d571599ebc5e9b6090b54a338fbde" prot="public" virt="non-virtual"><scope>Line</scope><name>GetInLine</name></member>
+      <member refid="class_line_1ac13c6405cfd2a586633b5a5eece05fff" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineCounter</name></member>
+      <member refid="class_line_1a20756feda4d42032955ec6cf12d89941" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineID</name></member>
+      <member refid="class_line_1a3fc7779998759b641ec2b7bc8515563a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineMaxOrdinal</name></member>
+      <member refid="class_line_1a7b105f0af704489446cc93302c30813d" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineMinOrdinal</name></member>
+      <member refid="class_line_1a8764cb987ec4af839f30411dc47a835a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineSeq</name></member>
+      <member refid="class_line_1a5b9419146093908e5c7d740ac384fe39" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineTTL</name></member>
+      <member refid="class_line_1ab14245ec4348e925b6e0f860e9254308" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineX1</name></member>
+      <member refid="class_line_1adc3c6c42d1b3d172e32fad59db2e3eaa" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineX1Y1Bubble</name></member>
+      <member refid="class_line_1a9cdf38d7aaeadfa35136dd417865c189" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineX2</name></member>
+      <member refid="class_line_1a2432406f734963e4497541081a843131" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineX2Y2Bubble</name></member>
+      <member refid="class_line_1a1393a4dcd9fa9e1ab1653c37d76c8c3a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineXMax</name></member>
+      <member refid="class_line_1ac4a6e8f232b529169d91b9f44496933b" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineXMin</name></member>
+      <member refid="class_line_1a8752cfce7330fbeda936778b77e534d0" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineXYBubble</name></member>
+      <member refid="class_line_1ac09a53b36a300c38191269f110c73eb1" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineY1</name></member>
+      <member refid="class_line_1a6222d15f883f3183ec9eed085046916a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineY2</name></member>
+      <member refid="class_line_1ab033cff3a24b67be829759d16f13c281" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineYMax</name></member>
+      <member refid="class_line_1ae8151f5f3b102924b09de686f536e220" prot="public" virt="non-virtual"><scope>Line</scope><name>GetLineYMin</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>Line</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>Line</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>Line</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>Line</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>Line</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>Line</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>Line</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>Line</scope><name>GetPolymers</name></member>
+      <member refid="class_line_1a2be3926d47a1a8849007a6c29a603dcf" prot="public" virt="non-virtual"><scope>Line</scope><name>GetSlope</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>Line</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>Line</scope><name>GetSolids</name></member>
+      <member refid="class_universe_1acb453ce71da418c5b5617fecede9571b" prot="public" virt="virtual"><scope>Line</scope><name>GetStrong</name></member>
+      <member refid="class_universe_1ab44daccba01ee7e3cf9b50bba83dd19e" prot="public" virt="virtual"><scope>Line</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_universe_1af0f4b81950061e63c2855eb40957a5b1" prot="public" virt="virtual"><scope>Line</scope><name>GetStrongResidual</name></member>
+      <member refid="class_universe_1a4476b7e0a3fc1764909f556257fd9ec7" prot="public" virt="virtual"><scope>Line</scope><name>GetWeak</name></member>
+      <member refid="class_universe_1a645299738e6b798a037f2a15a2e7cf4d" prot="public" virt="virtual"><scope>Line</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_line_1a5319d68ecb254ff61e2a46d5928aec93" prot="public" virt="non-virtual"><scope>Line</scope><name>GetYint</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>Line</scope><name>IsDead</name></member>
+      <member refid="class_line_1acc11b8a429d8cdd63ba6803dff5602b3" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a4e3242660d8d3c1aa43e932560840552" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a5330353765ab0f965a4293bdc7c3564a" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1a740aacdf468a1519f9a01d9cbd1f9219" prot="public" virt="non-virtual"><scope>Line</scope><name>Line</name></member>
+      <member refid="class_line_1aa5bac2c364a75b5212500dce6846ee0b" prot="private" virt="non-virtual"><scope>Line</scope><name>line_type</name></member>
+      <member refid="class_line_1a4fb7e6f35d49e0113755913b5179f922" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineCounter</name></member>
+      <member refid="class_line_1a92cbc39dd66e02a0507132422a2a830c" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineID</name></member>
+      <member refid="class_line_1a46a8187d5ccc8bf0dc9bc041836f241f" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineSeq</name></member>
+      <member refid="class_line_1afb3c20f2415b40bc800ae36796b2f7c7" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineTTL</name></member>
+      <member refid="class_line_1ac581c18e7d6a976b14dd986d42cb8163" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineX1</name></member>
+      <member refid="class_line_1a795ef48c075a36f0dea1af10b5ff323d" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineX2</name></member>
+      <member refid="class_line_1a46e251350694d1bdf8425d9f9a24f896" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineY1</name></member>
+      <member refid="class_line_1aa0f76375751fb3a75b9593161ecfc0e2" prot="private" virt="non-virtual"><scope>Line</scope><name>lineLineY2</name></member>
+      <member refid="class_line_1afdf693a798435ec16076396f3631853e" prot="private" virt="non-virtual"><scope>Line</scope><name>lineSlope</name></member>
+      <member refid="class_line_1a35197c3051202d4c4f0bb7d122780368" prot="private" virt="non-virtual"><scope>Line</scope><name>lineYint</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>Line</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>Line</scope><name>monomer_list</name></member>
+      <member refid="class_line_1ae9070a9da0afebb31910e31e62019301" prot="private" virt="non-virtual"><scope>Line</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual"><scope>Line</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual"><scope>Line</scope><name>object_energy_threshold</name></member>
+      <member refid="class_line_1a53a3368bd95b126c281eea4736ebc282" prot="private" virt="non-virtual"><scope>Line</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual"><scope>Line</scope><name>object_size</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>Line</scope><name>point_list</name></member>
+      <member refid="class_universe_1a0c485c504542409cbb5cfd8543c35b11" prot="public" virt="virtual"><scope>Line</scope><name>PollElementaryForce</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>Line</scope><name>polymer_list</name></member>
+      <member refid="class_line_1a1d6ddf845443fa6baa5d15d14baed9f8" prot="private" virt="non-virtual"><scope>Line</scope><name>previous_event_time</name></member>
+      <member refid="class_line_1af1756d1500ab0a5616313be6e213015a" prot="public" virt="non-virtual"><scope>Line</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Line</scope><name>ReturnEnergy</name></member>
+      <member refid="class_universe_1a3b3da7c86a7b75e5e5c0b7972ac82a87" prot="public" virt="virtual"><scope>Line</scope><name>SetCharge</name></member>
+      <member refid="class_universe_1aa22202ae740eb1355529afcb13285e91" prot="public" virt="virtual"><scope>Line</scope><name>SetCounter</name></member>
+      <member refid="class_universe_1aa981fc7e252b1fbbb675f0371860954d" prot="public" virt="virtual"><scope>Line</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_universe_1a608aa95698380f791a0ffba45cc1bee3" prot="public" virt="virtual"><scope>Line</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual"><scope>Line</scope><name>SetEnergy</name></member>
+      <member refid="class_universe_1ae0cb8d86b2fbb8396d605160344b42f5" prot="public" virt="virtual"><scope>Line</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Line</scope><name>SetLifespan</name></member>
+      <member refid="class_line_1ab98abcf3c8546e266ae5bbea243d8b8d" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineCounter</name></member>
+      <member refid="class_line_1aaa634bf320b9d1c4becb4083cd8324d4" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineID</name></member>
+      <member refid="class_line_1a7c315c5ffdd4fa875918583738e2e157" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineSeq</name></member>
+      <member refid="class_line_1a602398c8c3131ec7236ccadbab8281d5" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineTTL</name></member>
+      <member refid="class_line_1ab8df9f66bffc86994db3150a4eb8ed29" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineX1</name></member>
+      <member refid="class_line_1ade959bc4d4f69bb421ed4f69c0d77fb7" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineX2</name></member>
+      <member refid="class_line_1af236c5ddb0d125b388621b3597266a95" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineY1</name></member>
+      <member refid="class_line_1a671f64c437fe1bef798476d93c675099" prot="public" virt="non-virtual"><scope>Line</scope><name>setLineY2</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual"><scope>Line</scope><name>SetObjectType</name></member>
+      <member refid="class_line_1a3fb9e9eab13d146feff0bc891709eaf9" prot="public" virt="non-virtual"><scope>Line</scope><name>setSlope</name></member>
+      <member refid="class_universe_1ae2ae1c3b3e4cde2c18f5f6a814761ec8" prot="public" virt="virtual"><scope>Line</scope><name>SetSpin</name></member>
+      <member refid="class_universe_1a5946c8f3d4cda305f3ecd10df21a2f94" prot="public" virt="virtual"><scope>Line</scope><name>SetStrong</name></member>
+      <member refid="class_universe_1aafec97a231126b71c73ac1258609a284" prot="public" virt="virtual"><scope>Line</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_universe_1a1b2d6197ddf3d613cc30bd04d22ed8b7" prot="public" virt="virtual"><scope>Line</scope><name>SetStrongResidual</name></member>
+      <member refid="class_universe_1a0f5cd04081b41ee931c0557dc397f6fb" prot="public" virt="virtual"><scope>Line</scope><name>SetWeak</name></member>
+      <member refid="class_universe_1a2d3d642bfdc863248e93535832fa4b00" prot="public" virt="virtual"><scope>Line</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_line_1ad966eb3f1bd4cb29976b3e97811c344f" prot="public" virt="non-virtual"><scope>Line</scope><name>setYint</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>Line</scope><name>solid_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>Line</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>Line</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>Line</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_line_1ad1d89d2499cf9455fc2499078e0acc32" prot="private" virt="non-virtual"><scope>Line</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>Line</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>Line</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>Line</scope><name>Universe</name></member>
+      <member refid="class_line_1a8c6dece66f5cd93ce40134002a40f505" prot="public" virt="non-virtual"><scope>Line</scope><name>Update</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual"><scope>Line</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>Line</scope><name>UseEnergy</name></member>
+      <member refid="class_line_1a4a95bafcefa28672b3999deb011b9e50" prot="public" virt="virtual"><scope>Line</scope><name>~Line</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Line</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

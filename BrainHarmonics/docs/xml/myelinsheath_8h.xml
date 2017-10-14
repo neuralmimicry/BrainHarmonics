@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="myelinsheath_8h" kind="file" language="C++">
+    <compoundname>myelinsheath.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="cognitivenetwork_8h" local="yes">cognitivenetwork.h</includes>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="myelinsheath_8cc" local="yes">BrainHarmonics/myelinsheath.cc</includedby>
+    <incdepgraph>
+      <node id="1079">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>BrainHarmonics/myelinsheath.h</label>
+        <link refid="myelinsheath_8h"/>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>vector</label>
+      </node>
+      <node id="1081">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>math.h</label>
+      </node>
+      <node id="1077">
+        <label>iostream</label>
+      </node>
+      <node id="1082">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1084">
+        <label>BrainHarmonics/myelinsheath.h</label>
+        <link refid="myelinsheath_8h"/>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1086">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_myelin_sheath" prot="public">MyelinSheath</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>myelinsheath.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>16/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_MYELINSHEATH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_MYELINSHEATH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cognitivenetwork_8h" kindref="compound">cognitivenetwork.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_myelin_sheath" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_myelin_sheath" kindref="compound">MyelinSheath</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_myelin_sheath_1a298d69acb8d64de018f32443ea015287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_myelin_sheath_1a298d69acb8d64de018f32443ea015287" kindref="member">MyelinSheath</ref>()<sp/>:<sp/><ref refid="class_myelin_sheath" kindref="compound">MyelinSheath</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="class_myelin_sheath_1a9f9f90c853f341b5cbf4f2c5035a14af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_myelin_sheath_1a9f9f90c853f341b5cbf4f2c5035a14af" kindref="member">MyelinSheath</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_myelin_sheath" kindref="compound">MyelinSheath</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="class_myelin_sheath_1a34a80a57ebcde58933a07ca9d99780eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_myelin_sheath_1a34a80a57ebcde58933a07ca9d99780eb" kindref="member">MyelinSheath</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="class_myelin_sheath_1aac107d8f22ca3c02f2d346f44950e6d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_myelin_sheath_1aac107d8f22ca3c02f2d346f44950e6d0" kindref="member">MyelinSheath</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>&amp;<sp/>cognitivenetwork_connector)<sp/>:<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>(cognitivenetwork_connector)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>myelinsheath<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>myelinsheath_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_myelin_sheath_1af1174b93be36aa43506a4ba9857d92a4" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34" refid="class_myelin_sheath_1acf71a2a450e2df353f28eed6c7a4129a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1acf71a2a450e2df353f28eed6c7a4129a" kindref="member">~MyelinSheath</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1af1174b93be36aa43506a4ba9857d92a4" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_myelin_sheath_1a10eef8601d129e7e2f28e8ed1ebc975c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1a10eef8601d129e7e2f28e8ed1ebc975c" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="39" refid="class_myelin_sheath_1ac0c4142b6066e5982c54583e8ac01271" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1ac0c4142b6066e5982c54583e8ac01271" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1af53c8f36ee963168dec09b74a6be8e4c" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="class_myelin_sheath_1a7877f5feab5bae37903653bf89dc3d5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_myelin_sheath_1a7877f5feab5bae37903653bf89dc3d5b" kindref="member">axonbranch_list</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>myelinsheath_type;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyFull;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Ions;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Volume;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_SurfaceArea;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Length;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_MYELINSHEATH_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/myelinsheath.h"/>
+  </compounddef>
+</doxygen>

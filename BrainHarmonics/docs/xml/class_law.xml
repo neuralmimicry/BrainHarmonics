@@ -1,0 +1,990 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_law" kind="class" language="C++" prot="public">
+    <compoundname>Law</compoundname>
+    <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
+    <includes refid="law_8h" local="no">law.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_law_1a5d0e4fe1c614b9dac57f5f0135148cd6" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Law::m_Counter</definition>
+        <argsstring></argsstring>
+        <name>m_Counter</name>
+        <briefdescription>
+<para>Member variable &quot;m_Counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="94" column="1" bodyfile="BrainHarmonics/law.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1a89176462e467ae7fa48c9b9cce6e55b2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Law::law_type</definition>
+        <argsstring></argsstring>
+        <name>law_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="95" column="1" bodyfile="BrainHarmonics/law.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1a454bec5c547ef7482f1ec17259fb5af3" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Law::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="96" column="1" bodyfile="BrainHarmonics/law.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1a975eb41929cb9b4f216809889bfcb380" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Law::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="97" column="1" bodyfile="BrainHarmonics/law.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1ae0f326365accd025499b12cb0a9cb785" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Law::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="98" column="1" bodyfile="BrainHarmonics/law.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1abe7d645ce2c940fecdbbf7308ab9b2e8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Law::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="99" column="1" bodyfile="BrainHarmonics/law.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_law_1a347aff85a02895946ff97718afdfeeff" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Law::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="100" column="1" bodyfile="BrainHarmonics/law.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_law_1a3b94b6e9f09b8f457dba70f3b1c1ab43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Law::Law</definition>
+        <argsstring>()</argsstring>
+        <name>Law</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="26" column="1" bodyfile="BrainHarmonics/law.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1afd1730474b2806ec6665e16419f4994c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Law::Law</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Law</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="28" column="1" bodyfile="BrainHarmonics/law.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1afdc75daa3a3346c473454c7a4dc2eab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Law::Law</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Law</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="30" column="1" bodyfile="BrainHarmonics/law.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1aa4fb7baf54aa77720605fd601fb80b8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Law::Law</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Universe &amp;universe_connector)</argsstring>
+        <name>Law</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_universe" kindref="compound">Universe</ref> &amp;</type>
+          <declname>universe_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="32" column="1" bodyfile="BrainHarmonics/law.h" bodystart="32" bodyend="43"/>
+        <references refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" compoundref="law_8cc" startline="20" endline="58">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Law::~Law</definition>
+        <argsstring>()</argsstring>
+        <name>~Law</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="45" column="1" bodyfile="BrainHarmonics/law.h" bodystart="45" bodyend="45"/>
+        <references refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" compoundref="law_8cc" startline="20" endline="58">ResetParameters</references>
+        <references refid="class_law_1ab30a86ef88a85e13d3e598caa45bff05" compoundref="law_8cc" startline="60" endline="60">GetCounter</references>
+        <references refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" compoundref="law_8cc" startline="62" endline="62">SetCounter</references>
+        <references refid="class_law_1a0240b10c679b671039dbf10771342ea7" compoundref="law_8cc" startline="64" endline="98">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Law::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="47" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="20" bodyend="58"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
+        <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
+        <referencedby refid="class_law_1a0240b10c679b671039dbf10771342ea7" compoundref="law_8cc" startline="64" endline="98">Update</referencedby>
+        <referencedby refid="class_law_1aa4fb7baf54aa77720605fd601fb80b8d" compoundref="law_8h" startline="32" endline="43">Law</referencedby>
+        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1ab30a86ef88a85e13d3e598caa45bff05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Law::GetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="49" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="60" bodyend="60"/>
+        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a408c401c8a44870c29ba9d08b45cb40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_universe_1aa22202ae740eb1355529afcb13285e91">SetCounter</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="51" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="62" bodyend="62"/>
+        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a0240b10c679b671039dbf10771342ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Law::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="53" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="64" bodyend="98"/>
+        <references refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" compoundref="law_8cc" startline="20" endline="58">ResetParameters</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a2e780573f6285f88d167d45a2e243d01" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetCharge</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
+        <name>SetCharge</name>
+        <reimplements refid="class_universe_1a3b3da7c86a7b75e5e5c0b7972ac82a87">SetCharge</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="55" column="1" bodyfile="BrainHarmonics/law.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a3de75edea5e20db0a7b731de61f07dea" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetSpin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
+        <name>SetSpin</name>
+        <reimplements refid="class_universe_1ae2ae1c3b3e4cde2c18f5f6a814761ec8">SetSpin</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="56" column="1" bodyfile="BrainHarmonics/law.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a84bdc0c2ca97a9c19422018ff761b992" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetGravitation</name>
+        <reimplements refid="class_universe_1ab0404e774ee0ed66b597ff5b8e989446">GetGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="57" column="1" bodyfile="BrainHarmonics/law.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a303c365b7a17997a63a74756fc72fba3" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetWeak</name>
+        <reimplements refid="class_universe_1a4476b7e0a3fc1764909f556257fd9ec7">GetWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="58" column="1" bodyfile="BrainHarmonics/law.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1aad6e54da64a5d8499dcb6c232aa6748f" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetWeakElectroweak</name>
+        <reimplements refid="class_universe_1a645299738e6b798a037f2a15a2e7cf4d">GetWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="59" column="1" bodyfile="BrainHarmonics/law.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a01eba6e68d2d8a717e2b4789be90853d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetElectromagnetic</name>
+        <reimplements refid="class_universe_1a63b850ef3f3394313353109d222bf5d1">GetElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="60" column="1" bodyfile="BrainHarmonics/law.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1ae4ccaca7b78905f416f35f9556b1923c" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a9f099605c082e7fa755787a6a8cab7ba">GetElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="61" column="1" bodyfile="BrainHarmonics/law.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1afd94bf09dbaf5d5df36b8f093db02dd9" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrong</name>
+        <reimplements refid="class_universe_1acb453ce71da418c5b5617fecede9571b">GetStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="62" column="1" bodyfile="BrainHarmonics/law.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1afcdbea76524e5a52691fff7b526971e9" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrongFundamental</name>
+        <reimplements refid="class_universe_1ab44daccba01ee7e3cf9b50bba83dd19e">GetStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="63" column="1" bodyfile="BrainHarmonics/law.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a70fb2a7710776c4e2315a1e29fe35eb6" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::GetStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrongResidual</name>
+        <reimplements refid="class_universe_1af0f4b81950061e63c2855eb40957a5b1">GetStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="64" column="1" bodyfile="BrainHarmonics/law.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a04efdc724335219ab0affdcffb55eea2" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyGravitation</name>
+        <reimplements refid="class_universe_1a76c0b5e63c2a7d1988c44db341c3d64c">ApplyGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="66" column="1" bodyfile="BrainHarmonics/law.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a96ddd42403e3665c6070283ac201658d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyWeak</name>
+        <reimplements refid="class_universe_1a6d1226b3adec3c42a833afdbb6a65a92">ApplyWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="67" column="1" bodyfile="BrainHarmonics/law.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1ae8a5d1d09686d79f7814c8800791460b" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyWeakElectroweak</name>
+        <reimplements refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e">ApplyWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="68" column="1" bodyfile="BrainHarmonics/law.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a418791aee2a9204a99d3a917b86fafd3" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyElectromagnetic</name>
+        <reimplements refid="class_universe_1a1f787da78fa196ba635db21a9e91dabb">ApplyElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="69" column="1" bodyfile="BrainHarmonics/law.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a4485046db890a95cea16573042a4f4f6" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a4c36c1ab30db993307f88363dde5e8c5">ApplyElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="70" column="1" bodyfile="BrainHarmonics/law.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1ab38659b209055df7e59f4bcd1b9e545a" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrong</name>
+        <reimplements refid="class_universe_1a906a88b37f10bfa630bef49dfd0e907a">ApplyStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="71" column="1" bodyfile="BrainHarmonics/law.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a57d05f26e1c0ee953260ebd3780248f8" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrongFundamental</name>
+        <reimplements refid="class_universe_1a62789bcff84bd750b0366004381e2fdd">ApplyStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="72" column="1" bodyfile="BrainHarmonics/law.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a266f86cdcc01e813249a2f192ab85eb3" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Law::ApplyStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrongResidual</name>
+        <reimplements refid="class_universe_1af7becebb347be9a85541d96a3eca1ca7">ApplyStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="73" column="1" bodyfile="BrainHarmonics/law.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a908ccc2b0a561a7324a15393ec157219" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetGravitation</name>
+        <reimplements refid="class_universe_1ae0cb8d86b2fbb8396d605160344b42f5">SetGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="75" column="1" bodyfile="BrainHarmonics/law.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a1009b4e0bc0b91f41d48dc137529e97b" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetWeak</name>
+        <reimplements refid="class_universe_1a0f5cd04081b41ee931c0557dc397f6fb">SetWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="76" column="1" bodyfile="BrainHarmonics/law.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a65e5e757041c1e72bb046eccbb6d66db" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetWeakElectroweak</name>
+        <reimplements refid="class_universe_1a2d3d642bfdc863248e93535832fa4b00">SetWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="77" column="1" bodyfile="BrainHarmonics/law.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1acabe1a3113c207368f3bb6fe81e13963" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetElectromagnetic</name>
+        <reimplements refid="class_universe_1aa981fc7e252b1fbbb675f0371860954d">SetElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="78" column="1" bodyfile="BrainHarmonics/law.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1aca9bb82839ddb46bd89f52b6211c5a54" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a608aa95698380f791a0ffba45cc1bee3">SetElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="79" column="1" bodyfile="BrainHarmonics/law.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a4cd0dd1908edbd02090dd1ba1387d722" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrong</name>
+        <reimplements refid="class_universe_1a5946c8f3d4cda305f3ecd10df21a2f94">SetStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="80" column="1" bodyfile="BrainHarmonics/law.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1a4a7c8caa24acf453c1a8782a1ec4acf4" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrongFundamental</name>
+        <reimplements refid="class_universe_1aafec97a231126b71c73ac1258609a284">SetStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="81" column="1" bodyfile="BrainHarmonics/law.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1ad4a05c77d11ddec40b1e07246cac449d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::SetStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrongResidual</name>
+        <reimplements refid="class_universe_1a1b2d6197ddf3d613cc30bd04d22ed8b7">SetStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="82" column="1" bodyfile="BrainHarmonics/law.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_law_1af99520c95b2cd8af0af110b78b2288ef" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Law::PollElementaryForce</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>PollElementaryForce</name>
+        <reimplements refid="class_universe_1a0c485c504542409cbb5cfd8543c35b11">PollElementaryForce</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/law.h" line="84" column="1" bodyfile="BrainHarmonics/law.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="187">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="186">
+        <label>Law</label>
+        <link refid="class_law"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="189">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="189" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Law</label>
+        <link refid="class_law"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/law.h" line="24" column="1" bodyfile="BrainHarmonics/law.h" bodystart="23" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>Law</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>Law</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>Law</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>Law</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>Law</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>Law</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>Law</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>Law</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>Law</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>Law</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>Law</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>Law</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>Law</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>Law</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>Law</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>Law</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>Law</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>Law</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>Law</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>Law</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Law</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Law</scope><name>AdjustCounters</name></member>
+      <member refid="class_law_1a418791aee2a9204a99d3a917b86fafd3" prot="public" virt="virtual"><scope>Law</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_law_1a4485046db890a95cea16573042a4f4f6" prot="public" virt="virtual"><scope>Law</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_law_1a04efdc724335219ab0affdcffb55eea2" prot="public" virt="virtual"><scope>Law</scope><name>ApplyGravitation</name></member>
+      <member refid="class_law_1ab38659b209055df7e59f4bcd1b9e545a" prot="public" virt="virtual"><scope>Law</scope><name>ApplyStrong</name></member>
+      <member refid="class_law_1a57d05f26e1c0ee953260ebd3780248f8" prot="public" virt="virtual"><scope>Law</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_law_1a266f86cdcc01e813249a2f192ab85eb3" prot="public" virt="virtual"><scope>Law</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_law_1a96ddd42403e3665c6070283ac201658d" prot="public" virt="virtual"><scope>Law</scope><name>ApplyWeak</name></member>
+      <member refid="class_law_1ae8a5d1d09686d79f7814c8800791460b" prot="public" virt="virtual"><scope>Law</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>Law</scope><name>cognitive_network_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>Law</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>Law</scope><name>Creation</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>Law</scope><name>dimension_list</name></member>
+      <member refid="class_law_1a347aff85a02895946ff97718afdfeeff" prot="private" virt="non-virtual"><scope>Law</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>Law</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>Law</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>Law</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>Law</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>Law</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>Law</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>Law</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_law_1ab30a86ef88a85e13d3e598caa45bff05" prot="public" virt="non-virtual"><scope>Law</scope><name>GetCounter</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>Law</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>Law</scope><name>GetDimensions</name></member>
+      <member refid="class_law_1a01eba6e68d2d8a717e2b4789be90853d" prot="public" virt="virtual"><scope>Law</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_law_1ae4ccaca7b78905f416f35f9556b1923c" prot="public" virt="virtual"><scope>Law</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>Law</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>Law</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>Law</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>Law</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual"><scope>Law</scope><name>GetEnergy</name></member>
+      <member refid="class_law_1a84bdc0c2ca97a9c19422018ff761b992" prot="public" virt="virtual"><scope>Law</scope><name>GetGravitation</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>Law</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>Law</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>Law</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>Law</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>Law</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>Law</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>Law</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>Law</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>Law</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>Law</scope><name>GetSolids</name></member>
+      <member refid="class_law_1afd94bf09dbaf5d5df36b8f093db02dd9" prot="public" virt="virtual"><scope>Law</scope><name>GetStrong</name></member>
+      <member refid="class_law_1afcdbea76524e5a52691fff7b526971e9" prot="public" virt="virtual"><scope>Law</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_law_1a70fb2a7710776c4e2315a1e29fe35eb6" prot="public" virt="virtual"><scope>Law</scope><name>GetStrongResidual</name></member>
+      <member refid="class_law_1a303c365b7a17997a63a74756fc72fba3" prot="public" virt="virtual"><scope>Law</scope><name>GetWeak</name></member>
+      <member refid="class_law_1aad6e54da64a5d8499dcb6c232aa6748f" prot="public" virt="virtual"><scope>Law</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>Law</scope><name>IsDead</name></member>
+      <member refid="class_law_1a3b94b6e9f09b8f457dba70f3b1c1ab43" prot="public" virt="non-virtual"><scope>Law</scope><name>Law</name></member>
+      <member refid="class_law_1afd1730474b2806ec6665e16419f4994c" prot="public" virt="non-virtual"><scope>Law</scope><name>Law</name></member>
+      <member refid="class_law_1afdc75daa3a3346c473454c7a4dc2eab5" prot="public" virt="non-virtual"><scope>Law</scope><name>Law</name></member>
+      <member refid="class_law_1aa4fb7baf54aa77720605fd601fb80b8d" prot="public" virt="non-virtual"><scope>Law</scope><name>Law</name></member>
+      <member refid="class_law_1a89176462e467ae7fa48c9b9cce6e55b2" prot="private" virt="non-virtual"><scope>Law</scope><name>law_type</name></member>
+      <member refid="class_law_1a5d0e4fe1c614b9dac57f5f0135148cd6" prot="private" virt="non-virtual"><scope>Law</scope><name>m_Counter</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>Law</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>Law</scope><name>monomer_list</name></member>
+      <member refid="class_law_1ae0f326365accd025499b12cb0a9cb785" prot="private" virt="non-virtual"><scope>Law</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual"><scope>Law</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual"><scope>Law</scope><name>object_energy_threshold</name></member>
+      <member refid="class_law_1abe7d645ce2c940fecdbbf7308ab9b2e8" prot="private" virt="non-virtual"><scope>Law</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual"><scope>Law</scope><name>object_size</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>Law</scope><name>point_list</name></member>
+      <member refid="class_law_1af99520c95b2cd8af0af110b78b2288ef" prot="public" virt="virtual"><scope>Law</scope><name>PollElementaryForce</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>Law</scope><name>polymer_list</name></member>
+      <member refid="class_law_1a975eb41929cb9b4f216809889bfcb380" prot="private" virt="non-virtual"><scope>Law</scope><name>previous_event_time</name></member>
+      <member refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" prot="public" virt="non-virtual"><scope>Law</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Law</scope><name>ReturnEnergy</name></member>
+      <member refid="class_law_1a2e780573f6285f88d167d45a2e243d01" prot="public" virt="virtual"><scope>Law</scope><name>SetCharge</name></member>
+      <member refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" prot="public" virt="virtual"><scope>Law</scope><name>SetCounter</name></member>
+      <member refid="class_law_1acabe1a3113c207368f3bb6fe81e13963" prot="public" virt="virtual"><scope>Law</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_law_1aca9bb82839ddb46bd89f52b6211c5a54" prot="public" virt="virtual"><scope>Law</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual"><scope>Law</scope><name>SetEnergy</name></member>
+      <member refid="class_law_1a908ccc2b0a561a7324a15393ec157219" prot="public" virt="virtual"><scope>Law</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Law</scope><name>SetLifespan</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual"><scope>Law</scope><name>SetObjectType</name></member>
+      <member refid="class_law_1a3de75edea5e20db0a7b731de61f07dea" prot="public" virt="virtual"><scope>Law</scope><name>SetSpin</name></member>
+      <member refid="class_law_1a4cd0dd1908edbd02090dd1ba1387d722" prot="public" virt="virtual"><scope>Law</scope><name>SetStrong</name></member>
+      <member refid="class_law_1a4a7c8caa24acf453c1a8782a1ec4acf4" prot="public" virt="virtual"><scope>Law</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_law_1ad4a05c77d11ddec40b1e07246cac449d" prot="public" virt="virtual"><scope>Law</scope><name>SetStrongResidual</name></member>
+      <member refid="class_law_1a1009b4e0bc0b91f41d48dc137529e97b" prot="public" virt="virtual"><scope>Law</scope><name>SetWeak</name></member>
+      <member refid="class_law_1a65e5e757041c1e72bb046eccbb6d66db" prot="public" virt="virtual"><scope>Law</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>Law</scope><name>solid_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>Law</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>Law</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>Law</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_law_1a454bec5c547ef7482f1ec17259fb5af3" prot="private" virt="non-virtual"><scope>Law</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>Law</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>Law</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>Law</scope><name>Universe</name></member>
+      <member refid="class_law_1a0240b10c679b671039dbf10771342ea7" prot="public" virt="non-virtual"><scope>Law</scope><name>Update</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual"><scope>Law</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>Law</scope><name>UseEnergy</name></member>
+      <member refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" prot="public" virt="virtual"><scope>Law</scope><name>~Law</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Law</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

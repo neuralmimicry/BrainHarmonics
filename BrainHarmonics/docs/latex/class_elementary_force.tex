@@ -1,0 +1,894 @@
+\hypertarget{class_elementary_force}{}\section{Elementary\+Force Class Reference}
+\label{class_elementary_force}\index{Elementary\+Force@{Elementary\+Force}}
+
+
+{\ttfamily \#include $<$elementaryforce.\+h$>$}
+
+
+
+Inheritance diagram for Elementary\+Force\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_elementary_force__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Elementary\+Force\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_elementary_force__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_elementary_force_a1da5b85cdf3b79f3506dbdc4d877155a}{Elementary\+Force} ()
+\item 
+\hyperlink{class_elementary_force_a7aeb59eab2a299037e1fef94b9290b78}{Elementary\+Force} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_elementary_force_a30f4a2259927de81cf3ef66c495f423c}{Elementary\+Force} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_elementary_force_a1b466cc9aeb317161a7632cb5651a537}{Elementary\+Force} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_universe}{Universe} \&universe\+\_\+connector)
+\item 
+virtual \hyperlink{class_elementary_force_afee0c87be3bd2a5221c9fcaddd70dfa6}{$\sim$\+Elementary\+Force} ()
+\item 
+unsigned int \hyperlink{class_elementary_force_a466c37c769c1826bd0f416f38bb09996}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_af608447a2b6380142e2345ada11d1c32}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a579afb8079668f0587096934d1de9c04}{Get\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a4669f2ce414e508c70ae4ce0df503ad1}{Get\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a928e06a1fa81b8d7ec4a426d959a0f98}{Get\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a2c8bc3226f42710717775c73eee1644e}{Get\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a58e503f2f3a7410f034a2a04bca560d1}{Get\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_aaa1cde27b1508831f67353eb39745a7e}{Get\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a0974d6537c07dac2453d2a607324fa21}{Get\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a3478c8ad35bce240055da7d4a03e555e}{Get\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_elementary_force_a0961328b260cb4dfb2ba54f4e284f0e8}{Apply\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a655a2c9489bfbbf15e05ba4953628134}{Apply\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_aabf66a859e6e808a65c6929cd16f7597}{Apply\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a2d3a5444c771f35d66d4151c62f53b12}{Apply\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a0045a3380e468c6cfdbefce829888c1f}{Apply\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a3764a27b11760b6ead2c8a23ff25d77a}{Apply\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a8a16bff6b5df2b0ff918262bf6376ade}{Apply\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a80f1977e777aa0c8cce2124b666e6446}{Apply\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+double \hyperlink{class_elementary_force_a185dc4e0b840505df27dbbed9fdcdc7b}{Apply\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_a3762cf66ed266b310446417215dec3fa}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_elementary_force_a466c84ee4a50a29ef1f0fc6509ae3161}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_aa36d5875964f7e2fc981f6fc5431be7f}{Set\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_a093cdf0810e95f1d973bd9dc88c6788b}{Set\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_a38d4f86f18a9f84a4198ee43bc90f6b4}{Set\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_a67f6845bd715c29c17387d291b343a1b}{Set\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_af4f12038c33d7edf9f13339fcd632ec9}{Set\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_aa1b5708cfab2069049fec5c924e1f246}{Set\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_afb00e9a10ec33eeb1daefce39b0468b7}{Set\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_ac25021d38c1d54bf711096ab37a461f6}{Set\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_elementary_force_aa5ab479744dbf3e8578f8d2974299ff7}{Poll\+Elementary\+Force} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+bool \hyperlink{class_elementary_force_a1dedcd23a538b87f71ecd43cb36a6db5}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_elementary_force_a855c26eb8a542ff633af66940da5f90b}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_elementary_force_a6e57500586e9cd366f5cf76ea0299957}{Elementary\+Force}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file elementaryforce.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_elementary_force_a1da5b85cdf3b79f3506dbdc4d877155a}\label{class_elementary_force_a1da5b85cdf3b79f3506dbdc4d877155a}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 28 of file elementaryforce.\+h.
+
+\mbox{\Hypertarget{class_elementary_force_a7aeb59eab2a299037e1fef94b9290b78}\label{class_elementary_force_a7aeb59eab2a299037e1fef94b9290b78}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file elementaryforce.\+h.
+
+\mbox{\Hypertarget{class_elementary_force_a30f4a2259927de81cf3ef66c495f423c}\label{class_elementary_force_a30f4a2259927de81cf3ef66c495f423c}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file elementaryforce.\+h.
+
+\mbox{\Hypertarget{class_elementary_force_a1b466cc9aeb317161a7632cb5651a537}\label{class_elementary_force_a1b466cc9aeb317161a7632cb5651a537}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_universe}{Universe} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file elementaryforce.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a1b466cc9aeb317161a7632cb5651a537_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_afee0c87be3bd2a5221c9fcaddd70dfa6}\label{class_elementary_force_afee0c87be3bd2a5221c9fcaddd70dfa6}} 
+\index{Elementary\+Force@{Elementary\+Force}!````~Elementary\+Force@{$\sim$\+Elementary\+Force}}
+\index{````~Elementary\+Force@{$\sim$\+Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{$\sim$\+Elementary\+Force()}{~ElementaryForce()}}
+{\footnotesize\ttfamily virtual Elementary\+Force\+::$\sim$\+Elementary\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 52 of file elementaryforce.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_afee0c87be3bd2a5221c9fcaddd70dfa6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_elementary_force_a0045a3380e468c6cfdbefce829888c1f}\label{class_elementary_force_a0045a3380e468c6cfdbefce829888c1f}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a1f787da78fa196ba635db21a9e91dabb}{Universe}.
+
+
+
+Definition at line 61 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a0045a3380e468c6cfdbefce829888c1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a3764a27b11760b6ead2c8a23ff25d77a}\label{class_elementary_force_a3764a27b11760b6ead2c8a23ff25d77a}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a4c36c1ab30db993307f88363dde5e8c5}{Universe}.
+
+
+
+Definition at line 62 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a3764a27b11760b6ead2c8a23ff25d77a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a0961328b260cb4dfb2ba54f4e284f0e8}\label{class_elementary_force_a0961328b260cb4dfb2ba54f4e284f0e8}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Energy@{Apply\+Energy}}
+\index{Apply\+Energy@{Apply\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Energy()}{ApplyEnergy()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a0961328b260cb4dfb2ba54f4e284f0e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a655a2c9489bfbbf15e05ba4953628134}\label{class_elementary_force_a655a2c9489bfbbf15e05ba4953628134}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a76c0b5e63c2a7d1988c44db341c3d64c}{Universe}.
+
+
+
+Definition at line 58 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a655a2c9489bfbbf15e05ba4953628134_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a8a16bff6b5df2b0ff918262bf6376ade}\label{class_elementary_force_a8a16bff6b5df2b0ff918262bf6376ade}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a906a88b37f10bfa630bef49dfd0e907a}{Universe}.
+
+
+
+Definition at line 63 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a8a16bff6b5df2b0ff918262bf6376ade_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a80f1977e777aa0c8cce2124b666e6446}\label{class_elementary_force_a80f1977e777aa0c8cce2124b666e6446}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a62789bcff84bd750b0366004381e2fdd}{Universe}.
+
+
+
+Definition at line 64 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a80f1977e777aa0c8cce2124b666e6446_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a185dc4e0b840505df27dbbed9fdcdc7b}\label{class_elementary_force_a185dc4e0b840505df27dbbed9fdcdc7b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_af7becebb347be9a85541d96a3eca1ca7}{Universe}.
+
+
+
+Definition at line 65 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a185dc4e0b840505df27dbbed9fdcdc7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_aabf66a859e6e808a65c6929cd16f7597}\label{class_elementary_force_aabf66a859e6e808a65c6929cd16f7597}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a6d1226b3adec3c42a833afdbb6a65a92}{Universe}.
+
+
+
+Definition at line 59 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_aabf66a859e6e808a65c6929cd16f7597_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a2d3a5444c771f35d66d4151c62f53b12}\label{class_elementary_force_a2d3a5444c771f35d66d4151c62f53b12}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a46a906baabb63e5d31f8b48ea1fae52e}{Universe}.
+
+
+
+Definition at line 60 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a2d3a5444c771f35d66d4151c62f53b12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a466c37c769c1826bd0f416f38bb09996}\label{class_elementary_force_a466c37c769c1826bd0f416f38bb09996}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Elementary\+Force\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a466c37c769c1826bd0f416f38bb09996_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a2c8bc3226f42710717775c73eee1644e}\label{class_elementary_force_a2c8bc3226f42710717775c73eee1644e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a63b850ef3f3394313353109d222bf5d1}{Universe}.
+
+
+
+Definition at line 52 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a2c8bc3226f42710717775c73eee1644e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a58e503f2f3a7410f034a2a04bca560d1}\label{class_elementary_force_a58e503f2f3a7410f034a2a04bca560d1}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a9f099605c082e7fa755787a6a8cab7ba}{Universe}.
+
+
+
+Definition at line 53 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a58e503f2f3a7410f034a2a04bca560d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_af608447a2b6380142e2345ada11d1c32}\label{class_elementary_force_af608447a2b6380142e2345ada11d1c32}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_af608447a2b6380142e2345ada11d1c32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a579afb8079668f0587096934d1de9c04}\label{class_elementary_force_a579afb8079668f0587096934d1de9c04}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_ab0404e774ee0ed66b597ff5b8e989446}{Universe}.
+
+
+
+Definition at line 49 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a579afb8079668f0587096934d1de9c04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_aaa1cde27b1508831f67353eb39745a7e}\label{class_elementary_force_aaa1cde27b1508831f67353eb39745a7e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_acb453ce71da418c5b5617fecede9571b}{Universe}.
+
+
+
+Definition at line 54 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_aaa1cde27b1508831f67353eb39745a7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a0974d6537c07dac2453d2a607324fa21}\label{class_elementary_force_a0974d6537c07dac2453d2a607324fa21}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_ab44daccba01ee7e3cf9b50bba83dd19e}{Universe}.
+
+
+
+Definition at line 55 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a0974d6537c07dac2453d2a607324fa21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a3478c8ad35bce240055da7d4a03e555e}\label{class_elementary_force_a3478c8ad35bce240055da7d4a03e555e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_af0f4b81950061e63c2855eb40957a5b1}{Universe}.
+
+
+
+Definition at line 56 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a3478c8ad35bce240055da7d4a03e555e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a4669f2ce414e508c70ae4ce0df503ad1}\label{class_elementary_force_a4669f2ce414e508c70ae4ce0df503ad1}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a4476b7e0a3fc1764909f556257fd9ec7}{Universe}.
+
+
+
+Definition at line 50 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a4669f2ce414e508c70ae4ce0df503ad1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a928e06a1fa81b8d7ec4a426d959a0f98}\label{class_elementary_force_a928e06a1fa81b8d7ec4a426d959a0f98}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a645299738e6b798a037f2a15a2e7cf4d}{Universe}.
+
+
+
+Definition at line 51 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a928e06a1fa81b8d7ec4a426d959a0f98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_aa5ab479744dbf3e8578f8d2974299ff7}\label{class_elementary_force_aa5ab479744dbf3e8578f8d2974299ff7}} 
+\index{Elementary\+Force@{Elementary\+Force}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a0c485c504542409cbb5cfd8543c35b11}{Universe}.
+
+
+
+Definition at line 77 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_aa5ab479744dbf3e8578f8d2974299ff7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a1dedcd23a538b87f71ecd43cb36a6db5}\label{class_elementary_force_a1dedcd23a538b87f71ecd43cb36a6db5}} 
+\index{Elementary\+Force@{Elementary\+Force}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Elementary\+Force\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file elementaryforce.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a1dedcd23a538b87f71ecd43cb36a6db5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a1dedcd23a538b87f71ecd43cb36a6db5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a3762cf66ed266b310446417215dec3fa}\label{class_elementary_force_a3762cf66ed266b310446417215dec3fa}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_aa22202ae740eb1355529afcb13285e91}{Universe}.
+
+
+
+Definition at line 67 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a3762cf66ed266b310446417215dec3fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a67f6845bd715c29c17387d291b343a1b}\label{class_elementary_force_a67f6845bd715c29c17387d291b343a1b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_aa981fc7e252b1fbbb675f0371860954d}{Universe}.
+
+
+
+Definition at line 71 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a67f6845bd715c29c17387d291b343a1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_af4f12038c33d7edf9f13339fcd632ec9}\label{class_elementary_force_af4f12038c33d7edf9f13339fcd632ec9}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a608aa95698380f791a0ffba45cc1bee3}{Universe}.
+
+
+
+Definition at line 72 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_af4f12038c33d7edf9f13339fcd632ec9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a466c84ee4a50a29ef1f0fc6509ae3161}\label{class_elementary_force_a466c84ee4a50a29ef1f0fc6509ae3161}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a466c84ee4a50a29ef1f0fc6509ae3161_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_aa36d5875964f7e2fc981f6fc5431be7f}\label{class_elementary_force_aa36d5875964f7e2fc981f6fc5431be7f}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_ae0cb8d86b2fbb8396d605160344b42f5}{Universe}.
+
+
+
+Definition at line 68 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_aa36d5875964f7e2fc981f6fc5431be7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_aa1b5708cfab2069049fec5c924e1f246}\label{class_elementary_force_aa1b5708cfab2069049fec5c924e1f246}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a5946c8f3d4cda305f3ecd10df21a2f94}{Universe}.
+
+
+
+Definition at line 73 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_aa1b5708cfab2069049fec5c924e1f246_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_afb00e9a10ec33eeb1daefce39b0468b7}\label{class_elementary_force_afb00e9a10ec33eeb1daefce39b0468b7}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_aafec97a231126b71c73ac1258609a284}{Universe}.
+
+
+
+Definition at line 74 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_afb00e9a10ec33eeb1daefce39b0468b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_ac25021d38c1d54bf711096ab37a461f6}\label{class_elementary_force_ac25021d38c1d54bf711096ab37a461f6}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Universe}.
+
+
+
+Definition at line 75 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_ac25021d38c1d54bf711096ab37a461f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a093cdf0810e95f1d973bd9dc88c6788b}\label{class_elementary_force_a093cdf0810e95f1d973bd9dc88c6788b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a0f5cd04081b41ee931c0557dc397f6fb}{Universe}.
+
+
+
+Definition at line 69 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a093cdf0810e95f1d973bd9dc88c6788b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a38d4f86f18a9f84a4198ee43bc90f6b4}\label{class_elementary_force_a38d4f86f18a9f84a4198ee43bc90f6b4}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_universe_a2d3d642bfdc863248e93535832fa4b00}{Universe}.
+
+
+
+Definition at line 70 of file elementaryforce.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a38d4f86f18a9f84a4198ee43bc90f6b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_elementary_force_a855c26eb8a542ff633af66940da5f90b}\label{class_elementary_force_a855c26eb8a542ff633af66940da5f90b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Update@{Update}}
+\index{Update@{Update}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Elementary\+Force\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file elementaryforce.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a855c26eb8a542ff633af66940da5f90b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elementary_force_a855c26eb8a542ff633af66940da5f90b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_elementary_force_a6e57500586e9cd366f5cf76ea0299957}\label{class_elementary_force_a6e57500586e9cd366f5cf76ea0299957}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force}{ElementaryForce}}
+{\footnotesize\ttfamily friend class \hyperlink{class_elementary_force}{Elementary\+Force}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 26 of file elementaryforce.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{elementaryforce_8h}{elementaryforce.\+h}\item 
+Brain\+Harmonics/\hyperlink{elementaryforce_8cc}{elementaryforce.\+cc}\end{DoxyCompactItemize}

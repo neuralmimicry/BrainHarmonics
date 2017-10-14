@@ -1,0 +1,790 @@
+.TH "BrainHarmonics/BrainHarmonics.cc" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BrainHarmonics/BrainHarmonics.cc
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <sys/time\&.h>\fP
+.br
+\fC#include <sys/types\&.h>\fP
+.br
+\fC#include <sys/socket\&.h>\fP
+.br
+\fC#include <netinet/in\&.h>\fP
+.br
+\fC#include <arpa/inet\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <array>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <cstdint>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <map>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <numeric>\fP
+.br
+\fC#include <queue>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <libcaercpp/devices/dynapse\&.hpp>\fP
+.br
+\fC#include <libcaercpp/libcaer\&.hpp>\fP
+.br
+\fC#include <libcaercpp/events/packetContainer\&.hpp>\fP
+.br
+\fC#include <csignal>\fP
+.br
+\fC#include <atomic>\fP
+.br
+\fC#include 'sniffex\&.h'\fP
+.br
+\fC#include <vtkAutoInit\&.h>\fP
+.br
+\fC#include <vtkVersion\&.h>\fP
+.br
+\fC#include <vtkActor\&.h>\fP
+.br
+\fC#include <vtkActor2D\&.h>\fP
+.br
+\fC#include <vtkCamera\&.h>\fP
+.br
+\fC#include <vtkCellArray\&.h>\fP
+.br
+\fC#include <vtkCellData\&.h>\fP
+.br
+\fC#include <vtkColorTransferFunction\&.h>\fP
+.br
+\fC#include <vtkContourFilter\&.h>\fP
+.br
+\fC#include <vtkCoordinate\&.h>\fP
+.br
+\fC#include <vtkFloatArray\&.h>\fP
+.br
+\fC#include <vtkMath\&.h>\fP
+.br
+\fC#include <vtkParametricFunctionSource\&.h>\fP
+.br
+\fC#include <vtkPointData\&.h>\fP
+.br
+\fC#include <vtkPoints\&.h>\fP
+.br
+\fC#include <vtkPolygon\&.h>\fP
+.br
+\fC#include <vtkPolyData\&.h>\fP
+.br
+\fC#include <vtkPolyDataMapper\&.h>\fP
+.br
+\fC#include <vtkPolyDataMapper2D\&.h>\fP
+.br
+\fC#include <vtkAppendPolyData\&.h>\fP
+.br
+\fC#include <vtkProgrammableSource\&.h>\fP
+.br
+\fC#include <vtkProperty\&.h>\fP
+.br
+\fC#include <vtkProperty2D\&.h>\fP
+.br
+\fC#include <vtkRenderWindow\&.h>\fP
+.br
+\fC#include <vtkRenderer\&.h>\fP
+.br
+\fC#include <vtkRenderWindowInteractor\&.h>\fP
+.br
+\fC#include <vtkReverseSense\&.h>\fP
+.br
+\fC#include <vtkSmartPointer\&.h>\fP
+.br
+\fC#include <vtkSurfaceReconstructionFilter\&.h>\fP
+.br
+\fC#include <vtkTextActor\&.h>\fP
+.br
+\fC#include <vtkTextMapper\&.h>\fP
+.br
+\fC#include <vtkTextProperty\&.h>\fP
+.br
+\fC#include <vtkVertexGlyphFilter\&.h>\fP
+.br
+\fC#include <vtkXMLPolyDataWriter\&.h>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <vtkTransform\&.h>\fP
+.br
+\fC#include <vtkTransformPolyDataFilter\&.h>\fP
+.br
+\fC#include <Python\&.h>\fP
+.br
+\fC#include <numpy/arrayobject\&.h>\fP
+.br
+\fC#include <GL/gl\&.h>\fP
+.br
+\fC#include <GL/glu\&.h>\fP
+.br
+\fC#include <GL/glut\&.h>\fP
+.br
+\fC#include 'universe\&.h'\fP
+.br
+\fC#include 'dimension\&.h'\fP
+.br
+\fC#include 'elementaryparticle\&.h'\fP
+.br
+\fC#include 'elementaryforce\&.h'\fP
+.br
+\fC#include 'compositeforceparticle\&.h'\fP
+.br
+\fC#include 'law\&.h'\fP
+.br
+\fC#include 'matter\&.h'\fP
+.br
+\fC#include 'monomer\&.h'\fP
+.br
+\fC#include 'polymer\&.h'\fP
+.br
+\fC#include 'solid\&.h'\fP
+.br
+\fC#include 'polyhedron\&.h'\fP
+.br
+\fC#include 'polygon\&.h'\fP
+.br
+\fC#include 'quad\&.h'\fP
+.br
+\fC#include 'line\&.h'\fP
+.br
+\fC#include 'point\&.h'\fP
+.br
+\fC#include 'node\&.h'\fP
+.br
+\fC#include 'apptimer\&.h'\fP
+.br
+\fC#include 'cognitivenetwork\&.h'\fP
+.br
+\fC#include 'cognitiveinput\&.h'\fP
+.br
+\fC#include 'cognitiveoutput\&.h'\fP
+.br
+\fC#include 'orbital\&.h'\fP
+.br
+\fC#include 'neuron\&.h'\fP
+.br
+\fC#include 'dendritecleft\&.h'\fP
+.br
+\fC#include 'neuroreceptor\&.h'\fP
+.br
+\fC#include 'synapse\&.h'\fP
+.br
+\fC#include 'interneuronspace\&.h'\fP
+.br
+\fC#include 'membrane\&.h'\fP
+.br
+\fC#include 'membranechannel\&.h'\fP
+.br
+\fC#include 'dendrite\&.h'\fP
+.br
+\fC#include 'dendritebranch\&.h'\fP
+.br
+\fC#include 'soma\&.h'\fP
+.br
+\fC#include 'axonhillock\&.h'\fP
+.br
+\fC#include 'axon\&.h'\fP
+.br
+\fC#include 'axonbranch\&.h'\fP
+.br
+\fC#include 'myelinsheath\&.h'\fP
+.br
+\fC#include 'schwanncell\&.h'\fP
+.br
+\fC#include 'axonbouton\&.h'\fP
+.br
+\fC#include 'synapticvesicle\&.h'\fP
+.br
+\fC#include 'neurotransmitter\&.h'\fP
+.br
+\fC#include 'spike\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBUpdateAllCommand\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEFAULTBIASES\fP   'data/defaultbiases_values\&.txt'"
+.br
+.ti -1c
+.RI "#define \fBLOWPOWERBIASES\fP   'data/lowpowerbiases_values\&.txt'"
+.br
+.ti -1c
+.RI "#define \fBDEBUG_PROGRAM\fP   true"
+.br
+.ti -1c
+.RI "#define \fBINVALID_SOCKET\fP   \-1"
+.br
+.ti -1c
+.RI "#define \fBSOCKET_ERROR\fP   \-1"
+.br
+.ti -1c
+.RI "#define \fBSOCKET_PORT\fP   9876"
+.br
+.ti -1c
+.RI "#define \fBSOCKET_ADDRESS\fP   '192\&.168\&.42\&.56'"
+.br
+.ti -1c
+.RI "#define \fBGRAVITY\fP   6\&.67384e\-11;"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVTK_MODULE_INIT\fP (vtkRenderingOpenGL2)"
+.br
+.ti -1c
+.RI "\fBVTK_MODULE_INIT\fP (vtkRenderingFreeType)"
+.br
+.ti -1c
+.RI "\fBVTK_MODULE_INIT\fP (vtkInteractionStyle)"
+.br
+.ti -1c
+.RI "bool \fBmshandling\fP (std::vector< std::string > *m_messages, bool m_response, int m_ok, int m_fail)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBCreateUniverse\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> *toAddto)"
+.br
+.ti -1c
+.RI "bool \fBCompareSwapElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBElementaryParticle\fP *> &origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
+.br
+.ti -1c
+.RI "int \fBDistanceBetweenNodes\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP > *nodesQuery, std::vector< int > *nodes_list, int nodesDimensions, double desired_distance)"
+.br
+.ti -1c
+.RI "bool \fBcompare_swapSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSynapse\fP *> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
+.br
+.ti -1c
+.RI "bool \fBanalyseStream\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *cognitive_network, std::vector< \fBNeuron\fP *> neuron_list, std::vector< \fBPoint\fP *> aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)"
+.br
+.ti -1c
+.RI "void \fBClearDimensionSelection\fP (std::vector< int > *dimension_list)"
+.br
+.ti -1c
+.RI "void \fBSelectDimension\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int whichDimension)"
+.br
+.ti -1c
+.RI "void \fBSelectMultiDimensions\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int how_manyDimensions)"
+.br
+.ti -1c
+.RI "bool \fBClearDynapse\fP (caerDeviceHandle *usb_handle)"
+.br
+.ti -1c
+.RI "void \fBexitCB\fP ()"
+.br
+.ti -1c
+.RI "int \fBinit\fP (int argc, const char *argv[])"
+.br
+.ti -1c
+.RI "void \fBinit_numpy\fP ()"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, const char *argv[])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "vtkSmartPointer< vtkRenderWindow > \fBrender_window\fP"
+.br
+.ti -1c
+.RI "vtkSmartPointer< vtkRenderWindowInteractor > \fBrender_window_interactor\fP"
+.br
+.ti -1c
+.RI "vtkSmartPointer< vtkPoints > \fBdefine_points\fP = vtkSmartPointer<vtkPoints>::New()"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkCellArray > > \fBdefine_cellarrays\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkPolyData > > \fBdefine_polydata\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkSurfaceReconstructionFilter > > \fBdefine_surfaces\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkContourFilter > > \fBdefine_contourfilters\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkReverseSense > > \fBdefine_reversals\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkPolyDataMapper > > \fBdefine_datamappers\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkPolyDataMapper2D > > \fBdefine_datamappers2D\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkActor > > \fBdefine_actors\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkActor2D > > \fBdefine_actors2D\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkTextActor > > \fBdefine_textactors\fP"
+.br
+.ti -1c
+.RI "std::vector< vtkSmartPointer< vtkRenderer > > \fBdefine_renderers\fP"
+.br
+.ti -1c
+.RI "int \fBstatic_points_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_polygons_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_polydata_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_cellarrays_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_surfaces_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_contourfilter_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_reversals_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_datamappers_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_datamappers2D_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_actors_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_actors2D_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstatic_renderers_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_points_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_polygons_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_polydata_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_cellarrays_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_surfaces_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_contourfilter_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_reversals_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_datamappers_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_datamappers2D_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_actors_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_actors2D_counter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBdynamic_renderers_counter\fP = 0"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBuniverse_list\fP"
+.br
+.ti -1c
+.RI "struct caer_dynapse_info \fBdynapse_info\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DEBUG_PROGRAM   true"
+< \fBNeuron\fP container for other neuron components < \fBSynapse\fP, area of stimulus transmission/reception < \fBDendrite\fP, pre-Soma component of a neuron < \fBDendrite\fP branch, division/join of dendrites < \fBSoma\fP, component of a neuron < \fBAxon\fP Hillock, component of \fBSoma\fP < \fBAxon\fP, connected to \fBAxon\fP Hillock < \fBAxon\fP branch, division/join of \fBAxon\fP < \fBAxon\fP synaptic cleft, output area of neuron < Synaptic vesicle, container of neurotransmitters 
+.PP
+Definition at line 225 of file BrainHarmonics\&.cc\&.
+.SS "#define DEFAULTBIASES   'data/defaultbiases_values\&.txt'"
+< For array in CRC-32 call < For handling strings < For byte handling in CRC-32 < For reading files < Formatting output to console < For output to console < For open and closed maps in A* < For Sine, Cosine, Power, Fabs & Sqrt functions < For CRC-32 < For assigning priority queue in A* < For stringstream input from console < For handling strings < For thread handling < To use vectors, which automatically handle resizing, as arrays to keep track of instances 
+.PP
+Definition at line 55 of file BrainHarmonics\&.cc\&.
+.SS "#define GRAVITY   6\&.67384e\-11;"
+
+.PP
+Definition at line 258 of file BrainHarmonics\&.cc\&.
+.SS "#define INVALID_SOCKET   \-1"
+
+.PP
+Definition at line 229 of file BrainHarmonics\&.cc\&.
+.SS "#define LOWPOWERBIASES   'data/lowpowerbiases_values\&.txt'"
+
+.PP
+Definition at line 56 of file BrainHarmonics\&.cc\&.
+.SS "#define SOCKET_ADDRESS   '192\&.168\&.42\&.56'"
+
+.PP
+Definition at line 241 of file BrainHarmonics\&.cc\&.
+.SS "#define SOCKET_ERROR   \-1"
+
+.PP
+Definition at line 233 of file BrainHarmonics\&.cc\&.
+.SS "#define SOCKET_PORT   9876"
+
+.PP
+Definition at line 237 of file BrainHarmonics\&.cc\&.
+.SH "Function Documentation"
+.PP 
+.SS "bool analyseStream (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * cognitive_network, std::vector< \fBNeuron\fP *> neuron_list, std::vector< \fBPoint\fP *> aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)"
+
+.PP
+Definition at line 679 of file BrainHarmonics\&.cc\&.
+.SS "void ClearDimensionSelection (std::vector< int > * dimension_list)"
+
+.PP
+Definition at line 743 of file BrainHarmonics\&.cc\&.
+.SS "bool ClearDynapse (caerDeviceHandle * usb_handle)"
+
+.PP
+Definition at line 781 of file BrainHarmonics\&.cc\&.
+.SS "bool compare_swapSynapse (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSynapse\fP *> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
+
+.PP
+Definition at line 656 of file BrainHarmonics\&.cc\&.
+.SS "bool CompareSwapElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBElementaryParticle\fP *> & origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
+
+.PP
+Definition at line 520 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<\fBUniverse\fP*> CreateUniverse (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> * toAddto)"
+< Defined energy level of \fBUniverse\fP
+.PP
+< Create instance of \fBUniverse\fP from \fBUniverse\fP class
+.PP
+< Set an energy level and attempt to maintain physics laws by keeping the total in the \fBUniverse\fP the same\&. Uses the maximum value for double\&. Levels of abstraction used to cater for environment limitations 
+.PP
+Definition at line 291 of file BrainHarmonics\&.cc\&.
+.SS "int DistanceBetweenNodes (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP > * nodesQuery, std::vector< int > * nodes_list, int nodesDimensions, double desired_distance)"
+
+.PP
+Definition at line 542 of file BrainHarmonics\&.cc\&.
+.SS "void exitCB ()"
+
+.PP
+Definition at line 893 of file BrainHarmonics\&.cc\&.
+.SS "int init (int argc, const char * argv[])"
+
+.PP
+Definition at line 906 of file BrainHarmonics\&.cc\&.
+.SS "void init_numpy ()"
+
+.PP
+Definition at line 921 of file BrainHarmonics\&.cc\&.
+.SS "int main (int argc, const char * argv[])"
+< Add Dimensions for spatial identification
+.PP
+< Follow with the creation of quarks/leptons
+.PP
+< Define Force interaction between fundamentals
+.PP
+< Define Particle Force interaction between Composites, Protons/Neutrons
+.PP
+< Specify how Composites interact
+.PP
+< Composites form elements of periodic table
+.PP
+< Composites form molecules
+.PP
+< Composites form complex molecules
+.PP
+< Materials are a combination of \fBMatter\fP
+.PP
+< Materials can be formed into multiDimensional shapes
+.PP
+< Complex shapes are a combination of simpler forms
+.PP
+< Reducing high Dimensions to lower
+.PP
+< Further reduction
+.PP
+< Fundamental spatial description
+.PP
+< Interim function describing time before inclusion as \fBDimension\fP
+.PP
+< Network container for all AI components
+.PP
+< Example of orbital timing containing neurons
+.PP
+< \fBNeuron\fP container for other neuron components
+.PP
+< Dendritic synaptic cleft, input to the neuron
+.PP
+< \fBNeuroreceptor\fP, component of dendritic cleft
+.PP
+< \fBSynapse\fP, area of stimulus transmission/reception
+.PP
+< Between neurons is an energy pool
+.PP
+< \fBMembrane\fP, outer component of the neuron
+.PP
+< Potassium/Sodium channel, component of the membrane
+.PP
+< \fBDendrite\fP, pre-Soma component of a neuron
+.PP
+< \fBDendrite\fP branch, division/join of dendrites
+.PP
+< \fBSoma\fP, component of a neuron
+.PP
+< \fBAxon\fP Hillock, component of \fBSoma\fP
+.PP
+< \fBAxon\fP, connected to \fBAxon\fP Hillock
+.PP
+< \fBAxon\fP branch, division/join of \fBAxon\fP
+.PP
+< Myelin sheath, wraps around \fBAxon\fP
+.PP
+< Schwann Cell, component of a Myelin sheath
+.PP
+< \fBAxon\fP synaptic cleft, output area of neuron
+.PP
+< Synaptic vesicle, container of neurotransmitters
+.PP
+< \fBNeurotransmitter\fP, transfer component between clefts
+.PP
+< \fBSpike\fP
+.PP
+< Define graphics window size, X axis
+.PP
+< Define graphics window size, Y axis 
+.PP
+Definition at line 1155 of file BrainHarmonics\&.cc\&.
+.SS "bool mshandling (std::vector< std::string > * m_messages, bool m_response, int m_ok, int m_fail)"
+
+.PP
+Definition at line 273 of file BrainHarmonics\&.cc\&.
+.SS "void SelectDimension (const int PossibleDimensions[10], std::vector< int > * dimension_list, int whichDimension)"
+
+.PP
+Definition at line 748 of file BrainHarmonics\&.cc\&.
+.SS "void SelectMultiDimensions (const int PossibleDimensions[10], std::vector< int > * dimension_list, int how_manyDimensions)"
+
+.PP
+Definition at line 764 of file BrainHarmonics\&.cc\&.
+.SS "VTK_MODULE_INIT (vtkRenderingOpenGL2)"
+
+.SS "VTK_MODULE_INIT (vtkRenderingFreeType)"
+
+.SS "VTK_MODULE_INIT (vtkInteractionStyle)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "std::vector<vtkSmartPointer<vtkActor> > define_actors"
+
+.PP
+Definition at line 118 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkActor2D> > define_actors2D"
+
+.PP
+Definition at line 119 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkCellArray> > define_cellarrays"
+
+.PP
+Definition at line 110 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkContourFilter> > define_contourfilters"
+
+.PP
+Definition at line 114 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkPolyDataMapper> > define_datamappers"
+
+.PP
+Definition at line 116 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkPolyDataMapper2D> > define_datamappers2D"
+
+.PP
+Definition at line 117 of file BrainHarmonics\&.cc\&.
+.SS "vtkSmartPointer<vtkPoints> define_points = vtkSmartPointer<vtkPoints>::New()"
+
+.PP
+Definition at line 109 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkPolyData> > define_polydata"
+
+.PP
+Definition at line 111 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkRenderer> > define_renderers"
+
+.PP
+Definition at line 122 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkReverseSense> > define_reversals"
+
+.PP
+Definition at line 115 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkSurfaceReconstructionFilter> > define_surfaces"
+
+.PP
+Definition at line 113 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<vtkSmartPointer<vtkTextActor> > define_textactors"
+
+.PP
+Definition at line 120 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_actors2D_counter = 0"
+
+.PP
+Definition at line 149 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_actors_counter = 0"
+
+.PP
+Definition at line 148 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_cellarrays_counter = 0"
+
+.PP
+Definition at line 142 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_contourfilter_counter = 0"
+
+.PP
+Definition at line 144 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_datamappers2D_counter = 0"
+
+.PP
+Definition at line 147 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_datamappers_counter = 0"
+
+.PP
+Definition at line 146 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_points_counter = 0"
+
+.PP
+Definition at line 139 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_polydata_counter = 0"
+
+.PP
+Definition at line 141 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_polygons_counter = 0"
+
+.PP
+Definition at line 140 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_renderers_counter = 0"
+
+.PP
+Definition at line 150 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_reversals_counter = 0"
+
+.PP
+Definition at line 145 of file BrainHarmonics\&.cc\&.
+.SS "int dynamic_surfaces_counter = 0"
+
+.PP
+Definition at line 143 of file BrainHarmonics\&.cc\&.
+.SS "struct caer_dynapse_info dynapse_info"
+
+.PP
+Definition at line 261 of file BrainHarmonics\&.cc\&.
+.SS "vtkSmartPointer<vtkRenderWindow> render_window"
+
+.PP
+Definition at line 106 of file BrainHarmonics\&.cc\&.
+.SS "vtkSmartPointer<vtkRenderWindowInteractor> render_window_interactor"
+
+.PP
+Definition at line 107 of file BrainHarmonics\&.cc\&.
+.SS "int static_actors2D_counter = 0"
+
+.PP
+Definition at line 136 of file BrainHarmonics\&.cc\&.
+.SS "int static_actors_counter = 0"
+
+.PP
+Definition at line 135 of file BrainHarmonics\&.cc\&.
+.SS "int static_cellarrays_counter = 0"
+
+.PP
+Definition at line 129 of file BrainHarmonics\&.cc\&.
+.SS "int static_contourfilter_counter = 0"
+
+.PP
+Definition at line 131 of file BrainHarmonics\&.cc\&.
+.SS "int static_datamappers2D_counter = 0"
+
+.PP
+Definition at line 134 of file BrainHarmonics\&.cc\&.
+.SS "int static_datamappers_counter = 0"
+
+.PP
+Definition at line 133 of file BrainHarmonics\&.cc\&.
+.SS "int static_points_counter = 0"
+
+.PP
+Definition at line 126 of file BrainHarmonics\&.cc\&.
+.SS "int static_polydata_counter = 0"
+
+.PP
+Definition at line 128 of file BrainHarmonics\&.cc\&.
+.SS "int static_polygons_counter = 0"
+
+.PP
+Definition at line 127 of file BrainHarmonics\&.cc\&.
+.SS "int static_renderers_counter = 0"
+
+.PP
+Definition at line 137 of file BrainHarmonics\&.cc\&.
+.SS "int static_reversals_counter = 0"
+
+.PP
+Definition at line 132 of file BrainHarmonics\&.cc\&.
+.SS "int static_surfaces_counter = 0"
+
+.PP
+Definition at line 130 of file BrainHarmonics\&.cc\&.
+.SS "std::vector<\fBUniverse\fP*> universe_list"
+< Python interpreter < Top of the tree, begin with \fBUniverse\fP class < Add Dimensions for spatial identification < Materials are a combination of \fBMatter\fP < Materials can be formed into multiDimensional shapes < Fundamental spatial description < Interim function describing time before inclusion as \fBDimension\fP Top of the tree, begin with \fBUniverse\fP class 
+.PP
+Definition at line 196 of file BrainHarmonics\&.cc\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

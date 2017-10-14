@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="polyhedron_8h" kind="file" language="C++">
+    <compoundname>polyhedron.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="solid_8h" local="yes">solid.h</includes>
+    <includes refid="point_8h" local="yes">point.h</includes>
+    <includedby refid="soma_8h" local="yes">BrainHarmonics/soma.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="polygon_8h" local="yes">BrainHarmonics/polygon.h</includedby>
+    <includedby refid="membrane_8h" local="yes">BrainHarmonics/membrane.h</includedby>
+    <includedby refid="polyhedron_8cc" local="yes">BrainHarmonics/polyhedron.cc</includedby>
+    <includedby refid="solid_8cc" local="yes">BrainHarmonics/solid.cc</includedby>
+    <incdepgraph>
+      <node id="1370">
+        <label>BrainHarmonics/polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1377">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1376">
+        <label>vector</label>
+      </node>
+      <node id="1373">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>math.h</label>
+      </node>
+      <node id="1371">
+        <label>iostream</label>
+      </node>
+      <node id="1374">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1378">
+        <label>BrainHarmonics/polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="1380">
+        <label>BrainHarmonics/axonhillock.h</label>
+        <link refid="axonhillock_8h"/>
+        <childnode refid="1381" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1388">
+        <label>BrainHarmonics/synapticvesicle.cc</label>
+        <link refid="synapticvesicle_8cc"/>
+      </node>
+      <node id="1404">
+        <label>BrainHarmonics/polygon.h</label>
+        <link refid="polygon_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1385">
+        <label>BrainHarmonics/axonbouton.cc</label>
+        <link refid="axonbouton_8cc"/>
+      </node>
+      <node id="1406">
+        <label>BrainHarmonics/quad.cc</label>
+        <link refid="quad_8cc"/>
+      </node>
+      <node id="1398">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1405">
+        <label>BrainHarmonics/quad.h</label>
+        <link refid="quad_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1387">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1391">
+        <label>BrainHarmonics/axonhillock.cc</label>
+        <link refid="axonhillock_8cc"/>
+      </node>
+      <node id="1407">
+        <label>BrainHarmonics/polygon.cc</label>
+        <link refid="polygon_8cc"/>
+      </node>
+      <node id="1413">
+        <label>BrainHarmonics/solid.cc</label>
+        <link refid="solid_8cc"/>
+      </node>
+      <node id="1381">
+        <label>BrainHarmonics/axon.h</label>
+        <link refid="axon_8h"/>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="1412">
+        <label>BrainHarmonics/membranechannel.cc</label>
+        <link refid="membranechannel_8cc"/>
+      </node>
+      <node id="1402">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="1390">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+      <node id="1400">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1382">
+        <label>BrainHarmonics/axon.cc</label>
+        <link refid="axon_8cc"/>
+      </node>
+      <node id="1397">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1399">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1409">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1383">
+        <label>BrainHarmonics/axonbranch.h</label>
+        <link refid="axonbranch_8h"/>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1396">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>BrainHarmonics/axonbranch.cc</label>
+        <link refid="axonbranch_8cc"/>
+      </node>
+      <node id="1384">
+        <label>BrainHarmonics/axonbouton.h</label>
+        <link refid="axonbouton_8h"/>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+      </node>
+      <node id="1386">
+        <label>BrainHarmonics/synapticvesicle.h</label>
+        <link refid="synapticvesicle_8h"/>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1388" relation="include">
+        </childnode>
+      </node>
+      <node id="1395">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>BrainHarmonics/membrane.cc</label>
+        <link refid="membrane_8cc"/>
+      </node>
+      <node id="1401">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+      <node id="1408">
+        <label>BrainHarmonics/polyhedron.cc</label>
+        <link refid="polyhedron_8cc"/>
+      </node>
+      <node id="1410">
+        <label>BrainHarmonics/membranechannel.h</label>
+        <link refid="membranechannel_8h"/>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_polyhedron" prot="public">Polyhedron</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/>polyhedron.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@details<sp/><sp/><sp/>Assign<sp/>structure<sp/>for<sp/>scalar<sp/>values<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@author<sp/><sp/><sp/><sp/>Paul<sp/>Isaac&apos;s<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@date<sp/><sp/><sp/><sp/><sp/><sp/>16.02.2016<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Code<sp/>snippets<sp/>used:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Syntax<sp/>comparison<sp/>-<sp/>http://stackoverflow.com<sp/>&amp;<sp/>http://cplusplus.com<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>class<sp/>defines<sp/>a<sp/>data<sp/>point<sp/>and<sp/>the<sp/>operations<sp/>that<sp/>can<sp/>be<sp/>carried<sp/>out<sp/>on<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>it.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Using<sp/>the<sp/>hierarchical<sp/>linking<sp/>the<sp/>aim<sp/>is<sp/>to<sp/>develop<sp/>the<sp/>application<sp/>to<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>relate<sp/>to<sp/>real-world<sp/>physics.<sp/>This<sp/>will<sp/>then<sp/>ease<sp/>mapping<sp/>between<sp/>simulation,*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>emulation<sp/>and<sp/>real-world<sp/>universes.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_POLYHEDRON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_POLYHEDRON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="solid_8h" kindref="compound">solid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="point_8h" kindref="compound">point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_polyhedron" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_solid" kindref="compound">Solid</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="class_polyhedron_1aaa07b7b364b620b9a781f30a5cd9f5ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_soma" kindref="compound">Soma</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_polyhedron_1ac790db405644a01723104c3c0c8128bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_membrane" kindref="compound">Membrane</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_polyhedron_1aebdf7ee85eb636069bf93afb4e6a483f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1aebdf7ee85eb636069bf93afb4e6a483f" kindref="member">Polyhedron</ref>()<sp/>:<sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="class_polyhedron_1a304950efef7fb67203d8136578b42535" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1a304950efef7fb67203d8136578b42535" kindref="member">Polyhedron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="class_polyhedron_1a29a4fff595cdb6a557e5f62255e61192" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1a29a4fff595cdb6a557e5f62255e61192" kindref="member">Polyhedron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_solid" kindref="compound">Solid</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="class_polyhedron_1af5bb1d2a6b04502dfdbfc9f04aafc950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1af5bb1d2a6b04502dfdbfc9f04aafc950" kindref="member">Polyhedron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_solid" kindref="compound">Solid</ref>&amp;<sp/>solid_connector)<sp/>:<sp/><ref refid="class_solid" kindref="compound">Solid</ref>(solid_connector)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>polyhedron<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>polyhedron_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Polyhedron&quot;</highlight><highlight class="normal">,<sp/>polyhedron_type);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_polyhedron_1a3ad3df8be901a55ddcd97128ac890473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a3ad3df8be901a55ddcd97128ac890473" kindref="member">~Polyhedron</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="class_polyhedron_1a021ec67f2040f8ec26df64e4b9370521" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a021ec67f2040f8ec26df64e4b9370521" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>polyhedronCounter;<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" kindref="member">setCounter</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>polyhedronCounter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1ae5852dd26065d9f38ed293f8d95106ad" kindref="member">CreatePolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1a1848eb8747c1132c40c2d27336af2896" kindref="member">CreatePolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1abfacad3a348785dab8819e70bf92d8d1" kindref="member">ClonePolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1ab4f57da9595dc92de7340cc46237a2ea" kindref="member">ClonePolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Polyhedron*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1a2fcc5144ebc64363f40c31d2b980cfaf" kindref="member">DestroyPolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1ae372d216765d48b9423ee37a8bf8b282" kindref="member">DestroyPolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Polyhedron*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" kindref="member">AddPolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1a9564a286e7323b56667971b851f0674a" kindref="member">AddPolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Polyhedron*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1a3b411fa617291a2a2d5df92b819285b4" kindref="member">RemovePolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1a5c2639b21aec25b76449fdf4c209aad1" kindref="member">RemovePolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><sp/><ref refid="class_polyhedron_1a8b197b9eb163bdc83d9669d592bacac1" kindref="member">GetPolygon</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1adeaf461cc8504a225f6344b954c196a8" kindref="member">GetPolygons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>*<sp/><sp/><ref refid="class_polyhedron_1a4d61f89c56e15d96008856cfb540d558" kindref="member">GetPoint</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Point*&gt;<sp/><ref refid="class_polyhedron_1a1430429d6c8447e90b8c94ca46496a59" kindref="member">GetPoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" kindref="member">GenerateSpherePoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" kindref="member">GenerateCylinderPoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" kindref="member">UpdateCycle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Point*&gt;<sp/>set_of_update_pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointer_type);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a5fdc8c91719799904b8a1ccef535a42c" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94" refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Polyhedron*&gt;<sp/><ref refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" kindref="member">polygon_list</ref>;</highlight></codeline>
+<codeline lineno="95" refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Point*&gt;<sp/><ref refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" kindref="member">point_list</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>polyhedronCounter;<sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>polyhedron_type<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>polygon_pool;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>point_pool;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_POLYHEDRON_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/polyhedron.h"/>
+  </compounddef>
+</doxygen>

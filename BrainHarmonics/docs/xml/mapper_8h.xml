@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="mapper_8h" kind="file" language="C++">
+    <compoundname>mapper.h</compoundname>
+    <includedby refid="mapper_8cpp" local="yes">BrainHarmonics/mapper.cpp</includedby>
+    <invincdepgraph>
+      <node id="903">
+        <label>BrainHarmonics/mapper.cpp</label>
+        <link refid="mapper_8cpp"/>
+      </node>
+      <node id="902">
+        <label>BrainHarmonics/mapper.h</label>
+        <link refid="mapper_8h"/>
+        <childnode refid="903" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmapper" prot="public">mapper</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAPPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAPPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Signatures</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classmapper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmapper" kindref="compound">mapper</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ArAction<sp/></highlight><highlight class="comment">//<sp/>Class<sp/>action<sp/>inherits<sp/>from<sp/>ArAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><ref refid="classmapper_1a63253379db55193ffc58434c32657270" kindref="member">mapper</ref>();<sp/></highlight><highlight class="comment">//<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classmapper_1aab426a3eb8681cf2c1137f658a6802a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classmapper_1aab426a3eb8681cf2c1137f658a6802a4" kindref="member">~mapper</ref>()<sp/>{}<sp/><sp/></highlight><highlight class="comment">//<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ArActionDesired<sp/>*<sp/><ref refid="classmapper_1a9d8bd0abf6844385c45d8b3ccd7b8e87" kindref="member">fire</ref>(ArActionDesired<sp/>d);<sp/></highlight><highlight class="comment">//<sp/>Body<sp/>of<sp/>the<sp/>action</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classmapper_1ad12cf719b7ef6c4399ca718cdc9f270d" refkind="member"><highlight class="normal"><sp/><sp/><sp/>ArActionDesired<sp/><ref refid="classmapper_1ad12cf719b7ef6c4399ca718cdc9f270d" kindref="member">desiredState</ref>;<sp/></highlight><highlight class="comment">//<sp/>Holds<sp/>state<sp/>of<sp/>the<sp/>robot<sp/>that<sp/>we<sp/>wish<sp/>to<sp/>action</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classmapper_1a2764f9fead6392132485f3545c18b629" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmapper_1a2764f9fead6392132485f3545c18b629" kindref="member">speed</ref>;<sp/></highlight><highlight class="comment">//<sp/>Speed<sp/>of<sp/>the<sp/>robot<sp/>in<sp/>mm/s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/mapper.h"/>
+  </compounddef>
+</doxygen>

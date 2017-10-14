@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="soma_8h" kind="file" language="C++">
+    <compoundname>soma.h</compoundname>
+    <includes refid="neuron_8h" local="yes">neuron.h</includes>
+    <includes refid="polyhedron_8h" local="yes">polyhedron.h</includes>
+    <includedby refid="axonhillock_8h" local="yes">BrainHarmonics/axonhillock.h</includedby>
+    <includedby refid="dendrite_8h" local="yes">BrainHarmonics/dendrite.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="neuron_8cc" local="yes">BrainHarmonics/neuron.cc</includedby>
+    <includedby refid="soma_8cc" local="yes">BrainHarmonics/soma.cc</includedby>
+    <incdepgraph>
+      <node id="1641">
+        <label>polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1642">
+        <label>solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1643">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1640" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1635">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>vector</label>
+      </node>
+      <node id="1638">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1640" relation="include">
+        </childnode>
+        <childnode refid="1637" relation="include">
+        </childnode>
+      </node>
+      <node id="1640">
+        <label>math.h</label>
+      </node>
+      <node id="1633">
+        <label>neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="1634" relation="include">
+        </childnode>
+      </node>
+      <node id="1636">
+        <label>iostream</label>
+      </node>
+      <node id="1632">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+      </node>
+      <node id="1639">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1657">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="1645">
+        <label>BrainHarmonics/axonhillock.h</label>
+        <link refid="axonhillock_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1653">
+        <label>BrainHarmonics/synapticvesicle.cc</label>
+        <link refid="synapticvesicle_8cc"/>
+      </node>
+      <node id="1650">
+        <label>BrainHarmonics/axonbouton.cc</label>
+        <link refid="axonbouton_8cc"/>
+      </node>
+      <node id="1663">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1652">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1656">
+        <label>BrainHarmonics/axonhillock.cc</label>
+        <link refid="axonhillock_8cc"/>
+      </node>
+      <node id="1646">
+        <label>BrainHarmonics/axon.h</label>
+        <link refid="axon_8h"/>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+      </node>
+      <node id="1668">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="1667">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="1655">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+      <node id="1665">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1647">
+        <label>BrainHarmonics/axon.cc</label>
+        <link refid="axon_8cc"/>
+      </node>
+      <node id="1662">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1664">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1658">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1659" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1659">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>BrainHarmonics/axonbranch.h</label>
+        <link refid="axonbranch_8h"/>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1649" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+      </node>
+      <node id="1661">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1662" relation="include">
+        </childnode>
+        <childnode refid="1663" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1665" relation="include">
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1654">
+        <label>BrainHarmonics/axonbranch.cc</label>
+        <link refid="axonbranch_8cc"/>
+      </node>
+      <node id="1649">
+        <label>BrainHarmonics/axonbouton.h</label>
+        <link refid="axonbouton_8h"/>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1651" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+      </node>
+      <node id="1651">
+        <label>BrainHarmonics/synapticvesicle.h</label>
+        <link refid="synapticvesicle_8h"/>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1653" relation="include">
+        </childnode>
+      </node>
+      <node id="1660">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1652" relation="include">
+        </childnode>
+        <childnode refid="1661" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1662" relation="include">
+        </childnode>
+      </node>
+      <node id="1666">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_soma" prot="public">Soma</innerclass>
+    <innerclass refid="struct_soma_1_1_object_connection" prot="protected">Soma::ObjectConnection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>soma.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>03/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_SOMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_SOMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="neuron_8h" kindref="compound">neuron.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="polyhedron_8h" kindref="compound">polyhedron.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_soma" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_soma" kindref="compound">Soma</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="class_soma_1aabae1fdc220bf040d4f5c2c057abfcf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_dimension" kindref="compound">Dimension</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_soma_1abb9524743f65717d33797b45bff42441" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma_1abb9524743f65717d33797b45bff42441" kindref="member">Soma</ref>()<sp/>:<sp/><ref refid="class_soma" kindref="compound">Soma</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="class_soma_1a5c0fb24d35ef360cdb830887952f44e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma_1a5c0fb24d35ef360cdb830887952f44e5" kindref="member">Soma</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_soma" kindref="compound">Soma</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="class_soma_1a9c9388e5b6562c39689768856d59ca51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma_1a9c9388e5b6562c39689768856d59ca51" kindref="member">Soma</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="class_soma_1a451e3918aa5f3ec5670fa08d4d710dd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma_1a451e3918aa5f3ec5670fa08d4d710dd6" kindref="member">Soma</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>&amp;<sp/>neuron_connector)<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>(neuron_connector)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>soma<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>parent_pointer<sp/>=<sp/>&amp;neuron_connector;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>soma_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dimension_1a99ba1a7fe44c7e52520144ab4793cad3" kindref="member">time_object_created</ref><sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma_1a82f016dc126f7d1053e5eb455d28c44b" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(<ref refid="class_dimension_1a99ba1a7fe44c7e52520144ab4793cad3" kindref="member">time_object_created</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Soma&quot;</highlight><highlight class="normal">,<sp/>soma_type);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="class_soma_1a482570e6b3e366db93396add6ba1922d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a482570e6b3e366db93396add6ba1922d" kindref="member">~Soma</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unit<sp/>of<sp/>time<sp/>resolution<sp/>is<sp/>1ns.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Any<sp/>single<sp/>network<sp/>function<sp/>should<sp/>have<sp/>an<sp/>output<sp/>within<sp/>25ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>simulation<sp/>a<sp/>25ms<sp/>function<sp/>should<sp/>complete<sp/>in<sp/>25<sp/>seconds.<sp/>A<sp/>factor<sp/>of<sp/>1000<sp/>dilation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_soma_1a926552007228732d39525ce127ee5a0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a926552007228732d39525ce127ee5a0d" kindref="member">TimeFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeDelay,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeDilation)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeCounter;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>timeCounter<sp/>=<sp/>timeDelay<sp/>*<sp/>timeDilation;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timeCounter;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_soma_1a8bac091792e1ac47655bb549510e8960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a8bac091792e1ac47655bb549510e8960" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_soma_1a91dca73d2f5f97247cae0217a8c1440a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a91dca73d2f5f97247cae0217a8c1440a" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_soma_1a5d698a7ad270ad4ea63a3de5f25fa760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a5d698a7ad270ad4ea63a3de5f25fa760" kindref="member">GetEnergyInc</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyInc;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_soma_1afbdc1f4e4f54adefea9a16fdca50aab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1afbdc1f4e4f54adefea9a16fdca50aab5" kindref="member">GetEnergyDec</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyDec;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_soma_1a0be69cd912f978f3ab3d94bebb9fbbaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a0be69cd912f978f3ab3d94bebb9fbbaf" kindref="member">GetEnergyLeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyLeak;<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_soma_1a0b45cc454565027bb25daa1396056a7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a0b45cc454565027bb25daa1396056a7e" kindref="member">GetEnergyThreshold</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" kindref="member">object_energy_threshold</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_soma_1a23dc309849522d9f857fdcc71ea85877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a23dc309849522d9f857fdcc71ea85877" kindref="member">GetAxonHillockPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>axonhillock_pool;<sp/>}</highlight></codeline>
+<codeline lineno="59" refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" kindref="member">SetAxonHillockPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_pool)<sp/>{<sp/>axonhillock_pool<sp/>=<sp/>set_pool;<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_soma_1a000d9eca00c61af853fd81a2c1569b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a000d9eca00c61af853fd81a2c1569b0e" kindref="member">GetDendritePool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dendrite_pool;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" kindref="member">SetDendritePool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_pool)<sp/>{<sp/>dendrite_pool<sp/>=<sp/>set_pool;<sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_soma_1a9ef49d3fea8c0fbe6513f3910339f736" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a9ef49d3fea8c0fbe6513f3910339f736" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_soma_1a0d1c0271fc8eeacd6e8836f751dff331" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a0d1c0271fc8eeacd6e8836f751dff331" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="class_soma_1a414afd7eb780e29a432603198a9838ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a414afd7eb780e29a432603198a9838ed" kindref="member">SetEnergyInc</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyInc<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_soma_1a37081f7a8fc7832f8e89629221ddb8a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a37081f7a8fc7832f8e89629221ddb8a6" kindref="member">SetEnergyDec</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyDec<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="class_soma_1abca59a00940ca2d9c005a84b6785c12f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1abca59a00940ca2d9c005a84b6785c12f" kindref="member">SetEnergyLeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyLeak<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="69" refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" kindref="member">SetEnergyThreshold</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/><ref refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" kindref="member">object_energy_threshold</ref><sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a82f016dc126f7d1053e5eb455d28c44b" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a42289635de3cb326bceeb5358b99c190" kindref="member">CreateAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1ab059a6d4a7dc41664d6d17794d09b260" kindref="member">CreateAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a31463fba2f535e9c7cb05c8622fe3562" kindref="member">CloneAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a299c95b89f50576244d1e56f531a80be" kindref="member">CloneAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1af6d6d3e3c94f06682cf05a7a72032a46" kindref="member">DestroyAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a5220929442601962af1a1fad66a8c919" kindref="member">DestroyAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a02e0e4656099531b35ab56ad1f7c945a" kindref="member">AddAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a0fbede6e06b8e24a2cf22878c2f49165" kindref="member">AddAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a2f75c0f716fa1f74f70697db9dfcd562" kindref="member">RemoveAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a7281585d74015a2549a19df6cb16e3fb" kindref="member">RemoveAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1ac8756f68dbaac8c70cfba435f7068a85" kindref="member">GetAxonHillock</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1af76f86d082c3f60442148ec843b586e7" kindref="member">GetAxonHillocks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a0fab0c7cf54c2b7d36e90edcd3e21a16" kindref="member">CreateDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a68dc02eff2912ad045900ab1879f020e" kindref="member">CreateDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1ad51c97b76dd7a1f77dc987ae33fd89bc" kindref="member">CloneDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a3975212d2e3d8675ca14fbc9879e5e54" kindref="member">CloneDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a086cb5a05e82f6f58ac0bd8403e25e07" kindref="member">DestroyDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1ac549a7caf885fdc0ac3a6adf393430af" kindref="member">DestroyDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1acc198b8ec11c3f2e43d3ba9a16ce84db" kindref="member">AddDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1a9874f03b33413b06ca74a3143cc35331" kindref="member">AddDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Soma*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1a85c7d4b41486182c9528f5c43beaf7fd" kindref="member">RemoveDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1ad15baed4b2f5dab6f93e5df8fd1f7b23" kindref="member">RemoveDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soma" kindref="compound">Soma</ref>*<sp/><sp/><ref refid="class_soma_1ab86537170d550cda0e7da080f7640f84" kindref="member">GetDendrite</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1afdb0e40855f31f2d9a48f3b13c01b599" kindref="member">GetDendrites</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" kindref="member">Growth</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="127" refid="class_soma_1af93902336cddb974b282aef8b7b4243c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1af93902336cddb974b282aef8b7b4243c" kindref="member">axonhillock_list</ref>;</highlight></codeline>
+<codeline lineno="128" refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Soma*&gt;<sp/><ref refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" kindref="member">dendrite_list</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;Solid*&gt;<sp/>visualisation_list;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="struct_soma_1_1_object_connection" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_soma_1_1_object_connection" kindref="compound">ObjectConnection</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133" refid="struct_soma_1_1_object_connection_1aa24770c082347464b35203cd65703386" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1aa24770c082347464b35203cd65703386" kindref="member">object_one_type</ref>;</highlight></codeline>
+<codeline lineno="134" refid="struct_soma_1_1_object_connection_1ab882c137a4c8414c3663e254ccf5c27d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1ab882c137a4c8414c3663e254ccf5c27d" kindref="member">object_one</ref>;</highlight></codeline>
+<codeline lineno="135" refid="struct_soma_1_1_object_connection_1a948d7e2d1db9b33d3fca95f249fb48c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1a948d7e2d1db9b33d3fca95f249fb48c7" kindref="member">object_two_type</ref>;</highlight></codeline>
+<codeline lineno="136" refid="struct_soma_1_1_object_connection_1a6a16f602b8206114618db99a45c99e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1a6a16f602b8206114618db99a45c99e6f" kindref="member">object_two</ref>;</highlight></codeline>
+<codeline lineno="137" refid="struct_soma_1_1_object_connection_1aa7973892dc2435b992a657a4c1e29eb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1aa7973892dc2435b992a657a4c1e29eb3" kindref="member">object_connection_strength</ref>;</highlight></codeline>
+<codeline lineno="138" refid="struct_soma_1_1_object_connection_1a55c6abf4a7906ee1ffede53b7fa36aa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1a55c6abf4a7906ee1ffede53b7fa36aa6" kindref="member">object_connection_modifier</ref>;</highlight></codeline>
+<codeline lineno="139" refid="struct_soma_1_1_object_connection_1a00112b17c9f78d05c2d2e684f304ec03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_soma_1_1_object_connection_1a00112b17c9f78d05c2d2e684f304ec03" kindref="member">object_two_position</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="class_soma_1a84739acd533862b115bd5cbe56da6c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;ObjectConnection&gt;<sp/><ref refid="class_soma_1a84739acd533862b115bd5cbe56da6c98" kindref="member">object_connection_list</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>parent_pointer;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_NeuronType;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>soma_type;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_addStatus;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Volume;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_SurfaceArea;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyInc;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyDec;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyLeak;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeDilation;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeThreshold;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>axonhillock_pool;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dendrite_pool;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_SOMA_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/soma.h"/>
+  </compounddef>
+</doxygen>

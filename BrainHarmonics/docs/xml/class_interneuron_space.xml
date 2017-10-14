@@ -1,0 +1,1623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_interneuron_space" kind="class" language="C++" prot="public">
+    <compoundname>InterneuronSpace</compoundname>
+    <basecompoundref refid="class_cognitive_network" prot="public" virt="non-virtual">CognitiveNetwork</basecompoundref>
+    <derivedcompoundref refid="class_schwann_cell" prot="public" virt="non-virtual">SchwannCell</derivedcompoundref>
+    <includes refid="interneuronspace_8h" local="no">interneuronspace.h</includes>
+    <innerclass refid="struct_interneuron_space_1_1_nearby_neuron" prot="private">InterneuronSpace::NearbyNeuron</innerclass>
+    <innerclass refid="struct_interneuron_space_1_1s___bind_list" prot="private">InterneuronSpace::s_BindList</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt;CognitiveNetwork*&gt; InterneuronSpace::neurotransmitter_list</definition>
+        <argsstring></argsstring>
+        <name>neurotransmitter_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="123" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" compoundref="interneuronspace_8cc" startline="70" endline="79">CreateNeurotransmitter</referencedby>
+        <referencedby refid="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" compoundref="interneuronspace_8cc" startline="81" endline="100">CreateNeurotransmitters</referencedby>
+        <referencedby refid="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" compoundref="interneuronspace_8cc" startline="123" endline="132">AddNeurotransmitter</referencedby>
+        <referencedby refid="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" compoundref="interneuronspace_8cc" startline="134" endline="153">AddNeurotransmitters</referencedby>
+        <referencedby refid="class_interneuron_space_1a7a60c95c8706cbff3084e74b7b15d75c" compoundref="interneuronspace_8cc" startline="167" endline="170">GetNeurotransmitter</referencedby>
+        <referencedby refid="class_interneuron_space_1aaae45b76a4c059aae1e27bde3901371c" compoundref="interneuronspace_8cc" startline="172" endline="175">GetNeurotransmitters</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_interneuron_space_1af520cb6f8766c77b1e575b2b65393cce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::interneuronspace_type</definition>
+        <argsstring></argsstring>
+        <name>interneuronspace_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="126" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1aff15cb40feb85e4b75c1bdc31604f333" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::object_size</definition>
+        <argsstring></argsstring>
+        <name>object_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="127" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1acfef881bda3b9184542530453075d1b1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::object_energy</definition>
+        <argsstring></argsstring>
+        <name>object_energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="128" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a822a704e13dc60edfc5cb710e52150c3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::object_energy_threshold</definition>
+        <argsstring></argsstring>
+        <name>object_energy_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="129" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1aedb61682c1c2a374645e21abd4526825" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_NeuronType</definition>
+        <argsstring></argsstring>
+        <name>m_NeuronType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="130" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a5065916461ffbe096fe6bbb6503a767e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::neurotransmitter_pool</definition>
+        <argsstring></argsstring>
+        <name>neurotransmitter_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="131" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a5a4e1290b3bbb384597f111419be9c76" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_Tag</definition>
+        <argsstring></argsstring>
+        <name>m_Tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="132" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a9f49bd1364861ea859f1a66c606cff8a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_addStatus</definition>
+        <argsstring></argsstring>
+        <name>m_addStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="133" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1ae71819def096138a0fb466cbe3f4bf02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_TauCyclesAdd</definition>
+        <argsstring></argsstring>
+        <name>m_TauCyclesAdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="134" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1ac5c246784a31e7299aec57b2861a87e7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_TauCyclesDecay</definition>
+        <argsstring></argsstring>
+        <name>m_TauCyclesDecay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="135" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1aa8a5afd05659a9bbfd0934de9ea3cd53" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_ChargeType</definition>
+        <argsstring></argsstring>
+        <name>m_ChargeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="136" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1abaa8436af9b85307c65de2755a010297" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::m_DischargeType</definition>
+        <argsstring></argsstring>
+        <name>m_DischargeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="137" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a42f0a8cfca4592f0a6b47219df489396" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InterneuronSpace::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="138" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a5504d64df22fd330cdd14b4aca0171ea" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; InterneuronSpace::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="139" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a28efcbf608d5dd02f9dd85bec76a7650" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; InterneuronSpace::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="140" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a7a5cfbb9b0a619283417044345b01578" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="141" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1aae1ef00c4fdc597fa12548771953b239" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_Volume</definition>
+        <argsstring></argsstring>
+        <name>m_Volume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="142" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a2cd3cbca541688d4eaf15fc6c8496dd1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_SurfaceArea</definition>
+        <argsstring></argsstring>
+        <name>m_SurfaceArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="143" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a854dc7cd9f9b8643b2c674d2eaa36873" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int InterneuronSpace::m_Counter</definition>
+        <argsstring></argsstring>
+        <name>m_Counter</name>
+        <briefdescription>
+<para>Member variable &quot;m_Counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="144" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a97595972171f2fd0c37ad2d830f61fbb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_axonlength</definition>
+        <argsstring></argsstring>
+        <name>m_axonlength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="145" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a31182cce98aaecef1533fe17fc3e6786" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_TimeDilation</definition>
+        <argsstring></argsstring>
+        <name>m_TimeDilation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="146" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a16272fc7502a95a69ca60cbe4612f100" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_TimeThreshold</definition>
+        <argsstring></argsstring>
+        <name>m_TimeThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="147" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1af16aec913a2ec7b4f92f7da2487b4b00" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InterneuronSpace::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="148" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a9cb8dd97e4c6c18d3b84e0c0db6ca605" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_ReduceBy</definition>
+        <argsstring></argsstring>
+        <name>m_ReduceBy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="150" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a848666191c3e8c746d5b7d82b1b8d329" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::m_ReducedBy</definition>
+        <argsstring></argsstring>
+        <name>m_ReducedBy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="151" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a37041f5f3a796a7dedcf4cb576c9dbcd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; s_BindList &gt;</type>
+        <definition>std::vector&lt;s_BindList&gt; InterneuronSpace::m_BindList</definition>
+        <argsstring></argsstring>
+        <name>m_BindList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="159" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1ae1196b764996aa441538d5f6909a2344" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::interneuronspaceCounter</definition>
+        <argsstring></argsstring>
+        <name>interneuronspaceCounter</name>
+        <briefdescription>
+<para>Member variable &quot;interneuronspaceCounter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="162" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a6b6f5ac9671c40ea57d39824e76a7ccd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InterneuronSpace::interneuronspaceDemand</definition>
+        <argsstring></argsstring>
+        <name>interneuronspaceDemand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="163" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a7656441e3758dae6167e49903a916bf6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InterneuronSpace::minimumDistance</definition>
+        <argsstring></argsstring>
+        <name>minimumDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="164" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1ac55f2a154e8abc403ac1459f0317f0cf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; NearbyNeuron &gt;</type>
+        <definition>std::vector&lt;NearbyNeuron&gt; InterneuronSpace::neuronList</definition>
+        <argsstring></argsstring>
+        <name>neuronList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="174" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interneuron_space_1a9643f76d9b5acf91152ed69f6c3dca49" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; NearbyNeuron &gt;::iterator</type>
+        <definition>std::vector&lt;NearbyNeuron&gt;::iterator InterneuronSpace::it</definition>
+        <argsstring></argsstring>
+        <name>it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="175" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_interneuron_space_1a4ad439037f087e7d5cb3e1d8c581ee5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterneuronSpace::InterneuronSpace</definition>
+        <argsstring>()</argsstring>
+        <name>InterneuronSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="21" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a18d5d4920073a9a93ee3cb8f5efe9211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterneuronSpace::InterneuronSpace</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>InterneuronSpace</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="23" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a753903f3c74415922607846040ac50a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterneuronSpace::InterneuronSpace</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>InterneuronSpace</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="25" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1aa87eb8c7186542989fccdadc594c5915" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterneuronSpace::InterneuronSpace</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, CognitiveNetwork &amp;cognitivenetwork_connector)</argsstring>
+        <name>InterneuronSpace</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> &amp;</type>
+          <declname>cognitivenetwork_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="27" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="27" bodyend="38"/>
+        <references refid="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" compoundref="interneuronspace_8cc" startline="22" endline="68">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1aff0056e3c60b7eff3ad4ca12f6756628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual InterneuronSpace::~InterneuronSpace</definition>
+        <argsstring>()</argsstring>
+        <name>~InterneuronSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="41" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a677430712211956219767d4fa71d20e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double InterneuronSpace::GetEnergy</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetEnergy</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="43" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1abd37d409a97acca62d11576314bdfcf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetTauCyclesAdd</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetTauCyclesAdd</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="44" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a1024eadca0b56be9b54593ea47c5879f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetTauCyclesDecay</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetTauCyclesDecay</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="45" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a90a2c950dd426ed3f015e3c186e877fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetChargeType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetChargeType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="46" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ae65bf091b84fa11459ef754ed1c7bf21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetDischargeType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetDischargeType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="47" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a66b6683bab6872dfece6111a8ccfb1d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetInterneuronSpaceDeviceTag</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetInterneuronSpaceDeviceTag</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="48" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_universe_1aa22202ae740eb1355529afcb13285e91">SetCounter</reimplements>
+        <reimplementedby refid="class_schwann_cell_1a067f87983cb937d5fdb882c267e27921">SetCounter</reimplementedby>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="50" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetEnergy</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>SetEnergy</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="51" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetTauCyclesAdd</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetTauCyclesAdd</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="52" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetTauCyclesDecay</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetTauCyclesDecay</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="53" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetChargeType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetChargeType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="54" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetDischargeType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetDischargeType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="55" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetInterneuronSpaceDeviceTag</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetInterneuronSpaceDeviceTag</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="57" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="57" bodyend="57"/>
+        <references refid="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" compoundref="interneuronspace_8cc" startline="22" endline="68">ResetParameters</references>
+        <references refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" compoundref="interneuronspace_8cc" startline="70" endline="79">CreateNeurotransmitter</references>
+        <references refid="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" compoundref="interneuronspace_8cc" startline="81" endline="100">CreateNeurotransmitters</references>
+        <references refid="class_interneuron_space_1a96149bba4c6efd03586700a6fe86960a" compoundref="interneuronspace_8cc" startline="108" endline="111">CloneNeurotransmitter</references>
+        <references refid="class_interneuron_space_1a3defddf17eb839dbd799980f6116f895" compoundref="interneuronspace_8cc" startline="103" endline="106">CloneNeurotransmitters</references>
+        <references refid="class_interneuron_space_1a41eb332165b0a67c3549bd73a8faa969" compoundref="interneuronspace_8cc" startline="118" endline="121">DestroyNeurotransmitter</references>
+        <references refid="class_interneuron_space_1a9543932ffea18cce46fdfbf0fbb85b1b" compoundref="interneuronspace_8cc" startline="113" endline="116">DestroyNeurotransmitters</references>
+        <references refid="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" compoundref="interneuronspace_8cc" startline="123" endline="132">AddNeurotransmitter</references>
+        <references refid="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" compoundref="interneuronspace_8cc" startline="134" endline="153">AddNeurotransmitters</references>
+        <references refid="class_interneuron_space_1aa46b5ce238b49425a68fcfd53ba1d8b7" compoundref="interneuronspace_8cc" startline="156" endline="160">RemoveNeurotransmitter</references>
+        <references refid="class_interneuron_space_1a7b11f542ab7a3d293d5fcf5a1b522ac2" compoundref="interneuronspace_8cc" startline="162" endline="165">RemoveNeurotransmitters</references>
+        <references refid="class_interneuron_space_1a7a60c95c8706cbff3084e74b7b15d75c" compoundref="interneuronspace_8cc" startline="167" endline="170">GetNeurotransmitter</references>
+        <references refid="class_interneuron_space_1aaae45b76a4c059aae1e27bde3901371c" compoundref="interneuronspace_8cc" startline="172" endline="175">GetNeurotransmitters</references>
+        <references refid="class_interneuron_space_1ae62237c3a84893c81e9998602ab16718" compoundref="interneuronspace_8cc" startline="179" endline="179">GetDemand</references>
+        <references refid="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725">GetDistance</references>
+        <references refid="class_interneuron_space_1a4b053dc94a921c8176d9f58d40169089">GetAllocatedInterneuronSpace</references>
+        <references refid="class_interneuron_space_1a243535a8f09f104c3a4488f6df4cfd57">GetMinimumDistance</references>
+        <references refid="class_interneuron_space_1ae77729a0c140cfb8a9121e898be791b2">GetInterneuronSpaceList</references>
+        <references refid="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" compoundref="interneuronspace_8cc" startline="204" endline="204">SetDemand</references>
+        <references refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" compoundref="interneuronspace_8cc" startline="206" endline="206">SetNeuron</references>
+        <references refid="class_interneuron_space_1ab56b0336c9e53f7b448e9d35e617e8c0" compoundref="interneuronspace_8cc" startline="233" endline="236">SendBareSpike</references>
+        <references refid="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" compoundref="interneuronspace_8cc" startline="261" endline="268">SendTransmitterSpike</references>
+        <references refid="class_interneuron_space_1a72ce2431e1348dd2558fa9b8f864d306" compoundref="interneuronspace_8cc" startline="285" endline="383">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InterneuronSpace::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Set initial type value </para>        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="59" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="22" bodyend="68"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <referencedby refid="class_interneuron_space_1a72ce2431e1348dd2558fa9b8f864d306" compoundref="interneuronspace_8cc" startline="285" endline="383">Update</referencedby>
+        <referencedby refid="class_interneuron_space_1aa87eb8c7186542989fccdadc594c5915" compoundref="interneuronspace_8h" startline="27" endline="38">InterneuronSpace</referencedby>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::CreateNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>CreateNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="61" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="70" bodyend="79"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <referencedby refid="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" compoundref="interneuronspace_8cc" startline="81" endline="100">CreateNeurotransmitters</referencedby>
+        <referencedby refid="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" compoundref="interneuronspace_8cc" startline="261" endline="268">SendTransmitterSpike</referencedby>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::CreateNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int quantity)</argsstring>
+        <name>CreateNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="63" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="81" bodyend="100"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <references refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" compoundref="interneuronspace_8cc" startline="70" endline="79">CreateNeurotransmitter</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a96149bba4c6efd03586700a6fe86960a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::CloneNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, CognitiveNetwork *clone_object, double perfection_membership)</argsstring>
+        <name>CloneNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+          <declname>clone_object</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>perfection_membership</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="65" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="108" bodyend="111"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a3defddf17eb839dbd799980f6116f895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::CloneNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; CognitiveNetwork *&gt; cloning_list, double perfection_membership)</argsstring>
+        <name>CloneNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *&gt;</type>
+          <declname>cloning_list</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>perfection_membership</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="67" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="103" bodyend="106"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a41eb332165b0a67c3549bd73a8faa969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::DestroyNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, CognitiveNetwork *destroy_object)</argsstring>
+        <name>DestroyNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+          <declname>destroy_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="69" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="118" bodyend="121"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a9543932ffea18cce46fdfbf0fbb85b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::DestroyNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; CognitiveNetwork *&gt; destruction_list)</argsstring>
+        <name>DestroyNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *&gt;</type>
+          <declname>destruction_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="71" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="113" bodyend="116"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::AddNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, CognitiveNetwork *add_object)</argsstring>
+        <name>AddNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+          <declname>add_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="73" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="123" bodyend="132"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <referencedby refid="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" compoundref="interneuronspace_8cc" startline="134" endline="153">AddNeurotransmitters</referencedby>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::AddNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; CognitiveNetwork *&gt; add_objects)</argsstring>
+        <name>AddNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *&gt;</type>
+          <declname>add_objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="75" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="134" bodyend="153"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <references refid="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" compoundref="interneuronspace_8cc" startline="123" endline="132">AddNeurotransmitter</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1aa46b5ce238b49425a68fcfd53ba1d8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::RemoveNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>RemoveNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="77" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="156" bodyend="160"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a7b11f542ab7a3d293d5fcf5a1b522ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::RemoveNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int quantity)</argsstring>
+        <name>RemoveNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="79" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="162" bodyend="165"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a7a60c95c8706cbff3084e74b7b15d75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
+        <definition>CognitiveNetwork * InterneuronSpace::GetNeurotransmitter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int selector)</argsstring>
+        <name>GetNeurotransmitter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="81" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="167" bodyend="170"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1aaae45b76a4c059aae1e27bde3901371c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
+        <definition>std::vector&lt; CognitiveNetwork * &gt; InterneuronSpace::GetNeurotransmitters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetNeurotransmitters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="83" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="172" bodyend="175"/>
+        <references refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" compoundref="interneuronspace_8h" startline="123">neurotransmitter_list</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ae62237c3a84893c81e9998602ab16718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetDemand</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetDemand</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="85" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="179" bodyend="179"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double InterneuronSpace::GetDistance</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>GetDistance</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="87" column="1"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a4b053dc94a921c8176d9f58d40169089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::GetAllocatedInterneuronSpace</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetAllocatedInterneuronSpace</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="89" column="1"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a243535a8f09f104c3a4488f6df4cfd57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double InterneuronSpace::GetMinimumDistance</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetMinimumDistance</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="91" column="1"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ae77729a0c140cfb8a9121e898be791b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::GetInterneuronSpaceList</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetInterneuronSpaceList</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="93" column="1"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetDemand</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetDemand</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="95" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="204" bodyend="204"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SetNeuron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetNeuron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="97" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="206" bodyend="206"/>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1ab56b0336c9e53f7b448e9d35e617e8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SendBareSpike</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>SendBareSpike</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="106" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="233" bodyend="236"/>
+        <referencedby refid="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" compoundref="interneuronspace_8cc" startline="261" endline="268">SendTransmitterSpike</referencedby>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InterneuronSpace::SendTransmitterSpike</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>SendTransmitterSpike</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="114" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="261" bodyend="268"/>
+        <references refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" compoundref="interneuronspace_8cc" startline="70" endline="79">CreateNeurotransmitter</references>
+        <references refid="class_interneuron_space_1ab56b0336c9e53f7b448e9d35e617e8c0" compoundref="interneuronspace_8cc" startline="233" endline="236">SendBareSpike</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interneuron_space_1a72ce2431e1348dd2558fa9b8f864d306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int InterneuronSpace::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/interneuronspace.h" line="120" column="1" bodyfile="BrainHarmonics/interneuronspace.cc" bodystart="285" bodyend="383"/>
+        <references refid="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" compoundref="interneuronspace_8cc" startline="22" endline="68">ResetParameters</references>
+        <referencedby refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" compoundref="interneuronspace_8h" startline="57" endline="57">SetInterneuronSpaceDeviceTag</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="181">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="180">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>SchwannCell</label>
+        <link refid="class_schwann_cell"/>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="185">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="185" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/interneuronspace.h" line="19" column="1" bodyfile="BrainHarmonics/interneuronspace.h" bodystart="18" bodyend="178"/>
+    <listofallmembers>
+      <member refid="class_cognitive_network_1a6af57693982286ac6a6831ca3010b760" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1afc92c9b378e7e0873d0164bc4f2635df" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveInputs</name></member>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_cognitive_network_1a8a9b533b89b7d62b21cf41bdf957ef14" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a6299433811b76f0ccb97cf69fe9bfb66" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCognitiveOutputs</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_cognitive_network_1ac6a7e01f097d0cb6434eb8fa7640c214" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1aeafe16b9f44ae1316c072a85e726ee83" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddInterneuronSpaces</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddMonomers</name></member>
+      <member refid="class_cognitive_network_1a8457342637fde2d814c54942c3367416" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddNeuron</name></member>
+      <member refid="class_cognitive_network_1ade928e3355db97d3c5d99501ff4a3b69" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddNeurons</name></member>
+      <member refid="class_interneuron_space_1afee7374310b2a8c08bac232d62ea7aa1" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a1049397cd511c753d8c178db8f68a1a7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1ab6caa285c25568259ae935cf9e746af4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddOrbital</name></member>
+      <member refid="class_cognitive_network_1a9dbf4a9fab3b806d2bd6b2701b7a9548" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddOrbitals</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddSolids</name></member>
+      <member refid="class_cognitive_network_1a4bfdcd2affdfe2adb2da68dba60dff0e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddSynapse</name></member>
+      <member refid="class_cognitive_network_1a09d9e01cbd8596af7fac626ce2753643" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>AddSynapses</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>AdjustCounters</name></member>
+      <member refid="class_cognitive_network_1ae590ecb77db0a876425b9b74bcfe2bce" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a9753f52c9e36ad44e9fac1d3e38a0770" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_cognitive_network_1a7d3252977440a9a5c004f748647ce885" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyGravitation</name></member>
+      <member refid="class_cognitive_network_1a7a55750d3c42a277c4ffe04a87ab3b19" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyStrong</name></member>
+      <member refid="class_cognitive_network_1af25bbd4f4d8f370cd2a48fd6db8302b9" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1a8b60fdb81d89a3a74d6c06cb29e7aad3" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a46a15b24bd61049fa1c4f635268086a1" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyWeak</name></member>
+      <member refid="class_cognitive_network_1ab8bc213d2806f0dc49c1284bf934fc24" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_cognitive_network_1a058cb2b044d56268e36f153fac21084e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1aeaf2883b25dbf1eefd11c2d92efe8816" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1ab24f74115c11275f365245a4bb826c91" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a5734aa5378e9b701dca5e98017c1ea35" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1a1eef76439fffb9daaa3edc4e3c012831" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a5ee1d7b6df5bfe0048b4aea317c1974c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1abf42d64965d64836d6fcbd7ce33c8db4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneNeuron</name></member>
+      <member refid="class_cognitive_network_1a8852409e92434523ddbd48d699c5609f" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneNeurons</name></member>
+      <member refid="class_interneuron_space_1a96149bba4c6efd03586700a6fe86960a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a3defddf17eb839dbd799980f6116f895" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1aa8992740f25d46b0be3d9d8344c39f67" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneOrbital</name></member>
+      <member refid="class_cognitive_network_1a266b7baf2fd9d6b5c5652e251830020a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneOrbitals</name></member>
+      <member refid="class_cognitive_network_1a40f88d3ce9d386ee4db5c1e0ad84dad2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneSynapse</name></member>
+      <member refid="class_cognitive_network_1a82fe792704bcbf7df56b3023266f5f70" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CloneSynapses</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>cognitive_network_list</name></member>
+      <member refid="class_cognitive_network_1a5a46cefb188858fdc023df3abbac0a47" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>cognitiveinput_list</name></member>
+      <member refid="class_cognitive_network_1a3daddb316744336648d317e7f71ed371" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a167b15e33bcbca43cb0a516159e890f2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1ac7ba285d3468a929dac88756a2c4e4f9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a6ec49dcc8cc58cded71983291629179c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1a7a57ad82736c0d8b03e7607b5c603b00" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>cognitiveoutput_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_cognitive_network_1add96197c3dc51d94d06edb480fbc4a38" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a0833f7b587f14e0c0778661a56bce957" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1ac220350499bd323bd8f24ff0050cd60d" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a002df11f4389a122fc140c186ab665c9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1af0dc86c7905baae6f2b5efb3a65b8819" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a2d671451d659079d5efb5cda10e48827" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1a9b5fcaf824d5b587775e7c44630affe6" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateNeuron</name></member>
+      <member refid="class_cognitive_network_1af9b2a136584c962e44114a7ee3d2804a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateNeurons</name></member>
+      <member refid="class_interneuron_space_1a26d98a0ae78ce363ab93e92cf0c973e7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1af69f7190226d77a30a80d66d7c28e0ba" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a5e0a782afc45d75d57fef91dd5513546" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateOrbital</name></member>
+      <member refid="class_cognitive_network_1a46d4189cf3e6b9af6190abe7b79539b4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateOrbitals</name></member>
+      <member refid="class_cognitive_network_1ade8e9295b35790b136dca9084a1b7aa9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateSynapse</name></member>
+      <member refid="class_cognitive_network_1ae6ae16f401e7699032ac9459132763c0" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>CreateSynapses</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>Creation</name></member>
+      <member refid="class_cognitive_network_1a12e085cd47b7661190527fe55b6da8dc" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a00aa44de67dd0593a2498ce7a3b4c0f2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1a8475cf7277d25532bb31926e768600e8" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1ad08191cbab02f26f69d25bc7e6b5c1ee" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1acdda154177d3b3a92885c10f6b3dc274" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a718833496332e0471186c9a886005c4a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1ab3318f517da206ad4286b6cc22acf520" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyNeuron</name></member>
+      <member refid="class_cognitive_network_1af2f706043a0c227b93877e29b056f3c9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyNeurons</name></member>
+      <member refid="class_interneuron_space_1a41eb332165b0a67c3549bd73a8faa969" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a9543932ffea18cce46fdfbf0fbb85b1b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1aefecb3a2464f7f21449e522af5119c63" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyOrbital</name></member>
+      <member refid="class_cognitive_network_1a0ee8259d26e30779bf06471fb8a10bb5" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroyOrbitals</name></member>
+      <member refid="class_cognitive_network_1a08b87aa9a0823355ef7cef77414dc6dc" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroySynapse</name></member>
+      <member refid="class_cognitive_network_1a141e9e8e6337d42fc19edd75bb50e47b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>DestroySynapses</name></member>
+      <member refid="class_cognitive_network_1a79f0541fde6dd50f8e87f3f46d849b95" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>dimension_list</name></member>
+      <member refid="class_interneuron_space_1a7a5cfbb9b0a619283417044345b01578" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>ExtendLife</name></member>
+      <member refid="class_interneuron_space_1a4b053dc94a921c8176d9f58d40169089" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetAllocatedInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a6bb3fc06029c260dd658d0db072625a7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCapacity</name></member>
+      <member refid="class_cognitive_network_1ab67da8690b83618d88f88411121d7071" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetChannelMax</name></member>
+      <member refid="class_cognitive_network_1ad7f5cc836340017d38c22b57e177fc91" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetChannelMin</name></member>
+      <member refid="class_interneuron_space_1a90a2c950dd426ed3f015e3c186e877fd" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetChargeType</name></member>
+      <member refid="class_cognitive_network_1a2ff68a0d11cdb29af2f05a69a11911a4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1a92b896643b881e4030401e0f7fd256bf" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveInputs</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_cognitive_network_1af33f3ff9dd829da73d183d2624f24964" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveNetworkDeviceTag</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_cognitive_network_1a947fa4c50fecc4008d2bcfc96a272ffc" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1acdf847165899c36d6d9d6843ecc27218" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCognitiveOutputs</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_cognitive_network_1a160bb447671609eb14b1b8043639ac74" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetCounter</name></member>
+      <member refid="class_interneuron_space_1ae62237c3a84893c81e9998602ab16718" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDemand</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDimensions</name></member>
+      <member refid="class_cognitive_network_1aa64c93ecec84b57b25e1fdb173795f9b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDisabled</name></member>
+      <member refid="class_interneuron_space_1ae65bf091b84fa11459ef754ed1c7bf21" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDischargeType</name></member>
+      <member refid="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetDistance</name></member>
+      <member refid="class_cognitive_network_1a09e5a1c774c84529a7adfe56fadb7467" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a8c4e0454068f714691ae250f795cdb67" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_interneuron_space_1a677430712211956219767d4fa71d20e6" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetEnergy</name></member>
+      <member refid="class_cognitive_network_1a3a9be1c6697d063b0836cdcdc7a2600c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetGateKeeper</name></member>
+      <member refid="class_cognitive_network_1a4b5150310288c52f00ecb745ae9e7f86" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetGravitation</name></member>
+      <member refid="class_cognitive_network_1a0119d61e86ea6b84ad7f69f88d59d008" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetInterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a66b6683bab6872dfece6111a8ccfb1d7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetInterneuronSpaceDeviceTag</name></member>
+      <member refid="class_interneuron_space_1ae77729a0c140cfb8a9121e898be791b2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetInterneuronSpaceList</name></member>
+      <member refid="class_cognitive_network_1a4daf966882d527b784bd359794ad39ca" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetInterneuronSpaces</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetMatters</name></member>
+      <member refid="class_interneuron_space_1a243535a8f09f104c3a4488f6df4cfd57" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetMinimumDistance</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetMonomers</name></member>
+      <member refid="class_cognitive_network_1ac12f0af92d878d45dca7303dc065c383" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeuron</name></member>
+      <member refid="class_cognitive_network_1af81132245e486c496a055f54a5a520d0" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a0e9e37e976a7ca5ee625e2d7b36fd7ea" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeurons</name></member>
+      <member refid="class_interneuron_space_1a7a60c95c8706cbff3084e74b7b15d75c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeurotransmitter</name></member>
+      <member refid="class_cognitive_network_1a4e5b1d60cda4ddb4bd04d8dca42b7a5b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeurotransmitterPool</name></member>
+      <member refid="class_interneuron_space_1aaae45b76a4c059aae1e27bde3901371c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a1c92a8f6c42788cf8ca890f062f853a3" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetObjectType</name></member>
+      <member refid="class_cognitive_network_1a69655ef1e12bac5f74c2eb85c72720f4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetOrbital</name></member>
+      <member refid="class_cognitive_network_1af5995eaa4ba35c555a6b65d895451f25" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aa21d28ffc3b507236a7dad64663f6c42" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetOrbitals</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetPoints</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetPolymers</name></member>
+      <member refid="class_cognitive_network_1a03d744f9d0d420c1e044646bc6bd2552" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetRestingPotential</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetSolids</name></member>
+      <member refid="class_cognitive_network_1a277247686f8af159e7a7beb0ec379225" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetStrong</name></member>
+      <member refid="class_cognitive_network_1a942ca90561fedae46136de620accbfea" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1acfa5de663b3e686c4d9ea1a3bb483b11" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a1944aaa13667bc267e6ef44892da969d" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetSynapse</name></member>
+      <member refid="class_cognitive_network_1ae0068b9df823e1b10fed3c73f1cb4702" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1aa3376f2e7aed9639c2b5ba27aa6fb314" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetSynapses</name></member>
+      <member refid="class_interneuron_space_1abd37d409a97acca62d11576314bdfcf4" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetTauCyclesAdd</name></member>
+      <member refid="class_interneuron_space_1a1024eadca0b56be9b54593ea47c5879f" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetTauCyclesDecay</name></member>
+      <member refid="class_cognitive_network_1ad293916cfa0e454ef40d7e228d0dcba3" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>GetUsage</name></member>
+      <member refid="class_cognitive_network_1a761db75ac8eab7b4625e5a398891bd12" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetWeak</name></member>
+      <member refid="class_cognitive_network_1aa6342c390fe8e7c648b4c6bc8f93ba4a" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_interneuron_space_1a4ad439037f087e7d5cb3e1d8c581ee5f" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a18d5d4920073a9a93ee3cb8f5efe9211" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1a753903f3c74415922607846040ac50a6" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>InterneuronSpace</name></member>
+      <member refid="class_interneuron_space_1aa87eb8c7186542989fccdadc594c5915" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>InterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1aaf69f6e0cc0084eb748ef1540c773f85" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>interneuronspace_list</name></member>
+      <member refid="class_interneuron_space_1af520cb6f8766c77b1e575b2b65393cce" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>interneuronspace_type</name></member>
+      <member refid="class_interneuron_space_1ae1196b764996aa441538d5f6909a2344" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>interneuronspaceCounter</name></member>
+      <member refid="class_interneuron_space_1a6b6f5ac9671c40ea57d39824e76a7ccd" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>interneuronspaceDemand</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>IsDead</name></member>
+      <member refid="class_interneuron_space_1a9643f76d9b5acf91152ed69f6c3dca49" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>it</name></member>
+      <member refid="class_interneuron_space_1a9f49bd1364861ea859f1a66c606cff8a" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_addStatus</name></member>
+      <member refid="class_interneuron_space_1a97595972171f2fd0c37ad2d830f61fbb" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_axonlength</name></member>
+      <member refid="class_interneuron_space_1a37041f5f3a796a7dedcf4cb576c9dbcd" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_BindList</name></member>
+      <member refid="class_interneuron_space_1aa8a5afd05659a9bbfd0934de9ea3cd53" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_ChargeType</name></member>
+      <member refid="class_interneuron_space_1a854dc7cd9f9b8643b2c674d2eaa36873" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_Counter</name></member>
+      <member refid="class_interneuron_space_1abaa8436af9b85307c65de2755a010297" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_DischargeType</name></member>
+      <member refid="class_interneuron_space_1aedb61682c1c2a374645e21abd4526825" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_NeuronType</name></member>
+      <member refid="class_interneuron_space_1a9cb8dd97e4c6c18d3b84e0c0db6ca605" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_ReduceBy</name></member>
+      <member refid="class_interneuron_space_1a848666191c3e8c746d5b7d82b1b8d329" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_ReducedBy</name></member>
+      <member refid="class_interneuron_space_1a2cd3cbca541688d4eaf15fc6c8496dd1" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_SurfaceArea</name></member>
+      <member refid="class_interneuron_space_1a5a4e1290b3bbb384597f111419be9c76" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_Tag</name></member>
+      <member refid="class_interneuron_space_1ae71819def096138a0fb466cbe3f4bf02" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_TauCyclesAdd</name></member>
+      <member refid="class_interneuron_space_1ac5c246784a31e7299aec57b2861a87e7" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_TauCyclesDecay</name></member>
+      <member refid="class_interneuron_space_1a31182cce98aaecef1533fe17fc3e6786" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_TimeDilation</name></member>
+      <member refid="class_interneuron_space_1a16272fc7502a95a69ca60cbe4612f100" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_TimeThreshold</name></member>
+      <member refid="class_interneuron_space_1aae1ef00c4fdc597fa12548771953b239" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>m_Volume</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>matter_list</name></member>
+      <member refid="class_interneuron_space_1a7656441e3758dae6167e49903a916bf6" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>minimumDistance</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>monomer_list</name></member>
+      <member refid="class_cognitive_network_1abbb9ff97e1b9cd61602d95f44c30132e" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>neuron_list</name></member>
+      <member refid="class_interneuron_space_1ac55f2a154e8abc403ac1459f0317f0cf" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>neuronList</name></member>
+      <member refid="class_interneuron_space_1a51d51c2f71f6fcf65c478aa27457c4a3" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>neurotransmitter_list</name></member>
+      <member refid="class_interneuron_space_1a5065916461ffbe096fe6bbb6503a767e" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>neurotransmitter_pool</name></member>
+      <member refid="class_interneuron_space_1a42f0a8cfca4592f0a6b47219df489396" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>object_disabled</name></member>
+      <member refid="class_interneuron_space_1acfef881bda3b9184542530453075d1b1" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>object_energy</name></member>
+      <member refid="class_interneuron_space_1a822a704e13dc60edfc5cb710e52150c3" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>object_energy_threshold</name></member>
+      <member refid="class_interneuron_space_1af16aec913a2ec7b4f92f7da2487b4b00" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>object_initialised</name></member>
+      <member refid="class_interneuron_space_1aff15cb40feb85e4b75c1bdc31604f333" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>object_size</name></member>
+      <member refid="class_cognitive_network_1a263efd10857d5507c0e889e48f7329fe" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>orbital_list</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>point_list</name></member>
+      <member refid="class_cognitive_network_1ac97c08a0af7dc0d02fbe059827b6be87" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>PollElementaryForce</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>polymer_list</name></member>
+      <member refid="class_interneuron_space_1a28efcbf608d5dd02f9dd85bec76a7650" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>previous_event_time</name></member>
+      <member refid="class_cognitive_network_1af79bf7f8b61d5392df7a87bd444eb550" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveCognitiveInput</name></member>
+      <member refid="class_cognitive_network_1aaaf93e7c732b1e1e81060f82ff73c93a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveCognitiveInputs</name></member>
+      <member refid="class_cognitive_network_1a9874b11ac465c84ccf7baab0a40fb84e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveCognitiveOutput</name></member>
+      <member refid="class_cognitive_network_1a2f4956b004c828f0165f28c03e089144" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveCognitiveOutputs</name></member>
+      <member refid="class_cognitive_network_1a04e38cea356f1c7ac31c4df5e19d759c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveInterneuronSpace</name></member>
+      <member refid="class_cognitive_network_1a994c5f93447a82429809c89aa08d3dc1" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveInterneuronSpaces</name></member>
+      <member refid="class_cognitive_network_1a33e911ec87d902a8fd8bb6d9e23c4261" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveNeuron</name></member>
+      <member refid="class_cognitive_network_1a130985ff0aa14b2a17fc2c589e65f868" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveNeurons</name></member>
+      <member refid="class_interneuron_space_1aa46b5ce238b49425a68fcfd53ba1d8b7" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveNeurotransmitter</name></member>
+      <member refid="class_interneuron_space_1a7b11f542ab7a3d293d5fcf5a1b522ac2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveNeurotransmitters</name></member>
+      <member refid="class_cognitive_network_1a6ed0e198f6dcfdd45d57df5d3ad5754c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveOrbital</name></member>
+      <member refid="class_cognitive_network_1af7834d400995607c2a5a5eac7b5e006d" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveOrbitals</name></member>
+      <member refid="class_cognitive_network_1a0764ede1c23caa7022a01657a0e3726b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveSynapse</name></member>
+      <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>RemoveSynapses</name></member>
+      <member refid="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>ReturnEnergy</name></member>
+      <member refid="class_interneuron_space_1ab56b0336c9e53f7b448e9d35e617e8c0" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SendBareSpike</name></member>
+      <member refid="class_interneuron_space_1a0a24da715aecafd4072d596fc271666f" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SendTransmitterSpike</name></member>
+      <member refid="class_cognitive_network_1a055b3711835b8d134356298f8975f04d" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetCapacity</name></member>
+      <member refid="class_cognitive_network_1a9c208d66ee284adfceb3b2dd76532a00" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetChannelMax</name></member>
+      <member refid="class_cognitive_network_1a6e2a6ced4ede9a4eef721d6c5aac433c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetChannelMin</name></member>
+      <member refid="class_cognitive_network_1a99f801aeca299186cc706696696749b1" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetCharge</name></member>
+      <member refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetChargeType</name></member>
+      <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetCognitiveNetworkDeviceTag</name></member>
+      <member refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetCounter</name></member>
+      <member refid="class_cognitive_network_1a23c6a11d9f15a141f69a9779f174bfb3" prot="public" virt="non-virtual" ambiguityscope="CognitiveNetwork::"><scope>InterneuronSpace</scope><name>SetCounter</name></member>
+      <member refid="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetDemand</name></member>
+      <member refid="class_cognitive_network_1ac29e676c84244f5b64c0083a0efead28" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetDisabled</name></member>
+      <member refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetDischargeType</name></member>
+      <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetEnergy</name></member>
+      <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetGateKeeper</name></member>
+      <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetGravitation</name></member>
+      <member refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetInterneuronSpaceDeviceTag</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetLifespan</name></member>
+      <member refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetNeuron</name></member>
+      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetObjectType</name></member>
+      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetSpin</name></member>
+      <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetStrong</name></member>
+      <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetStrongResidual</name></member>
+      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetSynapsePool</name></member>
+      <member refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetTauCyclesAdd</name></member>
+      <member refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetTauCyclesDecay</name></member>
+      <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>SetUsage</name></member>
+      <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetWeak</name></member>
+      <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>solid_list</name></member>
+      <member refid="class_cognitive_network_1a9218de9d63b10b313df289d1312c81e0" prot="protected" virt="non-virtual"><scope>InterneuronSpace</scope><name>synapse_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_interneuron_space_1a5504d64df22fd330cdd14b4aca0171ea" prot="private" virt="non-virtual"><scope>InterneuronSpace</scope><name>time_object_created</name></member>
+      <member refid="class_cognitive_network_1abeac08d7cbf9df4b36de40aa9301e978" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>toggleDisabled</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>Universe</name></member>
+      <member refid="class_interneuron_space_1a72ce2431e1348dd2558fa9b8f864d306" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>Update</name></member>
+      <member refid="class_cognitive_network_1aa37dda869174e4eef986cca4ce3e55d2" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>InterneuronSpace</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>InterneuronSpace</scope><name>UseEnergy</name></member>
+      <member refid="class_cognitive_network_1a17142cc6f0bb3894e63f6c66fa401778" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>~CognitiveNetwork</name></member>
+      <member refid="class_interneuron_space_1aff0056e3c60b7eff3ad4ca12f6756628" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>~InterneuronSpace</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>InterneuronSpace</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

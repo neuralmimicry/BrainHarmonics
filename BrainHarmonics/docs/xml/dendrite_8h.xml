@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dendrite_8h" kind="file" language="C++">
+    <compoundname>dendrite.h</compoundname>
+    <includes refid="soma_8h" local="yes">soma.h</includes>
+    <includedby refid="dendritebranch_8h" local="yes">BrainHarmonics/dendritebranch.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="dendrite_8cc" local="yes">BrainHarmonics/dendrite.cc</includedby>
+    <includedby refid="soma_8cc" local="yes">BrainHarmonics/soma.cc</includedby>
+    <incdepgraph>
+      <node id="582">
+        <label>polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+      </node>
+      <node id="575">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="584">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>vector</label>
+      </node>
+      <node id="579">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="581">
+        <label>math.h</label>
+      </node>
+      <node id="574">
+        <label>neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="575" relation="include">
+        </childnode>
+      </node>
+      <node id="577">
+        <label>iostream</label>
+      </node>
+      <node id="573">
+        <label>soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="596">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="591">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="588">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="595">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="593">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="590">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="592">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="585">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="587">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_dendrite" prot="public">Dendrite</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>dendrite.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>03/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_DENDRITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_DENDRITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="soma_8h" kindref="compound">soma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_dendrite" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_dendrite" kindref="compound">Dendrite</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_soma" kindref="compound">Soma</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_dendrite_1a0a35047fcf3dad2f81be348499e32337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite_1a0a35047fcf3dad2f81be348499e32337" kindref="member">Dendrite</ref>()<sp/>:<sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="class_dendrite_1ae702e9fd351be8dc3a09afa0ed431c3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite_1ae702e9fd351be8dc3a09afa0ed431c3b" kindref="member">Dendrite</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="class_dendrite_1a10313257362c8f62c8b01a9992ec9ff7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite_1a10313257362c8f62c8b01a9992ec9ff7" kindref="member">Dendrite</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_soma" kindref="compound">Soma</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="class_dendrite_1ac358d84fb75919386aced214fa0e1107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite_1ac358d84fb75919386aced214fa0e1107" kindref="member">Dendrite</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_soma" kindref="compound">Soma</ref>&amp;<sp/>soma_connector)<sp/>:<sp/><ref refid="class_soma" kindref="compound">Soma</ref>(soma_connector)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>dendrite<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>dendrite_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite_1a6a6290955348051819badb801b753901" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Dendrite&quot;</highlight><highlight class="normal">,<sp/>dendrite_type);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_dendrite_1a616c3f82655d8a3cf9cebc22e7aa2233" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a616c3f82655d8a3cf9cebc22e7aa2233" kindref="member">~Dendrite</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_dendrite_1afa65091d7bbeed3f16a3e71a687fdec3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1afa65091d7bbeed3f16a3e71a687fdec3" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="40" refid="class_dendrite_1a1aa1fd51aab3996cf1a9b0ff6a86647c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a1aa1fd51aab3996cf1a9b0ff6a86647c" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="41" refid="class_dendrite_1a64ebf49c488bb0225e1e5c8a8d9935d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a64ebf49c488bb0225e1e5c8a8d9935d9" kindref="member">GetDendriteLength</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dendriteLength;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="class_dendrite_1aa103a34ce3d3525b350cb02c0a7855ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1aa103a34ce3d3525b350cb02c0a7855ea" kindref="member">GetDendriteDiameterStart</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dendriteDiameterStart;<sp/>}</highlight></codeline>
+<codeline lineno="43" refid="class_dendrite_1a2c46d2612d09964a473e1de99c17fa13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a2c46d2612d09964a473e1de99c17fa13" kindref="member">GetDendriteDiameterEnd</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dendriteDiameterEnd;<sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_dendrite_1ab70008318cada82e0f21f8f010858eaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1ab70008318cada82e0f21f8f010858eaa" kindref="member">GetMembraneResistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_membraneResistance;<sp/>}</highlight></codeline>
+<codeline lineno="45" refid="class_dendrite_1a3551fe5fcf9c7ec767a6171f61a5ba51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a3551fe5fcf9c7ec767a6171f61a5ba51" kindref="member">GetMembraneCapacitance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_membraneCapacitance;<sp/>}</highlight></codeline>
+<codeline lineno="46" refid="class_dendrite_1a7dd00ac5440edf9943389951a275b9bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a7dd00ac5440edf9943389951a275b9bc" kindref="member">GetInternalResistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_internalResistance;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_dendrite_1af0315957a349532d25691385b6486e95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1af0315957a349532d25691385b6486e95" kindref="member">GetPropagationVelocity</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>(<sp/>1<sp/>/<sp/>m_membraneCapacitance<sp/>)<sp/>*<sp/>sqrt((m_dendriteLength<sp/>/<sp/>(<sp/>4<sp/>*<sp/>m_membraneResistance<sp/>*<sp/>m_internalResistance<sp/>)<sp/>)<sp/>)<sp/>);<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_dendrite_1a9bc84d369ac487b095ed1641f89469d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a9bc84d369ac487b095ed1641f89469d2" kindref="member">setDendriteLength</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_dendriteLength<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_dendrite_1af33658a5420b56cfd321d75ae5784302" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1af33658a5420b56cfd321d75ae5784302" kindref="member">setDendriteDiameterStart</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_dendriteDiameterStart<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_dendrite_1ada331daa4464ae007b3f77612aa46937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1ada331daa4464ae007b3f77612aa46937" kindref="member">setDendriteDiameterEnd</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_dendriteDiameterEnd<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_dendrite_1af6141643bf2c85404ae9c320611d1d31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1af6141643bf2c85404ae9c320611d1d31" kindref="member">setMembraneResistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_membraneResistance<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_dendrite_1a6fed149ffe00cf781a41a9f260f8eeb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a6fed149ffe00cf781a41a9f260f8eeb2" kindref="member">setMembraneCapacitance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_membraneCapacitance<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_dendrite_1ac79018e356cec31be05518b85c73a54d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1ac79018e356cec31be05518b85c73a54d" kindref="member">setInternalResistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_internalResistance<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_dendrite_1a7529495515de74fff2b9a92b12531057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a7529495515de74fff2b9a92b12531057" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="class_dendrite_1ad341dcd42c9d5d486be1e8268d8bca27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1ad341dcd42c9d5d486be1e8268d8bca27" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a6a6290955348051819badb801b753901" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1ac7b30397a4753f9c37e96ed716e275eb" kindref="member">CreateDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a812b9cd99ae7d81023bfa25c8f563e96" kindref="member">CreateDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1ab682ffb9bfd1a1da1623e6b641471068" kindref="member">CloneDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1abd67c09df69c520e6720bca2592bcc99" kindref="member">CloneDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Dendrite*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1a87887a43ac38e762255da18eaaee43f5" kindref="member">DestroyDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a92c08afc374068922e462c9b65cf9157" kindref="member">DestroyDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Dendrite*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1aab6cedff35cb8c65923b14c8034cccc0" kindref="member">AddDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a3e6a80da180b60290545cfc92f221a05" kindref="member">AddDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Dendrite*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1aa23bd0ce7c5a0a9011b28234cc2e90e1" kindref="member">RemoveDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a15396dce5e1d920fcd1477b9a255dabf" kindref="member">RemoveDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><sp/><ref refid="class_dendrite_1a1465037ca014fa8bbefc8c0ad70d1647" kindref="member">GetDendriteBranch</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a00b524d47e3662df712ea060ebadca77" kindref="member">GetDendriteBranches</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a6a0c08a642c92d8e189e1f7eff6f6b00" kindref="member">Growth</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_1a2e7bfde37bc7aec2547253ad038aaa04" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90" refid="class_dendrite_1a1d57708bfa57443d3fa0358984b4c761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Dendrite*&gt;<sp/><ref refid="class_dendrite_1a1d57708bfa57443d3fa0358984b4c761" kindref="member">dendritebranch_list</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_NeuronType;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dendrite_type;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_addStatus;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dendritebranch_pool;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Volume;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_SurfaceArea;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Length;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_dendriteLength;<sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_dendriteDiameterStart;<sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_dendriteDiameterEnd;<sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_membraneResistance;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_membraneCapacitance;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_internalResistance;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyInc;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyDec;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyLeak;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeDilation;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeThreshold;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_DENDRITE_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/dendrite.h"/>
+  </compounddef>
+</doxygen>

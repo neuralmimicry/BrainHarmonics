@@ -1,0 +1,28 @@
+digraph "CognitiveNetwork::SetCognitiveNetworkDeviceTag"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CognitiveNetwork::SetCognitive\lNetworkDeviceTag",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CognitiveNetwork::ResetParameters",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a5211ad0ce44eeebdf6c5957c61aaa88d"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CognitiveNetwork::AddEnergy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a288a367a774ca70438504c4d9ac5af62"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CognitiveNetwork::Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#ad44dad311c7fee9ae58183cd7e925e78"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="CognitiveNetwork::Create\lOrbital",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a1faa990a670fb0b42e1efef65155d544"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="CognitiveNetwork::AddOrbital",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#add504f18e9be146c75a269c3e4ada100"];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="CognitiveNetwork::GetOrbitals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#aa5fa806b0e693dc8dd41f285ea3b675a"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="CognitiveNetwork::Create\lNeuron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a1d3b72051d7b3f36a01396932a96c273"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="CognitiveNetwork::AddNeuron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#aa2417f0b0692f7f16f3d2dbdb255222e"];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="CognitiveNetwork::GetNeurons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a06cb9f79c48b1a6dc8758e66a01b53d3"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+}

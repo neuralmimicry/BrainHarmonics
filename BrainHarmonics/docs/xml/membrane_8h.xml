@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="membrane_8h" kind="file" language="C++">
+    <compoundname>membrane.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="neuron_8h" local="yes">neuron.h</includes>
+    <includes refid="polyhedron_8h" local="yes">polyhedron.h</includes>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="membranechannel_8h" local="yes">BrainHarmonics/membranechannel.h</includedby>
+    <includedby refid="membrane_8cc" local="yes">BrainHarmonics/membrane.cc</includedby>
+    <includedby refid="neuron_8cc" local="yes">BrainHarmonics/neuron.cc</includedby>
+    <incdepgraph>
+      <node id="947">
+        <label>polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="948">
+        <label>solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="949">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>vector</label>
+      </node>
+      <node id="944">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="938">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+      </node>
+      <node id="946">
+        <label>math.h</label>
+      </node>
+      <node id="941">
+        <label>neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>iostream</label>
+      </node>
+      <node id="945">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="951">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="955">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="954">
+        <label>BrainHarmonics/membranechannel.cc</label>
+        <link refid="membranechannel_8cc"/>
+      </node>
+      <node id="950">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="955" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>BrainHarmonics/membrane.cc</label>
+        <link refid="membrane_8cc"/>
+      </node>
+      <node id="952">
+        <label>BrainHarmonics/membranechannel.h</label>
+        <link refid="membranechannel_8h"/>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_membrane" prot="public">Membrane</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>membrane.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>16/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_MEMBRANE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_MEMBRANE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="neuron_8h" kindref="compound">neuron.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="polyhedron_8h" kindref="compound">polyhedron.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_membrane" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_membrane" kindref="compound">Membrane</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_membrane_1ae3db1e55d9a535226bfd41c2a9ac1f0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane_1ae3db1e55d9a535226bfd41c2a9ac1f0c" kindref="member">Membrane</ref>()<sp/>:<sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="class_membrane_1a9e45fcb5a4e791f2697fce4d9fa78a3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane_1a9e45fcb5a4e791f2697fce4d9fa78a3f" kindref="member">Membrane</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="class_membrane_1afeb8292866a69bdc2b9be6dcd902b519" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane_1afeb8292866a69bdc2b9be6dcd902b519" kindref="member">Membrane</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="class_membrane_1a8d61894d90a7f63e427cd8b1a5eca380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane_1a8d61894d90a7f63e427cd8b1a5eca380" kindref="member">Membrane</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>&amp;<sp/>neuron_connector)<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>(neuron_connector)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>membrane<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>membrane_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane_1a9c49462cf63495381a52e2defc80b1e4" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Membrane&quot;</highlight><highlight class="normal">,<sp/>membrane_type);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39" refid="class_membrane_1a8765daf8038c1e992e3ea3752db0042f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a8765daf8038c1e992e3ea3752db0042f" kindref="member">~Membrane</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unit<sp/>of<sp/>time<sp/>resolution<sp/>is<sp/>1ns.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Any<sp/>single<sp/>network<sp/>function<sp/>should<sp/>have<sp/>an<sp/>output<sp/>within<sp/>25ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>simulation<sp/>a<sp/>25ms<sp/>function<sp/>should<sp/>complete<sp/>in<sp/>25<sp/>seconds.<sp/>A<sp/>factor<sp/>of<sp/>1000<sp/>dilation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_membrane_1a8c3593b0747495c412bf2d99b7b10104" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a8c3593b0747495c412bf2d99b7b10104" kindref="member">TimeFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeDelay,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeDilation)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeCounter;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>timeCounter<sp/>=<sp/>timeDelay<sp/>*<sp/>timeDilation;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timeCounter;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_membrane_1a85f8b2633ff32f79b6fbb466ce690858" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a85f8b2633ff32f79b6fbb466ce690858" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_membrane_1a50d39c596daa7af8da7dd7215d3a32ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a50d39c596daa7af8da7dd7215d3a32ba" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_membrane_1a00e038f0023186139467d490c6cd38a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a00e038f0023186139467d490c6cd38a3" kindref="member">GetEnergyInc</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyInc;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_membrane_1a874068c028004d4dde7ec41d999872eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a874068c028004d4dde7ec41d999872eb" kindref="member">GetEnergyDec</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyDec;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_membrane_1ac6c8d1f7348b24e448e8163260500b89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1ac6c8d1f7348b24e448e8163260500b89" kindref="member">GetEnergyLeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energyLeak;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_membrane_1a7ce7398888bdad73ac848a2362261acf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a7ce7398888bdad73ac848a2362261acf" kindref="member">GetEnergyThreshold</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy_threshold;<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="class_membrane_1a270278dd346edfe8c7bbd4c48929fdd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a270278dd346edfe8c7bbd4c48929fdd5" kindref="member">GetMembraneChannelPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>membranechannel_pool;<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="class_membrane_1a2cb70232c6aecf1c83a8e0918cb7fabe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a2cb70232c6aecf1c83a8e0918cb7fabe" kindref="member">SetMembraneChannelPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_pool)<sp/>{<sp/>membranechannel_pool<sp/>=<sp/>set_pool;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="class_membrane_1a4bff43b38d7046867f220392a39cc272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a4bff43b38d7046867f220392a39cc272" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="class_membrane_1a37beeb28761af644bc3a51d3509f14f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a37beeb28761af644bc3a51d3509f14f1" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_membrane_1abd1c69b9b0260799afd3965c34f881ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1abd1c69b9b0260799afd3965c34f881ff" kindref="member">SetEnergyInc</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyInc<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="class_membrane_1acefb2fe781d7316b232614663777cde1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1acefb2fe781d7316b232614663777cde1" kindref="member">SetEnergyDec</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyDec<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="class_membrane_1a96618ef2c05a8af5d6bd8606c9b8eae8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a96618ef2c05a8af5d6bd8606c9b8eae8" kindref="member">SetEnergyLeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energyLeak<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" kindref="member">SetEnergyThreshold</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy_threshold<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a5ba2bcb906f3984b28f1030207e106ad" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a9c49462cf63495381a52e2defc80b1e4" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a589b56529ac634a52b2a5fc78d356973" kindref="member">CreateMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1a72987fae41e552af5befcd9a62aa6e46" kindref="member">CreateMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a9514ca4d4378e6467d2059a9d5f9b99b" kindref="member">CloneMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1aa9958ea461092c0d2aceb07c9c34373c" kindref="member">CloneMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Membrane*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a12413d933a62b3bbb7931c6ab25de7de" kindref="member">DestroyMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1aea71c4443f2fc22359ac3f770ff7755e" kindref="member">DestroyMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Membrane*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a3e3b4f55f028541e7513f826d01a689a" kindref="member">AddMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1aab591875e3266d6c5af0f7c5f7f21e8f" kindref="member">AddMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Membrane*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a36d6927c8869cc752b55623dac661107" kindref="member">RemoveMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1ac33ffd86416112420dc5b0576287c44d" kindref="member">RemoveMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_membrane" kindref="compound">Membrane</ref>*<sp/><sp/><ref refid="class_membrane_1a1e2bdb800f0f38254214ea7cbdc06941" kindref="member">GetMembraneChannel</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1a7fac2929241b7ff9b8b7f1ec955b2cc5" kindref="member">GetMembraneChannels</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a544742864485b9ac052f3b241ae5c6b4" kindref="member">Growth</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99" refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Membrane*&gt;<sp/><ref refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" kindref="member">membranechannel_list</ref>;</highlight></codeline>
+<codeline lineno="100" refid="class_membrane_1a926d35c07f664b60deb6e9f87649fe89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_membrane_1a926d35c07f664b60deb6e9f87649fe89" kindref="member">visualisation_list</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_NeuronType;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>membrane_type;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_addStatus;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Volume;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_SurfaceArea;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyInc;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyDec;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyLeak;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeDilation;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeThreshold;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>membranechannel_pool;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_MEMBRANE_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/membrane.h"/>
+  </compounddef>
+</doxygen>

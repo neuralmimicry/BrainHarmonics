@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_screen__0" kind="class" language="C++" prot="public">
+    <compoundname>Screen_0</compoundname>
+    <basecompoundref refid="class_multi_screen" prot="public" virt="non-virtual">MultiScreen</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_screen__0_1a366c0c683b2036c689f2fb6f552fae84" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Screen_0::m_onScreen</definition>
+        <argsstring></argsstring>
+        <name>m_onScreen</name>
+        <briefdescription>
+<para>Member variable &quot;m_onScreen&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="819" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="819" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_screen__0_1a0e2f94204a941f749ecc984b7c26a4e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Screen_0::Screen_0</definition>
+        <argsstring>()</argsstring>
+        <name>Screen_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="811" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="822" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="class_screen__0_1a78d663eb8b65132fb22239ef1e945da9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Screen_0::~Screen_0</definition>
+        <argsstring>()</argsstring>
+        <name>~Screen_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="813" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="813" bodyend="813"/>
+        <references refid="class_screen__0_1aedaf055321ad63a3bd2e23d65a6aec45" compoundref="main_8cc" startline="826" endline="826">creation</references>
+        <references refid="class_screen__0_1ac649cf14d66ddc24e102f69ecbaa6089" compoundref="main_8cc" startline="828" endline="902">runScreen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_screen__0_1aedaf055321ad63a3bd2e23d65a6aec45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Screen_0::creation</definition>
+        <argsstring>()</argsstring>
+        <name>creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="814" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="826" bodyend="826"/>
+        <referencedby refid="class_screen__0_1a78d663eb8b65132fb22239ef1e945da9" compoundref="main_8cc" startline="813" endline="813">~Screen_0</referencedby>
+        <referencedby refid="class_screen__1_1aadc6fa08186fec5e0f227ca362ab582b" compoundref="main_8cc" startline="910" endline="910">Screen_1::~Screen_1</referencedby>
+        <referencedby refid="main_8cc_1ac0f2228420376f4db7e1274f2b41667c" compoundref="main_8cc" startline="1023" endline="3417">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_screen__0_1ac649cf14d66ddc24e102f69ecbaa6089" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Screen_0::runScreen</definition>
+        <argsstring>(sf::RenderWindow &amp;app)</argsstring>
+        <name>runScreen</name>
+        <reimplements refid="class_multi_screen_1a76ec369d025ed4dafdf81fdf5100937b">runScreen</reimplements>
+        <param>
+          <type>sf::RenderWindow &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="815" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="828" bodyend="902"/>
+        <referencedby refid="class_screen__0_1a78d663eb8b65132fb22239ef1e945da9" compoundref="main_8cc" startline="813" endline="813">~Screen_0</referencedby>
+        <referencedby refid="class_screen__1_1aadc6fa08186fec5e0f227ca362ab582b" compoundref="main_8cc" startline="910" endline="910">Screen_1::~Screen_1</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="456">
+        <label>MultiScreen</label>
+        <link refid="class_multi_screen"/>
+      </node>
+      <node id="455">
+        <label>Screen_0</label>
+        <link refid="class_screen__0"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="458">
+        <label>MultiScreen</label>
+        <link refid="class_multi_screen"/>
+      </node>
+      <node id="457">
+        <label>Screen_0</label>
+        <link refid="class_screen__0"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" line="808" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc" bodystart="807" bodyend="820"/>
+    <listofallmembers>
+      <member refid="class_screen__0_1aedaf055321ad63a3bd2e23d65a6aec45" prot="public" virt="non-virtual"><scope>Screen_0</scope><name>creation</name></member>
+      <member refid="class_screen__0_1a366c0c683b2036c689f2fb6f552fae84" prot="private" virt="non-virtual"><scope>Screen_0</scope><name>m_onScreen</name></member>
+      <member refid="class_multi_screen_1aa3f02b0e149b776bbdfc72b2837021bd" prot="public" virt="non-virtual"><scope>Screen_0</scope><name>MultiScreen</name></member>
+      <member refid="class_screen__0_1ac649cf14d66ddc24e102f69ecbaa6089" prot="public" virt="virtual"><scope>Screen_0</scope><name>runScreen</name></member>
+      <member refid="class_screen__0_1a0e2f94204a941f749ecc984b7c26a4e0" prot="public" virt="non-virtual"><scope>Screen_0</scope><name>Screen_0</name></member>
+      <member refid="class_multi_screen_1a1b57e27d1b490cd40fd67cf4aca01f2c" prot="public" virt="virtual"><scope>Screen_0</scope><name>~MultiScreen</name></member>
+      <member refid="class_screen__0_1a78d663eb8b65132fb22239ef1e945da9" prot="public" virt="virtual"><scope>Screen_0</scope><name>~Screen_0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

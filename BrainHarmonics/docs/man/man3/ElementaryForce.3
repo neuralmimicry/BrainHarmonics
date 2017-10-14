@@ -1,0 +1,348 @@
+.TH "ElementaryForce" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ElementaryForce
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <elementaryforce\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBElementaryForce\fP ()"
+.br
+.ti -1c
+.RI "\fBElementaryForce\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBElementaryForce\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBElementaryForce\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~ElementaryForce\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBApplyEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBElementaryForce\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 24 of file elementaryforce\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ElementaryForce::ElementaryForce ()\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file elementaryforce\&.h\&.
+.SS "ElementaryForce::ElementaryForce (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file elementaryforce\&.h\&.
+.SS "ElementaryForce::ElementaryForce (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file elementaryforce\&.h\&.
+.SS "ElementaryForce::ElementaryForce (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 34 of file elementaryforce\&.h\&.
+.SS "virtual ElementaryForce::~ElementaryForce ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 52 of file elementaryforce\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double ElementaryForce::ApplyElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 61 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 62 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+
+.SS "double ElementaryForce::ApplyGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 58 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 63 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 64 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 65 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 59 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::ApplyWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 60 of file elementaryforce\&.cc\&.
+.SS "unsigned int ElementaryForce::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 47 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 52 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 53 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 48 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetGravitation (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 49 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetStrong (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 54 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 55 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 56 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetWeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 50 of file elementaryforce\&.cc\&.
+.SS "double ElementaryForce::GetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 51 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 77 of file elementaryforce\&.cc\&.
+.SS "bool ElementaryForce::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 20 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 67 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 71 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 72 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+
+.SS "void ElementaryForce::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 68 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 73 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 74 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 75 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 69 of file elementaryforce\&.cc\&.
+.SS "void ElementaryForce::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 70 of file elementaryforce\&.cc\&.
+.SS "int ElementaryForce::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 80 of file elementaryforce\&.cc\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBElementaryForce\fP\fC [friend]\fP"
+
+.PP
+Definition at line 26 of file elementaryforce\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

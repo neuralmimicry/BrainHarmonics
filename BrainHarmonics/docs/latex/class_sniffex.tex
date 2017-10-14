@@ -1,0 +1,173 @@
+\hypertarget{class_sniffex}{}\section{Sniffex Class Reference}
+\label{class_sniffex}\index{Sniffex@{Sniffex}}
+
+
+{\ttfamily \#include $<$sniffex.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__ethernet}{sniff\+\_\+ethernet}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__ip}{sniff\+\_\+ip}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__tcp}{sniff\+\_\+tcp}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef u\+\_\+int \hyperlink{class_sniffex_a83629f6a3ec687dd2bb381e9bf157d4f}{tcp\+\_\+seq}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_sniffex_a3d4ef3c90e55035eadca2d577004cd14}{got\+\_\+packet} (u\+\_\+char $\ast$args, const struct pcap\+\_\+pkthdr $\ast$header, const u\+\_\+char $\ast$packet)
+\item 
+void \hyperlink{class_sniffex_a1b24163d441d38f3672800c3de85d149}{print\+\_\+payload} (const u\+\_\+char $\ast$payload, int len)
+\item 
+void \hyperlink{class_sniffex_aec1e34cb4b2ff906304f957c205707ea}{print\+\_\+hex\+\_\+ascii\+\_\+line} (const u\+\_\+char $\ast$payload, int len, int offset)
+\item 
+void \hyperlink{class_sniffex_ab32951f576e7cd62caf4fe1c5b085b4e}{print\+\_\+app\+\_\+banner} (void)
+\item 
+void \hyperlink{class_sniffex_aea81794fe2ac6e2b857eef01c3b109e5}{print\+\_\+app\+\_\+usage} (void)
+\item 
+int \hyperlink{class_sniffex_a41e146d588c285c94c0beee223d8552b}{sniffexmain} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 232 of file sniffex.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_sniffex_a83629f6a3ec687dd2bb381e9bf157d4f}\label{class_sniffex_a83629f6a3ec687dd2bb381e9bf157d4f}} 
+\index{Sniffex@{Sniffex}!tcp\+\_\+seq@{tcp\+\_\+seq}}
+\index{tcp\+\_\+seq@{tcp\+\_\+seq}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{tcp\+\_\+seq}{tcp\_seq}}
+{\footnotesize\ttfamily typedef u\+\_\+int \hyperlink{class_sniffex_a83629f6a3ec687dd2bb381e9bf157d4f}{Sniffex\+::tcp\+\_\+seq}}
+
+
+
+Definition at line 263 of file sniffex.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sniffex_a3d4ef3c90e55035eadca2d577004cd14}\label{class_sniffex_a3d4ef3c90e55035eadca2d577004cd14}} 
+\index{Sniffex@{Sniffex}!got\+\_\+packet@{got\+\_\+packet}}
+\index{got\+\_\+packet@{got\+\_\+packet}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{got\+\_\+packet()}{got\_packet()}}
+{\footnotesize\ttfamily void Sniffex\+::got\+\_\+packet (\begin{DoxyParamCaption}\item[{u\+\_\+char $\ast$}]{args,  }\item[{const struct pcap\+\_\+pkthdr $\ast$}]{header,  }\item[{const u\+\_\+char $\ast$}]{packet }\end{DoxyParamCaption})}
+
+
+
+Definition at line 144 of file sniffex.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sniffex_a3d4ef3c90e55035eadca2d577004cd14_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sniffex_ab32951f576e7cd62caf4fe1c5b085b4e}\label{class_sniffex_ab32951f576e7cd62caf4fe1c5b085b4e}} 
+\index{Sniffex@{Sniffex}!print\+\_\+app\+\_\+banner@{print\+\_\+app\+\_\+banner}}
+\index{print\+\_\+app\+\_\+banner@{print\+\_\+app\+\_\+banner}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{print\+\_\+app\+\_\+banner()}{print\_app\_banner()}}
+{\footnotesize\ttfamily void Sniffex\+::print\+\_\+app\+\_\+banner (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file sniffex.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_sniffex_ab32951f576e7cd62caf4fe1c5b085b4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sniffex_aea81794fe2ac6e2b857eef01c3b109e5}\label{class_sniffex_aea81794fe2ac6e2b857eef01c3b109e5}} 
+\index{Sniffex@{Sniffex}!print\+\_\+app\+\_\+usage@{print\+\_\+app\+\_\+usage}}
+\index{print\+\_\+app\+\_\+usage@{print\+\_\+app\+\_\+usage}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{print\+\_\+app\+\_\+usage()}{print\_app\_usage()}}
+{\footnotesize\ttfamily void Sniffex\+::print\+\_\+app\+\_\+usage (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file sniffex.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_sniffex_aea81794fe2ac6e2b857eef01c3b109e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sniffex_aec1e34cb4b2ff906304f957c205707ea}\label{class_sniffex_aec1e34cb4b2ff906304f957c205707ea}} 
+\index{Sniffex@{Sniffex}!print\+\_\+hex\+\_\+ascii\+\_\+line@{print\+\_\+hex\+\_\+ascii\+\_\+line}}
+\index{print\+\_\+hex\+\_\+ascii\+\_\+line@{print\+\_\+hex\+\_\+ascii\+\_\+line}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{print\+\_\+hex\+\_\+ascii\+\_\+line()}{print\_hex\_ascii\_line()}}
+{\footnotesize\ttfamily void Sniffex\+::print\+\_\+hex\+\_\+ascii\+\_\+line (\begin{DoxyParamCaption}\item[{const u\+\_\+char $\ast$}]{payload,  }\item[{int}]{len,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file sniffex.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sniffex_aec1e34cb4b2ff906304f957c205707ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sniffex_a1b24163d441d38f3672800c3de85d149}\label{class_sniffex_a1b24163d441d38f3672800c3de85d149}} 
+\index{Sniffex@{Sniffex}!print\+\_\+payload@{print\+\_\+payload}}
+\index{print\+\_\+payload@{print\+\_\+payload}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{print\+\_\+payload()}{print\_payload()}}
+{\footnotesize\ttfamily void Sniffex\+::print\+\_\+payload (\begin{DoxyParamCaption}\item[{const u\+\_\+char $\ast$}]{payload,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file sniffex.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_sniffex_a1b24163d441d38f3672800c3de85d149_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_sniffex_a1b24163d441d38f3672800c3de85d149_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sniffex_a41e146d588c285c94c0beee223d8552b}\label{class_sniffex_a41e146d588c285c94c0beee223d8552b}} 
+\index{Sniffex@{Sniffex}!sniffexmain@{sniffexmain}}
+\index{sniffexmain@{sniffexmain}!Sniffex@{Sniffex}}
+\subsubsection{\texorpdfstring{sniffexmain()}{sniffexmain()}}
+{\footnotesize\ttfamily int Sniffex\+::sniffexmain (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file sniffex.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_sniffex_a41e146d588c285c94c0beee223d8552b_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{sniffex_8h}{sniffex.\+h}\item 
+Brain\+Harmonics/\hyperlink{sniffex_8cc}{sniffex.\+cc}\end{DoxyCompactItemize}

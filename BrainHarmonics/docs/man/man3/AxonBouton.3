@@ -1,0 +1,222 @@
+.TH "AxonBouton" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AxonBouton
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <axonbouton\&.h>\fP
+.PP
+Inherits \fBAxonBranch\fP\&.
+.PP
+Inherited by \fBSynapticVesicle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAxonBouton\fP ()"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBranch\fP &axonbranch_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~AxonBouton\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBCreateSynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBCreateSynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBCloneSynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBCloneSynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBDestroySynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBDestroySynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBAddSynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBAddSynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBRemoveSynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBRemoveSynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBAxonBouton\fP * \fBGetSynapticVesicle\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBGetSynapticVesicles\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowthSurface\fP (std::chrono::time_point< \fBClock\fP > event_time, double surf_change)"
+.br
+.ti -1c
+.RI "int \fBGrowthVolume\fP (std::chrono::time_point< \fBClock\fP > event_time, double vol_change)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBAxonBouton\fP * > \fBsynapticvesicle_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 14 of file axonbouton\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AxonBouton::AxonBouton ()\fC [inline]\fP"
+
+.PP
+Definition at line 17 of file axonbouton\&.h\&.
+.SS "AxonBouton::AxonBouton (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 19 of file axonbouton\&.h\&.
+.SS "AxonBouton::AxonBouton (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file axonbouton\&.h\&.
+.SS "AxonBouton::AxonBouton (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBranch\fP & axonbranch_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file axonbouton\&.h\&.
+.SS "virtual AxonBouton::~AxonBouton ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 36 of file axonbouton\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAxonBouton\fP * AxonBouton::AddSynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP * add_object)"
+
+.PP
+Definition at line 115 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::AddSynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> add_objects)"
+
+.PP
+Definition at line 126 of file axonbouton\&.cc\&.
+.SS "\fBAxonBouton\fP * AxonBouton::CloneSynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 100 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::CloneSynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 95 of file axonbouton\&.cc\&.
+.SS "\fBAxonBouton\fP * AxonBouton::CreateSynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 62 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::CreateSynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 73 of file axonbouton\&.cc\&.
+.SS "\fBAxonBouton\fP * AxonBouton::DestroySynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonBouton\fP * destroy_object)"
+
+.PP
+Definition at line 110 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::DestroySynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonBouton\fP *> destruction_list)"
+
+.PP
+Definition at line 105 of file axonbouton\&.cc\&.
+.SS "unsigned int AxonBouton::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 37 of file axonbouton\&.h\&.
+.SS "double AxonBouton::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file axonbouton\&.h\&.
+.SS "\fBAxonBouton\fP * AxonBouton::GetSynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 159 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::GetSynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 164 of file axonbouton\&.cc\&.
+.SS "int AxonBouton::GrowthSurface (std::chrono::time_point< \fBClock\fP > event_time, double surf_change)"
+
+.PP
+Definition at line 169 of file axonbouton\&.cc\&.
+.SS "int AxonBouton::GrowthVolume (std::chrono::time_point< \fBClock\fP > event_time, double vol_change)"
+
+.PP
+Definition at line 176 of file axonbouton\&.cc\&.
+.SS "\fBAxonBouton\fP * AxonBouton::RemoveSynapticVesicle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 148 of file axonbouton\&.cc\&.
+.SS "std::vector< \fBAxonBouton\fP * > AxonBouton::RemoveSynapticVesicles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 154 of file axonbouton\&.cc\&.
+.SS "bool AxonBouton::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 21 of file axonbouton\&.cc\&.
+.SS "void AxonBouton::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBAxon\fP\&.
+.PP
+Reimplemented in \fBSynapticVesicle\fP\&.
+.PP
+Definition at line 40 of file axonbouton\&.h\&.
+.SS "void AxonBouton::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file axonbouton\&.h\&.
+.SS "int AxonBouton::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 184 of file axonbouton\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBAxonBouton\fP*> AxonBouton::synapticvesicle_list\fC [protected]\fP"
+
+.PP
+Definition at line 79 of file axonbouton\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

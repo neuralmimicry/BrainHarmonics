@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="neuron_8h" kind="file" language="C++">
+    <compoundname>neuron.h</compoundname>
+    <includes refid="cognitivenetwork_8h" local="yes">cognitivenetwork.h</includes>
+    <includedby refid="soma_8h" local="yes">BrainHarmonics/soma.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="membrane_8h" local="yes">BrainHarmonics/membrane.h</includedby>
+    <includedby refid="cognitivenetwork_8cc" local="yes">BrainHarmonics/cognitivenetwork.cc</includedby>
+    <includedby refid="interneuronspace_8cc" local="yes">BrainHarmonics/interneuronspace.cc</includedby>
+    <includedby refid="neuron_8cc" local="yes">BrainHarmonics/neuron.cc</includedby>
+    <includedby refid="orbital_8cc" local="yes">BrainHarmonics/orbital.cc</includedby>
+    <includedby refid="synapse_8cc" local="yes">BrainHarmonics/synapse.cc</includedby>
+    <incdepgraph>
+      <node id="1103">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>vector</label>
+      </node>
+      <node id="1107">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>math.h</label>
+      </node>
+      <node id="1102">
+        <label>BrainHarmonics/neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="1103" relation="include">
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>iostream</label>
+      </node>
+      <node id="1108">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1124">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="1112">
+        <label>BrainHarmonics/axonhillock.h</label>
+        <link refid="axonhillock_8h"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>BrainHarmonics/synapticvesicle.cc</label>
+        <link refid="synapticvesicle_8cc"/>
+      </node>
+      <node id="1141">
+        <label>BrainHarmonics/orbital.cc</label>
+        <link refid="orbital_8cc"/>
+      </node>
+      <node id="1140">
+        <label>BrainHarmonics/cognitivenetwork.cc</label>
+        <link refid="cognitivenetwork_8cc"/>
+      </node>
+      <node id="1117">
+        <label>BrainHarmonics/axonbouton.cc</label>
+        <link refid="axonbouton_8cc"/>
+      </node>
+      <node id="1130">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1119">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1123">
+        <label>BrainHarmonics/axonhillock.cc</label>
+        <link refid="axonhillock_8cc"/>
+      </node>
+      <node id="1113">
+        <label>BrainHarmonics/axon.h</label>
+        <link refid="axon_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1135">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="1139">
+        <label>BrainHarmonics/membranechannel.cc</label>
+        <link refid="membranechannel_8cc"/>
+      </node>
+      <node id="1134">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="1122">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+      <node id="1132">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1114">
+        <label>BrainHarmonics/axon.cc</label>
+        <link refid="axon_8cc"/>
+      </node>
+      <node id="1129">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1131">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1136">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+      </node>
+      <node id="1115">
+        <label>BrainHarmonics/axonbranch.h</label>
+        <link refid="axonbranch_8h"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>BrainHarmonics/neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1141" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>BrainHarmonics/axonbranch.cc</label>
+        <link refid="axonbranch_8cc"/>
+      </node>
+      <node id="1116">
+        <label>BrainHarmonics/axonbouton.h</label>
+        <link refid="axonbouton_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>BrainHarmonics/synapticvesicle.h</label>
+        <link refid="synapticvesicle_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+      </node>
+      <node id="1138">
+        <label>BrainHarmonics/membrane.cc</label>
+        <link refid="membrane_8cc"/>
+      </node>
+      <node id="1133">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+      <node id="1137">
+        <label>BrainHarmonics/membranechannel.h</label>
+        <link refid="membranechannel_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_neuron" prot="public">Neuron</innerclass>
+    <innerclass refid="struct_neuron_1_1_object_connection" prot="protected">Neuron::ObjectConnection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>neuron.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>03/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_NEURON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_NEURON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cognitivenetwork_8h" kindref="compound">cognitivenetwork.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_neuron" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_neuron" kindref="compound">Neuron</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="class_neuron_1a2ae3e36fe53bb2c406559e5a7c309027" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_orbital" kindref="compound">Orbital</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_neuron_1a823487d01615fadb8ac19a2768dd9d96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron_1a823487d01615fadb8ac19a2768dd9d96" kindref="member">Neuron</ref>()<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20" refid="class_neuron_1acbc433cac4f27aa7f4e05be26c336aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron_1acbc433cac4f27aa7f4e05be26c336aa5" kindref="member">Neuron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="class_neuron_1a4611499895417d44250c452d0fc719a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron_1a4611499895417d44250c452d0fc719a6" kindref="member">Neuron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="class_neuron_1a6839febd20fb8f776151e00142411a56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron_1a6839febd20fb8f776151e00142411a56" kindref="member">Neuron</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>&amp;<sp/>cognitivenetwork_connector)<sp/>:<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>(cognitivenetwork_connector)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>neuron<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>neuron_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron_1a4c154fecb0b689d7da9d8d274f067ccf" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Neuron&quot;</highlight><highlight class="normal">,<sp/>neuron_type);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_neuron_1aecd41febe74ef417230cd74af0c8b801" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1aecd41febe74ef417230cd74af0c8b801" kindref="member">~Neuron</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="class_neuron_1a0b5fe55bf939808986b3697d18a834f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a0b5fe55bf939808986b3697d18a834f4" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>neuronCounter;<sp/>}</highlight></codeline>
+<codeline lineno="41" refid="class_neuron_1a93cce70c19c8e70accaa31908d3f29f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a93cce70c19c8e70accaa31908d3f29f6" kindref="member">GetCapacity</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>neuronCapacity;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" kindref="member">SetCapacity</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>neuronCapacity<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="43" refid="class_neuron_1a745b090da1b8f8fc7e3cf0ca06dfb117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a745b090da1b8f8fc7e3cf0ca06dfb117" kindref="member">GetUsage</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>neuronUsage;<sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" kindref="member">SetUsage</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>neuronUsage<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_neuron_1a91dd5325856e246d98c2864e1c955972" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a91dd5325856e246d98c2864e1c955972" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_neuron_1a94accac3223afdecd1edf25e6db59ace" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a94accac3223afdecd1edf25e6db59ace" kindref="member">GetGateKeeper</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_GateKeeper;<sp/>}</highlight></codeline>
+<codeline lineno="48" refid="class_neuron_1a794c8fa270ea0600dab4fd13c25912fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a794c8fa270ea0600dab4fd13c25912fd" kindref="member">GetChannelMin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ChannelMin;<sp/>}</highlight></codeline>
+<codeline lineno="49" refid="class_neuron_1ae8b6c47bebe302e62721dc4a6e447ca2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1ae8b6c47bebe302e62721dc4a6e447ca2" kindref="member">GetChannelMax</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_ChannelMax;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_neuron_1adfee1a62df820344b84fe2020451b24f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1adfee1a62df820344b84fe2020451b24f" kindref="member">GetDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_disabled;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_neuron_1a98f326ea86e6e8371b639609a4495c37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a98f326ea86e6e8371b639609a4495c37" kindref="member">GetNeuronType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>neuron_type;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_neuron_1a0573244d3c78a22a45c249db536cbb68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a0573244d3c78a22a45c249db536cbb68" kindref="member">GetRestingPotential</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_RestingPotential;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_neuron_1aff3a33f5d8ef5dacdec9c03df50f168c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1aff3a33f5d8ef5dacdec9c03df50f168c" kindref="member">GetNeuronDeviceTag</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Tag;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="class_neuron_1aa6f1237ed89c48eb57610083edf43efa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1aa6f1237ed89c48eb57610083edf43efa" kindref="member">GetSomaPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>soma_pool;<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" kindref="member">SetSomaPool</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_pool)<sp/>{<sp/>soma_pool<sp/>=<sp/>set_pool;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="59" refid="class_neuron_1a5efa690ce4d8ff2f8dfb1fbfd84c5279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a5efa690ce4d8ff2f8dfb1fbfd84c5279" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="60" refid="class_neuron_1a492f597021faf1b74942bc75364c3c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a492f597021faf1b74942bc75364c3c22" kindref="member">SetGateKeeper</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_GateKeeper<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" kindref="member">SetChannelMin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_ChannelMin<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" kindref="member">SetChannelMax</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_ChannelMax<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" kindref="member">SetDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_disabled<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="class_neuron_1a32fe82aa21f8a68392d696eea3a34c99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a32fe82aa21f8a68392d696eea3a34c99" kindref="member">toggleDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>object_disabled<sp/>=<sp/>!object_disabled;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" kindref="member">SetNeuronType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>neuron_type<sp/>=<sp/>val;<sp/><ref refid="class_neuron_1a4c154fecb0b689d7da9d8d274f067ccf" kindref="member">ResetParameters</ref>(event_time);<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" kindref="member">SetNeuronDeviceTag</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Tag<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1ab371e2dacf2cdde8db5547b72fb45ca1" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a4c154fecb0b689d7da9d8d274f067ccf" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a82d0a4739244d79ff929be01eeb0be28" kindref="member">OpenGate</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a32593a869b25c778c1856c36704f49cf" kindref="member">CreateSoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a2016d83b02bfe9e5548d5c24ef31dded" kindref="member">CreateSomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a7706e0f722c70138458423c07b6b153b" kindref="member">CloneSoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a508841fa635a6e89609c514a79ea59da" kindref="member">CloneSomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a6ff7510f73e29c31003b016bdcb4a70e" kindref="member">DestroySoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a32b3a98eec58dc66481a2b877a7592cb" kindref="member">DestroySomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a6198fa352056e3bbe1e979adf088b900" kindref="member">AddSoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a78a0f48a669b6ea20280829304e51de2" kindref="member">AddSomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a4f8c2f0c1b294493a7c581a7f46c2863" kindref="member">RemoveSoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a976b1bab63d0bd21b1c8c8e1cfbd17fe" kindref="member">RemoveSomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a8539a7965349078a7b1c1265895daefa" kindref="member">GetSoma</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a867fbd498b54c115a2c8769f83c48020" kindref="member">GetSomas</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1af06efbcc1a96af0290673e9e048267cf" kindref="member">CreateMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a5f6f460c6a98319a05c3ba06d14e6f60" kindref="member">CreateMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1ab85f7c42466657095efb3aca5a9ee71d" kindref="member">CloneMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1ae119d77522a4f11f5d9b1e935a9c80ba" kindref="member">CloneMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a127d1b915e976c63e731a94b7d27e0b1" kindref="member">DestroyMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1ab77feff95ed7127400a4e02648641ff7" kindref="member">DestroyMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a99d4b64f128e2bfbffec3c5d476a2ca3" kindref="member">AddMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a9e1f79bf8e991893f4ef318841932a13" kindref="member">AddMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a190ae0628482048bef95c8b318939322" kindref="member">RemoveMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a3cd5fc6f1a354d99bb8768df7ee40552" kindref="member">RemoveMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuron" kindref="compound">Neuron</ref>*<sp/><sp/><ref refid="class_neuron_1a5bc4e67c5f2d8a3bcd160aa3f5086aec" kindref="member">GetMembrane</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1ac759d9589c0505332e8238cafbc8fa66" kindref="member">GetMembranes</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a82b34717999a29e5413ebfcfa58c9356" kindref="member">Growth</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a06f45a5d1de890da84d3644fe58ea0a9" kindref="member">UpdateCycle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Neuron*&gt;<sp/>set_of_update_pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointer_type);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a55c72e8066caf1ad8e25a2b0b453ee69" kindref="member">UpdateCycle2</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Universe*&gt;<sp/>set_of_update_pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointer_type);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a4d1dc3a9f30196fe2b09dfbfc0a567bb" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="class_neuron_1a9af31418d1232135bf5074f6a3d5dbf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_neuron_1a9af31418d1232135bf5074f6a3d5dbf1" kindref="member">GetVisualisationList</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_neuron_1a00b1e2e5f9d224759df1aa54093092ba" kindref="member">visualisation_list</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133" refid="class_neuron_1abb3745c6a8727f4ceb8db9e2258b90b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1abb3745c6a8727f4ceb8db9e2258b90b5" kindref="member">soma_list</ref>;</highlight></codeline>
+<codeline lineno="134" refid="class_neuron_1a878a5a42025ba8205adeb9a50b2c1457" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Neuron*&gt;<sp/><ref refid="class_neuron_1a878a5a42025ba8205adeb9a50b2c1457" kindref="member">membrane_list</ref>;</highlight></codeline>
+<codeline lineno="135" refid="class_neuron_1a00b1e2e5f9d224759df1aa54093092ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_neuron_1a00b1e2e5f9d224759df1aa54093092ba" kindref="member">visualisation_list</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="struct_neuron_1_1_object_connection" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_neuron_1_1_object_connection" kindref="compound">ObjectConnection</ref></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139" refid="struct_neuron_1_1_object_connection_1a6174f20de091bf9942b14550890f122d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1a6174f20de091bf9942b14550890f122d" kindref="member">object_one_type</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_neuron_1_1_object_connection_1af6bdcfe97aee7b1d47788f92fa57a7a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1af6bdcfe97aee7b1d47788f92fa57a7a8" kindref="member">object_one</ref>;</highlight></codeline>
+<codeline lineno="141" refid="struct_neuron_1_1_object_connection_1a69d9c1f11a36f759b6aef68236b4cd93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1a69d9c1f11a36f759b6aef68236b4cd93" kindref="member">object_two_type</ref>;</highlight></codeline>
+<codeline lineno="142" refid="struct_neuron_1_1_object_connection_1a457a80615d216a9db5e90159294bed48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1a457a80615d216a9db5e90159294bed48" kindref="member">object_two</ref>;</highlight></codeline>
+<codeline lineno="143" refid="struct_neuron_1_1_object_connection_1aaad352b3f1e712aff929a8c2fc370ac1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1aaad352b3f1e712aff929a8c2fc370ac1" kindref="member">object_connection_strength</ref>;</highlight></codeline>
+<codeline lineno="144" refid="struct_neuron_1_1_object_connection_1a52bbd1a5fb20ee3e5e10c36002b4dcba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1a52bbd1a5fb20ee3e5e10c36002b4dcba" kindref="member">object_connection_modifier</ref>;</highlight></codeline>
+<codeline lineno="145" refid="struct_neuron_1_1_object_connection_1a2dd04a4740d11779423a2ba5e94d8f5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="struct_neuron_1_1_object_connection_1a2dd04a4740d11779423a2ba5e94d8f5e" kindref="member">object_two_position</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="class_neuron_1a8259952162df5c8bb66eb78126feafe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;ObjectConnection&gt;<sp/><ref refid="class_neuron_1a8259952162df5c8bb66eb78126feafe6" kindref="member">object_connection_list</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuron_type;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Tag;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>membrane_pool<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_RestingPotential;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_addStatus;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Spike;<sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_GateKeeper;<sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_ChannelMin;<sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_ChannelMax;<sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeDilation;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeThreshold;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuronCounter;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuronCapacity;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuronUsage;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>soma_pool<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BRAINHARMONICS_NEURON_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/neuron.h"/>
+  </compounddef>
+</doxygen>

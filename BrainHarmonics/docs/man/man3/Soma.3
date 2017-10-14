@@ -1,0 +1,431 @@
+.TH "Soma" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Soma
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <soma\&.h>\fP
+.PP
+Inherits \fBNeuron\fP\&.
+.PP
+Inherited by \fBAxonHillock\fP, and \fBDendrite\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBObjectConnection\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSoma\fP ()"
+.br
+.ti -1c
+.RI "\fBSoma\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBSoma\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBSoma\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP &neuron_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Soma\fP ()"
+.br
+.ti -1c
+.RI "double \fBTimeFunction\fP (double timeDelay, double timeDilation)"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetAxonHillockPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBSetAxonHillockPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "int \fBGetDendritePool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBSetDendritePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBCreateAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBCreateAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBCloneAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBCloneAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBDestroyAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBDestroyAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBAddAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBAddAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBRemoveAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBRemoveAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBGetAxonHillock\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBGetAxonHillocks\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBCreateDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBCreateDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBCloneDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBCloneDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBDestroyDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBDestroyDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBAddDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBAddDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBRemoveDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBRemoveDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBSoma\fP * \fBGetDendrite\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBGetDendrites\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowth\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBaxonhillock_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBSoma\fP * > \fBdendrite_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBObjectConnection\fP > \fBobject_connection_list\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBDimension\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 15 of file soma\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Soma::Soma ()\fC [inline]\fP"
+
+.PP
+Definition at line 20 of file soma\&.h\&.
+.SS "Soma::Soma (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 22 of file soma\&.h\&.
+.SS "Soma::Soma (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file soma\&.h\&.
+.SS "Soma::Soma (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP & neuron_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file soma\&.h\&.
+.SS "virtual Soma::~Soma ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 40 of file soma\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSoma\fP * Soma::AddAxonHillock (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * add_object)"
+
+.PP
+Definition at line 145 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::AddAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> add_objects)"
+
+.PP
+Definition at line 156 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::AddDendrite (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * add_object)"
+
+.PP
+Definition at line 253 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::AddDendrites (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> add_objects)"
+
+.PP
+Definition at line 264 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::CloneAxonHillock (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 130 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::CloneAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 125 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::CloneDendrite (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 238 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::CloneDendrites (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 233 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::CreateAxonHillock (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 92 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::CreateAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 103 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::CreateDendrite (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 200 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::CreateDendrites (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 211 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::DestroyAxonHillock (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * destroy_object)"
+
+.PP
+Definition at line 140 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::DestroyAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> destruction_list)"
+
+.PP
+Definition at line 135 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::DestroyDendrite (std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP * destroy_object)"
+
+.PP
+Definition at line 248 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::DestroyDendrites (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSoma\fP *> destruction_list)"
+
+.PP
+Definition at line 243 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::GetAxonHillock (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 189 of file soma\&.cc\&.
+.SS "int Soma::GetAxonHillockPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file soma\&.h\&.
+.SS "std::vector< \fBSoma\fP * > Soma::GetAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 194 of file soma\&.cc\&.
+.SS "unsigned int Soma::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file soma\&.h\&.
+.SS "\fBSoma\fP * Soma::GetDendrite (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 297 of file soma\&.cc\&.
+.SS "int Soma::GetDendritePool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file soma\&.h\&.
+.SS "std::vector< \fBSoma\fP * > Soma::GetDendrites (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 302 of file soma\&.cc\&.
+.SS "double Soma::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file soma\&.h\&.
+.SS "double Soma::GetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file soma\&.h\&.
+.SS "double Soma::GetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file soma\&.h\&.
+.SS "double Soma::GetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file soma\&.h\&.
+.SS "double Soma::GetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file soma\&.h\&.
+.SS "int Soma::Growth (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 308 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::RemoveAxonHillock (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 178 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::RemoveAxonHillocks (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 184 of file soma\&.cc\&.
+.SS "\fBSoma\fP * Soma::RemoveDendrite (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 286 of file soma\&.cc\&.
+.SS "std::vector< \fBSoma\fP * > Soma::RemoveDendrites (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 292 of file soma\&.cc\&.
+.SS "bool Soma::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 27 of file soma\&.cc\&.
+.SS "int Soma::SetAxonHillockPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file soma\&.h\&.
+.SS "void Soma::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Reimplemented in \fBSynapticVesicle\fP\&.
+.PP
+Definition at line 64 of file soma\&.h\&.
+.SS "int Soma::SetDendritePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file soma\&.h\&.
+.SS "void Soma::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file soma\&.h\&.
+.SS "void Soma::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 67 of file soma\&.h\&.
+.SS "void Soma::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file soma\&.h\&.
+.SS "void Soma::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 68 of file soma\&.h\&.
+.SS "void Soma::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file soma\&.h\&.
+.SS "void Soma::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 21 of file soma\&.cc\&.
+.SS "double Soma::TimeFunction (double timeDelay, double timeDilation)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file soma\&.h\&.
+.SS "int Soma::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 332 of file soma\&.cc\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBDimension\fP\fC [friend]\fP"
+
+.PP
+Definition at line 17 of file soma\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBSoma\fP*> Soma::axonhillock_list\fC [protected]\fP"
+
+.PP
+Definition at line 127 of file soma\&.h\&.
+.SS "std::vector<\fBSoma\fP*> Soma::dendrite_list\fC [protected]\fP"
+
+.PP
+Definition at line 128 of file soma\&.h\&.
+.SS "std::vector<\fBObjectConnection\fP> Soma::object_connection_list\fC [protected]\fP"
+
+.PP
+Definition at line 142 of file soma\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

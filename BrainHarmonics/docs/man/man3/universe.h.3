@@ -1,0 +1,221 @@
+.TH "BrainHarmonics/universe.h" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BrainHarmonics/universe.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <chrono>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBUniverse\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEG2RAD\fP   0\&.01745329252f"
+.br
+.ti -1c
+.RI "#define \fBRAD2DEG\fP   57\&.29577951f"
+.br
+.ti -1c
+.RI "#define \fBONERAD\fP   3\&.14159265f"
+.br
+.ti -1c
+.RI "#define \fBTWORAD\fP   6\&.28318530f"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_GEN1\fP   1000000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_GEN1\fP   1100000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_MEMBRANE_GEN1\fP   1110000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_GEN1\fP   1120000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1\fP   1121000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_GEN1\fP   1122000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_GEN1\fP   1122100000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1\fP   1122110000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_GEN1\fP   1121100000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1\fP   1121110000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1\fP   1121111000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_NEURON_GEN1\fP   2100000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_GEN1\fP   2110000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1\fP   2120000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1\fP   2111000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1\fP   2111100000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1\fP   2111110000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1\fP   2111111000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_GEN1\fP   2112000000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1\fP   2112100000"
+.br
+.ti -1c
+.RI "#define \fBTYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1\fP   2112110000"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::chrono::high_resolution_clock \fBClock\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DEG2RAD   0\&.01745329252f"
+Avoids having to recalculate a constant PI/180 
+.PP
+Definition at line 19 of file universe\&.h\&.
+.SS "#define ONERAD   3\&.14159265f"
+Avoids having to recalculate 
+.PP
+Definition at line 27 of file universe\&.h\&.
+.SS "#define RAD2DEG   57\&.29577951f"
+Avoids having to recalculate a constant 180/PI 
+.PP
+Definition at line 23 of file universe\&.h\&.
+.SS "#define TWORAD   6\&.28318530f"
+Avoids having to recalculate 
+.PP
+Definition at line 31 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_GEN1   1000000000"
+
+.PP
+Definition at line 37 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_GEN1   1100000000"
+
+.PP
+Definition at line 38 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_MEMBRANE_GEN1   1110000000"
+
+.PP
+Definition at line 39 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1   1121111000"
+
+.PP
+Definition at line 47 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1   1121110000"
+
+.PP
+Definition at line 46 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_GEN1   1121100000"
+
+.PP
+Definition at line 45 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1   1121000000"
+
+.PP
+Definition at line 41 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1   1122110000"
+
+.PP
+Definition at line 44 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_GEN1   1122100000"
+
+.PP
+Definition at line 43 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_GEN1   1122000000"
+
+.PP
+Definition at line 42 of file universe\&.h\&.
+.SS "#define TYPE_NEURON_PYRAMIDAL_SOMA_GEN1   1120000000"
+
+.PP
+Definition at line 40 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_NEURON_GEN1   2100000000"
+
+.PP
+Definition at line 48 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1   2120000000"
+
+.PP
+Definition at line 50 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1   2111111000"
+
+.PP
+Definition at line 54 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1   2111110000"
+
+.PP
+Definition at line 53 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1   2111100000"
+
+.PP
+Definition at line 52 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1   2111000000"
+
+.PP
+Definition at line 51 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1   2112110000"
+
+.PP
+Definition at line 57 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1   2112100000"
+
+.PP
+Definition at line 56 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_GEN1   2112000000"
+
+.PP
+Definition at line 55 of file universe\&.h\&.
+.SS "#define TYPE_SOLID_POLYHEDRON_SOMA_GEN1   2110000000"
+
+.PP
+Definition at line 49 of file universe\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::chrono::high_resolution_clock \fBClock\fP"
+
+.PP
+Definition at line 64 of file universe\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

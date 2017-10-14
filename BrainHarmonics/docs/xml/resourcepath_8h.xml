@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="resourcepath_8h" kind="file" language="C++">
+    <compoundname>resourcepath.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="resourcepath_8cc" local="yes">/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.cc</includedby>
+    <incdepgraph>
+      <node id="1394">
+        <label>string</label>
+      </node>
+      <node id="1393">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.h</label>
+        <link refid="resourcepath.h"/>
+        <childnode refid="1394" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1396">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.cc</label>
+        <link refid="resourcepath_8cc"/>
+      </node>
+      <node id="1395">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.h</label>
+        <link refid="resourcepath.h"/>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="resourcepath_8h_1a377b456e3964835648f2d726c2e4f510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string resourcePath</definition>
+        <argsstring>(void)</argsstring>
+        <name>resourcePath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the path to the resource folder. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The path to the resource folder associate with the main bundle or an empty string is there is no bundle. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.h" line="41" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.cc" bodystart="36" bodyend="55"/>
+        <references refid="main_8cc_1a487a3c399210173e1b3d3a2f275a55b1" compoundref="main_8cc" startline="1014" endline="1021">init</references>
+        <references refid="resourcepath_8cc_1a377b456e3964835648f2d726c2e4f510" compoundref="resourcepath_8cc" startline="36" endline="55">resourcePath</references>
+        <referencedby refid="resourcepath_8h_1a377b456e3964835648f2d726c2e4f510" compoundref="resourcepath_8cc" startline="36" endline="55">resourcePath</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SFML<sp/>-<sp/>Simple<sp/>and<sp/>Fast<sp/>Multimedia<sp/>Library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2007-2015<sp/>Marco<sp/>Antognini<sp/>(antognini.marco@gmail.com),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Laurent<sp/>Gomila<sp/>(laurent@sfml-dev.org)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied<sp/>warranty.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages<sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it<sp/>freely,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>you<sp/>must<sp/>not<sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>If<sp/>you<sp/>use<sp/>this<sp/>software<sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be<sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>and<sp/>must<sp/>not<sp/>be<sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SFML_RESOURCE_PATH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SFML_RESOURCE_PATH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">//<sp/>Headers</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">std::string<sp/><ref refid="resourcepath_8h_1a377b456e3964835648f2d726c2e4f510" kindref="member">resourcePath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SFML_RESOURCE_PATH_H</highlight></codeline>
+    </programlisting>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/resourcepath.h"/>
+  </compounddef>
+</doxygen>

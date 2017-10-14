@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_polygon" kind="class" language="C++" prot="public">
+    <compoundname>Polygon</compoundname>
+    <basecompoundref refid="class_polyhedron" prot="public" virt="non-virtual">Polyhedron</basecompoundref>
+    <derivedcompoundref refid="class_quad" prot="public" virt="non-virtual">Quad</derivedcompoundref>
+    <includes refid="polygon_8h" local="no">polygon.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_polygon_1a4292b71e5bf6d76a09f582dedf81c862" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Polygon::polygonCounter</definition>
+        <argsstring></argsstring>
+        <name>polygonCounter</name>
+        <briefdescription>
+<para>Member variable &quot;polygonCounter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="58" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1aba437ec0b8ab34ca435e1a653c69b558" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Polygon::polygon_type</definition>
+        <argsstring></argsstring>
+        <name>polygon_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="59" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1a46fa35a90ffcf375c8eceb2cf8a169d0" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Polygon::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="60" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1af5b19b47f12f4984521d6f48a45c1428" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Polygon::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="61" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1ada7d263fdf6c7a6138c71ca93bbea02f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Polygon::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="62" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1a1c59030523e7784edf3c17dad240c821" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Polygon::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="63" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_polygon_1a06161c2266baa0d3ef7afeeeccc0547b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Polygon::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="64" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>()</argsstring>
+        <name>Polygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="27" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a023fe85caf3682e46fb6d15d03da3435" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Polygon</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="29" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1aa2a7d4a8a7765c45b834a7ecc198e0c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Polygon</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="31" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a581ad88f80bf40668e6c8b928c908bcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Polygon::Polygon</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Polyhedron &amp;polyhedron_connector)</argsstring>
+        <name>Polygon</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> &amp;</type>
+          <declname>polyhedron_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="33" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="33" bodyend="44"/>
+        <references refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" compoundref="polygon_8cc" startline="19" endline="56">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a873f9acee059f717277b6414102dab16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Polygon::~Polygon</definition>
+        <argsstring>()</argsstring>
+        <name>~Polygon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="45" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="45" bodyend="45"/>
+        <references refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" compoundref="polygon_8cc" startline="19" endline="56">ResetParameters</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Polygon::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="47" column="1" bodyfile="BrainHarmonics/polygon.cc" bodystart="19" bodyend="56"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" compoundref="polygon_8cc" startline="58" endline="88">Update</referencedby>
+        <referencedby refid="class_polygon_1a581ad88f80bf40668e6c8b928c908bcb" compoundref="polygon_8h" startline="33" endline="44">Polygon</referencedby>
+        <referencedby refid="class_polygon_1a873f9acee059f717277b6414102dab16" compoundref="polygon_8h" startline="45" endline="45">~Polygon</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1a344626b07ee8dc40c71c3bec1480d2c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Polygon::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>SetCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="50" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1ad12083d8c152a1979b04bead93b6b730" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Polygon::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_universe_1aa22202ae740eb1355529afcb13285e91">SetCounter</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="52" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="52" bodyend="52"/>
+        <references refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" compoundref="polygon_8cc" startline="58" endline="88">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Polygon::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/polygon.h" line="54" column="1" bodyfile="BrainHarmonics/polygon.cc" bodystart="58" bodyend="88"/>
+        <references refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" compoundref="polygon_8cc" startline="19" endline="56">ResetParameters</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" compoundref="polygon_8h" startline="52" endline="52">SetCounter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="301">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="302">
+        <label>Quad</label>
+        <link refid="class_quad"/>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>Polyhedron</label>
+        <link refid="class_polyhedron"/>
+        <childnode refid="300" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>Solid</label>
+        <link refid="class_solid"/>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="306">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="306" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="304">
+        <label>Polyhedron</label>
+        <link refid="class_polyhedron"/>
+        <childnode refid="305" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>Solid</label>
+        <link refid="class_solid"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/polygon.h" line="25" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="24" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPoints</name></member>
+      <member refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolygon</name></member>
+      <member refid="class_polyhedron_1a9564a286e7323b56667971b851f0674a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolygons</name></member>
+      <member refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolyhedron</name></member>
+      <member refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolyhedrons</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>Polygon</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Polygon</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Polygon</scope><name>AdjustCounters</name></member>
+      <member refid="class_solid_1ab546d607d6f0bf70dc5e6bbac8baf287" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_solid_1a46702e3109994b310eb4f1fba5610e0b" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_solid_1af2b3133138ce2482faa462d07aa23042" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyGravitation</name></member>
+      <member refid="class_solid_1a0801ec0382bc509191575bcf9f5c83c1" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyStrong</name></member>
+      <member refid="class_solid_1abd8fff76385306f97aa65dfd6b867fc6" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_solid_1a07534fa79bb8a6eb32e081e5158ba9e5" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_solid_1a49e35bf258104b7bce225dc21058affb" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyWeak</name></member>
+      <member refid="class_solid_1ad6c28ec896cbcf64e24a7132a144befd" prot="public" virt="virtual"><scope>Polygon</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_polyhedron_1abfacad3a348785dab8819e70bf92d8d1" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ClonePolygon</name></member>
+      <member refid="class_polyhedron_1ab4f57da9595dc92de7340cc46237a2ea" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ClonePolygons</name></member>
+      <member refid="class_solid_1ae83094e9c002a7574db242ed0bff6288" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ClonePolyhedron</name></member>
+      <member refid="class_solid_1a1e650b6d8437acfaf7b9384b885d77bf" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ClonePolyhedrons</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>cognitive_network_list</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_polyhedron_1ae5852dd26065d9f38ed293f8d95106ad" prot="public" virt="non-virtual"><scope>Polygon</scope><name>CreatePolygon</name></member>
+      <member refid="class_polyhedron_1a1848eb8747c1132c40c2d27336af2896" prot="public" virt="non-virtual"><scope>Polygon</scope><name>CreatePolygons</name></member>
+      <member refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" prot="public" virt="non-virtual"><scope>Polygon</scope><name>CreatePolyhedron</name></member>
+      <member refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" prot="public" virt="non-virtual"><scope>Polygon</scope><name>CreatePolyhedrons</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Creation</name></member>
+      <member refid="class_polyhedron_1a2fcc5144ebc64363f40c31d2b980cfaf" prot="public" virt="non-virtual"><scope>Polygon</scope><name>DestroyPolygon</name></member>
+      <member refid="class_polyhedron_1ae372d216765d48b9423ee37a8bf8b282" prot="public" virt="non-virtual"><scope>Polygon</scope><name>DestroyPolygons</name></member>
+      <member refid="class_solid_1a0841900d8ef4b82292ac027c4852b59b" prot="public" virt="non-virtual"><scope>Polygon</scope><name>DestroyPolyhedron</name></member>
+      <member refid="class_solid_1ab1652ee511ed51bbe6a0a3b1854b7974" prot="public" virt="non-virtual"><scope>Polygon</scope><name>DestroyPolyhedrons</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>dimension_list</name></member>
+      <member refid="class_polygon_1a06161c2266baa0d3ef7afeeeccc0547b" prot="private" virt="non-virtual"><scope>Polygon</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ExtendLife</name></member>
+      <member refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GenerateCylinderPoints</name></member>
+      <member refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GenerateSpherePoints</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_polyhedron_1a021ec67f2040f8ec26df64e4b9370521" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetCounter</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetDimensions</name></member>
+      <member refid="class_solid_1a01cd3c441a4e339927c43536de6d9b5e" prot="public" virt="virtual"><scope>Polygon</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_solid_1aff7ec13bcc584d8330e3f3a1b371bbe6" prot="public" virt="virtual"><scope>Polygon</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetEnergy</name></member>
+      <member refid="class_solid_1ab5ecb5598be93fe3cd2a21c0cfd363c8" prot="public" virt="virtual"><scope>Polygon</scope><name>GetGravitation</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetMonomers</name></member>
+      <member refid="class_polyhedron_1a4d61f89c56e15d96008856cfb540d558" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPoint</name></member>
+      <member refid="class_polyhedron_1a1430429d6c8447e90b8c94ca46496a59" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPoints</name></member>
+      <member refid="class_polyhedron_1a8b197b9eb163bdc83d9669d592bacac1" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolygon</name></member>
+      <member refid="class_polyhedron_1adeaf461cc8504a225f6344b954c196a8" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolygons</name></member>
+      <member refid="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolyhedron</name></member>
+      <member refid="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolyhedrons</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GetSolids</name></member>
+      <member refid="class_solid_1ae39d0166456b8feaa39547e5a21c9096" prot="public" virt="virtual"><scope>Polygon</scope><name>GetStrong</name></member>
+      <member refid="class_solid_1ab3a972354b25ad1bbe8c3f3e7638e24c" prot="public" virt="virtual"><scope>Polygon</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_solid_1a9cfde1c3a4b7c6d2a5a3719d74e27237" prot="public" virt="virtual"><scope>Polygon</scope><name>GetStrongResidual</name></member>
+      <member refid="class_solid_1ac8a7738735a6bda4e89414a2b0c370e1" prot="public" virt="virtual"><scope>Polygon</scope><name>GetWeak</name></member>
+      <member refid="class_solid_1ac98f9c827d58a631627423e25dd611ba" prot="public" virt="virtual"><scope>Polygon</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_solid_1a94bb5df6d873c14a94355fc95557efd6" prot="public" virt="non-virtual"><scope>Polygon</scope><name>GluePolyhedrons</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>Polygon</scope><name>IsDead</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>monomer_list</name></member>
+      <member refid="class_polygon_1ada7d263fdf6c7a6138c71ca93bbea02f" prot="private" virt="non-virtual"><scope>Polygon</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual"><scope>Polygon</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual"><scope>Polygon</scope><name>object_energy_threshold</name></member>
+      <member refid="class_polygon_1a1c59030523e7784edf3c17dad240c821" prot="private" virt="non-virtual"><scope>Polygon</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual"><scope>Polygon</scope><name>object_size</name></member>
+      <member refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>point_list</name></member>
+      <member refid="class_solid_1ae2a486e59f11f96a1a39756b3f3da53f" prot="public" virt="virtual"><scope>Polygon</scope><name>PollElementaryForce</name></member>
+      <member refid="class_solid_1ad63206ff20f38b621db482b01801c4c5" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>poly_type_list</name></member>
+      <member refid="class_polygon_1ac183e712f8be1e13f1c9d5b4d4512ead" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polygon_1a023fe85caf3682e46fb6d15d03da3435" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polygon_1aa2a7d4a8a7765c45b834a7ecc198e0c3" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polygon_1a581ad88f80bf40668e6c8b928c908bcb" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polygon</name></member>
+      <member refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>polygon_list</name></member>
+      <member refid="class_polygon_1aba437ec0b8ab34ca435e1a653c69b558" prot="private" virt="non-virtual"><scope>Polygon</scope><name>polygon_type</name></member>
+      <member refid="class_polygon_1a4292b71e5bf6d76a09f582dedf81c862" prot="private" virt="non-virtual"><scope>Polygon</scope><name>polygonCounter</name></member>
+      <member refid="class_polyhedron_1aebdf7ee85eb636069bf93afb4e6a483f" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polyhedron</name></member>
+      <member refid="class_polyhedron_1a304950efef7fb67203d8136578b42535" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polyhedron</name></member>
+      <member refid="class_polyhedron_1a29a4fff595cdb6a557e5f62255e61192" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polyhedron</name></member>
+      <member refid="class_polyhedron_1af5bb1d2a6b04502dfdbfc9f04aafc950" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Polyhedron</name></member>
+      <member refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>polyhedron_list</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>polymer_list</name></member>
+      <member refid="class_polygon_1a46fa35a90ffcf375c8eceb2cf8a169d0" prot="private" virt="non-virtual"><scope>Polygon</scope><name>previous_event_time</name></member>
+      <member refid="class_polyhedron_1a3b411fa617291a2a2d5df92b819285b4" prot="public" virt="non-virtual"><scope>Polygon</scope><name>RemovePolygon</name></member>
+      <member refid="class_polyhedron_1a5c2639b21aec25b76449fdf4c209aad1" prot="public" virt="non-virtual"><scope>Polygon</scope><name>RemovePolygons</name></member>
+      <member refid="class_solid_1a1233a3fe43abca7d2a0f83d724fd6640" prot="public" virt="non-virtual"><scope>Polygon</scope><name>RemovePolyhedron</name></member>
+      <member refid="class_solid_1a0fc53641571eb796c9d6bc33ae7a7138" prot="public" virt="non-virtual"><scope>Polygon</scope><name>RemovePolyhedrons</name></member>
+      <member refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Polygon</scope><name>ReturnEnergy</name></member>
+      <member refid="class_solid_1a37503e6b25f912254414e778af2e75cd" prot="public" virt="virtual"><scope>Polygon</scope><name>SetCharge</name></member>
+      <member refid="class_polygon_1a344626b07ee8dc40c71c3bec1480d2c2" prot="public" virt="non-virtual"><scope>Polygon</scope><name>SetCounter</name></member>
+      <member refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" prot="public" virt="virtual"><scope>Polygon</scope><name>SetCounter</name></member>
+      <member refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" prot="public" virt="non-virtual"><scope>Polygon</scope><name>setCounter</name></member>
+      <member refid="class_solid_1a9a660f9d94f597712c67922aa1d4d795" prot="public" virt="virtual"><scope>Polygon</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_solid_1a6617ae9fe4707d760a23b54eddf00dec" prot="public" virt="virtual"><scope>Polygon</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual"><scope>Polygon</scope><name>SetEnergy</name></member>
+      <member refid="class_solid_1ae237f2c713868c133e28ed7f75fc9125" prot="public" virt="virtual"><scope>Polygon</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>SetLifespan</name></member>
+      <member refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" prot="public" virt="non-virtual"><scope>Polygon</scope><name>SetObjectType</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polygon</scope><name>SetObjectType</name></member>
+      <member refid="class_solid_1a615cb8d1ec1376781726bcefa86339cb" prot="public" virt="virtual"><scope>Polygon</scope><name>SetSpin</name></member>
+      <member refid="class_solid_1a478e15cdf15c5bb01cbcbd5f584ef83a" prot="public" virt="virtual"><scope>Polygon</scope><name>SetStrong</name></member>
+      <member refid="class_solid_1a4342786a7785b1a3816d20de02105bcf" prot="public" virt="virtual"><scope>Polygon</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_solid_1a8b80ebe209fcd3afa4791968127753d0" prot="public" virt="virtual"><scope>Polygon</scope><name>SetStrongResidual</name></member>
+      <member refid="class_solid_1aa28e0f7e4de2fc0c1e28d385214296bf" prot="public" virt="virtual"><scope>Polygon</scope><name>SetWeak</name></member>
+      <member refid="class_solid_1adb34befc66f8c681f3a85c44e0d00e3a" prot="public" virt="virtual"><scope>Polygon</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_solid_1a2cf157c87df66dc3eb8722f9b3ee8f66" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Solid</name></member>
+      <member refid="class_solid_1a00a71dfc929ca50ee9850bdfca5b3fd6" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Solid</name></member>
+      <member refid="class_solid_1a9f5476b751c749af38b349b9fc7e2ba5" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Solid</name></member>
+      <member refid="class_solid_1a80746ad255dded6090e648fc3f0dbd93" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Solid</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>Polygon</scope><name>solid_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>Polygon</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>Polygon</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>Polygon</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_polygon_1af5b19b47f12f4984521d6f48a45c1428" prot="private" virt="non-virtual"><scope>Polygon</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Universe</name></member>
+      <member refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" prot="public" virt="non-virtual"><scope>Polygon</scope><name>Update</name></member>
+      <member refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" prot="public" virt="non-virtual"><scope>Polygon</scope><name>UpdateCycle</name></member>
+      <member refid="class_solid_1a17239817eba0e5870454311857dca736" prot="public" virt="non-virtual" ambiguityscope="Solid::"><scope>Polygon</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Polygon</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>Polygon</scope><name>UseEnergy</name></member>
+      <member refid="class_polygon_1a873f9acee059f717277b6414102dab16" prot="public" virt="virtual"><scope>Polygon</scope><name>~Polygon</name></member>
+      <member refid="class_polyhedron_1a3ad3df8be901a55ddcd97128ac890473" prot="public" virt="virtual"><scope>Polygon</scope><name>~Polyhedron</name></member>
+      <member refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" prot="public" virt="virtual"><scope>Polygon</scope><name>~Solid</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Polygon</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

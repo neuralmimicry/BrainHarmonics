@@ -1,0 +1,546 @@
+\hypertarget{class_dendrite_cleft}{}\section{Dendrite\+Cleft Class Reference}
+\label{class_dendrite_cleft}\index{Dendrite\+Cleft@{Dendrite\+Cleft}}
+
+
+{\ttfamily \#include $<$dendritecleft.\+h$>$}
+
+
+
+Inheritance diagram for Dendrite\+Cleft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_dendrite_cleft__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dendrite\+Cleft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_dendrite_cleft__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dendrite_cleft_a244a2e6377fafdf79df757d39a2684e5}{Dendrite\+Cleft} ()
+\item 
+\hyperlink{class_dendrite_cleft_a335660dfc63f55980b2dcf8849568086}{Dendrite\+Cleft} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_dendrite_cleft_ad4070ce743d8302bc120ea948890ea37}{Dendrite\+Cleft} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_dendrite_cleft_abcb81284cd9bd7ee2863eecfb6b59f62}{Dendrite\+Cleft} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_branch}{Dendrite\+Branch} \&dendritebranch\+\_\+connector)
+\item 
+virtual \hyperlink{class_dendrite_cleft_ad99958c45fa63f2f68b65d7e5ba45b32}{$\sim$\+Dendrite\+Cleft} ()
+\item 
+unsigned int \hyperlink{class_dendrite_cleft_ac567530d9f083e1ee65d5c6484cc9fa7}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_dendrite_cleft_ad673df32db3982b3df745a55bf527834}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_dendrite_cleft_a428b8e5117f381a382e0071b936d42a1}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_dendrite_cleft_a7e09ccb70936deabde9c12457cec949c}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+bool \hyperlink{class_dendrite_cleft_a3fee388d7023cfb460412e0322244ae2}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_ac84d3e0cafecd1436c34162f687e3851}{Create\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_ab34af5363b25c6498aee429725a1c7db}{Create\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_a7650e1115baab30729da0b03a48da851}{Clone\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_a93b542418482f3732380e33346e23bd2}{Clone\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_a86e9943d9d140c2a06d7e222812c9548}{Destroy\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_a630e00e2d1108f2a43bcac9466e4681b}{Destroy\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$ destruction\+\_\+list)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_a65901c5659ca5eac161a26f15e0f437b}{Add\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_a6d29f577ff12366f8f51804b13468395}{Add\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$ add\+\_\+objects)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_afaf06d4516355dfe2e0e4c33a00f0f1d}{Remove\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_ac29b12d4abcc47fa298ab9e95f578f0e}{Remove\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ \hyperlink{class_dendrite_cleft_a5eb3a8f143f63b852b8f5e245d385519}{Get\+Neuroreceptor} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_a4a14361574777fb1d66fd4ed2d4f2492}{Get\+Neuroreceptors} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_dendrite_cleft_af4715ffbf1bf437523d07e37b7abc3e0}{Growth\+Surface} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double surf\+\_\+change)
+\item 
+int \hyperlink{class_dendrite_cleft_a0cb2fc6ad72bba55b5f65130006d4b12}{Growth\+Volume} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double vol\+\_\+change)
+\item 
+int \hyperlink{class_dendrite_cleft_a3a75af4d6fd97c9635134509f170a04e}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ \hyperlink{class_dendrite_cleft_a42de9c556ce58c9f511031361755a0c3}{neuroreceptor\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file dendritecleft.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dendrite_cleft_a244a2e6377fafdf79df757d39a2684e5}\label{class_dendrite_cleft_a244a2e6377fafdf79df757d39a2684e5}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Dendrite\+Cleft()}{DendriteCleft()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Dendrite\+Cleft\+::\+Dendrite\+Cleft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_a335660dfc63f55980b2dcf8849568086}\label{class_dendrite_cleft_a335660dfc63f55980b2dcf8849568086}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Dendrite\+Cleft()}{DendriteCleft()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Dendrite\+Cleft\+::\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_ad4070ce743d8302bc120ea948890ea37}\label{class_dendrite_cleft_ad4070ce743d8302bc120ea948890ea37}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Dendrite\+Cleft()}{DendriteCleft()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Dendrite\+Cleft\+::\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_abcb81284cd9bd7ee2863eecfb6b59f62}\label{class_dendrite_cleft_abcb81284cd9bd7ee2863eecfb6b59f62}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Dendrite\+Cleft()}{DendriteCleft()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Dendrite\+Cleft\+::\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_branch}{Dendrite\+Branch} \&}]{dendritebranch\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file dendritecleft.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_abcb81284cd9bd7ee2863eecfb6b59f62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_ad99958c45fa63f2f68b65d7e5ba45b32}\label{class_dendrite_cleft_ad99958c45fa63f2f68b65d7e5ba45b32}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!````~Dendrite\+Cleft@{$\sim$\+Dendrite\+Cleft}}
+\index{````~Dendrite\+Cleft@{$\sim$\+Dendrite\+Cleft}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{$\sim$\+Dendrite\+Cleft()}{~DendriteCleft()}}
+{\footnotesize\ttfamily virtual Dendrite\+Cleft\+::$\sim$\+Dendrite\+Cleft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 36 of file dendritecleft.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dendrite_cleft_a65901c5659ca5eac161a26f15e0f437b}\label{class_dendrite_cleft_a65901c5659ca5eac161a26f15e0f437b}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Add\+Neuroreceptor@{Add\+Neuroreceptor}}
+\index{Add\+Neuroreceptor@{Add\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Add\+Neuroreceptor()}{AddNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Add\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a65901c5659ca5eac161a26f15e0f437b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a6d29f577ff12366f8f51804b13468395}\label{class_dendrite_cleft_a6d29f577ff12366f8f51804b13468395}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Add\+Neuroreceptors@{Add\+Neuroreceptors}}
+\index{Add\+Neuroreceptors@{Add\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Add\+Neuroreceptors()}{AddNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Add\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+
+
+Definition at line 143 of file dendritecleft.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a6d29f577ff12366f8f51804b13468395_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a6d29f577ff12366f8f51804b13468395_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a7650e1115baab30729da0b03a48da851}\label{class_dendrite_cleft_a7650e1115baab30729da0b03a48da851}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Clone\+Neuroreceptor@{Clone\+Neuroreceptor}}
+\index{Clone\+Neuroreceptor@{Clone\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Clone\+Neuroreceptor()}{CloneNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Clone\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a7650e1115baab30729da0b03a48da851_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a93b542418482f3732380e33346e23bd2}\label{class_dendrite_cleft_a93b542418482f3732380e33346e23bd2}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Clone\+Neuroreceptors@{Clone\+Neuroreceptors}}
+\index{Clone\+Neuroreceptors@{Clone\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Clone\+Neuroreceptors()}{CloneNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Clone\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a93b542418482f3732380e33346e23bd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_ac84d3e0cafecd1436c34162f687e3851}\label{class_dendrite_cleft_ac84d3e0cafecd1436c34162f687e3851}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Create\+Neuroreceptor@{Create\+Neuroreceptor}}
+\index{Create\+Neuroreceptor@{Create\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Create\+Neuroreceptor()}{CreateNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Create\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_ac84d3e0cafecd1436c34162f687e3851_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_ab34af5363b25c6498aee429725a1c7db}\label{class_dendrite_cleft_ab34af5363b25c6498aee429725a1c7db}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Create\+Neuroreceptors@{Create\+Neuroreceptors}}
+\index{Create\+Neuroreceptors@{Create\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Create\+Neuroreceptors()}{CreateNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Create\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file dendritecleft.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_ab34af5363b25c6498aee429725a1c7db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_ab34af5363b25c6498aee429725a1c7db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a86e9943d9d140c2a06d7e222812c9548}\label{class_dendrite_cleft_a86e9943d9d140c2a06d7e222812c9548}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Destroy\+Neuroreceptor@{Destroy\+Neuroreceptor}}
+\index{Destroy\+Neuroreceptor@{Destroy\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Destroy\+Neuroreceptor()}{DestroyNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Destroy\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a86e9943d9d140c2a06d7e222812c9548_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a630e00e2d1108f2a43bcac9466e4681b}\label{class_dendrite_cleft_a630e00e2d1108f2a43bcac9466e4681b}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Destroy\+Neuroreceptors@{Destroy\+Neuroreceptors}}
+\index{Destroy\+Neuroreceptors@{Destroy\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Destroy\+Neuroreceptors()}{DestroyNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Destroy\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 122 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a630e00e2d1108f2a43bcac9466e4681b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_ac567530d9f083e1ee65d5c6484cc9fa7}\label{class_dendrite_cleft_ac567530d9f083e1ee65d5c6484cc9fa7}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Dendrite\+Cleft\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_ad673df32db3982b3df745a55bf527834}\label{class_dendrite_cleft_ad673df32db3982b3df745a55bf527834}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Dendrite\+Cleft\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_a5eb3a8f143f63b852b8f5e245d385519}\label{class_dendrite_cleft_a5eb3a8f143f63b852b8f5e245d385519}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Get\+Neuroreceptor@{Get\+Neuroreceptor}}
+\index{Get\+Neuroreceptor@{Get\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Get\+Neuroreceptor()}{GetNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Get\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 176 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a5eb3a8f143f63b852b8f5e245d385519_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a4a14361574777fb1d66fd4ed2d4f2492}\label{class_dendrite_cleft_a4a14361574777fb1d66fd4ed2d4f2492}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Get\+Neuroreceptors@{Get\+Neuroreceptors}}
+\index{Get\+Neuroreceptors@{Get\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Get\+Neuroreceptors()}{GetNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Get\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 181 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a4a14361574777fb1d66fd4ed2d4f2492_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_af4715ffbf1bf437523d07e37b7abc3e0}\label{class_dendrite_cleft_af4715ffbf1bf437523d07e37b7abc3e0}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Growth\+Surface@{Growth\+Surface}}
+\index{Growth\+Surface@{Growth\+Surface}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Growth\+Surface()}{GrowthSurface()}}
+{\footnotesize\ttfamily int Dendrite\+Cleft\+::\+Growth\+Surface (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{surf\+\_\+change }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_af4715ffbf1bf437523d07e37b7abc3e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a0cb2fc6ad72bba55b5f65130006d4b12}\label{class_dendrite_cleft_a0cb2fc6ad72bba55b5f65130006d4b12}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Growth\+Volume@{Growth\+Volume}}
+\index{Growth\+Volume@{Growth\+Volume}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Growth\+Volume()}{GrowthVolume()}}
+{\footnotesize\ttfamily int Dendrite\+Cleft\+::\+Growth\+Volume (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{vol\+\_\+change }\end{DoxyParamCaption})}
+
+
+
+Definition at line 194 of file dendritecleft.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a0cb2fc6ad72bba55b5f65130006d4b12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a0cb2fc6ad72bba55b5f65130006d4b12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_afaf06d4516355dfe2e0e4c33a00f0f1d}\label{class_dendrite_cleft_afaf06d4516355dfe2e0e4c33a00f0f1d}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Remove\+Neuroreceptor@{Remove\+Neuroreceptor}}
+\index{Remove\+Neuroreceptor@{Remove\+Neuroreceptor}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Remove\+Neuroreceptor()}{RemoveNeuroreceptor()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ Dendrite\+Cleft\+::\+Remove\+Neuroreceptor (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 165 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_afaf06d4516355dfe2e0e4c33a00f0f1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_ac29b12d4abcc47fa298ab9e95f578f0e}\label{class_dendrite_cleft_ac29b12d4abcc47fa298ab9e95f578f0e}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Remove\+Neuroreceptors@{Remove\+Neuroreceptors}}
+\index{Remove\+Neuroreceptors@{Remove\+Neuroreceptors}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Remove\+Neuroreceptors()}{RemoveNeuroreceptors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_cleft}{Dendrite\+Cleft} $\ast$ $>$ Dendrite\+Cleft\+::\+Remove\+Neuroreceptors (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file dendritecleft.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_ac29b12d4abcc47fa298ab9e95f578f0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a3fee388d7023cfb460412e0322244ae2}\label{class_dendrite_cleft_a3fee388d7023cfb460412e0322244ae2}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Dendrite\+Cleft\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file dendritecleft.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a3fee388d7023cfb460412e0322244ae2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a3fee388d7023cfb460412e0322244ae2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a428b8e5117f381a382e0071b936d42a1}\label{class_dendrite_cleft_a428b8e5117f381a382e0071b936d42a1}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Dendrite\+Cleft\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_dendrite_branch_a2ce03fbad4a70564eeaafb62debd4d74}{Dendrite\+Branch}.
+
+
+
+Reimplemented in \hyperlink{class_neuroreceptor_a0660a316ef44cf723509f720acd16f24}{Neuroreceptor}.
+
+
+
+Definition at line 40 of file dendritecleft.\+h.
+
+\mbox{\Hypertarget{class_dendrite_cleft_a7e09ccb70936deabde9c12457cec949c}\label{class_dendrite_cleft_a7e09ccb70936deabde9c12457cec949c}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Dendrite\+Cleft\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file dendritecleft.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a7e09ccb70936deabde9c12457cec949c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_cleft_a3a75af4d6fd97c9635134509f170a04e}\label{class_dendrite_cleft_a3a75af4d6fd97c9635134509f170a04e}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!Update@{Update}}
+\index{Update@{Update}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Dendrite\+Cleft\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file dendritecleft.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a3a75af4d6fd97c9635134509f170a04e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_cleft_a3a75af4d6fd97c9635134509f170a04e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dendrite_cleft_a42de9c556ce58c9f511031361755a0c3}\label{class_dendrite_cleft_a42de9c556ce58c9f511031361755a0c3}} 
+\index{Dendrite\+Cleft@{Dendrite\+Cleft}!neuroreceptor\+\_\+list@{neuroreceptor\+\_\+list}}
+\index{neuroreceptor\+\_\+list@{neuroreceptor\+\_\+list}!Dendrite\+Cleft@{Dendrite\+Cleft}}
+\subsubsection{\texorpdfstring{neuroreceptor\+\_\+list}{neuroreceptor\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_dendrite_cleft}{Dendrite\+Cleft}$\ast$$>$ Dendrite\+Cleft\+::neuroreceptor\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 76 of file dendritecleft.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{dendritecleft_8h}{dendritecleft.\+h}\item 
+Brain\+Harmonics/\hyperlink{dendritecleft_8cc}{dendritecleft.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,1189 @@
+.TH "CognitiveNetwork" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CognitiveNetwork
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cognitivenetwork\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.PP
+Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP, \fBMyelinSheath\fP, \fBNeuron\fP, \fBNeurotransmitter\fP, \fBOrbital\fP, \fBSpike\fP, and \fBSynapse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCognitiveNetwork\fP ()"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~CognitiveNetwork\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBGetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBGetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetRestingPotential\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetCognitiveNetworkDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.br
+.ti -1c
+.RI "void \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetOrbitalPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetNeuronPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetSynapsePool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetNeurotransmitterPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBSetOrbitalPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "int \fBSetNeuronPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "int \fBSetSynapsePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "int \fBSetNeurotransmitterPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "void \fBSetCognitiveNetworkDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetCognitiveInput\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetCognitiveInputs\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetCognitiveOutput\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetCognitiveOutputs\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetInterneuronSpaces\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetOrbital\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetOrbitals\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateSynapses\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneSynapses\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroySynapse\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroySynapses\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddSynapses\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveSynapses\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetSynapses\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.br
+.ti -1c
+.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.br
+.ti -1c
+.RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBDimension\fP * > \fBdimension_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBcognitiveinput_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBcognitiveoutput_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBinterneuronspace_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBorbital_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneuron_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBsynapse_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneurotransmitter_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 15 of file cognitivenetwork\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CognitiveNetwork::CognitiveNetwork ()\fC [inline]\fP"
+
+.PP
+Definition at line 19 of file cognitivenetwork\&.h\&.
+.SS "CognitiveNetwork::CognitiveNetwork (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file cognitivenetwork\&.h\&.
+.SS "CognitiveNetwork::CognitiveNetwork (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file cognitivenetwork\&.h\&.
+.SS "CognitiveNetwork::CognitiveNetwork (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file cognitivenetwork\&.h\&.
+.SS "virtual CognitiveNetwork::~CognitiveNetwork ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 39 of file cognitivenetwork\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 250 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 261 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 358 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 369 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 468 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 479 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddNeuron (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 690 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddNeurons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 701 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 906 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 917 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddOrbital (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 576 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddOrbitals (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 587 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::AddSynapse (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 798 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::AddSynapses (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 809 of file cognitivenetwork\&.cc\&.
+.SS "double CognitiveNetwork::ApplyElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 273 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 274 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 270 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 275 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 276 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 277 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 271 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::ApplyWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 272 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 235 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 230 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 343 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 338 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 453 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 448 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneNeuron (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 675 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneNeurons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 670 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 891 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 886 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneOrbital (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 561 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneOrbitals (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 556 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CloneSynapse (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 783 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CloneSynapses (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 778 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 197 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 208 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 305 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 316 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 415 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 426 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateNeuron (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 632 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateNeurons (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 643 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 853 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 864 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateOrbital (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 523 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateOrbitals (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 534 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::CreateSynapse (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 745 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::CreateSynapses (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 756 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 245 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 240 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 353 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 348 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 463 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 458 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyNeuron (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 685 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyNeurons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 680 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 901 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 896 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroyOrbital (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 571 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroyOrbitals (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 566 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::DestroySynapse (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 793 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::DestroySynapses (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 788 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetCapacity (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetChannelMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetChannelMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 49 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 294 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 299 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetCognitiveNetworkDeviceTag (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 402 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 407 of file cognitivenetwork\&.cc\&.
+.SS "unsigned int CognitiveNetwork::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file cognitivenetwork\&.h\&.
+.SS "bool CognitiveNetwork::GetDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 264 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 265 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetGravitation (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 261 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 512 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 517 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 734 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetNeuronPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file cognitivenetwork\&.h\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetNeurons (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 739 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 950 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetNeurotransmitterPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 67 of file cognitivenetwork\&.h\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 955 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetObjectType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetOrbital (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 620 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetOrbitalPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file cognitivenetwork\&.h\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetOrbitals (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 625 of file cognitivenetwork\&.cc\&.
+.SS "double CognitiveNetwork::GetRestingPotential (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetStrong (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 266 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 267 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 268 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::GetSynapse (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 842 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetSynapsePool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file cognitivenetwork\&.h\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::GetSynapses (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 847 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::GetUsage (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetWeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 262 of file cognitivenetwork\&.h\&.
+.SS "double CognitiveNetwork::GetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 263 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 288 of file cognitivenetwork\&.h\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveCognitiveInput (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 283 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveCognitiveInputs (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 289 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveCognitiveOutput (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 391 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveCognitiveOutputs (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 397 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 501 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveInterneuronSpaces (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 507 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveNeuron (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 723 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveNeurons (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 729 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 939 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 945 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveOrbital (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 609 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveOrbitals (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 615 of file cognitivenetwork\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * CognitiveNetwork::RemoveSynapse (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 831 of file cognitivenetwork\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > CognitiveNetwork::RemoveSynapses (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 837 of file cognitivenetwork\&.cc\&.
+.SS "bool CognitiveNetwork::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 32 of file cognitivenetwork\&.cc\&.
+.SS "void CognitiveNetwork::SetCapacity (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 43 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetChannelMax (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 60 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetChannelMin (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 259 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetCognitiveNetworkDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 76 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 282 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 283 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 279 of file cognitivenetwork\&.h\&.
+.SS "int CognitiveNetwork::SetNeuronPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file cognitivenetwork\&.h\&.
+.SS "int CognitiveNetwork::SetNeurotransmitterPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 72 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 26 of file cognitivenetwork\&.cc\&.
+.SS "int CognitiveNetwork::SetOrbitalPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 260 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 284 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 285 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 286 of file cognitivenetwork\&.h\&.
+.SS "int CognitiveNetwork::SetSynapsePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 71 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetUsage (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 280 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 281 of file cognitivenetwork\&.h\&.
+.SS "void CognitiveNetwork::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file cognitivenetwork\&.h\&.
+.SS "int CognitiveNetwork::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 146 of file cognitivenetwork\&.cc\&.
+.SS "void CognitiveNetwork::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 97 of file cognitivenetwork\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::cognitiveinput_list\fC [protected]\fP"
+
+.PP
+Definition at line 298 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::cognitiveoutput_list\fC [protected]\fP"
+
+.PP
+Definition at line 299 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBDimension\fP*> CognitiveNetwork::dimension_list\fC [protected]\fP"
+
+.PP
+Definition at line 297 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::interneuronspace_list\fC [protected]\fP"
+
+.PP
+Definition at line 300 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::neuron_list\fC [protected]\fP"
+
+.PP
+Definition at line 302 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::neurotransmitter_list\fC [protected]\fP"
+
+.PP
+Definition at line 304 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::orbital_list\fC [protected]\fP"
+
+.PP
+Definition at line 301 of file cognitivenetwork\&.h\&.
+.SS "std::vector<\fBCognitiveNetwork\fP*> CognitiveNetwork::synapse_list\fC [protected]\fP"
+
+.PP
+Definition at line 303 of file cognitivenetwork\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

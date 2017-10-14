@@ -1,0 +1,336 @@
+.TH "Law" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Law
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <law\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLaw\fP ()"
+.br
+.ti -1c
+.RI "\fBLaw\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBLaw\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBLaw\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Law\fP ()"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.br
+.ti -1c
+.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.br
+.ti -1c
+.RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.ti -1c
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.br
+.ti -1c
+.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file law\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Law::Law ()\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file law\&.h\&.
+.SS "Law::Law (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file law\&.h\&.
+.SS "Law::Law (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file law\&.h\&.
+.SS "Law::Law (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file law\&.h\&.
+.SS "virtual Law::~Law ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 45 of file law\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double Law::ApplyElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 69 of file law\&.h\&.
+.SS "double Law::ApplyElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 70 of file law\&.h\&.
+.SS "double Law::ApplyGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 66 of file law\&.h\&.
+.SS "double Law::ApplyStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 71 of file law\&.h\&.
+.SS "double Law::ApplyStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 72 of file law\&.h\&.
+.SS "double Law::ApplyStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 73 of file law\&.h\&.
+.SS "double Law::ApplyWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 67 of file law\&.h\&.
+.SS "double Law::ApplyWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 68 of file law\&.h\&.
+.SS "unsigned int Law::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 60 of file law\&.cc\&.
+.SS "double Law::GetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 60 of file law\&.h\&.
+.SS "double Law::GetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 61 of file law\&.h\&.
+.SS "double Law::GetGravitation (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 57 of file law\&.h\&.
+.SS "double Law::GetStrong (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 62 of file law\&.h\&.
+.SS "double Law::GetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 63 of file law\&.h\&.
+.SS "double Law::GetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 64 of file law\&.h\&.
+.SS "double Law::GetWeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 58 of file law\&.h\&.
+.SS "double Law::GetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 59 of file law\&.h\&.
+.SS "void Law::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 84 of file law\&.h\&.
+.SS "bool Law::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 20 of file law\&.cc\&.
+.SS "void Law::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 55 of file law\&.h\&.
+.SS "void Law::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 62 of file law\&.cc\&.
+.SS "void Law::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 78 of file law\&.h\&.
+.SS "void Law::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 79 of file law\&.h\&.
+.SS "void Law::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 75 of file law\&.h\&.
+.SS "void Law::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 56 of file law\&.h\&.
+.SS "void Law::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 80 of file law\&.h\&.
+.SS "void Law::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 81 of file law\&.h\&.
+.SS "void Law::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 82 of file law\&.h\&.
+.SS "void Law::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 76 of file law\&.h\&.
+.SS "void Law::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 77 of file law\&.h\&.
+.SS "int Law::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 64 of file law\&.cc\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

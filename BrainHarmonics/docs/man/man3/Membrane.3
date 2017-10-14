@@ -1,0 +1,306 @@
+.TH "Membrane" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Membrane
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <membrane\&.h>\fP
+.PP
+Inherits \fBNeuron\fP\&.
+.PP
+Inherited by \fBMembraneChannel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMembrane\fP ()"
+.br
+.ti -1c
+.RI "\fBMembrane\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP &neuron_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Membrane\fP ()"
+.br
+.ti -1c
+.RI "double \fBTimeFunction\fP (double timeDelay, double timeDilation)"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetMembraneChannelPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBSetMembraneChannelPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBCreateMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBCreateMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBCloneMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBCloneMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBDestroyMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBDestroyMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBAddMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBAddMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBRemoveMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBRemoveMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBMembrane\fP * \fBGetMembraneChannel\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBGetMembraneChannels\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowth\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBMembrane\fP * > \fBmembranechannel_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBSolid\fP * > \fBvisualisation_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 17 of file membrane\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Membrane::Membrane ()\fC [inline]\fP"
+
+.PP
+Definition at line 20 of file membrane\&.h\&.
+.SS "Membrane::Membrane (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 22 of file membrane\&.h\&.
+.SS "Membrane::Membrane (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file membrane\&.h\&.
+.SS "Membrane::Membrane (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP & neuron_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file membrane\&.h\&.
+.SS "virtual Membrane::~Membrane ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 39 of file membrane\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBMembrane\fP * Membrane::AddMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP * add_object)"
+
+.PP
+Definition at line 138 of file membrane\&.cc\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::AddMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> add_objects)"
+
+.PP
+Definition at line 149 of file membrane\&.cc\&.
+.SS "\fBMembrane\fP * Membrane::CloneMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 123 of file membrane\&.cc\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::CloneMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 118 of file membrane\&.cc\&.
+.SS "\fBMembrane\fP * Membrane::CreateMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 85 of file membrane\&.cc\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::CreateMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 96 of file membrane\&.cc\&.
+.SS "\fBMembrane\fP * Membrane::DestroyMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time, \fBMembrane\fP * destroy_object)"
+
+.PP
+Definition at line 133 of file membrane\&.cc\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::DestroyMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBMembrane\fP *> destruction_list)"
+
+.PP
+Definition at line 128 of file membrane\&.cc\&.
+.SS "unsigned int Membrane::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file membrane\&.h\&.
+.SS "double Membrane::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file membrane\&.h\&.
+.SS "double Membrane::GetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file membrane\&.h\&.
+.SS "double Membrane::GetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file membrane\&.h\&.
+.SS "double Membrane::GetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file membrane\&.h\&.
+.SS "double Membrane::GetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file membrane\&.h\&.
+.SS "\fBMembrane\fP * Membrane::GetMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 182 of file membrane\&.cc\&.
+.SS "int Membrane::GetMembraneChannelPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file membrane\&.h\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::GetMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 187 of file membrane\&.cc\&.
+.SS "int Membrane::Growth (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 194 of file membrane\&.cc\&.
+.SS "\fBMembrane\fP * Membrane::RemoveMembraneChannel (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 171 of file membrane\&.cc\&.
+.SS "std::vector< \fBMembrane\fP * > Membrane::RemoveMembraneChannels (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 177 of file membrane\&.cc\&.
+.SS "bool Membrane::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 26 of file membrane\&.cc\&.
+.SS "void Membrane::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Reimplemented in \fBMembraneChannel\fP\&.
+.PP
+Definition at line 60 of file membrane\&.h\&.
+.SS "void Membrane::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file membrane\&.h\&.
+.SS "void Membrane::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file membrane\&.h\&.
+.SS "void Membrane::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file membrane\&.h\&.
+.SS "void Membrane::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file membrane\&.h\&.
+.SS "void Membrane::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file membrane\&.h\&.
+.SS "int Membrane::SetMembraneChannelPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file membrane\&.h\&.
+.SS "void Membrane::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 20 of file membrane\&.cc\&.
+.SS "double Membrane::TimeFunction (double timeDelay, double timeDilation)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file membrane\&.h\&.
+.SS "int Membrane::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 215 of file membrane\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBMembrane\fP*> Membrane::membranechannel_list\fC [protected]\fP"
+
+.PP
+Definition at line 99 of file membrane\&.h\&.
+.SS "std::vector<\fBSolid\fP*> Membrane::visualisation_list\fC [protected]\fP"
+
+.PP
+Definition at line 100 of file membrane\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

@@ -1,0 +1,533 @@
+\hypertarget{class_axon_branch}{}\section{Axon\+Branch Class Reference}
+\label{class_axon_branch}\index{Axon\+Branch@{Axon\+Branch}}
+
+
+{\ttfamily \#include $<$axonbranch.\+h$>$}
+
+
+
+Inheritance diagram for Axon\+Branch\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_axon_branch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Axon\+Branch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_axon_branch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axon_branch_a5bb6ccef8d94c937a85148af932221c0}{Axon\+Branch} ()
+\item 
+\hyperlink{class_axon_branch_a67618605ac3731556ab48a6583e21ba8}{Axon\+Branch} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_axon_branch_ad6191fcfd8bedc058a4f1cfb5056f5b2}{Axon\+Branch} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_axon_branch_a98f33462edf82dacab750d1140172912}{Axon\+Branch} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_axon}{Axon} \&axon\+\_\+connector)
+\item 
+virtual \hyperlink{class_axon_branch_ae4ef4c954b43d084cafb30cf900a1728}{$\sim$\+Axon\+Branch} ()
+\item 
+unsigned int \hyperlink{class_axon_branch_a1d2404b68ec2d18a814c96a7c04c5fc4}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_axon_branch_a688ec51cd5116e9aebe9b4d3c5c7f2b1}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_axon_branch_a96ba30b18627563d637d4e02fac943be}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_axon_branch_a6918dcaf6d9325a1a22a2e6c65ad5dab}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+bool \hyperlink{class_axon_branch_a195d68dffd37317db3f94e1b4c8f73c7}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_a30b4602e5dd121666478ff9de52d022b}{Create\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a77e93626a7993f76e689d09721974e90}{Create\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_ae861207a8a0aeb2b60c305b25248e4b9}{Clone\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a842b3875b2771f4b8e7316bfb9af894c}{Clone\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_a024c8666555702ebe67e2a5caf1b866a}{Destroy\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a8c022977e091b8cab367b21c0c4930ea}{Destroy\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$ destruction\+\_\+list)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_a88e6af84b45bb6f6f8900a6d4aec446c}{Add\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a788ca8cc7e6f60f07b9e19a8e3022b64}{Add\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$ add\+\_\+objects)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_a06753a2a61941a59d86510e51ba44b15}{Remove\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a815e055e37f89fb2627b250c5b95d406}{Remove\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ \hyperlink{class_axon_branch_a6fa6eea91e72fd142f3d691f7ca4c99a}{Get\+Axon\+Bouton} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_aafadba57924686a8087c7f7758889045}{Get\+Axon\+Boutons} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_axon_branch_a6e434a57873ab0fdbc72cf7ecc7228ed}{Growth} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_axon_branch_a5a80bcccdc2be9f77fca25131937b52f}{Update} (std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ val)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ \hyperlink{class_axon_branch_a43224f9fcb62274709438c9833cb10e5}{axonbouton\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file axonbranch.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_axon_branch_a5bb6ccef8d94c937a85148af932221c0}\label{class_axon_branch_a5bb6ccef8d94c937a85148af932221c0}} 
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Axon\+Branch()}{AxonBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Axon\+Branch\+::\+Axon\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_a67618605ac3731556ab48a6583e21ba8}\label{class_axon_branch_a67618605ac3731556ab48a6583e21ba8}} 
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Axon\+Branch()}{AxonBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Axon\+Branch\+::\+Axon\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_ad6191fcfd8bedc058a4f1cfb5056f5b2}\label{class_axon_branch_ad6191fcfd8bedc058a4f1cfb5056f5b2}} 
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Axon\+Branch()}{AxonBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Axon\+Branch\+::\+Axon\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_a98f33462edf82dacab750d1140172912}\label{class_axon_branch_a98f33462edf82dacab750d1140172912}} 
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\index{Axon\+Branch@{Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Axon\+Branch()}{AxonBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Axon\+Branch\+::\+Axon\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_axon}{Axon} \&}]{axon\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file axonbranch.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a98f33462edf82dacab750d1140172912_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_ae4ef4c954b43d084cafb30cf900a1728}\label{class_axon_branch_ae4ef4c954b43d084cafb30cf900a1728}} 
+\index{Axon\+Branch@{Axon\+Branch}!````~Axon\+Branch@{$\sim$\+Axon\+Branch}}
+\index{````~Axon\+Branch@{$\sim$\+Axon\+Branch}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{$\sim$\+Axon\+Branch()}{~AxonBranch()}}
+{\footnotesize\ttfamily virtual Axon\+Branch\+::$\sim$\+Axon\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 36 of file axonbranch.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_axon_branch_a88e6af84b45bb6f6f8900a6d4aec446c}\label{class_axon_branch_a88e6af84b45bb6f6f8900a6d4aec446c}} 
+\index{Axon\+Branch@{Axon\+Branch}!Add\+Axon\+Bouton@{Add\+Axon\+Bouton}}
+\index{Add\+Axon\+Bouton@{Add\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Axon\+Bouton()}{AddAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Add\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a88e6af84b45bb6f6f8900a6d4aec446c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a788ca8cc7e6f60f07b9e19a8e3022b64}\label{class_axon_branch_a788ca8cc7e6f60f07b9e19a8e3022b64}} 
+\index{Axon\+Branch@{Axon\+Branch}!Add\+Axon\+Boutons@{Add\+Axon\+Boutons}}
+\index{Add\+Axon\+Boutons@{Add\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Axon\+Boutons()}{AddAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Add\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file axonbranch.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a788ca8cc7e6f60f07b9e19a8e3022b64_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a788ca8cc7e6f60f07b9e19a8e3022b64_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_ae861207a8a0aeb2b60c305b25248e4b9}\label{class_axon_branch_ae861207a8a0aeb2b60c305b25248e4b9}} 
+\index{Axon\+Branch@{Axon\+Branch}!Clone\+Axon\+Bouton@{Clone\+Axon\+Bouton}}
+\index{Clone\+Axon\+Bouton@{Clone\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Axon\+Bouton()}{CloneAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Clone\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_ae861207a8a0aeb2b60c305b25248e4b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a842b3875b2771f4b8e7316bfb9af894c}\label{class_axon_branch_a842b3875b2771f4b8e7316bfb9af894c}} 
+\index{Axon\+Branch@{Axon\+Branch}!Clone\+Axon\+Boutons@{Clone\+Axon\+Boutons}}
+\index{Clone\+Axon\+Boutons@{Clone\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Axon\+Boutons()}{CloneAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Clone\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a842b3875b2771f4b8e7316bfb9af894c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a30b4602e5dd121666478ff9de52d022b}\label{class_axon_branch_a30b4602e5dd121666478ff9de52d022b}} 
+\index{Axon\+Branch@{Axon\+Branch}!Create\+Axon\+Bouton@{Create\+Axon\+Bouton}}
+\index{Create\+Axon\+Bouton@{Create\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Axon\+Bouton()}{CreateAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Create\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a30b4602e5dd121666478ff9de52d022b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a77e93626a7993f76e689d09721974e90}\label{class_axon_branch_a77e93626a7993f76e689d09721974e90}} 
+\index{Axon\+Branch@{Axon\+Branch}!Create\+Axon\+Boutons@{Create\+Axon\+Boutons}}
+\index{Create\+Axon\+Boutons@{Create\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Axon\+Boutons()}{CreateAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Create\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file axonbranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a77e93626a7993f76e689d09721974e90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a77e93626a7993f76e689d09721974e90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a024c8666555702ebe67e2a5caf1b866a}\label{class_axon_branch_a024c8666555702ebe67e2a5caf1b866a}} 
+\index{Axon\+Branch@{Axon\+Branch}!Destroy\+Axon\+Bouton@{Destroy\+Axon\+Bouton}}
+\index{Destroy\+Axon\+Bouton@{Destroy\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Axon\+Bouton()}{DestroyAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Destroy\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_axon_branch}{Axon\+Branch} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a024c8666555702ebe67e2a5caf1b866a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a8c022977e091b8cab367b21c0c4930ea}\label{class_axon_branch_a8c022977e091b8cab367b21c0c4930ea}} 
+\index{Axon\+Branch@{Axon\+Branch}!Destroy\+Axon\+Boutons@{Destroy\+Axon\+Boutons}}
+\index{Destroy\+Axon\+Boutons@{Destroy\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Axon\+Boutons()}{DestroyAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Destroy\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a8c022977e091b8cab367b21c0c4930ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a6fa6eea91e72fd142f3d691f7ca4c99a}\label{class_axon_branch_a6fa6eea91e72fd142f3d691f7ca4c99a}} 
+\index{Axon\+Branch@{Axon\+Branch}!Get\+Axon\+Bouton@{Get\+Axon\+Bouton}}
+\index{Get\+Axon\+Bouton@{Get\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Axon\+Bouton()}{GetAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Get\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a6fa6eea91e72fd142f3d691f7ca4c99a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_aafadba57924686a8087c7f7758889045}\label{class_axon_branch_aafadba57924686a8087c7f7758889045}} 
+\index{Axon\+Branch@{Axon\+Branch}!Get\+Axon\+Boutons@{Get\+Axon\+Boutons}}
+\index{Get\+Axon\+Boutons@{Get\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Axon\+Boutons()}{GetAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Get\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_aafadba57924686a8087c7f7758889045_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a1d2404b68ec2d18a814c96a7c04c5fc4}\label{class_axon_branch_a1d2404b68ec2d18a814c96a7c04c5fc4}} 
+\index{Axon\+Branch@{Axon\+Branch}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Axon\+Branch\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_a688ec51cd5116e9aebe9b4d3c5c7f2b1}\label{class_axon_branch_a688ec51cd5116e9aebe9b4d3c5c7f2b1}} 
+\index{Axon\+Branch@{Axon\+Branch}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Axon\+Branch\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_a6e434a57873ab0fdbc72cf7ecc7228ed}\label{class_axon_branch_a6e434a57873ab0fdbc72cf7ecc7228ed}} 
+\index{Axon\+Branch@{Axon\+Branch}!Growth@{Growth}}
+\index{Growth@{Growth}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Axon\+Branch\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 169 of file axonbranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a6e434a57873ab0fdbc72cf7ecc7228ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_axon_branch_a6e434a57873ab0fdbc72cf7ecc7228ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a06753a2a61941a59d86510e51ba44b15}\label{class_axon_branch_a06753a2a61941a59d86510e51ba44b15}} 
+\index{Axon\+Branch@{Axon\+Branch}!Remove\+Axon\+Bouton@{Remove\+Axon\+Bouton}}
+\index{Remove\+Axon\+Bouton@{Remove\+Axon\+Bouton}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Axon\+Bouton()}{RemoveAxonBouton()}}
+{\footnotesize\ttfamily \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ Axon\+Branch\+::\+Remove\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a06753a2a61941a59d86510e51ba44b15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a815e055e37f89fb2627b250c5b95d406}\label{class_axon_branch_a815e055e37f89fb2627b250c5b95d406}} 
+\index{Axon\+Branch@{Axon\+Branch}!Remove\+Axon\+Boutons@{Remove\+Axon\+Boutons}}
+\index{Remove\+Axon\+Boutons@{Remove\+Axon\+Boutons}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Axon\+Boutons()}{RemoveAxonBoutons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_axon_branch}{Axon\+Branch} $\ast$ $>$ Axon\+Branch\+::\+Remove\+Axon\+Boutons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file axonbranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a815e055e37f89fb2627b250c5b95d406_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a195d68dffd37317db3f94e1b4c8f73c7}\label{class_axon_branch_a195d68dffd37317db3f94e1b4c8f73c7}} 
+\index{Axon\+Branch@{Axon\+Branch}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Axon\+Branch\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file axonbranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a195d68dffd37317db3f94e1b4c8f73c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a195d68dffd37317db3f94e1b4c8f73c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a96ba30b18627563d637d4e02fac943be}\label{class_axon_branch_a96ba30b18627563d637d4e02fac943be}} 
+\index{Axon\+Branch@{Axon\+Branch}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Axon\+Branch\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_axon_a3493cb97bde26bd66facc6084cd5f219}{Axon}.
+
+
+
+Reimplemented in \hyperlink{class_synaptic_vesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}.
+
+
+
+Definition at line 39 of file axonbranch.\+h.
+
+\mbox{\Hypertarget{class_axon_branch_a6918dcaf6d9325a1a22a2e6c65ad5dab}\label{class_axon_branch_a6918dcaf6d9325a1a22a2e6c65ad5dab}} 
+\index{Axon\+Branch@{Axon\+Branch}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Axon\+Branch\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file axonbranch.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a6918dcaf6d9325a1a22a2e6c65ad5dab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axon_branch_a5a80bcccdc2be9f77fca25131937b52f}\label{class_axon_branch_a5a80bcccdc2be9f77fca25131937b52f}} 
+\index{Axon\+Branch@{Axon\+Branch}!Update@{Update}}
+\index{Update@{Update}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Axon\+Branch\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{val }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file axonbranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axon_branch_a5a80bcccdc2be9f77fca25131937b52f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_axon_branch_a5a80bcccdc2be9f77fca25131937b52f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_axon_branch_a43224f9fcb62274709438c9833cb10e5}\label{class_axon_branch_a43224f9fcb62274709438c9833cb10e5}} 
+\index{Axon\+Branch@{Axon\+Branch}!axonbouton\+\_\+list@{axonbouton\+\_\+list}}
+\index{axonbouton\+\_\+list@{axonbouton\+\_\+list}!Axon\+Branch@{Axon\+Branch}}
+\subsubsection{\texorpdfstring{axonbouton\+\_\+list}{axonbouton\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_axon_branch}{Axon\+Branch}$\ast$$>$ Axon\+Branch\+::axonbouton\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 72 of file axonbranch.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{axonbranch_8h}{axonbranch.\+h}\item 
+Brain\+Harmonics/\hyperlink{axonbranch_8cc}{axonbranch.\+cc}\end{DoxyCompactItemize}

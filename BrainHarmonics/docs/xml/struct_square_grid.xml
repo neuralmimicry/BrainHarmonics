@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_square_grid" kind="struct" language="C++" prot="public">
+    <compoundname>SquareGrid</compoundname>
+    <derivedcompoundref refid="struct_grid_with_weights" prot="public" virt="non-virtual">GridWithWeights</derivedcompoundref>
+    <derivedcompoundref refid="struct_grid_with_weights" prot="public" virt="non-virtual">GridWithWeights</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" prot="public" static="no">
+        <type>tuple&lt; int, int &gt;</type>
+        <definition>typedef tuple&lt;int,int&gt; SquareGrid::Location</definition>
+        <argsstring></argsstring>
+        <name>Location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="105" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" prot="public" static="no">
+        <type>tuple&lt; int, int &gt;</type>
+        <definition>typedef tuple&lt;int,int&gt; SquareGrid::Location</definition>
+        <argsstring></argsstring>
+        <name>Location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/search.cpp" line="111" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_square_grid_1aac91cba6573640c545485ed054089c87" prot="public" static="yes" mutable="no">
+        <type>array&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>, 4 &gt;</type>
+        <definition>array&lt; SquareGrid::Location, 4 &gt; SquareGrid::DIRS</definition>
+        <argsstring></argsstring>
+        <name>DIRS</name>
+        <initializer>{<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{1, 0}, <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{0, -1}, <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{-1, 0}, <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{0, 1}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="106" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" compoundref="implementation_01orig_8cpp" startline="124" endline="143">neighbors</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_square_grid_1af5476cf49f0bb03d1e940adbc6e5febf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SquareGrid::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="108" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SquareGrid::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="108" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" prot="public" static="no" mutable="no">
+        <type>unordered_set&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
+        <definition>unordered_set&lt; Location &gt; SquareGrid::walls</definition>
+        <argsstring></argsstring>
+        <name>walls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="109" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="109" bodyend="-1"/>
+        <referencedby refid="implementation_01orig_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" compoundref="implementation_01orig_8cpp" startline="148" endline="154">add_rect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SquareGrid::SquareGrid</definition>
+        <argsstring>(int width_, int height_)</argsstring>
+        <name>SquareGrid</name>
+        <param>
+          <type>int</type>
+          <declname>width_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="111" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="111" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SquareGrid::in_bounds</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>in_bounds</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="114" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SquareGrid::passable</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>passable</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="120" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
+        <definition>vector&lt;Location&gt; SquareGrid::neighbors</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>neighbors</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/implementation orig.cpp" line="124" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="124" bodyend="143"/>
+        <references refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" compoundref="implementation_01orig_8cpp" startline="106">DIRS</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SquareGrid::SquareGrid</definition>
+        <argsstring>(int width_, int height_)</argsstring>
+        <name>SquareGrid</name>
+        <param>
+          <type>int</type>
+          <declname>width_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/search.cpp" line="117" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="117" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SquareGrid::in_bounds</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>in_bounds</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/search.cpp" line="120" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SquareGrid::passable</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>passable</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/search.cpp" line="126" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
+        <definition>vector&lt;Location&gt; SquareGrid::neighbors</definition>
+        <argsstring>(Location id)</argsstring>
+        <name>neighbors</name>
+        <param>
+          <type><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/search.cpp" line="130" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="130" bodyend="149"/>
+        <references refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" compoundref="implementation_01orig_8cpp" startline="106">DIRS</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="384">
+        <label>SquareGrid</label>
+        <link refid="struct_square_grid"/>
+      </node>
+      <node id="385">
+        <label>GridWithWeights</label>
+        <link refid="struct_grid_with_weights"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="386">
+        <label>SquareGrid</label>
+        <link refid="struct_square_grid"/>
+        <childnode refid="387" relation="usage">
+          <edgelabel>DIRS</edgelabel>
+        </childnode>
+        <childnode refid="388" relation="usage">
+          <edgelabel>walls</edgelabel>
+        </childnode>
+      </node>
+      <node id="387">
+        <label>array&lt; Location, 4 &gt;</label>
+      </node>
+      <node id="388">
+        <label>unordered_set&lt; Location &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/implementation orig.cpp" line="104" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="104" bodyend="144"/>
+    <listofallmembers>
+      <member refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>DIRS</name></member>
+      <member refid="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>height</name></member>
+      <member refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>in_bounds</name></member>
+      <member refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>in_bounds</name></member>
+      <member refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>Location</name></member>
+      <member refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>Location</name></member>
+      <member refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>neighbors</name></member>
+      <member refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>neighbors</name></member>
+      <member refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>passable</name></member>
+      <member refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>passable</name></member>
+      <member refid="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>SquareGrid</name></member>
+      <member refid="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>SquareGrid</name></member>
+      <member refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>walls</name></member>
+      <member refid="struct_square_grid_1af5476cf49f0bb03d1e940adbc6e5febf" prot="public" virt="non-virtual"><scope>SquareGrid</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

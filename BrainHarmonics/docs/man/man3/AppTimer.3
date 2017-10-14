@@ -1,0 +1,79 @@
+.TH "AppTimer" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AppTimer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <apptimer\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAppTimer\fP ()"
+.br
+.ti -1c
+.RI "\fBAppTimer\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBAppTimer\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBAppTimer\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~AppTimer\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file apptimer\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AppTimer::AppTimer ()\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file apptimer\&.h\&.
+.SS "AppTimer::AppTimer (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file apptimer\&.h\&.
+.SS "AppTimer::AppTimer (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file apptimer\&.h\&.
+.SS "AppTimer::AppTimer (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file apptimer\&.h\&.
+.SS "virtual AppTimer::~AppTimer ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 49 of file apptimer\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "unsigned int AppTimer::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file apptimer\&.h\&.
+.SS "void AppTimer::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 51 of file apptimer\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

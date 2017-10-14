@@ -1,0 +1,19 @@
+digraph "Neuron::SetNeuronDeviceTag"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Neuron::SetNeuronDeviceTag",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Neuron::ResetParameters",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neuron.html#a546111f20c56ae5380e71a31f8005802"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CognitiveNetwork::AddEnergy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a288a367a774ca70438504c4d9ac5af62"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Neuron::OpenGate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neuron.html#a16642ec0ddab49f98e22a2c2be7fde4e"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Neuron::AddSoma",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neuron.html#aabd0dd6d0d63cdce80407cd5e410db47"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Neuron::Growth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neuron.html#a194e2d79647f0e691f83c59fa03de636"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Neuron::Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neuron.html#a00a753f11a999b47752c0e3f3d7ba259"];
+}

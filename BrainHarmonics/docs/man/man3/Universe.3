@@ -1,0 +1,809 @@
+.TH "Universe" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Universe
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <universe\&.h>\fP
+.PP
+Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetwork\fP, \fBCompositeForceParticle\fP, \fBDimension\fP, \fBElementaryForce\fP, \fBElementaryParticle\fP, \fBLaw\fP, \fBLine\fP, \fBMatter\fP, \fBMonomer\fP, \fBPoint\fP, \fBPolymer\fP, and \fBSolid\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUniverse\fP ()"
+.br
+.ti -1c
+.RI "\fBUniverse\fP (int interim_object_type)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "virtual \fB~Universe\fP ()"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+.br
+.ti -1c
+.RI "double \fBUseEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+.br
+.ti -1c
+.RI "double \fBReturnEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+.br
+.ti -1c
+.RI "void \fBCreation\fP (std::chrono::time_point< \fBClock\fP > event_time, std::string object_title, int object_type)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::chrono::time_point< std::chrono::high_resolution_clock > \fBTheTimeNow\fP ()"
+.br
+.ti -1c
+.RI "std::chrono::time_point< std::chrono::high_resolution_clock > \fBTheCalculatedTimeNow\fP (std::chrono::time_point< std::chrono::high_resolution_clock > time_object_created_time, std::chrono::time_point< \fBClock\fP > event_time, double calculated_scaled_time)"
+.br
+.ti -1c
+.RI "void \fBSetLifespan\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.br
+.ti -1c
+.RI "void \fBExtendLife\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.br
+.ti -1c
+.RI "bool \fBIsDead\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddDimensions\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddDimension\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetDimensions\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetDimension\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddCompositeForceParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddCompositeForceParticle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetCompositeForceParticles\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetCompositeForceParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddMatters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddMatter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetMatters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetMatter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddMonomers\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddMonomer\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetMonomers\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetMonomer\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddPolymers\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddPolymer\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetPolymers\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetPolymer\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddSolids\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddSolid\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetSolids\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetSolid\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddCognitiveNetworks\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddCognitiveNetwork\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetCognitiveNetworks\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetCognitiveNetwork\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBAddPoints\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBAddPoint\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetPoints\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBGetPoint\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual void \fBAddTemporalAdjustment\fP (std::chrono::time_point< \fBClock\fP > event_time, double *point_to_counter, double pool, int interval, int shape)"
+.br
+.ti -1c
+.RI "virtual void \fBAdjustCounters\fP (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)"
+.br
+.ti -1c
+.RI "virtual void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "virtual double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "virtual void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBobject_energy\fP"
+.br
+.ti -1c
+.RI "double \fBobject_energy_threshold\fP"
+.br
+.ti -1c
+.RI "int \fBobject_size\fP"
+.br
+.ti -1c
+.RI "\fBUniverse\fP * \fBtime_dimension_pointer\fP"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBcognitive_network_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBcomposite_forceparticle_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBdimension_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBelementary_force_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBelementary_particle_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBmatter_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBmonomer_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBpolymer_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBsolid_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBpoint_list\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 68 of file universe\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Universe::Universe ()\fC [inline]\fP"
+
+.PP
+Definition at line 76 of file universe\&.h\&.
+.SS "Universe::Universe (int interim_object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 78 of file universe\&.h\&.
+.SS "Universe::Universe (std::chrono::time_point< \fBClock\fP > event_time, int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 81 of file universe\&.h\&.
+.SS "virtual Universe::~Universe ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 92 of file universe\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBUniverse\fP * Universe::AddCognitiveNetwork (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 377 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddCognitiveNetworks (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 367 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddCompositeForceParticle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 247 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddCompositeForceParticles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 237 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddDimension (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 166 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddDimensions (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 151 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 221 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 211 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 195 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 185 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddMatter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 273 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddMatters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 263 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddMonomer (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 299 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddMonomers (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 289 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddPoint (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 403 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddPoints (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 393 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddPolymer (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 325 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddPolymers (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 315 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::AddSolid (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 351 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::AddSolids (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 341 of file universe\&.cc\&.
+.SS "void Universe::AddTemporalAdjustment (std::chrono::time_point< \fBClock\fP > event_time, double * point_to_counter, double pool, int interval, int shape)\fC [virtual]\fP"
+
+.PP
+Definition at line 600 of file universe\&.cc\&.
+.SS "void Universe::AdjustCounters (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBDimension\fP\&.
+.PP
+Definition at line 602 of file universe\&.cc\&.
+.SS "double Universe::ApplyElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 618 of file universe\&.cc\&.
+.SS "double Universe::ApplyElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 619 of file universe\&.cc\&.
+.SS "double Universe::ApplyGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 615 of file universe\&.cc\&.
+.SS "double Universe::ApplyStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 620 of file universe\&.cc\&.
+.SS "double Universe::ApplyStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 621 of file universe\&.cc\&.
+.SS "double Universe::ApplyStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 622 of file universe\&.cc\&.
+.SS "double Universe::ApplyWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 616 of file universe\&.cc\&.
+.SS "double Universe::ApplyWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 617 of file universe\&.cc\&.
+.SS "void Universe::Creation (std::chrono::time_point< \fBClock\fP > event_time, std::string object_title, int object_type)"
+
+.PP
+Definition at line 57 of file universe\&.cc\&.
+.SS "void Universe::ExtendLife (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+
+.PP
+Definition at line 127 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetCognitiveNetwork (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 387 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetCognitiveNetworks (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 382 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetCompositeForceParticle (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 257 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetCompositeForceParticles (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 252 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetDimension (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 179 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetDimensions (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 174 of file universe\&.cc\&.
+.SS "double Universe::GetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 609 of file universe\&.cc\&.
+.SS "double Universe::GetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 610 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetElementaryForce (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 231 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetElementaryForces (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 226 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 205 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 200 of file universe\&.cc\&.
+.SS "double Universe::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 30 of file universe\&.cc\&.
+.SS "double Universe::GetGravitation (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 606 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetMatter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 283 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetMatters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 278 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetMonomer (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 309 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetMonomers (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 304 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetPoint (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 413 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetPoints (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 408 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetPolymer (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 335 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetPolymers (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 330 of file universe\&.cc\&.
+.SS "\fBUniverse\fP * Universe::GetSolid (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 361 of file universe\&.cc\&.
+.SS "std::vector< \fBUniverse\fP * > Universe::GetSolids (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 356 of file universe\&.cc\&.
+.SS "double Universe::GetStrong (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 611 of file universe\&.cc\&.
+.SS "double Universe::GetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 612 of file universe\&.cc\&.
+.SS "double Universe::GetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 613 of file universe\&.cc\&.
+.SS "double Universe::GetWeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 607 of file universe\&.cc\&.
+.SS "double Universe::GetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 608 of file universe\&.cc\&.
+.SS "bool Universe::IsDead (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 138 of file universe\&.cc\&.
+.SS "void Universe::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, and \fBLaw\fP\&.
+.PP
+Definition at line 634 of file universe\&.cc\&.
+.SS "bool Universe::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 69 of file universe\&.cc\&.
+.SS "double Universe::ReturnEnergy (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+
+.PP
+Definition at line 51 of file universe\&.cc\&.
+.SS "void Universe::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryParticle\fP, \fBMonomer\fP, and \fBLaw\fP\&.
+.PP
+Definition at line 604 of file universe\&.cc\&.
+.SS "void Universe::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBDimension\fP, \fBElementaryForce\fP, \fBCompositeForceParticle\fP, \fBMembraneChannel\fP, \fBNeuroreceptor\fP, \fBSoma\fP, \fBElementaryParticle\fP, \fBMembrane\fP, \fBMatter\fP, \fBDendrite\fP, \fBSolid\fP, \fBOrbital\fP, \fBPolymer\fP, \fBMonomer\fP, \fBPolygon\fP, \fBAppTimer\fP, \fBLaw\fP, \fBInterneuronSpace\fP, \fBSynapse\fP, \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBNeurotransmitter\fP, \fBSynapticVesicle\fP, \fBAxon\fP, \fBAxonHillock\fP, \fBDendriteBranch\fP, \fBMyelinSheath\fP, \fBAxonBouton\fP, \fBDendriteCleft\fP, \fBAxonBranch\fP, and \fBAbstraction\fP\&.
+.PP
+Definition at line 624 of file universe\&.cc\&.
+.SS "void Universe::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 628 of file universe\&.cc\&.
+.SS "void Universe::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 629 of file universe\&.cc\&.
+.SS "void Universe::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+
+.PP
+Definition at line 35 of file universe\&.cc\&.
+.SS "void Universe::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 625 of file universe\&.cc\&.
+.SS "void Universe::SetLifespan (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+
+.PP
+Definition at line 121 of file universe\&.cc\&.
+.SS "void Universe::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 63 of file universe\&.cc\&.
+.SS "void Universe::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryParticle\fP, \fBMonomer\fP, and \fBLaw\fP\&.
+.PP
+Definition at line 605 of file universe\&.cc\&.
+.SS "void Universe::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 630 of file universe\&.cc\&.
+.SS "void Universe::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 631 of file universe\&.cc\&.
+.SS "void Universe::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 632 of file universe\&.cc\&.
+.SS "void Universe::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 626 of file universe\&.cc\&.
+.SS "void Universe::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
+.PP
+Definition at line 627 of file universe\&.cc\&.
+.SS "std::chrono::time_point< std::chrono::high_resolution_clock > Universe::TheCalculatedTimeNow (std::chrono::time_point< std::chrono::high_resolution_clock > time_object_created_time, std::chrono::time_point< \fBClock\fP > event_time, double calculated_scaled_time)"
+
+.PP
+Definition at line 116 of file universe\&.cc\&.
+.SS "std::chrono::time_point< std::chrono::high_resolution_clock > Universe::TheTimeNow ()"
+
+.PP
+Definition at line 111 of file universe\&.cc\&.
+.SS "int Universe::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 481 of file universe\&.cc\&.
+.SS "void Universe::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 418 of file universe\&.cc\&.
+.SS "double Universe::UseEnergy (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+
+.PP
+Definition at line 40 of file universe\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBUniverse\fP*> Universe::cognitive_network_list\fC [protected]\fP"
+
+.PP
+Definition at line 291 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::composite_forceparticle_list\fC [protected]\fP"
+
+.PP
+Definition at line 292 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::dimension_list\fC [protected]\fP"
+
+.PP
+Definition at line 293 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::elementary_force_list\fC [protected]\fP"
+
+.PP
+Definition at line 294 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::elementary_particle_list\fC [protected]\fP"
+
+.PP
+Definition at line 295 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::matter_list\fC [protected]\fP"
+
+.PP
+Definition at line 296 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::monomer_list\fC [protected]\fP"
+
+.PP
+Definition at line 297 of file universe\&.h\&.
+.SS "double Universe::object_energy"
+
+.PP
+Definition at line 281 of file universe\&.h\&.
+.SS "double Universe::object_energy_threshold"
+
+.PP
+Definition at line 282 of file universe\&.h\&.
+.SS "int Universe::object_size"
+
+.PP
+Definition at line 283 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::point_list\fC [protected]\fP"
+
+.PP
+Definition at line 300 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::polymer_list\fC [protected]\fP"
+
+.PP
+Definition at line 298 of file universe\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Universe::solid_list\fC [protected]\fP"
+
+.PP
+Definition at line 299 of file universe\&.h\&.
+.SS "\fBUniverse\fP* Universe::time_dimension_pointer"
+
+.PP
+Definition at line 284 of file universe\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

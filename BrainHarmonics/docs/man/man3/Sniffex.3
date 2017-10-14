@@ -1,0 +1,91 @@
+.TH "Sniffex" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sniffex
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <sniffex\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBsniff_ethernet\fP"
+.br
+.ti -1c
+.RI "struct \fBsniff_ip\fP"
+.br
+.ti -1c
+.RI "struct \fBsniff_tcp\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef u_int \fBtcp_seq\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgot_packet\fP (u_char *args, const struct pcap_pkthdr *header, const u_char *packet)"
+.br
+.ti -1c
+.RI "void \fBprint_payload\fP (const u_char *payload, int len)"
+.br
+.ti -1c
+.RI "void \fBprint_hex_ascii_line\fP (const u_char *payload, int len, int offset)"
+.br
+.ti -1c
+.RI "void \fBprint_app_banner\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprint_app_usage\fP (void)"
+.br
+.ti -1c
+.RI "int \fBsniffexmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 232 of file sniffex\&.h\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "typedef u_int \fBSniffex::tcp_seq\fP"
+
+.PP
+Definition at line 263 of file sniffex\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Sniffex::got_packet (u_char * args, const struct pcap_pkthdr * header, const u_char * packet)"
+
+.PP
+Definition at line 144 of file sniffex\&.cc\&.
+.SS "void Sniffex::print_app_banner (void)"
+
+.PP
+Definition at line 15 of file sniffex\&.cc\&.
+.SS "void Sniffex::print_app_usage (void)"
+
+.PP
+Definition at line 30 of file sniffex\&.cc\&.
+.SS "void Sniffex::print_hex_ascii_line (const u_char * payload, int len, int offset)"
+
+.PP
+Definition at line 48 of file sniffex\&.cc\&.
+.SS "void Sniffex::print_payload (const u_char * payload, int len)"
+
+.PP
+Definition at line 99 of file sniffex\&.cc\&.
+.SS "int Sniffex::sniffexmain (int argc, char ** argv)"
+
+.PP
+Definition at line 230 of file sniffex\&.cc\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

@@ -1,0 +1,1811 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_point" kind="class" language="C++" prot="public">
+    <compoundname>Point</compoundname>
+    <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
+    <includes refid="point_8h" local="no">point.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_point_1af2ace341c1d7ccd30de3502502773591" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ElementaryParticle</definition>
+        <argsstring></argsstring>
+        <name>ElementaryParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="28" column="1" bodyfile="BrainHarmonics/point.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_point_1a6e57500586e9cd366f5cf76ea0299957" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ElementaryForce</definition>
+        <argsstring></argsstring>
+        <name>ElementaryForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="29" column="1" bodyfile="BrainHarmonics/point.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_point_1a9bc6eb2a4c20ce83728a7c9a31b91f19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CompositeForceParticle</definition>
+        <argsstring></argsstring>
+        <name>CompositeForceParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="30" column="1" bodyfile="BrainHarmonics/point.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_point_1a28d1b9582890ca3e2b61dafdc1c3ba84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Polyhedron</definition>
+        <argsstring></argsstring>
+        <name>Polyhedron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="31" column="1" bodyfile="BrainHarmonics/point.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_point_1ad33c4b30332e7e58264b35986ca5a387" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::point_seq</definition>
+        <argsstring></argsstring>
+        <name>point_seq</name>
+        <briefdescription>
+<para>Member variable &quot;point_seq&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="165" column="1" bodyfile="BrainHarmonics/point.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1aa672daab7c7949e840dfe79980d162b5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::point_type</definition>
+        <argsstring></argsstring>
+        <name>point_type</name>
+        <briefdescription>
+<para>Member variable &quot;point_type&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="166" column="1" bodyfile="BrainHarmonics/point.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a8767bfc9390f3089ebeb69f84293f816" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Point::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Member variable &quot;object_disabled&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="167" column="1" bodyfile="BrainHarmonics/point.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1af2120c639f62adcd53844fc1ced96de4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Point::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="168" column="1" bodyfile="BrainHarmonics/point.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a087b62626654e6fabae0bdb483d03be9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_scale</definition>
+        <argsstring></argsstring>
+        <name>point_scale</name>
+        <briefdescription>
+<para>Member variable &quot;point_scale&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="169" column="1" bodyfile="BrainHarmonics/point.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ad0fe25e84155d95663b00791ff9983fa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_position</definition>
+        <argsstring></argsstring>
+        <name>point_position</name>
+        <briefdescription>
+<para>Member variable &quot;point_position&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="170" column="1" bodyfile="BrainHarmonics/point.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a2a1a9dcad0d1ef163b3ff0f35de8ddb4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_position_min</definition>
+        <argsstring></argsstring>
+        <name>point_position_min</name>
+        <briefdescription>
+<para>Member variable &quot;point_position_min&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="171" column="1" bodyfile="BrainHarmonics/point.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a0c0cab60e2a94adce49302c2647b9c45" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_position_min_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_position_min_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_position_min_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="172" column="1" bodyfile="BrainHarmonics/point.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1abae7f1b61c44e4829bfa864dffc400f6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_position_max</definition>
+        <argsstring></argsstring>
+        <name>point_position_max</name>
+        <briefdescription>
+<para>Member variable &quot;point_position_max&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="173" column="1" bodyfile="BrainHarmonics/point.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1abd6f21f21522ff1021ee4cb96ff1e4e0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_position_max_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_position_max_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_position_max_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="174" column="1" bodyfile="BrainHarmonics/point.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a1a2a481ca7d0fa5f3212ad3d4d2871a9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_move</definition>
+        <argsstring></argsstring>
+        <name>point_move</name>
+        <briefdescription>
+<para>Member variable &quot;point_move&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="176" column="1" bodyfile="BrainHarmonics/point.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1af686f563a571b1e0a2871f5428c068d9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_move_min</definition>
+        <argsstring></argsstring>
+        <name>point_move_min</name>
+        <briefdescription>
+<para>Member variable &quot;point_move_min&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="177" column="1" bodyfile="BrainHarmonics/point.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a9d647ea8a7c6def7fd1e07592adaabaa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_move_min_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_move_min_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_move_min_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="178" column="1" bodyfile="BrainHarmonics/point.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ab54f1aa3f0183ad0dd9d60d3a685ab5e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_move_max</definition>
+        <argsstring></argsstring>
+        <name>point_move_max</name>
+        <briefdescription>
+<para>Member variable &quot;point_move_max&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="179" column="1" bodyfile="BrainHarmonics/point.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a702a47d6ecf6fdcd8d2420ba0e3b3e86" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_move_max_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_move_max_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_move_max_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="180" column="1" bodyfile="BrainHarmonics/point.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ab015c120be197a2338719eceb0506d76" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_differential</definition>
+        <argsstring></argsstring>
+        <name>point_differential</name>
+        <briefdescription>
+<para>Member variable &quot;point_differential&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="182" column="1" bodyfile="BrainHarmonics/point.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1adaa3334658ce9dad7542bbe5d0b94ef3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_differential_min</definition>
+        <argsstring></argsstring>
+        <name>point_differential_min</name>
+        <briefdescription>
+<para>Member variable &quot;point_differential_min&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="183" column="1" bodyfile="BrainHarmonics/point.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1aa1ffa865d85687a905c805babb117a3a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_differential_min_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_differential_min_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_differential_min_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="184" column="1" bodyfile="BrainHarmonics/point.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a425668a281378a22012e6e5d2a51a3fa" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::point_differential_max</definition>
+        <argsstring></argsstring>
+        <name>point_differential_max</name>
+        <briefdescription>
+<para>Member variable &quot;point_differential_max&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="185" column="1" bodyfile="BrainHarmonics/point.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a2d564b1268fad445926e1d14873e3a8e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::point_differential_max_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_differential_max_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_differential_max_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="186" column="1" bodyfile="BrainHarmonics/point.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1aa839d0ecb9c12b07ee2600344d5bedeb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Point::point_TTL</definition>
+        <argsstring></argsstring>
+        <name>point_TTL</name>
+        <briefdescription>
+<para>Member variable &quot;point_TTL&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="188" column="1" bodyfile="BrainHarmonics/point.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1abae86f9c65f86d2843551e89bc5c18fa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Point::point_TTL_min</definition>
+        <argsstring></argsstring>
+        <name>point_TTL_min</name>
+        <briefdescription>
+<para>Member variable &quot;point_TTL_min&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="189" column="1" bodyfile="BrainHarmonics/point.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1af45f32c8b67614d680a4d85996ba64f7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::point_TTL_min_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_TTL_min_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_TTL_min_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="190" column="1" bodyfile="BrainHarmonics/point.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ad466df219c14f585d5cd10f9eac6f929" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Point::point_TTL_max</definition>
+        <argsstring></argsstring>
+        <name>point_TTL_max</name>
+        <briefdescription>
+<para>Member variable &quot;point_TTL_max&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="191" column="1" bodyfile="BrainHarmonics/point.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a14a0d7be9c2ada24628d6b89524def44" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::point_TTL_max_overflow</definition>
+        <argsstring></argsstring>
+        <name>point_TTL_max_overflow</name>
+        <briefdescription>
+<para>Member variable &quot;point_TTL_max_overflow&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="192" column="1" bodyfile="BrainHarmonics/point.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1aa71ef0cdabcc5fbb4b3e6532b76b4027" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::combined_acceleration</definition>
+        <argsstring></argsstring>
+        <name>combined_acceleration</name>
+        <briefdescription>
+<para>Member variable &quot;combined_acceleration&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="194" column="1" bodyfile="BrainHarmonics/point.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1adab2c73402406c954413b98a7f608154" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::distance_apart</definition>
+        <argsstring></argsstring>
+        <name>distance_apart</name>
+        <briefdescription>
+<para>Member variable &quot;distance_apart&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="195" column="1" bodyfile="BrainHarmonics/point.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1a7d06d004516b58e6a6d85a35e689b28a" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Point::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="196" column="1" bodyfile="BrainHarmonics/point.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1abdae57027e086386d297d503feba1b41" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Point::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="197" column="1" bodyfile="BrainHarmonics/point.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_point_1ab3a9b92a8ae102e1413988be02f72368" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Point::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="198" column="1" bodyfile="BrainHarmonics/point.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="34" column="1" bodyfile="BrainHarmonics/point.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a84d29a0f72e67406901cb87c1d2f77e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="36" column="1" bodyfile="BrainHarmonics/point.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ac3e6d30951c40e5bc5dafe6c90668b3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="38" column="1" bodyfile="BrainHarmonics/point.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1abbc76ed1b437c982eb607ec165ecfa47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point::Point</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Universe &amp;universe_connector)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_universe" kindref="compound">Universe</ref> &amp;</type>
+          <declname>universe_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="40" column="1" bodyfile="BrainHarmonics/point.h" bodystart="40" bodyend="54"/>
+        <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+        <references refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" compoundref="universe_8h" startline="284">Universe::time_dimension_pointer</references>
+        <references refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" compoundref="universe_8cc" startline="166" endline="172">Universe::AddDimension</references>
+        <references refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" compoundref="universe_8cc" startline="63" endline="67">Universe::SetObjectType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a364091762d6aa1aa5983d36fd7d8b6d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Point::~Point</definition>
+        <argsstring>()</argsstring>
+        <name>~Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="56" column="1" bodyfile="BrainHarmonics/point.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a04bae1bb3475d1e5d97ddd7b2dae40aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Point::GetPointSeq</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointSeq</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access member variable values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="59" column="1" bodyfile="BrainHarmonics/point.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1acdd393f39d8c08aff1e866ce1c5585e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointScale</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointScale</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="61" column="1" bodyfile="BrainHarmonics/point.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a521d229550d7f38851f9ffb1933046a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointPosition</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPosition</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="62" column="1" bodyfile="BrainHarmonics/point.h" bodystart="62" bodyend="62"/>
+        <referencedby refid="class_update_all_command_1aa836cd5d538016289656d8118da879c5" compoundref="_brain_harmonics_8cc" startline="936" endline="1152">UpdateAllCommand::Execute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a98557a7ad341f981b13bb009994868f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointPosition2</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPosition2</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="63" column="1" bodyfile="BrainHarmonics/point.h" bodystart="63" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a6182865226595813eccadbe25d38cd9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointPositionMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPositionMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="74" column="1" bodyfile="BrainHarmonics/point.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a3a0caf079555585799754b3cab12129c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointPositionMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPositionMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="75" column="1" bodyfile="BrainHarmonics/point.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1afca47c5ea265894faf7b6aa4f4b17998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointPositionMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPositionMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="76" column="1" bodyfile="BrainHarmonics/point.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a228830fddb8b4d90e910e0774796e635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointPositionMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointPositionMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="77" column="1" bodyfile="BrainHarmonics/point.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a46d06a6d5e8107a0321ede4ca162f264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointMove</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointMove</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="79" column="1" bodyfile="BrainHarmonics/point.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a92d41c8cd9a07ef56223839a44f54fe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointMoveMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointMoveMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="80" column="1" bodyfile="BrainHarmonics/point.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a3c88bb9f80535e98fb0f479b69f75c64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointMoveMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointMoveMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="81" column="1" bodyfile="BrainHarmonics/point.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1af67ce3da60a8e3907df6ec193786c2ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointMoveMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointMoveMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="82" column="1" bodyfile="BrainHarmonics/point.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a83e3715d429ab2099f0c421d46603004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointMoveMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointMoveMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="83" column="1" bodyfile="BrainHarmonics/point.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1af3941d62b39234e468e201f25a37d9da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointDifferential</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointDifferential</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="85" column="1" bodyfile="BrainHarmonics/point.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a782860849006b601600f8df15af23f7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointDifferentialMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointDifferentialMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="86" column="1" bodyfile="BrainHarmonics/point.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1adbc225afbd532763617db1acdb81ef4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointDifferentialMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointDifferentialMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="87" column="1" bodyfile="BrainHarmonics/point.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a326cd5742e908f8fb3cf6f3275b5462c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::GetPointDifferentialMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointDifferentialMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="88" column="1" bodyfile="BrainHarmonics/point.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a2d38599722fbf65afe2b9ac57b0c4bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Point::GetPointDifferentialMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointDifferentialMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="89" column="1" bodyfile="BrainHarmonics/point.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a72cf99a391fc3d6ea8f4252f4f92c19f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Point::GetPointTTL</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointTTL</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="91" column="1" bodyfile="BrainHarmonics/point.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a272b99a9cd054b09c8944b9f0e657890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Point::GetPointTTLMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointTTLMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="92" column="1" bodyfile="BrainHarmonics/point.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a72b222f880df30ebcc12ddc1a6d430b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Point::GetPointTTLMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointTTLMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="93" column="1" bodyfile="BrainHarmonics/point.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a0800eea77109f6fbb1220b4d551a70d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Point::GetPointTTLMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointTTLMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="94" column="1" bodyfile="BrainHarmonics/point.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a61d7e0fb0fd0280f628ea46609082809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Point::GetPointTTLMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPointTTLMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="95" column="1" bodyfile="BrainHarmonics/point.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Point::RespectLimits</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>RespectLimits</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set member variable values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="98" column="1" bodyfile="BrainHarmonics/point.h" bodystart="98" bodyend="118"/>
+        <references refid="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" compoundref="point_8cc" startline="92" endline="99">SetObjectType</references>
+        <referencedby refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" compoundref="point_8h" startline="125" endline="128">SetPointPosition</referencedby>
+        <referencedby refid="class_point_1ad47980a6ed515a2def172d757af46f1a" compoundref="point_8h" startline="129" endline="129">SetPointPositionMin</referencedby>
+        <referencedby refid="class_point_1adb2897b1a7bde15e81b72cb59342f186" compoundref="point_8h" startline="131" endline="131">SetPointPositionMax</referencedby>
+        <referencedby refid="class_point_1a2cf44d5cf17ecf2b3385bde963678589" compoundref="point_8h" startline="134" endline="134">SetPointMove</referencedby>
+        <referencedby refid="class_point_1a287698b6f3ec6a610447fded5c3542ca" compoundref="point_8h" startline="135" endline="135">SetPointMoveMin</referencedby>
+        <referencedby refid="class_point_1afa3c2290a72c99e8892029eaa6676204" compoundref="point_8h" startline="137" endline="137">SetPointMoveMax</referencedby>
+        <referencedby refid="class_point_1adb977a2f01e7a2b549e1bd36fa6f5354" compoundref="point_8h" startline="140" endline="140">SetPointDifferential</referencedby>
+        <referencedby refid="class_point_1a944fcec52017ce88e052a576ef143926" compoundref="point_8h" startline="141" endline="141">SetPointDifferentialMin</referencedby>
+        <referencedby refid="class_point_1ac2e53da4cbee0dc39c0b7a4d3e3a6ee5" compoundref="point_8h" startline="143" endline="143">SetPointDifferentialMax</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetObjectType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetObjectType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="120" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="92" bodyend="99"/>
+        <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
+        <referencedby refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a912aefb007184f73b86c37257a415237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointSeq</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetPointSeq</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="122" column="1" bodyfile="BrainHarmonics/point.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a8fc02455a773624df80933403b0e545f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointScale</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointScale</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="124" column="1" bodyfile="BrainHarmonics/point.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a9191f97ece64b8385140d5f800a3a4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointPosition</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointPosition</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="125" column="1" bodyfile="BrainHarmonics/point.h" bodystart="125" bodyend="128"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+        <referencedby refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" compoundref="polyhedron_8cc" startline="300" endline="323">Polyhedron::GenerateSpherePoints</referencedby>
+        <referencedby refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" compoundref="polyhedron_8cc" startline="325" endline="350">Polyhedron::GenerateCylinderPoints</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ad47980a6ed515a2def172d757af46f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointPositionMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointPositionMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="129" column="1" bodyfile="BrainHarmonics/point.h" bodystart="129" bodyend="129"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ab0c0a837abb8bd52a59f82723a31f61f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointPositionMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointPositionMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="130" column="1" bodyfile="BrainHarmonics/point.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1adb2897b1a7bde15e81b72cb59342f186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointPositionMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointPositionMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="131" column="1" bodyfile="BrainHarmonics/point.h" bodystart="131" bodyend="131"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a29aca71cae82195775f3822740df80ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointPositionMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointPositionMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="132" column="1" bodyfile="BrainHarmonics/point.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a2cf44d5cf17ecf2b3385bde963678589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointMove</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointMove</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="134" column="1" bodyfile="BrainHarmonics/point.h" bodystart="134" bodyend="134"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a287698b6f3ec6a610447fded5c3542ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointMoveMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointMoveMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="135" column="1" bodyfile="BrainHarmonics/point.h" bodystart="135" bodyend="135"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a4a988ff988a3984545cf0c35e764c404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointMoveMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointMoveMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="136" column="1" bodyfile="BrainHarmonics/point.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1afa3c2290a72c99e8892029eaa6676204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointMoveMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointMoveMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="137" column="1" bodyfile="BrainHarmonics/point.h" bodystart="137" bodyend="137"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a7c9776ffca2fde856fa8eaee669d9881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointMoveMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointMoveMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="138" column="1" bodyfile="BrainHarmonics/point.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1adb977a2f01e7a2b549e1bd36fa6f5354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointDifferential</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointDifferential</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="140" column="1" bodyfile="BrainHarmonics/point.h" bodystart="140" bodyend="140"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a944fcec52017ce88e052a576ef143926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointDifferentialMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointDifferentialMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="141" column="1" bodyfile="BrainHarmonics/point.h" bodystart="141" bodyend="141"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a582e63ebdbb0979234acb460e673a393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointDifferentialMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointDifferentialMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="142" column="1" bodyfile="BrainHarmonics/point.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ac2e53da4cbee0dc39c0b7a4d3e3a6ee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointDifferentialMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
+        <name>SetPointDifferentialMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="143" column="1" bodyfile="BrainHarmonics/point.h" bodystart="143" bodyend="143"/>
+        <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a0b1ce0db9514762fc3aa9d57fa3034a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointDifferentialMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
+        <name>SetPointDifferentialMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="144" column="1" bodyfile="BrainHarmonics/point.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a60ccff89b647d069146a596b8c43d123" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointTTL</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>SetPointTTL</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="146" column="1" bodyfile="BrainHarmonics/point.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1ae36f75ff4e27742000acd8cad7743614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointTTLMin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>SetPointTTLMin</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="147" column="1" bodyfile="BrainHarmonics/point.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a167884648fa6ce217472edfdbf515ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointTTLMinOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetPointTTLMinOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="148" column="1" bodyfile="BrainHarmonics/point.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a1227b110f1fa0aab599f9374ea5ec484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointTTLMax</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>SetPointTTLMax</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="149" column="1" bodyfile="BrainHarmonics/point.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::SetPointTTLMaxOverflow</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
+        <name>SetPointTTLMaxOverflow</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="150" column="1" bodyfile="BrainHarmonics/point.h" bodystart="150" bodyend="150"/>
+        <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
+        <references refid="class_point_1a414f2215f758cd69fa67e8135ecc4fe2" compoundref="point_8cc" startline="101" endline="148">PointForcePoll</references>
+        <references refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</references>
+        <references refid="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" compoundref="point_8cc" startline="150" endline="159">PointPoll</references>
+        <references refid="class_point_1a44c69c43cfdcb3273d0e6786a21fd000" compoundref="point_8cc" startline="162" endline="443">OverflowPoll</references>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a123c78bef71f74d71bc833709a38709c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Point::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Overflow options: 0 = Stay at Min/Max, 1 = Wrap, 2 = Bounce, 3 = Hidden, 4 = DestroyDimension, 5 = DestroyAllDimensions</para><para>Initialise to zero</para><para>Unique point sequence number</para><para>Size can vary greatly. Scaling groups points</para><para><ref refid="class_point" kindref="compound">Point</ref> <ref refid="class_dimension" kindref="compound">Dimension</ref> value</para><para>Minimum value allowed for point</para><para>What to do if overflow - see above</para><para>Maximum value allowed for point</para><para>What to do if overflow - see above</para><para>How far to move the point value</para><para>Maximum change in movement</para><para>What to do if overflow - see above</para><para>Minimum change in movement</para><para>What to do if overflow - see above</para><para>Rate of change of movement</para><para>Minimum rate of change</para><para>What to do if overflow - see above</para><para>Maximum rate of change</para><para>What to do if overflow - see above</para><para>Time to live for point</para><para>Minimum TTL for point</para><para>What to do if overflow - see above</para><para>Maximum TTL for point</para><para>What to do if overflow - see above </para>        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="152" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="20" bodyend="90"/>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
+        <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
+        <referencedby refid="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" compoundref="point_8cc" startline="92" endline="99">SetObjectType</referencedby>
+        <referencedby refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</referencedby>
+        <referencedby refid="class_point_1abbc76ed1b437c982eb607ec165ecfa47" compoundref="point_8h" startline="40" endline="54">Point</referencedby>
+        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a414f2215f758cd69fa67e8135ecc4fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::PointForcePoll</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, Point *opposingPoint)</argsstring>
+        <name>PointForcePoll</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
+          <declname>opposingPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="154" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="101" bodyend="148"/>
+        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a7ad2d1933410012c59bffbd4ac611279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Point::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="156" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="445" bodyend="481"/>
+        <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <references refid="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" compoundref="point_8cc" startline="150" endline="159">PointPoll</references>
+        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
+        <referencedby refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" compoundref="polyhedron_8cc" startline="242" endline="263">Polyhedron::UpdateCycle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::PointPoll</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
+        <name>PointPoll</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="158" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="150" bodyend="159"/>
+        <referencedby refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</referencedby>
+        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_point_1a44c69c43cfdcb3273d0e6786a21fd000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Point::OverflowPoll</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>OverflowPoll</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/point.h" line="160" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="162" bodyend="443"/>
+        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="295">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="294">
+        <label>Point</label>
+        <link refid="class_point"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="297">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="297" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="296">
+        <label>Point</label>
+        <link refid="class_point"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/point.h" line="27" column="1" bodyfile="BrainHarmonics/point.h" bodystart="26" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>Point</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>Point</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>Point</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>Point</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>Point</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>Point</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>Point</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>Point</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>Point</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>Point</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>Point</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>Point</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>Point</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>Point</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>Point</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>Point</scope><name>AddPoints</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>Point</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>Point</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>Point</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>Point</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Point</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Point</scope><name>AdjustCounters</name></member>
+      <member refid="class_universe_1a1f787da78fa196ba635db21a9e91dabb" prot="public" virt="virtual"><scope>Point</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_universe_1a4c36c1ab30db993307f88363dde5e8c5" prot="public" virt="virtual"><scope>Point</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a76c0b5e63c2a7d1988c44db341c3d64c" prot="public" virt="virtual"><scope>Point</scope><name>ApplyGravitation</name></member>
+      <member refid="class_universe_1a906a88b37f10bfa630bef49dfd0e907a" prot="public" virt="virtual"><scope>Point</scope><name>ApplyStrong</name></member>
+      <member refid="class_universe_1a62789bcff84bd750b0366004381e2fdd" prot="public" virt="virtual"><scope>Point</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_universe_1af7becebb347be9a85541d96a3eca1ca7" prot="public" virt="virtual"><scope>Point</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_universe_1a6d1226b3adec3c42a833afdbb6a65a92" prot="public" virt="virtual"><scope>Point</scope><name>ApplyWeak</name></member>
+      <member refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e" prot="public" virt="virtual"><scope>Point</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>Point</scope><name>cognitive_network_list</name></member>
+      <member refid="class_point_1aa71ef0cdabcc5fbb4b3e6532b76b4027" prot="private" virt="non-virtual"><scope>Point</scope><name>combined_acceleration</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>Point</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_point_1a9bc6eb2a4c20ce83728a7c9a31b91f19" prot="private" virt="non-virtual"><scope>Point</scope><name>CompositeForceParticle</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>Point</scope><name>Creation</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>Point</scope><name>dimension_list</name></member>
+      <member refid="class_point_1adab2c73402406c954413b98a7f608154" prot="private" virt="non-virtual"><scope>Point</scope><name>distance_apart</name></member>
+      <member refid="class_point_1ab3a9b92a8ae102e1413988be02f72368" prot="private" virt="non-virtual"><scope>Point</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>Point</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>Point</scope><name>elementary_particle_list</name></member>
+      <member refid="class_point_1a6e57500586e9cd366f5cf76ea0299957" prot="private" virt="non-virtual"><scope>Point</scope><name>ElementaryForce</name></member>
+      <member refid="class_point_1af2ace341c1d7ccd30de3502502773591" prot="private" virt="non-virtual"><scope>Point</scope><name>ElementaryParticle</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>Point</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>Point</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>Point</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>Point</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>Point</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>Point</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>Point</scope><name>GetDimensions</name></member>
+      <member refid="class_universe_1a63b850ef3f3394313353109d222bf5d1" prot="public" virt="virtual"><scope>Point</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_universe_1a9f099605c082e7fa755787a6a8cab7ba" prot="public" virt="virtual"><scope>Point</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>Point</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>Point</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>Point</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>Point</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual"><scope>Point</scope><name>GetEnergy</name></member>
+      <member refid="class_universe_1ab0404e774ee0ed66b597ff5b8e989446" prot="public" virt="virtual"><scope>Point</scope><name>GetGravitation</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>Point</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>Point</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>Point</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>Point</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPoint</name></member>
+      <member refid="class_point_1af3941d62b39234e468e201f25a37d9da" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointDifferential</name></member>
+      <member refid="class_point_1a326cd5742e908f8fb3cf6f3275b5462c" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointDifferentialMax</name></member>
+      <member refid="class_point_1a2d38599722fbf65afe2b9ac57b0c4bcf" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointDifferentialMaxOverflow</name></member>
+      <member refid="class_point_1a782860849006b601600f8df15af23f7a" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointDifferentialMin</name></member>
+      <member refid="class_point_1adbc225afbd532763617db1acdb81ef4c" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointDifferentialMinOverflow</name></member>
+      <member refid="class_point_1a46d06a6d5e8107a0321ede4ca162f264" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointMove</name></member>
+      <member refid="class_point_1af67ce3da60a8e3907df6ec193786c2ae" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointMoveMax</name></member>
+      <member refid="class_point_1a83e3715d429ab2099f0c421d46603004" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointMoveMaxOverflow</name></member>
+      <member refid="class_point_1a92d41c8cd9a07ef56223839a44f54fe8" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointMoveMin</name></member>
+      <member refid="class_point_1a3c88bb9f80535e98fb0f479b69f75c64" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointMoveMinOverflow</name></member>
+      <member refid="class_point_1a521d229550d7f38851f9ffb1933046a6" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPosition</name></member>
+      <member refid="class_point_1a98557a7ad341f981b13bb009994868f2" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPosition2</name></member>
+      <member refid="class_point_1afca47c5ea265894faf7b6aa4f4b17998" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPositionMax</name></member>
+      <member refid="class_point_1a228830fddb8b4d90e910e0774796e635" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPositionMaxOverflow</name></member>
+      <member refid="class_point_1a6182865226595813eccadbe25d38cd9e" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPositionMin</name></member>
+      <member refid="class_point_1a3a0caf079555585799754b3cab12129c" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointPositionMinOverflow</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPoints</name></member>
+      <member refid="class_point_1acdd393f39d8c08aff1e866ce1c5585e5" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointScale</name></member>
+      <member refid="class_point_1a04bae1bb3475d1e5d97ddd7b2dae40aa" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointSeq</name></member>
+      <member refid="class_point_1a72cf99a391fc3d6ea8f4252f4f92c19f" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointTTL</name></member>
+      <member refid="class_point_1a0800eea77109f6fbb1220b4d551a70d3" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointTTLMax</name></member>
+      <member refid="class_point_1a61d7e0fb0fd0280f628ea46609082809" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointTTLMaxOverflow</name></member>
+      <member refid="class_point_1a272b99a9cd054b09c8944b9f0e657890" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointTTLMin</name></member>
+      <member refid="class_point_1a72b222f880df30ebcc12ddc1a6d430b5" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPointTTLMinOverflow</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>Point</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>Point</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>Point</scope><name>GetSolids</name></member>
+      <member refid="class_universe_1acb453ce71da418c5b5617fecede9571b" prot="public" virt="virtual"><scope>Point</scope><name>GetStrong</name></member>
+      <member refid="class_universe_1ab44daccba01ee7e3cf9b50bba83dd19e" prot="public" virt="virtual"><scope>Point</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_universe_1af0f4b81950061e63c2855eb40957a5b1" prot="public" virt="virtual"><scope>Point</scope><name>GetStrongResidual</name></member>
+      <member refid="class_universe_1a4476b7e0a3fc1764909f556257fd9ec7" prot="public" virt="virtual"><scope>Point</scope><name>GetWeak</name></member>
+      <member refid="class_universe_1a645299738e6b798a037f2a15a2e7cf4d" prot="public" virt="virtual"><scope>Point</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>Point</scope><name>IsDead</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>Point</scope><name>matter_list</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>Point</scope><name>monomer_list</name></member>
+      <member refid="class_point_1a8767bfc9390f3089ebeb69f84293f816" prot="private" virt="non-virtual"><scope>Point</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual"><scope>Point</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual"><scope>Point</scope><name>object_energy_threshold</name></member>
+      <member refid="class_point_1af2120c639f62adcd53844fc1ced96de4" prot="private" virt="non-virtual"><scope>Point</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual"><scope>Point</scope><name>object_size</name></member>
+      <member refid="class_point_1a44c69c43cfdcb3273d0e6786a21fd000" prot="public" virt="non-virtual"><scope>Point</scope><name>OverflowPoll</name></member>
+      <member refid="class_point_1ad92f2337b839a94ce97dcdb439b4325a" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1a84d29a0f72e67406901cb87c1d2f77e9" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1ac3e6d30951c40e5bc5dafe6c90668b3f" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1abbc76ed1b437c982eb607ec165ecfa47" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="class_point_1ab015c120be197a2338719eceb0506d76" prot="private" virt="non-virtual"><scope>Point</scope><name>point_differential</name></member>
+      <member refid="class_point_1a425668a281378a22012e6e5d2a51a3fa" prot="private" virt="non-virtual"><scope>Point</scope><name>point_differential_max</name></member>
+      <member refid="class_point_1a2d564b1268fad445926e1d14873e3a8e" prot="private" virt="non-virtual"><scope>Point</scope><name>point_differential_max_overflow</name></member>
+      <member refid="class_point_1adaa3334658ce9dad7542bbe5d0b94ef3" prot="private" virt="non-virtual"><scope>Point</scope><name>point_differential_min</name></member>
+      <member refid="class_point_1aa1ffa865d85687a905c805babb117a3a" prot="private" virt="non-virtual"><scope>Point</scope><name>point_differential_min_overflow</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>Point</scope><name>point_list</name></member>
+      <member refid="class_point_1a1a2a481ca7d0fa5f3212ad3d4d2871a9" prot="private" virt="non-virtual"><scope>Point</scope><name>point_move</name></member>
+      <member refid="class_point_1ab54f1aa3f0183ad0dd9d60d3a685ab5e" prot="private" virt="non-virtual"><scope>Point</scope><name>point_move_max</name></member>
+      <member refid="class_point_1a702a47d6ecf6fdcd8d2420ba0e3b3e86" prot="private" virt="non-virtual"><scope>Point</scope><name>point_move_max_overflow</name></member>
+      <member refid="class_point_1af686f563a571b1e0a2871f5428c068d9" prot="private" virt="non-virtual"><scope>Point</scope><name>point_move_min</name></member>
+      <member refid="class_point_1a9d647ea8a7c6def7fd1e07592adaabaa" prot="private" virt="non-virtual"><scope>Point</scope><name>point_move_min_overflow</name></member>
+      <member refid="class_point_1ad0fe25e84155d95663b00791ff9983fa" prot="private" virt="non-virtual"><scope>Point</scope><name>point_position</name></member>
+      <member refid="class_point_1abae7f1b61c44e4829bfa864dffc400f6" prot="private" virt="non-virtual"><scope>Point</scope><name>point_position_max</name></member>
+      <member refid="class_point_1abd6f21f21522ff1021ee4cb96ff1e4e0" prot="private" virt="non-virtual"><scope>Point</scope><name>point_position_max_overflow</name></member>
+      <member refid="class_point_1a2a1a9dcad0d1ef163b3ff0f35de8ddb4" prot="private" virt="non-virtual"><scope>Point</scope><name>point_position_min</name></member>
+      <member refid="class_point_1a0c0cab60e2a94adce49302c2647b9c45" prot="private" virt="non-virtual"><scope>Point</scope><name>point_position_min_overflow</name></member>
+      <member refid="class_point_1a087b62626654e6fabae0bdb483d03be9" prot="private" virt="non-virtual"><scope>Point</scope><name>point_scale</name></member>
+      <member refid="class_point_1ad33c4b30332e7e58264b35986ca5a387" prot="private" virt="non-virtual"><scope>Point</scope><name>point_seq</name></member>
+      <member refid="class_point_1aa839d0ecb9c12b07ee2600344d5bedeb" prot="private" virt="non-virtual"><scope>Point</scope><name>point_TTL</name></member>
+      <member refid="class_point_1ad466df219c14f585d5cd10f9eac6f929" prot="private" virt="non-virtual"><scope>Point</scope><name>point_TTL_max</name></member>
+      <member refid="class_point_1a14a0d7be9c2ada24628d6b89524def44" prot="private" virt="non-virtual"><scope>Point</scope><name>point_TTL_max_overflow</name></member>
+      <member refid="class_point_1abae86f9c65f86d2843551e89bc5c18fa" prot="private" virt="non-virtual"><scope>Point</scope><name>point_TTL_min</name></member>
+      <member refid="class_point_1af45f32c8b67614d680a4d85996ba64f7" prot="private" virt="non-virtual"><scope>Point</scope><name>point_TTL_min_overflow</name></member>
+      <member refid="class_point_1aa672daab7c7949e840dfe79980d162b5" prot="private" virt="non-virtual"><scope>Point</scope><name>point_type</name></member>
+      <member refid="class_point_1a414f2215f758cd69fa67e8135ecc4fe2" prot="public" virt="non-virtual"><scope>Point</scope><name>PointForcePoll</name></member>
+      <member refid="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" prot="public" virt="non-virtual"><scope>Point</scope><name>PointPoll</name></member>
+      <member refid="class_universe_1a0c485c504542409cbb5cfd8543c35b11" prot="public" virt="virtual"><scope>Point</scope><name>PollElementaryForce</name></member>
+      <member refid="class_point_1a28d1b9582890ca3e2b61dafdc1c3ba84" prot="private" virt="non-virtual"><scope>Point</scope><name>Polyhedron</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>Point</scope><name>polymer_list</name></member>
+      <member refid="class_point_1abdae57027e086386d297d503feba1b41" prot="private" virt="non-virtual"><scope>Point</scope><name>previous_event_time</name></member>
+      <member refid="class_point_1a123c78bef71f74d71bc833709a38709c" prot="public" virt="non-virtual"><scope>Point</scope><name>ResetParameters</name></member>
+      <member refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" prot="public" virt="non-virtual"><scope>Point</scope><name>RespectLimits</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Point</scope><name>ReturnEnergy</name></member>
+      <member refid="class_universe_1a3b3da7c86a7b75e5e5c0b7972ac82a87" prot="public" virt="virtual"><scope>Point</scope><name>SetCharge</name></member>
+      <member refid="class_universe_1aa22202ae740eb1355529afcb13285e91" prot="public" virt="virtual"><scope>Point</scope><name>SetCounter</name></member>
+      <member refid="class_universe_1aa981fc7e252b1fbbb675f0371860954d" prot="public" virt="virtual"><scope>Point</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_universe_1a608aa95698380f791a0ffba45cc1bee3" prot="public" virt="virtual"><scope>Point</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual"><scope>Point</scope><name>SetEnergy</name></member>
+      <member refid="class_universe_1ae0cb8d86b2fbb8396d605160344b42f5" prot="public" virt="virtual"><scope>Point</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Point</scope><name>SetLifespan</name></member>
+      <member refid="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" prot="public" virt="non-virtual"><scope>Point</scope><name>SetObjectType</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Point</scope><name>SetObjectType</name></member>
+      <member refid="class_point_1adb977a2f01e7a2b549e1bd36fa6f5354" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointDifferential</name></member>
+      <member refid="class_point_1ac2e53da4cbee0dc39c0b7a4d3e3a6ee5" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointDifferentialMax</name></member>
+      <member refid="class_point_1a0b1ce0db9514762fc3aa9d57fa3034a0" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointDifferentialMaxOverflow</name></member>
+      <member refid="class_point_1a944fcec52017ce88e052a576ef143926" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointDifferentialMin</name></member>
+      <member refid="class_point_1a582e63ebdbb0979234acb460e673a393" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointDifferentialMinOverflow</name></member>
+      <member refid="class_point_1a2cf44d5cf17ecf2b3385bde963678589" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointMove</name></member>
+      <member refid="class_point_1afa3c2290a72c99e8892029eaa6676204" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointMoveMax</name></member>
+      <member refid="class_point_1a7c9776ffca2fde856fa8eaee669d9881" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointMoveMaxOverflow</name></member>
+      <member refid="class_point_1a287698b6f3ec6a610447fded5c3542ca" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointMoveMin</name></member>
+      <member refid="class_point_1a4a988ff988a3984545cf0c35e764c404" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointMoveMinOverflow</name></member>
+      <member refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointPosition</name></member>
+      <member refid="class_point_1adb2897b1a7bde15e81b72cb59342f186" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointPositionMax</name></member>
+      <member refid="class_point_1a29aca71cae82195775f3822740df80ec" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointPositionMaxOverflow</name></member>
+      <member refid="class_point_1ad47980a6ed515a2def172d757af46f1a" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointPositionMin</name></member>
+      <member refid="class_point_1ab0c0a837abb8bd52a59f82723a31f61f" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointPositionMinOverflow</name></member>
+      <member refid="class_point_1a8fc02455a773624df80933403b0e545f" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointScale</name></member>
+      <member refid="class_point_1a912aefb007184f73b86c37257a415237" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointSeq</name></member>
+      <member refid="class_point_1a60ccff89b647d069146a596b8c43d123" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointTTL</name></member>
+      <member refid="class_point_1a1227b110f1fa0aab599f9374ea5ec484" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointTTLMax</name></member>
+      <member refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointTTLMaxOverflow</name></member>
+      <member refid="class_point_1ae36f75ff4e27742000acd8cad7743614" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointTTLMin</name></member>
+      <member refid="class_point_1a167884648fa6ce217472edfdbf515ac3" prot="public" virt="non-virtual"><scope>Point</scope><name>SetPointTTLMinOverflow</name></member>
+      <member refid="class_universe_1ae2ae1c3b3e4cde2c18f5f6a814761ec8" prot="public" virt="virtual"><scope>Point</scope><name>SetSpin</name></member>
+      <member refid="class_universe_1a5946c8f3d4cda305f3ecd10df21a2f94" prot="public" virt="virtual"><scope>Point</scope><name>SetStrong</name></member>
+      <member refid="class_universe_1aafec97a231126b71c73ac1258609a284" prot="public" virt="virtual"><scope>Point</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_universe_1a1b2d6197ddf3d613cc30bd04d22ed8b7" prot="public" virt="virtual"><scope>Point</scope><name>SetStrongResidual</name></member>
+      <member refid="class_universe_1a0f5cd04081b41ee931c0557dc397f6fb" prot="public" virt="virtual"><scope>Point</scope><name>SetWeak</name></member>
+      <member refid="class_universe_1a2d3d642bfdc863248e93535832fa4b00" prot="public" virt="virtual"><scope>Point</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>Point</scope><name>solid_list</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>Point</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>Point</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>Point</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_point_1a7d06d004516b58e6a6d85a35e689b28a" prot="private" virt="non-virtual"><scope>Point</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>Point</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>Point</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>Point</scope><name>Universe</name></member>
+      <member refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" prot="public" virt="non-virtual"><scope>Point</scope><name>Update</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual"><scope>Point</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>Point</scope><name>UseEnergy</name></member>
+      <member refid="class_point_1a364091762d6aa1aa5983d36fd7d8b6d5" prot="public" virt="virtual"><scope>Point</scope><name>~Point</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Point</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

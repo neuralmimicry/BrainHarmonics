@@ -1,0 +1,533 @@
+\hypertarget{class_dendrite_branch}{}\section{Dendrite\+Branch Class Reference}
+\label{class_dendrite_branch}\index{Dendrite\+Branch@{Dendrite\+Branch}}
+
+
+{\ttfamily \#include $<$dendritebranch.\+h$>$}
+
+
+
+Inheritance diagram for Dendrite\+Branch\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_dendrite_branch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dendrite\+Branch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_dendrite_branch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dendrite_branch_af391f5fd2379539523b3d2523c59ea8b}{Dendrite\+Branch} ()
+\item 
+\hyperlink{class_dendrite_branch_a391ba1440a6c29a0752b03eb60357370}{Dendrite\+Branch} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_dendrite_branch_a390bfee680074f5f3ddcd9aee54db679}{Dendrite\+Branch} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_dendrite_branch_a9b7e932b0614dad370edd76f31900c40}{Dendrite\+Branch} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite}{Dendrite} \&dendrite\+\_\+connector)
+\item 
+virtual \hyperlink{class_dendrite_branch_a38707cb6d1f9f07c6e8aa34a8a415051}{$\sim$\+Dendrite\+Branch} ()
+\item 
+unsigned int \hyperlink{class_dendrite_branch_a4d4a4b1591dd612eef903d95605d50fd}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_dendrite_branch_afab2dd907fba115c3483cd9a217ccec0}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_dendrite_branch_a2ce03fbad4a70564eeaafb62debd4d74}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_dendrite_branch_a13dd0373022d653448c9067d075586a8}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+bool \hyperlink{class_dendrite_branch_a70b5e63fc44166ccd7f0c7177660c250}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_a4f751442a537f2e3d7d0dc66a09bd84b}{Create\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a86d00d6ad66c8c83683e9e22d73a71b6}{Create\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_a45d2fea350165fe0c81f1f429aa96061}{Clone\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a3cf1e07fe5e0ea827965c0dc76881c9f}{Clone\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_a60225ab106eae6bce25eb8159166d5e9}{Destroy\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a454dd0483439353076df63fc124a24f7}{Destroy\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$ destruction\+\_\+list)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_a060f0c55b2e6cb65b68e160df0bbf563}{Add\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a2ddeff41db805e414c994ac169cbcf4b}{Add\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$ add\+\_\+objects)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_afaca221cb4bba98e56f11b0f9e6370b5}{Remove\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_acd54003e5acb9abda7d7a42f248c14b0}{Remove\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ \hyperlink{class_dendrite_branch_a11f25ffce77011afad909acb593d2e42}{Get\+Dendrite\+Cleft} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a2be44a81b4b5213947e9545400a0453c}{Get\+Dendrite\+Clefts} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_dendrite_branch_a4b950ef8a0856a11240d353bcfd1fba4}{Growth} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_dendrite_branch_a8540dfafeb5bd45f782ab31b8231b10f}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ \hyperlink{class_dendrite_branch_a8015119958f7581d826dcac2c21919c9}{dendritecleft\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file dendritebranch.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dendrite_branch_af391f5fd2379539523b3d2523c59ea8b}\label{class_dendrite_branch_af391f5fd2379539523b3d2523c59ea8b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a391ba1440a6c29a0752b03eb60357370}\label{class_dendrite_branch_a391ba1440a6c29a0752b03eb60357370}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a390bfee680074f5f3ddcd9aee54db679}\label{class_dendrite_branch_a390bfee680074f5f3ddcd9aee54db679}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a9b7e932b0614dad370edd76f31900c40}\label{class_dendrite_branch_a9b7e932b0614dad370edd76f31900c40}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite}{Dendrite} \&}]{dendrite\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file dendritebranch.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a9b7e932b0614dad370edd76f31900c40_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a38707cb6d1f9f07c6e8aa34a8a415051}\label{class_dendrite_branch_a38707cb6d1f9f07c6e8aa34a8a415051}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!````~Dendrite\+Branch@{$\sim$\+Dendrite\+Branch}}
+\index{````~Dendrite\+Branch@{$\sim$\+Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{$\sim$\+Dendrite\+Branch()}{~DendriteBranch()}}
+{\footnotesize\ttfamily virtual Dendrite\+Branch\+::$\sim$\+Dendrite\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 36 of file dendritebranch.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dendrite_branch_a060f0c55b2e6cb65b68e160df0bbf563}\label{class_dendrite_branch_a060f0c55b2e6cb65b68e160df0bbf563}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Add\+Dendrite\+Cleft@{Add\+Dendrite\+Cleft}}
+\index{Add\+Dendrite\+Cleft@{Add\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Dendrite\+Cleft()}{AddDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Add\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a060f0c55b2e6cb65b68e160df0bbf563_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a2ddeff41db805e414c994ac169cbcf4b}\label{class_dendrite_branch_a2ddeff41db805e414c994ac169cbcf4b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Add\+Dendrite\+Clefts@{Add\+Dendrite\+Clefts}}
+\index{Add\+Dendrite\+Clefts@{Add\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Dendrite\+Clefts()}{AddDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Add\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+
+
+Definition at line 130 of file dendritebranch.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a2ddeff41db805e414c994ac169cbcf4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a2ddeff41db805e414c994ac169cbcf4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a45d2fea350165fe0c81f1f429aa96061}\label{class_dendrite_branch_a45d2fea350165fe0c81f1f429aa96061}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Clone\+Dendrite\+Cleft@{Clone\+Dendrite\+Cleft}}
+\index{Clone\+Dendrite\+Cleft@{Clone\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Dendrite\+Cleft()}{CloneDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Clone\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 104 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a45d2fea350165fe0c81f1f429aa96061_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a3cf1e07fe5e0ea827965c0dc76881c9f}\label{class_dendrite_branch_a3cf1e07fe5e0ea827965c0dc76881c9f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Clone\+Dendrite\+Clefts@{Clone\+Dendrite\+Clefts}}
+\index{Clone\+Dendrite\+Clefts@{Clone\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Dendrite\+Clefts()}{CloneDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Clone\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a3cf1e07fe5e0ea827965c0dc76881c9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a4f751442a537f2e3d7d0dc66a09bd84b}\label{class_dendrite_branch_a4f751442a537f2e3d7d0dc66a09bd84b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Create\+Dendrite\+Cleft@{Create\+Dendrite\+Cleft}}
+\index{Create\+Dendrite\+Cleft@{Create\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Dendrite\+Cleft()}{CreateDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Create\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a4f751442a537f2e3d7d0dc66a09bd84b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a86d00d6ad66c8c83683e9e22d73a71b6}\label{class_dendrite_branch_a86d00d6ad66c8c83683e9e22d73a71b6}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Create\+Dendrite\+Clefts@{Create\+Dendrite\+Clefts}}
+\index{Create\+Dendrite\+Clefts@{Create\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Dendrite\+Clefts()}{CreateDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Create\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file dendritebranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a86d00d6ad66c8c83683e9e22d73a71b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a86d00d6ad66c8c83683e9e22d73a71b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a60225ab106eae6bce25eb8159166d5e9}\label{class_dendrite_branch_a60225ab106eae6bce25eb8159166d5e9}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Destroy\+Dendrite\+Cleft@{Destroy\+Dendrite\+Cleft}}
+\index{Destroy\+Dendrite\+Cleft@{Destroy\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrite\+Cleft()}{DestroyDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Destroy\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 114 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a60225ab106eae6bce25eb8159166d5e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a454dd0483439353076df63fc124a24f7}\label{class_dendrite_branch_a454dd0483439353076df63fc124a24f7}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Destroy\+Dendrite\+Clefts@{Destroy\+Dendrite\+Clefts}}
+\index{Destroy\+Dendrite\+Clefts@{Destroy\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrite\+Clefts()}{DestroyDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Destroy\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a454dd0483439353076df63fc124a24f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a4d4a4b1591dd612eef903d95605d50fd}\label{class_dendrite_branch_a4d4a4b1591dd612eef903d95605d50fd}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Dendrite\+Branch\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a11f25ffce77011afad909acb593d2e42}\label{class_dendrite_branch_a11f25ffce77011afad909acb593d2e42}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Dendrite\+Cleft@{Get\+Dendrite\+Cleft}}
+\index{Get\+Dendrite\+Cleft@{Get\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Dendrite\+Cleft()}{GetDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Get\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a11f25ffce77011afad909acb593d2e42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a2be44a81b4b5213947e9545400a0453c}\label{class_dendrite_branch_a2be44a81b4b5213947e9545400a0453c}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Dendrite\+Clefts@{Get\+Dendrite\+Clefts}}
+\index{Get\+Dendrite\+Clefts@{Get\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Dendrite\+Clefts()}{GetDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Get\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a2be44a81b4b5213947e9545400a0453c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_afab2dd907fba115c3483cd9a217ccec0}\label{class_dendrite_branch_afab2dd907fba115c3483cd9a217ccec0}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a4b950ef8a0856a11240d353bcfd1fba4}\label{class_dendrite_branch_a4b950ef8a0856a11240d353bcfd1fba4}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Growth@{Growth}}
+\index{Growth@{Growth}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file dendritebranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a4b950ef8a0856a11240d353bcfd1fba4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a4b950ef8a0856a11240d353bcfd1fba4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_afaca221cb4bba98e56f11b0f9e6370b5}\label{class_dendrite_branch_afaca221cb4bba98e56f11b0f9e6370b5}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Remove\+Dendrite\+Cleft@{Remove\+Dendrite\+Cleft}}
+\index{Remove\+Dendrite\+Cleft@{Remove\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Dendrite\+Cleft()}{RemoveDendriteCleft()}}
+{\footnotesize\ttfamily \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ Dendrite\+Branch\+::\+Remove\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_afaca221cb4bba98e56f11b0f9e6370b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_acd54003e5acb9abda7d7a42f248c14b0}\label{class_dendrite_branch_acd54003e5acb9abda7d7a42f248c14b0}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Remove\+Dendrite\+Clefts@{Remove\+Dendrite\+Clefts}}
+\index{Remove\+Dendrite\+Clefts@{Remove\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Dendrite\+Clefts()}{RemoveDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dendrite_branch}{Dendrite\+Branch} $\ast$ $>$ Dendrite\+Branch\+::\+Remove\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 158 of file dendritebranch.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_acd54003e5acb9abda7d7a42f248c14b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a70b5e63fc44166ccd7f0c7177660c250}\label{class_dendrite_branch_a70b5e63fc44166ccd7f0c7177660c250}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Dendrite\+Branch\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file dendritebranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a70b5e63fc44166ccd7f0c7177660c250_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a70b5e63fc44166ccd7f0c7177660c250_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a2ce03fbad4a70564eeaafb62debd4d74}\label{class_dendrite_branch_a2ce03fbad4a70564eeaafb62debd4d74}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Dendrite\+Branch\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_dendrite_a7529495515de74fff2b9a92b12531057}{Dendrite}.
+
+
+
+Reimplemented in \hyperlink{class_neuroreceptor_a0660a316ef44cf723509f720acd16f24}{Neuroreceptor}, and \hyperlink{class_dendrite_cleft_a428b8e5117f381a382e0071b936d42a1}{Dendrite\+Cleft}.
+
+
+
+Definition at line 41 of file dendritebranch.\+h.
+
+\mbox{\Hypertarget{class_dendrite_branch_a13dd0373022d653448c9067d075586a8}\label{class_dendrite_branch_a13dd0373022d653448c9067d075586a8}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Dendrite\+Branch\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file dendritebranch.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a13dd0373022d653448c9067d075586a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dendrite_branch_a8540dfafeb5bd45f782ab31b8231b10f}\label{class_dendrite_branch_a8540dfafeb5bd45f782ab31b8231b10f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Update@{Update}}
+\index{Update@{Update}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 197 of file dendritebranch.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a8540dfafeb5bd45f782ab31b8231b10f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dendrite_branch_a8540dfafeb5bd45f782ab31b8231b10f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dendrite_branch_a8015119958f7581d826dcac2c21919c9}\label{class_dendrite_branch_a8015119958f7581d826dcac2c21919c9}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!dendritecleft\+\_\+list@{dendritecleft\+\_\+list}}
+\index{dendritecleft\+\_\+list@{dendritecleft\+\_\+list}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{dendritecleft\+\_\+list}{dendritecleft\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_dendrite_branch}{Dendrite\+Branch}$\ast$$>$ Dendrite\+Branch\+::dendritecleft\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 75 of file dendritebranch.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{dendritebranch_8h}{dendritebranch.\+h}\item 
+Brain\+Harmonics/\hyperlink{dendritebranch_8cc}{dendritebranch.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,2211 @@
+\hypertarget{class_universe}{}\section{Universe Class Reference}
+\label{class_universe}\index{Universe@{Universe}}
+
+
+{\ttfamily \#include $<$universe.\+h$>$}
+
+
+
+Inheritance diagram for Universe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Universe\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_universe__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_universe_a4d137a146dd3c2514dfb692dfbab6984}{Universe} ()
+\item 
+\hyperlink{class_universe_a1210ce56049f1fc67f53aeda223bb82b}{Universe} (int interim\+\_\+object\+\_\+type)
+\item 
+\hyperlink{class_universe_a03af7455263d3028b55ca5dc93ebb6ba}{Universe} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+virtual \hyperlink{class_universe_ad4d90f6f2727992762c6b409d3d3d228}{$\sim$\+Universe} ()
+\item 
+double \hyperlink{class_universe_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_universe_a868250e67d0fcb2483aa8bdd73c40a02}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+double \hyperlink{class_universe_a63e878aaf03f1800b255e9a089a72a8b}{Use\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+double \hyperlink{class_universe_aeda74e3902c0e56c0c09779854045cde}{Return\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+void \hyperlink{class_universe_a28615baf47d4558cbe5eebeed6575024}{Creation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::string object\+\_\+title, int object\+\_\+type)
+\item 
+void \hyperlink{class_universe_a2274a54fbdc7504c897e4272162bf17a}{Set\+Object\+Type} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \hyperlink{class_universe_a1d92b2277564577571c802f6e0c206dd}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ \hyperlink{class_universe_ae54d34c5d695917e074b8e07e8820bdb}{The\+Time\+Now} ()
+\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ \hyperlink{class_universe_aa220508c4cc12b02c6fe494622ebb58d}{The\+Calculated\+Time\+Now} (std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ time\+\_\+object\+\_\+created\+\_\+time, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double calculated\+\_\+scaled\+\_\+time)
+\item 
+void \hyperlink{class_universe_ac3443dd59b61ae3110f07f681f63ed0a}{Set\+Lifespan} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::chrono\+::nanoseconds life\+\_\+time)
+\item 
+void \hyperlink{class_universe_a982502e46868a00a9111738ccc9355c2}{Extend\+Life} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::chrono\+::nanoseconds life\+\_\+time)
+\item 
+bool \hyperlink{class_universe_a8fdaa6d06584e1ef50c4c613b22b786e}{Is\+Dead} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a03bdf5f7fea4209241e9bf5316d45517}{Add\+Dimensions} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a6326158c47bf3f7fe9297299a9b5b7b7}{Add\+Dimension} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a1869fc7bf43827378bab5a701f7f917a}{Get\+Dimensions} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_ab79a380dee684c6dc304b571f4d28645}{Get\+Dimension} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a857cf7f208cd11c80736e82fa523feb5}{Add\+Elementary\+Particles} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_ab9c84e0576de50aa4fa46655832ce5e4}{Add\+Elementary\+Particle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a168fd9bf7602adcba1de5dd93a212775}{Get\+Elementary\+Particles} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_acef54e17666d17078c522388f8f6e4f9}{Get\+Elementary\+Particle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a81d294300346e9f901836ab609cce942}{Add\+Elementary\+Forces} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a90c573dec55f2b3ad5680015356f5f25}{Add\+Elementary\+Force} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a6a8ed579b2eedd3aceebda9f3d78aa0e}{Get\+Elementary\+Forces} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a9506017d944cb64e67567477c1505a53}{Get\+Elementary\+Force} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a23d74e377203fca7cb74e0ffee7244b6}{Add\+Composite\+Force\+Particles} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_ab2671c2218c98f0f1f487c5b3bb96e3c}{Add\+Composite\+Force\+Particle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aed37d7224b4e31bdfb0632e39bf19694}{Get\+Composite\+Force\+Particles} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a3e2acc1d75765a6e8e852fca919c5b96}{Get\+Composite\+Force\+Particle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_ae00d10b2a23c9cedf1ff89e9da875563}{Add\+Matters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a090d9ad1b88d81364e872e17d65edca4}{Add\+Matter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a4307a62e183fed8cf2b92be0f6014688}{Get\+Matters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a69de663cf2e32e65ed28c44ae666db3a}{Get\+Matter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a95fe7f99971bb2048121a7c4e87b9f79}{Add\+Monomers} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a062a9472f0400e566ecc7dc056d989d9}{Add\+Monomer} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aca82a914e0f8bd7cd1ec80a7220f0a0e}{Get\+Monomers} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_aaa03fb8178d790afd992dd094bb64b47}{Get\+Monomer} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aed7cb25507d516a2821ebb69d5345c54}{Add\+Polymers} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a4ea0af5d2eb7b5070a83f7da29526fbd}{Add\+Polymer} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aac5d1c1a3a3ba56c8ca7115a85b2c239}{Get\+Polymers} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a2d5d3924a7d7ffd2a5f47be9f137d86e}{Get\+Polymer} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a410d5ba2224fe90584b1f1aa5b38b41c}{Add\+Solids} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a598799e2fcdf9ed60e83e9f5a61bfc05}{Add\+Solid} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a669fc068dd7820a5af309bfbe67199aa}{Get\+Solids} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a9f7b74fc21d45ddaa78aa18e9a337bcd}{Get\+Solid} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a5199f6c27b1a97c8b8c9847b8be686cf}{Add\+Cognitive\+Networks} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_ab682307c963836cd81b35b5604bd7064}{Add\+Cognitive\+Network} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a06968a24194280a43f077c5b77379ea8}{Get\+Cognitive\+Networks} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a1ea2b7e438bfdc7dd599aa59c310b126}{Get\+Cognitive\+Network} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aa48ced2078ba863723050d8283b3fa67}{Add\+Points} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a8508b791c6997d8abcdcc037a6776734}{Add\+Point} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a765c6c658b7a465cd92418690db846ae}{Get\+Points} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a3774f14a13a55827a1a4eea0a404edcb}{Get\+Point} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+void \hyperlink{class_universe_a0d79e614e1af951c06b78cb5768f9c8e}{Update\+Cycle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+int \hyperlink{class_universe_a64ee5a2c7e86c56fa426acb750438ce9}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual void \hyperlink{class_universe_a901e16db5e8af258c66af7ac75662fe0}{Add\+Temporal\+Adjustment} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double $\ast$point\+\_\+to\+\_\+counter, double pool, int interval, int shape)
+\item 
+virtual void \hyperlink{class_universe_a15aa20218286fd11ecb9b792dfb63be3}{Adjust\+Counters} (std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ current\+Time)
+\item 
+virtual void \hyperlink{class_universe_a3b3da7c86a7b75e5e5c0b7972ac82a87}{Set\+Charge} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+virtual void \hyperlink{class_universe_ae2ae1c3b3e4cde2c18f5f6a814761ec8}{Set\+Spin} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+virtual double \hyperlink{class_universe_ab0404e774ee0ed66b597ff5b8e989446}{Get\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_a4476b7e0a3fc1764909f556257fd9ec7}{Get\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_a645299738e6b798a037f2a15a2e7cf4d}{Get\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_a63b850ef3f3394313353109d222bf5d1}{Get\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_a9f099605c082e7fa755787a6a8cab7ba}{Get\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_acb453ce71da418c5b5617fecede9571b}{Get\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_ab44daccba01ee7e3cf9b50bba83dd19e}{Get\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_af0f4b81950061e63c2855eb40957a5b1}{Get\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+virtual double \hyperlink{class_universe_a76c0b5e63c2a7d1988c44db341c3d64c}{Apply\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a6d1226b3adec3c42a833afdbb6a65a92}{Apply\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a46a906baabb63e5d31f8b48ea1fae52e}{Apply\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a1f787da78fa196ba635db21a9e91dabb}{Apply\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a4c36c1ab30db993307f88363dde5e8c5}{Apply\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a906a88b37f10bfa630bef49dfd0e907a}{Apply\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_a62789bcff84bd750b0366004381e2fdd}{Apply\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual double \hyperlink{class_universe_af7becebb347be9a85541d96a3eca1ca7}{Apply\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_aa22202ae740eb1355529afcb13285e91}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+virtual void \hyperlink{class_universe_ae0cb8d86b2fbb8396d605160344b42f5}{Set\+Gravitation} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a0f5cd04081b41ee931c0557dc397f6fb}{Set\+Weak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a2d3d642bfdc863248e93535832fa4b00}{Set\+Weak\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_aa981fc7e252b1fbbb675f0371860954d}{Set\+Electromagnetic} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a608aa95698380f791a0ffba45cc1bee3}{Set\+Electromagnetic\+Electroweak} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a5946c8f3d4cda305f3ecd10df21a2f94}{Set\+Strong} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_aafec97a231126b71c73ac1258609a284}{Set\+Strong\+Fundamental} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Set\+Strong\+Residual} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+virtual void \hyperlink{class_universe_a0c485c504542409cbb5cfd8543c35b11}{Poll\+Elementary\+Force} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_universe_ab64777e25c83216e7a91d2761a10463c}{object\+\_\+energy}
+\item 
+double \hyperlink{class_universe_a17c8d799331a5b32837f285c12cbe858}{object\+\_\+energy\+\_\+threshold}
+\item 
+int \hyperlink{class_universe_a64f4f4025c9be1d84492c766a002a6d4}{object\+\_\+size}
+\item 
+\hyperlink{class_universe}{Universe} $\ast$ \hyperlink{class_universe_a3ce4365c727cb6eb5b650146a4188b9b}{time\+\_\+dimension\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a7a0e9796ff0d650a8b1fbde5fa5b761f}{cognitive\+\_\+network\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_ae9795d06e406c4322637825aa545aa2f}{composite\+\_\+forceparticle\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a159461f7098c3a30274f54c8acff6eac}{dimension\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a015b19f6d5ad84ebaa9e3e7c8352389c}{elementary\+\_\+force\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_aeb2e63cf49f0b5595e6c15109863bd3b}{elementary\+\_\+particle\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a409650bc0425fc22c7713487a2a6dd8e}{matter\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a3d55ba29f95a9793b69c01f7942eca9f}{monomer\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a4d898757f2d67ca5ab5d504388d6199a}{polymer\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a747f9d3cf0b2caada4461cb7b12ea17b}{solid\+\_\+list}
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{class_universe_a9dc8abd2f8f84318722184f38e1b8cc7}{point\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file universe.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_universe_a4d137a146dd3c2514dfb692dfbab6984}\label{class_universe_a4d137a146dd3c2514dfb692dfbab6984}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a1210ce56049f1fc67f53aeda223bb82b}\label{class_universe_a1210ce56049f1fc67f53aeda223bb82b}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}\item[{int}]{interim\+\_\+object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a03af7455263d3028b55ca5dc93ebb6ba}\label{class_universe_a03af7455263d3028b55ca5dc93ebb6ba}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file universe.\+h.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a03af7455263d3028b55ca5dc93ebb6ba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ad4d90f6f2727992762c6b409d3d3d228}\label{class_universe_ad4d90f6f2727992762c6b409d3d3d228}} 
+\index{Universe@{Universe}!````~Universe@{$\sim$\+Universe}}
+\index{````~Universe@{$\sim$\+Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{$\sim$\+Universe()}{~Universe()}}
+{\footnotesize\ttfamily virtual Universe\+::$\sim$\+Universe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 92 of file universe.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_universe_ab682307c963836cd81b35b5604bd7064}\label{class_universe_ab682307c963836cd81b35b5604bd7064}} 
+\index{Universe@{Universe}!Add\+Cognitive\+Network@{Add\+Cognitive\+Network}}
+\index{Add\+Cognitive\+Network@{Add\+Cognitive\+Network}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Network()}{AddCognitiveNetwork()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 377 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab682307c963836cd81b35b5604bd7064_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab682307c963836cd81b35b5604bd7064_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a5199f6c27b1a97c8b8c9847b8be686cf}\label{class_universe_a5199f6c27b1a97c8b8c9847b8be686cf}} 
+\index{Universe@{Universe}!Add\+Cognitive\+Networks@{Add\+Cognitive\+Networks}}
+\index{Add\+Cognitive\+Networks@{Add\+Cognitive\+Networks}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Networks()}{AddCognitiveNetworks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Cognitive\+Networks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 367 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a5199f6c27b1a97c8b8c9847b8be686cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ab2671c2218c98f0f1f487c5b3bb96e3c}\label{class_universe_ab2671c2218c98f0f1f487c5b3bb96e3c}} 
+\index{Universe@{Universe}!Add\+Composite\+Force\+Particle@{Add\+Composite\+Force\+Particle}}
+\index{Add\+Composite\+Force\+Particle@{Add\+Composite\+Force\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Composite\+Force\+Particle()}{AddCompositeForceParticle()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Composite\+Force\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab2671c2218c98f0f1f487c5b3bb96e3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab2671c2218c98f0f1f487c5b3bb96e3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a23d74e377203fca7cb74e0ffee7244b6}\label{class_universe_a23d74e377203fca7cb74e0ffee7244b6}} 
+\index{Universe@{Universe}!Add\+Composite\+Force\+Particles@{Add\+Composite\+Force\+Particles}}
+\index{Add\+Composite\+Force\+Particles@{Add\+Composite\+Force\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Composite\+Force\+Particles()}{AddCompositeForceParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Composite\+Force\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a23d74e377203fca7cb74e0ffee7244b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a6326158c47bf3f7fe9297299a9b5b7b7}\label{class_universe_a6326158c47bf3f7fe9297299a9b5b7b7}} 
+\index{Universe@{Universe}!Add\+Dimension@{Add\+Dimension}}
+\index{Add\+Dimension@{Add\+Dimension}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Dimension()}{AddDimension()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a6326158c47bf3f7fe9297299a9b5b7b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a6326158c47bf3f7fe9297299a9b5b7b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a03bdf5f7fea4209241e9bf5316d45517}\label{class_universe_a03bdf5f7fea4209241e9bf5316d45517}} 
+\index{Universe@{Universe}!Add\+Dimensions@{Add\+Dimensions}}
+\index{Add\+Dimensions@{Add\+Dimensions}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Dimensions()}{AddDimensions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 151 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a03bdf5f7fea4209241e9bf5316d45517_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a90c573dec55f2b3ad5680015356f5f25}\label{class_universe_a90c573dec55f2b3ad5680015356f5f25}} 
+\index{Universe@{Universe}!Add\+Elementary\+Force@{Add\+Elementary\+Force}}
+\index{Add\+Elementary\+Force@{Add\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Force()}{AddElementaryForce()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 221 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a90c573dec55f2b3ad5680015356f5f25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a90c573dec55f2b3ad5680015356f5f25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a81d294300346e9f901836ab609cce942}\label{class_universe_a81d294300346e9f901836ab609cce942}} 
+\index{Universe@{Universe}!Add\+Elementary\+Forces@{Add\+Elementary\+Forces}}
+\index{Add\+Elementary\+Forces@{Add\+Elementary\+Forces}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Forces()}{AddElementaryForces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Elementary\+Forces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a81d294300346e9f901836ab609cce942_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ab9c84e0576de50aa4fa46655832ce5e4}\label{class_universe_ab9c84e0576de50aa4fa46655832ce5e4}} 
+\index{Universe@{Universe}!Add\+Elementary\+Particle@{Add\+Elementary\+Particle}}
+\index{Add\+Elementary\+Particle@{Add\+Elementary\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Particle()}{AddElementaryParticle()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab9c84e0576de50aa4fa46655832ce5e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab9c84e0576de50aa4fa46655832ce5e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a857cf7f208cd11c80736e82fa523feb5}\label{class_universe_a857cf7f208cd11c80736e82fa523feb5}} 
+\index{Universe@{Universe}!Add\+Elementary\+Particles@{Add\+Elementary\+Particles}}
+\index{Add\+Elementary\+Particles@{Add\+Elementary\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Particles()}{AddElementaryParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Elementary\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 185 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a857cf7f208cd11c80736e82fa523feb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a090d9ad1b88d81364e872e17d65edca4}\label{class_universe_a090d9ad1b88d81364e872e17d65edca4}} 
+\index{Universe@{Universe}!Add\+Matter@{Add\+Matter}}
+\index{Add\+Matter@{Add\+Matter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Matter()}{AddMatter()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Matter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 273 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_universe_a090d9ad1b88d81364e872e17d65edca4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_universe_a090d9ad1b88d81364e872e17d65edca4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ae00d10b2a23c9cedf1ff89e9da875563}\label{class_universe_ae00d10b2a23c9cedf1ff89e9da875563}} 
+\index{Universe@{Universe}!Add\+Matters@{Add\+Matters}}
+\index{Add\+Matters@{Add\+Matters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Matters()}{AddMatters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Matters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ae00d10b2a23c9cedf1ff89e9da875563_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a062a9472f0400e566ecc7dc056d989d9}\label{class_universe_a062a9472f0400e566ecc7dc056d989d9}} 
+\index{Universe@{Universe}!Add\+Monomer@{Add\+Monomer}}
+\index{Add\+Monomer@{Add\+Monomer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Monomer()}{AddMonomer()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Monomer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 299 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a062a9472f0400e566ecc7dc056d989d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_universe_a062a9472f0400e566ecc7dc056d989d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a95fe7f99971bb2048121a7c4e87b9f79}\label{class_universe_a95fe7f99971bb2048121a7c4e87b9f79}} 
+\index{Universe@{Universe}!Add\+Monomers@{Add\+Monomers}}
+\index{Add\+Monomers@{Add\+Monomers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Monomers()}{AddMonomers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Monomers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 289 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a95fe7f99971bb2048121a7c4e87b9f79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a8508b791c6997d8abcdcc037a6776734}\label{class_universe_a8508b791c6997d8abcdcc037a6776734}} 
+\index{Universe@{Universe}!Add\+Point@{Add\+Point}}
+\index{Add\+Point@{Add\+Point}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Point()}{AddPoint()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 403 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_universe_a8508b791c6997d8abcdcc037a6776734_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a8508b791c6997d8abcdcc037a6776734_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aa48ced2078ba863723050d8283b3fa67}\label{class_universe_aa48ced2078ba863723050d8283b3fa67}} 
+\index{Universe@{Universe}!Add\+Points@{Add\+Points}}
+\index{Add\+Points@{Add\+Points}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Points()}{AddPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Points (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 393 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aa48ced2078ba863723050d8283b3fa67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a4ea0af5d2eb7b5070a83f7da29526fbd}\label{class_universe_a4ea0af5d2eb7b5070a83f7da29526fbd}} 
+\index{Universe@{Universe}!Add\+Polymer@{Add\+Polymer}}
+\index{Add\+Polymer@{Add\+Polymer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Polymer()}{AddPolymer()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Polymer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 325 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a4ea0af5d2eb7b5070a83f7da29526fbd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_universe_a4ea0af5d2eb7b5070a83f7da29526fbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aed7cb25507d516a2821ebb69d5345c54}\label{class_universe_aed7cb25507d516a2821ebb69d5345c54}} 
+\index{Universe@{Universe}!Add\+Polymers@{Add\+Polymers}}
+\index{Add\+Polymers@{Add\+Polymers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Polymers()}{AddPolymers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Polymers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 315 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aed7cb25507d516a2821ebb69d5345c54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a598799e2fcdf9ed60e83e9f5a61bfc05}\label{class_universe_a598799e2fcdf9ed60e83e9f5a61bfc05}} 
+\index{Universe@{Universe}!Add\+Solid@{Add\+Solid}}
+\index{Add\+Solid@{Add\+Solid}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Solid()}{AddSolid()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Add\+Solid (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 351 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_universe_a598799e2fcdf9ed60e83e9f5a61bfc05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a598799e2fcdf9ed60e83e9f5a61bfc05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a410d5ba2224fe90584b1f1aa5b38b41c}\label{class_universe_a410d5ba2224fe90584b1f1aa5b38b41c}} 
+\index{Universe@{Universe}!Add\+Solids@{Add\+Solids}}
+\index{Add\+Solids@{Add\+Solids}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Solids()}{AddSolids()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Add\+Solids (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 341 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a410d5ba2224fe90584b1f1aa5b38b41c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a901e16db5e8af258c66af7ac75662fe0}\label{class_universe_a901e16db5e8af258c66af7ac75662fe0}} 
+\index{Universe@{Universe}!Add\+Temporal\+Adjustment@{Add\+Temporal\+Adjustment}}
+\index{Add\+Temporal\+Adjustment@{Add\+Temporal\+Adjustment}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Temporal\+Adjustment()}{AddTemporalAdjustment()}}
+{\footnotesize\ttfamily void Universe\+::\+Add\+Temporal\+Adjustment (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double $\ast$}]{point\+\_\+to\+\_\+counter,  }\item[{double}]{pool,  }\item[{int}]{interval,  }\item[{int}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 600 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a901e16db5e8af258c66af7ac75662fe0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a15aa20218286fd11ecb9b792dfb63be3}\label{class_universe_a15aa20218286fd11ecb9b792dfb63be3}} 
+\index{Universe@{Universe}!Adjust\+Counters@{Adjust\+Counters}}
+\index{Adjust\+Counters@{Adjust\+Counters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Adjust\+Counters()}{AdjustCounters()}}
+{\footnotesize\ttfamily void Universe\+::\+Adjust\+Counters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{current\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_dimension_a31e28c2777888449fad32843f6dd15ed}{Dimension}.
+
+
+
+Definition at line 602 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a15aa20218286fd11ecb9b792dfb63be3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a1f787da78fa196ba635db21a9e91dabb}\label{class_universe_a1f787da78fa196ba635db21a9e91dabb}} 
+\index{Universe@{Universe}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_ae590ecb77db0a876425b9b74bcfe2bce}{Cognitive\+Network}, \hyperlink{class_dimension_a65bcd3c09792cf53b1f614eff49cf111}{Dimension}, \hyperlink{class_solid_ab546d607d6f0bf70dc5e6bbac8baf287}{Solid}, \hyperlink{class_monomer_ae64dfbf82610ae26427be9c824aef70f}{Monomer}, \hyperlink{class_elementary_force_a0045a3380e468c6cfdbefce829888c1f}{Elementary\+Force}, \hyperlink{class_law_a418791aee2a9204a99d3a917b86fafd3}{Law}, and \hyperlink{class_composite_force_particle_afa4dc18258722b3c85fbc9789a4297a5}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 618 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1f787da78fa196ba635db21a9e91dabb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a4c36c1ab30db993307f88363dde5e8c5}\label{class_universe_a4c36c1ab30db993307f88363dde5e8c5}} 
+\index{Universe@{Universe}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a9753f52c9e36ad44e9fac1d3e38a0770}{Cognitive\+Network}, \hyperlink{class_dimension_ab13e8ed50a4373274636e542c917db01}{Dimension}, \hyperlink{class_solid_a46702e3109994b310eb4f1fba5610e0b}{Solid}, \hyperlink{class_monomer_a4c3f9894ea57047789bec32602f033cb}{Monomer}, \hyperlink{class_elementary_force_a3764a27b11760b6ead2c8a23ff25d77a}{Elementary\+Force}, \hyperlink{class_law_a4485046db890a95cea16573042a4f4f6}{Law}, and \hyperlink{class_composite_force_particle_a5f6aef9e15e2e5f346c7ede76ae6458b}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 619 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a4c36c1ab30db993307f88363dde5e8c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a76c0b5e63c2a7d1988c44db341c3d64c}\label{class_universe_a76c0b5e63c2a7d1988c44db341c3d64c}} 
+\index{Universe@{Universe}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a7d3252977440a9a5c004f748647ce885}{Cognitive\+Network}, \hyperlink{class_dimension_a9474b0dd3f6321a92bfe4375bb4b2266}{Dimension}, \hyperlink{class_solid_af2b3133138ce2482faa462d07aa23042}{Solid}, \hyperlink{class_monomer_a8747945cc2f7abd7ce0885345ad14ebc}{Monomer}, \hyperlink{class_elementary_force_a655a2c9489bfbbf15e05ba4953628134}{Elementary\+Force}, \hyperlink{class_law_a04efdc724335219ab0affdcffb55eea2}{Law}, and \hyperlink{class_composite_force_particle_ae26a03c2970a3825e8583a811339b28d}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 615 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a76c0b5e63c2a7d1988c44db341c3d64c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a906a88b37f10bfa630bef49dfd0e907a}\label{class_universe_a906a88b37f10bfa630bef49dfd0e907a}} 
+\index{Universe@{Universe}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a7a55750d3c42a277c4ffe04a87ab3b19}{Cognitive\+Network}, \hyperlink{class_dimension_a621e8f7f24db86e836c5b3da0f019290}{Dimension}, \hyperlink{class_solid_a0801ec0382bc509191575bcf9f5c83c1}{Solid}, \hyperlink{class_monomer_acba5091693082fdf2d28f1a5a4ae19a1}{Monomer}, \hyperlink{class_elementary_force_a8a16bff6b5df2b0ff918262bf6376ade}{Elementary\+Force}, \hyperlink{class_law_ab38659b209055df7e59f4bcd1b9e545a}{Law}, and \hyperlink{class_composite_force_particle_ac1464a04fbbca2d8927dfdbef0429878}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 620 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_universe_a906a88b37f10bfa630bef49dfd0e907a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a62789bcff84bd750b0366004381e2fdd}\label{class_universe_a62789bcff84bd750b0366004381e2fdd}} 
+\index{Universe@{Universe}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_af25bbd4f4d8f370cd2a48fd6db8302b9}{Cognitive\+Network}, \hyperlink{class_dimension_afb01fb9e469da18899d4b14e5f095ece}{Dimension}, \hyperlink{class_solid_abd8fff76385306f97aa65dfd6b867fc6}{Solid}, \hyperlink{class_monomer_aa186454670f7796e196509238d419a35}{Monomer}, \hyperlink{class_elementary_force_a80f1977e777aa0c8cce2124b666e6446}{Elementary\+Force}, \hyperlink{class_law_a57d05f26e1c0ee953260ebd3780248f8}{Law}, and \hyperlink{class_composite_force_particle_a64fe19ee12d6ca0a69f650faa5bedb58}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 621 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a62789bcff84bd750b0366004381e2fdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_af7becebb347be9a85541d96a3eca1ca7}\label{class_universe_af7becebb347be9a85541d96a3eca1ca7}} 
+\index{Universe@{Universe}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a8b60fdb81d89a3a74d6c06cb29e7aad3}{Cognitive\+Network}, \hyperlink{class_dimension_a2ae0b6a8ee17f6e28b6d2d3209df4bf4}{Dimension}, \hyperlink{class_solid_a07534fa79bb8a6eb32e081e5158ba9e5}{Solid}, \hyperlink{class_monomer_a921f7add2d446b8670513220ace6c4b2}{Monomer}, \hyperlink{class_elementary_force_a185dc4e0b840505df27dbbed9fdcdc7b}{Elementary\+Force}, \hyperlink{class_law_a266f86cdcc01e813249a2f192ab85eb3}{Law}, and \hyperlink{class_composite_force_particle_ae0937405e68dd40b19036d5a359f7e07}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 622 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_af7becebb347be9a85541d96a3eca1ca7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a6d1226b3adec3c42a833afdbb6a65a92}\label{class_universe_a6d1226b3adec3c42a833afdbb6a65a92}} 
+\index{Universe@{Universe}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a46a15b24bd61049fa1c4f635268086a1}{Cognitive\+Network}, \hyperlink{class_dimension_a72b8ab8d676b4df6b9a6ef948f5693c9}{Dimension}, \hyperlink{class_solid_a49e35bf258104b7bce225dc21058affb}{Solid}, \hyperlink{class_monomer_a176a1a4dfed1eaddc6637bbfd2660aba}{Monomer}, \hyperlink{class_elementary_force_aabf66a859e6e808a65c6929cd16f7597}{Elementary\+Force}, \hyperlink{class_law_a96ddd42403e3665c6070283ac201658d}{Law}, and \hyperlink{class_composite_force_particle_a1fd171a0c6fab0cbf9a45a0d24607bde}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 616 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_universe_a6d1226b3adec3c42a833afdbb6a65a92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a46a906baabb63e5d31f8b48ea1fae52e}\label{class_universe_a46a906baabb63e5d31f8b48ea1fae52e}} 
+\index{Universe@{Universe}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_ab8bc213d2806f0dc49c1284bf934fc24}{Cognitive\+Network}, \hyperlink{class_dimension_abf490cabd486afa660f17940ed0d17e6}{Dimension}, \hyperlink{class_solid_ad6c28ec896cbcf64e24a7132a144befd}{Solid}, \hyperlink{class_monomer_a64f65c128ebc2428c42739c930696ea1}{Monomer}, \hyperlink{class_elementary_force_a2d3a5444c771f35d66d4151c62f53b12}{Elementary\+Force}, \hyperlink{class_law_ae8a5d1d09686d79f7814c8800791460b}{Law}, and \hyperlink{class_composite_force_particle_a3c1c0b427c633f0685f1d812e02b92ff}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 617 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a46a906baabb63e5d31f8b48ea1fae52e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a28615baf47d4558cbe5eebeed6575024}\label{class_universe_a28615baf47d4558cbe5eebeed6575024}} 
+\index{Universe@{Universe}!Creation@{Creation}}
+\index{Creation@{Creation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Creation()}{Creation()}}
+{\footnotesize\ttfamily void Universe\+::\+Creation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::string}]{object\+\_\+title,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_universe_a28615baf47d4558cbe5eebeed6575024_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a982502e46868a00a9111738ccc9355c2}\label{class_universe_a982502e46868a00a9111738ccc9355c2}} 
+\index{Universe@{Universe}!Extend\+Life@{Extend\+Life}}
+\index{Extend\+Life@{Extend\+Life}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Extend\+Life()}{ExtendLife()}}
+{\footnotesize\ttfamily void Universe\+::\+Extend\+Life (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a982502e46868a00a9111738ccc9355c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_universe_a982502e46868a00a9111738ccc9355c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a1ea2b7e438bfdc7dd599aa59c310b126}\label{class_universe_a1ea2b7e438bfdc7dd599aa59c310b126}} 
+\index{Universe@{Universe}!Get\+Cognitive\+Network@{Get\+Cognitive\+Network}}
+\index{Get\+Cognitive\+Network@{Get\+Cognitive\+Network}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Network()}{GetCognitiveNetwork()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 387 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1ea2b7e438bfdc7dd599aa59c310b126_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a06968a24194280a43f077c5b77379ea8}\label{class_universe_a06968a24194280a43f077c5b77379ea8}} 
+\index{Universe@{Universe}!Get\+Cognitive\+Networks@{Get\+Cognitive\+Networks}}
+\index{Get\+Cognitive\+Networks@{Get\+Cognitive\+Networks}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Networks()}{GetCognitiveNetworks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Cognitive\+Networks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 382 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a06968a24194280a43f077c5b77379ea8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a3e2acc1d75765a6e8e852fca919c5b96}\label{class_universe_a3e2acc1d75765a6e8e852fca919c5b96}} 
+\index{Universe@{Universe}!Get\+Composite\+Force\+Particle@{Get\+Composite\+Force\+Particle}}
+\index{Get\+Composite\+Force\+Particle@{Get\+Composite\+Force\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particle()}{GetCompositeForceParticle()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Composite\+Force\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 257 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a3e2acc1d75765a6e8e852fca919c5b96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aed37d7224b4e31bdfb0632e39bf19694}\label{class_universe_aed37d7224b4e31bdfb0632e39bf19694}} 
+\index{Universe@{Universe}!Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}}
+\index{Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particles()}{GetCompositeForceParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Composite\+Force\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 252 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aed37d7224b4e31bdfb0632e39bf19694_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ab79a380dee684c6dc304b571f4d28645}\label{class_universe_ab79a380dee684c6dc304b571f4d28645}} 
+\index{Universe@{Universe}!Get\+Dimension@{Get\+Dimension}}
+\index{Get\+Dimension@{Get\+Dimension}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Dimension()}{GetDimension()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_universe_ab79a380dee684c6dc304b571f4d28645_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a1869fc7bf43827378bab5a701f7f917a}\label{class_universe_a1869fc7bf43827378bab5a701f7f917a}} 
+\index{Universe@{Universe}!Get\+Dimensions@{Get\+Dimensions}}
+\index{Get\+Dimensions@{Get\+Dimensions}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Dimensions()}{GetDimensions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 174 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1869fc7bf43827378bab5a701f7f917a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a63b850ef3f3394313353109d222bf5d1}\label{class_universe_a63b850ef3f3394313353109d222bf5d1}} 
+\index{Universe@{Universe}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a09e5a1c774c84529a7adfe56fadb7467}{Cognitive\+Network}, \hyperlink{class_dimension_a21783c29a576518b722512f1245fa598}{Dimension}, \hyperlink{class_solid_a01cd3c441a4e339927c43536de6d9b5e}{Solid}, \hyperlink{class_monomer_ad23f4829d66cb20401cc72a9d72ac320}{Monomer}, \hyperlink{class_elementary_force_a2c8bc3226f42710717775c73eee1644e}{Elementary\+Force}, \hyperlink{class_law_a01eba6e68d2d8a717e2b4789be90853d}{Law}, and \hyperlink{class_composite_force_particle_a8ef336fed7e33d52a3baae4bd4dd32fd}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 609 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a63b850ef3f3394313353109d222bf5d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a9f099605c082e7fa755787a6a8cab7ba}\label{class_universe_a9f099605c082e7fa755787a6a8cab7ba}} 
+\index{Universe@{Universe}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a8c4e0454068f714691ae250f795cdb67}{Cognitive\+Network}, \hyperlink{class_dimension_ae1babb1fa280c35966d7ee3de6655e4d}{Dimension}, \hyperlink{class_solid_aff7ec13bcc584d8330e3f3a1b371bbe6}{Solid}, \hyperlink{class_monomer_a9b270cd1293bc9635813ead284bd3881}{Monomer}, \hyperlink{class_elementary_force_a58e503f2f3a7410f034a2a04bca560d1}{Elementary\+Force}, \hyperlink{class_law_ae4ccaca7b78905f416f35f9556b1923c}{Law}, and \hyperlink{class_composite_force_particle_ac26d7aab0daefcf13c68aba9e0f2ed53}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 610 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a9f099605c082e7fa755787a6a8cab7ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a9506017d944cb64e67567477c1505a53}\label{class_universe_a9506017d944cb64e67567477c1505a53}} 
+\index{Universe@{Universe}!Get\+Elementary\+Force@{Get\+Elementary\+Force}}
+\index{Get\+Elementary\+Force@{Get\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Force()}{GetElementaryForce()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 231 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a9506017d944cb64e67567477c1505a53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a6a8ed579b2eedd3aceebda9f3d78aa0e}\label{class_universe_a6a8ed579b2eedd3aceebda9f3d78aa0e}} 
+\index{Universe@{Universe}!Get\+Elementary\+Forces@{Get\+Elementary\+Forces}}
+\index{Get\+Elementary\+Forces@{Get\+Elementary\+Forces}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Forces()}{GetElementaryForces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Elementary\+Forces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 226 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a6a8ed579b2eedd3aceebda9f3d78aa0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_acef54e17666d17078c522388f8f6e4f9}\label{class_universe_acef54e17666d17078c522388f8f6e4f9}} 
+\index{Universe@{Universe}!Get\+Elementary\+Particle@{Get\+Elementary\+Particle}}
+\index{Get\+Elementary\+Particle@{Get\+Elementary\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Particle()}{GetElementaryParticle()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 205 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_acef54e17666d17078c522388f8f6e4f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a168fd9bf7602adcba1de5dd93a212775}\label{class_universe_a168fd9bf7602adcba1de5dd93a212775}} 
+\index{Universe@{Universe}!Get\+Elementary\+Particles@{Get\+Elementary\+Particles}}
+\index{Get\+Elementary\+Particles@{Get\+Elementary\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Particles()}{GetElementaryParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Elementary\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 200 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a168fd9bf7602adcba1de5dd93a212775_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}\label{class_universe_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}} 
+\index{Universe@{Universe}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a3b25e7ce6552991b7d5e6a9eb6e8a7ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ab0404e774ee0ed66b597ff5b8e989446}\label{class_universe_ab0404e774ee0ed66b597ff5b8e989446}} 
+\index{Universe@{Universe}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a4b5150310288c52f00ecb745ae9e7f86}{Cognitive\+Network}, \hyperlink{class_dimension_a652220a2eb1b26c749ad032865d81788}{Dimension}, \hyperlink{class_solid_ab5ecb5598be93fe3cd2a21c0cfd363c8}{Solid}, \hyperlink{class_monomer_aa5f7b901e15c9a9eb6e1c3564cd06e4f}{Monomer}, \hyperlink{class_elementary_force_a579afb8079668f0587096934d1de9c04}{Elementary\+Force}, \hyperlink{class_law_a84bdc0c2ca97a9c19422018ff761b992}{Law}, and \hyperlink{class_composite_force_particle_a06483dc73c156679f34acf85aa5f924e}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 606 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_universe_ab0404e774ee0ed66b597ff5b8e989446_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a69de663cf2e32e65ed28c44ae666db3a}\label{class_universe_a69de663cf2e32e65ed28c44ae666db3a}} 
+\index{Universe@{Universe}!Get\+Matter@{Get\+Matter}}
+\index{Get\+Matter@{Get\+Matter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Matter()}{GetMatter()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Matter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 283 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_universe_a69de663cf2e32e65ed28c44ae666db3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a4307a62e183fed8cf2b92be0f6014688}\label{class_universe_a4307a62e183fed8cf2b92be0f6014688}} 
+\index{Universe@{Universe}!Get\+Matters@{Get\+Matters}}
+\index{Get\+Matters@{Get\+Matters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Matters()}{GetMatters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Matters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 278 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_universe_a4307a62e183fed8cf2b92be0f6014688_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aaa03fb8178d790afd992dd094bb64b47}\label{class_universe_aaa03fb8178d790afd992dd094bb64b47}} 
+\index{Universe@{Universe}!Get\+Monomer@{Get\+Monomer}}
+\index{Get\+Monomer@{Get\+Monomer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Monomer()}{GetMonomer()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Monomer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 309 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_universe_aaa03fb8178d790afd992dd094bb64b47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aca82a914e0f8bd7cd1ec80a7220f0a0e}\label{class_universe_aca82a914e0f8bd7cd1ec80a7220f0a0e}} 
+\index{Universe@{Universe}!Get\+Monomers@{Get\+Monomers}}
+\index{Get\+Monomers@{Get\+Monomers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Monomers()}{GetMonomers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Monomers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 304 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_universe_aca82a914e0f8bd7cd1ec80a7220f0a0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a3774f14a13a55827a1a4eea0a404edcb}\label{class_universe_a3774f14a13a55827a1a4eea0a404edcb}} 
+\index{Universe@{Universe}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Point()}{GetPoint()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Point (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 413 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_universe_a3774f14a13a55827a1a4eea0a404edcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a765c6c658b7a465cd92418690db846ae}\label{class_universe_a765c6c658b7a465cd92418690db846ae}} 
+\index{Universe@{Universe}!Get\+Points@{Get\+Points}}
+\index{Get\+Points@{Get\+Points}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Points()}{GetPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Points (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 408 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_universe_a765c6c658b7a465cd92418690db846ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a2d5d3924a7d7ffd2a5f47be9f137d86e}\label{class_universe_a2d5d3924a7d7ffd2a5f47be9f137d86e}} 
+\index{Universe@{Universe}!Get\+Polymer@{Get\+Polymer}}
+\index{Get\+Polymer@{Get\+Polymer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Polymer()}{GetPolymer()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Polymer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 335 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_universe_a2d5d3924a7d7ffd2a5f47be9f137d86e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aac5d1c1a3a3ba56c8ca7115a85b2c239}\label{class_universe_aac5d1c1a3a3ba56c8ca7115a85b2c239}} 
+\index{Universe@{Universe}!Get\+Polymers@{Get\+Polymers}}
+\index{Get\+Polymers@{Get\+Polymers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Polymers()}{GetPolymers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Polymers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 330 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_universe_aac5d1c1a3a3ba56c8ca7115a85b2c239_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a9f7b74fc21d45ddaa78aa18e9a337bcd}\label{class_universe_a9f7b74fc21d45ddaa78aa18e9a337bcd}} 
+\index{Universe@{Universe}!Get\+Solid@{Get\+Solid}}
+\index{Get\+Solid@{Get\+Solid}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Solid()}{GetSolid()}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe} $\ast$ Universe\+::\+Get\+Solid (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 361 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_universe_a9f7b74fc21d45ddaa78aa18e9a337bcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a669fc068dd7820a5af309bfbe67199aa}\label{class_universe_a669fc068dd7820a5af309bfbe67199aa}} 
+\index{Universe@{Universe}!Get\+Solids@{Get\+Solids}}
+\index{Get\+Solids@{Get\+Solids}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Solids()}{GetSolids()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ Universe\+::\+Get\+Solids (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 356 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_universe_a669fc068dd7820a5af309bfbe67199aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_acb453ce71da418c5b5617fecede9571b}\label{class_universe_acb453ce71da418c5b5617fecede9571b}} 
+\index{Universe@{Universe}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a277247686f8af159e7a7beb0ec379225}{Cognitive\+Network}, \hyperlink{class_dimension_ae36aadad4ae84735a5ff73bff4eb97b1}{Dimension}, \hyperlink{class_solid_ae39d0166456b8feaa39547e5a21c9096}{Solid}, \hyperlink{class_monomer_aa35033340e88c46757d1d5ccba21a21e}{Monomer}, \hyperlink{class_elementary_force_aaa1cde27b1508831f67353eb39745a7e}{Elementary\+Force}, \hyperlink{class_law_afd94bf09dbaf5d5df36b8f093db02dd9}{Law}, and \hyperlink{class_composite_force_particle_a9818d469c9841eaf77fbe329b0953354}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 611 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_universe_acb453ce71da418c5b5617fecede9571b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ab44daccba01ee7e3cf9b50bba83dd19e}\label{class_universe_ab44daccba01ee7e3cf9b50bba83dd19e}} 
+\index{Universe@{Universe}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a942ca90561fedae46136de620accbfea}{Cognitive\+Network}, \hyperlink{class_dimension_ad0d067d7f9dc4841b0ad280979ebe7af}{Dimension}, \hyperlink{class_solid_ab3a972354b25ad1bbe8c3f3e7638e24c}{Solid}, \hyperlink{class_monomer_a4bc8b39086260e26a196b28b4fc6667f}{Monomer}, \hyperlink{class_elementary_force_a0974d6537c07dac2453d2a607324fa21}{Elementary\+Force}, \hyperlink{class_law_afcdbea76524e5a52691fff7b526971e9}{Law}, and \hyperlink{class_composite_force_particle_abc8597f3b4f7cf755ab4618bd624b046}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 612 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ab44daccba01ee7e3cf9b50bba83dd19e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_af0f4b81950061e63c2855eb40957a5b1}\label{class_universe_af0f4b81950061e63c2855eb40957a5b1}} 
+\index{Universe@{Universe}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_acfa5de663b3e686c4d9ea1a3bb483b11}{Cognitive\+Network}, \hyperlink{class_dimension_aeee6025f17d9cd1bf7f324d715a30691}{Dimension}, \hyperlink{class_solid_a9cfde1c3a4b7c6d2a5a3719d74e27237}{Solid}, \hyperlink{class_monomer_a3b00168520f592098356f7cd3e663ad3}{Monomer}, \hyperlink{class_elementary_force_a3478c8ad35bce240055da7d4a03e555e}{Elementary\+Force}, \hyperlink{class_law_a70fb2a7710776c4e2315a1e29fe35eb6}{Law}, and \hyperlink{class_composite_force_particle_a24214566eb5b44340d5563b6583052e8}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 613 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_af0f4b81950061e63c2855eb40957a5b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a4476b7e0a3fc1764909f556257fd9ec7}\label{class_universe_a4476b7e0a3fc1764909f556257fd9ec7}} 
+\index{Universe@{Universe}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a761db75ac8eab7b4625e5a398891bd12}{Cognitive\+Network}, \hyperlink{class_dimension_a656ce92d07ea600cc0ec53865ad515e2}{Dimension}, \hyperlink{class_solid_ac8a7738735a6bda4e89414a2b0c370e1}{Solid}, \hyperlink{class_monomer_ac2070d7e39cd0b2a00aa6023ffd51f55}{Monomer}, \hyperlink{class_elementary_force_a4669f2ce414e508c70ae4ce0df503ad1}{Elementary\+Force}, \hyperlink{class_law_a303c365b7a17997a63a74756fc72fba3}{Law}, and \hyperlink{class_composite_force_particle_ab5cc0893a4063cc353ea5d2404f27b0b}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 607 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_universe_a4476b7e0a3fc1764909f556257fd9ec7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a645299738e6b798a037f2a15a2e7cf4d}\label{class_universe_a645299738e6b798a037f2a15a2e7cf4d}} 
+\index{Universe@{Universe}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_aa6342c390fe8e7c648b4c6bc8f93ba4a}{Cognitive\+Network}, \hyperlink{class_dimension_a5bb5a164564013a60728854cc2e5ddb3}{Dimension}, \hyperlink{class_solid_ac98f9c827d58a631627423e25dd611ba}{Solid}, \hyperlink{class_monomer_aec6e42dde40c5b3142fab880eabb346a}{Monomer}, \hyperlink{class_elementary_force_a928e06a1fa81b8d7ec4a426d959a0f98}{Elementary\+Force}, \hyperlink{class_law_aad6e54da64a5d8499dcb6c232aa6748f}{Law}, and \hyperlink{class_composite_force_particle_a27762218af4e3c021c89ff4792d81b41}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 608 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a645299738e6b798a037f2a15a2e7cf4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a8fdaa6d06584e1ef50c4c613b22b786e}\label{class_universe_a8fdaa6d06584e1ef50c4c613b22b786e}} 
+\index{Universe@{Universe}!Is\+Dead@{Is\+Dead}}
+\index{Is\+Dead@{Is\+Dead}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Is\+Dead()}{IsDead()}}
+{\footnotesize\ttfamily bool Universe\+::\+Is\+Dead (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 138 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a8fdaa6d06584e1ef50c4c613b22b786e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a8fdaa6d06584e1ef50c4c613b22b786e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a0c485c504542409cbb5cfd8543c35b11}\label{class_universe_a0c485c504542409cbb5cfd8543c35b11}} 
+\index{Universe@{Universe}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Universe\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_ac97c08a0af7dc0d02fbe059827b6be87}{Cognitive\+Network}, \hyperlink{class_dimension_a5b07f5c8558233c8f3488baf1fe3459a}{Dimension}, \hyperlink{class_solid_ae2a486e59f11f96a1a39756b3f3da53f}{Solid}, \hyperlink{class_elementary_force_aa5ab479744dbf3e8578f8d2974299ff7}{Elementary\+Force}, \hyperlink{class_monomer_a5b2375df1e19abdf6045c475d2ac23ca}{Monomer}, and \hyperlink{class_law_af99520c95b2cd8af0af110b78b2288ef}{Law}.
+
+
+
+Definition at line 634 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a0c485c504542409cbb5cfd8543c35b11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a1d92b2277564577571c802f6e0c206dd}\label{class_universe_a1d92b2277564577571c802f6e0c206dd}} 
+\index{Universe@{Universe}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Universe\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1d92b2277564577571c802f6e0c206dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1d92b2277564577571c802f6e0c206dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aeda74e3902c0e56c0c09779854045cde}\label{class_universe_aeda74e3902c0e56c0c09779854045cde}} 
+\index{Universe@{Universe}!Return\+Energy@{Return\+Energy}}
+\index{Return\+Energy@{Return\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Return\+Energy()}{ReturnEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Return\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_universe_aeda74e3902c0e56c0c09779854045cde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a3b3da7c86a7b75e5e5c0b7972ac82a87}\label{class_universe_a3b3da7c86a7b75e5e5c0b7972ac82a87}} 
+\index{Universe@{Universe}!Set\+Charge@{Set\+Charge}}
+\index{Set\+Charge@{Set\+Charge}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a99f801aeca299186cc706696696749b1}{Cognitive\+Network}, \hyperlink{class_dimension_a6d3f7fa4a26b92d8ae6161a1b8bb8220}{Dimension}, \hyperlink{class_solid_a37503e6b25f912254414e778af2e75cd}{Solid}, \hyperlink{class_elementary_particle_abbc6d3c58509c4121df55bfef716d2f1}{Elementary\+Particle}, \hyperlink{class_monomer_a1ee35c888318e590082e6cd1772bb430}{Monomer}, and \hyperlink{class_law_a2e780573f6285f88d167d45a2e243d01}{Law}.
+
+
+
+Definition at line 604 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_universe_a3b3da7c86a7b75e5e5c0b7972ac82a87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aa22202ae740eb1355529afcb13285e91}\label{class_universe_aa22202ae740eb1355529afcb13285e91}} 
+\index{Universe@{Universe}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_dimension_a75c6a1a1e09c40b5860dc11a83384d9f}{Dimension}, \hyperlink{class_elementary_force_a3762cf66ed266b310446417215dec3fa}{Elementary\+Force}, \hyperlink{class_composite_force_particle_a41cee6bd5a75fbf67fa6e76a9e7d7605}{Composite\+Force\+Particle}, \hyperlink{class_membrane_channel_a61931feff8f3bb485eeb5c80125bb732}{Membrane\+Channel}, \hyperlink{class_neuroreceptor_a0660a316ef44cf723509f720acd16f24}{Neuroreceptor}, \hyperlink{class_soma_a9ef49d3fea8c0fbe6513f3910339f736}{Soma}, \hyperlink{class_elementary_particle_a141316fd968cce8ecc5aa11ce0757d63}{Elementary\+Particle}, \hyperlink{class_membrane_a4bff43b38d7046867f220392a39cc272}{Membrane}, \hyperlink{class_matter_a514b4a64589eb3fbc3db6b3b356bd687}{Matter}, \hyperlink{class_dendrite_a7529495515de74fff2b9a92b12531057}{Dendrite}, \hyperlink{class_solid_aea949040518e505ed39b1456a360c5e0}{Solid}, \hyperlink{class_orbital_ae2a2fb06700d1d68501b0cbdea87cc08}{Orbital}, \hyperlink{class_polymer_a1500ffc682396af2f4306c7c7ea7fd87}{Polymer}, \hyperlink{class_monomer_a6f0dfa4382b3d4fa19b7ee0fb8fe7a55}{Monomer}, \hyperlink{class_polygon_ad12083d8c152a1979b04bead93b6b730}{Polygon}, \hyperlink{class_app_timer_a77d5d447d6b136a35304b0571a166ddc}{App\+Timer}, \hyperlink{class_law_a408c401c8a44870c29ba9d08b45cb40f}{Law}, \hyperlink{class_interneuron_space_a60a46f22a2e575d65031635a698a60a9}{Interneuron\+Space}, \hyperlink{class_synapse_aa1a990a7b89fbeaf1109a8b70d86111b}{Synapse}, \hyperlink{class_cognitive_input_a4f09c1f176b5406d95a14d7cb1ab75e6}{Cognitive\+Input}, \hyperlink{class_cognitive_output_a087e8bdab9eb6020dbbe6d47f524c8b6}{Cognitive\+Output}, \hyperlink{class_neurotransmitter_ae16ec051609867d4f64fad5ba4449443}{Neurotransmitter}, \hyperlink{class_synaptic_vesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}, \hyperlink{class_axon_a3493cb97bde26bd66facc6084cd5f219}{Axon}, \hyperlink{class_axon_hillock_a0220cee0ad99ddc48496982078c1856c}{Axon\+Hillock}, \hyperlink{class_dendrite_branch_a2ce03fbad4a70564eeaafb62debd4d74}{Dendrite\+Branch}, \hyperlink{class_myelin_sheath_afb9cd377a71881558f48cf8bb226af77}{Myelin\+Sheath}, \hyperlink{class_axon_bouton_afe285478d414f2815afb98abe7b92898}{Axon\+Bouton}, \hyperlink{class_dendrite_cleft_a428b8e5117f381a382e0071b936d42a1}{Dendrite\+Cleft}, \hyperlink{class_axon_branch_a96ba30b18627563d637d4e02fac943be}{Axon\+Branch}, and \hyperlink{class_abstraction_a82cd32bf3de41f35ab76d80611fe6763}{Abstraction}.
+
+
+
+Definition at line 624 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_universe_aa22202ae740eb1355529afcb13285e91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aa981fc7e252b1fbbb675f0371860954d}\label{class_universe_aa981fc7e252b1fbbb675f0371860954d}} 
+\index{Universe@{Universe}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a31764cd5746369d16b45f2ff74806a0b}{Cognitive\+Network}, \hyperlink{class_dimension_ad8c18ce6358904e01594092dca9f1311}{Dimension}, \hyperlink{class_solid_a9a660f9d94f597712c67922aa1d4d795}{Solid}, \hyperlink{class_elementary_force_a67f6845bd715c29c17387d291b343a1b}{Elementary\+Force}, \hyperlink{class_monomer_a50e41be601b31450a97bfd15950cfb3d}{Monomer}, \hyperlink{class_law_acabe1a3113c207368f3bb6fe81e13963}{Law}, and \hyperlink{class_composite_force_particle_a476c0d570c3be75c9e186df1ec2a5cda}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 628 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aa981fc7e252b1fbbb675f0371860954d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a608aa95698380f791a0ffba45cc1bee3}\label{class_universe_a608aa95698380f791a0ffba45cc1bee3}} 
+\index{Universe@{Universe}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a270f6842ec14b3e5b80dedf7b48ea6f4}{Cognitive\+Network}, \hyperlink{class_dimension_aead73fc6a25388d14b514b2170735b1b}{Dimension}, \hyperlink{class_solid_a6617ae9fe4707d760a23b54eddf00dec}{Solid}, \hyperlink{class_elementary_force_af4f12038c33d7edf9f13339fcd632ec9}{Elementary\+Force}, \hyperlink{class_monomer_aa034728b74053ed3df452ddc8f1b46e8}{Monomer}, \hyperlink{class_law_aca9bb82839ddb46bd89f52b6211c5a54}{Law}, and \hyperlink{class_composite_force_particle_ad53c5d396b3c56241174a9bd78f9e07a}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 629 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a608aa95698380f791a0ffba45cc1bee3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a868250e67d0fcb2483aa8bdd73c40a02}\label{class_universe_a868250e67d0fcb2483aa8bdd73c40a02}} 
+\index{Universe@{Universe}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_universe_a868250e67d0fcb2483aa8bdd73c40a02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ae0cb8d86b2fbb8396d605160344b42f5}\label{class_universe_ae0cb8d86b2fbb8396d605160344b42f5}} 
+\index{Universe@{Universe}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_af9f082a70f0cc25a3f818d9eace5a527}{Cognitive\+Network}, \hyperlink{class_dimension_aeec6887382d09e3d78382582ff4e7c33}{Dimension}, \hyperlink{class_solid_ae237f2c713868c133e28ed7f75fc9125}{Solid}, \hyperlink{class_elementary_force_aa36d5875964f7e2fc981f6fc5431be7f}{Elementary\+Force}, \hyperlink{class_monomer_ab38d44b27a46d5630aeb5e889f927c09}{Monomer}, \hyperlink{class_law_a908ccc2b0a561a7324a15393ec157219}{Law}, and \hyperlink{class_composite_force_particle_ad9e1553ab0096230edd591e3135b223d}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 625 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_universe_ae0cb8d86b2fbb8396d605160344b42f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ac3443dd59b61ae3110f07f681f63ed0a}\label{class_universe_ac3443dd59b61ae3110f07f681f63ed0a}} 
+\index{Universe@{Universe}!Set\+Lifespan@{Set\+Lifespan}}
+\index{Set\+Lifespan@{Set\+Lifespan}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Lifespan()}{SetLifespan()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Lifespan (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 121 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ac3443dd59b61ae3110f07f681f63ed0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a2274a54fbdc7504c897e4272162bf17a}\label{class_universe_a2274a54fbdc7504c897e4272162bf17a}} 
+\index{Universe@{Universe}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a2274a54fbdc7504c897e4272162bf17a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a2274a54fbdc7504c897e4272162bf17a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ae2ae1c3b3e4cde2c18f5f6a814761ec8}\label{class_universe_ae2ae1c3b3e4cde2c18f5f6a814761ec8}} 
+\index{Universe@{Universe}!Set\+Spin@{Set\+Spin}}
+\index{Set\+Spin@{Set\+Spin}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a3fc6d08413bfd4350f94d6f2627eedc7}{Cognitive\+Network}, \hyperlink{class_dimension_a8d73c050c67b0226572b4a1b08ae6594}{Dimension}, \hyperlink{class_solid_a615cb8d1ec1376781726bcefa86339cb}{Solid}, \hyperlink{class_elementary_particle_a437fa86d88157314b84662b158d52353}{Elementary\+Particle}, \hyperlink{class_monomer_ad24a86a4c1ac62d1b0ce8040d6b08adf}{Monomer}, and \hyperlink{class_law_a3de75edea5e20db0a7b731de61f07dea}{Law}.
+
+
+
+Definition at line 605 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_universe_ae2ae1c3b3e4cde2c18f5f6a814761ec8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a5946c8f3d4cda305f3ecd10df21a2f94}\label{class_universe_a5946c8f3d4cda305f3ecd10df21a2f94}} 
+\index{Universe@{Universe}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a50f2a12c9873e623d6247318b041ba30}{Cognitive\+Network}, \hyperlink{class_dimension_ab9021cb6727ed590026bf870c638576d}{Dimension}, \hyperlink{class_solid_a478e15cdf15c5bb01cbcbd5f584ef83a}{Solid}, \hyperlink{class_elementary_force_aa1b5708cfab2069049fec5c924e1f246}{Elementary\+Force}, \hyperlink{class_monomer_a10b864f6bcad43f11a2316dbbe4c4742}{Monomer}, \hyperlink{class_law_a4cd0dd1908edbd02090dd1ba1387d722}{Law}, and \hyperlink{class_composite_force_particle_a06488ef0457335648b161d3ed746b643}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 630 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_universe_a5946c8f3d4cda305f3ecd10df21a2f94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aafec97a231126b71c73ac1258609a284}\label{class_universe_aafec97a231126b71c73ac1258609a284}} 
+\index{Universe@{Universe}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_ac54286eea279f5caa98b642b9084fd55}{Cognitive\+Network}, \hyperlink{class_dimension_a2de864aaa4b1074684395dbe928468c1}{Dimension}, \hyperlink{class_solid_a4342786a7785b1a3816d20de02105bcf}{Solid}, \hyperlink{class_elementary_force_afb00e9a10ec33eeb1daefce39b0468b7}{Elementary\+Force}, \hyperlink{class_monomer_ad9df06c1a8264bfdb514ef3ba04ef4c7}{Monomer}, \hyperlink{class_law_a4a7c8caa24acf453c1a8782a1ec4acf4}{Law}, and \hyperlink{class_composite_force_particle_a28d835658edcbecf60162475a8cb1ab6}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 631 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aafec97a231126b71c73ac1258609a284_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a1b2d6197ddf3d613cc30bd04d22ed8b7}\label{class_universe_a1b2d6197ddf3d613cc30bd04d22ed8b7}} 
+\index{Universe@{Universe}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a6f7210dd8c2786518329faa61b6e14d5}{Cognitive\+Network}, \hyperlink{class_dimension_a9bd5480b1da689cd58bf61dac7169080}{Dimension}, \hyperlink{class_solid_a8b80ebe209fcd3afa4791968127753d0}{Solid}, \hyperlink{class_elementary_force_ac25021d38c1d54bf711096ab37a461f6}{Elementary\+Force}, \hyperlink{class_monomer_ae6ca57913da27fa749d33d1c4fed27ca}{Monomer}, \hyperlink{class_law_ad4a05c77d11ddec40b1e07246cac449d}{Law}, and \hyperlink{class_composite_force_particle_aeba1070d4ec6e52fd8276e38c6a6c2e1}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 632 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a1b2d6197ddf3d613cc30bd04d22ed8b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a0f5cd04081b41ee931c0557dc397f6fb}\label{class_universe_a0f5cd04081b41ee931c0557dc397f6fb}} 
+\index{Universe@{Universe}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_ab39c9eed50da6d3630c4498ae64b804e}{Cognitive\+Network}, \hyperlink{class_dimension_a157cfa28dd6bc5518d622d01445ca827}{Dimension}, \hyperlink{class_solid_aa28e0f7e4de2fc0c1e28d385214296bf}{Solid}, \hyperlink{class_elementary_force_a093cdf0810e95f1d973bd9dc88c6788b}{Elementary\+Force}, \hyperlink{class_monomer_ad4fe1db33f493575281e1a2fb35004ca}{Monomer}, \hyperlink{class_law_a1009b4e0bc0b91f41d48dc137529e97b}{Law}, and \hyperlink{class_composite_force_particle_a7899a6efda98b062051e37c25c214e2a}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 626 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_universe_a0f5cd04081b41ee931c0557dc397f6fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a2d3d642bfdc863248e93535832fa4b00}\label{class_universe_a2d3d642bfdc863248e93535832fa4b00}} 
+\index{Universe@{Universe}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_cognitive_network_a116f6818986a622e4a318857859e2495}{Cognitive\+Network}, \hyperlink{class_dimension_a1d2accef9e6adf747f5cc143ae4527c9}{Dimension}, \hyperlink{class_solid_adb34befc66f8c681f3a85c44e0d00e3a}{Solid}, \hyperlink{class_elementary_force_a38d4f86f18a9f84a4198ee43bc90f6b4}{Elementary\+Force}, \hyperlink{class_monomer_ab887d7cfd2ecb557efb3ace59852019c}{Monomer}, \hyperlink{class_law_a65e5e757041c1e72bb046eccbb6d66db}{Law}, and \hyperlink{class_composite_force_particle_a73a3792ae1c334e74f945fea56083f0b}{Composite\+Force\+Particle}.
+
+
+
+Definition at line 627 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a2d3d642bfdc863248e93535832fa4b00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_aa220508c4cc12b02c6fe494622ebb58d}\label{class_universe_aa220508c4cc12b02c6fe494622ebb58d}} 
+\index{Universe@{Universe}!The\+Calculated\+Time\+Now@{The\+Calculated\+Time\+Now}}
+\index{The\+Calculated\+Time\+Now@{The\+Calculated\+Time\+Now}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{The\+Calculated\+Time\+Now()}{TheCalculatedTimeNow()}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Calculated\+Time\+Now (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{time\+\_\+object\+\_\+created\+\_\+time,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{calculated\+\_\+scaled\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 116 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_aa220508c4cc12b02c6fe494622ebb58d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_ae54d34c5d695917e074b8e07e8820bdb}\label{class_universe_ae54d34c5d695917e074b8e07e8820bdb}} 
+\index{Universe@{Universe}!The\+Time\+Now@{The\+Time\+Now}}
+\index{The\+Time\+Now@{The\+Time\+Now}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{The\+Time\+Now()}{TheTimeNow()}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Time\+Now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_ae54d34c5d695917e074b8e07e8820bdb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_universe_ae54d34c5d695917e074b8e07e8820bdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a64ee5a2c7e86c56fa426acb750438ce9}\label{class_universe_a64ee5a2c7e86c56fa426acb750438ce9}} 
+\index{Universe@{Universe}!Update@{Update}}
+\index{Update@{Update}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Universe\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 481 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a64ee5a2c7e86c56fa426acb750438ce9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a64ee5a2c7e86c56fa426acb750438ce9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a0d79e614e1af951c06b78cb5768f9c8e}\label{class_universe_a0d79e614e1af951c06b78cb5768f9c8e}} 
+\index{Universe@{Universe}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Universe\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 418 of file universe.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a0d79e614e1af951c06b78cb5768f9c8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_universe_a0d79e614e1af951c06b78cb5768f9c8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_universe_a63e878aaf03f1800b255e9a089a72a8b}\label{class_universe_a63e878aaf03f1800b255e9a089a72a8b}} 
+\index{Universe@{Universe}!Use\+Energy@{Use\+Energy}}
+\index{Use\+Energy@{Use\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Use\+Energy()}{UseEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Use\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file universe.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_universe_a63e878aaf03f1800b255e9a089a72a8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_universe_a7a0e9796ff0d650a8b1fbde5fa5b761f}\label{class_universe_a7a0e9796ff0d650a8b1fbde5fa5b761f}} 
+\index{Universe@{Universe}!cognitive\+\_\+network\+\_\+list@{cognitive\+\_\+network\+\_\+list}}
+\index{cognitive\+\_\+network\+\_\+list@{cognitive\+\_\+network\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{cognitive\+\_\+network\+\_\+list}{cognitive\_network\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::cognitive\+\_\+network\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 291 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_ae9795d06e406c4322637825aa545aa2f}\label{class_universe_ae9795d06e406c4322637825aa545aa2f}} 
+\index{Universe@{Universe}!composite\+\_\+forceparticle\+\_\+list@{composite\+\_\+forceparticle\+\_\+list}}
+\index{composite\+\_\+forceparticle\+\_\+list@{composite\+\_\+forceparticle\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{composite\+\_\+forceparticle\+\_\+list}{composite\_forceparticle\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::composite\+\_\+forceparticle\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 292 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a159461f7098c3a30274f54c8acff6eac}\label{class_universe_a159461f7098c3a30274f54c8acff6eac}} 
+\index{Universe@{Universe}!dimension\+\_\+list@{dimension\+\_\+list}}
+\index{dimension\+\_\+list@{dimension\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{dimension\+\_\+list}{dimension\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::dimension\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 293 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a015b19f6d5ad84ebaa9e3e7c8352389c}\label{class_universe_a015b19f6d5ad84ebaa9e3e7c8352389c}} 
+\index{Universe@{Universe}!elementary\+\_\+force\+\_\+list@{elementary\+\_\+force\+\_\+list}}
+\index{elementary\+\_\+force\+\_\+list@{elementary\+\_\+force\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+list}{elementary\_force\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::elementary\+\_\+force\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 294 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_aeb2e63cf49f0b5595e6c15109863bd3b}\label{class_universe_aeb2e63cf49f0b5595e6c15109863bd3b}} 
+\index{Universe@{Universe}!elementary\+\_\+particle\+\_\+list@{elementary\+\_\+particle\+\_\+list}}
+\index{elementary\+\_\+particle\+\_\+list@{elementary\+\_\+particle\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+list}{elementary\_particle\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::elementary\+\_\+particle\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 295 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a409650bc0425fc22c7713487a2a6dd8e}\label{class_universe_a409650bc0425fc22c7713487a2a6dd8e}} 
+\index{Universe@{Universe}!matter\+\_\+list@{matter\+\_\+list}}
+\index{matter\+\_\+list@{matter\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{matter\+\_\+list}{matter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::matter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 296 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a3d55ba29f95a9793b69c01f7942eca9f}\label{class_universe_a3d55ba29f95a9793b69c01f7942eca9f}} 
+\index{Universe@{Universe}!monomer\+\_\+list@{monomer\+\_\+list}}
+\index{monomer\+\_\+list@{monomer\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{monomer\+\_\+list}{monomer\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::monomer\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 297 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_ab64777e25c83216e7a91d2761a10463c}\label{class_universe_ab64777e25c83216e7a91d2761a10463c}} 
+\index{Universe@{Universe}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Universe\+::object\+\_\+energy}
+
+
+
+Definition at line 281 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a17c8d799331a5b32837f285c12cbe858}\label{class_universe_a17c8d799331a5b32837f285c12cbe858}} 
+\index{Universe@{Universe}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Universe\+::object\+\_\+energy\+\_\+threshold}
+
+
+
+Definition at line 282 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a64f4f4025c9be1d84492c766a002a6d4}\label{class_universe_a64f4f4025c9be1d84492c766a002a6d4}} 
+\index{Universe@{Universe}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily int Universe\+::object\+\_\+size}
+
+
+
+Definition at line 283 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a9dc8abd2f8f84318722184f38e1b8cc7}\label{class_universe_a9dc8abd2f8f84318722184f38e1b8cc7}} 
+\index{Universe@{Universe}!point\+\_\+list@{point\+\_\+list}}
+\index{point\+\_\+list@{point\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{point\+\_\+list}{point\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::point\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 300 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a4d898757f2d67ca5ab5d504388d6199a}\label{class_universe_a4d898757f2d67ca5ab5d504388d6199a}} 
+\index{Universe@{Universe}!polymer\+\_\+list@{polymer\+\_\+list}}
+\index{polymer\+\_\+list@{polymer\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{polymer\+\_\+list}{polymer\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::polymer\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 298 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a747f9d3cf0b2caada4461cb7b12ea17b}\label{class_universe_a747f9d3cf0b2caada4461cb7b12ea17b}} 
+\index{Universe@{Universe}!solid\+\_\+list@{solid\+\_\+list}}
+\index{solid\+\_\+list@{solid\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{solid\+\_\+list}{solid\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Universe\+::solid\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 299 of file universe.\+h.
+
+\mbox{\Hypertarget{class_universe_a3ce4365c727cb6eb5b650146a4188b9b}\label{class_universe_a3ce4365c727cb6eb5b650146a4188b9b}} 
+\index{Universe@{Universe}!time\+\_\+dimension\+\_\+pointer@{time\+\_\+dimension\+\_\+pointer}}
+\index{time\+\_\+dimension\+\_\+pointer@{time\+\_\+dimension\+\_\+pointer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{time\+\_\+dimension\+\_\+pointer}{time\_dimension\_pointer}}
+{\footnotesize\ttfamily \hyperlink{class_universe}{Universe}$\ast$ Universe\+::time\+\_\+dimension\+\_\+pointer}
+
+
+
+Definition at line 284 of file universe.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{universe_8h}{universe.\+h}\item 
+Brain\+Harmonics/\hyperlink{universe_8cc}{universe.\+cc}\end{DoxyCompactItemize}

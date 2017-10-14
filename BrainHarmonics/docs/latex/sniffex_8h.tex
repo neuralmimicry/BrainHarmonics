@@ -1,0 +1,319 @@
+\hypertarget{sniffex_8h}{}\section{Brain\+Harmonics/sniffex.h File Reference}
+\label{sniffex_8h}\index{Brain\+Harmonics/sniffex.\+h@{Brain\+Harmonics/sniffex.\+h}}
+{\ttfamily \#include $<$pcap.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+Include dependency graph for sniffex.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sniffex_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sniffex_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_sniffex}{Sniffex}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__ethernet}{Sniffex\+::sniff\+\_\+ethernet}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__ip}{Sniffex\+::sniff\+\_\+ip}
+\item 
+struct \hyperlink{struct_sniffex_1_1sniff__tcp}{Sniffex\+::sniff\+\_\+tcp}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sniffex_8h_af0b5cfa4242ae7f98ba80fd23ef8afa9}{A\+P\+P\+\_\+\+N\+A\+ME}~\char`\"{}sniffex\char`\"{}
+\item 
+\#define \hyperlink{sniffex_8h_a97559a7d956f0ee6aeae5f3886a2159e}{A\+P\+P\+\_\+\+D\+E\+SC}~\char`\"{}Sniffer example using libpcap\char`\"{}
+\item 
+\#define \hyperlink{sniffex_8h_a9cf15f62d0ce89ef66e46d834242993e}{A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT}~\char`\"{}Copyright (c) 2005 The Tcpdump Group\char`\"{}
+\item 
+\#define \hyperlink{sniffex_8h_a4994f979b73469e1e5cb01f62ad2ed57}{A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER}~\char`\"{}T\+H\+E\+RE IS A\+B\+S\+O\+L\+U\+T\+E\+LY NO W\+A\+R\+R\+A\+N\+TY F\+OR T\+H\+IS P\+R\+O\+G\+R\+A\+M.\char`\"{}
+\item 
+\#define \hyperlink{sniffex_8h_a3b914b7c1a034667fcde02cd420a7928}{S\+N\+A\+P\+\_\+\+L\+EN}~1518
+\item 
+\#define \hyperlink{sniffex_8h_a3f5b604fac0a778d4d05140ac486303a}{S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET}~14
+\item 
+\#define \hyperlink{sniffex_8h_abf4fcaacb1ad2010711b7c880ec2ed20}{E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN}~6
+\item 
+\#define \hyperlink{sniffex_8h_a895709708f8f909cf7b7459491d549e7}{I\+P\+\_\+\+RF}~0x8000            /$\ast$ reserved fragment flag $\ast$/
+\item 
+\#define \hyperlink{sniffex_8h_ae2473f4a88d141d5298f92a4335b714a}{I\+P\+\_\+\+DF}~0x4000            /$\ast$ dont fragment flag $\ast$/
+\item 
+\#define \hyperlink{sniffex_8h_ae8afe1e04bb9bad791443556c3b2cd73}{I\+P\+\_\+\+MF}~0x2000            /$\ast$ more fragments flag $\ast$/
+\item 
+\#define \hyperlink{sniffex_8h_ad059798b16d1f615b5af8770175121ba}{I\+P\+\_\+\+O\+F\+F\+M\+A\+SK}~0x1fff       /$\ast$ mask for fragmenting bits $\ast$/
+\item 
+\#define \hyperlink{sniffex_8h_a316a88421a4b66af822ec0e097c01f9a}{I\+P\+\_\+\+HL}(ip)~(((ip)-\/$>$ip\+\_\+vhl) \& 0x0f)
+\item 
+\#define \hyperlink{sniffex_8h_ad79fc88954ed6d1ab77e5fde5e23b864}{I\+P\+\_\+V}(ip)~(((ip)-\/$>$ip\+\_\+vhl) $>$$>$ 4)
+\item 
+\#define \hyperlink{sniffex_8h_a040e084a163464aace3da0ab5673f97b}{T\+H\+\_\+\+O\+FF}(th)~(((th)-\/$>$th\+\_\+offx2 \& 0xf0) $>$$>$ 4)
+\item 
+\#define \hyperlink{sniffex_8h_a1cec9b372679734fcd8394d779442ddb}{T\+H\+\_\+\+F\+IN}~0x01
+\item 
+\#define \hyperlink{sniffex_8h_a91006117f7ae427b957773ab0e80bfa4}{T\+H\+\_\+\+S\+YN}~0x02
+\item 
+\#define \hyperlink{sniffex_8h_a7f2ce15991898c8d3397045087c4381f}{T\+H\+\_\+\+R\+ST}~0x04
+\item 
+\#define \hyperlink{sniffex_8h_a45b9964096064c9a0c84fbddd2c80d38}{T\+H\+\_\+\+P\+U\+SH}~0x08
+\item 
+\#define \hyperlink{sniffex_8h_a362dae974cf06bab2b79b70f0cde524f}{T\+H\+\_\+\+A\+CK}~0x10
+\item 
+\#define \hyperlink{sniffex_8h_a7b18ca973f14696013696a00c5235f32}{T\+H\+\_\+\+U\+RG}~0x20
+\item 
+\#define \hyperlink{sniffex_8h_acb3203940d8aab3eef7dd8ec1e0112db}{T\+H\+\_\+\+E\+CE}~0x40
+\item 
+\#define \hyperlink{sniffex_8h_a427da5535811ecaae82a11869ea9e1d9}{T\+H\+\_\+\+C\+WR}~0x80
+\item 
+\#define \hyperlink{sniffex_8h_a618dec9145afa92eb20e74a97625f754}{T\+H\+\_\+\+F\+L\+A\+GS}~(\hyperlink{sniffex_8h_a1cec9b372679734fcd8394d779442ddb}{T\+H\+\_\+\+F\+IN}$\vert$\hyperlink{sniffex_8h_a91006117f7ae427b957773ab0e80bfa4}{T\+H\+\_\+\+S\+YN}$\vert$\hyperlink{sniffex_8h_a7f2ce15991898c8d3397045087c4381f}{T\+H\+\_\+\+R\+ST}$\vert$\hyperlink{sniffex_8h_a362dae974cf06bab2b79b70f0cde524f}{T\+H\+\_\+\+A\+CK}$\vert$\hyperlink{sniffex_8h_a7b18ca973f14696013696a00c5235f32}{T\+H\+\_\+\+U\+RG}$\vert$\hyperlink{sniffex_8h_acb3203940d8aab3eef7dd8ec1e0112db}{T\+H\+\_\+\+E\+CE}$\vert$\hyperlink{sniffex_8h_a427da5535811ecaae82a11869ea9e1d9}{T\+H\+\_\+\+C\+WR})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sniffex_8h_a9cf15f62d0ce89ef66e46d834242993e}\label{sniffex_8h_a9cf15f62d0ce89ef66e46d834242993e}} 
+\index{sniffex.\+h@{sniffex.\+h}!A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT@{A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT}}
+\index{A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT@{A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT}{APP\_COPYRIGHT}}
+{\footnotesize\ttfamily \#define A\+P\+P\+\_\+\+C\+O\+P\+Y\+R\+I\+G\+HT~\char`\"{}Copyright (c) 2005 The Tcpdump Group\char`\"{}}
+
+
+
+Definition at line 209 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a97559a7d956f0ee6aeae5f3886a2159e}\label{sniffex_8h_a97559a7d956f0ee6aeae5f3886a2159e}} 
+\index{sniffex.\+h@{sniffex.\+h}!A\+P\+P\+\_\+\+D\+E\+SC@{A\+P\+P\+\_\+\+D\+E\+SC}}
+\index{A\+P\+P\+\_\+\+D\+E\+SC@{A\+P\+P\+\_\+\+D\+E\+SC}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{A\+P\+P\+\_\+\+D\+E\+SC}{APP\_DESC}}
+{\footnotesize\ttfamily \#define A\+P\+P\+\_\+\+D\+E\+SC~\char`\"{}Sniffer example using libpcap\char`\"{}}
+
+
+
+Definition at line 208 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a4994f979b73469e1e5cb01f62ad2ed57}\label{sniffex_8h_a4994f979b73469e1e5cb01f62ad2ed57}} 
+\index{sniffex.\+h@{sniffex.\+h}!A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER@{A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER}}
+\index{A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER@{A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER}{APP\_DISCLAIMER}}
+{\footnotesize\ttfamily \#define A\+P\+P\+\_\+\+D\+I\+S\+C\+L\+A\+I\+M\+ER~\char`\"{}T\+H\+E\+RE IS A\+B\+S\+O\+L\+U\+T\+E\+LY NO W\+A\+R\+R\+A\+N\+TY F\+OR T\+H\+IS P\+R\+O\+G\+R\+A\+M.\char`\"{}}
+
+
+
+Definition at line 210 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_af0b5cfa4242ae7f98ba80fd23ef8afa9}\label{sniffex_8h_af0b5cfa4242ae7f98ba80fd23ef8afa9}} 
+\index{sniffex.\+h@{sniffex.\+h}!A\+P\+P\+\_\+\+N\+A\+ME@{A\+P\+P\+\_\+\+N\+A\+ME}}
+\index{A\+P\+P\+\_\+\+N\+A\+ME@{A\+P\+P\+\_\+\+N\+A\+ME}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{A\+P\+P\+\_\+\+N\+A\+ME}{APP\_NAME}}
+{\footnotesize\ttfamily \#define A\+P\+P\+\_\+\+N\+A\+ME~\char`\"{}sniffex\char`\"{}}
+
+
+
+Definition at line 207 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_abf4fcaacb1ad2010711b7c880ec2ed20}\label{sniffex_8h_abf4fcaacb1ad2010711b7c880ec2ed20}} 
+\index{sniffex.\+h@{sniffex.\+h}!E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN@{E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN}}
+\index{E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN@{E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN}{ETHER\_ADDR\_LEN}}
+{\footnotesize\ttfamily \#define E\+T\+H\+E\+R\+\_\+\+A\+D\+D\+R\+\_\+\+L\+EN~6}
+
+
+
+Definition at line 230 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_ae2473f4a88d141d5298f92a4335b714a}\label{sniffex_8h_ae2473f4a88d141d5298f92a4335b714a}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+\+DF@{I\+P\+\_\+\+DF}}
+\index{I\+P\+\_\+\+DF@{I\+P\+\_\+\+DF}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+\+DF}{IP\_DF}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+\+DF~0x4000            /$\ast$ dont fragment flag $\ast$/}
+
+
+
+Definition at line 251 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a316a88421a4b66af822ec0e097c01f9a}\label{sniffex_8h_a316a88421a4b66af822ec0e097c01f9a}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+\+HL@{I\+P\+\_\+\+HL}}
+\index{I\+P\+\_\+\+HL@{I\+P\+\_\+\+HL}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+\+HL}{IP\_HL}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+\+HL(\begin{DoxyParamCaption}\item[{}]{ip }\end{DoxyParamCaption})~(((ip)-\/$>$ip\+\_\+vhl) \& 0x0f)}
+
+
+
+Definition at line 259 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_ae8afe1e04bb9bad791443556c3b2cd73}\label{sniffex_8h_ae8afe1e04bb9bad791443556c3b2cd73}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+\+MF@{I\+P\+\_\+\+MF}}
+\index{I\+P\+\_\+\+MF@{I\+P\+\_\+\+MF}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+\+MF}{IP\_MF}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+\+MF~0x2000            /$\ast$ more fragments flag $\ast$/}
+
+
+
+Definition at line 252 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_ad059798b16d1f615b5af8770175121ba}\label{sniffex_8h_ad059798b16d1f615b5af8770175121ba}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+\+O\+F\+F\+M\+A\+SK@{I\+P\+\_\+\+O\+F\+F\+M\+A\+SK}}
+\index{I\+P\+\_\+\+O\+F\+F\+M\+A\+SK@{I\+P\+\_\+\+O\+F\+F\+M\+A\+SK}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+\+O\+F\+F\+M\+A\+SK}{IP\_OFFMASK}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+\+O\+F\+F\+M\+A\+SK~0x1fff       /$\ast$ mask for fragmenting bits $\ast$/}
+
+
+
+Definition at line 253 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a895709708f8f909cf7b7459491d549e7}\label{sniffex_8h_a895709708f8f909cf7b7459491d549e7}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+\+RF@{I\+P\+\_\+\+RF}}
+\index{I\+P\+\_\+\+RF@{I\+P\+\_\+\+RF}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+\+RF}{IP\_RF}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+\+RF~0x8000            /$\ast$ reserved fragment flag $\ast$/}
+
+
+
+Definition at line 250 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_ad79fc88954ed6d1ab77e5fde5e23b864}\label{sniffex_8h_ad79fc88954ed6d1ab77e5fde5e23b864}} 
+\index{sniffex.\+h@{sniffex.\+h}!I\+P\+\_\+V@{I\+P\+\_\+V}}
+\index{I\+P\+\_\+V@{I\+P\+\_\+V}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{I\+P\+\_\+V}{IP\_V}}
+{\footnotesize\ttfamily \#define I\+P\+\_\+V(\begin{DoxyParamCaption}\item[{}]{ip }\end{DoxyParamCaption})~(((ip)-\/$>$ip\+\_\+vhl) $>$$>$ 4)}
+
+
+
+Definition at line 260 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a3f5b604fac0a778d4d05140ac486303a}\label{sniffex_8h_a3f5b604fac0a778d4d05140ac486303a}} 
+\index{sniffex.\+h@{sniffex.\+h}!S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET@{S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET}}
+\index{S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET@{S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET}{SIZE\_ETHERNET}}
+{\footnotesize\ttfamily \#define S\+I\+Z\+E\+\_\+\+E\+T\+H\+E\+R\+N\+ET~14}
+
+
+
+Definition at line 227 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a3b914b7c1a034667fcde02cd420a7928}\label{sniffex_8h_a3b914b7c1a034667fcde02cd420a7928}} 
+\index{sniffex.\+h@{sniffex.\+h}!S\+N\+A\+P\+\_\+\+L\+EN@{S\+N\+A\+P\+\_\+\+L\+EN}}
+\index{S\+N\+A\+P\+\_\+\+L\+EN@{S\+N\+A\+P\+\_\+\+L\+EN}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{S\+N\+A\+P\+\_\+\+L\+EN}{SNAP\_LEN}}
+{\footnotesize\ttfamily \#define S\+N\+A\+P\+\_\+\+L\+EN~1518}
+
+
+
+Definition at line 224 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a362dae974cf06bab2b79b70f0cde524f}\label{sniffex_8h_a362dae974cf06bab2b79b70f0cde524f}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+A\+CK@{T\+H\+\_\+\+A\+CK}}
+\index{T\+H\+\_\+\+A\+CK@{T\+H\+\_\+\+A\+CK}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+A\+CK}{TH\_ACK}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+A\+CK~0x10}
+
+
+
+Definition at line 277 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a427da5535811ecaae82a11869ea9e1d9}\label{sniffex_8h_a427da5535811ecaae82a11869ea9e1d9}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+C\+WR@{T\+H\+\_\+\+C\+WR}}
+\index{T\+H\+\_\+\+C\+WR@{T\+H\+\_\+\+C\+WR}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+C\+WR}{TH\_CWR}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+C\+WR~0x80}
+
+
+
+Definition at line 280 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_acb3203940d8aab3eef7dd8ec1e0112db}\label{sniffex_8h_acb3203940d8aab3eef7dd8ec1e0112db}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+E\+CE@{T\+H\+\_\+\+E\+CE}}
+\index{T\+H\+\_\+\+E\+CE@{T\+H\+\_\+\+E\+CE}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+E\+CE}{TH\_ECE}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+E\+CE~0x40}
+
+
+
+Definition at line 279 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a1cec9b372679734fcd8394d779442ddb}\label{sniffex_8h_a1cec9b372679734fcd8394d779442ddb}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+F\+IN@{T\+H\+\_\+\+F\+IN}}
+\index{T\+H\+\_\+\+F\+IN@{T\+H\+\_\+\+F\+IN}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+F\+IN}{TH\_FIN}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+F\+IN~0x01}
+
+
+
+Definition at line 273 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a618dec9145afa92eb20e74a97625f754}\label{sniffex_8h_a618dec9145afa92eb20e74a97625f754}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+F\+L\+A\+GS@{T\+H\+\_\+\+F\+L\+A\+GS}}
+\index{T\+H\+\_\+\+F\+L\+A\+GS@{T\+H\+\_\+\+F\+L\+A\+GS}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+F\+L\+A\+GS}{TH\_FLAGS}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+F\+L\+A\+GS~(\hyperlink{sniffex_8h_a1cec9b372679734fcd8394d779442ddb}{T\+H\+\_\+\+F\+IN}$\vert$\hyperlink{sniffex_8h_a91006117f7ae427b957773ab0e80bfa4}{T\+H\+\_\+\+S\+YN}$\vert$\hyperlink{sniffex_8h_a7f2ce15991898c8d3397045087c4381f}{T\+H\+\_\+\+R\+ST}$\vert$\hyperlink{sniffex_8h_a362dae974cf06bab2b79b70f0cde524f}{T\+H\+\_\+\+A\+CK}$\vert$\hyperlink{sniffex_8h_a7b18ca973f14696013696a00c5235f32}{T\+H\+\_\+\+U\+RG}$\vert$\hyperlink{sniffex_8h_acb3203940d8aab3eef7dd8ec1e0112db}{T\+H\+\_\+\+E\+CE}$\vert$\hyperlink{sniffex_8h_a427da5535811ecaae82a11869ea9e1d9}{T\+H\+\_\+\+C\+WR})}
+
+
+
+Definition at line 281 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a040e084a163464aace3da0ab5673f97b}\label{sniffex_8h_a040e084a163464aace3da0ab5673f97b}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+O\+FF@{T\+H\+\_\+\+O\+FF}}
+\index{T\+H\+\_\+\+O\+FF@{T\+H\+\_\+\+O\+FF}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+O\+FF}{TH\_OFF}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+O\+FF(\begin{DoxyParamCaption}\item[{}]{th }\end{DoxyParamCaption})~(((th)-\/$>$th\+\_\+offx2 \& 0xf0) $>$$>$ 4)}
+
+
+
+Definition at line 271 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a45b9964096064c9a0c84fbddd2c80d38}\label{sniffex_8h_a45b9964096064c9a0c84fbddd2c80d38}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+P\+U\+SH@{T\+H\+\_\+\+P\+U\+SH}}
+\index{T\+H\+\_\+\+P\+U\+SH@{T\+H\+\_\+\+P\+U\+SH}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+P\+U\+SH}{TH\_PUSH}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+P\+U\+SH~0x08}
+
+
+
+Definition at line 276 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a7f2ce15991898c8d3397045087c4381f}\label{sniffex_8h_a7f2ce15991898c8d3397045087c4381f}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+R\+ST@{T\+H\+\_\+\+R\+ST}}
+\index{T\+H\+\_\+\+R\+ST@{T\+H\+\_\+\+R\+ST}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+R\+ST}{TH\_RST}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+R\+ST~0x04}
+
+
+
+Definition at line 275 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a91006117f7ae427b957773ab0e80bfa4}\label{sniffex_8h_a91006117f7ae427b957773ab0e80bfa4}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+S\+YN@{T\+H\+\_\+\+S\+YN}}
+\index{T\+H\+\_\+\+S\+YN@{T\+H\+\_\+\+S\+YN}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+S\+YN}{TH\_SYN}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+S\+YN~0x02}
+
+
+
+Definition at line 274 of file sniffex.\+h.
+
+\mbox{\Hypertarget{sniffex_8h_a7b18ca973f14696013696a00c5235f32}\label{sniffex_8h_a7b18ca973f14696013696a00c5235f32}} 
+\index{sniffex.\+h@{sniffex.\+h}!T\+H\+\_\+\+U\+RG@{T\+H\+\_\+\+U\+RG}}
+\index{T\+H\+\_\+\+U\+RG@{T\+H\+\_\+\+U\+RG}!sniffex.\+h@{sniffex.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+\_\+\+U\+RG}{TH\_URG}}
+{\footnotesize\ttfamily \#define T\+H\+\_\+\+U\+RG~0x20}
+
+
+
+Definition at line 278 of file sniffex.\+h.
+

@@ -1,0 +1,511 @@
+.TH "Neuron" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Neuron
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <neuron\&.h>\fP
+.PP
+Inherits \fBCognitiveNetwork\fP\&.
+.PP
+Inherited by \fBMembrane\fP, and \fBSoma\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBObjectConnection\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNeuron\fP ()"
+.br
+.ti -1c
+.RI "\fBNeuron\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP &cognitivenetwork_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Neuron\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBGetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBGetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetNeuronType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetRestingPotential\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetNeuronDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetSomaPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBSetSomaPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.br
+.ti -1c
+.RI "void \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetNeuronType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetNeuronDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "bool \fBOpenGate\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBCreateSoma\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBCreateSomas\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBCloneSoma\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBCloneSomas\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBDestroySoma\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBDestroySomas\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBAddSoma\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBAddSomas\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBRemoveSoma\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBRemoveSomas\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBGetSoma\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBGetSomas\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBCreateMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBCreateMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBCloneMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBCloneMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBDestroyMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBDestroyMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBAddMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBAddMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBRemoveMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBRemoveMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBNeuron\fP * \fBGetMembrane\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBGetMembranes\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowth\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle2\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBGetVisualisationList\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBsoma_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBNeuron\fP * > \fBmembrane_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBUniverse\fP * > \fBvisualisation_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBObjectConnection\fP > \fBobject_connection_list\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBOrbital\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 14 of file neuron\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Neuron::Neuron ()\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file neuron\&.h\&.
+.SS "Neuron::Neuron (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 20 of file neuron\&.h\&.
+.SS "Neuron::Neuron (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 22 of file neuron\&.h\&.
+.SS "Neuron::Neuron (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP & cognitivenetwork_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file neuron\&.h\&.
+.SS "virtual Neuron::~Neuron ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 38 of file neuron\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBNeuron\fP * Neuron::AddMembrane (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * add_object)"
+
+.PP
+Definition at line 270 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::AddMembranes (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> add_objects)"
+
+.PP
+Definition at line 281 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::AddSoma (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * add_object)"
+
+.PP
+Definition at line 162 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::AddSomas (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> add_objects)"
+
+.PP
+Definition at line 173 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::CloneMembrane (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 255 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::CloneMembranes (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 250 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::CloneSoma (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 147 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::CloneSomas (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 142 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::CreateMembrane (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 217 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::CreateMembranes (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 228 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::CreateSoma (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 105 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::CreateSomas (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 116 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::DestroyMembrane (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * destroy_object)"
+
+.PP
+Definition at line 265 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::DestroyMembranes (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> destruction_list)"
+
+.PP
+Definition at line 260 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::DestroySoma (std::chrono::time_point< \fBClock\fP > event_time, \fBNeuron\fP * destroy_object)"
+
+.PP
+Definition at line 157 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::DestroySomas (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> destruction_list)"
+
+.PP
+Definition at line 152 of file neuron\&.cc\&.
+.SS "int Neuron::GetCapacity (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file neuron\&.h\&.
+.SS "double Neuron::GetChannelMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 49 of file neuron\&.h\&.
+.SS "double Neuron::GetChannelMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file neuron\&.h\&.
+.SS "unsigned int Neuron::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file neuron\&.h\&.
+.SS "bool Neuron::GetDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file neuron\&.h\&.
+.SS "double Neuron::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file neuron\&.h\&.
+.SS "double Neuron::GetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file neuron\&.h\&.
+.SS "\fBNeuron\fP * Neuron::GetMembrane (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 314 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::GetMembranes (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 319 of file neuron\&.cc\&.
+.SS "int Neuron::GetNeuronDeviceTag (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file neuron\&.h\&.
+.SS "int Neuron::GetNeuronType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file neuron\&.h\&.
+.SS "double Neuron::GetRestingPotential (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file neuron\&.h\&.
+.SS "\fBNeuron\fP * Neuron::GetSoma (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 206 of file neuron\&.cc\&.
+.SS "int Neuron::GetSomaPool (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file neuron\&.h\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::GetSomas (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 211 of file neuron\&.cc\&.
+.SS "int Neuron::GetUsage (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 43 of file neuron\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Neuron::GetVisualisationList ()\fC [inline]\fP"
+
+.PP
+Definition at line 130 of file neuron\&.h\&.
+.SS "int Neuron::Growth (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 325 of file neuron\&.cc\&.
+.SS "bool Neuron::OpenGate (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+
+.PP
+Definition at line 88 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::RemoveMembrane (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 303 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::RemoveMembranes (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 309 of file neuron\&.cc\&.
+.SS "\fBNeuron\fP * Neuron::RemoveSoma (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 195 of file neuron\&.cc\&.
+.SS "std::vector< \fBNeuron\fP * > Neuron::RemoveSomas (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 201 of file neuron\&.cc\&.
+.SS "bool Neuron::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 27 of file neuron\&.cc\&.
+.SS "void Neuron::SetCapacity (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file neuron\&.h\&.
+.SS "void Neuron::SetChannelMax (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file neuron\&.h\&.
+.SS "void Neuron::SetChannelMin (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file neuron\&.h\&.
+.SS "void Neuron::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file neuron\&.h\&.
+.SS "void Neuron::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file neuron\&.h\&.
+.SS "void Neuron::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file neuron\&.h\&.
+.SS "void Neuron::SetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 60 of file neuron\&.h\&.
+.SS "void Neuron::SetNeuronDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file neuron\&.h\&.
+.SS "void Neuron::SetNeuronType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file neuron\&.h\&.
+.SS "void Neuron::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 21 of file neuron\&.cc\&.
+.SS "int Neuron::SetSomaPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file neuron\&.h\&.
+.SS "void Neuron::SetUsage (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file neuron\&.h\&.
+.SS "void Neuron::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file neuron\&.h\&.
+.SS "int Neuron::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 387 of file neuron\&.cc\&.
+.SS "void Neuron::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBNeuron\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 346 of file neuron\&.cc\&.
+.SS "void Neuron::UpdateCycle2 (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 369 of file neuron\&.cc\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBOrbital\fP\fC [friend]\fP"
+
+.PP
+Definition at line 16 of file neuron\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBNeuron\fP*> Neuron::membrane_list\fC [protected]\fP"
+
+.PP
+Definition at line 134 of file neuron\&.h\&.
+.SS "std::vector<\fBObjectConnection\fP> Neuron::object_connection_list\fC [protected]\fP"
+
+.PP
+Definition at line 148 of file neuron\&.h\&.
+.SS "std::vector<\fBNeuron\fP*> Neuron::soma_list\fC [protected]\fP"
+
+.PP
+Definition at line 133 of file neuron\&.h\&.
+.SS "std::vector<\fBUniverse\fP*> Neuron::visualisation_list\fC [protected]\fP"
+
+.PP
+Definition at line 135 of file neuron\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

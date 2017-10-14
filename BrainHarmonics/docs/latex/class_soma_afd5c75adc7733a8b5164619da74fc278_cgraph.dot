@@ -1,0 +1,19 @@
+digraph "Soma::Creation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Soma::Creation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Soma::ResetParameters",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_soma.html#a885c84acc8a4b7ae62d752677db5f754"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CognitiveNetwork::AddEnergy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a288a367a774ca70438504c4d9ac5af62"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Soma::AddAxonhillock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_soma.html#a4bc227f71628fc9053f4d01b4993e5b7"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Soma::AddDendrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_soma.html#a7d5d00b269aba4045127bc507a97fa30"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Soma::Growth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_soma.html#ab92d0e64365884d60e187fe3a71dce36"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Soma::Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_soma.html#a675fc1826a8e0d955d63817974ddb81f"];
+}

@@ -1,0 +1,238 @@
+.TH "Quad" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Quad
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <quad\&.h>\fP
+.PP
+Inherits \fBPolygon\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQuad\fP ()"
+.br
+.ti -1c
+.RI "\fBQuad\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBQuad\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBQuad\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBPolygon\fP &polygon_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Quad\fP ()"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetQuadID\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadX1\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadY1\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadX2\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadY2\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadX3\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadY3\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadX4\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadY4\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetQuadTTL\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "int \fBGetQuadCounter\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "bool \fBGetInQuad\fP (std::chrono::time_point< \fBClock\fP > event_time, double X1, double Y1, double X2, double Y2, double X3, double Y3, double X4, double Y4, double Threshold)"
+.br
+.ti -1c
+.RI "void \fBSetQuadID\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadX1\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadY1\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadX2\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadY2\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadX3\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadY3\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadX4\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadY4\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadTTL\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetQuadCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file quad\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Quad::Quad ()\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file quad\&.h\&.
+.SS "Quad::Quad (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file quad\&.h\&.
+.SS "Quad::Quad (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file quad\&.h\&.
+.SS "Quad::Quad (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBPolygon\fP & polygon_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file quad\&.h\&.
+.SS "virtual Quad::~Quad ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 45 of file quad\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Quad::GetInQuad (std::chrono::time_point< \fBClock\fP > event_time, double X1, double Y1, double X2, double Y2, double X3, double Y3, double X4, double Y4, double Threshold)\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file quad\&.h\&.
+.SS "int Quad::GetQuadCounter (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file quad\&.h\&.
+.SS "int Quad::GetQuadID (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file quad\&.h\&.
+.SS "double Quad::GetQuadTTL (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file quad\&.h\&.
+.SS "double Quad::GetQuadX1 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 49 of file quad\&.h\&.
+.SS "double Quad::GetQuadX2 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file quad\&.h\&.
+.SS "double Quad::GetQuadX3 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file quad\&.h\&.
+.SS "double Quad::GetQuadX4 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file quad\&.h\&.
+.SS "double Quad::GetQuadY1 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file quad\&.h\&.
+.SS "double Quad::GetQuadY2 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file quad\&.h\&.
+.SS "double Quad::GetQuadY3 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file quad\&.h\&.
+.SS "double Quad::GetQuadY4 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file quad\&.h\&.
+.SS "bool Quad::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 19 of file quad\&.cc\&.
+.SS "void Quad::SetQuadCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 74 of file quad\&.h\&.
+.SS "void Quad::SetQuadID (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file quad\&.h\&.
+.SS "void Quad::SetQuadTTL (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 73 of file quad\&.h\&.
+.SS "void Quad::SetQuadX1 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file quad\&.h\&.
+.SS "void Quad::SetQuadX2 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 67 of file quad\&.h\&.
+.SS "void Quad::SetQuadX3 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file quad\&.h\&.
+.SS "void Quad::SetQuadX4 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 71 of file quad\&.h\&.
+.SS "void Quad::SetQuadY1 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file quad\&.h\&.
+.SS "void Quad::SetQuadY2 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 68 of file quad\&.h\&.
+.SS "void Quad::SetQuadY3 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file quad\&.h\&.
+.SS "void Quad::SetQuadY4 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 72 of file quad\&.h\&.
+.SS "int Quad::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 58 of file quad\&.cc\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

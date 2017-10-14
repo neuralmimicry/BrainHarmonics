@@ -1,0 +1,1529 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_solid" kind="class" language="C++" prot="public">
+    <compoundname>Solid</compoundname>
+    <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
+    <derivedcompoundref refid="class_polyhedron" prot="public" virt="non-virtual">Polyhedron</derivedcompoundref>
+    <includes refid="solid_8h" local="no">solid.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_solid_1ad04bbaef84caa0d408ec09a1c1302f5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CognitiveNetwork</definition>
+        <argsstring></argsstring>
+        <name>CognitiveNetwork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="25" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_solid_1aa410d74ba34b18a9f6bdf24323c4ee5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Neuron</definition>
+        <argsstring></argsstring>
+        <name>Neuron</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="26" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_solid_1aaa07b7b364b620b9a781f30a5cd9f5ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Soma</definition>
+        <argsstring></argsstring>
+        <name>Soma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="27" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_solid_1ac790db405644a01723104c3c0c8128bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Membrane</definition>
+        <argsstring></argsstring>
+        <name>Membrane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="28" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt;Solid*&gt; Solid::polyhedron_list</definition>
+        <argsstring></argsstring>
+        <name>polyhedron_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="128" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</referencedby>
+        <referencedby refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" compoundref="solid_8cc" startline="109" endline="118">CreatePolyhedron</referencedby>
+        <referencedby refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" compoundref="solid_8cc" startline="120" endline="139">CreatePolyhedrons</referencedby>
+        <referencedby refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" compoundref="solid_8cc" startline="162" endline="171">AddPolyhedron</referencedby>
+        <referencedby refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" compoundref="solid_8cc" startline="173" endline="192">AddPolyhedrons</referencedby>
+        <referencedby refid="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" compoundref="solid_8cc" startline="206" endline="209">GetPolyhedron</referencedby>
+        <referencedby refid="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" compoundref="solid_8cc" startline="211" endline="214">GetPolyhedrons</referencedby>
+        <referencedby refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" compoundref="solid_8cc" startline="244" endline="277">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ad63206ff20f38b621db482b01801c4c5" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; Solid::poly_type_list</definition>
+        <argsstring></argsstring>
+        <name>poly_type_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="129" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_solid_1ab267c0a27586fa46a1b03bb0750caf5a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Solid::m_Counter</definition>
+        <argsstring></argsstring>
+        <name>m_Counter</name>
+        <briefdescription>
+<para>Member variable &quot;m_Counter&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="132" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1a4cb0429a28598d5501553787524b705d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Solid::solid_type</definition>
+        <argsstring></argsstring>
+        <name>solid_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="133" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ac521c984065957c82c239d5fb8be82ff" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Solid::object_disabled</definition>
+        <argsstring></argsstring>
+        <name>object_disabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="134" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ac92543b277d9a01d4cfbdf7fd71d3e1f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Solid::object_initialised</definition>
+        <argsstring></argsstring>
+        <name>object_initialised</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="135" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ab511520c2e523c203c1ca7b97f573f65" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Solid::time_object_created</definition>
+        <argsstring></argsstring>
+        <name>time_object_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="136" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ace5c8628a4f60d96029d8acea4580ab5" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+        <definition>std::chrono::time_point&lt;Clock&gt; Solid::previous_event_time</definition>
+        <argsstring></argsstring>
+        <name>previous_event_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="137" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1ad845ec39ddd38670049e9c6e046f2454" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Solid::duration_since_last_event</definition>
+        <argsstring></argsstring>
+        <name>duration_since_last_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="138" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solid_1abd4b935f7835fd0f8b50b526f6399731" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Solid::polyhedron_pool</definition>
+        <argsstring></argsstring>
+        <name>polyhedron_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="140" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_solid_1a2cf157c87df66dc3eb8722f9b3ee8f66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solid::Solid</definition>
+        <argsstring>()</argsstring>
+        <name>Solid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="31" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a00a71dfc929ca50ee9850bdfca5b3fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solid::Solid</definition>
+        <argsstring>(unsigned int object_type)</argsstring>
+        <name>Solid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="33" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a9f5476b751c749af38b349b9fc7e2ba5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solid::Solid</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Solid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="35" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a80746ad255dded6090e648fc3f0dbd93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solid::Solid</definition>
+        <argsstring>(unsigned int object_type, std::chrono::time_point&lt; Clock &gt; event_time, Universe &amp;universe_connector)</argsstring>
+        <name>Solid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_universe" kindref="compound">Universe</ref> &amp;</type>
+          <declname>universe_connector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="37" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="37" bodyend="48"/>
+        <references refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</references>
+        <references refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" compoundref="universe_8cc" startline="57" endline="61">Universe::Creation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a07095e0808c0ef6b206bc70992ef557d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Solid::~Solid</definition>
+        <argsstring>()</argsstring>
+        <name>~Solid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="50" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="50" bodyend="50"/>
+        <references refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</references>
+        <references refid="class_solid_1a7ca41431033d05957f8be3f49c3aca23" compoundref="solid_8cc" startline="96" endline="96">GetCounter</references>
+        <references refid="class_solid_1aea949040518e505ed39b1456a360c5e0" compoundref="solid_8cc" startline="98" endline="98">SetCounter</references>
+        <references refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" compoundref="solid_8cc" startline="100" endline="107">SetObjectType</references>
+        <references refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" compoundref="solid_8cc" startline="109" endline="118">CreatePolyhedron</references>
+        <references refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" compoundref="solid_8cc" startline="120" endline="139">CreatePolyhedrons</references>
+        <references refid="class_solid_1ae83094e9c002a7574db242ed0bff6288" compoundref="solid_8cc" startline="147" endline="150">ClonePolyhedron</references>
+        <references refid="class_solid_1a1e650b6d8437acfaf7b9384b885d77bf" compoundref="solid_8cc" startline="142" endline="145">ClonePolyhedrons</references>
+        <references refid="class_solid_1a0841900d8ef4b82292ac027c4852b59b" compoundref="solid_8cc" startline="157" endline="160">DestroyPolyhedron</references>
+        <references refid="class_solid_1ab1652ee511ed51bbe6a0a3b1854b7974" compoundref="solid_8cc" startline="152" endline="155">DestroyPolyhedrons</references>
+        <references refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" compoundref="solid_8cc" startline="162" endline="171">AddPolyhedron</references>
+        <references refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" compoundref="solid_8cc" startline="173" endline="192">AddPolyhedrons</references>
+        <references refid="class_solid_1a1233a3fe43abca7d2a0f83d724fd6640" compoundref="solid_8cc" startline="195" endline="199">RemovePolyhedron</references>
+        <references refid="class_solid_1a0fc53641571eb796c9d6bc33ae7a7138" compoundref="solid_8cc" startline="201" endline="204">RemovePolyhedrons</references>
+        <references refid="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" compoundref="solid_8cc" startline="206" endline="209">GetPolyhedron</references>
+        <references refid="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" compoundref="solid_8cc" startline="211" endline="214">GetPolyhedrons</references>
+        <references refid="class_solid_1a94bb5df6d873c14a94355fc95557efd6" compoundref="solid_8cc" startline="216" endline="219">GluePolyhedrons</references>
+        <references refid="class_solid_1a17239817eba0e5870454311857dca736" compoundref="solid_8cc" startline="221" endline="242">UpdateCycle</references>
+        <references refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" compoundref="solid_8cc" startline="244" endline="277">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Solid::ResetParameters</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>ResetParameters</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="52" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="20" bodyend="94"/>
+        <references refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" compoundref="universe_8h" startline="284">Universe::time_dimension_pointer</references>
+        <references refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" compoundref="universe_8cc" startline="166" endline="172">Universe::AddDimension</references>
+        <references refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" compoundref="universe_8cc" startline="63" endline="67">Universe::SetObjectType</references>
+        <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
+        <references refid="class_solid_1ad63206ff20f38b621db482b01801c4c5" compoundref="solid_8h" startline="129">poly_type_list</references>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <references refid="universe_8h_1af195d08bd4333e3ed6abac93c1620318" compoundref="universe_8h" startline="48">TYPE_SOLID_NEURON_GEN1</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <references refid="universe_8h_1ac03a57fb203395d1e046d5052c757141" compoundref="universe_8h" startline="49">TYPE_SOLID_POLYHEDRON_SOMA_GEN1</references>
+        <references refid="universe_8h_1aca407afbe257ceb6caf54c2cc39229e7" compoundref="universe_8h" startline="50">TYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1</references>
+        <references refid="universe_8h_1a0d5cd790716d1479d3a0ea0dd0049dcb" compoundref="universe_8h" startline="51">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1</references>
+        <references refid="universe_8h_1add8b0e8ffe44dd6143388d9c9e4d743c" compoundref="universe_8h" startline="52">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1</references>
+        <references refid="universe_8h_1a462cce704efb80bde68c7d7404f7c0f4" compoundref="universe_8h" startline="53">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1</references>
+        <references refid="universe_8h_1a1b6223499f2de31ef85d8787c9cbd529" compoundref="universe_8h" startline="54">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1</references>
+        <references refid="universe_8h_1a90f14c98fce41d2cb95499162787c9de" compoundref="universe_8h" startline="55">TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_GEN1</references>
+        <references refid="universe_8h_1a01f964c7ca05fa3f7f5a7b430761ca99" compoundref="universe_8h" startline="56">TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1</references>
+        <references refid="universe_8h_1a76028f4d66e31c7b51113514a7713edc" compoundref="universe_8h" startline="57">TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1</references>
+        <references refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" compoundref="solid_8cc" startline="109" endline="118">CreatePolyhedron</references>
+        <references refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" compoundref="polyhedron_8cc" startline="117" endline="124">Polyhedron::SetObjectType</references>
+        <referencedby refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" compoundref="solid_8cc" startline="100" endline="107">SetObjectType</referencedby>
+        <referencedby refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" compoundref="solid_8cc" startline="244" endline="277">Update</referencedby>
+        <referencedby refid="class_solid_1a80746ad255dded6090e648fc3f0dbd93" compoundref="solid_8h" startline="37" endline="48">Solid</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a7ca41431033d05957f8be3f49c3aca23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Solid::GetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetCounter</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="54" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="96" bodyend="96"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1aea949040518e505ed39b1456a360c5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetCounter</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetCounter</name>
+        <reimplements refid="class_universe_1aa22202ae740eb1355529afcb13285e91">SetCounter</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="56" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="98" bodyend="98"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solid::SetObjectType</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
+        <name>SetObjectType</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="58" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="100" bodyend="107"/>
+        <references refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</references>
+        <referencedby refid="class_axon_1a472ee760a1727072afaff0035d1eedd9" compoundref="axon_8cc" startline="197" endline="243">Axon::Update</referencedby>
+        <referencedby refid="class_axon_bouton_1a26f89bac681b8f0894fe1ae249733917" compoundref="axonbouton_8cc" startline="184" endline="251">AxonBouton::Update</referencedby>
+        <referencedby refid="class_axon_branch_1a5a80bcccdc2be9f77fca25131937b52f" compoundref="axonbranch_8cc" startline="196" endline="235">AxonBranch::Update</referencedby>
+        <referencedby refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">AxonHillock::Update</referencedby>
+        <referencedby refid="class_dendrite_1a2e7bfde37bc7aec2547253ad038aaa04" compoundref="dendrite_8cc" startline="197" endline="276">Dendrite::Update</referencedby>
+        <referencedby refid="class_dendrite_branch_1a8540dfafeb5bd45f782ab31b8231b10f" compoundref="dendritebranch_8cc" startline="197" endline="251">DendriteBranch::Update</referencedby>
+        <referencedby refid="class_dendrite_cleft_1a3a75af4d6fd97c9635134509f170a04e" compoundref="dendritecleft_8cc" startline="202" endline="260">DendriteCleft::Update</referencedby>
+        <referencedby refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" compoundref="membrane_8cc" startline="215" endline="275">Membrane::Update</referencedby>
+        <referencedby refid="class_neuron_1a4d1dc3a9f30196fe2b09dfbfc0a567bb" compoundref="neuron_8cc" startline="387" endline="444">Neuron::Update</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+        <referencedby refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Soma::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::CreatePolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>CreatePolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="60" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="109" bodyend="118"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <referencedby refid="class_axon_1a472ee760a1727072afaff0035d1eedd9" compoundref="axon_8cc" startline="197" endline="243">Axon::Update</referencedby>
+        <referencedby refid="class_axon_bouton_1a26f89bac681b8f0894fe1ae249733917" compoundref="axonbouton_8cc" startline="184" endline="251">AxonBouton::Update</referencedby>
+        <referencedby refid="class_axon_branch_1a5a80bcccdc2be9f77fca25131937b52f" compoundref="axonbranch_8cc" startline="196" endline="235">AxonBranch::Update</referencedby>
+        <referencedby refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">AxonHillock::Update</referencedby>
+        <referencedby refid="class_dendrite_1a2e7bfde37bc7aec2547253ad038aaa04" compoundref="dendrite_8cc" startline="197" endline="276">Dendrite::Update</referencedby>
+        <referencedby refid="class_dendrite_branch_1a8540dfafeb5bd45f782ab31b8231b10f" compoundref="dendritebranch_8cc" startline="197" endline="251">DendriteBranch::Update</referencedby>
+        <referencedby refid="class_dendrite_cleft_1a3a75af4d6fd97c9635134509f170a04e" compoundref="dendritecleft_8cc" startline="202" endline="260">DendriteCleft::Update</referencedby>
+        <referencedby refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" compoundref="membrane_8cc" startline="215" endline="275">Membrane::Update</referencedby>
+        <referencedby refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</referencedby>
+        <referencedby refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" compoundref="solid_8cc" startline="120" endline="139">CreatePolyhedrons</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a40b2ea07e384aff138ba139c3c84f525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::CreatePolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int quantity)</argsstring>
+        <name>CreatePolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="62" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="120" bodyend="139"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <references refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" compoundref="solid_8cc" startline="109" endline="118">CreatePolyhedron</references>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ae83094e9c002a7574db242ed0bff6288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::ClonePolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, Solid *clone_object, double perfection_membership)</argsstring>
+        <name>ClonePolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+          <declname>clone_object</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>perfection_membership</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="64" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="147" bodyend="150"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a1e650b6d8437acfaf7b9384b885d77bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::ClonePolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; Solid *&gt; cloning_list, double perfection_membership)</argsstring>
+        <name>ClonePolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> *&gt;</type>
+          <declname>cloning_list</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>perfection_membership</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="66" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="142" bodyend="145"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a0841900d8ef4b82292ac027c4852b59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::DestroyPolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, Solid *destroy_object)</argsstring>
+        <name>DestroyPolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+          <declname>destroy_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="68" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="157" bodyend="160"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ab1652ee511ed51bbe6a0a3b1854b7974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::DestroyPolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; Solid *&gt; destruction_list)</argsstring>
+        <name>DestroyPolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> *&gt;</type>
+          <declname>destruction_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="70" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="152" bodyend="155"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::AddPolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, Solid *add_object)</argsstring>
+        <name>AddPolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+          <declname>add_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="72" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="162" bodyend="171"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <referencedby refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" compoundref="solid_8cc" startline="173" endline="192">AddPolyhedrons</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a649ba1103a9889bc9e45256633dc72c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::AddPolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; Solid *&gt; add_objects)</argsstring>
+        <name>AddPolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> *&gt;</type>
+          <declname>add_objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="74" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="173" bodyend="192"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <references refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" compoundref="solid_8cc" startline="162" endline="171">AddPolyhedron</references>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a1233a3fe43abca7d2a0f83d724fd6640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::RemovePolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>RemovePolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="76" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="195" bodyend="199"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a0fc53641571eb796c9d6bc33ae7a7138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::RemovePolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int quantity)</argsstring>
+        <name>RemovePolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="78" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="201" bodyend="204"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_solid" kindref="compound">Solid</ref> *</type>
+        <definition>Solid * Solid::GetPolyhedron</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int selector)</argsstring>
+        <name>GetPolyhedron</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>selector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="80" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="206" bodyend="209"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> * &gt;</type>
+        <definition>std::vector&lt; Solid * &gt; Solid::GetPolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GetPolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="82" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="211" bodyend="214"/>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a94bb5df6d873c14a94355fc95557efd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solid::GluePolyhedrons</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>GluePolyhedrons</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="84" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="216" bodyend="219"/>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a17239817eba0e5870454311857dca736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solid::UpdateCycle</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; Solid *&gt; set_of_update_pointers, unsigned int pointer_type)</argsstring>
+        <name>UpdateCycle</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="class_solid" kindref="compound">Solid</ref> *&gt;</type>
+          <declname>set_of_update_pointers</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>pointer_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="86" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="221" bodyend="242"/>
+        <references refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" compoundref="solid_8cc" startline="244" endline="277">Update</references>
+        <referencedby refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" compoundref="solid_8cc" startline="244" endline="277">Update</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Solid::Update</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="88" column="1" bodyfile="BrainHarmonics/solid.cc" bodystart="244" bodyend="277"/>
+        <references refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">ResetParameters</references>
+        <references refid="class_solid_1a17239817eba0e5870454311857dca736" compoundref="solid_8cc" startline="221" endline="242">UpdateCycle</references>
+        <references refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" compoundref="solid_8h" startline="128">polyhedron_list</references>
+        <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
+        <referencedby refid="class_solid_1a17239817eba0e5870454311857dca736" compoundref="solid_8cc" startline="221" endline="242">UpdateCycle</referencedby>
+        <referencedby refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" compoundref="solid_8h" startline="50" endline="50">~Solid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a37503e6b25f912254414e778af2e75cd" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetCharge</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
+        <name>SetCharge</name>
+        <reimplements refid="class_universe_1a3b3da7c86a7b75e5e5c0b7972ac82a87">SetCharge</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="90" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a615cb8d1ec1376781726bcefa86339cb" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetSpin</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
+        <name>SetSpin</name>
+        <reimplements refid="class_universe_1ae2ae1c3b3e4cde2c18f5f6a814761ec8">SetSpin</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="91" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ab5ecb5598be93fe3cd2a21c0cfd363c8" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetGravitation</name>
+        <reimplements refid="class_universe_1ab0404e774ee0ed66b597ff5b8e989446">GetGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="92" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ac8a7738735a6bda4e89414a2b0c370e1" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetWeak</name>
+        <reimplements refid="class_universe_1a4476b7e0a3fc1764909f556257fd9ec7">GetWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="93" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ac98f9c827d58a631627423e25dd611ba" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetWeakElectroweak</name>
+        <reimplements refid="class_universe_1a645299738e6b798a037f2a15a2e7cf4d">GetWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="94" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a01cd3c441a4e339927c43536de6d9b5e" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetElectromagnetic</name>
+        <reimplements refid="class_universe_1a63b850ef3f3394313353109d222bf5d1">GetElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="95" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1aff7ec13bcc584d8330e3f3a1b371bbe6" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a9f099605c082e7fa755787a6a8cab7ba">GetElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="96" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ae39d0166456b8feaa39547e5a21c9096" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrong</name>
+        <reimplements refid="class_universe_1acb453ce71da418c5b5617fecede9571b">GetStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="97" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ab3a972354b25ad1bbe8c3f3e7638e24c" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrongFundamental</name>
+        <reimplements refid="class_universe_1ab44daccba01ee7e3cf9b50bba83dd19e">GetStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="98" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a9cfde1c3a4b7c6d2a5a3719d74e27237" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::GetStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>GetStrongResidual</name>
+        <reimplements refid="class_universe_1af0f4b81950061e63c2855eb40957a5b1">GetStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="99" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1af2b3133138ce2482faa462d07aa23042" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyGravitation</name>
+        <reimplements refid="class_universe_1a76c0b5e63c2a7d1988c44db341c3d64c">ApplyGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="101" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a49e35bf258104b7bce225dc21058affb" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyWeak</name>
+        <reimplements refid="class_universe_1a6d1226b3adec3c42a833afdbb6a65a92">ApplyWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="102" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ad6c28ec896cbcf64e24a7132a144befd" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyWeakElectroweak</name>
+        <reimplements refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e">ApplyWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="103" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ab546d607d6f0bf70dc5e6bbac8baf287" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyElectromagnetic</name>
+        <reimplements refid="class_universe_1a1f787da78fa196ba635db21a9e91dabb">ApplyElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="104" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a46702e3109994b310eb4f1fba5610e0b" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a4c36c1ab30db993307f88363dde5e8c5">ApplyElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="105" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a0801ec0382bc509191575bcf9f5c83c1" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrong</name>
+        <reimplements refid="class_universe_1a906a88b37f10bfa630bef49dfd0e907a">ApplyStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="106" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1abd8fff76385306f97aa65dfd6b867fc6" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrongFundamental</name>
+        <reimplements refid="class_universe_1a62789bcff84bd750b0366004381e2fdd">ApplyStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="107" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a07534fa79bb8a6eb32e081e5158ba9e5" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Solid::ApplyStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>ApplyStrongResidual</name>
+        <reimplements refid="class_universe_1af7becebb347be9a85541d96a3eca1ca7">ApplyStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="108" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ae237f2c713868c133e28ed7f75fc9125" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetGravitation</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetGravitation</name>
+        <reimplements refid="class_universe_1ae0cb8d86b2fbb8396d605160344b42f5">SetGravitation</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="110" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1aa28e0f7e4de2fc0c1e28d385214296bf" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetWeak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetWeak</name>
+        <reimplements refid="class_universe_1a0f5cd04081b41ee931c0557dc397f6fb">SetWeak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="111" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1adb34befc66f8c681f3a85c44e0d00e3a" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetWeakElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetWeakElectroweak</name>
+        <reimplements refid="class_universe_1a2d3d642bfdc863248e93535832fa4b00">SetWeakElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="112" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a9a660f9d94f597712c67922aa1d4d795" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetElectromagnetic</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetElectromagnetic</name>
+        <reimplements refid="class_universe_1aa981fc7e252b1fbbb675f0371860954d">SetElectromagnetic</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="113" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a6617ae9fe4707d760a23b54eddf00dec" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetElectromagneticElectroweak</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetElectromagneticElectroweak</name>
+        <reimplements refid="class_universe_1a608aa95698380f791a0ffba45cc1bee3">SetElectromagneticElectroweak</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="114" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a478e15cdf15c5bb01cbcbd5f584ef83a" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetStrong</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrong</name>
+        <reimplements refid="class_universe_1a5946c8f3d4cda305f3ecd10df21a2f94">SetStrong</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="115" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a4342786a7785b1a3816d20de02105bcf" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetStrongFundamental</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrongFundamental</name>
+        <reimplements refid="class_universe_1aafec97a231126b71c73ac1258609a284">SetStrongFundamental</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="116" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1a8b80ebe209fcd3afa4791968127753d0" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::SetStrongResidual</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
+        <name>SetStrongResidual</name>
+        <reimplements refid="class_universe_1a1b2d6197ddf3d613cc30bd04d22ed8b7">SetStrongResidual</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="117" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solid_1ae2a486e59f11f96a1a39756b3f3da53f" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Solid::PollElementaryForce</definition>
+        <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
+        <name>PollElementaryForce</name>
+        <reimplements refid="class_universe_1a0c485c504542409cbb5cfd8543c35b11">PollElementaryForce</reimplements>
+        <param>
+          <type>std::chrono::time_point&lt; <ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref> &gt;</type>
+          <declname>event_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/solid.h" line="119" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="355">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+      </node>
+      <node id="358">
+        <label>Quad</label>
+        <link refid="class_quad"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>Polyhedron</label>
+        <link refid="class_polyhedron"/>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+        <childnode refid="356" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>Solid</label>
+        <link refid="class_solid"/>
+        <childnode refid="355" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="360">
+        <label>Universe</label>
+        <link refid="class_universe"/>
+        <childnode refid="360" relation="usage">
+          <edgelabel>time_dimension_pointer</edgelabel>
+        </childnode>
+      </node>
+      <node id="359">
+        <label>Solid</label>
+        <link refid="class_solid"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BrainHarmonics/solid.h" line="24" column="1" bodyfile="BrainHarmonics/solid.h" bodystart="23" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_universe_1ab682307c963836cd81b35b5604bd7064" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddCognitiveNetwork</name></member>
+      <member refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddCognitiveNetworks</name></member>
+      <member refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddCompositeForceParticle</name></member>
+      <member refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddCompositeForceParticles</name></member>
+      <member refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddDimension</name></member>
+      <member refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddDimensions</name></member>
+      <member refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddElementaryForce</name></member>
+      <member refid="class_universe_1a81d294300346e9f901836ab609cce942" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddElementaryForces</name></member>
+      <member refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddElementaryParticle</name></member>
+      <member refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddElementaryParticles</name></member>
+      <member refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddMatter</name></member>
+      <member refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddMatters</name></member>
+      <member refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddMonomer</name></member>
+      <member refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddMonomers</name></member>
+      <member refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPoint</name></member>
+      <member refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPoints</name></member>
+      <member refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPolyhedron</name></member>
+      <member refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPolyhedrons</name></member>
+      <member refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPolymer</name></member>
+      <member refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddPolymers</name></member>
+      <member refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddSolid</name></member>
+      <member refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" prot="public" virt="non-virtual"><scope>Solid</scope><name>AddSolids</name></member>
+      <member refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" prot="public" virt="virtual"><scope>Solid</scope><name>AddTemporalAdjustment</name></member>
+      <member refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" prot="public" virt="virtual"><scope>Solid</scope><name>AdjustCounters</name></member>
+      <member refid="class_solid_1ab546d607d6f0bf70dc5e6bbac8baf287" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyElectromagnetic</name></member>
+      <member refid="class_solid_1a46702e3109994b310eb4f1fba5610e0b" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyElectromagneticElectroweak</name></member>
+      <member refid="class_solid_1af2b3133138ce2482faa462d07aa23042" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyGravitation</name></member>
+      <member refid="class_solid_1a0801ec0382bc509191575bcf9f5c83c1" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyStrong</name></member>
+      <member refid="class_solid_1abd8fff76385306f97aa65dfd6b867fc6" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyStrongFundamental</name></member>
+      <member refid="class_solid_1a07534fa79bb8a6eb32e081e5158ba9e5" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyStrongResidual</name></member>
+      <member refid="class_solid_1a49e35bf258104b7bce225dc21058affb" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyWeak</name></member>
+      <member refid="class_solid_1ad6c28ec896cbcf64e24a7132a144befd" prot="public" virt="virtual"><scope>Solid</scope><name>ApplyWeakElectroweak</name></member>
+      <member refid="class_solid_1ae83094e9c002a7574db242ed0bff6288" prot="public" virt="non-virtual"><scope>Solid</scope><name>ClonePolyhedron</name></member>
+      <member refid="class_solid_1a1e650b6d8437acfaf7b9384b885d77bf" prot="public" virt="non-virtual"><scope>Solid</scope><name>ClonePolyhedrons</name></member>
+      <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>Solid</scope><name>cognitive_network_list</name></member>
+      <member refid="class_solid_1ad04bbaef84caa0d408ec09a1c1302f5f" prot="private" virt="non-virtual"><scope>Solid</scope><name>CognitiveNetwork</name></member>
+      <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>Solid</scope><name>composite_forceparticle_list</name></member>
+      <member refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" prot="public" virt="non-virtual"><scope>Solid</scope><name>CreatePolyhedron</name></member>
+      <member refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" prot="public" virt="non-virtual"><scope>Solid</scope><name>CreatePolyhedrons</name></member>
+      <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>Solid</scope><name>Creation</name></member>
+      <member refid="class_solid_1a0841900d8ef4b82292ac027c4852b59b" prot="public" virt="non-virtual"><scope>Solid</scope><name>DestroyPolyhedron</name></member>
+      <member refid="class_solid_1ab1652ee511ed51bbe6a0a3b1854b7974" prot="public" virt="non-virtual"><scope>Solid</scope><name>DestroyPolyhedrons</name></member>
+      <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>Solid</scope><name>dimension_list</name></member>
+      <member refid="class_solid_1ad845ec39ddd38670049e9c6e046f2454" prot="private" virt="non-virtual"><scope>Solid</scope><name>duration_since_last_event</name></member>
+      <member refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" prot="protected" virt="non-virtual"><scope>Solid</scope><name>elementary_force_list</name></member>
+      <member refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" prot="protected" virt="non-virtual"><scope>Solid</scope><name>elementary_particle_list</name></member>
+      <member refid="class_universe_1a982502e46868a00a9111738ccc9355c2" prot="public" virt="non-virtual"><scope>Solid</scope><name>ExtendLife</name></member>
+      <member refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetCognitiveNetwork</name></member>
+      <member refid="class_universe_1a06968a24194280a43f077c5b77379ea8" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetCognitiveNetworks</name></member>
+      <member refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetCompositeForceParticle</name></member>
+      <member refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetCompositeForceParticles</name></member>
+      <member refid="class_solid_1a7ca41431033d05957f8be3f49c3aca23" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetCounter</name></member>
+      <member refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetDimension</name></member>
+      <member refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetDimensions</name></member>
+      <member refid="class_solid_1a01cd3c441a4e339927c43536de6d9b5e" prot="public" virt="virtual"><scope>Solid</scope><name>GetElectromagnetic</name></member>
+      <member refid="class_solid_1aff7ec13bcc584d8330e3f3a1b371bbe6" prot="public" virt="virtual"><scope>Solid</scope><name>GetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a9506017d944cb64e67567477c1505a53" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetElementaryForce</name></member>
+      <member refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetElementaryForces</name></member>
+      <member refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetElementaryParticle</name></member>
+      <member refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetElementaryParticles</name></member>
+      <member refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetEnergy</name></member>
+      <member refid="class_solid_1ab5ecb5598be93fe3cd2a21c0cfd363c8" prot="public" virt="virtual"><scope>Solid</scope><name>GetGravitation</name></member>
+      <member refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetMatter</name></member>
+      <member refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetMatters</name></member>
+      <member refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetMonomer</name></member>
+      <member refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetMonomers</name></member>
+      <member refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPoint</name></member>
+      <member refid="class_universe_1a765c6c658b7a465cd92418690db846ae" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPoints</name></member>
+      <member refid="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPolyhedron</name></member>
+      <member refid="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPolyhedrons</name></member>
+      <member refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPolymer</name></member>
+      <member refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetPolymers</name></member>
+      <member refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetSolid</name></member>
+      <member refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" prot="public" virt="non-virtual"><scope>Solid</scope><name>GetSolids</name></member>
+      <member refid="class_solid_1ae39d0166456b8feaa39547e5a21c9096" prot="public" virt="virtual"><scope>Solid</scope><name>GetStrong</name></member>
+      <member refid="class_solid_1ab3a972354b25ad1bbe8c3f3e7638e24c" prot="public" virt="virtual"><scope>Solid</scope><name>GetStrongFundamental</name></member>
+      <member refid="class_solid_1a9cfde1c3a4b7c6d2a5a3719d74e27237" prot="public" virt="virtual"><scope>Solid</scope><name>GetStrongResidual</name></member>
+      <member refid="class_solid_1ac8a7738735a6bda4e89414a2b0c370e1" prot="public" virt="virtual"><scope>Solid</scope><name>GetWeak</name></member>
+      <member refid="class_solid_1ac98f9c827d58a631627423e25dd611ba" prot="public" virt="virtual"><scope>Solid</scope><name>GetWeakElectroweak</name></member>
+      <member refid="class_solid_1a94bb5df6d873c14a94355fc95557efd6" prot="public" virt="non-virtual"><scope>Solid</scope><name>GluePolyhedrons</name></member>
+      <member refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" prot="public" virt="non-virtual"><scope>Solid</scope><name>IsDead</name></member>
+      <member refid="class_solid_1ab267c0a27586fa46a1b03bb0750caf5a" prot="private" virt="non-virtual"><scope>Solid</scope><name>m_Counter</name></member>
+      <member refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" prot="protected" virt="non-virtual"><scope>Solid</scope><name>matter_list</name></member>
+      <member refid="class_solid_1ac790db405644a01723104c3c0c8128bb" prot="private" virt="non-virtual"><scope>Solid</scope><name>Membrane</name></member>
+      <member refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" prot="protected" virt="non-virtual"><scope>Solid</scope><name>monomer_list</name></member>
+      <member refid="class_solid_1aa410d74ba34b18a9f6bdf24323c4ee5b" prot="private" virt="non-virtual"><scope>Solid</scope><name>Neuron</name></member>
+      <member refid="class_solid_1ac521c984065957c82c239d5fb8be82ff" prot="private" virt="non-virtual"><scope>Solid</scope><name>object_disabled</name></member>
+      <member refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" prot="public" virt="non-virtual"><scope>Solid</scope><name>object_energy</name></member>
+      <member refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" prot="public" virt="non-virtual"><scope>Solid</scope><name>object_energy_threshold</name></member>
+      <member refid="class_solid_1ac92543b277d9a01d4cfbdf7fd71d3e1f" prot="private" virt="non-virtual"><scope>Solid</scope><name>object_initialised</name></member>
+      <member refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" prot="public" virt="non-virtual"><scope>Solid</scope><name>object_size</name></member>
+      <member refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" prot="protected" virt="non-virtual"><scope>Solid</scope><name>point_list</name></member>
+      <member refid="class_solid_1ae2a486e59f11f96a1a39756b3f3da53f" prot="public" virt="virtual"><scope>Solid</scope><name>PollElementaryForce</name></member>
+      <member refid="class_solid_1ad63206ff20f38b621db482b01801c4c5" prot="protected" virt="non-virtual"><scope>Solid</scope><name>poly_type_list</name></member>
+      <member refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" prot="protected" virt="non-virtual"><scope>Solid</scope><name>polyhedron_list</name></member>
+      <member refid="class_solid_1abd4b935f7835fd0f8b50b526f6399731" prot="private" virt="non-virtual"><scope>Solid</scope><name>polyhedron_pool</name></member>
+      <member refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" prot="protected" virt="non-virtual"><scope>Solid</scope><name>polymer_list</name></member>
+      <member refid="class_solid_1ace5c8628a4f60d96029d8acea4580ab5" prot="private" virt="non-virtual"><scope>Solid</scope><name>previous_event_time</name></member>
+      <member refid="class_solid_1a1233a3fe43abca7d2a0f83d724fd6640" prot="public" virt="non-virtual"><scope>Solid</scope><name>RemovePolyhedron</name></member>
+      <member refid="class_solid_1a0fc53641571eb796c9d6bc33ae7a7138" prot="public" virt="non-virtual"><scope>Solid</scope><name>RemovePolyhedrons</name></member>
+      <member refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" prot="public" virt="non-virtual"><scope>Solid</scope><name>ResetParameters</name></member>
+      <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Solid</scope><name>ReturnEnergy</name></member>
+      <member refid="class_solid_1a37503e6b25f912254414e778af2e75cd" prot="public" virt="virtual"><scope>Solid</scope><name>SetCharge</name></member>
+      <member refid="class_solid_1aea949040518e505ed39b1456a360c5e0" prot="public" virt="virtual"><scope>Solid</scope><name>SetCounter</name></member>
+      <member refid="class_solid_1a9a660f9d94f597712c67922aa1d4d795" prot="public" virt="virtual"><scope>Solid</scope><name>SetElectromagnetic</name></member>
+      <member refid="class_solid_1a6617ae9fe4707d760a23b54eddf00dec" prot="public" virt="virtual"><scope>Solid</scope><name>SetElectromagneticElectroweak</name></member>
+      <member refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" prot="public" virt="non-virtual"><scope>Solid</scope><name>SetEnergy</name></member>
+      <member refid="class_solid_1ae237f2c713868c133e28ed7f75fc9125" prot="public" virt="virtual"><scope>Solid</scope><name>SetGravitation</name></member>
+      <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Solid</scope><name>SetLifespan</name></member>
+      <member refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" prot="public" virt="non-virtual"><scope>Solid</scope><name>SetObjectType</name></member>
+      <member refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Solid</scope><name>SetObjectType</name></member>
+      <member refid="class_solid_1a615cb8d1ec1376781726bcefa86339cb" prot="public" virt="virtual"><scope>Solid</scope><name>SetSpin</name></member>
+      <member refid="class_solid_1a478e15cdf15c5bb01cbcbd5f584ef83a" prot="public" virt="virtual"><scope>Solid</scope><name>SetStrong</name></member>
+      <member refid="class_solid_1a4342786a7785b1a3816d20de02105bcf" prot="public" virt="virtual"><scope>Solid</scope><name>SetStrongFundamental</name></member>
+      <member refid="class_solid_1a8b80ebe209fcd3afa4791968127753d0" prot="public" virt="virtual"><scope>Solid</scope><name>SetStrongResidual</name></member>
+      <member refid="class_solid_1aa28e0f7e4de2fc0c1e28d385214296bf" prot="public" virt="virtual"><scope>Solid</scope><name>SetWeak</name></member>
+      <member refid="class_solid_1adb34befc66f8c681f3a85c44e0d00e3a" prot="public" virt="virtual"><scope>Solid</scope><name>SetWeakElectroweak</name></member>
+      <member refid="class_solid_1a2cf157c87df66dc3eb8722f9b3ee8f66" prot="public" virt="non-virtual"><scope>Solid</scope><name>Solid</name></member>
+      <member refid="class_solid_1a00a71dfc929ca50ee9850bdfca5b3fd6" prot="public" virt="non-virtual"><scope>Solid</scope><name>Solid</name></member>
+      <member refid="class_solid_1a9f5476b751c749af38b349b9fc7e2ba5" prot="public" virt="non-virtual"><scope>Solid</scope><name>Solid</name></member>
+      <member refid="class_solid_1a80746ad255dded6090e648fc3f0dbd93" prot="public" virt="non-virtual"><scope>Solid</scope><name>Solid</name></member>
+      <member refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" prot="protected" virt="non-virtual"><scope>Solid</scope><name>solid_list</name></member>
+      <member refid="class_solid_1a4cb0429a28598d5501553787524b705d" prot="private" virt="non-virtual"><scope>Solid</scope><name>solid_type</name></member>
+      <member refid="class_solid_1aaa07b7b364b620b9a781f30a5cd9f5ea" prot="private" virt="non-virtual"><scope>Solid</scope><name>Soma</name></member>
+      <member refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" prot="public" virt="non-virtual"><scope>Solid</scope><name>TheCalculatedTimeNow</name></member>
+      <member refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" prot="public" virt="non-virtual"><scope>Solid</scope><name>TheTimeNow</name></member>
+      <member refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" prot="public" virt="non-virtual"><scope>Solid</scope><name>time_dimension_pointer</name></member>
+      <member refid="class_solid_1ab511520c2e523c203c1ca7b97f573f65" prot="private" virt="non-virtual"><scope>Solid</scope><name>time_object_created</name></member>
+      <member refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" prot="public" virt="non-virtual"><scope>Solid</scope><name>Universe</name></member>
+      <member refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" prot="public" virt="non-virtual"><scope>Solid</scope><name>Universe</name></member>
+      <member refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" prot="public" virt="non-virtual"><scope>Solid</scope><name>Universe</name></member>
+      <member refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" prot="public" virt="non-virtual"><scope>Solid</scope><name>Update</name></member>
+      <member refid="class_solid_1a17239817eba0e5870454311857dca736" prot="public" virt="non-virtual"><scope>Solid</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" prot="public" virt="non-virtual" ambiguityscope="Universe::"><scope>Solid</scope><name>UpdateCycle</name></member>
+      <member refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" prot="public" virt="non-virtual"><scope>Solid</scope><name>UseEnergy</name></member>
+      <member refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" prot="public" virt="virtual"><scope>Solid</scope><name>~Solid</name></member>
+      <member refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" prot="public" virt="virtual"><scope>Solid</scope><name>~Universe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

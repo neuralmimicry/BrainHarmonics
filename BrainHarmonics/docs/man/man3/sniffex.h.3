@@ -1,0 +1,215 @@
+.TH "BrainHarmonics/sniffex.h" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BrainHarmonics/sniffex.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <pcap\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <errno\&.h>\fP
+.br
+\fC#include <sys/types\&.h>\fP
+.br
+\fC#include <sys/socket\&.h>\fP
+.br
+\fC#include <netinet/in\&.h>\fP
+.br
+\fC#include <arpa/inet\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBSniffex\fP"
+.br
+.ti -1c
+.RI "struct \fBSniffex::sniff_ethernet\fP"
+.br
+.ti -1c
+.RI "struct \fBSniffex::sniff_ip\fP"
+.br
+.ti -1c
+.RI "struct \fBSniffex::sniff_tcp\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAPP_NAME\fP   'sniffex'"
+.br
+.ti -1c
+.RI "#define \fBAPP_DESC\fP   'Sniffer example using libpcap'"
+.br
+.ti -1c
+.RI "#define \fBAPP_COPYRIGHT\fP   'Copyright (c) 2005 The Tcpdump Group'"
+.br
+.ti -1c
+.RI "#define \fBAPP_DISCLAIMER\fP   'THERE IS ABSOLUTELY NO WARRANTY FOR THIS PROGRAM\&.'"
+.br
+.ti -1c
+.RI "#define \fBSNAP_LEN\fP   1518"
+.br
+.ti -1c
+.RI "#define \fBSIZE_ETHERNET\fP   14"
+.br
+.ti -1c
+.RI "#define \fBETHER_ADDR_LEN\fP   6"
+.br
+.ti -1c
+.RI "#define \fBIP_RF\fP   0x8000            /* reserved fragment flag */"
+.br
+.ti -1c
+.RI "#define \fBIP_DF\fP   0x4000            /* dont fragment flag */"
+.br
+.ti -1c
+.RI "#define \fBIP_MF\fP   0x2000            /* more fragments flag */"
+.br
+.ti -1c
+.RI "#define \fBIP_OFFMASK\fP   0x1fff       /* mask for fragmenting bits */"
+.br
+.ti -1c
+.RI "#define \fBIP_HL\fP(ip)   (((ip)\->ip_vhl) & 0x0f)"
+.br
+.ti -1c
+.RI "#define \fBIP_V\fP(ip)   (((ip)\->ip_vhl) >> 4)"
+.br
+.ti -1c
+.RI "#define \fBTH_OFF\fP(th)   (((th)\->th_offx2 & 0xf0) >> 4)"
+.br
+.ti -1c
+.RI "#define \fBTH_FIN\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBTH_SYN\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBTH_RST\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBTH_PUSH\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBTH_ACK\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBTH_URG\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBTH_ECE\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBTH_CWR\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBTH_FLAGS\fP   (\fBTH_FIN\fP|\fBTH_SYN\fP|\fBTH_RST\fP|\fBTH_ACK\fP|\fBTH_URG\fP|\fBTH_ECE\fP|\fBTH_CWR\fP)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APP_COPYRIGHT   'Copyright (c) 2005 The Tcpdump Group'"
+
+.PP
+Definition at line 209 of file sniffex\&.h\&.
+.SS "#define APP_DESC   'Sniffer example using libpcap'"
+
+.PP
+Definition at line 208 of file sniffex\&.h\&.
+.SS "#define APP_DISCLAIMER   'THERE IS ABSOLUTELY NO WARRANTY FOR THIS PROGRAM\&.'"
+
+.PP
+Definition at line 210 of file sniffex\&.h\&.
+.SS "#define APP_NAME   'sniffex'"
+
+.PP
+Definition at line 207 of file sniffex\&.h\&.
+.SS "#define ETHER_ADDR_LEN   6"
+
+.PP
+Definition at line 230 of file sniffex\&.h\&.
+.SS "#define IP_DF   0x4000            /* dont fragment flag */"
+
+.PP
+Definition at line 251 of file sniffex\&.h\&.
+.SS "#define IP_HL(ip)   (((ip)\->ip_vhl) & 0x0f)"
+
+.PP
+Definition at line 259 of file sniffex\&.h\&.
+.SS "#define IP_MF   0x2000            /* more fragments flag */"
+
+.PP
+Definition at line 252 of file sniffex\&.h\&.
+.SS "#define IP_OFFMASK   0x1fff       /* mask for fragmenting bits */"
+
+.PP
+Definition at line 253 of file sniffex\&.h\&.
+.SS "#define IP_RF   0x8000            /* reserved fragment flag */"
+
+.PP
+Definition at line 250 of file sniffex\&.h\&.
+.SS "#define IP_V(ip)   (((ip)\->ip_vhl) >> 4)"
+
+.PP
+Definition at line 260 of file sniffex\&.h\&.
+.SS "#define SIZE_ETHERNET   14"
+
+.PP
+Definition at line 227 of file sniffex\&.h\&.
+.SS "#define SNAP_LEN   1518"
+
+.PP
+Definition at line 224 of file sniffex\&.h\&.
+.SS "#define TH_ACK   0x10"
+
+.PP
+Definition at line 277 of file sniffex\&.h\&.
+.SS "#define TH_CWR   0x80"
+
+.PP
+Definition at line 280 of file sniffex\&.h\&.
+.SS "#define TH_ECE   0x40"
+
+.PP
+Definition at line 279 of file sniffex\&.h\&.
+.SS "#define TH_FIN   0x01"
+
+.PP
+Definition at line 273 of file sniffex\&.h\&.
+.SS "#define TH_FLAGS   (\fBTH_FIN\fP|\fBTH_SYN\fP|\fBTH_RST\fP|\fBTH_ACK\fP|\fBTH_URG\fP|\fBTH_ECE\fP|\fBTH_CWR\fP)"
+
+.PP
+Definition at line 281 of file sniffex\&.h\&.
+.SS "#define TH_OFF(th)   (((th)\->th_offx2 & 0xf0) >> 4)"
+
+.PP
+Definition at line 271 of file sniffex\&.h\&.
+.SS "#define TH_PUSH   0x08"
+
+.PP
+Definition at line 276 of file sniffex\&.h\&.
+.SS "#define TH_RST   0x04"
+
+.PP
+Definition at line 275 of file sniffex\&.h\&.
+.SS "#define TH_SYN   0x02"
+
+.PP
+Definition at line 274 of file sniffex\&.h\&.
+.SS "#define TH_URG   0x20"
+
+.PP
+Definition at line 278 of file sniffex\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

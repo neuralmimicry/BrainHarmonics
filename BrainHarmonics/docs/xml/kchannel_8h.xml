@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="kchannel_8h" kind="file" language="C++">
+    <compoundname>kchannel.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="kchannel_8cc" local="yes">/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/kchannel.cc</includedby>
+    <includedby refid="main_8cc" local="yes">/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc</includedby>
+    <incdepgraph>
+      <node id="1138">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/kchannel.h</label>
+        <link refid="kchannel.h"/>
+        <childnode refid="1139" relation="include">
+        </childnode>
+      </node>
+      <node id="1139">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1140">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/kchannel.h</label>
+        <link refid="kchannel.h"/>
+        <childnode refid="1141" relation="include">
+        </childnode>
+        <childnode refid="1142" relation="include">
+        </childnode>
+      </node>
+      <node id="1141">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/kchannel.cc</label>
+        <link refid="kchannel_8cc"/>
+      </node>
+      <node id="1142">
+        <label>/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/main.cc</label>
+        <link refid="main_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_kchannel" prot="public">Kchannel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Kchannel.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>03/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_KCHANNEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_KCHANNEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_kchannel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_kchannel" kindref="compound">Kchannel</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_kchannel_1a6093e34ddd1aa96876a63cdfeea7c0f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kchannel_1a6093e34ddd1aa96876a63cdfeea7c0f4" kindref="member">Kchannel</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Creation(&quot;Kchannel&quot;,0,event_time);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24" refid="class_kchannel_1a51e50395648435cd37754d2a7ebed80f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_kchannel_1a51e50395648435cd37754d2a7ebed80f" kindref="member">~Kchannel</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="28" refid="class_kchannel_1aaa70b0f9b3278314f6041271f0deefc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_kchannel_1aaa70b0f9b3278314f6041271f0deefc0" kindref="member">GetCounter</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="29" refid="class_kchannel_1afe18e2330b471f4e6916fcc29e5e6163" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_kchannel_1afe18e2330b471f4e6916fcc29e5e6163" kindref="member">GetEnergy</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Energy;<sp/>}</highlight></codeline>
+<codeline lineno="33" refid="class_kchannel_1a01ff03421053bc01593f29b5bc3ddc59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kchannel_1a01ff03421053bc01593f29b5bc3ddc59" kindref="member">SetCounter</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="34" refid="class_kchannel_1ab5420c90c38e6b1eabc764532d46cbc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kchannel_1ab5420c90c38e6b1eabc764532d46cbc9" kindref="member">SetEnergy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Energy;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_KCHANNEL_H</highlight></codeline>
+    </programlisting>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/kchannel.h"/>
+  </compounddef>
+</doxygen>

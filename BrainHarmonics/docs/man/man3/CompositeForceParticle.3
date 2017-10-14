@@ -1,0 +1,463 @@
+.TH "CompositeForceParticle" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CompositeForceParticle
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <compositeforceparticle\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCompositeForceParticle\fP ()"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~CompositeForceParticle\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBCreateElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBCreateElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBCloneElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBCloneElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBDestroyElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBDestroyElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBAddElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBAddElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBRemoveElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBRemoveElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBGetElementaryParticle\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBGetElementaryParticles\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBCreateElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBCreateElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBCloneElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBCloneElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBDestroyElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBDestroyElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBAddElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBAddElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBRemoveElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBRemoveElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCompositeForceParticle\fP * \fBGetElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBGetElementaryForces\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBelementary_particle_list\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBCompositeForceParticle\fP * > \fBelementary_force_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 24 of file compositeforceparticle\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CompositeForceParticle::CompositeForceParticle ()\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file compositeforceparticle\&.h\&.
+.SS "CompositeForceParticle::CompositeForceParticle (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 29 of file compositeforceparticle\&.h\&.
+.SS "CompositeForceParticle::CompositeForceParticle (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 31 of file compositeforceparticle\&.h\&.
+.SS "CompositeForceParticle::CompositeForceParticle (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file compositeforceparticle\&.h\&.
+.SS "virtual CompositeForceParticle::~CompositeForceParticle ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 50 of file compositeforceparticle\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::AddElementaryForce (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * add_object)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::AddElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> add_objects)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::AddElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * add_object)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::AddElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> add_objects)"
+
+.SS "double CompositeForceParticle::ApplyElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 67 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 68 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 64 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 69 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 70 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 71 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 65 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::ApplyWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 66 of file compositeforceparticle\&.h\&.
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::CloneElementaryForce (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * clone_object, double perfection_membership)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::CloneElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> cloning_list, double perfection_membership)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::CloneElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * clone_object, double perfection_membership)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::CloneElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> cloning_list, double perfection_membership)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::CreateElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::CreateElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::CreateElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::CreateElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::DestroyElementaryForce (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * destroy_object)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::DestroyElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> destruction_list)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::DestroyElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, \fBCompositeForceParticle\fP * destroy_object)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::DestroyElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> destruction_list)"
+
+.SS "unsigned int CompositeForceParticle::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+Access composite_force_counter 
+.PP
+\fBReturns:\fP
+.RS 4
+The current value of composite_force_counter 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 58 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 59 of file compositeforceparticle\&.h\&.
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::GetElementaryForce (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::GetElementaryForces (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::GetElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::GetElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "double CompositeForceParticle::GetGravitation (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 55 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetStrong (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 60 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 61 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 62 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetWeak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 56 of file compositeforceparticle\&.h\&.
+.SS "double CompositeForceParticle::GetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 57 of file compositeforceparticle\&.h\&.
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::RemoveElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::RemoveElementaryForces (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.SS "\fBCompositeForceParticle\fP* CompositeForceParticle::RemoveElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::RemoveElementaryParticles (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.SS "bool CompositeForceParticle::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 21 of file compositeforceparticle\&.cc\&.
+.SS "void CompositeForceParticle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 73 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 77 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 78 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 74 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 79 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 80 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 81 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 75 of file compositeforceparticle\&.h\&.
+.SS "void CompositeForceParticle::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 76 of file compositeforceparticle\&.h\&.
+.SS "int CompositeForceParticle::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 71 of file compositeforceparticle\&.cc\&.
+.SS "void CompositeForceParticle::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCompositeForceParticle\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 48 of file compositeforceparticle\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::elementary_force_list\fC [protected]\fP"
+
+.PP
+Definition at line 139 of file compositeforceparticle\&.h\&.
+.SS "std::vector<\fBCompositeForceParticle\fP*> CompositeForceParticle::elementary_particle_list\fC [protected]\fP"
+
+.PP
+Definition at line 138 of file compositeforceparticle\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

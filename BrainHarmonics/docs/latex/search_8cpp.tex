@@ -1,0 +1,246 @@
+\hypertarget{search_8cpp}{}\section{Brain\+Harmonics/search.cpp File Reference}
+\label{search_8cpp}\index{Brain\+Harmonics/search.\+cpp@{Brain\+Harmonics/search.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for search.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{search_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_graph}{Graph$<$ L $>$}
+\item 
+struct \hyperlink{structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4}{std\+::hash$<$ tuple$<$ int, int $>$ $>$}
+\item 
+struct \hyperlink{struct_square_grid}{Square\+Grid}
+\item 
+struct \hyperlink{struct_grid_with_weights}{Grid\+With\+Weights}
+\item 
+struct \hyperlink{struct_priority_queue}{Priority\+Queue$<$ T, Number $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacestd}{std}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \& \hyperlink{search_8cpp_a14bbb7e7d9701d4b4f1839f5f7608fa5}{operator$<$$<$} (std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \&out, tuple$<$ int, int $>$ loc)
+\item 
+{\footnotesize template$<$class Graph $>$ }\\void \hyperlink{search_8cpp_a788438e9f72bf881df6ae25ba857a9f6}{draw\+\_\+grid} (const \hyperlink{struct_graph}{Graph} \&graph, int field\+\_\+width, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ $\ast$distances=nullptr, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ $\ast$point\+\_\+to=nullptr, vector$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ $\ast$path=nullptr)
+\item 
+void \hyperlink{search_8cpp_accbfe5247dbef4f79673a2ff5dd05045}{add\+\_\+rect} (\hyperlink{struct_square_grid}{Square\+Grid} \&grid, int x1, int y1, int x2, int y2)
+\item 
+\hyperlink{struct_square_grid}{Square\+Grid} \hyperlink{search_8cpp_a3e35f7b5b37cf00a0f0a2c6221c3f05e}{make\+\_\+diagram1} ()
+\item 
+\hyperlink{struct_grid_with_weights}{Grid\+With\+Weights} \hyperlink{search_8cpp_a78b3dfdcdf5ef633f554ecca192e5328}{make\+\_\+diagram4} ()
+\item 
+{\footnotesize template$<$typename Graph $>$ }\\void \hyperlink{search_8cpp_ae5dda031f20466b1a419ca983a3dc474}{dijkstra\+\_\+search} (\hyperlink{struct_graph}{Graph} graph, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} start, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} goal, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ \&came\+\_\+from, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ \&cost\+\_\+so\+\_\+far)
+\item 
+{\footnotesize template$<$typename Location $>$ }\\vector$<$ Location $>$ \hyperlink{search_8cpp_af7ae297639a56db32da98fa801049faa}{reconstruct\+\_\+path} (Location start, Location goal, unordered\+\_\+map$<$ Location, Location $>$ \&came\+\_\+from)
+\item 
+int \hyperlink{search_8cpp_a394ba0076283a1523c29842e95aa897d}{heuristic} (\hyperlink{struct_square_grid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location} a, \hyperlink{struct_square_grid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location} b)
+\item 
+{\footnotesize template$<$typename Graph $>$ }\\void \hyperlink{search_8cpp_a9b1566d7e8a1017f075720664601abb0}{a\+\_\+star\+\_\+search} (\hyperlink{struct_graph}{Graph} graph, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} start, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} goal, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ \&came\+\_\+from, unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ \&cost\+\_\+so\+\_\+far)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_graph}{Graph}$<$ char $>$ \hyperlink{search_8cpp_a6bf00a88b62b9e264eeaac21edbd181b}{example\+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{search_8cpp_a9b1566d7e8a1017f075720664601abb0}\label{search_8cpp_a9b1566d7e8a1017f075720664601abb0}} 
+\index{search.\+cpp@{search.\+cpp}!a\+\_\+star\+\_\+search@{a\+\_\+star\+\_\+search}}
+\index{a\+\_\+star\+\_\+search@{a\+\_\+star\+\_\+search}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{a\+\_\+star\+\_\+search()}{a\_star\_search()}}
+{\footnotesize\ttfamily template$<$typename Graph $>$ \\
+void a\+\_\+star\+\_\+search (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph}}]{graph,  }\item[{typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}]{start,  }\item[{typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}]{goal,  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ \&}]{came\+\_\+from,  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ \&}]{cost\+\_\+so\+\_\+far }\end{DoxyParamCaption})}
+
+
+
+Definition at line 273 of file search.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{search_8cpp_a9b1566d7e8a1017f075720664601abb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{search_8cpp_a9b1566d7e8a1017f075720664601abb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_accbfe5247dbef4f79673a2ff5dd05045}\label{search_8cpp_accbfe5247dbef4f79673a2ff5dd05045}} 
+\index{search.\+cpp@{search.\+cpp}!add\+\_\+rect@{add\+\_\+rect}}
+\index{add\+\_\+rect@{add\+\_\+rect}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{add\+\_\+rect()}{add\_rect()}}
+{\footnotesize\ttfamily void add\+\_\+rect (\begin{DoxyParamCaption}\item[{\hyperlink{struct_square_grid}{Square\+Grid} \&}]{grid,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file search.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{search_8cpp_accbfe5247dbef4f79673a2ff5dd05045_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_ae5dda031f20466b1a419ca983a3dc474}\label{search_8cpp_ae5dda031f20466b1a419ca983a3dc474}} 
+\index{search.\+cpp@{search.\+cpp}!dijkstra\+\_\+search@{dijkstra\+\_\+search}}
+\index{dijkstra\+\_\+search@{dijkstra\+\_\+search}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{dijkstra\+\_\+search()}{dijkstra\_search()}}
+{\footnotesize\ttfamily template$<$typename Graph $>$ \\
+void dijkstra\+\_\+search (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph}}]{graph,  }\item[{typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}]{start,  }\item[{typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}]{goal,  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ \&}]{came\+\_\+from,  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ \&}]{cost\+\_\+so\+\_\+far }\end{DoxyParamCaption})}
+
+
+
+Definition at line 216 of file search.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{search_8cpp_ae5dda031f20466b1a419ca983a3dc474_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{search_8cpp_ae5dda031f20466b1a419ca983a3dc474_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_a788438e9f72bf881df6ae25ba857a9f6}\label{search_8cpp_a788438e9f72bf881df6ae25ba857a9f6}} 
+\index{search.\+cpp@{search.\+cpp}!draw\+\_\+grid@{draw\+\_\+grid}}
+\index{draw\+\_\+grid@{draw\+\_\+grid}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+grid()}{draw\_grid()}}
+{\footnotesize\ttfamily template$<$class Graph $>$ \\
+void draw\+\_\+grid (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_graph}{Graph} \&}]{graph,  }\item[{int}]{field\+\_\+width,  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, int $>$ $\ast$}]{distances = {\ttfamily nullptr},  }\item[{unordered\+\_\+map$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}, typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ $\ast$}]{point\+\_\+to = {\ttfamily nullptr},  }\item[{vector$<$ typename \hyperlink{struct_graph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location} $>$ $\ast$}]{path = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file search.\+cpp.
+
+\mbox{\Hypertarget{search_8cpp_a394ba0076283a1523c29842e95aa897d}\label{search_8cpp_a394ba0076283a1523c29842e95aa897d}} 
+\index{search.\+cpp@{search.\+cpp}!heuristic@{heuristic}}
+\index{heuristic@{heuristic}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{heuristic()}{heuristic()}}
+{\footnotesize\ttfamily int heuristic (\begin{DoxyParamCaption}\item[{\hyperlink{struct_square_grid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}}]{a,  }\item[{\hyperlink{struct_square_grid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 264 of file search.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{search_8cpp_a394ba0076283a1523c29842e95aa897d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{search_8cpp_a394ba0076283a1523c29842e95aa897d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_a3e35f7b5b37cf00a0f0a2c6221c3f05e}\label{search_8cpp_a3e35f7b5b37cf00a0f0a2c6221c3f05e}} 
+\index{search.\+cpp@{search.\+cpp}!make\+\_\+diagram1@{make\+\_\+diagram1}}
+\index{make\+\_\+diagram1@{make\+\_\+diagram1}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{make\+\_\+diagram1()}{make\_diagram1()}}
+{\footnotesize\ttfamily \hyperlink{struct_square_grid}{Square\+Grid} make\+\_\+diagram1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file search.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{search_8cpp_a3e35f7b5b37cf00a0f0a2c6221c3f05e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_a78b3dfdcdf5ef633f554ecca192e5328}\label{search_8cpp_a78b3dfdcdf5ef633f554ecca192e5328}} 
+\index{search.\+cpp@{search.\+cpp}!make\+\_\+diagram4@{make\+\_\+diagram4}}
+\index{make\+\_\+diagram4@{make\+\_\+diagram4}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{make\+\_\+diagram4()}{make\_diagram4()}}
+{\footnotesize\ttfamily \hyperlink{struct_grid_with_weights}{Grid\+With\+Weights} make\+\_\+diagram4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file search.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{search_8cpp_a78b3dfdcdf5ef633f554ecca192e5328_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{search_8cpp_a14bbb7e7d9701d4b4f1839f5f7608fa5}\label{search_8cpp_a14bbb7e7d9701d4b4f1839f5f7608fa5}} 
+\index{search.\+cpp@{search.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::basic\+\_\+iostream$<$char$>$\+::basic\+\_\+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \&}]{out,  }\item[{tuple$<$ int, int $>$}]{loc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file search.\+cpp.
+
+\mbox{\Hypertarget{search_8cpp_af7ae297639a56db32da98fa801049faa}\label{search_8cpp_af7ae297639a56db32da98fa801049faa}} 
+\index{search.\+cpp@{search.\+cpp}!reconstruct\+\_\+path@{reconstruct\+\_\+path}}
+\index{reconstruct\+\_\+path@{reconstruct\+\_\+path}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{reconstruct\+\_\+path()}{reconstruct\_path()}}
+{\footnotesize\ttfamily template$<$typename Location $>$ \\
+vector$<$Location$>$ reconstruct\+\_\+path (\begin{DoxyParamCaption}\item[{Location}]{start,  }\item[{Location}]{goal,  }\item[{unordered\+\_\+map$<$ Location, Location $>$ \&}]{came\+\_\+from }\end{DoxyParamCaption})}
+
+
+
+Definition at line 249 of file search.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{search_8cpp_a6bf00a88b62b9e264eeaac21edbd181b}\label{search_8cpp_a6bf00a88b62b9e264eeaac21edbd181b}} 
+\index{search.\+cpp@{search.\+cpp}!example\+\_\+graph@{example\+\_\+graph}}
+\index{example\+\_\+graph@{example\+\_\+graph}!search.\+cpp@{search.\+cpp}}
+\subsubsection{\texorpdfstring{example\+\_\+graph}{example\_graph}}
+{\footnotesize\ttfamily \hyperlink{struct_graph}{Graph}$<$char$>$ example\+\_\+graph}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{\{
+    \{\textcolor{charliteral}{'A'}, \{\textcolor{charliteral}{'B'}\}\},
+    \{\textcolor{charliteral}{'B'}, \{\textcolor{charliteral}{'A'}, \textcolor{charliteral}{'C'}, \textcolor{charliteral}{'D'}\}\},
+    \{\textcolor{charliteral}{'C'}, \{\textcolor{charliteral}{'A'}\}\},
+    \{\textcolor{charliteral}{'D'}, \{\textcolor{charliteral}{'E'}, \textcolor{charliteral}{'A'}\}\},
+    \{\textcolor{charliteral}{'E'}, \{\textcolor{charliteral}{'B'}\}\}
+  \}\}
+\end{DoxyCode}
+
+
+Definition at line 49 of file search.\+cpp.
+

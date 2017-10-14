@@ -1,0 +1,11 @@
+digraph "CognitiveNetwork::AddNeuron"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CognitiveNetwork::AddNeuron",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="CognitiveNetwork::Create\lNeuron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a1d3b72051d7b3f36a01396932a96c273"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="CognitiveNetwork::GetNeurons",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cognitive_network.html#a06cb9f79c48b1a6dc8758e66a01b53d3"];
+}

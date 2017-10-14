@@ -1,0 +1,303 @@
+.TH "Line" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Line
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <line\&.h>\fP
+.PP
+Inherits \fBUniverse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLine\fP ()"
+.br
+.ti -1c
+.RI "\fBLine\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBLine\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBLine\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP &universe_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Line\fP ()"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetLineID\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineXYBubble\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineX1\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineY1\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineX1Y1Bubble\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineX2\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineY2\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineX2Y2Bubble\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "double \fBGetLineXMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineYMin\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineXMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineYMax\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineMinOrdinal\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineMaxOrdinal\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetSlope\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetYint\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetLineTTL\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "int \fBGetLineSeq\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetLineCounter\fP (std::chrono::time_point< \fBClock\fP > event_time) const"
+.br
+.ti -1c
+.RI "bool \fBGetInLine\fP (std::chrono::time_point< \fBClock\fP > event_time, double X1, double Y1, double X2, double Y2, double Threshold)"
+.br
+.ti -1c
+.RI "void \fBsetLineID\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBsetLineX1\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetLineY1\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetLineX2\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetLineY2\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetSlope\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetYint\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetLineTTL\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBsetLineSeq\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBsetLineCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+< For Sine, Cosine, Fabs & Sqrt functions 
+.PP
+Definition at line 25 of file line\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Line::Line ()\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file line\&.h\&.
+.SS "Line::Line (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file line\&.h\&.
+.SS "Line::Line (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 32 of file line\&.h\&.
+.SS "Line::Line (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBUniverse\fP & universe_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 34 of file line\&.h\&.
+.SS "virtual Line::~Line ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 47 of file line\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Line::GetInLine (std::chrono::time_point< \fBClock\fP > event_time, double X1, double Y1, double X2, double Y2, double Threshold)\fC [inline]\fP"
+
+.PP
+Definition at line 73 of file line\&.h\&.
+.SS "int Line::GetLineCounter (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 72 of file line\&.h\&.
+.SS "int Line::GetLineID (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file line\&.h\&.
+.SS "double Line::GetLineMaxOrdinal (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 67 of file line\&.h\&.
+.SS "double Line::GetLineMinOrdinal (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file line\&.h\&.
+.SS "int Line::GetLineSeq (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 71 of file line\&.h\&.
+.SS "double Line::GetLineTTL (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file line\&.h\&.
+.SS "double Line::GetLineX1 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file line\&.h\&.
+.SS "double Line::GetLineX1Y1Bubble (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file line\&.h\&.
+.SS "double Line::GetLineX2 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file line\&.h\&.
+.SS "double Line::GetLineX2Y2Bubble (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 61 of file line\&.h\&.
+.SS "double Line::GetLineXMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 64 of file line\&.h\&.
+.SS "double Line::GetLineXMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file line\&.h\&.
+.SS "double Line::GetLineXYBubble (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file line\&.h\&.
+.SS "double Line::GetLineY1 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file line\&.h\&.
+.SS "double Line::GetLineY2 (std::chrono::time_point< \fBClock\fP > event_time) const\fC [inline]\fP"
+
+.PP
+Definition at line 60 of file line\&.h\&.
+.SS "double Line::GetLineYMax (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file line\&.h\&.
+.SS "double Line::GetLineYMin (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file line\&.h\&.
+.SS "double Line::GetSlope (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 68 of file line\&.h\&.
+.SS "double Line::GetYint (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 69 of file line\&.h\&.
+.SS "bool Line::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+Access lineCounter 
+.PP
+\fBReturns:\fP
+.RS 4
+The current value of lineCounter 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file line\&.cc\&.
+.SS "void Line::setLineCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 94 of file line\&.h\&.
+.SS "void Line::setLineID (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+set lineCounter 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP New value to set 
+.RE
+.PP
+
+.PP
+Definition at line 85 of file line\&.h\&.
+.SS "void Line::setLineSeq (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 93 of file line\&.h\&.
+.SS "void Line::setLineTTL (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 92 of file line\&.h\&.
+.SS "void Line::setLineX1 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 86 of file line\&.h\&.
+.SS "void Line::setLineX2 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 88 of file line\&.h\&.
+.SS "void Line::setLineY1 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 87 of file line\&.h\&.
+.SS "void Line::setLineY2 (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 89 of file line\&.h\&.
+.SS "void Line::setSlope (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 90 of file line\&.h\&.
+.SS "void Line::setYint (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 91 of file line\&.h\&.
+.SS "int Line::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 59 of file line\&.cc\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

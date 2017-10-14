@@ -1,0 +1,575 @@
+\hypertarget{class_line}{}\section{Line Class Reference}
+\label{class_line}\index{Line@{Line}}
+
+
+{\ttfamily \#include $<$line.\+h$>$}
+
+
+
+Inheritance diagram for Line\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_line__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Line\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{class_line__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_line_acc11b8a429d8cdd63ba6803dff5602b3}{Line} ()
+\item 
+\hyperlink{class_line_a4e3242660d8d3c1aa43e932560840552}{Line} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_line_a5330353765ab0f965a4293bdc7c3564a}{Line} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_line_a740aacdf468a1519f9a01d9cbd1f9219}{Line} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_universe}{Universe} \&universe\+\_\+connector)
+\item 
+virtual \hyperlink{class_line_a4a95bafcefa28672b3999deb011b9e50}{$\sim$\+Line} ()
+\item 
+bool \hyperlink{class_line_af1756d1500ab0a5616313be6e213015a}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_line_a20756feda4d42032955ec6cf12d89941}{Get\+Line\+ID} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a8752cfce7330fbeda936778b77e534d0}{Get\+Line\+X\+Y\+Bubble} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_ab14245ec4348e925b6e0f860e9254308}{Get\+Line\+X1} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_ac09a53b36a300c38191269f110c73eb1}{Get\+Line\+Y1} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_adc3c6c42d1b3d172e32fad59db2e3eaa}{Get\+Line\+X1\+Y1\+Bubble} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_a9cdf38d7aaeadfa35136dd417865c189}{Get\+Line\+X2} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_a6222d15f883f3183ec9eed085046916a}{Get\+Line\+Y2} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_a2432406f734963e4497541081a843131}{Get\+Line\+X2\+Y2\+Bubble} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+double \hyperlink{class_line_ac4a6e8f232b529169d91b9f44496933b}{Get\+Line\+X\+Min} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_ae8151f5f3b102924b09de686f536e220}{Get\+Line\+Y\+Min} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a1393a4dcd9fa9e1ab1653c37d76c8c3a}{Get\+Line\+X\+Max} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_ab033cff3a24b67be829759d16f13c281}{Get\+Line\+Y\+Max} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a7b105f0af704489446cc93302c30813d}{Get\+Line\+Min\+Ordinal} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a3fc7779998759b641ec2b7bc8515563a}{Get\+Line\+Max\+Ordinal} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a2be3926d47a1a8849007a6c29a603dcf}{Get\+Slope} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a5319d68ecb254ff61e2a46d5928aec93}{Get\+Yint} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_line_a5b9419146093908e5c7d740ac384fe39}{Get\+Line\+T\+TL} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+int \hyperlink{class_line_a8764cb987ec4af839f30411dc47a835a}{Get\+Line\+Seq} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_line_ac13c6405cfd2a586633b5a5eece05fff}{Get\+Line\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time) const
+\item 
+bool \hyperlink{class_line_a4c9d571599ebc5e9b6090b54a338fbde}{Get\+In\+Line} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double X1, double Y1, double X2, double Y2, double Threshold)
+\item 
+void \hyperlink{class_line_aaa634bf320b9d1c4becb4083cd8324d4}{set\+Line\+ID} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+void \hyperlink{class_line_ab8df9f66bffc86994db3150a4eb8ed29}{set\+Line\+X1} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_af236c5ddb0d125b388621b3597266a95}{set\+Line\+Y1} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_ade959bc4d4f69bb421ed4f69c0d77fb7}{set\+Line\+X2} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_a671f64c437fe1bef798476d93c675099}{set\+Line\+Y2} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_a3fb9e9eab13d146feff0bc891709eaf9}{set\+Slope} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_ad966eb3f1bd4cb29976b3e97811c344f}{set\+Yint} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_a602398c8c3131ec7236ccadbab8281d5}{set\+Line\+T\+TL} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_line_a7c315c5ffdd4fa875918583738e2e157}{set\+Line\+Seq} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+void \hyperlink{class_line_ab98abcf3c8546e266ae5bbea243d8b8d}{set\+Line\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+int \hyperlink{class_line_a8c6dece66f5cd93ce40134002a40f505}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+$<$ For Sine, Cosine, Fabs \& Sqrt functions 
+
+Definition at line 25 of file line.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_line_acc11b8a429d8cdd63ba6803dff5602b3}\label{class_line_acc11b8a429d8cdd63ba6803dff5602b3}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 28 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a4e3242660d8d3c1aa43e932560840552}\label{class_line_a4e3242660d8d3c1aa43e932560840552}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a5330353765ab0f965a4293bdc7c3564a}\label{class_line_a5330353765ab0f965a4293bdc7c3564a}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a740aacdf468a1519f9a01d9cbd1f9219}\label{class_line_a740aacdf468a1519f9a01d9cbd1f9219}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_universe}{Universe} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file line.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_a740aacdf468a1519f9a01d9cbd1f9219_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_a4a95bafcefa28672b3999deb011b9e50}\label{class_line_a4a95bafcefa28672b3999deb011b9e50}} 
+\index{Line@{Line}!````~Line@{$\sim$\+Line}}
+\index{````~Line@{$\sim$\+Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{$\sim$\+Line()}{~Line()}}
+{\footnotesize\ttfamily virtual Line\+::$\sim$\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 47 of file line.\+h.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_a4a95bafcefa28672b3999deb011b9e50_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_line_a4c9d571599ebc5e9b6090b54a338fbde}\label{class_line_a4c9d571599ebc5e9b6090b54a338fbde}} 
+\index{Line@{Line}!Get\+In\+Line@{Get\+In\+Line}}
+\index{Get\+In\+Line@{Get\+In\+Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+In\+Line()}{GetInLine()}}
+{\footnotesize\ttfamily bool Line\+::\+Get\+In\+Line (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{X1,  }\item[{double}]{Y1,  }\item[{double}]{X2,  }\item[{double}]{Y2,  }\item[{double}]{Threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ac13c6405cfd2a586633b5a5eece05fff}\label{class_line_ac13c6405cfd2a586633b5a5eece05fff}} 
+\index{Line@{Line}!Get\+Line\+Counter@{Get\+Line\+Counter}}
+\index{Get\+Line\+Counter@{Get\+Line\+Counter}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Counter()}{GetLineCounter()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a20756feda4d42032955ec6cf12d89941}\label{class_line_a20756feda4d42032955ec6cf12d89941}} 
+\index{Line@{Line}!Get\+Line\+ID@{Get\+Line\+ID}}
+\index{Get\+Line\+ID@{Get\+Line\+ID}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+I\+D()}{GetLineID()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+ID (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a3fc7779998759b641ec2b7bc8515563a}\label{class_line_a3fc7779998759b641ec2b7bc8515563a}} 
+\index{Line@{Line}!Get\+Line\+Max\+Ordinal@{Get\+Line\+Max\+Ordinal}}
+\index{Get\+Line\+Max\+Ordinal@{Get\+Line\+Max\+Ordinal}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Max\+Ordinal()}{GetLineMaxOrdinal()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Max\+Ordinal (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a7b105f0af704489446cc93302c30813d}\label{class_line_a7b105f0af704489446cc93302c30813d}} 
+\index{Line@{Line}!Get\+Line\+Min\+Ordinal@{Get\+Line\+Min\+Ordinal}}
+\index{Get\+Line\+Min\+Ordinal@{Get\+Line\+Min\+Ordinal}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Min\+Ordinal()}{GetLineMinOrdinal()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Min\+Ordinal (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a8764cb987ec4af839f30411dc47a835a}\label{class_line_a8764cb987ec4af839f30411dc47a835a}} 
+\index{Line@{Line}!Get\+Line\+Seq@{Get\+Line\+Seq}}
+\index{Get\+Line\+Seq@{Get\+Line\+Seq}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Seq()}{GetLineSeq()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+Seq (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a5b9419146093908e5c7d740ac384fe39}\label{class_line_a5b9419146093908e5c7d740ac384fe39}} 
+\index{Line@{Line}!Get\+Line\+T\+TL@{Get\+Line\+T\+TL}}
+\index{Get\+Line\+T\+TL@{Get\+Line\+T\+TL}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+T\+T\+L()}{GetLineTTL()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+T\+TL (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ab14245ec4348e925b6e0f860e9254308}\label{class_line_ab14245ec4348e925b6e0f860e9254308}} 
+\index{Line@{Line}!Get\+Line\+X1@{Get\+Line\+X1}}
+\index{Get\+Line\+X1@{Get\+Line\+X1}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X1()}{GetLineX1()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_adc3c6c42d1b3d172e32fad59db2e3eaa}\label{class_line_adc3c6c42d1b3d172e32fad59db2e3eaa}} 
+\index{Line@{Line}!Get\+Line\+X1\+Y1\+Bubble@{Get\+Line\+X1\+Y1\+Bubble}}
+\index{Get\+Line\+X1\+Y1\+Bubble@{Get\+Line\+X1\+Y1\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X1\+Y1\+Bubble()}{GetLineX1Y1Bubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X1\+Y1\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file line.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_adc3c6c42d1b3d172e32fad59db2e3eaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_a9cdf38d7aaeadfa35136dd417865c189}\label{class_line_a9cdf38d7aaeadfa35136dd417865c189}} 
+\index{Line@{Line}!Get\+Line\+X2@{Get\+Line\+X2}}
+\index{Get\+Line\+X2@{Get\+Line\+X2}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X2()}{GetLineX2()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a2432406f734963e4497541081a843131}\label{class_line_a2432406f734963e4497541081a843131}} 
+\index{Line@{Line}!Get\+Line\+X2\+Y2\+Bubble@{Get\+Line\+X2\+Y2\+Bubble}}
+\index{Get\+Line\+X2\+Y2\+Bubble@{Get\+Line\+X2\+Y2\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X2\+Y2\+Bubble()}{GetLineX2Y2Bubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X2\+Y2\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file line.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_a2432406f734963e4497541081a843131_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_a1393a4dcd9fa9e1ab1653c37d76c8c3a}\label{class_line_a1393a4dcd9fa9e1ab1653c37d76c8c3a}} 
+\index{Line@{Line}!Get\+Line\+X\+Max@{Get\+Line\+X\+Max}}
+\index{Get\+Line\+X\+Max@{Get\+Line\+X\+Max}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Max()}{GetLineXMax()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ac4a6e8f232b529169d91b9f44496933b}\label{class_line_ac4a6e8f232b529169d91b9f44496933b}} 
+\index{Line@{Line}!Get\+Line\+X\+Min@{Get\+Line\+X\+Min}}
+\index{Get\+Line\+X\+Min@{Get\+Line\+X\+Min}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Min()}{GetLineXMin()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a8752cfce7330fbeda936778b77e534d0}\label{class_line_a8752cfce7330fbeda936778b77e534d0}} 
+\index{Line@{Line}!Get\+Line\+X\+Y\+Bubble@{Get\+Line\+X\+Y\+Bubble}}
+\index{Get\+Line\+X\+Y\+Bubble@{Get\+Line\+X\+Y\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Y\+Bubble()}{GetLineXYBubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Y\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file line.\+h.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_a8752cfce7330fbeda936778b77e534d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_ac09a53b36a300c38191269f110c73eb1}\label{class_line_ac09a53b36a300c38191269f110c73eb1}} 
+\index{Line@{Line}!Get\+Line\+Y1@{Get\+Line\+Y1}}
+\index{Get\+Line\+Y1@{Get\+Line\+Y1}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y1()}{GetLineY1()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a6222d15f883f3183ec9eed085046916a}\label{class_line_a6222d15f883f3183ec9eed085046916a}} 
+\index{Line@{Line}!Get\+Line\+Y2@{Get\+Line\+Y2}}
+\index{Get\+Line\+Y2@{Get\+Line\+Y2}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y2()}{GetLineY2()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ab033cff3a24b67be829759d16f13c281}\label{class_line_ab033cff3a24b67be829759d16f13c281}} 
+\index{Line@{Line}!Get\+Line\+Y\+Max@{Get\+Line\+Y\+Max}}
+\index{Get\+Line\+Y\+Max@{Get\+Line\+Y\+Max}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y\+Max()}{GetLineYMax()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ae8151f5f3b102924b09de686f536e220}\label{class_line_ae8151f5f3b102924b09de686f536e220}} 
+\index{Line@{Line}!Get\+Line\+Y\+Min@{Get\+Line\+Y\+Min}}
+\index{Get\+Line\+Y\+Min@{Get\+Line\+Y\+Min}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y\+Min()}{GetLineYMin()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 63 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a2be3926d47a1a8849007a6c29a603dcf}\label{class_line_a2be3926d47a1a8849007a6c29a603dcf}} 
+\index{Line@{Line}!Get\+Slope@{Get\+Slope}}
+\index{Get\+Slope@{Get\+Slope}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Slope()}{GetSlope()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Slope (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a5319d68ecb254ff61e2a46d5928aec93}\label{class_line_a5319d68ecb254ff61e2a46d5928aec93}} 
+\index{Line@{Line}!Get\+Yint@{Get\+Yint}}
+\index{Get\+Yint@{Get\+Yint}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Yint()}{GetYint()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Yint (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_af1756d1500ab0a5616313be6e213015a}\label{class_line_af1756d1500ab0a5616313be6e213015a}} 
+\index{Line@{Line}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Line@{Line}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Line\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+Access line\+Counter \begin{DoxyReturn}{Returns}
+The current value of line\+Counter 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file line.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_af1756d1500ab0a5616313be6e213015a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_af1756d1500ab0a5616313be6e213015a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_ab98abcf3c8546e266ae5bbea243d8b8d}\label{class_line_ab98abcf3c8546e266ae5bbea243d8b8d}} 
+\index{Line@{Line}!set\+Line\+Counter@{set\+Line\+Counter}}
+\index{set\+Line\+Counter@{set\+Line\+Counter}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Counter()}{setLineCounter()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file line.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_ab98abcf3c8546e266ae5bbea243d8b8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_line_aaa634bf320b9d1c4becb4083cd8324d4}\label{class_line_aaa634bf320b9d1c4becb4083cd8324d4}} 
+\index{Line@{Line}!set\+Line\+ID@{set\+Line\+ID}}
+\index{set\+Line\+ID@{set\+Line\+ID}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+I\+D()}{setLineID()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+ID (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set line\+Counter 
+\begin{DoxyParams}{Parameters}
+{\em val} & New value to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a7c315c5ffdd4fa875918583738e2e157}\label{class_line_a7c315c5ffdd4fa875918583738e2e157}} 
+\index{Line@{Line}!set\+Line\+Seq@{set\+Line\+Seq}}
+\index{set\+Line\+Seq@{set\+Line\+Seq}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Seq()}{setLineSeq()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Seq (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a602398c8c3131ec7236ccadbab8281d5}\label{class_line_a602398c8c3131ec7236ccadbab8281d5}} 
+\index{Line@{Line}!set\+Line\+T\+TL@{set\+Line\+T\+TL}}
+\index{set\+Line\+T\+TL@{set\+Line\+T\+TL}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+T\+T\+L()}{setLineTTL()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+T\+TL (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 92 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ab8df9f66bffc86994db3150a4eb8ed29}\label{class_line_ab8df9f66bffc86994db3150a4eb8ed29}} 
+\index{Line@{Line}!set\+Line\+X1@{set\+Line\+X1}}
+\index{set\+Line\+X1@{set\+Line\+X1}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+X1()}{setLineX1()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+X1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ade959bc4d4f69bb421ed4f69c0d77fb7}\label{class_line_ade959bc4d4f69bb421ed4f69c0d77fb7}} 
+\index{Line@{Line}!set\+Line\+X2@{set\+Line\+X2}}
+\index{set\+Line\+X2@{set\+Line\+X2}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+X2()}{setLineX2()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+X2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 88 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_af236c5ddb0d125b388621b3597266a95}\label{class_line_af236c5ddb0d125b388621b3597266a95}} 
+\index{Line@{Line}!set\+Line\+Y1@{set\+Line\+Y1}}
+\index{set\+Line\+Y1@{set\+Line\+Y1}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Y1()}{setLineY1()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Y1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a671f64c437fe1bef798476d93c675099}\label{class_line_a671f64c437fe1bef798476d93c675099}} 
+\index{Line@{Line}!set\+Line\+Y2@{set\+Line\+Y2}}
+\index{set\+Line\+Y2@{set\+Line\+Y2}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Y2()}{setLineY2()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Y2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a3fb9e9eab13d146feff0bc891709eaf9}\label{class_line_a3fb9e9eab13d146feff0bc891709eaf9}} 
+\index{Line@{Line}!set\+Slope@{set\+Slope}}
+\index{set\+Slope@{set\+Slope}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Slope()}{setSlope()}}
+{\footnotesize\ttfamily void Line\+::set\+Slope (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_ad966eb3f1bd4cb29976b3e97811c344f}\label{class_line_ad966eb3f1bd4cb29976b3e97811c344f}} 
+\index{Line@{Line}!set\+Yint@{set\+Yint}}
+\index{set\+Yint@{set\+Yint}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Yint()}{setYint()}}
+{\footnotesize\ttfamily void Line\+::set\+Yint (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file line.\+h.
+
+\mbox{\Hypertarget{class_line_a8c6dece66f5cd93ce40134002a40f505}\label{class_line_a8c6dece66f5cd93ce40134002a40f505}} 
+\index{Line@{Line}!Update@{Update}}
+\index{Update@{Update}!Line@{Line}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Line\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file line.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_a8c6dece66f5cd93ce40134002a40f505_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_line_a8c6dece66f5cd93ce40134002a40f505_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{line_8h}{line.\+h}\item 
+Brain\+Harmonics/\hyperlink{line_8cc}{line.\+cc}\end{DoxyCompactItemize}

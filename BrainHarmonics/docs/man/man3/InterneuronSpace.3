@@ -1,0 +1,324 @@
+.TH "InterneuronSpace" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InterneuronSpace
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <interneuronspace\&.h>\fP
+.PP
+Inherits \fBCognitiveNetwork\fP\&.
+.PP
+Inherited by \fBSchwannCell\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInterneuronSpace\fP ()"
+.br
+.ti -1c
+.RI "\fBInterneuronSpace\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBInterneuronSpace\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBInterneuronSpace\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP &cognitivenetwork_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~InterneuronSpace\fP ()"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetInterneuronSpaceDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetInterneuronSpaceDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCreateNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCreateNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBCloneNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBCloneNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBDestroyNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBDestroyNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBAddNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBRemoveNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBRemoveNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBCognitiveNetwork\fP * \fBGetNeurotransmitter\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "int \fBGetAllocatedInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetMinimumDistance\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBGetInterneuronSpaceList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.br
+.ti -1c
+.RI "void \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneurotransmitter_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 18 of file interneuronspace\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "InterneuronSpace::InterneuronSpace ()\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file interneuronspace\&.h\&.
+.SS "InterneuronSpace::InterneuronSpace (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file interneuronspace\&.h\&.
+.SS "InterneuronSpace::InterneuronSpace (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file interneuronspace\&.h\&.
+.SS "InterneuronSpace::InterneuronSpace (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP & cognitivenetwork_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file interneuronspace\&.h\&.
+.SS "virtual InterneuronSpace::~InterneuronSpace ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 41 of file interneuronspace\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::AddNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * add_object)"
+
+.PP
+Definition at line 123 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::AddNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> add_objects)"
+
+.PP
+Definition at line 134 of file interneuronspace\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::CloneNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 108 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::CloneNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 103 of file interneuronspace\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::CreateNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 70 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::CreateNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 81 of file interneuronspace\&.cc\&.
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::DestroyNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * destroy_object)"
+
+.PP
+Definition at line 118 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::DestroyNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> destruction_list)"
+
+.PP
+Definition at line 113 of file interneuronspace\&.cc\&.
+.SS "int InterneuronSpace::GetAllocatedInterneuronSpace (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "int InterneuronSpace::GetChargeType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file interneuronspace\&.h\&.
+.SS "int InterneuronSpace::GetDemand (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 179 of file interneuronspace\&.cc\&.
+.SS "int InterneuronSpace::GetDischargeType (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file interneuronspace\&.h\&.
+.SS "double InterneuronSpace::GetDistance (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.SS "double InterneuronSpace::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 43 of file interneuronspace\&.h\&.
+.SS "int InterneuronSpace::GetInterneuronSpaceDeviceTag (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::GetInterneuronSpaceList (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "double InterneuronSpace::GetMinimumDistance (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::GetNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 167 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::GetNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 172 of file interneuronspace\&.cc\&.
+.SS "int InterneuronSpace::GetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file interneuronspace\&.h\&.
+.SS "int InterneuronSpace::GetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file interneuronspace\&.h\&.
+.SS "\fBCognitiveNetwork\fP * InterneuronSpace::RemoveNeurotransmitter (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 156 of file interneuronspace\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > InterneuronSpace::RemoveNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 162 of file interneuronspace\&.cc\&.
+.SS "bool InterneuronSpace::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+Set initial type value 
+.PP
+Definition at line 22 of file interneuronspace\&.cc\&.
+.SS "void InterneuronSpace::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 233 of file interneuronspace\&.cc\&.
+.SS "void InterneuronSpace::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 261 of file interneuronspace\&.cc\&.
+.SS "void InterneuronSpace::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 50 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.PP
+Definition at line 204 of file interneuronspace\&.cc\&.
+.SS "void InterneuronSpace::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetInterneuronSpaceDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 57 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+
+.PP
+Definition at line 206 of file interneuronspace\&.cc\&.
+.SS "void InterneuronSpace::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file interneuronspace\&.h\&.
+.SS "void InterneuronSpace::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+
+.PP
+Definition at line 53 of file interneuronspace\&.h\&.
+.SS "int InterneuronSpace::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 285 of file interneuronspace\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> InterneuronSpace::neurotransmitter_list\fC [protected]\fP"
+
+.PP
+Definition at line 123 of file interneuronspace\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

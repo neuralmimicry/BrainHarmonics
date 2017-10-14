@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_axon_bouton_1_1s___synapse_description" kind="struct" language="C++" prot="private">
+    <compoundname>AxonBouton::s_SynapseDescription</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_axon_bouton_1_1s___synapse_description_1a7692125442d785c4d59cde9c6ddd7a5f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_synapse" kindref="compound">Synapse</ref> *</type>
+        <definition>Synapse* AxonBouton::s_SynapseDescription::s_Synapse</definition>
+        <argsstring></argsstring>
+        <name>s_Synapse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" line="101" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_axon_bouton_1_1s___synapse_description_1a074e38780c61b32b7fe00b3ed9b74a1d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AxonBouton::s_SynapseDescription::s_Distance</definition>
+        <argsstring></argsstring>
+        <name>s_Distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" line="102" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="448">
+        <label>Dimension</label>
+      </node>
+      <node id="447">
+        <label>Synapse</label>
+        <link refid="class_synapse"/>
+        <childnode refid="448" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>AxonBouton::s_SynapseDescription</label>
+        <childnode refid="447" relation="usage">
+          <edgelabel>s_Synapse</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" line="100" column="1" bodyfile="/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/axonbouton.h" bodystart="99" bodyend="103"/>
+    <listofallmembers>
+      <member refid="struct_axon_bouton_1_1s___synapse_description_1a074e38780c61b32b7fe00b3ed9b74a1d" prot="public" virt="non-virtual"><scope>AxonBouton::s_SynapseDescription</scope><name>s_Distance</name></member>
+      <member refid="struct_axon_bouton_1_1s___synapse_description_1a7692125442d785c4d59cde9c6ddd7a5f" prot="public" virt="non-virtual"><scope>AxonBouton::s_SynapseDescription</scope><name>s_Synapse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

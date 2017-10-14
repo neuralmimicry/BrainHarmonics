@@ -1,0 +1,659 @@
+\hypertarget{class_membrane_channel}{}\section{Membrane\+Channel Class Reference}
+\label{class_membrane_channel}\index{Membrane\+Channel@{Membrane\+Channel}}
+
+
+{\ttfamily \#include $<$membranechannel.\+h$>$}
+
+
+
+Inheritance diagram for Membrane\+Channel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_membrane_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Membrane\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_membrane_channel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_membrane_channel_acbc07cd5836394396b0c1944f43350d6}{Membrane\+Channel} ()
+\item 
+\hyperlink{class_membrane_channel_a17cdd2064bebb7bd2568cf5ec92715fc}{Membrane\+Channel} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_membrane_channel_aedc9eb52da9e7160850f552781df27b6}{Membrane\+Channel} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_membrane_channel_ac467743cbdebcdc6a77ad5ea0527e6f0}{Membrane\+Channel} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_membrane}{Membrane} \&membrane\+\_\+connector)
+\item 
+virtual \hyperlink{class_membrane_channel_a925e7e98530ef9cc94616ea7a4dd0cbd}{$\sim$\+Membrane\+Channel} ()
+\item 
+unsigned int \hyperlink{class_membrane_channel_ac856b74d47b28bd8638fce9c0f12dd20}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_membrane_channel_a25b542d8156c42ed785eebbea0db21a7}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+bool \hyperlink{class_membrane_channel_a8eb115e2583e5bf0f37156f1fc974aa6}{Get\+Receptor\+Binding\+State} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_membrane_channel_aa37056ebb4e757a5ed00252112b516aa}{Get\+Receptor\+Type} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+bool \hyperlink{class_membrane_channel_afde030429a160621a2255ab8a2d689b8}{Get\+Disabled} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_membrane_channel_af20c4ca6a3708c86122e7118a29952fd}{Get\+Ions} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_membrane_channel_a9f5c69ab1f4dce6113fceebaaa4f15f4}{set\+Receptor\+Binding\+State} (bool val)
+\item 
+void \hyperlink{class_membrane_channel_a289ec477e64eec5d2a1f88f4a677650c}{toggle\+Receptor\+Binding\+State} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_membrane_channel_aabbadec31782704dd497848154dfe0fc}{toggle\+Disabled} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_membrane_channel_aed2055857888506a35c09bdcc265799a}{set\+Disabled} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, bool val)
+\item 
+void \hyperlink{class_membrane_channel_a7f40594845bb0aa6a03fd9c08a836d7e}{set\+Receptor\+Type} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+void \hyperlink{class_membrane_channel_a61931feff8f3bb485eeb5c80125bb732}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_membrane_channel_aaa2d816d3887b6292d995a83130a4834}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+void \hyperlink{class_membrane_channel_a1fe0c61eccbb6aa0d905ead27e8337bd}{Set\+Ions} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int val)
+\item 
+bool \hyperlink{class_membrane_channel_a5982040b46efe5e2b824d1cf4dead25e}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_aa8e78a1b0dd7c6b81cac09d33f01e6c2}{Create\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_a24c791e6cfd906d49e0ceb8a24eeb4cb}{Create\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_af667720bd2214ea3a1e6d272b57d3a79}{Clone\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_a6426185a0d73c967adcb72e3a22b48b0}{Clone\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_a985d8f93077b0f93daa9c311a22917a1}{Destroy\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_ad5dfc13b89aff0c7383e052113da1d8f}{Destroy\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ destruction\+\_\+list)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_ae483c6bc45f73390070b824296762d4c}{Add\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_a01fb5f3176cfa3423bb10a04bf69da01}{Add\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ add\+\_\+objects)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_a2252f222f4a41bf1975dc856569e0a22}{Remove\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_a37f22ddd877e3be7b353048149a7bbcd}{Remove\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_membrane_channel_a91ce6506a8e82905de7cd031ed5d63f5}{Get\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_a9fdb20eb7d3f9ebad864d07aaa835716}{Get\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+bool \hyperlink{class_membrane_channel_a67496ca67ad3ecae38f6b987547b1b99}{Compatibility\+Check} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int neurotransmitter\+Type)
+\item 
+int \hyperlink{class_membrane_channel_a34077828eee1c2457212f05217b09d6c}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_membrane_channel_ad603f58813157b33ca81b919cf9c2897}{neurotransmitter\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file membranechannel.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_membrane_channel_acbc07cd5836394396b0c1944f43350d6}\label{class_membrane_channel_acbc07cd5836394396b0c1944f43350d6}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Membrane\+Channel()}{MembraneChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Membrane\+Channel\+::\+Membrane\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a17cdd2064bebb7bd2568cf5ec92715fc}\label{class_membrane_channel_a17cdd2064bebb7bd2568cf5ec92715fc}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Membrane\+Channel()}{MembraneChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Membrane\+Channel\+::\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_aedc9eb52da9e7160850f552781df27b6}\label{class_membrane_channel_aedc9eb52da9e7160850f552781df27b6}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Membrane\+Channel()}{MembraneChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Membrane\+Channel\+::\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_ac467743cbdebcdc6a77ad5ea0527e6f0}\label{class_membrane_channel_ac467743cbdebcdc6a77ad5ea0527e6f0}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\index{Membrane\+Channel@{Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Membrane\+Channel()}{MembraneChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Membrane\+Channel\+::\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_membrane}{Membrane} \&}]{membrane\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file membranechannel.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_ac467743cbdebcdc6a77ad5ea0527e6f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a925e7e98530ef9cc94616ea7a4dd0cbd}\label{class_membrane_channel_a925e7e98530ef9cc94616ea7a4dd0cbd}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!````~Membrane\+Channel@{$\sim$\+Membrane\+Channel}}
+\index{````~Membrane\+Channel@{$\sim$\+Membrane\+Channel}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{$\sim$\+Membrane\+Channel()}{~MembraneChannel()}}
+{\footnotesize\ttfamily virtual Membrane\+Channel\+::$\sim$\+Membrane\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 53 of file membranechannel.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_membrane_channel_ae483c6bc45f73390070b824296762d4c}\label{class_membrane_channel_ae483c6bc45f73390070b824296762d4c}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_ae483c6bc45f73390070b824296762d4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a01fb5f3176cfa3423bb10a04bf69da01}\label{class_membrane_channel_a01fb5f3176cfa3423bb10a04bf69da01}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+
+
+Definition at line 138 of file membranechannel.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a01fb5f3176cfa3423bb10a04bf69da01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a01fb5f3176cfa3423bb10a04bf69da01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_af667720bd2214ea3a1e6d272b57d3a79}\label{class_membrane_channel_af667720bd2214ea3a1e6d272b57d3a79}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_af667720bd2214ea3a1e6d272b57d3a79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a6426185a0d73c967adcb72e3a22b48b0}\label{class_membrane_channel_a6426185a0d73c967adcb72e3a22b48b0}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 107 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a6426185a0d73c967adcb72e3a22b48b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a67496ca67ad3ecae38f6b987547b1b99}\label{class_membrane_channel_a67496ca67ad3ecae38f6b987547b1b99}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Compatibility\+Check@{Compatibility\+Check}}
+\index{Compatibility\+Check@{Compatibility\+Check}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Compatibility\+Check()}{CompatibilityCheck()}}
+{\footnotesize\ttfamily bool Membrane\+Channel\+::\+Compatibility\+Check (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{neurotransmitter\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a67496ca67ad3ecae38f6b987547b1b99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_aa8e78a1b0dd7c6b81cac09d33f01e6c2}\label{class_membrane_channel_aa8e78a1b0dd7c6b81cac09d33f01e6c2}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_aa8e78a1b0dd7c6b81cac09d33f01e6c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a24c791e6cfd906d49e0ceb8a24eeb4cb}\label{class_membrane_channel_a24c791e6cfd906d49e0ceb8a24eeb4cb}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file membranechannel.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a24c791e6cfd906d49e0ceb8a24eeb4cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a24c791e6cfd906d49e0ceb8a24eeb4cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a985d8f93077b0f93daa9c311a22917a1}\label{class_membrane_channel_a985d8f93077b0f93daa9c311a22917a1}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 122 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a985d8f93077b0f93daa9c311a22917a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_ad5dfc13b89aff0c7383e052113da1d8f}\label{class_membrane_channel_ad5dfc13b89aff0c7383e052113da1d8f}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_ad5dfc13b89aff0c7383e052113da1d8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_ac856b74d47b28bd8638fce9c0f12dd20}\label{class_membrane_channel_ac856b74d47b28bd8638fce9c0f12dd20}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Membrane\+Channel\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_afde030429a160621a2255ab8a2d689b8}\label{class_membrane_channel_afde030429a160621a2255ab8a2d689b8}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Disabled@{Get\+Disabled}}
+\index{Get\+Disabled@{Get\+Disabled}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Disabled()}{GetDisabled()}}
+{\footnotesize\ttfamily bool Membrane\+Channel\+::\+Get\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a25b542d8156c42ed785eebbea0db21a7}\label{class_membrane_channel_a25b542d8156c42ed785eebbea0db21a7}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Membrane\+Channel\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_af20c4ca6a3708c86122e7118a29952fd}\label{class_membrane_channel_af20c4ca6a3708c86122e7118a29952fd}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Ions@{Get\+Ions}}
+\index{Get\+Ions@{Get\+Ions}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Ions()}{GetIons()}}
+{\footnotesize\ttfamily int Membrane\+Channel\+::\+Get\+Ions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a91ce6506a8e82905de7cd031ed5d63f5}\label{class_membrane_channel_a91ce6506a8e82905de7cd031ed5d63f5}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a91ce6506a8e82905de7cd031ed5d63f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a9fdb20eb7d3f9ebad864d07aaa835716}\label{class_membrane_channel_a9fdb20eb7d3f9ebad864d07aaa835716}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 176 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a9fdb20eb7d3f9ebad864d07aaa835716_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a8eb115e2583e5bf0f37156f1fc974aa6}\label{class_membrane_channel_a8eb115e2583e5bf0f37156f1fc974aa6}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Receptor\+Binding\+State@{Get\+Receptor\+Binding\+State}}
+\index{Get\+Receptor\+Binding\+State@{Get\+Receptor\+Binding\+State}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Receptor\+Binding\+State()}{GetReceptorBindingState()}}
+{\footnotesize\ttfamily bool Membrane\+Channel\+::\+Get\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file membranechannel.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a8eb115e2583e5bf0f37156f1fc974aa6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_aa37056ebb4e757a5ed00252112b516aa}\label{class_membrane_channel_aa37056ebb4e757a5ed00252112b516aa}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Get\+Receptor\+Type@{Get\+Receptor\+Type}}
+\index{Get\+Receptor\+Type@{Get\+Receptor\+Type}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Get\+Receptor\+Type()}{GetReceptorType()}}
+{\footnotesize\ttfamily int Membrane\+Channel\+::\+Get\+Receptor\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a2252f222f4a41bf1975dc856569e0a22}\label{class_membrane_channel_a2252f222f4a41bf1975dc856569e0a22}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Membrane\+Channel\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a2252f222f4a41bf1975dc856569e0a22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a37f22ddd877e3be7b353048149a7bbcd}\label{class_membrane_channel_a37f22ddd877e3be7b353048149a7bbcd}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Membrane\+Channel\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file membranechannel.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a37f22ddd877e3be7b353048149a7bbcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a5982040b46efe5e2b824d1cf4dead25e}\label{class_membrane_channel_a5982040b46efe5e2b824d1cf4dead25e}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Membrane\+Channel\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file membranechannel.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a5982040b46efe5e2b824d1cf4dead25e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a5982040b46efe5e2b824d1cf4dead25e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a61931feff8f3bb485eeb5c80125bb732}\label{class_membrane_channel_a61931feff8f3bb485eeb5c80125bb732}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_membrane_a4bff43b38d7046867f220392a39cc272}{Membrane}.
+
+
+
+Definition at line 67 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_aed2055857888506a35c09bdcc265799a}\label{class_membrane_channel_aed2055857888506a35c09bdcc265799a}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!set\+Disabled@{set\+Disabled}}
+\index{set\+Disabled@{set\+Disabled}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{set\+Disabled()}{setDisabled()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::set\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file membranechannel.\+h.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_aed2055857888506a35c09bdcc265799a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_aaa2d816d3887b6292d995a83130a4834}\label{class_membrane_channel_aaa2d816d3887b6292d995a83130a4834}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a1fe0c61eccbb6aa0d905ead27e8337bd}\label{class_membrane_channel_a1fe0c61eccbb6aa0d905ead27e8337bd}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Set\+Ions@{Set\+Ions}}
+\index{Set\+Ions@{Set\+Ions}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Set\+Ions()}{SetIons()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::\+Set\+Ions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file membranechannel.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a1fe0c61eccbb6aa0d905ead27e8337bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a9f5c69ab1f4dce6113fceebaaa4f15f4}\label{class_membrane_channel_a9f5c69ab1f4dce6113fceebaaa4f15f4}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!set\+Receptor\+Binding\+State@{set\+Receptor\+Binding\+State}}
+\index{set\+Receptor\+Binding\+State@{set\+Receptor\+Binding\+State}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{set\+Receptor\+Binding\+State()}{setReceptorBindingState()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::set\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file membranechannel.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a9f5c69ab1f4dce6113fceebaaa4f15f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a7f40594845bb0aa6a03fd9c08a836d7e}\label{class_membrane_channel_a7f40594845bb0aa6a03fd9c08a836d7e}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!set\+Receptor\+Type@{set\+Receptor\+Type}}
+\index{set\+Receptor\+Type@{set\+Receptor\+Type}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{set\+Receptor\+Type()}{setReceptorType()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::set\+Receptor\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_aabbadec31782704dd497848154dfe0fc}\label{class_membrane_channel_aabbadec31782704dd497848154dfe0fc}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!toggle\+Disabled@{toggle\+Disabled}}
+\index{toggle\+Disabled@{toggle\+Disabled}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{toggle\+Disabled()}{toggleDisabled()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::toggle\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file membranechannel.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_aabbadec31782704dd497848154dfe0fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_membrane_channel_a289ec477e64eec5d2a1f88f4a677650c}\label{class_membrane_channel_a289ec477e64eec5d2a1f88f4a677650c}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!toggle\+Receptor\+Binding\+State@{toggle\+Receptor\+Binding\+State}}
+\index{toggle\+Receptor\+Binding\+State@{toggle\+Receptor\+Binding\+State}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{toggle\+Receptor\+Binding\+State()}{toggleReceptorBindingState()}}
+{\footnotesize\ttfamily void Membrane\+Channel\+::toggle\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 63 of file membranechannel.\+h.
+
+\mbox{\Hypertarget{class_membrane_channel_a34077828eee1c2457212f05217b09d6c}\label{class_membrane_channel_a34077828eee1c2457212f05217b09d6c}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!Update@{Update}}
+\index{Update@{Update}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Membrane\+Channel\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 215 of file membranechannel.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a34077828eee1c2457212f05217b09d6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_membrane_channel_a34077828eee1c2457212f05217b09d6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_membrane_channel_ad603f58813157b33ca81b919cf9c2897}\label{class_membrane_channel_ad603f58813157b33ca81b919cf9c2897}} 
+\index{Membrane\+Channel@{Membrane\+Channel}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Membrane\+Channel@{Membrane\+Channel}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_cognitive_network}{Cognitive\+Network}$\ast$$>$ Membrane\+Channel\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 102 of file membranechannel.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{membranechannel_8h}{membranechannel.\+h}\item 
+Brain\+Harmonics/\hyperlink{membranechannel_8cc}{membranechannel.\+cc}\end{DoxyCompactItemize}

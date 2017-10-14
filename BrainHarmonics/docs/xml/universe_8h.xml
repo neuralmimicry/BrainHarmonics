@@ -1,0 +1,1460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="universe_8h" kind="file" language="C++">
+    <compoundname>universe.h</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="abstraction_8h" local="yes">BrainHarmonics/abstraction.h</includedby>
+    <includedby refid="apptimer_8h" local="yes">BrainHarmonics/apptimer.h</includedby>
+    <includedby refid="dimension_8h" local="yes">BrainHarmonics/dimension.h</includedby>
+    <includedby refid="cognitivenetwork_8h" local="yes">BrainHarmonics/cognitivenetwork.h</includedby>
+    <includedby refid="solid_8h" local="yes">BrainHarmonics/solid.h</includedby>
+    <includedby refid="point_8h" local="yes">BrainHarmonics/point.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="elementaryparticle_8h" local="yes">BrainHarmonics/elementaryparticle.h</includedby>
+    <includedby refid="elementaryforce_8h" local="yes">BrainHarmonics/elementaryforce.h</includedby>
+    <includedby refid="compositeforceparticle_8h" local="yes">BrainHarmonics/compositeforceparticle.h</includedby>
+    <includedby refid="law_8h" local="yes">BrainHarmonics/law.h</includedby>
+    <includedby refid="matter_8h" local="yes">BrainHarmonics/matter.h</includedby>
+    <includedby refid="monomer_8h" local="yes">BrainHarmonics/monomer.h</includedby>
+    <includedby refid="polymer_8h" local="yes">BrainHarmonics/polymer.h</includedby>
+    <includedby refid="line_8h" local="yes">BrainHarmonics/line.h</includedby>
+    <includedby refid="universe_8cc" local="yes">BrainHarmonics/universe.cc</includedby>
+    <incdepgraph>
+      <node id="1787">
+        <label>vector</label>
+      </node>
+      <node id="1783">
+        <label>BrainHarmonics/universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1784" relation="include">
+        </childnode>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+      </node>
+      <node id="1786">
+        <label>math.h</label>
+      </node>
+      <node id="1785">
+        <label>iostream</label>
+      </node>
+      <node id="1784">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1882">
+        <label>BrainHarmonics/mitochondria.cpp</label>
+        <link refid="mitochondria_8cpp"/>
+      </node>
+      <node id="1866">
+        <label>BrainHarmonics/cellmembrane.h</label>
+        <link refid="cellmembrane_8h"/>
+      </node>
+      <node id="1862">
+        <label>BrainHarmonics/law.h</label>
+        <link refid="law_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>BrainHarmonics/elementaryparticle.h</label>
+        <link refid="elementaryparticle_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>BrainHarmonics/combinationmolecules.h</label>
+        <link refid="combinationmolecules_8h"/>
+      </node>
+      <node id="1789">
+        <label>BrainHarmonics/abstraction.h</label>
+        <link refid="abstraction_8h"/>
+        <childnode refid="1790" relation="include">
+        </childnode>
+      </node>
+      <node id="1842">
+        <label>BrainHarmonics/dimension.cc</label>
+        <link refid="dimension_8cc"/>
+      </node>
+      <node id="1879">
+        <label>BrainHarmonics/cytoplasm.cpp</label>
+        <link refid="cytoplasm_8cpp"/>
+      </node>
+      <node id="1880">
+        <label>BrainHarmonics/golgiapparatus.cpp</label>
+        <link refid="golgiapparatus_8cpp"/>
+      </node>
+      <node id="1886">
+        <label>BrainHarmonics/proteins.cpp</label>
+        <link refid="proteins_8cpp"/>
+      </node>
+      <node id="1845">
+        <label>BrainHarmonics/polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1809">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="1798">
+        <label>BrainHarmonics/axonhillock.h</label>
+        <link refid="axonhillock_8h"/>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>BrainHarmonics/monomer.cc</label>
+        <link refid="monomer_8cc"/>
+      </node>
+      <node id="1839">
+        <label>BrainHarmonics/spike.h</label>
+        <link refid="spike_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>BrainHarmonics/synapticvesicle.cc</label>
+        <link refid="synapticvesicle_8cc"/>
+      </node>
+      <node id="1826">
+        <label>BrainHarmonics/orbital.cc</label>
+        <link refid="orbital_8cc"/>
+      </node>
+      <node id="1859">
+        <label>BrainHarmonics/compositeforceparticle.h</label>
+        <link refid="compositeforceparticle_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1795">
+        <label>BrainHarmonics/cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>BrainHarmonics/myelinsheath.h</label>
+        <link refid="myelinsheath_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+      </node>
+      <node id="1844">
+        <label>BrainHarmonics/solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>BrainHarmonics/polygon.h</label>
+        <link refid="polygon_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>BrainHarmonics/point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1825">
+        <label>BrainHarmonics/cognitivenetwork.cc</label>
+        <link refid="cognitivenetwork_8cc"/>
+      </node>
+      <node id="1875">
+        <label>BrainHarmonics/polymer.h</label>
+        <link refid="polymer_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1803">
+        <label>BrainHarmonics/axonbouton.cc</label>
+        <link refid="axonbouton_8cc"/>
+      </node>
+      <node id="1848">
+        <label>BrainHarmonics/quad.cc</label>
+        <link refid="quad_8cc"/>
+      </node>
+      <node id="1861">
+        <label>BrainHarmonics/matter.cc</label>
+        <link refid="matter_8cc"/>
+      </node>
+      <node id="1815">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1883">
+        <label>BrainHarmonics/nucleicacids.cpp</label>
+        <link refid="nucleicacids_8cpp"/>
+      </node>
+      <node id="1832">
+        <label>BrainHarmonics/orbital.h</label>
+        <link refid="orbital_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+      </node>
+      <node id="1835">
+        <label>BrainHarmonics/schwanncell.cc</label>
+        <link refid="schwanncell_8cc"/>
+      </node>
+      <node id="1828">
+        <label>BrainHarmonics/cognitiveinput.h</label>
+        <link refid="cognitiveinput_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>BrainHarmonics/cellmembrane.cpp</label>
+        <link refid="cellmembrane_8cpp"/>
+      </node>
+      <node id="1855">
+        <label>BrainHarmonics/compositeforceparticle.cc</label>
+        <link refid="compositeforceparticle_8cc"/>
+      </node>
+      <node id="1847">
+        <label>BrainHarmonics/quad.h</label>
+        <link refid="quad_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1793">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1808">
+        <label>BrainHarmonics/axonhillock.cc</label>
+        <link refid="axonhillock_8cc"/>
+      </node>
+      <node id="1874">
+        <label>BrainHarmonics/proteins.h</label>
+        <link refid="proteins_8h"/>
+      </node>
+      <node id="1849">
+        <label>BrainHarmonics/polygon.cc</label>
+        <link refid="polygon_8cc"/>
+      </node>
+      <node id="1792">
+        <label>BrainHarmonics/apptimer.cc</label>
+        <link refid="apptimer_8cc"/>
+      </node>
+      <node id="1843">
+        <label>BrainHarmonics/point.cc</label>
+        <link refid="point_8cc"/>
+      </node>
+      <node id="1851">
+        <label>BrainHarmonics/solid.cc</label>
+        <link refid="solid_8cc"/>
+      </node>
+      <node id="1794">
+        <label>BrainHarmonics/dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1799">
+        <label>BrainHarmonics/axon.h</label>
+        <link refid="axon_8h"/>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+      <node id="1827">
+        <label>BrainHarmonics/synapse.h</label>
+        <link refid="synapse_8h"/>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1837">
+        <label>BrainHarmonics/neurotransmitter.h</label>
+        <link refid="neurotransmitter_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+      </node>
+      <node id="1884">
+        <label>BrainHarmonics/nucleus.cpp</label>
+        <link refid="nucleus_8cpp"/>
+      </node>
+      <node id="1820">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="1878">
+        <label>BrainHarmonics/combinationmolecules.cpp</label>
+        <link refid="combinationmolecules_8cpp"/>
+      </node>
+      <node id="1868">
+        <label>BrainHarmonics/cytoplasm.h</label>
+        <link refid="cytoplasm_8h"/>
+      </node>
+      <node id="1830">
+        <label>BrainHarmonics/cognitiveoutput.h</label>
+        <link refid="cognitiveoutput_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>BrainHarmonics/membranechannel.cc</label>
+        <link refid="membranechannel_8cc"/>
+      </node>
+      <node id="1819">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="1807">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+      <node id="1876">
+        <label>BrainHarmonics/carbohydrates.cpp</label>
+        <link refid="carbohydrates_8cpp"/>
+      </node>
+      <node id="1857">
+        <label>BrainHarmonics/elementaryparticle.cc</label>
+        <link refid="elementaryparticle_8cc"/>
+      </node>
+      <node id="1817">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1800">
+        <label>BrainHarmonics/axon.cc</label>
+        <link refid="axon_8cc"/>
+      </node>
+      <node id="1814">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1833">
+        <label>BrainHarmonics/interneuronspace.h</label>
+        <link refid="interneuronspace_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>BrainHarmonics/universe.cc</label>
+        <link refid="universe_8cc"/>
+      </node>
+      <node id="1885">
+        <label>BrainHarmonics/polymer.cc</label>
+        <link refid="polymer_8cc"/>
+      </node>
+      <node id="1816">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1788">
+        <label>BrainHarmonics/universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1789" relation="include">
+        </childnode>
+        <childnode refid="1791" relation="include">
+        </childnode>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1871">
+        <label>BrainHarmonics/mitochondria.h</label>
+        <link refid="mitochondria_8h"/>
+      </node>
+      <node id="1869">
+        <label>BrainHarmonics/golgiapparatus.h</label>
+        <link refid="golgiapparatus_8h"/>
+      </node>
+      <node id="1865">
+        <label>BrainHarmonics/carbohydrates.h</label>
+        <link refid="carbohydrates_8h"/>
+      </node>
+      <node id="1821">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>BrainHarmonics/matter.h</label>
+        <link refid="matter_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1856">
+        <label>BrainHarmonics/elementaryforce.cc</label>
+        <link refid="elementaryforce_8cc"/>
+      </node>
+      <node id="1873">
+        <label>BrainHarmonics/nucleus.h</label>
+        <link refid="nucleus_8h"/>
+      </node>
+      <node id="1810">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+      </node>
+      <node id="1811">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+      </node>
+      <node id="1801">
+        <label>BrainHarmonics/axonbranch.h</label>
+        <link refid="axonbranch_8h"/>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+      </node>
+      <node id="1790">
+        <label>BrainHarmonics/abstraction.cc</label>
+        <link refid="abstraction_8cc"/>
+      </node>
+      <node id="1813">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1796">
+        <label>BrainHarmonics/neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1870">
+        <label>BrainHarmonics/lipids.h</label>
+        <link refid="lipids_8h"/>
+      </node>
+      <node id="1797">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+      </node>
+      <node id="1834">
+        <label>BrainHarmonics/schwanncell.h</label>
+        <link refid="schwanncell_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+      </node>
+      <node id="1806">
+        <label>BrainHarmonics/axonbranch.cc</label>
+        <link refid="axonbranch_8cc"/>
+      </node>
+      <node id="1831">
+        <label>BrainHarmonics/cognitiveoutput.cc</label>
+        <link refid="cognitiveoutput_8cc"/>
+      </node>
+      <node id="1872">
+        <label>BrainHarmonics/nucleicacids.h</label>
+        <link refid="nucleicacids_8h"/>
+      </node>
+      <node id="1802">
+        <label>BrainHarmonics/axonbouton.h</label>
+        <link refid="axonbouton_8h"/>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>BrainHarmonics/spike.cc</label>
+        <link refid="spike_8cc"/>
+      </node>
+      <node id="1881">
+        <label>BrainHarmonics/lipids.cpp</label>
+        <link refid="lipids_8cpp"/>
+      </node>
+      <node id="1804">
+        <label>BrainHarmonics/synapticvesicle.h</label>
+        <link refid="synapticvesicle_8h"/>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+      </node>
+      <node id="1858">
+        <label>BrainHarmonics/elementaryforce.h</label>
+        <link refid="elementaryforce_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>BrainHarmonics/cognitiveinput.cc</label>
+        <link refid="cognitiveinput_8cc"/>
+      </node>
+      <node id="1887">
+        <label>BrainHarmonics/line.h</label>
+        <link refid="line_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>BrainHarmonics/line.cc</label>
+        <link refid="line_8cc"/>
+      </node>
+      <node id="1823">
+        <label>BrainHarmonics/membrane.cc</label>
+        <link refid="membrane_8cc"/>
+      </node>
+      <node id="1838">
+        <label>BrainHarmonics/neurotransmitter.cc</label>
+        <link refid="neurotransmitter_8cc"/>
+      </node>
+      <node id="1818">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+      <node id="1850">
+        <label>BrainHarmonics/polyhedron.cc</label>
+        <link refid="polyhedron_8cc"/>
+      </node>
+      <node id="1860">
+        <label>BrainHarmonics/law.cc</label>
+        <link refid="law_8cc"/>
+      </node>
+      <node id="1864">
+        <label>BrainHarmonics/monomer.h</label>
+        <link refid="monomer_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1822">
+        <label>BrainHarmonics/membranechannel.h</label>
+        <link refid="membranechannel_8h"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1791">
+        <label>BrainHarmonics/apptimer.h</label>
+        <link refid="apptimer_8h"/>
+        <childnode refid="1792" relation="include">
+        </childnode>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_universe" prot="public">Universe</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="universe_8h_1af7e8592d0a634bd3642e9fd508ea8022" prot="public" static="no">
+        <name>DEG2RAD</name>
+        <initializer>0.01745329252f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avoids having to recalculate a constant PI/180 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="19" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1ac5a945020d3528355cda82d383676736" prot="public" static="no">
+        <name>RAD2DEG</name>
+        <initializer>57.29577951f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avoids having to recalculate a constant 180/PI </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="23" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a96b841da40c6e1433363c795f4d67ac3" prot="public" static="no">
+        <name>ONERAD</name>
+        <initializer>3.14159265f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avoids having to recalculate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="27" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a5abfe2e697fbc57169f4285aad22ea6c" prot="public" static="no">
+        <name>TWORAD</name>
+        <initializer>6.28318530f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Avoids having to recalculate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="31" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a25adbb97ffa9d069c11f142f99b01fe1" prot="public" static="no">
+        <name>TYPE_NEURON_GEN1</name>
+        <initializer>1000000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="37" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a3c6e5911dcec70a042fb3f5040090bdb" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_GEN1</name>
+        <initializer>1100000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="38" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1af01e6a08d02b5ef0e585f464dd6c18b4" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_MEMBRANE_GEN1</name>
+        <initializer>1110000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="39" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1ac14d822125dcc246f9e6af61152f7bdc" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_GEN1</name>
+        <initializer>1120000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="40" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a77cdb28142a3edbd9d92cf17482e84a9" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1</name>
+        <initializer>1121000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="41" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1ab68c01ca1b738452c0161cb1028a3858" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_GEN1</name>
+        <initializer>1122000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="42" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a5440abb684a534df879f19e292e2b8bf" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_GEN1</name>
+        <initializer>1122100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="43" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a048c713185f5a69756b77216f02419d8" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1</name>
+        <initializer>1122110000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="44" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a6f4a7b2ac0d820de4bcaa5221cae4ab2" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_GEN1</name>
+        <initializer>1121100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="45" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a6cf688b98e2bf745783c999b0fb9962f" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1</name>
+        <initializer>1121110000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="46" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1ae9b0989d51798e295a0109ab57bcc257" prot="public" static="no">
+        <name>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1</name>
+        <initializer>1121111000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="47" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1af195d08bd4333e3ed6abac93c1620318" prot="public" static="no">
+        <name>TYPE_SOLID_NEURON_GEN1</name>
+        <initializer>2100000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="48" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1ac03a57fb203395d1e046d5052c757141" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_GEN1</name>
+        <initializer>2110000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="49" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1aca407afbe257ceb6caf54c2cc39229e7" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1</name>
+        <initializer>2120000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="50" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a0d5cd790716d1479d3a0ea0dd0049dcb" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1</name>
+        <initializer>2111000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="51" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1add8b0e8ffe44dd6143388d9c9e4d743c" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1</name>
+        <initializer>2111100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="52" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a462cce704efb80bde68c7d7404f7c0f4" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1</name>
+        <initializer>2111110000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="53" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a1b6223499f2de31ef85d8787c9cbd529" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1</name>
+        <initializer>2111111000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="54" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a90f14c98fce41d2cb95499162787c9de" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_GEN1</name>
+        <initializer>2112000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="55" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a01f964c7ca05fa3f7f5a7b430761ca99" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1</name>
+        <initializer>2112100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="56" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="universe_8h_1a76028f4d66e31c7b51113514a7713edc" prot="public" static="no">
+        <name>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1</name>
+        <initializer>2112110000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="57" column="9" bodyfile="BrainHarmonics/universe.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" prot="public" static="no">
+        <type>std::chrono::high_resolution_clock</type>
+        <definition>typedef std::chrono::high_resolution_clock Clock</definition>
+        <argsstring></argsstring>
+        <name>Clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BrainHarmonics/universe.h" line="64" column="1" bodyfile="BrainHarmonics/universe.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/>universe.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@details<sp/><sp/><sp/>Base<sp/>class<sp/>of<sp/>all<sp/>operations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@author<sp/><sp/><sp/><sp/>Paul<sp/>Isaac&apos;s<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@date<sp/><sp/><sp/><sp/><sp/><sp/>16.02.2016<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Code<sp/>snippets<sp/>used:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Syntax<sp/>comparison<sp/>-<sp/>http://stackoverflow.com<sp/>&amp;<sp/>http://cplusplus.com<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>class<sp/>defines<sp/>a<sp/>base<sp/>and<sp/>the<sp/>operations<sp/>that<sp/>can<sp/>be<sp/>carried<sp/>out<sp/>on<sp/>it.<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Using<sp/>the<sp/>hierarchical<sp/>linking<sp/>the<sp/>aim<sp/>is<sp/>to<sp/>develop<sp/>the<sp/>application<sp/>to<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>relate<sp/>to<sp/>real-world<sp/>physics<sp/>and<sp/>physical<sp/>electronic<sp/>circuits.<sp/>This<sp/>will<sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>then<sp/>ease<sp/>mapping<sp/>between<sp/>simulation,<sp/>emulation<sp/>and<sp/>real-world<sp/>universes.<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handy<sp/>conversions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEG2RAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="universe_8h_1af7e8592d0a634bd3642e9fd508ea8022" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEG2RAD<sp/>0.01745329252f<sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#endif<sp/>//<sp/>DEG2RAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RAD2DEG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="universe_8h_1ac5a945020d3528355cda82d383676736" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAD2DEG<sp/>57.29577951f<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#endif<sp/>//<sp/>RAD2DEG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ONERAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="universe_8h_1a96b841da40c6e1433363c795f4d67ac3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ONERAD<sp/>3.14159265f<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#endif<sp/>//<sp/>ONERAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TWORAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="universe_8h_1a5abfe2e697fbc57169f4285aad22ea6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWORAD<sp/>6.28318530f<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#endif<sp/>//<sp/>TWORAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_UNIVERSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_UNIVERSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="universe_8h_1a25adbb97ffa9d069c11f142f99b01fe1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="universe_8h_1a3c6e5911dcec70a042fb3f5040090bdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1100000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="universe_8h_1af01e6a08d02b5ef0e585f464dd6c18b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_MEMBRANE_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1110000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="universe_8h_1ac14d822125dcc246f9e6af61152f7bdc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1120000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="universe_8h_1a77cdb28142a3edbd9d92cf17482e84a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1121000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="universe_8h_1ab68c01ca1b738452c0161cb1028a3858" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1122000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="universe_8h_1a5440abb684a534df879f19e292e2b8bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1122100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="universe_8h_1a048c713185f5a69756b77216f02419d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1<sp/><sp/><sp/><sp/><sp/>1122110000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="universe_8h_1a6f4a7b2ac0d820de4bcaa5221cae4ab2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1121100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="universe_8h_1a6cf688b98e2bf745783c999b0fb9962f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1121110000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="universe_8h_1ae9b0989d51798e295a0109ab57bcc257" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1<sp/><sp/><sp/><sp/>1121111000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="universe_8h_1af195d08bd4333e3ed6abac93c1620318" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_NEURON_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2100000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="universe_8h_1ac03a57fb203395d1e046d5052c757141" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2110000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="universe_8h_1aca407afbe257ceb6caf54c2cc39229e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2120000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="universe_8h_1a0d5cd790716d1479d3a0ea0dd0049dcb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2111000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="universe_8h_1add8b0e8ffe44dd6143388d9c9e4d743c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2111100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="universe_8h_1a462cce704efb80bde68c7d7404f7c0f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2111110000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="universe_8h_1a1b6223499f2de31ef85d8787c9cbd529" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1<sp/><sp/><sp/><sp/>2111111000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="universe_8h_1a90f14c98fce41d2cb95499162787c9de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2112000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="universe_8h_1a01f964c7ca05fa3f7f5a7b430761ca99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2112100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="universe_8h_1a76028f4d66e31c7b51113514a7713edc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1<sp/><sp/><sp/><sp/><sp/>2112110000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sqrt<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::chrono::high_resolution_clock<sp/><ref refid="universe_8h_1a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80" kindref="member">Clock</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_dimension" kindref="compound">Dimension</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_universe" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_universe" kindref="compound">Universe</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="class_dimension" kindref="compound">Dimension</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Specifies<sp/>members<sp/>that<sp/>are<sp/>visible<sp/>to<sp/>the<sp/>member<sp/>functions<sp/>of<sp/>the<sp/>class,<sp/>class<sp/>instances,<sp/>member<sp/>functions<sp/>of<sp/>descendent<sp/>classes,<sp/>and<sp/>their<sp/>instances.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>default<sp/>object<sp/>type<sp/>if<sp/>no<sp/>parameter<sp/>given</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a4d137a146dd3c2514dfb692dfbab6984" kindref="member">Universe</ref>()<sp/>:<sp/><ref refid="class_universe" kindref="compound">Universe</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a1210ce56049f1fc67f53aeda223bb82b" kindref="member">Universe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interim_object_type)<sp/>:<sp/><ref refid="class_universe" kindref="compound">Universe</ref>(<ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now(),<sp/>interim_object_type)<sp/>{}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Correct<sp/>objects<sp/>have<sp/>timestamps<sp/>and<sp/>type<sp/>assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a03af7455263d3028b55ca5dc93ebb6ba" kindref="member">Universe</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>universe_type=object_type;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>notification<sp/>of<sp/>creation<sp/>of<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(event_time,<sp/></highlight><highlight class="stringliteral">&quot;Universe&quot;</highlight><highlight class="normal">,<sp/>universe_type);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>As<sp/>the<sp/>new<sp/>object<sp/>is<sp/>constructed<sp/>ensure<sp/>all<sp/>variables<sp/>are<sp/>initialised</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a1d92b2277564577571c802f6e0c206dd" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ad4d90f6f2727992762c6b409d3d3d228" kindref="member">~Universe</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" kindref="member">point_list</ref>.clear();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" kindref="member">solid_list</ref>.clear();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" kindref="member">matter_list</ref>.clear();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" kindref="member">composite_forceparticle_list</ref>.clear();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" kindref="member">elementary_force_list</ref>.clear();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" kindref="member">elementary_particle_list</ref>.clear();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" kindref="member">polymer_list</ref>.clear();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" kindref="member">monomer_list</ref>.clear();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" kindref="member">cognitive_network_list</ref>.clear();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" kindref="member">dimension_list</ref>.clear();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>object<sp/>has<sp/>finite<sp/>energy<sp/>that<sp/>can<sp/>be<sp/>redistributed<sp/>to<sp/>child<sp/>objects<sp/>to<sp/>control<sp/>information<sp/>flow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a3b25e7ce6552991b7d5e6a9eb6e8a7ff" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>new<sp/>maximum<sp/>energy<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a868250e67d0fcb2483aa8bdd73c40a02" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>energy_transfer);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transfer<sp/>an<sp/>energy<sp/>sum<sp/>to<sp/>another<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a63e878aaf03f1800b255e9a089a72a8b" kindref="member">UseEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>energy_transfer);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transfer<sp/>an<sp/>energy<sp/>sum<sp/>from<sp/>another<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" kindref="member">ReturnEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>energy_transfer);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Announce<sp/>an<sp/>object<sp/>has<sp/>been<sp/>created</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::string<sp/>object_title,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a2274a54fbdc7504c897e4272162bf17a" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialise<sp/>object<sp/>member<sp/>variables<sp/>to<sp/>default<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a1d92b2277564577571c802f6e0c206dd" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Whilst<sp/>the<sp/>design<sp/>of<sp/>functions<sp/>is<sp/>to<sp/>be<sp/>asynchronous<sp/>it<sp/>helps<sp/>for<sp/>monitoring<sp/>to<sp/>have<sp/>reference<sp/>clocks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/><ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simulated<sp/>time<sp/>can<sp/>be<sp/>speeded<sp/>up<sp/>or<sp/>slowed<sp/>down.<sp/>This<sp/>function<sp/>calculates<sp/>the<sp/>simulated<sp/>time.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/><ref refid="class_universe_1aa220508c4cc12b02c6fe494622ebb58d" kindref="member">TheCalculatedTimeNow</ref>(std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/>time_object_created_time,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calculated_scaled_time);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>length<sp/>of<sp/>time<sp/>that<sp/>this<sp/>object<sp/>should<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" kindref="member">SetLifespan</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::chrono::nanoseconds<sp/>life_time);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Extend<sp/>the<sp/>lifetime<sp/>of<sp/>this<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a982502e46868a00a9111738ccc9355c2" kindref="member">ExtendLife</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::chrono::nanoseconds<sp/>life_time);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Has<sp/>lifespan<sp/>expired?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a8fdaa6d06584e1ef50c4c613b22b786e" kindref="member">IsDead</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Manipulate<sp/>objects<sp/>that<sp/>are<sp/>direct<sp/>children<sp/>of<sp/>this<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Future<sp/>scope<sp/>to<sp/>add<sp/>groupings<sp/>of<sp/>derived<sp/>objects<sp/>and<sp/>hierarchy<sp/>of<sp/>derived<sp/>objects<sp/>for<sp/>cross-communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a03bdf5f7fea4209241e9bf5316d45517" kindref="member">AddDimensions</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a6326158c47bf3f7fe9297299a9b5b7b7" kindref="member">AddDimension</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a1869fc7bf43827378bab5a701f7f917a" kindref="member">GetDimensions</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1ab79a380dee684c6dc304b571f4d28645" kindref="member">GetDimension</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a857cf7f208cd11c80736e82fa523feb5" kindref="member">AddElementaryParticles</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1ab9c84e0576de50aa4fa46655832ce5e4" kindref="member">AddElementaryParticle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a168fd9bf7602adcba1de5dd93a212775" kindref="member">GetElementaryParticles</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1acef54e17666d17078c522388f8f6e4f9" kindref="member">GetElementaryParticle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a81d294300346e9f901836ab609cce942" kindref="member">AddElementaryForces</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a90c573dec55f2b3ad5680015356f5f25" kindref="member">AddElementaryForce</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a6a8ed579b2eedd3aceebda9f3d78aa0e" kindref="member">GetElementaryForces</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a9506017d944cb64e67567477c1505a53" kindref="member">GetElementaryForce</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a23d74e377203fca7cb74e0ffee7244b6" kindref="member">AddCompositeForceParticles</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1ab2671c2218c98f0f1f487c5b3bb96e3c" kindref="member">AddCompositeForceParticle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aed37d7224b4e31bdfb0632e39bf19694" kindref="member">GetCompositeForceParticles</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a3e2acc1d75765a6e8e852fca919c5b96" kindref="member">GetCompositeForceParticle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1ae00d10b2a23c9cedf1ff89e9da875563" kindref="member">AddMatters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a090d9ad1b88d81364e872e17d65edca4" kindref="member">AddMatter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a4307a62e183fed8cf2b92be0f6014688" kindref="member">GetMatters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a69de663cf2e32e65ed28c44ae666db3a" kindref="member">GetMatter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a95fe7f99971bb2048121a7c4e87b9f79" kindref="member">AddMonomers</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a062a9472f0400e566ecc7dc056d989d9" kindref="member">AddMonomer</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aca82a914e0f8bd7cd1ec80a7220f0a0e" kindref="member">GetMonomers</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1aaa03fb8178d790afd992dd094bb64b47" kindref="member">GetMonomer</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aed7cb25507d516a2821ebb69d5345c54" kindref="member">AddPolymers</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a4ea0af5d2eb7b5070a83f7da29526fbd" kindref="member">AddPolymer</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aac5d1c1a3a3ba56c8ca7115a85b2c239" kindref="member">GetPolymers</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a2d5d3924a7d7ffd2a5f47be9f137d86e" kindref="member">GetPolymer</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a410d5ba2224fe90584b1f1aa5b38b41c" kindref="member">AddSolids</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a598799e2fcdf9ed60e83e9f5a61bfc05" kindref="member">AddSolid</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a669fc068dd7820a5af309bfbe67199aa" kindref="member">GetSolids</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a9f7b74fc21d45ddaa78aa18e9a337bcd" kindref="member">GetSolid</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a5199f6c27b1a97c8b8c9847b8be686cf" kindref="member">AddCognitiveNetworks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1ab682307c963836cd81b35b5604bd7064" kindref="member">AddCognitiveNetwork</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a06968a24194280a43f077c5b77379ea8" kindref="member">GetCognitiveNetworks</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a1ea2b7e438bfdc7dd599aa59c310b126" kindref="member">GetCognitiveNetwork</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aa48ced2078ba863723050d8283b3fa67" kindref="member">AddPoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" kindref="member">AddPoint</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a765c6c658b7a465cd92418690db846ae" kindref="member">GetPoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><sp/><ref refid="class_universe_1a3774f14a13a55827a1a4eea0a404edcb" kindref="member">GetPoint</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a0d79e614e1af951c06b78cb5768f9c8e" kindref="member">UpdateCycle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Universe*&gt;<sp/>set_of_update_pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointer_type);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a64ee5a2c7e86c56fa426acb750438ce9" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>virtual<sp/>functions<sp/>that<sp/>are<sp/>made<sp/>available<sp/>to<sp/>all<sp/>derived<sp/>objects<sp/>of<sp/>the<sp/>tree<sp/>from<sp/>another<sp/>branch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>=<sp/>0;<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>virtual<sp/>function<sp/>means<sp/>that<sp/>the<sp/>function<sp/>Must<sp/>be<sp/>defined<sp/>at<sp/>least<sp/>once<sp/>in<sp/>a<sp/>derived<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a901e16db5e8af258c66af7ac75662fe0" kindref="member">AddTemporalAdjustment</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*point_to_counter,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pool,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interval,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>shape);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" kindref="member">AdjustCounters</ref>(std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/>currentTime);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a3b3da7c86a7b75e5e5c0b7972ac82a87" kindref="member">SetCharge</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ae2ae1c3b3e4cde2c18f5f6a814761ec8" kindref="member">SetSpin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ab0404e774ee0ed66b597ff5b8e989446" kindref="member">GetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a4476b7e0a3fc1764909f556257fd9ec7" kindref="member">GetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a645299738e6b798a037f2a15a2e7cf4d" kindref="member">GetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a63b850ef3f3394313353109d222bf5d1" kindref="member">GetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a9f099605c082e7fa755787a6a8cab7ba" kindref="member">GetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1acb453ce71da418c5b5617fecede9571b" kindref="member">GetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ab44daccba01ee7e3cf9b50bba83dd19e" kindref="member">GetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1af0f4b81950061e63c2855eb40957a5b1" kindref="member">GetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a76c0b5e63c2a7d1988c44db341c3d64c" kindref="member">ApplyGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a6d1226b3adec3c42a833afdbb6a65a92" kindref="member">ApplyWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e" kindref="member">ApplyWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a1f787da78fa196ba635db21a9e91dabb" kindref="member">ApplyElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a4c36c1ab30db993307f88363dde5e8c5" kindref="member">ApplyElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a906a88b37f10bfa630bef49dfd0e907a" kindref="member">ApplyStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a62789bcff84bd750b0366004381e2fdd" kindref="member">ApplyStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1af7becebb347be9a85541d96a3eca1ca7" kindref="member">ApplyStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1aa22202ae740eb1355529afcb13285e91" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ae0cb8d86b2fbb8396d605160344b42f5" kindref="member">SetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a0f5cd04081b41ee931c0557dc397f6fb" kindref="member">SetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a2d3d642bfdc863248e93535832fa4b00" kindref="member">SetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1aa981fc7e252b1fbbb675f0371860954d" kindref="member">SetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a608aa95698380f791a0ffba45cc1bee3" kindref="member">SetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a5946c8f3d4cda305f3ecd10df21a2f94" kindref="member">SetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1aafec97a231126b71c73ac1258609a284" kindref="member">SetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a1b2d6197ddf3d613cc30bd04d22ed8b7" kindref="member">SetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a0c485c504542409cbb5cfd8543c35b11" kindref="member">PollElementaryForce</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>virtual<sp/>void<sp/>SetPointPosition(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;double&gt;<sp/>val);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>virtual<sp/>std::vector&lt;double&gt;<sp/>GetPointPosition(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>virtual<sp/>int<sp/>GetCharge(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" kindref="member">object_energy</ref>;</highlight></codeline>
+<codeline lineno="282" refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" kindref="member">object_energy_threshold</ref>;</highlight></codeline>
+<codeline lineno="283" refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" kindref="member">object_size</ref>;</highlight></codeline>
+<codeline lineno="284" refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe" kindref="compound">Universe</ref>*<sp/><ref refid="class_universe_1a3ce4365c727cb6eb5b650146a4188b9b" kindref="member">time_dimension_pointer</ref>;<sp/></highlight><highlight class="comment">//<sp/>Pointer<sp/>to<sp/>dimension<sp/>related<sp/>to<sp/>time<sp/>for<sp/>this<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>the<sp/>member<sp/>functions<sp/>of<sp/>the<sp/>class<sp/>and<sp/>its<sp/>descendent<sp/>classes<sp/>can<sp/>access<sp/>protected<sp/>members.<sp/>The<sp/>class<sp/>instances<sp/>are<sp/>denied<sp/>access<sp/>to<sp/>protected<sp/>members.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vectors<sp/>of<sp/>child<sp/>objects<sp/>to<sp/>enable<sp/>calling<sp/>and<sp/>connecting<sp/>objects<sp/>and<sp/>functions<sp/>of<sp/>different<sp/>branches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" kindref="member">cognitive_network_list</ref>;</highlight></codeline>
+<codeline lineno="292" refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" kindref="member">composite_forceparticle_list</ref>;</highlight></codeline>
+<codeline lineno="293" refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" kindref="member">dimension_list</ref>;</highlight></codeline>
+<codeline lineno="294" refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a015b19f6d5ad84ebaa9e3e7c8352389c" kindref="member">elementary_force_list</ref>;</highlight></codeline>
+<codeline lineno="295" refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1aeb2e63cf49f0b5595e6c15109863bd3b" kindref="member">elementary_particle_list</ref>;</highlight></codeline>
+<codeline lineno="296" refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a409650bc0425fc22c7713487a2a6dd8e" kindref="member">matter_list</ref>;</highlight></codeline>
+<codeline lineno="297" refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a3d55ba29f95a9793b69c01f7942eca9f" kindref="member">monomer_list</ref>;</highlight></codeline>
+<codeline lineno="298" refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a4d898757f2d67ca5ab5d504388d6199a" kindref="member">polymer_list</ref>;</highlight></codeline>
+<codeline lineno="299" refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a747f9d3cf0b2caada4461cb7b12ea17b" kindref="member">solid_list</ref>;</highlight></codeline>
+<codeline lineno="300" refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Universe*&gt;<sp/><ref refid="class_universe_1a9dc8abd2f8f84318722184f38e1b8cc7" kindref="member">point_list</ref>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>the<sp/>member<sp/>functions<sp/>of<sp/>the<sp/>class<sp/>can<sp/>access<sp/>the<sp/>private<sp/>members.<sp/>The<sp/>class<sp/>instances<sp/>are<sp/>denied<sp/>access<sp/>to<sp/>private<sp/>members.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>default_object_type;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_subject_one<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_subject_two<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>universe_type;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>universe_energy;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaled_time;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>object_expiration;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/>object_lifespan;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="316"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_UNIVERSE_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/universe.h"/>
+  </compounddef>
+</doxygen>

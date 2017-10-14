@@ -1,0 +1,215 @@
+.TH "AxonHillock" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AxonHillock
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <axonhillock\&.h>\fP
+.PP
+Inherits \fBSoma\fP\&.
+.PP
+Inherited by \fBAxon\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAxonHillock\fP ()"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP &soma_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~AxonHillock\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBCreateAxon\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBCreateAxons\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBCloneAxon\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP *clone_object, double perfection_membership)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBCloneAxons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> cloning_list, double perfection_membership)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBDestroyAxon\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP *destroy_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBDestroyAxons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> destruction_list)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBAddAxon\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP *add_object)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBAddAxons\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> add_objects)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBRemoveAxon\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBRemoveAxons\fP (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+.br
+.ti -1c
+.RI "\fBAxonHillock\fP * \fBGetAxon\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+.br
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBGetAxons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBGrowth\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBAxonHillock\fP * > \fBaxon_list\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 15 of file axonhillock\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AxonHillock::AxonHillock ()\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file axonhillock\&.h\&.
+.SS "AxonHillock::AxonHillock (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 20 of file axonhillock\&.h\&.
+.SS "AxonHillock::AxonHillock (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 22 of file axonhillock\&.h\&.
+.SS "AxonHillock::AxonHillock (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBSoma\fP & soma_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file axonhillock\&.h\&.
+.SS "virtual AxonHillock::~AxonHillock ()\fC [inline]\fP, \fC [virtual]\fP"
+Default destructor 
+.PP
+Definition at line 37 of file axonhillock\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBAxonHillock\fP * AxonHillock::AddAxon (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP * add_object)"
+
+.PP
+Definition at line 121 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::AddAxons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> add_objects)"
+
+.PP
+Definition at line 132 of file axonhillock\&.cc\&.
+.SS "\fBAxonHillock\fP * AxonHillock::CloneAxon (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP * clone_object, double perfection_membership)"
+
+.PP
+Definition at line 106 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::CloneAxons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> cloning_list, double perfection_membership)"
+
+.PP
+Definition at line 101 of file axonhillock\&.cc\&.
+.SS "\fBAxonHillock\fP * AxonHillock::CreateAxon (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 68 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::CreateAxons (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 79 of file axonhillock\&.cc\&.
+.SS "\fBAxonHillock\fP * AxonHillock::DestroyAxon (std::chrono::time_point< \fBClock\fP > event_time, \fBAxonHillock\fP * destroy_object)"
+
+.PP
+Definition at line 116 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::DestroyAxons (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBAxonHillock\fP *> destruction_list)"
+
+.PP
+Definition at line 111 of file axonhillock\&.cc\&.
+.SS "\fBAxonHillock\fP * AxonHillock::GetAxon (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
+
+.PP
+Definition at line 165 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::GetAxons (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 170 of file axonhillock\&.cc\&.
+.SS "unsigned int AxonHillock::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 39 of file axonhillock\&.h\&.
+.SS "double AxonHillock::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file axonhillock\&.h\&.
+.SS "int AxonHillock::Growth (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 176 of file axonhillock\&.cc\&.
+.SS "\fBAxonHillock\fP * AxonHillock::RemoveAxon (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 154 of file axonhillock\&.cc\&.
+.SS "std::vector< \fBAxonHillock\fP * > AxonHillock::RemoveAxons (std::chrono::time_point< \fBClock\fP > event_time, int quantity)"
+
+.PP
+Definition at line 160 of file axonhillock\&.cc\&.
+.SS "bool AxonHillock::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 20 of file axonhillock\&.cc\&.
+.SS "void AxonHillock::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Reimplemented in \fBSynapticVesicle\fP\&.
+.PP
+Definition at line 41 of file axonhillock\&.h\&.
+.SS "void AxonHillock::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file axonhillock\&.h\&.
+.SS "int AxonHillock::Update (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 197 of file axonhillock\&.cc\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBAxonHillock\fP*> AxonHillock::axon_list\fC [protected]\fP"
+
+.PP
+Definition at line 75 of file axonhillock\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

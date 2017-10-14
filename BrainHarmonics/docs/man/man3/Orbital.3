@@ -1,0 +1,219 @@
+.TH "Orbital" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Orbital
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <orbital\&.h>\fP
+.PP
+Inherits \fBCognitiveNetwork\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOrbital\fP ()"
+.br
+.ti -1c
+.RI "\fBOrbital\fP (unsigned int object_type)"
+.br
+.ti -1c
+.RI "\fBOrbital\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "\fBOrbital\fP (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP &cognitivenetwork_connector)"
+.br
+.ti -1c
+.RI "virtual \fB~Orbital\fP ()"
+.br
+.ti -1c
+.RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetPosition\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetPhase\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "double \fBGetTau\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBSetPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetPhase\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetTau\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.br
+.ti -1c
+.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.br
+.ti -1c
+.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.br
+.ti -1c
+.RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddToNeuronList\fP (\fBCognitiveNetwork\fP *neuron_pointer)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBAddNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> list_to_add)"
+.br
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.ti -1c
+.RI "void \fBCalcPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
+.br
+.ti -1c
+.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.br
+.ti -1c
+.RI "virtual int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< \fBCognitiveNetwork\fP * > \fBneuron_list\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBNeuron\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+< For Sine, Cosine, Power, Fabs & Sqrt functions 
+.PP
+Definition at line 20 of file orbital\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Orbital::Orbital ()\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file orbital\&.h\&.
+.SS "Orbital::Orbital (unsigned int object_type)\fC [inline]\fP"
+
+.PP
+Definition at line 26 of file orbital\&.h\&.
+.SS "Orbital::Orbital (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file orbital\&.h\&.
+.SS "Orbital::Orbital (unsigned int object_type, std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP & cognitivenetwork_connector)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file orbital\&.h\&.
+.SS "virtual Orbital::~Orbital ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 42 of file orbital\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector< \fBCognitiveNetwork\fP * > Orbital::AddNeuron (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> list_to_add)"
+
+.PP
+Definition at line 81 of file orbital\&.cc\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Orbital::AddToNeuronList (\fBCognitiveNetwork\fP * neuron_pointer)"
+
+.PP
+Definition at line 76 of file orbital\&.cc\&.
+.SS "void Orbital::CalcPosition (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
+
+.PP
+Definition at line 96 of file orbital\&.cc\&.
+.SS "unsigned int Orbital::GetCounter (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file orbital\&.h\&.
+.SS "double Orbital::GetEnergy (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 45 of file orbital\&.h\&.
+.SS "std::vector< \fBCognitiveNetwork\fP * > Orbital::GetNeurons (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 91 of file orbital\&.cc\&.
+.SS "double Orbital::GetPhase (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 47 of file orbital\&.h\&.
+.SS "double Orbital::GetPosition (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file orbital\&.h\&.
+.SS "double Orbital::GetTau (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file orbital\&.h\&.
+.SS "bool Orbital::ResetParameters (std::chrono::time_point< \fBClock\fP > event_time)"
+
+.PP
+Definition at line 26 of file orbital\&.cc\&.
+.SS "void Orbital::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBUniverse\fP\&.
+.PP
+Definition at line 53 of file orbital\&.h\&.
+.SS "void Orbital::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file orbital\&.h\&.
+.SS "void Orbital::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+
+.PP
+Definition at line 20 of file orbital\&.cc\&.
+.SS "void Orbital::SetPhase (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 51 of file orbital\&.h\&.
+.SS "void Orbital::SetPosition (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file orbital\&.h\&.
+.SS "void Orbital::SetTau (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file orbital\&.h\&.
+.SS "int Orbital::Update (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+
+.PP
+Definition at line 137 of file orbital\&.cc\&.
+.SS "void Orbital::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+
+.PP
+Definition at line 119 of file orbital\&.cc\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBNeuron\fP\fC [friend]\fP"
+
+.PP
+Definition at line 22 of file orbital\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBCognitiveNetwork\fP*> Orbital::neuron_list\fC [protected]\fP"
+
+.PP
+Definition at line 71 of file orbital\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

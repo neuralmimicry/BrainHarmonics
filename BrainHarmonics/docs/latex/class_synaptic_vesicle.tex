@@ -1,0 +1,574 @@
+\hypertarget{class_synaptic_vesicle}{}\section{Synaptic\+Vesicle Class Reference}
+\label{class_synaptic_vesicle}\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+
+
+{\ttfamily \#include $<$synapticvesicle.\+h$>$}
+
+
+
+Inheritance diagram for Synaptic\+Vesicle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_synaptic_vesicle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Synaptic\+Vesicle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_synaptic_vesicle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_synaptic_vesicle_ac3f899ed25281a6d337ecefe1da41c67}{Synaptic\+Vesicle} ()
+\item 
+\hyperlink{class_synaptic_vesicle_aefd8a743e80077235a1c9a9fd133cc9d}{Synaptic\+Vesicle} (unsigned int object\+\_\+type)
+\item 
+\hyperlink{class_synaptic_vesicle_a6602b03ba498129b46c173e8fa66927b}{Synaptic\+Vesicle} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_synaptic_vesicle_a0f86278b771137978d03bb6cf460a527}{Synaptic\+Vesicle} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_axon_bouton}{Axon\+Bouton} \&axonbouton\+\_\+connector)
+\item 
+virtual \hyperlink{class_synaptic_vesicle_a9bbc23a1c9757d8522a10bb28e0f575b}{$\sim$\+Synaptic\+Vesicle} ()
+\item 
+unsigned int \hyperlink{class_synaptic_vesicle_a42a3ab6704c27ca55531864c46f0fc2b}{Get\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+double \hyperlink{class_synaptic_vesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}{Get\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_synaptic_vesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}{Get\+Release\+State} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+void \hyperlink{class_synaptic_vesicle_a7fd7cfce5eccb904206d968866f85220}{Set\+Counter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \hyperlink{class_synaptic_vesicle_ac98f9c8ccaabbccc38151c51d204dfec}{Set\+Energy} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double val)
+\item 
+bool \hyperlink{class_synaptic_vesicle_add2f2815448729977fbcdbd5a59ec7b4}{Reset\+Parameters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_a89f4fd3ed27a7dc768de215534325d6a}{Create\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_a052b85a42c2d55ca146665c40cbabffd}{Create\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_aa811e68d1a3220c07140847eb3ebc8b3}{Clone\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_aa610e38786a8c9978d9c00bca40a5200}{Clone\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_a5ab4ecfb4a880bc729078f5529c547bc}{Destroy\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_a37817cc68b212d89ef8aa08c73631cbb}{Destroy\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ destruction\+\_\+list)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_a56d406fdd01f267d868caedb390080ff}{Add\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_ac924e6b7b824066a89136e52f2d5ce80}{Add\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$ add\+\_\+objects)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_a7ea7841bd1a7a17c78a023db8860cc22}{Remove\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_aab1e61b4910399d56071ca59f2758e72}{Remove\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int quantity)
+\item 
+\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ \hyperlink{class_synaptic_vesicle_a3bdf4423899d438b5a1d2246c52c8c45}{Get\+Neurotransmitter} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_ada95d85873125115208ff51f60fa72e9}{Get\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_synaptic_vesicle_a045f27b28b8b11edc884568b390c22fe}{Growth\+Surface} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double surf\+\_\+change)
+\item 
+int \hyperlink{class_synaptic_vesicle_a0d4a4a03405593b3abc0e734c1758830}{Growth\+Volume} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, double vol\+\_\+change)
+\item 
+void \hyperlink{class_synaptic_vesicle_a2509969e82fee789cc56fb0978f27662}{Release\+Neurotransmitters} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\item 
+int \hyperlink{class_synaptic_vesicle_a49c8e82147e634c83f7b4c3ef9894e2d}{Update} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ \hyperlink{class_synaptic_vesicle_a6b7fb63806105b89ddad8fd0f56b76f6}{neurotransmitter\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file synapticvesicle.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_synaptic_vesicle_ac3f899ed25281a6d337ecefe1da41c67}\label{class_synaptic_vesicle_ac3f899ed25281a6d337ecefe1da41c67}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_aefd8a743e80077235a1c9a9fd133cc9d}\label{class_synaptic_vesicle_aefd8a743e80077235a1c9a9fd133cc9d}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_a6602b03ba498129b46c173e8fa66927b}\label{class_synaptic_vesicle_a6602b03ba498129b46c173e8fa66927b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_a0f86278b771137978d03bb6cf460a527}\label{class_synaptic_vesicle_a0f86278b771137978d03bb6cf460a527}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_axon_bouton}{Axon\+Bouton} \&}]{axonbouton\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file synapticvesicle.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a0f86278b771137978d03bb6cf460a527_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a9bbc23a1c9757d8522a10bb28e0f575b}\label{class_synaptic_vesicle_a9bbc23a1c9757d8522a10bb28e0f575b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!````~Synaptic\+Vesicle@{$\sim$\+Synaptic\+Vesicle}}
+\index{````~Synaptic\+Vesicle@{$\sim$\+Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{$\sim$\+Synaptic\+Vesicle()}{~SynapticVesicle()}}
+{\footnotesize\ttfamily virtual Synaptic\+Vesicle\+::$\sim$\+Synaptic\+Vesicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+Definition at line 38 of file synapticvesicle.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_synaptic_vesicle_a56d406fdd01f267d868caedb390080ff}\label{class_synaptic_vesicle_a56d406fdd01f267d868caedb390080ff}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a56d406fdd01f267d868caedb390080ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_ac924e6b7b824066a89136e52f2d5ce80}\label{class_synaptic_vesicle_ac924e6b7b824066a89136e52f2d5ce80}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file synapticvesicle.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_ac924e6b7b824066a89136e52f2d5ce80_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_ac924e6b7b824066a89136e52f2d5ce80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_aa811e68d1a3220c07140847eb3ebc8b3}\label{class_synaptic_vesicle_aa811e68d1a3220c07140847eb3ebc8b3}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_aa811e68d1a3220c07140847eb3ebc8b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_aa610e38786a8c9978d9c00bca40a5200}\label{class_synaptic_vesicle_aa610e38786a8c9978d9c00bca40a5200}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_aa610e38786a8c9978d9c00bca40a5200_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a89f4fd3ed27a7dc768de215534325d6a}\label{class_synaptic_vesicle_a89f4fd3ed27a7dc768de215534325d6a}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a89f4fd3ed27a7dc768de215534325d6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a052b85a42c2d55ca146665c40cbabffd}\label{class_synaptic_vesicle_a052b85a42c2d55ca146665c40cbabffd}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file synapticvesicle.\+cc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a052b85a42c2d55ca146665c40cbabffd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a052b85a42c2d55ca146665c40cbabffd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a5ab4ecfb4a880bc729078f5529c547bc}\label{class_synaptic_vesicle_a5ab4ecfb4a880bc729078f5529c547bc}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a5ab4ecfb4a880bc729078f5529c547bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a37817cc68b212d89ef8aa08c73631cbb}\label{class_synaptic_vesicle_a37817cc68b212d89ef8aa08c73631cbb}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a37817cc68b212d89ef8aa08c73631cbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a42a3ab6704c27ca55531864c46f0fc2b}\label{class_synaptic_vesicle_a42a3ab6704c27ca55531864c46f0fc2b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Synaptic\+Vesicle\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}\label{class_synaptic_vesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_a3bdf4423899d438b5a1d2246c52c8c45}\label{class_synaptic_vesicle_a3bdf4423899d438b5a1d2246c52c8c45}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a3bdf4423899d438b5a1d2246c52c8c45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_ada95d85873125115208ff51f60fa72e9}\label{class_synaptic_vesicle_ada95d85873125115208ff51f60fa72e9}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_ada95d85873125115208ff51f60fa72e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}\label{class_synaptic_vesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Release\+State@{Get\+Release\+State}}
+\index{Get\+Release\+State@{Get\+Release\+State}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Release\+State()}{GetReleaseState()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Get\+Release\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_a045f27b28b8b11edc884568b390c22fe}\label{class_synaptic_vesicle_a045f27b28b8b11edc884568b390c22fe}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Growth\+Surface@{Growth\+Surface}}
+\index{Growth\+Surface@{Growth\+Surface}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Growth\+Surface()}{GrowthSurface()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Growth\+Surface (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{surf\+\_\+change }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a045f27b28b8b11edc884568b390c22fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a0d4a4a03405593b3abc0e734c1758830}\label{class_synaptic_vesicle_a0d4a4a03405593b3abc0e734c1758830}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Growth\+Volume@{Growth\+Volume}}
+\index{Growth\+Volume@{Growth\+Volume}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Growth\+Volume()}{GrowthVolume()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Growth\+Volume (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{vol\+\_\+change }\end{DoxyParamCaption})}
+
+
+
+Definition at line 178 of file synapticvesicle.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a0d4a4a03405593b3abc0e734c1758830_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a0d4a4a03405593b3abc0e734c1758830_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a2509969e82fee789cc56fb0978f27662}\label{class_synaptic_vesicle_a2509969e82fee789cc56fb0978f27662}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Release\+Neurotransmitters@{Release\+Neurotransmitters}}
+\index{Release\+Neurotransmitters@{Release\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Release\+Neurotransmitters()}{ReleaseNeurotransmitters()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Release\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 186 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a2509969e82fee789cc56fb0978f27662_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a7ea7841bd1a7a17c78a023db8860cc22}\label{class_synaptic_vesicle_a7ea7841bd1a7a17c78a023db8860cc22}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ Synaptic\+Vesicle\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a7ea7841bd1a7a17c78a023db8860cc22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_aab1e61b4910399d56071ca59f2758e72}\label{class_synaptic_vesicle_aab1e61b4910399d56071ca59f2758e72}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$ $>$ Synaptic\+Vesicle\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file synapticvesicle.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_aab1e61b4910399d56071ca59f2758e72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_add2f2815448729977fbcdbd5a59ec7b4}\label{class_synaptic_vesicle_add2f2815448729977fbcdbd5a59ec7b4}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Synaptic\+Vesicle\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file synapticvesicle.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_add2f2815448729977fbcdbd5a59ec7b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_add2f2815448729977fbcdbd5a59ec7b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a7fd7cfce5eccb904206d968866f85220}\label{class_synaptic_vesicle_a7fd7cfce5eccb904206d968866f85220}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_axon_bouton_afe285478d414f2815afb98abe7b92898}{Axon\+Bouton}.
+
+
+
+Definition at line 44 of file synapticvesicle.\+h.
+
+\mbox{\Hypertarget{class_synaptic_vesicle_ac98f9c8ccaabbccc38151c51d204dfec}\label{class_synaptic_vesicle_ac98f9c8ccaabbccc38151c51d204dfec}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file synapticvesicle.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_ac98f9c8ccaabbccc38151c51d204dfec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_synaptic_vesicle_a49c8e82147e634c83f7b4c3ef9894e2d}\label{class_synaptic_vesicle_a49c8e82147e634c83f7b4c3ef9894e2d}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Update@{Update}}
+\index{Update@{Update}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file synapticvesicle.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a49c8e82147e634c83f7b4c3ef9894e2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_synaptic_vesicle_a49c8e82147e634c83f7b4c3ef9894e2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_synaptic_vesicle_a6b7fb63806105b89ddad8fd0f56b76f6}\label{class_synaptic_vesicle_a6b7fb63806105b89ddad8fd0f56b76f6}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_cognitive_network}{Cognitive\+Network}$\ast$$>$ Synaptic\+Vesicle\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 82 of file synapticvesicle.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Brain\+Harmonics/\hyperlink{synapticvesicle_8h}{synapticvesicle.\+h}\item 
+Brain\+Harmonics/\hyperlink{synapticvesicle_8cc}{synapticvesicle.\+cc}\end{DoxyCompactItemize}

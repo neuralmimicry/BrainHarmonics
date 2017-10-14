@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="neuroreceptor_8h" kind="file" language="C++">
+    <compoundname>neuroreceptor.h</compoundname>
+    <includes refid="dendritecleft_8h" local="yes">dendritecleft.h</includes>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="dendritecleft_8cc" local="yes">BrainHarmonics/dendritecleft.cc</includedby>
+    <includedby refid="interneuronspace_8cc" local="yes">BrainHarmonics/interneuronspace.cc</includedby>
+    <includedby refid="neuroreceptor_8cc" local="yes">BrainHarmonics/neuroreceptor.cc</includedby>
+    <includedby refid="synapse_8cc" local="yes">BrainHarmonics/synapse.cc</includedby>
+    <incdepgraph>
+      <node id="1174">
+        <label>polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1167">
+        <label>cognitivenetwork.h</label>
+        <link refid="cognitivenetwork_8h"/>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
+        <label>solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+      </node>
+      <node id="1176">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>dimension.h</label>
+        <link refid="dimension_8h"/>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+      </node>
+      <node id="1170">
+        <label>vector</label>
+      </node>
+      <node id="1171">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+      </node>
+      <node id="1164">
+        <label>dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+      </node>
+      <node id="1163">
+        <label>dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>math.h</label>
+      </node>
+      <node id="1161">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1162" relation="include">
+        </childnode>
+      </node>
+      <node id="1166">
+        <label>neuron.h</label>
+        <link refid="neuron_8h"/>
+        <childnode refid="1167" relation="include">
+        </childnode>
+      </node>
+      <node id="1169">
+        <label>iostream</label>
+      </node>
+      <node id="1165">
+        <label>soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>chrono</label>
+      </node>
+      <node id="1162">
+        <label>dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1180">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1178">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1182">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1179">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1181">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1177">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_neuroreceptor" prot="public">Neuroreceptor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>neuroreceptor.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>BrainHarmonics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Paul<sp/>Isaac&apos;s<sp/>on<sp/>03/02/16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>Energy<sp/>level<sp/>used<sp/>in<sp/>this<sp/>function<sp/>only<sp/>enables<sp/>the<sp/>receptor<sp/>to<sp/>activate.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>It<sp/>does<sp/>not<sp/>necessarily<sp/>mean<sp/>that<sp/>a<sp/>spike<sp/>will<sp/>flow<sp/>through.<sp/>It<sp/>depends<sp/>what</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>waiting<sp/>in<sp/>the<sp/>void<sp/>beyond<sp/>the<sp/>membrane.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Metabotropic<sp/>Receptors<sp/>and<sp/>Ionotropic<sp/>Receptor<sp/>are<sp/>possibilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>type<sp/>of<sp/>receptor<sp/>can<sp/>be<sp/>defined<sp/>by<sp/>dimension<sp/>connection<sp/>or<sp/>stated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>an<sp/>integer<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Metabotropic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1:<sp/>Receptive<sp/>to<sp/>GABA<sp/>neurotransmitters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ionotropic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3:<sp/>Cys-loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>4:<sp/>Glutamate<sp/>receptor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>5:<sp/>ATP-gated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Type-3<sp/>Serotonin<sp/>receptor<sp/>(5HT3-R)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_NEURORECEPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_NEURORECEPTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dendritecleft_8h" kindref="compound">dendritecleft.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_neuroreceptor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_neuroreceptor" kindref="compound">Neuroreceptor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="class_neuroreceptor_1a70d2c87f9932f6fc113da815b6aecb7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuroreceptor_1a70d2c87f9932f6fc113da815b6aecb7f" kindref="member">Neuroreceptor</ref>()<sp/>:<sp/><ref refid="class_neuroreceptor" kindref="compound">Neuroreceptor</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="class_neuroreceptor_1a4628bf1ab69e010dc42b3adfd4dee72b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuroreceptor_1a4628bf1ab69e010dc42b3adfd4dee72b" kindref="member">Neuroreceptor</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_neuroreceptor" kindref="compound">Neuroreceptor</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_neuroreceptor_1a600273e92c3a4b076273d41fa58b58e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuroreceptor_1a600273e92c3a4b076273d41fa58b58e9" kindref="member">Neuroreceptor</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="class_neuroreceptor_1ab002bab3b4ffeed402f60e574ce0263e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_neuroreceptor_1ab002bab3b4ffeed402f60e574ce0263e" kindref="member">Neuroreceptor</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref>&amp;<sp/>dendritecleft_connector)<sp/>:<sp/><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref>(dendritecleft_connector)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>neuroreceptor<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>neuroreceptor_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Neuroreceptor&quot;</highlight><highlight class="normal">,<sp/>neuroreceptor_type);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_neuroreceptor_1ac9c1e9e985ed85712c14c85e306bebc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1ac9c1e9e985ed85712c14c85e306bebc9" kindref="member">~Neuroreceptor</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_neuroreceptor_1a4a49cfc2f741d7f7b7888929651f7be3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a4a49cfc2f741d7f7b7888929651f7be3" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_neuroreceptor_1abc151381ec5e7c39bb45f87a9fd17b9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1abc151381ec5e7c39bb45f87a9fd17b9a" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_neuroreceptor_1afbcf31596170f09292e4d8057c0215e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1afbcf31596170f09292e4d8057c0215e8" kindref="member">GetReceptorBindingState</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_boundReceptor;<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_neuroreceptor_1a3ef0065a7670a2c156e34851140e0fa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a3ef0065a7670a2c156e34851140e0fa8" kindref="member">GetReceptorType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_typeReceptor;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="class_neuroreceptor_1aff4754990dc5b8d0105db281c02031d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1aff4754990dc5b8d0105db281c02031d7" kindref="member">GetDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_disabled;<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="class_neuroreceptor_1a69103180d9b335b9504b4ae3c203d0ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a69103180d9b335b9504b4ae3c203d0ea" kindref="member">GetIons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Ions;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="class_neuroreceptor_1a75adddd7e615af57b8f3f841ec25463c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a75adddd7e615af57b8f3f841ec25463c" kindref="member">SetReceptorBindingState</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_boundReceptor<sp/>=<sp/>val;<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_boundReceptor)<sp/>{<sp/>object_energy<sp/>=<sp/>object_energyFull;<sp/>}<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="class_neuroreceptor_1ace41227d30a8f50e1a6efadc86573f80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1ace41227d30a8f50e1a6efadc86573f80" kindref="member">ToggleReceptorBindingState</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>m_boundReceptor<sp/>=<sp/>!m_boundReceptor;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_neuroreceptor_1a8a339a4d0f150bbdfbc2650155625196" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a8a339a4d0f150bbdfbc2650155625196" kindref="member">ToggleDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>object_disabled<sp/>=<sp/>!object_disabled;<sp/><ref refid="class_neuroreceptor_1a75adddd7e615af57b8f3f841ec25463c" kindref="member">SetReceptorBindingState</ref>(event_time,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="class_neuroreceptor_1aeec8bb2442e04700d4e9d80bb2d6e47e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1aeec8bb2442e04700d4e9d80bb2d6e47e" kindref="member">SetDisabled</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_disabled<sp/>=<sp/>val;<sp/><ref refid="class_neuroreceptor_1a75adddd7e615af57b8f3f841ec25463c" kindref="member">SetReceptorBindingState</ref>(event_time,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="class_neuroreceptor_1a0e6e88d6c5b357872f055edbddb54d4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a0e6e88d6c5b357872f055edbddb54d4c" kindref="member">SetReceptorType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_typeReceptor<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_neuroreceptor_1a0660a316ef44cf723509f720acd16f24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a0660a316ef44cf723509f720acd16f24" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="class_neuroreceptor_1ac1189f9c40e3cd07e4b1dc11115ad882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1ac1189f9c40e3cd07e4b1dc11115ad882" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_neuroreceptor_1a36a548475e752631130a2b4ec67c66b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a36a548475e752631130a2b4ec67c66b6" kindref="member">SetIons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Ions<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a30debeb0311d92eb6abe354409c15d09" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1af671059884336eadbc367f9d8556eb3f" kindref="member">CreateNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1aa0037379ecb214ff982429e054f2a194" kindref="member">CreateNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1a5629a3d463cc963138ff017ec499720d" kindref="member">CloneNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1af953abb478f4a3a1843b4b61f9969274" kindref="member">CloneNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1a35beb8e355f9b567b327e9323f5552a0" kindref="member">DestroyNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1acd500abfb25bd08167b2002e85e8b788" kindref="member">DestroyNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1a900b21f6feb6334d4ff8a3fd5244bf05" kindref="member">AddNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1a2e4cbd9debd555091923f57f8aa11fe4" kindref="member">AddNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1a7e94ac827de7abbac585639edfd4f985" kindref="member">RemoveNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1ad760106ce6194ac02959c1882bd0f327" kindref="member">RemoveNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>*<sp/><sp/><ref refid="class_neuroreceptor_1a526d41738265399c19c67068db450851" kindref="member">GetNeurotransmitter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1a4267220ee11105b7628bf39049ef7cc5" kindref="member">GetNeurotransmitters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1a5d54ca353f0be78522aacc4fca06db63" kindref="member">CompatibilityCheck</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neurotransmitterType);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_neuroreceptor_1ab8f288a095fb028793e7246a42de233b" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="class_neuroreceptor_1aeb769732421531614a47bcab8ae21f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CognitiveNetwork*&gt;<sp/><ref refid="class_neuroreceptor_1aeb769732421531614a47bcab8ae21f8e" kindref="member">neurotransmitter_list</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_NeuronType;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuroreceptor_type;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neurotransmitter_pool;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_addStatus;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Volume;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_SurfaceArea;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy;<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energy_threshold;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeDilation;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_TimeThreshold;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_Length;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>object_energyFull;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Ions;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_boundReceptor;<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_typeReceptor;<sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_NEURORECEPTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/neuroreceptor.h"/>
+  </compounddef>
+</doxygen>

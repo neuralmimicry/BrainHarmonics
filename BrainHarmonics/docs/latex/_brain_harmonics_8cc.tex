@@ -1,0 +1,1040 @@
+\hypertarget{_brain_harmonics_8cc}{}\section{Brain\+Harmonics/\+Brain\+Harmonics.cc File Reference}
+\label{_brain_harmonics_8cc}\index{Brain\+Harmonics/\+Brain\+Harmonics.\+cc@{Brain\+Harmonics/\+Brain\+Harmonics.\+cc}}
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$libcaercpp/devices/dynapse.\+hpp$>$}\newline
+{\ttfamily \#include $<$libcaercpp/libcaer.\+hpp$>$}\newline
+{\ttfamily \#include $<$libcaercpp/events/packet\+Container.\+hpp$>$}\newline
+{\ttfamily \#include $<$csignal$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include \char`\"{}sniffex.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vtk\+Auto\+Init.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Version.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Actor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Actor2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Camera.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Cell\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Cell\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Color\+Transfer\+Function.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Contour\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Coordinate.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Float\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Math.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Parametric\+Function\+Source.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Point\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Points.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Polygon.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data\+Mapper.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data\+Mapper2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Append\+Poly\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Programmable\+Source.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Property2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Render\+Window.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Renderer.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Render\+Window\+Interactor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Reverse\+Sense.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Surface\+Reconstruction\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Actor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Mapper.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Vertex\+Glyph\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+X\+M\+L\+Poly\+Data\+Writer.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$vtk\+Transform.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Transform\+Poly\+Data\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$numpy/arrayobject.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glu.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}universe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dimension.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}elementaryparticle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}elementaryforce.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compositeforceparticle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}law.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}monomer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polymer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}solid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polyhedron.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polygon.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}line.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}node.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apptimer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitivenetwork.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitiveinput.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitiveoutput.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}orbital.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neuron.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendritecleft.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neuroreceptor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}synapse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}interneuronspace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}membrane.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}membranechannel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendrite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendritebranch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}soma.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonhillock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axon.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonbranch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}myelinsheath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}schwanncell.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonbouton.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}synapticvesicle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neurotransmitter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spike.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_update_all_command}{Update\+All\+Command}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}~\char`\"{}data/defaultbiases\+\_\+values.\+txt\char`\"{}
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}~true
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}~-\/1
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a633b0396ff93d336a088412a190a5072}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}~-\/1
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}~9876
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}~\char`\"{}192.\+168.\+42.\+56\char`\"{}
+\item 
+\#define \hyperlink{_brain_harmonics_8cc_a6801baa546c6112d19eb095111d24720}{G\+R\+A\+V\+I\+TY}~6.\+67384e-\/11;
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_brain_harmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT} (vtk\+Rendering\+Open\+G\+L2)
+\item 
+\hyperlink{_brain_harmonics_8cc_a0887c3f67ba4e219d084c8d050597655}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT} (vtk\+Rendering\+Free\+Type)
+\item 
+\hyperlink{_brain_harmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT} (vtk\+Interaction\+Style)
+\item 
+bool \hyperlink{_brain_harmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}{mshandling} (std\+::vector$<$ std\+::string $>$ $\ast$m\+\_\+messages, bool m\+\_\+response, int m\+\_\+ok, int m\+\_\+fail)
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{_brain_harmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}{Create\+Universe} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$$>$ $\ast$to\+Addto)
+\item 
+bool \hyperlink{_brain_harmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}{Compare\+Swap\+Elementary\+Particle} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_elementary_particle}{Elementary\+Particle} $\ast$$>$ \&origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+\item 
+int \hyperlink{_brain_harmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}{Distance\+Between\+Nodes} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_point}{Point} $>$ $\ast$nodes\+Query, std\+::vector$<$ int $>$ $\ast$nodes\+\_\+list, int nodes\+Dimensions, double desired\+\_\+distance)
+\item 
+bool \hyperlink{_brain_harmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}{compare\+\_\+swap\+Synapse} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, std\+::vector$<$ \hyperlink{class_synapse}{Synapse} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+\item 
+bool \hyperlink{_brain_harmonics_8cc_a5611d454c4206879b20ed7a094a223b0}{analyse\+Stream} (std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$ event\+\_\+time, \hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$cognitive\+\_\+network, std\+::vector$<$ \hyperlink{class_neuron}{Neuron} $\ast$$>$ neuron\+\_\+list, std\+::vector$<$ \hyperlink{class_point}{Point} $\ast$$>$ a\+Point, int start\+\_\+point, int end\+\_\+point, int step\+Point, int neural\+\_\+sequence)
+\item 
+void \hyperlink{_brain_harmonics_8cc_ac9572b51d93c224b7db42a9e06854242}{Clear\+Dimension\+Selection} (std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list)
+\item 
+void \hyperlink{_brain_harmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}{Select\+Dimension} (const int Possible\+Dimensions\mbox{[}10\mbox{]}, std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list, int which\+Dimension)
+\item 
+void \hyperlink{_brain_harmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}{Select\+Multi\+Dimensions} (const int Possible\+Dimensions\mbox{[}10\mbox{]}, std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list, int how\+\_\+many\+Dimensions)
+\item 
+bool \hyperlink{_brain_harmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}{Clear\+Dynapse} (caer\+Device\+Handle $\ast$usb\+\_\+handle)
+\item 
+void \hyperlink{_brain_harmonics_8cc_a8760404347fd84a1ed5b49aae3737647}{exit\+CB} ()
+\item 
+int \hyperlink{_brain_harmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}{init} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_brain_harmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}{init\+\_\+numpy} ()
+\item 
+int \hyperlink{_brain_harmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}{main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Render\+Window $>$ \hyperlink{_brain_harmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}{render\+\_\+window}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Render\+Window\+Interactor $>$ \hyperlink{_brain_harmonics_8cc_a65b7a900454637a30df23b1044e07e07}{render\+\_\+window\+\_\+interactor}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Points $>$ \hyperlink{_brain_harmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}{define\+\_\+points} = vtk\+Smart\+Pointer$<$vtk\+Points$>$\+::New()
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Cell\+Array $>$ $>$ \hyperlink{_brain_harmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}{define\+\_\+cellarrays}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ $>$ \hyperlink{_brain_harmonics_8cc_a529fb94c7498f38828c4955476e55520}{define\+\_\+polydata}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Surface\+Reconstruction\+Filter $>$ $>$ \hyperlink{_brain_harmonics_8cc_aec36b51ac72634d7a58846776cb61d43}{define\+\_\+surfaces}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Contour\+Filter $>$ $>$ \hyperlink{_brain_harmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}{define\+\_\+contourfilters}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Reverse\+Sense $>$ $>$ \hyperlink{_brain_harmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}{define\+\_\+reversals}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data\+Mapper $>$ $>$ \hyperlink{_brain_harmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}{define\+\_\+datamappers}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data\+Mapper2D $>$ $>$ \hyperlink{_brain_harmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}{define\+\_\+datamappers2D}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Actor $>$ $>$ \hyperlink{_brain_harmonics_8cc_a564cb339c12906f6db5995be211dcda2}{define\+\_\+actors}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Actor2D $>$ $>$ \hyperlink{_brain_harmonics_8cc_a06728597be70303b9f19f653a5dc90ee}{define\+\_\+actors2D}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Text\+Actor $>$ $>$ \hyperlink{_brain_harmonics_8cc_a4929783757e2d051945177d626a74213}{define\+\_\+textactors}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Renderer $>$ $>$ \hyperlink{_brain_harmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}{define\+\_\+renderers}
+\item 
+int \hyperlink{_brain_harmonics_8cc_a81f74579a7b9471085578a377b3c1525}{static\+\_\+points\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}{static\+\_\+polygons\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a0ac21544be2eca2667c5acc784111848}{static\+\_\+polydata\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}{static\+\_\+cellarrays\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_acdcbc10d39db69593dfc42972b200e46}{static\+\_\+surfaces\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}{static\+\_\+contourfilter\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}{static\+\_\+reversals\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_ab96b88b97440e7d703e0ac1774115227}{static\+\_\+datamappers\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}{static\+\_\+datamappers2\+D\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}{static\+\_\+actors\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}{static\+\_\+actors2\+D\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}{static\+\_\+renderers\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}{dynamic\+\_\+points\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_ae699a3513aa90202fa4779bacdf343da}{dynamic\+\_\+polygons\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a8a93118d63dacb49915b567fa41319a7}{dynamic\+\_\+polydata\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_ac86282f96c64009746f9517e7f9d613a}{dynamic\+\_\+cellarrays\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}{dynamic\+\_\+surfaces\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}{dynamic\+\_\+contourfilter\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}{dynamic\+\_\+reversals\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}{dynamic\+\_\+datamappers\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}{dynamic\+\_\+datamappers2\+D\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}{dynamic\+\_\+actors\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_afabdd4a073eb734b7610de6f1769c050}{dynamic\+\_\+actors2\+D\+\_\+counter} = 0
+\item 
+int \hyperlink{_brain_harmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}{dynamic\+\_\+renderers\+\_\+counter} = 0
+\item 
+std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$ $>$ \hyperlink{_brain_harmonics_8cc_a602d3f70549216866d35be56a17fa06e}{universe\+\_\+list}
+\item 
+struct caer\+\_\+dynapse\+\_\+info \hyperlink{_brain_harmonics_8cc_af414029bac33d3b71ad5622dc83149d6}{dynapse\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_brain_harmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}\label{_brain_harmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM@{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}}
+\index{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM@{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}{DEBUG\_PROGRAM}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM~true}
+
+$<$ \hyperlink{class_neuron}{Neuron} container for other neuron components $<$ \hyperlink{class_synapse}{Synapse}, area of stimulus transmission/reception $<$ \hyperlink{class_dendrite}{Dendrite}, pre-\/\+Soma component of a neuron $<$ \hyperlink{class_dendrite}{Dendrite} branch, division/join of dendrites $<$ \hyperlink{class_soma}{Soma}, component of a neuron $<$ \hyperlink{class_axon}{Axon} Hillock, component of \hyperlink{class_soma}{Soma} $<$ \hyperlink{class_axon}{Axon}, connected to \hyperlink{class_axon}{Axon} Hillock $<$ \hyperlink{class_axon}{Axon} branch, division/join of \hyperlink{class_axon}{Axon} $<$ \hyperlink{class_axon}{Axon} synaptic cleft, output area of neuron $<$ Synaptic vesicle, container of neurotransmitters 
+
+Definition at line 225 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}\label{_brain_harmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}}
+\index{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}{DEFAULTBIASES}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES~\char`\"{}data/defaultbiases\+\_\+values.\+txt\char`\"{}}
+
+$<$ For array in C\+R\+C-\/32 call $<$ For handling strings $<$ For byte handling in C\+R\+C-\/32 $<$ For reading files $<$ Formatting output to console $<$ For output to console $<$ For open and closed maps in A$\ast$ $<$ For Sine, Cosine, Power, Fabs \& Sqrt functions $<$ For C\+R\+C-\/32 $<$ For assigning priority queue in A$\ast$ $<$ For stringstream input from console $<$ For handling strings $<$ For thread handling $<$ To use vectors, which automatically handle resizing, as arrays to keep track of instances 
+
+Definition at line 55 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a6801baa546c6112d19eb095111d24720}\label{_brain_harmonics_8cc_a6801baa546c6112d19eb095111d24720}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!G\+R\+A\+V\+I\+TY@{G\+R\+A\+V\+I\+TY}}
+\index{G\+R\+A\+V\+I\+TY@{G\+R\+A\+V\+I\+TY}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{G\+R\+A\+V\+I\+TY}{GRAVITY}}
+{\footnotesize\ttfamily \#define G\+R\+A\+V\+I\+TY~6.\+67384e-\/11;}
+
+
+
+Definition at line 258 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}\label{_brain_harmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}{INVALID\_SOCKET}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET~-\/1}
+
+
+
+Definition at line 229 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}\label{_brain_harmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}}
+\index{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}{LOWPOWERBIASES}}
+{\footnotesize\ttfamily \#define L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}}
+
+
+
+Definition at line 56 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}\label{_brain_harmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}{SOCKET\_ADDRESS}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}192.\+168.\+42.\+56\char`\"{}}
+
+
+
+Definition at line 241 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a633b0396ff93d336a088412a190a5072}\label{_brain_harmonics_8cc_a633b0396ff93d336a088412a190a5072}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR@{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR@{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}{SOCKET\_ERROR}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR~-\/1}
+
+
+
+Definition at line 233 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}\label{_brain_harmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT@{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT@{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}{SOCKET\_PORT}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT~9876}
+
+
+
+Definition at line 237 of file Brain\+Harmonics.\+cc.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_brain_harmonics_8cc_a5611d454c4206879b20ed7a094a223b0}\label{_brain_harmonics_8cc_a5611d454c4206879b20ed7a094a223b0}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!analyse\+Stream@{analyse\+Stream}}
+\index{analyse\+Stream@{analyse\+Stream}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{analyse\+Stream()}{analyseStream()}}
+{\footnotesize\ttfamily bool analyse\+Stream (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{\hyperlink{class_cognitive_network}{Cognitive\+Network} $\ast$}]{cognitive\+\_\+network,  }\item[{std\+::vector$<$ \hyperlink{class_neuron}{Neuron} $\ast$$>$}]{neuron\+\_\+list,  }\item[{std\+::vector$<$ \hyperlink{class_point}{Point} $\ast$$>$}]{a\+Point,  }\item[{int}]{start\+\_\+point,  }\item[{int}]{end\+\_\+point,  }\item[{int}]{step\+Point,  }\item[{int}]{neural\+\_\+sequence }\end{DoxyParamCaption})}
+
+
+
+Definition at line 679 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac9572b51d93c224b7db42a9e06854242}\label{_brain_harmonics_8cc_ac9572b51d93c224b7db42a9e06854242}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}}
+\index{Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Clear\+Dimension\+Selection()}{ClearDimensionSelection()}}
+{\footnotesize\ttfamily void Clear\+Dimension\+Selection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Definition at line 743 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}\label{_brain_harmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dynapse@{Clear\+Dynapse}}
+\index{Clear\+Dynapse@{Clear\+Dynapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Clear\+Dynapse()}{ClearDynapse()}}
+{\footnotesize\ttfamily bool Clear\+Dynapse (\begin{DoxyParamCaption}\item[{caer\+Device\+Handle $\ast$}]{usb\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Definition at line 781 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}\label{_brain_harmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}}
+\index{compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{compare\+\_\+swap\+Synapse()}{compare\_swapSynapse()}}
+{\footnotesize\ttfamily bool compare\+\_\+swap\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_synapse}{Synapse} $\ast$$>$}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 656 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}\label{_brain_harmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}}
+\index{Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}}
+{\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_elementary_particle}{Elementary\+Particle} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 520 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}\label{_brain_harmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Create\+Universe@{Create\+Universe}}
+\index{Create\+Universe@{Create\+Universe}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Create\+Universe()}{CreateUniverse()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ Create\+Universe (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_universe}{Universe} $\ast$$>$ $\ast$}]{to\+Addto }\end{DoxyParamCaption})}
+
+$<$ Defined energy level of \hyperlink{class_universe}{Universe}
+
+$<$ Create instance of \hyperlink{class_universe}{Universe} from \hyperlink{class_universe}{Universe} class
+
+$<$ Set an energy level and attempt to maintain physics laws by keeping the total in the \hyperlink{class_universe}{Universe} the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations 
+
+Definition at line 291 of file Brain\+Harmonics.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_brain_harmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{_brain_harmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Distance\+Between\+Nodes@{Distance\+Between\+Nodes}}
+\index{Distance\+Between\+Nodes@{Distance\+Between\+Nodes}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Distance\+Between\+Nodes()}{DistanceBetweenNodes()}}
+{\footnotesize\ttfamily int Distance\+Between\+Nodes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \hyperlink{class_point}{Point} $>$ $\ast$}]{nodes\+Query,  }\item[{std\+::vector$<$ int $>$ $\ast$}]{nodes\+\_\+list,  }\item[{int}]{nodes\+Dimensions,  }\item[{double}]{desired\+\_\+distance }\end{DoxyParamCaption})}
+
+
+
+Definition at line 542 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a8760404347fd84a1ed5b49aae3737647}\label{_brain_harmonics_8cc_a8760404347fd84a1ed5b49aae3737647}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!exit\+CB@{exit\+CB}}
+\index{exit\+CB@{exit\+CB}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{exit\+C\+B()}{exitCB()}}
+{\footnotesize\ttfamily void exit\+CB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 893 of file Brain\+Harmonics.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{_brain_harmonics_8cc_a8760404347fd84a1ed5b49aae3737647_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}\label{_brain_harmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!init@{init}}
+\index{init@{init}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int init (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 906 of file Brain\+Harmonics.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{_brain_harmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{_brain_harmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}\label{_brain_harmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!init\+\_\+numpy@{init\+\_\+numpy}}
+\index{init\+\_\+numpy@{init\+\_\+numpy}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{init\+\_\+numpy()}{init\_numpy()}}
+{\footnotesize\ttfamily void init\+\_\+numpy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 921 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}\label{_brain_harmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!main@{main}}
+\index{main@{main}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+$<$ Add Dimensions for spatial identification
+
+$<$ Follow with the creation of quarks/leptons
+
+$<$ Define Force interaction between fundamentals
+
+$<$ Define Particle Force interaction between Composites, Protons/\+Neutrons
+
+$<$ Specify how Composites interact
+
+$<$ Composites form elements of periodic table
+
+$<$ Composites form molecules
+
+$<$ Composites form complex molecules
+
+$<$ Materials are a combination of \hyperlink{class_matter}{Matter}
+
+$<$ Materials can be formed into multi\+Dimensional shapes
+
+$<$ Complex shapes are a combination of simpler forms
+
+$<$ Reducing high Dimensions to lower
+
+$<$ Further reduction
+
+$<$ Fundamental spatial description
+
+$<$ Interim function describing time before inclusion as \hyperlink{class_dimension}{Dimension}
+
+$<$ Network container for all AI components
+
+$<$ Example of orbital timing containing neurons
+
+$<$ \hyperlink{class_neuron}{Neuron} container for other neuron components
+
+$<$ Dendritic synaptic cleft, input to the neuron
+
+$<$ \hyperlink{class_neuroreceptor}{Neuroreceptor}, component of dendritic cleft
+
+$<$ \hyperlink{class_synapse}{Synapse}, area of stimulus transmission/reception
+
+$<$ Between neurons is an energy pool
+
+$<$ \hyperlink{class_membrane}{Membrane}, outer component of the neuron
+
+$<$ Potassium/\+Sodium channel, component of the membrane
+
+$<$ \hyperlink{class_dendrite}{Dendrite}, pre-\/\+Soma component of a neuron
+
+$<$ \hyperlink{class_dendrite}{Dendrite} branch, division/join of dendrites
+
+$<$ \hyperlink{class_soma}{Soma}, component of a neuron
+
+$<$ \hyperlink{class_axon}{Axon} Hillock, component of \hyperlink{class_soma}{Soma}
+
+$<$ \hyperlink{class_axon}{Axon}, connected to \hyperlink{class_axon}{Axon} Hillock
+
+$<$ \hyperlink{class_axon}{Axon} branch, division/join of \hyperlink{class_axon}{Axon}
+
+$<$ Myelin sheath, wraps around \hyperlink{class_axon}{Axon}
+
+$<$ Schwann Cell, component of a Myelin sheath
+
+$<$ \hyperlink{class_axon}{Axon} synaptic cleft, output area of neuron
+
+$<$ Synaptic vesicle, container of neurotransmitters
+
+$<$ \hyperlink{class_neurotransmitter}{Neurotransmitter}, transfer component between clefts
+
+$<$ \hyperlink{class_spike}{Spike}
+
+$<$ Define graphics window size, X axis
+
+$<$ Define graphics window size, Y axis 
+
+Definition at line 1155 of file Brain\+Harmonics.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{_brain_harmonics_8cc_ac0f2228420376f4db7e1274f2b41667c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}\label{_brain_harmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!mshandling@{mshandling}}
+\index{mshandling@{mshandling}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{mshandling()}{mshandling()}}
+{\footnotesize\ttfamily bool mshandling (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ $\ast$}]{m\+\_\+messages,  }\item[{bool}]{m\+\_\+response,  }\item[{int}]{m\+\_\+ok,  }\item[{int}]{m\+\_\+fail }\end{DoxyParamCaption})}
+
+
+
+Definition at line 273 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}\label{_brain_harmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Dimension@{Select\+Dimension}}
+\index{Select\+Dimension@{Select\+Dimension}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Select\+Dimension()}{SelectDimension()}}
+{\footnotesize\ttfamily void Select\+Dimension (\begin{DoxyParamCaption}\item[{const int}]{Possible\+Dimensions\mbox{[}10\mbox{]},  }\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list,  }\item[{int}]{which\+Dimension }\end{DoxyParamCaption})}
+
+
+
+Definition at line 748 of file Brain\+Harmonics.\+cc.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_brain_harmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}\label{_brain_harmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}}
+\index{Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Select\+Multi\+Dimensions()}{SelectMultiDimensions()}}
+{\footnotesize\ttfamily void Select\+Multi\+Dimensions (\begin{DoxyParamCaption}\item[{const int}]{Possible\+Dimensions\mbox{[}10\mbox{]},  }\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list,  }\item[{int}]{how\+\_\+many\+Dimensions }\end{DoxyParamCaption})}
+
+
+
+Definition at line 764 of file Brain\+Harmonics.\+cc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_brain_harmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_brain_harmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}\label{_brain_harmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Rendering\+Open\+G\+L2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a0887c3f67ba4e219d084c8d050597655}\label{_brain_harmonics_8cc_a0887c3f67ba4e219d084c8d050597655}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Rendering\+Free\+Type}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}\label{_brain_harmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Interaction\+Style}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_brain_harmonics_8cc_a564cb339c12906f6db5995be211dcda2}\label{_brain_harmonics_8cc_a564cb339c12906f6db5995be211dcda2}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+actors@{define\+\_\+actors}}
+\index{define\+\_\+actors@{define\+\_\+actors}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+actors}{define\_actors}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Actor$>$ $>$ define\+\_\+actors}
+
+
+
+Definition at line 118 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a06728597be70303b9f19f653a5dc90ee}\label{_brain_harmonics_8cc_a06728597be70303b9f19f653a5dc90ee}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+actors2D@{define\+\_\+actors2D}}
+\index{define\+\_\+actors2D@{define\+\_\+actors2D}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+actors2D}{define\_actors2D}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Actor2D$>$ $>$ define\+\_\+actors2D}
+
+
+
+Definition at line 119 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}\label{_brain_harmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+cellarrays@{define\+\_\+cellarrays}}
+\index{define\+\_\+cellarrays@{define\+\_\+cellarrays}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+cellarrays}{define\_cellarrays}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Cell\+Array$>$ $>$ define\+\_\+cellarrays}
+
+
+
+Definition at line 110 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}\label{_brain_harmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+contourfilters@{define\+\_\+contourfilters}}
+\index{define\+\_\+contourfilters@{define\+\_\+contourfilters}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+contourfilters}{define\_contourfilters}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Contour\+Filter$>$ $>$ define\+\_\+contourfilters}
+
+
+
+Definition at line 114 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}\label{_brain_harmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+datamappers@{define\+\_\+datamappers}}
+\index{define\+\_\+datamappers@{define\+\_\+datamappers}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+datamappers}{define\_datamappers}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data\+Mapper$>$ $>$ define\+\_\+datamappers}
+
+
+
+Definition at line 116 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}\label{_brain_harmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+datamappers2D@{define\+\_\+datamappers2D}}
+\index{define\+\_\+datamappers2D@{define\+\_\+datamappers2D}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+datamappers2D}{define\_datamappers2D}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data\+Mapper2D$>$ $>$ define\+\_\+datamappers2D}
+
+
+
+Definition at line 117 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}\label{_brain_harmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+points@{define\+\_\+points}}
+\index{define\+\_\+points@{define\+\_\+points}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+points}{define\_points}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Points$>$ define\+\_\+points = vtk\+Smart\+Pointer$<$vtk\+Points$>$\+::New()}
+
+
+
+Definition at line 109 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a529fb94c7498f38828c4955476e55520}\label{_brain_harmonics_8cc_a529fb94c7498f38828c4955476e55520}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+polydata@{define\+\_\+polydata}}
+\index{define\+\_\+polydata@{define\+\_\+polydata}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+polydata}{define\_polydata}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ $>$ define\+\_\+polydata}
+
+
+
+Definition at line 111 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}\label{_brain_harmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+renderers@{define\+\_\+renderers}}
+\index{define\+\_\+renderers@{define\+\_\+renderers}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+renderers}{define\_renderers}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Renderer$>$ $>$ define\+\_\+renderers}
+
+
+
+Definition at line 122 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}\label{_brain_harmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+reversals@{define\+\_\+reversals}}
+\index{define\+\_\+reversals@{define\+\_\+reversals}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+reversals}{define\_reversals}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Reverse\+Sense$>$ $>$ define\+\_\+reversals}
+
+
+
+Definition at line 115 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aec36b51ac72634d7a58846776cb61d43}\label{_brain_harmonics_8cc_aec36b51ac72634d7a58846776cb61d43}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+surfaces@{define\+\_\+surfaces}}
+\index{define\+\_\+surfaces@{define\+\_\+surfaces}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+surfaces}{define\_surfaces}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Surface\+Reconstruction\+Filter$>$ $>$ define\+\_\+surfaces}
+
+
+
+Definition at line 113 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a4929783757e2d051945177d626a74213}\label{_brain_harmonics_8cc_a4929783757e2d051945177d626a74213}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+textactors@{define\+\_\+textactors}}
+\index{define\+\_\+textactors@{define\+\_\+textactors}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+textactors}{define\_textactors}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Text\+Actor$>$ $>$ define\+\_\+textactors}
+
+
+
+Definition at line 120 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_afabdd4a073eb734b7610de6f1769c050}\label{_brain_harmonics_8cc_afabdd4a073eb734b7610de6f1769c050}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+actors2\+D\+\_\+counter@{dynamic\+\_\+actors2\+D\+\_\+counter}}
+\index{dynamic\+\_\+actors2\+D\+\_\+counter@{dynamic\+\_\+actors2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+actors2\+D\+\_\+counter}{dynamic\_actors2D\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+actors2\+D\+\_\+counter = 0}
+
+
+
+Definition at line 149 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}\label{_brain_harmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+actors\+\_\+counter@{dynamic\+\_\+actors\+\_\+counter}}
+\index{dynamic\+\_\+actors\+\_\+counter@{dynamic\+\_\+actors\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+actors\+\_\+counter}{dynamic\_actors\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+actors\+\_\+counter = 0}
+
+
+
+Definition at line 148 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac86282f96c64009746f9517e7f9d613a}\label{_brain_harmonics_8cc_ac86282f96c64009746f9517e7f9d613a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+cellarrays\+\_\+counter@{dynamic\+\_\+cellarrays\+\_\+counter}}
+\index{dynamic\+\_\+cellarrays\+\_\+counter@{dynamic\+\_\+cellarrays\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+cellarrays\+\_\+counter}{dynamic\_cellarrays\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+cellarrays\+\_\+counter = 0}
+
+
+
+Definition at line 142 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}\label{_brain_harmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+contourfilter\+\_\+counter@{dynamic\+\_\+contourfilter\+\_\+counter}}
+\index{dynamic\+\_\+contourfilter\+\_\+counter@{dynamic\+\_\+contourfilter\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+contourfilter\+\_\+counter}{dynamic\_contourfilter\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+contourfilter\+\_\+counter = 0}
+
+
+
+Definition at line 144 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}\label{_brain_harmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+datamappers2\+D\+\_\+counter@{dynamic\+\_\+datamappers2\+D\+\_\+counter}}
+\index{dynamic\+\_\+datamappers2\+D\+\_\+counter@{dynamic\+\_\+datamappers2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+datamappers2\+D\+\_\+counter}{dynamic\_datamappers2D\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+datamappers2\+D\+\_\+counter = 0}
+
+
+
+Definition at line 147 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}\label{_brain_harmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+datamappers\+\_\+counter@{dynamic\+\_\+datamappers\+\_\+counter}}
+\index{dynamic\+\_\+datamappers\+\_\+counter@{dynamic\+\_\+datamappers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+datamappers\+\_\+counter}{dynamic\_datamappers\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+datamappers\+\_\+counter = 0}
+
+
+
+Definition at line 146 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}\label{_brain_harmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+points\+\_\+counter@{dynamic\+\_\+points\+\_\+counter}}
+\index{dynamic\+\_\+points\+\_\+counter@{dynamic\+\_\+points\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+points\+\_\+counter}{dynamic\_points\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+points\+\_\+counter = 0}
+
+
+
+Definition at line 139 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a8a93118d63dacb49915b567fa41319a7}\label{_brain_harmonics_8cc_a8a93118d63dacb49915b567fa41319a7}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+polydata\+\_\+counter@{dynamic\+\_\+polydata\+\_\+counter}}
+\index{dynamic\+\_\+polydata\+\_\+counter@{dynamic\+\_\+polydata\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+polydata\+\_\+counter}{dynamic\_polydata\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+polydata\+\_\+counter = 0}
+
+
+
+Definition at line 141 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ae699a3513aa90202fa4779bacdf343da}\label{_brain_harmonics_8cc_ae699a3513aa90202fa4779bacdf343da}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+polygons\+\_\+counter@{dynamic\+\_\+polygons\+\_\+counter}}
+\index{dynamic\+\_\+polygons\+\_\+counter@{dynamic\+\_\+polygons\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+polygons\+\_\+counter}{dynamic\_polygons\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+polygons\+\_\+counter = 0}
+
+
+
+Definition at line 140 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}\label{_brain_harmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+renderers\+\_\+counter@{dynamic\+\_\+renderers\+\_\+counter}}
+\index{dynamic\+\_\+renderers\+\_\+counter@{dynamic\+\_\+renderers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+renderers\+\_\+counter}{dynamic\_renderers\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+renderers\+\_\+counter = 0}
+
+
+
+Definition at line 150 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}\label{_brain_harmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+reversals\+\_\+counter@{dynamic\+\_\+reversals\+\_\+counter}}
+\index{dynamic\+\_\+reversals\+\_\+counter@{dynamic\+\_\+reversals\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+reversals\+\_\+counter}{dynamic\_reversals\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+reversals\+\_\+counter = 0}
+
+
+
+Definition at line 145 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}\label{_brain_harmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+surfaces\+\_\+counter@{dynamic\+\_\+surfaces\+\_\+counter}}
+\index{dynamic\+\_\+surfaces\+\_\+counter@{dynamic\+\_\+surfaces\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+surfaces\+\_\+counter}{dynamic\_surfaces\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+surfaces\+\_\+counter = 0}
+
+
+
+Definition at line 143 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_af414029bac33d3b71ad5622dc83149d6}\label{_brain_harmonics_8cc_af414029bac33d3b71ad5622dc83149d6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynapse\+\_\+info@{dynapse\+\_\+info}}
+\index{dynapse\+\_\+info@{dynapse\+\_\+info}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynapse\+\_\+info}{dynapse\_info}}
+{\footnotesize\ttfamily struct caer\+\_\+dynapse\+\_\+info dynapse\+\_\+info}
+
+
+
+Definition at line 261 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}\label{_brain_harmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!render\+\_\+window@{render\+\_\+window}}
+\index{render\+\_\+window@{render\+\_\+window}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{render\+\_\+window}{render\_window}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Render\+Window$>$ render\+\_\+window}
+
+
+
+Definition at line 106 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a65b7a900454637a30df23b1044e07e07}\label{_brain_harmonics_8cc_a65b7a900454637a30df23b1044e07e07}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}}
+\index{render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{render\+\_\+window\+\_\+interactor}{render\_window\_interactor}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Render\+Window\+Interactor$>$ render\+\_\+window\+\_\+interactor}
+
+
+
+Definition at line 107 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}\label{_brain_harmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+actors2\+D\+\_\+counter@{static\+\_\+actors2\+D\+\_\+counter}}
+\index{static\+\_\+actors2\+D\+\_\+counter@{static\+\_\+actors2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+actors2\+D\+\_\+counter}{static\_actors2D\_counter}}
+{\footnotesize\ttfamily int static\+\_\+actors2\+D\+\_\+counter = 0}
+
+
+
+Definition at line 136 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}\label{_brain_harmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+actors\+\_\+counter@{static\+\_\+actors\+\_\+counter}}
+\index{static\+\_\+actors\+\_\+counter@{static\+\_\+actors\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+actors\+\_\+counter}{static\_actors\_counter}}
+{\footnotesize\ttfamily int static\+\_\+actors\+\_\+counter = 0}
+
+
+
+Definition at line 135 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}\label{_brain_harmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+cellarrays\+\_\+counter@{static\+\_\+cellarrays\+\_\+counter}}
+\index{static\+\_\+cellarrays\+\_\+counter@{static\+\_\+cellarrays\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+cellarrays\+\_\+counter}{static\_cellarrays\_counter}}
+{\footnotesize\ttfamily int static\+\_\+cellarrays\+\_\+counter = 0}
+
+
+
+Definition at line 129 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}\label{_brain_harmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+contourfilter\+\_\+counter@{static\+\_\+contourfilter\+\_\+counter}}
+\index{static\+\_\+contourfilter\+\_\+counter@{static\+\_\+contourfilter\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+contourfilter\+\_\+counter}{static\_contourfilter\_counter}}
+{\footnotesize\ttfamily int static\+\_\+contourfilter\+\_\+counter = 0}
+
+
+
+Definition at line 131 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}\label{_brain_harmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+datamappers2\+D\+\_\+counter@{static\+\_\+datamappers2\+D\+\_\+counter}}
+\index{static\+\_\+datamappers2\+D\+\_\+counter@{static\+\_\+datamappers2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+datamappers2\+D\+\_\+counter}{static\_datamappers2D\_counter}}
+{\footnotesize\ttfamily int static\+\_\+datamappers2\+D\+\_\+counter = 0}
+
+
+
+Definition at line 134 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_ab96b88b97440e7d703e0ac1774115227}\label{_brain_harmonics_8cc_ab96b88b97440e7d703e0ac1774115227}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+datamappers\+\_\+counter@{static\+\_\+datamappers\+\_\+counter}}
+\index{static\+\_\+datamappers\+\_\+counter@{static\+\_\+datamappers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+datamappers\+\_\+counter}{static\_datamappers\_counter}}
+{\footnotesize\ttfamily int static\+\_\+datamappers\+\_\+counter = 0}
+
+
+
+Definition at line 133 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a81f74579a7b9471085578a377b3c1525}\label{_brain_harmonics_8cc_a81f74579a7b9471085578a377b3c1525}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+points\+\_\+counter@{static\+\_\+points\+\_\+counter}}
+\index{static\+\_\+points\+\_\+counter@{static\+\_\+points\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+points\+\_\+counter}{static\_points\_counter}}
+{\footnotesize\ttfamily int static\+\_\+points\+\_\+counter = 0}
+
+
+
+Definition at line 126 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a0ac21544be2eca2667c5acc784111848}\label{_brain_harmonics_8cc_a0ac21544be2eca2667c5acc784111848}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+polydata\+\_\+counter@{static\+\_\+polydata\+\_\+counter}}
+\index{static\+\_\+polydata\+\_\+counter@{static\+\_\+polydata\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+polydata\+\_\+counter}{static\_polydata\_counter}}
+{\footnotesize\ttfamily int static\+\_\+polydata\+\_\+counter = 0}
+
+
+
+Definition at line 128 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}\label{_brain_harmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+polygons\+\_\+counter@{static\+\_\+polygons\+\_\+counter}}
+\index{static\+\_\+polygons\+\_\+counter@{static\+\_\+polygons\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+polygons\+\_\+counter}{static\_polygons\_counter}}
+{\footnotesize\ttfamily int static\+\_\+polygons\+\_\+counter = 0}
+
+
+
+Definition at line 127 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}\label{_brain_harmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+renderers\+\_\+counter@{static\+\_\+renderers\+\_\+counter}}
+\index{static\+\_\+renderers\+\_\+counter@{static\+\_\+renderers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+renderers\+\_\+counter}{static\_renderers\_counter}}
+{\footnotesize\ttfamily int static\+\_\+renderers\+\_\+counter = 0}
+
+
+
+Definition at line 137 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}\label{_brain_harmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+reversals\+\_\+counter@{static\+\_\+reversals\+\_\+counter}}
+\index{static\+\_\+reversals\+\_\+counter@{static\+\_\+reversals\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+reversals\+\_\+counter}{static\_reversals\_counter}}
+{\footnotesize\ttfamily int static\+\_\+reversals\+\_\+counter = 0}
+
+
+
+Definition at line 132 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_acdcbc10d39db69593dfc42972b200e46}\label{_brain_harmonics_8cc_acdcbc10d39db69593dfc42972b200e46}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+surfaces\+\_\+counter@{static\+\_\+surfaces\+\_\+counter}}
+\index{static\+\_\+surfaces\+\_\+counter@{static\+\_\+surfaces\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+surfaces\+\_\+counter}{static\_surfaces\_counter}}
+{\footnotesize\ttfamily int static\+\_\+surfaces\+\_\+counter = 0}
+
+
+
+Definition at line 130 of file Brain\+Harmonics.\+cc.
+
+\mbox{\Hypertarget{_brain_harmonics_8cc_a602d3f70549216866d35be56a17fa06e}\label{_brain_harmonics_8cc_a602d3f70549216866d35be56a17fa06e}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!universe\+\_\+list@{universe\+\_\+list}}
+\index{universe\+\_\+list@{universe\+\_\+list}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{universe\+\_\+list}{universe\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_universe}{Universe}$\ast$$>$ universe\+\_\+list}
+
+$<$ Python interpreter $<$ Top of the tree, begin with \hyperlink{class_universe}{Universe} class $<$ Add Dimensions for spatial identification $<$ Materials are a combination of \hyperlink{class_matter}{Matter} $<$ Materials can be formed into multi\+Dimensional shapes $<$ Fundamental spatial description $<$ Interim function describing time before inclusion as \hyperlink{class_dimension}{Dimension} Top of the tree, begin with \hyperlink{class_universe}{Universe} class 
+
+Definition at line 196 of file Brain\+Harmonics.\+cc.
+

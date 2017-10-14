@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="solid_8h" kind="file" language="C++">
+    <compoundname>solid.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="universe_8h" local="yes">universe.h</includes>
+    <includedby refid="polyhedron_8h" local="yes">BrainHarmonics/polyhedron.h</includedby>
+    <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
+    <includedby refid="monomer_8cc" local="yes">BrainHarmonics/monomer.cc</includedby>
+    <includedby refid="solid_8cc" local="yes">BrainHarmonics/solid.cc</includedby>
+    <includedby refid="universe_8cc" local="yes">BrainHarmonics/universe.cc</includedby>
+    <incdepgraph>
+      <node id="1571">
+        <label>BrainHarmonics/solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1573" relation="include">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>vector</label>
+      </node>
+      <node id="1573">
+        <label>universe.h</label>
+        <link refid="universe_8h"/>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+      </node>
+      <node id="1575">
+        <label>math.h</label>
+      </node>
+      <node id="1572">
+        <label>iostream</label>
+      </node>
+      <node id="1574">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1578">
+        <label>BrainHarmonics/polyhedron.h</label>
+        <link refid="polyhedron_8h"/>
+        <childnode refid="1579" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+      </node>
+      <node id="1592">
+        <label>BrainHarmonics/soma.cc</label>
+        <link refid="soma_8cc"/>
+      </node>
+      <node id="1580">
+        <label>BrainHarmonics/axonhillock.h</label>
+        <link refid="axonhillock_8h"/>
+        <childnode refid="1581" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+      </node>
+      <node id="1614">
+        <label>BrainHarmonics/monomer.cc</label>
+        <link refid="monomer_8cc"/>
+      </node>
+      <node id="1588">
+        <label>BrainHarmonics/synapticvesicle.cc</label>
+        <link refid="synapticvesicle_8cc"/>
+      </node>
+      <node id="1577">
+        <label>BrainHarmonics/solid.h</label>
+        <link refid="solid_8h"/>
+        <childnode refid="1578" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>BrainHarmonics/polygon.h</label>
+        <link refid="polygon_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1585">
+        <label>BrainHarmonics/axonbouton.cc</label>
+        <link refid="axonbouton_8cc"/>
+      </node>
+      <node id="1606">
+        <label>BrainHarmonics/quad.cc</label>
+        <link refid="quad_8cc"/>
+      </node>
+      <node id="1598">
+        <label>BrainHarmonics/interneuronspace.cc</label>
+        <link refid="interneuronspace_8cc"/>
+      </node>
+      <node id="1605">
+        <label>BrainHarmonics/quad.h</label>
+        <link refid="quad_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>BrainHarmonics/BrainHarmonics.cc</label>
+        <link refid="_brain_harmonics_8cc"/>
+      </node>
+      <node id="1591">
+        <label>BrainHarmonics/axonhillock.cc</label>
+        <link refid="axonhillock_8cc"/>
+      </node>
+      <node id="1607">
+        <label>BrainHarmonics/polygon.cc</label>
+        <link refid="polygon_8cc"/>
+      </node>
+      <node id="1613">
+        <label>BrainHarmonics/solid.cc</label>
+        <link refid="solid_8cc"/>
+      </node>
+      <node id="1581">
+        <label>BrainHarmonics/axon.h</label>
+        <link refid="axon_8h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>BrainHarmonics/neuron.cc</label>
+        <link refid="neuron_8cc"/>
+      </node>
+      <node id="1612">
+        <label>BrainHarmonics/membranechannel.cc</label>
+        <link refid="membranechannel_8cc"/>
+      </node>
+      <node id="1602">
+        <label>BrainHarmonics/dendrite.cc</label>
+        <link refid="dendrite_8cc"/>
+      </node>
+      <node id="1590">
+        <label>BrainHarmonics/myelinsheath.cc</label>
+        <link refid="myelinsheath_8cc"/>
+      </node>
+      <node id="1600">
+        <label>BrainHarmonics/synapse.cc</label>
+        <link refid="synapse_8cc"/>
+      </node>
+      <node id="1582">
+        <label>BrainHarmonics/axon.cc</label>
+        <link refid="axon_8cc"/>
+      </node>
+      <node id="1597">
+        <label>BrainHarmonics/dendritecleft.cc</label>
+        <link refid="dendritecleft_8cc"/>
+      </node>
+      <node id="1615">
+        <label>BrainHarmonics/universe.cc</label>
+        <link refid="universe_8cc"/>
+      </node>
+      <node id="1599">
+        <label>BrainHarmonics/neuroreceptor.cc</label>
+        <link refid="neuroreceptor_8cc"/>
+      </node>
+      <node id="1609">
+        <label>BrainHarmonics/membrane.h</label>
+        <link refid="membrane_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+      </node>
+      <node id="1593">
+        <label>BrainHarmonics/dendrite.h</label>
+        <link refid="dendrite_8h"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>BrainHarmonics/dendritebranch.h</label>
+        <link refid="dendritebranch_8h"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>BrainHarmonics/axonbranch.h</label>
+        <link refid="axonbranch_8h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>BrainHarmonics/neuroreceptor.h</label>
+        <link refid="neuroreceptor_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+      </node>
+      <node id="1579">
+        <label>BrainHarmonics/soma.h</label>
+        <link refid="soma_8h"/>
+        <childnode refid="1580" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>BrainHarmonics/axonbranch.cc</label>
+        <link refid="axonbranch_8cc"/>
+      </node>
+      <node id="1584">
+        <label>BrainHarmonics/axonbouton.h</label>
+        <link refid="axonbouton_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>BrainHarmonics/synapticvesicle.h</label>
+        <link refid="synapticvesicle_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>BrainHarmonics/dendritecleft.h</label>
+        <link refid="dendritecleft_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>BrainHarmonics/membrane.cc</label>
+        <link refid="membrane_8cc"/>
+      </node>
+      <node id="1601">
+        <label>BrainHarmonics/dendritebranch.cc</label>
+        <link refid="dendritebranch_8cc"/>
+      </node>
+      <node id="1608">
+        <label>BrainHarmonics/polyhedron.cc</label>
+        <link refid="polyhedron_8cc"/>
+      </node>
+      <node id="1610">
+        <label>BrainHarmonics/membranechannel.h</label>
+        <link refid="membranechannel_8h"/>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_solid" prot="public">Solid</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/>solid.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@details<sp/><sp/><sp/>Compounds,<sp/>eg.<sp/>NaCl,<sp/>H2O<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@author<sp/><sp/><sp/><sp/>Paul<sp/>Isaac&apos;s<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@date<sp/><sp/><sp/><sp/><sp/><sp/>16.02.2016<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@Copyright<sp/>©<sp/>2016<sp/>Paul<sp/>Isaac&apos;s.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Code<sp/>snippets<sp/>used:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Syntax<sp/>comparison<sp/>-<sp/>http://stackoverflow.com<sp/>&amp;<sp/>http://cplusplus.com<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>class<sp/>defines<sp/>a<sp/>data<sp/>point<sp/>and<sp/>the<sp/>operations<sp/>that<sp/>can<sp/>be<sp/>carried<sp/>out<sp/>on<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>it.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Using<sp/>the<sp/>hierarchical<sp/>linking<sp/>the<sp/>aim<sp/>is<sp/>to<sp/>develop<sp/>the<sp/>application<sp/>to<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>relate<sp/>to<sp/>real-world<sp/>physics.<sp/>This<sp/>will<sp/>then<sp/>ease<sp/>mapping<sp/>between<sp/>simulation,*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>emulation<sp/>and<sp/>real-world<sp/>universes.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BRAINHARMONICS_SOLID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRAINHARMONICS_SOLID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="universe_8h" kindref="compound">universe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_solid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_solid" kindref="compound">Solid</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_universe" kindref="compound">Universe</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="class_solid_1ad04bbaef84caa0d408ec09a1c1302f5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_solid_1aa410d74ba34b18a9f6bdf24323c4ee5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_neuron" kindref="compound">Neuron</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_solid_1aaa07b7b364b620b9a781f30a5cd9f5ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_soma" kindref="compound">Soma</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_solid_1ac790db405644a01723104c3c0c8128bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_membrane" kindref="compound">Membrane</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="class_solid_1a2cf157c87df66dc3eb8722f9b3ee8f66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid_1a2cf157c87df66dc3eb8722f9b3ee8f66" kindref="member">Solid</ref>()<sp/>:<sp/><ref refid="class_solid" kindref="compound">Solid</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="class_solid_1a00a71dfc929ca50ee9850bdfca5b3fd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid_1a00a71dfc929ca50ee9850bdfca5b3fd6" kindref="member">Solid</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type)<sp/>:<sp/><ref refid="class_solid" kindref="compound">Solid</ref>(object_type,<sp/><ref refid="namespacestd" kindref="compound">std</ref>::chrono::high_resolution_clock::now())<sp/>{}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="class_solid_1a9f5476b751c749af38b349b9fc7e2ba5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid_1a9f5476b751c749af38b349b9fc7e2ba5" kindref="member">Solid</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>:<sp/><ref refid="class_universe" kindref="compound">Universe</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="class_solid_1a80746ad255dded6090e648fc3f0dbd93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid_1a80746ad255dded6090e648fc3f0dbd93" kindref="member">Solid</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type,<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_universe" kindref="compound">Universe</ref>&amp;<sp/>universe_connector)<sp/>:<sp/><ref refid="class_universe" kindref="compound">Universe</ref>(universe_connector)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>solid<sp/>type<sp/>will<sp/>have<sp/>its<sp/>own<sp/>parameter<sp/>ranges.<sp/>The<sp/>default<sp/>is<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>solid_type<sp/>=<sp/>object_type;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>new<sp/>object<sp/>has<sp/>its<sp/>default<sp/>parameters<sp/>set<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>to<sp/>announce<sp/>object<sp/>creation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" kindref="member">Creation</ref>(time_object_created,<sp/></highlight><highlight class="stringliteral">&quot;Solid&quot;</highlight><highlight class="normal">,<sp/>solid_type);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a07095e0808c0ef6b206bc70992ef557d" kindref="member">~Solid</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a7ca41431033d05957f8be3f49c3aca23" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1aea949040518e505ed39b1456a360c5e0" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" kindref="member">CreatePolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a40b2ea07e384aff138ba139c3c84f525" kindref="member">CreatePolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1ae83094e9c002a7574db242ed0bff6288" kindref="member">ClonePolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/>clone_object,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a1e650b6d8437acfaf7b9384b885d77bf" kindref="member">ClonePolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Solid*&gt;<sp/>cloning_list,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perfection_membership);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1a0841900d8ef4b82292ac027c4852b59b" kindref="member">DestroyPolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/>destroy_object);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1ab1652ee511ed51bbe6a0a3b1854b7974" kindref="member">DestroyPolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Solid*&gt;<sp/>destruction_list);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1a87a3b588f931ff20f09a5d46f6cb7907" kindref="member">AddPolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/>add_object);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a649ba1103a9889bc9e45256633dc72c3" kindref="member">AddPolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Solid*&gt;<sp/>add_objects);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1a1233a3fe43abca7d2a0f83d724fd6640" kindref="member">RemovePolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a0fc53641571eb796c9d6bc33ae7a7138" kindref="member">RemovePolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_solid" kindref="compound">Solid</ref>*<sp/><sp/><ref refid="class_solid_1a256ecadf461f7232eb05c28b6b4b438a" kindref="member">GetPolyhedron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selector);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a7006714c19bf8a7b020f42f394e4edc0" kindref="member">GetPolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a94bb5df6d873c14a94355fc95557efd6" kindref="member">GluePolyhedrons</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a17239817eba0e5870454311857dca736" kindref="member">UpdateCycle</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;Solid*&gt;<sp/>set_of_update_pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointer_type);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a248a5eab9fa0c584af7cdec2f86dc3a3" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_solid_1a37503e6b25f912254414e778af2e75cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a37503e6b25f912254414e778af2e75cd" kindref="member">SetCharge</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="91" refid="class_solid_1a615cb8d1ec1376781726bcefa86339cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a615cb8d1ec1376781726bcefa86339cb" kindref="member">SetSpin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="92" refid="class_solid_1ab5ecb5598be93fe3cd2a21c0cfd363c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ab5ecb5598be93fe3cd2a21c0cfd363c8" kindref="member">GetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="93" refid="class_solid_1ac8a7738735a6bda4e89414a2b0c370e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ac8a7738735a6bda4e89414a2b0c370e1" kindref="member">GetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="94" refid="class_solid_1ac98f9c827d58a631627423e25dd611ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ac98f9c827d58a631627423e25dd611ba" kindref="member">GetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="95" refid="class_solid_1a01cd3c441a4e339927c43536de6d9b5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a01cd3c441a4e339927c43536de6d9b5e" kindref="member">GetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="96" refid="class_solid_1aff7ec13bcc584d8330e3f3a1b371bbe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1aff7ec13bcc584d8330e3f3a1b371bbe6" kindref="member">GetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="97" refid="class_solid_1ae39d0166456b8feaa39547e5a21c9096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ae39d0166456b8feaa39547e5a21c9096" kindref="member">GetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="98" refid="class_solid_1ab3a972354b25ad1bbe8c3f3e7638e24c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ab3a972354b25ad1bbe8c3f3e7638e24c" kindref="member">GetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="99" refid="class_solid_1a9cfde1c3a4b7c6d2a5a3719d74e27237" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a9cfde1c3a4b7c6d2a5a3719d74e27237" kindref="member">GetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="class_solid_1af2b3133138ce2482faa462d07aa23042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1af2b3133138ce2482faa462d07aa23042" kindref="member">ApplyGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="102" refid="class_solid_1a49e35bf258104b7bce225dc21058affb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a49e35bf258104b7bce225dc21058affb" kindref="member">ApplyWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="103" refid="class_solid_1ad6c28ec896cbcf64e24a7132a144befd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ad6c28ec896cbcf64e24a7132a144befd" kindref="member">ApplyWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="104" refid="class_solid_1ab546d607d6f0bf70dc5e6bbac8baf287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ab546d607d6f0bf70dc5e6bbac8baf287" kindref="member">ApplyElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="105" refid="class_solid_1a46702e3109994b310eb4f1fba5610e0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a46702e3109994b310eb4f1fba5610e0b" kindref="member">ApplyElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="106" refid="class_solid_1a0801ec0382bc509191575bcf9f5c83c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a0801ec0382bc509191575bcf9f5c83c1" kindref="member">ApplyStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="107" refid="class_solid_1abd8fff76385306f97aa65dfd6b867fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1abd8fff76385306f97aa65dfd6b867fc6" kindref="member">ApplyStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="108" refid="class_solid_1a07534fa79bb8a6eb32e081e5158ba9e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a07534fa79bb8a6eb32e081e5158ba9e5" kindref="member">ApplyStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="class_solid_1ae237f2c713868c133e28ed7f75fc9125" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ae237f2c713868c133e28ed7f75fc9125" kindref="member">SetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="111" refid="class_solid_1aa28e0f7e4de2fc0c1e28d385214296bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1aa28e0f7e4de2fc0c1e28d385214296bf" kindref="member">SetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="112" refid="class_solid_1adb34befc66f8c681f3a85c44e0d00e3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1adb34befc66f8c681f3a85c44e0d00e3a" kindref="member">SetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="113" refid="class_solid_1a9a660f9d94f597712c67922aa1d4d795" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a9a660f9d94f597712c67922aa1d4d795" kindref="member">SetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="114" refid="class_solid_1a6617ae9fe4707d760a23b54eddf00dec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a6617ae9fe4707d760a23b54eddf00dec" kindref="member">SetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="115" refid="class_solid_1a478e15cdf15c5bb01cbcbd5f584ef83a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a478e15cdf15c5bb01cbcbd5f584ef83a" kindref="member">SetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="116" refid="class_solid_1a4342786a7785b1a3816d20de02105bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a4342786a7785b1a3816d20de02105bcf" kindref="member">SetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="117" refid="class_solid_1a8b80ebe209fcd3afa4791968127753d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1a8b80ebe209fcd3afa4791968127753d0" kindref="member">SetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="class_solid_1ae2a486e59f11f96a1a39756b3f3da53f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_solid_1ae2a486e59f11f96a1a39756b3f3da53f" kindref="member">PollElementaryForce</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>void<sp/>SetPointPosition(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/>std::vector&lt;double&gt;<sp/>val)<sp/>final<sp/>{}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>GetPointPosition(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>final<sp/>{}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>int<sp/>GetCharge(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>final<sp/>{}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128" refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Solid*&gt;<sp/><ref refid="class_solid_1a67ef5cdd87e5629159660fa9bb5833c8" kindref="member">polyhedron_list</ref>;</highlight></codeline>
+<codeline lineno="129" refid="class_solid_1ad63206ff20f38b621db482b01801c4c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><ref refid="class_solid_1ad63206ff20f38b621db482b01801c4c5" kindref="member">poly_type_list</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_Counter;<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>solid_type;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_disabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>object_initialised<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>time_object_created;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;Clock&gt;<sp/>previous_event_time;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duration_since_last_event;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>polyhedron_pool;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BRAINHARMONICS_SOLID_H</highlight></codeline>
+    </programlisting>
+    <location file="BrainHarmonics/solid.h"/>
+  </compounddef>
+</doxygen>
