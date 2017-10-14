@@ -1,10 +1,19 @@
 # BrainHarmonics
 
+For cross-platform compatibility
+
+ln -s /home /Users
+
+Base folder is ~/Developer
+Folders created
+~/Developer/CMakeFiles
+~/Developer/BrainHarmonics
+
 How to build...
 
 Install libpcap-dev
 
-Create a pcap cmake file...
+Create a pcap cmake file...  FindPCAP.cmake
 
 ```
 # - Try to find libpcap include dirs and libraries
