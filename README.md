@@ -6,6 +6,7 @@ Install libpcap-dev
 
 Create a pcap cmake file...
 
+```
 # - Try to find libpcap include dirs and libraries
 #
 # Usage of this module as follows:
@@ -81,6 +82,6 @@ mark_as_advanced(
     PCAP_LIBRARY
 )
 
-
+```
 ! END OF FindPCAP.cmake FILE !
 
