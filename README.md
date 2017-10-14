@@ -33,6 +33,18 @@ wget http://download.qt-project.org/official_releases/qt/5.9/5.9.2/qt-opensource
 chmod +x qt-opensource-linux-x64-5.9.2.run
 ./qt-opensource-linux-x64-5.9.2.run
 
+cd ~/Developer/VTK-Release-build
+cmake -DVTK_QT_VERSION:STRING=5 \
+      -DQT_QMAKE_EXECUTABLE:PATH=~/Qt5.9.2/5.9.2/gcc_64/bin/qmake \
+      -DVTK_Group_Qt:BOOL=ON \
+      -DCMAKE_PREFIX_PATH:PATH=~/Qt5.9.2/5.9.2/gcc_64/lib/cmake  \
+      -DBUILD_SHARED_LIBS:BOOL=ON \
+      ~/Developer/VTK
+
+make -j2
+
+
+      
 How to build...
 
 Create a pcap cmake file...  FindPCAP.cmake
