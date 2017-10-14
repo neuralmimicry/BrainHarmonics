@@ -385,10 +385,12 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAbstractCellLinks.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAbstractMapper.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAbstractMapper3D.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAbstractTransform.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkActor.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkActor2D.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkActorCollection.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAlgorithm.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAppendPolyData.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAtomic.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAtomicTypeConcepts.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkAtomicTypes.h
@@ -407,7 +409,9 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonDataModelModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonMathModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonMiscModule.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkConfigure.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkContourFilter.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkContourValues.h
@@ -415,6 +419,7 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDataArray.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDataObject.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDataSet.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDataSetAlgorithm.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDataSetAttributes.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkDebugLeaksManager.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkFieldData.h
@@ -425,18 +430,22 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkGenericDataArray.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkGenericDataArray.txx
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkGenericDataArrayLookupHelper.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkHomogeneousTransform.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIOStream.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIOStreamFwd.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIOXMLModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIdList.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIdTypeArray.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkImageAlgorithm.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkImagingHybridModule.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIndent.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkIntArray.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkLinearTransform.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkMapper.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkMapper2D.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkMath.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkMathConfigure.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkMatrix4x4.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkNew.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkOStrStreamWrapper.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkOStreamWrapper.h
@@ -452,6 +461,7 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkPolyDataMapper.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkPolyDataMapper2D.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkPolygon.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkProgrammableSource.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkProp.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkProp3D.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkPropCollection.h
@@ -462,11 +472,13 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkRenderWindowInteractor.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkRenderer.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkReverseSense.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkScalarsToColors.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkSetGet.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkSmartPointer.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkSmartPointerBase.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkStdString.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkSurfaceReconstructionFilter.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkSystemIncludes.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTextActor.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTextMapper.h
@@ -474,6 +486,8 @@ CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vt
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTexture.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTexturedActor2D.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTimeStamp.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTransform.h
+CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTransformPolyDataFilter.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTuple.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkType.h
 CMakeFiles/BrainHarmonics.dir/BrainHarmonics.cc.o: /usr/local/include/vtk-7.1/vtkTypeTraits.h
@@ -515,6 +529,9 @@ CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../axonhillock.h
 CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/axon.cc.o: ../universe.h
 
@@ -526,6 +543,9 @@ CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../axonhillock.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../synapse.h
 CMakeFiles/BrainHarmonics.dir/axonbouton.cc.o: ../synapticvesicle.h
@@ -539,6 +559,9 @@ CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../axonhillock.h
 CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/axonbranch.cc.o: ../universe.h
 
@@ -548,6 +571,9 @@ CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../axonhillock.h
 CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/axonhillock.cc.o: ../universe.h
 
@@ -565,6 +591,7 @@ CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../interneuronspace.h
 CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../orbital.h
 CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../synapse.h
 CMakeFiles/BrainHarmonics.dir/cognitivenetwork.cc.o: ../universe.h
 
@@ -586,6 +613,9 @@ CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../dendrite.h
 CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../dendritebranch.h
 CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/dendrite.cc.o: ../universe.h
 
@@ -596,6 +626,9 @@ CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../dendritebranch.h
 CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../dendritecleft.h
 CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/dendritebranch.cc.o: ../universe.h
 
@@ -607,6 +640,9 @@ CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../dendritecleft.h
 CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../neuroreceptor.h
+CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/dendritecleft.cc.o: ../universe.h
 
@@ -633,6 +669,9 @@ CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../interneuronspace.h
 CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../neuroreceptor.h
 CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/interneuronspace.cc.o: ../universe.h
 
@@ -656,6 +695,9 @@ CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../membrane.cc
 CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../membrane.h
 CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../membranechannel.h
 CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/membrane.cc.o: ../universe.h
 
 CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../cognitivenetwork.h
@@ -665,6 +707,9 @@ CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../membranechannel.cc
 CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../membranechannel.h
 CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/membranechannel.cc.o: ../universe.h
 
 CMakeFiles/BrainHarmonics.dir/monomer.cc.o: ../monomer.cc
@@ -754,13 +799,20 @@ CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../myelinsheath.cc
 CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../myelinsheath.h
 CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/myelinsheath.cc.o: ../universe.h
 
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../dimension.h
+CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../membrane.h
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../neuron.cc
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/neuron.cc.o: ../universe.h
 
@@ -773,6 +825,9 @@ CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../neuroreceptor.cc
 CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../neuroreceptor.h
 CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/neuroreceptor.cc.o: ../universe.h
 
@@ -797,12 +852,15 @@ CMakeFiles/BrainHarmonics.dir/point.cc.o: ../point.cc
 CMakeFiles/BrainHarmonics.dir/point.cc.o: ../point.h
 CMakeFiles/BrainHarmonics.dir/point.cc.o: ../universe.h
 
+CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../point.h
 CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../polygon.cc
 CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../polygon.h
 CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../polyhedron.h
 CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/polygon.cc.o: ../universe.h
 
+CMakeFiles/BrainHarmonics.dir/polyhedron.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/polyhedron.cc.o: ../polygon.h
 CMakeFiles/BrainHarmonics.dir/polyhedron.cc.o: ../polyhedron.cc
 CMakeFiles/BrainHarmonics.dir/polyhedron.cc.o: ../polyhedron.h
 CMakeFiles/BrainHarmonics.dir/polyhedron.cc.o: ../solid.h
@@ -812,6 +870,7 @@ CMakeFiles/BrainHarmonics.dir/polymer.cc.o: ../polymer.cc
 CMakeFiles/BrainHarmonics.dir/polymer.cc.o: ../polymer.h
 CMakeFiles/BrainHarmonics.dir/polymer.cc.o: ../universe.h
 
+CMakeFiles/BrainHarmonics.dir/quad.cc.o: ../point.h
 CMakeFiles/BrainHarmonics.dir/quad.cc.o: ../polygon.h
 CMakeFiles/BrainHarmonics.dir/quad.cc.o: ../polyhedron.h
 CMakeFiles/BrainHarmonics.dir/quad.cc.o: ../quad.cc
@@ -835,6 +894,8 @@ CMakeFiles/BrainHarmonics.dir/sniffex.cc.o: /opt/local/include/pcap/export-defs.
 CMakeFiles/BrainHarmonics.dir/sniffex.cc.o: /opt/local/include/pcap/pcap.h
 CMakeFiles/BrainHarmonics.dir/sniffex.cc.o: /opt/local/include/remote-ext.h
 
+CMakeFiles/BrainHarmonics.dir/solid.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/solid.cc.o: ../polyhedron.h
 CMakeFiles/BrainHarmonics.dir/solid.cc.o: ../solid.cc
 CMakeFiles/BrainHarmonics.dir/solid.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/solid.cc.o: ../universe.h
@@ -844,6 +905,9 @@ CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../dendrite.h
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../neuron.h
+CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../soma.cc
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/soma.cc.o: ../universe.h
@@ -862,6 +926,9 @@ CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../neuroreceptor.h
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../synapse.cc
 CMakeFiles/BrainHarmonics.dir/synapse.cc.o: ../synapse.h
@@ -875,6 +942,9 @@ CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../cognitivenetwork.h
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../dimension.h
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../neuron.h
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../neurotransmitter.h
+CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../point.h
+CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../polyhedron.h
+CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../solid.h
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../soma.h
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../synapticvesicle.cc
 CMakeFiles/BrainHarmonics.dir/synapticvesicle.cc.o: ../synapticvesicle.h

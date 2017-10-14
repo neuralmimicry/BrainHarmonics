@@ -15,46 +15,154 @@
 		160043CF1C7332CB00871CD2 /* axonbouton.cc in Sources */ = {isa = PBXBuildFile; fileRef = 160043CD1C7332CB00871CD2 /* axonbouton.cc */; };
 		160043D21C73349300871CD2 /* synapticvesicle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 160043D01C73349300871CD2 /* synapticvesicle.cc */; };
 		16053C5C1E94EE2900760241 /* sniffex.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16053C5A1E94EE2900760241 /* sniffex.cc */; };
-		161990351C7518D700EA6040 /* abstraction.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619900F1C7518D700EA6040 /* abstraction.cc */; };
-		161990361C7518D700EA6040 /* apptimer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990111C7518D700EA6040 /* apptimer.cc */; };
-		161990371C7518D700EA6040 /* compositeforce.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990131C7518D700EA6040 /* compositeforce.cc */; };
-		161990381C7518D700EA6040 /* compositeparticle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990151C7518D700EA6040 /* compositeparticle.cc */; };
-		161990391C7518D700EA6040 /* dimension.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990171C7518D700EA6040 /* dimension.cc */; };
-		1619903A1C7518D700EA6040 /* elementaryforce.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990191C7518D700EA6040 /* elementaryforce.cc */; };
-		1619903B1C7518D700EA6040 /* elementaryparticle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619901B1C7518D700EA6040 /* elementaryparticle.cc */; };
-		1619903D1C7518D700EA6040 /* law.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619901E1C7518D700EA6040 /* law.cc */; };
-		1619903E1C7518D700EA6040 /* line.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990201C7518D700EA6040 /* line.cc */; };
-		161990401C7518D700EA6040 /* matter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990241C7518D700EA6040 /* matter.cc */; };
-		161990411C7518D700EA6040 /* node.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990261C7518D700EA6040 /* node.cc */; };
-		161990421C7518D700EA6040 /* point.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990281C7518D700EA6040 /* point.cc */; };
-		161990431C7518D700EA6040 /* polygon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619902A1C7518D700EA6040 /* polygon.cc */; };
-		161990441C7518D700EA6040 /* polyhedron.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619902C1C7518D700EA6040 /* polyhedron.cc */; };
-		161990451C7518D700EA6040 /* quad.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1619902E1C7518D700EA6040 /* quad.cc */; };
-		161990471C7518D700EA6040 /* solid.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990311C7518D700EA6040 /* solid.cc */; };
-		161990481C7518D700EA6040 /* universe.cc in Sources */ = {isa = PBXBuildFile; fileRef = 161990331C7518D700EA6040 /* universe.cc */; };
+		163E67EE1EE0545800F5154F /* libvtkalglib-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67801EE0545600F5154F /* libvtkalglib-7.1.dylib */; };
+		163E67EF1EE0545800F5154F /* libvtkChartsCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67811EE0545600F5154F /* libvtkChartsCore-7.1.dylib */; };
+		163E67F01EE0545800F5154F /* libvtkCommonColor-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67821EE0545600F5154F /* libvtkCommonColor-7.1.dylib */; };
+		163E67F11EE0545800F5154F /* libvtkCommonComputationalGeometry-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67831EE0545600F5154F /* libvtkCommonComputationalGeometry-7.1.dylib */; };
+		163E67F21EE0545800F5154F /* libvtkCommonCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67841EE0545600F5154F /* libvtkCommonCore-7.1.dylib */; };
+		163E67F31EE0545800F5154F /* libvtkCommonDataModel-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67851EE0545600F5154F /* libvtkCommonDataModel-7.1.dylib */; };
+		163E67F41EE0545800F5154F /* libvtkCommonExecutionModel-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67861EE0545600F5154F /* libvtkCommonExecutionModel-7.1.dylib */; };
+		163E67F51EE0545800F5154F /* libvtkCommonMath-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67871EE0545600F5154F /* libvtkCommonMath-7.1.dylib */; };
+		163E67F61EE0545800F5154F /* libvtkCommonMisc-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67881EE0545600F5154F /* libvtkCommonMisc-7.1.dylib */; };
+		163E67F71EE0545800F5154F /* libvtkCommonSystem-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67891EE0545600F5154F /* libvtkCommonSystem-7.1.dylib */; };
+		163E67F81EE0545800F5154F /* libvtkCommonTransforms-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678A1EE0545600F5154F /* libvtkCommonTransforms-7.1.dylib */; };
+		163E67F91EE0545800F5154F /* libvtkDICOMParser-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678B1EE0545600F5154F /* libvtkDICOMParser-7.1.dylib */; };
+		163E67FA1EE0545800F5154F /* libvtkDomainsChemistry-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678C1EE0545600F5154F /* libvtkDomainsChemistry-7.1.dylib */; };
+		163E67FB1EE0545800F5154F /* libvtkDomainsChemistryOpenGL2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678D1EE0545600F5154F /* libvtkDomainsChemistryOpenGL2-7.1.dylib */; };
+		163E67FC1EE0545800F5154F /* libvtkexoIIc-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678E1EE0545600F5154F /* libvtkexoIIc-7.1.dylib */; };
+		163E67FD1EE0545800F5154F /* libvtkexpat-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E678F1EE0545600F5154F /* libvtkexpat-7.1.dylib */; };
+		163E67FE1EE0545800F5154F /* libvtkFiltersAMR-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67901EE0545600F5154F /* libvtkFiltersAMR-7.1.dylib */; };
+		163E67FF1EE0545800F5154F /* libvtkFiltersCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67911EE0545600F5154F /* libvtkFiltersCore-7.1.dylib */; };
+		163E68001EE0545800F5154F /* libvtkFiltersExtraction-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67921EE0545600F5154F /* libvtkFiltersExtraction-7.1.dylib */; };
+		163E68011EE0545800F5154F /* libvtkFiltersFlowPaths-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67931EE0545600F5154F /* libvtkFiltersFlowPaths-7.1.dylib */; };
+		163E68021EE0545800F5154F /* libvtkFiltersGeneral-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67941EE0545600F5154F /* libvtkFiltersGeneral-7.1.dylib */; };
+		163E68031EE0545800F5154F /* libvtkFiltersGeneric-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67951EE0545600F5154F /* libvtkFiltersGeneric-7.1.dylib */; };
+		163E68041EE0545800F5154F /* libvtkFiltersGeometry-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67961EE0545700F5154F /* libvtkFiltersGeometry-7.1.dylib */; };
+		163E68051EE0545800F5154F /* libvtkFiltersHybrid-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67971EE0545700F5154F /* libvtkFiltersHybrid-7.1.dylib */; };
+		163E68061EE0545800F5154F /* libvtkFiltersHyperTree-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67981EE0545700F5154F /* libvtkFiltersHyperTree-7.1.dylib */; };
+		163E68071EE0545800F5154F /* libvtkFiltersImaging-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67991EE0545700F5154F /* libvtkFiltersImaging-7.1.dylib */; };
+		163E68081EE0545800F5154F /* libvtkFiltersModeling-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679A1EE0545700F5154F /* libvtkFiltersModeling-7.1.dylib */; };
+		163E68091EE0545800F5154F /* libvtkFiltersParallel-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679B1EE0545700F5154F /* libvtkFiltersParallel-7.1.dylib */; };
+		163E680A1EE0545800F5154F /* libvtkFiltersParallelImaging-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679C1EE0545700F5154F /* libvtkFiltersParallelImaging-7.1.dylib */; };
+		163E680B1EE0545800F5154F /* libvtkFiltersPoints-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679D1EE0545700F5154F /* libvtkFiltersPoints-7.1.dylib */; };
+		163E680C1EE0545800F5154F /* libvtkFiltersProgrammable-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679E1EE0545700F5154F /* libvtkFiltersProgrammable-7.1.dylib */; };
+		163E680D1EE0545800F5154F /* libvtkFiltersSelection-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E679F1EE0545700F5154F /* libvtkFiltersSelection-7.1.dylib */; };
+		163E680E1EE0545800F5154F /* libvtkFiltersSMP-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A01EE0545700F5154F /* libvtkFiltersSMP-7.1.dylib */; };
+		163E680F1EE0545800F5154F /* libvtkFiltersSources-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A11EE0545700F5154F /* libvtkFiltersSources-7.1.dylib */; };
+		163E68101EE0545800F5154F /* libvtkFiltersStatistics-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A21EE0545700F5154F /* libvtkFiltersStatistics-7.1.dylib */; };
+		163E68111EE0545800F5154F /* libvtkFiltersTexture-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A31EE0545700F5154F /* libvtkFiltersTexture-7.1.dylib */; };
+		163E68121EE0545800F5154F /* libvtkFiltersVerdict-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A41EE0545700F5154F /* libvtkFiltersVerdict-7.1.dylib */; };
+		163E68131EE0545800F5154F /* libvtkfreetype-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A51EE0545700F5154F /* libvtkfreetype-7.1.dylib */; };
+		163E68141EE0545800F5154F /* libvtkGeovisCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A61EE0545700F5154F /* libvtkGeovisCore-7.1.dylib */; };
+		163E68151EE0545800F5154F /* libvtkgl2ps-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A71EE0545700F5154F /* libvtkgl2ps-7.1.dylib */; };
+		163E68161EE0545800F5154F /* libvtkglew-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A81EE0545700F5154F /* libvtkglew-7.1.dylib */; };
+		163E68171EE0545800F5154F /* libvtkhdf5_hl-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67A91EE0545700F5154F /* libvtkhdf5_hl-7.1.dylib */; };
+		163E68181EE0545800F5154F /* libvtkhdf5-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AA1EE0545700F5154F /* libvtkhdf5-7.1.dylib */; };
+		163E68191EE0545800F5154F /* libvtkImagingColor-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AB1EE0545700F5154F /* libvtkImagingColor-7.1.dylib */; };
+		163E681A1EE0545900F5154F /* libvtkImagingCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AC1EE0545700F5154F /* libvtkImagingCore-7.1.dylib */; };
+		163E681B1EE0545900F5154F /* libvtkImagingFourier-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AD1EE0545700F5154F /* libvtkImagingFourier-7.1.dylib */; };
+		163E681C1EE0545900F5154F /* libvtkImagingGeneral-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AE1EE0545700F5154F /* libvtkImagingGeneral-7.1.dylib */; };
+		163E681D1EE0545900F5154F /* libvtkImagingHybrid-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67AF1EE0545700F5154F /* libvtkImagingHybrid-7.1.dylib */; };
+		163E681E1EE0545900F5154F /* libvtkImagingMath-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B01EE0545700F5154F /* libvtkImagingMath-7.1.dylib */; };
+		163E681F1EE0545900F5154F /* libvtkImagingMorphological-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B11EE0545700F5154F /* libvtkImagingMorphological-7.1.dylib */; };
+		163E68201EE0545900F5154F /* libvtkImagingSources-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B21EE0545700F5154F /* libvtkImagingSources-7.1.dylib */; };
+		163E68211EE0545900F5154F /* libvtkImagingStatistics-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B31EE0545700F5154F /* libvtkImagingStatistics-7.1.dylib */; };
+		163E68221EE0545900F5154F /* libvtkImagingStencil-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B41EE0545700F5154F /* libvtkImagingStencil-7.1.dylib */; };
+		163E68231EE0545900F5154F /* libvtkInfovisCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B51EE0545700F5154F /* libvtkInfovisCore-7.1.dylib */; };
+		163E68241EE0545900F5154F /* libvtkInfovisLayout-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B61EE0545700F5154F /* libvtkInfovisLayout-7.1.dylib */; };
+		163E68251EE0545900F5154F /* libvtkInteractionImage-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B71EE0545700F5154F /* libvtkInteractionImage-7.1.dylib */; };
+		163E68261EE0545900F5154F /* libvtkInteractionStyle-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B81EE0545700F5154F /* libvtkInteractionStyle-7.1.dylib */; };
+		163E68271EE0545900F5154F /* libvtkInteractionWidgets-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67B91EE0545700F5154F /* libvtkInteractionWidgets-7.1.dylib */; };
+		163E68281EE0545900F5154F /* libvtkIOAMR-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BA1EE0545700F5154F /* libvtkIOAMR-7.1.dylib */; };
+		163E68291EE0545900F5154F /* libvtkIOCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BB1EE0545700F5154F /* libvtkIOCore-7.1.dylib */; };
+		163E682A1EE0545900F5154F /* libvtkIOEnSight-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BC1EE0545700F5154F /* libvtkIOEnSight-7.1.dylib */; };
+		163E682B1EE0545900F5154F /* libvtkIOExodus-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BD1EE0545700F5154F /* libvtkIOExodus-7.1.dylib */; };
+		163E682C1EE0545900F5154F /* libvtkIOExport-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BE1EE0545700F5154F /* libvtkIOExport-7.1.dylib */; };
+		163E682D1EE0545900F5154F /* libvtkIOGeometry-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67BF1EE0545700F5154F /* libvtkIOGeometry-7.1.dylib */; };
+		163E682E1EE0545900F5154F /* libvtkIOImage-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C01EE0545700F5154F /* libvtkIOImage-7.1.dylib */; };
+		163E682F1EE0545900F5154F /* libvtkIOImport-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C11EE0545700F5154F /* libvtkIOImport-7.1.dylib */; };
+		163E68301EE0545900F5154F /* libvtkIOInfovis-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C21EE0545700F5154F /* libvtkIOInfovis-7.1.dylib */; };
+		163E68311EE0545900F5154F /* libvtkIOLegacy-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C31EE0545700F5154F /* libvtkIOLegacy-7.1.dylib */; };
+		163E68321EE0545900F5154F /* libvtkIOLSDyna-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C41EE0545700F5154F /* libvtkIOLSDyna-7.1.dylib */; };
+		163E68331EE0545900F5154F /* libvtkIOMINC-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C51EE0545700F5154F /* libvtkIOMINC-7.1.dylib */; };
+		163E68341EE0545900F5154F /* libvtkIOMovie-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C61EE0545700F5154F /* libvtkIOMovie-7.1.dylib */; };
+		163E68351EE0545900F5154F /* libvtkIONetCDF-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C71EE0545700F5154F /* libvtkIONetCDF-7.1.dylib */; };
+		163E68361EE0545900F5154F /* libvtkIOParallel-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C81EE0545700F5154F /* libvtkIOParallel-7.1.dylib */; };
+		163E68371EE0545900F5154F /* libvtkIOParallelXML-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67C91EE0545700F5154F /* libvtkIOParallelXML-7.1.dylib */; };
+		163E68381EE0545900F5154F /* libvtkIOPLY-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CA1EE0545700F5154F /* libvtkIOPLY-7.1.dylib */; };
+		163E68391EE0545900F5154F /* libvtkIOSQL-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CB1EE0545700F5154F /* libvtkIOSQL-7.1.dylib */; };
+		163E683A1EE0545900F5154F /* libvtkIOTecplotTable-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CC1EE0545700F5154F /* libvtkIOTecplotTable-7.1.dylib */; };
+		163E683B1EE0545900F5154F /* libvtkIOVideo-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CD1EE0545700F5154F /* libvtkIOVideo-7.1.dylib */; };
+		163E683C1EE0545900F5154F /* libvtkIOXML-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CE1EE0545700F5154F /* libvtkIOXML-7.1.dylib */; };
+		163E683D1EE0545900F5154F /* libvtkIOXMLParser-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67CF1EE0545700F5154F /* libvtkIOXMLParser-7.1.dylib */; };
+		163E683E1EE0545900F5154F /* libvtkjpeg-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D01EE0545700F5154F /* libvtkjpeg-7.1.dylib */; };
+		163E683F1EE0545900F5154F /* libvtkjsoncpp-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D11EE0545700F5154F /* libvtkjsoncpp-7.1.dylib */; };
+		163E68401EE0545900F5154F /* libvtklibxml2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D21EE0545700F5154F /* libvtklibxml2-7.1.dylib */; };
+		163E68411EE0545900F5154F /* libvtkmetaio-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D31EE0545700F5154F /* libvtkmetaio-7.1.dylib */; };
+		163E68421EE0545900F5154F /* libvtkNetCDF_cxx-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D41EE0545800F5154F /* libvtkNetCDF_cxx-7.1.dylib */; };
+		163E68431EE0545900F5154F /* libvtkNetCDF-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D51EE0545800F5154F /* libvtkNetCDF-7.1.dylib */; };
+		163E68441EE0545900F5154F /* libvtkoggtheora-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D61EE0545800F5154F /* libvtkoggtheora-7.1.dylib */; };
+		163E68451EE0545900F5154F /* libvtkParallelCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D71EE0545800F5154F /* libvtkParallelCore-7.1.dylib */; };
+		163E68461EE0545900F5154F /* libvtkpng-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D81EE0545800F5154F /* libvtkpng-7.1.dylib */; };
+		163E68471EE0545900F5154F /* libvtkproj4-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67D91EE0545800F5154F /* libvtkproj4-7.1.dylib */; };
+		163E68481EE0545900F5154F /* libvtkRenderingAnnotation-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DA1EE0545800F5154F /* libvtkRenderingAnnotation-7.1.dylib */; };
+		163E68491EE0545900F5154F /* libvtkRenderingContext2D-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DB1EE0545800F5154F /* libvtkRenderingContext2D-7.1.dylib */; };
+		163E684A1EE0545900F5154F /* libvtkRenderingContextOpenGL2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DC1EE0545800F5154F /* libvtkRenderingContextOpenGL2-7.1.dylib */; };
+		163E684B1EE0545900F5154F /* libvtkRenderingCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DD1EE0545800F5154F /* libvtkRenderingCore-7.1.dylib */; };
+		163E684C1EE0545900F5154F /* libvtkRenderingFreeType-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DE1EE0545800F5154F /* libvtkRenderingFreeType-7.1.dylib */; };
+		163E684D1EE0545900F5154F /* libvtkRenderingGL2PSOpenGL2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67DF1EE0545800F5154F /* libvtkRenderingGL2PSOpenGL2-7.1.dylib */; };
+		163E684E1EE0545900F5154F /* libvtkRenderingImage-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E01EE0545800F5154F /* libvtkRenderingImage-7.1.dylib */; };
+		163E684F1EE0545900F5154F /* libvtkRenderingLabel-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E11EE0545800F5154F /* libvtkRenderingLabel-7.1.dylib */; };
+		163E68501EE0545900F5154F /* libvtkRenderingLOD-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E21EE0545800F5154F /* libvtkRenderingLOD-7.1.dylib */; };
+		163E68511EE0545900F5154F /* libvtkRenderingOpenGL2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E31EE0545800F5154F /* libvtkRenderingOpenGL2-7.1.dylib */; };
+		163E68521EE0545900F5154F /* libvtkRenderingVolume-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E41EE0545800F5154F /* libvtkRenderingVolume-7.1.dylib */; };
+		163E68531EE0545900F5154F /* libvtkRenderingVolumeOpenGL2-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E51EE0545800F5154F /* libvtkRenderingVolumeOpenGL2-7.1.dylib */; };
+		163E68541EE0545900F5154F /* libvtksqlite-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E61EE0545800F5154F /* libvtksqlite-7.1.dylib */; };
+		163E68551EE0545900F5154F /* libvtksys-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E71EE0545800F5154F /* libvtksys-7.1.dylib */; };
+		163E68561EE0545900F5154F /* libvtktiff-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E81EE0545800F5154F /* libvtktiff-7.1.dylib */; };
+		163E68571EE0545900F5154F /* libvtkverdict-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67E91EE0545800F5154F /* libvtkverdict-7.1.dylib */; };
+		163E68581EE0545900F5154F /* libvtkViewsContext2D-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67EA1EE0545800F5154F /* libvtkViewsContext2D-7.1.dylib */; };
+		163E68591EE0545900F5154F /* libvtkViewsCore-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67EB1EE0545800F5154F /* libvtkViewsCore-7.1.dylib */; };
+		163E685A1EE0545900F5154F /* libvtkViewsInfovis-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67EC1EE0545800F5154F /* libvtkViewsInfovis-7.1.dylib */; };
+		163E685B1EE0545900F5154F /* libvtkzlib-7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 163E67ED1EE0545800F5154F /* libvtkzlib-7.1.dylib */; };
 		164F6ECE1E7C15F4008A80AA /* orbital.cc in Sources */ = {isa = PBXBuildFile; fileRef = 164F6ECC1E7C15F4008A80AA /* orbital.cc */; };
 		164FB31D1CF0C251000A7235 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31A1CF0C251000A7235 /* Cocoa.framework */; };
 		164FB31E1CF0C251000A7235 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31B1CF0C251000A7235 /* GLUT.framework */; };
 		164FB31F1CF0C251000A7235 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FB31C1CF0C251000A7235 /* OpenGL.framework */; };
-		165131E01CA1899600754DD0 /* resourcepath.cc in Sources */ = {isa = PBXBuildFile; fileRef = 165131DE1CA1899600754DD0 /* resourcepath.cc */; };
-		166364E71E4C6805002C459A /* dendritespine.cc in Sources */ = {isa = PBXBuildFile; fileRef = 166364E51E4C6805002C459A /* dendritespine.cc */; };
-		168005C41C61FCB8007F5DF6 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005C31C61FCB8007F5DF6 /* main.cc */; };
+		168005C41C61FCB8007F5DF6 /* BrainHarmonics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005C31C61FCB8007F5DF6 /* BrainHarmonics.cc */; };
 		168005D61C61FF7F007F5DF6 /* neuron.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005D51C61FF7F007F5DF6 /* neuron.cc */; };
 		168005D81C61FF9D007F5DF6 /* soma.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005D71C61FF9D007F5DF6 /* soma.cc */; };
 		168005DA1C61FFB7007F5DF6 /* axonhillock.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005D91C61FFB7007F5DF6 /* axonhillock.cc */; };
 		168005DC1C61FFCD007F5DF6 /* schwanncell.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005DB1C61FFCD007F5DF6 /* schwanncell.cc */; };
 		168005DE1C61FFEA007F5DF6 /* axon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005DD1C61FFEA007F5DF6 /* axon.cc */; };
 		168005E01C61FFFF007F5DF6 /* dendrite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005DF1C61FFFF007F5DF6 /* dendrite.cc */; };
-		168005E21C620022007F5DF6 /* kchannel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005E11C620022007F5DF6 /* kchannel.cc */; };
-		168005E41C62003A007F5DF6 /* nachannel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005E31C62003A007F5DF6 /* nachannel.cc */; };
 		168005E61C620050007F5DF6 /* neurotransmitter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005E51C620050007F5DF6 /* neurotransmitter.cc */; };
 		168005E81C62006D007F5DF6 /* neuroreceptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005E71C62006D007F5DF6 /* neuroreceptor.cc */; };
 		168005EA1C620085007F5DF6 /* synapse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005E91C620085007F5DF6 /* synapse.cc */; };
-		168005ED1C620098007F5DF6 /* cagate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168005EB1C620098007F5DF6 /* cagate.cc */; };
-		168610B61CC2D1DE00F09001 /* multiscreen.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168610B41CC2D1DE00F09001 /* multiscreen.cc */; };
+		16D4E8791EAE1EB9009E51A2 /* cognitivenetwork.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16D4E8781EAE1EB9009E51A2 /* cognitivenetwork.cc */; };
+		16E089FB1ED3232200F39555 /* abstraction.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E089F71ED3232200F39555 /* abstraction.cc */; };
+		16E089FC1ED3232200F39555 /* apptimer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E089F91ED3232200F39555 /* apptimer.cc */; };
+		16E089FF1ED3234F00F39555 /* compositeforceparticle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E089FD1ED3234F00F39555 /* compositeforceparticle.cc */; };
+		16E08A021ED3237700F39555 /* dimension.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A001ED3237700F39555 /* dimension.cc */; };
+		16E08A071ED3239100F39555 /* elementaryforce.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A031ED3239100F39555 /* elementaryforce.cc */; };
+		16E08A081ED3239100F39555 /* elementaryparticle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A051ED3239100F39555 /* elementaryparticle.cc */; };
+		16E08A0D1ED323B000F39555 /* law.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A091ED323B000F39555 /* law.cc */; };
+		16E08A0E1ED323B000F39555 /* line.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A0B1ED323B000F39555 /* line.cc */; };
+		16E08A111ED323CE00F39555 /* matter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A0F1ED323CE00F39555 /* matter.cc */; };
+		16E08A141ED323ED00F39555 /* monomer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A121ED323ED00F39555 /* monomer.cc */; };
+		16E08A171ED3240D00F39555 /* node.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A151ED3240D00F39555 /* node.cc */; };
+		16E08A201ED3243300F39555 /* point.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A181ED3243300F39555 /* point.cc */; };
+		16E08A211ED3243300F39555 /* polygon.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A1A1ED3243300F39555 /* polygon.cc */; };
+		16E08A221ED3243300F39555 /* polyhedron.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A1C1ED3243300F39555 /* polyhedron.cc */; };
+		16E08A231ED3243300F39555 /* polymer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A1E1ED3243300F39555 /* polymer.cc */; };
+		16E08A261ED3245100F39555 /* quad.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A241ED3245100F39555 /* quad.cc */; };
+		16E08A291ED3246B00F39555 /* solid.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A271ED3246B00F39555 /* solid.cc */; };
+		16E08A2C1ED3248400F39555 /* universe.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E08A2A1ED3248400F39555 /* universe.cc */; };
 		16E3DFC21CBD46F000C7C2B1 /* spike.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E3DFC01CBD46F000C7C2B1 /* spike.cc */; };
-		16F8F3641CBEE204002E2658 /* monomer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3621CBEE204002E2658 /* monomer.cc */; };
-		16F8F3671CBEE226002E2658 /* polymer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16F8F3651CBEE226002E2658 /* polymer.cc */; };
+		16FB3B4B1ECAF3B9007EB8B3 /* membranechannel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16FB3B4A1ECAF3B9007EB8B3 /* membranechannel.cc */; };
+		16FB3B4E1ECAFE69007EB8B3 /* interneuronspace.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16FB3B4D1ECAFE69007EB8B3 /* interneuronspace.cc */; };
+		16FB3B521ECB25DE007EB8B3 /* cognitiveinput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16FB3B511ECB25DD007EB8B3 /* cognitiveinput.cc */; };
+		16FB3B541ECB269A007EB8B3 /* cognitiveoutput.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16FB3B531ECB269A007EB8B3 /* cognitiveoutput.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,109 +178,213 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		160043BE1C73292E00871CD2 /* myelinsheath.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myelinsheath.cc; sourceTree = "<group>"; };
-		160043BF1C73292E00871CD2 /* myelinsheath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myelinsheath.h; sourceTree = "<group>"; };
-		160043C11C732F0000871CD2 /* membrane.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = membrane.cc; sourceTree = "<group>"; };
-		160043C21C732F0000871CD2 /* membrane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = membrane.h; sourceTree = "<group>"; };
-		160043C41C73317600871CD2 /* dendritebranch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendritebranch.cc; sourceTree = "<group>"; };
-		160043C51C73317600871CD2 /* dendritebranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dendritebranch.h; sourceTree = "<group>"; };
-		160043C71C73318B00871CD2 /* axonbranch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axonbranch.cc; sourceTree = "<group>"; };
-		160043C81C73318B00871CD2 /* axonbranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axonbranch.h; sourceTree = "<group>"; };
-		160043CA1C7332B300871CD2 /* dendritecleft.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendritecleft.cc; sourceTree = "<group>"; };
-		160043CB1C7332B300871CD2 /* dendritecleft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dendritecleft.h; sourceTree = "<group>"; };
-		160043CD1C7332CB00871CD2 /* axonbouton.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axonbouton.cc; sourceTree = "<group>"; };
-		160043CE1C7332CB00871CD2 /* axonbouton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = axonbouton.h; sourceTree = "<group>"; };
-		160043D01C73349300871CD2 /* synapticvesicle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synapticvesicle.cc; sourceTree = "<group>"; };
-		160043D11C73349300871CD2 /* synapticvesicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synapticvesicle.h; sourceTree = "<group>"; };
-		16053C5A1E94EE2900760241 /* sniffex.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sniffex.cc; sourceTree = "<group>"; };
-		16053C5B1E94EE2900760241 /* sniffex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sniffex.h; sourceTree = "<group>"; };
-		16053C5D1E95120300760241 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
-		1619900F1C7518D700EA6040 /* abstraction.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = abstraction.cc; path = ../../homegrown/include/abstraction.cc; sourceTree = "<group>"; };
-		161990101C7518D700EA6040 /* abstraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = abstraction.h; path = ../../homegrown/include/abstraction.h; sourceTree = "<group>"; };
-		161990111C7518D700EA6040 /* apptimer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = apptimer.cc; path = ../../homegrown/include/apptimer.cc; sourceTree = "<group>"; };
-		161990121C7518D700EA6040 /* apptimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apptimer.h; path = ../../homegrown/include/apptimer.h; sourceTree = "<group>"; };
-		161990131C7518D700EA6040 /* compositeforce.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compositeforce.cc; path = ../../homegrown/include/compositeforce.cc; sourceTree = "<group>"; };
-		161990141C7518D700EA6040 /* compositeforce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compositeforce.h; path = ../../homegrown/include/compositeforce.h; sourceTree = "<group>"; };
-		161990151C7518D700EA6040 /* compositeparticle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compositeparticle.cc; path = ../../homegrown/include/compositeparticle.cc; sourceTree = "<group>"; };
-		161990161C7518D700EA6040 /* compositeparticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compositeparticle.h; path = ../../homegrown/include/compositeparticle.h; sourceTree = "<group>"; };
-		161990171C7518D700EA6040 /* dimension.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dimension.cc; path = ../../homegrown/include/dimension.cc; sourceTree = "<group>"; };
-		161990181C7518D700EA6040 /* dimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dimension.h; path = ../../homegrown/include/dimension.h; sourceTree = "<group>"; };
-		161990191C7518D700EA6040 /* elementaryforce.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = elementaryforce.cc; path = ../../homegrown/include/elementaryforce.cc; sourceTree = "<group>"; };
-		1619901A1C7518D700EA6040 /* elementaryforce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elementaryforce.h; path = ../../homegrown/include/elementaryforce.h; sourceTree = "<group>"; };
-		1619901B1C7518D700EA6040 /* elementaryparticle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = elementaryparticle.cc; path = ../../homegrown/include/elementaryparticle.cc; sourceTree = "<group>"; };
-		1619901C1C7518D700EA6040 /* elementaryparticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elementaryparticle.h; path = ../../homegrown/include/elementaryparticle.h; sourceTree = "<group>"; };
-		1619901E1C7518D700EA6040 /* law.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = law.cc; path = ../../homegrown/include/law.cc; sourceTree = "<group>"; };
-		1619901F1C7518D700EA6040 /* law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = law.h; path = ../../homegrown/include/law.h; sourceTree = "<group>"; };
-		161990201C7518D700EA6040 /* line.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = line.cc; path = ../../homegrown/include/line.cc; sourceTree = "<group>"; };
-		161990211C7518D700EA6040 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = line.h; path = ../../homegrown/include/line.h; sourceTree = "<group>"; };
-		161990241C7518D700EA6040 /* matter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matter.cc; path = ../../homegrown/include/matter.cc; sourceTree = "<group>"; };
-		161990251C7518D700EA6040 /* matter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matter.h; path = ../../homegrown/include/matter.h; sourceTree = "<group>"; };
-		161990261C7518D700EA6040 /* node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = node.cc; path = ../../homegrown/include/node.cc; sourceTree = "<group>"; };
-		161990271C7518D700EA6040 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = node.h; path = ../../homegrown/include/node.h; sourceTree = "<group>"; };
-		161990281C7518D700EA6040 /* point.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = point.cc; path = ../../homegrown/include/point.cc; sourceTree = "<group>"; };
-		161990291C7518D700EA6040 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point.h; path = ../../homegrown/include/point.h; sourceTree = "<group>"; };
-		1619902A1C7518D700EA6040 /* polygon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polygon.cc; path = ../../homegrown/include/polygon.cc; sourceTree = "<group>"; };
-		1619902B1C7518D700EA6040 /* polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polygon.h; path = ../../homegrown/include/polygon.h; sourceTree = "<group>"; };
-		1619902C1C7518D700EA6040 /* polyhedron.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polyhedron.cc; path = ../../homegrown/include/polyhedron.cc; sourceTree = "<group>"; };
-		1619902D1C7518D700EA6040 /* polyhedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polyhedron.h; path = ../../homegrown/include/polyhedron.h; sourceTree = "<group>"; };
-		1619902E1C7518D700EA6040 /* quad.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad.cc; path = ../../homegrown/include/quad.cc; sourceTree = "<group>"; };
-		1619902F1C7518D700EA6040 /* quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad.h; path = ../../homegrown/include/quad.h; sourceTree = "<group>"; };
-		161990311C7518D700EA6040 /* solid.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = solid.cc; path = ../../homegrown/include/solid.cc; sourceTree = "<group>"; };
-		161990321C7518D700EA6040 /* solid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solid.h; path = ../../homegrown/include/solid.h; sourceTree = "<group>"; };
-		161990331C7518D700EA6040 /* universe.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = universe.cc; path = ../../homegrown/include/universe.cc; sourceTree = "<group>"; };
-		161990341C7518D700EA6040 /* universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = universe.h; path = ../../homegrown/include/universe.h; sourceTree = "<group>"; };
-		163FF45C1CDFC1FF002B7DE9 /* ccpx1.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccpx1.in; sourceTree = "<group>"; };
-		163FF45D1CDFC1FF002B7DE9 /* ccpx11.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccpx11.in; sourceTree = "<group>"; };
-		164F6ECC1E7C15F4008A80AA /* orbital.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = orbital.cc; sourceTree = "<group>"; };
-		164F6ECD1E7C15F4008A80AA /* orbital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orbital.h; sourceTree = "<group>"; };
-		164FB31A1CF0C251000A7235 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
-		164FB31B1CF0C251000A7235 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
-		164FB31C1CF0C251000A7235 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
-		165131DD1CA1895500754DD0 /* BrainHarmonics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BrainHarmonics.plist; sourceTree = "<group>"; };
-		165131DE1CA1899600754DD0 /* resourcepath.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resourcepath.cc; sourceTree = "<group>"; };
-		165131DF1CA1899600754DD0 /* resourcepath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resourcepath.h; sourceTree = "<group>"; };
-		165131E21CA18A0C00754DD0 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
-		165131E31CA18A0C00754DD0 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
-		165131E41CA18A0C00754DD0 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
-		165131E51CA18A0C00754DD0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		165131E61CA1929A00754DD0 /* messages.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = messages.txt; sourceTree = "<group>"; };
-		166364E51E4C6805002C459A /* dendritespine.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendritespine.cc; sourceTree = "<group>"; };
-		166364E61E4C6805002C459A /* dendritespine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dendritespine.h; sourceTree = "<group>"; };
+		160043BE1C73292E00871CD2 /* myelinsheath.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = myelinsheath.cc; path = BrainHarmonics/myelinsheath.cc; sourceTree = SOURCE_ROOT; };
+		160043BF1C73292E00871CD2 /* myelinsheath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myelinsheath.h; path = BrainHarmonics/myelinsheath.h; sourceTree = SOURCE_ROOT; };
+		160043C11C732F0000871CD2 /* membrane.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = membrane.cc; path = BrainHarmonics/membrane.cc; sourceTree = SOURCE_ROOT; };
+		160043C21C732F0000871CD2 /* membrane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = membrane.h; path = BrainHarmonics/membrane.h; sourceTree = SOURCE_ROOT; };
+		160043C41C73317600871CD2 /* dendritebranch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dendritebranch.cc; path = BrainHarmonics/dendritebranch.cc; sourceTree = SOURCE_ROOT; };
+		160043C51C73317600871CD2 /* dendritebranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dendritebranch.h; path = BrainHarmonics/dendritebranch.h; sourceTree = SOURCE_ROOT; };
+		160043C71C73318B00871CD2 /* axonbranch.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axonbranch.cc; path = BrainHarmonics/axonbranch.cc; sourceTree = SOURCE_ROOT; };
+		160043C81C73318B00871CD2 /* axonbranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = axonbranch.h; path = BrainHarmonics/axonbranch.h; sourceTree = SOURCE_ROOT; };
+		160043CA1C7332B300871CD2 /* dendritecleft.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dendritecleft.cc; path = BrainHarmonics/dendritecleft.cc; sourceTree = SOURCE_ROOT; };
+		160043CB1C7332B300871CD2 /* dendritecleft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dendritecleft.h; path = BrainHarmonics/dendritecleft.h; sourceTree = SOURCE_ROOT; };
+		160043CD1C7332CB00871CD2 /* axonbouton.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axonbouton.cc; path = BrainHarmonics/axonbouton.cc; sourceTree = SOURCE_ROOT; };
+		160043CE1C7332CB00871CD2 /* axonbouton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = axonbouton.h; path = BrainHarmonics/axonbouton.h; sourceTree = SOURCE_ROOT; };
+		160043D01C73349300871CD2 /* synapticvesicle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synapticvesicle.cc; path = BrainHarmonics/synapticvesicle.cc; sourceTree = SOURCE_ROOT; };
+		160043D11C73349300871CD2 /* synapticvesicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = synapticvesicle.h; path = BrainHarmonics/synapticvesicle.h; sourceTree = SOURCE_ROOT; };
+		16053C5A1E94EE2900760241 /* sniffex.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sniffex.cc; path = BrainHarmonics/sniffex.cc; sourceTree = SOURCE_ROOT; };
+		16053C5B1E94EE2900760241 /* sniffex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sniffex.h; path = BrainHarmonics/sniffex.h; sourceTree = SOURCE_ROOT; };
+		16053C5D1E95120300760241 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = SOURCE_ROOT; };
+		163E67801EE0545600F5154F /* libvtkalglib-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkalglib-7.1.dylib"; path = "../../../../usr/local/lib/libvtkalglib-7.1.dylib"; sourceTree = "<group>"; };
+		163E67811EE0545600F5154F /* libvtkChartsCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkChartsCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkChartsCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67821EE0545600F5154F /* libvtkCommonColor-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonColor-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonColor-7.1.dylib"; sourceTree = "<group>"; };
+		163E67831EE0545600F5154F /* libvtkCommonComputationalGeometry-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonComputationalGeometry-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonComputationalGeometry-7.1.dylib"; sourceTree = "<group>"; };
+		163E67841EE0545600F5154F /* libvtkCommonCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67851EE0545600F5154F /* libvtkCommonDataModel-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonDataModel-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonDataModel-7.1.dylib"; sourceTree = "<group>"; };
+		163E67861EE0545600F5154F /* libvtkCommonExecutionModel-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonExecutionModel-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonExecutionModel-7.1.dylib"; sourceTree = "<group>"; };
+		163E67871EE0545600F5154F /* libvtkCommonMath-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMath-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonMath-7.1.dylib"; sourceTree = "<group>"; };
+		163E67881EE0545600F5154F /* libvtkCommonMisc-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonMisc-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonMisc-7.1.dylib"; sourceTree = "<group>"; };
+		163E67891EE0545600F5154F /* libvtkCommonSystem-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonSystem-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonSystem-7.1.dylib"; sourceTree = "<group>"; };
+		163E678A1EE0545600F5154F /* libvtkCommonTransforms-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkCommonTransforms-7.1.dylib"; path = "../../../../usr/local/lib/libvtkCommonTransforms-7.1.dylib"; sourceTree = "<group>"; };
+		163E678B1EE0545600F5154F /* libvtkDICOMParser-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDICOMParser-7.1.dylib"; path = "../../../../usr/local/lib/libvtkDICOMParser-7.1.dylib"; sourceTree = "<group>"; };
+		163E678C1EE0545600F5154F /* libvtkDomainsChemistry-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDomainsChemistry-7.1.dylib"; path = "../../../../usr/local/lib/libvtkDomainsChemistry-7.1.dylib"; sourceTree = "<group>"; };
+		163E678D1EE0545600F5154F /* libvtkDomainsChemistryOpenGL2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkDomainsChemistryOpenGL2-7.1.dylib"; path = "../../../../usr/local/lib/libvtkDomainsChemistryOpenGL2-7.1.dylib"; sourceTree = "<group>"; };
+		163E678E1EE0545600F5154F /* libvtkexoIIc-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexoIIc-7.1.dylib"; path = "../../../../usr/local/lib/libvtkexoIIc-7.1.dylib"; sourceTree = "<group>"; };
+		163E678F1EE0545600F5154F /* libvtkexpat-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkexpat-7.1.dylib"; path = "../../../../usr/local/lib/libvtkexpat-7.1.dylib"; sourceTree = "<group>"; };
+		163E67901EE0545600F5154F /* libvtkFiltersAMR-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersAMR-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersAMR-7.1.dylib"; sourceTree = "<group>"; };
+		163E67911EE0545600F5154F /* libvtkFiltersCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67921EE0545600F5154F /* libvtkFiltersExtraction-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersExtraction-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersExtraction-7.1.dylib"; sourceTree = "<group>"; };
+		163E67931EE0545600F5154F /* libvtkFiltersFlowPaths-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersFlowPaths-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersFlowPaths-7.1.dylib"; sourceTree = "<group>"; };
+		163E67941EE0545600F5154F /* libvtkFiltersGeneral-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneral-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersGeneral-7.1.dylib"; sourceTree = "<group>"; };
+		163E67951EE0545600F5154F /* libvtkFiltersGeneric-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeneric-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersGeneric-7.1.dylib"; sourceTree = "<group>"; };
+		163E67961EE0545700F5154F /* libvtkFiltersGeometry-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersGeometry-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersGeometry-7.1.dylib"; sourceTree = "<group>"; };
+		163E67971EE0545700F5154F /* libvtkFiltersHybrid-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHybrid-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersHybrid-7.1.dylib"; sourceTree = "<group>"; };
+		163E67981EE0545700F5154F /* libvtkFiltersHyperTree-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersHyperTree-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersHyperTree-7.1.dylib"; sourceTree = "<group>"; };
+		163E67991EE0545700F5154F /* libvtkFiltersImaging-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersImaging-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersImaging-7.1.dylib"; sourceTree = "<group>"; };
+		163E679A1EE0545700F5154F /* libvtkFiltersModeling-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersModeling-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersModeling-7.1.dylib"; sourceTree = "<group>"; };
+		163E679B1EE0545700F5154F /* libvtkFiltersParallel-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallel-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersParallel-7.1.dylib"; sourceTree = "<group>"; };
+		163E679C1EE0545700F5154F /* libvtkFiltersParallelImaging-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersParallelImaging-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersParallelImaging-7.1.dylib"; sourceTree = "<group>"; };
+		163E679D1EE0545700F5154F /* libvtkFiltersPoints-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersPoints-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersPoints-7.1.dylib"; sourceTree = "<group>"; };
+		163E679E1EE0545700F5154F /* libvtkFiltersProgrammable-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersProgrammable-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersProgrammable-7.1.dylib"; sourceTree = "<group>"; };
+		163E679F1EE0545700F5154F /* libvtkFiltersSelection-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSelection-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersSelection-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A01EE0545700F5154F /* libvtkFiltersSMP-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSMP-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersSMP-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A11EE0545700F5154F /* libvtkFiltersSources-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersSources-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersSources-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A21EE0545700F5154F /* libvtkFiltersStatistics-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersStatistics-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersStatistics-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A31EE0545700F5154F /* libvtkFiltersTexture-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersTexture-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersTexture-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A41EE0545700F5154F /* libvtkFiltersVerdict-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkFiltersVerdict-7.1.dylib"; path = "../../../../usr/local/lib/libvtkFiltersVerdict-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A51EE0545700F5154F /* libvtkfreetype-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkfreetype-7.1.dylib"; path = "../../../../usr/local/lib/libvtkfreetype-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A61EE0545700F5154F /* libvtkGeovisCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkGeovisCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkGeovisCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A71EE0545700F5154F /* libvtkgl2ps-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkgl2ps-7.1.dylib"; path = "../../../../usr/local/lib/libvtkgl2ps-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A81EE0545700F5154F /* libvtkglew-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkglew-7.1.dylib"; path = "../../../../usr/local/lib/libvtkglew-7.1.dylib"; sourceTree = "<group>"; };
+		163E67A91EE0545700F5154F /* libvtkhdf5_hl-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5_hl-7.1.dylib"; path = "../../../../usr/local/lib/libvtkhdf5_hl-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AA1EE0545700F5154F /* libvtkhdf5-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkhdf5-7.1.dylib"; path = "../../../../usr/local/lib/libvtkhdf5-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AB1EE0545700F5154F /* libvtkImagingColor-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingColor-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingColor-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AC1EE0545700F5154F /* libvtkImagingCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AD1EE0545700F5154F /* libvtkImagingFourier-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingFourier-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingFourier-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AE1EE0545700F5154F /* libvtkImagingGeneral-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingGeneral-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingGeneral-7.1.dylib"; sourceTree = "<group>"; };
+		163E67AF1EE0545700F5154F /* libvtkImagingHybrid-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingHybrid-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingHybrid-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B01EE0545700F5154F /* libvtkImagingMath-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMath-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingMath-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B11EE0545700F5154F /* libvtkImagingMorphological-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingMorphological-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingMorphological-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B21EE0545700F5154F /* libvtkImagingSources-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingSources-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingSources-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B31EE0545700F5154F /* libvtkImagingStatistics-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStatistics-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingStatistics-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B41EE0545700F5154F /* libvtkImagingStencil-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkImagingStencil-7.1.dylib"; path = "../../../../usr/local/lib/libvtkImagingStencil-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B51EE0545700F5154F /* libvtkInfovisCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkInfovisCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B61EE0545700F5154F /* libvtkInfovisLayout-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInfovisLayout-7.1.dylib"; path = "../../../../usr/local/lib/libvtkInfovisLayout-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B71EE0545700F5154F /* libvtkInteractionImage-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionImage-7.1.dylib"; path = "../../../../usr/local/lib/libvtkInteractionImage-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B81EE0545700F5154F /* libvtkInteractionStyle-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionStyle-7.1.dylib"; path = "../../../../usr/local/lib/libvtkInteractionStyle-7.1.dylib"; sourceTree = "<group>"; };
+		163E67B91EE0545700F5154F /* libvtkInteractionWidgets-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkInteractionWidgets-7.1.dylib"; path = "../../../../usr/local/lib/libvtkInteractionWidgets-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BA1EE0545700F5154F /* libvtkIOAMR-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOAMR-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOAMR-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BB1EE0545700F5154F /* libvtkIOCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BC1EE0545700F5154F /* libvtkIOEnSight-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOEnSight-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOEnSight-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BD1EE0545700F5154F /* libvtkIOExodus-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExodus-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOExodus-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BE1EE0545700F5154F /* libvtkIOExport-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOExport-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOExport-7.1.dylib"; sourceTree = "<group>"; };
+		163E67BF1EE0545700F5154F /* libvtkIOGeometry-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOGeometry-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOGeometry-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C01EE0545700F5154F /* libvtkIOImage-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImage-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOImage-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C11EE0545700F5154F /* libvtkIOImport-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOImport-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOImport-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C21EE0545700F5154F /* libvtkIOInfovis-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOInfovis-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOInfovis-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C31EE0545700F5154F /* libvtkIOLegacy-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLegacy-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOLegacy-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C41EE0545700F5154F /* libvtkIOLSDyna-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOLSDyna-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOLSDyna-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C51EE0545700F5154F /* libvtkIOMINC-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMINC-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOMINC-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C61EE0545700F5154F /* libvtkIOMovie-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOMovie-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOMovie-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C71EE0545700F5154F /* libvtkIONetCDF-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIONetCDF-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIONetCDF-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C81EE0545700F5154F /* libvtkIOParallel-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallel-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOParallel-7.1.dylib"; sourceTree = "<group>"; };
+		163E67C91EE0545700F5154F /* libvtkIOParallelXML-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOParallelXML-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOParallelXML-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CA1EE0545700F5154F /* libvtkIOPLY-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOPLY-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOPLY-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CB1EE0545700F5154F /* libvtkIOSQL-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOSQL-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOSQL-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CC1EE0545700F5154F /* libvtkIOTecplotTable-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOTecplotTable-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOTecplotTable-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CD1EE0545700F5154F /* libvtkIOVideo-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOVideo-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOVideo-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CE1EE0545700F5154F /* libvtkIOXML-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXML-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOXML-7.1.dylib"; sourceTree = "<group>"; };
+		163E67CF1EE0545700F5154F /* libvtkIOXMLParser-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkIOXMLParser-7.1.dylib"; path = "../../../../usr/local/lib/libvtkIOXMLParser-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D01EE0545700F5154F /* libvtkjpeg-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjpeg-7.1.dylib"; path = "../../../../usr/local/lib/libvtkjpeg-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D11EE0545700F5154F /* libvtkjsoncpp-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkjsoncpp-7.1.dylib"; path = "../../../../usr/local/lib/libvtkjsoncpp-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D21EE0545700F5154F /* libvtklibxml2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtklibxml2-7.1.dylib"; path = "../../../../usr/local/lib/libvtklibxml2-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D31EE0545700F5154F /* libvtkmetaio-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkmetaio-7.1.dylib"; path = "../../../../usr/local/lib/libvtkmetaio-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D41EE0545800F5154F /* libvtkNetCDF_cxx-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF_cxx-7.1.dylib"; path = "../../../../usr/local/lib/libvtkNetCDF_cxx-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D51EE0545800F5154F /* libvtkNetCDF-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkNetCDF-7.1.dylib"; path = "../../../../usr/local/lib/libvtkNetCDF-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D61EE0545800F5154F /* libvtkoggtheora-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkoggtheora-7.1.dylib"; path = "../../../../usr/local/lib/libvtkoggtheora-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D71EE0545800F5154F /* libvtkParallelCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkParallelCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkParallelCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D81EE0545800F5154F /* libvtkpng-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkpng-7.1.dylib"; path = "../../../../usr/local/lib/libvtkpng-7.1.dylib"; sourceTree = "<group>"; };
+		163E67D91EE0545800F5154F /* libvtkproj4-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkproj4-7.1.dylib"; path = "../../../../usr/local/lib/libvtkproj4-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DA1EE0545800F5154F /* libvtkRenderingAnnotation-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingAnnotation-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingAnnotation-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DB1EE0545800F5154F /* libvtkRenderingContext2D-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContext2D-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingContext2D-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DC1EE0545800F5154F /* libvtkRenderingContextOpenGL2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingContextOpenGL2-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingContextOpenGL2-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DD1EE0545800F5154F /* libvtkRenderingCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DE1EE0545800F5154F /* libvtkRenderingFreeType-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingFreeType-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingFreeType-7.1.dylib"; sourceTree = "<group>"; };
+		163E67DF1EE0545800F5154F /* libvtkRenderingGL2PSOpenGL2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingGL2PSOpenGL2-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingGL2PSOpenGL2-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E01EE0545800F5154F /* libvtkRenderingImage-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingImage-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingImage-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E11EE0545800F5154F /* libvtkRenderingLabel-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLabel-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingLabel-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E21EE0545800F5154F /* libvtkRenderingLOD-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingLOD-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingLOD-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E31EE0545800F5154F /* libvtkRenderingOpenGL2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingOpenGL2-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingOpenGL2-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E41EE0545800F5154F /* libvtkRenderingVolume-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolume-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingVolume-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E51EE0545800F5154F /* libvtkRenderingVolumeOpenGL2-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkRenderingVolumeOpenGL2-7.1.dylib"; path = "../../../../usr/local/lib/libvtkRenderingVolumeOpenGL2-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E61EE0545800F5154F /* libvtksqlite-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksqlite-7.1.dylib"; path = "../../../../usr/local/lib/libvtksqlite-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E71EE0545800F5154F /* libvtksys-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtksys-7.1.dylib"; path = "../../../../usr/local/lib/libvtksys-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E81EE0545800F5154F /* libvtktiff-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtktiff-7.1.dylib"; path = "../../../../usr/local/lib/libvtktiff-7.1.dylib"; sourceTree = "<group>"; };
+		163E67E91EE0545800F5154F /* libvtkverdict-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkverdict-7.1.dylib"; path = "../../../../usr/local/lib/libvtkverdict-7.1.dylib"; sourceTree = "<group>"; };
+		163E67EA1EE0545800F5154F /* libvtkViewsContext2D-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsContext2D-7.1.dylib"; path = "../../../../usr/local/lib/libvtkViewsContext2D-7.1.dylib"; sourceTree = "<group>"; };
+		163E67EB1EE0545800F5154F /* libvtkViewsCore-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsCore-7.1.dylib"; path = "../../../../usr/local/lib/libvtkViewsCore-7.1.dylib"; sourceTree = "<group>"; };
+		163E67EC1EE0545800F5154F /* libvtkViewsInfovis-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkViewsInfovis-7.1.dylib"; path = "../../../../usr/local/lib/libvtkViewsInfovis-7.1.dylib"; sourceTree = "<group>"; };
+		163E67ED1EE0545800F5154F /* libvtkzlib-7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libvtkzlib-7.1.dylib"; path = "../../../../usr/local/lib/libvtkzlib-7.1.dylib"; sourceTree = "<group>"; };
+		163FF45C1CDFC1FF002B7DE9 /* ccp2x0.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccp2x0.in; sourceTree = SOURCE_ROOT; };
+		163FF45D1CDFC1FF002B7DE9 /* ccp2xx0.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccp2xx0.in; sourceTree = SOURCE_ROOT; };
+		164F6ECC1E7C15F4008A80AA /* orbital.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = orbital.cc; path = BrainHarmonics/orbital.cc; sourceTree = SOURCE_ROOT; };
+		164F6ECD1E7C15F4008A80AA /* orbital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = orbital.h; path = BrainHarmonics/orbital.h; sourceTree = SOURCE_ROOT; };
+		164FB31A1CF0C251000A7235 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../System/Library/Frameworks/Cocoa.framework; sourceTree = SOURCE_ROOT; };
+		164FB31B1CF0C251000A7235 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		164FB31C1CF0C251000A7235 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = SOURCE_ROOT; };
+		165131DD1CA1895500754DD0 /* BrainHarmonics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BrainHarmonics.plist; sourceTree = SOURCE_ROOT; };
+		165131E31CA18A0C00754DD0 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = SOURCE_ROOT; };
+		165131E41CA18A0C00754DD0 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = SOURCE_ROOT; };
+		165131E61CA1929A00754DD0 /* messages.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = messages.txt; sourceTree = SOURCE_ROOT; };
 		1673F22E1CDD238000E156D9 /* pycompute.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = pycompute.py; path = DerivedData/Build/Products/Debug/pycompute.py; sourceTree = SOURCE_ROOT; };
 		168005C01C61FCB8007F5DF6 /* BrainHarmonics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BrainHarmonics; sourceTree = BUILT_PRODUCTS_DIR; };
-		168005C31C61FCB8007F5DF6 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
-		168005CA1C61FE1C007F5DF6 /* neuron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neuron.h; sourceTree = "<group>"; };
-		168005CB1C61FE2F007F5DF6 /* soma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soma.h; sourceTree = "<group>"; };
-		168005CC1C61FE48007F5DF6 /* axonhillock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = axonhillock.h; sourceTree = "<group>"; };
-		168005CD1C61FE67007F5DF6 /* schwanncell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schwanncell.h; sourceTree = "<group>"; };
-		168005CE1C61FE7A007F5DF6 /* axon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = axon.h; sourceTree = "<group>"; };
-		168005CF1C61FE8C007F5DF6 /* dendrite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dendrite.h; sourceTree = "<group>"; };
-		168005D01C61FEB1007F5DF6 /* kchannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kchannel.h; sourceTree = "<group>"; };
-		168005D11C61FEC8007F5DF6 /* nachannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nachannel.h; sourceTree = "<group>"; };
-		168005D21C61FEE8007F5DF6 /* neurotransmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neurotransmitter.h; sourceTree = "<group>"; };
-		168005D31C61FEFC007F5DF6 /* neuroreceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neuroreceptor.h; sourceTree = "<group>"; };
-		168005D41C61FF15007F5DF6 /* synapse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = synapse.h; sourceTree = "<group>"; };
-		168005D51C61FF7F007F5DF6 /* neuron.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuron.cc; sourceTree = "<group>"; };
-		168005D71C61FF9D007F5DF6 /* soma.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soma.cc; sourceTree = "<group>"; };
-		168005D91C61FFB7007F5DF6 /* axonhillock.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axonhillock.cc; sourceTree = "<group>"; };
-		168005DB1C61FFCD007F5DF6 /* schwanncell.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = schwanncell.cc; sourceTree = "<group>"; };
-		168005DD1C61FFEA007F5DF6 /* axon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = axon.cc; sourceTree = "<group>"; };
-		168005DF1C61FFFF007F5DF6 /* dendrite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dendrite.cc; sourceTree = "<group>"; };
-		168005E11C620022007F5DF6 /* kchannel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kchannel.cc; sourceTree = "<group>"; };
-		168005E31C62003A007F5DF6 /* nachannel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nachannel.cc; sourceTree = "<group>"; };
-		168005E51C620050007F5DF6 /* neurotransmitter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neurotransmitter.cc; sourceTree = "<group>"; };
-		168005E71C62006D007F5DF6 /* neuroreceptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neuroreceptor.cc; sourceTree = "<group>"; };
-		168005E91C620085007F5DF6 /* synapse.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = synapse.cc; sourceTree = "<group>"; };
-		168005EB1C620098007F5DF6 /* cagate.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cagate.cc; sourceTree = "<group>"; };
-		168005EC1C620098007F5DF6 /* cagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cagate.h; sourceTree = "<group>"; };
-		168610B41CC2D1DE00F09001 /* multiscreen.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = multiscreen.cc; sourceTree = "<group>"; };
-		168610B51CC2D1DE00F09001 /* multiscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiscreen.h; sourceTree = "<group>"; };
-		16E3DFC01CBD46F000C7C2B1 /* spike.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike.cc; sourceTree = "<group>"; };
-		16E3DFC11CBD46F000C7C2B1 /* spike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spike.h; sourceTree = "<group>"; };
-		16F8F3621CBEE204002E2658 /* monomer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monomer.cc; path = ../../homegrown/include/monomer.cc; sourceTree = "<group>"; };
-		16F8F3631CBEE204002E2658 /* monomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monomer.h; path = ../../homegrown/include/monomer.h; sourceTree = "<group>"; };
-		16F8F3651CBEE226002E2658 /* polymer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = polymer.cc; path = ../../homegrown/include/polymer.cc; sourceTree = "<group>"; };
-		16F8F3661CBEE226002E2658 /* polymer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = polymer.h; path = ../../homegrown/include/polymer.h; sourceTree = "<group>"; };
+		168005C31C61FCB8007F5DF6 /* BrainHarmonics.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BrainHarmonics.cc; path = BrainHarmonics/BrainHarmonics.cc; sourceTree = SOURCE_ROOT; };
+		168005CA1C61FE1C007F5DF6 /* neuron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = neuron.h; path = BrainHarmonics/neuron.h; sourceTree = SOURCE_ROOT; };
+		168005CB1C61FE2F007F5DF6 /* soma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = soma.h; path = BrainHarmonics/soma.h; sourceTree = SOURCE_ROOT; };
+		168005CC1C61FE48007F5DF6 /* axonhillock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = axonhillock.h; path = BrainHarmonics/axonhillock.h; sourceTree = SOURCE_ROOT; };
+		168005CD1C61FE67007F5DF6 /* schwanncell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = schwanncell.h; path = BrainHarmonics/schwanncell.h; sourceTree = SOURCE_ROOT; };
+		168005CE1C61FE7A007F5DF6 /* axon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = axon.h; path = BrainHarmonics/axon.h; sourceTree = SOURCE_ROOT; };
+		168005CF1C61FE8C007F5DF6 /* dendrite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dendrite.h; path = BrainHarmonics/dendrite.h; sourceTree = SOURCE_ROOT; };
+		168005D21C61FEE8007F5DF6 /* neurotransmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = neurotransmitter.h; path = BrainHarmonics/neurotransmitter.h; sourceTree = SOURCE_ROOT; };
+		168005D31C61FEFC007F5DF6 /* neuroreceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = neuroreceptor.h; path = BrainHarmonics/neuroreceptor.h; sourceTree = SOURCE_ROOT; };
+		168005D41C61FF15007F5DF6 /* synapse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = synapse.h; path = BrainHarmonics/synapse.h; sourceTree = SOURCE_ROOT; };
+		168005D51C61FF7F007F5DF6 /* neuron.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = neuron.cc; path = BrainHarmonics/neuron.cc; sourceTree = SOURCE_ROOT; };
+		168005D71C61FF9D007F5DF6 /* soma.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soma.cc; path = BrainHarmonics/soma.cc; sourceTree = SOURCE_ROOT; };
+		168005D91C61FFB7007F5DF6 /* axonhillock.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axonhillock.cc; path = BrainHarmonics/axonhillock.cc; sourceTree = SOURCE_ROOT; };
+		168005DB1C61FFCD007F5DF6 /* schwanncell.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = schwanncell.cc; path = BrainHarmonics/schwanncell.cc; sourceTree = SOURCE_ROOT; };
+		168005DD1C61FFEA007F5DF6 /* axon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = axon.cc; path = BrainHarmonics/axon.cc; sourceTree = SOURCE_ROOT; };
+		168005DF1C61FFFF007F5DF6 /* dendrite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dendrite.cc; path = BrainHarmonics/dendrite.cc; sourceTree = SOURCE_ROOT; };
+		168005E51C620050007F5DF6 /* neurotransmitter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = neurotransmitter.cc; path = BrainHarmonics/neurotransmitter.cc; sourceTree = SOURCE_ROOT; };
+		168005E71C62006D007F5DF6 /* neuroreceptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = neuroreceptor.cc; path = BrainHarmonics/neuroreceptor.cc; sourceTree = SOURCE_ROOT; };
+		168005E91C620085007F5DF6 /* synapse.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synapse.cc; path = BrainHarmonics/synapse.cc; sourceTree = SOURCE_ROOT; };
+		16D4E8771EAE1EA8009E51A2 /* cognitivenetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cognitivenetwork.h; path = BrainHarmonics/cognitivenetwork.h; sourceTree = SOURCE_ROOT; };
+		16D4E8781EAE1EB9009E51A2 /* cognitivenetwork.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cognitivenetwork.cc; path = BrainHarmonics/cognitivenetwork.cc; sourceTree = SOURCE_ROOT; };
+		16E089F71ED3232200F39555 /* abstraction.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abstraction.cc; sourceTree = "<group>"; };
+		16E089F81ED3232200F39555 /* abstraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstraction.h; sourceTree = "<group>"; };
+		16E089F91ED3232200F39555 /* apptimer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = apptimer.cc; sourceTree = "<group>"; };
+		16E089FA1ED3232200F39555 /* apptimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apptimer.h; sourceTree = "<group>"; };
+		16E089FD1ED3234F00F39555 /* compositeforceparticle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compositeforceparticle.cc; sourceTree = "<group>"; };
+		16E089FE1ED3234F00F39555 /* compositeforceparticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compositeforceparticle.h; sourceTree = "<group>"; };
+		16E08A001ED3237700F39555 /* dimension.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dimension.cc; sourceTree = "<group>"; };
+		16E08A011ED3237700F39555 /* dimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dimension.h; sourceTree = "<group>"; };
+		16E08A031ED3239100F39555 /* elementaryforce.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elementaryforce.cc; sourceTree = "<group>"; };
+		16E08A041ED3239100F39555 /* elementaryforce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elementaryforce.h; sourceTree = "<group>"; };
+		16E08A051ED3239100F39555 /* elementaryparticle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elementaryparticle.cc; sourceTree = "<group>"; };
+		16E08A061ED3239100F39555 /* elementaryparticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elementaryparticle.h; sourceTree = "<group>"; };
+		16E08A091ED323B000F39555 /* law.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = law.cc; sourceTree = "<group>"; };
+		16E08A0A1ED323B000F39555 /* law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = law.h; sourceTree = "<group>"; };
+		16E08A0B1ED323B000F39555 /* line.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line.cc; sourceTree = "<group>"; };
+		16E08A0C1ED323B000F39555 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.h; sourceTree = "<group>"; };
+		16E08A0F1ED323CE00F39555 /* matter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matter.cc; sourceTree = "<group>"; };
+		16E08A101ED323CE00F39555 /* matter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matter.h; sourceTree = "<group>"; };
+		16E08A121ED323ED00F39555 /* monomer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = monomer.cc; sourceTree = "<group>"; };
+		16E08A131ED323ED00F39555 /* monomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monomer.h; sourceTree = "<group>"; };
+		16E08A151ED3240D00F39555 /* node.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = node.cc; sourceTree = "<group>"; };
+		16E08A161ED3240D00F39555 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		16E08A181ED3243300F39555 /* point.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cc; sourceTree = "<group>"; };
+		16E08A191ED3243300F39555 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		16E08A1A1ED3243300F39555 /* polygon.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polygon.cc; sourceTree = "<group>"; };
+		16E08A1B1ED3243300F39555 /* polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polygon.h; sourceTree = "<group>"; };
+		16E08A1C1ED3243300F39555 /* polyhedron.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polyhedron.cc; sourceTree = "<group>"; };
+		16E08A1D1ED3243300F39555 /* polyhedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polyhedron.h; sourceTree = "<group>"; };
+		16E08A1E1ED3243300F39555 /* polymer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polymer.cc; sourceTree = "<group>"; };
+		16E08A1F1ED3243300F39555 /* polymer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polymer.h; sourceTree = "<group>"; };
+		16E08A241ED3245100F39555 /* quad.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quad.cc; sourceTree = "<group>"; };
+		16E08A251ED3245100F39555 /* quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quad.h; sourceTree = "<group>"; };
+		16E08A271ED3246B00F39555 /* solid.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solid.cc; sourceTree = "<group>"; };
+		16E08A281ED3246B00F39555 /* solid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solid.h; sourceTree = "<group>"; };
+		16E08A2A1ED3248400F39555 /* universe.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = universe.cc; sourceTree = "<group>"; };
+		16E08A2B1ED3248400F39555 /* universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = universe.h; sourceTree = "<group>"; };
+		16E3DFC01CBD46F000C7C2B1 /* spike.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spike.cc; path = BrainHarmonics/spike.cc; sourceTree = SOURCE_ROOT; };
+		16E3DFC11CBD46F000C7C2B1 /* spike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spike.h; path = BrainHarmonics/spike.h; sourceTree = SOURCE_ROOT; };
+		16FB3B4A1ECAF3B9007EB8B3 /* membranechannel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = membranechannel.cc; path = BrainHarmonics/membranechannel.cc; sourceTree = SOURCE_ROOT; };
+		16FB3B4C1ECAF3D9007EB8B3 /* membranechannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = membranechannel.h; path = BrainHarmonics/membranechannel.h; sourceTree = SOURCE_ROOT; };
+		16FB3B4D1ECAFE69007EB8B3 /* interneuronspace.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = interneuronspace.cc; path = BrainHarmonics/interneuronspace.cc; sourceTree = SOURCE_ROOT; };
+		16FB3B4F1ECAFE7D007EB8B3 /* interneuronspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interneuronspace.h; path = BrainHarmonics/interneuronspace.h; sourceTree = SOURCE_ROOT; };
+		16FB3B501ECB25C9007EB8B3 /* cognitiveinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cognitiveinput.h; path = BrainHarmonics/cognitiveinput.h; sourceTree = SOURCE_ROOT; };
+		16FB3B511ECB25DD007EB8B3 /* cognitiveinput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cognitiveinput.cc; path = BrainHarmonics/cognitiveinput.cc; sourceTree = SOURCE_ROOT; };
+		16FB3B531ECB269A007EB8B3 /* cognitiveoutput.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cognitiveoutput.cc; path = BrainHarmonics/cognitiveoutput.cc; sourceTree = SOURCE_ROOT; };
+		16FB3B551ECB26AE007EB8B3 /* cognitiveoutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cognitiveoutput.h; path = BrainHarmonics/cognitiveoutput.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +392,119 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163E68401EE0545900F5154F /* libvtklibxml2-7.1.dylib in Frameworks */,
+				163E68331EE0545900F5154F /* libvtkIOMINC-7.1.dylib in Frameworks */,
+				163E68411EE0545900F5154F /* libvtkmetaio-7.1.dylib in Frameworks */,
+				163E67FE1EE0545800F5154F /* libvtkFiltersAMR-7.1.dylib in Frameworks */,
+				163E681F1EE0545900F5154F /* libvtkImagingMorphological-7.1.dylib in Frameworks */,
+				163E67FF1EE0545800F5154F /* libvtkFiltersCore-7.1.dylib in Frameworks */,
+				163E67F31EE0545800F5154F /* libvtkCommonDataModel-7.1.dylib in Frameworks */,
+				163E67FB1EE0545800F5154F /* libvtkDomainsChemistryOpenGL2-7.1.dylib in Frameworks */,
+				163E68391EE0545900F5154F /* libvtkIOSQL-7.1.dylib in Frameworks */,
+				163E68491EE0545900F5154F /* libvtkRenderingContext2D-7.1.dylib in Frameworks */,
+				163E68191EE0545800F5154F /* libvtkImagingColor-7.1.dylib in Frameworks */,
+				163E68241EE0545900F5154F /* libvtkInfovisLayout-7.1.dylib in Frameworks */,
+				163E68591EE0545900F5154F /* libvtkViewsCore-7.1.dylib in Frameworks */,
+				163E67F11EE0545800F5154F /* libvtkCommonComputationalGeometry-7.1.dylib in Frameworks */,
+				163E68091EE0545800F5154F /* libvtkFiltersParallel-7.1.dylib in Frameworks */,
+				163E68521EE0545900F5154F /* libvtkRenderingVolume-7.1.dylib in Frameworks */,
+				163E683D1EE0545900F5154F /* libvtkIOXMLParser-7.1.dylib in Frameworks */,
+				163E68041EE0545800F5154F /* libvtkFiltersGeometry-7.1.dylib in Frameworks */,
+				163E67F91EE0545800F5154F /* libvtkDICOMParser-7.1.dylib in Frameworks */,
+				163E68441EE0545900F5154F /* libvtkoggtheora-7.1.dylib in Frameworks */,
+				163E68351EE0545900F5154F /* libvtkIONetCDF-7.1.dylib in Frameworks */,
+				163E68101EE0545800F5154F /* libvtkFiltersStatistics-7.1.dylib in Frameworks */,
+				163E67FC1EE0545800F5154F /* libvtkexoIIc-7.1.dylib in Frameworks */,
 				164FB31E1CF0C251000A7235 /* GLUT.framework in Frameworks */,
+				163E68201EE0545900F5154F /* libvtkImagingSources-7.1.dylib in Frameworks */,
+				163E68141EE0545800F5154F /* libvtkGeovisCore-7.1.dylib in Frameworks */,
+				163E68261EE0545900F5154F /* libvtkInteractionStyle-7.1.dylib in Frameworks */,
+				163E68161EE0545800F5154F /* libvtkglew-7.1.dylib in Frameworks */,
+				163E68361EE0545900F5154F /* libvtkIOParallel-7.1.dylib in Frameworks */,
+				163E682B1EE0545900F5154F /* libvtkIOExodus-7.1.dylib in Frameworks */,
+				163E681B1EE0545900F5154F /* libvtkImagingFourier-7.1.dylib in Frameworks */,
 				164FB31D1CF0C251000A7235 /* Cocoa.framework in Frameworks */,
+				163E682F1EE0545900F5154F /* libvtkIOImport-7.1.dylib in Frameworks */,
+				163E683E1EE0545900F5154F /* libvtkjpeg-7.1.dylib in Frameworks */,
+				163E683A1EE0545900F5154F /* libvtkIOTecplotTable-7.1.dylib in Frameworks */,
+				163E68451EE0545900F5154F /* libvtkParallelCore-7.1.dylib in Frameworks */,
+				163E68131EE0545800F5154F /* libvtkfreetype-7.1.dylib in Frameworks */,
+				163E67EF1EE0545800F5154F /* libvtkChartsCore-7.1.dylib in Frameworks */,
+				163E68421EE0545900F5154F /* libvtkNetCDF_cxx-7.1.dylib in Frameworks */,
+				163E681A1EE0545900F5154F /* libvtkImagingCore-7.1.dylib in Frameworks */,
+				163E684C1EE0545900F5154F /* libvtkRenderingFreeType-7.1.dylib in Frameworks */,
+				163E67F41EE0545800F5154F /* libvtkCommonExecutionModel-7.1.dylib in Frameworks */,
+				163E68081EE0545800F5154F /* libvtkFiltersModeling-7.1.dylib in Frameworks */,
+				163E684F1EE0545900F5154F /* libvtkRenderingLabel-7.1.dylib in Frameworks */,
+				163E682D1EE0545900F5154F /* libvtkIOGeometry-7.1.dylib in Frameworks */,
+				163E68471EE0545900F5154F /* libvtkproj4-7.1.dylib in Frameworks */,
+				163E68321EE0545900F5154F /* libvtkIOLSDyna-7.1.dylib in Frameworks */,
+				163E685B1EE0545900F5154F /* libvtkzlib-7.1.dylib in Frameworks */,
+				163E683F1EE0545900F5154F /* libvtkjsoncpp-7.1.dylib in Frameworks */,
+				163E68181EE0545800F5154F /* libvtkhdf5-7.1.dylib in Frameworks */,
+				163E68211EE0545900F5154F /* libvtkImagingStatistics-7.1.dylib in Frameworks */,
+				163E68531EE0545900F5154F /* libvtkRenderingVolumeOpenGL2-7.1.dylib in Frameworks */,
+				163E683B1EE0545900F5154F /* libvtkIOVideo-7.1.dylib in Frameworks */,
+				163E67EE1EE0545800F5154F /* libvtkalglib-7.1.dylib in Frameworks */,
+				163E68051EE0545800F5154F /* libvtkFiltersHybrid-7.1.dylib in Frameworks */,
+				163E682E1EE0545900F5154F /* libvtkIOImage-7.1.dylib in Frameworks */,
+				163E68251EE0545900F5154F /* libvtkInteractionImage-7.1.dylib in Frameworks */,
+				163E68121EE0545800F5154F /* libvtkFiltersVerdict-7.1.dylib in Frameworks */,
+				163E681D1EE0545900F5154F /* libvtkImagingHybrid-7.1.dylib in Frameworks */,
+				163E684D1EE0545900F5154F /* libvtkRenderingGL2PSOpenGL2-7.1.dylib in Frameworks */,
+				163E68231EE0545900F5154F /* libvtkInfovisCore-7.1.dylib in Frameworks */,
+				163E67FA1EE0545800F5154F /* libvtkDomainsChemistry-7.1.dylib in Frameworks */,
+				163E67F21EE0545800F5154F /* libvtkCommonCore-7.1.dylib in Frameworks */,
+				163E68481EE0545900F5154F /* libvtkRenderingAnnotation-7.1.dylib in Frameworks */,
+				163E68021EE0545800F5154F /* libvtkFiltersGeneral-7.1.dylib in Frameworks */,
+				163E67F81EE0545800F5154F /* libvtkCommonTransforms-7.1.dylib in Frameworks */,
+				163E68011EE0545800F5154F /* libvtkFiltersFlowPaths-7.1.dylib in Frameworks */,
+				163E68341EE0545900F5154F /* libvtkIOMovie-7.1.dylib in Frameworks */,
+				163E680D1EE0545800F5154F /* libvtkFiltersSelection-7.1.dylib in Frameworks */,
+				163E680B1EE0545800F5154F /* libvtkFiltersPoints-7.1.dylib in Frameworks */,
+				163E67F71EE0545800F5154F /* libvtkCommonSystem-7.1.dylib in Frameworks */,
+				163E680E1EE0545800F5154F /* libvtkFiltersSMP-7.1.dylib in Frameworks */,
+				163E68061EE0545800F5154F /* libvtkFiltersHyperTree-7.1.dylib in Frameworks */,
+				163E680C1EE0545800F5154F /* libvtkFiltersProgrammable-7.1.dylib in Frameworks */,
+				163E68501EE0545900F5154F /* libvtkRenderingLOD-7.1.dylib in Frameworks */,
+				163E68171EE0545800F5154F /* libvtkhdf5_hl-7.1.dylib in Frameworks */,
+				163E68271EE0545900F5154F /* libvtkInteractionWidgets-7.1.dylib in Frameworks */,
+				163E68301EE0545900F5154F /* libvtkIOInfovis-7.1.dylib in Frameworks */,
+				163E681E1EE0545900F5154F /* libvtkImagingMath-7.1.dylib in Frameworks */,
+				163E680F1EE0545800F5154F /* libvtkFiltersSources-7.1.dylib in Frameworks */,
+				163E684B1EE0545900F5154F /* libvtkRenderingCore-7.1.dylib in Frameworks */,
+				163E68551EE0545900F5154F /* libvtksys-7.1.dylib in Frameworks */,
+				163E67FD1EE0545800F5154F /* libvtkexpat-7.1.dylib in Frameworks */,
+				163E68311EE0545900F5154F /* libvtkIOLegacy-7.1.dylib in Frameworks */,
+				163E68071EE0545800F5154F /* libvtkFiltersImaging-7.1.dylib in Frameworks */,
+				163E68111EE0545800F5154F /* libvtkFiltersTexture-7.1.dylib in Frameworks */,
+				163E683C1EE0545900F5154F /* libvtkIOXML-7.1.dylib in Frameworks */,
+				163E681C1EE0545900F5154F /* libvtkImagingGeneral-7.1.dylib in Frameworks */,
+				163E68581EE0545900F5154F /* libvtkViewsContext2D-7.1.dylib in Frameworks */,
+				163E68571EE0545900F5154F /* libvtkverdict-7.1.dylib in Frameworks */,
+				163E682A1EE0545900F5154F /* libvtkIOEnSight-7.1.dylib in Frameworks */,
+				163E680A1EE0545800F5154F /* libvtkFiltersParallelImaging-7.1.dylib in Frameworks */,
+				163E68461EE0545900F5154F /* libvtkpng-7.1.dylib in Frameworks */,
+				163E682C1EE0545900F5154F /* libvtkIOExport-7.1.dylib in Frameworks */,
+				163E684A1EE0545900F5154F /* libvtkRenderingContextOpenGL2-7.1.dylib in Frameworks */,
+				163E67F61EE0545800F5154F /* libvtkCommonMisc-7.1.dylib in Frameworks */,
+				163E68001EE0545800F5154F /* libvtkFiltersExtraction-7.1.dylib in Frameworks */,
+				163E67F01EE0545800F5154F /* libvtkCommonColor-7.1.dylib in Frameworks */,
+				163E68381EE0545900F5154F /* libvtkIOPLY-7.1.dylib in Frameworks */,
 				164FB31F1CF0C251000A7235 /* OpenGL.framework in Frameworks */,
+				163E68371EE0545900F5154F /* libvtkIOParallelXML-7.1.dylib in Frameworks */,
+				163E684E1EE0545900F5154F /* libvtkRenderingImage-7.1.dylib in Frameworks */,
+				163E68561EE0545900F5154F /* libvtktiff-7.1.dylib in Frameworks */,
+				163E68151EE0545800F5154F /* libvtkgl2ps-7.1.dylib in Frameworks */,
+				163E68281EE0545900F5154F /* libvtkIOAMR-7.1.dylib in Frameworks */,
+				163E68541EE0545900F5154F /* libvtksqlite-7.1.dylib in Frameworks */,
+				163E685A1EE0545900F5154F /* libvtkViewsInfovis-7.1.dylib in Frameworks */,
+				163E68221EE0545900F5154F /* libvtkImagingStencil-7.1.dylib in Frameworks */,
+				163E68291EE0545900F5154F /* libvtkIOCore-7.1.dylib in Frameworks */,
+				163E68431EE0545900F5154F /* libvtkNetCDF-7.1.dylib in Frameworks */,
+				163E67F51EE0545800F5154F /* libvtkCommonMath-7.1.dylib in Frameworks */,
+				163E68031EE0545800F5154F /* libvtkFiltersGeneric-7.1.dylib in Frameworks */,
+				163E68511EE0545900F5154F /* libvtkRenderingOpenGL2-7.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +514,8 @@
 		165131DC1CA1892900754DD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				163FF45C1CDFC1FF002B7DE9 /* ccpx1.in */,
-				163FF45D1CDFC1FF002B7DE9 /* ccpx11.in */,
+				163FF45C1CDFC1FF002B7DE9 /* ccp2x0.in */,
+				163FF45D1CDFC1FF002B7DE9 /* ccp2xx0.in */,
 				1673F22E1CDD238000E156D9 /* pycompute.py */,
 				165131DD1CA1895500754DD0 /* BrainHarmonics.plist */,
 			);
@@ -205,10 +527,8 @@
 			children = (
 				16053C5D1E95120300760241 /* data */,
 				165131E61CA1929A00754DD0 /* messages.txt */,
-				165131E21CA18A0C00754DD0 /* cute_image.jpg */,
 				165131E31CA18A0C00754DD0 /* nice_music.ogg */,
 				165131E41CA18A0C00754DD0 /* sansation.ttf */,
-				165131E51CA18A0C00754DD0 /* icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -216,6 +536,116 @@
 		168005B71C61FCB8007F5DF6 = {
 			isa = PBXGroup;
 			children = (
+				163E67801EE0545600F5154F /* libvtkalglib-7.1.dylib */,
+				163E67811EE0545600F5154F /* libvtkChartsCore-7.1.dylib */,
+				163E67821EE0545600F5154F /* libvtkCommonColor-7.1.dylib */,
+				163E67831EE0545600F5154F /* libvtkCommonComputationalGeometry-7.1.dylib */,
+				163E67841EE0545600F5154F /* libvtkCommonCore-7.1.dylib */,
+				163E67851EE0545600F5154F /* libvtkCommonDataModel-7.1.dylib */,
+				163E67861EE0545600F5154F /* libvtkCommonExecutionModel-7.1.dylib */,
+				163E67871EE0545600F5154F /* libvtkCommonMath-7.1.dylib */,
+				163E67881EE0545600F5154F /* libvtkCommonMisc-7.1.dylib */,
+				163E67891EE0545600F5154F /* libvtkCommonSystem-7.1.dylib */,
+				163E678A1EE0545600F5154F /* libvtkCommonTransforms-7.1.dylib */,
+				163E678B1EE0545600F5154F /* libvtkDICOMParser-7.1.dylib */,
+				163E678C1EE0545600F5154F /* libvtkDomainsChemistry-7.1.dylib */,
+				163E678D1EE0545600F5154F /* libvtkDomainsChemistryOpenGL2-7.1.dylib */,
+				163E678E1EE0545600F5154F /* libvtkexoIIc-7.1.dylib */,
+				163E678F1EE0545600F5154F /* libvtkexpat-7.1.dylib */,
+				163E67901EE0545600F5154F /* libvtkFiltersAMR-7.1.dylib */,
+				163E67911EE0545600F5154F /* libvtkFiltersCore-7.1.dylib */,
+				163E67921EE0545600F5154F /* libvtkFiltersExtraction-7.1.dylib */,
+				163E67931EE0545600F5154F /* libvtkFiltersFlowPaths-7.1.dylib */,
+				163E67941EE0545600F5154F /* libvtkFiltersGeneral-7.1.dylib */,
+				163E67951EE0545600F5154F /* libvtkFiltersGeneric-7.1.dylib */,
+				163E67961EE0545700F5154F /* libvtkFiltersGeometry-7.1.dylib */,
+				163E67971EE0545700F5154F /* libvtkFiltersHybrid-7.1.dylib */,
+				163E67981EE0545700F5154F /* libvtkFiltersHyperTree-7.1.dylib */,
+				163E67991EE0545700F5154F /* libvtkFiltersImaging-7.1.dylib */,
+				163E679A1EE0545700F5154F /* libvtkFiltersModeling-7.1.dylib */,
+				163E679B1EE0545700F5154F /* libvtkFiltersParallel-7.1.dylib */,
+				163E679C1EE0545700F5154F /* libvtkFiltersParallelImaging-7.1.dylib */,
+				163E679D1EE0545700F5154F /* libvtkFiltersPoints-7.1.dylib */,
+				163E679E1EE0545700F5154F /* libvtkFiltersProgrammable-7.1.dylib */,
+				163E679F1EE0545700F5154F /* libvtkFiltersSelection-7.1.dylib */,
+				163E67A01EE0545700F5154F /* libvtkFiltersSMP-7.1.dylib */,
+				163E67A11EE0545700F5154F /* libvtkFiltersSources-7.1.dylib */,
+				163E67A21EE0545700F5154F /* libvtkFiltersStatistics-7.1.dylib */,
+				163E67A31EE0545700F5154F /* libvtkFiltersTexture-7.1.dylib */,
+				163E67A41EE0545700F5154F /* libvtkFiltersVerdict-7.1.dylib */,
+				163E67A51EE0545700F5154F /* libvtkfreetype-7.1.dylib */,
+				163E67A61EE0545700F5154F /* libvtkGeovisCore-7.1.dylib */,
+				163E67A71EE0545700F5154F /* libvtkgl2ps-7.1.dylib */,
+				163E67A81EE0545700F5154F /* libvtkglew-7.1.dylib */,
+				163E67A91EE0545700F5154F /* libvtkhdf5_hl-7.1.dylib */,
+				163E67AA1EE0545700F5154F /* libvtkhdf5-7.1.dylib */,
+				163E67AB1EE0545700F5154F /* libvtkImagingColor-7.1.dylib */,
+				163E67AC1EE0545700F5154F /* libvtkImagingCore-7.1.dylib */,
+				163E67AD1EE0545700F5154F /* libvtkImagingFourier-7.1.dylib */,
+				163E67AE1EE0545700F5154F /* libvtkImagingGeneral-7.1.dylib */,
+				163E67AF1EE0545700F5154F /* libvtkImagingHybrid-7.1.dylib */,
+				163E67B01EE0545700F5154F /* libvtkImagingMath-7.1.dylib */,
+				163E67B11EE0545700F5154F /* libvtkImagingMorphological-7.1.dylib */,
+				163E67B21EE0545700F5154F /* libvtkImagingSources-7.1.dylib */,
+				163E67B31EE0545700F5154F /* libvtkImagingStatistics-7.1.dylib */,
+				163E67B41EE0545700F5154F /* libvtkImagingStencil-7.1.dylib */,
+				163E67B51EE0545700F5154F /* libvtkInfovisCore-7.1.dylib */,
+				163E67B61EE0545700F5154F /* libvtkInfovisLayout-7.1.dylib */,
+				163E67B71EE0545700F5154F /* libvtkInteractionImage-7.1.dylib */,
+				163E67B81EE0545700F5154F /* libvtkInteractionStyle-7.1.dylib */,
+				163E67B91EE0545700F5154F /* libvtkInteractionWidgets-7.1.dylib */,
+				163E67BA1EE0545700F5154F /* libvtkIOAMR-7.1.dylib */,
+				163E67BB1EE0545700F5154F /* libvtkIOCore-7.1.dylib */,
+				163E67BC1EE0545700F5154F /* libvtkIOEnSight-7.1.dylib */,
+				163E67BD1EE0545700F5154F /* libvtkIOExodus-7.1.dylib */,
+				163E67BE1EE0545700F5154F /* libvtkIOExport-7.1.dylib */,
+				163E67BF1EE0545700F5154F /* libvtkIOGeometry-7.1.dylib */,
+				163E67C01EE0545700F5154F /* libvtkIOImage-7.1.dylib */,
+				163E67C11EE0545700F5154F /* libvtkIOImport-7.1.dylib */,
+				163E67C21EE0545700F5154F /* libvtkIOInfovis-7.1.dylib */,
+				163E67C31EE0545700F5154F /* libvtkIOLegacy-7.1.dylib */,
+				163E67C41EE0545700F5154F /* libvtkIOLSDyna-7.1.dylib */,
+				163E67C51EE0545700F5154F /* libvtkIOMINC-7.1.dylib */,
+				163E67C61EE0545700F5154F /* libvtkIOMovie-7.1.dylib */,
+				163E67C71EE0545700F5154F /* libvtkIONetCDF-7.1.dylib */,
+				163E67C81EE0545700F5154F /* libvtkIOParallel-7.1.dylib */,
+				163E67C91EE0545700F5154F /* libvtkIOParallelXML-7.1.dylib */,
+				163E67CA1EE0545700F5154F /* libvtkIOPLY-7.1.dylib */,
+				163E67CB1EE0545700F5154F /* libvtkIOSQL-7.1.dylib */,
+				163E67CC1EE0545700F5154F /* libvtkIOTecplotTable-7.1.dylib */,
+				163E67CD1EE0545700F5154F /* libvtkIOVideo-7.1.dylib */,
+				163E67CE1EE0545700F5154F /* libvtkIOXML-7.1.dylib */,
+				163E67CF1EE0545700F5154F /* libvtkIOXMLParser-7.1.dylib */,
+				163E67D01EE0545700F5154F /* libvtkjpeg-7.1.dylib */,
+				163E67D11EE0545700F5154F /* libvtkjsoncpp-7.1.dylib */,
+				163E67D21EE0545700F5154F /* libvtklibxml2-7.1.dylib */,
+				163E67D31EE0545700F5154F /* libvtkmetaio-7.1.dylib */,
+				163E67D41EE0545800F5154F /* libvtkNetCDF_cxx-7.1.dylib */,
+				163E67D51EE0545800F5154F /* libvtkNetCDF-7.1.dylib */,
+				163E67D61EE0545800F5154F /* libvtkoggtheora-7.1.dylib */,
+				163E67D71EE0545800F5154F /* libvtkParallelCore-7.1.dylib */,
+				163E67D81EE0545800F5154F /* libvtkpng-7.1.dylib */,
+				163E67D91EE0545800F5154F /* libvtkproj4-7.1.dylib */,
+				163E67DA1EE0545800F5154F /* libvtkRenderingAnnotation-7.1.dylib */,
+				163E67DB1EE0545800F5154F /* libvtkRenderingContext2D-7.1.dylib */,
+				163E67DC1EE0545800F5154F /* libvtkRenderingContextOpenGL2-7.1.dylib */,
+				163E67DD1EE0545800F5154F /* libvtkRenderingCore-7.1.dylib */,
+				163E67DE1EE0545800F5154F /* libvtkRenderingFreeType-7.1.dylib */,
+				163E67DF1EE0545800F5154F /* libvtkRenderingGL2PSOpenGL2-7.1.dylib */,
+				163E67E01EE0545800F5154F /* libvtkRenderingImage-7.1.dylib */,
+				163E67E11EE0545800F5154F /* libvtkRenderingLabel-7.1.dylib */,
+				163E67E21EE0545800F5154F /* libvtkRenderingLOD-7.1.dylib */,
+				163E67E31EE0545800F5154F /* libvtkRenderingOpenGL2-7.1.dylib */,
+				163E67E41EE0545800F5154F /* libvtkRenderingVolume-7.1.dylib */,
+				163E67E51EE0545800F5154F /* libvtkRenderingVolumeOpenGL2-7.1.dylib */,
+				163E67E61EE0545800F5154F /* libvtksqlite-7.1.dylib */,
+				163E67E71EE0545800F5154F /* libvtksys-7.1.dylib */,
+				163E67E81EE0545800F5154F /* libvtktiff-7.1.dylib */,
+				163E67E91EE0545800F5154F /* libvtkverdict-7.1.dylib */,
+				163E67EA1EE0545800F5154F /* libvtkViewsContext2D-7.1.dylib */,
+				163E67EB1EE0545800F5154F /* libvtkViewsCore-7.1.dylib */,
+				163E67EC1EE0545800F5154F /* libvtkViewsInfovis-7.1.dylib */,
+				163E67ED1EE0545800F5154F /* libvtkzlib-7.1.dylib */,
 				164FB31A1CF0C251000A7235 /* Cocoa.framework */,
 				164FB31B1CF0C251000A7235 /* GLUT.framework */,
 				164FB31C1CF0C251000A7235 /* OpenGL.framework */,
@@ -237,10 +667,10 @@
 		168005C21C61FCB8007F5DF6 /* BrainHarmonics */ = {
 			isa = PBXGroup;
 			children = (
-				1619900F1C7518D700EA6040 /* abstraction.cc */,
-				161990101C7518D700EA6040 /* abstraction.h */,
-				161990111C7518D700EA6040 /* apptimer.cc */,
-				161990121C7518D700EA6040 /* apptimer.h */,
+				16E089F71ED3232200F39555 /* abstraction.cc */,
+				16E089F81ED3232200F39555 /* abstraction.h */,
+				16E089F91ED3232200F39555 /* apptimer.cc */,
+				16E089FA1ED3232200F39555 /* apptimer.h */,
 				168005DD1C61FFEA007F5DF6 /* axon.cc */,
 				168005CE1C61FE7A007F5DF6 /* axon.h */,
 				160043CD1C7332CB00871CD2 /* axonbouton.cc */,
@@ -249,73 +679,69 @@
 				160043C81C73318B00871CD2 /* axonbranch.h */,
 				168005D91C61FFB7007F5DF6 /* axonhillock.cc */,
 				168005CC1C61FE48007F5DF6 /* axonhillock.h */,
-				168005EB1C620098007F5DF6 /* cagate.cc */,
-				168005EC1C620098007F5DF6 /* cagate.h */,
-				161990131C7518D700EA6040 /* compositeforce.cc */,
-				161990141C7518D700EA6040 /* compositeforce.h */,
-				161990151C7518D700EA6040 /* compositeparticle.cc */,
-				161990161C7518D700EA6040 /* compositeparticle.h */,
+				168005C31C61FCB8007F5DF6 /* BrainHarmonics.cc */,
+				16FB3B511ECB25DD007EB8B3 /* cognitiveinput.cc */,
+				16FB3B501ECB25C9007EB8B3 /* cognitiveinput.h */,
+				16D4E8781EAE1EB9009E51A2 /* cognitivenetwork.cc */,
+				16D4E8771EAE1EA8009E51A2 /* cognitivenetwork.h */,
+				16FB3B531ECB269A007EB8B3 /* cognitiveoutput.cc */,
+				16FB3B551ECB26AE007EB8B3 /* cognitiveoutput.h */,
+				16E089FD1ED3234F00F39555 /* compositeforceparticle.cc */,
+				16E089FE1ED3234F00F39555 /* compositeforceparticle.h */,
 				168005DF1C61FFFF007F5DF6 /* dendrite.cc */,
 				168005CF1C61FE8C007F5DF6 /* dendrite.h */,
 				160043C41C73317600871CD2 /* dendritebranch.cc */,
 				160043C51C73317600871CD2 /* dendritebranch.h */,
 				160043CA1C7332B300871CD2 /* dendritecleft.cc */,
 				160043CB1C7332B300871CD2 /* dendritecleft.h */,
-				166364E51E4C6805002C459A /* dendritespine.cc */,
-				166364E61E4C6805002C459A /* dendritespine.h */,
-				161990171C7518D700EA6040 /* dimension.cc */,
-				161990181C7518D700EA6040 /* dimension.h */,
-				161990191C7518D700EA6040 /* elementaryforce.cc */,
-				1619901A1C7518D700EA6040 /* elementaryforce.h */,
-				1619901B1C7518D700EA6040 /* elementaryparticle.cc */,
-				1619901C1C7518D700EA6040 /* elementaryparticle.h */,
-				168005E11C620022007F5DF6 /* kchannel.cc */,
-				168005D01C61FEB1007F5DF6 /* kchannel.h */,
-				1619901E1C7518D700EA6040 /* law.cc */,
-				1619901F1C7518D700EA6040 /* law.h */,
-				161990201C7518D700EA6040 /* line.cc */,
-				161990211C7518D700EA6040 /* line.h */,
-				168005C31C61FCB8007F5DF6 /* main.cc */,
-				161990241C7518D700EA6040 /* matter.cc */,
-				161990251C7518D700EA6040 /* matter.h */,
+				16E08A001ED3237700F39555 /* dimension.cc */,
+				16E08A011ED3237700F39555 /* dimension.h */,
+				16E08A031ED3239100F39555 /* elementaryforce.cc */,
+				16E08A041ED3239100F39555 /* elementaryforce.h */,
+				16E08A051ED3239100F39555 /* elementaryparticle.cc */,
+				16E08A061ED3239100F39555 /* elementaryparticle.h */,
+				16FB3B4D1ECAFE69007EB8B3 /* interneuronspace.cc */,
+				16FB3B4F1ECAFE7D007EB8B3 /* interneuronspace.h */,
+				16E08A091ED323B000F39555 /* law.cc */,
+				16E08A0A1ED323B000F39555 /* law.h */,
+				16E08A0B1ED323B000F39555 /* line.cc */,
+				16E08A0C1ED323B000F39555 /* line.h */,
+				16E08A0F1ED323CE00F39555 /* matter.cc */,
+				16E08A101ED323CE00F39555 /* matter.h */,
 				160043C11C732F0000871CD2 /* membrane.cc */,
 				160043C21C732F0000871CD2 /* membrane.h */,
-				16F8F3621CBEE204002E2658 /* monomer.cc */,
-				16F8F3631CBEE204002E2658 /* monomer.h */,
-				168610B41CC2D1DE00F09001 /* multiscreen.cc */,
-				168610B51CC2D1DE00F09001 /* multiscreen.h */,
+				16FB3B4A1ECAF3B9007EB8B3 /* membranechannel.cc */,
+				16FB3B4C1ECAF3D9007EB8B3 /* membranechannel.h */,
+				16E08A121ED323ED00F39555 /* monomer.cc */,
+				16E08A131ED323ED00F39555 /* monomer.h */,
 				160043BE1C73292E00871CD2 /* myelinsheath.cc */,
 				160043BF1C73292E00871CD2 /* myelinsheath.h */,
-				168005E31C62003A007F5DF6 /* nachannel.cc */,
-				168005D11C61FEC8007F5DF6 /* nachannel.h */,
 				168005D51C61FF7F007F5DF6 /* neuron.cc */,
 				168005CA1C61FE1C007F5DF6 /* neuron.h */,
 				168005E71C62006D007F5DF6 /* neuroreceptor.cc */,
 				168005D31C61FEFC007F5DF6 /* neuroreceptor.h */,
 				168005E51C620050007F5DF6 /* neurotransmitter.cc */,
 				168005D21C61FEE8007F5DF6 /* neurotransmitter.h */,
-				161990261C7518D700EA6040 /* node.cc */,
-				161990271C7518D700EA6040 /* node.h */,
+				16E08A151ED3240D00F39555 /* node.cc */,
+				16E08A161ED3240D00F39555 /* node.h */,
 				164F6ECC1E7C15F4008A80AA /* orbital.cc */,
 				164F6ECD1E7C15F4008A80AA /* orbital.h */,
-				161990281C7518D700EA6040 /* point.cc */,
-				161990291C7518D700EA6040 /* point.h */,
-				1619902A1C7518D700EA6040 /* polygon.cc */,
-				1619902B1C7518D700EA6040 /* polygon.h */,
-				1619902C1C7518D700EA6040 /* polyhedron.cc */,
-				1619902D1C7518D700EA6040 /* polyhedron.h */,
-				16F8F3651CBEE226002E2658 /* polymer.cc */,
-				16F8F3661CBEE226002E2658 /* polymer.h */,
-				1619902E1C7518D700EA6040 /* quad.cc */,
-				1619902F1C7518D700EA6040 /* quad.h */,
-				165131DF1CA1899600754DD0 /* resourcepath.h */,
-				165131DE1CA1899600754DD0 /* resourcepath.cc */,
+				16E08A181ED3243300F39555 /* point.cc */,
+				16E08A191ED3243300F39555 /* point.h */,
+				16E08A1A1ED3243300F39555 /* polygon.cc */,
+				16E08A1B1ED3243300F39555 /* polygon.h */,
+				16E08A1C1ED3243300F39555 /* polyhedron.cc */,
+				16E08A1D1ED3243300F39555 /* polyhedron.h */,
+				16E08A1E1ED3243300F39555 /* polymer.cc */,
+				16E08A1F1ED3243300F39555 /* polymer.h */,
+				16E08A241ED3245100F39555 /* quad.cc */,
+				16E08A251ED3245100F39555 /* quad.h */,
 				168005DB1C61FFCD007F5DF6 /* schwanncell.cc */,
 				168005CD1C61FE67007F5DF6 /* schwanncell.h */,
 				16053C5A1E94EE2900760241 /* sniffex.cc */,
 				16053C5B1E94EE2900760241 /* sniffex.h */,
-				161990311C7518D700EA6040 /* solid.cc */,
-				161990321C7518D700EA6040 /* solid.h */,
+				16E08A271ED3246B00F39555 /* solid.cc */,
+				16E08A281ED3246B00F39555 /* solid.h */,
 				168005D71C61FF9D007F5DF6 /* soma.cc */,
 				168005CB1C61FE2F007F5DF6 /* soma.h */,
 				16E3DFC01CBD46F000C7C2B1 /* spike.cc */,
@@ -324,8 +750,8 @@
 				168005D41C61FF15007F5DF6 /* synapse.h */,
 				160043D01C73349300871CD2 /* synapticvesicle.cc */,
 				160043D11C73349300871CD2 /* synapticvesicle.h */,
-				161990331C7518D700EA6040 /* universe.cc */,
-				161990341C7518D700EA6040 /* universe.h */,
+				16E08A2A1ED3248400F39555 /* universe.cc */,
+				16E08A2B1ED3248400F39555 /* universe.h */,
 			);
 			path = BrainHarmonics;
 			sourceTree = "<group>";
@@ -388,48 +814,46 @@
 			files = (
 				160043C61C73317600871CD2 /* dendritebranch.cc in Sources */,
 				168005DA1C61FFB7007F5DF6 /* axonhillock.cc in Sources */,
-				161990411C7518D700EA6040 /* node.cc in Sources */,
-				168005E21C620022007F5DF6 /* kchannel.cc in Sources */,
-				161990421C7518D700EA6040 /* point.cc in Sources */,
+				16E08A201ED3243300F39555 /* point.cc in Sources */,
+				16E08A0D1ED323B000F39555 /* law.cc in Sources */,
+				16E08A171ED3240D00F39555 /* node.cc in Sources */,
 				168005D61C61FF7F007F5DF6 /* neuron.cc in Sources */,
 				160043C31C732F0000871CD2 /* membrane.cc in Sources */,
-				168005ED1C620098007F5DF6 /* cagate.cc in Sources */,
 				168005EA1C620085007F5DF6 /* synapse.cc in Sources */,
-				168005C41C61FCB8007F5DF6 /* main.cc in Sources */,
-				161990401C7518D700EA6040 /* matter.cc in Sources */,
+				16FB3B541ECB269A007EB8B3 /* cognitiveoutput.cc in Sources */,
+				16E08A081ED3239100F39555 /* elementaryparticle.cc in Sources */,
+				16E08A211ED3243300F39555 /* polygon.cc in Sources */,
+				168005C41C61FCB8007F5DF6 /* BrainHarmonics.cc in Sources */,
+				16FB3B4E1ECAFE69007EB8B3 /* interneuronspace.cc in Sources */,
+				16E08A231ED3243300F39555 /* polymer.cc in Sources */,
 				160043C01C73292E00871CD2 /* myelinsheath.cc in Sources */,
-				161990361C7518D700EA6040 /* apptimer.cc in Sources */,
+				16D4E8791EAE1EB9009E51A2 /* cognitivenetwork.cc in Sources */,
 				168005DC1C61FFCD007F5DF6 /* schwanncell.cc in Sources */,
 				160043CF1C7332CB00871CD2 /* axonbouton.cc in Sources */,
 				16053C5C1E94EE2900760241 /* sniffex.cc in Sources */,
 				168005D81C61FF9D007F5DF6 /* soma.cc in Sources */,
-				166364E71E4C6805002C459A /* dendritespine.cc in Sources */,
-				1619903B1C7518D700EA6040 /* elementaryparticle.cc in Sources */,
-				1619903A1C7518D700EA6040 /* elementaryforce.cc in Sources */,
-				161990381C7518D700EA6040 /* compositeparticle.cc in Sources */,
-				16F8F3671CBEE226002E2658 /* polymer.cc in Sources */,
 				160043C91C73318B00871CD2 /* axonbranch.cc in Sources */,
-				168005E41C62003A007F5DF6 /* nachannel.cc in Sources */,
-				161990391C7518D700EA6040 /* dimension.cc in Sources */,
-				161990441C7518D700EA6040 /* polyhedron.cc in Sources */,
-				161990351C7518D700EA6040 /* abstraction.cc in Sources */,
+				16E08A111ED323CE00F39555 /* matter.cc in Sources */,
 				160043D21C73349300871CD2 /* synapticvesicle.cc in Sources */,
-				16F8F3641CBEE204002E2658 /* monomer.cc in Sources */,
 				16E3DFC21CBD46F000C7C2B1 /* spike.cc in Sources */,
+				16E08A021ED3237700F39555 /* dimension.cc in Sources */,
+				16E08A221ED3243300F39555 /* polyhedron.cc in Sources */,
 				164F6ECE1E7C15F4008A80AA /* orbital.cc in Sources */,
-				161990451C7518D700EA6040 /* quad.cc in Sources */,
-				161990431C7518D700EA6040 /* polygon.cc in Sources */,
+				16E08A291ED3246B00F39555 /* solid.cc in Sources */,
+				16E089FF1ED3234F00F39555 /* compositeforceparticle.cc in Sources */,
 				168005DE1C61FFEA007F5DF6 /* axon.cc in Sources */,
-				161990371C7518D700EA6040 /* compositeforce.cc in Sources */,
-				161990471C7518D700EA6040 /* solid.cc in Sources */,
-				1619903E1C7518D700EA6040 /* line.cc in Sources */,
+				16E08A071ED3239100F39555 /* elementaryforce.cc in Sources */,
+				16E089FB1ED3232200F39555 /* abstraction.cc in Sources */,
 				168005E01C61FFFF007F5DF6 /* dendrite.cc in Sources */,
 				168005E61C620050007F5DF6 /* neurotransmitter.cc in Sources */,
+				16E089FC1ED3232200F39555 /* apptimer.cc in Sources */,
 				168005E81C62006D007F5DF6 /* neuroreceptor.cc in Sources */,
-				165131E01CA1899600754DD0 /* resourcepath.cc in Sources */,
-				168610B61CC2D1DE00F09001 /* multiscreen.cc in Sources */,
-				1619903D1C7518D700EA6040 /* law.cc in Sources */,
-				161990481C7518D700EA6040 /* universe.cc in Sources */,
+				16E08A2C1ED3248400F39555 /* universe.cc in Sources */,
+				16E08A0E1ED323B000F39555 /* line.cc in Sources */,
+				16E08A261ED3245100F39555 /* quad.cc in Sources */,
+				16E08A141ED323ED00F39555 /* monomer.cc in Sources */,
+				16FB3B521ECB25DE007EB8B3 /* cognitiveinput.cc in Sources */,
+				16FB3B4B1ECAF3B9007EB8B3 /* membranechannel.cc in Sources */,
 				160043CC1C7332B300871CD2 /* dendritecleft.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,8 +907,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					/System/Library/Frameworks/,
 					/Library/Frameworks/,
+					/System/Library/Frameworks/,
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -504,15 +928,18 @@
 					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/,
 					"/System/Library/Frameworks/Python.framework//Versions/2.7/Extras/lib/python/numpy/core/include/",
 					/usr/local/Aria/include/,
+					"/usr/local/include/vtk-7.1/",
 					/usr/local/include/,
+					/opt/local/include/,
 					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
 					"$CPLEXDIR/include/**",
 					"$CONCERTDIR/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
+					/usr/local/lib/,
+					/opt/local/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
 					"$(CPLEXDIR)/lib/x86-64_darwin/static_pic/",
@@ -537,18 +964,18 @@
 					"$(APP_COREFOUNDATION)",
 					"$(APP_IOKIT)",
 					"$(CAER)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
+					"$(PCAP)",
 					"$(CPLEX_ILO)",
 					"$(CPLEX_CONCERT)",
 					"$(CPLEX)",
 					"$(inherited)",
-					"-l",
-					pcap,
 				);
+				PCAP = "$(PCAP_LINK_PREFIX) pcap$(PCAP_LINK_SUFFIX)";
+				PCAP_BINARY_TYPE = DYLIBS;
+				PCAP_LINK_DYLIBS_PREFIX = "-l";
+				PCAP_LINK_DYLIBS_SUFFIX = "";
+				PCAP_LINK_PREFIX = "$(PCAP_LINK_$(PCAP_BINARY_TYPE)_PREFIX)";
+				PCAP_LINK_SUFFIX = "$(PCAP_LINK_$(PCAP_BINARY_TYPE)_SUFFIX)";
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
 				SFML_BINARY_TYPE = DYLIBS;
@@ -563,6 +990,12 @@
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
 				VALID_ARCHS = x86_64;
+				VTK_BINARY_TYPE = DYLIBS;
+				VTK_GRAPHICS = "$(VTK_LINK_PREFIX) $(VTK_LINK_SUFFIX)";
+				VTK_LINK_DYLIBS_PREFIX = "-l ";
+				VTK_LINK_DYLIBS_SUFFIX = "";
+				VTK_LINK_PREFIX = "$(VTK_LINK_$(VTK_BINARY_TYPE)_PREFIX)";
+				VTK_LINK_SUFFIX = "$(VTK_LINK_$(VTK_BINARY_TYPE)_SUFFIX)";
 			};
 			name = Debug;
 		};
@@ -613,8 +1046,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					/System/Library/Frameworks/,
 					/Library/Frameworks/,
+					/System/Library/Frameworks/,
 				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -629,15 +1062,18 @@
 					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/,
 					"/System/Library/Frameworks/Python.framework//Versions/2.7/Extras/lib/python/numpy/core/include/",
 					/usr/local/Aria/include/,
+					"/usr/local/include/vtk-7.1/",
 					/usr/local/include/,
+					/opt/local/include/,
 					/Users/pbisaacs/Developer/homegrown/include/,
 					"$(inherited)",
 					"$CPLEXDIR/include/**",
 					"$CONCERTDIR/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/lib/**",
 					/usr/local/Aria/lib/,
+					/usr/local/lib/,
+					/opt/local/lib/,
 					/Users/pbisaacs/Developer/homegrown/lib/,
 					"$(inherited)",
 					"$(CPLEXDIR)/lib/x86-64_darwin/static_pic/",
@@ -662,18 +1098,18 @@
 					"$(APP_COREFOUNDATION)",
 					"$(APP_IOKIT)",
 					"$(CAER)",
-					"$(SFML_SYSTEM)",
-					"$(SFML_WINDOW)",
-					"$(SFML_GRAPHICS)",
-					"$(SFML_AUDIO)",
-					"$(SFML_NETWORK)",
+					"$(PCAP)",
 					"$(CPLEX_ILO)",
 					"$(CPLEX_CONCERT)",
 					"$(CPLEX)",
 					"$(inherited)",
-					"-l",
-					pcap,
 				);
+				PCAP = "$(PCAP_LINK_PREFIX) pcap$(PCAP_LINK_SUFFIX)";
+				PCAP_BINARY_TYPE = DYLIBS;
+				PCAP_LINK_DYLIBS_PREFIX = "-l";
+				PCAP_LINK_DYLIBS_SUFFIX = "";
+				PCAP_LINK_PREFIX = "$(PCAP_LINK_$(PCAP_BINARY_TYPE)_PREFIX)";
+				PCAP_LINK_SUFFIX = "$(PCAP_LINK_$(PCAP_BINARY_TYPE)_SUFFIX)";
 				SDKROOT = macosx;
 				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
 				SFML_BINARY_TYPE = DYLIBS;
@@ -688,6 +1124,12 @@
 				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
 				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
 				VALID_ARCHS = x86_64;
+				VTK_BINARY_TYPE = DYLIBS;
+				VTK_GRAPHICS = "$(VTK_LINK_PREFIX) $(VTK_LINK_SUFFIX)";
+				VTK_LINK_DYLIBS_PREFIX = "-l ";
+				VTK_LINK_DYLIBS_SUFFIX = "";
+				VTK_LINK_PREFIX = "$(VTK_LINK_$(VTK_BINARY_TYPE)_PREFIX)";
+				VTK_LINK_SUFFIX = "$(VTK_LINK_$(VTK_BINARY_TYPE)_SUFFIX)";
 			};
 			name = Release;
 		};

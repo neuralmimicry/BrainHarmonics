@@ -107,6 +107,10 @@ vtkPolyDataMapper.h
 -
 vtkPolyDataMapper2D.h
 -
+vtkAppendPolyData.h
+-
+vtkProgrammableSource.h
+-
 vtkProperty.h
 -
 vtkProperty2D.h
@@ -117,7 +121,11 @@ vtkRenderer.h
 -
 vtkRenderWindowInteractor.h
 -
+vtkReverseSense.h
+-
 vtkSmartPointer.h
+-
+vtkSurfaceReconstructionFilter.h
 -
 vtkTextActor.h
 -
@@ -128,6 +136,12 @@ vtkTextProperty.h
 vtkVertexGlyphFilter.h
 -
 vtkXMLPolyDataWriter.h
+-
+cmath
+-
+vtkTransform.h
+-
+vtkTransformPolyDataFilter.h
 -
 Python.h
 -
@@ -303,22 +317,22 @@ cognitivenetwork.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitivenetwork.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitivenetwork.cc
+cognitiveinput.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitiveinput.h
 cognitivenetwork.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitivenetwork.h
+cognitiveoutput.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitiveoutput.h
 interneuronspace.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/interneuronspace.h
 neuron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neuron.h
-interneuronspace.h
-/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/interneuronspace.h
-synapse.h
-/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/synapse.h
 neurotransmitter.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neurotransmitter.h
-cognitiveinput.h
-/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitiveinput.h
-cognitiveoutput.h
-/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitiveoutput.h
+orbital.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/orbital.h
+synapse.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/synapse.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/cognitivenetwork.h
 dimension.h
@@ -493,6 +507,8 @@ vector
 -
 neuron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neuron.h
+polyhedron.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/membranechannel.cc
 membranechannel.h
@@ -549,6 +565,8 @@ cognitivenetwork.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neuron.cc
 neuron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neuron.h
+membrane.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/membrane.h
 soma.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/soma.h
 
@@ -639,12 +657,18 @@ polyhedron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.cc
 polyhedron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.h
+polygon.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polygon.h
+cmath
+-
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.h
 iostream
 -
 solid.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/solid.h
+point.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/point.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polymer.cc
 polymer.h
@@ -709,6 +733,8 @@ arpa/inet.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/solid.cc
 solid.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/solid.h
+polyhedron.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/solid.h
 iostream
@@ -727,6 +753,8 @@ soma.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/soma.h
 neuron.h
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/neuron.h
+polyhedron.h
+/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/polyhedron.h
 
 /Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/spike.cc
 spike.h
@@ -4158,6 +4186,12 @@ vtkRenderingCoreModule.h
 vtkAbstractMapper.h
 /usr/local/include/vtk-7.1/vtkAbstractMapper.h
 
+/usr/local/include/vtk-7.1/vtkAbstractTransform.h
+vtkCommonTransformsModule.h
+/usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
+vtkObject.h
+/usr/local/include/vtk-7.1/vtkObject.h
+
 /usr/local/include/vtk-7.1/vtkActor.h
 vtkRenderingCoreModule.h
 /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
@@ -4185,6 +4219,12 @@ vtkCommonExecutionModelModule.h
 /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
 vtkObject.h
 /usr/local/include/vtk-7.1/vtkObject.h
+
+/usr/local/include/vtk-7.1/vtkAppendPolyData.h
+vtkFiltersCoreModule.h
+/usr/local/include/vtk-7.1/vtkFiltersCoreModule.h
+vtkPolyDataAlgorithm.h
+/usr/local/include/vtk-7.1/vtkPolyDataAlgorithm.h
 
 /usr/local/include/vtk-7.1/vtkAtomic.h
 vtkCommonCoreModule.h
@@ -4304,7 +4344,11 @@ vtkObject.h
 
 /usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
 
+/usr/local/include/vtk-7.1/vtkCommonMathModule.h
+
 /usr/local/include/vtk-7.1/vtkCommonMiscModule.h
+
+/usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
 
 /usr/local/include/vtk-7.1/vtkConfigure.h
 vtkVersionMacros.h
@@ -4347,6 +4391,12 @@ vtkCommonDataModelModule.h
 /usr/local/include/vtk-7.1/vtkCommonDataModelModule.h
 vtkDataObject.h
 /usr/local/include/vtk-7.1/vtkDataObject.h
+
+/usr/local/include/vtk-7.1/vtkDataSetAlgorithm.h
+vtkCommonExecutionModelModule.h
+/usr/local/include/vtk-7.1/vtkCommonExecutionModelModule.h
+vtkAlgorithm.h
+/usr/local/include/vtk-7.1/vtkAlgorithm.h
 
 /usr/local/include/vtk-7.1/vtkDataSetAttributes.h
 vtkCommonDataModelModule.h
@@ -4416,6 +4466,12 @@ algorithm
 vtkIdList.h
 /usr/local/include/vtk-7.1/vtkIdList.h
 
+/usr/local/include/vtk-7.1/vtkHomogeneousTransform.h
+vtkCommonTransformsModule.h
+/usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
+vtkAbstractTransform.h
+/usr/local/include/vtk-7.1/vtkAbstractTransform.h
+
 /usr/local/include/vtk-7.1/vtkIOStream.h
 vtkConfigure.h
 /usr/local/include/vtk-7.1/vtkConfigure.h
@@ -4454,6 +4510,8 @@ vtkCommonExecutionModelModule.h
 vtkAlgorithm.h
 /usr/local/include/vtk-7.1/vtkAlgorithm.h
 
+/usr/local/include/vtk-7.1/vtkImagingHybridModule.h
+
 /usr/local/include/vtk-7.1/vtkIndent.h
 vtkCommonCoreModule.h
 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
@@ -4467,6 +4525,12 @@ vtkDataArray.h
 /usr/local/include/vtk-7.1/vtkDataArray.h
 vtkAOSDataArrayTemplate.h
 /usr/local/include/vtk-7.1/vtkAOSDataArrayTemplate.h
+
+/usr/local/include/vtk-7.1/vtkLinearTransform.h
+vtkCommonTransformsModule.h
+/usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
+vtkHomogeneousTransform.h
+/usr/local/include/vtk-7.1/vtkHomogeneousTransform.h
 
 /usr/local/include/vtk-7.1/vtkMapper.h
 vtkRenderingCoreModule.h
@@ -4503,6 +4567,12 @@ cmath
 -
 float.h
 -
+
+/usr/local/include/vtk-7.1/vtkMatrix4x4.h
+vtkCommonMathModule.h
+/usr/local/include/vtk-7.1/vtkCommonMathModule.h
+vtkObject.h
+/usr/local/include/vtk-7.1/vtkObject.h
 
 /usr/local/include/vtk-7.1/vtkNew.h
 vtkIOStream.h
@@ -4612,6 +4682,12 @@ vtkCommonDataModelModule.h
 vtkCell.h
 /usr/local/include/vtk-7.1/vtkCell.h
 
+/usr/local/include/vtk-7.1/vtkProgrammableSource.h
+vtkFiltersSourcesModule.h
+/usr/local/include/vtk-7.1/vtkFiltersSourcesModule.h
+vtkDataSetAlgorithm.h
+/usr/local/include/vtk-7.1/vtkDataSetAlgorithm.h
+
 /usr/local/include/vtk-7.1/vtkProp.h
 vtkRenderingCoreModule.h
 /usr/local/include/vtk-7.1/vtkRenderingCoreModule.h
@@ -4680,6 +4756,12 @@ vtkFiltersCoreModule.h
 vtkAutoInit.h
 /usr/local/include/vtk-7.1/vtkAutoInit.h
 
+/usr/local/include/vtk-7.1/vtkReverseSense.h
+vtkFiltersCoreModule.h
+/usr/local/include/vtk-7.1/vtkFiltersCoreModule.h
+vtkPolyDataAlgorithm.h
+/usr/local/include/vtk-7.1/vtkPolyDataAlgorithm.h
+
 /usr/local/include/vtk-7.1/vtkScalarsToColors.h
 vtkCommonCoreModule.h
 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
@@ -4715,6 +4797,12 @@ vtkSystemIncludes.h
 /usr/local/include/vtk-7.1/vtkSystemIncludes.h
 string
 -
+
+/usr/local/include/vtk-7.1/vtkSurfaceReconstructionFilter.h
+vtkImagingHybridModule.h
+/usr/local/include/vtk-7.1/vtkImagingHybridModule.h
+vtkImageAlgorithm.h
+/usr/local/include/vtk-7.1/vtkImageAlgorithm.h
 
 /usr/local/include/vtk-7.1/vtkSystemIncludes.h
 vtkWin32Header.h
@@ -4779,6 +4867,20 @@ vtkCommonCoreModule.h
 /usr/local/include/vtk-7.1/vtkCommonCoreModule.h
 vtkSystemIncludes.h
 /usr/local/include/vtk-7.1/vtkSystemIncludes.h
+
+/usr/local/include/vtk-7.1/vtkTransform.h
+vtkCommonTransformsModule.h
+/usr/local/include/vtk-7.1/vtkCommonTransformsModule.h
+vtkLinearTransform.h
+/usr/local/include/vtk-7.1/vtkLinearTransform.h
+vtkMatrix4x4.h
+/usr/local/include/vtk-7.1/vtkMatrix4x4.h
+
+/usr/local/include/vtk-7.1/vtkTransformPolyDataFilter.h
+vtkFiltersGeneralModule.h
+/usr/local/include/vtk-7.1/vtkFiltersGeneralModule.h
+vtkPolyDataAlgorithm.h
+/usr/local/include/vtk-7.1/vtkPolyDataAlgorithm.h
 
 /usr/local/include/vtk-7.1/vtkTuple.h
 vtkIOStream.h
