@@ -18,13 +18,20 @@ Install CMake
 sudo apt-get update
 sudo apt-get upgrade
 
-sudo apt-get install build-essential libgl1-mesa-dev libxt-dev libpcap-dev gcc-5 cmake libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python2.7-dev python3.5-dev
+sudo apt-get install build-essential git gcc-5 cmake pkg-config libgl1-mesa-dev libxt-dev libpcap-dev libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg-dev libjpeg8-dev libtiff-dev libtiff5-dev libjasper-dev libpng-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy python2.7-dev python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
+
 ```
 
 Install OpenCV specifics
 ```
 cd ~/Developer
 git clone https://github.com/opencv/opencv.git
+cd ~/Developer/opencv
+mkdir release
+cd release
+cmake -D CMAKE_BUILD_TYPE=RELEASE ..
+make
+sudo make install
 ```
 
 Install libcaer
