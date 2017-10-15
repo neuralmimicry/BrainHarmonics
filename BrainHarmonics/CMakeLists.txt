@@ -17,6 +17,7 @@ ENDIF()
 SET(PROJECT_VERSION ${PROJECT_VERSION_NOREV}-r${PROJECT_REVISION})
 
 # Define installation paths.
+SET(CMAKE_MODULE_PATH "~/Developer/BrainHarmonics/BrainHarmonics/" ${CMAKE_MODULE_PATH})
 INCLUDE(GNUInstallDirs)
 
 # Set compiler info
@@ -169,10 +170,10 @@ INCLUDE(FindPkgConfig)
 # Basic USB device support
 PKG_CHECK_MODULES(LIBUSB1 REQUIRED libusb-1.0>=1.0.17)
 # LibCAER Dynapse support
-PKG_CHECK_MODULES(LIBCAER REQUIRED libcaer>=2.0)
-SET(LIBCAER_INCLUDE_DIR "/usr/local/include/libcaer")
-SET(LIBCAER_LIBRARY "/usr/local/lib")
-SET(CMAKE_MODULE_PATH "~/Developer/CMakeModules" ${CMAKE_MODULE_PATH})
+find_package(CAER)
+PKG_CHECK_MODULES(CAER REQUIRED libcaer>=2.0)
+# SET(CAER_INCLUDE_DIR "/usr/local/include/libcaer")
+# SET(CAER_LIBRARY "/usr/local/lib")
 # LibPCAP support
 find_package(PCAP)
 # VTK Graphics library
@@ -181,20 +182,22 @@ include(${VTK_USE_FILE})
 # Python locator
 find_package(PythonInterp)
 find_package(PythonLibs 2.7 REQUIRED)
-SET(PYTHON_LIBRARY "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib")
-SET(PYTHON_INCLUDE_DIR "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7")
-SET(PYTHON_NUMPY_LIBRARY_DIRS "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/lib")
-SET(PYTHON_NUMPY_INCLUDE_DIR "/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/include")
+# Override Python path if not detecting v2 correctly.
+SET(PYTHON_ROOT "/opt/local/Library/Frameworks/Python.framework/Versions/2.7")
+SET(PYTHON_LIBRARY "${PYTHON_ROOT}/lib")
+SET(PYTHON_INCLUDE_DIR "${PYTHON_ROOT}/include/python2.7")
+SET(PYTHON_NUMPY_LIBRARY_DIRS "${PYTHON_ROOT}/lib/python2.7/site-packages/numpy/lib")
+SET(PYTHON_NUMPY_INCLUDE_DIR "${PYTHON_ROOT}/lib/python2.7/site-packages/numpy/core/include")
 
-SET(BRAINHARMONICS_INCDIRS ${PYTHON_NUMPY_INCLUDE_DIR} ${PYTHON_INCLUDE_DIR} ${VTK_INCLUDE_DIRS} ${PCAP_INCLUDE_DIR} ${LIBCAER_INCLUDE_DIRS} ${LIBUSB1_INCLUDE_DIRS})
-SET(BRAINHARMONICS_LIBDIRS ${PYTHON_LIBRARY} ${PYTHON_NUMPY_LIBRARY_DIRS} ${VTK_LIBRARY_DIRS} ${PCAP_LIBRARY_DIRS} ${LIBCAER_LIBRARY_DIRS} ${LIBUSB1_LIBRARY_DIRS})
-SET(BRAINHARMONICS_LIBS ${PYTHON_LIBRARIES} ${PYTHON_NUMPY_LIBRARIES} ${VTK_LIBRARIES} ${PCAP_LIBRARY} ${LIBCAER_LIBRARIES} ${LIBUSB1_LIBRARIES})
+SET(BRAINHARMONICS_INCDIRS ${PYTHON_NUMPY_INCLUDE_DIR} ${PYTHON_INCLUDE_DIR} ${VTK_INCLUDE_DIRS} ${PCAP_INCLUDE_DIR} ${CAER_INCLUDE_DIRS} ${LIBUSB1_INCLUDE_DIRS})
+SET(BRAINHARMONICS_LIBDIRS ${PYTHON_LIBRARY} ${PYTHON_NUMPY_LIBRARY_DIRS} ${VTK_LIBRARY_DIRS} ${PCAP_LIBRARY_DIRS} ${CAER_LIBRARY_DIRS} ${LIBUSB1_LIBRARY_DIRS})
+SET(BRAINHARMONICS_LIBS ${PYTHON_LIBRARIES} ${PYTHON_NUMPY_LIBRARIES} ${VTK_LIBRARIES} ${PCAP_LIBRARY} ${CAER_LIBRARIES} ${LIBUSB1_LIBRARIES})
  
 # Threads support
-SET(LIBCAER_LIBS ${LIBCAER_LIBS} ${CMAKE_THREAD_LIBS_INIT})
+SET(CAER_LIBS ${CAER_LIBS} ${CMAKE_THREAD_LIBS_INIT})
 
 # Add local directory to include paths
-SET(LIBCAER_INCDIRS ${LIBCAER_INCDIRS} ${CMAKE_SOURCE_DIR})
+SET(CAER_INCDIRS ${CAER_INCDIRS} ${CMAKE_SOURCE_DIR})
 
 file(GLOB_RECURSE BRAINHARMONICS_SOURCES "*.cc")
 file(GLOB_RECURSE BRAINHARMONICS_HEADERS "*.h")
@@ -220,7 +223,7 @@ ENDIF()
 # Subdirectories
 #ADD_SUBDIRECTORY(include)
 #ADD_SUBDIRECTORY(includecpp)
-#ADD_SUBDIRECTORY(/Users/pbisaacs/Developer/BrainHarmonics/BrainHarmonics)
+#ADD_SUBDIRECTORY(~/Developer/BrainHarmonics/BrainHarmonics)
 
 file(GLOB MY_SRC
     "*.h"

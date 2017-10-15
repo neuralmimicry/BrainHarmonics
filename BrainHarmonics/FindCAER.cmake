@@ -20,12 +20,12 @@
 #  HAVE_PF_RING              If a found version of libcaer supports PF_RING
 
 find_path(CAER_ROOT_DIR
-    NAMES include/caer.h
+    NAMES include/libcaer/libcaer.h
 )
 
 find_path(CAER_INCLUDE_DIR
-    NAMES caer.h
-    HINTS ${CAER_ROOT_DIR}/include
+    NAMES libcaer.h
+    HINTS ${CAER_ROOT_DIR}/include/libcaer/
 )
 
 find_library(CAER_LIBRARY
