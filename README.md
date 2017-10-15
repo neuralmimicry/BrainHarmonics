@@ -22,29 +22,6 @@ sudo apt-get install build-essential git gcc-5 cmake pkg-config libgl1-mesa-dev 
 
 ```
 
-Install OpenCV specifics
-```
-cd ~/Developer
-git clone https://github.com/opencv/opencv.git
-cd ~/Developer/opencv
-mkdir release
-cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE ..
-make
-sudo make install
-```
-
-Install libcaer
-
-```
-cd ~/Developer
-git clone https://github.com/inilabs/libcaer.git
-cd libcaer
-cmake -DENABLE_OPENCV=1 -DCMAKE_INSTALL_PREFIX=/usr .
-make
-sudo make install
-```
-
 Install the VTK toolkit
 
 ```
@@ -74,6 +51,29 @@ cmake -DVTK_QT_VERSION:STRING=5 \
       ~/Developer/VTK
 
 make -j2
+sudo make install
+```
+
+Install OpenCV specifics
+```
+cd ~/Developer
+git clone https://github.com/opencv/opencv.git
+cd ~/Developer/opencv
+mkdir release
+cd release
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_CXX_FLAGS=-std=c++11 ..
+make
+sudo make install
+```
+
+Install libcaer
+
+```
+cd ~/Developer
+git clone https://github.com/inilabs/libcaer.git
+cd libcaer
+cmake -DENABLE_OPENCV=1 -DCMAKE_INSTALL_PREFIX=/usr .
+make
 sudo make install
 ```
 
