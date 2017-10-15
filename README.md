@@ -12,7 +12,7 @@ Folders created
 Install CMake
 
 sudo apt-get update
-sudo apt-get install build-essential cmake libgl1-mesa-dev libxt-dev libpcap-dev
+sudo apt-get install build-essential libgl1-mesa-dev libxt-dev libpcap-dev gcc-5 cmake libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev
 
 Install the VTK toolkit
 
