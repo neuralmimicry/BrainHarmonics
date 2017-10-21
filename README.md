@@ -7,6 +7,24 @@ For cross-platform compatibility
 ln -s /home /Users
 ```
 
+For Mac Users:
+Ensure the xcode command line tools are installed using:  xcode-select --install
+The preference for compilation tools is to use MacPorts. Download from MacPorts.org
+After installing macports run:
+
+```
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port install gcc5
+```
+Agree to all dependency install requirements
+```
+sudo port install git cmake
+```
+Agree to all dependency install requirements
+
+
+
 Base folder is ~/Developer
 Folders created
 ~/Developer/CMakeFiles
