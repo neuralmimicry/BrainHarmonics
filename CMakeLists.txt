@@ -11,6 +11,8 @@ set(GLAD "${DEPS}/glad/glad.h" "${DEPS}/glad.c")
 FIND_PACKAGE(glfw3 REQUIRED)
 
 add_executable(first first_glfw.cpp ${GLAD})
+add_executable(second twod.cpp ${GLAD})
 
 target_link_libraries(first glfw)
+target_link_libraries(second glfw)
 
