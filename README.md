@@ -15,23 +15,9 @@ After installing macports run:
 ```
 sudo port selfupdate
 sudo port upgrade outdated
-sudo port install gcc5
+sudo port install atlas cmake doxygen gcc5 graphviz gtk2 gtk3 libdc1394 libpcap libpng libusb libuv mesa opencv pkgconfig python27 py27-numpy python36 py36-numpy tbb xorg-libXt x264 XviD
 ```
-Agree to all dependency install requirements
-```
-sudo port install git cmake
-```
-Agree to all dependency install requirements
-
-
-
-Base folder is ~/Developer
-Folders created
-~/Developer/CMakeFiles
-~/Developer/BrainHarmonics
-
-Install CMake
-
+For Ubuntu Users
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -39,6 +25,12 @@ sudo apt-get upgrade
 sudo apt-get install build-essential git gcc-5 cmake pkg-config libgl1-mesa-dev libxt-dev libpcap-dev libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg-dev libjpeg8-dev libtiff-dev libtiff5-dev libjasper-dev libpng-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy python2.7-dev python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
 
 ```
+Agree to all dependency install requirements
+
+Base folder is ~/Developer
+Folders created
+~/Developer/CMakeFiles
+~/Developer/BrainHarmonics
 
 Install the QT/VTK toolkit
 
@@ -75,6 +67,18 @@ make -j2
 sudo make install
 ```
 
+Install OpenCV specifics (Ubuntu only)
+```
+cd ~/Developer
+git clone https://github.com/opencv/opencv.git
+cd ~/Developer/opencv
+mkdir release
+cd release
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_CXX_FLAGS=-std=c++11 ..
+make
+sudo make install
+```
+
 (MacOS element)
 ```
 wget http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg
@@ -87,19 +91,7 @@ sudo make install
 
 ```
 
-Install OpenCV specifics
-```
-cd ~/Developer
-git clone https://github.com/opencv/opencv.git
-cd ~/Developer/opencv
-mkdir release
-cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_CXX_FLAGS=-std=c++11 ..
-make
-sudo make install
-```
-
-Install libcaer and its dependencies
+Install libcaer and its dependencies (Ubuntu & MacOS)
 
 ```
 cd ~/Developer
