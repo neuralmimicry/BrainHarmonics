@@ -80,7 +80,7 @@ sudo make install
 wget http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg
 
 ```
-Run the dmg to open the QT installer
+Run the dmg to open the QT installer (skip account creation) and then install VTK (the make process is a Very long process)
 ```
 cd ~/Developer/VTK-build
 sudo make install
@@ -99,7 +99,7 @@ make
 sudo make install
 ```
 
-Install libcaer
+Install libcaer and its dependencies
 
 ```
 cd ~/Developer
