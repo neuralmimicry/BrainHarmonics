@@ -52,25 +52,17 @@ mkdir ~/Developer/QT
 cd ~/Developer/VTK-build
 cmake ~/Developer/VTK
 
-cd ~/Developer/VTK-Release-build
-cmake -DCMAKE_BUILD_TYPE:STRING=Release ~/Developer/VTK
-
 ```
 (Ubuntu element)
 ```
+cd ~/Developer/VTK-Release-build
+cmake -DCMAKE_BUILD_TYPE:STRING=Release ~/Developer/VTK
+
 cd ~/Developer/QT
 wget http://download.qt-project.org/official_releases/qt/5.9/5.9.2/qt-opensource-linux-x64-5.9.2.run
 chmod +x qt-opensource-linux-x64-5.9.2.run
 ./qt-opensource-linux-x64-5.9.2.run
-```
 
-(MacOS element)
-```
-wget http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg
-```
-Run the dmg to open the QT installer
-
-```
 cd ~/Developer/VTK-Release-build
 cmake -DVTK_QT_VERSION:STRING=5 \
       -DQT_QMAKE_EXECUTABLE:PATH=~/Qt5.9.2/5.9.2/gcc_64/bin/qmake \
@@ -81,6 +73,18 @@ cmake -DVTK_QT_VERSION:STRING=5 \
 
 make -j2
 sudo make install
+```
+
+(MacOS element)
+```
+wget http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg
+
+```
+Run the dmg to open the QT installer
+```
+cd ~/Developer/VTK-build
+sudo make install
+
 ```
 
 Install OpenCV specifics
