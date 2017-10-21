@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <math.h>
+#include <vector>
 #include <GLFW/glfw3.h>
 #include <cstdlib>
 #include <iostream>
@@ -60,7 +61,37 @@ void lineDance() {
     }
 }
 
+void gridLines(gfloat gridWidth,int height,int width) {
+    // create the vertical lines
+    for (gfloat xpos=-width; xpos < width;xpos+=gridWidth) {
+        Vertex v1 = {xpos,-height,0.0f, 1.0f,1.0f,1.0f,1.0f};  
+        Vertex v2 = {xpos,height,0.0f, 1.0f,1.0f,1.0f,1.0f};  
+        lineSegment(v1,v2,1.0f);
+    }
+    for (gfloat ypos=-height; ypos < height;ypos+=gridWidth) {
+        Vertex v1 = {-width,ypos,0.0f, 1.0f,1.0f,1.0f,1.0f};  
+        Vertex v2 = {width,ypos,0.0f, 1.0f,1.0f,1.0f,1.0f};  
+        lineSegment(v1,v2,1.0f);
+    }
+    // add a point at each vertex 
+}
   
+/*  Purpose: grid form using points instead of lines 
+    
+*/
+void gridPoints (gfloat gridWidth,int yspan,int height,int width) {
+    //just trying the  
+    for(gfloat xpos=-width;xpos < width;xpos+=gridWidth) {
+        for(gfloat ypos=-yspan*gridWidth;ypos < yspan*gridWidth;ypos+= gridWidth) {
+            float spanColor = sqrt(pow(ypos/(yspan*gridWidth),2));
+            float animColor = fmod(glfwGetTime(),15);
+            Vertex v = {xpos,ypos,0.0f, spanColor ,animColor,0.0f,1.0f};  
+            drawPoint(v,10.0f);
+        }
+    }
+    std::cout << "done"  << std::endl;
+}
+   
 
 
 int main () {
@@ -100,10 +131,8 @@ int main () {
         glMatrixMode(GL_MODELVIEW);
         glLoadIdentity();
         // drawing part
-        //makePointsDance();
-
-        lineDance();
-
+        gridLines(.05f,height,width);
+        gridPoints(.05f,20,height,width);
         //create a loop to draw the points
         glfwSwapBuffers(window);
         glfwPollEvents();
