@@ -431,27 +431,6 @@ int main(int argc, char* argv[])
 
     while (!glfwWindowShouldClose(window))
     {
-        t = glfwGetTime();
-        dt_total = t - t_old;
-        t_old = t;
-
-        // Safety - iterate if dt_total is too large
-        while (dt_total > 0.f)
-        {
-            // Select iteration time step
-            dt = dt_total > MAX_DELTA_T ? MAX_DELTA_T : dt_total;
-            dt_total -= dt;
-
-            // Calculate wave propagation
-            calc_grid();
-        }
-
-        // Compute height of each vertex
-        adjust_grid();
-
-        // Draw wave grid to OpenGL display
-        draw_scene(window);
-
         glfwPollEvents();
     }
 
