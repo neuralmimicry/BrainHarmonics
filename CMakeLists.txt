@@ -14,12 +14,14 @@ FIND_PACKAGE(glfw3 REQUIRED)
 add_executable(first first_glfw.cpp ${GLAD})
 add_executable(second twod.cpp ${GLAD})
 add_executable(third triangles.cpp ${GLAD})
-add_executable(wave wave.c ${GLAD})
+add_executable(wave wave.cpp ${GLAD})
+add_executable(origwave waveback.c ${GLAD})
 
 target_link_libraries(first glfw)
 target_link_libraries(second glfw)
 target_link_libraries(third glfw)
 target_link_libraries(wave glfw)
+target_link_libraries(origwave glfw)
 
 
 

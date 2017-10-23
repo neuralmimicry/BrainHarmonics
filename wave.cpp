@@ -12,15 +12,23 @@
  // Make MS math.h define M_PI
  #define _USE_MATH_DEFINES
 #endif
+#include <glad/glad.h>
+#include <math.h>
+#include <GLFW/glfw3.h>
+#include <cstdlib>
+#include <vector>
+#include <iostream>
+
+
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
 #include <linmath.h>
+
+using std::vector;
+using std::rand;
+using std::srand;
+
 
 // Maximum delta T to allow for differential calculations
 #define MAX_DELTA_T 0.01
@@ -34,11 +42,17 @@ GLfloat zoom = 2.f;
 double cursorX;
 double cursorY;
 
+typedef GLfloat gfloat;
+
 struct Vertex
 {
     GLfloat x, y, z;
-    GLfloat r, g, b;
+    GLfloat r, g, b,a;
 };
+
+vector<vector<Vertex>> all_v;
+    
+
 
 #define GRIDW 50
 #define GRIDH 50
@@ -145,27 +159,6 @@ void init_grid(void)
 // Draw scene
 //========================================================================
 
-void draw_scene(GLFWwindow* window)
-{
-    // Clear the color and depth buffers
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    // We don't want to modify the projection matrix
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-
-    // Move back
-    glTranslatef(0.0, 0.0, -zoom);
-    // Rotate the view
-    glRotatef(beta, 1.0, 0.0, 0.0);
-    glRotatef(alpha, 0.0, 0.0, 1.0);
-
-    glDrawElements(GL_QUADS, 4 * QUADNUM, GL_UNSIGNED_INT, quad);
-
-    glfwSwapBuffers(window);
-}
-
-
 //========================================================================
 // Initialize Miscellaneous OpenGL state
 //========================================================================
@@ -209,6 +202,69 @@ void adjust_grid(void)
     }
 }
 
+
+/*  Purpose: make a triangle given vertices 
+ *   
+ */
+void makeTriangle (vector<Vertex> vct) {
+    glBegin(GL_TRIANGLES); 
+    // iterate over the vertices
+    for (Vertex v: vct) {
+        glColor4f(v.r,v.g,v.b,v.a);
+        glVertex3f(v.x,v.y,v.z);
+    }
+    glEnd();
+}
+
+
+/*  Purpose: generate all the triangles for the vector set 
+ *   
+ */
+void makeTriangles (vector<vector<Vertex>> vct) {
+    for (vector<Vertex> subV:vct) {
+            makeTriangle(subV);
+    }
+}
+   
+
+
+
+
+/*  Purpose: this function gives a number between 0 and ceil 
+ *   
+ */
+gfloat randCeil  (float ceil) {
+    float randVal = rand();
+    float val = randVal/RAND_MAX*(2*ceil) -ceil;
+    //
+    gfloat returnVal = (gfloat) val*ceil;
+    //std::cout << "randval " << randVal << "randval" << val << "top is "<< RAND_MAX  << " rv is " << returnVal << std::endl;
+
+    return returnVal;
+}
+/*  Purpose: make group of triangles 
+ *   
+ */
+void trianglesSet (int number,int height,int width) {
+    auto animTime = fmod(glfwGetTime(),5)*10;
+    std::cout << animTime  << std::endl;
+    if( animTime < 1.0f) {
+        std::cout << "in creating vertex"  << std::endl;
+        for ( int i = 0 ;i < number;i++ ) {
+            vector<Vertex> vertex_vect;
+            for ( int j = 0;j < 3;j++ ) {
+
+                Vertex v = {randCeil(1),randCeil(1),0.0f,randCeil(1),randCeil(1),randCeil(1)};
+                vertex_vect.push_back(v);
+                std::cout << v.x << " "  <<v.y << " "  <<v.z<< std::endl;
+            }
+            all_v.push_back(vertex_vect);
+        }
+    }
+    makeTriangles(all_v);
+}
+
+   
 
 //========================================================================
 // Calculate wave propagation
@@ -383,12 +439,35 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 }
 
 
+void draw_scene(GLFWwindow* window,int height,int width)
+{
+    // Clear the color and depth buffers
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    // We don't want to modify the projection matrix
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    // Move back
+    glTranslatef(0.0, 0.0, -zoom);
+    // Rotate the view
+    glRotatef(beta, 1.0, 0.0, 0.0);
+    glRotatef(alpha, 0.0, 0.0, 1.0);
+
+    trianglesSet(5,height,width);
+
+    glfwSwapBuffers(window);
+}
+
+
 //========================================================================
 // main
 //========================================================================
 
 int main(int argc, char* argv[])
 {
+    unsigned int seed = 5;
+    std::srand(seed);
     GLFWwindow* window;
     double t, dt_total, t_old;
     int width, height;
@@ -418,19 +497,11 @@ int main(int argc, char* argv[])
     glfwGetFramebufferSize(window, &width, &height);
     framebuffer_size_callback(window, width, height);
 
-    // Initialize OpenGL
-    init_opengl();
-
-    // Initialize simulation
-    init_vertices();
-    init_grid();
-    adjust_grid();
-
-    // Initialize timer
-    t_old = glfwGetTime() - 0.01;
 
     while (!glfwWindowShouldClose(window))
     {
+        // Draw wave grid to OpenGL display
+        draw_scene(window,height,width);
         glfwPollEvents();
     }
 
