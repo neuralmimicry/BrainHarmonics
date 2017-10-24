@@ -51,157 +51,6 @@ struct Vertex
 };
 
 vector<vector<Vertex>> all_v;
-    
-
-
-#define GRIDW 50
-#define GRIDH 50
-#define VERTEXNUM (GRIDW*GRIDH)
-
-#define QUADW (GRIDW - 1)
-#define QUADH (GRIDH - 1)
-#define QUADNUM (QUADW*QUADH)
-
-GLuint quad[4 * QUADNUM];
-struct Vertex vertex[VERTEXNUM];
-
-/* The grid will look like this:
- *
- *      3   4   5
- *      *---*---*
- *      |   |   |
- *      | 0 | 1 |
- *      |   |   |
- *      *---*---*
- *      0   1   2
- */
-
-//========================================================================
-// Initialize grid geometry
-//========================================================================
-
-void init_vertices(void)
-{
-    int x, y, p;
-
-    // Place the vertices in a grid
-    for (y = 0;  y < GRIDH;  y++)
-    {
-        for (x = 0;  x < GRIDW;  x++)
-        {
-            p = y * GRIDW + x;
-
-            vertex[p].x = (GLfloat) (x - GRIDW / 2) / (GLfloat) (GRIDW / 2);
-            vertex[p].y = (GLfloat) (y - GRIDH / 2) / (GLfloat) (GRIDH / 2);
-            vertex[p].z = 0;
-
-            if ((x % 4 < 2) ^ (y % 4 < 2))
-                vertex[p].r = 0.0;
-            else
-                vertex[p].r = 1.0;
-
-            vertex[p].g = (GLfloat) y / (GLfloat) GRIDH;
-            vertex[p].b = 1.f - ((GLfloat) x / (GLfloat) GRIDW + (GLfloat) y / (GLfloat) GRIDH) / 2.f;
-        }
-    }
-
-    for (y = 0;  y < QUADH;  y++)
-    {
-        for (x = 0;  x < QUADW;  x++)
-        {
-            p = 4 * (y * QUADW + x);
-
-            quad[p + 0] = y       * GRIDW + x;     // Some point
-            quad[p + 1] = y       * GRIDW + x + 1; // Neighbor at the right side
-            quad[p + 2] = (y + 1) * GRIDW + x + 1; // Upper right neighbor
-            quad[p + 3] = (y + 1) * GRIDW + x;     // Upper neighbor
-        }
-    }
-}
-
-double dt;
-double p[GRIDW][GRIDH];
-double vx[GRIDW][GRIDH], vy[GRIDW][GRIDH];
-double ax[GRIDW][GRIDH], ay[GRIDW][GRIDH];
-
-//========================================================================
-// Initialize grid
-//========================================================================
-
-void init_grid(void)
-{
-    int x, y;
-    double dx, dy, d;
-
-    for (y = 0; y < GRIDH;  y++)
-    {
-        for (x = 0; x < GRIDW;  x++)
-        {
-            dx = (double) (x - GRIDW / 2);
-            dy = (double) (y - GRIDH / 2);
-            d = sqrt(dx * dx + dy * dy);
-            if (d < 0.1 * (double) (GRIDW / 2))
-            {
-                d = d * 10.0;
-                p[x][y] = -cos(d * (M_PI / (double)(GRIDW * 4))) * 100.0;
-            }
-            else
-                p[x][y] = 0.0;
-
-            vx[x][y] = 0.0;
-            vy[x][y] = 0.0;
-        }
-    }
-}
-
-
-//========================================================================
-// Draw scene
-//========================================================================
-
-//========================================================================
-// Initialize Miscellaneous OpenGL state
-//========================================================================
-
-void init_opengl(void)
-{
-    // Use Gouraud (smooth) shading
-    glShadeModel(GL_SMOOTH);
-
-    // Switch on the z-buffer
-    glEnable(GL_DEPTH_TEST);
-
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_FLOAT, sizeof(struct Vertex), vertex);
-    glColorPointer(3, GL_FLOAT, sizeof(struct Vertex), &vertex[0].r); // Pointer to the first color
-
-    glPointSize(2.0);
-
-    // Background color is black
-    glClearColor(0, 0, 0, 0);
-}
-
-
-//========================================================================
-// Modify the height of each vertex according to the pressure
-//========================================================================
-
-void adjust_grid(void)
-{
-    int pos;
-    int x, y;
-
-    for (y = 0; y < GRIDH;  y++)
-    {
-        for (x = 0;  x < GRIDW;  x++)
-        {
-            pos = y * GRIDW + x;
-            vertex[pos].z = (float) (p[x][y] * (1.0 / 50.0));
-        }
-    }
-}
-
 
 /*  Purpose: make a triangle given vertices 
  *   
@@ -254,7 +103,7 @@ void trianglesSet (int number,int height,int width) {
             vector<Vertex> vertex_vect;
             for ( int j = 0;j < 3;j++ ) {
 
-                Vertex v = {randCeil(1),randCeil(1),0.0f,randCeil(1),randCeil(1),randCeil(1)};
+                Vertex v = {randCeil(1),randCeil(1),randCeil(1),randCeil(1),randCeil(1),randCeil(1)};
                 vertex_vect.push_back(v);
                 std::cout << v.x << " "  <<v.y << " "  <<v.z<< std::endl;
             }
@@ -266,51 +115,6 @@ void trianglesSet (int number,int height,int width) {
 
    
 
-//========================================================================
-// Calculate wave propagation
-//========================================================================
-
-void calc_grid(void)
-{
-    int x, y, x2, y2;
-    double time_step = dt * ANIMATION_SPEED;
-
-    // Compute accelerations
-    for (x = 0;  x < GRIDW;  x++)
-    {
-        x2 = (x + 1) % GRIDW;
-        for(y = 0; y < GRIDH; y++)
-            ax[x][y] = p[x][y] - p[x2][y];
-    }
-
-    for (y = 0;  y < GRIDH;  y++)
-    {
-        y2 = (y + 1) % GRIDH;
-        for(x = 0; x < GRIDW; x++)
-            ay[x][y] = p[x][y] - p[x][y2];
-    }
-
-    // Compute speeds
-    for (x = 0;  x < GRIDW;  x++)
-    {
-        for (y = 0;  y < GRIDH;  y++)
-        {
-            vx[x][y] = vx[x][y] + ax[x][y] * time_step;
-            vy[x][y] = vy[x][y] + ay[x][y] * time_step;
-        }
-    }
-
-    // Compute pressure
-    for (x = 1;  x < GRIDW;  x++)
-    {
-        x2 = x - 1;
-        for (y = 1;  y < GRIDH;  y++)
-        {
-            y2 = y - 1;
-            p[x][y] = p[x][y] + (vx[x2][y] - vx[x][y] + vy[x][y2] - vy[x][y]) * time_step;
-        }
-    }
-}
 
 
 //========================================================================
@@ -338,7 +142,6 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
             glfwSetWindowShouldClose(window, GLFW_TRUE);
             break;
         case GLFW_KEY_SPACE:
-            init_grid();
             break;
         case GLFW_KEY_LEFT:
             alpha += 5;
@@ -421,7 +224,7 @@ void scroll_callback(GLFWwindow* window, double x, double y)
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     float ratio = 1.f;
-    mat4x4 projection;
+    mat4x4 projection;// don't know what the mat4x4 is 
 
     if (height > 0)
         ratio = (float) width / (float) height;
@@ -441,6 +244,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 void draw_scene(GLFWwindow* window,int height,int width)
 {
+    float time = glfwGetTime();
     // Clear the color and depth buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -451,8 +255,8 @@ void draw_scene(GLFWwindow* window,int height,int width)
     // Move back
     glTranslatef(0.0, 0.0, -zoom);
     // Rotate the view
-    glRotatef(beta, 1.0, 0.0, 0.0);
-    glRotatef(alpha, 0.0, 0.0, 1.0);
+    glRotatef(beta*(time/100), 1.0, 0.0, 0.0);
+    glRotatef(alpha*(time/100), 0.0, 0.0, 1.0);
 
     trianglesSet(5,height,width);
 

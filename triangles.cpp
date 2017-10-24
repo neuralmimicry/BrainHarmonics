@@ -18,47 +18,7 @@ typedef struct {
 } Vertex;
 
 vector<vector<Vertex>> all_v;
- 
-void init_opengl(void)
-{
-    // Use Gouraud (smooth) shading
-    glShadeModel(GL_SMOOTH);
-
-    // Switch on the z-buffer
-    glEnable(GL_DEPTH_TEST);
-
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_FLOAT, sizeof(struct Vertex), vertex);
-    glColorPointer(3, GL_FLOAT, sizeof(struct Vertex), &vertex[0].r); // Pointer to the first color
-
-    glPointSize(2.0);
-
-    // Background color is black
-    glClearColor(0, 0, 0, 0);
-}
-
-
-void draw_scene(GLFWwindow* window)
-{
-    // Clear the color and depth buffers
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    // We don't want to modify the projection matrix
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-
-    // Move back
-    glTranslatef(0.0, 0.0, -zoom);
-    // Rotate the view
-    glRotatef(beta, 1.0, 0.0, 0.0);
-    glRotatef(alpha, 0.0, 0.0, 1.0);
-
-
-    glfwSwapBuffers(window);
-}
-
-   
+    
 
 /*  Purpose: make a triangle given vertices 
  *   
