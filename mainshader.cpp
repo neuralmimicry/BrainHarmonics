@@ -231,6 +231,52 @@ int main(int argc, char** argv)
     /* Create vao + vbo to store the mesh */
     /* Create the vbo to store all the information for the grid and the height */
 
+    // Create Vertex Array Object
+    GLuint vertex_array;
+    glGenVertexArrays(1, &vertex_array);
+    glBindVertexArray(vertex_array);
+
+    // Create a Vertex Buffer Object and copy the vertex data to it
+    GLuint vertex_buffer;
+    GLuint color_buffer;
+
+    glGenBuffers(1, &vertex_buffer);
+    glGenBuffers(1, &color_buffer);
+
+    const GLfloat vertices[] = {
+    		-1.0f, -1.0f, 0.0f,
+    		1.0f, -1.0f, 0.0f,
+    		1.0f, 1.0f, 0.0f,
+    		-1.0f, -1.0f, 0.0f,
+    		1.0f, 1.0f, 0.0f,
+    		-1.0f, 1.0f, 0.0f
+    };
+    const GLfloat colors[]={
+    		0.0f, 0.0f, 1.0f,
+    		0.0f, 1.0f, 0.0f,
+    		1.0f, 0.0f, 0.0f,
+    		0.0f, 0.0f, 1.0f,
+    		1.0f, 0.0f, 0.0f,
+    		0.0f, 1.0f, 0.0f
+    };
+
+    glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(colors), colors, GL_STATIC_DRAW);
+
+    // Specify the layout of the vertex data
+    GLint position_attrib = glGetAttribLocation(shader_program, "position");
+    glEnableVertexAttribArray(position_attrib);
+	glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
+	glVertexAttribPointer(position_attrib, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+    GLint color_attrib = glGetAttribLocation(shader_program, "color_in");
+	glEnableVertexAttribArray(color_attrib);
+	glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
+	glVertexAttribPointer(color_attrib,	3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+
     /* setup the scene ready for rendering */
     glfwGetFramebufferSize(window, &width, &height);
     glViewport(0, 0, width, height);
@@ -242,6 +288,8 @@ int main(int argc, char** argv)
         /* render the next frame */
         glClear(GL_COLOR_BUFFER_BIT);
 
+		// Draw a rectangle from the 2 triangles using 6 vertices
+		glDrawArrays(GL_TRIANGLES, 0, 6); //draw the square
         /* display and process events through callbacks */
         glfwSwapBuffers(window);
         glfwPollEvents();
