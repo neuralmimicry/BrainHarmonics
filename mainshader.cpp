@@ -7,15 +7,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-//for Windows, we use the static version of GLEW
-#ifdef _WIN32
-#define GLEW_STATIC
-#endif
-
 //GLFW and GLEW libraries
-#include <GL/glew.h>
-//#include <glad/glad.h>
+//#include <GL/glew.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 #include "common/shader.hpp"
@@ -25,21 +19,22 @@ GLFWwindow* window;
 
 int main(int argc, char **argv)
 {
+    std::cout << "starting shady " << std::endl;
 	//Initialize GLFW
 	if(!glfwInit()){
 		fprintf( stderr, "Failed to initialize GLFW\n" );
 		exit(EXIT_FAILURE);
 	}
 
-	//enable anti-aliasing 4x with GLFW
-	glfwWindowHint(GLFW_SAMPLES, 4);
-	//specify the client API version that the created context must be compatible with.
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-	//make the GLFW forward compatible
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-	//use the OpenGL Core (http://www.opengl.org/wiki/Core_And_Compatibility_in_Contexts)
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+//	//enable anti-aliasing 4x with GLFW
+//	glfwWindowHint(GLFW_SAMPLES, 4);
+//	//specify the client API version that the created context must be compatible with.
+//	//glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+//	//glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+//	//make the GLFW forward compatible
+	//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+//	//use the OpenGL Core (http://www.opengl.org/wiki/Core_And_Compatibility_in_Contexts)
+	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	//create a GLFW windows object
 	window = glfwCreateWindow(640, 480, "Chapter 4 - GLSL", NULL, NULL);
@@ -48,18 +43,20 @@ int main(int argc, char **argv)
 		glfwTerminate();
 		exit(EXIT_FAILURE);
 	}
+    std::cout << "made window " << std::endl;
 	//make the context of the specified window current for the calling thread
 	glfwMakeContextCurrent(window);
 	glfwSwapInterval(1);
-	glewExperimental = true; // Needed for core profile
-	if (glewInit() != GLEW_OK) {
-		fprintf(stderr, "Final to Initialize GLEW\n");
-		glfwTerminate();
-		exit(EXIT_FAILURE);
-	}
+	//glewExperimental = true; // Needed for core profile
+	//if (glewInit() != GLEW_OK) {
+	//	fprintf(stderr, "Final to Initialize GLEW\n");
+	//	glfwTerminate();
+	//	exit(EXIT_FAILURE);
+	//}
+    std::cout << "trying to load " << std::endl;
 
-    GLuint program = LoadShaders("simple.vert", "simple.frag");
-
+    GLuint program = LoadShaders("../simple.vert", "../simple.frag");
+    std::cout << "loaded shaders"  << std::endl;
     glBindFragDataLocation(program, 0, "color_out");
     glUseProgram(program);
 

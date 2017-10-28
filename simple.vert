@@ -1,4 +1,4 @@
-#version 150
+#version 420
 in vec3 position;
 in vec3 color_in;
 out vec3 color;

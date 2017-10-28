@@ -1,4 +1,4 @@
-#version 150
+#version 420
 in vec3 color;
 out vec4 color_out;
 void main() {
