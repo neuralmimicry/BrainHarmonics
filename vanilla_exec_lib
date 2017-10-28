@@ -1,0 +1,17 @@
+{%extends "cmake_temp"%}
+
+{%block add_execs%}
+{%for name in cpp_list%}
+add_executable({{name}} {{name}}.cpp ${GLAD})
+{%endfor%}
+{%endblock%}  
+
+{%block linklib%}
+{%for name in cpp_list%}
+target_link_libraries({{name}} glfw)
+{%endfor%}
+{%endblock%}  
+
+
+
+

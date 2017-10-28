@@ -16,23 +16,40 @@ FIND_PACKAGE(GLEW REQUIRED)
 
 include_directories(${OPENGL_INCLUDE_DIRS})
 
-add_executable(first first_glfw.cpp ${GLAD})
-add_executable(second twod.cpp ${GLAD})
-add_executable(third triangles.cpp ${GLAD})
-add_executable(wave wave.cpp ${GLAD})
-add_executable(origwave waveback.c ${GLAD})
-add_executable(shady mainshader.cpp ${GLAD} common/shader.cpp common/shader.hpp)
-add_executable(scrap scrap.cpp)
 
-target_link_libraries(first glfw)
-target_link_libraries(second glfw)
-target_link_libraries(third glfw)
+
+add_executable(twod twod.cpp ${GLAD})
+
+add_executable(wave wave.cpp ${GLAD})
+
+add_executable(transition_text transition_text.cpp ${GLAD})
+
+add_executable(mainshader mainshader.cpp ${GLAD})
+
+add_executable(triangles triangles.cpp ${GLAD})
+
+add_executable(first_glfw first_glfw.cpp ${GLAD})
+
+add_executable(scrap scrap.cpp ${GLAD})
+
+
+
+
+
+target_link_libraries(twod glfw)
+
 target_link_libraries(wave glfw)
-target_link_libraries(origwave glfw)
-## shady gets more libraries
-target_link_libraries(shady glfw)
-##target_link_libraries(shady GLEW)
-##target_link_libraries(shady ${OPENGL_LIBRARIES})
+
+target_link_libraries(transition_text glfw)
+
+target_link_libraries(mainshader glfw)
+
+target_link_libraries(triangles glfw)
+
+target_link_libraries(first_glfw glfw)
+
+target_link_libraries(scrap glfw)
+
 
 
 
