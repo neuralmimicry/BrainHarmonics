@@ -4,133 +4,251 @@
 // Chapter 4 - Modern OpenGL - Texture Mapping with 2D images
 // Copyrights & Licenses:
 //=======================================================================
+#include <iostream>
 
 #include <stdio.h>
 #include <stdlib.h>
-//GLFW and GLEW libraries
-//#include <GL/glew.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <math.h>
 
-#include "common/shader.hpp"
+using namespace std;
 
 //Global variables
 GLFWwindow* window;
 
-int main(int argc, char **argv)
+
+//default shader programs
+static const char * frag_shader_text = 
+"#version 420\n"
+"in vec3 color;\n"
+"out vec4 color_out;\n"
+"void main() { "
+"    color_out = vec4(color,1.0);\n"
+"}";
+
+static const char * vert_shader_text = 
+"#version 420\n"
+"in vec3 position;\n"
+"in vec3 color_in;\n"
+"out vec3 color;\n"
+"void main () {\n"
+"    color = color_in;\n"
+"    gl_Position= vec4(position,1.0);\n"
+"}\n";
+
+// values for projection matrix, and shader uniform values, ?? don't know what this means presently
+
+/* Frustum configuration */
+static GLfloat view_angle = 45.0f;
+static GLfloat aspect_ratio = 4.0f/3.0f;
+static GLfloat z_near = 1.0f;
+static GLfloat z_far = 100.f;
+
+/* Projection matrix */
+static GLfloat projection_matrix[16] = {
+    1.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 1.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f
+};
+
+/* Model view matrix */
+static GLfloat modelview_matrix[16] = {
+    1.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 1.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f
+};
+
+/* Store uniform location for the shaders
+ * Those values are setup as part of the process of creating
+ * the shader program. They should not be used before creating
+ * the program.
+ */
+static GLuint mesh;
+static GLuint mesh_vbo[4];
+
+
+
+// shader helper funcitonss
+/* Creates a shader object of the specified type using the specified text
+ */
+static GLuint make_shader(GLenum type, const char* text)
 {
-    std::cout << "starting shady " << std::endl;
-	//Initialize GLFW
-	if(!glfwInit()){
-		fprintf( stderr, "Failed to initialize GLFW\n" );
-		exit(EXIT_FAILURE);
-	}
+    GLuint shader;
+    GLint shader_ok;
+    GLsizei log_length;
+    char info_log[8192];
 
-//	//enable anti-aliasing 4x with GLFW
-//	glfwWindowHint(GLFW_SAMPLES, 4);
-//	//specify the client API version that the created context must be compatible with.
-//	//glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-//	//glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-//	//make the GLFW forward compatible
-	//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-//	//use the OpenGL Core (http://www.opengl.org/wiki/Core_And_Compatibility_in_Contexts)
-	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    shader = glCreateShader(type);
+    if (shader != 0)
+    {
+        std::cout << "about to compile " << std::endl;
+        glShaderSource(shader, 1, (const GLchar**)&text, NULL);
+        glCompileShader(shader);
+        std::cout << "actually compiled " << std::endl;
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &shader_ok);
+        if (shader_ok != GL_TRUE)
+        {
+            fprintf(stderr, "ERROR: Failed to compile %s shader\n", (type == GL_FRAGMENT_SHADER) ? "fragment" : "vertex" );
+            glGetShaderInfoLog(shader, 8192, &log_length,info_log);
+            fprintf(stderr, "ERROR: \n%s\n\n", info_log);
+            glDeleteShader(shader);
+            shader = 0;
+        }
+    }
+    return shader;
+}
 
-	//create a GLFW windows object
-	window = glfwCreateWindow(640, 480, "Chapter 4 - GLSL", NULL, NULL);
-	if(!window){
-		fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
-		glfwTerminate();
-		exit(EXIT_FAILURE);
-	}
-    std::cout << "made window " << std::endl;
-	//make the context of the specified window current for the calling thread
-	glfwMakeContextCurrent(window);
-	glfwSwapInterval(1);
-	//glewExperimental = true; // Needed for core profile
-	//if (glewInit() != GLEW_OK) {
-	//	fprintf(stderr, "Final to Initialize GLEW\n");
-	//	glfwTerminate();
-	//	exit(EXIT_FAILURE);
-	//}
-    std::cout << "trying to load " << std::endl;
+// creation of the program object
+/* Creates a program object using the specified vertex and fragment text
+ */
+static GLuint make_shader_program(const char* vs_text, const char* fs_text)
+{
+    GLuint program = 0u;
+    GLint program_ok;
+    GLuint vertex_shader = 0u;
+    GLuint fragment_shader = 0u;
+    GLsizei log_length;
+    char info_log[8192];
 
-    GLuint program = LoadShaders("../simple.vert", "../simple.frag");
-    std::cout << "loaded shaders"  << std::endl;
-    glBindFragDataLocation(program, 0, "color_out");
-    glUseProgram(program);
+    vertex_shader = make_shader(GL_VERTEX_SHADER, vs_text);
+    if (vertex_shader != 0u)
+    {
+        fragment_shader = make_shader(GL_FRAGMENT_SHADER, fs_text);
+        if (fragment_shader != 0u)
+        {
+            /* make the program that connect the two shader and link it */
+            program = glCreateProgram();
+            if (program != 0u)
+            {
+                /* attach both shader and link */
+                glAttachShader(program, vertex_shader);
+                glAttachShader(program, fragment_shader);
+                glLinkProgram(program);
+                glGetProgramiv(program, GL_LINK_STATUS, &program_ok);
 
-    // Create Vertex Array Object
-    GLuint vertex_array;
-    glGenVertexArrays(1, &vertex_array);
-    glBindVertexArray(vertex_array);
+                if (program_ok != GL_TRUE)
+                {
+                    fprintf(stderr, "ERROR, failed to link shader program\n");
+                    glGetProgramInfoLog(program, 8192, &log_length, info_log);
+                    fprintf(stderr, "ERROR: \n%s\n\n", info_log);
+                    glDeleteProgram(program);
+                    glDeleteShader(fragment_shader);
+                    glDeleteShader(vertex_shader);
+                    program = 0u;
+                }
+            }
+        }
+        else
+        {
+            fprintf(stderr, "ERROR: Unable to load fragment shader\n");
+            glDeleteShader(vertex_shader);
+        }
+    }
+    else
+    {
+        fprintf(stderr, "ERROR: Unable to load vertex shader\n");
+    }
+    return program;
+}
 
-    // Create a Vertex Buffer Object and copy the vertex data to it
-    GLuint vertex_buffer;
-    GLuint color_buffer;
+static void error_callback(int error, const char* description)
+{
+    fprintf(stderr, "Error: %s\n", description);
+}
 
-    glGenBuffers(1, &vertex_buffer);
-    glGenBuffers(1, &color_buffer);
 
-    const GLfloat vertices[] = {
-    		-1.0f, -1.0f, 0.0f,
-    		1.0f, -1.0f, 0.0f,
-    		1.0f, 1.0f, 0.0f,
-    		-1.0f, -1.0f, 0.0f,
-    		1.0f, 1.0f, 0.0f,
-    		-1.0f, 1.0f, 0.0f
-    };
-    const GLfloat colors[]={
-    		0.0f, 0.0f, 1.0f,
-    		0.0f, 1.0f, 0.0f,
-    		1.0f, 0.0f, 0.0f,
-    		0.0f, 0.0f, 1.0f,
-    		1.0f, 0.0f, 0.0f,
-    		0.0f, 1.0f, 0.0f
-    };
 
-    glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(colors), colors, GL_STATIC_DRAW);
 
-    // Specify the layout of the vertex data
-    GLint position_attrib = glGetAttribLocation(program, "position");
-    glEnableVertexAttribArray(position_attrib);
-	glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
-	glVertexAttribPointer(position_attrib, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+int main(int argc, char** argv)
+{
+    GLFWwindow* window;
+    int iter;
+    double dt;
+    double last_update_time;
+    int frame;
+    float f;
+    GLint uloc_modelview;
+    GLint uloc_project;
+    int width, height;
 
-    GLint color_attrib = glGetAttribLocation(program, "color_in");
-	glEnableVertexAttribArray(color_attrib);
-	glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
-	glVertexAttribPointer(color_attrib,	3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+    GLuint shader_program;
 
-	while(!glfwWindowShouldClose(window)){
-		// Clear the screen to black
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
+    glfwSetErrorCallback(error_callback);
 
-		// Draw a rectangle from the 2 triangles using 6 vertices
-		glDrawArrays(GL_TRIANGLES, 0, 6); //draw the square
+    if (!glfwInit())
+        exit(EXIT_FAILURE);
 
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	}
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
 
-	//clear up the memories
-    glDisableVertexAttribArray(position_attrib);
-    glDisableVertexAttribArray(color_attrib);
+    window = glfwCreateWindow(800, 600, "GLFW OpenGL3 Heightmap demo", NULL, NULL);
+    if (! window )
+    {
+        glfwTerminate();
+        exit(EXIT_FAILURE);
+    }
 
-    glDeleteBuffers(1, &vertex_buffer);
-    glDeleteBuffers(1, &color_buffer);
-    glDeleteVertexArrays(1, &vertex_array);
+    /* Register events callback */
 
-	glDeleteProgram(program);
+    glfwMakeContextCurrent(window);
+    gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
 
-	// Close OpenGL window and terminate GLFW
-	glfwDestroyWindow(window);
-	glfwTerminate();
+    /* Prepare opengl resources for rendering */
+    shader_program = make_shader_program(vert_shader_text, frag_shader_text);
 
-	exit(EXIT_SUCCESS);
+    if (shader_program == 0u)
+    {
+        glfwTerminate();
+        exit(EXIT_FAILURE);
+    }
+
+    glUseProgram(shader_program);
+    uloc_project   = glGetUniformLocation(shader_program, "project");
+    uloc_modelview = glGetUniformLocation(shader_program, "modelview");
+
+    /* Compute the projection matrix */
+    f = 1.0f / tanf(view_angle / 2.0f);
+    projection_matrix[0]  = f / aspect_ratio;
+    projection_matrix[5]  = f;
+    projection_matrix[10] = (z_far + z_near)/ (z_near - z_far);
+    projection_matrix[11] = -1.0f;
+    projection_matrix[14] = 2.0f * (z_far * z_near) / (z_near - z_far);
+    glUniformMatrix4fv(uloc_project, 1, GL_FALSE, projection_matrix);
+
+    /* Set the camera position */
+    modelview_matrix[12]  = -5.0f;
+    modelview_matrix[13]  = -5.0f;
+    modelview_matrix[14]  = -20.0f;
+    glUniformMatrix4fv(uloc_modelview, 1, GL_FALSE, modelview_matrix);
+
+    /* Create mesh data */
+    /* Create vao + vbo to store the mesh */
+    /* Create the vbo to store all the information for the grid and the height */
+
+    /* setup the scene ready for rendering */
+    glfwGetFramebufferSize(window, &width, &height);
+    glViewport(0, 0, width, height);
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+
+    /* main loop */
+    while (!glfwWindowShouldClose(window))
+    {
+        /* render the next frame */
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        /* display and process events through callbacks */
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+        /* Check the frame rate and update the heightmap if needed */
+    }
+
+    glfwTerminate();
+    exit(EXIT_SUCCESS);
 }
 
