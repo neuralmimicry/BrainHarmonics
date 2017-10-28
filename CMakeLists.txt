@@ -1,21 +1,18 @@
 cmake_minimum_required(VERSION 3.8)
 project(opengl)
 
-set(DEPS "/home/user/opengl_dev/glfw-3.2.1/deps")
 set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${DEPS})
 message(${PROJECT_SOURCE_DIR}/common)
 include_directories(${PROJECT_SOURCE_DIR}/common)
+include_directories("/home/user/glfw-3.2.1/deps")
 
-
-set(GLAD "${DEPS}/glad/glad.h" "${DEPS}/glad.c")
+set(GLAD "/home/user/glfw-3.2.1/deps/glad.c" "/home/user/glfw-3.2.1/deps/glad/glad.h")
 
 FIND_PACKAGE(OpenGL REQUIRED)
 FIND_PACKAGE(glfw3 REQUIRED)
 FIND_PACKAGE(GLEW REQUIRED)
 
-add_library(glewstat STATIC ${GLEW_LIBRARIES})
 
 include_directories(${OPENGL_INCLUDE_DIRS})
 
@@ -25,6 +22,7 @@ add_executable(third triangles.cpp ${GLAD})
 add_executable(wave wave.cpp ${GLAD})
 add_executable(origwave waveback.c ${GLAD})
 add_executable(shady mainshader.cpp ${GLAD} common/shader.cpp common/shader.hpp)
+add_executable(scrap scrap.cpp)
 
 target_link_libraries(first glfw)
 target_link_libraries(second glfw)
@@ -33,8 +31,8 @@ target_link_libraries(wave glfw)
 target_link_libraries(origwave glfw)
 ## shady gets more libraries
 target_link_libraries(shady glfw)
-target_link_libraries(shady glewstat)
-target_link_libraries(shady ${OPENGL_LIBRARIES})
+##target_link_libraries(shady GLEW)
+##target_link_libraries(shady ${OPENGL_LIBRARIES})
 
 
 
