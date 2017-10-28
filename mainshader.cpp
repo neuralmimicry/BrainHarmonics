@@ -20,21 +20,16 @@ GLFWwindow* window;
 
 //default shader programs
 static const char * frag_shader_text = 
-"#version 420\n"
-"in vec3 color;\n"
+"#version 420 core\n"
 "out vec4 color_out;\n"
 "void main() { "
-"    color_out = vec4(color,1.0);\n"
+"    color_out = vec4(0.0,0.8,1.0,1.0);\n"
 "}";
 
 static const char * vert_shader_text = 
-"#version 420\n"
-"in vec3 position;\n"
-"in vec3 color_in;\n"
-"out vec3 color;\n"
+"#version 420 core\n"
 "void main () {\n"
-"    color = color_in;\n"
-"    gl_Position= vec4(position,1.0);\n"
+"    gl_Position= vec4(0.0,0.0,0.5,1.0);\n"
 "}\n";
 
 // values for projection matrix, and shader uniform values, ?? don't know what this means presently
@@ -60,16 +55,6 @@ static GLfloat modelview_matrix[16] = {
     0.0f, 0.0f, 1.0f, 0.0f,
     0.0f, 0.0f, 0.0f, 1.0f
 };
-
-/* Store uniform location for the shaders
- * Those values are setup as part of the process of creating
- * the shader program. They should not be used before creating
- * the program.
- */
-static GLuint mesh;
-static GLuint mesh_vbo[4];
-
-
 
 // shader helper funcitonss
 /* Creates a shader object of the specified type using the specified text
@@ -187,7 +172,7 @@ int main(int argc, char** argv)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
 
-    window = glfwCreateWindow(800, 600, "GLFW OpenGL3 Heightmap demo", NULL, NULL);
+    window = glfwCreateWindow(800, 600, "the single pixel example", NULL, NULL);
     if (! window )
     {
         glfwTerminate();
@@ -288,8 +273,9 @@ int main(int argc, char** argv)
         /* render the next frame */
         glClear(GL_COLOR_BUFFER_BIT);
 
+        glPointSize(sin(glfwGetTime())*40);
 		// Draw a rectangle from the 2 triangles using 6 vertices
-		glDrawArrays(GL_TRIANGLES, 0, 6); //draw the square
+		glDrawArrays(GL_POINTS, 0, 1); //draw the square
         /* display and process events through callbacks */
         glfwSwapBuffers(window);
         glfwPollEvents();
