@@ -27,6 +27,7 @@ std::string readSourceFile (const char * path) {
  *   
  */
 void CompileShader (std::string program_code,GLuint shader_id) {
+    printf("going to compile the shader\n");
     GLint result = GL_FALSE; 
     int infolog_length;
     char const * program_code_pointer = program_code.c_str();
@@ -39,12 +40,14 @@ void CompileShader (std::string program_code,GLuint shader_id) {
         glGetShaderInfoLog(shader_id,infolog_length,NULL,&error_msg[0]);
         printf("%s\n",&error_msg[0]);
     }
+    printf("finished compiling\n");
 }
    
 /*  Purpose: actually load the shaders 
  *   
  */
 GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_path) {
+    printf("loading the shaders\n");
     GLuint vertex_shader_id = glCreateShader(GL_VERTEX_SHADER);
     GLuint fragment_shader_id = glCreateShader(GL_FRAGMENT_SHADER);
     std::string vertex_shader_code= readSourceFile(vertex_file_path);
@@ -54,7 +57,7 @@ GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_pat
     printf("compiling thhe vertex shader: %s\n",vertex_file_path);
     CompileShader(vertex_shader_code,vertex_shader_id);
     printf("compiling the fragment shader: %s\n",fragment_file_path);
-    CompileShader(vertex_shader_code,vertex_shader_id);
+    CompileShader(fragment_shader_code,fragment_shader_id);
     //second half
     GLint result = GL_FALSE;
     int infolog_length;
