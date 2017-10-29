@@ -1,4 +1,5 @@
 #include <glad/glad.h>
+#include <math.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <stdlib.h>
@@ -21,14 +22,20 @@ int main () {
         glfwTerminate();
         exit(EXIT_FAILURE);
     }
+
     std::cout << "made window now shader loading " << std::endl;    
+    
     // compile shaders and stuff
     glfwMakeContextCurrent(window);
     // possible time to include the glad or other extension loader library tool
-    //
+    // this line must be called before we have access to the glfunctions
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-    GLuint prog_id = LoadShaders("../simple.vert","../simple.frag");
-    std::cout << "loaded the shaders " << std::endl;
+    // create the things needed for the actual drawing
+    GLuint program = LoadShaders("../simple.vert","../simple.frag");
+    GLuint vertex_array;
+    glGenVertexArrays(1,&vertex_array);
+    glBindVertexArray(vertex_array);
+
 
     while(!glfwWindowShouldClose(window)){
         // setting up viewport
@@ -49,6 +56,8 @@ int main () {
         // this is getting the perspective matrix, but making it be equal to all ones I think
         glLoadIdentity();
 
+        glPointSize(sin(glfwGetTime())*40);
+        glDrawArrays(GL_POINTS,0,1);
         // swap the buffering for the window
         glfwSwapBuffers(window);
         glfwPollEvents();
