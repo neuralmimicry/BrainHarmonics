@@ -56,8 +56,7 @@ int main () {
         // this is getting the perspective matrix, but making it be equal to all ones I think
         glLoadIdentity();
 
-        glPointSize(sin(glfwGetTime())*40);
-        glDrawArrays(GL_POINTS,0,1);
+        glDrawArrays(GL_TRIANGLES,0,3);
         // swap the buffering for the window
         glfwSwapBuffers(window);
         glfwPollEvents();

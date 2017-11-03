@@ -22,7 +22,7 @@ add_executable(twod twod.cpp ${GLAD})
 
 add_executable(wave wave.cpp ${GLAD})
 
-add_executable(transition_text transition_text.cpp ${GLAD})
+add_executable(transition_text transition_text.cpp ${GLAD} common/shader.cpp common/shader.hpp)
 
 add_executable(mainshader mainshader.cpp ${GLAD})
 
