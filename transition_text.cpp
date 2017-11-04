@@ -31,10 +31,12 @@ int main () {
     // this line must be called before we have access to the glfunctions
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
     // create the things needed for the actual drawing
-    GLuint program = LoadShaders("../simple.vert","../simple.frag","../simple.tcs","../simple.tes");
+    printf("%s\n",glGetString(GL_VERSION));
+
+
+    GLuint tes = glCreateShader(GL_TESS_CONTROL_SHADER);
+    GLuint program = LoadShaders("../simple.vert","../simple.frag");
     GLuint vertex_array;
-    // this enables the line filling within the triangle
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     glGenVertexArrays(1,&vertex_array);
     glBindVertexArray(vertex_array);
 

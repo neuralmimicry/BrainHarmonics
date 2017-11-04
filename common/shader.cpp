@@ -46,31 +46,18 @@ void CompileShader (std::string program_code,GLuint shader_id) {
 /*  Purpose: actually load the shaders 
  *   
  */
-GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_path,const char * tcs_file_path,const char * tes_file_path) {
+GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_path) {
     printf("loading the shaders\n");
     GLuint vertex_shader_id = glCreateShader(GL_VERTEX_SHADER);
     GLuint fragment_shader_id = glCreateShader(GL_FRAGMENT_SHADER);
-    GLuint tcs_shader_id = glCreateShader(GL_TESS_CONTROL_SHADER);
-    GLuint tes_shader_id = glCreateShader(GL_TESS_EVALUATION_SHADER);
-
     std::string vertex_shader_code= readSourceFile(vertex_file_path);
     if(vertex_shader_code == "") return 0;
     std::string fragment_shader_code = readSourceFile(fragment_file_path);
     if(fragment_shader_code == "") return 0;
-    std::string tcs_shader_code= readSourceFile(tcs_file_path);
-    if(tcs_shader_code == "") return 0;
-    std::string tes_shader_code= readSourceFile(tes_file_path);
-    if(tes_shader_code == "") return 0;
-
-    printf("compiling the vertex shader: %s\n",vertex_file_path);
+    printf("compiling thhe vertex shader: %s\n",vertex_file_path);
     CompileShader(vertex_shader_code,vertex_shader_id);
     printf("compiling the fragment shader: %s\n",fragment_file_path);
     CompileShader(fragment_shader_code,fragment_shader_id);
-    printf("compiling the tcs shader: %s\n",tcs_file_path);
-    CompileShader(tcs_shader_code,tcs_shader_id);
-    printf("compiling the tes shader: %s\n",tes_file_path);
-    CompileShader(tes_shader_code,tes_shader_id);
-
     //second half
     GLint result = GL_FALSE;
     int infolog_length;
@@ -78,8 +65,6 @@ GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_pat
     GLuint program_id = glCreateProgram();
     glAttachShader(program_id,vertex_shader_id);
     glAttachShader(program_id,fragment_shader_id);
-    glAttachShader(program_id,tcs_shader_id);
-    glAttachShader(program_id,tes_shader_id);
     glLinkProgram(program_id);
     // linking complete
 
@@ -97,8 +82,6 @@ GLuint LoadShaders (const char * vertex_file_path,const char * fragment_file_pat
 
     glDeleteShader(vertex_shader_id);
     glDeleteShader(fragment_shader_id);
-    glDeleteShader(tcs_shader_id);
-    glDeleteShader(tes_shader_id);
 
     return program_id;
 }
