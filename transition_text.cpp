@@ -45,7 +45,8 @@ int main () {
         glfwGetFramebufferSize(window,&width,&height);
         ratio = (float) width/(float)height;
         glViewport(0,0,width,height);
-        glClear(GL_COLOR_BUFFER_BIT);
+        const GLfloat back_color[] = {0.0f,0.2f,0.0f,1.0f};
+        glClearBufferfv(GL_COLOR,0,back_color);
 
         //setting up the camera its a matrix I guess?
         glMatrixMode(GL_PROJECTION);
@@ -55,7 +56,7 @@ int main () {
         glMatrixMode(GL_MODELVIEW);
         // this is getting the perspective matrix, but making it be equal to all ones I think
         glLoadIdentity();
-
+        glUseProgram(program);
         glDrawArrays(GL_TRIANGLES,0,3);
         // swap the buffering for the window
         glfwSwapBuffers(window);
