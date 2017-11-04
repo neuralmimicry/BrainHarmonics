@@ -57,6 +57,10 @@ int main () {
         // this is getting the perspective matrix, but making it be equal to all ones I think
         glLoadIdentity();
         glUseProgram(program);
+        //call use prog, and then move into the attribute assignment
+        GLfloat atrb[] = {(float) sin(glfwGetTime()),
+            (float) cos(glfwGetTime()),0.0f,0.5f};
+        glVertexAttrib4fv(0,atrb);
         glDrawArrays(GL_TRIANGLES,0,3);
         // swap the buffering for the window
         glfwSwapBuffers(window);
