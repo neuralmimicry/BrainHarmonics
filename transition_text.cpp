@@ -60,7 +60,10 @@ int main () {
         //call use prog, and then move into the attribute assignment
         GLfloat atrb[] = {(float) sin(glfwGetTime()),
             (float) cos(glfwGetTime()),0.0f,0.5f};
+        float modVal = rand() / (1.0f * RAND_MAX * 10);
+        GLfloat color[] = {(float) cos(glfwGetTime())+modVal,(float) sin(glfwGetTime())+modVal,0.0f,1.0f};
         glVertexAttrib4fv(0,atrb);
+        glVertexAttrib4fv(1,color);
         glDrawArrays(GL_TRIANGLES,0,3);
         // swap the buffering for the window
         glfwSwapBuffers(window);
