@@ -15,7 +15,7 @@ def check_path(given):
 
 edited_files = [os.path.join(place[0],file) for place in os.walk(".") for file in place[2] if check_path(place[0]) ]
 
-message = "need to check opengl version, tesselation problems"
+message = "YEEEEEESSS GOT TESSELATION"
 
 command = "git add {}; git commit -m \"{}\"".format(" ".join(edited_files),message)
 

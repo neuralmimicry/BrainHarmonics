@@ -5,11 +5,12 @@ set(CMAKE_CXX_STANDARD 11)
 
 message(${PROJECT_SOURCE_DIR}/common)
 include_directories(${PROJECT_SOURCE_DIR}/common)
-include_directories(${PROJECT_SOURCE_DIR}/include)
-include_directories(${PROJECT_SOURCE_DIR}/src)
-
-set(GLAD "${PROJECT_SOURCE_DIR}/src/glad.c" "${PROJECT_SOURCE_DIR}/include/glad/glad.h" "${PROJECT_SOURCE_DIR}/include/KHR/khrplatform.h")
-
+include_directories(${PROJECT_SOURCE_DIR}/loading_lib/include)
+include_directories(${PROJECT_SOURCE_DIR}/loading_lib/src)
+#include_directories("/home/user/glfw-3.2.1/deps")
+#
+set(GLAD "${PROJECT_SOURCE_DIR}/loading_lib/src/glad.c" "${PROJECT_SOURCE_DIR}/loading_lib/include/glad/glad.h")
+#
 FIND_PACKAGE(OpenGL REQUIRED)
 FIND_PACKAGE(glfw3 REQUIRED)
 FIND_PACKAGE(GLEW REQUIRED)

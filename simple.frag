@@ -1,10 +1,5 @@
 #version 420
-
-in VS_COLOR_PIPE {
-    vec4 color;
-} fs_in;
-
 out vec4 color_out;
 void main() {
-    color_out = fs_in.color;
+    color_out = vec4(0.3f,0.3f,0.3f,1.0f);
 }

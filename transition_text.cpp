@@ -35,10 +35,11 @@ int main () {
 
 
     GLuint tes = glCreateShader(GL_TESS_CONTROL_SHADER);
-    GLuint program = LoadShaders("../simple.vert","../simple.frag");
+    GLuint program = LoadShaders("../simple.vert","../simple.frag","../simple.tcs","../simple.tes");
     GLuint vertex_array;
     glGenVertexArrays(1,&vertex_array);
     glBindVertexArray(vertex_array);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 
     while(!glfwWindowShouldClose(window)){
@@ -62,13 +63,7 @@ int main () {
         glLoadIdentity();
         glUseProgram(program);
         //call use prog, and then move into the attribute assignment
-        GLfloat atrb[] = {(float) sin(glfwGetTime()),
-            (float) cos(glfwGetTime()),0.0f,0.5f};
-        float modVal = rand() / (1.0f * RAND_MAX * 10);
-        GLfloat color[] = {(float) cos(glfwGetTime())+modVal,(float) sin(glfwGetTime())+modVal,0.0f,1.0f};
-        glVertexAttrib4fv(0,atrb);
-        glVertexAttrib4fv(1,color);
-        glDrawArrays(GL_TRIANGLES,0,3);
+        glDrawArrays(GL_PATCHES, 0, 3);
         // swap the buffering for the window
         glfwSwapBuffers(window);
         glfwPollEvents();
