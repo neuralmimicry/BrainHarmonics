@@ -17,7 +17,7 @@ ENDIF()
 SET(PROJECT_VERSION ${PROJECT_VERSION_NOREV}-r${PROJECT_REVISION})
 
 # Define installation paths.
-SET(CMAKE_MODULE_PATH "~/Developer/BrainHarmonics/BrainHarmonics/" ${CMAKE_MODULE_PATH})
+SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR} ${CMAKE_MODULE_PATH})
 INCLUDE(GNUInstallDirs)
 
 # Set compiler info
@@ -176,6 +176,7 @@ PKG_CHECK_MODULES(LIBCAER REQUIRED libcaer>=2.0)
 # LibPCAP support
 find_package(PCAP)
 # OpenGL support
+set (OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
 # GLUT support
 find_package(GLUT REQUIRED)
