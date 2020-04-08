@@ -1,5 +1,9 @@
 # BrainHarmonics
 # This file forms the basis of build requirements to get the software to compile.
+# Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's. 08-Apr-2020.
+# Ongoing code to be managed via Linaro
+# (c) Linaro 2020.
+# May be freely copied whilst maintaining reference to origin and copyright.
 
 For cross-platform compatibility
 
