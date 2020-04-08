@@ -18,7 +18,7 @@
 #include <cstdlib>
 #include <vector>
 #include <iostream>
-
+#include <cstring>
 
 
 #include <stdio.h>
