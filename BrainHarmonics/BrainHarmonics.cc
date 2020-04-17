@@ -96,6 +96,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <vtkTextActor.h>
 #include <vtkTextMapper.h>
 #include <vtkTextProperty.h>
+#include <vtkUnsignedCharArray.h>
 #include <vtkVertexGlyphFilter.h>
 #include <vtkXMLPolyDataWriter.h>
 #include <cmath>
