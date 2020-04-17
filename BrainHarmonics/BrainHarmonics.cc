@@ -921,6 +921,9 @@ void
 init_numpy()
 {
     import_array();
+#if PY_MAJOR_VERSION >= 3
+    return 0;
+#endif
 }
 
 class UpdateAllCommand : public vtkCommand

@@ -171,7 +171,7 @@ INCLUDE(FindPkgConfig)
 PKG_CHECK_MODULES(LIBUSB1 REQUIRED libusb-1.0>=1.0.17)
 # Check OpenCV support
 PKG_CHECK_MODULES(OPENCV REQUIRED opencv>=3.0)
-# LibCAER Dynapse support
+# LibCAER Dynapse support. Available from gitlab.com/inivation/dv/libcaer
 PKG_CHECK_MODULES(LIBCAER REQUIRED libcaer>=2.0)
 # LibPCAP support
 find_package(PCAP)
