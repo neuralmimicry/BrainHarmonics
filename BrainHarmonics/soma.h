@@ -56,10 +56,10 @@ public:
     double GetEnergyThreshold(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_energy_threshold; }
 
     int GetAxonHillockPool(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return axonhillock_pool; }
-    int SetAxonHillockPool(std::chrono::time_point<Clock> event_time, int set_pool) { axonhillock_pool = set_pool; }
+    void SetAxonHillockPool(std::chrono::time_point<Clock> event_time, int set_pool) { axonhillock_pool = set_pool; }
 
     int GetDendritePool(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return dendrite_pool; }
-    int SetDendritePool(std::chrono::time_point<Clock> event_time, int set_pool) { dendrite_pool = set_pool; }
+    void SetDendritePool(std::chrono::time_point<Clock> event_time, int set_pool) { dendrite_pool = set_pool; }
 
     void SetCounter(std::chrono::time_point<Clock> event_time, unsigned int val) { m_Counter = val; }
     void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }

@@ -50,7 +50,7 @@ public:
     
     bool ResetParameters(std::chrono::time_point<Clock> event_time);
     double GetSpikeHeightReset(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_spikeHeightReset; }
-    double setSpikeHeightReset(std::chrono::time_point<Clock> event_time, double val) { m_spikeHeightReset = val; }
+    void SetSpikeHeightReset(std::chrono::time_point<Clock> event_time, double val) { m_spikeHeightReset = val; }
     void spikeReset(std::chrono::time_point<Clock> event_time) { m_spikeHeight = m_spikeHeightReset; }
     
     double pollSpike(std::chrono::time_point<Clock> event_time)
@@ -69,7 +69,7 @@ public:
     return m_spikeHeight;
     }
     
-    int Update(std::chrono::time_point<Clock> event_time);
+    void Update(std::chrono::time_point<Clock> event_time);
 
 protected:
     

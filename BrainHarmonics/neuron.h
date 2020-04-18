@@ -53,7 +53,7 @@ public:
     int GetNeuronDeviceTag(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return m_Tag; }
     
     int GetSomaPool(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return soma_pool; }
-    int SetSomaPool(std::chrono::time_point<Clock> event_time, int set_pool) { soma_pool = set_pool; }
+    void SetSomaPool(std::chrono::time_point<Clock> event_time, int set_pool) { soma_pool = set_pool; }
 
     void SetCounter(std::chrono::time_point<Clock> event_time, int val) { m_Counter = val; }
     void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }

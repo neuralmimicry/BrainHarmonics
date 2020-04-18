@@ -3,8 +3,10 @@
 /* @file      main.cc                                                              */
 /* @details   Brain Harmonics - using harmonics to store and process neural spikes */
 /* @author    Paul Isaac's                                                         */
-/* @date      03.02.2016                                                           */
-/* @Copyright © 2016 Paul Isaac's. All rights reserved.                            */
+/* @original_date      03.02.2016                                                  */
+/* @original_Copyright © 2016 Paul Isaac's. All rights reserved.                   */
+/* @date      08.04.2020                                                           */
+/* @Copyright © 2020 Linaro Limited. Open Source Software.                         */
 /*---------------------------------------------------------------------------------*/
 
 /* Code snippets used:                                                             */
@@ -15,7 +17,7 @@
 /* relate to real-world physics. This will then ease mapping between simulation,   */
 /* emulation and real-world Universes.                                             */
 
-    //extern "C" {
+extern "C" {
 #include <sys/time.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -27,7 +29,7 @@
 #include <unistd.h>
 #include <assert.h>
 #include <time.h>
-    //}
+}
 
     // Standard Template Libraries (STL)
 #include <array>                /**< For array in CRC-32 call                      */
@@ -62,9 +64,9 @@
 
     // The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
 #include <vtkAutoInit.h>
-VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
-VTK_MODULE_INIT(vtkRenderingFreeType);
-VTK_MODULE_INIT(vtkInteractionStyle);
+VTK_MODULE_INIT(vtkRenderingOpenGL2) // VTK was built with vtkRenderingOpenGL2
+VTK_MODULE_INIT(vtkRenderingFreeType)
+VTK_MODULE_INIT(vtkInteractionStyle)
 #include <vtkVersion.h>
 #include <vtkActor.h>
 #include <vtkActor2D.h>
@@ -921,7 +923,7 @@ void
 #endif
 init_numpy()
 {
-    import_array();
+//    import_array();
 #if PY_MAJOR_VERSION >= 3
     return 0;
 #endif
@@ -1490,7 +1492,7 @@ int main(int argc, const char * argv[])
     PyObject *pArrayArgs;
     int *pTransferArray;
     
-    int i;
+//    int i;
     
     int result = EXIT_FAILURE;
     

@@ -55,7 +55,7 @@ public:
     double GetEnergyThreshold(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_energy_threshold; }
     
     int GetMembraneChannelPool(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return membranechannel_pool; }
-    int SetMembraneChannelPool(std::chrono::time_point<Clock> event_time, int set_pool) { membranechannel_pool = set_pool; }
+    void SetMembraneChannelPool(std::chrono::time_point<Clock> event_time, int set_pool) { membranechannel_pool = set_pool; }
     
     void SetCounter(std::chrono::time_point<Clock> event_time, unsigned int val) { m_Counter = val; }
     void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }

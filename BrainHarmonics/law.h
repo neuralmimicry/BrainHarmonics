@@ -54,23 +54,23 @@ public:
  
     void SetCharge(std::chrono::time_point<Clock> event_time, int val) final {}
     void SetSpin(std::chrono::time_point<Clock> event_time, int val) final {}
-    double GetGravitation(std::chrono::time_point<Clock> event_time) final {}
-    double GetWeak(std::chrono::time_point<Clock> event_time) final {}
-    double GetWeakElectroweak(std::chrono::time_point<Clock> event_time) final {}
-    double GetElectromagnetic(std::chrono::time_point<Clock> event_time) final {}
-    double GetElectromagneticElectroweak(std::chrono::time_point<Clock> event_time) final {}
-    double GetStrong(std::chrono::time_point<Clock> event_time) final {}
-    double GetStrongFundamental(std::chrono::time_point<Clock> event_time) final {}
-    double GetStrongResidual(std::chrono::time_point<Clock> event_time) final {}
+    double GetGravitation(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetWeak(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetWeakElectroweak(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetElectromagnetic(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetElectromagneticElectroweak(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetStrong(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetStrongFundamental(std::chrono::time_point<Clock> event_time) final {return 0;}
+    double GetStrongResidual(std::chrono::time_point<Clock> event_time) final {return 0;}
     
-    double ApplyGravitation(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyWeak(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyWeakElectroweak(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyElectromagnetic(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyElectromagneticElectroweak(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyStrong(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyStrongFundamental(std::chrono::time_point<Clock> event_time, double val) final {}
-    double ApplyStrongResidual(std::chrono::time_point<Clock> event_time, double val) final {}
+    double ApplyGravitation(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyWeak(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyWeakElectroweak(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyElectromagnetic(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyElectromagneticElectroweak(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyStrong(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyStrongFundamental(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
+    double ApplyStrongResidual(std::chrono::time_point<Clock> event_time, double val) final {return 0;}
     
     void SetGravitation(std::chrono::time_point<Clock> event_time, double val) final {}
     void SetWeak(std::chrono::time_point<Clock> event_time, double val) final {}

@@ -23,7 +23,7 @@
 
 class ElementaryForce : public Universe
 {
-    friend class ElementaryForce;
+    friend class CompositeForceParticle;
 public:
     ElementaryForce() : ElementaryForce(0) {}
     
