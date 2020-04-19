@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="search_8cpp" kind="file" language="C++">
     <compoundname>search.cpp</compoundname>
     <includes local="no">iostream</includes>
@@ -13,58 +13,58 @@
     <includes local="no">tuple</includes>
     <includes local="no">algorithm</includes>
     <incdepgraph>
-      <node id="1524">
+      <node id="1636">
         <label>iomanip</label>
       </node>
-      <node id="1530">
+      <node id="1642">
         <label>queue</label>
       </node>
-      <node id="1522">
+      <node id="1634">
         <label>BrainHarmonics/search.cpp</label>
         <link refid="search_8cpp"/>
-        <childnode refid="1523" relation="include">
+        <childnode refid="1635" relation="include">
         </childnode>
-        <childnode refid="1524" relation="include">
+        <childnode refid="1636" relation="include">
         </childnode>
-        <childnode refid="1525" relation="include">
+        <childnode refid="1637" relation="include">
         </childnode>
-        <childnode refid="1526" relation="include">
+        <childnode refid="1638" relation="include">
         </childnode>
-        <childnode refid="1527" relation="include">
+        <childnode refid="1639" relation="include">
         </childnode>
-        <childnode refid="1528" relation="include">
+        <childnode refid="1640" relation="include">
         </childnode>
-        <childnode refid="1529" relation="include">
+        <childnode refid="1641" relation="include">
         </childnode>
-        <childnode refid="1530" relation="include">
+        <childnode refid="1642" relation="include">
         </childnode>
-        <childnode refid="1531" relation="include">
+        <childnode refid="1643" relation="include">
         </childnode>
-        <childnode refid="1532" relation="include">
+        <childnode refid="1644" relation="include">
         </childnode>
       </node>
-      <node id="1526">
+      <node id="1638">
         <label>unordered_set</label>
       </node>
-      <node id="1531">
+      <node id="1643">
         <label>tuple</label>
       </node>
-      <node id="1528">
+      <node id="1640">
         <label>vector</label>
       </node>
-      <node id="1529">
+      <node id="1641">
         <label>utility</label>
       </node>
-      <node id="1527">
+      <node id="1639">
         <label>array</label>
       </node>
-      <node id="1523">
+      <node id="1635">
         <label>iostream</label>
       </node>
-      <node id="1525">
+      <node id="1637">
         <label>unordered_map</label>
       </node>
-      <node id="1532">
+      <node id="1644">
         <label>algorithm</label>
       </node>
     </incdepgraph>
@@ -124,7 +124,7 @@
             <type>class <ref refid="struct_graph" kindref="compound">Graph</ref></type>
           </param>
         </templateparamlist>
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void draw_grid</definition>
         <argsstring>(const Graph &amp;graph, int field_width, unordered_map&lt; typename Graph::Location, int &gt; *distances=nullptr, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; *point_to=nullptr, vector&lt; typename Graph::Location &gt; *path=nullptr)</argsstring>
         <name>draw_grid</name>
@@ -160,7 +160,7 @@
         <location file="BrainHarmonics/search.cpp" line="79" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="79" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="search_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void add_rect</definition>
         <argsstring>(SquareGrid &amp;grid, int x1, int y1, int x2, int y2)</argsstring>
         <name>add_rect</name>
@@ -230,7 +230,7 @@
             <type>typename <ref refid="struct_graph" kindref="compound">Graph</ref></type>
           </param>
         </templateparamlist>
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void dijkstra_search</definition>
         <argsstring>(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far)</argsstring>
         <name>dijkstra_search</name>
@@ -265,7 +265,6 @@
         <references refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" compoundref="implementation_01orig_8cpp" startline="195" endline="195">PriorityQueue&lt; T, Number &gt;::empty</references>
         <references refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" compoundref="implementation_01orig_8cpp" startline="201" endline="205">PriorityQueue&lt; T, Number &gt;::get</references>
         <references refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" compoundref="implementation_01orig_8cpp" startline="38" endline="40">Graph&lt; L &gt;::neighbors</references>
-        <referencedby refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" compoundref="search_8cpp" startline="207" endline="211">PriorityQueue&lt; T, Number &gt;::get</referencedby>
       </memberdef>
       <memberdef kind="function" id="search_8cpp_1af7ae297639a56db32da98fa801049faa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -317,7 +316,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="264" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="264" bodyend="269"/>
-        <references refid="search_8cpp_1a9b1566d7e8a1017f075720664601abb0" compoundref="search_8cpp" startline="273" endline="303">a_star_search</references>
         <referencedby refid="search_8cpp_1a9b1566d7e8a1017f075720664601abb0" compoundref="search_8cpp" startline="273" endline="303">a_star_search</referencedby>
       </memberdef>
       <memberdef kind="function" id="search_8cpp_1a9b1566d7e8a1017f075720664601abb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -326,7 +324,7 @@
             <type>typename <ref refid="struct_graph" kindref="compound">Graph</ref></type>
           </param>
         </templateparamlist>
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void a_star_search</definition>
         <argsstring>(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far)</argsstring>
         <name>a_star_search</name>
@@ -362,7 +360,6 @@
         <references refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" compoundref="implementation_01orig_8cpp" startline="201" endline="205">PriorityQueue&lt; T, Number &gt;::get</references>
         <references refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" compoundref="implementation_01orig_8cpp" startline="38" endline="40">Graph&lt; L &gt;::neighbors</references>
         <references refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" compoundref="search_8cpp" startline="264" endline="269">heuristic</references>
-        <referencedby refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" compoundref="search_8cpp" startline="264" endline="269">heuristic</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -398,14 +395,14 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::unordered_map;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::unordered_set;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::array;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">std::array</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::vector;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::queue;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::priority_queue;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::pair;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::tuple;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::tie;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref>;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>L&gt;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_graph" kindref="compound">Graph</ref><sp/>{</highlight></codeline>
@@ -413,8 +410,8 @@
 <codeline lineno="41" refid="struct_graph_1af43d6412d7a6034eaeacde8ca1c1d984" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>vector&lt;Location&gt;::iterator<sp/><ref refid="struct_graph_1af43d6412d7a6034eaeacde8ca1c1d984" kindref="member">iterator</ref>;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/>unordered_map&lt;Location,<sp/>vector&lt;Location&gt;<sp/>&gt;<sp/><ref refid="struct_graph_1a8b01818e086835dc5d24ec4082afeef0" kindref="member">edges</ref>;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Location&gt;<sp/><sp/><ref refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" kindref="member">neighbors</ref>(Location<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>edges[id];</highlight></codeline>
+<codeline lineno="44" refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Location&gt;<sp/><sp/><ref refid="struct_graph_1a8389c308ee673e63d574e0a30191662e" kindref="member">neighbors</ref>(<ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1a8b01818e086835dc5d24ec4082afeef0" kindref="member">edges</ref>[<ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>];</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
@@ -432,18 +429,18 @@
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I<sp/>know,<sp/>this<sp/>is<sp/>technically<sp/>not<sp/>allowed</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">hash&lt;tuple&lt;int,int&gt;<sp/>&gt;<sp/>{</highlight></codeline>
-<codeline lineno="63" refid="structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4_1af46854ec2c5aa6cd6d1cd164374bd54f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4_1af46854ec2c5aa6cd6d1cd164374bd54f" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>tuple&lt;int,int&gt;&amp;<sp/>location)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(x,<sp/>y)<sp/>=<sp/>location;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>*<sp/>1812433253<sp/>+<sp/>y;</highlight></codeline>
+<codeline lineno="63" refid="structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4_1af46854ec2c5aa6cd6d1cd164374bd54f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4_1af46854ec2c5aa6cd6d1cd164374bd54f" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>tuple&lt;int,int&gt;&amp;<sp/><ref refid="glad_8h_1a050778a7129cc14e57da7024beb87ce8" kindref="member">location</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>=<sp/><ref refid="glad_8h_1a050778a7129cc14e57da7024beb87ce8" kindref="member">location</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>*<sp/>1812433253<sp/>+<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="69"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71" refid="search_8cpp_1a14bbb7e7d9701d4b4f1839f5f7608fa5" refkind="member"><highlight class="normal">std::basic_iostream&lt;char&gt;::basic_ostream&amp;<sp/>operator&lt;&lt;(std::basic_iostream&lt;char&gt;::basic_ostream&amp;<sp/>out,<sp/>tuple&lt;int,int&gt;<sp/>loc)<sp/>{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/>tie<sp/>(x,<sp/>y)<sp/>=<sp/>loc;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>x<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>=<sp/>loc;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
@@ -451,25 +448,25 @@
 <codeline lineno="79" refid="search_8cpp_1a788438e9f72bf881df6ae25ba857a9f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1a788438e9f72bf881df6ae25ba857a9f6" kindref="member">draw_grid</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_graph" kindref="compound">Graph</ref>&amp;<sp/>graph,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>field_width,<sp/></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>int&gt;*<sp/>distances=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>typename<sp/>Graph::Location&gt;*<sp/>point_to=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;typename<sp/>Graph::Location&gt;*<sp/>path=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;<sp/>y<sp/>!=<sp/>graph.height;<sp/>++y)<sp/>{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;<sp/>x<sp/>!=<sp/>graph.width;<sp/>++x)<sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>{x,<sp/>y};</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::left<sp/>&lt;&lt;<sp/>std::setw(field_width);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;typename<sp/>Graph::Location&gt;*<sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>=<sp/>0;<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>!=<sp/>graph.height;<sp/>++<ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>=<sp/>0;<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>!=<sp/>graph.width;<sp/>++<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>{<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="glad_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">std::left</ref><sp/>&lt;&lt;<sp/>std::setw(field_width);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(graph.walls.count(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>string(field_width,<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">string</ref>(field_width,<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(point_to<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>point_to-&gt;count(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/>y2;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tie<sp/>(x2,<sp/>y2)<sp/>=<sp/>(*point_to)[id];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>,<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>,<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>)<sp/>=<sp/>(*point_to)[<ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>];</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>how<sp/>do<sp/>I<sp/>get<sp/>setw<sp/>to<sp/>work<sp/>with<sp/>utf8?</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x2<sp/>==<sp/>x<sp/>+<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2192<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x2<sp/>==<sp/>x<sp/>-<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2190<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(y2<sp/>==<sp/>y<sp/>+<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2193<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(y2<sp/>==<sp/>y<sp/>-<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2191<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref><sp/>==<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>+<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2192<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref><sp/>==<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>-<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2190<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref><sp/>==<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>+<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2193<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref><sp/>==<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>-<sp/>1)<sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\u2191<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;*<sp/>&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(distances<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>distances-&gt;count(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>(*distances)[id];</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>find(path-&gt;begin(),<sp/>path-&gt;end(),<sp/>id)<sp/>!=<sp/>path-&gt;end())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>(*distances)[<ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>find(<ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>-&gt;begin(),<sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>-&gt;end(),<sp/><ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>)<sp/>!=<sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>-&gt;end())<sp/>{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;@&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">;</highlight></codeline>
@@ -481,38 +478,38 @@
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_square_grid" kindref="compound">SquareGrid</ref><sp/>{</highlight></codeline>
 <codeline lineno="111" refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>tuple&lt;int,int&gt;<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>array&lt;Location,<sp/>4&gt;<sp/>DIRS;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">array&lt;Location, 4&gt;</ref><sp/><ref refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" kindref="member">DIRS</ref>;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/>height;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/>unordered_set&lt;Location&gt;<sp/>walls;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_square_grid_1af5476cf49f0bb03d1e940adbc6e5febf" kindref="member">width</ref>,<sp/><ref refid="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>unordered_set&lt;Location&gt;<sp/><ref refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" kindref="member">walls</ref>;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117" refid="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" kindref="member">SquareGrid</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height_)</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>:<sp/>width(width_),<sp/>height(height_)<sp/>{}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>(width_),<sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>(height_)<sp/>{}</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120" refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" kindref="member">in_bounds</ref>(Location<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(x,<sp/>y)<sp/>=<sp/>id;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<sp/>&lt;=<sp/>x<sp/>&amp;&amp;<sp/>x<sp/>&lt;<sp/>width<sp/>&amp;&amp;<sp/>0<sp/>&lt;=<sp/>y<sp/>&amp;&amp;<sp/>y<sp/>&lt;<sp/>height;</highlight></codeline>
+<codeline lineno="120" refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" kindref="member">in_bounds</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>=<sp/><ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<sp/>&lt;=<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>&amp;&amp;<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>&lt;<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref><sp/>&amp;&amp;<sp/>0<sp/>&lt;=<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>&amp;&amp;<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>&lt;<sp/><ref refid="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" kindref="member">height</ref>;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126" refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" kindref="member">passable</ref>(Location<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!walls.count(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126" refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" kindref="member">passable</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" kindref="member">walls</ref>.count(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130" refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;Location&gt;<sp/><ref refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" kindref="member">neighbors</ref>(Location<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>dx,<sp/>dy;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(x,<sp/>y)<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="130" refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;Location&gt;<sp/><ref refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" kindref="member">neighbors</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>,<sp/>dx,<sp/>dy;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>=<sp/><ref refid="glad_8h_1a58c2a664503e14ffb8f21012aabff3e9" kindref="member">id</ref>;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Location&gt;<sp/>results;</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dir<sp/>:<sp/>DIRS)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dir<sp/>:<sp/><ref refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" kindref="member">DIRS</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tie<sp/>(dx,<sp/>dy)<sp/>=<sp/>dir;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Location<sp/>next(x<sp/>+<sp/>dx,<sp/>y<sp/>+<sp/>dy);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in_bounds(next)<sp/>&amp;&amp;<sp/>passable(next))<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/>next(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>+<sp/>dx,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>+<sp/>dy);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" kindref="member">in_bounds</ref>(next)<sp/>&amp;&amp;<sp/><ref refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" kindref="member">passable</ref>(next))<sp/>{</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>results.push_back(next);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((x<sp/>+<sp/>y)<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>+<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>aesthetic<sp/>improvement<sp/>on<sp/>square<sp/>grids</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::reverse(results.begin(),<sp/>results.end());</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -521,12 +518,12 @@
 <codeline lineno="149"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="150"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal">array&lt;SquareGrid::Location,<sp/>4&gt;<sp/><ref refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" kindref="member">SquareGrid::DIRS</ref><sp/>{<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{1,<sp/>0},<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{0,<sp/>-1},<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{-1,<sp/>0},<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>{0,<sp/>1}};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="glad_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">array&lt;SquareGrid::Location, 4&gt;</ref><sp/><ref refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" kindref="member">SquareGrid::DIRS</ref><sp/>{Location{1,<sp/>0},<sp/>Location{0,<sp/>-1},<sp/>Location{-1,<sp/>0},<sp/>Location{0,<sp/>1}};</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154" refid="search_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" kindref="member">add_rect</ref>(<ref refid="struct_square_grid" kindref="compound">SquareGrid</ref>&amp;<sp/>grid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2)<sp/>{</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>x1;<sp/>x<sp/>&lt;<sp/>x2;<sp/>++x)<sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>y1;<sp/>y<sp/>&lt;<sp/>y2;<sp/>++y)<sp/>{</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>grid.<ref refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" kindref="member">walls</ref>.insert(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/>{<sp/>x,<sp/>y<sp/>});</highlight></codeline>
+<codeline lineno="154" refid="search_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" kindref="member">add_rect</ref>(<ref refid="struct_square_grid" kindref="compound">SquareGrid</ref>&amp;<sp/>grid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a49825216c96caaeb09237b36651181c5" kindref="member">x1</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a94830297cda3d635f4314f0106ed7ef7" kindref="member">y1</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>=<sp/><ref refid="glad_8h_1a49825216c96caaeb09237b36651181c5" kindref="member">x1</ref>;<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>&lt;<sp/><ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>;<sp/>++<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>=<sp/><ref refid="glad_8h_1a94830297cda3d635f4314f0106ed7ef7" kindref="member">y1</ref>;<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>&lt;<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>;<sp/>++<ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>grid.<ref refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" kindref="member">walls</ref>.insert(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/>{<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>});</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="160"><highlight class="normal">}</highlight></codeline>
@@ -541,10 +538,10 @@
 <codeline lineno="169"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_grid_with_weights" kindref="compound">GridWithWeights</ref>:<sp/><ref refid="struct_square_grid" kindref="compound">SquareGrid</ref><sp/>{</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/>unordered_set&lt;Location&gt;<sp/>forests;</highlight></codeline>
-<codeline lineno="173" refid="struct_grid_with_weights_1ad9eb67bf93deb3409ecf658288bc78f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_grid_with_weights_1ad9eb67bf93deb3409ecf658288bc78f6" kindref="member">GridWithWeights</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h):<sp/><ref refid="struct_square_grid" kindref="compound">SquareGrid</ref>(w,<sp/>h)<sp/>{}</highlight></codeline>
-<codeline lineno="174" refid="struct_grid_with_weights_1a999c39922a9b507e4436b817592a7ff9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_grid_with_weights_1a999c39922a9b507e4436b817592a7ff9" kindref="member">cost</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/>a,<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/>b)<sp/>{<sp/></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>forests.count(b)<sp/>?<sp/>5<sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>unordered_set&lt;Location&gt;<sp/><ref refid="struct_grid_with_weights_1a03137c824b8c63cdeed414ef40f5b504" kindref="member">forests</ref>;</highlight></codeline>
+<codeline lineno="173" refid="struct_grid_with_weights_1ad9eb67bf93deb3409ecf658288bc78f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_grid_with_weights_1ad9eb67bf93deb3409ecf658288bc78f6" kindref="member">GridWithWeights</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a713abae75276598501f75c68917c5e2d" kindref="member">w</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1afa0fb1b5e976920c0abeff2dca3ed774" kindref="member">h</ref>):<sp/><ref refid="struct_square_grid" kindref="compound">SquareGrid</ref>(<ref refid="glad_8h_1a713abae75276598501f75c68917c5e2d" kindref="member">w</ref>,<sp/><ref refid="glad_8h_1afa0fb1b5e976920c0abeff2dca3ed774" kindref="member">h</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="174" refid="struct_grid_with_weights_1a999c39922a9b507e4436b817592a7ff9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_grid_with_weights_1a999c39922a9b507e4436b817592a7ff9" kindref="member">cost</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/><ref refid="glad_8h_1a3309789fc188587d666cda5ece79cf82" kindref="member">a</ref>,<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref><sp/><ref refid="glad_8h_1a0f71581a41fd2264c8944126dabbd010" kindref="member">b</ref>)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_grid_with_weights_1a03137c824b8c63cdeed414ef40f5b504" kindref="member">forests</ref>.count(<ref refid="glad_8h_1a0f71581a41fd2264c8944126dabbd010" kindref="member">b</ref>)<sp/>?<sp/>5<sp/>:<sp/>1;<sp/></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="177"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
@@ -568,17 +565,17 @@
 <codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_priority_queue" kindref="compound">PriorityQueue</ref><sp/>{</highlight></codeline>
 <codeline lineno="197" refid="struct_priority_queue_1ae86a19aae3f9a32a1d76dfdab34eb70b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pair&lt;Number,<sp/>T&gt;<sp/><ref refid="struct_priority_queue_1ae86a19aae3f9a32a1d76dfdab34eb70b" kindref="member">PQElement</ref>;</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/>priority_queue&lt;PQElement,<sp/>vector&lt;PQElement&gt;,<sp/></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::greater&lt;PQElement&gt;&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::greater&lt;PQElement&gt;&gt;<sp/><ref refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" kindref="member">elements</ref>;</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
-<codeline lineno="201" refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" kindref="member">empty</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elements.empty();<sp/>}</highlight></codeline>
+<codeline lineno="201" refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" kindref="member">empty</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" kindref="member">elements</ref>.empty();<sp/>}</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="203" refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" kindref="member">put</ref>(T<sp/>item,<sp/>Number<sp/>priority)<sp/>{</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>elements.emplace(priority,<sp/>item);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" kindref="member">elements</ref>.emplace(priority,<sp/>item);</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207" refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>T<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>best_item<sp/>=<sp/>elements.top().second;</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>elements.pop();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>best_item<sp/>=<sp/><ref refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" kindref="member">elements</ref>.top().second;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" kindref="member">elements</ref>.pop();</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>best_item;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="212"><highlight class="normal">};</highlight></codeline>
@@ -586,17 +583,17 @@
 <codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph&gt;</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1ae5dda031f20466b1a419ca983a3dc474" kindref="member">dijkstra_search</ref></highlight></codeline>
 <codeline lineno="216" refid="search_8cpp_1ae5dda031f20466b1a419ca983a3dc474" refkind="member"><highlight class="normal"><sp/><sp/>(<ref refid="struct_graph" kindref="compound">Graph</ref><sp/>graph,</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>start,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>,</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>goal,</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>typename<sp/>Graph::Location&gt;&amp;<sp/>came_from,</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>int&gt;&amp;<sp/>cost_so_far)</highlight></codeline>
 <codeline lineno="221"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>Location;</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><ref refid="struct_priority_queue" kindref="compound">PriorityQueue&lt;Location&gt;</ref><sp/>frontier;</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/>frontier.<ref refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" kindref="member">put</ref>(start,<sp/>0);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>frontier.<ref refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" kindref="member">put</ref>(<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/>came_from[start]<sp/>=<sp/>start;</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/>cost_so_far[start]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>came_from[<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>]<sp/>=<sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>cost_so_far[<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!frontier.<ref refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>frontier.<ref refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" kindref="member">get</ref>();</highlight></codeline>
@@ -619,41 +616,41 @@
 <codeline lineno="247"><highlight class="normal"></highlight></codeline>
 <codeline lineno="248"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Location&gt;</highlight></codeline>
 <codeline lineno="249" refid="search_8cpp_1af7ae297639a56db32da98fa801049faa" refkind="member"><highlight class="normal">vector&lt;Location&gt;<sp/><ref refid="search_8cpp_1af7ae297639a56db32da98fa801049faa" kindref="member">reconstruct_path</ref>(</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref><sp/>start,</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref><sp/>goal,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/>Location<sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/>Location<sp/>goal,</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/>unordered_map&lt;Location,<sp/>Location&gt;&amp;<sp/>came_from</highlight></codeline>
 <codeline lineno="253"><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/>vector&lt;Location&gt;<sp/>path;</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref><sp/>current<sp/>=<sp/>goal;</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/>path.push_back(current);</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(current<sp/>!=<sp/>start)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>vector&lt;Location&gt;<sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>Location<sp/>current<sp/>=<sp/>goal;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>.push_back(current);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(current<sp/>!=<sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>current<sp/>=<sp/>came_from[current];</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>path.push_back(current);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>.push_back(current);</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1ab25d8cd967ccbd19b630d7100ff8f67e" kindref="member">path</ref>;</highlight></codeline>
 <codeline lineno="262"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"></highlight></codeline>
-<codeline lineno="264" refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" kindref="member">heuristic</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/>a,<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/>b)<sp/>{</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/>y1,<sp/>x2,<sp/>y2;</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/>tie<sp/>(x1,<sp/>y1)<sp/>=<sp/>a;</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/>tie<sp/>(x2,<sp/>y2)<sp/>=<sp/>b;</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abs(x1<sp/>-<sp/>x2)<sp/>+<sp/>abs(y1<sp/>-<sp/>y2);</highlight></codeline>
+<codeline lineno="264" refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1a394ba0076283a1523c29842e95aa897d" kindref="member">heuristic</ref>(<ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/><ref refid="glad_8h_1a3309789fc188587d666cda5ece79cf82" kindref="member">a</ref>,<sp/><ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">SquareGrid::Location</ref><sp/><ref refid="glad_8h_1a0f71581a41fd2264c8944126dabbd010" kindref="member">b</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a49825216c96caaeb09237b36651181c5" kindref="member">x1</ref>,<sp/><ref refid="glad_8h_1a94830297cda3d635f4314f0106ed7ef7" kindref="member">y1</ref>,<sp/><ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>,<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a49825216c96caaeb09237b36651181c5" kindref="member">x1</ref>,<sp/><ref refid="glad_8h_1a94830297cda3d635f4314f0106ed7ef7" kindref="member">y1</ref>)<sp/>=<sp/><ref refid="glad_8h_1a3309789fc188587d666cda5ece79cf82" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>tie<sp/>(<ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>,<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>)<sp/>=<sp/><ref refid="glad_8h_1a0f71581a41fd2264c8944126dabbd010" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abs(<ref refid="glad_8h_1a49825216c96caaeb09237b36651181c5" kindref="member">x1</ref><sp/>-<sp/><ref refid="glad_8h_1a7b907a03236685c534d89d604cff23c8" kindref="member">x2</ref>)<sp/>+<sp/>abs(<ref refid="glad_8h_1a94830297cda3d635f4314f0106ed7ef7" kindref="member">y1</ref><sp/>-<sp/><ref refid="glad_8h_1a2be1135ed68e8d80fa9e130c7814f8c2" kindref="member">y2</ref>);</highlight></codeline>
 <codeline lineno="269"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"></highlight></codeline>
 <codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Graph&gt;</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="search_8cpp_1a9b1566d7e8a1017f075720664601abb0" kindref="member">a_star_search</ref></highlight></codeline>
 <codeline lineno="273" refid="search_8cpp_1a9b1566d7e8a1017f075720664601abb0" refkind="member"><highlight class="normal"><sp/><sp/>(<ref refid="struct_graph" kindref="compound">Graph</ref><sp/>graph,</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>start,</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>,</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>goal,</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>typename<sp/>Graph::Location&gt;&amp;<sp/>came_from,</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/>unordered_map&lt;typename<sp/>Graph::Location,<sp/>int&gt;&amp;<sp/>cost_so_far)</highlight></codeline>
 <codeline lineno="278"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Location</ref>;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="struct_graph_1aea7d42bb67163fe692353674435a1426" kindref="member">Graph::Location</ref><sp/>Location;</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><ref refid="struct_priority_queue" kindref="compound">PriorityQueue&lt;Location&gt;</ref><sp/>frontier;</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/>frontier.<ref refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" kindref="member">put</ref>(start,<sp/>0);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>frontier.<ref refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" kindref="member">put</ref>(<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/>came_from[start]<sp/>=<sp/>start;</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/>cost_so_far[start]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>came_from[<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>]<sp/>=<sp/><ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>cost_so_far[<ref refid="glad_8h_1ac55adc720a3098c1b454d2a4647f4361" kindref="member">start</ref>]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!frontier.<ref refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>frontier.<ref refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" kindref="member">get</ref>();</highlight></codeline>

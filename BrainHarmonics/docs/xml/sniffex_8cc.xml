@@ -1,67 +1,67 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="sniffex_8cc" kind="file" language="C++">
     <compoundname>sniffex.cc</compoundname>
     <includes refid="sniffex_8h" local="yes">sniffex.h</includes>
     <incdepgraph>
-      <node id="1544">
+      <node id="1656">
         <label>netinet/in.h</label>
       </node>
-      <node id="1545">
+      <node id="1657">
         <label>arpa/inet.h</label>
       </node>
-      <node id="1539">
+      <node id="1651">
         <label>stdlib.h</label>
       </node>
-      <node id="1536">
+      <node id="1648">
         <label>pcap.h</label>
       </node>
-      <node id="1541">
+      <node id="1653">
         <label>errno.h</label>
       </node>
-      <node id="1542">
+      <node id="1654">
         <label>sys/types.h</label>
       </node>
-      <node id="1538">
+      <node id="1650">
         <label>string.h</label>
       </node>
-      <node id="1535">
+      <node id="1647">
         <label>sniffex.h</label>
         <link refid="sniffex_8h"/>
-        <childnode refid="1536" relation="include">
+        <childnode refid="1648" relation="include">
         </childnode>
-        <childnode refid="1537" relation="include">
+        <childnode refid="1649" relation="include">
         </childnode>
-        <childnode refid="1538" relation="include">
+        <childnode refid="1650" relation="include">
         </childnode>
-        <childnode refid="1539" relation="include">
+        <childnode refid="1651" relation="include">
         </childnode>
-        <childnode refid="1540" relation="include">
+        <childnode refid="1652" relation="include">
         </childnode>
-        <childnode refid="1541" relation="include">
+        <childnode refid="1653" relation="include">
         </childnode>
-        <childnode refid="1542" relation="include">
+        <childnode refid="1654" relation="include">
         </childnode>
-        <childnode refid="1543" relation="include">
+        <childnode refid="1655" relation="include">
         </childnode>
-        <childnode refid="1544" relation="include">
+        <childnode refid="1656" relation="include">
         </childnode>
-        <childnode refid="1545" relation="include">
+        <childnode refid="1657" relation="include">
         </childnode>
       </node>
-      <node id="1534">
+      <node id="1646">
         <label>BrainHarmonics/sniffex.cc</label>
         <link refid="sniffex_8cc"/>
-        <childnode refid="1535" relation="include">
+        <childnode refid="1647" relation="include">
         </childnode>
       </node>
-      <node id="1540">
+      <node id="1652">
         <label>ctype.h</label>
       </node>
-      <node id="1543">
+      <node id="1655">
         <label>sys/socket.h</label>
       </node>
-      <node id="1537">
+      <node id="1649">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -117,7 +117,7 @@
 <codeline lineno="45"><highlight class="comment"><sp/>*<sp/>00000<sp/><sp/><sp/>47<sp/>45<sp/>54<sp/>20<sp/>2f<sp/>20<sp/>48<sp/>54<sp/><sp/>54<sp/>50<sp/>2f<sp/>31<sp/>2e<sp/>31<sp/>0d<sp/>0a<sp/><sp/><sp/>GET<sp/>/<sp/>HTTP/1.1..</highlight></codeline>
 <codeline lineno="46"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" refkind="member"><highlight class="normal"><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">Sniffex::print_hex_ascii_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset)</highlight></codeline>
+<codeline lineno="48" refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" refkind="member"><highlight class="normal"><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">Sniffex::print_hex_ascii_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -125,11 +125,11 @@
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*ch;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>offset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%05d<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>offset);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%05d<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>hex<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>ch<sp/>=<sp/>payload;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>;<sp/>i++)<sp/>{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%02x<sp/>&quot;</highlight><highlight class="normal">,<sp/>*ch);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch++;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>print<sp/>extra<sp/>space<sp/>after<sp/>8th<sp/>byte<sp/>for<sp/>visual<sp/>aid<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -137,12 +137,12 @@
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>print<sp/>space<sp/>to<sp/>handle<sp/>line<sp/>less<sp/>than<sp/>8<sp/>bytes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref><sp/>&lt;<sp/>8)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>fill<sp/>hex<sp/>gap<sp/>with<sp/>spaces<sp/>if<sp/>not<sp/>full<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>16)<sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gap<sp/>=<sp/>16<sp/>-<sp/>len;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref><sp/>&lt;<sp/>16)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gap<sp/>=<sp/>16<sp/>-<sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>gap;<sp/>i++)<sp/>{</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -151,7 +151,7 @@
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ascii<sp/>(if<sp/>printable)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ch<sp/>=<sp/>payload;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>;<sp/>i++)<sp/>{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isprint(*ch))</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>*ch);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
@@ -168,21 +168,21 @@
 <codeline lineno="96"><highlight class="comment"><sp/>*<sp/>print<sp/>packet<sp/>payload<sp/>data<sp/>(avoid<sp/>printing<sp/>binary<sp/>data)</highlight></codeline>
 <codeline lineno="97"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99" refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" refkind="member"><highlight class="normal"><ref refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" kindref="member">Sniffex::print_payload</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="99" refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" refkind="member"><highlight class="normal"><ref refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" kindref="member">Sniffex::print_payload</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>)</highlight></codeline>
 <codeline lineno="100"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_rem<sp/>=<sp/>len;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_rem<sp/>=<sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line_width<sp/>=<sp/>16;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>bytes<sp/>per<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line_len;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>zero-based<sp/>offset<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>zero-based<sp/>offset<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*ch<sp/>=<sp/>payload;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref><sp/>&lt;=<sp/>0)</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>data<sp/>fits<sp/>on<sp/>one<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;=<sp/>line_width)<sp/>{</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/>len,<sp/>offset);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref><sp/>&lt;=<sp/>line_width)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>,<sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>);</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -191,17 +191,17 @@
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>compute<sp/>current<sp/>line<sp/>length<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_len<sp/>=<sp/>line_width<sp/>%<sp/>len_rem;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>print<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/>line_len,<sp/>offset);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/>line_len,<sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>);</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>compute<sp/>total<sp/>remaining<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len_rem<sp/>=<sp/>len_rem<sp/>-<sp/>line_len;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>shift<sp/>pointer<sp/>to<sp/>remaining<sp/>bytes<sp/>to<sp/>print<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch<sp/>=<sp/>ch<sp/>+<sp/>line_len;</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>add<sp/>offset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>offset<sp/>+<sp/>line_width;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref><sp/>=<sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref><sp/>+<sp/>line_width;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>we<sp/>have<sp/>line<sp/>width<sp/>chars<sp/>or<sp/>less<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_rem<sp/>&lt;=<sp/>line_width)<sp/>{</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>print<sp/>last<sp/>line<sp/>and<sp/>Get<sp/>out<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/>len_rem,<sp/>offset);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(ch,<sp/>len_rem,<sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>);</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -216,7 +216,7 @@
 <codeline lineno="144" refid="class_sniffex_1a3d4ef3c90e55035eadca2d577004cd14" refkind="member"><highlight class="normal"><ref refid="class_sniffex_1a3d4ef3c90e55035eadca2d577004cd14" kindref="member">Sniffex::got_packet</ref>(u_char<sp/>*args,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pcap_pkthdr<sp/>*header,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*packet)</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>packet<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref><sp/>=<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>packet<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>declare<sp/>pointers<sp/>to<sp/>packet<sp/>headers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sniffex_1_1sniff__ethernet" kindref="compound">sniff_ethernet</ref><sp/>*ethernet;<sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>ethernet<sp/>header<sp/>[1]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -228,8 +228,8 @@
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_tcp;</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_payload;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nPacket<sp/>number<sp/>%d:\n&quot;</highlight><highlight class="normal">,<sp/>count);</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nPacket<sp/>number<sp/>%d:\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>++;</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>define<sp/>ethernet<sp/>header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>ethernet<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sniffex_1_1sniff__ethernet" kindref="compound">sniff_ethernet</ref>*)(packet);</highlight></codeline>
@@ -304,11 +304,11 @@
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dev<sp/>=<sp/>NULL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>capture<sp/>device<sp/>name<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>errbuf[PCAP_ERRBUF_SIZE];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>error<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>pcap_t<sp/>*handle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>packet<sp/>capture<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>pcap_t<sp/>*<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>packet<sp/>capture<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filter_exp[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ip&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>filter<sp/>expression<sp/>[3]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">bpf_program<sp/>fp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>compiled<sp/>filter<sp/>program<sp/>(expression)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>bpf_u_int32<sp/>mask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>subnet<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>bpf_u_int32<sp/><ref refid="glad_8h_1ae1838b9db98fcca9cd79d66954101c9f" kindref="member">mask</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>subnet<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>bpf_u_int32<sp/>net;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ip<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_packets<sp/>=<sp/>10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>packets<sp/>to<sp/>capture<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -334,11 +334,11 @@
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>network<sp/>number<sp/>and<sp/>mask<sp/>associated<sp/>with<sp/>capture<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_lookupnet(dev,<sp/>&amp;net,<sp/>&amp;mask,<sp/>errbuf)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_lookupnet(dev,<sp/>&amp;net,<sp/>&amp;<ref refid="glad_8h_1ae1838b9db98fcca9cd79d66954101c9f" kindref="member">mask</ref>,<sp/>errbuf)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>Get<sp/>netmask<sp/>for<sp/>device<sp/>%s:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dev,<sp/>errbuf);</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>net<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ae1838b9db98fcca9cd79d66954101c9f" kindref="member">mask</ref><sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>print<sp/>capture<sp/>info<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -347,29 +347,29 @@
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Filter<sp/>expression:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>filter_exp);</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>open<sp/>capture<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>handle<sp/>=<sp/>pcap_open_live(dev,<sp/><ref refid="sniffex_8h_1a3b914b7c1a034667fcde02cd420a7928" kindref="member">SNAP_LEN</ref>,<sp/>1,<sp/>1000,<sp/>errbuf);</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handle<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref><sp/>=<sp/>pcap_open_live(dev,<sp/><ref refid="sniffex_8h_1a3b914b7c1a034667fcde02cd420a7928" kindref="member">SNAP_LEN</ref>,<sp/>1,<sp/>1000,<sp/>errbuf);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>open<sp/>device<sp/>%s:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>dev,<sp/>errbuf);</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>make<sp/>sure<sp/>we&apos;re<sp/>capturing<sp/>on<sp/>an<sp/>Ethernet<sp/>device<sp/>[2]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_datalink(handle)<sp/>!=<sp/>DLT_EN10MB)<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_datalink(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>)<sp/>!=<sp/>DLT_EN10MB)<sp/>{</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>is<sp/>not<sp/>an<sp/>Ethernet\n&quot;</highlight><highlight class="normal">,<sp/>dev);</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>compile<sp/>the<sp/>filter<sp/>expression<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_compile(handle,<sp/>&amp;fp,<sp/>filter_exp,<sp/>0,<sp/>net)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_compile(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>,<sp/>&amp;fp,<sp/>filter_exp,<sp/>0,<sp/>net)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>parse<sp/>filter<sp/>%s:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filter_exp,<sp/>pcap_geterr(handle));</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filter_exp,<sp/>pcap_geterr(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>));</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>apply<sp/>the<sp/>compiled<sp/>filter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_setfilter(handle,<sp/>&amp;fp)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pcap_setfilter(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>,<sp/>&amp;fp)<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>install<sp/>filter<sp/>%s:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filter_exp,<sp/>pcap_geterr(handle));</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filter_exp,<sp/>pcap_geterr(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>));</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -378,7 +378,7 @@
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>cleanup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>pcap_freecode(&amp;fp);</highlight></codeline>
-<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>pcap_close(handle);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>pcap_close(<ref refid="glad_8h_1a19abe6abc6ac2e10ec1bdf30f68a2527" kindref="member">handle</ref>);</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nCapture<sp/>complete.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

@@ -1,114 +1,114 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="dendrite_8cc" kind="file" language="C++">
     <compoundname>dendrite.cc</compoundname>
     <includes refid="dendrite_8h" local="yes">dendrite.h</includes>
     <includes refid="dendritebranch_8h" local="yes">dendritebranch.h</includes>
     <incdepgraph>
-      <node id="567">
+      <node id="697">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
-        <childnode refid="562" relation="include">
+        <childnode refid="692" relation="include">
         </childnode>
-        <childnode refid="568" relation="include">
+        <childnode refid="698" relation="include">
         </childnode>
-        <childnode refid="569" relation="include">
+        <childnode refid="699" relation="include">
         </childnode>
       </node>
-      <node id="560">
+      <node id="690">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="561" relation="include">
+        <childnode refid="691" relation="include">
         </childnode>
-        <childnode refid="564" relation="include">
+        <childnode refid="694" relation="include">
         </childnode>
       </node>
-      <node id="568">
+      <node id="698">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="562" relation="include">
+        <childnode refid="692" relation="include">
         </childnode>
-        <childnode refid="564" relation="include">
+        <childnode refid="694" relation="include">
         </childnode>
       </node>
-      <node id="569">
+      <node id="699">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="565" relation="include">
+        <childnode refid="695" relation="include">
         </childnode>
-        <childnode refid="562" relation="include">
+        <childnode refid="692" relation="include">
         </childnode>
-        <childnode refid="566" relation="include">
+        <childnode refid="696" relation="include">
         </childnode>
-        <childnode refid="564" relation="include">
+        <childnode refid="694" relation="include">
         </childnode>
       </node>
-      <node id="561">
+      <node id="691">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="562" relation="include">
+        <childnode refid="692" relation="include">
         </childnode>
-        <childnode refid="563" relation="include">
+        <childnode refid="693" relation="include">
         </childnode>
-        <childnode refid="564" relation="include">
+        <childnode refid="694" relation="include">
         </childnode>
       </node>
-      <node id="556">
+      <node id="686">
         <label>BrainHarmonics/dendrite.cc</label>
         <link refid="dendrite_8cc"/>
-        <childnode refid="557" relation="include">
+        <childnode refid="687" relation="include">
         </childnode>
-        <childnode refid="570" relation="include">
+        <childnode refid="700" relation="include">
         </childnode>
       </node>
-      <node id="563">
+      <node id="693">
         <label>vector</label>
       </node>
-      <node id="564">
+      <node id="694">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="565" relation="include">
+        <childnode refid="695" relation="include">
         </childnode>
-        <childnode refid="562" relation="include">
+        <childnode refid="692" relation="include">
         </childnode>
-        <childnode refid="566" relation="include">
+        <childnode refid="696" relation="include">
         </childnode>
-        <childnode refid="563" relation="include">
+        <childnode refid="693" relation="include">
         </childnode>
       </node>
-      <node id="557">
+      <node id="687">
         <label>dendrite.h</label>
         <link refid="dendrite_8h"/>
-        <childnode refid="558" relation="include">
+        <childnode refid="688" relation="include">
         </childnode>
       </node>
-      <node id="570">
+      <node id="700">
         <label>dendritebranch.h</label>
         <link refid="dendritebranch_8h"/>
-        <childnode refid="557" relation="include">
+        <childnode refid="687" relation="include">
         </childnode>
       </node>
-      <node id="566">
+      <node id="696">
         <label>math.h</label>
       </node>
-      <node id="559">
+      <node id="689">
         <label>neuron.h</label>
         <link refid="neuron_8h"/>
-        <childnode refid="560" relation="include">
+        <childnode refid="690" relation="include">
         </childnode>
       </node>
-      <node id="562">
+      <node id="692">
         <label>iostream</label>
       </node>
-      <node id="558">
+      <node id="688">
         <label>soma.h</label>
         <link refid="soma_8h"/>
-        <childnode refid="559" relation="include">
+        <childnode refid="689" relation="include">
         </childnode>
-        <childnode refid="567" relation="include">
+        <childnode refid="697" relation="include">
         </childnode>
       </node>
-      <node id="565">
+      <node id="695">
         <label>chrono</label>
       </node>
     </incdepgraph>
@@ -142,7 +142,7 @@
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time_object_created<sp/>==<sp/>std::chrono::time_point&lt;Clock&gt;(std::chrono::nanoseconds::zero()))</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).count()));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>()));</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>object<sp/>instantiated<sp/>without<sp/>a<sp/>type<sp/>specified<sp/>the<sp/>set<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
@@ -256,8 +256,8 @@
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/>result<sp/>=<sp/><ref refid="class_dendrite_1aab6cedff35cb8c65923b14c8034cccc0" kindref="member">AddDendriteBranch</ref>(event_time,<sp/>add_objects[nloop]);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/>result)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_dendrite" kindref="compound">Dendrite</ref>*<sp/><ref refid="glad_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref><sp/>=<sp/><ref refid="class_dendrite_1aab6cedff35cb8c65923b14c8034cccc0" kindref="member">AddDendriteBranch</ref>(event_time,<sp/>add_objects[nloop]);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/><ref refid="glad_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>)</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nloop<sp/>=<sp/>quantity;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -330,7 +330,7 @@
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time_dimension_pointer-&gt;AdjustCounters(event_time);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>
@@ -377,7 +377,7 @@
 <codeline lineno="258"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>

@@ -1,4 +1,4 @@
-.TH "Dimension" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Dimension" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -48,37 +48,37 @@ Inherits \fBUniverse\fP\&.
 .RI "std::chrono::time_point< std::chrono::high_resolution_clock > \fBTheTimeNow\fP ()"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBIncScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBIncScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBDecScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBDecScale\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBIncTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBIncTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBDecTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBDecTime\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBIncOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBIncOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBDecOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBDecOffset\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "int \fBGetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -87,16 +87,16 @@ Inherits \fBUniverse\fP\&.
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBAdjustCounters\fP (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)"
+.RI "\fBvoid\fP \fBAdjustCounters\fP (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
 .RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
@@ -123,55 +123,55 @@ Inherits \fBUniverse\fP\&.
 .RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .ti -1c
-.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.RI "\fBvoid\fP \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .in -1c
 .SS "Public Attributes"
@@ -273,7 +273,7 @@ Definition at line 48 of file dimension\&.h\&.
 Definition at line 56 of file dimension\&.h\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "void Dimension::AdjustCounters (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)\fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::AdjustCounters (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)\fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -327,15 +327,15 @@ Definition at line 127 of file dimension\&.h\&.
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 128 of file dimension\&.h\&.
-.SS "void Dimension::DecOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::DecOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 55 of file dimension\&.cc\&.
-.SS "void Dimension::DecScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::DecScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 35 of file dimension\&.cc\&.
-.SS "void Dimension::DecTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::DecTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 47 of file dimension\&.cc\&.
@@ -403,19 +403,19 @@ Definition at line 118 of file dimension\&.h\&.
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 119 of file dimension\&.h\&.
-.SS "void Dimension::IncOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::IncOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 53 of file dimension\&.cc\&.
-.SS "void Dimension::IncScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::IncScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 29 of file dimension\&.cc\&.
-.SS "void Dimension::IncTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::IncTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 41 of file dimension\&.cc\&.
-.SS "void Dimension::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -425,83 +425,83 @@ Definition at line 144 of file dimension\&.h\&.
 
 .PP
 Definition at line 63 of file dimension\&.cc\&.
-.SS "void Dimension::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 115 of file dimension\&.h\&.
-.SS "void Dimension::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 24 of file dimension\&.cc\&.
-.SS "void Dimension::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 138 of file dimension\&.h\&.
-.SS "void Dimension::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 139 of file dimension\&.h\&.
-.SS "void Dimension::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 135 of file dimension\&.h\&.
-.SS "void Dimension::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP Dimension::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 57 of file dimension\&.cc\&.
-.SS "void Dimension::SetOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::SetOffset (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 27 of file dimension\&.cc\&.
-.SS "void Dimension::SetScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::SetScale (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 25 of file dimension\&.cc\&.
-.SS "void Dimension::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 116 of file dimension\&.h\&.
-.SS "void Dimension::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 140 of file dimension\&.h\&.
-.SS "void Dimension::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 141 of file dimension\&.h\&.
-.SS "void Dimension::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 142 of file dimension\&.h\&.
-.SS "void Dimension::SetTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP Dimension::SetTime (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 26 of file dimension\&.cc\&.
-.SS "void Dimension::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 136 of file dimension\&.h\&.
-.SS "void Dimension::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Dimension::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.

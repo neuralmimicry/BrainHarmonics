@@ -18,5 +18,5 @@ var class_elementary_particle =
     [ "SetSpin", "class_elementary_particle.html#a437fa86d88157314b84662b158d52353", null ],
     [ "SetType", "class_elementary_particle.html#a37d7718faf6be68d4374bcc56816f30a", null ],
     [ "Update", "class_elementary_particle.html#abf5114c3d032bc9511a14aa7368ec450", null ],
-    [ "CompositeParticle", "class_elementary_particle.html#a8be5cf46db5f9876c49d58e4ab84044b", null ]
+    [ "CompositeForceParticle", "class_elementary_particle.html#a9bc6eb2a4c20ce83728a7c9a31b91f19", null ]
 ];

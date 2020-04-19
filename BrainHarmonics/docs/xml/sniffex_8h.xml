@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="sniffex_8h" kind="file" language="C++">
     <compoundname>sniffex.h</compoundname>
     <includes local="no">pcap.h</includes>
@@ -15,75 +15,75 @@
     <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
     <includedby refid="sniffex_8cc" local="yes">BrainHarmonics/sniffex.cc</includedby>
     <incdepgraph>
-      <node id="1556">
+      <node id="1668">
         <label>netinet/in.h</label>
       </node>
-      <node id="1557">
+      <node id="1669">
         <label>arpa/inet.h</label>
       </node>
-      <node id="1551">
+      <node id="1663">
         <label>stdlib.h</label>
       </node>
-      <node id="1548">
+      <node id="1660">
         <label>pcap.h</label>
       </node>
-      <node id="1553">
+      <node id="1665">
         <label>errno.h</label>
       </node>
-      <node id="1554">
+      <node id="1666">
         <label>sys/types.h</label>
       </node>
-      <node id="1550">
+      <node id="1662">
         <label>string.h</label>
       </node>
-      <node id="1547">
+      <node id="1659">
         <label>BrainHarmonics/sniffex.h</label>
         <link refid="sniffex_8h"/>
-        <childnode refid="1548" relation="include">
+        <childnode refid="1660" relation="include">
         </childnode>
-        <childnode refid="1549" relation="include">
+        <childnode refid="1661" relation="include">
         </childnode>
-        <childnode refid="1550" relation="include">
+        <childnode refid="1662" relation="include">
         </childnode>
-        <childnode refid="1551" relation="include">
+        <childnode refid="1663" relation="include">
         </childnode>
-        <childnode refid="1552" relation="include">
+        <childnode refid="1664" relation="include">
         </childnode>
-        <childnode refid="1553" relation="include">
+        <childnode refid="1665" relation="include">
         </childnode>
-        <childnode refid="1554" relation="include">
+        <childnode refid="1666" relation="include">
         </childnode>
-        <childnode refid="1555" relation="include">
+        <childnode refid="1667" relation="include">
         </childnode>
-        <childnode refid="1556" relation="include">
+        <childnode refid="1668" relation="include">
         </childnode>
-        <childnode refid="1557" relation="include">
+        <childnode refid="1669" relation="include">
         </childnode>
       </node>
-      <node id="1552">
+      <node id="1664">
         <label>ctype.h</label>
       </node>
-      <node id="1555">
+      <node id="1667">
         <label>sys/socket.h</label>
       </node>
-      <node id="1549">
+      <node id="1661">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1559">
+      <node id="1671">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="1558">
+      <node id="1670">
         <label>BrainHarmonics/sniffex.h</label>
         <link refid="sniffex_8h"/>
-        <childnode refid="1559" relation="include">
+        <childnode refid="1671" relation="include">
         </childnode>
-        <childnode refid="1560" relation="include">
+        <childnode refid="1672" relation="include">
         </childnode>
       </node>
-      <node id="1560">
+      <node id="1672">
         <label>BrainHarmonics/sniffex.cc</label>
         <link refid="sniffex_8cc"/>
       </node>
@@ -117,7 +117,7 @@
       </memberdef>
       <memberdef kind="define" id="sniffex_8h_1a9cf15f62d0ce89ef66e46d834242993e" prot="public" static="no">
         <name>APP_COPYRIGHT</name>
-        <initializer>&quot;Copyright (c) 2005 The Tcpdump Group&quot;</initializer>
+        <initializer>&quot;Copyright (<ref refid="glad_8h_1a1f2d7f8147412c43ba2303a56f97ee73" kindref="member">c</ref>) 2005 The Tcpdump Group&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -611,7 +611,7 @@
 <codeline lineno="254" refid="struct_sniffex_1_1sniff__ip_1aea2468d9918eb811586acb71de6870ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_char<sp/><sp/><ref refid="struct_sniffex_1_1sniff__ip_1aea2468d9918eb811586acb71de6870ef" kindref="member">ip_ttl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>time<sp/>to<sp/>live<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="255" refid="struct_sniffex_1_1sniff__ip_1a2c06fbd06dc42564a398cec20a6b15b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_char<sp/><sp/><ref refid="struct_sniffex_1_1sniff__ip_1a2c06fbd06dc42564a398cec20a6b15b9" kindref="member">ip_p</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>protocol<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="256" refid="struct_sniffex_1_1sniff__ip_1ab50c5a07d672683f1039ba5edcd7d583" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_short<sp/><ref refid="struct_sniffex_1_1sniff__ip_1ab50c5a07d672683f1039ba5edcd7d583" kindref="member">ip_sum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>checksum<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="257" refid="struct_sniffex_1_1sniff__ip_1abf8550a1a90663dc9f529f50ecee72ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal">in_addr<sp/>ip_src,ip_dst;<sp/><sp/></highlight><highlight class="comment">/*<sp/>source<sp/>and<sp/>dest<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="struct_sniffex_1_1sniff__ip_1abf8550a1a90663dc9f529f50ecee72ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal">in_addr<sp/>ip_src,<ref refid="struct_sniffex_1_1sniff__ip_1abf8550a1a90663dc9f529f50ecee72ee" kindref="member">ip_dst</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>source<sp/>and<sp/>dest<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="259" refid="sniffex_8h_1a316a88421a4b66af822ec0e097c01f9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IP_HL(ip)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((ip)-&gt;ip_vhl)<sp/>&amp;<sp/>0x0f)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="260" refid="sniffex_8h_1ad79fc88954ed6d1ab77e5fde5e23b864" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IP_V(ip)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((ip)-&gt;ip_vhl)<sp/>&gt;&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
@@ -622,8 +622,8 @@
 <codeline lineno="265" refid="struct_sniffex_1_1sniff__tcp" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sniffex_1_1sniff__tcp" kindref="compound">sniff_tcp</ref><sp/>{</highlight></codeline>
 <codeline lineno="266" refid="struct_sniffex_1_1sniff__tcp_1a3cbc5a34aaffbb66d2e37060bd2ea9b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_short<sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a3cbc5a34aaffbb66d2e37060bd2ea9b6" kindref="member">th_sport</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>source<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="267" refid="struct_sniffex_1_1sniff__tcp_1a98f86dbef1d01db2bd032e1fe99342eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_short<sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a98f86dbef1d01db2bd032e1fe99342eb" kindref="member">th_dport</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>destination<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="268" refid="struct_sniffex_1_1sniff__tcp_1a7adabab3aaed105f0e075d3ce9ad523d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tcp_seq<sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a7adabab3aaed105f0e075d3ce9ad523d" kindref="member">th_seq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sequence<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="269" refid="struct_sniffex_1_1sniff__tcp_1a3c946baf5941e2e12af8b56a2570eece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tcp_seq<sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a3c946baf5941e2e12af8b56a2570eece" kindref="member">th_ack</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acknowledgement<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="struct_sniffex_1_1sniff__tcp_1a7adabab3aaed105f0e075d3ce9ad523d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1a83629f6a3ec687dd2bb381e9bf157d4f" kindref="member">tcp_seq</ref><sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a7adabab3aaed105f0e075d3ce9ad523d" kindref="member">th_seq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sequence<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="struct_sniffex_1_1sniff__tcp_1a3c946baf5941e2e12af8b56a2570eece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1a83629f6a3ec687dd2bb381e9bf157d4f" kindref="member">tcp_seq</ref><sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a3c946baf5941e2e12af8b56a2570eece" kindref="member">th_ack</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acknowledgement<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="270" refid="struct_sniffex_1_1sniff__tcp_1a27045544602ef965e5a50025f42fbd1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_char<sp/><sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a27045544602ef965e5a50025f42fbd1d" kindref="member">th_offx2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>data<sp/>offset,<sp/>rsvd<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="271" refid="sniffex_8h_1a040e084a163464aace3da0ab5673f97b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TH_OFF(th)<sp/><sp/><sp/><sp/><sp/><sp/>(((th)-&gt;th_offx2<sp/>&amp;<sp/>0xf0)<sp/>&gt;&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="272" refid="struct_sniffex_1_1sniff__tcp_1a2bef60aa797ee914836f6b0007dc3ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u_char<sp/><sp/><ref refid="struct_sniffex_1_1sniff__tcp_1a2bef60aa797ee914836f6b0007dc3ebb" kindref="member">th_flags</ref>;</highlight></codeline>
@@ -645,10 +645,10 @@
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1a3d4ef3c90e55035eadca2d577004cd14" kindref="member">got_packet</ref>(u_char<sp/>*args,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>pcap_pkthdr<sp/>*header,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*packet);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" kindref="member">print_payload</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" kindref="member">print_payload</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>);</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" kindref="member">print_hex_ascii_line</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u_char<sp/>*payload,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a652168017ea9a8bbcead03d5c16269fb" kindref="member">len</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1ac915cd848f42b26af51745f204a3b9af" kindref="member">offset</ref>);</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniffex_1ab32951f576e7cd62caf4fe1c5b085b4e" kindref="member">print_app_banner</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>

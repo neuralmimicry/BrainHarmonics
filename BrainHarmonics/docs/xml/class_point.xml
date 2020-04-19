@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_point" kind="class" language="C++" prot="public">
     <compoundname>Point</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -597,7 +597,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="62" column="1" bodyfile="BrainHarmonics/point.h" bodystart="62" bodyend="62"/>
-        <referencedby refid="class_update_all_command_1aa836cd5d538016289656d8118da879c5" compoundref="_brain_harmonics_8cc" startline="936" endline="1152">UpdateAllCommand::Execute</referencedby>
+        <referencedby refid="class_update_all_command_1aa836cd5d538016289656d8118da879c5" compoundref="_brain_harmonics_8cc" startline="943" endline="1159">UpdateAllCommand::Execute</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a98557a7ad341f981b13bb009994868f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; double &gt;</type>
@@ -959,7 +959,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="98" column="1" bodyfile="BrainHarmonics/point.h" bodystart="98" bodyend="118"/>
-        <references refid="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" compoundref="point_8cc" startline="92" endline="99">SetObjectType</references>
         <referencedby refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" compoundref="point_8h" startline="125" endline="128">SetPointPosition</referencedby>
         <referencedby refid="class_point_1ad47980a6ed515a2def172d757af46f1a" compoundref="point_8h" startline="129" endline="129">SetPointPositionMin</referencedby>
         <referencedby refid="class_point_1adb2897b1a7bde15e81b72cb59342f186" compoundref="point_8h" startline="131" endline="131">SetPointPositionMax</referencedby>
@@ -971,7 +970,7 @@
         <referencedby refid="class_point_1ac2e53da4cbee0dc39c0b7a4d3e3a6ee5" compoundref="point_8h" startline="143" endline="143">SetPointDifferentialMax</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetObjectType</name>
@@ -991,10 +990,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="120" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="92" bodyend="99"/>
         <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
-        <referencedby refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a912aefb007184f73b86c37257a415237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointSeq</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetPointSeq</name>
@@ -1015,7 +1013,7 @@
         <location file="BrainHarmonics/point.h" line="122" column="1" bodyfile="BrainHarmonics/point.h" bodystart="122" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a8fc02455a773624df80933403b0e545f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointScale</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointScale</name>
@@ -1036,7 +1034,7 @@
         <location file="BrainHarmonics/point.h" line="124" column="1" bodyfile="BrainHarmonics/point.h" bodystart="124" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a9191f97ece64b8385140d5f800a3a4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointPosition</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointPosition</name>
@@ -1060,7 +1058,7 @@
         <referencedby refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" compoundref="polyhedron_8cc" startline="325" endline="350">Polyhedron::GenerateCylinderPoints</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1ad47980a6ed515a2def172d757af46f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointPositionMin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointPositionMin</name>
@@ -1082,7 +1080,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1ab0c0a837abb8bd52a59f82723a31f61f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointPositionMinOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointPositionMinOverflow</name>
@@ -1103,7 +1101,7 @@
         <location file="BrainHarmonics/point.h" line="130" column="1" bodyfile="BrainHarmonics/point.h" bodystart="130" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1adb2897b1a7bde15e81b72cb59342f186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointPositionMax</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointPositionMax</name>
@@ -1125,7 +1123,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a29aca71cae82195775f3822740df80ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointPositionMaxOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointPositionMaxOverflow</name>
@@ -1146,7 +1144,7 @@
         <location file="BrainHarmonics/point.h" line="132" column="1" bodyfile="BrainHarmonics/point.h" bodystart="132" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a2cf44d5cf17ecf2b3385bde963678589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointMove</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointMove</name>
@@ -1168,7 +1166,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a287698b6f3ec6a610447fded5c3542ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointMoveMin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointMoveMin</name>
@@ -1190,7 +1188,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a4a988ff988a3984545cf0c35e764c404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointMoveMinOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointMoveMinOverflow</name>
@@ -1211,7 +1209,7 @@
         <location file="BrainHarmonics/point.h" line="136" column="1" bodyfile="BrainHarmonics/point.h" bodystart="136" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1afa3c2290a72c99e8892029eaa6676204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointMoveMax</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointMoveMax</name>
@@ -1233,7 +1231,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a7c9776ffca2fde856fa8eaee669d9881" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointMoveMaxOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointMoveMaxOverflow</name>
@@ -1254,7 +1252,7 @@
         <location file="BrainHarmonics/point.h" line="138" column="1" bodyfile="BrainHarmonics/point.h" bodystart="138" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1adb977a2f01e7a2b549e1bd36fa6f5354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointDifferential</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointDifferential</name>
@@ -1276,7 +1274,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a944fcec52017ce88e052a576ef143926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointDifferentialMin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointDifferentialMin</name>
@@ -1298,7 +1296,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a582e63ebdbb0979234acb460e673a393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointDifferentialMinOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointDifferentialMinOverflow</name>
@@ -1319,7 +1317,7 @@
         <location file="BrainHarmonics/point.h" line="142" column="1" bodyfile="BrainHarmonics/point.h" bodystart="142" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1ac2e53da4cbee0dc39c0b7a4d3e3a6ee5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointDifferentialMax</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; double &gt; val)</argsstring>
         <name>SetPointDifferentialMax</name>
@@ -1341,7 +1339,7 @@
         <references refid="class_point_1ac3e94cb7e2ab1d6008ff1d5df00641c2" compoundref="point_8h" startline="98" endline="118">RespectLimits</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a0b1ce0db9514762fc3aa9d57fa3034a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointDifferentialMaxOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; int &gt; val)</argsstring>
         <name>SetPointDifferentialMaxOverflow</name>
@@ -1362,7 +1360,7 @@
         <location file="BrainHarmonics/point.h" line="144" column="1" bodyfile="BrainHarmonics/point.h" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a60ccff89b647d069146a596b8c43d123" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointTTL</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetPointTTL</name>
@@ -1383,7 +1381,7 @@
         <location file="BrainHarmonics/point.h" line="146" column="1" bodyfile="BrainHarmonics/point.h" bodystart="146" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1ae36f75ff4e27742000acd8cad7743614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointTTLMin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetPointTTLMin</name>
@@ -1404,7 +1402,7 @@
         <location file="BrainHarmonics/point.h" line="147" column="1" bodyfile="BrainHarmonics/point.h" bodystart="147" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a167884648fa6ce217472edfdbf515ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointTTLMinOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetPointTTLMinOverflow</name>
@@ -1425,7 +1423,7 @@
         <location file="BrainHarmonics/point.h" line="148" column="1" bodyfile="BrainHarmonics/point.h" bodystart="148" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a1227b110f1fa0aab599f9374ea5ec484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointTTLMax</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetPointTTLMax</name>
@@ -1446,7 +1444,7 @@
         <location file="BrainHarmonics/point.h" line="149" column="1" bodyfile="BrainHarmonics/point.h" bodystart="149" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::SetPointTTLMaxOverflow</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetPointTTLMaxOverflow</name>
@@ -1465,11 +1463,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="150" column="1" bodyfile="BrainHarmonics/point.h" bodystart="150" bodyend="150"/>
-        <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
-        <references refid="class_point_1a414f2215f758cd69fa67e8135ecc4fe2" compoundref="point_8cc" startline="101" endline="148">PointForcePoll</references>
-        <references refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</references>
-        <references refid="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" compoundref="point_8cc" startline="150" endline="159">PointPoll</references>
-        <references refid="class_point_1a44c69c43cfdcb3273d0e6786a21fd000" compoundref="point_8cc" startline="162" endline="443">OverflowPoll</references>
       </memberdef>
       <memberdef kind="function" id="class_point_1a123c78bef71f74d71bc833709a38709c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1485,7 +1478,283 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para>Overflow options: 0 = Stay at Min/Max, 1 = Wrap, 2 = Bounce, 3 = Hidden, 4 = DestroyDimension, 5 = DestroyAllDimensions</para><para>Initialise to zero</para><para>Unique point sequence number</para><para>Size can vary greatly. Scaling groups points</para><para><ref refid="class_point" kindref="compound">Point</ref> <ref refid="class_dimension" kindref="compound">Dimension</ref> value</para><para>Minimum value allowed for point</para><para>What to do if overflow - see above</para><para>Maximum value allowed for point</para><para>What to do if overflow - see above</para><para>How far to move the point value</para><para>Maximum change in movement</para><para>What to do if overflow - see above</para><para>Minimum change in movement</para><para>What to do if overflow - see above</para><para>Rate of change of movement</para><para>Minimum rate of change</para><para>What to do if overflow - see above</para><para>Maximum rate of change</para><para>What to do if overflow - see above</para><para>Time to live for point</para><para>Minimum TTL for point</para><para>What to do if overflow - see above</para><para>Maximum TTL for point</para><para>What to do if overflow - see above </para>        </inbodydescription>
+<para>Overflow options: 0 = Stay at Min/Max, 1 = Wrap, 2 = Bounce, 3 = Hidden, 4 = DestroyDimension, 5 = DestroyAllDimensions <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Initialise to zero <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Unique point sequence number <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Size can vary greatly. Scaling groups points <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ <ref refid="class_point" kindref="compound">Point</ref> <ref refid="class_dimension" kindref="compound">Dimension</ref> value <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Minimum value allowed for point <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Maximum value allowed for point <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ How far to move the point value <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Maximum change in movement <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Minimum change in movement <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Rate of change of movement <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Minimum rate of change <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Maximum rate of change <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Time to live for point <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Minimum TTL for point <linebreak/>
+<linebreak/>
+<linebreak/>
+ What to do if overflow - see above <linebreak/>
+<linebreak/>
+ Maximum TTL for point <linebreak/>
+ What to do if overflow - see above </para>        </inbodydescription>
         <location file="BrainHarmonics/point.h" line="152" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="20" bodyend="90"/>
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
@@ -1494,10 +1763,9 @@
         <referencedby refid="class_point_1a3afeb2d7a2e2b7d9406a57fefa1af2ee" compoundref="point_8cc" startline="92" endline="99">SetObjectType</referencedby>
         <referencedby refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</referencedby>
         <referencedby refid="class_point_1abbc76ed1b437c982eb607ec165ecfa47" compoundref="point_8h" startline="40" endline="54">Point</referencedby>
-        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a414f2215f758cd69fa67e8135ecc4fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::PointForcePoll</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, Point *opposingPoint)</argsstring>
         <name>PointForcePoll</name>
@@ -1516,7 +1784,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="154" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="101" bodyend="148"/>
-        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a7ad2d1933410012c59bffbd4ac611279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1537,11 +1804,10 @@
         <references refid="class_point_1a123c78bef71f74d71bc833709a38709c" compoundref="point_8cc" startline="20" endline="90">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
         <references refid="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" compoundref="point_8cc" startline="150" endline="159">PointPoll</references>
-        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
         <referencedby refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" compoundref="polyhedron_8cc" startline="242" endline="263">Polyhedron::UpdateCycle</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a026fcbc22b4667e74fea48a9dc6eeb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::PointPoll</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>PointPoll</name>
@@ -1561,10 +1827,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="158" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="150" bodyend="159"/>
         <referencedby refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Update</referencedby>
-        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_point_1a44c69c43cfdcb3273d0e6786a21fd000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Point::OverflowPoll</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
         <name>OverflowPoll</name>
@@ -1579,7 +1844,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/point.h" line="160" column="1" bodyfile="BrainHarmonics/point.cc" bodystart="162" bodyend="443"/>
-        <referencedby refid="class_point_1a6a7ca43c551232d5c5d0f5a5d8603c9e" compoundref="point_8h" startline="150" endline="150">SetPointTTLMaxOverflow</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1587,29 +1851,29 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="295">
+      <node id="294">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="294">
+      <node id="293">
         <label>Point</label>
         <link refid="class_point"/>
-        <childnode refid="295" relation="public-inheritance">
+        <childnode refid="294" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="297">
+      <node id="296">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="297" relation="usage">
+        <childnode refid="296" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="296">
+      <node id="295">
         <label>Point</label>
         <link refid="class_point"/>
-        <childnode refid="297" relation="public-inheritance">
+        <childnode refid="296" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,0 +1,49 @@
+.TH "opengl/common/shader.cpp" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+opengl/common/shader.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include 'shader\&.hpp'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstd::string\fP \fBreadSourceFile\fP (const char *\fBpath\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBCompileShader\fP (\fBstd::string\fP program_code, \fBGLuint\fP shader_id)"
+.br
+.ti -1c
+.RI "\fBGLuint\fP \fBLoadShaders\fP (const char *vertex_file_path, const char *fragment_file_path, const char *tcs_file_path, const char *tes_file_path)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP CompileShader (\fBstd::string\fP program_code, \fBGLuint\fP shader_id)"
+
+.PP
+Definition at line 29 of file shader\&.cpp\&.
+.SS "\fBGLuint\fP LoadShaders (const char * vertex_file_path, const char * fragment_file_path, const char * tcs_file_path, const char * tes_file_path)"
+
+.PP
+Definition at line 49 of file shader\&.cpp\&.
+.SS "\fBstd::string\fP readSourceFile (const char * path)"
+
+.PP
+Definition at line 10 of file shader\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

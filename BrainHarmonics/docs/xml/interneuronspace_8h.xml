@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="interneuronspace_8h" kind="file" language="C++">
     <compoundname>interneuronspace.h</compoundname>
     <includes local="no">chrono</includes>
@@ -11,96 +11,96 @@
     <includedby refid="cognitivenetwork_8cc" local="yes">BrainHarmonics/cognitivenetwork.cc</includedby>
     <includedby refid="interneuronspace_8cc" local="yes">BrainHarmonics/interneuronspace.cc</includedby>
     <incdepgraph>
-      <node id="836">
+      <node id="966">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="837" relation="include">
+        <childnode refid="967" relation="include">
         </childnode>
-        <childnode refid="838" relation="include">
+        <childnode refid="968" relation="include">
         </childnode>
       </node>
-      <node id="837">
+      <node id="967">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="834" relation="include">
+        <childnode refid="964" relation="include">
         </childnode>
-        <childnode refid="835" relation="include">
+        <childnode refid="965" relation="include">
         </childnode>
-        <childnode refid="838" relation="include">
+        <childnode refid="968" relation="include">
         </childnode>
       </node>
-      <node id="832">
+      <node id="962">
         <label>BrainHarmonics/interneuronspace.h</label>
         <link refid="interneuronspace_8h"/>
-        <childnode refid="833" relation="include">
+        <childnode refid="963" relation="include">
         </childnode>
-        <childnode refid="834" relation="include">
+        <childnode refid="964" relation="include">
         </childnode>
-        <childnode refid="835" relation="include">
+        <childnode refid="965" relation="include">
         </childnode>
-        <childnode refid="836" relation="include">
+        <childnode refid="966" relation="include">
         </childnode>
       </node>
-      <node id="835">
+      <node id="965">
         <label>vector</label>
       </node>
-      <node id="838">
+      <node id="968">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="833" relation="include">
+        <childnode refid="963" relation="include">
         </childnode>
-        <childnode refid="834" relation="include">
+        <childnode refid="964" relation="include">
         </childnode>
-        <childnode refid="839" relation="include">
+        <childnode refid="969" relation="include">
         </childnode>
-        <childnode refid="835" relation="include">
+        <childnode refid="965" relation="include">
         </childnode>
       </node>
-      <node id="839">
+      <node id="969">
         <label>math.h</label>
       </node>
-      <node id="834">
+      <node id="964">
         <label>iostream</label>
       </node>
-      <node id="833">
+      <node id="963">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="844">
+      <node id="974">
         <label>BrainHarmonics/cognitivenetwork.cc</label>
         <link refid="cognitivenetwork_8cc"/>
       </node>
-      <node id="845">
+      <node id="975">
         <label>BrainHarmonics/interneuronspace.cc</label>
         <link refid="interneuronspace_8cc"/>
       </node>
-      <node id="843">
+      <node id="973">
         <label>BrainHarmonics/schwanncell.cc</label>
         <link refid="schwanncell_8cc"/>
       </node>
-      <node id="841">
+      <node id="971">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="840">
+      <node id="970">
         <label>BrainHarmonics/interneuronspace.h</label>
         <link refid="interneuronspace_8h"/>
-        <childnode refid="841" relation="include">
+        <childnode refid="971" relation="include">
         </childnode>
-        <childnode refid="842" relation="include">
+        <childnode refid="972" relation="include">
         </childnode>
-        <childnode refid="844" relation="include">
+        <childnode refid="974" relation="include">
         </childnode>
-        <childnode refid="845" relation="include">
+        <childnode refid="975" relation="include">
         </childnode>
       </node>
-      <node id="842">
+      <node id="972">
         <label>BrainHarmonics/schwanncell.h</label>
         <link refid="schwanncell_8h"/>
-        <childnode refid="841" relation="include">
+        <childnode refid="971" relation="include">
         </childnode>
-        <childnode refid="843" relation="include">
+        <childnode refid="973" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -160,14 +160,14 @@
 <codeline lineno="47" refid="class_interneuron_space_1ae65bf091b84fa11459ef754ed1c7bf21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ae65bf091b84fa11459ef754ed1c7bf21" kindref="member">GetDischargeType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_DischargeType;<sp/>}</highlight></codeline>
 <codeline lineno="48" refid="class_interneuron_space_1a66b6683bab6872dfece6111a8ccfb1d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a66b6683bab6872dfece6111a8ccfb1d7" kindref="member">GetInterneuronSpaceDeviceTag</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Tag;<sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="50" refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="51" refid="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="52" refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" kindref="member">SetTauCyclesAdd</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_TauCyclesAdd<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="53" refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" kindref="member">SetTauCyclesDecay</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_TauCyclesDecay<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="54" refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" kindref="member">SetChargeType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_ChargeType<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="55" refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" kindref="member">SetDischargeType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_DischargeType<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a60a46f22a2e575d65031635a698a60a9" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a65ecd1914ab039707313beb1b8702e68" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>object_energy<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" kindref="member">SetTauCyclesAdd</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_TauCyclesAdd<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" kindref="member">SetTauCyclesDecay</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_TauCyclesDecay<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a404aacb1adce30288bb7b4237344e4cc" kindref="member">SetChargeType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_ChargeType<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a7fc404aae98d45ccad26b5c186fab6e2" kindref="member">SetDischargeType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_DischargeType<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" kindref="member">SetInterneuronSpaceDeviceTag</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Tag<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" kindref="member">SetInterneuronSpaceDeviceTag</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Tag<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a3a9776e4a77b87374204468ca7974157" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -197,7 +197,7 @@
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ae62237c3a84893c81e9998602ab16718" kindref="member">GetDemand</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725" kindref="member">GetDistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a634322f8b405ead2dc51afb0a5c3d725" kindref="member">GetDistance</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a4b053dc94a921c8176d9f58d40169089" kindref="member">GetAllocatedInterneuronSpace</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -205,9 +205,9 @@
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ae77729a0c140cfb8a9121e898be791b2" kindref="member">GetInterneuronSpaceList</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" kindref="member">SetDemand</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1ad2225077a049e78ce583a79eee2d373f" kindref="member">SetDemand</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" kindref="member">SetNeuron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" kindref="member">SetNeuron</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>void<sp/>AddDistance(Neuron<sp/>*interneuronspace,<sp/>double<sp/>val);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>

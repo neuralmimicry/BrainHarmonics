@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_orbital" kind="class" language="C++" prot="public">
     <compoundname>Orbital</compoundname>
     <basecompoundref refid="class_cognitive_network" prot="public" virt="non-virtual">CognitiveNetwork</basecompoundref>
@@ -401,7 +401,7 @@
         <location file="BrainHarmonics/orbital.h" line="48" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="48" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetPosition</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetPosition</name>
@@ -422,7 +422,7 @@
         <location file="BrainHarmonics/orbital.h" line="50" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetPhase</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetPhase</name>
@@ -443,7 +443,7 @@
         <location file="BrainHarmonics/orbital.h" line="51" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetTau</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetTau</name>
@@ -464,7 +464,7 @@
         <location file="BrainHarmonics/orbital.h" line="52" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1ae2a2fb06700d1d68501b0cbdea87cc08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -486,7 +486,7 @@
         <location file="BrainHarmonics/orbital.h" line="53" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -505,17 +505,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/orbital.h" line="54" column="1" bodyfile="BrainHarmonics/orbital.h" bodystart="54" bodyend="54"/>
-        <references refid="class_orbital_1afd0dfd382d4bf7d9fbace315bd37fa85" compoundref="orbital_8cc" startline="20" endline="24">SetObjectType</references>
-        <references refid="class_orbital_1acc6137a5a79be91a255f685a2f065330" compoundref="orbital_8cc" startline="26" endline="74">ResetParameters</references>
-        <references refid="class_orbital_1a44230cebc40357d186c442bfac2507a4" compoundref="orbital_8cc" startline="76" endline="79">AddToNeuronList</references>
-        <references refid="class_orbital_1a57480cdd63dd1bf731864f513767800d" compoundref="orbital_8cc" startline="81" endline="89">AddNeuron</references>
-        <references refid="class_orbital_1a7d7e4b7cb0d009a5e7224b6f758d7b6b" compoundref="orbital_8cc" startline="91" endline="94">GetNeurons</references>
-        <references refid="class_orbital_1a5aa5edbae517ff393fc1eb0ae2422123" compoundref="orbital_8cc" startline="96" endline="117">CalcPosition</references>
-        <references refid="class_orbital_1afbf72ba4e260627422c9f53dea793923" compoundref="orbital_8cc" startline="119" endline="135">UpdateCycle</references>
-        <references refid="class_orbital_1a837289c3b2af844724c381707dee40d0" compoundref="orbital_8cc" startline="137" endline="180">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1afd0dfd382d4bf7d9fbace315bd37fa85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int object_type)</argsstring>
         <name>SetObjectType</name>
@@ -535,7 +527,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/orbital.h" line="55" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="20" bodyend="24"/>
         <references refid="class_orbital_1acc6137a5a79be91a255f685a2f065330" compoundref="orbital_8cc" startline="26" endline="74">ResetParameters</references>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1acc6137a5a79be91a255f685a2f065330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -560,7 +551,6 @@
         <referencedby refid="class_orbital_1afd0dfd382d4bf7d9fbace315bd37fa85" compoundref="orbital_8cc" startline="20" endline="24">SetObjectType</referencedby>
         <referencedby refid="class_orbital_1a837289c3b2af844724c381707dee40d0" compoundref="orbital_8cc" startline="137" endline="180">Update</referencedby>
         <referencedby refid="class_orbital_1ac54161437f3bd23cc1e6e85e702239c8" compoundref="orbital_8h" startline="30" endline="41">Orbital</referencedby>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a44230cebc40357d186c442bfac2507a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -580,7 +570,6 @@
         <location file="BrainHarmonics/orbital.h" line="58" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="76" bodyend="79"/>
         <references refid="class_orbital_1a504f1b3e8621e7eb7e682c3cec48272d" compoundref="orbital_8h" startline="71">neuron_list</references>
         <referencedby refid="class_orbital_1a57480cdd63dd1bf731864f513767800d" compoundref="orbital_8cc" startline="81" endline="89">AddNeuron</referencedby>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a57480cdd63dd1bf731864f513767800d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -604,7 +593,6 @@
         <location file="BrainHarmonics/orbital.h" line="60" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="81" bodyend="89"/>
         <references refid="class_orbital_1a44230cebc40357d186c442bfac2507a4" compoundref="orbital_8cc" startline="76" endline="79">AddToNeuronList</references>
         <references refid="class_orbital_1a504f1b3e8621e7eb7e682c3cec48272d" compoundref="orbital_8h" startline="71">neuron_list</references>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a7d7e4b7cb0d009a5e7224b6f758d7b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -623,10 +611,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/orbital.h" line="62" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="91" bodyend="94"/>
         <references refid="class_orbital_1a504f1b3e8621e7eb7e682c3cec48272d" compoundref="orbital_8h" startline="71">neuron_list</references>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a5aa5edbae517ff393fc1eb0ae2422123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::CalcPosition</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double Duration)</argsstring>
         <name>CalcPosition</name>
@@ -647,10 +634,9 @@
         <location file="BrainHarmonics/orbital.h" line="64" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="96" bodyend="117"/>
         <references refid="universe_8h_1a5abfe2e697fbc57169f4285aad22ea6c" compoundref="universe_8h" startline="31">TWORAD</references>
         <referencedby refid="class_orbital_1a837289c3b2af844724c381707dee40d0" compoundref="orbital_8cc" startline="137" endline="180">Update</referencedby>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1afbf72ba4e260627422c9f53dea793923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Orbital::UpdateCycle</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; CognitiveNetwork *&gt; set_of_update_pointers, unsigned int pointer_type)</argsstring>
         <name>UpdateCycle</name>
@@ -675,7 +661,6 @@
         <location file="BrainHarmonics/orbital.h" line="66" column="1" bodyfile="BrainHarmonics/orbital.cc" bodystart="119" bodyend="135"/>
         <references refid="class_cognitive_network_1a05dccc7759456df13a732899a8f1f4c4" compoundref="cognitivenetwork_8cc" startline="146" endline="193">CognitiveNetwork::Update</references>
         <referencedby refid="class_orbital_1a837289c3b2af844724c381707dee40d0" compoundref="orbital_8cc" startline="137" endline="180">Update</referencedby>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_orbital_1a837289c3b2af844724c381707dee40d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -697,7 +682,6 @@
         <references refid="class_orbital_1afbf72ba4e260627422c9f53dea793923" compoundref="orbital_8cc" startline="119" endline="135">UpdateCycle</references>
         <references refid="class_orbital_1a504f1b3e8621e7eb7e682c3cec48272d" compoundref="orbital_8h" startline="71">neuron_list</references>
         <references refid="class_orbital_1a5aa5edbae517ff393fc1eb0ae2422123" compoundref="orbital_8cc" startline="96" endline="117">CalcPosition</references>
-        <referencedby refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" compoundref="orbital_8h" startline="54" endline="54">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -705,41 +689,41 @@
     <detaileddescription>
 <para>&lt; For Sine, Cosine, Power, Fabs &amp; Sqrt functions </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="288">
+      <node id="287">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="286">
+      <node id="285">
         <label>Orbital</label>
         <link refid="class_orbital"/>
-        <childnode refid="287" relation="public-inheritance">
+        <childnode refid="286" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="287">
+      <node id="286">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="288" relation="public-inheritance">
+        <childnode refid="287" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="291">
+      <node id="290">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="291" relation="usage">
+        <childnode refid="290" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="289">
+      <node id="288">
         <label>Orbital</label>
         <link refid="class_orbital"/>
-        <childnode refid="290" relation="public-inheritance">
+        <childnode refid="289" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="290">
+      <node id="289">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="291" relation="public-inheritance">
+        <childnode refid="290" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -965,17 +949,17 @@
       <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetGateKeeper</name></member>
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>Orbital</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetLifespan</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetNeuronPool</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_orbital_1afd0dfd382d4bf7d9fbace315bd37fa85" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetOrbitalPool</name></member>
       <member refid="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetPhase</name></member>
       <member refid="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetPosition</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>Orbital</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>Orbital</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>Orbital</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>Orbital</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetSynapsePool</name></member>
       <member refid="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetTau</name></member>
       <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>Orbital</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>Orbital</scope><name>SetWeak</name></member>

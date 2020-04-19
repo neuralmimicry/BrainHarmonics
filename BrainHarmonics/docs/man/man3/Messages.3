@@ -1,4 +1,4 @@
-.TH "Messages" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Messages" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -18,7 +18,7 @@ Messages
 .RI "virtual \fB~Messages\fP ()"
 .br
 .ti -1c
-.RI "bool \fBloadFromFile\fP (const std::string &filename)"
+.RI "bool \fBloadFromFile\fP (const \fBstd::string\fP &filename)"
 .br
 .ti -1c
 .RI "unsigned int \fBGetCounter\fP ()"
@@ -27,13 +27,13 @@ Messages
 .RI "double \fBGetEnergy\fP ()"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBCreation\fP ()"
+.RI "\fBvoid\fP \fBCreation\fP ()"
 .br
 .in -1c
 .SH "Detailed Description"
@@ -51,7 +51,7 @@ Default destructor
 Definition at line 16 of file messages\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "void Messages::Creation ()\fC [inline]\fP"
+.SS "\fBvoid\fP Messages::Creation ()\fC [inline]\fP"
 
 .PP
 Definition at line 43 of file messages\&.hpp\&.
@@ -70,11 +70,11 @@ Definition at line 36 of file messages\&.hpp\&.
 
 .PP
 Definition at line 37 of file messages\&.hpp\&.
-.SS "bool Messages::loadFromFile (const std::string & filename)\fC [inline]\fP"
+.SS "bool Messages::loadFromFile (const \fBstd::string\fP & filename)\fC [inline]\fP"
 
 .PP
 Definition at line 22 of file messages\&.hpp\&.
-.SS "void Messages::SetCounter (unsigned int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Messages::SetCounter (unsigned int val)\fC [inline]\fP"
 Set m_Counter 
 .PP
 \fBParameters:\fP
@@ -85,7 +85,7 @@ Set m_Counter
 
 .PP
 Definition at line 41 of file messages\&.hpp\&.
-.SS "void Messages::SetEnergy (double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Messages::SetEnergy (double val)\fC [inline]\fP"
 
 .PP
 Definition at line 42 of file messages\&.hpp\&.

@@ -56,7 +56,7 @@ var class_neuron =
     [ "SetNeuronDeviceTag", "class_neuron.html#aa06d0f1a129e4a901a60e7343bc43533", null ],
     [ "SetNeuronType", "class_neuron.html#afc685a0444425fceab6685a6ee004b65", null ],
     [ "SetObjectType", "class_neuron.html#ab371e2dacf2cdde8db5547b72fb45ca1", null ],
-    [ "SetSomaPool", "class_neuron.html#a14bef0cc064213659b38c93b002e8956", null ],
+    [ "SetSomaPool", "class_neuron.html#ae18e23983d02953fa6886bef0bbeb339", null ],
     [ "SetUsage", "class_neuron.html#abf99856ac41b5c9c4948b3204bbc1590", null ],
     [ "toggleDisabled", "class_neuron.html#a32fe82aa21f8a68392d696eea3a34c99", null ],
     [ "Update", "class_neuron.html#a4d1dc3a9f30196fe2b09dfbfc0a567bb", null ],

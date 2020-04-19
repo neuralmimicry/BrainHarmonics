@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_neurotransmitter" kind="class" language="C++" prot="public">
     <compoundname>Neurotransmitter</compoundname>
     <basecompoundref refid="class_cognitive_network" prot="public" virt="non-virtual">CognitiveNetwork</basecompoundref>
@@ -362,7 +362,7 @@
         <location file="BrainHarmonics/neurotransmitter.h" line="42" column="1" bodyfile="BrainHarmonics/neurotransmitter.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_neurotransmitter_1ae460ed5fac92ba136a80bba12ebce246" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Neurotransmitter::SetType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetType</name>
@@ -383,7 +383,7 @@
         <location file="BrainHarmonics/neurotransmitter.h" line="44" column="1" bodyfile="BrainHarmonics/neurotransmitter.h" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_neurotransmitter_1ae16ec051609867d4f64fad5ba4449443" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Neurotransmitter::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -405,7 +405,7 @@
         <location file="BrainHarmonics/neurotransmitter.h" line="45" column="1" bodyfile="BrainHarmonics/neurotransmitter.h" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_neurotransmitter_1a5ad51ddb1351868e1756e3c41bb88e04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Neurotransmitter::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -424,8 +424,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/neurotransmitter.h" line="46" column="1" bodyfile="BrainHarmonics/neurotransmitter.h" bodystart="46" bodyend="46"/>
-        <references refid="class_neurotransmitter_1a6e7650d738bccfbbd49ede10970687aa" compoundref="neurotransmitter_8cc" startline="19" endline="57">ResetParameters</references>
-        <references refid="class_neurotransmitter_1ac9f7be22ca7242207de76ec5e1b055b1" compoundref="neurotransmitter_8cc" startline="59" endline="95">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_neurotransmitter_1a6e7650d738bccfbbd49ede10970687aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -446,7 +444,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_neurotransmitter_1ac9f7be22ca7242207de76ec5e1b055b1" compoundref="neurotransmitter_8cc" startline="59" endline="95">Update</referencedby>
         <referencedby refid="class_neurotransmitter_1ac9257a1b310a26eba8a08ffb4b93bb64" compoundref="neurotransmitter_8h" startline="26" endline="35">Neurotransmitter</referencedby>
-        <referencedby refid="class_neurotransmitter_1a5ad51ddb1351868e1756e3c41bb88e04" compoundref="neurotransmitter_8h" startline="46" endline="46">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_neurotransmitter_1ac9f7be22ca7242207de76ec5e1b055b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -466,7 +463,6 @@
         <location file="BrainHarmonics/neurotransmitter.h" line="50" column="1" bodyfile="BrainHarmonics/neurotransmitter.cc" bodystart="59" bodyend="95"/>
         <references refid="class_neurotransmitter_1a6e7650d738bccfbbd49ede10970687aa" compoundref="neurotransmitter_8cc" startline="19" endline="57">ResetParameters</references>
         <references refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" compoundref="universe_8cc" startline="602" endline="602">Universe::AdjustCounters</references>
-        <referencedby refid="class_neurotransmitter_1a5ad51ddb1351868e1756e3c41bb88e04" compoundref="neurotransmitter_8h" startline="46" endline="46">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -474,41 +470,41 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="276">
+      <node id="275">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="274">
+      <node id="273">
         <label>Neurotransmitter</label>
         <link refid="class_neurotransmitter"/>
-        <childnode refid="275" relation="public-inheritance">
+        <childnode refid="274" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="275">
+      <node id="274">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="276" relation="public-inheritance">
+        <childnode refid="275" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="279">
+      <node id="278">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="279" relation="usage">
+        <childnode refid="278" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="277">
+      <node id="276">
         <label>Neurotransmitter</label>
         <link refid="class_neurotransmitter"/>
-        <childnode refid="278" relation="public-inheritance">
+        <childnode refid="277" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="278">
+      <node id="277">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="278" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -730,15 +726,15 @@
       <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetGateKeeper</name></member>
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetLifespan</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetNeuronPool</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetOrbitalPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetSynapsePool</name></member>
       <member refid="class_neurotransmitter_1ae460ed5fac92ba136a80bba12ebce246" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetType</name></member>
       <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>Neurotransmitter</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>Neurotransmitter</scope><name>SetWeak</name></member>

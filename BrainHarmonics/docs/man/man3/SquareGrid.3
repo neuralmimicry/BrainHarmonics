@@ -1,4 +1,4 @@
-.TH "SquareGrid" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "SquareGrid" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -25,25 +25,25 @@ Inherited by \fBGridWithWeights\fP, and \fBGridWithWeights\fP\&.
 .RI "\fBSquareGrid\fP (int width_, int height_)"
 .br
 .ti -1c
-.RI "bool \fBin_bounds\fP (\fBLocation\fP id)"
+.RI "bool \fBin_bounds\fP (\fBLocation\fP \fBid\fP)"
 .br
 .ti -1c
-.RI "bool \fBpassable\fP (\fBLocation\fP id)"
+.RI "bool \fBpassable\fP (\fBLocation\fP \fBid\fP)"
 .br
 .ti -1c
-.RI "vector< \fBLocation\fP > \fBneighbors\fP (\fBLocation\fP id)"
+.RI "vector< \fBLocation\fP > \fBneighbors\fP (\fBLocation\fP \fBid\fP)"
 .br
 .ti -1c
 .RI "\fBSquareGrid\fP (int width_, int height_)"
 .br
 .ti -1c
-.RI "bool \fBin_bounds\fP (\fBLocation\fP id)"
+.RI "bool \fBin_bounds\fP (\fBLocation\fP \fBid\fP)"
 .br
 .ti -1c
-.RI "bool \fBpassable\fP (\fBLocation\fP id)"
+.RI "bool \fBpassable\fP (\fBLocation\fP \fBid\fP)"
 .br
 .ti -1c
-.RI "vector< \fBLocation\fP > \fBneighbors\fP (\fBLocation\fP id)"
+.RI "vector< \fBLocation\fP > \fBneighbors\fP (\fBLocation\fP \fBid\fP)"
 .br
 .in -1c
 .SS "Public Attributes"
@@ -63,7 +63,7 @@ Inherited by \fBGridWithWeights\fP, and \fBGridWithWeights\fP\&.
 
 .in +1c
 .ti -1c
-.RI "static array< \fBLocation\fP, 4 > \fBDIRS\fP {\fBLocation\fP{1, 0}, \fBLocation\fP{0, \-1}, \fBLocation\fP{\-1, 0}, \fBLocation\fP{0, 1}}"
+.RI "static \fBarray\fP< \fBLocation\fP, 4 > \fBDIRS\fP {\fBLocation\fP{1, 0}, \fBLocation\fP{0, \-1}, \fBLocation\fP{\-1, 0}, \fBLocation\fP{0, 1}}"
 .br
 .in -1c
 .SH "Detailed Description"
@@ -117,7 +117,7 @@ Definition at line 120 of file implementation orig\&.cpp\&.
 Definition at line 126 of file search\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "array< \fBSquareGrid::Location\fP, 4 > SquareGrid::DIRS {\fBLocation\fP{1, 0}, \fBLocation\fP{0, \-1}, \fBLocation\fP{\-1, 0}, \fBLocation\fP{0, 1}}\fC [static]\fP"
+.SS "\fBarray\fP< \fBSquareGrid::Location\fP, 4 > SquareGrid::DIRS {\fBLocation\fP{1, 0}, \fBLocation\fP{0, \-1}, \fBLocation\fP{\-1, 0}, \fBLocation\fP{0, 1}}\fC [static]\fP"
 
 .PP
 Definition at line 106 of file implementation orig\&.cpp\&.

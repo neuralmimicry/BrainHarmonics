@@ -1,58 +1,58 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="law_8cc" kind="file" language="C++">
     <compoundname>law.cc</compoundname>
     <includes refid="law_8h" local="yes">law.h</includes>
     <includes refid="compositeforceparticle_8h" local="yes">compositeforceparticle.h</includes>
     <incdepgraph>
-      <node id="847">
+      <node id="977">
         <label>law.h</label>
         <link refid="law_8h"/>
-        <childnode refid="848" relation="include">
+        <childnode refid="978" relation="include">
         </childnode>
-        <childnode refid="849" relation="include">
+        <childnode refid="979" relation="include">
         </childnode>
       </node>
-      <node id="853">
+      <node id="983">
         <label>compositeforceparticle.h</label>
         <link refid="compositeforceparticle_8h"/>
-        <childnode refid="848" relation="include">
+        <childnode refid="978" relation="include">
         </childnode>
-        <childnode refid="852" relation="include">
+        <childnode refid="982" relation="include">
         </childnode>
-        <childnode refid="849" relation="include">
+        <childnode refid="979" relation="include">
         </childnode>
       </node>
-      <node id="852">
+      <node id="982">
         <label>vector</label>
       </node>
-      <node id="849">
+      <node id="979">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="850" relation="include">
+        <childnode refid="980" relation="include">
         </childnode>
-        <childnode refid="848" relation="include">
+        <childnode refid="978" relation="include">
         </childnode>
-        <childnode refid="851" relation="include">
+        <childnode refid="981" relation="include">
         </childnode>
-        <childnode refid="852" relation="include">
+        <childnode refid="982" relation="include">
         </childnode>
       </node>
-      <node id="851">
+      <node id="981">
         <label>math.h</label>
       </node>
-      <node id="848">
+      <node id="978">
         <label>iostream</label>
       </node>
-      <node id="850">
+      <node id="980">
         <label>chrono</label>
       </node>
-      <node id="846">
+      <node id="976">
         <label>BrainHarmonics/law.cc</label>
         <link refid="law_8cc"/>
-        <childnode refid="847" relation="include">
+        <childnode refid="977" relation="include">
         </childnode>
-        <childnode refid="853" relation="include">
+        <childnode refid="983" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -86,7 +86,7 @@
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time_object_created<sp/>==<sp/>std::chrono::time_point&lt;Clock&gt;(std::chrono::nanoseconds::zero()))</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).count()));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>()));</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>object<sp/>instantiated<sp/>without<sp/>a<sp/>type<sp/>specified<sp/>the<sp/>set<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
@@ -122,7 +122,7 @@
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60" refid="class_law_1ab30a86ef88a85e13d3e598caa45bff05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_law_1ab30a86ef88a85e13d3e598caa45bff05" kindref="member">Law::GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" kindref="member">Law::SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" kindref="member">Law::SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64" refid="class_law_1a0240b10c679b671039dbf10771342ea7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_law_1a0240b10c679b671039dbf10771342ea7" kindref="member">Law::Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">{</highlight></codeline>
@@ -137,7 +137,7 @@
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time_dimension_pointer-&gt;AdjustCounters(event_time);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>

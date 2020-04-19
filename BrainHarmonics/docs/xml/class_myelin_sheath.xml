@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_myelin_sheath" kind="class" language="C++" prot="public">
     <compoundname>MyelinSheath</compoundname>
     <basecompoundref refid="class_cognitive_network" prot="public" virt="non-virtual">CognitiveNetwork</basecompoundref>
@@ -306,7 +306,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/myelinsheath.h" line="34" column="1" bodyfile="BrainHarmonics/myelinsheath.h" bodystart="34" bodyend="34"/>
-        <references refid="class_myelin_sheath_1af1174b93be36aa43506a4ba9857d92a4" compoundref="myelinsheath_8cc" startline="20" endline="72">ResetParameters</references>
       </memberdef>
       <memberdef kind="function" id="class_myelin_sheath_1af1174b93be36aa43506a4ba9857d92a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -327,7 +326,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_myelin_sheath_1af53c8f36ee963168dec09b74a6be8e4c" compoundref="myelinsheath_8cc" startline="74" endline="112">Update</referencedby>
         <referencedby refid="class_myelin_sheath_1aac107d8f22ca3c02f2d346f44950e6d0" compoundref="myelinsheath_8h" startline="25" endline="32">MyelinSheath</referencedby>
-        <referencedby refid="class_myelin_sheath_1acf71a2a450e2df353f28eed6c7a4129a" compoundref="myelinsheath_8h" startline="34" endline="34">~MyelinSheath</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_myelin_sheath_1a10eef8601d129e7e2f28e8ed1ebc975c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -364,7 +362,7 @@
         <location file="BrainHarmonics/myelinsheath.h" line="39" column="1" bodyfile="BrainHarmonics/myelinsheath.h" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void MyelinSheath::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -386,7 +384,7 @@
         <location file="BrainHarmonics/myelinsheath.h" line="41" column="1" bodyfile="BrainHarmonics/myelinsheath.h" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void MyelinSheath::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -405,7 +403,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/myelinsheath.h" line="42" column="1" bodyfile="BrainHarmonics/myelinsheath.h" bodystart="42" bodyend="42"/>
-        <references refid="class_myelin_sheath_1af53c8f36ee963168dec09b74a6be8e4c" compoundref="myelinsheath_8cc" startline="74" endline="112">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_myelin_sheath_1af53c8f36ee963168dec09b74a6be8e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -424,7 +421,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/myelinsheath.h" line="44" column="1" bodyfile="BrainHarmonics/myelinsheath.cc" bodystart="74" bodyend="112"/>
         <references refid="class_myelin_sheath_1af1174b93be36aa43506a4ba9857d92a4" compoundref="myelinsheath_8cc" startline="20" endline="72">ResetParameters</references>
-        <referencedby refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" compoundref="myelinsheath_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -432,41 +428,41 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="232">
+      <node id="231">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="231">
+      <node id="230">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="232" relation="public-inheritance">
+        <childnode refid="231" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="230">
+      <node id="229">
         <label>MyelinSheath</label>
         <link refid="class_myelin_sheath"/>
-        <childnode refid="231" relation="public-inheritance">
+        <childnode refid="230" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="235">
+      <node id="234">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="235" relation="usage">
+        <childnode refid="234" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="234">
+      <node id="233">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="235" relation="public-inheritance">
+        <childnode refid="234" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="233">
+      <node id="232">
         <label>MyelinSheath</label>
         <link refid="class_myelin_sheath"/>
-        <childnode refid="234" relation="public-inheritance">
+        <childnode refid="233" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -687,15 +683,15 @@
       <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetGateKeeper</name></member>
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetLifespan</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetNeuronPool</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetOrbitalPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetSynapsePool</name></member>
       <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>MyelinSheath</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>MyelinSheath</scope><name>SetWeakElectroweak</name></member>

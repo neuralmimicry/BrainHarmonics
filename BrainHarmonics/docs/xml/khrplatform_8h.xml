@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="khrplatform_8h" kind="file" language="C++">
+    <compoundname>khrplatform.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="glad_8h" local="no">glad/include/glad/glad.h</includedby>
+    <incdepgraph>
+      <node id="2133">
+        <label>stdint.h</label>
+      </node>
+      <node id="2132">
+        <label>glad/include/KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2150">
+        <label>opengl/mainshader.cpp</label>
+        <link refid="opengl_2mainshader_8cpp"/>
+      </node>
+      <node id="2136">
+        <label>common/common.h</label>
+        <link refid="common_2common_8h"/>
+        <childnode refid="2137" relation="include">
+        </childnode>
+      </node>
+      <node id="2154">
+        <label>opengl/waveback.c</label>
+        <link refid="opengl_2waveback_8c"/>
+      </node>
+      <node id="2155">
+        <label>triangles.cpp</label>
+        <link refid="triangles_8cpp"/>
+      </node>
+      <node id="2148">
+        <label>opengl/first_glfw.cpp</label>
+        <link refid="opengl_2first__glfw_8cpp"/>
+      </node>
+      <node id="2139">
+        <label>transition_text.cpp</label>
+        <link refid="transition__text_8cpp"/>
+      </node>
+      <node id="2134">
+        <label>glad/include/KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2135" relation="include">
+        </childnode>
+      </node>
+      <node id="2146">
+        <label>opengl/common/shader.cpp</label>
+        <link refid="opengl_2common_2shader_8cpp"/>
+      </node>
+      <node id="2141">
+        <label>glad/src/glad.c</label>
+        <link refid="glad_8c"/>
+      </node>
+      <node id="2153">
+        <label>opengl/wave.cpp</label>
+        <link refid="opengl_2wave_8cpp"/>
+      </node>
+      <node id="2156">
+        <label>twod.cpp</label>
+        <link refid="twod_8cpp"/>
+      </node>
+      <node id="2140">
+        <label>first_glfw.cpp</label>
+        <link refid="first__glfw_8cpp"/>
+      </node>
+      <node id="2145">
+        <label>opengl/common/shader.hpp</label>
+        <link refid="opengl_2common_2shader_8hpp"/>
+        <childnode refid="2146" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2158">
+        <label>waveback.c</label>
+        <link refid="waveback_8c"/>
+      </node>
+      <node id="2143">
+        <label>mainshader.cpp</label>
+        <link refid="mainshader_8cpp"/>
+      </node>
+      <node id="2144">
+        <label>opengl/common/common.h</label>
+        <link refid="opengl_2common_2common_8h"/>
+        <childnode refid="2145" relation="include">
+        </childnode>
+      </node>
+      <node id="2152">
+        <label>opengl/twod.cpp</label>
+        <link refid="opengl_2twod_8cpp"/>
+      </node>
+      <node id="2138">
+        <label>common/shader.cpp</label>
+        <link refid="common_2shader_8cpp"/>
+      </node>
+      <node id="2151">
+        <label>opengl/triangles.cpp</label>
+        <link refid="opengl_2triangles_8cpp"/>
+      </node>
+      <node id="2149">
+        <label>opengl/heightmap.c</label>
+        <link refid="opengl_2heightmap_8c"/>
+      </node>
+      <node id="2142">
+        <label>heightmap.c</label>
+        <link refid="heightmap_8c"/>
+      </node>
+      <node id="2135">
+        <label>glad/include/glad/glad.h</label>
+        <link refid="glad_8h"/>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2148" relation="include">
+        </childnode>
+        <childnode refid="2149" relation="include">
+        </childnode>
+        <childnode refid="2150" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+        <childnode refid="2151" relation="include">
+        </childnode>
+        <childnode refid="2152" relation="include">
+        </childnode>
+        <childnode refid="2153" relation="include">
+        </childnode>
+        <childnode refid="2154" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2155" relation="include">
+        </childnode>
+        <childnode refid="2156" relation="include">
+        </childnode>
+        <childnode refid="2157" relation="include">
+        </childnode>
+        <childnode refid="2158" relation="include">
+        </childnode>
+      </node>
+      <node id="2147">
+        <label>opengl/transition_text.cpp</label>
+        <link refid="opengl_2transition__text_8cpp"/>
+      </node>
+      <node id="2137">
+        <label>common/shader.hpp</label>
+        <link refid="common_2shader_8hpp"/>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+      </node>
+      <node id="2157">
+        <label>wave.cpp</label>
+        <link refid="wave_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="khrplatform_8h_1a5d0e04fe11e69b75470eb0a2a2546af3" prot="public" static="no">
+        <name>KHRONOS_APICALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="113" column="13" bodyfile="glad/include/KHR/khrplatform.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="khrplatform_8h_1aff6bea8ea37be81840add529306b32a8" prot="public" static="no">
+        <name>KHRONOS_APIENTRY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="126" column="13" bodyfile="glad/include/KHR/khrplatform.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="khrplatform_8h_1afd38e339bdb8f65b1ac0c8f214c427e5" prot="public" static="no">
+        <name>KHRONOS_APIATTRIBUTES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="137" column="10" bodyfile="glad/include/KHR/khrplatform.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="khrplatform_8h_1a5000aa7e3c9ca9d348b1d17326a35635" prot="public" static="no">
+        <name>KHRONOS_SUPPORT_INT64</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="219" column="9" bodyfile="glad/include/KHR/khrplatform.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="khrplatform_8h_1a2005a9aed8272da688b4f4ea414531bc" prot="public" static="no">
+        <name>KHRONOS_SUPPORT_FLOAT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="220" column="9" bodyfile="glad/include/KHR/khrplatform.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="khrplatform_8h_1af23931754c6a5adf1892efe8933bf788" prot="public" static="no">
+        <name>KHRONOS_MAX_ENUM</name>
+        <initializer>0x7FFFFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="275" column="9" bodyfile="glad/include/KHR/khrplatform.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64" prot="public" static="no" strong="no">
+        <type></type>
+        <name>khronos_boolean_enum_t</name>
+        <enumvalue id="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a37d68e7202b4d30f7742acebb50d1ba6" prot="public">
+          <name>KHRONOS_FALSE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a9275264520295ae24bc2033c05d6cb70" prot="public">
+          <name>KHRONOS_TRUE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a47d7d559cf039488acac78e797bc3cf9" prot="public">
+          <name>KHRONOS_BOOLEAN_ENUM_FORCE_SIZE</name>
+          <initializer>= KHRONOS_MAX_ENUM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="284" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="284" bodyend="288"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t khronos_int32_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_int32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="215" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t khronos_uint32_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_uint32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="216" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>typedef int64_t khronos_int64_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_int64_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="217" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" prot="public" static="no">
+        <type>uint64_t</type>
+        <definition>typedef uint64_t khronos_uint64_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_uint64_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="218" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1afb103620f76ee8c038529cbf0375cfed" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char khronos_int8_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_int8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="228" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1ab18f061b993d901e1161a4de18e8fc6b" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char khronos_uint8_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_uint8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="229" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1aea31402f1f8fad5bec8bdc4dd0919da9" prot="public" static="no">
+        <type>signed short int</type>
+        <definition>typedef signed short int khronos_int16_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_int16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="230" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a99a2182846c1c18bb6629ac57ccbe178" prot="public" static="no">
+        <type>unsigned short int</type>
+        <definition>typedef unsigned short int khronos_uint16_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_uint16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="231" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a182f27e517e990b263b51dc7b5f4ca3f" prot="public" static="no">
+        <type>signed long int</type>
+        <definition>typedef signed long int khronos_intptr_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_intptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="244" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1ab5f63ab277fa98e81850e4d15f87c19b" prot="public" static="no">
+        <type>unsigned long int</type>
+        <definition>typedef unsigned long int khronos_uintptr_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_uintptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="245" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a8bd045e2edc004c61c2586c7cbcff35d" prot="public" static="no">
+        <type>signed long int</type>
+        <definition>typedef signed long int khronos_ssize_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_ssize_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="246" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a0e1021b0953a3d0e673c83cc66c58164" prot="public" static="no">
+        <type>unsigned long int</type>
+        <definition>typedef unsigned long int khronos_usize_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_usize_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="247" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a1591fab40b33ac5df09dfe668d4c62fe" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float khronos_float_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_float_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="254" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1a7643cf38bfc46e0d120a42d586639856" prot="public" static="no">
+        <type><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref></type>
+        <definition>typedef khronos_uint64_t khronos_utime_nanoseconds_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_utime_nanoseconds_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="267" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="khrplatform_8h_1aaec967d90a72559fa6aa12e0160743f8" prot="public" static="no">
+        <type><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref></type>
+        <definition>typedef khronos_int64_t khronos_stime_nanoseconds_t</definition>
+        <argsstring></argsstring>
+        <name>khronos_stime_nanoseconds_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="glad/include/KHR/khrplatform.h" line="268" column="1" bodyfile="glad/include/KHR/khrplatform.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__khrplatform_h_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__khrplatform_h_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Copyright<sp/>(c)<sp/>2008-2018<sp/>The<sp/>Khronos<sp/>Group<sp/>Inc.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and/or<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/>&quot;Materials&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Materials<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">**<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">**<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Materials,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">**<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Materials<sp/>are<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">**<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">**<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Materials.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">**<sp/>THE<sp/>MATERIALS<sp/>ARE<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">**<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">**<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">**<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">**<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">**<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">**<sp/>MATERIALS<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>MATERIALS.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Khronos<sp/>platform-specific<sp/>types<sp/>and<sp/>definitions.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>The<sp/>master<sp/>copy<sp/>of<sp/>khrplatform.h<sp/>is<sp/>maintained<sp/>in<sp/>the<sp/>Khronos<sp/>EGL</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>Registry<sp/>repository<sp/>at<sp/>https://github.com/KhronosGroup/EGL-Registry</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>The<sp/>last<sp/>semantic<sp/>modification<sp/>to<sp/>khrplatform.h<sp/>was<sp/>at<sp/>commit<sp/>ID:</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>67a3e0864c2d75ea5287b9f3d2eb74a745936692</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>Adopters<sp/>may<sp/>modify<sp/>this<sp/>file<sp/>to<sp/>suit<sp/>their<sp/>platform.<sp/>Adopters<sp/>are</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>encouraged<sp/>to<sp/>submit<sp/>platform<sp/>specific<sp/>modifications<sp/>to<sp/>the<sp/>Khronos</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>group<sp/>so<sp/>that<sp/>they<sp/>can<sp/>be<sp/>included<sp/>in<sp/>future<sp/>versions<sp/>of<sp/>this<sp/>file.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Please<sp/>submit<sp/>changes<sp/>by<sp/>filing<sp/>pull<sp/>requests<sp/>or<sp/>issues<sp/>on</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>the<sp/>EGL<sp/>Registry<sp/>repository<sp/>linked<sp/>above.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>Implementer&apos;s<sp/>Guidelines<sp/>for<sp/>information<sp/>about<sp/>where<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>should<sp/>be<sp/>located<sp/>on<sp/>your<sp/>system<sp/>and<sp/>for<sp/>more<sp/>details<sp/>of<sp/>its<sp/>use:</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>http://www.khronos.org/registry/implementers_guide.pdf</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>should<sp/>be<sp/>included<sp/>as</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;KHR/khrplatform.h&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>by<sp/>Khronos<sp/>client<sp/>API<sp/>header<sp/>files<sp/>that<sp/>use<sp/>its<sp/>types<sp/>and<sp/>defines.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>The<sp/>types<sp/>in<sp/>khrplatform.h<sp/>should<sp/>only<sp/>be<sp/>used<sp/>to<sp/>define<sp/>API-specific<sp/>types.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>Types<sp/>defined<sp/>in<sp/>khrplatform.h:</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>8<sp/><sp/>bit</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>8<sp/><sp/>bit</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_int16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>16<sp/>bit</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>16<sp/>bit</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>32<sp/>bit</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>32<sp/>bit</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>64<sp/>bit</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>64<sp/>bit</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_intptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>same<sp/>number<sp/>of<sp/>bits<sp/>as<sp/>a<sp/>pointer</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_uintptr_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>same<sp/>number<sp/>of<sp/>bits<sp/>as<sp/>a<sp/>pointer</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_ssize_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>size</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_usize_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>size</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_float_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signed<sp/><sp/><sp/>32<sp/>bit<sp/>floating<sp/>point</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_time_ns_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsigned<sp/>64<sp/>bit<sp/>time<sp/>in<sp/>nanoseconds</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_utime_nanoseconds_t<sp/>unsigned<sp/>time<sp/>interval<sp/>or<sp/>absolute<sp/>time<sp/>in</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nanoseconds</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_stime_nanoseconds_t<sp/>signed<sp/>time<sp/>interval<sp/>in<sp/>nanoseconds</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>khronos_boolean_enum_t<sp/><sp/><sp/><sp/><sp/><sp/>enumerated<sp/>boolean<sp/>type.<sp/>This<sp/>should</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>only<sp/>be<sp/>used<sp/>as<sp/>a<sp/>base<sp/>type<sp/>when<sp/>a<sp/>client<sp/>API&apos;s<sp/>boolean<sp/>type<sp/>is</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>an<sp/>enum.<sp/>Client<sp/>APIs<sp/>which<sp/>use<sp/>an<sp/>integer<sp/>or<sp/>other<sp/>type<sp/>for</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>booleans<sp/>cannot<sp/>use<sp/>this<sp/>as<sp/>the<sp/>base<sp/>type<sp/>for<sp/>their<sp/>boolean.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>Tokens<sp/>defined<sp/>in<sp/>khrplatform.h:</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_FALSE,<sp/>KHRONOS_TRUE<sp/>Enumerated<sp/>boolean<sp/>false/true<sp/>values.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_SUPPORT_INT64<sp/>is<sp/>1<sp/>if<sp/>64<sp/>bit<sp/>integers<sp/>are<sp/>supported;<sp/>otherwise<sp/>0.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_SUPPORT_FLOAT<sp/>is<sp/>1<sp/>if<sp/>floats<sp/>are<sp/>supported;<sp/>otherwise<sp/>0.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>Calling<sp/>convention<sp/>macros<sp/>defined<sp/>in<sp/>this<sp/>file:</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_APICALL</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_APIENTRY</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>KHRONOS_APIATTRIBUTES</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>These<sp/>may<sp/>be<sp/>used<sp/>in<sp/>function<sp/>prototypes<sp/>as:</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>KHRONOS_APICALL<sp/>void<sp/>KHRONOS_APIENTRY<sp/>funcname(</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>arg1,</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>arg2)<sp/>KHRONOS_APIATTRIBUTES;</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__SCITECH_SNAP__)<sp/>&amp;&amp;<sp/>!defined(KHRONOS_STATIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_STATIC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>Definition<sp/>of<sp/>KHRONOS_APICALL</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>This<sp/>precedes<sp/>the<sp/>return<sp/>type<sp/>of<sp/>the<sp/>function<sp/>in<sp/>the<sp/>function<sp/>prototype.</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(KHRONOS_STATIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>the<sp/>preprocessor<sp/>constant<sp/>KHRONOS_STATIC<sp/>is<sp/>defined,<sp/>make<sp/>the</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>header<sp/>compatible<sp/>with<sp/>static<sp/>linking.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APICALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_WIN32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APICALL<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(__SYMBIAN32__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APICALL<sp/>IMPORT_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ANDROID__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APICALL<sp/>__attribute__((visibility(&quot;default&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="khrplatform_8h_1a5d0e04fe11e69b75470eb0a2a2546af3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APICALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/>Definition<sp/>of<sp/>KHRONOS_APIENTRY</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/>This<sp/>follows<sp/>the<sp/>return<sp/>type<sp/>of<sp/>the<sp/>function<sp/><sp/>and<sp/>precedes<sp/>the<sp/>function</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/>name<sp/>in<sp/>the<sp/>function<sp/>prototype.</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>!defined(_WIN32_WCE)<sp/>&amp;&amp;<sp/>!defined(KHRONOS_STATIC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Win32<sp/>but<sp/>not<sp/>WinCE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APIENTRY<sp/>__stdcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="khrplatform_8h_1aff6bea8ea37be81840add529306b32a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>KHRONOS_APIENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/>Definition<sp/>of<sp/>KHRONOS_APIATTRIBUTES</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/>This<sp/>follows<sp/>the<sp/>closing<sp/>parenthesis<sp/>of<sp/>the<sp/>function<sp/>prototype<sp/>arguments.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__ARMCC_2__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_APIATTRIBUTES<sp/>__softfp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="khrplatform_8h_1afd38e339bdb8f65b1ac0c8f214c427e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_APIATTRIBUTES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*-------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/>basic<sp/>type<sp/>definitions</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*-----------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(__STDC_VERSION__)<sp/>&amp;&amp;<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>199901L)<sp/>||<sp/>defined(__GNUC__)<sp/>||<sp/>defined(__SCO__)<sp/>||<sp/>defined(__USLC__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*<sp/>Using<sp/>&lt;stdint.h&gt;</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__VMS<sp/>)<sp/>||<sp/>defined(__sgi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*<sp/>Using<sp/>&lt;inttypes.h&gt;</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>!defined(__SCITECH_SNAP__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/>Win32</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__int32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>__int32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__int64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>__int64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__sun__)<sp/>||<sp/>defined(__digital__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*<sp/>Sun<sp/>or<sp/>Digital</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__arch64__)<sp/>||<sp/>defined(_LP64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__arch64__<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/>*<sp/>Hypothetical<sp/>platform<sp/>with<sp/>no<sp/>float<sp/>or<sp/>int64<sp/>support</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/>Generic<sp/>fallback</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1af409d81dd359bf16ec33a34810a61b7c" kindref="member">khronos_int32_t</ref>;</highlight></codeline>
+<codeline lineno="216" refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c4a2ace0aee51dc1c2c9827b90a31cf" kindref="member">khronos_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="217" refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref>;</highlight></codeline>
+<codeline lineno="218" refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref>;</highlight></codeline>
+<codeline lineno="219" refid="khrplatform_8h_1a5000aa7e3c9ca9d348b1d17326a35635" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_INT64<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="khrplatform_8h_1a2005a9aed8272da688b4f4ea414531bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_SUPPORT_FLOAT<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/>Types<sp/>that<sp/>are<sp/>(so<sp/>far)<sp/>the<sp/>same<sp/>on<sp/>all<sp/>platforms</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="khrplatform_8h_1afb103620f76ee8c038529cbf0375cfed" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1afb103620f76ee8c038529cbf0375cfed" kindref="member">khronos_int8_t</ref>;</highlight></codeline>
+<codeline lineno="229" refid="khrplatform_8h_1ab18f061b993d901e1161a4de18e8fc6b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1ab18f061b993d901e1161a4de18e8fc6b" kindref="member">khronos_uint8_t</ref>;</highlight></codeline>
+<codeline lineno="230" refid="khrplatform_8h_1aea31402f1f8fad5bec8bdc4dd0919da9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1aea31402f1f8fad5bec8bdc4dd0919da9" kindref="member">khronos_int16_t</ref>;</highlight></codeline>
+<codeline lineno="231" refid="khrplatform_8h_1a99a2182846c1c18bb6629ac57ccbe178" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a99a2182846c1c18bb6629ac57ccbe178" kindref="member">khronos_uint16_t</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*<sp/>Types<sp/>that<sp/>differ<sp/>between<sp/>LLP64<sp/>and<sp/>LP64<sp/>architectures<sp/>-<sp/>in<sp/>LLP64,</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/>pointers<sp/>are<sp/>64<sp/>bits,<sp/>but<sp/>&apos;long&apos;<sp/>is<sp/>still<sp/>32<sp/>bits.<sp/>Win64<sp/>appears</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*<sp/>to<sp/>be<sp/>the<sp/>only<sp/>LLP64<sp/>architecture<sp/>in<sp/>current<sp/>use.</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1a182f27e517e990b263b51dc7b5f4ca3f" kindref="member">khronos_intptr_t</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1ab5f63ab277fa98e81850e4d15f87c19b" kindref="member">khronos_uintptr_t</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1a8bd045e2edc004c61c2586c7cbcff35d" kindref="member">khronos_ssize_t</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1a0e1021b0953a3d0e673c83cc66c58164" kindref="member">khronos_usize_t</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="khrplatform_8h_1a182f27e517e990b263b51dc7b5f4ca3f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a182f27e517e990b263b51dc7b5f4ca3f" kindref="member">khronos_intptr_t</ref>;</highlight></codeline>
+<codeline lineno="245" refid="khrplatform_8h_1ab5f63ab277fa98e81850e4d15f87c19b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1ab5f63ab277fa98e81850e4d15f87c19b" kindref="member">khronos_uintptr_t</ref>;</highlight></codeline>
+<codeline lineno="246" refid="khrplatform_8h_1a8bd045e2edc004c61c2586c7cbcff35d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a8bd045e2edc004c61c2586c7cbcff35d" kindref="member">khronos_ssize_t</ref>;</highlight></codeline>
+<codeline lineno="247" refid="khrplatform_8h_1a0e1021b0953a3d0e673c83cc66c58164" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a0e1021b0953a3d0e673c83cc66c58164" kindref="member">khronos_usize_t</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>KHRONOS_SUPPORT_FLOAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>Float<sp/>type</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="khrplatform_8h_1a1591fab40b33ac5df09dfe668d4c62fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a1591fab40b33ac5df09dfe668d4c62fe" kindref="member">khronos_float_t</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>KHRONOS_SUPPORT_INT64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Time<sp/>types</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*<sp/>These<sp/>types<sp/>can<sp/>be<sp/>used<sp/>to<sp/>represent<sp/>a<sp/>time<sp/>interval<sp/>in<sp/>nanoseconds<sp/>or</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*<sp/>an<sp/>absolute<sp/>Unadjusted<sp/>System<sp/>Time.<sp/><sp/>Unadjusted<sp/>System<sp/>Time<sp/>is<sp/>the<sp/>number</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>of<sp/>nanoseconds<sp/>since<sp/>some<sp/>arbitrary<sp/>system<sp/>event<sp/>(e.g.<sp/>since<sp/>the<sp/>last</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/>time<sp/>the<sp/>system<sp/>booted).<sp/><sp/>The<sp/>Unadjusted<sp/>System<sp/>Time<sp/>is<sp/>an<sp/>unsigned</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>64<sp/>bit<sp/>value<sp/>that<sp/>wraps<sp/>back<sp/>to<sp/>0<sp/>every<sp/>584<sp/>years.<sp/><sp/>Time<sp/>intervals</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*<sp/>may<sp/>be<sp/>either<sp/>signed<sp/>or<sp/>unsigned.</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="khrplatform_8h_1a7643cf38bfc46e0d120a42d586639856" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1a8c07fcf14a1c0f49618f9abd659a3c99" kindref="member">khronos_uint64_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a7643cf38bfc46e0d120a42d586639856" kindref="member">khronos_utime_nanoseconds_t</ref>;</highlight></codeline>
+<codeline lineno="268" refid="khrplatform_8h_1aaec967d90a72559fa6aa12e0160743f8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="khrplatform_8h_1a55dc5b71f5c76458b3bfaa7621520796" kindref="member">khronos_int64_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1aaec967d90a72559fa6aa12e0160743f8" kindref="member">khronos_stime_nanoseconds_t</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/>Dummy<sp/>value<sp/>used<sp/>to<sp/>pad<sp/>enum<sp/>types<sp/>to<sp/>32<sp/>bits.</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KHRONOS_MAX_ENUM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="khrplatform_8h_1af23931754c6a5adf1892efe8933bf788" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KHRONOS_MAX_ENUM<sp/>0x7FFFFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*<sp/>Enumerated<sp/>boolean<sp/>type</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/>Values<sp/>other<sp/>than<sp/>zero<sp/>should<sp/>be<sp/>considered<sp/>to<sp/>be<sp/>true.<sp/><sp/>Therefore</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*<sp/>comparisons<sp/>should<sp/>not<sp/>be<sp/>made<sp/>against<sp/>KHRONOS_TRUE.</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="285" refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a37d68e7202b4d30f7742acebb50d1ba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a37d68e7202b4d30f7742acebb50d1ba6" kindref="member">KHRONOS_FALSE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="286" refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a9275264520295ae24bc2033c05d6cb70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a9275264520295ae24bc2033c05d6cb70" kindref="member">KHRONOS_TRUE</ref><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="287" refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a47d7d559cf039488acac78e797bc3cf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64a47d7d559cf039488acac78e797bc3cf9" kindref="member">KHRONOS_BOOLEAN_ENUM_FORCE_SIZE</ref><sp/>=<sp/><ref refid="khrplatform_8h_1af23931754c6a5adf1892efe8933bf788" kindref="member">KHRONOS_MAX_ENUM</ref></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}<sp/><ref refid="khrplatform_8h_1a0b823cfbc138820708978d43a5f26c64" kindref="member">khronos_boolean_enum_t</ref>;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__khrplatform_h_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="glad/include/KHR/khrplatform.h"/>
+  </compounddef>
+</doxygen>

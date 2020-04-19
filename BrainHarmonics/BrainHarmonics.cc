@@ -63,48 +63,49 @@ extern "C" {
     // Originally designed to use SFML but switched to vtk to handle 3D computation
 
     // The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
-#include <vtkAutoInit.h>
-VTK_MODULE_INIT(vtkRenderingOpenGL2) // VTK was built with vtkRenderingOpenGL2
-VTK_MODULE_INIT(vtkRenderingFreeType)
-VTK_MODULE_INIT(vtkInteractionStyle)
-#include <vtkVersion.h>
-#include <vtkActor.h>
-#include <vtkActor2D.h>
-#include <vtkCamera.h>
-#include <vtkCellArray.h>
-#include <vtkCellData.h>
-#include <vtkColorTransferFunction.h>
-#include <vtkContourFilter.h>
-#include <vtkCoordinate.h>
-#include <vtkFloatArray.h>
-#include <vtkMath.h>
-#include <vtkParametricFunctionSource.h>
-#include <vtkPointData.h>
-#include <vtkPoints.h>
-#include <vtkPolygon.h>
-#include <vtkPolyData.h>
-#include <vtkPolyDataMapper.h>
-#include <vtkPolyDataMapper2D.h>
-#include <vtkAppendPolyData.h>
-#include <vtkProgrammableSource.h>
-#include <vtkProperty.h>
-#include <vtkProperty2D.h>
-#include <vtkRenderWindow.h>
-#include <vtkRenderer.h>
-#include <vtkRenderWindowInteractor.h>
-#include <vtkReverseSense.h>
-#include <vtkSmartPointer.h>
-#include <vtkSurfaceReconstructionFilter.h>
-#include <vtkTextActor.h>
-#include <vtkTextMapper.h>
-#include <vtkTextProperty.h>
-#include <vtkUnsignedCharArray.h>
-#include <vtkVertexGlyphFilter.h>
-#include <vtkXMLPolyDataWriter.h>
+    // Added path /usr/local/include/vtk-9.0/ due to Eclipse failure to successfully find include path
+#include </usr/local/include/vtk-9.0/vtkAutoInit.h>
+VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
+VTK_MODULE_INIT(vtkRenderingFreeType);
+VTK_MODULE_INIT(vtkInteractionStyle);
+#include </usr/local/include/vtk-9.0/vtkVersion.h>
+#include </usr/local/include/vtk-9.0/vtkActor.h>
+#include </usr/local/include/vtk-9.0/vtkActor2D.h>
+#include </usr/local/include/vtk-9.0/vtkCamera.h>
+#include </usr/local/include/vtk-9.0/vtkCellArray.h>
+#include </usr/local/include/vtk-9.0/vtkCellData.h>
+#include </usr/local/include/vtk-9.0/vtkColorTransferFunction.h>
+#include </usr/local/include/vtk-9.0/vtkContourFilter.h>
+#include </usr/local/include/vtk-9.0/vtkCoordinate.h>
+#include </usr/local/include/vtk-9.0/vtkFloatArray.h>
+#include </usr/local/include/vtk-9.0/vtkMath.h>
+#include </usr/local/include/vtk-9.0/vtkParametricFunctionSource.h>
+#include </usr/local/include/vtk-9.0/vtkPointData.h>
+#include </usr/local/include/vtk-9.0/vtkPoints.h>
+#include </usr/local/include/vtk-9.0/vtkPolygon.h>
+#include </usr/local/include/vtk-9.0/vtkPolyData.h>
+#include </usr/local/include/vtk-9.0/vtkPolyDataMapper.h>
+#include </usr/local/include/vtk-9.0/vtkPolyDataMapper2D.h>
+#include </usr/local/include/vtk-9.0/vtkAppendPolyData.h>
+#include </usr/local/include/vtk-9.0/vtkProgrammableSource.h>
+#include </usr/local/include/vtk-9.0/vtkProperty.h>
+#include </usr/local/include/vtk-9.0/vtkProperty2D.h>
+#include </usr/local/include/vtk-9.0/vtkRenderWindow.h>
+#include </usr/local/include/vtk-9.0/vtkRenderer.h>
+#include </usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h>
+#include </usr/local/include/vtk-9.0/vtkReverseSense.h>
+#include </usr/local/include/vtk-9.0/vtkSmartPointer.h>
+#include </usr/local/include/vtk-9.0/vtkSurfaceReconstructionFilter.h>
+#include </usr/local/include/vtk-9.0/vtkTextActor.h>
+#include </usr/local/include/vtk-9.0/vtkTextMapper.h>
+#include </usr/local/include/vtk-9.0/vtkTextProperty.h>
+#include </usr/local/include/vtk-9.0/vtkUnsignedCharArray.h>
+#include </usr/local/include/vtk-9.0/vtkVertexGlyphFilter.h>
+#include </usr/local/include/vtk-9.0/vtkXMLPolyDataWriter.h>
 #include <cmath>
 
-#include <vtkTransform.h>
-#include <vtkTransformPolyDataFilter.h>
+#include </usr/local/include/vtk-9.0/vtkTransform.h>
+#include </usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h>
 
 vtkSmartPointer<vtkRenderWindow> render_window;
 vtkSmartPointer<vtkRenderWindowInteractor> render_window_interactor;
@@ -1607,7 +1608,7 @@ int main(int argc, const char * argv[])
         {
         vtkIdType num_ids;
         vtkIdType *point_ids;
-        define_cellarrays[static_cellarrays_counter]->GetCell(cell_location, num_ids, point_ids);
+        //define_cellarrays[static_cellarrays_counter]->GetCell(cell_location, num_ids, point_ids);
         cell_location += 1 + num_ids;
         }
     

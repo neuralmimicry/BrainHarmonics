@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_dendrite_cleft" kind="class" language="C++" prot="public">
     <compoundname>DendriteCleft</compoundname>
     <basecompoundref refid="class_dendrite_branch" prot="public" virt="non-virtual">DendriteBranch</basecompoundref>
@@ -494,7 +494,7 @@
         <location file="BrainHarmonics/dendritecleft.h" line="39" column="1" bodyfile="BrainHarmonics/dendritecleft.h" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a428b8e5117f381a382e0071b936d42a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void DendriteCleft::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -517,7 +517,7 @@
         <location file="BrainHarmonics/dendritecleft.h" line="40" column="1" bodyfile="BrainHarmonics/dendritecleft.h" bodystart="40" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void DendriteCleft::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -536,22 +536,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="41" column="1" bodyfile="BrainHarmonics/dendritecleft.h" bodystart="41" bodyend="41"/>
-        <references refid="class_dendrite_cleft_1a3fee388d7023cfb460412e0322244ae2" compoundref="dendritecleft_8cc" startline="20" endline="66">ResetParameters</references>
-        <references refid="class_dendrite_cleft_1ac84d3e0cafecd1436c34162f687e3851" compoundref="dendritecleft_8cc" startline="79" endline="88">CreateNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1ab34af5363b25c6498aee429725a1c7db" compoundref="dendritecleft_8cc" startline="90" endline="109">CreateNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1a7650e1115baab30729da0b03a48da851" compoundref="dendritecleft_8cc" startline="117" endline="120">CloneNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1a93b542418482f3732380e33346e23bd2" compoundref="dendritecleft_8cc" startline="112" endline="115">CloneNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1a86e9943d9d140c2a06d7e222812c9548" compoundref="dendritecleft_8cc" startline="127" endline="130">DestroyNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1a630e00e2d1108f2a43bcac9466e4681b" compoundref="dendritecleft_8cc" startline="122" endline="125">DestroyNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1a65901c5659ca5eac161a26f15e0f437b" compoundref="dendritecleft_8cc" startline="132" endline="141">AddNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1a6d29f577ff12366f8f51804b13468395" compoundref="dendritecleft_8cc" startline="143" endline="162">AddNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1afaf06d4516355dfe2e0e4c33a00f0f1d" compoundref="dendritecleft_8cc" startline="165" endline="169">RemoveNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1ac29b12d4abcc47fa298ab9e95f578f0e" compoundref="dendritecleft_8cc" startline="171" endline="174">RemoveNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1a5eb3a8f143f63b852b8f5e245d385519" compoundref="dendritecleft_8cc" startline="176" endline="179">GetNeuroreceptor</references>
-        <references refid="class_dendrite_cleft_1a4a14361574777fb1d66fd4ed2d4f2492" compoundref="dendritecleft_8cc" startline="181" endline="184">GetNeuroreceptors</references>
-        <references refid="class_dendrite_cleft_1af4715ffbf1bf437523d07e37b7abc3e0" compoundref="dendritecleft_8cc" startline="187" endline="192">GrowthSurface</references>
-        <references refid="class_dendrite_cleft_1a0cb2fc6ad72bba55b5f65130006d4b12" compoundref="dendritecleft_8cc" startline="194" endline="200">GrowthVolume</references>
-        <references refid="class_dendrite_cleft_1a3a75af4d6fd97c9635134509f170a04e" compoundref="dendritecleft_8cc" startline="202" endline="260">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a3fee388d7023cfb460412e0322244ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -572,7 +556,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_dendrite_cleft_1a3a75af4d6fd97c9635134509f170a04e" compoundref="dendritecleft_8cc" startline="202" endline="260">Update</referencedby>
         <referencedby refid="class_dendrite_cleft_1abcb81284cd9bd7ee2863eecfb6b59f62" compoundref="dendritecleft_8h" startline="23" endline="34">DendriteCleft</referencedby>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1ac84d3e0cafecd1436c34162f687e3851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -592,7 +575,6 @@
         <location file="BrainHarmonics/dendritecleft.h" line="45" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="79" bodyend="88"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
         <referencedby refid="class_dendrite_cleft_1ab34af5363b25c6498aee429725a1c7db" compoundref="dendritecleft_8cc" startline="90" endline="109">CreateNeuroreceptors</referencedby>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1ab34af5363b25c6498aee429725a1c7db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -616,7 +598,6 @@
         <location file="BrainHarmonics/dendritecleft.h" line="47" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="90" bodyend="109"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
         <references refid="class_dendrite_cleft_1ac84d3e0cafecd1436c34162f687e3851" compoundref="dendritecleft_8cc" startline="79" endline="88">CreateNeuroreceptor</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a7650e1115baab30729da0b03a48da851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -642,7 +623,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="49" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="117" bodyend="120"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a93b542418482f3732380e33346e23bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -668,7 +648,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="51" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="112" bodyend="115"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a86e9943d9d140c2a06d7e222812c9548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -690,7 +669,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="53" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="127" bodyend="130"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a630e00e2d1108f2a43bcac9466e4681b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -712,7 +690,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="55" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="122" bodyend="125"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a65901c5659ca5eac161a26f15e0f437b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -736,7 +713,6 @@
         <location file="BrainHarmonics/dendritecleft.h" line="57" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="132" bodyend="141"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
         <referencedby refid="class_dendrite_cleft_1a6d29f577ff12366f8f51804b13468395" compoundref="dendritecleft_8cc" startline="143" endline="162">AddNeuroreceptors</referencedby>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a6d29f577ff12366f8f51804b13468395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -760,7 +736,6 @@
         <location file="BrainHarmonics/dendritecleft.h" line="59" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="143" bodyend="162"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
         <references refid="class_dendrite_cleft_1a65901c5659ca5eac161a26f15e0f437b" compoundref="dendritecleft_8cc" startline="132" endline="141">AddNeuroreceptor</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1afaf06d4516355dfe2e0e4c33a00f0f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -778,7 +753,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="61" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="165" bodyend="169"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1ac29b12d4abcc47fa298ab9e95f578f0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -800,7 +774,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="63" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="171" bodyend="174"/>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a5eb3a8f143f63b852b8f5e245d385519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> *</type>
@@ -823,7 +796,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="65" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="176" bodyend="179"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a4a14361574777fb1d66fd4ed2d4f2492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_cleft" kindref="compound">DendriteCleft</ref> * &gt;</type>
@@ -842,7 +814,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="67" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="181" bodyend="184"/>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1af4715ffbf1bf437523d07e37b7abc3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -865,7 +836,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="69" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="187" bodyend="192"/>
         <referencedby refid="class_dendrite_cleft_1a0cb2fc6ad72bba55b5f65130006d4b12" compoundref="dendritecleft_8cc" startline="194" endline="200">GrowthVolume</referencedby>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a0cb2fc6ad72bba55b5f65130006d4b12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -888,7 +858,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritecleft.h" line="71" column="1" bodyfile="BrainHarmonics/dendritecleft.cc" bodystart="194" bodyend="200"/>
         <references refid="class_dendrite_cleft_1af4715ffbf1bf437523d07e37b7abc3e0" compoundref="dendritecleft_8cc" startline="187" endline="192">GrowthSurface</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_cleft_1a3a75af4d6fd97c9635134509f170a04e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -912,7 +881,6 @@
         <references refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" compoundref="solid_8cc" startline="100" endline="107">Solid::SetObjectType</references>
         <references refid="universe_8h_1a76028f4d66e31c7b51113514a7713edc" compoundref="universe_8h" startline="57">TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1</references>
         <references refid="class_dendrite_cleft_1a42de9c556ce58c9f511031361755a0c3" compoundref="dendritecleft_8h" startline="76">neuroreceptor_list</references>
-        <referencedby refid="class_dendrite_cleft_1a7e09ccb70936deabde9c12457cec949c" compoundref="dendritecleft_8h" startline="41" endline="41">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1349,7 +1317,7 @@
       <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>RemoveSynapses</name></member>
       <member refid="class_dendrite_cleft_1a3fee388d7023cfb460412e0322244ae2" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetChannelMin</name></member>
@@ -1360,7 +1328,7 @@
       <member refid="class_dendrite_1ada331daa4464ae007b3f77612aa46937" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>setDendriteDiameterEnd</name></member>
       <member refid="class_dendrite_1af33658a5420b56cfd321d75ae5784302" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>setDendriteDiameterStart</name></member>
       <member refid="class_dendrite_1a9bc84d369ac487b095ed1641f89469d2" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>setDendriteLength</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1376,17 +1344,17 @@
       <member refid="class_dendrite_1a6fed149ffe00cf781a41a9f260f8eeb2" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>setMembraneCapacitance</name></member>
       <member refid="class_dendrite_1af6141643bf2c85404ae9c320611d1d31" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>setMembraneResistance</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>DendriteCleft</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>DendriteCleft</scope><name>SetWeakElectroweak</name></member>

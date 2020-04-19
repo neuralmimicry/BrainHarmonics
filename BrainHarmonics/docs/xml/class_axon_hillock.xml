@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_axon_hillock" kind="class" language="C++" prot="public">
     <compoundname>AxonHillock</compoundname>
     <basecompoundref refid="class_soma" prot="public" virt="non-virtual">Soma</basecompoundref>
@@ -377,7 +377,7 @@
         <location file="BrainHarmonics/axonhillock.h" line="40" column="1" bodyfile="BrainHarmonics/axonhillock.h" bodystart="40" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a0220cee0ad99ddc48496982078c1856c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void AxonHillock::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -400,7 +400,7 @@
         <location file="BrainHarmonics/axonhillock.h" line="41" column="1" bodyfile="BrainHarmonics/axonhillock.h" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void AxonHillock::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -419,21 +419,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="42" column="1" bodyfile="BrainHarmonics/axonhillock.h" bodystart="42" bodyend="42"/>
-        <references refid="class_axon_hillock_1acec1571ef0b74f7f5ce6699c9b459b4f" compoundref="axonhillock_8cc" startline="20" endline="65">ResetParameters</references>
-        <references refid="class_axon_hillock_1ae6b18ec6f2921b9d4461b89a9d72ab25" compoundref="axonhillock_8cc" startline="68" endline="77">CreateAxon</references>
-        <references refid="class_axon_hillock_1a15bf1a433f38b8b0c92e4a4efe22ec6f" compoundref="axonhillock_8cc" startline="79" endline="98">CreateAxons</references>
-        <references refid="class_axon_hillock_1ad54833cee03cfcacb5e88d174048aaa4" compoundref="axonhillock_8cc" startline="106" endline="109">CloneAxon</references>
-        <references refid="class_axon_hillock_1aa65cead56b10bda66dc256c68764a553" compoundref="axonhillock_8cc" startline="101" endline="104">CloneAxons</references>
-        <references refid="class_axon_hillock_1a031b2cc7292d023506a5124639a941a7" compoundref="axonhillock_8cc" startline="116" endline="119">DestroyAxon</references>
-        <references refid="class_axon_hillock_1a083c918c64c60f3cea1d39aa8e0c6fba" compoundref="axonhillock_8cc" startline="111" endline="114">DestroyAxons</references>
-        <references refid="class_axon_hillock_1a02bfbaea9ea7a160933f8500c8b41d6a" compoundref="axonhillock_8cc" startline="121" endline="130">AddAxon</references>
-        <references refid="class_axon_hillock_1a54a82227b96757f1c0d7450df6a3df37" compoundref="axonhillock_8cc" startline="132" endline="151">AddAxons</references>
-        <references refid="class_axon_hillock_1ae7c379ef3a70c8a43a0f105ccc94b54b" compoundref="axonhillock_8cc" startline="154" endline="158">RemoveAxon</references>
-        <references refid="class_axon_hillock_1a7f10edff727271408887d29a70e7e671" compoundref="axonhillock_8cc" startline="160" endline="163">RemoveAxons</references>
-        <references refid="class_axon_hillock_1a08fde7d1b8a40ba7a052315f95b743f0" compoundref="axonhillock_8cc" startline="165" endline="168">GetAxon</references>
-        <references refid="class_axon_hillock_1af35663768cbe818e092382519a6d73e3" compoundref="axonhillock_8cc" startline="170" endline="173">GetAxons</references>
-        <references refid="class_axon_hillock_1a5c5cd9008f1410898980528b959d668e" compoundref="axonhillock_8cc" startline="176" endline="195">Growth</references>
-        <references refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1acec1571ef0b74f7f5ce6699c9b459b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -454,7 +439,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">Update</referencedby>
         <referencedby refid="class_axon_hillock_1a250945e24a51475369b6c7881c0d955b" compoundref="axonhillock_8h" startline="24" endline="35">AxonHillock</referencedby>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1ae6b18ec6f2921b9d4461b89a9d72ab25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -475,7 +459,6 @@
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
         <referencedby refid="class_axon_hillock_1a15bf1a433f38b8b0c92e4a4efe22ec6f" compoundref="axonhillock_8cc" startline="79" endline="98">CreateAxons</referencedby>
         <referencedby refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">Update</referencedby>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a15bf1a433f38b8b0c92e4a4efe22ec6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -499,7 +482,6 @@
         <location file="BrainHarmonics/axonhillock.h" line="48" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="79" bodyend="98"/>
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
         <references refid="class_axon_hillock_1ae6b18ec6f2921b9d4461b89a9d72ab25" compoundref="axonhillock_8cc" startline="68" endline="77">CreateAxon</references>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1ad54833cee03cfcacb5e88d174048aaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -525,7 +507,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="50" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="106" bodyend="109"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1aa65cead56b10bda66dc256c68764a553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -551,7 +532,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="52" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="101" bodyend="104"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a031b2cc7292d023506a5124639a941a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -573,7 +553,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="54" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="116" bodyend="119"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a083c918c64c60f3cea1d39aa8e0c6fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -595,7 +574,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="56" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="111" bodyend="114"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a02bfbaea9ea7a160933f8500c8b41d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -619,7 +597,6 @@
         <location file="BrainHarmonics/axonhillock.h" line="58" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="121" bodyend="130"/>
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
         <referencedby refid="class_axon_hillock_1a54a82227b96757f1c0d7450df6a3df37" compoundref="axonhillock_8cc" startline="132" endline="151">AddAxons</referencedby>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a54a82227b96757f1c0d7450df6a3df37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -643,7 +620,6 @@
         <location file="BrainHarmonics/axonhillock.h" line="60" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="132" bodyend="151"/>
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
         <references refid="class_axon_hillock_1a02bfbaea9ea7a160933f8500c8b41d6a" compoundref="axonhillock_8cc" startline="121" endline="130">AddAxon</references>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1ae7c379ef3a70c8a43a0f105ccc94b54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -661,7 +637,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="62" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="154" bodyend="158"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a7f10edff727271408887d29a70e7e671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -683,7 +658,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="64" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="160" bodyend="163"/>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a08fde7d1b8a40ba7a052315f95b743f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> *</type>
@@ -706,7 +680,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="66" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="165" bodyend="168"/>
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1af35663768cbe818e092382519a6d73e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_hillock" kindref="compound">AxonHillock</ref> * &gt;</type>
@@ -725,7 +698,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="68" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="170" bodyend="173"/>
         <references refid="class_axon_hillock_1a110d655ded8e09306b224b6e940cd60b" compoundref="axonhillock_8h" startline="75">axon_list</references>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a5c5cd9008f1410898980528b959d668e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -744,7 +716,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/axonhillock.h" line="70" column="1" bodyfile="BrainHarmonics/axonhillock.cc" bodystart="176" bodyend="195"/>
         <referencedby refid="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" compoundref="axonhillock_8cc" startline="197" endline="255">Update</referencedby>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_hillock_1a5a6a6a93a98b32c303b9ee6320c09909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -777,7 +748,6 @@
         <references refid="class_soma_1a84739acd533862b115bd5cbe56da6c98" compoundref="soma_8h" startline="142">Soma::object_connection_list</references>
         <references refid="universe_8h_1add8b0e8ffe44dd6143388d9c9e4d743c" compoundref="universe_8h" startline="52">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_GEN1</references>
         <references refid="class_axon_hillock_1a5c5cd9008f1410898980528b959d668e" compoundref="axonhillock_8cc" startline="176" endline="195">Growth</references>
-        <referencedby refid="class_axon_hillock_1a830afd18810e0eaa11a9e7a500b8f0c4" compoundref="axonhillock_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1156,7 +1126,7 @@
       <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>RemoveSynapses</name></member>
       <member refid="class_axon_hillock_1acec1571ef0b74f7f5ce6699c9b459b4f" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetChannelMin</name></member>
@@ -1164,7 +1134,7 @@
       <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetCognitiveNetworkDeviceTag</name></member>
       <member refid="class_axon_hillock_1a0220cee0ad99ddc48496982078c1856c" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetCounter</name></member>
       <member refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" prot="public" virt="non-virtual" ambiguityscope="Neuron::"><scope>AxonHillock</scope><name>SetCounter</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1177,17 +1147,17 @@
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetLifespan</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>AxonHillock</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>AxonHillock</scope><name>SetWeakElectroweak</name></member>

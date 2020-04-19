@@ -1,4 +1,4 @@
-.TH "InterneuronSpace" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "InterneuronSpace" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -49,25 +49,25 @@ Inherited by \fBSchwannCell\fP\&.
 .RI "int \fBGetInterneuronSpaceDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetInterneuronSpaceDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetInterneuronSpaceDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -112,7 +112,7 @@ Inherited by \fBSchwannCell\fP\&.
 .RI "int \fBGetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "int \fBGetAllocatedInterneuronSpace\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -121,19 +121,19 @@ Inherited by \fBSchwannCell\fP\&.
 .RI "double \fBGetMinimumDistance\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBGetInterneuronSpaceList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBGetInterneuronSpaceList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -230,7 +230,7 @@ Definition at line 43 of file interneuronspace\&.h\&.
 
 .PP
 Definition at line 48 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::GetInterneuronSpaceList (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP InterneuronSpace::GetInterneuronSpaceList (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .SS "double InterneuronSpace::GetMinimumDistance (std::chrono::time_point< \fBClock\fP > event_time)"
 
@@ -262,49 +262,49 @@ Definition at line 162 of file interneuronspace\&.cc\&.
 Set initial type value 
 .PP
 Definition at line 22 of file interneuronspace\&.cc\&.
-.SS "void InterneuronSpace::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP InterneuronSpace::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .PP
 Definition at line 233 of file interneuronspace\&.cc\&.
-.SS "void InterneuronSpace::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP InterneuronSpace::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .PP
 Definition at line 261 of file interneuronspace\&.cc\&.
-.SS "void InterneuronSpace::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 54 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 50 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP InterneuronSpace::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 204 of file interneuronspace\&.cc\&.
-.SS "void InterneuronSpace::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 55 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 51 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetInterneuronSpaceDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetInterneuronSpaceDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 57 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP InterneuronSpace::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 206 of file interneuronspace\&.cc\&.
-.SS "void InterneuronSpace::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 52 of file interneuronspace\&.h\&.
-.SS "void InterneuronSpace::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP InterneuronSpace::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 53 of file interneuronspace\&.h\&.

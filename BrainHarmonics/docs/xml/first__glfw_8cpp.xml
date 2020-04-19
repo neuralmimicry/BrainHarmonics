@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="first__glfw_8cpp" kind="file" language="C++">
+    <compoundname>first_glfw.cpp</compoundname>
+    <includes refid="glad_8h" local="no">glad/glad.h</includes>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="2092">
+        <label>stdint.h</label>
+      </node>
+      <node id="2094">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2091">
+        <label>KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2092" relation="include">
+        </childnode>
+      </node>
+      <node id="2093">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="2089">
+        <label>first_glfw.cpp</label>
+        <link refid="first__glfw_8cpp"/>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+      </node>
+      <node id="2090">
+        <label>glad/glad.h</label>
+        <link refid="glad_8h"/>
+        <childnode refid="2091" relation="include">
+        </childnode>
+      </node>
+      <node id="2095">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="first__glfw_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="first_glfw.cpp" line="6" column="1" bodyfile="first_glfw.cpp" bodystart="6" bodyend="57"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+        <references refid="glad_8h_1a1f34fdf1c2f94c05c53d2a1cd3d80537" compoundref="glad_8c" startline="9703" endline="10035">gladLoadGLLoader</references>
+        <references refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" compoundref="glad_8h" startline="2686">glViewport</references>
+        <references refid="glad_8h_1afc250a2b6bf11f24bb73534a2f053c0d" compoundref="glad_8h" startline="2587">glClear</references>
+        <references refid="glad_8h_1a947db9ff944c4b78e652144c3dd1060c" compoundref="glad_8h" startline="746">GL_COLOR_BUFFER_BIT</references>
+        <references refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" compoundref="glad_8h" startline="3427">glMatrixMode</references>
+        <references refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" compoundref="glad_8h" startline="1128">GL_PROJECTION</references>
+        <references refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" compoundref="glad_8h" startline="3418">glLoadIdentity</references>
+        <references refid="glad_8h_1a724057c5248515bf71ba53b8dc90db6f" compoundref="glad_8h" startline="3436">glOrtho</references>
+        <references refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" compoundref="glad_8h" startline="1127">GL_MODELVIEW</references>
+        <references refid="glad_8h_1a9a0010822b3a45b62142878ad90926e6" compoundref="glad_8h" startline="3448">glRotatef</references>
+        <references refid="glad_8h_1a18a9548126ac9e9eb00f9cd26cb0ab85" compoundref="glad_8h" startline="2710">glBegin</references>
+        <references refid="glad_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glad_8h" startline="753">GL_TRIANGLES</references>
+        <references refid="glad_8h_1a156bc5fbf2770392dd3106c0af412235" compoundref="glad_8h" startline="2728">glColor3f</references>
+        <references refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" compoundref="glad_8h" startline="3097">glVertex3f</references>
+        <references refid="glad_8h_1acedf7461ab825274c1c407dcc0ddd56b" compoundref="glad_8h" startline="2818">glEnd</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="glad_8h" kindref="compound">glad/glad.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="first__glfw_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="first__glfw_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>making<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!glfwInit())</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref><sp/>=<sp/>glfwCreateWindow(640,480,</highlight><highlight class="stringliteral">&quot;first<sp/>exercise&quot;</highlight><highlight class="normal">,NULL,NULL);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>possible<sp/>time<sp/>to<sp/>include<sp/>the<sp/>glad<sp/>or<sp/>other<sp/>extension<sp/>loader<sp/>library<sp/>tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1f34fdf1c2f94c05c53d2a1cd3d80537" kindref="member">gladLoadGLLoader</ref>((<ref refid="glad_8h_1a90ad7e2ab6cd1b09bf0f5b9eebacc8a2" kindref="member">GLADloadproc</ref>)glfwGetProcAddress);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!glfwWindowShouldClose(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>)){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>up<sp/>viewport</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ratio;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwGetFramebufferSize(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,&amp;<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,&amp;<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>=<sp/>(float)<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>/(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" kindref="member">glViewport</ref>(0,0,<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1afc250a2b6bf11f24bb73534a2f053c0d" kindref="member">glClear</ref>(<ref refid="glad_8h_1a947db9ff944c4b78e652144c3dd1060c" kindref="member">GL_COLOR_BUFFER_BIT</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//setting<sp/>up<sp/>the<sp/>camera<sp/>its<sp/>a<sp/>matrix<sp/>I<sp/>guess?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//what<sp/>is<sp/>the<sp/>-1.f<sp/>buisiness?this<sp/>is<sp/>for<sp/>the<sp/>float<sp/>casting<sp/>on<sp/>the<sp/>fly,<sp/>its<sp/>more<sp/>appropriate<sp/>according<sp/>to<sp/>arthur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a724057c5248515bf71ba53b8dc90db6f" kindref="member">glOrtho</ref>(-ratio,ratio,-1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,-1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//rotating<sp/>triangle<sp/>part//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a9a0010822b3a45b62142878ad90926e6" kindref="member">glRotatef</ref>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)glfwGetTime()*50.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a18a9548126ac9e9eb00f9cd26cb0ab85" kindref="member">glBegin</ref>(<ref refid="glad_8h_1a6079e7a02a59adad65eb953d9482b1ed" kindref="member">GL_TRIANGLES</ref>);</highlight><highlight class="comment">//<sp/>is<sp/>this<sp/>already<sp/>invoking<sp/>the<sp/>opengl<sp/>code?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a156bc5fbf2770392dd3106c0af412235" kindref="member">glColor3f</ref>(1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/></highlight><highlight class="comment">//<sp/>i<sp/>think<sp/>tihs<sp/>is<sp/>binding<sp/>the<sp/>vertices<sp/>to<sp/>the<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" kindref="member">glVertex3f</ref>(-0.6<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,-0.4<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a156bc5fbf2770392dd3106c0af412235" kindref="member">glColor3f</ref>(1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/></highlight><highlight class="comment">//<sp/>i<sp/>think<sp/>tihs<sp/>is<sp/>binding<sp/>the<sp/>vertices<sp/>to<sp/>the<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" kindref="member">glVertex3f</ref>(0.6<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,-0.4<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a156bc5fbf2770392dd3106c0af412235" kindref="member">glColor3f</ref>(1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);<sp/></highlight><highlight class="comment">//<sp/>i<sp/>think<sp/>tihs<sp/>is<sp/>binding<sp/>the<sp/>vertices<sp/>to<sp/>the<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" kindref="member">glVertex3f</ref>(0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.6<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1acedf7461ab825274c1c407dcc0ddd56b" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>swap<sp/>the<sp/>buffering<sp/>for<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwSwapBuffers(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwDestroyWindow(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="first_glfw.cpp"/>
+  </compounddef>
+</doxygen>

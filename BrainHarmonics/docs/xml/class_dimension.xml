@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_dimension" kind="class" language="C++" prot="public">
     <compoundname>Dimension</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -639,7 +639,7 @@
         <referencedby refid="class_dimension_1af83732dba929ae01aca457e7d6121374" compoundref="dimension_8cc" startline="63" endline="105">ResetParameters</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a75c6a1a1e09c40b5860dc11a83384d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -661,7 +661,7 @@
         <location file="BrainHarmonics/dimension.h" line="85" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a7f655ea002e8f9614a8c5cfa1807c49c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetScale</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetScale</name>
@@ -682,7 +682,7 @@
         <location file="BrainHarmonics/dimension.h" line="87" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="25" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a0558d45fe020ba1d1895e521a411decb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetTime</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetTime</name>
@@ -703,7 +703,7 @@
         <location file="BrainHarmonics/dimension.h" line="89" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="26" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1af74dd7af3af95c0a51b001b6ad665300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetOffset</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetOffset</name>
@@ -724,7 +724,7 @@
         <location file="BrainHarmonics/dimension.h" line="91" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1aa323eaa2c592e498d48e0739009ec313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::IncScale</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>IncScale</name>
@@ -745,7 +745,7 @@
         <location file="BrainHarmonics/dimension.h" line="93" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="29" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a4bd8e584c3bb68ebd7ca0463f8905813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::DecScale</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>DecScale</name>
@@ -766,7 +766,7 @@
         <location file="BrainHarmonics/dimension.h" line="95" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="35" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1afc61c6d6d68ec0ed461458d504fec16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::IncTime</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>IncTime</name>
@@ -787,7 +787,7 @@
         <location file="BrainHarmonics/dimension.h" line="97" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="41" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a25978bcb1f62aa7ed909463d08d92ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::DecTime</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>DecTime</name>
@@ -808,7 +808,7 @@
         <location file="BrainHarmonics/dimension.h" line="99" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="47" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1aaf18cc220562b30f9e7aee92f16cc08e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::IncOffset</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>IncOffset</name>
@@ -829,7 +829,7 @@
         <location file="BrainHarmonics/dimension.h" line="101" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="53" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a2017e62d4b3caf31f4f1b6b5cf59a798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::DecOffset</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>DecOffset</name>
@@ -850,7 +850,7 @@
         <location file="BrainHarmonics/dimension.h" line="103" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="55" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a484621a7c6f9b43f6e251ba04e0fdf8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetObjectType</name>
@@ -887,9 +887,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dimension.h" line="107" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="107" bodyend="107"/>
-        <references refid="class_dimension_1af83732dba929ae01aca457e7d6121374" compoundref="dimension_8cc" startline="63" endline="105">ResetParameters</references>
-        <references refid="class_dimension_1a31e28c2777888449fad32843f6dd15ed" compoundref="dimension_8cc" startline="121" endline="176">AdjustCounters</references>
-        <references refid="class_dimension_1a663916c2573b6df4db02ccee5678a75d" compoundref="dimension_8cc" startline="178" endline="208">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1af83732dba929ae01aca457e7d6121374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -911,20 +908,12 @@
         <references refid="class_dimension_1ab39b7ff253ade59c5c2d807c511b4028" compoundref="dimension_8cc" startline="19" endline="22">TheTimeNow</references>
         <references refid="class_dimension_1ad3ba9c1c332756658b1e711c447831a3" compoundref="dimension_8h" startline="153">scale_time</references>
         <references refid="class_dimension_1a370bb42cca1211c7a6c66846ecec4dd9" compoundref="dimension_8h" startline="72">temporal_adjustment_list</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a479e5fe39e4f030d8c8ed49efaf3c9c5" compoundref="dimension_8h" startline="63">Dimension::CounterAdjustment::counter_begin</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a062d5881eff35aed345fb62bffe0beb2" compoundref="dimension_8h" startline="64">Dimension::CounterAdjustment::counter_last_update</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a9eda012b13936ea01baf94c4bbc68752" compoundref="dimension_8h" startline="65">Dimension::CounterAdjustment::counter_end</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a365f831bf98daa6ec0a65b0691b3d67f" compoundref="dimension_8h" startline="66">Dimension::CounterAdjustment::point_to_counter</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a970456a7eccf8a48476066a388a599da" compoundref="dimension_8h" startline="67">Dimension::CounterAdjustment::pool</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1a8962b1845d310b35b374988034c3866c" compoundref="dimension_8h" startline="68">Dimension::CounterAdjustment::interval</references>
-        <references refid="struct_dimension_1_1_counter_adjustment_1aa451d22451f69875aea9138f461f5b43" compoundref="dimension_8h" startline="69">Dimension::CounterAdjustment::shape</references>
         <referencedby refid="class_dimension_1a484621a7c6f9b43f6e251ba04e0fdf8b" compoundref="dimension_8cc" startline="57" endline="61">SetObjectType</referencedby>
         <referencedby refid="class_dimension_1a663916c2573b6df4db02ccee5678a75d" compoundref="dimension_8cc" startline="178" endline="208">Update</referencedby>
         <referencedby refid="class_dimension_1a9282c4669e8f97dce010324886d79a99" compoundref="dimension_8h" startline="48" endline="54">Dimension</referencedby>
-        <referencedby refid="class_dimension_1a72f494215a114cb43cecd9b170bcde51" compoundref="dimension_8h" startline="107" endline="107">GetObjectType</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a31e28c2777888449fad32843f6dd15ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::AdjustCounters</definition>
         <argsstring>(std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; currentTime)</argsstring>
         <name>AdjustCounters</name>
@@ -941,7 +930,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dimension.h" line="111" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="121" bodyend="176"/>
         <references refid="class_dimension_1a370bb42cca1211c7a6c66846ecec4dd9" compoundref="dimension_8h" startline="72">temporal_adjustment_list</references>
-        <referencedby refid="class_dimension_1a72f494215a114cb43cecd9b170bcde51" compoundref="dimension_8h" startline="107" endline="107">GetObjectType</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a663916c2573b6df4db02ccee5678a75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -961,10 +949,9 @@
         <location file="BrainHarmonics/dimension.h" line="113" column="1" bodyfile="BrainHarmonics/dimension.cc" bodystart="178" bodyend="208"/>
         <references refid="class_dimension_1af83732dba929ae01aca457e7d6121374" compoundref="dimension_8cc" startline="63" endline="105">ResetParameters</references>
         <references refid="class_dimension_1a8095020214e474081002dbf7d9ff9d42" compoundref="dimension_8h" startline="80">duration_since_last_event</references>
-        <referencedby refid="class_dimension_1a72f494215a114cb43cecd9b170bcde51" compoundref="dimension_8h" startline="107" endline="107">GetObjectType</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a6d3f7fa4a26b92d8ae6161a1b8bb8220" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetCharge</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetCharge</name>
@@ -986,7 +973,7 @@
         <location file="BrainHarmonics/dimension.h" line="115" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="115" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a8d73c050c67b0226572b4a1b08ae6594" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetSpin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetSpin</name>
@@ -1328,7 +1315,7 @@
         <location file="BrainHarmonics/dimension.h" line="133" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="133" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1aeec6887382d09e3d78382582ff4e7c33" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetGravitation</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetGravitation</name>
@@ -1350,7 +1337,7 @@
         <location file="BrainHarmonics/dimension.h" line="135" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="135" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a157cfa28dd6bc5518d622d01445ca827" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetWeak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeak</name>
@@ -1372,7 +1359,7 @@
         <location file="BrainHarmonics/dimension.h" line="136" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="136" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a1d2accef9e6adf747f5cc143ae4527c9" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetWeakElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeakElectroweak</name>
@@ -1394,7 +1381,7 @@
         <location file="BrainHarmonics/dimension.h" line="137" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="137" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1ad8c18ce6358904e01594092dca9f1311" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetElectromagnetic</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagnetic</name>
@@ -1416,7 +1403,7 @@
         <location file="BrainHarmonics/dimension.h" line="138" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="138" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1aead73fc6a25388d14b514b2170735b1b" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetElectromagneticElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagneticElectroweak</name>
@@ -1438,7 +1425,7 @@
         <location file="BrainHarmonics/dimension.h" line="139" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="139" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1ab9021cb6727ed590026bf870c638576d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetStrong</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrong</name>
@@ -1460,7 +1447,7 @@
         <location file="BrainHarmonics/dimension.h" line="140" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="140" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a2de864aaa4b1074684395dbe928468c1" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetStrongFundamental</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongFundamental</name>
@@ -1482,7 +1469,7 @@
         <location file="BrainHarmonics/dimension.h" line="141" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a9bd5480b1da689cd58bf61dac7169080" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::SetStrongResidual</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongResidual</name>
@@ -1504,7 +1491,7 @@
         <location file="BrainHarmonics/dimension.h" line="142" column="1" bodyfile="BrainHarmonics/dimension.h" bodystart="142" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="class_dimension_1a5b07f5c8558233c8f3488baf1fe3459a" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::PollElementaryForce</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
         <name>PollElementaryForce</name>
@@ -1524,7 +1511,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="class_dimension_1a278d8c3df7896eb01c55283482f8674a" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Dimension::AddTemporalAdjustment</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double *point_to_counter, double pool, int interval, int shape)</argsstring>
         <name>AddTemporalAdjustment</name>

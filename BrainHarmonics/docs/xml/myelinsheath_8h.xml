@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="myelinsheath_8h" kind="file" language="C++">
     <compoundname>myelinsheath.h</compoundname>
     <includes local="no">iostream</includes>
@@ -8,73 +8,73 @@
     <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
     <includedby refid="myelinsheath_8cc" local="yes">BrainHarmonics/myelinsheath.cc</includedby>
     <incdepgraph>
-      <node id="1079">
+      <node id="1197">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="1080" relation="include">
+        <childnode refid="1198" relation="include">
         </childnode>
-        <childnode refid="1081" relation="include">
+        <childnode refid="1199" relation="include">
         </childnode>
       </node>
-      <node id="1076">
+      <node id="1194">
         <label>BrainHarmonics/myelinsheath.h</label>
         <link refid="myelinsheath_8h"/>
-        <childnode refid="1077" relation="include">
+        <childnode refid="1195" relation="include">
         </childnode>
-        <childnode refid="1078" relation="include">
+        <childnode refid="1196" relation="include">
         </childnode>
-        <childnode refid="1079" relation="include">
+        <childnode refid="1197" relation="include">
         </childnode>
       </node>
-      <node id="1080">
+      <node id="1198">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="1077" relation="include">
+        <childnode refid="1195" relation="include">
         </childnode>
-        <childnode refid="1078" relation="include">
+        <childnode refid="1196" relation="include">
         </childnode>
-        <childnode refid="1081" relation="include">
+        <childnode refid="1199" relation="include">
         </childnode>
       </node>
-      <node id="1078">
+      <node id="1196">
         <label>vector</label>
       </node>
-      <node id="1081">
+      <node id="1199">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1082" relation="include">
+        <childnode refid="1200" relation="include">
         </childnode>
-        <childnode refid="1077" relation="include">
+        <childnode refid="1195" relation="include">
         </childnode>
-        <childnode refid="1083" relation="include">
+        <childnode refid="1201" relation="include">
         </childnode>
-        <childnode refid="1078" relation="include">
+        <childnode refid="1196" relation="include">
         </childnode>
       </node>
-      <node id="1083">
+      <node id="1201">
         <label>math.h</label>
       </node>
-      <node id="1077">
+      <node id="1195">
         <label>iostream</label>
       </node>
-      <node id="1082">
+      <node id="1200">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1084">
+      <node id="1202">
         <label>BrainHarmonics/myelinsheath.h</label>
         <link refid="myelinsheath_8h"/>
-        <childnode refid="1085" relation="include">
+        <childnode refid="1203" relation="include">
         </childnode>
-        <childnode refid="1086" relation="include">
+        <childnode refid="1204" relation="include">
         </childnode>
       </node>
-      <node id="1085">
+      <node id="1203">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="1086">
+      <node id="1204">
         <label>BrainHarmonics/myelinsheath.cc</label>
         <link refid="myelinsheath_8cc"/>
       </node>
@@ -124,8 +124,8 @@
 <codeline lineno="38" refid="class_myelin_sheath_1a10eef8601d129e7e2f28e8ed1ebc975c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1a10eef8601d129e7e2f28e8ed1ebc975c" kindref="member">GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Counter;<sp/>}</highlight></codeline>
 <codeline lineno="39" refid="class_myelin_sheath_1ac0c4142b6066e5982c54583e8ac01271" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1ac0c4142b6066e5982c54583e8ac01271" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="42" refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="41" refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1afb9cd377a71881558f48cf8bb226af77" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1ad0f6dbae2819f6642a92b8e85ec8f775" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>object_energy<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_myelin_sheath_1af53c8f36ee963168dec09b74a6be8e4c" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

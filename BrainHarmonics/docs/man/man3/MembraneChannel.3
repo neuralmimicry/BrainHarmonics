@@ -1,4 +1,4 @@
-.TH "MembraneChannel" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "MembraneChannel" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -47,28 +47,28 @@ Inherits \fBMembrane\fP\&.
 .RI "int \fBGetIons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBsetReceptorBindingState\fP (bool val)"
+.RI "\fBvoid\fP \fBsetReceptorBindingState\fP (bool \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBtoggleReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBtoggleReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBsetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.RI "\fBvoid\fP \fBsetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBsetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBsetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetIons\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetIons\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -231,37 +231,37 @@ Definition at line 166 of file membranechannel\&.cc\&.
 
 .PP
 Definition at line 20 of file membranechannel\&.cc\&.
-.SS "void MembraneChannel::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP MembraneChannel::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBMembrane\fP\&.
 .PP
 Definition at line 67 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::setDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::setDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
 
 .PP
 Definition at line 65 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 68 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::SetIons (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::SetIons (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 69 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::setReceptorBindingState (bool val)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::setReceptorBindingState (bool val)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::setReceptorType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::setReceptorType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 66 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 64 of file membranechannel\&.h\&.
-.SS "void MembraneChannel::toggleReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP MembraneChannel::toggleReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 63 of file membranechannel\&.h\&.

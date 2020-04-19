@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_cognitive_input" kind="class" language="C++" prot="public">
     <compoundname>CognitiveInput</compoundname>
     <basecompoundref refid="class_cognitive_network" prot="public" virt="non-virtual">CognitiveNetwork</basecompoundref>
@@ -362,7 +362,7 @@
         <location file="BrainHarmonics/cognitiveinput.h" line="42" column="1" bodyfile="BrainHarmonics/cognitiveinput.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a37d38512fb190431b4baf8f990c077a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void CognitiveInput::SetType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetType</name>
@@ -383,7 +383,7 @@
         <location file="BrainHarmonics/cognitiveinput.h" line="44" column="1" bodyfile="BrainHarmonics/cognitiveinput.h" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a4f09c1f176b5406d95a14d7cb1ab75e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void CognitiveInput::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -405,7 +405,7 @@
         <location file="BrainHarmonics/cognitiveinput.h" line="45" column="1" bodyfile="BrainHarmonics/cognitiveinput.h" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a3498a8b5333606ef4d089e6c427ddf74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void CognitiveInput::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -426,7 +426,7 @@
         <location file="BrainHarmonics/cognitiveinput.h" line="46" column="1" bodyfile="BrainHarmonics/cognitiveinput.h" bodystart="46" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a23f56d012233f655e1530ab61d80c27f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void CognitiveInput::AddEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>AddEnergy</name>
@@ -445,8 +445,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/cognitiveinput.h" line="48" column="1" bodyfile="BrainHarmonics/cognitiveinput.h" bodystart="48" bodyend="51"/>
-        <references refid="class_cognitive_input_1a943605b820cc279533e19d24e11405c6" compoundref="cognitiveinput_8cc" startline="19" endline="57">ResetParameters</references>
-        <references refid="class_cognitive_input_1a93bd9d88194a545c9a85512edcbb6044" compoundref="cognitiveinput_8cc" startline="59" endline="92">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a943605b820cc279533e19d24e11405c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -467,7 +465,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_cognitive_input_1a93bd9d88194a545c9a85512edcbb6044" compoundref="cognitiveinput_8cc" startline="59" endline="92">Update</referencedby>
         <referencedby refid="class_cognitive_input_1a230ebb8f019af7e0bff51c13bc10c580" compoundref="cognitiveinput_8h" startline="26" endline="35">CognitiveInput</referencedby>
-        <referencedby refid="class_cognitive_input_1a23f56d012233f655e1530ab61d80c27f" compoundref="cognitiveinput_8h" startline="48" endline="51">AddEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cognitive_input_1a93bd9d88194a545c9a85512edcbb6044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -486,7 +483,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/cognitiveinput.h" line="55" column="1" bodyfile="BrainHarmonics/cognitiveinput.cc" bodystart="59" bodyend="92"/>
         <references refid="class_cognitive_input_1a943605b820cc279533e19d24e11405c6" compoundref="cognitiveinput_8cc" startline="19" endline="57">ResetParameters</references>
-        <referencedby refid="class_cognitive_input_1a23f56d012233f655e1530ab61d80c27f" compoundref="cognitiveinput_8h" startline="48" endline="51">AddEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -751,15 +747,15 @@
       <member refid="class_cognitive_network_1a83bc4047721417212fa1bbbfa64da5ee" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetGateKeeper</name></member>
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetLifespan</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetNeuronPool</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetOrbitalPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetSynapsePool</name></member>
       <member refid="class_cognitive_input_1a37d38512fb190431b4baf8f990c077a9" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetType</name></member>
       <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>CognitiveInput</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>CognitiveInput</scope><name>SetWeak</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_polygon" kind="class" language="C++" prot="public">
     <compoundname>Polygon</compoundname>
     <basecompoundref refid="class_polyhedron" prot="public" virt="non-virtual">Polyhedron</basecompoundref>
@@ -191,7 +191,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polygon.h" line="45" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="45" bodyend="45"/>
-        <references refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" compoundref="polygon_8cc" startline="19" endline="56">ResetParameters</references>
       </memberdef>
       <memberdef kind="function" id="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -213,7 +212,6 @@
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
         <referencedby refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" compoundref="polygon_8cc" startline="58" endline="88">Update</referencedby>
         <referencedby refid="class_polygon_1a581ad88f80bf40668e6c8b928c908bcb" compoundref="polygon_8h" startline="33" endline="44">Polygon</referencedby>
-        <referencedby refid="class_polygon_1a873f9acee059f717277b6414102dab16" compoundref="polygon_8h" startline="45" endline="45">~Polygon</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polygon_1a344626b07ee8dc40c71c3bec1480d2c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -233,7 +231,7 @@
         <location file="BrainHarmonics/polygon.h" line="50" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="50" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_polygon_1ad12083d8c152a1979b04bead93b6b730" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Polygon::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -253,7 +251,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polygon.h" line="52" column="1" bodyfile="BrainHarmonics/polygon.h" bodystart="52" bodyend="52"/>
-        <references refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" compoundref="polygon_8cc" startline="58" endline="88">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -273,7 +270,6 @@
         <location file="BrainHarmonics/polygon.h" line="54" column="1" bodyfile="BrainHarmonics/polygon.cc" bodystart="58" bodyend="88"/>
         <references refid="class_polygon_1a0e2824d12cd6b18c8b14c64ef4b2bf97" compoundref="polygon_8cc" startline="19" endline="56">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" compoundref="polygon_8h" startline="52" endline="52">SetCounter</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -281,59 +277,59 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="301">
+      <node id="300">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="302">
+      <node id="301">
         <label>Quad</label>
         <link refid="class_quad"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>Polyhedron</label>
+        <link refid="class_polyhedron"/>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
         <childnode refid="298" relation="public-inheritance">
         </childnode>
       </node>
       <node id="299">
-        <label>Polyhedron</label>
-        <link refid="class_polyhedron"/>
-        <childnode refid="300" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="298">
-        <label>Polygon</label>
-        <link refid="class_polygon"/>
-        <childnode refid="299" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="300">
         <label>Solid</label>
         <link refid="class_solid"/>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="306">
+      <node id="305">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="306" relation="usage">
+        <childnode refid="305" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="304">
+      <node id="303">
         <label>Polyhedron</label>
         <link refid="class_polyhedron"/>
-        <childnode refid="305" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="303">
-        <label>Polygon</label>
-        <link refid="class_polygon"/>
         <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="305">
+      <node id="302">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="304">
         <label>Solid</label>
         <link refid="class_solid"/>
-        <childnode refid="306" relation="public-inheritance">
+        <childnode refid="305" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

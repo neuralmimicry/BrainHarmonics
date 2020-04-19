@@ -1,4 +1,4 @@
-.TH "CognitiveNetwork" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "CognitiveNetwork" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,13 +37,13 @@ Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP
 .RI "int \fBGetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetCapacity\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "int \fBGetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetUsage\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -70,25 +70,25 @@ Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP
 .RI "int \fBGetCognitiveNetworkDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetGateKeeper\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetChannelMin\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetChannelMax\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.RI "\fBvoid\fP \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBtoggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
 .RI "int \fBGetOrbitalPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -103,28 +103,28 @@ Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP
 .RI "int \fBGetNeurotransmitterPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "int \fBSetOrbitalPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetOrbitalPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "int \fBSetNeuronPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetNeuronPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "int \fBSetSynapsePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetSynapsePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "int \fBSetNeurotransmitterPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetNeurotransmitterPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 .br
 .ti -1c
-.RI "void \fBSetCognitiveNetworkDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetCognitiveNetworkDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.RI "\fBvoid\fP \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -382,10 +382,10 @@ Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP
 .RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
 .RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
@@ -412,55 +412,55 @@ Inherited by \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBInterneuronSpace\fP
 .RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .ti -1c
-.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.RI "\fBvoid\fP \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .in -1c
 .SS "Protected Attributes"
@@ -955,7 +955,7 @@ Definition at line 262 of file cognitivenetwork\&.h\&.
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 263 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -1021,123 +1021,123 @@ Definition at line 837 of file cognitivenetwork\&.cc\&.
 
 .PP
 Definition at line 32 of file cognitivenetwork\&.cc\&.
-.SS "void CognitiveNetwork::SetCapacity (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetCapacity (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 43 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetChannelMax (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetChannelMax (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 60 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetChannelMin (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetChannelMin (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 59 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 259 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetCognitiveNetworkDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetCognitiveNetworkDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 76 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 56 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
 
 .PP
 Definition at line 61 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 282 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 283 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 57 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetGateKeeper (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 58 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 279 of file cognitivenetwork\&.h\&.
-.SS "int CognitiveNetwork::SetNeuronPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetNeuronPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 70 of file cognitivenetwork\&.h\&.
-.SS "int CognitiveNetwork::SetNeurotransmitterPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetNeurotransmitterPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 72 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.SS "\fBvoid\fP CognitiveNetwork::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 
 .PP
 Definition at line 26 of file cognitivenetwork\&.cc\&.
-.SS "int CognitiveNetwork::SetOrbitalPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetOrbitalPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 69 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 260 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 284 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 285 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 286 of file cognitivenetwork\&.h\&.
-.SS "int CognitiveNetwork::SetSynapsePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetSynapsePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 71 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetUsage (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetUsage (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 45 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 280 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 281 of file cognitivenetwork\&.h\&.
-.SS "void CognitiveNetwork::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveNetwork::toggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file cognitivenetwork\&.h\&.
@@ -1145,7 +1145,7 @@ Definition at line 62 of file cognitivenetwork\&.h\&.
 
 .PP
 Definition at line 146 of file cognitivenetwork\&.cc\&.
-.SS "void CognitiveNetwork::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.SS "\fBvoid\fP CognitiveNetwork::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
 
 .PP
 Definition at line 97 of file cognitivenetwork\&.cc\&.

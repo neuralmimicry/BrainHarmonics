@@ -1,4 +1,4 @@
-.TH "Synapse" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Synapse" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -47,25 +47,25 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "int \fBGetSynapseDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetTauCyclesAdd\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetTauCyclesDecay\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetChargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetDischargeType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetSynapseDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetSynapseDeviceTag\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -110,7 +110,7 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "int \fBGetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "double \fBGetDistance\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "int \fBGetAllocatedSynapse\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -119,19 +119,19 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "double \fBGetMinimumDistance\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBGetSynapseList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBGetSynapseList\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetDemand\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetNeuron\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBSendBareSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBSendTransmitterSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -238,7 +238,7 @@ Definition at line 173 of file synapse\&.cc\&.
 
 .PP
 Definition at line 48 of file synapse\&.h\&.
-.SS "void Synapse::GetSynapseList (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP Synapse::GetSynapseList (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .SS "int Synapse::GetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
@@ -260,49 +260,49 @@ Definition at line 163 of file synapse\&.cc\&.
 Set initial type value 
 .PP
 Definition at line 23 of file synapse\&.cc\&.
-.SS "void Synapse::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP Synapse::SendBareSpike (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .PP
 Definition at line 234 of file synapse\&.cc\&.
-.SS "void Synapse::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP Synapse::SendTransmitterSpike (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .PP
 Definition at line 262 of file synapse\&.cc\&.
-.SS "void Synapse::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetChargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 54 of file synapse\&.h\&.
-.SS "void Synapse::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Synapse::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 50 of file synapse\&.h\&.
-.SS "void Synapse::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP Synapse::SetDemand (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 205 of file synapse\&.cc\&.
-.SS "void Synapse::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetDischargeType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 55 of file synapse\&.h\&.
-.SS "void Synapse::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 51 of file synapse\&.h\&.
-.SS "void Synapse::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP Synapse::SetNeuron (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 207 of file synapse\&.cc\&.
-.SS "void Synapse::SetSynapseDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetSynapseDeviceTag (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 57 of file synapse\&.h\&.
-.SS "void Synapse::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetTauCyclesAdd (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 52 of file synapse\&.h\&.
-.SS "void Synapse::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Synapse::SetTauCyclesDecay (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 53 of file synapse\&.h\&.

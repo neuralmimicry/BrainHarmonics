@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="elementaryforce_8h" kind="file" language="C++">
     <compoundname>elementaryforce.h</compoundname>
     <includes local="no">iostream</includes>
@@ -10,68 +10,68 @@
     <includedby refid="elementaryforce_8cc" local="yes">BrainHarmonics/elementaryforce.cc</includedby>
     <includedby refid="universe_8cc" local="yes">BrainHarmonics/universe.cc</includedby>
     <incdepgraph>
-      <node id="755">
+      <node id="885">
         <label>vector</label>
       </node>
-      <node id="756">
+      <node id="886">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="757" relation="include">
+        <childnode refid="887" relation="include">
         </childnode>
-        <childnode refid="754" relation="include">
+        <childnode refid="884" relation="include">
         </childnode>
-        <childnode refid="758" relation="include">
+        <childnode refid="888" relation="include">
         </childnode>
-        <childnode refid="755" relation="include">
+        <childnode refid="885" relation="include">
         </childnode>
       </node>
-      <node id="758">
+      <node id="888">
         <label>math.h</label>
       </node>
-      <node id="754">
+      <node id="884">
         <label>iostream</label>
       </node>
-      <node id="757">
+      <node id="887">
         <label>chrono</label>
       </node>
-      <node id="753">
+      <node id="883">
         <label>BrainHarmonics/elementaryforce.h</label>
         <link refid="elementaryforce_8h"/>
-        <childnode refid="754" relation="include">
+        <childnode refid="884" relation="include">
         </childnode>
-        <childnode refid="755" relation="include">
+        <childnode refid="885" relation="include">
         </childnode>
-        <childnode refid="756" relation="include">
+        <childnode refid="886" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="761">
+      <node id="891">
         <label>BrainHarmonics/compositeforceparticle.cc</label>
         <link refid="compositeforceparticle_8cc"/>
       </node>
-      <node id="760">
+      <node id="890">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="763">
+      <node id="893">
         <label>BrainHarmonics/universe.cc</label>
         <link refid="universe_8cc"/>
       </node>
-      <node id="762">
+      <node id="892">
         <label>BrainHarmonics/elementaryforce.cc</label>
         <link refid="elementaryforce_8cc"/>
       </node>
-      <node id="759">
+      <node id="889">
         <label>BrainHarmonics/elementaryforce.h</label>
         <link refid="elementaryforce_8h"/>
-        <childnode refid="760" relation="include">
+        <childnode refid="890" relation="include">
         </childnode>
-        <childnode refid="761" relation="include">
+        <childnode refid="891" relation="include">
         </childnode>
-        <childnode refid="762" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
-        <childnode refid="763" relation="include">
+        <childnode refid="893" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -106,7 +106,7 @@
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24" refid="class_elementary_force" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_elementary_force" kindref="compound">ElementaryForce</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_universe" kindref="compound">Universe</ref></highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26" refid="class_elementary_force_1a6e57500586e9cd366f5cf76ea0299957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_elementary_force" kindref="compound">ElementaryForce</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_elementary_force_1a9bc6eb2a4c20ce83728a7c9a31b91f19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_composite_force_particle" kindref="compound">CompositeForceParticle</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="28" refid="class_elementary_force_1a1da5b85cdf3b79f3506dbdc4d877155a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_elementary_force_1a1da5b85cdf3b79f3506dbdc4d877155a" kindref="member">ElementaryForce</ref>()<sp/>:<sp/><ref refid="class_elementary_force" kindref="compound">ElementaryForce</ref>(0)<sp/>{}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -147,26 +147,26 @@
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a0974d6537c07dac2453d2a607324fa21" kindref="member">GetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a3478c8ad35bce240055da7d4a03e555e" kindref="member">GetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a0961328b260cb4dfb2ba54f4e284f0e8" kindref="member">ApplyEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a655a2c9489bfbbf15e05ba4953628134" kindref="member">ApplyGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aabf66a859e6e808a65c6929cd16f7597" kindref="member">ApplyWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a2d3a5444c771f35d66d4151c62f53b12" kindref="member">ApplyWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a0045a3380e468c6cfdbefce829888c1f" kindref="member">ApplyElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a3764a27b11760b6ead2c8a23ff25d77a" kindref="member">ApplyElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a8a16bff6b5df2b0ff918262bf6376ade" kindref="member">ApplyStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a80f1977e777aa0c8cce2124b666e6446" kindref="member">ApplyStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a185dc4e0b840505df27dbbed9fdcdc7b" kindref="member">ApplyStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a0961328b260cb4dfb2ba54f4e284f0e8" kindref="member">ApplyEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a655a2c9489bfbbf15e05ba4953628134" kindref="member">ApplyGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aabf66a859e6e808a65c6929cd16f7597" kindref="member">ApplyWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a2d3a5444c771f35d66d4151c62f53b12" kindref="member">ApplyWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a0045a3380e468c6cfdbefce829888c1f" kindref="member">ApplyElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a3764a27b11760b6ead2c8a23ff25d77a" kindref="member">ApplyElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a8a16bff6b5df2b0ff918262bf6376ade" kindref="member">ApplyStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a80f1977e777aa0c8cce2124b666e6446" kindref="member">ApplyStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a185dc4e0b840505df27dbbed9fdcdc7b" kindref="member">ApplyStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a3762cf66ed266b310446417215dec3fa" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a466c84ee4a50a29ef1f0fc6509ae3161" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aa36d5875964f7e2fc981f6fc5431be7f" kindref="member">SetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a093cdf0810e95f1d973bd9dc88c6788b" kindref="member">SetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a38d4f86f18a9f84a4198ee43bc90f6b4" kindref="member">SetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a67f6845bd715c29c17387d291b343a1b" kindref="member">SetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1af4f12038c33d7edf9f13339fcd632ec9" kindref="member">SetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aa1b5708cfab2069049fec5c924e1f246" kindref="member">SetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1afb00e9a10ec33eeb1daefce39b0468b7" kindref="member">SetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1ac25021d38c1d54bf711096ab37a461f6" kindref="member">SetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a3762cf66ed266b310446417215dec3fa" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a466c84ee4a50a29ef1f0fc6509ae3161" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aa36d5875964f7e2fc981f6fc5431be7f" kindref="member">SetGravitation</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a093cdf0810e95f1d973bd9dc88c6788b" kindref="member">SetWeak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a38d4f86f18a9f84a4198ee43bc90f6b4" kindref="member">SetWeakElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1a67f6845bd715c29c17387d291b343a1b" kindref="member">SetElectromagnetic</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1af4f12038c33d7edf9f13339fcd632ec9" kindref="member">SetElectromagneticElectroweak</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aa1b5708cfab2069049fec5c924e1f246" kindref="member">SetStrong</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1afb00e9a10ec33eeb1daefce39b0468b7" kindref="member">SetStrongFundamental</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1ac25021d38c1d54bf711096ab37a461f6" kindref="member">SetStrongResidual</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_force_1aa5ab479744dbf3e8578f8d2974299ff7" kindref="member">PollElementaryForce</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

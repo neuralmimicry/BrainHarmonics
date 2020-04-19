@@ -1,6 +1,5 @@
 var dir_d748bd73cd9ede3205ca8bf8e0560932 =
 [
-    [ "build", "dir_0d1f627b714bc7f512af0ed4db5a090f.html", "dir_0d1f627b714bc7f512af0ed4db5a090f" ],
     [ "CMakeFiles", "dir_854ef3c464b68d116150e9314a24bf24.html", "dir_854ef3c464b68d116150e9314a24bf24" ],
     [ "abstraction.cc", "abstraction_8cc.html", null ],
     [ "abstraction.h", "abstraction_8h.html", [
@@ -132,10 +131,6 @@ var dir_d748bd73cd9ede3205ca8bf8e0560932 =
     [ "monomer.cc", "monomer_8cc.html", null ],
     [ "monomer.h", "monomer_8h.html", [
       [ "Monomer", "class_monomer.html", "class_monomer" ]
-    ] ],
-    [ "multiscreen.cc", "multiscreen_8cc.html", null ],
-    [ "multiscreen.h", "multiscreen_8h.html", [
-      [ "MultiScreen", "class_multi_screen.html", "class_multi_screen" ]
     ] ],
     [ "myelinsheath.cc", "myelinsheath_8cc.html", null ],
     [ "myelinsheath.h", "myelinsheath_8h.html", [

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_messages" kind="class" language="C++" prot="public">
     <compoundname>Messages</compoundname>
     <includes refid="messages_8hpp" local="no">messages.hpp</includes>
@@ -57,7 +57,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/messages.hpp" line="21" column="1" bodyfile="BrainHarmonics/messages.cpp" bodystart="16" bodyend="19"/>
-        <references refid="class_messages_1a4263549c3f5c27b68279adbd7bcbcc30" compoundref="messages_8hpp" startline="22" endline="32">loadFromFile</references>
       </memberdef>
       <memberdef kind="function" id="class_messages_1a4263549c3f5c27b68279adbd7bcbcc30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -65,7 +64,7 @@
         <argsstring>(const std::string &amp;filename)</argsstring>
         <name>loadFromFile</name>
         <param>
-          <type>const std::string &amp;</type>
+          <type>const <ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref> &amp;</type>
           <declname>filename</declname>
         </param>
         <briefdescription>
@@ -75,7 +74,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/messages.hpp" line="22" column="1" bodyfile="BrainHarmonics/messages.hpp" bodystart="22" bodyend="32"/>
-        <referencedby refid="class_messages_1ab0060ed5667e5dd2d47811df6c42d462" compoundref="messages_8cpp" startline="16" endline="19">~Messages</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_messages_1a256f8190d9ef6e25db6a5030f9805b5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -105,7 +103,7 @@
         <location file="BrainHarmonics/messages.hpp" line="37" column="1" bodyfile="BrainHarmonics/messages.hpp" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_messages_1aecaad70bba58fd8d1a5640cb04088a2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Messages::SetCounter</definition>
         <argsstring>(unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -130,7 +128,7 @@
         <location file="BrainHarmonics/messages.hpp" line="41" column="1" bodyfile="BrainHarmonics/messages.hpp" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_messages_1a522996f78812e3a01e68214385db2cfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Messages::SetEnergy</definition>
         <argsstring>(double val)</argsstring>
         <name>SetEnergy</name>
@@ -147,7 +145,7 @@
         <location file="BrainHarmonics/messages.hpp" line="42" column="1" bodyfile="BrainHarmonics/messages.hpp" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_messages_1ac575287a8c19833d30480c5fb1769dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Messages::Creation</definition>
         <argsstring>()</argsstring>
         <name>Creation</name>

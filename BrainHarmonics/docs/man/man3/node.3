@@ -1,4 +1,4 @@
-.TH "node" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "node" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,7 +12,7 @@ node
 
 .in +1c
 .ti -1c
-.RI "\fBnode\fP (int xp, int yp, int d, int p)"
+.RI "\fBnode\fP (int xp, int yp, int d, int \fBp\fP)"
 .br
 .ti -1c
 .RI "\fB~node\fP ()"
@@ -30,10 +30,10 @@ node
 .RI "int \fBGetPriority\fP () const"
 .br
 .ti -1c
-.RI "void \fBupdatePriority\fP (const int &xDest, const int &yDest)"
+.RI "\fBvoid\fP \fBupdatePriority\fP (const int &xDest, const int &yDest)"
 .br
 .ti -1c
-.RI "void \fBnextLevel\fP (const int &i)"
+.RI "\fBvoid\fP \fBnextLevel\fP (const int &i)"
 .br
 .ti -1c
 .RI "const int & \fBestimate\fP (const int &xDest, const int &yDest) const"
@@ -74,11 +74,11 @@ Definition at line 29 of file node\&.h\&.
 
 .PP
 Definition at line 30 of file node\&.h\&.
-.SS "void node::nextLevel (const int & i)\fC [inline]\fP"
+.SS "\fBvoid\fP node::nextLevel (const int & i)\fC [inline]\fP"
 
 .PP
 Definition at line 40 of file node\&.h\&.
-.SS "void node::updatePriority (const int & xDest, const int & yDest)\fC [inline]\fP"
+.SS "\fBvoid\fP node::updatePriority (const int & xDest, const int & yDest)\fC [inline]\fP"
 
 .PP
 Definition at line 34 of file node\&.h\&.

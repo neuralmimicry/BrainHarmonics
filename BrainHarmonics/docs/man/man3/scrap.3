@@ -1,0 +1,58 @@
+.TH "scrap" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+scrap
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBcheck_path\fP (given)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBstring\fP \fBignore\fP = '\&.git build glad loading_lib'\&.split()"
+.br
+.ti -1c
+.RI "list \fBedited_files\fP = [os\&.path\&.join(place[0],file) for place \fBin\fP os\&.walk('\&.') for file \fBin\fP place[2] if \fBcheck_path\fP(place[0]) ]"
+.br
+.ti -1c
+.RI "\fBstring\fP \fBmessage\fP = 'incase I forgot some files to add \fBin\fP'"
+.br
+.ti -1c
+.RI "\fBstring\fP \fBcommand\fP = 'git add {}; git \fBcommit\fP \-\fBm\fP \\'{}\\''\&.format(' '\&.join(\fBedited_files\fP),\fBmessage\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def scrap\&.check_path ( given)"
+
+.PP
+Definition at line 6 of file scrap\&.py\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBstring\fP scrap\&.command = 'git add {}; git \fBcommit\fP \-\fBm\fP \\'{}\\''\&.format(' '\&.join(\fBedited_files\fP),\fBmessage\fP)"
+
+.PP
+Definition at line 20 of file scrap\&.py\&.
+.SS "list scrap\&.edited_files = [os\&.path\&.join(place[0],file) for place \fBin\fP os\&.walk('\&.') for file \fBin\fP place[2] if \fBcheck_path\fP(place[0]) ]"
+
+.PP
+Definition at line 16 of file scrap\&.py\&.
+.SS "\fBstring\fP scrap\&.ignore = '\&.git build glad loading_lib'\&.split()"
+
+.PP
+Definition at line 4 of file scrap\&.py\&.
+.SS "\fBstring\fP scrap\&.message = 'incase I forgot some files to add \fBin\fP'"
+
+.PP
+Definition at line 18 of file scrap\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

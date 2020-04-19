@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gravity',['GRAVITY',['../_brain_harmonics_8cc.html#a6801baa546c6112d19eb095111d24720',1,'BrainHarmonics.cc']]]
+  ['ether_5faddr_5flen',['ETHER_ADDR_LEN',['../sniffex_8h.html#abf4fcaacb1ad2010711b7c880ec2ed20',1,'sniffex.h']]]
 ];

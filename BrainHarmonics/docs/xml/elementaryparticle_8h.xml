@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="elementaryparticle_8h" kind="file" language="C++">
     <compoundname>elementaryparticle.h</compoundname>
     <includes local="no">iostream</includes>
@@ -11,73 +11,73 @@
     <includedby refid="elementaryparticle_8cc" local="yes">BrainHarmonics/elementaryparticle.cc</includedby>
     <includedby refid="universe_8cc" local="yes">BrainHarmonics/universe.cc</includedby>
     <incdepgraph>
-      <node id="772">
+      <node id="902">
         <label>BrainHarmonics/elementaryparticle.h</label>
         <link refid="elementaryparticle_8h"/>
-        <childnode refid="773" relation="include">
+        <childnode refid="903" relation="include">
         </childnode>
-        <childnode refid="774" relation="include">
+        <childnode refid="904" relation="include">
         </childnode>
-        <childnode refid="775" relation="include">
+        <childnode refid="905" relation="include">
         </childnode>
       </node>
-      <node id="774">
+      <node id="904">
         <label>vector</label>
       </node>
-      <node id="775">
+      <node id="905">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="776" relation="include">
+        <childnode refid="906" relation="include">
         </childnode>
-        <childnode refid="773" relation="include">
+        <childnode refid="903" relation="include">
         </childnode>
-        <childnode refid="777" relation="include">
+        <childnode refid="907" relation="include">
         </childnode>
-        <childnode refid="774" relation="include">
+        <childnode refid="904" relation="include">
         </childnode>
       </node>
-      <node id="777">
+      <node id="907">
         <label>math.h</label>
       </node>
-      <node id="773">
+      <node id="903">
         <label>iostream</label>
       </node>
-      <node id="776">
+      <node id="906">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="778">
+      <node id="908">
         <label>BrainHarmonics/elementaryparticle.h</label>
         <link refid="elementaryparticle_8h"/>
-        <childnode refid="779" relation="include">
+        <childnode refid="909" relation="include">
         </childnode>
-        <childnode refid="780" relation="include">
+        <childnode refid="910" relation="include">
         </childnode>
-        <childnode refid="781" relation="include">
+        <childnode refid="911" relation="include">
         </childnode>
-        <childnode refid="782" relation="include">
+        <childnode refid="912" relation="include">
         </childnode>
-        <childnode refid="783" relation="include">
+        <childnode refid="913" relation="include">
         </childnode>
       </node>
-      <node id="780">
+      <node id="910">
         <label>BrainHarmonics/compositeforceparticle.cc</label>
         <link refid="compositeforceparticle_8cc"/>
       </node>
-      <node id="779">
+      <node id="909">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="782">
+      <node id="912">
         <label>BrainHarmonics/elementaryparticle.cc</label>
         <link refid="elementaryparticle_8cc"/>
       </node>
-      <node id="783">
+      <node id="913">
         <label>BrainHarmonics/universe.cc</label>
         <link refid="universe_8cc"/>
       </node>
-      <node id="781">
+      <node id="911">
         <label>BrainHarmonics/elementaryforce.cc</label>
         <link refid="elementaryforce_8cc"/>
       </node>
@@ -113,7 +113,7 @@
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24" refid="class_elementary_particle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_elementary_particle" kindref="compound">ElementaryParticle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_universe" kindref="compound">Universe</ref></highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26" refid="class_elementary_particle_1a8be5cf46db5f9876c49d58e4ab84044b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_elementary_particle_1a8be5cf46db5f9876c49d58e4ab84044b" kindref="member">CompositeParticle</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_elementary_particle_1a9bc6eb2a4c20ce83728a7c9a31b91f19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_composite_force_particle" kindref="compound">CompositeForceParticle</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="28" refid="class_elementary_particle_1a4035ffd6ce053ea3390632fa530c6e21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_elementary_particle_1a4035ffd6ce053ea3390632fa530c6e21" kindref="member">ElementaryParticle</ref>()<sp/>:<sp/><ref refid="class_elementary_particle" kindref="compound">ElementaryParticle</ref>(0)<sp/>{}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -147,13 +147,13 @@
 <codeline lineno="58" refid="class_elementary_particle_1ad5f5a05770f94f4c8fee418d59098126" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1ad5f5a05770f94f4c8fee418d59098126" kindref="member">GetSpin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elementary_particle_spin;<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Values<sp/>given<sp/>in<sp/>multiples<sp/>of<sp/>1/2<sp/>from<sp/>0,<sp/>i.e.<sp/>a<sp/>val<sp/>of<sp/>3<sp/>=<sp/>1.5.<sp/>Even<sp/>numbers<sp/>(&amp;<sp/>0)<sp/>=<sp/>Bosons.<sp/>Odd<sp/>numbers<sp/>=<sp/>Fermions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59" refid="class_elementary_particle_1a85400dc97f66c1ce23d9d961ddb6b8f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a85400dc97f66c1ce23d9d961ddb6b8f3" kindref="member">GetMass</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elementary_particle_mass;<sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>GeV.<sp/>Can<sp/>be<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61" refid="class_elementary_particle_1a141316fd968cce8ecc5aa11ce0757d63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a141316fd968cce8ecc5aa11ce0757d63" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>elementary_particle_counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="62" refid="class_elementary_particle_1a37d7718faf6be68d4374bcc56816f30a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a37d7718faf6be68d4374bcc56816f30a" kindref="member">SetType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/><sp/><sp/><sp/>{<sp/>elementary_particle_type<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="63" refid="class_elementary_particle_1abbc6d3c58509c4121df55bfef716d2f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1abbc6d3c58509c4121df55bfef716d2f1" kindref="member">SetCharge</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>elementary_particle_charge<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="64" refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" kindref="member">SetSpin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>elementary_particle_spin<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a8a3b91409772f4091a782624a34024e7" kindref="member">SetMassIndex</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="61" refid="class_elementary_particle_1a141316fd968cce8ecc5aa11ce0757d63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a141316fd968cce8ecc5aa11ce0757d63" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>elementary_particle_counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_elementary_particle_1a37d7718faf6be68d4374bcc56816f30a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a37d7718faf6be68d4374bcc56816f30a" kindref="member">SetType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/><sp/><sp/><sp/>{<sp/>elementary_particle_type<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="63" refid="class_elementary_particle_1abbc6d3c58509c4121df55bfef716d2f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1abbc6d3c58509c4121df55bfef716d2f1" kindref="member">SetCharge</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>elementary_particle_charge<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" kindref="member">SetSpin</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>elementary_particle_spin<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a8a3b91409772f4091a782624a34024e7" kindref="member">SetMassIndex</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a778ff8188ecb369e533521ed4f94b034" kindref="member">SetMass</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1a778ff8188ecb369e533521ed4f94b034" kindref="member">SetMass</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1ac0f85f34bdfc1d42324201eb7c38e85e" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_elementary_particle_1abf5114c3d032bc9511a14aa7368ec450" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>

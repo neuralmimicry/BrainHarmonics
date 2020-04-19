@@ -17,6 +17,7 @@ var annotated_dup =
     [ "Dimension", "class_dimension.html", "class_dimension" ],
     [ "ElementaryForce", "class_elementary_force.html", "class_elementary_force" ],
     [ "ElementaryParticle", "class_elementary_particle.html", "class_elementary_particle" ],
+    [ "gladGLversionStruct", "structglad_g_lversion_struct.html", "structglad_g_lversion_struct" ],
     [ "Graph", "struct_graph.html", "struct_graph" ],
     [ "GridWithWeights", "struct_grid_with_weights.html", "struct_grid_with_weights" ],
     [ "InterneuronSpace", "class_interneuron_space.html", "class_interneuron_space" ],
@@ -28,7 +29,6 @@ var annotated_dup =
     [ "MembraneChannel", "class_membrane_channel.html", "class_membrane_channel" ],
     [ "Messages", "class_messages.html", "class_messages" ],
     [ "Monomer", "class_monomer.html", "class_monomer" ],
-    [ "MultiScreen", "class_multi_screen.html", "class_multi_screen" ],
     [ "MyelinSheath", "class_myelin_sheath.html", "class_myelin_sheath" ],
     [ "Neuron", "class_neuron.html", "class_neuron" ],
     [ "Neuroreceptor", "class_neuroreceptor.html", "class_neuroreceptor" ],
@@ -50,5 +50,6 @@ var annotated_dup =
     [ "Synapse", "class_synapse.html", "class_synapse" ],
     [ "SynapticVesicle", "class_synaptic_vesicle.html", "class_synaptic_vesicle" ],
     [ "Universe", "class_universe.html", "class_universe" ],
-    [ "UpdateAllCommand", "class_update_all_command.html", "class_update_all_command" ]
+    [ "UpdateAllCommand", "class_update_all_command.html", "class_update_all_command" ],
+    [ "Vertex", "struct_vertex.html", "struct_vertex" ]
 ];

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="polygon_8h" kind="file" language="C++">
     <compoundname>polygon.h</compoundname>
     <includes local="no">iostream</includes>
@@ -10,105 +10,105 @@
     <includedby refid="polygon_8cc" local="yes">BrainHarmonics/polygon.cc</includedby>
     <includedby refid="polyhedron_8cc" local="yes">BrainHarmonics/polyhedron.cc</includedby>
     <incdepgraph>
-      <node id="1346">
+      <node id="1464">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
-        <childnode refid="1344" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1347" relation="include">
+        <childnode refid="1465" relation="include">
         </childnode>
-        <childnode refid="1351" relation="include">
+        <childnode refid="1469" relation="include">
         </childnode>
       </node>
-      <node id="1347">
+      <node id="1465">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="1344" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1348" relation="include">
+        <childnode refid="1466" relation="include">
         </childnode>
       </node>
-      <node id="1343">
+      <node id="1461">
         <label>BrainHarmonics/polygon.h</label>
         <link refid="polygon_8h"/>
-        <childnode refid="1344" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1345" relation="include">
+        <childnode refid="1463" relation="include">
         </childnode>
-        <childnode refid="1346" relation="include">
+        <childnode refid="1464" relation="include">
         </childnode>
       </node>
-      <node id="1351">
+      <node id="1469">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="1349" relation="include">
+        <childnode refid="1467" relation="include">
         </childnode>
-        <childnode refid="1344" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1350" relation="include">
+        <childnode refid="1468" relation="include">
         </childnode>
-        <childnode refid="1348" relation="include">
+        <childnode refid="1466" relation="include">
         </childnode>
       </node>
-      <node id="1345">
+      <node id="1463">
         <label>vector</label>
       </node>
-      <node id="1348">
+      <node id="1466">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1349" relation="include">
+        <childnode refid="1467" relation="include">
         </childnode>
-        <childnode refid="1344" relation="include">
+        <childnode refid="1462" relation="include">
         </childnode>
-        <childnode refid="1350" relation="include">
+        <childnode refid="1468" relation="include">
         </childnode>
-        <childnode refid="1345" relation="include">
+        <childnode refid="1463" relation="include">
         </childnode>
       </node>
-      <node id="1350">
+      <node id="1468">
         <label>math.h</label>
       </node>
-      <node id="1344">
+      <node id="1462">
         <label>iostream</label>
       </node>
-      <node id="1349">
+      <node id="1467">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1352">
+      <node id="1470">
         <label>BrainHarmonics/polygon.h</label>
         <link refid="polygon_8h"/>
-        <childnode refid="1353" relation="include">
+        <childnode refid="1471" relation="include">
         </childnode>
-        <childnode refid="1354" relation="include">
+        <childnode refid="1472" relation="include">
         </childnode>
-        <childnode refid="1356" relation="include">
+        <childnode refid="1474" relation="include">
         </childnode>
-        <childnode refid="1357" relation="include">
+        <childnode refid="1475" relation="include">
         </childnode>
       </node>
-      <node id="1355">
+      <node id="1473">
         <label>BrainHarmonics/quad.cc</label>
         <link refid="quad_8cc"/>
       </node>
-      <node id="1354">
+      <node id="1472">
         <label>BrainHarmonics/quad.h</label>
         <link refid="quad_8h"/>
-        <childnode refid="1353" relation="include">
+        <childnode refid="1471" relation="include">
         </childnode>
-        <childnode refid="1355" relation="include">
+        <childnode refid="1473" relation="include">
         </childnode>
       </node>
-      <node id="1353">
+      <node id="1471">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="1356">
+      <node id="1474">
         <label>BrainHarmonics/polygon.cc</label>
         <link refid="polygon_8cc"/>
       </node>
-      <node id="1357">
+      <node id="1475">
         <label>BrainHarmonics/polyhedron.cc</label>
         <link refid="polyhedron_8cc"/>
       </node>
@@ -170,7 +170,7 @@
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="50" refid="class_polygon_1a344626b07ee8dc40c71c3bec1480d2c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polygon_1a344626b07ee8dc40c71c3bec1480d2c2" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>polygonCounter;<sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>polygonCounter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polygon_1ad12083d8c152a1979b04bead93b6b730" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>polygonCounter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polygon_1ab3fe58d8ffce2e16589958def88aa188" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

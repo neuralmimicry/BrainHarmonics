@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_schwann_cell" kind="class" language="C++" prot="public">
     <compoundname>SchwannCell</compoundname>
     <basecompoundref refid="class_interneuron_space" prot="public" virt="non-virtual">InterneuronSpace</basecompoundref>
@@ -254,7 +254,7 @@
         <location file="BrainHarmonics/schwanncell.h" line="41" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_schwann_cell_1a067f87983cb937d5fdb882c267e27921" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void SchwannCell::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -284,7 +284,7 @@
         <location file="BrainHarmonics/schwanncell.h" line="45" column="1" bodyfile="BrainHarmonics/schwanncell.h" bodystart="45" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_schwann_cell_1aadc0a342e29ccacbd8686b9431fb41c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void SchwannCell::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -327,53 +327,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="341">
+      <node id="340">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="340">
+      <node id="339">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="341" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="339">
-        <label>InterneuronSpace</label>
-        <link refid="class_interneuron_space"/>
         <childnode refid="340" relation="public-inheritance">
         </childnode>
       </node>
       <node id="338">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="337">
         <label>SchwannCell</label>
         <link refid="class_schwann_cell"/>
-        <childnode refid="339" relation="public-inheritance">
+        <childnode refid="338" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="345">
+      <node id="344">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="345" relation="usage">
+        <childnode refid="344" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="344">
+      <node id="343">
         <label>CognitiveNetwork</label>
         <link refid="class_cognitive_network"/>
-        <childnode refid="345" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="343">
-        <label>InterneuronSpace</label>
-        <link refid="class_interneuron_space"/>
         <childnode refid="344" relation="public-inheritance">
         </childnode>
       </node>
       <node id="342">
+        <label>InterneuronSpace</label>
+        <link refid="class_interneuron_space"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="341">
         <label>SchwannCell</label>
         <link refid="class_schwann_cell"/>
-        <childnode refid="343" relation="public-inheritance">
+        <childnode refid="342" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -607,15 +607,15 @@
       <member refid="class_interneuron_space_1ab34d72ef9135288690328217d7c0a388" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetInterneuronSpaceDeviceTag</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetLifespan</name></member>
       <member refid="class_interneuron_space_1a50aaa97f71011dafb583dc432817f477" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeuron</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeuronPool</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_cognitive_network_1ad95a0b25c7f61fc52322938eb13c9e3e" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetOrbitalPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>SchwannCell</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetSynapsePool</name></member>
       <member refid="class_interneuron_space_1ad6c1387daa261a3e8e1dba1402101d5c" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetTauCyclesAdd</name></member>
       <member refid="class_interneuron_space_1a7f44a965e377ecdc5c387af2b5d30d69" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetTauCyclesDecay</name></member>
       <member refid="class_cognitive_network_1a8b6b4afc47df279604be13bce77f5b0a" prot="public" virt="non-virtual"><scope>SchwannCell</scope><name>SetUsage</name></member>

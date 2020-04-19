@@ -4,10 +4,10 @@ var hierarchy =
       [ "mapper", "classmapper.html", null ]
     ] ],
     [ "Dimension::CounterAdjustment", "struct_dimension_1_1_counter_adjustment.html", null ],
+    [ "gladGLversionStruct", "structglad_g_lversion_struct.html", null ],
     [ "Graph< L >", "struct_graph.html", null ],
     [ "std::hash< tuple< int, int > >", "structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4.html", null ],
     [ "Messages", "class_messages.html", null ],
-    [ "MultiScreen", "class_multi_screen.html", null ],
     [ "node", "classnode.html", null ],
     [ "Neuron::ObjectConnection", "struct_neuron_1_1_object_connection.html", null ],
     [ "Soma::ObjectConnection", "struct_soma_1_1_object_connection.html", null ],
@@ -87,6 +87,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "Vertex", "struct_vertex.html", null ],
     [ "vtkCommand", null, [
       [ "UpdateAllCommand", "class_update_all_command.html", null ]
     ] ]

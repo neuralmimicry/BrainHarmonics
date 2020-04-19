@@ -1,4 +1,4 @@
-.TH "Neuroreceptor" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Neuroreceptor" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -47,28 +47,28 @@ Inherits \fBDendriteCleft\fP\&.
 .RI "int \fBGetIons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.RI "\fBvoid\fP \fBSetReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time, bool \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBToggleReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBToggleReceptorBindingState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBToggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBToggleDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool val)"
+.RI "\fBvoid\fP \fBSetDisabled\fP (std::chrono::time_point< \fBClock\fP > event_time, bool \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetReceptorType\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetIons\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetIons\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -231,37 +231,37 @@ Definition at line 157 of file neuroreceptor\&.cc\&.
 
 .PP
 Definition at line 20 of file neuroreceptor\&.cc\&.
-.SS "void Neuroreceptor::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBDendriteCleft\fP\&.
 .PP
 Definition at line 65 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetDisabled (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
 
 .PP
 Definition at line 63 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 66 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::SetIons (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetIons (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 67 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::SetReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time, bool val)\fC [inline]\fP"
 
 .PP
 Definition at line 60 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::SetReceptorType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::SetReceptorType (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP"
 
 .PP
 Definition at line 64 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::ToggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::ToggleDisabled (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file neuroreceptor\&.h\&.
-.SS "void Neuroreceptor::ToggleReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP Neuroreceptor::ToggleReceptorBindingState (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 61 of file neuroreceptor\&.h\&.

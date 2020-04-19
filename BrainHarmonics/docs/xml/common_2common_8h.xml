@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="common_2common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="glad_8h" local="no">glad/glad.h</includes>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includedby refid="common_2shader_8hpp" local="yes">common/shader.hpp</includedby>
+    <incdepgraph>
+      <node id="2001">
+        <label>common/common.h</label>
+        <link refid="common_2common_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+      </node>
+      <node id="2008">
+        <label>stdint.h</label>
+      </node>
+      <node id="2002">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2007">
+        <label>KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2008" relation="include">
+        </childnode>
+      </node>
+      <node id="2005">
+        <label>string</label>
+      </node>
+      <node id="2009">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="2003">
+        <label>string.h</label>
+      </node>
+      <node id="2006">
+        <label>glad/glad.h</label>
+        <link refid="glad_8h"/>
+        <childnode refid="2007" relation="include">
+        </childnode>
+      </node>
+      <node id="2004">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2010">
+        <label>common/common.h</label>
+        <link refid="common_2common_8h"/>
+        <childnode refid="2011" relation="include">
+        </childnode>
+      </node>
+      <node id="2013">
+        <label>transition_text.cpp</label>
+        <link refid="transition__text_8cpp"/>
+      </node>
+      <node id="2012">
+        <label>common/shader.cpp</label>
+        <link refid="common_2shader_8cpp"/>
+      </node>
+      <node id="2011">
+        <label>common/shader.hpp</label>
+        <link refid="common_2shader_8hpp"/>
+        <childnode refid="2012" relation="include">
+        </childnode>
+        <childnode refid="2013" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_COMMON_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_COMMON_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//standard<sp/>c++<sp/>libraries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;GL/glew.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="glad_8h" kindref="compound">glad/glad.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="common/common.h"/>
+  </compounddef>
+</doxygen>

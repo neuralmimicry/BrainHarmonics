@@ -1,4 +1,4 @@
-.TH "BrainHarmonics/BrainHarmonics.cc" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "BrainHarmonics/BrainHarmonics.cc" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -68,79 +68,69 @@ BrainHarmonics/BrainHarmonics.cc
 .br
 \fC#include 'sniffex\&.h'\fP
 .br
-\fC#include <vtkAutoInit\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkAutoInit\&.h>\fP
 .br
-\fC#include <vtkVersion\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkVersion\&.h>\fP
 .br
-\fC#include <vtkActor\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkActor\&.h>\fP
 .br
-\fC#include <vtkActor2D\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkActor2D\&.h>\fP
 .br
-\fC#include <vtkCamera\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkCamera\&.h>\fP
 .br
-\fC#include <vtkCellArray\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkCellArray\&.h>\fP
 .br
-\fC#include <vtkCellData\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkCellData\&.h>\fP
 .br
-\fC#include <vtkColorTransferFunction\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkColorTransferFunction\&.h>\fP
 .br
-\fC#include <vtkContourFilter\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkContourFilter\&.h>\fP
 .br
-\fC#include <vtkCoordinate\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkFloatArray\&.h>\fP
 .br
-\fC#include <vtkFloatArray\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkParametricFunctionSource\&.h>\fP
 .br
-\fC#include <vtkMath\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkPointData\&.h>\fP
 .br
-\fC#include <vtkParametricFunctionSource\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkPolygon\&.h>\fP
 .br
-\fC#include <vtkPointData\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkPolyDataMapper\&.h>\fP
 .br
-\fC#include <vtkPoints\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkPolyDataMapper2D\&.h>\fP
 .br
-\fC#include <vtkPolygon\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkAppendPolyData\&.h>\fP
 .br
-\fC#include <vtkPolyData\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkProgrammableSource\&.h>\fP
 .br
-\fC#include <vtkPolyDataMapper\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkProperty\&.h>\fP
 .br
-\fC#include <vtkPolyDataMapper2D\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkProperty2D\&.h>\fP
 .br
-\fC#include <vtkAppendPolyData\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderWindow\&.h>\fP
 .br
-\fC#include <vtkProgrammableSource\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderer\&.h>\fP
 .br
-\fC#include <vtkProperty\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderWindowInteractor\&.h>\fP
 .br
-\fC#include <vtkProperty2D\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkReverseSense\&.h>\fP
 .br
-\fC#include <vtkRenderWindow\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkSurfaceReconstructionFilter\&.h>\fP
 .br
-\fC#include <vtkRenderer\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkTextActor\&.h>\fP
 .br
-\fC#include <vtkRenderWindowInteractor\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkTextMapper\&.h>\fP
 .br
-\fC#include <vtkReverseSense\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkTextProperty\&.h>\fP
 .br
-\fC#include <vtkSmartPointer\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkUnsignedCharArray\&.h>\fP
 .br
-\fC#include <vtkSurfaceReconstructionFilter\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkVertexGlyphFilter\&.h>\fP
 .br
-\fC#include <vtkTextActor\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkXMLPolyDataWriter\&.h>\fP
 .br
-\fC#include <vtkTextMapper\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkTransform\&.h>\fP
 .br
-\fC#include <vtkTextProperty\&.h>\fP
-.br
-\fC#include <vtkVertexGlyphFilter\&.h>\fP
-.br
-\fC#include <vtkXMLPolyDataWriter\&.h>\fP
-.br
-\fC#include <cmath>\fP
-.br
-\fC#include <vtkTransform\&.h>\fP
-.br
-\fC#include <vtkTransformPolyDataFilter\&.h>\fP
+\fC#include </usr/local/include/vtk\-9\&.0/vtkTransformPolyDataFilter\&.h>\fP
 .br
 \fC#include <Python\&.h>\fP
 .br
@@ -281,7 +271,7 @@ BrainHarmonics/BrainHarmonics.cc
 .RI "\fBVTK_MODULE_INIT\fP (vtkInteractionStyle)"
 .br
 .ti -1c
-.RI "bool \fBmshandling\fP (std::vector< std::string > *m_messages, bool m_response, int m_ok, int m_fail)"
+.RI "bool \fBmshandling\fP (std::vector< \fBstd::string\fP > *m_messages, bool m_response, int m_ok, int m_fail)"
 .br
 .ti -1c
 .RI "std::vector< \fBUniverse\fP * > \fBCreateUniverse\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> *toAddto)"
@@ -299,25 +289,25 @@ BrainHarmonics/BrainHarmonics.cc
 .RI "bool \fBanalyseStream\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP *cognitive_network, std::vector< \fBNeuron\fP *> neuron_list, std::vector< \fBPoint\fP *> aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)"
 .br
 .ti -1c
-.RI "void \fBClearDimensionSelection\fP (std::vector< int > *dimension_list)"
+.RI "\fBvoid\fP \fBClearDimensionSelection\fP (std::vector< int > *dimension_list)"
 .br
 .ti -1c
-.RI "void \fBSelectDimension\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int whichDimension)"
+.RI "\fBvoid\fP \fBSelectDimension\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int whichDimension)"
 .br
 .ti -1c
-.RI "void \fBSelectMultiDimensions\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int how_manyDimensions)"
+.RI "\fBvoid\fP \fBSelectMultiDimensions\fP (const int PossibleDimensions[10], std::vector< int > *dimension_list, int how_manyDimensions)"
 .br
 .ti -1c
 .RI "bool \fBClearDynapse\fP (caerDeviceHandle *usb_handle)"
 .br
 .ti -1c
-.RI "void \fBexitCB\fP ()"
+.RI "\fBvoid\fP \fBexitCB\fP ()"
 .br
 .ti -1c
 .RI "int \fBinit\fP (int argc, const char *argv[])"
 .br
 .ti -1c
-.RI "void \fBinit_numpy\fP ()"
+.RI "\fBvoid\fP \fBinit_numpy\fP ()"
 .br
 .ti -1c
 .RI "int \fBmain\fP (int argc, const char *argv[])"
@@ -452,171 +442,1505 @@ BrainHarmonics/BrainHarmonics.cc
 .SS "#define DEBUG_PROGRAM   true"
 < \fBNeuron\fP container for other neuron components < \fBSynapse\fP, area of stimulus transmission/reception < \fBDendrite\fP, pre-Soma component of a neuron < \fBDendrite\fP branch, division/join of dendrites < \fBSoma\fP, component of a neuron < \fBAxon\fP Hillock, component of \fBSoma\fP < \fBAxon\fP, connected to \fBAxon\fP Hillock < \fBAxon\fP branch, division/join of \fBAxon\fP < \fBAxon\fP synaptic cleft, output area of neuron < Synaptic vesicle, container of neurotransmitters 
 .PP
-Definition at line 225 of file BrainHarmonics\&.cc\&.
+Definition at line 229 of file BrainHarmonics\&.cc\&.
 .SS "#define DEFAULTBIASES   'data/defaultbiases_values\&.txt'"
 < For array in CRC-32 call < For handling strings < For byte handling in CRC-32 < For reading files < Formatting output to console < For output to console < For open and closed maps in A* < For Sine, Cosine, Power, Fabs & Sqrt functions < For CRC-32 < For assigning priority queue in A* < For stringstream input from console < For handling strings < For thread handling < To use vectors, which automatically handle resizing, as arrays to keep track of instances 
 .PP
-Definition at line 55 of file BrainHarmonics\&.cc\&.
+Definition at line 57 of file BrainHarmonics\&.cc\&.
 .SS "#define GRAVITY   6\&.67384e\-11;"
 
 .PP
-Definition at line 258 of file BrainHarmonics\&.cc\&.
+Definition at line 262 of file BrainHarmonics\&.cc\&.
 .SS "#define INVALID_SOCKET   \-1"
 
 .PP
-Definition at line 229 of file BrainHarmonics\&.cc\&.
+Definition at line 233 of file BrainHarmonics\&.cc\&.
 .SS "#define LOWPOWERBIASES   'data/lowpowerbiases_values\&.txt'"
 
 .PP
-Definition at line 56 of file BrainHarmonics\&.cc\&.
+Definition at line 58 of file BrainHarmonics\&.cc\&.
 .SS "#define SOCKET_ADDRESS   '192\&.168\&.42\&.56'"
 
 .PP
-Definition at line 241 of file BrainHarmonics\&.cc\&.
+Definition at line 245 of file BrainHarmonics\&.cc\&.
 .SS "#define SOCKET_ERROR   \-1"
 
 .PP
-Definition at line 233 of file BrainHarmonics\&.cc\&.
+Definition at line 237 of file BrainHarmonics\&.cc\&.
 .SS "#define SOCKET_PORT   9876"
 
 .PP
-Definition at line 237 of file BrainHarmonics\&.cc\&.
+Definition at line 241 of file BrainHarmonics\&.cc\&.
 .SH "Function Documentation"
 .PP 
 .SS "bool analyseStream (std::chrono::time_point< \fBClock\fP > event_time, \fBCognitiveNetwork\fP * cognitive_network, std::vector< \fBNeuron\fP *> neuron_list, std::vector< \fBPoint\fP *> aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)"
 
 .PP
-Definition at line 679 of file BrainHarmonics\&.cc\&.
-.SS "void ClearDimensionSelection (std::vector< int > * dimension_list)"
+Definition at line 683 of file BrainHarmonics\&.cc\&.
+.SS "\fBvoid\fP ClearDimensionSelection (std::vector< int > * dimension_list)"
 
 .PP
-Definition at line 743 of file BrainHarmonics\&.cc\&.
+Definition at line 747 of file BrainHarmonics\&.cc\&.
 .SS "bool ClearDynapse (caerDeviceHandle * usb_handle)"
 
 .PP
-Definition at line 781 of file BrainHarmonics\&.cc\&.
+Definition at line 785 of file BrainHarmonics\&.cc\&.
 .SS "bool compare_swapSynapse (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBSynapse\fP *> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
 
 .PP
-Definition at line 656 of file BrainHarmonics\&.cc\&.
+Definition at line 660 of file BrainHarmonics\&.cc\&.
 .SS "bool CompareSwapElementaryParticle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBElementaryParticle\fP *> & origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)"
 
 .PP
-Definition at line 520 of file BrainHarmonics\&.cc\&.
+Definition at line 524 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<\fBUniverse\fP*> CreateUniverse (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> * toAddto)"
-< Defined energy level of \fBUniverse\fP
+< Defined energy level of \fBUniverse\fP 
+.br
+
+.br
+ < Create instance of \fBUniverse\fP from \fBUniverse\fP class 
+.br
+ < Set an energy level and attempt to maintain physics laws by keeping the total in the \fBUniverse\fP the same\&. Uses the maximum value for double\&. Levels of abstraction used to cater for environment limitations 
 .PP
-< Create instance of \fBUniverse\fP from \fBUniverse\fP class
-.PP
-< Set an energy level and attempt to maintain physics laws by keeping the total in the \fBUniverse\fP the same\&. Uses the maximum value for double\&. Levels of abstraction used to cater for environment limitations 
-.PP
-Definition at line 291 of file BrainHarmonics\&.cc\&.
+Definition at line 295 of file BrainHarmonics\&.cc\&.
 .SS "int DistanceBetweenNodes (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP > * nodesQuery, std::vector< int > * nodes_list, int nodesDimensions, double desired_distance)"
 
 .PP
-Definition at line 542 of file BrainHarmonics\&.cc\&.
-.SS "void exitCB ()"
+Definition at line 546 of file BrainHarmonics\&.cc\&.
+.SS "\fBvoid\fP exitCB ()"
 
 .PP
-Definition at line 893 of file BrainHarmonics\&.cc\&.
+Definition at line 897 of file BrainHarmonics\&.cc\&.
 .SS "int init (int argc, const char * argv[])"
 
 .PP
-Definition at line 906 of file BrainHarmonics\&.cc\&.
-.SS "void init_numpy ()"
+Definition at line 910 of file BrainHarmonics\&.cc\&.
+.SS "\fBvoid\fP init_numpy ()"
 
 .PP
-Definition at line 921 of file BrainHarmonics\&.cc\&.
+Definition at line 925 of file BrainHarmonics\&.cc\&.
 .SS "int main (int argc, const char * argv[])"
-< Add Dimensions for spatial identification
-.PP
-< Follow with the creation of quarks/leptons
-.PP
-< Define Force interaction between fundamentals
-.PP
-< Define Particle Force interaction between Composites, Protons/Neutrons
-.PP
-< Specify how Composites interact
-.PP
-< Composites form elements of periodic table
-.PP
-< Composites form molecules
-.PP
-< Composites form complex molecules
-.PP
-< Materials are a combination of \fBMatter\fP
-.PP
-< Materials can be formed into multiDimensional shapes
-.PP
-< Complex shapes are a combination of simpler forms
-.PP
-< Reducing high Dimensions to lower
-.PP
-< Further reduction
-.PP
-< Fundamental spatial description
-.PP
-< Interim function describing time before inclusion as \fBDimension\fP
-.PP
-< Network container for all AI components
-.PP
-< Example of orbital timing containing neurons
-.PP
-< \fBNeuron\fP container for other neuron components
-.PP
-< Dendritic synaptic cleft, input to the neuron
-.PP
-< \fBNeuroreceptor\fP, component of dendritic cleft
-.PP
-< \fBSynapse\fP, area of stimulus transmission/reception
-.PP
-< Between neurons is an energy pool
-.PP
-< \fBMembrane\fP, outer component of the neuron
-.PP
-< Potassium/Sodium channel, component of the membrane
-.PP
-< \fBDendrite\fP, pre-Soma component of a neuron
-.PP
-< \fBDendrite\fP branch, division/join of dendrites
-.PP
-< \fBSoma\fP, component of a neuron
-.PP
-< \fBAxon\fP Hillock, component of \fBSoma\fP
-.PP
-< \fBAxon\fP, connected to \fBAxon\fP Hillock
-.PP
-< \fBAxon\fP branch, division/join of \fBAxon\fP
-.PP
-< Myelin sheath, wraps around \fBAxon\fP
-.PP
-< Schwann Cell, component of a Myelin sheath
-.PP
-< \fBAxon\fP synaptic cleft, output area of neuron
-.PP
-< Synaptic vesicle, container of neurotransmitters
-.PP
-< \fBNeurotransmitter\fP, transfer component between clefts
-.PP
-< \fBSpike\fP
-.PP
-< Define graphics window size, X axis
+< Add Dimensions for spatial identification 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Follow with the creation of quarks/leptons 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Define Force interaction between fundamentals 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Define Particle Force interaction between Composites, Protons/Neutrons 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Specify how Composites interact 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Composites form elements of periodic table 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Composites form molecules 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Composites form complex molecules 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Materials are a combination of \fBMatter\fP 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Materials can be formed into multiDimensional shapes 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Complex shapes are a combination of simpler forms 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Reducing high Dimensions to lower 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Further reduction 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Fundamental spatial description 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Interim function describing time before inclusion as \fBDimension\fP 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Network container for all AI components 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Example of orbital timing containing neurons 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBNeuron\fP container for other neuron components 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Dendritic synaptic cleft, input to the neuron 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBNeuroreceptor\fP, component of dendritic cleft 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBSynapse\fP, area of stimulus transmission/reception 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Between neurons is an energy pool 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBMembrane\fP, outer component of the neuron 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Potassium/Sodium channel, component of the membrane 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBDendrite\fP, pre-Soma component of a neuron 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBDendrite\fP branch, division/join of dendrites 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBSoma\fP, component of a neuron 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBAxon\fP Hillock, component of \fBSoma\fP 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBAxon\fP, connected to \fBAxon\fP Hillock 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBAxon\fP branch, division/join of \fBAxon\fP 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Myelin sheath, wraps around \fBAxon\fP 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Schwann Cell, component of a Myelin sheath 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < \fBAxon\fP synaptic cleft, output area of neuron 
+.br
+
+.br
+
+.br
+
+.br
+
+.br
+ < Synaptic vesicle, container of neurotransmitters 
+.br
+
+.br
+
+.br
+
+.br
+ < \fBNeurotransmitter\fP, transfer component between clefts 
+.br
+
+.br
+
+.br
+ < \fBSpike\fP 
+.br
+
+.br
+ < Define graphics window size, X axis
 .PP
 < Define graphics window size, Y axis 
 .PP
-Definition at line 1155 of file BrainHarmonics\&.cc\&.
-.SS "bool mshandling (std::vector< std::string > * m_messages, bool m_response, int m_ok, int m_fail)"
+Definition at line 1162 of file BrainHarmonics\&.cc\&.
+.SS "bool mshandling (std::vector< \fBstd::string\fP > * m_messages, bool m_response, int m_ok, int m_fail)"
 
 .PP
-Definition at line 273 of file BrainHarmonics\&.cc\&.
-.SS "void SelectDimension (const int PossibleDimensions[10], std::vector< int > * dimension_list, int whichDimension)"
+Definition at line 277 of file BrainHarmonics\&.cc\&.
+.SS "\fBvoid\fP SelectDimension (const int PossibleDimensions[10], std::vector< int > * dimension_list, int whichDimension)"
 
 .PP
-Definition at line 748 of file BrainHarmonics\&.cc\&.
-.SS "void SelectMultiDimensions (const int PossibleDimensions[10], std::vector< int > * dimension_list, int how_manyDimensions)"
+Definition at line 752 of file BrainHarmonics\&.cc\&.
+.SS "\fBvoid\fP SelectMultiDimensions (const int PossibleDimensions[10], std::vector< int > * dimension_list, int how_manyDimensions)"
 
 .PP
-Definition at line 764 of file BrainHarmonics\&.cc\&.
+Definition at line 768 of file BrainHarmonics\&.cc\&.
 .SS "VTK_MODULE_INIT (vtkRenderingOpenGL2)"
 
 .SS "VTK_MODULE_INIT (vtkRenderingFreeType)"
@@ -628,163 +1952,163 @@ Definition at line 764 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkActor> > define_actors"
 
 .PP
-Definition at line 118 of file BrainHarmonics\&.cc\&.
+Definition at line 122 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkActor2D> > define_actors2D"
 
 .PP
-Definition at line 119 of file BrainHarmonics\&.cc\&.
+Definition at line 123 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkCellArray> > define_cellarrays"
 
 .PP
-Definition at line 110 of file BrainHarmonics\&.cc\&.
+Definition at line 114 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkContourFilter> > define_contourfilters"
 
 .PP
-Definition at line 114 of file BrainHarmonics\&.cc\&.
+Definition at line 118 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkPolyDataMapper> > define_datamappers"
 
 .PP
-Definition at line 116 of file BrainHarmonics\&.cc\&.
+Definition at line 120 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkPolyDataMapper2D> > define_datamappers2D"
 
 .PP
-Definition at line 117 of file BrainHarmonics\&.cc\&.
+Definition at line 121 of file BrainHarmonics\&.cc\&.
 .SS "vtkSmartPointer<vtkPoints> define_points = vtkSmartPointer<vtkPoints>::New()"
 
 .PP
-Definition at line 109 of file BrainHarmonics\&.cc\&.
+Definition at line 113 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkPolyData> > define_polydata"
 
 .PP
-Definition at line 111 of file BrainHarmonics\&.cc\&.
+Definition at line 115 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkRenderer> > define_renderers"
 
 .PP
-Definition at line 122 of file BrainHarmonics\&.cc\&.
+Definition at line 126 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkReverseSense> > define_reversals"
 
 .PP
-Definition at line 115 of file BrainHarmonics\&.cc\&.
+Definition at line 119 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkSurfaceReconstructionFilter> > define_surfaces"
 
 .PP
-Definition at line 113 of file BrainHarmonics\&.cc\&.
+Definition at line 117 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<vtkSmartPointer<vtkTextActor> > define_textactors"
 
 .PP
-Definition at line 120 of file BrainHarmonics\&.cc\&.
+Definition at line 124 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_actors2D_counter = 0"
 
 .PP
-Definition at line 149 of file BrainHarmonics\&.cc\&.
+Definition at line 153 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_actors_counter = 0"
 
 .PP
-Definition at line 148 of file BrainHarmonics\&.cc\&.
+Definition at line 152 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_cellarrays_counter = 0"
 
 .PP
-Definition at line 142 of file BrainHarmonics\&.cc\&.
+Definition at line 146 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_contourfilter_counter = 0"
 
 .PP
-Definition at line 144 of file BrainHarmonics\&.cc\&.
+Definition at line 148 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_datamappers2D_counter = 0"
 
 .PP
-Definition at line 147 of file BrainHarmonics\&.cc\&.
+Definition at line 151 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_datamappers_counter = 0"
 
 .PP
-Definition at line 146 of file BrainHarmonics\&.cc\&.
+Definition at line 150 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_points_counter = 0"
 
 .PP
-Definition at line 139 of file BrainHarmonics\&.cc\&.
+Definition at line 143 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_polydata_counter = 0"
 
 .PP
-Definition at line 141 of file BrainHarmonics\&.cc\&.
+Definition at line 145 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_polygons_counter = 0"
 
 .PP
-Definition at line 140 of file BrainHarmonics\&.cc\&.
+Definition at line 144 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_renderers_counter = 0"
 
 .PP
-Definition at line 150 of file BrainHarmonics\&.cc\&.
+Definition at line 154 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_reversals_counter = 0"
 
 .PP
-Definition at line 145 of file BrainHarmonics\&.cc\&.
+Definition at line 149 of file BrainHarmonics\&.cc\&.
 .SS "int dynamic_surfaces_counter = 0"
 
 .PP
-Definition at line 143 of file BrainHarmonics\&.cc\&.
+Definition at line 147 of file BrainHarmonics\&.cc\&.
 .SS "struct caer_dynapse_info dynapse_info"
 
 .PP
-Definition at line 261 of file BrainHarmonics\&.cc\&.
+Definition at line 265 of file BrainHarmonics\&.cc\&.
 .SS "vtkSmartPointer<vtkRenderWindow> render_window"
 
 .PP
-Definition at line 106 of file BrainHarmonics\&.cc\&.
+Definition at line 110 of file BrainHarmonics\&.cc\&.
 .SS "vtkSmartPointer<vtkRenderWindowInteractor> render_window_interactor"
 
 .PP
-Definition at line 107 of file BrainHarmonics\&.cc\&.
+Definition at line 111 of file BrainHarmonics\&.cc\&.
 .SS "int static_actors2D_counter = 0"
 
 .PP
-Definition at line 136 of file BrainHarmonics\&.cc\&.
+Definition at line 140 of file BrainHarmonics\&.cc\&.
 .SS "int static_actors_counter = 0"
 
 .PP
-Definition at line 135 of file BrainHarmonics\&.cc\&.
+Definition at line 139 of file BrainHarmonics\&.cc\&.
 .SS "int static_cellarrays_counter = 0"
 
 .PP
-Definition at line 129 of file BrainHarmonics\&.cc\&.
+Definition at line 133 of file BrainHarmonics\&.cc\&.
 .SS "int static_contourfilter_counter = 0"
 
 .PP
-Definition at line 131 of file BrainHarmonics\&.cc\&.
+Definition at line 135 of file BrainHarmonics\&.cc\&.
 .SS "int static_datamappers2D_counter = 0"
 
 .PP
-Definition at line 134 of file BrainHarmonics\&.cc\&.
+Definition at line 138 of file BrainHarmonics\&.cc\&.
 .SS "int static_datamappers_counter = 0"
 
 .PP
-Definition at line 133 of file BrainHarmonics\&.cc\&.
+Definition at line 137 of file BrainHarmonics\&.cc\&.
 .SS "int static_points_counter = 0"
 
 .PP
-Definition at line 126 of file BrainHarmonics\&.cc\&.
+Definition at line 130 of file BrainHarmonics\&.cc\&.
 .SS "int static_polydata_counter = 0"
 
 .PP
-Definition at line 128 of file BrainHarmonics\&.cc\&.
+Definition at line 132 of file BrainHarmonics\&.cc\&.
 .SS "int static_polygons_counter = 0"
 
 .PP
-Definition at line 127 of file BrainHarmonics\&.cc\&.
+Definition at line 131 of file BrainHarmonics\&.cc\&.
 .SS "int static_renderers_counter = 0"
 
 .PP
-Definition at line 137 of file BrainHarmonics\&.cc\&.
+Definition at line 141 of file BrainHarmonics\&.cc\&.
 .SS "int static_reversals_counter = 0"
 
 .PP
-Definition at line 132 of file BrainHarmonics\&.cc\&.
+Definition at line 136 of file BrainHarmonics\&.cc\&.
 .SS "int static_surfaces_counter = 0"
 
 .PP
-Definition at line 130 of file BrainHarmonics\&.cc\&.
+Definition at line 134 of file BrainHarmonics\&.cc\&.
 .SS "std::vector<\fBUniverse\fP*> universe_list"
 < Python interpreter < Top of the tree, begin with \fBUniverse\fP class < Add Dimensions for spatial identification < Materials are a combination of \fBMatter\fP < Materials can be formed into multiDimensional shapes < Fundamental spatial description < Interim function describing time before inclusion as \fBDimension\fP Top of the tree, begin with \fBUniverse\fP class 
 .PP
-Definition at line 196 of file BrainHarmonics\&.cc\&.
+Definition at line 200 of file BrainHarmonics\&.cc\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for BrainHarmonics from the source code\&.

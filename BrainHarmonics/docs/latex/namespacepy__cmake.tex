@@ -1,0 +1,84 @@
+\hypertarget{namespacepy__cmake}{}\section{py\+\_\+cmake Namespace Reference}
+\label{namespacepy__cmake}\index{py\+\_\+cmake@{py\+\_\+cmake}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}{loader}} = jinja2.\+File\+System\+Loader(searchpath=\char`\"{}\{\}\char`\"{}.\mbox{\hyperlink{glad_8h_ae2d3db041c6004a67047659b42f73a44}{format}}(os.\+getcwd()))
+\item 
+\mbox{\hyperlink{glad_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}} \mbox{\hyperlink{namespacepy__cmake_a384351d048ae243fa2f2f419db26f3ad}{fname}} = \char`\"{}vanilla\+\_\+exec\+\_\+lib\char`\"{}
+\item 
+\mbox{\hyperlink{namespacepy__cmake_a80080b0f64acfa3a823fad76e05499bf}{env}} = jinja2.\+Environment(\mbox{\hyperlink{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}{loader}}= \mbox{\hyperlink{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}{loader}})
+\item 
+\mbox{\hyperlink{namespacepy__cmake_a5931934f67619e9c0e91f7eb4180f5f0}{template}} = env.\+get\+\_\+template(\mbox{\hyperlink{namespacepy__cmake_a384351d048ae243fa2f2f419db26f3ad}{fname}})
+\item 
+list \mbox{\hyperlink{namespacepy__cmake_a2adfb240dd9e470e11d95645a68c30e9}{cpp\+\_\+files}} = \mbox{[}ele for ele \mbox{\hyperlink{glad_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} os.\+listdir() if \char`\"{}.cpp\char`\"{} in ele\mbox{]}
+\begin{DoxyCompactList}\small\item\em now do the regular expression looking through the present directory for the cpp files \end{DoxyCompactList}\item 
+list \mbox{\hyperlink{namespacepy__cmake_a59f5470f82dcb720da6c7a7c2d366a4f}{prefixes}} = \mbox{[}ele.\+split(\char`\"{}.\char`\"{})\mbox{[}0\mbox{]} for ele \mbox{\hyperlink{glad_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} \mbox{\hyperlink{namespacepy__cmake_a2adfb240dd9e470e11d95645a68c30e9}{cpp\+\_\+files}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy__cmake_a2adfb240dd9e470e11d95645a68c30e9}\label{namespacepy__cmake_a2adfb240dd9e470e11d95645a68c30e9}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!cpp\+\_\+files@{cpp\+\_\+files}}
+\index{cpp\+\_\+files@{cpp\+\_\+files}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{cpp\+\_\+files}{cpp\_files}}
+{\footnotesize\ttfamily list py\+\_\+cmake.\+cpp\+\_\+files = \mbox{[}ele for ele \mbox{\hyperlink{glad_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} os.\+listdir() if \char`\"{}.cpp\char`\"{} in ele\mbox{]}}
+
+
+
+now do the regular expression looking through the present directory for the cpp files 
+
+
+
+Definition at line 15 of file py\+\_\+cmake.\+py.
+
+\mbox{\Hypertarget{namespacepy__cmake_a80080b0f64acfa3a823fad76e05499bf}\label{namespacepy__cmake_a80080b0f64acfa3a823fad76e05499bf}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!env@{env}}
+\index{env@{env}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily py\+\_\+cmake.\+env = jinja2.\+Environment(\mbox{\hyperlink{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}{loader}}= \mbox{\hyperlink{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}{loader}})}
+
+
+
+Definition at line 9 of file py\+\_\+cmake.\+py.
+
+\mbox{\Hypertarget{namespacepy__cmake_a384351d048ae243fa2f2f419db26f3ad}\label{namespacepy__cmake_a384351d048ae243fa2f2f419db26f3ad}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!fname@{fname}}
+\index{fname@{fname}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{fname}{fname}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_ae84541b4f3d8e1ea24ec0f466a8c568b}{string}} py\+\_\+cmake.\+fname = \char`\"{}vanilla\+\_\+exec\+\_\+lib\char`\"{}}
+
+
+
+Definition at line 4 of file py\+\_\+cmake.\+py.
+
+\mbox{\Hypertarget{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}\label{namespacepy__cmake_a84a25d33eb535db93c795c9b431ad3e4}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!loader@{loader}}
+\index{loader@{loader}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily py\+\_\+cmake.\+loader = jinja2.\+File\+System\+Loader(searchpath=\char`\"{}\{\}\char`\"{}.\mbox{\hyperlink{glad_8h_ae2d3db041c6004a67047659b42f73a44}{format}}(os.\+getcwd()))}
+
+
+
+Definition at line 3 of file py\+\_\+cmake.\+py.
+
+\mbox{\Hypertarget{namespacepy__cmake_a59f5470f82dcb720da6c7a7c2d366a4f}\label{namespacepy__cmake_a59f5470f82dcb720da6c7a7c2d366a4f}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!prefixes@{prefixes}}
+\index{prefixes@{prefixes}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{prefixes}{prefixes}}
+{\footnotesize\ttfamily list py\+\_\+cmake.\+prefixes = \mbox{[}ele.\+split(\char`\"{}.\char`\"{})\mbox{[}0\mbox{]} for ele \mbox{\hyperlink{glad_8h_a83ad0ee7f1e06b59c90271716e689080}{in}} \mbox{\hyperlink{namespacepy__cmake_a2adfb240dd9e470e11d95645a68c30e9}{cpp\+\_\+files}}\mbox{]}}
+
+
+
+Definition at line 16 of file py\+\_\+cmake.\+py.
+
+\mbox{\Hypertarget{namespacepy__cmake_a5931934f67619e9c0e91f7eb4180f5f0}\label{namespacepy__cmake_a5931934f67619e9c0e91f7eb4180f5f0}} 
+\index{py\+\_\+cmake@{py\+\_\+cmake}!template@{template}}
+\index{template@{template}!py\+\_\+cmake@{py\+\_\+cmake}}
+\subsubsection{\texorpdfstring{template}{template}}
+{\footnotesize\ttfamily py\+\_\+cmake.\+template = env.\+get\+\_\+template(\mbox{\hyperlink{namespacepy__cmake_a384351d048ae243fa2f2f419db26f3ad}{fname}})}
+
+
+
+Definition at line 11 of file py\+\_\+cmake.\+py.
+

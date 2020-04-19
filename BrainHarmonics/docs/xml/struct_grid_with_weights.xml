@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="struct_grid_with_weights" kind="struct" language="C++" prot="public">
     <compoundname>GridWithWeights</compoundname>
     <basecompoundref refid="struct_square_grid" prot="public" virt="non-virtual">SquareGrid</basecompoundref>
@@ -17,6 +17,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="166" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="166" bodyend="-1"/>
+        <referencedby refid="struct_grid_with_weights_1a999c39922a9b507e4436b817592a7ff9" compoundref="implementation_01orig_8cpp" startline="168" endline="170">cost</referencedby>
         <referencedby refid="implementation_01orig_8cpp_1a78b3dfdcdf5ef633f554ecca192e5328" compoundref="implementation_01orig_8cpp" startline="173" endline="187">make_diagram4</referencedby>
       </memberdef>
       </sectiondef>
@@ -62,6 +63,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="168" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="168" bodyend="170"/>
+        <references refid="struct_grid_with_weights_1a03137c824b8c63cdeed414ef40f5b504" compoundref="implementation_01orig_8cpp" startline="166">forests</references>
       </memberdef>
       <memberdef kind="function" id="struct_grid_with_weights_1ad9eb67bf93deb3409ecf658288bc78f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -104,6 +106,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="174" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="174" bodyend="176"/>
+        <references refid="struct_grid_with_weights_1a03137c824b8c63cdeed414ef40f5b504" compoundref="implementation_01orig_8cpp" startline="166">forests</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -111,29 +114,9 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="172">
-        <label>SquareGrid</label>
-        <link refid="struct_square_grid"/>
-      </node>
-      <node id="171">
-        <label>GridWithWeights</label>
-        <link refid="struct_grid_with_weights"/>
-        <childnode refid="172" relation="public-inheritance">
-        </childnode>
-        <childnode refid="172" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="174">
         <label>SquareGrid</label>
         <link refid="struct_square_grid"/>
-        <childnode refid="175" relation="usage">
-          <edgelabel>DIRS</edgelabel>
-        </childnode>
-        <childnode refid="176" relation="usage">
-          <edgelabel>walls</edgelabel>
-        </childnode>
       </node>
       <node id="173">
         <label>GridWithWeights</label>
@@ -142,14 +125,28 @@
         </childnode>
         <childnode refid="174" relation="public-inheritance">
         </childnode>
-        <childnode refid="176" relation="usage">
-          <edgelabel>forests</edgelabel>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="176">
+        <label>SquareGrid</label>
+        <link refid="struct_square_grid"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>walls</edgelabel>
         </childnode>
       </node>
       <node id="175">
-        <label>array&lt; Location, 4 &gt;</label>
+        <label>GridWithWeights</label>
+        <link refid="struct_grid_with_weights"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="177" relation="usage">
+          <edgelabel>forests</edgelabel>
+        </childnode>
       </node>
-      <node id="176">
+      <node id="177">
         <label>unordered_set&lt; Location &gt;</label>
       </node>
     </collaborationgraph>

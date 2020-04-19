@@ -1,0 +1,113 @@
+.TH "opengl/heightmap.c" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+opengl/heightmap.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <stddef\&.h>\fP
+.br
+\fC#include <glad/glad\&.h>\fP
+.br
+\fC#include <GLFW/glfw3\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_CIRCLE_SIZE\fP   (5\&.0f)"
+.br
+.ti -1c
+.RI "#define \fBMAX_DISPLACEMENT\fP   (1\&.0f)"
+.br
+.ti -1c
+.RI "#define \fBDISPLACEMENT_SIGN_LIMIT\fP   (0\&.3f)"
+.br
+.ti -1c
+.RI "#define \fBMAX_ITER\fP   (200)"
+.br
+.ti -1c
+.RI "#define \fBNUM_ITER_AT_A_TIME\fP   (1)"
+.br
+.ti -1c
+.RI "#define \fBMAP_SIZE\fP   (10\&.0f)"
+.br
+.ti -1c
+.RI "#define \fBMAP_NUM_VERTICES\fP   (80)"
+.br
+.ti -1c
+.RI "#define \fBMAP_NUM_TOTAL_VERTICES\fP   (\fBMAP_NUM_VERTICES\fP*\fBMAP_NUM_VERTICES\fP)"
+.br
+.ti -1c
+.RI "#define \fBMAP_NUM_LINES\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DISPLACEMENT_SIGN_LIMIT   (0\&.3f)"
+
+.PP
+Definition at line 38 of file heightmap\&.c\&.
+.SS "#define MAP_NUM_LINES"
+\fBValue:\fP
+.PP
+.nf
+(3* (MAP_NUM_VERTICES - 1) * (MAP_NUM_VERTICES - 1) + \
+               2 * (MAP_NUM_VERTICES - 1))
+.fi
+.PP
+Definition at line 46 of file heightmap\&.c\&.
+.SS "#define MAP_NUM_TOTAL_VERTICES   (\fBMAP_NUM_VERTICES\fP*\fBMAP_NUM_VERTICES\fP)"
+
+.PP
+Definition at line 45 of file heightmap\&.c\&.
+.SS "#define MAP_NUM_VERTICES   (80)"
+
+.PP
+Definition at line 44 of file heightmap\&.c\&.
+.SS "#define MAP_SIZE   (10\&.0f)"
+
+.PP
+Definition at line 43 of file heightmap\&.c\&.
+.SS "#define MAX_CIRCLE_SIZE   (5\&.0f)"
+
+.PP
+Definition at line 36 of file heightmap\&.c\&.
+.SS "#define MAX_DISPLACEMENT   (1\&.0f)"
+
+.PP
+Definition at line 37 of file heightmap\&.c\&.
+.SS "#define MAX_ITER   (200)"
+
+.PP
+Definition at line 39 of file heightmap\&.c\&.
+.SS "#define NUM_ITER_AT_A_TIME   (1)"
+
+.PP
+Definition at line 40 of file heightmap\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "int main (int argc, char ** argv)"
+
+.PP
+Definition at line 399 of file heightmap\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

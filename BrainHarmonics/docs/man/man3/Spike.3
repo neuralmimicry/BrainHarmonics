@@ -1,4 +1,4 @@
-.TH "Spike" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Spike" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -35,10 +35,10 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "double \fBGetSpikeHeightReset\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "double \fBsetSpikeHeightReset\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetSpikeHeightReset\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBspikeReset\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBspikeReset\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
 .RI "double \fBpollSpike\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -87,11 +87,11 @@ Definition at line 56 of file spike\&.h\&.
 
 .PP
 Definition at line 21 of file spike\&.cc\&.
-.SS "double Spike::setSpikeHeightReset (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Spike::SetSpikeHeightReset (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 53 of file spike\&.h\&.
-.SS "void Spike::spikeReset (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
+.SS "\fBvoid\fP Spike::spikeReset (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP"
 
 .PP
 Definition at line 54 of file spike\&.h\&.

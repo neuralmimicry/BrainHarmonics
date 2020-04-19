@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_monomer" kind="class" language="C++" prot="public">
     <compoundname>Monomer</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -213,11 +213,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/monomer.h" line="48" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="48" bodyend="48"/>
-        <references refid="class_monomer_1a4651a4bd0a41d0698821421043e41126" compoundref="monomer_8cc" startline="20" endline="20">GetCounter</references>
-        <references refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" compoundref="monomer_8cc" startline="22" endline="22">SetCounter</references>
-        <references refid="class_monomer_1a16a692cf11117581c9b4ebbed3c04c9c" compoundref="monomer_8cc" startline="24" endline="73">ResetParameters</references>
-        <references refid="class_monomer_1ac03023c0d1bb67e5f11091af7ad3735d" compoundref="monomer_8cc" startline="75" endline="80">AddSolid</references>
-        <references refid="class_monomer_1a48dc2ffb5da8cf3dc3f4f56bba674de6" compoundref="monomer_8cc" startline="83" endline="117">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a4651a4bd0a41d0698821421043e41126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -235,10 +230,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/monomer.h" line="50" column="1" bodyfile="BrainHarmonics/monomer.cc" bodystart="20" bodyend="20"/>
-        <referencedby refid="class_monomer_1a802bf239fc55d16783736393edbd6899" compoundref="monomer_8h" startline="48" endline="48">~Monomer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -259,7 +253,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/monomer.h" line="52" column="1" bodyfile="BrainHarmonics/monomer.cc" bodystart="22" bodyend="22"/>
-        <referencedby refid="class_monomer_1a802bf239fc55d16783736393edbd6899" compoundref="monomer_8h" startline="48" endline="48">~Monomer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a16a692cf11117581c9b4ebbed3c04c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -283,7 +276,6 @@
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
         <referencedby refid="class_monomer_1a48dc2ffb5da8cf3dc3f4f56bba674de6" compoundref="monomer_8cc" startline="83" endline="117">Update</referencedby>
         <referencedby refid="class_monomer_1ae2b80466a0e724125aee173df34d1a6c" compoundref="monomer_8h" startline="34" endline="45">Monomer</referencedby>
-        <referencedby refid="class_monomer_1a802bf239fc55d16783736393edbd6899" compoundref="monomer_8h" startline="48" endline="48">~Monomer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ac03023c0d1bb67e5f11091af7ad3735d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -301,7 +293,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/monomer.h" line="56" column="1" bodyfile="BrainHarmonics/monomer.cc" bodystart="75" bodyend="80"/>
-        <referencedby refid="class_monomer_1a802bf239fc55d16783736393edbd6899" compoundref="monomer_8h" startline="48" endline="48">~Monomer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a48dc2ffb5da8cf3dc3f4f56bba674de6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -321,10 +312,9 @@
         <location file="BrainHarmonics/monomer.h" line="58" column="1" bodyfile="BrainHarmonics/monomer.cc" bodystart="83" bodyend="117"/>
         <references refid="class_monomer_1a16a692cf11117581c9b4ebbed3c04c9c" compoundref="monomer_8cc" startline="24" endline="73">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_monomer_1a802bf239fc55d16783736393edbd6899" compoundref="monomer_8h" startline="48" endline="48">~Monomer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a1ee35c888318e590082e6cd1772bb430" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetCharge</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetCharge</name>
@@ -346,7 +336,7 @@
         <location file="BrainHarmonics/monomer.h" line="60" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="60" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ad24a86a4c1ac62d1b0ce8040d6b08adf" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetSpin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetSpin</name>
@@ -688,7 +678,7 @@
         <location file="BrainHarmonics/monomer.h" line="78" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="78" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ab38d44b27a46d5630aeb5e889f927c09" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetGravitation</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetGravitation</name>
@@ -710,7 +700,7 @@
         <location file="BrainHarmonics/monomer.h" line="80" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="80" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ad4fe1db33f493575281e1a2fb35004ca" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetWeak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeak</name>
@@ -732,7 +722,7 @@
         <location file="BrainHarmonics/monomer.h" line="81" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="81" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ab887d7cfd2ecb557efb3ace59852019c" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetWeakElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeakElectroweak</name>
@@ -754,7 +744,7 @@
         <location file="BrainHarmonics/monomer.h" line="82" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="82" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a50e41be601b31450a97bfd15950cfb3d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetElectromagnetic</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagnetic</name>
@@ -776,7 +766,7 @@
         <location file="BrainHarmonics/monomer.h" line="83" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="83" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1aa034728b74053ed3df452ddc8f1b46e8" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetElectromagneticElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagneticElectroweak</name>
@@ -798,7 +788,7 @@
         <location file="BrainHarmonics/monomer.h" line="84" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="84" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a10b864f6bcad43f11a2316dbbe4c4742" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetStrong</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrong</name>
@@ -820,7 +810,7 @@
         <location file="BrainHarmonics/monomer.h" line="85" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ad9df06c1a8264bfdb514ef3ba04ef4c7" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetStrongFundamental</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongFundamental</name>
@@ -842,7 +832,7 @@
         <location file="BrainHarmonics/monomer.h" line="86" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1ae6ca57913da27fa749d33d1c4fed27ca" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::SetStrongResidual</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongResidual</name>
@@ -864,7 +854,7 @@
         <location file="BrainHarmonics/monomer.h" line="87" column="1" bodyfile="BrainHarmonics/monomer.h" bodystart="87" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="class_monomer_1a5b2375df1e19abdf6045c475d2ac23ca" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Monomer::PollElementaryForce</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
         <name>PollElementaryForce</name>
@@ -887,53 +877,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="225">
+      <node id="226">
         <label>Polymer</label>
         <link refid="class_polymer"/>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="224">
+      <node id="225">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="223">
+      <node id="224">
         <label>Monomer</label>
         <link refid="class_monomer"/>
-        <childnode refid="224" relation="public-inheritance">
+        <childnode refid="225" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="227">
+      <node id="228">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="227" relation="usage">
+        <childnode refid="228" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="226">
+      <node id="227">
         <label>Monomer</label>
         <link refid="class_monomer"/>
-        <childnode refid="227" relation="public-inheritance">
+        <childnode refid="228" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

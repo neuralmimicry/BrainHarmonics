@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['platform_5fid',['PLATFORM_ID',['../build_2_c_make_files_23_87_82_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCCompilerId.c'],['../build_2_c_make_files_23_87_82_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp'],['../_c_make_files_23_87_82_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCCompilerId.c'],['../_c_make_files_23_87_82_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp']]]
+  ['linmath_5fh_5fdefine_5fvec',['LINMATH_H_DEFINE_VEC',['../linmath_8h.html#ad7ae6ff6612bd489d7f6a5b6a9fdc775',1,'linmath.h']]],
+  ['linmath_5fh_5ffunc',['LINMATH_H_FUNC',['../linmath_8h.html#a4ebda4dd54615e1cac0ff1fde2725542',1,'linmath.h']]],
+  ['lowpowerbiases',['LOWPOWERBIASES',['../_brain_harmonics_8cc.html#a0146dd22f0f9d4398188379a2bcb8d32',1,'BrainHarmonics.cc']]]
 ];

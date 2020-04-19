@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="struct_square_grid" kind="struct" language="C++" prot="public">
     <compoundname>SquareGrid</compoundname>
     <derivedcompoundref refid="struct_grid_with_weights" prot="public" virt="non-virtual">GridWithWeights</derivedcompoundref>
@@ -34,7 +34,7 @@
       </sectiondef>
       <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="struct_square_grid_1aac91cba6573640c545485ed054089c87" prot="public" static="yes" mutable="no">
-        <type>array&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>, 4 &gt;</type>
+        <type><ref refid="glad_8h_1a52f38e7d822a46377fde7a02708eedb1" kindref="member">array</ref>&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref>, 4 &gt;</type>
         <definition>array&lt; SquareGrid::Location, 4 &gt; SquareGrid::DIRS</definition>
         <argsstring></argsstring>
         <name>DIRS</name>
@@ -75,6 +75,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="108" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="108" bodyend="-1"/>
+        <referencedby refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" compoundref="implementation_01orig_8cpp" startline="114" endline="118">in_bounds</referencedby>
       </memberdef>
       <memberdef kind="variable" id="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" prot="public" static="no" mutable="no">
         <type>unordered_set&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
@@ -88,6 +89,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="109" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="109" bodyend="-1"/>
+        <referencedby refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" compoundref="implementation_01orig_8cpp" startline="120" endline="122">passable</referencedby>
         <referencedby refid="implementation_01orig_8cpp_1accbfe5247dbef4f79673a2ff5dd05045" compoundref="implementation_01orig_8cpp" startline="148" endline="154">add_rect</referencedby>
       </memberdef>
       </sectiondef>
@@ -129,6 +131,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="114" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="114" bodyend="118"/>
+        <references refid="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" compoundref="implementation_01orig_8cpp" startline="108">height</references>
+        <referencedby refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" compoundref="implementation_01orig_8cpp" startline="124" endline="143">neighbors</referencedby>
       </memberdef>
       <memberdef kind="function" id="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -146,6 +150,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="120" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="120" bodyend="122"/>
+        <references refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" compoundref="implementation_01orig_8cpp" startline="109">walls</references>
+        <referencedby refid="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" compoundref="implementation_01orig_8cpp" startline="124" endline="143">neighbors</referencedby>
       </memberdef>
       <memberdef kind="function" id="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>vector&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
@@ -164,6 +170,8 @@
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="124" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="124" bodyend="143"/>
         <references refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" compoundref="implementation_01orig_8cpp" startline="106">DIRS</references>
+        <references refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" compoundref="implementation_01orig_8cpp" startline="114" endline="118">in_bounds</references>
+        <references refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" compoundref="implementation_01orig_8cpp" startline="120" endline="122">passable</references>
       </memberdef>
       <memberdef kind="function" id="struct_square_grid_1ae5debd1459b89aba9497f270f6d76d7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -202,6 +210,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="120" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="120" bodyend="124"/>
+        <references refid="struct_square_grid_1ad6b113fc3a49f5db5fbf9c8138e35634" compoundref="implementation_01orig_8cpp" startline="108">height</references>
       </memberdef>
       <memberdef kind="function" id="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -219,6 +228,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="126" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="126" bodyend="128"/>
+        <references refid="struct_square_grid_1a1bc7e32bd195e42fd9685310d7ee65c5" compoundref="implementation_01orig_8cpp" startline="109">walls</references>
       </memberdef>
       <memberdef kind="function" id="struct_square_grid_1a106d76702d8c4acb03883c477db28e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>vector&lt; <ref refid="struct_square_grid_1a2c9a2cbd3912aa48ac97289abc3f1c0f" kindref="member">Location</ref> &gt;</type>
@@ -237,6 +247,8 @@
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="130" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="130" bodyend="149"/>
         <references refid="struct_square_grid_1aac91cba6573640c545485ed054089c87" compoundref="implementation_01orig_8cpp" startline="106">DIRS</references>
+        <references refid="struct_square_grid_1a84bbaa9dad618228a2d6d3196254b86b" compoundref="implementation_01orig_8cpp" startline="114" endline="118">in_bounds</references>
+        <references refid="struct_square_grid_1a3f638b46510dd880823b1acac75c7b96" compoundref="implementation_01orig_8cpp" startline="120" endline="122">passable</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -244,34 +256,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="384">
+      <node id="383">
         <label>SquareGrid</label>
         <link refid="struct_square_grid"/>
       </node>
-      <node id="385">
+      <node id="384">
         <label>GridWithWeights</label>
         <link refid="struct_grid_with_weights"/>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="383" relation="public-inheritance">
         </childnode>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="383" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="386">
+      <node id="385">
         <label>SquareGrid</label>
         <link refid="struct_square_grid"/>
-        <childnode refid="387" relation="usage">
-          <edgelabel>DIRS</edgelabel>
-        </childnode>
-        <childnode refid="388" relation="usage">
+        <childnode refid="386" relation="usage">
           <edgelabel>walls</edgelabel>
         </childnode>
       </node>
-      <node id="387">
-        <label>array&lt; Location, 4 &gt;</label>
-      </node>
-      <node id="388">
+      <node id="386">
         <label>unordered_set&lt; Location &gt;</label>
       </node>
     </collaborationgraph>

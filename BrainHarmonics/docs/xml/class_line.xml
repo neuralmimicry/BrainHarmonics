@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_line" kind="class" language="C++" prot="public">
     <compoundname>Line</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -305,7 +305,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/line.h" line="47" column="1" bodyfile="BrainHarmonics/line.h" bodystart="47" bodyend="47"/>
-        <references refid="class_line_1af1756d1500ab0a5616313be6e213015a" compoundref="line_8cc" startline="19" endline="57">ResetParameters</references>
       </memberdef>
       <memberdef kind="function" id="class_line_1af1756d1500ab0a5616313be6e213015a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -330,7 +329,6 @@
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
         <referencedby refid="class_line_1a8c6dece66f5cd93ce40134002a40f505" compoundref="line_8cc" startline="59" endline="93">Update</referencedby>
         <referencedby refid="class_line_1a740aacdf468a1519f9a01d9cbd1f9219" compoundref="line_8h" startline="34" endline="45">Line</referencedby>
-        <referencedby refid="class_line_1a4a95bafcefa28672b3999deb011b9e50" compoundref="line_8h" startline="47" endline="47">~Line</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_line_1a20756feda4d42032955ec6cf12d89941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -697,7 +695,7 @@
         <location file="BrainHarmonics/line.h" line="73" column="1" bodyfile="BrainHarmonics/line.h" bodystart="73" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1aaa634bf320b9d1c4becb4083cd8324d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineID</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>setLineID</name>
@@ -726,7 +724,7 @@
         <location file="BrainHarmonics/line.h" line="85" column="1" bodyfile="BrainHarmonics/line.h" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1ab8df9f66bffc86994db3150a4eb8ed29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineX1</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setLineX1</name>
@@ -747,7 +745,7 @@
         <location file="BrainHarmonics/line.h" line="86" column="1" bodyfile="BrainHarmonics/line.h" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1af236c5ddb0d125b388621b3597266a95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineY1</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setLineY1</name>
@@ -768,7 +766,7 @@
         <location file="BrainHarmonics/line.h" line="87" column="1" bodyfile="BrainHarmonics/line.h" bodystart="87" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1ade959bc4d4f69bb421ed4f69c0d77fb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineX2</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setLineX2</name>
@@ -789,7 +787,7 @@
         <location file="BrainHarmonics/line.h" line="88" column="1" bodyfile="BrainHarmonics/line.h" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1a671f64c437fe1bef798476d93c675099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineY2</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setLineY2</name>
@@ -810,7 +808,7 @@
         <location file="BrainHarmonics/line.h" line="89" column="1" bodyfile="BrainHarmonics/line.h" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1a3fb9e9eab13d146feff0bc891709eaf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setSlope</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setSlope</name>
@@ -831,7 +829,7 @@
         <location file="BrainHarmonics/line.h" line="90" column="1" bodyfile="BrainHarmonics/line.h" bodystart="90" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1ad966eb3f1bd4cb29976b3e97811c344f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setYint</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setYint</name>
@@ -852,7 +850,7 @@
         <location file="BrainHarmonics/line.h" line="91" column="1" bodyfile="BrainHarmonics/line.h" bodystart="91" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1a602398c8c3131ec7236ccadbab8281d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineTTL</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>setLineTTL</name>
@@ -873,7 +871,7 @@
         <location file="BrainHarmonics/line.h" line="92" column="1" bodyfile="BrainHarmonics/line.h" bodystart="92" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1a7c315c5ffdd4fa875918583738e2e157" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineSeq</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>setLineSeq</name>
@@ -894,7 +892,7 @@
         <location file="BrainHarmonics/line.h" line="93" column="1" bodyfile="BrainHarmonics/line.h" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="class_line_1ab98abcf3c8546e266ae5bbea243d8b8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Line::setLineCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>setLineCounter</name>
@@ -913,7 +911,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/line.h" line="94" column="1" bodyfile="BrainHarmonics/line.h" bodystart="94" bodyend="94"/>
-        <references refid="class_line_1a8c6dece66f5cd93ce40134002a40f505" compoundref="line_8cc" startline="59" endline="93">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_line_1a8c6dece66f5cd93ce40134002a40f505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -934,7 +931,6 @@
         <references refid="class_line_1af1756d1500ab0a5616313be6e213015a" compoundref="line_8cc" startline="19" endline="57">ResetParameters</references>
         <references refid="class_universe_1a15aa20218286fd11ecb9b792dfb63be3" compoundref="universe_8cc" startline="602" endline="602">Universe::AdjustCounters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_line_1ab98abcf3c8546e266ae5bbea243d8b8d" compoundref="line_8h" startline="94" endline="94">setLineCounter</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -942,28 +938,28 @@
     <detaileddescription>
 <para>&lt; For Sine, Cosine, Fabs &amp; Sqrt functions </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="190">
+      <node id="191">
         <label>Line</label>
         <link refid="class_line"/>
-        <childnode refid="191" relation="public-inheritance">
+        <childnode refid="192" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="191">
+      <node id="192">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="192">
+      <node id="193">
         <label>Line</label>
         <link refid="class_line"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="194" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="193">
+      <node id="194">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="193" relation="usage">
+        <childnode refid="194" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>

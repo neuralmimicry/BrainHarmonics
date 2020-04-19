@@ -37,5 +37,5 @@ var class_elementary_force =
     [ "SetWeak", "class_elementary_force.html#a093cdf0810e95f1d973bd9dc88c6788b", null ],
     [ "SetWeakElectroweak", "class_elementary_force.html#a38d4f86f18a9f84a4198ee43bc90f6b4", null ],
     [ "Update", "class_elementary_force.html#a855c26eb8a542ff633af66940da5f90b", null ],
-    [ "ElementaryForce", "class_elementary_force.html#a6e57500586e9cd366f5cf76ea0299957", null ]
+    [ "CompositeForceParticle", "class_elementary_force.html#a9bc6eb2a4c20ce83728a7c9a31b91f19", null ]
 ];

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_polyhedron" kind="class" language="C++" prot="public">
     <compoundname>Polyhedron</compoundname>
     <basecompoundref refid="class_solid" prot="public" virt="non-virtual">Solid</basecompoundref>
@@ -287,7 +287,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="47" column="1" bodyfile="BrainHarmonics/polyhedron.h" bodystart="47" bodyend="47"/>
-        <references refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" compoundref="polyhedron_8cc" startline="22" endline="115">ResetParameters</references>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -323,7 +322,6 @@
         <referencedby refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" compoundref="polyhedron_8cc" startline="117" endline="124">SetObjectType</referencedby>
         <referencedby refid="class_polyhedron_1a5fdc8c91719799904b8a1ccef535a42c" compoundref="polyhedron_8cc" startline="265" endline="298">Update</referencedby>
         <referencedby refid="class_polyhedron_1af5bb1d2a6b04502dfdbfc9f04aafc950" compoundref="polyhedron_8h" startline="35" endline="46">Polyhedron</referencedby>
-        <referencedby refid="class_polyhedron_1a3ad3df8be901a55ddcd97128ac890473" compoundref="polyhedron_8h" startline="47" endline="47">~Polyhedron</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a021ec67f2040f8ec26df64e4b9370521" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -343,7 +341,7 @@
         <location file="BrainHarmonics/polyhedron.h" line="51" column="1" bodyfile="BrainHarmonics/polyhedron.h" bodystart="51" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Polyhedron::setCounter</definition>
         <argsstring>(unsigned int val)</argsstring>
         <name>setCounter</name>
@@ -358,28 +356,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="53" column="1" bodyfile="BrainHarmonics/polyhedron.h" bodystart="53" bodyend="53"/>
-        <references refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" compoundref="polyhedron_8cc" startline="117" endline="124">SetObjectType</references>
-        <references refid="class_polyhedron_1ae5852dd26065d9f38ed293f8d95106ad" compoundref="polyhedron_8cc" startline="126" endline="135">CreatePolygon</references>
-        <references refid="class_polyhedron_1a1848eb8747c1132c40c2d27336af2896" compoundref="polyhedron_8cc" startline="137" endline="156">CreatePolygons</references>
-        <references refid="class_polyhedron_1abfacad3a348785dab8819e70bf92d8d1" compoundref="polyhedron_8cc" startline="163" endline="166">ClonePolygon</references>
-        <references refid="class_polyhedron_1ab4f57da9595dc92de7340cc46237a2ea" compoundref="polyhedron_8cc" startline="158" endline="161">ClonePolygons</references>
-        <references refid="class_polyhedron_1a2fcc5144ebc64363f40c31d2b980cfaf" compoundref="polyhedron_8cc" startline="173" endline="176">DestroyPolygon</references>
-        <references refid="class_polyhedron_1ae372d216765d48b9423ee37a8bf8b282" compoundref="polyhedron_8cc" startline="168" endline="171">DestroyPolygons</references>
-        <references refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" compoundref="polyhedron_8cc" startline="178" endline="187">AddPolygon</references>
-        <references refid="class_polyhedron_1a9564a286e7323b56667971b851f0674a" compoundref="polyhedron_8cc" startline="189" endline="208">AddPolygons</references>
-        <references refid="class_polyhedron_1a3b411fa617291a2a2d5df92b819285b4" compoundref="polyhedron_8cc" startline="211" endline="215">RemovePolygon</references>
-        <references refid="class_polyhedron_1a5c2639b21aec25b76449fdf4c209aad1" compoundref="polyhedron_8cc" startline="217" endline="220">RemovePolygons</references>
-        <references refid="class_polyhedron_1a8b197b9eb163bdc83d9669d592bacac1" compoundref="polyhedron_8cc" startline="222" endline="225">GetPolygon</references>
-        <references refid="class_polyhedron_1adeaf461cc8504a225f6344b954c196a8" compoundref="polyhedron_8cc" startline="227" endline="230">GetPolygons</references>
-        <references refid="class_polyhedron_1a4d61f89c56e15d96008856cfb540d558" compoundref="polyhedron_8cc" startline="232" endline="235">GetPoint</references>
-        <references refid="class_polyhedron_1a1430429d6c8447e90b8c94ca46496a59" compoundref="polyhedron_8cc" startline="237" endline="240">GetPoints</references>
-        <references refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" compoundref="polyhedron_8cc" startline="300" endline="323">GenerateSpherePoints</references>
-        <references refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" compoundref="polyhedron_8cc" startline="325" endline="350">GenerateCylinderPoints</references>
-        <references refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" compoundref="polyhedron_8cc" startline="242" endline="263">UpdateCycle</references>
-        <references refid="class_polyhedron_1a5fdc8c91719799904b8a1ccef535a42c" compoundref="polyhedron_8cc" startline="265" endline="298">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Polyhedron::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetObjectType</name>
@@ -399,7 +378,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="55" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="117" bodyend="124"/>
         <references refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" compoundref="polyhedron_8cc" startline="22" endline="115">ResetParameters</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
         <referencedby refid="class_solid_1ac43dc78fa7f6a3348fc99751ff6bbc52" compoundref="solid_8cc" startline="20" endline="94">Solid::ResetParameters</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1ae5852dd26065d9f38ed293f8d95106ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -420,7 +398,6 @@
         <location file="BrainHarmonics/polyhedron.h" line="57" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="126" bodyend="135"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
         <referencedby refid="class_polyhedron_1a1848eb8747c1132c40c2d27336af2896" compoundref="polyhedron_8cc" startline="137" endline="156">CreatePolygons</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a1848eb8747c1132c40c2d27336af2896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -444,7 +421,6 @@
         <location file="BrainHarmonics/polyhedron.h" line="59" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="137" bodyend="156"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
         <references refid="class_polyhedron_1ae5852dd26065d9f38ed293f8d95106ad" compoundref="polyhedron_8cc" startline="126" endline="135">CreatePolygon</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1abfacad3a348785dab8819e70bf92d8d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> *</type>
@@ -470,7 +446,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="61" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="163" bodyend="166"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1ab4f57da9595dc92de7340cc46237a2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -496,7 +471,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="63" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="158" bodyend="161"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a2fcc5144ebc64363f40c31d2b980cfaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> *</type>
@@ -518,7 +492,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="65" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="173" bodyend="176"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1ae372d216765d48b9423ee37a8bf8b282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -540,7 +513,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="67" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="168" bodyend="171"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> *</type>
@@ -564,7 +536,6 @@
         <location file="BrainHarmonics/polyhedron.h" line="69" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="178" bodyend="187"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
         <referencedby refid="class_polyhedron_1a9564a286e7323b56667971b851f0674a" compoundref="polyhedron_8cc" startline="189" endline="208">AddPolygons</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a9564a286e7323b56667971b851f0674a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -588,7 +559,6 @@
         <location file="BrainHarmonics/polyhedron.h" line="71" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="189" bodyend="208"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
         <references refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" compoundref="polyhedron_8cc" startline="178" endline="187">AddPolygon</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a3b411fa617291a2a2d5df92b819285b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> *</type>
@@ -606,7 +576,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="73" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="211" bodyend="215"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a5c2639b21aec25b76449fdf4c209aad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -628,7 +597,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="75" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="217" bodyend="220"/>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a8b197b9eb163bdc83d9669d592bacac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> *</type>
@@ -651,7 +619,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="77" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="222" bodyend="225"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1adeaf461cc8504a225f6344b954c196a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_polyhedron" kindref="compound">Polyhedron</ref> * &gt;</type>
@@ -670,7 +637,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="79" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="227" bodyend="230"/>
         <references refid="class_polyhedron_1afd0cf6dddfbdc36266a73edca0c2c219" compoundref="polyhedron_8h" startline="94">polygon_list</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a4d61f89c56e15d96008856cfb540d558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_point" kindref="compound">Point</ref> *</type>
@@ -693,7 +659,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="81" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="232" bodyend="235"/>
         <references refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" compoundref="polyhedron_8h" startline="95">point_list</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a1430429d6c8447e90b8c94ca46496a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_point" kindref="compound">Point</ref> * &gt;</type>
@@ -712,8 +677,7 @@
         </inbodydescription>
         <location file="BrainHarmonics/polyhedron.h" line="83" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="237" bodyend="240"/>
         <references refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" compoundref="polyhedron_8h" startline="95">point_list</references>
-        <referencedby refid="class_update_all_command_1aa836cd5d538016289656d8118da879c5" compoundref="_brain_harmonics_8cc" startline="936" endline="1152">UpdateAllCommand::Execute</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
+        <referencedby refid="class_update_all_command_1aa836cd5d538016289656d8118da879c5" compoundref="_brain_harmonics_8cc" startline="943" endline="1159">UpdateAllCommand::Execute</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -735,7 +699,6 @@
         <references refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" compoundref="point_8h" startline="125" endline="128">Point::SetPointPosition</references>
         <references refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" compoundref="polyhedron_8h" startline="95">point_list</references>
         <referencedby refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" compoundref="polyhedron_8cc" startline="22" endline="115">ResetParameters</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -757,10 +720,9 @@
         <references refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" compoundref="point_8h" startline="125" endline="128">Point::SetPointPosition</references>
         <references refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" compoundref="polyhedron_8h" startline="95">point_list</references>
         <referencedby refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" compoundref="polyhedron_8cc" startline="22" endline="115">ResetParameters</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Polyhedron::UpdateCycle</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, std::vector&lt; Point *&gt; set_of_update_pointers, unsigned int pointer_type)</argsstring>
         <name>UpdateCycle</name>
@@ -785,7 +747,6 @@
         <location file="BrainHarmonics/polyhedron.h" line="89" column="1" bodyfile="BrainHarmonics/polyhedron.cc" bodystart="242" bodyend="263"/>
         <references refid="class_point_1a7ad2d1933410012c59bffbd4ac611279" compoundref="point_8cc" startline="445" endline="481">Point::Update</references>
         <referencedby refid="class_polyhedron_1a5fdc8c91719799904b8a1ccef535a42c" compoundref="polyhedron_8cc" startline="265" endline="298">Update</referencedby>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_polyhedron_1a5fdc8c91719799904b8a1ccef535a42c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -807,7 +768,6 @@
         <references refid="class_polyhedron_1a6b26174513703bc2b13f69b9cd8e1a48" compoundref="polyhedron_8cc" startline="242" endline="263">UpdateCycle</references>
         <references refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" compoundref="polyhedron_8h" startline="95">point_list</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_polyhedron_1ad74a1ccc28a08bc2dbc186e5f2c1f694" compoundref="polyhedron_8h" startline="53" endline="53">setCounter</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -815,53 +775,53 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="309">
+      <node id="308">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="311">
+      <node id="310">
         <label>Quad</label>
         <link refid="class_quad"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="309" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="307">
+      <node id="306">
         <label>Polyhedron</label>
         <link refid="class_polyhedron"/>
-        <childnode refid="308" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="310">
-        <label>Polygon</label>
-        <link refid="class_polygon"/>
         <childnode refid="307" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="308">
+      <node id="309">
+        <label>Polygon</label>
+        <link refid="class_polygon"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="307">
         <label>Solid</label>
         <link refid="class_solid"/>
-        <childnode refid="309" relation="public-inheritance">
+        <childnode refid="308" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="314">
+      <node id="313">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="314" relation="usage">
+        <childnode refid="313" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="312">
+      <node id="311">
         <label>Polyhedron</label>
         <link refid="class_polyhedron"/>
-        <childnode refid="313" relation="public-inheritance">
+        <childnode refid="312" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="313">
+      <node id="312">
         <label>Solid</label>
         <link refid="class_solid"/>
-        <childnode refid="314" relation="public-inheritance">
+        <childnode refid="313" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

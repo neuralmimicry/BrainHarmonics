@@ -1,0 +1,163 @@
+\hypertarget{twod_8cpp}{}\section{twod.\+cpp File Reference}
+\label{twod_8cpp}\index{twod.\+cpp@{twod.\+cpp}}
+{\ttfamily \#include $<$glad/glad.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$G\+L\+F\+W/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for twod.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{twod_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_vertex}{Vertex}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{glad_8h_a836cf6377099e88abf24c255b5b0ac52}{G\+Lfloat}} \mbox{\hyperlink{twod_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_adbff4cb150b42c263239c98fcb835223}{draw\+Point}} (\mbox{\hyperlink{struct_vertex}{Vertex}} \mbox{\hyperlink{glad_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}, \mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}} \mbox{\hyperlink{glad_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_a98eab8ab32fbd857c12d8da36306f180}{make\+Points\+Dance}} ()
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_a1e1061a2f5bf5da30f56f9ee7eff28c6}{line\+Segment}} (\mbox{\hyperlink{struct_vertex}{Vertex}} \mbox{\hyperlink{glad_8h_a435c176a02c061b43e19bdf7c86cceae}{v1}}, \mbox{\hyperlink{struct_vertex}{Vertex}} \mbox{\hyperlink{glad_8h_a0928f6d0f0f794ba000a21dfae422136}{v2}}, \mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}} \mbox{\hyperlink{glad_8h_a77a72419a6bb6d8b56f8d9db93a120d0}{width}})
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_ac92bc7d3ef210d7d4226001c389f290f}{line\+Dance}} ()
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_a26678d3625019297e5aaafb80a3f9f81}{grid\+Lines}} (\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}} grid\+Width, int \mbox{\hyperlink{glad_8h_a2e94a4956fa3fc42600a71518b6e6284}{height}}, int \mbox{\hyperlink{glad_8h_a77a72419a6bb6d8b56f8d9db93a120d0}{width}})
+\item 
+\mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} \mbox{\hyperlink{twod_8cpp_ae8e2e5d9147f0ca5020b6364b473e655}{grid\+Points}} (\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}} grid\+Width, int yspan, int \mbox{\hyperlink{glad_8h_a2e94a4956fa3fc42600a71518b6e6284}{height}}, int \mbox{\hyperlink{glad_8h_a77a72419a6bb6d8b56f8d9db93a120d0}{width}})
+\item 
+int \mbox{\hyperlink{twod_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{twod_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}\label{twod_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}} 
+\index{twod.\+cpp@{twod.\+cpp}!gfloat@{gfloat}}
+\index{gfloat@{gfloat}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{gfloat}{gfloat}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{glad_8h_a836cf6377099e88abf24c255b5b0ac52}{G\+Lfloat}} \mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}}
+
+
+
+Definition at line 12 of file twod.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{twod_8cpp_adbff4cb150b42c263239c98fcb835223}\label{twod_8cpp_adbff4cb150b42c263239c98fcb835223}} 
+\index{twod.\+cpp@{twod.\+cpp}!draw\+Point@{draw\+Point}}
+\index{draw\+Point@{draw\+Point}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+Point()}{drawPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} draw\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertex}{Vertex}}}]{v,  }\item[{\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file twod.\+cpp.
+
+\mbox{\Hypertarget{twod_8cpp_a26678d3625019297e5aaafb80a3f9f81}\label{twod_8cpp_a26678d3625019297e5aaafb80a3f9f81}} 
+\index{twod.\+cpp@{twod.\+cpp}!grid\+Lines@{grid\+Lines}}
+\index{grid\+Lines@{grid\+Lines}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{grid\+Lines()}{gridLines()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} grid\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}}]{grid\+Width,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file twod.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{twod_8cpp_a26678d3625019297e5aaafb80a3f9f81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{twod_8cpp_ae8e2e5d9147f0ca5020b6364b473e655}\label{twod_8cpp_ae8e2e5d9147f0ca5020b6364b473e655}} 
+\index{twod.\+cpp@{twod.\+cpp}!grid\+Points@{grid\+Points}}
+\index{grid\+Points@{grid\+Points}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{grid\+Points()}{gridPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} grid\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}}]{grid\+Width,  }\item[{int}]{yspan,  }\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file twod.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{twod_8cpp_ae8e2e5d9147f0ca5020b6364b473e655_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{twod_8cpp_ac92bc7d3ef210d7d4226001c389f290f}\label{twod_8cpp_ac92bc7d3ef210d7d4226001c389f290f}} 
+\index{twod.\+cpp@{twod.\+cpp}!line\+Dance@{line\+Dance}}
+\index{line\+Dance@{line\+Dance}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{line\+Dance()}{lineDance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} line\+Dance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file twod.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{twod_8cpp_ac92bc7d3ef210d7d4226001c389f290f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{twod_8cpp_a1e1061a2f5bf5da30f56f9ee7eff28c6}\label{twod_8cpp_a1e1061a2f5bf5da30f56f9ee7eff28c6}} 
+\index{twod.\+cpp@{twod.\+cpp}!line\+Segment@{line\+Segment}}
+\index{line\+Segment@{line\+Segment}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{line\+Segment()}{lineSegment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertex}{Vertex}}}]{v1,  }\item[{\mbox{\hyperlink{struct_vertex}{Vertex}}}]{v2,  }\item[{\mbox{\hyperlink{opengl_2triangles_8cpp_a9f8f89ff3e07b5fc534327016b4ba7b4}{gfloat}}}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file twod.\+cpp.
+
+\mbox{\Hypertarget{twod_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{twod_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{twod.\+cpp@{twod.\+cpp}!main@{main}}
+\index{main@{main}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file twod.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{twod_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{twod_8cpp_a98eab8ab32fbd857c12d8da36306f180}\label{twod_8cpp_a98eab8ab32fbd857c12d8da36306f180}} 
+\index{twod.\+cpp@{twod.\+cpp}!make\+Points\+Dance@{make\+Points\+Dance}}
+\index{make\+Points\+Dance@{make\+Points\+Dance}!twod.\+cpp@{twod.\+cpp}}
+\subsubsection{\texorpdfstring{make\+Points\+Dance()}{makePointsDance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glad_8h_a950fc91edb4504f62f1c577bf4727c29}{void}} make\+Points\+Dance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file twod.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{twod_8cpp_a98eab8ab32fbd857c12d8da36306f180_cgraph}
+\end{center}
+\end{figure}

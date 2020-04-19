@@ -1,58 +1,58 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="monomer_8cc" kind="file" language="C++">
     <compoundname>monomer.cc</compoundname>
     <includes refid="monomer_8h" local="yes">monomer.h</includes>
     <includes refid="solid_8h" local="yes">solid.h</includes>
     <incdepgraph>
-      <node id="1017">
+      <node id="1147">
         <label>BrainHarmonics/monomer.cc</label>
         <link refid="monomer_8cc"/>
-        <childnode refid="1018" relation="include">
+        <childnode refid="1148" relation="include">
         </childnode>
-        <childnode refid="1024" relation="include">
+        <childnode refid="1154" relation="include">
         </childnode>
       </node>
-      <node id="1024">
+      <node id="1154">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="1019" relation="include">
+        <childnode refid="1149" relation="include">
         </childnode>
-        <childnode refid="1021" relation="include">
+        <childnode refid="1151" relation="include">
         </childnode>
       </node>
-      <node id="1020">
+      <node id="1150">
         <label>vector</label>
       </node>
-      <node id="1021">
+      <node id="1151">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1022" relation="include">
+        <childnode refid="1152" relation="include">
         </childnode>
-        <childnode refid="1019" relation="include">
+        <childnode refid="1149" relation="include">
         </childnode>
-        <childnode refid="1023" relation="include">
+        <childnode refid="1153" relation="include">
         </childnode>
-        <childnode refid="1020" relation="include">
+        <childnode refid="1150" relation="include">
         </childnode>
       </node>
-      <node id="1023">
+      <node id="1153">
         <label>math.h</label>
       </node>
-      <node id="1019">
+      <node id="1149">
         <label>iostream</label>
       </node>
-      <node id="1022">
+      <node id="1152">
         <label>chrono</label>
       </node>
-      <node id="1018">
+      <node id="1148">
         <label>monomer.h</label>
         <link refid="monomer_8h"/>
-        <childnode refid="1019" relation="include">
+        <childnode refid="1149" relation="include">
         </childnode>
-        <childnode refid="1020" relation="include">
+        <childnode refid="1150" relation="include">
         </childnode>
-        <childnode refid="1021" relation="include">
+        <childnode refid="1151" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -82,7 +82,7 @@
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20" refid="class_monomer_1a4651a4bd0a41d0698821421043e41126" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_monomer_1a4651a4bd0a41d0698821421043e41126" kindref="member">Monomer::GetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>monomer_counter;<sp/>}</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" kindref="member">Monomer::SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>monomer_counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="22" refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_monomer_1a6f0dfa4382b3d4fa19b7ee0fb8fe7a55" kindref="member">Monomer::SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>monomer_counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="24" refid="class_monomer_1a16a692cf11117581c9b4ebbed3c04c9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_monomer_1a16a692cf11117581c9b4ebbed3c04c9c" kindref="member">Monomer::ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
@@ -90,7 +90,7 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time_object_created<sp/>==<sp/>std::chrono::time_point&lt;Clock&gt;(std::chrono::nanoseconds::zero()))</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).count()));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>()));</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>object<sp/>instantiated<sp/>without<sp/>a<sp/>type<sp/>specified<sp/>the<sp/>set<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
@@ -156,7 +156,7 @@
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>time_dimension_pointer-&gt;AdjustCounters(event_time);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal">duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>

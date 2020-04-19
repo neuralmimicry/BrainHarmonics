@@ -1,0 +1,99 @@
+.TH "twod.cpp" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+twod.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <glad/glad\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <GLFW/glfw3\&.h>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBVertex\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBGLfloat\fP \fBgfloat\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBdrawPoint\fP (\fBVertex\fP \fBv\fP, \fBgfloat\fP \fBsize\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBmakePointsDance\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlineSegment\fP (\fBVertex\fP \fBv1\fP, \fBVertex\fP \fBv2\fP, \fBgfloat\fP \fBwidth\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBlineDance\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgridLines\fP (\fBgfloat\fP gridWidth, int \fBheight\fP, int \fBwidth\fP)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBgridPoints\fP (\fBgfloat\fP gridWidth, int yspan, int \fBheight\fP, int \fBwidth\fP)"
+.br
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBGLfloat\fP \fBgfloat\fP"
+
+.PP
+Definition at line 12 of file twod\&.cpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBvoid\fP drawPoint (\fBVertex\fP v, \fBgfloat\fP size)"
+
+.PP
+Definition at line 20 of file twod\&.cpp\&.
+.SS "\fBvoid\fP gridLines (\fBgfloat\fP gridWidth, int height, int width)"
+
+.PP
+Definition at line 64 of file twod\&.cpp\&.
+.SS "\fBvoid\fP gridPoints (\fBgfloat\fP gridWidth, int yspan, int height, int width)"
+
+.PP
+Definition at line 82 of file twod\&.cpp\&.
+.SS "\fBvoid\fP lineDance ()"
+
+.PP
+Definition at line 52 of file twod\&.cpp\&.
+.SS "\fBvoid\fP lineSegment (\fBVertex\fP v1, \fBVertex\fP v2, \fBgfloat\fP width)"
+
+.PP
+Definition at line 42 of file twod\&.cpp\&.
+.SS "int main ()"
+
+.PP
+Definition at line 97 of file twod\&.cpp\&.
+.SS "\fBvoid\fP makePointsDance ()"
+
+.PP
+Definition at line 28 of file twod\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

@@ -1,4 +1,4 @@
-.TH "ElementaryParticle" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "ElementaryParticle" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -44,22 +44,22 @@ Inherits \fBUniverse\fP\&.
 .RI "double \fBGetMass\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetType\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetType\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetMassIndex\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "\fBvoid\fP \fBSetMassIndex\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetMass\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetMass\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -72,7 +72,7 @@ Inherits \fBUniverse\fP\&.
 
 .in +1c
 .ti -1c
-.RI "class \fBCompositeParticle\fP"
+.RI "class \fBCompositeForceParticle\fP"
 .br
 .in -1c
 .SS "Additional Inherited Members"
@@ -127,33 +127,33 @@ Definition at line 56 of file elementaryparticle\&.h\&.
 
 .PP
 Definition at line 19 of file elementaryparticle\&.cc\&.
-.SS "void ElementaryParticle::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP ElementaryParticle::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 63 of file elementaryparticle\&.h\&.
-.SS "void ElementaryParticle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP ElementaryParticle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 61 of file elementaryparticle\&.h\&.
-.SS "void ElementaryParticle::SetMass (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.SS "\fBvoid\fP ElementaryParticle::SetMass (std::chrono::time_point< \fBClock\fP > event_time, double val)"
 
 .PP
 Definition at line 166 of file elementaryparticle\&.cc\&.
-.SS "void ElementaryParticle::SetMassIndex (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.SS "\fBvoid\fP ElementaryParticle::SetMassIndex (std::chrono::time_point< \fBClock\fP > event_time, int val)"
 
 .PP
 Definition at line 42 of file elementaryparticle\&.cc\&.
-.SS "void ElementaryParticle::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP ElementaryParticle::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 64 of file elementaryparticle\&.h\&.
-.SS "void ElementaryParticle::SetType (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP"
+.SS "\fBvoid\fP ElementaryParticle::SetType (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file elementaryparticle\&.h\&.
@@ -163,7 +163,7 @@ Definition at line 62 of file elementaryparticle\&.h\&.
 Definition at line 168 of file elementaryparticle\&.cc\&.
 .SH "Friends And Related Function Documentation"
 .PP 
-.SS "friend class CompositeParticle\fC [friend]\fP"
+.SS "friend class \fBCompositeForceParticle\fP\fC [friend]\fP"
 
 .PP
 Definition at line 26 of file elementaryparticle\&.h\&.

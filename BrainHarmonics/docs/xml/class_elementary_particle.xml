@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_elementary_particle" kind="class" language="C++" prot="public">
     <compoundname>ElementaryParticle</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
     <includes refid="elementaryparticle_8h" local="no">elementaryparticle.h</includes>
       <sectiondef kind="friend">
-      <memberdef kind="friend" id="class_elementary_particle_1a8be5cf46db5f9876c49d58e4ab84044b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="friend" id="class_elementary_particle_1a9bc6eb2a4c20ce83728a7c9a31b91f19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
-        <definition>friend class CompositeParticle</definition>
+        <definition>friend class CompositeForceParticle</definition>
         <argsstring></argsstring>
-        <name>CompositeParticle</name>
+        <name>CompositeForceParticle</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -387,7 +387,7 @@
         <location file="BrainHarmonics/elementaryparticle.h" line="59" column="1" bodyfile="BrainHarmonics/elementaryparticle.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1a141316fd968cce8ecc5aa11ce0757d63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -409,7 +409,7 @@
         <location file="BrainHarmonics/elementaryparticle.h" line="61" column="1" bodyfile="BrainHarmonics/elementaryparticle.h" bodystart="61" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1a37d7718faf6be68d4374bcc56816f30a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetType</name>
@@ -430,7 +430,7 @@
         <location file="BrainHarmonics/elementaryparticle.h" line="62" column="1" bodyfile="BrainHarmonics/elementaryparticle.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1abbc6d3c58509c4121df55bfef716d2f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetCharge</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetCharge</name>
@@ -452,7 +452,7 @@
         <location file="BrainHarmonics/elementaryparticle.h" line="63" column="1" bodyfile="BrainHarmonics/elementaryparticle.h" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1a437fa86d88157314b84662b158d52353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetSpin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetSpin</name>
@@ -472,13 +472,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/elementaryparticle.h" line="64" column="1" bodyfile="BrainHarmonics/elementaryparticle.h" bodystart="64" bodyend="64"/>
-        <references refid="class_elementary_particle_1a8a3b91409772f4091a782624a34024e7" compoundref="elementaryparticle_8cc" startline="42" endline="164">SetMassIndex</references>
-        <references refid="class_elementary_particle_1a778ff8188ecb369e533521ed4f94b034" compoundref="elementaryparticle_8cc" startline="166" endline="166">SetMass</references>
-        <references refid="class_elementary_particle_1ac0f85f34bdfc1d42324201eb7c38e85e" compoundref="elementaryparticle_8cc" startline="19" endline="40">ResetParameters</references>
-        <references refid="class_elementary_particle_1abf5114c3d032bc9511a14aa7368ec450" compoundref="elementaryparticle_8cc" startline="168" endline="197">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1a8a3b91409772f4091a782624a34024e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetMassIndex</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val)</argsstring>
         <name>SetMassIndex</name>
@@ -497,10 +493,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/elementaryparticle.h" line="65" column="1" bodyfile="BrainHarmonics/elementaryparticle.cc" bodystart="42" bodyend="164"/>
-        <referencedby refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" compoundref="elementaryparticle_8h" startline="64" endline="64">SetSpin</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1a778ff8188ecb369e533521ed4f94b034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void ElementaryParticle::SetMass</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetMass</name>
@@ -519,7 +514,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/elementaryparticle.h" line="67" column="1" bodyfile="BrainHarmonics/elementaryparticle.cc" bodystart="166" bodyend="166"/>
-        <referencedby refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" compoundref="elementaryparticle_8h" startline="64" endline="64">SetSpin</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1ac0f85f34bdfc1d42324201eb7c38e85e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -540,7 +534,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_elementary_particle_1abf5114c3d032bc9511a14aa7368ec450" compoundref="elementaryparticle_8cc" startline="168" endline="197">Update</referencedby>
         <referencedby refid="class_elementary_particle_1a0b43033247b36096d0de2a7553c620a9" compoundref="elementaryparticle_8h" startline="34" endline="48">ElementaryParticle</referencedby>
-        <referencedby refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" compoundref="elementaryparticle_8h" startline="64" endline="64">SetSpin</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_elementary_particle_1abf5114c3d032bc9511a14aa7368ec450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -560,7 +553,6 @@
         <location file="BrainHarmonics/elementaryparticle.h" line="70" column="1" bodyfile="BrainHarmonics/elementaryparticle.cc" bodystart="168" bodyend="197"/>
         <references refid="class_elementary_particle_1ac0f85f34bdfc1d42324201eb7c38e85e" compoundref="elementaryparticle_8cc" startline="19" endline="40">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_elementary_particle_1a437fa86d88157314b84662b158d52353" compoundref="elementaryparticle_8h" startline="64" endline="64">SetSpin</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -628,7 +620,7 @@
       <member refid="class_universe_1a46a906baabb63e5d31f8b48ea1fae52e" prot="public" virt="virtual"><scope>ElementaryParticle</scope><name>ApplyWeakElectroweak</name></member>
       <member refid="class_universe_1a7a0e9796ff0d650a8b1fbde5fa5b761f" prot="protected" virt="non-virtual"><scope>ElementaryParticle</scope><name>cognitive_network_list</name></member>
       <member refid="class_universe_1ae9795d06e406c4322637825aa545aa2f" prot="protected" virt="non-virtual"><scope>ElementaryParticle</scope><name>composite_forceparticle_list</name></member>
-      <member refid="class_elementary_particle_1a8be5cf46db5f9876c49d58e4ab84044b" prot="private" virt="non-virtual"><scope>ElementaryParticle</scope><name>CompositeParticle</name></member>
+      <member refid="class_elementary_particle_1a9bc6eb2a4c20ce83728a7c9a31b91f19" prot="private" virt="non-virtual"><scope>ElementaryParticle</scope><name>CompositeForceParticle</name></member>
       <member refid="class_universe_1a28615baf47d4558cbe5eebeed6575024" prot="public" virt="non-virtual"><scope>ElementaryParticle</scope><name>Creation</name></member>
       <member refid="class_universe_1a159461f7098c3a30274f54c8acff6eac" prot="protected" virt="non-virtual"><scope>ElementaryParticle</scope><name>dimension_list</name></member>
       <member refid="class_elementary_particle_1a7e518b7f634700ede48e59e266e09708" prot="private" virt="non-virtual"><scope>ElementaryParticle</scope><name>duration_since_last_event</name></member>

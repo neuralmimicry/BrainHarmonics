@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="struct_priority_queue" kind="struct" language="C++" prot="public">
     <compoundname>PriorityQueue</compoundname>
     <templateparamlist>
@@ -56,6 +56,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="193" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="193" bodyend="-1"/>
+        <referencedby refid="struct_priority_queue_1a422e38d0c3b8398dc6e4867bb4ceec41" compoundref="implementation_01orig_8cpp" startline="195" endline="195">PriorityQueue&lt; T, Number &gt;::empty</referencedby>
+        <referencedby refid="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" compoundref="implementation_01orig_8cpp" startline="197" endline="199">PriorityQueue&lt; T, Number &gt;::put</referencedby>
+        <referencedby refid="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" compoundref="implementation_01orig_8cpp" startline="201" endline="205">PriorityQueue&lt; T, Number &gt;::get</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -71,11 +74,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="195" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="195" bodyend="195"/>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
         <referencedby refid="implementation_01orig_8cpp_1ae5dda031f20466b1a419ca983a3dc474" compoundref="implementation_01orig_8cpp" startline="210" endline="239">dijkstra_search</referencedby>
         <referencedby refid="implementation_01orig_8cpp_1a9b1566d7e8a1017f075720664601abb0" compoundref="implementation_01orig_8cpp" startline="267" endline="297">a_star_search</referencedby>
       </memberdef>
       <memberdef kind="function" id="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void PriorityQueue&lt; T, Number &gt;::put</definition>
         <argsstring>(T item, Number priority)</argsstring>
         <name>put</name>
@@ -94,6 +98,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="197" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="197" bodyend="199"/>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
         <referencedby refid="implementation_01orig_8cpp_1ae5dda031f20466b1a419ca983a3dc474" compoundref="implementation_01orig_8cpp" startline="210" endline="239">dijkstra_search</referencedby>
         <referencedby refid="implementation_01orig_8cpp_1a9b1566d7e8a1017f075720664601abb0" compoundref="implementation_01orig_8cpp" startline="267" endline="297">a_star_search</referencedby>
       </memberdef>
@@ -109,7 +114,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/implementation orig.cpp" line="201" column="1" bodyfile="BrainHarmonics/implementation orig.cpp" bodystart="201" bodyend="205"/>
-        <references refid="implementation_01orig_8cpp_1ae5dda031f20466b1a419ca983a3dc474" compoundref="implementation_01orig_8cpp" startline="210" endline="239">dijkstra_search</references>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
         <referencedby refid="implementation_01orig_8cpp_1ae5dda031f20466b1a419ca983a3dc474" compoundref="implementation_01orig_8cpp" startline="210" endline="239">dijkstra_search</referencedby>
         <referencedby refid="implementation_01orig_8cpp_1a9b1566d7e8a1017f075720664601abb0" compoundref="implementation_01orig_8cpp" startline="267" endline="297">a_star_search</referencedby>
       </memberdef>
@@ -125,9 +130,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="201" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="201" bodyend="201"/>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
       </memberdef>
       <memberdef kind="function" id="struct_priority_queue_1a9361c94664b98a15a91a595d65c9846c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void PriorityQueue&lt; T, Number &gt;::put</definition>
         <argsstring>(T item, Number priority)</argsstring>
         <name>put</name>
@@ -146,6 +152,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="203" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="203" bodyend="205"/>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
       </memberdef>
       <memberdef kind="function" id="struct_priority_queue_1ab211c9583fda5c1a6352021444af5f0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>T</type>
@@ -159,7 +166,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/search.cpp" line="207" column="1" bodyfile="BrainHarmonics/search.cpp" bodystart="207" bodyend="211"/>
-        <references refid="search_8cpp_1ae5dda031f20466b1a419ca983a3dc474" compoundref="search_8cpp" startline="216" endline="245">dijkstra_search</references>
+        <references refid="struct_priority_queue_1a289cc383607c83fe77a0d571cb06bb01" compoundref="implementation_01orig_8cpp" startline="193">PriorityQueue&lt; T, Number &gt;::elements</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -167,13 +174,13 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="323">
+      <node id="322">
         <label>priority_queue&lt; PQElement, vector&lt; PQElement &gt;, std::greater&lt; PQElement &gt; &gt;</label>
       </node>
-      <node id="322">
+      <node id="321">
         <label>PriorityQueue&lt; T, Number &gt;</label>
         <link refid="struct_priority_queue"/>
-        <childnode refid="323" relation="usage">
+        <childnode refid="322" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>

@@ -1,4 +1,4 @@
-.TH "Monomer" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Monomer" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -34,7 +34,7 @@ Inherited by \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPoly
 .RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -46,10 +46,10 @@ Inherited by \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPoly
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val) final"
+.RI "\fBvoid\fP \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP) final"
 .br
 .ti -1c
 .RI "double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
@@ -76,55 +76,55 @@ Inherited by \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPolymer\fP, \fBPoly
 .RI "double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .ti -1c
-.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val) final"
+.RI "\fBvoid\fP \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP) final"
 .br
 .ti -1c
-.RI "void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
+.RI "\fBvoid\fP \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time) final"
 .br
 .in -1c
 .SS "Protected Attributes"
@@ -266,7 +266,7 @@ Definition at line 63 of file monomer\&.h\&.
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 64 of file monomer\&.h\&.
-.SS "void Monomer::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -276,13 +276,13 @@ Definition at line 89 of file monomer\&.h\&.
 
 .PP
 Definition at line 24 of file monomer\&.cc\&.
-.SS "void Monomer::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 60 of file monomer\&.h\&.
-.SS "void Monomer::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -290,55 +290,55 @@ Reimplemented from \fBUniverse\fP\&.
 Reimplemented in \fBPolymer\fP\&.
 .PP
 Definition at line 22 of file monomer\&.cc\&.
-.SS "void Monomer::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 83 of file monomer\&.h\&.
-.SS "void Monomer::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 84 of file monomer\&.h\&.
-.SS "void Monomer::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 80 of file monomer\&.h\&.
-.SS "void Monomer::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 61 of file monomer\&.h\&.
-.SS "void Monomer::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 85 of file monomer\&.h\&.
-.SS "void Monomer::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 86 of file monomer\&.h\&.
-.SS "void Monomer::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 87 of file monomer\&.h\&.
-.SS "void Monomer::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 81 of file monomer\&.h\&.
-.SS "void Monomer::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Monomer::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP, \fC [final]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.

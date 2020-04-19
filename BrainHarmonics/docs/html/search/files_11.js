@@ -1,6 +1,26 @@
 var searchData=
 [
-  ['universe_2ecc',['universe.cc',['../universe_8cc.html',1,'']]],
-  ['universe_2ed',['universe.d',['../universe_8d.html',1,'']]],
-  ['universe_2eh',['universe.h',['../universe_8h.html',1,'']]]
+  ['schwanncell_2ecc',['schwanncell.cc',['../schwanncell_8cc.html',1,'']]],
+  ['schwanncell_2eh',['schwanncell.h',['../schwanncell_8h.html',1,'']]],
+  ['scrap_2ecpp',['scrap.cpp',['../opengl_2scrap_8cpp.html',1,'(Global Namespace)'],['../scrap_8cpp.html',1,'(Global Namespace)']]],
+  ['scrap_2epy',['scrap.py',['../opengl_2scrap_8py.html',1,'(Global Namespace)'],['../scrap_8py.html',1,'(Global Namespace)']]],
+  ['screenlist_2ecpp',['screenlist.cpp',['../screenlist_8cpp.html',1,'']]],
+  ['screenlist_2ehpp',['screenlist.hpp',['../screenlist_8hpp.html',1,'']]],
+  ['search_2ecpp',['search.cpp',['../search_8cpp.html',1,'']]],
+  ['shader_2ecpp',['shader.cpp',['../common_2shader_8cpp.html',1,'(Global Namespace)'],['../opengl_2common_2shader_8cpp.html',1,'(Global Namespace)']]],
+  ['shader_2ehpp',['shader.hpp',['../common_2shader_8hpp.html',1,'(Global Namespace)'],['../opengl_2common_2shader_8hpp.html',1,'(Global Namespace)']]],
+  ['sizeof_5fsize_5ft_2ec',['SIZEOF_SIZE_T.c',['../_brain_harmonics_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___s_i_z_e___t_8c.html',1,'(Global Namespace)'],['../build_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___s_i_z_e___t_8c.html',1,'(Global Namespace)']]],
+  ['sizeof_5fvoid_5fptr_2ec',['SIZEOF_VOID_PTR.c',['../_brain_harmonics_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___v_o_i_d___p_t_r_8c.html',1,'(Global Namespace)'],['../build_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___v_o_i_d___p_t_r_8c.html',1,'(Global Namespace)']]],
+  ['sniffex_2ecc',['sniffex.cc',['../sniffex_8cc.html',1,'']]],
+  ['sniffex_2eh',['sniffex.h',['../sniffex_8h.html',1,'']]],
+  ['solid_2ecc',['solid.cc',['../solid_8cc.html',1,'']]],
+  ['solid_2eh',['solid.h',['../solid_8h.html',1,'']]],
+  ['soma_2ecc',['soma.cc',['../soma_8cc.html',1,'']]],
+  ['soma_2eh',['soma.h',['../soma_8h.html',1,'']]],
+  ['spike_2ecc',['spike.cc',['../spike_8cc.html',1,'']]],
+  ['spike_2eh',['spike.h',['../spike_8h.html',1,'']]],
+  ['synapse_2ecc',['synapse.cc',['../synapse_8cc.html',1,'']]],
+  ['synapse_2eh',['synapse.h',['../synapse_8h.html',1,'']]],
+  ['synapticvesicle_2ecc',['synapticvesicle.cc',['../synapticvesicle_8cc.html',1,'']]],
+  ['synapticvesicle_2eh',['synapticvesicle.h',['../synapticvesicle_8h.html',1,'']]]
 ];

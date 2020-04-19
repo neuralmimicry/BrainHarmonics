@@ -1,51 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="screenlist_8hpp" kind="file" language="C++">
     <compoundname>screenlist.hpp</compoundname>
-    <includes refid="multiscreen_8h" local="yes">multiscreen.h</includes>
     <includes local="yes">screen_0.hpp</includes>
     <includes local="yes">screen_1.hpp</includes>
     <includedby refid="screenlist_8cpp" local="yes">BrainHarmonics/screenlist.cpp</includedby>
     <incdepgraph>
-      <node id="1517">
-        <label>SFML/Graphics.hpp</label>
-      </node>
-      <node id="1514">
+      <node id="1629">
         <label>BrainHarmonics/screenlist.hpp</label>
         <link refid="screenlist_8hpp"/>
-        <childnode refid="1515" relation="include">
+        <childnode refid="1630" relation="include">
         </childnode>
-        <childnode refid="1518" relation="include">
-        </childnode>
-        <childnode refid="1519" relation="include">
+        <childnode refid="1631" relation="include">
         </childnode>
       </node>
-      <node id="1519">
+      <node id="1631">
         <label>screen_1.hpp</label>
       </node>
-      <node id="1516">
-        <label>iostream</label>
-      </node>
-      <node id="1518">
+      <node id="1630">
         <label>screen_0.hpp</label>
-      </node>
-      <node id="1515">
-        <label>multiscreen.h</label>
-        <link refid="multiscreen_8h"/>
-        <childnode refid="1516" relation="include">
-        </childnode>
-        <childnode refid="1517" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1520">
+      <node id="1632">
         <label>BrainHarmonics/screenlist.hpp</label>
         <link refid="screenlist_8hpp"/>
-        <childnode refid="1521" relation="include">
+        <childnode refid="1633" relation="include">
         </childnode>
       </node>
-      <node id="1521">
+      <node id="1633">
         <label>BrainHarmonics/screenlist.cpp</label>
         <link refid="screenlist_8cpp"/>
       </node>
@@ -67,7 +50,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>screenlist_hpp</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>group<sp/>class</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="multiscreen_8h" kindref="compound">multiscreen.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;multiscreen.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Include<sp/>each<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;screen_0.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;screen_1.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>

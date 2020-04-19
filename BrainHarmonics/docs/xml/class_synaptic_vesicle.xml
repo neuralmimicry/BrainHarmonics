@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_synaptic_vesicle" kind="class" language="C++" prot="public">
     <compoundname>SynapticVesicle</compoundname>
     <basecompoundref refid="class_axon_bouton" prot="public" virt="non-virtual">AxonBouton</basecompoundref>
@@ -393,7 +393,7 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="42" column="1" bodyfile="BrainHarmonics/synapticvesicle.h" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a7fd7cfce5eccb904206d968866f85220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void SynapticVesicle::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -415,7 +415,7 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="44" column="1" bodyfile="BrainHarmonics/synapticvesicle.h" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void SynapticVesicle::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -434,23 +434,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="45" column="1" bodyfile="BrainHarmonics/synapticvesicle.h" bodystart="45" bodyend="45"/>
-        <references refid="class_synaptic_vesicle_1add2f2815448729977fbcdbd5a59ec7b4" compoundref="synapticvesicle_8cc" startline="20" endline="60">ResetParameters</references>
-        <references refid="class_synaptic_vesicle_1a89f4fd3ed27a7dc768de215534325d6a" compoundref="synapticvesicle_8cc" startline="62" endline="71">CreateNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1a052b85a42c2d55ca146665c40cbabffd" compoundref="synapticvesicle_8cc" startline="73" endline="92">CreateNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1aa811e68d1a3220c07140847eb3ebc8b3" compoundref="synapticvesicle_8cc" startline="100" endline="103">CloneNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1aa610e38786a8c9978d9c00bca40a5200" compoundref="synapticvesicle_8cc" startline="95" endline="98">CloneNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a5ab4ecfb4a880bc729078f5529c547bc" compoundref="synapticvesicle_8cc" startline="110" endline="113">DestroyNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1a37817cc68b212d89ef8aa08c73631cbb" compoundref="synapticvesicle_8cc" startline="105" endline="108">DestroyNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a56d406fdd01f267d868caedb390080ff" compoundref="synapticvesicle_8cc" startline="115" endline="124">AddNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1ac924e6b7b824066a89136e52f2d5ce80" compoundref="synapticvesicle_8cc" startline="126" endline="145">AddNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a7ea7841bd1a7a17c78a023db8860cc22" compoundref="synapticvesicle_8cc" startline="148" endline="152">RemoveNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1aab1e61b4910399d56071ca59f2758e72" compoundref="synapticvesicle_8cc" startline="154" endline="157">RemoveNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a3bdf4423899d438b5a1d2246c52c8c45" compoundref="synapticvesicle_8cc" startline="159" endline="162">GetNeurotransmitter</references>
-        <references refid="class_synaptic_vesicle_1ada95d85873125115208ff51f60fa72e9" compoundref="synapticvesicle_8cc" startline="164" endline="167">GetNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a045f27b28b8b11edc884568b390c22fe" compoundref="synapticvesicle_8cc" startline="171" endline="176">GrowthSurface</references>
-        <references refid="class_synaptic_vesicle_1a0d4a4a03405593b3abc0e734c1758830" compoundref="synapticvesicle_8cc" startline="178" endline="184">GrowthVolume</references>
-        <references refid="class_synaptic_vesicle_1a2509969e82fee789cc56fb0978f27662" compoundref="synapticvesicle_8cc" startline="186" endline="189">ReleaseNeurotransmitters</references>
-        <references refid="class_synaptic_vesicle_1a49c8e82147e634c83f7b4c3ef9894e2d" compoundref="synapticvesicle_8cc" startline="191" endline="237">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1add2f2815448729977fbcdbd5a59ec7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -471,7 +454,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_synaptic_vesicle_1a49c8e82147e634c83f7b4c3ef9894e2d" compoundref="synapticvesicle_8cc" startline="191" endline="237">Update</referencedby>
         <referencedby refid="class_synaptic_vesicle_1a0f86278b771137978d03bb6cf460a527" compoundref="synapticvesicle_8h" startline="25" endline="36">SynapticVesicle</referencedby>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a89f4fd3ed27a7dc768de215534325d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -491,7 +473,6 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="49" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="62" bodyend="71"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
         <referencedby refid="class_synaptic_vesicle_1a052b85a42c2d55ca146665c40cbabffd" compoundref="synapticvesicle_8cc" startline="73" endline="92">CreateNeurotransmitters</referencedby>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a052b85a42c2d55ca146665c40cbabffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -515,7 +496,6 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="51" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="73" bodyend="92"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
         <references refid="class_synaptic_vesicle_1a89f4fd3ed27a7dc768de215534325d6a" compoundref="synapticvesicle_8cc" startline="62" endline="71">CreateNeurotransmitter</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1aa811e68d1a3220c07140847eb3ebc8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -541,7 +521,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="53" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="100" bodyend="103"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1aa610e38786a8c9978d9c00bca40a5200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -567,7 +546,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="55" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="95" bodyend="98"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a5ab4ecfb4a880bc729078f5529c547bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -589,7 +567,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="57" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="110" bodyend="113"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a37817cc68b212d89ef8aa08c73631cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -611,7 +588,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="59" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="105" bodyend="108"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a56d406fdd01f267d868caedb390080ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -635,7 +611,6 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="61" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="115" bodyend="124"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
         <referencedby refid="class_synaptic_vesicle_1ac924e6b7b824066a89136e52f2d5ce80" compoundref="synapticvesicle_8cc" startline="126" endline="145">AddNeurotransmitters</referencedby>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1ac924e6b7b824066a89136e52f2d5ce80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -659,7 +634,6 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="63" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="126" bodyend="145"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
         <references refid="class_synaptic_vesicle_1a56d406fdd01f267d868caedb390080ff" compoundref="synapticvesicle_8cc" startline="115" endline="124">AddNeurotransmitter</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a7ea7841bd1a7a17c78a023db8860cc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -677,7 +651,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="65" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="148" bodyend="152"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1aab1e61b4910399d56071ca59f2758e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -699,7 +672,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="67" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="154" bodyend="157"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a3bdf4423899d438b5a1d2246c52c8c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> *</type>
@@ -722,7 +694,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="69" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="159" bodyend="162"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1ada95d85873125115208ff51f60fa72e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_cognitive_network" kindref="compound">CognitiveNetwork</ref> * &gt;</type>
@@ -741,7 +712,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="71" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="164" bodyend="167"/>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a045f27b28b8b11edc884568b390c22fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -764,7 +734,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="73" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="171" bodyend="176"/>
         <referencedby refid="class_synaptic_vesicle_1a0d4a4a03405593b3abc0e734c1758830" compoundref="synapticvesicle_8cc" startline="178" endline="184">GrowthVolume</referencedby>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a0d4a4a03405593b3abc0e734c1758830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -787,10 +756,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="75" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="178" bodyend="184"/>
         <references refid="class_synaptic_vesicle_1a045f27b28b8b11edc884568b390c22fe" compoundref="synapticvesicle_8cc" startline="171" endline="176">GrowthSurface</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a2509969e82fee789cc56fb0978f27662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void SynapticVesicle::ReleaseNeurotransmitters</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time)</argsstring>
         <name>ReleaseNeurotransmitters</name>
@@ -805,7 +773,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/synapticvesicle.h" line="77" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="186" bodyend="189"/>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_synaptic_vesicle_1a49c8e82147e634c83f7b4c3ef9894e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -825,7 +792,6 @@
         <location file="BrainHarmonics/synapticvesicle.h" line="79" column="1" bodyfile="BrainHarmonics/synapticvesicle.cc" bodystart="191" bodyend="237"/>
         <references refid="class_synaptic_vesicle_1add2f2815448729977fbcdbd5a59ec7b4" compoundref="synapticvesicle_8cc" startline="20" endline="60">ResetParameters</references>
         <references refid="class_synaptic_vesicle_1a6b7fb63806105b89ddad8fd0f56b76f6" compoundref="synapticvesicle_8h" startline="82">neurotransmitter_list</references>
-        <referencedby refid="class_synaptic_vesicle_1ac98f9c8ccaabbccc38151c51d204dfec" compoundref="synapticvesicle_8h" startline="45" endline="45">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -833,113 +799,113 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="403">
+      <node id="401">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="398">
+      <node id="396">
         <label>Axon</label>
         <link refid="class_axon"/>
-        <childnode refid="399" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="401">
-        <label>Neuron</label>
-        <link refid="class_neuron"/>
-        <childnode refid="402" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="402">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
-        <childnode refid="403" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="395">
-        <label>SynapticVesicle</label>
-        <link refid="class_synaptic_vesicle"/>
-        <childnode refid="396" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="397">
-        <label>AxonBranch</label>
-        <link refid="class_axon_branch"/>
-        <childnode refid="398" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="396">
-        <label>AxonBouton</label>
-        <link refid="class_axon_bouton"/>
         <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
       <node id="399">
-        <label>AxonHillock</label>
-        <link refid="class_axon_hillock"/>
+        <label>Neuron</label>
+        <link refid="class_neuron"/>
         <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
       <node id="400">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="401" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>SynapticVesicle</label>
+        <link refid="class_synaptic_vesicle"/>
+        <childnode refid="394" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>AxonBranch</label>
+        <link refid="class_axon_branch"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>AxonBouton</label>
+        <link refid="class_axon_bouton"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>AxonHillock</label>
+        <link refid="class_axon_hillock"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
         <label>Soma</label>
         <link refid="class_soma"/>
-        <childnode refid="401" relation="public-inheritance">
+        <childnode refid="399" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="412">
+      <node id="410">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="412" relation="usage">
+        <childnode refid="410" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="407">
+      <node id="405">
         <label>Axon</label>
         <link refid="class_axon"/>
-        <childnode refid="408" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="410">
-        <label>Neuron</label>
-        <link refid="class_neuron"/>
-        <childnode refid="411" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="411">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
-        <childnode refid="412" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="404">
-        <label>SynapticVesicle</label>
-        <link refid="class_synaptic_vesicle"/>
-        <childnode refid="405" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="406">
-        <label>AxonBranch</label>
-        <link refid="class_axon_branch"/>
-        <childnode refid="407" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="405">
-        <label>AxonBouton</label>
-        <link refid="class_axon_bouton"/>
         <childnode refid="406" relation="public-inheritance">
         </childnode>
       </node>
       <node id="408">
-        <label>AxonHillock</label>
-        <link refid="class_axon_hillock"/>
+        <label>Neuron</label>
+        <link refid="class_neuron"/>
         <childnode refid="409" relation="public-inheritance">
         </childnode>
       </node>
       <node id="409">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>SynapticVesicle</label>
+        <link refid="class_synaptic_vesicle"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>AxonBranch</label>
+        <link refid="class_axon_branch"/>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>AxonBouton</label>
+        <link refid="class_axon_bouton"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>AxonHillock</label>
+        <link refid="class_axon_hillock"/>
+        <childnode refid="407" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
         <label>Soma</label>
         <link refid="class_soma"/>
-        <childnode refid="410" relation="public-inheritance">
+        <childnode refid="408" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1281,7 +1247,7 @@
       <member refid="class_axon_bouton_1ae4119170ef72beaed3c8a0eb1d80ef14" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>RemoveSynapticVesicles</name></member>
       <member refid="class_synaptic_vesicle_1add2f2815448729977fbcdbd5a59ec7b4" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetChannelMin</name></member>
@@ -1289,7 +1255,7 @@
       <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetCognitiveNetworkDeviceTag</name></member>
       <member refid="class_synaptic_vesicle_1a7fd7cfce5eccb904206d968866f85220" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetCounter</name></member>
       <member refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" prot="public" virt="non-virtual" ambiguityscope="Neuron::"><scope>SynapticVesicle</scope><name>SetCounter</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1302,17 +1268,17 @@
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetLifespan</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>SynapticVesicle</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>SynapticVesicle</scope><name>SetWeakElectroweak</name></member>

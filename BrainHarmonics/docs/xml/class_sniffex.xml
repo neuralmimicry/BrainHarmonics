@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_sniffex" kind="class" language="C++" prot="public">
     <compoundname>Sniffex</compoundname>
     <includes refid="sniffex_8h" local="no">sniffex.h</includes>
@@ -23,7 +23,7 @@
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="class_sniffex_1a3d4ef3c90e55035eadca2d577004cd14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Sniffex::got_packet</definition>
         <argsstring>(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)</argsstring>
         <name>got_packet</name>
@@ -57,7 +57,7 @@
         <references refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" compoundref="sniffex_8cc" startline="99" endline="138">print_payload</references>
       </memberdef>
       <memberdef kind="function" id="class_sniffex_1a1b24163d441d38f3672800c3de85d149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Sniffex::print_payload</definition>
         <argsstring>(const u_char *payload, int len)</argsstring>
         <name>print_payload</name>
@@ -80,7 +80,7 @@
         <referencedby refid="class_sniffex_1a3d4ef3c90e55035eadca2d577004cd14" compoundref="sniffex_8cc" startline="144" endline="228">got_packet</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_sniffex_1aec1e34cb4b2ff906304f957c205707ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Sniffex::print_hex_ascii_line</definition>
         <argsstring>(const u_char *payload, int len, int offset)</argsstring>
         <name>print_hex_ascii_line</name>
@@ -106,12 +106,12 @@
         <referencedby refid="class_sniffex_1a1b24163d441d38f3672800c3de85d149" compoundref="sniffex_8cc" startline="99" endline="138">print_payload</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_sniffex_1ab32951f576e7cd62caf4fe1c5b085b4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Sniffex::print_app_banner</definition>
         <argsstring>(void)</argsstring>
         <name>print_app_banner</name>
         <param>
-          <type>void</type>
+          <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -127,12 +127,12 @@
         <referencedby refid="class_sniffex_1a41e146d588c285c94c0beee223d8552b" compoundref="sniffex_8cc" startline="230" endline="314">sniffexmain</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_sniffex_1aea81794fe2ac6e2b857eef01c3b109e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Sniffex::print_app_usage</definition>
         <argsstring>(void)</argsstring>
         <name>print_app_usage</name>
         <param>
-          <type>void</type>
+          <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         </param>
         <briefdescription>
         </briefdescription>

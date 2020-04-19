@@ -1,4 +1,4 @@
-.TH "DendriteBranch" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "DendriteBranch" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,10 +37,10 @@ Inherited by \fBDendriteCleft\fP\&.
 .RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -187,7 +187,7 @@ Definition at line 158 of file dendritebranch\&.cc\&.
 
 .PP
 Definition at line 20 of file dendritebranch\&.cc\&.
-.SS "void DendriteBranch::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP DendriteBranch::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBDendrite\fP\&.
@@ -195,7 +195,7 @@ Reimplemented from \fBDendrite\fP\&.
 Reimplemented in \fBNeuroreceptor\fP, and \fBDendriteCleft\fP\&.
 .PP
 Definition at line 41 of file dendritebranch\&.h\&.
-.SS "void DendriteBranch::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP DendriteBranch::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 42 of file dendritebranch\&.h\&.

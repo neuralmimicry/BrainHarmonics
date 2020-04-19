@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="transition__text_8cpp" kind="file" language="C++">
+    <compoundname>transition_text.cpp</compoundname>
+    <includes refid="glad_8h" local="no">glad/glad.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="common_2shader_8hpp" local="yes">common/shader.hpp</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="2268">
+        <label>common.h</label>
+        <link refid="common_2common_8h"/>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2269" relation="include">
+        </childnode>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2260" relation="include">
+        </childnode>
+        <childnode refid="2264" relation="include">
+        </childnode>
+      </node>
+      <node id="2262">
+        <label>stdint.h</label>
+      </node>
+      <node id="2266">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2259">
+        <label>transition_text.cpp</label>
+        <link refid="transition__text_8cpp"/>
+        <childnode refid="2260" relation="include">
+        </childnode>
+        <childnode refid="2263" relation="include">
+        </childnode>
+        <childnode refid="2264" relation="include">
+        </childnode>
+        <childnode refid="2265" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+        <childnode refid="2267" relation="include">
+        </childnode>
+        <childnode refid="2270" relation="include">
+        </childnode>
+      </node>
+      <node id="2261">
+        <label>KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2262" relation="include">
+        </childnode>
+      </node>
+      <node id="2271">
+        <label>string</label>
+      </node>
+      <node id="2264">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="2269">
+        <label>string.h</label>
+      </node>
+      <node id="2263">
+        <label>math.h</label>
+      </node>
+      <node id="2265">
+        <label>iostream</label>
+      </node>
+      <node id="2260">
+        <label>glad/glad.h</label>
+        <link refid="glad_8h"/>
+        <childnode refid="2261" relation="include">
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>common/shader.hpp</label>
+        <link refid="common_2shader_8hpp"/>
+        <childnode refid="2268" relation="include">
+        </childnode>
+      </node>
+      <node id="2270">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="transition__text_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="transition_text.cpp" line="9" column="1" bodyfile="transition_text.cpp" bodystart="9" bodyend="75"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+        <references refid="glad_8h_1a1f34fdf1c2f94c05c53d2a1cd3d80537" compoundref="glad_8c" startline="9703" endline="10035">gladLoadGLLoader</references>
+        <references refid="glad_8h_1a766db4e4de8f98981e53ea03bd47a004" compoundref="glad_8h" startline="2662">glGetString</references>
+        <references refid="glad_8h_1a18f8c168894e0666430a156138cb8cb7" compoundref="glad_8h" startline="904">GL_VERSION</references>
+        <references refid="glad_8h_1a4d3447ff3caf454bc686968fbe5f04bf" compoundref="glad_8h" startline="3952">glCreateShader</references>
+        <references refid="glad_8h_1a49bfa77ccf6fd0a0e7894aa03cee1445" compoundref="glad_8h" startline="2065">GL_TESS_CONTROL_SHADER</references>
+        <references refid="common_2shader_8cpp_1acece33008ab5ca684d562bbfe4163721" compoundref="common_2shader_8cpp" startline="49" endline="104">LoadShaders</references>
+        <references refid="glad_8h_1a71a2d01a12606fc26c1a28dba23dfce2" compoundref="glad_8h" startline="4476">glGenVertexArrays</references>
+        <references refid="glad_8h_1a4c13098a615d32e7f04aa4105149564f" compoundref="glad_8h" startline="4470">glBindVertexArray</references>
+        <references refid="glad_8h_1ad1c418e56ab98e908d315fb30fd57e5d" compoundref="glad_8h" startline="2560">glPolygonMode</references>
+        <references refid="glad_8h_1a355cd0068666a25037ca163a57eaa214" compoundref="glad_8h" startline="785">GL_FRONT_AND_BACK</references>
+        <references refid="glad_8h_1abbfc2afe81343b8bb6e636fd60aa8e39" compoundref="glad_8h" startline="896">GL_LINE</references>
+        <references refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" compoundref="glad_8h" startline="2686">glViewport</references>
+        <references refid="glad_8h_1adb00133bd8755da072d5af25a006d3b7" compoundref="glad_8h" startline="4395">glClearBufferfv</references>
+        <references refid="glad_8h_1a59bce1439c94ef9da87f83508eabb20a" compoundref="glad_8h" startline="884">GL_COLOR</references>
+        <references refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" compoundref="glad_8h" startline="3427">glMatrixMode</references>
+        <references refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" compoundref="glad_8h" startline="1128">GL_PROJECTION</references>
+        <references refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" compoundref="glad_8h" startline="3418">glLoadIdentity</references>
+        <references refid="glad_8h_1a724057c5248515bf71ba53b8dc90db6f" compoundref="glad_8h" startline="3436">glOrtho</references>
+        <references refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" compoundref="glad_8h" startline="1127">GL_MODELVIEW</references>
+        <references refid="glad_8h_1ad8e40c882d63c4671dea2ca2dfcf3046" compoundref="glad_8h" startline="4030">glUseProgram</references>
+        <references refid="glad_8h_1a89377449aceadc060b577926b5413bd2" compoundref="glad_8h" startline="3467">glDrawArrays</references>
+        <references refid="glad_8h_1af69a6cc3ed9ed1427d9454d067ee0b75" compoundref="glad_8h" startline="2034">GL_PATCHES</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="glad_8h" kindref="compound">glad/glad.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;common/shader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="transition__text_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="opengl_2transition__text_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref><sp/>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>making<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!glfwInit())</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,<sp/>4);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,<sp/>2);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_OPENGL_PROFILE,<sp/>GLFW_OPENGL_CORE_PROFILE);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,<sp/>GLFW_TRUE);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref><sp/>=<sp/>glfwCreateWindow(640,480,</highlight><highlight class="stringliteral">&quot;book<sp/>shader<sp/>exercise&quot;</highlight><highlight class="normal">,NULL,NULL);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;made<sp/>window<sp/>now<sp/>shader<sp/>loading<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compile<sp/>shaders<sp/>and<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>possible<sp/>time<sp/>to<sp/>include<sp/>the<sp/>glad<sp/>or<sp/>other<sp/>extension<sp/>loader<sp/>library<sp/>tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>line<sp/>must<sp/>be<sp/>called<sp/>before<sp/>we<sp/>have<sp/>access<sp/>to<sp/>the<sp/>glfunctions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1f34fdf1c2f94c05c53d2a1cd3d80537" kindref="member">gladLoadGLLoader</ref>((<ref refid="glad_8h_1a90ad7e2ab6cd1b09bf0f5b9eebacc8a2" kindref="member">GLADloadproc</ref>)glfwGetProcAddress);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>things<sp/>needed<sp/>for<sp/>the<sp/>actual<sp/>drawing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<ref refid="glad_8h_1a766db4e4de8f98981e53ea03bd47a004" kindref="member">glGetString</ref>(<ref refid="glad_8h_1a18f8c168894e0666430a156138cb8cb7" kindref="member">GL_VERSION</ref>));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>tes<sp/>=<sp/><ref refid="glad_8h_1a4d3447ff3caf454bc686968fbe5f04bf" kindref="member">glCreateShader</ref>(<ref refid="glad_8h_1a49bfa77ccf6fd0a0e7894aa03cee1445" kindref="member">GL_TESS_CONTROL_SHADER</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/><ref refid="glad_8h_1ab55c179cd6c84b3f5ddc11d9da0f55b4" kindref="member">program</ref><sp/>=<sp/><ref refid="common_2shader_8cpp_1acece33008ab5ca684d562bbfe4163721" kindref="member">LoadShaders</ref>(</highlight><highlight class="stringliteral">&quot;../simple.vert&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;../simple.frag&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;../simple.tcs&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;../simple.tes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a68c4714e43d8e827d80759f9cb864f3c" kindref="member">GLuint</ref><sp/>vertex_array;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a71a2d01a12606fc26c1a28dba23dfce2" kindref="member">glGenVertexArrays</ref>(1,&amp;vertex_array);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a4c13098a615d32e7f04aa4105149564f" kindref="member">glBindVertexArray</ref>(vertex_array);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ad1c418e56ab98e908d315fb30fd57e5d" kindref="member">glPolygonMode</ref>(<ref refid="glad_8h_1a355cd0068666a25037ca163a57eaa214" kindref="member">GL_FRONT_AND_BACK</ref>,<sp/><ref refid="glad_8h_1abbfc2afe81343b8bb6e636fd60aa8e39" kindref="member">GL_LINE</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!glfwWindowShouldClose(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>)){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>up<sp/>viewport</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ratio;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwGetFramebufferSize(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,&amp;<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,&amp;<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>=<sp/>(float)<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>/(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" kindref="member">glViewport</ref>(0,0,<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/>back_color[]<sp/>=<sp/>{0.0f,0.2f,0.0f,1.0f};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1adb00133bd8755da072d5af25a006d3b7" kindref="member">glClearBufferfv</ref>(<ref refid="glad_8h_1a59bce1439c94ef9da87f83508eabb20a" kindref="member">GL_COLOR</ref>,0,back_color);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//setting<sp/>up<sp/>the<sp/>camera<sp/>its<sp/>a<sp/>matrix<sp/>I<sp/>guess?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//what<sp/>is<sp/>the<sp/>-1.f<sp/>buisiness?this<sp/>is<sp/>for<sp/>the<sp/>float<sp/>casting<sp/>on<sp/>the<sp/>fly,<sp/>its<sp/>more<sp/>appropriate<sp/>according<sp/>to<sp/>arthur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a724057c5248515bf71ba53b8dc90db6f" kindref="member">glOrtho</ref>(-ratio,ratio,-1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,-1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>is<sp/>getting<sp/>the<sp/>perspective<sp/>matrix,<sp/>but<sp/>making<sp/>it<sp/>be<sp/>equal<sp/>to<sp/>all<sp/>ones<sp/>I<sp/>think</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ad8e40c882d63c4671dea2ca2dfcf3046" kindref="member">glUseProgram</ref>(<ref refid="glad_8h_1ab55c179cd6c84b3f5ddc11d9da0f55b4" kindref="member">program</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>use<sp/>prog,<sp/>and<sp/>then<sp/>move<sp/>into<sp/>the<sp/>attribute<sp/>assignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a89377449aceadc060b577926b5413bd2" kindref="member">glDrawArrays</ref>(<ref refid="glad_8h_1af69a6cc3ed9ed1427d9454d067ee0b75" kindref="member">GL_PATCHES</ref>,<sp/>0,<sp/>3);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>swap<sp/>the<sp/>buffering<sp/>for<sp/>the<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwSwapBuffers(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwDestroyWindow(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="transition_text.cpp"/>
+  </compounddef>
+</doxygen>

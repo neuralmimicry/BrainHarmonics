@@ -1,8 +1,8 @@
-.TH "BrainHarmonics/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-BrainHarmonics/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
 .SH SYNOPSIS
 .br
 .PP
@@ -25,10 +25,13 @@ BrainHarmonics/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
 .RI "#define \fBARCHITECTURE_ID\fP"
 .br
 .ti -1c
-.RI "#define \fBDEC\fP(n)"
+.RI "#define \fBDEC\fP(\fBn\fP)"
 .br
 .ti -1c
-.RI "#define \fBHEX\fP(n)"
+.RI "#define \fBHEX\fP(\fBn\fP)"
+.br
+.ti -1c
+.RI "#define \fBCXX_STD\fP   __cplusplus"
 .br
 .in -1c
 .SS "Functions"
@@ -59,12 +62,16 @@ BrainHarmonics/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
 .SS "#define ARCHITECTURE_ID"
 
 .PP
-Definition at line 430 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 525 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "#define COMPILER_ID   ''"
 
 .PP
-Definition at line 263 of file CMakeCXXCompilerId\&.cpp\&.
-.SS "#define DEC(n)"
+Definition at line 299 of file CMakeCXXCompilerId\&.cpp\&.
+.SS "#define CXX_STD   __cplusplus"
+
+.PP
+Definition at line 618 of file CMakeCXXCompilerId\&.cpp\&.
+.SS "#define DEC(\fBn\fP)"
 \fBValue:\fP
 .PP
 .nf
@@ -78,8 +85,8 @@ Definition at line 263 of file CMakeCXXCompilerId\&.cpp\&.
   ('0' +  ((n) % 10))
 .fi
 .PP
-Definition at line 434 of file CMakeCXXCompilerId\&.cpp\&.
-.SS "#define HEX(n)"
+Definition at line 529 of file CMakeCXXCompilerId\&.cpp\&.
+.SS "#define HEX(\fBn\fP)"
 \fBValue:\fP
 .PP
 .nf
@@ -93,35 +100,35 @@ Definition at line 434 of file CMakeCXXCompilerId\&.cpp\&.
   ('0' + ((n)     & 0xF))
 .fi
 .PP
-Definition at line 445 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 540 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "#define PLATFORM_ID"
 
 .PP
-Definition at line 380 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 421 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "#define STRINGIFY(X)   \fBSTRINGIFY_HELPER\fP(X)"
 
 .PP
-Definition at line 284 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 320 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "#define STRINGIFY_HELPER(X)   #X"
 
 .PP
-Definition at line 283 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 319 of file CMakeCXXCompilerId\&.cpp\&.
 .SH "Function Documentation"
 .PP 
 .SS "int main (int argc, char * argv[])"
 
 .PP
-Definition at line 513 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 637 of file CMakeCXXCompilerId\&.cpp\&.
 .SH "Variable Documentation"
 .PP 
 .SS "char const* info_arch = 'INFO' ':' 'arch[' ARCHITECTURE_ID ']'"
 
 .PP
-Definition at line 496 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 600 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "char const* info_compiler = 'INFO' ':' 'compiler[' COMPILER_ID ']'"
 
 .PP
-Definition at line 270 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 306 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "const char* info_language_dialect_default"
 \fBInitial value:\fP
 .PP
@@ -132,16 +139,20 @@ Definition at line 270 of file CMakeCXXCompilerId\&.cpp\&.
 
 
 
+
+
+
+
   "98"
 
 "]"
 .fi
 .PP
-Definition at line 501 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 621 of file CMakeCXXCompilerId\&.cpp\&.
 .SS "char const* info_platform = 'INFO' ':' 'platform[' PLATFORM_ID ']'"
 
 .PP
-Definition at line 495 of file CMakeCXXCompilerId\&.cpp\&.
+Definition at line 599 of file CMakeCXXCompilerId\&.cpp\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for BrainHarmonics from the source code\&.

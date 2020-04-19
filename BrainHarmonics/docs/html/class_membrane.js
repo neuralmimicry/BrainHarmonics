@@ -32,7 +32,7 @@ var class_membrane =
     [ "SetEnergyInc", "class_membrane.html#abd1c69b9b0260799afd3965c34f881ff", null ],
     [ "SetEnergyLeak", "class_membrane.html#a96618ef2c05a8af5d6bd8606c9b8eae8", null ],
     [ "SetEnergyThreshold", "class_membrane.html#a6d0b96fb6d823cc113dd56b8889b1544", null ],
-    [ "SetMembraneChannelPool", "class_membrane.html#a2cb70232c6aecf1c83a8e0918cb7fabe", null ],
+    [ "SetMembraneChannelPool", "class_membrane.html#aeda845ea9577e6a07690acad22ef375f", null ],
     [ "SetObjectType", "class_membrane.html#a5ba2bcb906f3984b28f1030207e106ad", null ],
     [ "TimeFunction", "class_membrane.html#a8c3593b0747495c412bf2d99b7b10104", null ],
     [ "Update", "class_membrane.html#a4af9710ea7f0bc6f1b6b6b6462612d51", null ],

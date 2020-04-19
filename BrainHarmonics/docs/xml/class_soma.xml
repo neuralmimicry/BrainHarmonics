@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_soma" kind="class" language="C++" prot="public">
     <compoundname>Soma</compoundname>
     <basecompoundref refid="class_neuron" prot="public" virt="non-virtual">Neuron</basecompoundref>
@@ -606,9 +606,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="58" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="58" bodyend="58"/>
       </memberdef>
-      <memberdef kind="function" id="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int Soma::SetAxonHillockPool</definition>
+      <memberdef kind="function" id="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void Soma::SetAxonHillockPool</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int set_pool)</argsstring>
         <name>SetAxonHillockPool</name>
         <param>
@@ -644,9 +644,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="61" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="61" bodyend="61"/>
       </memberdef>
-      <memberdef kind="function" id="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int Soma::SetDendritePool</definition>
+      <memberdef kind="function" id="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void Soma::SetDendritePool</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int set_pool)</argsstring>
         <name>SetDendritePool</name>
         <param>
@@ -666,7 +666,7 @@
         <location file="BrainHarmonics/soma.h" line="62" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a9ef49d3fea8c0fbe6513f3910339f736" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -689,7 +689,7 @@
         <location file="BrainHarmonics/soma.h" line="64" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="64" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a0d1c0271fc8eeacd6e8836f751dff331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -710,7 +710,7 @@
         <location file="BrainHarmonics/soma.h" line="65" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="65" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a414afd7eb780e29a432603198a9838ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetEnergyInc</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyInc</name>
@@ -731,7 +731,7 @@
         <location file="BrainHarmonics/soma.h" line="66" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a37081f7a8fc7832f8e89629221ddb8a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetEnergyDec</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyDec</name>
@@ -752,7 +752,7 @@
         <location file="BrainHarmonics/soma.h" line="67" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="67" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1abca59a00940ca2d9c005a84b6785c12f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetEnergyLeak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyLeak</name>
@@ -773,7 +773,7 @@
         <location file="BrainHarmonics/soma.h" line="68" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="68" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ae2876b37909f37e8922ce364eb06491f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetEnergyThreshold</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyThreshold</name>
@@ -793,37 +793,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="69" column="1" bodyfile="BrainHarmonics/soma.h" bodystart="69" bodyend="69"/>
         <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
-        <references refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" compoundref="soma_8cc" startline="21" endline="25">SetObjectType</references>
-        <references refid="class_soma_1a82f016dc126f7d1053e5eb455d28c44b" compoundref="soma_8cc" startline="27" endline="90">ResetParameters</references>
-        <references refid="class_soma_1a42289635de3cb326bceeb5358b99c190" compoundref="soma_8cc" startline="92" endline="101">CreateAxonHillock</references>
-        <references refid="class_soma_1ab059a6d4a7dc41664d6d17794d09b260" compoundref="soma_8cc" startline="103" endline="122">CreateAxonHillocks</references>
-        <references refid="class_soma_1a31463fba2f535e9c7cb05c8622fe3562" compoundref="soma_8cc" startline="130" endline="133">CloneAxonHillock</references>
-        <references refid="class_soma_1a299c95b89f50576244d1e56f531a80be" compoundref="soma_8cc" startline="125" endline="128">CloneAxonHillocks</references>
-        <references refid="class_soma_1af6d6d3e3c94f06682cf05a7a72032a46" compoundref="soma_8cc" startline="140" endline="143">DestroyAxonHillock</references>
-        <references refid="class_soma_1a5220929442601962af1a1fad66a8c919" compoundref="soma_8cc" startline="135" endline="138">DestroyAxonHillocks</references>
-        <references refid="class_soma_1a02e0e4656099531b35ab56ad1f7c945a" compoundref="soma_8cc" startline="145" endline="154">AddAxonHillock</references>
-        <references refid="class_soma_1a0fbede6e06b8e24a2cf22878c2f49165" compoundref="soma_8cc" startline="156" endline="175">AddAxonHillocks</references>
-        <references refid="class_soma_1a2f75c0f716fa1f74f70697db9dfcd562" compoundref="soma_8cc" startline="178" endline="182">RemoveAxonHillock</references>
-        <references refid="class_soma_1a7281585d74015a2549a19df6cb16e3fb" compoundref="soma_8cc" startline="184" endline="187">RemoveAxonHillocks</references>
-        <references refid="class_soma_1ac8756f68dbaac8c70cfba435f7068a85" compoundref="soma_8cc" startline="189" endline="192">GetAxonHillock</references>
-        <references refid="class_soma_1af76f86d082c3f60442148ec843b586e7" compoundref="soma_8cc" startline="194" endline="197">GetAxonHillocks</references>
-        <references refid="class_soma_1a0fab0c7cf54c2b7d36e90edcd3e21a16" compoundref="soma_8cc" startline="200" endline="209">CreateDendrite</references>
-        <references refid="class_soma_1a68dc02eff2912ad045900ab1879f020e" compoundref="soma_8cc" startline="211" endline="230">CreateDendrites</references>
-        <references refid="class_soma_1ad51c97b76dd7a1f77dc987ae33fd89bc" compoundref="soma_8cc" startline="238" endline="241">CloneDendrite</references>
-        <references refid="class_soma_1a3975212d2e3d8675ca14fbc9879e5e54" compoundref="soma_8cc" startline="233" endline="236">CloneDendrites</references>
-        <references refid="class_soma_1a086cb5a05e82f6f58ac0bd8403e25e07" compoundref="soma_8cc" startline="248" endline="251">DestroyDendrite</references>
-        <references refid="class_soma_1ac549a7caf885fdc0ac3a6adf393430af" compoundref="soma_8cc" startline="243" endline="246">DestroyDendrites</references>
-        <references refid="class_soma_1acc198b8ec11c3f2e43d3ba9a16ce84db" compoundref="soma_8cc" startline="253" endline="262">AddDendrite</references>
-        <references refid="class_soma_1a9874f03b33413b06ca74a3143cc35331" compoundref="soma_8cc" startline="264" endline="283">AddDendrites</references>
-        <references refid="class_soma_1a85c7d4b41486182c9528f5c43beaf7fd" compoundref="soma_8cc" startline="286" endline="290">RemoveDendrite</references>
-        <references refid="class_soma_1ad15baed4b2f5dab6f93e5df8fd1f7b23" compoundref="soma_8cc" startline="292" endline="295">RemoveDendrites</references>
-        <references refid="class_soma_1ab86537170d550cda0e7da080f7640f84" compoundref="soma_8cc" startline="297" endline="300">GetDendrite</references>
-        <references refid="class_soma_1afdb0e40855f31f2d9a48f3b13c01b599" compoundref="soma_8cc" startline="302" endline="305">GetDendrites</references>
-        <references refid="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" compoundref="soma_8cc" startline="308" endline="330">Growth</references>
-        <references refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Soma::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int object_type)</argsstring>
         <name>SetObjectType</name>
@@ -851,7 +823,6 @@
         <referencedby refid="class_neuron_1a4d1dc3a9f30196fe2b09dfbfc0a567bb" compoundref="neuron_8cc" startline="387" endline="444">Neuron::Update</referencedby>
         <referencedby refid="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" compoundref="soma_8cc" startline="308" endline="330">Growth</referencedby>
         <referencedby refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Update</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a82f016dc126f7d1053e5eb455d28c44b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -876,7 +847,6 @@
         <referencedby refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" compoundref="soma_8cc" startline="21" endline="25">SetObjectType</referencedby>
         <referencedby refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Update</referencedby>
         <referencedby refid="class_soma_1a451e3918aa5f3ec5670fa08d4d710dd6" compoundref="soma_8h" startline="26" endline="38">Soma</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a42289635de3cb326bceeb5358b99c190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -897,7 +867,6 @@
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
         <referencedby refid="class_soma_1ab059a6d4a7dc41664d6d17794d09b260" compoundref="soma_8cc" startline="103" endline="122">CreateAxonHillocks</referencedby>
         <referencedby refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Update</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ab059a6d4a7dc41664d6d17794d09b260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -921,7 +890,6 @@
         <location file="BrainHarmonics/soma.h" line="76" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="103" bodyend="122"/>
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
         <references refid="class_soma_1a42289635de3cb326bceeb5358b99c190" compoundref="soma_8cc" startline="92" endline="101">CreateAxonHillock</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a31463fba2f535e9c7cb05c8622fe3562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -947,7 +915,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="78" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="130" bodyend="133"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a299c95b89f50576244d1e56f531a80be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -973,7 +940,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="80" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="125" bodyend="128"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1af6d6d3e3c94f06682cf05a7a72032a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -995,7 +961,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="82" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="140" bodyend="143"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a5220929442601962af1a1fad66a8c919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1017,7 +982,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="84" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="135" bodyend="138"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a02e0e4656099531b35ab56ad1f7c945a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1041,7 +1005,6 @@
         <location file="BrainHarmonics/soma.h" line="86" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="145" bodyend="154"/>
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
         <referencedby refid="class_soma_1a0fbede6e06b8e24a2cf22878c2f49165" compoundref="soma_8cc" startline="156" endline="175">AddAxonHillocks</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a0fbede6e06b8e24a2cf22878c2f49165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1065,7 +1028,6 @@
         <location file="BrainHarmonics/soma.h" line="88" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="156" bodyend="175"/>
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
         <references refid="class_soma_1a02e0e4656099531b35ab56ad1f7c945a" compoundref="soma_8cc" startline="145" endline="154">AddAxonHillock</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a2f75c0f716fa1f74f70697db9dfcd562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1083,7 +1045,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="90" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="178" bodyend="182"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a7281585d74015a2549a19df6cb16e3fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1105,7 +1066,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="92" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="184" bodyend="187"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ac8756f68dbaac8c70cfba435f7068a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1128,7 +1088,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="94" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="189" bodyend="192"/>
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1af76f86d082c3f60442148ec843b586e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1147,7 +1106,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="96" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="194" bodyend="197"/>
         <references refid="class_soma_1af93902336cddb974b282aef8b7b4243c" compoundref="soma_8h" startline="127">axonhillock_list</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a0fab0c7cf54c2b7d36e90edcd3e21a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1168,7 +1126,6 @@
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <referencedby refid="class_soma_1a68dc02eff2912ad045900ab1879f020e" compoundref="soma_8cc" startline="211" endline="230">CreateDendrites</referencedby>
         <referencedby refid="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" compoundref="soma_8cc" startline="308" endline="330">Growth</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a68dc02eff2912ad045900ab1879f020e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1192,7 +1149,6 @@
         <location file="BrainHarmonics/soma.h" line="100" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="211" bodyend="230"/>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <references refid="class_soma_1a0fab0c7cf54c2b7d36e90edcd3e21a16" compoundref="soma_8cc" startline="200" endline="209">CreateDendrite</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ad51c97b76dd7a1f77dc987ae33fd89bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1218,7 +1174,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="102" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="238" bodyend="241"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a3975212d2e3d8675ca14fbc9879e5e54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1244,7 +1199,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="104" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="233" bodyend="236"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a086cb5a05e82f6f58ac0bd8403e25e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1266,7 +1220,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="106" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="248" bodyend="251"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ac549a7caf885fdc0ac3a6adf393430af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1288,7 +1241,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="108" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="243" bodyend="246"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1acc198b8ec11c3f2e43d3ba9a16ce84db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1312,7 +1264,6 @@
         <location file="BrainHarmonics/soma.h" line="110" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="253" bodyend="262"/>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <referencedby refid="class_soma_1a9874f03b33413b06ca74a3143cc35331" compoundref="soma_8cc" startline="264" endline="283">AddDendrites</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a9874f03b33413b06ca74a3143cc35331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1336,7 +1287,6 @@
         <location file="BrainHarmonics/soma.h" line="112" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="264" bodyend="283"/>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <references refid="class_soma_1acc198b8ec11c3f2e43d3ba9a16ce84db" compoundref="soma_8cc" startline="253" endline="262">AddDendrite</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a85c7d4b41486182c9528f5c43beaf7fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1354,7 +1304,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="114" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="286" bodyend="290"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ad15baed4b2f5dab6f93e5df8fd1f7b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1376,7 +1325,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="116" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="292" bodyend="295"/>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1ab86537170d550cda0e7da080f7640f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_soma" kindref="compound">Soma</ref> *</type>
@@ -1399,7 +1347,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="118" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="297" bodyend="300"/>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1afdb0e40855f31f2d9a48f3b13c01b599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_soma" kindref="compound">Soma</ref> * &gt;</type>
@@ -1418,7 +1365,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/soma.h" line="120" column="1" bodyfile="BrainHarmonics/soma.cc" bodystart="302" bodyend="305"/>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1441,7 +1387,6 @@
         <references refid="universe_8h_1ab68c01ca1b738452c0161cb1028a3858" compoundref="universe_8h" startline="42">TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_GEN1</references>
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <referencedby refid="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" compoundref="soma_8cc" startline="332" endline="411">Update</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_soma_1a211587ef21a7932c2f8f0345b1d32f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1473,7 +1418,6 @@
         <references refid="class_soma_1ab2d13b0adf2d10c242df0b8e62bcc01a" compoundref="soma_8h" startline="128">dendrite_list</references>
         <references refid="class_soma_1aa6162ca8a98a14cf49ba8310db129d47" compoundref="soma_8cc" startline="308" endline="330">Growth</references>
         <referencedby refid="class_neuron_1a06f45a5d1de890da84d3644fe58ea0a9" compoundref="neuron_8cc" startline="346" endline="367">Neuron::UpdateCycle</referencedby>
-        <referencedby refid="class_soma_1ae2876b37909f37e8922ce364eb06491f" compoundref="soma_8h" startline="69" endline="69">SetEnergyThreshold</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1481,107 +1425,107 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="364">
+      <node id="363">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="366">
+      <node id="365">
         <label>Axon</label>
         <link refid="class_axon"/>
-        <childnode refid="365" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="362">
-        <label>Neuron</label>
-        <link refid="class_neuron"/>
-        <childnode refid="363" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="363">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
         <childnode refid="364" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="369">
+      <node id="361">
+        <label>Neuron</label>
+        <link refid="class_neuron"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="368">
         <label>SynapticVesicle</label>
         <link refid="class_synaptic_vesicle"/>
-        <childnode refid="368" relation="public-inheritance">
+        <childnode refid="367" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="367">
+      <node id="366">
         <label>AxonBranch</label>
         <link refid="class_axon_branch"/>
-        <childnode refid="366" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="372">
-        <label>DendriteCleft</label>
-        <link refid="class_dendrite_cleft"/>
-        <childnode refid="371" relation="public-inheritance">
+        <childnode refid="365" relation="public-inheritance">
         </childnode>
       </node>
       <node id="371">
-        <label>DendriteBranch</label>
-        <link refid="class_dendrite_branch"/>
+        <label>DendriteCleft</label>
+        <link refid="class_dendrite_cleft"/>
         <childnode refid="370" relation="public-inheritance">
         </childnode>
       </node>
       <node id="370">
+        <label>DendriteBranch</label>
+        <link refid="class_dendrite_branch"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="369">
         <label>Dendrite</label>
         <link refid="class_dendrite"/>
-        <childnode refid="361" relation="public-inheritance">
+        <childnode refid="360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="368">
+      <node id="367">
         <label>AxonBouton</label>
         <link refid="class_axon_bouton"/>
-        <childnode refid="367" relation="public-inheritance">
+        <childnode refid="366" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="365">
+      <node id="364">
         <label>AxonHillock</label>
         <link refid="class_axon_hillock"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>Soma</label>
+        <link refid="class_soma"/>
         <childnode refid="361" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="361">
-        <label>Soma</label>
-        <link refid="class_soma"/>
-        <childnode refid="362" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="373">
+      <node id="372">
         <label>Neuroreceptor</label>
         <link refid="class_neuroreceptor"/>
-        <childnode refid="372" relation="public-inheritance">
+        <childnode refid="371" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="377">
+      <node id="376">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="377" relation="usage">
+        <childnode refid="376" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="375">
+      <node id="374">
         <label>Neuron</label>
         <link refid="class_neuron"/>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
         <childnode refid="376" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="376">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
-        <childnode refid="377" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="374">
+      <node id="373">
         <label>Soma</label>
         <link refid="class_soma"/>
-        <childnode refid="375" relation="public-inheritance">
+        <childnode refid="374" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1858,7 +1802,7 @@
       <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>Soma</scope><name>RemoveSynapses</name></member>
       <member refid="class_soma_1a82f016dc126f7d1053e5eb455d28c44b" prot="public" virt="non-virtual"><scope>Soma</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>Soma</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetChannelMin</name></member>
@@ -1866,7 +1810,7 @@
       <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetCognitiveNetworkDeviceTag</name></member>
       <member refid="class_soma_1a9ef49d3fea8c0fbe6513f3910339f736" prot="public" virt="virtual"><scope>Soma</scope><name>SetCounter</name></member>
       <member refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" prot="public" virt="non-virtual" ambiguityscope="Neuron::"><scope>Soma</scope><name>SetCounter</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>Soma</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>Soma</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1879,17 +1823,17 @@
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>Soma</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetLifespan</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>Soma</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>Soma</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>Soma</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>Soma</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>Soma</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>Soma</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>Soma</scope><name>SetWeakElectroweak</name></member>

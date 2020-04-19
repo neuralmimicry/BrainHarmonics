@@ -1,53 +1,53 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="lipids_8h" kind="file" language="C++">
     <compoundname>lipids.h</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">vector</includes>
     <includes refid="monomer_8h" local="yes">monomer.h</includes>
     <incdepgraph>
-      <node id="891">
+      <node id="1021">
         <label>vector</label>
       </node>
-      <node id="893">
+      <node id="1023">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="894" relation="include">
+        <childnode refid="1024" relation="include">
         </childnode>
-        <childnode refid="890" relation="include">
+        <childnode refid="1020" relation="include">
         </childnode>
-        <childnode refid="895" relation="include">
+        <childnode refid="1025" relation="include">
         </childnode>
-        <childnode refid="891" relation="include">
+        <childnode refid="1021" relation="include">
         </childnode>
       </node>
-      <node id="895">
+      <node id="1025">
         <label>math.h</label>
       </node>
-      <node id="890">
+      <node id="1020">
         <label>iostream</label>
       </node>
-      <node id="889">
+      <node id="1019">
         <label>BrainHarmonics/lipids.h</label>
         <link refid="lipids_8h"/>
-        <childnode refid="890" relation="include">
+        <childnode refid="1020" relation="include">
         </childnode>
-        <childnode refid="891" relation="include">
+        <childnode refid="1021" relation="include">
         </childnode>
-        <childnode refid="892" relation="include">
+        <childnode refid="1022" relation="include">
         </childnode>
       </node>
-      <node id="894">
+      <node id="1024">
         <label>chrono</label>
       </node>
-      <node id="892">
+      <node id="1022">
         <label>monomer.h</label>
         <link refid="monomer_8h"/>
-        <childnode refid="890" relation="include">
+        <childnode refid="1020" relation="include">
         </childnode>
-        <childnode refid="891" relation="include">
+        <childnode refid="1021" relation="include">
         </childnode>
-        <childnode refid="893" relation="include">
+        <childnode refid="1023" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -92,7 +92,7 @@
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="36" refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polymer_1a8346d821e5f8690d7816ba1d40036b69" kindref="member">getCounter</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>polymerCounter;<sp/>}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="38" refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" kindref="member">setCounter</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>polymerCounter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polymer_1a7ed6bbe09a570b59f9253d63fd3326d2" kindref="member">setCounter</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>polymerCounter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>void<sp/>add_monomer(std::vector&lt;monomer&gt;<sp/>*aPartof,<sp/>int<sp/>arrayEntry)</highlight></codeline>
 <codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>

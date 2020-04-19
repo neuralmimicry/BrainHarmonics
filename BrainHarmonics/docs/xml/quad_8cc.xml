@@ -1,85 +1,85 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="quad_8cc" kind="file" language="C++">
     <compoundname>quad.cc</compoundname>
     <includes refid="quad_8h" local="yes">quad.h</includes>
     <incdepgraph>
-      <node id="1463">
+      <node id="1581">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1464" relation="include">
+        <childnode refid="1582" relation="include">
         </childnode>
-        <childnode refid="1468" relation="include">
+        <childnode refid="1586" relation="include">
         </childnode>
       </node>
-      <node id="1464">
+      <node id="1582">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1465" relation="include">
+        <childnode refid="1583" relation="include">
         </childnode>
       </node>
-      <node id="1461">
+      <node id="1579">
         <label>polygon.h</label>
         <link refid="polygon_8h"/>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1462" relation="include">
+        <childnode refid="1580" relation="include">
         </childnode>
-        <childnode refid="1463" relation="include">
+        <childnode refid="1581" relation="include">
         </childnode>
       </node>
-      <node id="1468">
+      <node id="1586">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="1466" relation="include">
+        <childnode refid="1584" relation="include">
         </childnode>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1467" relation="include">
+        <childnode refid="1585" relation="include">
         </childnode>
-        <childnode refid="1465" relation="include">
+        <childnode refid="1583" relation="include">
         </childnode>
       </node>
-      <node id="1458">
+      <node id="1576">
         <label>BrainHarmonics/quad.cc</label>
         <link refid="quad_8cc"/>
-        <childnode refid="1459" relation="include">
+        <childnode refid="1577" relation="include">
         </childnode>
       </node>
-      <node id="1459">
+      <node id="1577">
         <label>quad.h</label>
         <link refid="quad_8h"/>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1461" relation="include">
+        <childnode refid="1579" relation="include">
         </childnode>
       </node>
-      <node id="1462">
+      <node id="1580">
         <label>vector</label>
       </node>
-      <node id="1465">
+      <node id="1583">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1466" relation="include">
+        <childnode refid="1584" relation="include">
         </childnode>
-        <childnode refid="1460" relation="include">
+        <childnode refid="1578" relation="include">
         </childnode>
-        <childnode refid="1467" relation="include">
+        <childnode refid="1585" relation="include">
         </childnode>
-        <childnode refid="1462" relation="include">
+        <childnode refid="1580" relation="include">
         </childnode>
       </node>
-      <node id="1467">
+      <node id="1585">
         <label>math.h</label>
       </node>
-      <node id="1460">
+      <node id="1578">
         <label>iostream</label>
       </node>
-      <node id="1466">
+      <node id="1584">
         <label>chrono</label>
       </node>
     </incdepgraph>
@@ -112,7 +112,7 @@
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time_object_created<sp/>==<sp/>std::chrono::time_point&lt;Clock&gt;(std::chrono::nanoseconds::zero()))</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).count()));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>()));</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>object<sp/>instantiated<sp/>without<sp/>a<sp/>type<sp/>specified<sp/>the<sp/>set<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
@@ -158,7 +158,7 @@
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time_dimension_pointer-&gt;AdjustCounters(event_time);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>

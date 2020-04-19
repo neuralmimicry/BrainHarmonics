@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_membrane" kind="class" language="C++" prot="public">
     <compoundname>Membrane</compoundname>
     <basecompoundref refid="class_neuron" prot="public" virt="non-virtual">Neuron</basecompoundref>
@@ -535,9 +535,9 @@
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="57" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="57" bodyend="57"/>
       </memberdef>
-      <memberdef kind="function" id="class_membrane_1a2cb70232c6aecf1c83a8e0918cb7fabe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int Membrane::SetMembraneChannelPool</definition>
+      <memberdef kind="function" id="class_membrane_1aeda845ea9577e6a07690acad22ef375f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void Membrane::SetMembraneChannelPool</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int set_pool)</argsstring>
         <name>SetMembraneChannelPool</name>
         <param>
@@ -557,7 +557,7 @@
         <location file="BrainHarmonics/membrane.h" line="58" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a4bff43b38d7046867f220392a39cc272" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -580,7 +580,7 @@
         <location file="BrainHarmonics/membrane.h" line="60" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="60" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a37beeb28761af644bc3a51d3509f14f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -601,7 +601,7 @@
         <location file="BrainHarmonics/membrane.h" line="61" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="61" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1abd1c69b9b0260799afd3965c34f881ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetEnergyInc</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyInc</name>
@@ -622,7 +622,7 @@
         <location file="BrainHarmonics/membrane.h" line="62" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="62" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1acefb2fe781d7316b232614663777cde1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetEnergyDec</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyDec</name>
@@ -643,7 +643,7 @@
         <location file="BrainHarmonics/membrane.h" line="63" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="63" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a96618ef2c05a8af5d6bd8606c9b8eae8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetEnergyLeak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyLeak</name>
@@ -664,7 +664,7 @@
         <location file="BrainHarmonics/membrane.h" line="64" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="64" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetEnergyThreshold</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergyThreshold</name>
@@ -683,25 +683,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="65" column="1" bodyfile="BrainHarmonics/membrane.h" bodystart="65" bodyend="65"/>
-        <references refid="class_membrane_1a5ba2bcb906f3984b28f1030207e106ad" compoundref="membrane_8cc" startline="20" endline="24">SetObjectType</references>
-        <references refid="class_membrane_1a9c49462cf63495381a52e2defc80b1e4" compoundref="membrane_8cc" startline="26" endline="83">ResetParameters</references>
-        <references refid="class_membrane_1a589b56529ac634a52b2a5fc78d356973" compoundref="membrane_8cc" startline="85" endline="94">CreateMembraneChannel</references>
-        <references refid="class_membrane_1a72987fae41e552af5befcd9a62aa6e46" compoundref="membrane_8cc" startline="96" endline="115">CreateMembraneChannels</references>
-        <references refid="class_membrane_1a9514ca4d4378e6467d2059a9d5f9b99b" compoundref="membrane_8cc" startline="123" endline="126">CloneMembraneChannel</references>
-        <references refid="class_membrane_1aa9958ea461092c0d2aceb07c9c34373c" compoundref="membrane_8cc" startline="118" endline="121">CloneMembraneChannels</references>
-        <references refid="class_membrane_1a12413d933a62b3bbb7931c6ab25de7de" compoundref="membrane_8cc" startline="133" endline="136">DestroyMembraneChannel</references>
-        <references refid="class_membrane_1aea71c4443f2fc22359ac3f770ff7755e" compoundref="membrane_8cc" startline="128" endline="131">DestroyMembraneChannels</references>
-        <references refid="class_membrane_1a3e3b4f55f028541e7513f826d01a689a" compoundref="membrane_8cc" startline="138" endline="147">AddMembraneChannel</references>
-        <references refid="class_membrane_1aab591875e3266d6c5af0f7c5f7f21e8f" compoundref="membrane_8cc" startline="149" endline="168">AddMembraneChannels</references>
-        <references refid="class_membrane_1a36d6927c8869cc752b55623dac661107" compoundref="membrane_8cc" startline="171" endline="175">RemoveMembraneChannel</references>
-        <references refid="class_membrane_1ac33ffd86416112420dc5b0576287c44d" compoundref="membrane_8cc" startline="177" endline="180">RemoveMembraneChannels</references>
-        <references refid="class_membrane_1a1e2bdb800f0f38254214ea7cbdc06941" compoundref="membrane_8cc" startline="182" endline="185">GetMembraneChannel</references>
-        <references refid="class_membrane_1a7fac2929241b7ff9b8b7f1ec955b2cc5" compoundref="membrane_8cc" startline="187" endline="190">GetMembraneChannels</references>
-        <references refid="class_membrane_1a544742864485b9ac052f3b241ae5c6b4" compoundref="membrane_8cc" startline="194" endline="213">Growth</references>
-        <references refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" compoundref="membrane_8cc" startline="215" endline="275">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a5ba2bcb906f3984b28f1030207e106ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Membrane::SetObjectType</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int object_type)</argsstring>
         <name>SetObjectType</name>
@@ -721,7 +705,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="66" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="20" bodyend="24"/>
         <references refid="class_membrane_1a9c49462cf63495381a52e2defc80b1e4" compoundref="membrane_8cc" startline="26" endline="83">ResetParameters</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
         <referencedby refid="class_neuron_1a4d1dc3a9f30196fe2b09dfbfc0a567bb" compoundref="neuron_8cc" startline="387" endline="444">Neuron::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a9c49462cf63495381a52e2defc80b1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -750,7 +733,6 @@
         <referencedby refid="class_membrane_1a5ba2bcb906f3984b28f1030207e106ad" compoundref="membrane_8cc" startline="20" endline="24">SetObjectType</referencedby>
         <referencedby refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" compoundref="membrane_8cc" startline="215" endline="275">Update</referencedby>
         <referencedby refid="class_membrane_1a8d61894d90a7f63e427cd8b1a5eca380" compoundref="membrane_8h" startline="26" endline="37">Membrane</referencedby>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a589b56529ac634a52b2a5fc78d356973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -770,7 +752,6 @@
         <location file="BrainHarmonics/membrane.h" line="70" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="85" bodyend="94"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
         <referencedby refid="class_membrane_1a72987fae41e552af5befcd9a62aa6e46" compoundref="membrane_8cc" startline="96" endline="115">CreateMembraneChannels</referencedby>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a72987fae41e552af5befcd9a62aa6e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -794,7 +775,6 @@
         <location file="BrainHarmonics/membrane.h" line="72" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="96" bodyend="115"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
         <references refid="class_membrane_1a589b56529ac634a52b2a5fc78d356973" compoundref="membrane_8cc" startline="85" endline="94">CreateMembraneChannel</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a9514ca4d4378e6467d2059a9d5f9b99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -820,7 +800,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="74" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="123" bodyend="126"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1aa9958ea461092c0d2aceb07c9c34373c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -846,7 +825,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="76" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="118" bodyend="121"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a12413d933a62b3bbb7931c6ab25de7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -868,7 +846,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="78" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="133" bodyend="136"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1aea71c4443f2fc22359ac3f770ff7755e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -890,7 +867,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="80" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="128" bodyend="131"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a3e3b4f55f028541e7513f826d01a689a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -914,7 +890,6 @@
         <location file="BrainHarmonics/membrane.h" line="82" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="138" bodyend="147"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
         <referencedby refid="class_membrane_1aab591875e3266d6c5af0f7c5f7f21e8f" compoundref="membrane_8cc" startline="149" endline="168">AddMembraneChannels</referencedby>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1aab591875e3266d6c5af0f7c5f7f21e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -938,7 +913,6 @@
         <location file="BrainHarmonics/membrane.h" line="84" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="149" bodyend="168"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
         <references refid="class_membrane_1a3e3b4f55f028541e7513f826d01a689a" compoundref="membrane_8cc" startline="138" endline="147">AddMembraneChannel</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a36d6927c8869cc752b55623dac661107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -956,7 +930,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="86" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="171" bodyend="175"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1ac33ffd86416112420dc5b0576287c44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -978,7 +951,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="88" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="177" bodyend="180"/>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a1e2bdb800f0f38254214ea7cbdc06941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_membrane" kindref="compound">Membrane</ref> *</type>
@@ -1001,7 +973,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="90" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="182" bodyend="185"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a7fac2929241b7ff9b8b7f1ec955b2cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_membrane" kindref="compound">Membrane</ref> * &gt;</type>
@@ -1020,7 +991,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/membrane.h" line="92" column="1" bodyfile="BrainHarmonics/membrane.cc" bodystart="187" bodyend="190"/>
         <references refid="class_membrane_1ad41c9c20d5a1bc279f32f9001dee8c50" compoundref="membrane_8h" startline="99">membranechannel_list</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a544742864485b9ac052f3b241ae5c6b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1042,7 +1012,6 @@
         <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
         <referencedby refid="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" compoundref="membrane_8cc" startline="215" endline="275">Update</referencedby>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_membrane_1a4af9710ea7f0bc6f1b6b6b6462612d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1070,7 +1039,6 @@
         <references refid="class_membrane_1a544742864485b9ac052f3b241ae5c6b4" compoundref="membrane_8cc" startline="194" endline="213">Growth</references>
         <references refid="class_universe_1a17c8d799331a5b32837f285c12cbe858" compoundref="universe_8h" startline="282">Universe::object_energy_threshold</references>
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
-        <referencedby refid="class_membrane_1a6d0b96fb6d823cc113dd56b8889b1544" compoundref="membrane_8h" startline="65" endline="65">SetEnergyThreshold</referencedby>
         <referencedby refid="class_neuron_1a06f45a5d1de890da84d3644fe58ea0a9" compoundref="neuron_8cc" startline="346" endline="367">Neuron::UpdateCycle</referencedby>
       </memberdef>
       </sectiondef>
@@ -1079,59 +1047,59 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="205">
+      <node id="206">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="203">
+      <node id="204">
         <label>Neuron</label>
         <link refid="class_neuron"/>
-        <childnode refid="204" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="204">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
         <childnode refid="205" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="202">
-        <label>Membrane</label>
-        <link refid="class_membrane"/>
-        <childnode refid="203" relation="public-inheritance">
+      <node id="205">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="206" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="206">
+      <node id="203">
+        <label>Membrane</label>
+        <link refid="class_membrane"/>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="207">
         <label>MembraneChannel</label>
         <link refid="class_membrane_channel"/>
-        <childnode refid="202" relation="public-inheritance">
+        <childnode refid="203" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="210">
+      <node id="211">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="210" relation="usage">
+        <childnode refid="211" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="208">
+      <node id="209">
         <label>Neuron</label>
         <link refid="class_neuron"/>
-        <childnode refid="209" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="209">
-        <label>CognitiveNetwork</label>
-        <link refid="class_cognitive_network"/>
         <childnode refid="210" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="207">
+      <node id="210">
+        <label>CognitiveNetwork</label>
+        <link refid="class_cognitive_network"/>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
         <label>Membrane</label>
         <link refid="class_membrane"/>
-        <childnode refid="208" relation="public-inheritance">
+        <childnode refid="209" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1414,19 +1382,19 @@
       <member refid="class_neuron_1a492f597021faf1b74942bc75364c3c22" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetGateKeeper</name></member>
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>Membrane</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetLifespan</name></member>
-      <member refid="class_membrane_1a2cb70232c6aecf1c83a8e0918cb7fabe" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetMembraneChannelPool</name></member>
+      <member refid="class_membrane_1aeda845ea9577e6a07690acad22ef375f" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetMembraneChannelPool</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_membrane_1a5ba2bcb906f3984b28f1030207e106ad" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>Membrane</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>Membrane</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>Membrane</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>Membrane</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>Membrane</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>Membrane</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>Membrane</scope><name>SetWeakElectroweak</name></member>

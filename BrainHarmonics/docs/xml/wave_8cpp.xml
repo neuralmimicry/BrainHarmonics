@@ -1,0 +1,852 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="wave_8cpp" kind="file" language="C++">
+    <compoundname>wave.cpp</compoundname>
+    <includes refid="glad_8h" local="no">glad/glad.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="linmath_8h" local="no">linmath.h</includes>
+    <incdepgraph>
+      <node id="2329">
+        <label>stdint.h</label>
+      </node>
+      <node id="2337">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2328">
+        <label>KHR/khrplatform.h</label>
+        <link refid="khrplatform_8h"/>
+        <childnode refid="2329" relation="include">
+        </childnode>
+      </node>
+      <node id="2331">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="2333">
+        <label>vector</label>
+      </node>
+      <node id="2338">
+        <label>linmath.h</label>
+        <link refid="linmath_8h"/>
+        <childnode refid="2330" relation="include">
+        </childnode>
+      </node>
+      <node id="2330">
+        <label>math.h</label>
+      </node>
+      <node id="2332">
+        <label>cstdlib</label>
+      </node>
+      <node id="2334">
+        <label>iostream</label>
+      </node>
+      <node id="2327">
+        <label>glad/glad.h</label>
+        <link refid="glad_8h"/>
+        <childnode refid="2328" relation="include">
+        </childnode>
+      </node>
+      <node id="2336">
+        <label>stdio.h</label>
+      </node>
+      <node id="2326">
+        <label>wave.cpp</label>
+        <link refid="wave_8cpp"/>
+        <childnode refid="2327" relation="include">
+        </childnode>
+        <childnode refid="2330" relation="include">
+        </childnode>
+        <childnode refid="2331" relation="include">
+        </childnode>
+        <childnode refid="2332" relation="include">
+        </childnode>
+        <childnode refid="2333" relation="include">
+        </childnode>
+        <childnode refid="2334" relation="include">
+        </childnode>
+        <childnode refid="2335" relation="include">
+        </childnode>
+        <childnode refid="2336" relation="include">
+        </childnode>
+        <childnode refid="2337" relation="include">
+        </childnode>
+        <childnode refid="2338" relation="include">
+        </childnode>
+      </node>
+      <node id="2335">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_vertex" prot="public">Vertex</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wave_8cpp_1a82c13b07387b0fa3ab346ad38894e2a7" prot="public" static="no">
+        <name>MAX_DELTA_T</name>
+        <initializer>0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="34" column="9" bodyfile="wave.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wave_8cpp_1aaa69f89df4c8e47abeb574bfdd11d9f4" prot="public" static="no">
+        <name>ANIMATION_SPEED</name>
+        <initializer>10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="37" column="9" bodyfile="wave.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="wave_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" prot="public" static="no">
+        <type><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref></type>
+        <definition>typedef GLfloat gfloat</definition>
+        <argsstring></argsstring>
+        <name>gfloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="45" column="1" bodyfile="wave.cpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wave_8cpp_1a6487f2034e554d7d012dc0821253e5be" prot="public" static="no" mutable="no">
+        <type><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <initializer>= 210.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="39" column="1" bodyfile="wave.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" prot="public" static="no" mutable="no">
+        <type><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <initializer>= -70.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="39" column="1" bodyfile="wave.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" prot="public" static="no" mutable="no">
+        <type><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref></type>
+        <definition>GLfloat zoom</definition>
+        <argsstring></argsstring>
+        <name>zoom</name>
+        <initializer>= 2.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="40" column="1" bodyfile="wave.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double cursorX</definition>
+        <argsstring></argsstring>
+        <name>cursorX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="42" column="1" bodyfile="wave.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double cursorY</definition>
+        <argsstring></argsstring>
+        <name>cursorY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="43" column="1" bodyfile="wave.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" prot="public" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="struct_vertex" kindref="compound">Vertex</ref> &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;Vertex&gt; &gt; all_v</definition>
+        <argsstring></argsstring>
+        <name>all_v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="53" column="1" bodyfile="wave.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wave_8cpp_1a5f4b881047748bf14185b459c8000028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void makeTriangle</definition>
+        <argsstring>(vector&lt; Vertex &gt; vct)</argsstring>
+        <name>makeTriangle</name>
+        <param>
+          <type>vector&lt; <ref refid="struct_vertex" kindref="compound">Vertex</ref> &gt;</type>
+          <declname>vct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="58" column="1" bodyfile="wave.cpp" bodystart="58" bodyend="66"/>
+        <references refid="glad_8h_1a18a9548126ac9e9eb00f9cd26cb0ab85" compoundref="glad_8h" startline="2710">glBegin</references>
+        <references refid="glad_8h_1a6079e7a02a59adad65eb953d9482b1ed" compoundref="glad_8h" startline="753">GL_TRIANGLES</references>
+        <references refid="glad_8h_1a4698e25751ef60d3055f1801ad5a3ec9" compoundref="glad_8h" startline="2776">glColor4f</references>
+        <references refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" compoundref="glad_8h" startline="3097">glVertex3f</references>
+        <references refid="glad_8h_1acedf7461ab825274c1c407dcc0ddd56b" compoundref="glad_8h" startline="2818">glEnd</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a570dffbcf9351459c4aa859a84f215d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void makeTriangles</definition>
+        <argsstring>(vector&lt; vector&lt; Vertex &gt;&gt; vct)</argsstring>
+        <name>makeTriangles</name>
+        <param>
+          <type>vector&lt; vector&lt; <ref refid="struct_vertex" kindref="compound">Vertex</ref> &gt;&gt;</type>
+          <declname>vct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="72" column="1" bodyfile="wave.cpp" bodystart="72" bodyend="76"/>
+        <references refid="opengl_2wave_8cpp_1a5f4b881047748bf14185b459c8000028" compoundref="opengl_2wave_8cpp" startline="58" endline="66">makeTriangle</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="opengl_2triangles_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" kindref="member">gfloat</ref></type>
+        <definition>gfloat randCeil</definition>
+        <argsstring>(float ceil)</argsstring>
+        <name>randCeil</name>
+        <param>
+          <type>float</type>
+          <declname>ceil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="85" column="1" bodyfile="wave.cpp" bodystart="85" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1ac0e905af3878e21de317eea54cb1e50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void trianglesSet</definition>
+        <argsstring>(int number, int height, int width)</argsstring>
+        <name>trianglesSet</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="97" column="1" bodyfile="wave.cpp" bodystart="97" bodyend="114"/>
+        <references refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" compoundref="opengl_2wave_8cpp" startline="85" endline="93">randCeil</references>
+        <references refid="opengl_2wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" compoundref="opengl_2wave_8cpp" startline="53">all_v</references>
+        <references refid="opengl_2wave_8cpp_1a570dffbcf9351459c4aa859a84f215d4" compoundref="opengl_2wave_8cpp" startline="72" endline="76">makeTriangles</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a6e6d1771a9242858811be0a3569838fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>static void error_callback</definition>
+        <argsstring>(int error, const char *description)</argsstring>
+        <name>error_callback</name>
+        <param>
+          <type>int</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="124" column="1" bodyfile="wave.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a286930f4e8ede059b83ff6eafa2ff718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void key_callback</definition>
+        <argsstring>(GLFWwindow *window, int key, int scancode, int action, int mods)</argsstring>
+        <name>key_callback</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scancode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="134" column="1" bodyfile="wave.cpp" bodystart="134" bodyend="169"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+        <references refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" compoundref="opengl_2wave_8cpp" startline="39">beta</references>
+        <references refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" compoundref="opengl_2wave_8cpp" startline="40">zoom</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a5515d805e76ce6728de3c0dc5e187c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void mouse_button_callback</definition>
+        <argsstring>(GLFWwindow *window, int button, int action, int mods)</argsstring>
+        <name>mouse_button_callback</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mods</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="176" column="1" bodyfile="wave.cpp" bodystart="176" bodyend="188"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+        <references refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" compoundref="opengl_2wave_8cpp" startline="42">cursorX</references>
+        <references refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" compoundref="opengl_2wave_8cpp" startline="43">cursorY</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1ab5fb5502317b46f9cecd6379f2ecd210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void cursor_position_callback</definition>
+        <argsstring>(GLFWwindow *window, double x, double y)</argsstring>
+        <name>cursor_position_callback</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="195" column="1" bodyfile="wave.cpp" bodystart="195" bodyend="205"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+        <references refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" compoundref="opengl_2wave_8cpp" startline="42">cursorX</references>
+        <references refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" compoundref="opengl_2wave_8cpp" startline="39">beta</references>
+        <references refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" compoundref="opengl_2wave_8cpp" startline="43">cursorY</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a6bec52479312a11696798b50140f227d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void scroll_callback</definition>
+        <argsstring>(GLFWwindow *window, double x, double y)</argsstring>
+        <name>scroll_callback</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="212" column="1" bodyfile="wave.cpp" bodystart="212" bodyend="217"/>
+        <references refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" compoundref="opengl_2wave_8cpp" startline="40">zoom</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a5180f7bf2b71421af837035824a8c8ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void framebuffer_size_callback</definition>
+        <argsstring>(GLFWwindow *window, int width, int height)</argsstring>
+        <name>framebuffer_size_callback</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="224" column="1" bodyfile="wave.cpp" bodystart="224" bodyend="242"/>
+        <references refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" compoundref="glad_8h" startline="2686">glViewport</references>
+        <references refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" compoundref="glad_8h" startline="3427">glMatrixMode</references>
+        <references refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" compoundref="glad_8h" startline="1128">GL_PROJECTION</references>
+        <references refid="linmath_8h_1a94145cd87abb64ac311b7937f5b822b6" compoundref="linmath_8h" startline="368" endline="393">mat4x4_perspective</references>
+        <references refid="glad_8h_1a7ca5354d681c38db253679a45b419039" compoundref="glad_8h" startline="3421">glLoadMatrixf</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a2f6192c48020efe917d5f08cfc3191a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
+        <definition>void draw_scene</definition>
+        <argsstring>(GLFWwindow *window, int height, int width)</argsstring>
+        <name>draw_scene</name>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="245" column="1" bodyfile="wave.cpp" bodystart="245" bodyend="264"/>
+        <references refid="glad_8h_1afc250a2b6bf11f24bb73534a2f053c0d" compoundref="glad_8h" startline="2587">glClear</references>
+        <references refid="glad_8h_1a947db9ff944c4b78e652144c3dd1060c" compoundref="glad_8h" startline="746">GL_COLOR_BUFFER_BIT</references>
+        <references refid="glad_8h_1aef2a9e9a4b130bc4de57514327847b4f" compoundref="glad_8h" startline="744">GL_DEPTH_BUFFER_BIT</references>
+        <references refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" compoundref="glad_8h" startline="3427">glMatrixMode</references>
+        <references refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" compoundref="glad_8h" startline="1127">GL_MODELVIEW</references>
+        <references refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" compoundref="glad_8h" startline="3418">glLoadIdentity</references>
+        <references refid="glad_8h_1a4b8d59e72147f88dd928f570d9a1713a" compoundref="glad_8h" startline="3460">glTranslatef</references>
+        <references refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" compoundref="opengl_2wave_8cpp" startline="40">zoom</references>
+        <references refid="glad_8h_1a9a0010822b3a45b62142878ad90926e6" compoundref="glad_8h" startline="3448">glRotatef</references>
+        <references refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" compoundref="opengl_2wave_8cpp" startline="39">beta</references>
+        <references refid="opengl_2wave_8cpp_1ac0e905af3878e21de317eea54cb1e50a" compoundref="opengl_2wave_8cpp" startline="97" endline="114">trianglesSet</references>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+      </memberdef>
+      <memberdef kind="function" id="wave_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="wave.cpp" line="271" column="1" bodyfile="wave.cpp" bodystart="271" bodyend="313"/>
+        <references refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" compoundref="mainshader_8cpp" startline="18">window</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Wave<sp/>Simulation<sp/>in<sp/>OpenGL</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>(C)<sp/>2002<sp/>Jakob<sp/>Thomsen</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>http://home.in.tum.de/~thomsen</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Modified<sp/>for<sp/>GLFW<sp/>by<sp/>Sylvain<sp/>Hellegouarch<sp/>-<sp/>sh@programmationworld.com</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Modified<sp/>for<sp/>variable<sp/>frame<sp/>rate<sp/>by<sp/>Marcus<sp/>Geelnard</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>2003-Jan-31:<sp/>Minor<sp/>cleanups<sp/>and<sp/>speedups<sp/>/<sp/>MG</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>2010-10-24:<sp/>Formatting<sp/>and<sp/>cleanup<sp/>-<sp/>Camilla<sp/>Berglund</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>MS<sp/>math.h<sp/>define<sp/>M_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#define<sp/>_USE_MATH_DEFINES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="glad_8h" kindref="compound">glad/glad.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="linmath_8h" kindref="compound">linmath.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::vector;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::rand;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::srand;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Maximum<sp/>delta<sp/>T<sp/>to<sp/>allow<sp/>for<sp/>differential<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="wave_8cpp_1a82c13b07387b0fa3ab346ad38894e2a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_DELTA_T<sp/>0.01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Animation<sp/>speed<sp/>(10.0<sp/>looks<sp/>good)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="wave_8cpp_1aaa69f89df4c8e47abeb574bfdd11d9f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANIMATION_SPEED<sp/>10.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" refkind="member"><highlight class="normal"><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/><ref refid="glad_8h_1ac03904b1f7e359bb2acf10a755e97c5a" kindref="member">alpha</ref><sp/>=<sp/>210.f,<sp/><ref refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" kindref="member">beta</ref><sp/>=<sp/>-70.f;</highlight></codeline>
+<codeline lineno="40" refid="wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" refkind="member"><highlight class="normal"><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>=<sp/>2.f;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" kindref="member">cursorX</ref>;</highlight></codeline>
+<codeline lineno="43" refid="wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" kindref="member">cursorY</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="wave_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/><ref refid="opengl_2wave_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" kindref="member">gfloat</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_vertex" kindref="compound">Vertex</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/><ref refid="struct_vertex_1ae02cfb84a3e8f33a2a94a8d3b3798aac" kindref="member">x</ref>,<sp/><ref refid="struct_vertex_1a53f2719389e21b4e931282336d3817aa" kindref="member">y</ref>,<sp/><ref refid="struct_vertex_1acda9f16691b233ed0d8db0f12079f7e9" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref><sp/><ref refid="struct_vertex_1a0874a00d75d70c7b1e0b57a85297ee3b" kindref="member">r</ref>,<sp/><ref refid="struct_vertex_1aaf212b0ecbcbf9c0367ddae30461fd03" kindref="member">g</ref>,<sp/><ref refid="struct_vertex_1a0a5270835c4e3bcce9bfc9ba4a069bbb" kindref="member">b</ref>,<ref refid="struct_vertex_1a885e6834f58550a4e1c1339a171f42f2" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" refkind="member"><highlight class="normal">vector&lt;vector&lt;Vertex&gt;&gt;<sp/><ref refid="opengl_2wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" kindref="member">all_v</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Purpose:<sp/>make<sp/>a<sp/>triangle<sp/>given<sp/>vertices<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="wave_8cpp_1a5f4b881047748bf14185b459c8000028" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a5f4b881047748bf14185b459c8000028" kindref="member">makeTriangle</ref><sp/>(vector&lt;Vertex&gt;<sp/>vct)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a18a9548126ac9e9eb00f9cd26cb0ab85" kindref="member">glBegin</ref>(<ref refid="glad_8h_1a6079e7a02a59adad65eb953d9482b1ed" kindref="member">GL_TRIANGLES</ref>);<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>iterate<sp/>over<sp/>the<sp/>vertices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="struct_vertex" kindref="compound">Vertex</ref><sp/><ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>:<sp/>vct)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a4698e25751ef60d3055f1801ad5a3ec9" kindref="member">glColor4f</ref>(<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.r,<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.g,<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.b,<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.a);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a8b32ed40d834188f6abea5eb5ac7fc07" kindref="member">glVertex3f</ref>(<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.x,<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.y,<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.z);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1acedf7461ab825274c1c407dcc0ddd56b" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Purpose:<sp/>generate<sp/>all<sp/>the<sp/>triangles<sp/>for<sp/>the<sp/>vector<sp/>set<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="wave_8cpp_1a570dffbcf9351459c4aa859a84f215d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a570dffbcf9351459c4aa859a84f215d4" kindref="member">makeTriangles</ref><sp/>(vector&lt;vector&lt;Vertex&gt;&gt;<sp/>vct)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vector&lt;Vertex&gt;<sp/>subV:vct)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5f4b881047748bf14185b459c8000028" kindref="member">makeTriangle</ref>(subV);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Purpose:<sp/>this<sp/>function<sp/>gives<sp/>a<sp/>number<sp/>between<sp/>0<sp/>and<sp/>ceil<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" refkind="member"><highlight class="normal"><ref refid="opengl_2triangles_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" kindref="member">gfloat</ref><sp/><ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref><sp/><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ceil)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>randVal<sp/>=<sp/>rand();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref><sp/>=<sp/>randVal/RAND_MAX*(2*ceil)<sp/>-ceil;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="opengl_2triangles_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" kindref="member">gfloat</ref><sp/>returnVal<sp/>=<sp/>(<ref refid="opengl_2wave_8cpp_1a9f8f89ff3e07b5fc534327016b4ba7b4" kindref="member">gfloat</ref>)<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>*ceil;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;randval<sp/>&quot;<sp/>&lt;&lt;<sp/>randVal<sp/>&lt;&lt;<sp/>&quot;randval&quot;<sp/>&lt;&lt;<sp/>val<sp/>&lt;&lt;<sp/>&quot;top<sp/>is<sp/>&quot;&lt;&lt;<sp/>RAND_MAX<sp/><sp/>&lt;&lt;<sp/>&quot;<sp/>rv<sp/>is<sp/>&quot;<sp/>&lt;&lt;<sp/>returnVal<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>returnVal;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Purpose:<sp/>make<sp/>group<sp/>of<sp/>triangles<sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="wave_8cpp_1ac0e905af3878e21de317eea54cb1e50a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1ac0e905af3878e21de317eea54cb1e50a" kindref="member">trianglesSet</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>animTime<sp/>=<sp/>fmod(glfwGetTime(),5)*10;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>animTime<sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>animTime<sp/>&lt;<sp/>1.0<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;in<sp/>creating<sp/>vertex&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;i<sp/>&lt;<sp/>number;i++<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Vertex&gt;<sp/>vertex_vect;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1fb4b4dc7b41b62604a44f280bccbd54" kindref="member">j</ref><sp/>=<sp/>0;<ref refid="glad_8h_1a1fb4b4dc7b41b62604a44f280bccbd54" kindref="member">j</ref><sp/>&lt;<sp/>3;<ref refid="glad_8h_1a1fb4b4dc7b41b62604a44f280bccbd54" kindref="member">j</ref>++<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vertex" kindref="compound">Vertex</ref><sp/><ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref><sp/>=<sp/>{<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1),<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1),<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1),<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1),<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1),<ref refid="opengl_2wave_8cpp_1a68bc1dadbefed840bdbe84a66126eeb7" kindref="member">randCeil</ref>(1)};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vertex_vect.push_back(<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>.z&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" kindref="member">all_v</ref>.push_back(vertex_vect);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a570dffbcf9351459c4aa859a84f215d4" kindref="member">makeTriangles</ref>(<ref refid="opengl_2wave_8cpp_1ab9c41a15d9aad2a7ba18566aada67d03" kindref="member">all_v</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Print<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>error_callback(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>error,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>description)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>description);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Handle<sp/>key<sp/>strokes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="wave_8cpp_1a286930f4e8ede059b83ff6eafa2ff718" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a286930f4e8ede059b83ff6eafa2ff718" kindref="member">key_callback</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a2c826a83964b85167f50f7bf527badf1" kindref="member">key</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scancode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>action,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mods)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(action<sp/>!=<sp/>GLFW_PRESS)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a2c826a83964b85167f50f7bf527badf1" kindref="member">key</ref>)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_ESCAPE:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwSetWindowShouldClose(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>GLFW_TRUE);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_SPACE:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_LEFT:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ac03904b1f7e359bb2acf10a755e97c5a" kindref="member">alpha</ref><sp/>+=<sp/>5;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_RIGHT:</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ac03904b1f7e359bb2acf10a755e97c5a" kindref="member">alpha</ref><sp/>-=<sp/>5;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_UP:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" kindref="member">beta</ref><sp/>-=<sp/>5;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_DOWN:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" kindref="member">beta</ref><sp/>+=<sp/>5;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_PAGE_UP:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>-=<sp/>0.25f;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>&lt;<sp/>0.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GLFW_KEY_PAGE_DOWN:</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>+=<sp/>0.25f;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Callback<sp/>function<sp/>for<sp/>mouse<sp/>button<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="wave_8cpp_1a5515d805e76ce6728de3c0dc5e187c86" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a5515d805e76ce6728de3c0dc5e187c86" kindref="member">mouse_button_callback</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>action,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mods)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(button<sp/>!=<sp/>GLFW_MOUSE_BUTTON_LEFT)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(action<sp/>==<sp/>GLFW_PRESS)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwSetInputMode(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>GLFW_CURSOR,<sp/>GLFW_CURSOR_DISABLED);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwGetCursorPos(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>&amp;<ref refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" kindref="member">cursorX</ref>,<sp/>&amp;<ref refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" kindref="member">cursorY</ref>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwSetInputMode(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>GLFW_CURSOR,<sp/>GLFW_CURSOR_NORMAL);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Callback<sp/>function<sp/>for<sp/>cursor<sp/>motion<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="wave_8cpp_1ab5fb5502317b46f9cecd6379f2ecd210" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1ab5fb5502317b46f9cecd6379f2ecd210" kindref="member">cursor_position_callback</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glfwGetInputMode(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>GLFW_CURSOR)<sp/>==<sp/>GLFW_CURSOR_DISABLED)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ac03904b1f7e359bb2acf10a755e97c5a" kindref="member">alpha</ref><sp/>+=<sp/>(<ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref>)<sp/>(<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>-<sp/><ref refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" kindref="member">cursorX</ref>)<sp/>/<sp/>10.f;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" kindref="member">beta</ref><sp/>+=<sp/>(<ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref>)<sp/>(<ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>-<sp/><ref refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" kindref="member">cursorY</ref>)<sp/>/<sp/>10.f;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a7dd3022939e7ae3380309dc7364b5e80" kindref="member">cursorX</ref><sp/>=<sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a34542bdac8d5a952df4c392a78d0b7e8" kindref="member">cursorY</ref><sp/>=<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Callback<sp/>function<sp/>for<sp/>scroll<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="wave_8cpp_1a6bec52479312a11696798b50140f227d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a6bec52479312a11696798b50140f227d" kindref="member">scroll_callback</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>+=<sp/>(float)<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>/<sp/>4.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Callback<sp/>function<sp/>for<sp/>framebuffer<sp/>resize<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="wave_8cpp_1a5180f7bf2b71421af837035824a8c8ac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a5180f7bf2b71421af837035824a8c8ac" kindref="member">framebuffer_size_callback</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ratio<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linmath_8h_1aea448460b62175f89ed5760877496434" kindref="member">mat4x4</ref><sp/>projection;</highlight><highlight class="comment">//<sp/>don&apos;t<sp/>know<sp/>what<sp/>the<sp/>mat4x4<sp/>is<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>=<sp/>(float)<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref><sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>viewport</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ab54b002beb984f066acd0dd7fff469dc" kindref="member">glViewport</ref>(0,<sp/>0,<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Change<sp/>to<sp/>the<sp/>projection<sp/>matrix<sp/>and<sp/>set<sp/>our<sp/>viewing<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linmath_8h_1a94145cd87abb64ac311b7937f5b822b6" kindref="member">mat4x4_perspective</ref>(projection,</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref><sp/>*<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>M_PI<sp/>/<sp/>180.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio,</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>,<sp/>1024.<ref refid="glad_8h_1a691492ec0bd6383f91200e49f6ae40ed" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a7ca5354d681c38db253679a45b419039" kindref="member">glLoadMatrixf</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a836cf6377099e88abf24c255b5b0ac52" kindref="member">GLfloat</ref>*)<sp/>projection);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="wave_8cpp_1a2f6192c48020efe917d5f08cfc3191a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a2f6192c48020efe917d5f08cfc3191a1" kindref="member">draw_scene</ref>(GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>time<sp/>=<sp/>glfwGetTime();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>the<sp/>color<sp/>and<sp/>depth<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1afc250a2b6bf11f24bb73534a2f053c0d" kindref="member">glClear</ref>(<ref refid="glad_8h_1a947db9ff944c4b78e652144c3dd1060c" kindref="member">GL_COLOR_BUFFER_BIT</ref><sp/>|<sp/><ref refid="glad_8h_1aef2a9e9a4b130bc4de57514327847b4f" kindref="member">GL_DEPTH_BUFFER_BIT</ref>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>don&apos;t<sp/>want<sp/>to<sp/>modify<sp/>the<sp/>projection<sp/>matrix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a984de7349d373e1088d1c31135c3a9fb" kindref="member">glMatrixMode</ref>(<ref refid="glad_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1aef09a58ebe88d25712b8a015889e3612" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Move<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a4b8d59e72147f88dd928f570d9a1713a" kindref="member">glTranslatef</ref>(0.0,<sp/>0.0,<sp/>-<ref refid="opengl_2wave_8cpp_1a5a2149a845f88b6489d3d88845d0f257" kindref="member">zoom</ref>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rotate<sp/>the<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a9a0010822b3a45b62142878ad90926e6" kindref="member">glRotatef</ref>(<ref refid="opengl_2wave_8cpp_1aabc9b3ee8fafa62b353f3956f8e3c269" kindref="member">beta</ref>*(time/100),<sp/>1.0,<sp/>0.0,<sp/>0.0);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a9a0010822b3a45b62142878ad90926e6" kindref="member">glRotatef</ref>(<ref refid="glad_8h_1ac03904b1f7e359bb2acf10a755e97c5a" kindref="member">alpha</ref>*(time/100),<sp/>0.0,<sp/>0.0,<sp/>1.0);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1ac0e905af3878e21de317eea54cb1e50a" kindref="member">trianglesSet</ref>(5,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>,<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSwapBuffers(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/>main</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="wave_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="opengl_2wave_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>std::srand(seed);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWwindow*<sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a7d65d00ca3b0630d9b5c52df855b19f5" kindref="member">t</ref>,<sp/>dt_total,<sp/>t_old;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetErrorCallback(error_callback);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!glfwInit())</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref><sp/>=<sp/>glfwCreateWindow(640,<sp/>480,<sp/></highlight><highlight class="stringliteral">&quot;Wave<sp/>Simulation&quot;</highlight><highlight class="normal">,<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetKeyCallback(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="opengl_2wave_8cpp_1a286930f4e8ede059b83ff6eafa2ff718" kindref="member">key_callback</ref>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetFramebufferSizeCallback(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="opengl_2wave_8cpp_1a5180f7bf2b71421af837035824a8c8ac" kindref="member">framebuffer_size_callback</ref>);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetMouseButtonCallback(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="opengl_2wave_8cpp_1a5515d805e76ce6728de3c0dc5e187c86" kindref="member">mouse_button_callback</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetCursorPosCallback(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="opengl_2wave_8cpp_1ab5fb5502317b46f9cecd6379f2ecd210" kindref="member">cursor_position_callback</ref>);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSetScrollCallback(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="opengl_2wave_8cpp_1a6bec52479312a11696798b50140f227d" kindref="member">scroll_callback</ref>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1f34fdf1c2f94c05c53d2a1cd3d80537" kindref="member">gladLoadGLLoader</ref>((<ref refid="glad_8h_1a90ad7e2ab6cd1b09bf0f5b9eebacc8a2" kindref="member">GLADloadproc</ref>)<sp/>glfwGetProcAddress);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSwapInterval(1);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwGetFramebufferSize(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/>&amp;<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<sp/>&amp;<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a5180f7bf2b71421af837035824a8c8ac" kindref="member">framebuffer_size_callback</ref>(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<sp/><ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>,<sp/><ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!glfwWindowShouldClose(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>))</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Draw<sp/>wave<sp/>grid<sp/>to<sp/>OpenGL<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="opengl_2wave_8cpp_1a2f6192c48020efe917d5f08cfc3191a1" kindref="member">draw_scene</ref>(<ref refid="mainshader_8cpp_1a80de27bd7dc4e2b2ad3d5895b97a70f0" kindref="member">window</ref>,<ref refid="glad_8h_1a2e94a4956fa3fc42600a71518b6e6284" kindref="member">height</ref>,<ref refid="glad_8h_1a77a72419a6bb6d8b56f8d9db93a120d0" kindref="member">width</ref>);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="wave.cpp"/>
+  </compounddef>
+</doxygen>

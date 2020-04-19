@@ -1,4 +1,4 @@
-.TH "SynapticVesicle" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "SynapticVesicle" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -38,10 +38,10 @@ Inherits \fBAxonBouton\fP\&.
 .RI "int \fBGetReleaseState\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -89,7 +89,7 @@ Inherits \fBAxonBouton\fP\&.
 .RI "int \fBGrowthVolume\fP (std::chrono::time_point< \fBClock\fP > event_time, double vol_change)"
 .br
 .ti -1c
-.RI "void \fBReleaseNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "\fBvoid\fP \fBReleaseNeurotransmitters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -190,7 +190,7 @@ Definition at line 171 of file synapticvesicle\&.cc\&.
 
 .PP
 Definition at line 178 of file synapticvesicle\&.cc\&.
-.SS "void SynapticVesicle::ReleaseNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
+.SS "\fBvoid\fP SynapticVesicle::ReleaseNeurotransmitters (std::chrono::time_point< \fBClock\fP > event_time)"
 
 .PP
 Definition at line 186 of file synapticvesicle\&.cc\&.
@@ -206,13 +206,13 @@ Definition at line 154 of file synapticvesicle\&.cc\&.
 
 .PP
 Definition at line 20 of file synapticvesicle\&.cc\&.
-.SS "void SynapticVesicle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP SynapticVesicle::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBAxonBouton\fP\&.
 .PP
 Definition at line 44 of file synapticvesicle\&.h\&.
-.SS "void SynapticVesicle::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP SynapticVesicle::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 45 of file synapticvesicle\&.h\&.

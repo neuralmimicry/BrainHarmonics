@@ -1,4 +1,4 @@
-.TH "BrainHarmonics/search.cpp" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "BrainHarmonics/search.cpp" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -60,10 +60,10 @@ BrainHarmonics/search.cpp
 .RI "std::basic_iostream< char >::basic_ostream & \fBoperator<<\fP (std::basic_iostream< char >::basic_ostream &out, tuple< int, int > loc)"
 .br
 .ti -1c
-.RI "template<class Graph > void \fBdraw_grid\fP (const \fBGraph\fP &graph, int field_width, unordered_map< typename \fBGraph::Location\fP, int > *distances=nullptr, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > *point_to=nullptr, vector< typename \fBGraph::Location\fP > *path=nullptr)"
+.RI "template<class Graph > \fBvoid\fP \fBdraw_grid\fP (const \fBGraph\fP &graph, int field_width, unordered_map< typename \fBGraph::Location\fP, int > *distances=nullptr, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > *point_to=nullptr, vector< typename \fBGraph::Location\fP > *\fBpath\fP=nullptr)"
 .br
 .ti -1c
-.RI "void \fBadd_rect\fP (\fBSquareGrid\fP &grid, int x1, int y1, int x2, int y2)"
+.RI "\fBvoid\fP \fBadd_rect\fP (\fBSquareGrid\fP &grid, int \fBx1\fP, int \fBy1\fP, int \fBx2\fP, int \fBy2\fP)"
 .br
 .ti -1c
 .RI "\fBSquareGrid\fP \fBmake_diagram1\fP ()"
@@ -72,16 +72,16 @@ BrainHarmonics/search.cpp
 .RI "\fBGridWithWeights\fP \fBmake_diagram4\fP ()"
 .br
 .ti -1c
-.RI "template<typename Graph > void \fBdijkstra_search\fP (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > &came_from, unordered_map< typename \fBGraph::Location\fP, int > &cost_so_far)"
+.RI "template<typename Graph > \fBvoid\fP \fBdijkstra_search\fP (\fBGraph\fP graph, typename \fBGraph::Location\fP \fBstart\fP, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > &came_from, unordered_map< typename \fBGraph::Location\fP, int > &cost_so_far)"
 .br
 .ti -1c
-.RI "template<typename Location > vector< Location > \fBreconstruct_path\fP (Location start, Location goal, unordered_map< Location, Location > &came_from)"
+.RI "template<typename Location > vector< Location > \fBreconstruct_path\fP (Location \fBstart\fP, Location goal, unordered_map< Location, Location > &came_from)"
 .br
 .ti -1c
-.RI "int \fBheuristic\fP (\fBSquareGrid::Location\fP a, \fBSquareGrid::Location\fP b)"
+.RI "int \fBheuristic\fP (\fBSquareGrid::Location\fP \fBa\fP, \fBSquareGrid::Location\fP \fBb\fP)"
 .br
 .ti -1c
-.RI "template<typename Graph > void \fBa_star_search\fP (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > &came_from, unordered_map< typename \fBGraph::Location\fP, int > &cost_so_far)"
+.RI "template<typename Graph > \fBvoid\fP \fBa_star_search\fP (\fBGraph\fP graph, typename \fBGraph::Location\fP \fBstart\fP, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > &came_from, unordered_map< typename \fBGraph::Location\fP, int > &cost_so_far)"
 .br
 .in -1c
 .SS "Variables"
@@ -93,19 +93,19 @@ BrainHarmonics/search.cpp
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "template<typename Graph > void a_star_search (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > & came_from, unordered_map< typename \fBGraph::Location\fP, int > & cost_so_far)"
+.SS "template<typename Graph > \fBvoid\fP a_star_search (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > & came_from, unordered_map< typename \fBGraph::Location\fP, int > & cost_so_far)"
 
 .PP
 Definition at line 273 of file search\&.cpp\&.
-.SS "void add_rect (\fBSquareGrid\fP & grid, int x1, int y1, int x2, int y2)"
+.SS "\fBvoid\fP add_rect (\fBSquareGrid\fP & grid, int x1, int y1, int x2, int y2)"
 
 .PP
 Definition at line 154 of file search\&.cpp\&.
-.SS "template<typename Graph > void dijkstra_search (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > & came_from, unordered_map< typename \fBGraph::Location\fP, int > & cost_so_far)"
+.SS "template<typename Graph > \fBvoid\fP dijkstra_search (\fBGraph\fP graph, typename \fBGraph::Location\fP start, typename \fBGraph::Location\fP goal, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > & came_from, unordered_map< typename \fBGraph::Location\fP, int > & cost_so_far)"
 
 .PP
 Definition at line 216 of file search\&.cpp\&.
-.SS "template<class Graph > void draw_grid (const \fBGraph\fP & graph, int field_width, unordered_map< typename \fBGraph::Location\fP, int > * distances = \fCnullptr\fP, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > * point_to = \fCnullptr\fP, vector< typename \fBGraph::Location\fP > * path = \fCnullptr\fP)"
+.SS "template<class Graph > \fBvoid\fP draw_grid (const \fBGraph\fP & graph, int field_width, unordered_map< typename \fBGraph::Location\fP, int > * distances = \fCnullptr\fP, unordered_map< typename \fBGraph::Location\fP, typename \fBGraph::Location\fP > * point_to = \fCnullptr\fP, vector< typename \fBGraph::Location\fP > * path = \fCnullptr\fP)"
 
 .PP
 Definition at line 79 of file search\&.cpp\&.

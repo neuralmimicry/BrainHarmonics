@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="quad_8h" kind="file" language="C++">
     <compoundname>quad.h</compoundname>
     <includes local="no">iostream</includes>
@@ -7,93 +7,93 @@
     <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
     <includedby refid="quad_8cc" local="yes">BrainHarmonics/quad.cc</includedby>
     <incdepgraph>
-      <node id="1474">
+      <node id="1592">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1475" relation="include">
+        <childnode refid="1593" relation="include">
         </childnode>
-        <childnode refid="1479" relation="include">
+        <childnode refid="1597" relation="include">
         </childnode>
       </node>
-      <node id="1475">
+      <node id="1593">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1476" relation="include">
+        <childnode refid="1594" relation="include">
         </childnode>
       </node>
-      <node id="1472">
+      <node id="1590">
         <label>polygon.h</label>
         <link refid="polygon_8h"/>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1473" relation="include">
+        <childnode refid="1591" relation="include">
         </childnode>
-        <childnode refid="1474" relation="include">
+        <childnode refid="1592" relation="include">
         </childnode>
       </node>
-      <node id="1479">
+      <node id="1597">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="1477" relation="include">
+        <childnode refid="1595" relation="include">
         </childnode>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1478" relation="include">
+        <childnode refid="1596" relation="include">
         </childnode>
-        <childnode refid="1476" relation="include">
+        <childnode refid="1594" relation="include">
         </childnode>
       </node>
-      <node id="1470">
+      <node id="1588">
         <label>BrainHarmonics/quad.h</label>
         <link refid="quad_8h"/>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1472" relation="include">
+        <childnode refid="1590" relation="include">
         </childnode>
       </node>
-      <node id="1473">
+      <node id="1591">
         <label>vector</label>
       </node>
-      <node id="1476">
+      <node id="1594">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1477" relation="include">
+        <childnode refid="1595" relation="include">
         </childnode>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="1478" relation="include">
+        <childnode refid="1596" relation="include">
         </childnode>
-        <childnode refid="1473" relation="include">
+        <childnode refid="1591" relation="include">
         </childnode>
       </node>
-      <node id="1478">
+      <node id="1596">
         <label>math.h</label>
       </node>
-      <node id="1471">
+      <node id="1589">
         <label>iostream</label>
       </node>
-      <node id="1477">
+      <node id="1595">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1482">
+      <node id="1600">
         <label>BrainHarmonics/quad.cc</label>
         <link refid="quad_8cc"/>
       </node>
-      <node id="1480">
+      <node id="1598">
         <label>BrainHarmonics/quad.h</label>
         <link refid="quad_8h"/>
-        <childnode refid="1481" relation="include">
+        <childnode refid="1599" relation="include">
         </childnode>
-        <childnode refid="1482" relation="include">
+        <childnode refid="1600" relation="include">
         </childnode>
       </node>
-      <node id="1481">
+      <node id="1599">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
@@ -166,17 +166,17 @@
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="class_quad_1a9900acc75445ebc71aba2307e3fe0131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a9900acc75445ebc71aba2307e3fe0131" kindref="member">SetQuadID</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadID<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="65" refid="class_quad_1a05fb7c22bfef542b99d04f968b4e18ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a05fb7c22bfef542b99d04f968b4e18ab" kindref="member">SetQuadX1</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadX1<sp/>=<sp/>val;<sp/>quadQuadX2<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="66" refid="class_quad_1a3f0f9162be2b1ec2e2597a163586fb01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a3f0f9162be2b1ec2e2597a163586fb01" kindref="member">SetQuadY1</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadY1<sp/>=<sp/>val;<sp/>quadQuadY4<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="67" refid="class_quad_1af1df44b73207c3e70b794e889e5225af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1af1df44b73207c3e70b794e889e5225af" kindref="member">SetQuadX2</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadX1<sp/>=<sp/>val;<sp/>quadQuadX2<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="68" refid="class_quad_1afcec579c40a3763c34d1ace417888bf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1afcec579c40a3763c34d1ace417888bf9" kindref="member">SetQuadY2</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadY2<sp/>=<sp/>val;<sp/>quadQuadY3<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="69" refid="class_quad_1a0cbdd18a95fe7240b09c40fcee29f5df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a0cbdd18a95fe7240b09c40fcee29f5df" kindref="member">SetQuadX3</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadX3<sp/>=<sp/>val;<sp/>quadQuadX4<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="70" refid="class_quad_1a1774a89a5d668aadf94966867270c0c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a1774a89a5d668aadf94966867270c0c5" kindref="member">SetQuadY3</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadY2<sp/>=<sp/>val;<sp/>quadQuadY3<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="71" refid="class_quad_1ac49d711fa31a12ba24ad65c959c74e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1ac49d711fa31a12ba24ad65c959c74e05" kindref="member">SetQuadX4</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadX3<sp/>=<sp/>val;<sp/>quadQuadX4<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="72" refid="class_quad_1ae299f75dcd479f5eb6ba8efed578961b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1ae299f75dcd479f5eb6ba8efed578961b" kindref="member">SetQuadY4</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadY1<sp/>=<sp/>val;<sp/>quadQuadY4<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="73" refid="class_quad_1a4d3a52272d572315198623e836ac0a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a4d3a52272d572315198623e836ac0a97" kindref="member">SetQuadTTL</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadTTL<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="74" refid="class_quad_1a66ba58a32cf7b351e3e155efbdb46f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a66ba58a32cf7b351e3e155efbdb46f8e" kindref="member">SetQuadCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>quadQuadCounter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="64" refid="class_quad_1a9900acc75445ebc71aba2307e3fe0131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a9900acc75445ebc71aba2307e3fe0131" kindref="member">SetQuadID</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadID<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="65" refid="class_quad_1a05fb7c22bfef542b99d04f968b4e18ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a05fb7c22bfef542b99d04f968b4e18ab" kindref="member">SetQuadX1</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadX1<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadX2<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="66" refid="class_quad_1a3f0f9162be2b1ec2e2597a163586fb01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a3f0f9162be2b1ec2e2597a163586fb01" kindref="member">SetQuadY1</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadY1<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadY4<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_quad_1af1df44b73207c3e70b794e889e5225af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1af1df44b73207c3e70b794e889e5225af" kindref="member">SetQuadX2</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadX1<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadX2<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="class_quad_1afcec579c40a3763c34d1ace417888bf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1afcec579c40a3763c34d1ace417888bf9" kindref="member">SetQuadY2</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadY2<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadY3<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="69" refid="class_quad_1a0cbdd18a95fe7240b09c40fcee29f5df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a0cbdd18a95fe7240b09c40fcee29f5df" kindref="member">SetQuadX3</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadX3<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadX4<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="70" refid="class_quad_1a1774a89a5d668aadf94966867270c0c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a1774a89a5d668aadf94966867270c0c5" kindref="member">SetQuadY3</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadY2<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadY3<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="71" refid="class_quad_1ac49d711fa31a12ba24ad65c959c74e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1ac49d711fa31a12ba24ad65c959c74e05" kindref="member">SetQuadX4</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadX3<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadX4<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="72" refid="class_quad_1ae299f75dcd479f5eb6ba8efed578961b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1ae299f75dcd479f5eb6ba8efed578961b" kindref="member">SetQuadY4</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadY1<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>quadQuadY4<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="73" refid="class_quad_1a4d3a52272d572315198623e836ac0a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a4d3a52272d572315198623e836ac0a97" kindref="member">SetQuadTTL</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadTTL<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="74" refid="class_quad_1a66ba58a32cf7b351e3e155efbdb46f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a66ba58a32cf7b351e3e155efbdb46f8e" kindref="member">SetQuadCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>quadQuadCounter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_quad_1a0710e6a7d77a34fdadbd2c36d03ade62" kindref="member">Update</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight></codeline>

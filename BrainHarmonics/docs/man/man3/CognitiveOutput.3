@@ -1,4 +1,4 @@
-.TH "CognitiveOutput" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "CognitiveOutput" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -38,13 +38,13 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "int \fBGetType\fP ()"
 .br
 .ti -1c
-.RI "void \fBSetType\fP (int val)"
+.RI "\fBvoid\fP \fBSetType\fP (int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
 .RI "double \fBTakeEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -100,17 +100,17 @@ Definition at line 42 of file cognitiveoutput\&.h\&.
 
 .PP
 Definition at line 19 of file cognitiveoutput\&.cc\&.
-.SS "void CognitiveOutput::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP CognitiveOutput::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 45 of file cognitiveoutput\&.h\&.
-.SS "void CognitiveOutput::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveOutput::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 46 of file cognitiveoutput\&.h\&.
-.SS "void CognitiveOutput::SetType (int val)\fC [inline]\fP"
+.SS "\fBvoid\fP CognitiveOutput::SetType (int val)\fC [inline]\fP"
 
 .PP
 Definition at line 44 of file cognitiveoutput\&.h\&.

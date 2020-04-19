@@ -1,4 +1,4 @@
-.TH "Orbital" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Orbital" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -44,22 +44,22 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "double \fBGetTau\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetPhase\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetPhase\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetTau\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetTau\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -74,10 +74,10 @@ Inherits \fBCognitiveNetwork\fP\&.
 .RI "std::vector< \fBCognitiveNetwork\fP * > \fBGetNeurons\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBCalcPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
+.RI "\fBvoid\fP \fBCalcPosition\fP (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
 .br
 .ti -1c
-.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.RI "\fBvoid\fP \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
 .br
 .ti -1c
 .RI "virtual int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -135,7 +135,7 @@ Definition at line 81 of file orbital\&.cc\&.
 
 .PP
 Definition at line 76 of file orbital\&.cc\&.
-.SS "void Orbital::CalcPosition (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
+.SS "\fBvoid\fP Orbital::CalcPosition (std::chrono::time_point< \fBClock\fP > event_time, double Duration)"
 
 .PP
 Definition at line 96 of file orbital\&.cc\&.
@@ -167,29 +167,29 @@ Definition at line 48 of file orbital\&.h\&.
 
 .PP
 Definition at line 26 of file orbital\&.cc\&.
-.SS "void Orbital::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Orbital::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
 .PP
 Definition at line 53 of file orbital\&.h\&.
-.SS "void Orbital::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Orbital::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 54 of file orbital\&.h\&.
-.SS "void Orbital::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.SS "\fBvoid\fP Orbital::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 
 .PP
 Definition at line 20 of file orbital\&.cc\&.
-.SS "void Orbital::SetPhase (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Orbital::SetPhase (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 51 of file orbital\&.h\&.
-.SS "void Orbital::SetPosition (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Orbital::SetPosition (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 50 of file orbital\&.h\&.
-.SS "void Orbital::SetTau (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Orbital::SetTau (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 52 of file orbital\&.h\&.
@@ -197,7 +197,7 @@ Definition at line 52 of file orbital\&.h\&.
 
 .PP
 Definition at line 137 of file orbital\&.cc\&.
-.SS "void Orbital::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.SS "\fBvoid\fP Orbital::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBCognitiveNetwork\fP *> set_of_update_pointers, unsigned int pointer_type)"
 
 .PP
 Definition at line 119 of file orbital\&.cc\&.

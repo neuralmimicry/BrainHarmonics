@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_axon_branch" kind="class" language="C++" prot="public">
     <compoundname>AxonBranch</compoundname>
     <basecompoundref refid="class_axon" prot="public" virt="non-virtual">Axon</basecompoundref>
@@ -365,7 +365,7 @@
         <location file="BrainHarmonics/axonbranch.h" line="38" column="1" bodyfile="BrainHarmonics/axonbranch.h" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a96ba30b18627563d637d4e02fac943be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void AxonBranch::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -388,7 +388,7 @@
         <location file="BrainHarmonics/axonbranch.h" line="39" column="1" bodyfile="BrainHarmonics/axonbranch.h" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void AxonBranch::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -407,21 +407,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="40" column="1" bodyfile="BrainHarmonics/axonbranch.h" bodystart="40" bodyend="40"/>
-        <references refid="class_axon_branch_1a195d68dffd37317db3f94e1b4c8f73c7" compoundref="axonbranch_8cc" startline="20" endline="60">ResetParameters</references>
-        <references refid="class_axon_branch_1a30b4602e5dd121666478ff9de52d022b" compoundref="axonbranch_8cc" startline="62" endline="71">CreateAxonBouton</references>
-        <references refid="class_axon_branch_1a77e93626a7993f76e689d09721974e90" compoundref="axonbranch_8cc" startline="73" endline="92">CreateAxonBoutons</references>
-        <references refid="class_axon_branch_1ae861207a8a0aeb2b60c305b25248e4b9" compoundref="axonbranch_8cc" startline="100" endline="103">CloneAxonBouton</references>
-        <references refid="class_axon_branch_1a842b3875b2771f4b8e7316bfb9af894c" compoundref="axonbranch_8cc" startline="95" endline="98">CloneAxonBoutons</references>
-        <references refid="class_axon_branch_1a024c8666555702ebe67e2a5caf1b866a" compoundref="axonbranch_8cc" startline="110" endline="113">DestroyAxonBouton</references>
-        <references refid="class_axon_branch_1a8c022977e091b8cab367b21c0c4930ea" compoundref="axonbranch_8cc" startline="105" endline="108">DestroyAxonBoutons</references>
-        <references refid="class_axon_branch_1a88e6af84b45bb6f6f8900a6d4aec446c" compoundref="axonbranch_8cc" startline="115" endline="124">AddAxonBouton</references>
-        <references refid="class_axon_branch_1a788ca8cc7e6f60f07b9e19a8e3022b64" compoundref="axonbranch_8cc" startline="126" endline="145">AddAxonBoutons</references>
-        <references refid="class_axon_branch_1a06753a2a61941a59d86510e51ba44b15" compoundref="axonbranch_8cc" startline="148" endline="152">RemoveAxonBouton</references>
-        <references refid="class_axon_branch_1a815e055e37f89fb2627b250c5b95d406" compoundref="axonbranch_8cc" startline="154" endline="157">RemoveAxonBoutons</references>
-        <references refid="class_axon_branch_1a6fa6eea91e72fd142f3d691f7ca4c99a" compoundref="axonbranch_8cc" startline="159" endline="162">GetAxonBouton</references>
-        <references refid="class_axon_branch_1aafadba57924686a8087c7f7758889045" compoundref="axonbranch_8cc" startline="164" endline="167">GetAxonBoutons</references>
-        <references refid="class_axon_branch_1a6e434a57873ab0fdbc72cf7ecc7228ed" compoundref="axonbranch_8cc" startline="169" endline="194">Growth</references>
-        <references refid="class_axon_branch_1a5a80bcccdc2be9f77fca25131937b52f" compoundref="axonbranch_8cc" startline="196" endline="235">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a195d68dffd37317db3f94e1b4c8f73c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -442,7 +427,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_axon_branch_1a5a80bcccdc2be9f77fca25131937b52f" compoundref="axonbranch_8cc" startline="196" endline="235">Update</referencedby>
         <referencedby refid="class_axon_branch_1a98f33462edf82dacab750d1140172912" compoundref="axonbranch_8h" startline="23" endline="34">AxonBranch</referencedby>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a30b4602e5dd121666478ff9de52d022b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -463,7 +447,6 @@
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
         <referencedby refid="class_axon_branch_1a77e93626a7993f76e689d09721974e90" compoundref="axonbranch_8cc" startline="73" endline="92">CreateAxonBoutons</referencedby>
         <referencedby refid="class_axon_branch_1a6e434a57873ab0fdbc72cf7ecc7228ed" compoundref="axonbranch_8cc" startline="169" endline="194">Growth</referencedby>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a77e93626a7993f76e689d09721974e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -487,7 +470,6 @@
         <location file="BrainHarmonics/axonbranch.h" line="45" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="73" bodyend="92"/>
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
         <references refid="class_axon_branch_1a30b4602e5dd121666478ff9de52d022b" compoundref="axonbranch_8cc" startline="62" endline="71">CreateAxonBouton</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1ae861207a8a0aeb2b60c305b25248e4b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -513,7 +495,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="47" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="100" bodyend="103"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a842b3875b2771f4b8e7316bfb9af894c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -539,7 +520,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="49" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="95" bodyend="98"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a024c8666555702ebe67e2a5caf1b866a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -561,7 +541,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="51" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="110" bodyend="113"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a8c022977e091b8cab367b21c0c4930ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -583,7 +562,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="53" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="105" bodyend="108"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a88e6af84b45bb6f6f8900a6d4aec446c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -607,7 +585,6 @@
         <location file="BrainHarmonics/axonbranch.h" line="55" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="115" bodyend="124"/>
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
         <referencedby refid="class_axon_branch_1a788ca8cc7e6f60f07b9e19a8e3022b64" compoundref="axonbranch_8cc" startline="126" endline="145">AddAxonBoutons</referencedby>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a788ca8cc7e6f60f07b9e19a8e3022b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -631,7 +608,6 @@
         <location file="BrainHarmonics/axonbranch.h" line="57" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="126" bodyend="145"/>
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
         <references refid="class_axon_branch_1a88e6af84b45bb6f6f8900a6d4aec446c" compoundref="axonbranch_8cc" startline="115" endline="124">AddAxonBouton</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a06753a2a61941a59d86510e51ba44b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -649,7 +625,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="59" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="148" bodyend="152"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a815e055e37f89fb2627b250c5b95d406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -671,7 +646,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="61" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="154" bodyend="157"/>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a6fa6eea91e72fd142f3d691f7ca4c99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> *</type>
@@ -694,7 +668,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="63" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="159" bodyend="162"/>
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1aafadba57924686a8087c7f7758889045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_axon_branch" kindref="compound">AxonBranch</ref> * &gt;</type>
@@ -713,7 +686,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/axonbranch.h" line="65" column="1" bodyfile="BrainHarmonics/axonbranch.cc" bodystart="164" bodyend="167"/>
         <references refid="class_axon_branch_1a43224f9fcb62274709438c9833cb10e5" compoundref="axonbranch_8h" startline="72">axonbouton_list</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a6e434a57873ab0fdbc72cf7ecc7228ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -738,7 +710,6 @@
         <references refid="class_soma_1a84739acd533862b115bd5cbe56da6c98" compoundref="soma_8h" startline="142">Soma::object_connection_list</references>
         <references refid="universe_8h_1a462cce704efb80bde68c7d7404f7c0f4" compoundref="universe_8h" startline="53">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1</references>
         <references refid="universe_8h_1a1b6223499f2de31ef85d8787c9cbd529" compoundref="universe_8h" startline="54">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_AXONBOUTON_GEN1</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_axon_branch_1a5a80bcccdc2be9f77fca25131937b52f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -764,7 +735,6 @@
         <references refid="class_solid_1a231b2c469aab60b092fcc3a9525e5c80" compoundref="solid_8cc" startline="109" endline="118">Solid::CreatePolyhedron</references>
         <references refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" compoundref="solid_8cc" startline="100" endline="107">Solid::SetObjectType</references>
         <references refid="universe_8h_1a462cce704efb80bde68c7d7404f7c0f4" compoundref="universe_8h" startline="53">TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_AXON_AXONBRANCH_GEN1</references>
-        <referencedby refid="class_axon_branch_1a6918dcaf6d9325a1a22a2e6c65ad5dab" compoundref="axonbranch_8h" startline="40" endline="40">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1188,7 +1158,7 @@
       <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>RemoveSynapses</name></member>
       <member refid="class_axon_branch_1a195d68dffd37317db3f94e1b4c8f73c7" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetChannelMin</name></member>
@@ -1196,7 +1166,7 @@
       <member refid="class_cognitive_network_1a0e8a64151a2446fc16a074ad2de325df" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetCognitiveNetworkDeviceTag</name></member>
       <member refid="class_axon_branch_1a96ba30b18627563d637d4e02fac943be" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetCounter</name></member>
       <member refid="class_neuron_1a92f942f6f0bd783c39bb550cf4bb8fd0" prot="public" virt="non-virtual" ambiguityscope="Neuron::"><scope>AxonBranch</scope><name>SetCounter</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1209,17 +1179,17 @@
       <member refid="class_cognitive_network_1af9f082a70f0cc25a3f818d9eace5a527" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetGravitation</name></member>
       <member refid="class_universe_1ac3443dd59b61ae3110f07f681f63ed0a" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetLifespan</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>AxonBranch</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>AxonBranch</scope><name>SetWeakElectroweak</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_law" kind="class" language="C++" prot="public">
     <compoundname>Law</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -188,10 +188,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/law.h" line="45" column="1" bodyfile="BrainHarmonics/law.h" bodystart="45" bodyend="45"/>
-        <references refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" compoundref="law_8cc" startline="20" endline="58">ResetParameters</references>
-        <references refid="class_law_1ab30a86ef88a85e13d3e598caa45bff05" compoundref="law_8cc" startline="60" endline="60">GetCounter</references>
-        <references refid="class_law_1a408c401c8a44870c29ba9d08b45cb40f" compoundref="law_8cc" startline="62" endline="62">SetCounter</references>
-        <references refid="class_law_1a0240b10c679b671039dbf10771342ea7" compoundref="law_8cc" startline="64" endline="98">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -215,7 +211,6 @@
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
         <referencedby refid="class_law_1a0240b10c679b671039dbf10771342ea7" compoundref="law_8cc" startline="64" endline="98">Update</referencedby>
         <referencedby refid="class_law_1aa4fb7baf54aa77720605fd601fb80b8d" compoundref="law_8h" startline="32" endline="43">Law</referencedby>
-        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_law_1ab30a86ef88a85e13d3e598caa45bff05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned int</type>
@@ -233,10 +228,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/law.h" line="49" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="60" bodyend="60"/>
-        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_law_1a408c401c8a44870c29ba9d08b45cb40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -256,7 +250,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/law.h" line="51" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="62" bodyend="62"/>
-        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_law_1a0240b10c679b671039dbf10771342ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -276,10 +269,9 @@
         <location file="BrainHarmonics/law.h" line="53" column="1" bodyfile="BrainHarmonics/law.cc" bodystart="64" bodyend="98"/>
         <references refid="class_law_1a56541ec0b82b8a7c377ae2e6b444205c" compoundref="law_8cc" startline="20" endline="58">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_law_1a4fa6f0fb61285152c8c6d7a17b51a82b" compoundref="law_8h" startline="45" endline="45">~Law</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_law_1a2e780573f6285f88d167d45a2e243d01" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetCharge</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetCharge</name>
@@ -301,7 +293,7 @@
         <location file="BrainHarmonics/law.h" line="55" column="1" bodyfile="BrainHarmonics/law.h" bodystart="55" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a3de75edea5e20db0a7b731de61f07dea" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetSpin</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, int val) final</argsstring>
         <name>SetSpin</name>
@@ -643,7 +635,7 @@
         <location file="BrainHarmonics/law.h" line="73" column="1" bodyfile="BrainHarmonics/law.h" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a908ccc2b0a561a7324a15393ec157219" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetGravitation</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetGravitation</name>
@@ -665,7 +657,7 @@
         <location file="BrainHarmonics/law.h" line="75" column="1" bodyfile="BrainHarmonics/law.h" bodystart="75" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a1009b4e0bc0b91f41d48dc137529e97b" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetWeak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeak</name>
@@ -687,7 +679,7 @@
         <location file="BrainHarmonics/law.h" line="76" column="1" bodyfile="BrainHarmonics/law.h" bodystart="76" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a65e5e757041c1e72bb046eccbb6d66db" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetWeakElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetWeakElectroweak</name>
@@ -709,7 +701,7 @@
         <location file="BrainHarmonics/law.h" line="77" column="1" bodyfile="BrainHarmonics/law.h" bodystart="77" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1acabe1a3113c207368f3bb6fe81e13963" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetElectromagnetic</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagnetic</name>
@@ -731,7 +723,7 @@
         <location file="BrainHarmonics/law.h" line="78" column="1" bodyfile="BrainHarmonics/law.h" bodystart="78" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1aca9bb82839ddb46bd89f52b6211c5a54" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetElectromagneticElectroweak</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetElectromagneticElectroweak</name>
@@ -753,7 +745,7 @@
         <location file="BrainHarmonics/law.h" line="79" column="1" bodyfile="BrainHarmonics/law.h" bodystart="79" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a4cd0dd1908edbd02090dd1ba1387d722" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetStrong</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrong</name>
@@ -775,7 +767,7 @@
         <location file="BrainHarmonics/law.h" line="80" column="1" bodyfile="BrainHarmonics/law.h" bodystart="80" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1a4a7c8caa24acf453c1a8782a1ec4acf4" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetStrongFundamental</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongFundamental</name>
@@ -797,7 +789,7 @@
         <location file="BrainHarmonics/law.h" line="81" column="1" bodyfile="BrainHarmonics/law.h" bodystart="81" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1ad4a05c77d11ddec40b1e07246cac449d" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::SetStrongResidual</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val) final</argsstring>
         <name>SetStrongResidual</name>
@@ -819,7 +811,7 @@
         <location file="BrainHarmonics/law.h" line="82" column="1" bodyfile="BrainHarmonics/law.h" bodystart="82" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="class_law_1af99520c95b2cd8af0af110b78b2288ef" prot="public" static="no" const="no" explicit="no" inline="yes" final="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Law::PollElementaryForce</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time) final</argsstring>
         <name>PollElementaryForce</name>
@@ -842,29 +834,29 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="187">
+      <node id="188">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="186">
+      <node id="187">
         <label>Law</label>
         <link refid="class_law"/>
-        <childnode refid="187" relation="public-inheritance">
+        <childnode refid="188" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="189">
+      <node id="190">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="189" relation="usage">
+        <childnode refid="190" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="188">
+      <node id="189">
         <label>Law</label>
         <link refid="class_law"/>
-        <childnode refid="189" relation="public-inheritance">
+        <childnode refid="190" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

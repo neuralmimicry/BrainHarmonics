@@ -1,4 +1,4 @@
-.TH "Membrane" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Membrane" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -55,28 +55,28 @@ Inherited by \fBMembraneChannel\fP\&.
 .RI "int \fBGetMembraneChannelPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "int \fBSetMembraneChannelPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetMembraneChannelPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -246,7 +246,7 @@ Definition at line 177 of file membrane\&.cc\&.
 
 .PP
 Definition at line 26 of file membrane\&.cc\&.
-.SS "void Membrane::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Membrane::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -254,31 +254,31 @@ Reimplemented from \fBUniverse\fP\&.
 Reimplemented in \fBMembraneChannel\fP\&.
 .PP
 Definition at line 60 of file membrane\&.h\&.
-.SS "void Membrane::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 61 of file membrane\&.h\&.
-.SS "void Membrane::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 63 of file membrane\&.h\&.
-.SS "void Membrane::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file membrane\&.h\&.
-.SS "void Membrane::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 64 of file membrane\&.h\&.
-.SS "void Membrane::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 65 of file membrane\&.h\&.
-.SS "int Membrane::SetMembraneChannelPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP Membrane::SetMembraneChannelPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 58 of file membrane\&.h\&.
-.SS "void Membrane::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.SS "\fBvoid\fP Membrane::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 
 .PP
 Definition at line 20 of file membrane\&.cc\&.

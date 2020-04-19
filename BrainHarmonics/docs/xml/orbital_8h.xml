@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="orbital_8h" kind="file" language="C++">
     <compoundname>orbital.h</compoundname>
     <includes local="no">algorithm</includes>
@@ -13,93 +13,93 @@
     <includedby refid="cognitivenetwork_8cc" local="yes">BrainHarmonics/cognitivenetwork.cc</includedby>
     <includedby refid="orbital_8cc" local="yes">BrainHarmonics/orbital.cc</includedby>
     <incdepgraph>
-      <node id="1271">
+      <node id="1389">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="1272" relation="include">
+        <childnode refid="1390" relation="include">
         </childnode>
-        <childnode refid="1273" relation="include">
+        <childnode refid="1391" relation="include">
         </childnode>
       </node>
-      <node id="1264">
+      <node id="1382">
         <label>BrainHarmonics/orbital.h</label>
         <link refid="orbital_8h"/>
-        <childnode refid="1265" relation="include">
+        <childnode refid="1383" relation="include">
         </childnode>
-        <childnode refid="1266" relation="include">
+        <childnode refid="1384" relation="include">
         </childnode>
-        <childnode refid="1267" relation="include">
+        <childnode refid="1385" relation="include">
         </childnode>
-        <childnode refid="1268" relation="include">
+        <childnode refid="1386" relation="include">
         </childnode>
-        <childnode refid="1269" relation="include">
+        <childnode refid="1387" relation="include">
         </childnode>
-        <childnode refid="1270" relation="include">
+        <childnode refid="1388" relation="include">
         </childnode>
-        <childnode refid="1271" relation="include">
+        <childnode refid="1389" relation="include">
         </childnode>
       </node>
-      <node id="1269">
+      <node id="1387">
         <label>string</label>
       </node>
-      <node id="1272">
+      <node id="1390">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="1267" relation="include">
+        <childnode refid="1385" relation="include">
         </childnode>
-        <childnode refid="1270" relation="include">
+        <childnode refid="1388" relation="include">
         </childnode>
-        <childnode refid="1273" relation="include">
+        <childnode refid="1391" relation="include">
         </childnode>
       </node>
-      <node id="1270">
+      <node id="1388">
         <label>vector</label>
       </node>
-      <node id="1273">
+      <node id="1391">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1266" relation="include">
+        <childnode refid="1384" relation="include">
         </childnode>
-        <childnode refid="1267" relation="include">
+        <childnode refid="1385" relation="include">
         </childnode>
-        <childnode refid="1268" relation="include">
+        <childnode refid="1386" relation="include">
         </childnode>
-        <childnode refid="1270" relation="include">
+        <childnode refid="1388" relation="include">
         </childnode>
       </node>
-      <node id="1268">
+      <node id="1386">
         <label>math.h</label>
       </node>
-      <node id="1267">
+      <node id="1385">
         <label>iostream</label>
       </node>
-      <node id="1266">
+      <node id="1384">
         <label>chrono</label>
       </node>
-      <node id="1265">
+      <node id="1383">
         <label>algorithm</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1277">
+      <node id="1395">
         <label>BrainHarmonics/orbital.cc</label>
         <link refid="orbital_8cc"/>
       </node>
-      <node id="1276">
+      <node id="1394">
         <label>BrainHarmonics/cognitivenetwork.cc</label>
         <link refid="cognitivenetwork_8cc"/>
       </node>
-      <node id="1274">
+      <node id="1392">
         <label>BrainHarmonics/orbital.h</label>
         <link refid="orbital_8h"/>
-        <childnode refid="1275" relation="include">
+        <childnode refid="1393" relation="include">
         </childnode>
-        <childnode refid="1276" relation="include">
+        <childnode refid="1394" relation="include">
         </childnode>
-        <childnode refid="1277" relation="include">
+        <childnode refid="1395" relation="include">
         </childnode>
       </node>
-      <node id="1275">
+      <node id="1393">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
@@ -159,11 +159,11 @@
 <codeline lineno="47" refid="class_orbital_1ad891e4a65c01e94c72ad36cda114cc2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1ad891e4a65c01e94c72ad36cda114cc2a" kindref="member">GetPhase</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Phase;<sp/>}</highlight></codeline>
 <codeline lineno="48" refid="class_orbital_1aeb7758cc920cb862fdc33374c26cb585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1aeb7758cc920cb862fdc33374c26cb585" kindref="member">GetTau</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Tau;<sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="50" refid="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" kindref="member">SetPosition</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Position<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="51" refid="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" kindref="member">SetPhase</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Phase<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="52" refid="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" kindref="member">SetTau</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Tau<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="53" refid="class_orbital_1ae2a2fb06700d1d68501b0cbdea87cc08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1ae2a2fb06700d1d68501b0cbdea87cc08" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="54" refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1a16ff46f7e720f2f7aed332585310a9b8" kindref="member">SetPosition</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Position<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1ac1c58fcb56e4d5c19c4ab39cc09c88ad" kindref="member">SetPhase</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Phase<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1afd09baa67f1a9bff08c74dcf60e1398a" kindref="member">SetTau</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Tau<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_orbital_1ae2a2fb06700d1d68501b0cbdea87cc08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1ae2a2fb06700d1d68501b0cbdea87cc08" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="54" refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1a20b0f4d549fd9024df89603a5adcc214" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>object_energy<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1afd0dfd382d4bf7d9fbace315bd37fa85" kindref="member">SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>object_type);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_orbital_1acc6137a5a79be91a255f685a2f065330" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>

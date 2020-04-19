@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_dendrite_branch" kind="class" language="C++" prot="public">
     <compoundname>DendriteBranch</compoundname>
     <basecompoundref refid="class_dendrite" prot="public" virt="non-virtual">Dendrite</basecompoundref>
@@ -508,7 +508,7 @@
         <location file="BrainHarmonics/dendritebranch.h" line="39" column="1" bodyfile="BrainHarmonics/dendritebranch.h" bodystart="39" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a2ce03fbad4a70564eeaafb62debd4d74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void DendriteBranch::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -532,7 +532,7 @@
         <location file="BrainHarmonics/dendritebranch.h" line="41" column="1" bodyfile="BrainHarmonics/dendritebranch.h" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void DendriteBranch::SetEnergy</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, double val)</argsstring>
         <name>SetEnergy</name>
@@ -551,21 +551,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="42" column="1" bodyfile="BrainHarmonics/dendritebranch.h" bodystart="42" bodyend="42"/>
-        <references refid="class_dendrite_branch_1a70b5e63fc44166ccd7f0c7177660c250" compoundref="dendritebranch_8cc" startline="20" endline="64">ResetParameters</references>
-        <references refid="class_dendrite_branch_1a4f751442a537f2e3d7d0dc66a09bd84b" compoundref="dendritebranch_8cc" startline="66" endline="75">CreateDendriteCleft</references>
-        <references refid="class_dendrite_branch_1a86d00d6ad66c8c83683e9e22d73a71b6" compoundref="dendritebranch_8cc" startline="77" endline="96">CreateDendriteClefts</references>
-        <references refid="class_dendrite_branch_1a45d2fea350165fe0c81f1f429aa96061" compoundref="dendritebranch_8cc" startline="104" endline="107">CloneDendriteCleft</references>
-        <references refid="class_dendrite_branch_1a3cf1e07fe5e0ea827965c0dc76881c9f" compoundref="dendritebranch_8cc" startline="99" endline="102">CloneDendriteClefts</references>
-        <references refid="class_dendrite_branch_1a60225ab106eae6bce25eb8159166d5e9" compoundref="dendritebranch_8cc" startline="114" endline="117">DestroyDendriteCleft</references>
-        <references refid="class_dendrite_branch_1a454dd0483439353076df63fc124a24f7" compoundref="dendritebranch_8cc" startline="109" endline="112">DestroyDendriteClefts</references>
-        <references refid="class_dendrite_branch_1a060f0c55b2e6cb65b68e160df0bbf563" compoundref="dendritebranch_8cc" startline="119" endline="128">AddDendriteCleft</references>
-        <references refid="class_dendrite_branch_1a2ddeff41db805e414c994ac169cbcf4b" compoundref="dendritebranch_8cc" startline="130" endline="149">AddDendriteClefts</references>
-        <references refid="class_dendrite_branch_1afaca221cb4bba98e56f11b0f9e6370b5" compoundref="dendritebranch_8cc" startline="152" endline="156">RemoveDendriteCleft</references>
-        <references refid="class_dendrite_branch_1acd54003e5acb9abda7d7a42f248c14b0" compoundref="dendritebranch_8cc" startline="158" endline="161">RemoveDendriteClefts</references>
-        <references refid="class_dendrite_branch_1a11f25ffce77011afad909acb593d2e42" compoundref="dendritebranch_8cc" startline="163" endline="166">GetDendriteCleft</references>
-        <references refid="class_dendrite_branch_1a2be44a81b4b5213947e9545400a0453c" compoundref="dendritebranch_8cc" startline="168" endline="171">GetDendriteClefts</references>
-        <references refid="class_dendrite_branch_1a4b950ef8a0856a11240d353bcfd1fba4" compoundref="dendritebranch_8cc" startline="173" endline="195">Growth</references>
-        <references refid="class_dendrite_branch_1a8540dfafeb5bd45f782ab31b8231b10f" compoundref="dendritebranch_8cc" startline="197" endline="251">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a70b5e63fc44166ccd7f0c7177660c250" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -586,7 +571,6 @@
         <references refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" compoundref="universe_8cc" startline="111" endline="114">Universe::TheTimeNow</references>
         <referencedby refid="class_dendrite_branch_1a8540dfafeb5bd45f782ab31b8231b10f" compoundref="dendritebranch_8cc" startline="197" endline="251">Update</referencedby>
         <referencedby refid="class_dendrite_branch_1a9b7e932b0614dad370edd76f31900c40" compoundref="dendritebranch_8h" startline="23" endline="34">DendriteBranch</referencedby>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a4f751442a537f2e3d7d0dc66a09bd84b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -607,7 +591,6 @@
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
         <referencedby refid="class_dendrite_branch_1a86d00d6ad66c8c83683e9e22d73a71b6" compoundref="dendritebranch_8cc" startline="77" endline="96">CreateDendriteClefts</referencedby>
         <referencedby refid="class_dendrite_branch_1a4b950ef8a0856a11240d353bcfd1fba4" compoundref="dendritebranch_8cc" startline="173" endline="195">Growth</referencedby>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a86d00d6ad66c8c83683e9e22d73a71b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -631,7 +614,6 @@
         <location file="BrainHarmonics/dendritebranch.h" line="48" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="77" bodyend="96"/>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
         <references refid="class_dendrite_branch_1a4f751442a537f2e3d7d0dc66a09bd84b" compoundref="dendritebranch_8cc" startline="66" endline="75">CreateDendriteCleft</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a45d2fea350165fe0c81f1f429aa96061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -657,7 +639,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="50" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="104" bodyend="107"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a3cf1e07fe5e0ea827965c0dc76881c9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -683,7 +664,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="52" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="99" bodyend="102"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a60225ab106eae6bce25eb8159166d5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -705,7 +685,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="54" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="114" bodyend="117"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a454dd0483439353076df63fc124a24f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -727,7 +706,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="56" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="109" bodyend="112"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a060f0c55b2e6cb65b68e160df0bbf563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -751,7 +729,6 @@
         <location file="BrainHarmonics/dendritebranch.h" line="58" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="119" bodyend="128"/>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
         <referencedby refid="class_dendrite_branch_1a2ddeff41db805e414c994ac169cbcf4b" compoundref="dendritebranch_8cc" startline="130" endline="149">AddDendriteClefts</referencedby>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a2ddeff41db805e414c994ac169cbcf4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -775,7 +752,6 @@
         <location file="BrainHarmonics/dendritebranch.h" line="60" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="130" bodyend="149"/>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
         <references refid="class_dendrite_branch_1a060f0c55b2e6cb65b68e160df0bbf563" compoundref="dendritebranch_8cc" startline="119" endline="128">AddDendriteCleft</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1afaca221cb4bba98e56f11b0f9e6370b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -793,7 +769,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="62" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="152" bodyend="156"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1acd54003e5acb9abda7d7a42f248c14b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -815,7 +790,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="64" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="158" bodyend="161"/>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a11f25ffce77011afad909acb593d2e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> *</type>
@@ -838,7 +812,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="66" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="163" bodyend="166"/>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a2be44a81b4b5213947e9545400a0453c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="class_dendrite_branch" kindref="compound">DendriteBranch</ref> * &gt;</type>
@@ -857,7 +830,6 @@
         </inbodydescription>
         <location file="BrainHarmonics/dendritebranch.h" line="68" column="1" bodyfile="BrainHarmonics/dendritebranch.cc" bodystart="168" bodyend="171"/>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a4b950ef8a0856a11240d353bcfd1fba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -879,7 +851,6 @@
         <references refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" compoundref="soma_8cc" startline="21" endline="25">Soma::SetObjectType</references>
         <references refid="universe_8h_1a048c713185f5a69756b77216f02419d8" compoundref="universe_8h" startline="44">TYPE_NEURON_PYRAMIDAL_SOMA_DENDRITE_DENDRITEBRANCH_DENDRITECLEFT_GEN1</references>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_dendrite_branch_1a8540dfafeb5bd45f782ab31b8231b10f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -903,7 +874,6 @@
         <references refid="class_solid_1af6fe46af0be9a9533e114b1c0f186bfc" compoundref="solid_8cc" startline="100" endline="107">Solid::SetObjectType</references>
         <references refid="universe_8h_1a01f964c7ca05fa3f7f5a7b430761ca99" compoundref="universe_8h" startline="56">TYPE_SOLID_POLYHEDRON_SOMA_DENDRITE_DENDRITEBRANCH_GEN1</references>
         <references refid="class_dendrite_branch_1a8015119958f7581d826dcac2c21919c9" compoundref="dendritebranch_8h" startline="75">dendritecleft_list</references>
-        <referencedby refid="class_dendrite_branch_1a13dd0373022d653448c9067d075586a8" compoundref="dendritebranch_8h" startline="42" endline="42">SetEnergy</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1316,7 +1286,7 @@
       <member refid="class_cognitive_network_1a87d6628f388baed1edb8efda9062c443" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>RemoveSynapses</name></member>
       <member refid="class_dendrite_branch_1a70b5e63fc44166ccd7f0c7177660c250" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>ResetParameters</name></member>
       <member refid="class_universe_1aeda74e3902c0e56c0c09779854045cde" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>ReturnEnergy</name></member>
-      <member refid="class_soma_1a6ee53e0dd77fec097da1b81472d6f147" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetAxonHillockPool</name></member>
+      <member refid="class_soma_1a67cdb8d00b7130b44d4ac75468f4b385" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetAxonHillockPool</name></member>
       <member refid="class_neuron_1a8f5766ea61dc46b7a25361df540755ec" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetCapacity</name></member>
       <member refid="class_neuron_1aed1ba99e24b905cd91a519c33b5a62b0" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetChannelMax</name></member>
       <member refid="class_neuron_1ae463ad8173c63e7970a5f4594667d481" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetChannelMin</name></member>
@@ -1327,7 +1297,7 @@
       <member refid="class_dendrite_1ada331daa4464ae007b3f77612aa46937" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>setDendriteDiameterEnd</name></member>
       <member refid="class_dendrite_1af33658a5420b56cfd321d75ae5784302" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>setDendriteDiameterStart</name></member>
       <member refid="class_dendrite_1a9bc84d369ac487b095ed1641f89469d2" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>setDendriteLength</name></member>
-      <member refid="class_soma_1ac9fb87be6f9453cc4313e3a35c8b950c" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetDendritePool</name></member>
+      <member refid="class_soma_1a08260f4dfa8f736611fb924cfd03c4ec" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetDendritePool</name></member>
       <member refid="class_neuron_1af9ad96e27f7692e9e328d90e4c96977a" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetDisabled</name></member>
       <member refid="class_cognitive_network_1a31764cd5746369d16b45f2ff74806a0b" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetElectromagnetic</name></member>
       <member refid="class_cognitive_network_1a270f6842ec14b3e5b80dedf7b48ea6f4" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetElectromagneticElectroweak</name></member>
@@ -1343,17 +1313,17 @@
       <member refid="class_dendrite_1a6fed149ffe00cf781a41a9f260f8eeb2" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>setMembraneCapacitance</name></member>
       <member refid="class_dendrite_1af6141643bf2c85404ae9c320611d1d31" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>setMembraneResistance</name></member>
       <member refid="class_neuron_1aa06d0f1a129e4a901a60e7343bc43533" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeuronDeviceTag</name></member>
-      <member refid="class_cognitive_network_1aeb59b511e2ef526c43df1d24a468b571" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeuronPool</name></member>
+      <member refid="class_cognitive_network_1a2e1137387c4165dd3f91a758d2ce7f34" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeuronPool</name></member>
       <member refid="class_neuron_1afc685a0444425fceab6685a6ee004b65" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeuronType</name></member>
-      <member refid="class_cognitive_network_1aaa10c36c0b0024fa717d8d61a4a06920" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeurotransmitterPool</name></member>
+      <member refid="class_cognitive_network_1a84f808251f67ced0edad2e1dd4d47039" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetNeurotransmitterPool</name></member>
       <member refid="class_soma_1a85b4708eb51ab0962a6128b87aff0700" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetObjectType</name></member>
-      <member refid="class_cognitive_network_1aaa3929bfba068659e9681f85deaf79cb" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetOrbitalPool</name></member>
-      <member refid="class_neuron_1a14bef0cc064213659b38c93b002e8956" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetSomaPool</name></member>
+      <member refid="class_cognitive_network_1aeee6e2b2eb06b3c55a0f019b6c9cc250" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetOrbitalPool</name></member>
+      <member refid="class_neuron_1ae18e23983d02953fa6886bef0bbeb339" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetSomaPool</name></member>
       <member refid="class_cognitive_network_1a3fc6d08413bfd4350f94d6f2627eedc7" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetSpin</name></member>
       <member refid="class_cognitive_network_1a50f2a12c9873e623d6247318b041ba30" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetStrong</name></member>
       <member refid="class_cognitive_network_1ac54286eea279f5caa98b642b9084fd55" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetStrongFundamental</name></member>
       <member refid="class_cognitive_network_1a6f7210dd8c2786518329faa61b6e14d5" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetStrongResidual</name></member>
-      <member refid="class_cognitive_network_1a30f35d1bff2e1e3a5a2d921791cfe6b8" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetSynapsePool</name></member>
+      <member refid="class_cognitive_network_1a9d2b7d1de9e7148a403fc15f7f3fd1bf" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetSynapsePool</name></member>
       <member refid="class_neuron_1abf99856ac41b5c9c4948b3204bbc1590" prot="public" virt="non-virtual"><scope>DendriteBranch</scope><name>SetUsage</name></member>
       <member refid="class_cognitive_network_1ab39c9eed50da6d3630c4498ae64b804e" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetWeak</name></member>
       <member refid="class_cognitive_network_1a116f6818986a622e4a318857859e2495" prot="public" virt="virtual"><scope>DendriteBranch</scope><name>SetWeakElectroweak</name></member>

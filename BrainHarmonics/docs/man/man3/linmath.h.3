@@ -1,0 +1,354 @@
+.TH "linmath/linmath.h" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+linmath/linmath.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLINMATH_H_FUNC\fP   static inline"
+.br
+.ti -1c
+.RI "#define \fBLINMATH_H_DEFINE_VEC\fP(\fBn\fP)"
+.br
+.ti -1c
+.RI "#define \fBquat_norm\fP   vec4_norm"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef vec4 \fBmat4x4\fP[4]"
+.br
+.ti -1c
+.RI "typedef float \fBquat\fP[4]"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBvec3_mul_cross\fP (vec3 \fBr\fP, vec3 const \fBa\fP, vec3 const \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBvec3_reflect\fP (vec3 \fBr\fP, vec3 const \fBv\fP, vec3 const \fBn\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBvec4_mul_cross\fP (vec4 \fBr\fP, vec4 \fBa\fP, vec4 \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBvec4_reflect\fP (vec4 \fBr\fP, vec4 \fBv\fP, vec4 \fBn\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_identity\fP (\fBmat4x4\fP M)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_dup\fP (\fBmat4x4\fP M, \fBmat4x4\fP N)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_row\fP (vec4 \fBr\fP, \fBmat4x4\fP M, int i)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_col\fP (vec4 \fBr\fP, \fBmat4x4\fP M, int i)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_transpose\fP (\fBmat4x4\fP M, \fBmat4x4\fP N)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_add\fP (\fBmat4x4\fP M, \fBmat4x4\fP \fBa\fP, \fBmat4x4\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_sub\fP (\fBmat4x4\fP M, \fBmat4x4\fP \fBa\fP, \fBmat4x4\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_scale\fP (\fBmat4x4\fP M, \fBmat4x4\fP \fBa\fP, float k)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_scale_aniso\fP (\fBmat4x4\fP M, \fBmat4x4\fP \fBa\fP, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_mul\fP (\fBmat4x4\fP M, \fBmat4x4\fP \fBa\fP, \fBmat4x4\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_mul_vec4\fP (vec4 \fBr\fP, \fBmat4x4\fP M, vec4 \fBv\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_translate\fP (\fBmat4x4\fP T, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_translate_in_place\fP (\fBmat4x4\fP M, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_from_vec3_mul_outer\fP (\fBmat4x4\fP M, vec3 \fBa\fP, vec3 \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_rotate\fP (\fBmat4x4\fP R, \fBmat4x4\fP M, float \fBx\fP, float \fBy\fP, float \fBz\fP, float \fBangle\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_rotate_X\fP (\fBmat4x4\fP Q, \fBmat4x4\fP M, float \fBangle\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_rotate_Y\fP (\fBmat4x4\fP Q, \fBmat4x4\fP M, float \fBangle\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_rotate_Z\fP (\fBmat4x4\fP Q, \fBmat4x4\fP M, float \fBangle\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_invert\fP (\fBmat4x4\fP T, \fBmat4x4\fP M)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_orthonormalize\fP (\fBmat4x4\fP R, \fBmat4x4\fP M)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_frustum\fP (\fBmat4x4\fP M, float l, float \fBr\fP, float \fBb\fP, float \fBt\fP, float \fBn\fP, float \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_ortho\fP (\fBmat4x4\fP M, float l, float \fBr\fP, float \fBb\fP, float \fBt\fP, float \fBn\fP, float \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_perspective\fP (\fBmat4x4\fP \fBm\fP, float y_fov, float aspect, float \fBn\fP, float \fBf\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_look_at\fP (\fBmat4x4\fP \fBm\fP, vec3 eye, vec3 center, vec3 up)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_identity\fP (\fBquat\fP \fBq\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_add\fP (\fBquat\fP \fBr\fP, \fBquat\fP \fBa\fP, \fBquat\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_sub\fP (\fBquat\fP \fBr\fP, \fBquat\fP \fBa\fP, \fBquat\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_mul\fP (\fBquat\fP \fBr\fP, \fBquat\fP \fBp\fP, \fBquat\fP \fBq\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_scale\fP (\fBquat\fP \fBr\fP, \fBquat\fP \fBv\fP, float \fBs\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP float \fBquat_inner_product\fP (\fBquat\fP \fBa\fP, \fBquat\fP \fBb\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_conj\fP (\fBquat\fP \fBr\fP, \fBquat\fP \fBq\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_rotate\fP (\fBquat\fP \fBr\fP, float \fBangle\fP, vec3 axis)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_mul_vec3\fP (vec3 \fBr\fP, \fBquat\fP \fBq\fP, vec3 \fBv\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_from_quat\fP (\fBmat4x4\fP M, \fBquat\fP \fBq\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4o_mul_quat\fP (\fBmat4x4\fP R, \fBmat4x4\fP M, \fBquat\fP \fBq\fP)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBquat_from_mat4x4\fP (\fBquat\fP \fBq\fP, \fBmat4x4\fP M)"
+.br
+.ti -1c
+.RI "\fBLINMATH_H_FUNC\fP \fBvoid\fP \fBmat4x4_arcball\fP (\fBmat4x4\fP R, \fBmat4x4\fP M, vec2 _a, vec2 _b, float \fBs\fP)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define LINMATH_H_DEFINE_VEC(\fBn\fP)"
+
+.PP
+Definition at line 12 of file linmath\&.h\&.
+.SS "#define LINMATH_H_FUNC   static inline"
+
+.PP
+Definition at line 9 of file linmath\&.h\&.
+.SS "#define quat_norm   vec4_norm"
+
+.PP
+Definition at line 493 of file linmath\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef vec4 mat4x4[4]"
+
+.PP
+Definition at line 97 of file linmath\&.h\&.
+.SS "typedef float quat[4]"
+
+.PP
+Definition at line 436 of file linmath\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_add (\fBmat4x4\fP M, \fBmat4x4\fP a, \fBmat4x4\fP b)"
+
+.PP
+Definition at line 131 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_arcball (\fBmat4x4\fP R, \fBmat4x4\fP M, vec2 _a, vec2 _b, float s)"
+
+.PP
+Definition at line 585 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_col (vec4 r, \fBmat4x4\fP M, int i)"
+
+.PP
+Definition at line 118 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_dup (\fBmat4x4\fP M, \fBmat4x4\fP N)"
+
+.PP
+Definition at line 105 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_from_quat (\fBmat4x4\fP M, \fBquat\fP q)"
+
+.PP
+Definition at line 514 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_from_vec3_mul_outer (\fBmat4x4\fP M, vec3 a, vec3 b)"
+
+.PP
+Definition at line 196 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_frustum (\fBmat4x4\fP M, float l, float r, float b, float t, float n, float f)"
+
+.PP
+Definition at line 336 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_identity (\fBmat4x4\fP M)"
+
+.PP
+Definition at line 98 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_invert (\fBmat4x4\fP T, \fBmat4x4\fP M)"
+
+.PP
+Definition at line 272 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_look_at (\fBmat4x4\fP m, vec3 eye, vec3 center, vec3 up)"
+
+.PP
+Definition at line 394 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_mul (\fBmat4x4\fP M, \fBmat4x4\fP a, \fBmat4x4\fP b)"
+
+.PP
+Definition at line 159 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_mul_vec4 (vec4 r, \fBmat4x4\fP M, vec4 v)"
+
+.PP
+Definition at line 170 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_ortho (\fBmat4x4\fP M, float l, float r, float b, float t, float n, float f)"
+
+.PP
+Definition at line 352 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_orthonormalize (\fBmat4x4\fP R, \fBmat4x4\fP M)"
+
+.PP
+Definition at line 313 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_perspective (\fBmat4x4\fP m, float y_fov, float aspect, float n, float f)"
+
+.PP
+Definition at line 368 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_rotate (\fBmat4x4\fP R, \fBmat4x4\fP M, float x, float y, float z, float angle)"
+
+.PP
+Definition at line 202 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_rotate_X (\fBmat4x4\fP Q, \fBmat4x4\fP M, float angle)"
+
+.PP
+Definition at line 236 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_rotate_Y (\fBmat4x4\fP Q, \fBmat4x4\fP M, float angle)"
+
+.PP
+Definition at line 248 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_rotate_Z (\fBmat4x4\fP Q, \fBmat4x4\fP M, float angle)"
+
+.PP
+Definition at line 260 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_row (vec4 r, \fBmat4x4\fP M, int i)"
+
+.PP
+Definition at line 112 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_scale (\fBmat4x4\fP M, \fBmat4x4\fP a, float k)"
+
+.PP
+Definition at line 143 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_scale_aniso (\fBmat4x4\fP M, \fBmat4x4\fP a, float x, float y, float z)"
+
+.PP
+Definition at line 149 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_sub (\fBmat4x4\fP M, \fBmat4x4\fP a, \fBmat4x4\fP b)"
+
+.PP
+Definition at line 137 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_translate (\fBmat4x4\fP T, float x, float y, float z)"
+
+.PP
+Definition at line 179 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_translate_in_place (\fBmat4x4\fP M, float x, float y, float z)"
+
+.PP
+Definition at line 186 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4_transpose (\fBmat4x4\fP M, \fBmat4x4\fP N)"
+
+.PP
+Definition at line 124 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP mat4x4o_mul_quat (\fBmat4x4\fP R, \fBmat4x4\fP M, \fBquat\fP q)"
+
+.PP
+Definition at line 544 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_add (\fBquat\fP r, \fBquat\fP a, \fBquat\fP b)"
+
+.PP
+Definition at line 442 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_conj (\fBquat\fP r, \fBquat\fP q)"
+
+.PP
+Definition at line 478 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_from_mat4x4 (\fBquat\fP q, \fBmat4x4\fP M)"
+
+.PP
+Definition at line 555 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_identity (\fBquat\fP q)"
+
+.PP
+Definition at line 437 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP float quat_inner_product (\fBquat\fP a, \fBquat\fP b)"
+
+.PP
+Definition at line 470 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_mul (\fBquat\fP r, \fBquat\fP p, \fBquat\fP q)"
+
+.PP
+Definition at line 454 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_mul_vec3 (vec3 r, \fBquat\fP q, vec3 v)"
+
+.PP
+Definition at line 494 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_rotate (\fBquat\fP r, float angle, vec3 axis)"
+
+.PP
+Definition at line 485 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_scale (\fBquat\fP r, \fBquat\fP v, float s)"
+
+.PP
+Definition at line 464 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP quat_sub (\fBquat\fP r, \fBquat\fP a, \fBquat\fP b)"
+
+.PP
+Definition at line 448 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP vec3_mul_cross (vec3 r, vec3 const a, vec3 const b)"
+
+.PP
+Definition at line 66 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP vec3_reflect (vec3 r, vec3 const v, vec3 const n)"
+
+.PP
+Definition at line 73 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP vec4_mul_cross (vec4 r, vec4 a, vec4 b)"
+
+.PP
+Definition at line 81 of file linmath\&.h\&.
+.SS "\fBLINMATH_H_FUNC\fP \fBvoid\fP vec4_reflect (vec4 r, vec4 v, vec4 n)"
+
+.PP
+Definition at line 89 of file linmath\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BrainHarmonics from the source code\&.

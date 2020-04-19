@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>BrainHarmonics</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><heading level="1">This file forms the basis of build requirements to get the software to compile.</heading>
+</para><para><heading level="1">Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac&apos;s. 08-Apr-2020.</heading>
+</para><para><heading level="1">Ongoing code to be managed via Linaro</heading>
+</para><para><heading level="1">(c) Linaro 2020.</heading>
+</para><para><heading level="1">May be freely copied whilst maintaining reference to origin and copyright.</heading>
+</para><para>For cross-platform compatibility</para><para><programlisting><codeline><highlight class="normal">ln<sp/>-s<sp/>/home<sp/>/Users</highlight></codeline>
+</programlisting></para><para>For Mac Users: Ensure the xcode command line tools are installed using: xcode-select <ndash/>install The preference for compilation tools is to use MacPorts. Download from MacPorts.org After installing macports run:</para><para><programlisting><codeline><highlight class="normal">sudo<sp/>port<sp/>selfupdate</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>port<sp/>upgrade<sp/>outdated</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>port<sp/>install<sp/>atlas<sp/>cmake<sp/>doxygen<sp/>gcc5<sp/>graphviz<sp/>gtk2<sp/>gtk3<sp/>libdc1394<sp/>libpcap<sp/>libpng<sp/>libusb<sp/>libuv<sp/>mesa<sp/>opencv<sp/>pkgconfig<sp/>python27<sp/>py27-numpy<sp/>python36<sp/>py36-numpy<sp/>tbb<sp/>xorg-libXt<sp/>x264<sp/>XviD</highlight></codeline>
+</programlisting> For Ubuntu Users <programlisting><codeline><highlight class="normal">sudo<sp/>apt-get<sp/>update</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>upgrade</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(for<sp/>Ubuntu<sp/>14.x)</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>build-essential<sp/>git<sp/>gcc-5<sp/>cmake<sp/>pkg-config<sp/>libgl1-mesa-dev<sp/>libxt-dev<sp/>libpcap-dev<sp/>libmxml-dev<sp/>libuv1-dev<sp/>libusb-1.0-0-dev<sp/>liballegro5-dev<sp/>liballegro-ttf5-dev<sp/>libjpeg-dev<sp/>libjpeg8-dev<sp/>libtiff-dev<sp/>libtiff5-dev<sp/>libjasper-dev<sp/>libpng-dev<sp/>libpng12-dev<sp/>libavcodec-dev<sp/>libavformat-dev<sp/>libswscale-dev<sp/>libv4l-dev<sp/>libxvidcore-dev<sp/>libx264-dev<sp/>libgtk-3-dev<sp/>libatlas-base-dev<sp/>gfortran<sp/>python-dev<sp/>python-numpy<sp/>python2.7-dev<sp/>python3.5-dev<sp/>libgtk2.0-dev<sp/>libtbb2<sp/>libtbb-dev<sp/>libdc1394-22-dev</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">(for<sp/>Ubuntu<sp/>18.x)</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>build-essential<sp/>git<sp/>gcc<sp/>cmake<sp/>pkg-config<sp/>libglfw3-dev<sp/>libgl1-mesa-dev<sp/>libxt-dev<sp/>libpcap-dev<sp/>libmxml-dev<sp/>libuv1-dev<sp/>libusb-1.0-0-dev<sp/>liballegro5-dev<sp/>liballegro-ttf5-dev<sp/>libjpeg-dev<sp/>libjpeg8-dev<sp/>libtiff-dev<sp/>libtiff5-dev<sp/>libjasper-dev<sp/>libpng-dev<sp/>libpng12-dev<sp/>libavcodec-dev<sp/>libavformat-dev<sp/>libswscale-dev<sp/>libv4l-dev<sp/>libxvidcore-dev<sp/>libx264-dev<sp/>libgtk-3-dev<sp/>libatlas-base-dev<sp/>gfortran<sp/>python-dev<sp/>python-numpy<sp/>python2.7-dev<sp/>python3.5-dev<sp/>libgtk2.0-dev<sp/>libtbb2<sp/>libtbb-dev<sp/>libdc1394-22-dev</highlight></codeline>
+</programlisting> Agree to all dependency install requirements</para><para>Base folder is ~/Developer Folders created ~/Developer/CMakeFiles ~/Developer/BrainHarmonics</para><para>Install the QT/VTK toolkit</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>git://vtk.org/VTK.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">mkdir<sp/>~/Developer/VTK-build</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>~/Developer/VTK-Release-build</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>~/Developer/QT</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>~/Developer/VTK-build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>~/Developer/VTK</highlight></codeline>
+</programlisting> (Ubuntu element) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer/VTK-Release-build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE:STRING=Release<sp/>~/Developer/VTK</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">cd<sp/>~/Developer/QT</highlight></codeline>
+<codeline><highlight class="normal">wget<sp/>http://download.qt-project.org/official_releases/qt/5.9/5.9.2/qt-opensource-linux-x64-5.9.2.run</highlight></codeline>
+<codeline><highlight class="normal">chmod<sp/>+x<sp/>qt-opensource-linux-x64-5.9.2.run</highlight></codeline>
+<codeline><highlight class="normal">./qt-opensource-linux-x64-5.9.2.run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">cd<sp/>~/Developer/VTK-Release-build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DVTK_QT_VERSION:STRING=5<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-DQT_QMAKE_EXECUTABLE:PATH=~/Qt5.9.2/5.9.2/gcc_64/bin/qmake<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-DVTK_Group_Qt:BOOL=ON<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-DCMAKE_PREFIX_PATH:PATH=~/Qt5.9.2/5.9.2/gcc_64/lib/cmake<sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-DBUILD_SHARED_LIBS:BOOL=ON<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>~/Developer/VTK</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">make<sp/>-j2</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
+</programlisting></para><para>Install OpenCV specifics (Ubuntu only) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/opencv/opencv.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>~/Developer/opencv</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>release</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>release</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-D<sp/>CMAKE_BUILD_TYPE=RELEASE<sp/>-D<sp/>CMAKE_CXX_FLAGS=-std=c++11<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
+</programlisting></para><para>(MacOS element) <programlisting><codeline><highlight class="normal">wget<sp/>http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg</highlight></codeline>
+</programlisting> Run the dmg to open the QT installer (skip account creation) and then install VTK (the make process is a Very long process) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer/VTK-build</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
+</programlisting></para><para>Install libcaer and its dependencies (Ubuntu &amp; MacOS)</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/inilabs/libcaer.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>libcaer</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DENABLE_OPENCV=1<sp/>-DCMAKE_INSTALL_PREFIX=/usr<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
+</programlisting></para><para>How to build... </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

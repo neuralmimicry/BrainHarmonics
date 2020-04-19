@@ -1,4 +1,4 @@
-.TH "Soma" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Soma" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -62,34 +62,34 @@ Inherited by \fBAxonHillock\fP, and \fBDendrite\fP\&.
 .RI "int \fBGetAxonHillockPool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "int \fBSetAxonHillockPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetAxonHillockPool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
 .RI "int \fBGetDendritePool\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "int \fBSetDendritePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
+.RI "\fBvoid\fP \fBSetDendritePool\fP (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)"
 .br
 .ti -1c
-.RI "void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyInc\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyDec\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyLeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "\fBvoid\fP \fBSetEnergyThreshold\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -357,11 +357,11 @@ Definition at line 292 of file soma\&.cc\&.
 
 .PP
 Definition at line 27 of file soma\&.cc\&.
-.SS "int Soma::SetAxonHillockPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetAxonHillockPool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 59 of file soma\&.h\&.
-.SS "void Soma::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
+.SS "\fBvoid\fP Soma::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
 Reimplemented from \fBUniverse\fP\&.
@@ -369,31 +369,31 @@ Reimplemented from \fBUniverse\fP\&.
 Reimplemented in \fBSynapticVesicle\fP\&.
 .PP
 Definition at line 64 of file soma\&.h\&.
-.SS "int Soma::SetDendritePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetDendritePool (std::chrono::time_point< \fBClock\fP > event_time, int set_pool)\fC [inline]\fP"
 
 .PP
 Definition at line 62 of file soma\&.h\&.
-.SS "void Soma::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 65 of file soma\&.h\&.
-.SS "void Soma::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetEnergyDec (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 67 of file soma\&.h\&.
-.SS "void Soma::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetEnergyInc (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 66 of file soma\&.h\&.
-.SS "void Soma::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetEnergyLeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 68 of file soma\&.h\&.
-.SS "void Soma::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
+.SS "\fBvoid\fP Soma::SetEnergyThreshold (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [inline]\fP"
 
 .PP
 Definition at line 69 of file soma\&.h\&.
-.SS "void Soma::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.SS "\fBvoid\fP Soma::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 
 .PP
 Definition at line 21 of file soma\&.cc\&.

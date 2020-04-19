@@ -69,7 +69,7 @@ public:
     return m_spikeHeight;
     }
     
-    void Update(std::chrono::time_point<Clock> event_time);
+    int Update(std::chrono::time_point<Clock> event_time);
 
 protected:
     

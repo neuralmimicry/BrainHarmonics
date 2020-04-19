@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepy__cmake" kind="namespace" language="Python">
+    <compoundname>py_cmake</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepy__cmake_1a84a25d33eb535db93c795c9b431ad3e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>py_cmake.loader</definition>
+        <argsstring></argsstring>
+        <name>loader</name>
+        <initializer>=  jinja2.FileSystemLoader(searchpath=&quot;{}&quot;.<ref refid="glad_8h_1ae2d3db041c6004a67047659b42f73a44" kindref="member">format</ref>(os.getcwd()))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="3" column="1" bodyfile="opengl/py_cmake.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepy__cmake_1a384351d048ae243fa2f2f419db26f3ad" prot="public" static="no" mutable="no">
+        <type><ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">string</ref></type>
+        <definition>string py_cmake::fname</definition>
+        <argsstring></argsstring>
+        <name>fname</name>
+        <initializer>=  &quot;vanilla_exec_lib&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="4" column="1" bodyfile="opengl/py_cmake.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepy__cmake_1a80080b0f64acfa3a823fad76e05499bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>py_cmake.env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <initializer>=  jinja2.Environment(<ref refid="namespacepy__cmake_1a84a25d33eb535db93c795c9b431ad3e4" kindref="member">loader</ref>= <ref refid="namespacepy__cmake_1a84a25d33eb535db93c795c9b431ad3e4" kindref="member">loader</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="9" column="1" bodyfile="opengl/py_cmake.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepy__cmake_1a5931934f67619e9c0e91f7eb4180f5f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>py_cmake.template</definition>
+        <argsstring></argsstring>
+        <name>template</name>
+        <initializer>=  env.get_template(<ref refid="namespacepy__cmake_1a384351d048ae243fa2f2f419db26f3ad" kindref="member">fname</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="11" column="1" bodyfile="opengl/py_cmake.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepy__cmake_1a2adfb240dd9e470e11d95645a68c30e9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list py_cmake::cpp_files</definition>
+        <argsstring></argsstring>
+        <name>cpp_files</name>
+        <initializer>=  [ele for ele <ref refid="glad_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> os.listdir() if &quot;.cpp&quot; in ele]</initializer>
+        <briefdescription>
+<para>now do the regular expression looking through the present directory for the cpp files </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="15" column="1" bodyfile="opengl/py_cmake.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepy__cmake_1a59f5470f82dcb720da6c7a7c2d366a4f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list py_cmake::prefixes</definition>
+        <argsstring></argsstring>
+        <name>prefixes</name>
+        <initializer>=  [ele.split(&quot;.&quot;)[0] for ele <ref refid="glad_8h_1a83ad0ee7f1e06b59c90271716e689080" kindref="member">in</ref> <ref refid="namespacepy__cmake_1a2adfb240dd9e470e11d95645a68c30e9" kindref="member">cpp_files</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="opengl/py_cmake.py" line="16" column="1" bodyfile="opengl/py_cmake.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="opengl/py_cmake.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,86 +1,86 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="polyhedron_8cc" kind="file" language="C++">
     <compoundname>polyhedron.cc</compoundname>
     <includes refid="polyhedron_8h" local="yes">polyhedron.h</includes>
     <includes refid="polygon_8h" local="yes">polygon.h</includes>
     <includes local="no">cmath</includes>
     <incdepgraph>
-      <node id="1359">
+      <node id="1477">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
-        <childnode refid="1360" relation="include">
+        <childnode refid="1478" relation="include">
         </childnode>
-        <childnode refid="1361" relation="include">
+        <childnode refid="1479" relation="include">
         </childnode>
-        <childnode refid="1366" relation="include">
+        <childnode refid="1484" relation="include">
         </childnode>
       </node>
-      <node id="1361">
+      <node id="1479">
         <label>solid.h</label>
         <link refid="solid_8h"/>
-        <childnode refid="1360" relation="include">
+        <childnode refid="1478" relation="include">
         </childnode>
-        <childnode refid="1362" relation="include">
+        <childnode refid="1480" relation="include">
         </childnode>
       </node>
-      <node id="1367">
+      <node id="1485">
         <label>polygon.h</label>
         <link refid="polygon_8h"/>
-        <childnode refid="1360" relation="include">
+        <childnode refid="1478" relation="include">
         </childnode>
-        <childnode refid="1365" relation="include">
+        <childnode refid="1483" relation="include">
         </childnode>
-        <childnode refid="1359" relation="include">
+        <childnode refid="1477" relation="include">
         </childnode>
       </node>
-      <node id="1366">
+      <node id="1484">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="1363" relation="include">
+        <childnode refid="1481" relation="include">
         </childnode>
-        <childnode refid="1360" relation="include">
+        <childnode refid="1478" relation="include">
         </childnode>
-        <childnode refid="1364" relation="include">
+        <childnode refid="1482" relation="include">
         </childnode>
-        <childnode refid="1362" relation="include">
+        <childnode refid="1480" relation="include">
         </childnode>
       </node>
-      <node id="1368">
+      <node id="1486">
         <label>cmath</label>
       </node>
-      <node id="1365">
+      <node id="1483">
         <label>vector</label>
       </node>
-      <node id="1362">
+      <node id="1480">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1363" relation="include">
+        <childnode refid="1481" relation="include">
         </childnode>
-        <childnode refid="1360" relation="include">
+        <childnode refid="1478" relation="include">
         </childnode>
-        <childnode refid="1364" relation="include">
+        <childnode refid="1482" relation="include">
         </childnode>
-        <childnode refid="1365" relation="include">
+        <childnode refid="1483" relation="include">
         </childnode>
       </node>
-      <node id="1364">
+      <node id="1482">
         <label>math.h</label>
       </node>
-      <node id="1360">
+      <node id="1478">
         <label>iostream</label>
       </node>
-      <node id="1363">
+      <node id="1481">
         <label>chrono</label>
       </node>
-      <node id="1358">
+      <node id="1476">
         <label>BrainHarmonics/polyhedron.cc</label>
         <link refid="polyhedron_8cc"/>
-        <childnode refid="1359" relation="include">
+        <childnode refid="1477" relation="include">
         </childnode>
-        <childnode refid="1367" relation="include">
+        <childnode refid="1485" relation="include">
         </childnode>
-        <childnode refid="1368" relation="include">
+        <childnode refid="1486" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -116,7 +116,7 @@
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(time_object_created<sp/>==<sp/>std::chrono::time_point&lt;Clock&gt;(std::chrono::nanoseconds::zero()))</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_object_created<sp/>=<sp/>event_time;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).count()));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((std::chrono::duration_cast&lt;std::chrono::seconds&gt;(<ref refid="class_universe_1ae54d34c5d695917e074b8e07e8820bdb" kindref="member">TheTimeNow</ref>().time_since_epoch()).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>()));</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>object<sp/>instantiated<sp/>without<sp/>a<sp/>type<sp/>specified<sp/>the<sp/>set<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
@@ -205,11 +205,11 @@
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117" refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" kindref="member">Polyhedron::SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="117" refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a014c8f981aef5fa1d70dcb5be6a0875a" kindref="member">Polyhedron::SetObjectType</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)</highlight></codeline>
 <codeline lineno="118"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(polyhedron_type<sp/>!=<sp/>val)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(polyhedron_type<sp/>!=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>polyhedron_type<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>polyhedron_type<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1ae90c347cfb8ca8028a260e88bef2b45c" kindref="member">ResetParameters</ref>(event_time);</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
@@ -287,8 +287,8 @@
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/>result<sp/>=<sp/><ref refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" kindref="member">AddPolygon</ref>(event_time,<sp/>add_objects[nloop]);</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/>result)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_polyhedron" kindref="compound">Polyhedron</ref>*<sp/><ref refid="glad_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref><sp/>=<sp/><ref refid="class_polyhedron_1a63bc509a87935cc25e541d2490c01d1f" kindref="member">AddPolygon</ref>(event_time,<sp/>add_objects[nloop]);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(add_objects[nloop]<sp/>!=<sp/><ref refid="glad_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>)</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nloop<sp/>=<sp/>quantity;</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -369,7 +369,7 @@
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time_dimension_pointer-&gt;AdjustCounters(event_time);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).count();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(event_time<sp/>-<sp/>previous_event_time).<ref refid="glad_8h_1a5b40aca7a9682963dd00a8f5aef0a901" kindref="member">count</ref>();</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(duration_since_last_event<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>duration_since_last_event<sp/>=<sp/>0;</highlight></codeline>
@@ -391,22 +391,22 @@
 <codeline lineno="300" refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a15d1cae35ceb6c1ba559928fd417800c" kindref="member">Polyhedron::GenerateSpherePoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
 <codeline lineno="301"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>z;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>,<sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>generate<sp/>random<sp/>points<sp/>on<sp/>unit<sp/>sphere</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;50;<sp/>i++)</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>rand();</highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>rand();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref><sp/>=<sp/>rand();</highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>2.0*3.14159265*u;</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>acos(2.0*v-1.0);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>acos(2.0*<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>-1.0);</highlight></codeline>
 <codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>std::cos(phi)*std::sin(theta);</highlight></codeline>
-<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>std::sin(phi)*std::sin(theta);</highlight></codeline>
-<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>std::cos(theta);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>=<sp/>std::cos(phi)*std::sin(theta);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>=<sp/>std::sin(phi)*std::sin(theta);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/>std::cos(theta);</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_point<sp/>=<sp/><ref refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" kindref="member">AddPoint</ref>(event_time);</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>*<sp/>point_pointer<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_point);</highlight></codeline>
-<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point_pointer-&gt;<ref refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" kindref="member">SetPointPosition</ref>(event_time,<sp/>{x,<sp/>y,<sp/>z});</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point_pointer-&gt;<ref refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" kindref="member">SetPointPosition</ref>(event_time,<sp/>{<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>,<sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>});</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" kindref="member">point_list</ref>.push_back(point_pointer);</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -416,24 +416,24 @@
 <codeline lineno="325" refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_polyhedron_1a642a64ae8cde5e2a9f15334e151fd3f9" kindref="member">Polyhedron::GenerateCylinderPoints</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
 <codeline lineno="326"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;Generating<sp/>cylinder...&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>z;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>,<sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>50;</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_points<sp/>=<sp/>100;</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>generate<sp/>random<sp/>points<sp/>on<sp/>unit<sp/>sphere</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;num_points;<sp/>i++)</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>rand();</highlight></codeline>
-<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>rand();</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref><sp/>=<sp/>rand();</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>2.0*3.14159265*u;</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>acos(2.0*v-1.0);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta<sp/>=<sp/>acos(2.0*<ref refid="glad_8h_1a10a82eabcb59d2fcd74acee063775f90" kindref="member">v</ref>-1.0);</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>std::cos(phi)*std::sin(theta);</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>std::sin(phi)*std::sin(theta);</highlight></codeline>
-<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/>(l<sp/>/<sp/>num_points)<sp/>*<sp/>i;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref><sp/>=<sp/>std::cos(phi)*std::sin(theta);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref><sp/>=<sp/>std::sin(phi)*std::sin(theta);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref><sp/>=<sp/>(l<sp/>/<sp/>num_points)<sp/>*<sp/>i;</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_point<sp/>=<sp/><ref refid="class_universe_1a8508b791c6997d8abcdcc037a6776734" kindref="member">AddPoint</ref>(event_time);</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point" kindref="compound">Point</ref>*<sp/>point_pointer<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_point" kindref="compound">Point</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_point);</highlight></codeline>
-<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point_pointer-&gt;<ref refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" kindref="member">SetPointPosition</ref>(event_time,<sp/>{x,<sp/>y,<sp/>z});</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point_pointer-&gt;<ref refid="class_point_1a9191f97ece64b8385140d5f800a3a4ca" kindref="member">SetPointPosition</ref>(event_time,<sp/>{<ref refid="glad_8h_1a1af10666aa42292f407f6acc2af11948" kindref="member">x</ref>,<sp/><ref refid="glad_8h_1af2e2675ea2e0b9a7ec6a98fcb44a938a" kindref="member">y</ref>,<sp/><ref refid="glad_8h_1a1483160fae141afea848a5393c286b2b" kindref="member">z</ref>});</highlight></codeline>
 <codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_polyhedron_1a4a39c8beb34831634b871dbc301502a6" kindref="member">point_list</ref>.push_back(point_pointer);</highlight></codeline>
 <codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

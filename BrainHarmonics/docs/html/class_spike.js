@@ -8,7 +8,7 @@ var class_spike =
     [ "GetSpikeHeightReset", "class_spike.html#a6266871881a2581aaee499f6a10e1841", null ],
     [ "pollSpike", "class_spike.html#ac465dbe6500f1eb1f5421f7174f91dd3", null ],
     [ "ResetParameters", "class_spike.html#af4475560da7a33e70a0f2036197f000f", null ],
-    [ "setSpikeHeightReset", "class_spike.html#aed9745a5883c2f611def65b4e527287f", null ],
+    [ "SetSpikeHeightReset", "class_spike.html#a872adf39d66b0f491fb179c9745d7d11", null ],
     [ "spikeReset", "class_spike.html#acce1cc96e84e7cbf3b68010ab32f045e", null ],
     [ "Update", "class_spike.html#a683a0ca5e62e68777381fc85f4bf3019", null ]
 ];

@@ -1,4 +1,4 @@
-.TH "Universe" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Universe" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -29,7 +29,7 @@ Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetw
 .RI "double \fBGetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+.RI "\fBvoid\fP \fBSetEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
 .br
 .ti -1c
 .RI "double \fBUseEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
@@ -38,10 +38,10 @@ Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetw
 .RI "double \fBReturnEnergy\fP (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
 .br
 .ti -1c
-.RI "void \fBCreation\fP (std::chrono::time_point< \fBClock\fP > event_time, std::string object_title, int object_type)"
+.RI "\fBvoid\fP \fBCreation\fP (std::chrono::time_point< \fBClock\fP > event_time, \fBstd::string\fP object_title, int object_type)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 .br
 .ti -1c
 .RI "bool \fBResetParameters\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -53,10 +53,10 @@ Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetw
 .RI "std::chrono::time_point< std::chrono::high_resolution_clock > \fBTheCalculatedTimeNow\fP (std::chrono::time_point< std::chrono::high_resolution_clock > time_object_created_time, std::chrono::time_point< \fBClock\fP > event_time, double calculated_scaled_time)"
 .br
 .ti -1c
-.RI "void \fBSetLifespan\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.RI "\fBvoid\fP \fBSetLifespan\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
 .br
 .ti -1c
-.RI "void \fBExtendLife\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.RI "\fBvoid\fP \fBExtendLife\fP (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
 .br
 .ti -1c
 .RI "bool \fBIsDead\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -182,22 +182,22 @@ Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetw
 .RI "\fBUniverse\fP * \fBGetPoint\fP (std::chrono::time_point< \fBClock\fP > event_time, int selector)"
 .br
 .ti -1c
-.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.RI "\fBvoid\fP \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "virtual void \fBAddTemporalAdjustment\fP (std::chrono::time_point< \fBClock\fP > event_time, double *point_to_counter, double pool, int interval, int shape)"
+.RI "virtual \fBvoid\fP \fBAddTemporalAdjustment\fP (std::chrono::time_point< \fBClock\fP > event_time, double *point_to_counter, double pool, int interval, int shape)"
 .br
 .ti -1c
-.RI "virtual void \fBAdjustCounters\fP (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)"
+.RI "virtual \fBvoid\fP \fBAdjustCounters\fP (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)"
 .br
 .ti -1c
-.RI "virtual void \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "virtual \fBvoid\fP \fBSetCharge\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int val)"
+.RI "virtual \fBvoid\fP \fBSetSpin\fP (std::chrono::time_point< \fBClock\fP > event_time, int \fBval\fP)"
 .br
 .ti -1c
 .RI "virtual double \fBGetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -224,58 +224,58 @@ Inherited by \fBAbstraction\fP, \fBAppTimer\fP\fC [virtual]\fP, \fBCognitiveNetw
 .RI "virtual double \fBGetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual double \fBApplyStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "virtual \fBvoid\fP \fBSetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetGravitation\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetWeak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetWeakElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetElectromagnetic\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetElectromagneticElectroweak\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetStrong\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetStrongFundamental\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double val)"
+.RI "virtual \fBvoid\fP \fBSetStrongResidual\fP (std::chrono::time_point< \fBClock\fP > event_time, double \fBval\fP)"
 .br
 .ti -1c
-.RI "virtual void \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
+.RI "virtual \fBvoid\fP \fBPollElementaryForce\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .in -1c
 .SS "Public Attributes"
@@ -431,11 +431,11 @@ Definition at line 351 of file universe\&.cc\&.
 
 .PP
 Definition at line 341 of file universe\&.cc\&.
-.SS "void Universe::AddTemporalAdjustment (std::chrono::time_point< \fBClock\fP > event_time, double * point_to_counter, double pool, int interval, int shape)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::AddTemporalAdjustment (std::chrono::time_point< \fBClock\fP > event_time, double * point_to_counter, double pool, int interval, int shape)\fC [virtual]\fP"
 
 .PP
 Definition at line 600 of file universe\&.cc\&.
-.SS "void Universe::AdjustCounters (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::AdjustCounters (std::chrono::time_point< std::chrono::high_resolution_clock > currentTime)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBDimension\fP\&.
@@ -489,11 +489,11 @@ Definition at line 616 of file universe\&.cc\&.
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBMonomer\fP, \fBElementaryForce\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 617 of file universe\&.cc\&.
-.SS "void Universe::Creation (std::chrono::time_point< \fBClock\fP > event_time, std::string object_title, int object_type)"
+.SS "\fBvoid\fP Universe::Creation (std::chrono::time_point< \fBClock\fP > event_time, \fBstd::string\fP object_title, int object_type)"
 
 .PP
 Definition at line 57 of file universe\&.cc\&.
-.SS "void Universe::ExtendLife (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.SS "\fBvoid\fP Universe::ExtendLife (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
 
 .PP
 Definition at line 127 of file universe\&.cc\&.
@@ -633,7 +633,7 @@ Definition at line 608 of file universe\&.cc\&.
 
 .PP
 Definition at line 138 of file universe\&.cc\&.
-.SS "void Universe::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::PollElementaryForce (std::chrono::time_point< \fBClock\fP > event_time)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, and \fBLaw\fP\&.
@@ -647,79 +647,79 @@ Definition at line 69 of file universe\&.cc\&.
 
 .PP
 Definition at line 51 of file universe\&.cc\&.
-.SS "void Universe::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetCharge (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryParticle\fP, \fBMonomer\fP, and \fBLaw\fP\&.
 .PP
 Definition at line 604 of file universe\&.cc\&.
-.SS "void Universe::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetCounter (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBDimension\fP, \fBElementaryForce\fP, \fBCompositeForceParticle\fP, \fBMembraneChannel\fP, \fBNeuroreceptor\fP, \fBSoma\fP, \fBElementaryParticle\fP, \fBMembrane\fP, \fBMatter\fP, \fBDendrite\fP, \fBSolid\fP, \fBOrbital\fP, \fBPolymer\fP, \fBMonomer\fP, \fBPolygon\fP, \fBAppTimer\fP, \fBLaw\fP, \fBInterneuronSpace\fP, \fBSynapse\fP, \fBCognitiveInput\fP, \fBCognitiveOutput\fP, \fBNeurotransmitter\fP, \fBSynapticVesicle\fP, \fBAxon\fP, \fBAxonHillock\fP, \fBDendriteBranch\fP, \fBMyelinSheath\fP, \fBAxonBouton\fP, \fBDendriteCleft\fP, \fBAxonBranch\fP, and \fBAbstraction\fP\&.
 .PP
 Definition at line 624 of file universe\&.cc\&.
-.SS "void Universe::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetElectromagnetic (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 628 of file universe\&.cc\&.
-.SS "void Universe::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetElectromagneticElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 629 of file universe\&.cc\&.
-.SS "void Universe::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
+.SS "\fBvoid\fP Universe::SetEnergy (std::chrono::time_point< \fBClock\fP > event_time, double energy_transfer)"
 
 .PP
 Definition at line 35 of file universe\&.cc\&.
-.SS "void Universe::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetGravitation (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 625 of file universe\&.cc\&.
-.SS "void Universe::SetLifespan (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
+.SS "\fBvoid\fP Universe::SetLifespan (std::chrono::time_point< \fBClock\fP > event_time, std::chrono::nanoseconds life_time)"
 
 .PP
 Definition at line 121 of file universe\&.cc\&.
-.SS "void Universe::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
+.SS "\fBvoid\fP Universe::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, int object_type)"
 
 .PP
 Definition at line 63 of file universe\&.cc\&.
-.SS "void Universe::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetSpin (std::chrono::time_point< \fBClock\fP > event_time, int val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryParticle\fP, \fBMonomer\fP, and \fBLaw\fP\&.
 .PP
 Definition at line 605 of file universe\&.cc\&.
-.SS "void Universe::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetStrong (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 630 of file universe\&.cc\&.
-.SS "void Universe::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetStrongFundamental (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 631 of file universe\&.cc\&.
-.SS "void Universe::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetStrongResidual (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 632 of file universe\&.cc\&.
-.SS "void Universe::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetWeak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
 .PP
 Definition at line 626 of file universe\&.cc\&.
-.SS "void Universe::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
+.SS "\fBvoid\fP Universe::SetWeakElectroweak (std::chrono::time_point< \fBClock\fP > event_time, double val)\fC [virtual]\fP"
 
 .PP
 Reimplemented in \fBCognitiveNetwork\fP, \fBDimension\fP, \fBSolid\fP, \fBElementaryForce\fP, \fBMonomer\fP, \fBLaw\fP, and \fBCompositeForceParticle\fP\&.
@@ -737,7 +737,7 @@ Definition at line 111 of file universe\&.cc\&.
 
 .PP
 Definition at line 481 of file universe\&.cc\&.
-.SS "void Universe::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.SS "\fBvoid\fP Universe::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBUniverse\fP *> set_of_update_pointers, unsigned int pointer_type)"
 
 .PP
 Definition at line 418 of file universe\&.cc\&.

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="class_matter" kind="class" language="C++" prot="public">
     <compoundname>Matter</compoundname>
     <basecompoundref refid="class_universe" prot="public" virt="non-virtual">Universe</basecompoundref>
@@ -206,7 +206,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/matter.h" line="52" column="1" bodyfile="BrainHarmonics/matter.h" bodystart="52" bodyend="52"/>
-        <references refid="class_matter_1adfd93d323e43d09fa8d8b7cdd2258611" compoundref="matter_8cc" startline="20" endline="58">ResetParameters</references>
       </memberdef>
       <memberdef kind="function" id="class_matter_1adfd93d323e43d09fa8d8b7cdd2258611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -230,7 +229,6 @@
         <references refid="class_universe_1a64f4f4025c9be1d84492c766a002a6d4" compoundref="universe_8h" startline="283">Universe::object_size</references>
         <referencedby refid="class_matter_1a56898dd51e5a675832bc82de285b3ef7" compoundref="matter_8cc" startline="60" endline="94">Update</referencedby>
         <referencedby refid="class_matter_1a724543a0439d3099f5fc0eae68110b75" compoundref="matter_8h" startline="34" endline="48">Matter</referencedby>
-        <referencedby refid="class_matter_1a646fca3d4176950aed6173e1378664e3" compoundref="matter_8h" startline="52" endline="52">~Matter</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_matter_1ac667a2f3b6d5d2ce8469efe1596cdd62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -250,7 +248,7 @@
         <location file="BrainHarmonics/matter.h" line="56" column="1" bodyfile="BrainHarmonics/matter.h" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_matter_1a514b4a64589eb3fbc3db6b3b356bd687" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
+        <type><ref refid="glad_8h_1a950fc91edb4504f62f1c577bf4727c29" kindref="member">void</ref></type>
         <definition>void Matter::SetCounter</definition>
         <argsstring>(std::chrono::time_point&lt; Clock &gt; event_time, unsigned int val)</argsstring>
         <name>SetCounter</name>
@@ -270,7 +268,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="BrainHarmonics/matter.h" line="58" column="1" bodyfile="BrainHarmonics/matter.h" bodystart="58" bodyend="58"/>
-        <references refid="class_matter_1a56898dd51e5a675832bc82de285b3ef7" compoundref="matter_8cc" startline="60" endline="94">Update</references>
       </memberdef>
       <memberdef kind="function" id="class_matter_1a56898dd51e5a675832bc82de285b3ef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -290,7 +287,6 @@
         <location file="BrainHarmonics/matter.h" line="60" column="1" bodyfile="BrainHarmonics/matter.cc" bodystart="60" bodyend="94"/>
         <references refid="class_matter_1adfd93d323e43d09fa8d8b7cdd2258611" compoundref="matter_8cc" startline="20" endline="58">ResetParameters</references>
         <references refid="class_universe_1ab64777e25c83216e7a91d2761a10463c" compoundref="universe_8h" startline="281">Universe::object_energy</references>
-        <referencedby refid="class_matter_1a514b4a64589eb3fbc3db6b3b356bd687" compoundref="matter_8h" startline="58" endline="58">SetCounter</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -298,29 +294,29 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="199">
+      <node id="200">
         <label>Universe</label>
         <link refid="class_universe"/>
       </node>
-      <node id="198">
+      <node id="199">
         <label>Matter</label>
         <link refid="class_matter"/>
-        <childnode refid="199" relation="public-inheritance">
+        <childnode refid="200" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="201">
+      <node id="202">
         <label>Universe</label>
         <link refid="class_universe"/>
-        <childnode refid="201" relation="usage">
+        <childnode refid="202" relation="usage">
           <edgelabel>time_dimension_pointer</edgelabel>
         </childnode>
       </node>
-      <node id="200">
+      <node id="201">
         <label>Matter</label>
         <link refid="class_matter"/>
-        <childnode refid="201" relation="public-inheritance">
+        <childnode refid="202" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -1,4 +1,4 @@
-.TH "Polyhedron" 3 "Tue Oct 10 2017" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
+.TH "Polyhedron" 3 "Mon Apr 20 2020" "Version 0.1" "BrainHarmonics" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,10 +37,10 @@ Inherited by \fBPolygon\fP\&.
 .RI "unsigned int \fBGetCounter\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBsetCounter\fP (unsigned int val)"
+.RI "\fBvoid\fP \fBsetCounter\fP (unsigned int \fBval\fP)"
 .br
 .ti -1c
-.RI "void \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.RI "\fBvoid\fP \fBSetObjectType\fP (std::chrono::time_point< \fBClock\fP > event_time, unsigned int \fBval\fP)"
 .br
 .ti -1c
 .RI "\fBPolyhedron\fP * \fBCreatePolygon\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -91,7 +91,7 @@ Inherited by \fBPolygon\fP\&.
 .RI "int \fBGenerateCylinderPoints\fP (std::chrono::time_point< \fBClock\fP > event_time)"
 .br
 .ti -1c
-.RI "void \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.RI "\fBvoid\fP \fBUpdateCycle\fP (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP *> set_of_update_pointers, unsigned int pointer_type)"
 .br
 .ti -1c
 .RI "int \fBUpdate\fP (std::chrono::time_point< \fBClock\fP > event_time)"
@@ -217,11 +217,11 @@ Definition at line 217 of file polyhedron\&.cc\&.
 
 .PP
 Definition at line 22 of file polyhedron\&.cc\&.
-.SS "void Polyhedron::setCounter (unsigned int val)\fC [inline]\fP"
+.SS "\fBvoid\fP Polyhedron::setCounter (unsigned int val)\fC [inline]\fP"
 
 .PP
 Definition at line 53 of file polyhedron\&.h\&.
-.SS "void Polyhedron::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
+.SS "\fBvoid\fP Polyhedron::SetObjectType (std::chrono::time_point< \fBClock\fP > event_time, unsigned int val)"
 
 .PP
 Definition at line 117 of file polyhedron\&.cc\&.
@@ -229,7 +229,7 @@ Definition at line 117 of file polyhedron\&.cc\&.
 
 .PP
 Definition at line 265 of file polyhedron\&.cc\&.
-.SS "void Polyhedron::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP *> set_of_update_pointers, unsigned int pointer_type)"
+.SS "\fBvoid\fP Polyhedron::UpdateCycle (std::chrono::time_point< \fBClock\fP > event_time, std::vector< \fBPoint\fP *> set_of_update_pointers, unsigned int pointer_type)"
 
 .PP
 Definition at line 242 of file polyhedron\&.cc\&.

@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['schwanncell_2ecc',['schwanncell.cc',['../schwanncell_8cc.html',1,'']]],
-  ['schwanncell_2ed',['schwanncell.d',['../schwanncell_8d.html',1,'']]],
-  ['schwanncell_2eh',['schwanncell.h',['../schwanncell_8h.html',1,'']]],
-  ['screenlist_2ecpp',['screenlist.cpp',['../screenlist_8cpp.html',1,'']]],
-  ['screenlist_2ehpp',['screenlist.hpp',['../screenlist_8hpp.html',1,'']]],
-  ['search_2ecpp',['search.cpp',['../search_8cpp.html',1,'']]],
-  ['sizeof_5fsize_5ft_2ec',['SIZEOF_SIZE_T.c',['../_s_i_z_e_o_f___s_i_z_e___t_8c.html',1,'']]],
-  ['sizeof_5fvoid_5fptr_2ec',['SIZEOF_VOID_PTR.c',['../_s_i_z_e_o_f___v_o_i_d___p_t_r_8c.html',1,'']]],
-  ['sniffex_2ecc',['sniffex.cc',['../sniffex_8cc.html',1,'']]],
-  ['sniffex_2ed',['sniffex.d',['../sniffex_8d.html',1,'']]],
-  ['sniffex_2eh',['sniffex.h',['../sniffex_8h.html',1,'']]],
-  ['solid_2ecc',['solid.cc',['../solid_8cc.html',1,'']]],
-  ['solid_2ed',['solid.d',['../solid_8d.html',1,'']]],
-  ['solid_2eh',['solid.h',['../solid_8h.html',1,'']]],
-  ['soma_2ecc',['soma.cc',['../soma_8cc.html',1,'']]],
-  ['soma_2ed',['soma.d',['../soma_8d.html',1,'']]],
-  ['soma_2eh',['soma.h',['../soma_8h.html',1,'']]],
-  ['spike_2ecc',['spike.cc',['../spike_8cc.html',1,'']]],
-  ['spike_2ed',['spike.d',['../spike_8d.html',1,'']]],
-  ['spike_2eh',['spike.h',['../spike_8h.html',1,'']]],
-  ['synapse_2ecc',['synapse.cc',['../synapse_8cc.html',1,'']]],
-  ['synapse_2ed',['synapse.d',['../synapse_8d.html',1,'']]],
-  ['synapse_2eh',['synapse.h',['../synapse_8h.html',1,'']]],
-  ['synapticvesicle_2ecc',['synapticvesicle.cc',['../synapticvesicle_8cc.html',1,'']]],
-  ['synapticvesicle_2ed',['synapticvesicle.d',['../synapticvesicle_8d.html',1,'']]],
-  ['synapticvesicle_2eh',['synapticvesicle.h',['../synapticvesicle_8h.html',1,'']]]
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];

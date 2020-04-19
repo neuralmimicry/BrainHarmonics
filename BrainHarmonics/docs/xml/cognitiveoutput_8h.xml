@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="cognitiveoutput_8h" kind="file" language="C++">
     <compoundname>cognitiveoutput.h</compoundname>
     <includes local="no">chrono</includes>
@@ -9,79 +9,79 @@
     <includedby refid="cognitivenetwork_8cc" local="yes">BrainHarmonics/cognitivenetwork.cc</includedby>
     <includedby refid="cognitiveoutput_8cc" local="yes">BrainHarmonics/cognitiveoutput.cc</includedby>
     <incdepgraph>
-      <node id="493">
+      <node id="623">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="494" relation="include">
+        <childnode refid="624" relation="include">
         </childnode>
-        <childnode refid="496" relation="include">
+        <childnode refid="626" relation="include">
         </childnode>
       </node>
-      <node id="494">
+      <node id="624">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="492" relation="include">
+        <childnode refid="622" relation="include">
         </childnode>
-        <childnode refid="495" relation="include">
+        <childnode refid="625" relation="include">
         </childnode>
-        <childnode refid="496" relation="include">
+        <childnode refid="626" relation="include">
         </childnode>
       </node>
-      <node id="490">
+      <node id="620">
         <label>BrainHarmonics/cognitiveoutput.h</label>
         <link refid="cognitiveoutput_8h"/>
-        <childnode refid="491" relation="include">
+        <childnode refid="621" relation="include">
         </childnode>
-        <childnode refid="492" relation="include">
+        <childnode refid="622" relation="include">
         </childnode>
-        <childnode refid="493" relation="include">
+        <childnode refid="623" relation="include">
         </childnode>
       </node>
-      <node id="495">
+      <node id="625">
         <label>vector</label>
       </node>
-      <node id="496">
+      <node id="626">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="491" relation="include">
+        <childnode refid="621" relation="include">
         </childnode>
-        <childnode refid="492" relation="include">
+        <childnode refid="622" relation="include">
         </childnode>
-        <childnode refid="497" relation="include">
+        <childnode refid="627" relation="include">
         </childnode>
-        <childnode refid="495" relation="include">
+        <childnode refid="625" relation="include">
         </childnode>
       </node>
-      <node id="497">
+      <node id="627">
         <label>math.h</label>
       </node>
-      <node id="492">
+      <node id="622">
         <label>iostream</label>
       </node>
-      <node id="491">
+      <node id="621">
         <label>chrono</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="500">
+      <node id="630">
         <label>BrainHarmonics/cognitivenetwork.cc</label>
         <link refid="cognitivenetwork_8cc"/>
       </node>
-      <node id="499">
+      <node id="629">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="498">
+      <node id="628">
         <label>BrainHarmonics/cognitiveoutput.h</label>
         <link refid="cognitiveoutput_8h"/>
-        <childnode refid="499" relation="include">
+        <childnode refid="629" relation="include">
         </childnode>
-        <childnode refid="500" relation="include">
+        <childnode refid="630" relation="include">
         </childnode>
-        <childnode refid="501" relation="include">
+        <childnode refid="631" relation="include">
         </childnode>
       </node>
-      <node id="501">
+      <node id="631">
         <label>BrainHarmonics/cognitiveoutput.cc</label>
         <link refid="cognitiveoutput_8cc"/>
       </node>
@@ -134,9 +134,9 @@
 <codeline lineno="41" refid="class_cognitive_output_1abb923045db565ecdbac431469217cebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1abb923045db565ecdbac431469217cebf" kindref="member">GetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>object_energy;<sp/>}</highlight></codeline>
 <codeline lineno="42" refid="class_cognitive_output_1ac5ead5e6a98556d6779eda5679b69594" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1ac5ead5e6a98556d6779eda5679b69594" kindref="member">GetType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cognitiveoutput_type;<sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="class_cognitive_output_1ac76f41ab3b65ea466e9e2999270f2e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1ac76f41ab3b65ea466e9e2999270f2e5a" kindref="member">SetType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>cognitiveoutput_type<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="45" refid="class_cognitive_output_1a087e8bdab9eb6020dbbe6d47f524c8b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1a087e8bdab9eb6020dbbe6d47f524c8b6" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_Counter<sp/>=<sp/>val;<sp/>}</highlight></codeline>
-<codeline lineno="46" refid="class_cognitive_output_1acc16ca3521689776ecd68255ece1e671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1acc16ca3521689776ecd68255ece1e671" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>object_energy<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="44" refid="class_cognitive_output_1ac76f41ab3b65ea466e9e2999270f2e5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1ac76f41ab3b65ea466e9e2999270f2e5a" kindref="member">SetType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>cognitiveoutput_type<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="45" refid="class_cognitive_output_1a087e8bdab9eb6020dbbe6d47f524c8b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1a087e8bdab9eb6020dbbe6d47f524c8b6" kindref="member">SetCounter</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_Counter<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="46" refid="class_cognitive_output_1acc16ca3521689776ecd68255ece1e671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1acc16ca3521689776ecd68255ece1e671" kindref="member">SetEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>object_energy<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48" refid="class_cognitive_output_1aae27d114676c68e02ae6e7ae36326ba8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_cognitive_output_1aae27d114676c68e02ae6e7ae36326ba8" kindref="member">TakeEnergy</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>

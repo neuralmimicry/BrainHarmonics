@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="spike_8h" kind="file" language="C++">
     <compoundname>spike.h</compoundname>
     <includes local="no">stdio.h</includes>
@@ -8,76 +8,76 @@
     <includedby refid="_brain_harmonics_8cc" local="yes">BrainHarmonics/BrainHarmonics.cc</includedby>
     <includedby refid="spike_8cc" local="yes">BrainHarmonics/spike.cc</includedby>
     <incdepgraph>
-      <node id="1680">
+      <node id="1792">
         <label>BrainHarmonics/spike.h</label>
         <link refid="spike_8h"/>
-        <childnode refid="1681" relation="include">
+        <childnode refid="1793" relation="include">
         </childnode>
-        <childnode refid="1682" relation="include">
+        <childnode refid="1794" relation="include">
         </childnode>
-        <childnode refid="1683" relation="include">
+        <childnode refid="1795" relation="include">
         </childnode>
       </node>
-      <node id="1683">
+      <node id="1795">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="1684" relation="include">
+        <childnode refid="1796" relation="include">
         </childnode>
-        <childnode refid="1686" relation="include">
+        <childnode refid="1798" relation="include">
         </childnode>
       </node>
-      <node id="1684">
+      <node id="1796">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
-        <childnode refid="1685" relation="include">
+        <childnode refid="1797" relation="include">
         </childnode>
-        <childnode refid="1682" relation="include">
+        <childnode refid="1794" relation="include">
         </childnode>
-        <childnode refid="1686" relation="include">
+        <childnode refid="1798" relation="include">
         </childnode>
       </node>
-      <node id="1682">
+      <node id="1794">
         <label>vector</label>
       </node>
-      <node id="1686">
+      <node id="1798">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="1687" relation="include">
+        <childnode refid="1799" relation="include">
         </childnode>
-        <childnode refid="1685" relation="include">
+        <childnode refid="1797" relation="include">
         </childnode>
-        <childnode refid="1688" relation="include">
+        <childnode refid="1800" relation="include">
         </childnode>
-        <childnode refid="1682" relation="include">
+        <childnode refid="1794" relation="include">
         </childnode>
       </node>
-      <node id="1688">
+      <node id="1800">
         <label>math.h</label>
       </node>
-      <node id="1685">
+      <node id="1797">
         <label>iostream</label>
       </node>
-      <node id="1687">
+      <node id="1799">
         <label>chrono</label>
       </node>
-      <node id="1681">
+      <node id="1793">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1689">
+      <node id="1801">
         <label>BrainHarmonics/spike.h</label>
         <link refid="spike_8h"/>
-        <childnode refid="1690" relation="include">
+        <childnode refid="1802" relation="include">
         </childnode>
-        <childnode refid="1691" relation="include">
+        <childnode refid="1803" relation="include">
         </childnode>
       </node>
-      <node id="1690">
+      <node id="1802">
         <label>BrainHarmonics/BrainHarmonics.cc</label>
         <link refid="_brain_harmonics_8cc"/>
       </node>
-      <node id="1691">
+      <node id="1803">
         <label>BrainHarmonics/spike.cc</label>
         <link refid="spike_8cc"/>
       </node>
@@ -140,7 +140,7 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_spike_1af4475560da7a33e70a0f2036197f000f" kindref="member">ResetParameters</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time);</highlight></codeline>
 <codeline lineno="52" refid="class_spike_1a6266871881a2581aaee499f6a10e1841" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_spike_1a6266871881a2581aaee499f6a10e1841" kindref="member">GetSpikeHeightReset</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>std::chrono::time_point&lt;Clock&gt;<sp/>last_event_time<sp/>=<sp/>event_time;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_spikeHeightReset;<sp/>}</highlight></codeline>
-<codeline lineno="53" refid="class_spike_1aed9745a5883c2f611def65b4e527287f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_spike_1aed9745a5883c2f611def65b4e527287f" kindref="member">setSpikeHeightReset</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val)<sp/>{<sp/>m_spikeHeightReset<sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="53" refid="class_spike_1a872adf39d66b0f491fb179c9745d7d11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_spike_1a872adf39d66b0f491fb179c9745d7d11" kindref="member">SetSpikeHeightReset</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>)<sp/>{<sp/>m_spikeHeightReset<sp/>=<sp/><ref refid="glad_8h_1a26942fd2ed566ef553eae82d2c109c8f" kindref="member">val</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="54" refid="class_spike_1acce1cc96e84e7cbf3b68010ab32f045e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_spike_1acce1cc96e84e7cbf3b68010ab32f045e" kindref="member">spikeReset</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)<sp/>{<sp/>m_spikeHeight<sp/>=<sp/>m_spikeHeightReset;<sp/>}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="56" refid="class_spike_1ac465dbe6500f1eb1f5421f7174f91dd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_spike_1ac465dbe6500f1eb1f5421f7174f91dd3" kindref="member">pollSpike</ref>(std::chrono::time_point&lt;Clock&gt;<sp/>event_time)</highlight></codeline>
