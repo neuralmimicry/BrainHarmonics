@@ -1,10 +1,8 @@
 /*!
  * @file      BrainHarmonics.cc
  * @details   Brain Harmonics - using harmonics to store and process neural spikes
- * @author    Paul B. Isaac's
- * @original_date      03.02.2016
- * @original_Copyright © 2016 Paul B. Isaac's. All rights reserved.
- * @date      08.04.2020
+ * @author    Paul B. Isaac's, authored 03-FEB-2016
+ * @date      08-APR-2020
  * @copyright © 2020 Linaro Limited. Open Source Software.
  */
 
@@ -36,7 +34,7 @@ extern "C" {
 #include <time.h>               //! header defines four variable types, two macro and various functions for manipulating date and time.
 }
 
-    // Standard Template Libraries (STL)
+    //! Standard Template Libraries (STL)
 #include <array>                //! For array in CRC-32 call
 #include <cstring>              //! For handling strings
 #include <cstdint>              //! For byte handling in CRC-32
@@ -76,9 +74,9 @@ extern "C" {
  *  Added path vtk-9.0/ due to Eclipse failure to successfully find include path
  */
 #include <vtk-9.0/vtkAutoInit.h>
-VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2 // @suppress("Type cannot be resolved")
-VTK_MODULE_INIT(vtkRenderingFreeType); // @suppress("Type cannot be resolved")
-VTK_MODULE_INIT(vtkInteractionStyle); // @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkRenderingOpenGL2); //! VTK was built with vtkRenderingOpenGL2 //! @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkRenderingFreeType); //! @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkInteractionStyle); //! @suppress("Type cannot be resolved")
 #include <vtk-9.0/vtkVersion.h>
 #include <vtk-9.0/vtkActor.h>
 #include <vtk-9.0/vtkActor2D.h>
@@ -115,8 +113,8 @@ VTK_MODULE_INIT(vtkInteractionStyle); // @suppress("Type cannot be resolved")
 #include <vtk-9.0/vtkXMLPolyDataWriter.h>
 #include <cmath>
 
-#include </usr/local/include/vtk-9.0/vtkTransform.h>
-#include </usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h>
+#include <vtk-9.0/vtkTransform.h>
+#include <vtk-9.0/vtkTransformPolyDataFilter.h>
 
 vtkSmartPointer<vtkRenderWindow> render_window;
 vtkSmartPointer<vtkRenderWindowInteractor> render_window_interactor;
@@ -136,7 +134,7 @@ std::vector<vtkSmartPointer<vtkTextActor>> define_textactors;
 
 std::vector<vtkSmartPointer<vtkRenderer>> define_renderers;
 
-    // = vtkSmartPointer<vtkRenderer>::New()
+    //! = vtkSmartPointer<vtkRenderer>::New()
 
 int static_points_counter = 0;
 int static_polygons_counter = 0;
@@ -166,11 +164,15 @@ int dynamic_renderers_counter = 0;
 
 static vtkSmartPointer<vtkPolyData> TransformBack(vtkSmartPointer<vtkPoints> pt, vtkSmartPointer<vtkPolyData> pd);
 
-    // Interim calls to Python (2.7) to use existing APIs to Neuromorphic hardware and/or Brain simulators
-#include <Python.h>             /**< Python interpreter                            */
+/*!
+ * Interim calls to Python (3.8) to use existing APIs to Neuromorphic hardware and/or Brain simulators
+ */
+#include <Python.h>             //! Python interpreter
 #include <numpy/arrayobject.h>
 
-    // GLUT on El Capitan - poor headers
+/*!
+ * GLUT on OS X El Capitan - poor headers
+ */
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #include <OpenGL/gl.h>
@@ -184,102 +186,100 @@ static vtkSmartPointer<vtkPolyData> TransformBack(vtkSmartPointer<vtkPoints> pt,
 #include <GL/glut.h>
 #endif
 
-    // To use the std:: files
-    //#define IL_STD
-    //#include <ilcplex/ilocplex.h>
-    //ILOSTLBEGIN
+/*!
+ * Homegrown add-ins
+ */
+#include "universe.h"                  //! Top of the tree, begin with Universe class
+#include "dimension.h"                 //! Add Dimensions for spatial identification
+#include "elementaryparticle.h"        //! Follow with the creation of quarks/leptons
+#include "elementaryforce.h"           //! Define Force interaction between fundamentals
+#include "compositeforceparticle.h"    //! Define ForceParticle interaction between Composites
+#include "law.h"                       //! Specify how Composites interact
+#include "matter.h"                    //! Composites form elements of periodic table
+#include "monomer.h"                   //! Composites form molecules
+#include "polymer.h"                   //! Composites form molecules
+#include "solid.h"                     //! Materials are a combination of Matter
+#include "polyhedron.h"                //! Materials can be formed into multiDimensional shapes
+#include "polygon.h"                   //! Complex shapes are a combination of simpler forms
+#include "quad.h"                      //! Reducing high Dimensions to lower
+#include "line.h"                      //! Further reduction
+#include "point.h"                     //! Fundamental spatial description
+#include "node.h"                      //! Node class for A* search
+#include "apptimer.h"                  //! Interim function describing time before inclusion as Dimension
 
-    // Homegrown add-ins
-#include "universe.h"         /**< Top of the tree, begin with Universe class    */
-#include "dimension.h"        /**< Add Dimensions for spatial identification     */
-#include "elementaryparticle.h" /**< Follow with the creation of quarks/leptons    */
-#include "elementaryforce.h"    /**< Define Force interaction between fundamentals */
-#include "compositeforceparticle.h"     /**< Define ForceParticle interaction between Composites   */
-#include "law.h"                /**< Specify how Composites interact               */
-#include "matter.h"             /**< Composites form elements of periodic table    */
-#include "monomer.h"            /**< Composites form molecules                     */
-#include "polymer.h"            /**< Composites form molecules                     */
-#include "solid.h"              /**< Materials are a combination of Matter         */
-#include "polyhedron.h"         /**< Materials can be formed into multiDimensional shapes */
-#include "polygon.h"            /**< Complex shapes are a combination of simpler forms */
-#include "quad.h"               /**< Reducing high Dimensions to lower             */
-#include "line.h"               /**< Further reduction                             */
-#include "point.h"              /**< Fundamental spatial description               */
-#include "node.h"               /**< Node class for A* search                      */
-#include "apptimer.h"           /**< Interim function describing time before inclusion as Dimension */
+std::vector <Universe*> universe_list; //! Top of the tree, begin with Universe class
 
-std::vector <Universe*>           universe_list;           /**< Top of the tree, begin with Universe class    */
-
-    // Application specific add-ins
+/*!
+ * Application specific add-ins
+ */
 #include "cognitivenetwork.h"
 #include "cognitiveinput.h"
 #include "cognitiveoutput.h"
-#include "orbital.h"          /**< Example of harmonic motion of particles       */
-#include "neuron.h"           /**< Neuron container for other neuron components  */
-#include "dendritecleft.h"    /**< Dendritic synaptic cleft, input to the neuron */
-#include "neuroreceptor.h"    /**< Neuroreceptor, component of dendritic cleft   */
-#include "synapse.h"          /**< Synapse, area of stimulus transmission/reception */
-#include "interneuronspace.h" /**< The space between neurons is an energy pool   */
-#include "membrane.h"         /**< Membrane, outer component of the neuron       */
-#include "membranechannel.h"  /**< Potassium or Sodium channel, component of the membrane  */
-#include "dendrite.h"         /**< Dendrite, pre-Soma component of a neuron      */
-#include "dendritebranch.h"   /**< Dendrite branch, division/join of dendrites   */
-#include "soma.h"             /**< Soma, component of a neuron                   */
-#include "axonhillock.h"      /**< Axon Hillock, component of Soma               */
-#include "axon.h"             /**< Axon, connected to Axon Hillock               */
-#include "axonbranch.h"       /**< Axon branch, division/join of Axon            */
-#include "myelinsheath.h"     /**< Myelin sheath, wraps around Axon              */
-#include "schwanncell.h"      /**< Schwann Cell, component of a Myelin sheath    */
-#include "axonbouton.h"        /**< Axon synaptic cleft, output area of neuron    */
-#include "synapticvesicle.h"  /**< Synaptic vesicle, container of neurotransmitters */
-#include "neurotransmitter.h" /**< Neurotransmitter, transfer component between clefts */
-#include "spike.h"            /**< Spikes                                        */
-    //#include "multiscreen.h"        /**< Screen layouts                                */
+#include "orbital.h"                   //! Example of harmonic motion of particles
+#include "neuron.h"                    //! Neuron container for other neuron components
+#include "dendritecleft.h"             //! Dendritic synaptic cleft, input to the neuron
+#include "neuroreceptor.h"             //! Neuroreceptor, component of dendritic cleft
+#include "synapse.h"                   //! Synapse, area of stimulus transmission/reception
+#include "interneuronspace.h"          //! The space between neurons is an energy pool
+#include "membrane.h"                  //! Membrane, outer component of the neuron
+#include "membranechannel.h"           //! Potassium or Sodium channel, component of the membrane
+#include "dendrite.h"                  //! Dendrite, pre-Soma component of a neuron
+#include "dendritebranch.h"            //! Dendrite branch, division/join of dendrites
+#include "soma.h"                      //! Soma, component of a neuron
+#include "axonhillock.h"               //! Axon Hillock, component of Soma
+#include "axon.h"                      //! Axon, connected to Axon Hillock
+#include "axonbranch.h"                //! Axon branch, division/join of Axon
+#include "myelinsheath.h"              //! Myelin sheath, wraps around Axon
+#include "schwanncell.h"               //! Schwann Cell, component of a Myelin sheath
+#include "axonbouton.h"                //! Axon synaptic cleft, output area of neuron
+#include "synapticvesicle.h"           //! Synaptic vesicle, container of neurotransmitters
+#include "neurotransmitter.h"          //! Neurotransmitter, transfer component between clefts
+#include "spike.h"                     //! Spikes
 
 #ifndef DEBUG_PROGRAM
 #define DEBUG_PROGRAM true
-#endif // DEBUG_PROGRAM
+#endif //! DEBUG_PROGRAM
 
 #ifndef INVALID_SOCKET
 #define INVALID_SOCKET -1
-#endif // INVALID_SOCKET
+#endif //! INVALID_SOCKET
 
 #ifndef SOCKET_ERROR
 #define SOCKET_ERROR -1
-#endif // SOCKET_ERROR
+#endif //! SOCKET_ERROR
 
 #ifndef SOCKET_PORT
 #define SOCKET_PORT 9876
-#endif // SOCKET_PORT
+#endif //! SOCKET_PORT
 
 #ifndef SOCKET_ADDRESS
-#define SOCKET_ADDRESS "192.168.42.56"    // Change to the IP address of the computer running the middleware portion of the project
-#endif // SOCKET_ADDRESS
+#define SOCKET_ADDRESS "192.168.42.56"    //! Change to the IP address of the computer running the middleware portion of the project
+#endif //! SOCKET_ADDRESS
 
-    // Handy conversions
+    //! Handy conversions
 #ifndef DEG2RAD
-#define DEG2RAD 0.01745329252f  /**< Avoids having to recalculate a constant PI/180 */
-#endif // DEG2RAD
+#define DEG2RAD 0.01745329252f  //! Avoids having to recalculate a constant PI/180 */
+#endif //! DEG2RAD
 
 #ifndef RAD2DEG
-#define RAD2DEG 57.29577951f    /**< Avoids having to recalculate a constant 180/PI */
-#endif // RAD2DEG
+#define RAD2DEG 57.29577951f    //! Avoids having to recalculate a constant 180/PI */
+#endif //! RAD2DEG
 
 #ifndef ONERAD
-#define ONERAD 3.14159265f    /**< Avoids having to recalculate */
-#endif // ONERAD
+#define ONERAD 3.14159265f    //! Avoids having to recalculate */
+#endif //! ONERAD
 
 #ifndef GRAVITY
 #define GRAVITY 6.67384e-11;
-#endif // GRAVITY
+#endif //! GRAVITY
 
 struct caer_dynapse_info dynapse_info;
 
-    // Dynap-se shutdown
+    //! Dynap-se shutdown
 static std::atomic_bool globalShutdown(false);
 
 static void globalShutdownSignalHandler(int signal) {
-        // Simply set the running flag to false on SIGTERM and SIGINT (CTRL+C) for global shutdown.
+        //! Simply set the running flag to false on SIGTERM and SIGINT (CTRL+C) for global shutdown.
     if (signal == SIGTERM || signal == SIGINT) {
         globalShutdown.store(true);
     }
@@ -302,236 +302,236 @@ bool mshandling(std::vector <std::string> *m_messages, bool m_response, int m_ok
     return true;
 }
 
-    // Function to create a Universe instance. Universes could be simulation, emulation, real or contemplative (What-if)
+    //! Function to create a Universe instance. Universes could be simulation, emulation, real or contemplative (What-if)
 std::vector<Universe*> CreateUniverse(std::chrono::time_point<Clock> event_time, std::vector<Universe*> *toAddto)
 {
-        // First, there is nothing. Then there was something...
-    double UniverseEnergy = 999999999.0;              /**< Defined energy level of Universe */
-        // Begin with singularity
-    Universe* myUniverse; /**< Create instance of Universe from Universe class */
+        //! First, there is nothing. Then there was something...
+    double UniverseEnergy = 999999999.0;              //! Defined energy level of Universe */
+        //! Begin with singularity
+    Universe* myUniverse; //! Create instance of Universe from Universe class */
     myUniverse = new Universe();
-    /**< Set an energy level and attempt to maintain physics laws by keeping the total in the Universe the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */
+    //! Set an energy level and attempt to maintain physics laws by keeping the total in the Universe the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */
     myUniverse->SetEnergy(event_time, UniverseEnergy);
-        // Cause initialisation
+        //! Cause initialisation
     myUniverse->Update(event_time);
-        // Use move not push_back otherwise data is destroyed on exiting function
-        //    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
+        //! Use move not push_back otherwise data is destroyed on exiting function
+        //!    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
     std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
     
     return *toAddto;
 }
 
-    // Adding Dimensions enables physical and spatial calculations
-    // Possible to use this as a basis for higher dimensionality if it becomes relevant
+    //! Adding Dimensions enables physical and spatial calculations
+    //! Possible to use this as a basis for higher dimensionality if it becomes relevant
 /*
  int AddDimension(std::vector<Dimension> *toAddto, std::vector<Universe> *aPartof, int arrayEntry)
  {
  Dimension myDimension((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myDimension, &myDimension + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Each Add function creates an instance of the respective class and links back to the base class
- // For definition of quarks and leptons when simulating real-world environment
+ //! Each Add function creates an instance of the respective class and links back to the base class
+ //! For definition of quarks and leptons when simulating real-world environment
  int AddElementaryParticle(std::vector<ElementaryParticle> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  ElementaryParticle myElementaryParticle((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myElementaryParticle, &myElementaryParticle + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // For real-world definition of protons & neutrons. Other combinations in artificial environments
+ //! For real-world definition of protons & neutrons. Other combinations in artificial environments
  int AddCompositeParticle(std::vector<CompositeParticle> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
  {
  CompositeParticle myCompositeParticle((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myCompositeParticle, &myCompositeParticle + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Methods in this class to define interaction. Which may be different between artificial, simulation and real environments
+ //! Methods in this class to define interaction. Which may be different between artificial, simulation and real environments
  int AddElementaryForce(std::vector<ElementaryForce> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
  {
  ElementaryForce myForce((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
  int AddCompositeForce(std::vector<CompositeForce> *toAddto, std::vector<CompositeParticle> *aPartof, int arrayEntry)
  {
  CompositeForce myForce((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Add methods to describe Force interactions such as gravity
+ //! Add methods to describe Force interactions such as gravity
  int AddLaw(std::vector<CompositeForce> *toAddto, int arrayEntry, std::vector<CompositeParticle> *toAddto2, int arrayEntry2)
  {
- //    law myLaw(aPartof[arrayEntry], toAddto2[arrayEntry2]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //!    law myLaw(aPartof[arrayEntry], toAddto2[arrayEntry2]);
+ //! Use move not push_back otherwise data is destroyed on exiting function
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Class for definition of periodic table of elements
+ //! Class for definition of periodic table of elements
  int AddMatter(std::vector<Matter> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  Matter myMatter((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myMatter, &myMatter + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Class for definition of simple molecules
+ //! Class for definition of simple molecules
  int AddMonomer(std::vector<Monomer> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  Monomer myMonomer((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myMonomer, &myMonomer + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Class for definition of complex molecules
+ //! Class for definition of complex molecules
  int AddPolymer(std::vector<Polymer> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  Polymer myPolymer((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myPolymer, &myPolymer + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Description of material
+ //! Description of material
  int AddSolid(std::vector<Solid> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  Solid mySolid((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&mySolid, &mySolid + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Fundamental spatial element
+ //! Fundamental spatial element
  int AddPoint(std::vector<Point> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
- // Begin with shape singularity
+ //! Begin with shape singularity
  Point myPoint((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myPoint, &myPoint + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Complex shapes
+ //! Complex shapes
  int AddPolyhedron(std::vector<Polyhedron> *toAddto, std::vector<Solid> *aPartof, int arrayEntry)
  {
  Polyhedron myPolyhedron((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myPolyhedron, &myPolyhedron + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Components of complex shapes
+ //! Components of complex shapes
  int AddPolygon(std::vector<Polygon> *toAddto, std::vector<Polyhedron> *aPartof, int arrayEntry)
  {
  Polygon myPolygon((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myPolygon, &myPolygon + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Base 2D shapes
+ //! Base 2D shapes
  int AddQuad(std::vector<Quad> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
  {
  Quad myQuad((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myQuad, &myQuad + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Component of shapes, straight, curved or complex
+ //! Component of shapes, straight, curved or complex
  int AddLine(std::vector<Line> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
  {
  Line myLine((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myLine, &myLine + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Component of the brain
+ //! Component of the brain
  int AddNeuron(std::vector<Neuron> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  //int AddNeuron(std::vector<Neuron> *toAddto)
  {
  Neuron myNeuron((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myNeuron, &myNeuron + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
  int AddSpike(std::vector<Spike> *toAddto)
  {
  Spike mySpike;
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&mySpike, &mySpike + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
  int AddDendrite(std::vector<Dendrite> *toAddto)
  {
  Dendrite myDendrite;
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myDendrite, &myDendrite + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
  int AddSynapse(std::vector<Synapse> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
  {
  Synapse mySynapse((*aPartof)[arrayEntry]);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&mySynapse, &mySynapse + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
  int AddOrbital(std::vector<Orbital> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry, int orbType)
  {
  Orbital myOrbital((*aPartof)[arrayEntry], std::chrono::high_resolution_clock::now(), orbType);
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myOrbital, &myOrbital + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  
- // Adding application timer temporarily until integrated into Dimension class
+ //! Adding application timer temporarily until integrated into Dimension class
  int AddApptimer(std::vector<AppTimer> *toAddto)
  {
  AppTimer myApptimer;
- // Use move not push_back otherwise data is destroyed on exiting function
+ //! Use move not push_back otherwise data is destroyed on exiting function
  std::copy(&myApptimer, &myApptimer + 1, std::back_inserter(*toAddto));
  
- return 0;                       // Return Success = 0
+ return 0;                       //! Return Success = 0
  }
  */
 
-    // Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
+    //! Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, std::vector<ElementaryParticle*>& origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
     bool l_switch = true;
@@ -551,7 +551,7 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
         l_switch = true;
         }
     
-    return l_switch; // Return answering whether or not an exchange occurred
+    return l_switch; //! Return answering whether or not an exchange occurred
 }
 
 int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<Point> *nodesQuery, std::vector<int> *nodes_list, int nodesDimensions, double desired_distance )
@@ -610,8 +610,8 @@ int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<
         
         if(direction > -1.0 and direction < 1.0)
             {
-                //        diffX = 0;
-                //        diffY = 0;
+                //!        diffX = 0;
+                //!        diffY = 0;
             
             /*
              if(desired_distance < actualDistance)
@@ -654,20 +654,20 @@ int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<
              */
             for(int nloop = 0; nloop < int((*nodesQuery)[node_loop].GetPointDifferential(event_time).size()); nloop++)
                 {
-                    //        (*nodesQuery)[node_loop].SetPointDifferential((((*nodesQuery)[node_loop].GetPointDifferential()[nloop] + diffX)/2.0))[nloop];
-                    //        (*nodesQuery)[node_loop].SetPointDifferential((((*nodesQuery)[node_loop].GetPointDifferential()[nloop] + diffY)/2.0))[nloop];
+                    //!        (*nodesQuery)[node_loop].SetPointDifferential((((*nodesQuery)[node_loop].GetPointDifferential()[nloop] + diffX)/2.0))[nloop];
+                    //!        (*nodesQuery)[node_loop].SetPointDifferential((((*nodesQuery)[node_loop].GetPointDifferential()[nloop] + diffY)/2.0))[nloop];
                 }
-                //                (*nodesQuery)[(*nodes_list)[2]]->SetPointDifferential((((*nodesQuery)[(*nodes_list)[2]].getPointDifferential() - diffX)/2));
-                //                (*nodesQuery)[(*nodes_list)[3]]->SetPointDifferential((((*nodesQuery)[(*nodes_list)[3]].getPointDifferential() - diffY)/2));
+                //!                (*nodesQuery)[(*nodes_list)[2]]->SetPointDifferential((((*nodesQuery)[(*nodes_list)[2]].getPointDifferential() - diffX)/2));
+                //!                (*nodesQuery)[(*nodes_list)[3]]->SetPointDifferential((((*nodesQuery)[(*nodes_list)[3]].getPointDifferential() - diffY)/2));
             
-                //                }
-                //            }
+                //!                }
+                //!            }
             }
         }
     return EXIT_SUCCESS;
 }
 
-    // Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
+    //! Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<Synapse*> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
     bool l_switch = true;
@@ -687,7 +687,7 @@ bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<
         l_switch = true;
         }
     
-    return l_switch; // Return answering whether or not an exchange occurred
+    return l_switch; //! Return answering whether or not an exchange occurred
 }
 
 
@@ -747,7 +747,7 @@ bool analyseStream(std::chrono::time_point<Clock> event_time, CognitiveNetwork* 
      {
      if(neuron_list[readoutLoop]->GetCounter(event_time) == neural_sequence)
      {
-     //            std::cout << "Sequence: " << neural_sequence << " " << readoutLoop << ": Value: " << (*neuron_list)[readoutLoop].GetGateKeeper(event_time) << " Energy: " << (*neuron_list)[readoutLoop].getEnergy() << std::endl;
+     //!            std::cout << "Sequence: " << neural_sequence << " " << readoutLoop << ": Value: " << (*neuron_list)[readoutLoop].GetGateKeeper(event_time) << " Energy: " << (*neuron_list)[readoutLoop].getEnergy() << std::endl;
      }
      }
      */
@@ -795,21 +795,21 @@ void SelectMultiDimensions(const int PossibleDimensions[10], std::vector<int> *d
 
 bool ClearDynapse(caerDeviceHandle *usb_handle)
 {
-        // Let's take a look at the information we have on the device.
+        //! Let's take a look at the information we have on the device.
     dynapse_info = caerDynapseInfoGet(*usb_handle);
     
     printf("%s --- ID: %d, Master: %d,  Logic: %d.\n",
            dynapse_info.deviceString, dynapse_info.deviceID,
            dynapse_info.deviceIsMaster, dynapse_info.logicVersion);
     
-        // Let's turn on blocking data-get mode to avoid wasting resources.
+        //! Let's turn on blocking data-get mode to avoid wasting resources.
     caerDeviceConfigSet(*usb_handle, CAER_HOST_CONFIG_DATAEXCHANGE, CAER_HOST_CONFIG_DATAEXCHANGE_BLOCKING, true);
     
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_RUN, true);
     
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_AER, DYNAPSE_CONFIG_AER_RUN, true);
     
-        // chip id is DYNAPSE_CONFIG_DYNAPSE_U2
+        //! chip id is DYNAPSE_CONFIG_DYNAPSE_U2
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_MUX, DYNAPSE_CONFIG_MUX_FORCE_CHIP_BIAS_ENABLE, true);
     
@@ -833,7 +833,7 @@ bool ClearDynapse(caerDeviceHandle *usb_handle)
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CLEAR_CAM, DYNAPSE_CONFIG_DYNAPSE_U2, 0);
     printf(" Done.\n");
     
-        // close config
+        //! close config
     caerDeviceConfigSet(*usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_RUN, false);
     
         //close aer communication
@@ -868,7 +868,7 @@ bool ClearDynapse(caerDeviceHandle *usb_handle)
  {
  while(app.pollEvent(Event))
  {
- // Window closed
+ //! Window closed
  if (Event.type == sf::Event::Closed)
  {
  return (-1);
@@ -904,7 +904,7 @@ bool ClearDynapse(caerDeviceHandle *usb_handle)
  }
  
  */
-    // Clear memory to cleanly exit application
+    //! Clear memory to cleanly exit application
 void exitCB()
 {
 #ifdef _WIN32
@@ -913,9 +913,9 @@ void exitCB()
     std::cin.get();
 #endif
     
-        // Clear vectors in reverse order to free-up memory before exiting
+        //! Clear vectors in reverse order to free-up memory before exiting
     
-        // Remember to clear vectors / free memory before returning
+        //! Remember to clear vectors / free memory before returning
 }
 
 int init(int argc, const char * argv[])
@@ -927,7 +927,7 @@ int init(int argc, const char * argv[])
     return 0;
 }
 
-    // Macro required otherwise return value upsets calling function
+    //! Macro required otherwise return value upsets calling function
 #if PY_MAJOR_VERSION >= 3
 int
 #else
@@ -935,7 +935,7 @@ void
 #endif
 init_numpy()
 {
-//    import_array();
+//!    import_array();
 #if PY_MAJOR_VERSION >= 3
     return 0;
 #endif
@@ -953,7 +953,7 @@ public:
     
     void Execute(vtkObject * vtkNotUsed(caller), unsigned long vtkNotUsed(eventId), void * vtkNotUsed(callData)) override
     {
-        //    renderer = vtkSmartPointer<vtkRenderer>::New();
+        //!    renderer = vtkSmartPointer<vtkRenderer>::New();
     int id_counter = 0;
     int cellarrays_group_counter = static_cellarrays_counter + 1;
     int polydata_group_counter = static_polydata_counter + 1;
@@ -969,11 +969,11 @@ public:
     std::vector<Universe*>::iterator universe_iter;
     for(universe_iter = universe_list.begin(); universe_iter != universe_list.end(); ++universe_iter)
         {
-            // Call universe update
+            //! Call universe update
         (*universe_iter)->Update(event_time);
             //std::cout << ".";
         
-            // For each Universe locate solids for visualisation
+            //! For each Universe locate solids for visualisation
         bool surfaces_found = false;
         bool solids_found = false;
         std::vector<Universe*> set_of_solid_pointers = (*universe_iter)->GetSolids(event_time);
@@ -984,7 +984,7 @@ public:
             if(current_solid_pointer)
                 {
                 std::cout << "S";
-                    // Each solid is made up of a set of polyhedrons
+                    //! Each solid is made up of a set of polyhedrons
                 id_counter = 0;
                     //vtkSmartPointer<vtkPoints> solid_points = vtkSmartPointer<vtkPoints>::New();
                 vtkSmartPointer<vtkAppendPolyData> append_polydata = vtkSmartPointer<vtkAppendPolyData>::New();
@@ -997,7 +997,7 @@ public:
                     auto current_polyhedron_pointer = dynamic_cast<Polyhedron*>(*polyhedron_iter);
                     if(current_polyhedron_pointer)
                         {
-                            // Each polyhedron is made up of a set of points
+                            //! Each polyhedron is made up of a set of points
                         std::vector<Point*> set_of_point_pointers = current_polyhedron_pointer->GetPoints(event_time);
                         std::vector<Point*>::iterator point_iter;
                         int starting_point = id_counter;
@@ -1079,9 +1079,9 @@ public:
                     define_contourfilters[contourfilter_group_counter]->SetInputConnection(define_surfaces[surfaces_group_counter]->GetOutputPort());
                     define_contourfilters[contourfilter_group_counter]->SetValue(0, 0.0);
                     
-                        // Sometimes the contouring algorithm can create a volume whose gradient
-                        // vector and ordering of polygon (using the right hand rule) are
-                        // inconsistent. vtkReverseSense cures this problem.
+                        //! Sometimes the contouring algorithm can create a volume whose gradient
+                        //! vector and ordering of polygon (using the right hand rule) are
+                        //! inconsistent. vtkReverseSense cures this problem.
                     
                     if(define_reversals.size() > reversals_group_counter)
                         {
@@ -1131,7 +1131,7 @@ public:
                     define_actors[actors_group_counter]->GetProperty()->SetSpecular(.4);
                     define_actors[actors_group_counter]->GetProperty()->SetSpecularPower(50);
                     
-                        // Add the actors to the renderer
+                        //! Add the actors to the renderer
                     if(define_renderers.size() > renderers_group_counter)
                         {
                         define_renderers[renderers_group_counter]->AddActor(define_actors[actors_group_counter]);
@@ -1172,7 +1172,7 @@ public:
 
 int main(int argc, const char * argv[])
 {
-        // This application is designed to create an AAReNN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets
+        //! This application is designed to create an AAReNN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets
     
     int initialiseProgram = init(argc, argv);
     if (initialiseProgram)
@@ -1181,12 +1181,12 @@ int main(int argc, const char * argv[])
         return EXIT_FAILURE;
         }
     
-        // Initialise hardware if located
+        //! Initialise hardware if located
     
-        // Bool flag is set to false when communication fails to discover hardware
+        //! Bool flag is set to false when communication fails to discover hardware
     bool device_attached = true;
     
-        // Install Dynap-se signal handler for global shutdown.
+        //! Install Dynap-se signal handler for global shutdown.
 #if defined(_WIN32)
     if (signal(SIGTERM, &globalShutdownSignalHandler) == SIG_ERR)
         {
@@ -1221,9 +1221,9 @@ int main(int argc, const char * argv[])
         }
 #endif
     
-        // Verify connection to all Dynap-se boards/chips and then ensure the chips are set to a basic known configuration.
+        //! Verify connection to all Dynap-se boards/chips and then ensure the chips are set to a basic known configuration.
     
-        // Open the communication with Dynap-se, give it a device ID of 1, and don't care about USB bus or SN restrictions.
+        //! Open the communication with Dynap-se, give it a device ID of 1, and don't care about USB bus or SN restrictions.
     
     caerDeviceHandle usb_handle = caerDeviceOpen(1, CAER_DEVICE_DYNAPSE, 0, 0, NULL);
     
@@ -1231,29 +1231,29 @@ int main(int argc, const char * argv[])
         {
         printf("No devices attached. Using simulation system only.\n");
         device_attached = false;
-            //        return (EXIT_FAILURE);  // Not required because this program can run without dedicated hardware.
+            //!        return (EXIT_FAILURE);  //! Not required because this program can run without dedicated hardware.
         }
     
     if(device_attached)
         {
-            // Verify or amend code to ensure all chips are reset at the beginning
+            //! Verify or amend code to ensure all chips are reset at the beginning
         ClearDynapse(&usb_handle);
         caerDeviceClose(&usb_handle);
         
-            // Now re-open the communication with Dynap-se for a clean connection.
+            //! Now re-open the communication with Dynap-se for a clean connection.
         usb_handle = caerDeviceOpen(1, CAER_DEVICE_DYNAPSE, 0, 0, NULL);
         
         if (usb_handle == NULL)
             {
             printf("Device communication failed.\n");
             device_attached = false;
-                //        return (EXIT_FAILURE);
+                //!        return (EXIT_FAILURE);
             }
         }
     
-        // End of initial hardware detection. Further communications errors will disable hardware use
+        //! End of initial hardware detection. Further communications errors will disable hardware use
     
-        // Define bit-setting variables for hardware
+        //! Define bit-setting variables for hardware
     uint32_t genBits = 0;
     uint8_t dynap_Dx = 0;
     uint8_t dynap_Sx = 0;
@@ -1262,48 +1262,48 @@ int main(int argc, const char * argv[])
     uint16_t destinationCoreId;
     std::string::size_type sz;
     
-        // Index arrays for instances of classes described above
-        // Early versions of this software maintained direct pointers to all objects. Now it is recoded
-        // to access through Get/Set class methods with the exception of the initial Universe class.
-    std::vector <Dimension*>          dimension_list;          /**< Add Dimensions for spatial identification     */
-    std::vector <ElementaryParticle*> elementary_particle_list; /**< Follow with the creation of quarks/leptons    */
-    std::vector <ElementaryForce*>    elementary_force_list;    /**< Define Force interaction between fundamentals */
-    std::vector <CompositeForceParticle*>     composite_forceparticle_list;     /**< Define Particle Force interaction between Composites, Protons/Neutrons   */
-    std::vector <Law*>                law_list;                /**< Specify how Composites interact               */
-    std::vector <Matter*>             matter_list;             /**< Composites form elements of periodic table    */
-    std::vector <Monomer*>            monomer_list;            /**< Composites form molecules                     */
-    std::vector <Polymer*>            polymer_list;            /**< Composites form complex molecules             */
-    std::vector <Solid*>              solid_list;              /**< Materials are a combination of Matter         */
-    std::vector <Polyhedron*>         polyhedron_list;         /**< Materials can be formed into multiDimensional shapes */
-    std::vector <Polygon*>            polygon_list;            /**< Complex shapes are a combination of simpler forms */
-    std::vector <Quad*>               quad_list;               /**< Reducing high Dimensions to lower             */
-    std::vector <Line*>               line_list;               /**< Further reduction                             */
-    std::vector <Point*>              point_list;              /**< Fundamental spatial description               */
-        //    std::vector <Node>               Node;               /**< Node class for A* search                      */
-    std::vector <AppTimer*>           Apptimer;           /**< Interim function describing time before inclusion as Dimension */
+        //! Index arrays for instances of classes described above
+        //! Early versions of this software maintained direct pointers to all objects. Now it is recoded
+        //! to access through Get/Set class methods with the exception of the initial Universe class.
+    std::vector <Dimension*>          dimension_list;          //! Add Dimensions for spatial identification     */
+    std::vector <ElementaryParticle*> elementary_particle_list; //! Follow with the creation of quarks/leptons    */
+    std::vector <ElementaryForce*>    elementary_force_list;    //! Define Force interaction between fundamentals */
+    std::vector <CompositeForceParticle*>     composite_forceparticle_list;     //! Define Particle Force interaction between Composites, Protons/Neutrons   */
+    std::vector <Law*>                law_list;                //! Specify how Composites interact               */
+    std::vector <Matter*>             matter_list;             //! Composites form elements of periodic table    */
+    std::vector <Monomer*>            monomer_list;            //! Composites form molecules                     */
+    std::vector <Polymer*>            polymer_list;            //! Composites form complex molecules             */
+    std::vector <Solid*>              solid_list;              //! Materials are a combination of Matter         */
+    std::vector <Polyhedron*>         polyhedron_list;         //! Materials can be formed into multiDimensional shapes */
+    std::vector <Polygon*>            polygon_list;            //! Complex shapes are a combination of simpler forms */
+    std::vector <Quad*>               quad_list;               //! Reducing high Dimensions to lower             */
+    std::vector <Line*>               line_list;               //! Further reduction                             */
+    std::vector <Point*>              point_list;              //! Fundamental spatial description               */
+        //!    std::vector <Node>               Node;               //! Node class for A* search                      */
+    std::vector <AppTimer*>           Apptimer;           //! Interim function describing time before inclusion as Dimension */
     
-        // Higher level of abstraction. Initial naming. Ideally use Get/Set methods rather than store pointers here.
-    std::vector <CognitiveNetwork*> cognitivenetwork;  /**< Network container for all AI components       */
-    std::vector <Orbital*> orbital;                    /**< Example of orbital timing containing neurons  */
-    std::vector <Neuron*> neuron;                      /**< Neuron container for other neuron components  */
-    std::vector <DendriteCleft*> dendritecleft;        /**< Dendritic synaptic cleft, input to the neuron */
-    std::vector <Neuroreceptor*> neuroreceptor;        /**< Neuroreceptor, component of dendritic cleft   */
-    std::vector <Synapse*> synapse;                    /**< Synapse, area of stimulus transmission/reception */
-    std::vector <InterneuronSpace*> interneuronspace;  /**< Between neurons is an energy pool */
-    std::vector <Membrane*> membrane;                  /**< Membrane, outer component of the neuron       */
-    std::vector <MembraneChannel*> membranechannel;    /**< Potassium/Sodium channel, component of the membrane  */
-    std::vector <Dendrite*>  dendrite;                 /**< Dendrite, pre-Soma component of a neuron      */
-    std::vector <DendriteBranch*> dendritebranch;      /**< Dendrite branch, division/join of dendrites   */
-    std::vector <Soma*> soma;                          /**< Soma, component of a neuron                   */
-    std::vector <AxonHillock*> AxonHillock;            /**< Axon Hillock, component of Soma               */
-    std::vector <Axon*> axon;                          /**< Axon, connected to Axon Hillock               */
-    std::vector <AxonBranch*> axonbranch;              /**< Axon branch, division/join of Axon            */
-    std::vector <MyelinSheath*> myelinsheath;          /**< Myelin sheath, wraps around Axon              */
-    std::vector <SchwannCell*> schwanncell;            /**< Schwann Cell, component of a Myelin sheath    */
-    std::vector <AxonBouton*> axonbouton;                /**< Axon synaptic cleft, output area of neuron    */
-    std::vector <SynapticVesicle*> synapticvesicle;    /**< Synaptic vesicle, container of neurotransmitters */
-    std::vector <Neurotransmitter*> neurotransmitter;  /**< Neurotransmitter, transfer component between clefts */
-    std::vector <Spike*> Spike;                        /**< Spike */
+        //! Higher level of abstraction. Initial naming. Ideally use Get/Set methods rather than store pointers here.
+    std::vector <CognitiveNetwork*> cognitivenetwork;  //! Network container for all AI components       */
+    std::vector <Orbital*> orbital;                    //! Example of orbital timing containing neurons  */
+    std::vector <Neuron*> neuron;                      //! Neuron container for other neuron components  */
+    std::vector <DendriteCleft*> dendritecleft;        //! Dendritic synaptic cleft, input to the neuron */
+    std::vector <Neuroreceptor*> neuroreceptor;        //! Neuroreceptor, component of dendritic cleft   */
+    std::vector <Synapse*> synapse;                    //! Synapse, area of stimulus transmission/reception */
+    std::vector <InterneuronSpace*> interneuronspace;  //! Between neurons is an energy pool */
+    std::vector <Membrane*> membrane;                  //! Membrane, outer component of the neuron       */
+    std::vector <MembraneChannel*> membranechannel;    //! Potassium/Sodium channel, component of the membrane  */
+    std::vector <Dendrite*>  dendrite;                 //! Dendrite, pre-Soma component of a neuron      */
+    std::vector <DendriteBranch*> dendritebranch;      //! Dendrite branch, division/join of dendrites   */
+    std::vector <Soma*> soma;                          //! Soma, component of a neuron                   */
+    std::vector <AxonHillock*> AxonHillock;            //! Axon Hillock, component of Soma               */
+    std::vector <Axon*> axon;                          //! Axon, connected to Axon Hillock               */
+    std::vector <AxonBranch*> axonbranch;              //! Axon branch, division/join of Axon            */
+    std::vector <MyelinSheath*> myelinsheath;          //! Myelin sheath, wraps around Axon              */
+    std::vector <SchwannCell*> schwanncell;            //! Schwann Cell, component of a Myelin sheath    */
+    std::vector <AxonBouton*> axonbouton;                //! Axon synaptic cleft, output area of neuron    */
+    std::vector <SynapticVesicle*> synapticvesicle;    //! Synaptic vesicle, container of neurotransmitters */
+    std::vector <Neurotransmitter*> neurotransmitter;  //! Neurotransmitter, transfer component between clefts */
+    std::vector <Spike*> Spike;                        //! Spike */
     
     const int infinite_loop_prevention_threshold = 800;
     
@@ -1312,23 +1312,23 @@ int main(int argc, const char * argv[])
     
     std::vector <int> selectedDimensions;
     
-        // The initial parameters are to be read from an XML Parameter file but for now are hard-coded.
+        //! The initial parameters are to be read from an XML Parameter file but for now are hard-coded.
     
-    const int num_universes = 10;     // Internal display, Physical material and spatial references
+    const int num_universes = 10;     //! Internal display, Physical material and spatial references
     std::vector <int> num_dimensions_in_universe = {3, 1, 4, 2, 2, 3, 3, 3, 3, 1};
-        // U1 = Internal Time, X, Y & Z
-        // U2 = Physical
-        // U3 = Spatial X,Y,Z & Time
-        // U4 = CPP
-        // U5 = Spikes
-        // U6 = Neurotransmitters
-        // U7 = Connectome
-        // U8 = Synapses
-        // U9 = Orbital example
+        //! U1 = Internal Time, X, Y & Z
+        //! U2 = Physical
+        //! U3 = Spatial X,Y,Z & Time
+        //! U4 = CPP
+        //! U5 = Spikes
+        //! U6 = Neurotransmitters
+        //! U7 = Connectome
+        //! U8 = Synapses
+        //! U9 = Orbital example
     
-        // Initial number of starting components for each subproject
+        //! Initial number of starting components for each subproject
     
-        // The Physics problem
+        //! The Physics problem
     std::vector <int> num_elementary_particles_in_universe = {0, 10, 0, 0, 0, 0, 0, 0, 0, 0};
     
     std::vector <int> num_elementary_forces_in_universe = {0, 10, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -1343,11 +1343,11 @@ int main(int argc, const char * argv[])
             }
         }
     
-        // Attempt to stimulate particle bonding by moving attracted objects nearer to each other.
+        //! Attempt to stimulate particle bonding by moving attracted objects nearer to each other.
     const int initial_particle_alignment = 20;
     
     
-        // The Cognitive problem
+        //! The Cognitive problem
     std::vector <int> num_cognitive_networks_in_universe = { 0, 0, 5, 0, 0, 0, 0, 0, 0, 0};
     
     std::vector <int> num_orbitals_in_cognitive_network = {0, 0, 100, 0, 0, 0, 0, 0, 0, 0};
@@ -1358,7 +1358,7 @@ int main(int argc, const char * argv[])
     
     std::vector <int> num_neurotransmitters_in_cognitive_network = {0, 0, 2000, 0, 0, 0, 0, 0, 0, 0};
     
-        // Attempt to stimulate neuron pairing by moving attracted objects nearer to each other.
+        //! Attempt to stimulate neuron pairing by moving attracted objects nearer to each other.
     const int initial_synapse_alignment = 20;
     
     const int num_layers_in_cognitive_network = 6;
@@ -1366,19 +1366,19 @@ int main(int argc, const char * argv[])
     std::vector<int> orbital_layers;
     orbital_layers.clear();
     
-        // The setup of neurons, orbitals and cognitive networks are initial. Changes to configuration occurs dynamically depending on stimulation.
+        //! The setup of neurons, orbitals and cognitive networks are initial. Changes to configuration occurs dynamically depending on stimulation.
     for (int build_outer_loop = 0; build_outer_loop < num_cognitive_networks_in_universe.size(); build_outer_loop++)
         {
         for (int build_inner_loop = 0; build_inner_loop < num_layers_in_cognitive_network; build_inner_loop++)
             {
-                // How many neuron groups in each layer. May want to add some random variation in layer values.
+                //! How many neuron groups in each layer. May want to add some random variation in layer values.
             orbital_layers.push_back((num_orbitals_in_cognitive_network[build_outer_loop] / num_layers_in_cognitive_network) * build_inner_loop);
             }
-            // Ensure the end value is also added.
+            //! Ensure the end value is also added.
         orbital_layers.push_back(num_orbitals_in_cognitive_network[build_outer_loop] + 1);
         }
     
-        // Brain calculations
+        //! Brain calculations
     const int initial_axon_branches = 4;
     const int initial_dendrites = 64;
     
@@ -1388,18 +1388,18 @@ int main(int argc, const char * argv[])
     int status_of_call_request;
     bool patternFound = false;
     
-    double l_screenX = 1000.0;            /**< Define graphics window size, X axis*/
-    double l_screenY = 800.0;            /**< Define graphics window size, Y axis*/
-        //double l_scale = 300;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
+    double l_screenX = 1000.0;            //! Define graphics window size, X axis*/
+    double l_screenY = 800.0;            //! Define graphics window size, Y axis*/
+        //double l_scale = 300;               //! Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
     std::string l_screenTitle = "Developed from Project NeuralMimicry - the basis of an AARNN Cognitive AI System";
     std::stringstream l_displayString;
     
-    int counter_Charge = -1; // Used to loop between min 0 and max 6
+    int counter_Charge = -1; //! Used to loop between min 0 and max 6
     int counter_Spin = 0;
     int counter_Walk = 0;
     int counter_infinite_loop_prevention = 0;
     
-    int l_spaPointBase = 0; // Base of data points (Moves because of use by internal graphics for points control too
+    int l_spaPointBase = 0; //! Base of data points (Moves because of use by internal graphics for points control too
     int how_many_particles = 0;
     int how_many_Synapses = 0;
     int how_many_Neurons = 0;
@@ -1452,7 +1452,7 @@ int main(int argc, const char * argv[])
     std::string entry;
     std::string buf;
     std::istringstream iss("");
-        //    std::string::size_type sz;   // alias of size_t
+        //!    std::string::size_type sz;   //! alias of size_t
     int l_tabCycle = 0;
     
     double l_synapseX = 0.0;
@@ -1489,22 +1489,22 @@ int main(int argc, const char * argv[])
     double counter_stronfundamental = 0.0;
     double counter_stronresidual = 0.0;
     
-        // CPLEX Environment
+        //! CPLEX Environment
         //IloEnv cplexEnv;
     
-        // Setup the Python environment for integrating K-means clustering solution
+        //! Setup the Python environment for integrating K-means clustering solution
     
     setenv("PYTHONPATH", ".", 0);
     
     int pyArgc = 4;
-        //    const char pyArgv[] = { ' ','p','y','c','o','m','p','u','t','e',' ','m','u','l','t','i','p','l','y',' ','3',' ','4','\0'}
+        //!    const char pyArgv[] = { ' ','p','y','c','o','m','p','u','t','e',' ','m','u','l','t','i','p','l','y',' ','3',' ','4','\0'}
     
     PyObject *pName, *pModule, *pDict, *pFunc;
     PyObject *pArgs, *pValue;
     PyObject *pArrayArgs;
     int *pTransferArray;
     
-//    int i;
+//!    int i;
     
     int result = EXIT_FAILURE;
     
@@ -1517,10 +1517,10 @@ int main(int argc, const char * argv[])
     
     if(PyArray_API == NULL)
         {
-        init_numpy(); // Numpy array initialisation
+        init_numpy(); //! Numpy array initialisation
         }
     
-    pName = PyUnicode_FromString("pycompute");    // File to be called. Must be in the same folder as the C++ executable and with a .py extension
+    pName = PyUnicode_FromString("pycompute");    //! File to be called. Must be in the same folder as the C++ executable and with a .py extension
     pModule = PyImport_Import(pName);
     Py_DECREF(pName);
     
@@ -1542,11 +1542,11 @@ int main(int argc, const char * argv[])
         return EXIT_FAILURE;
         }
     
-        // Prepare screens
+        //! Prepare screens
     
-        // VTK Screens
+        //! VTK Screens
     
-        // Setup rectangle points
+        //! Setup rectangle points
     
     double lower_left_x = 900.0;
     double lower_right_x = 1000.0;
@@ -1574,7 +1574,7 @@ int main(int argc, const char * argv[])
         define_points->InsertNextPoint(upper_left_x, upper_left_y, 0.0);
         static_points_counter+=4;
         
-            // Create the polygon
+            //! Create the polygon
         vtkSmartPointer<vtkPolygon> define_polygon = vtkSmartPointer<vtkPolygon>::New();
         define_polygon->GetPointIds()->SetNumberOfIds(4);
         define_polygon->GetPointIds()->SetId(0, (0 + (insert_rectangle_loop * 4)));
@@ -1583,7 +1583,7 @@ int main(int argc, const char * argv[])
         define_polygon->GetPointIds()->SetId(3, (3 + (insert_rectangle_loop * 4)));
         static_polygons_counter++;
         
-            // Add the polygon to a cell array
+            //! Add the polygon to a cell array
         define_cellarrays[static_cellarrays_counter]->InsertNextCell(define_polygon);
         }
     
@@ -1608,12 +1608,12 @@ int main(int argc, const char * argv[])
     define_polygon->GetPointIds()->SetId(3, (3 + current_num_of_defined_points));
     static_polygons_counter++;
     
-        // Add the polygon to a cell array
+        //! Add the polygon to a cell array
     define_cellarrays[static_cellarrays_counter]->InsertNextCell(define_polygon);
     
-        // Test for correct polygon insertion
+        //! Test for correct polygon insertion
     vtkIdType num_cells = define_cellarrays[static_cellarrays_counter]->GetNumberOfCells();
-    vtkIdType cell_location = 0; // the index inside the cell array
+    vtkIdType cell_location = 0; //! the index inside the cell array
     
     for (vtkIdType cellarray_loop = 0; cellarray_loop < num_cells; cellarray_loop++)
         {
@@ -1625,7 +1625,7 @@ int main(int argc, const char * argv[])
     
     std::cout << "Test cell: " << cell_location << "  Actual cells: " << num_cells << std::endl;
     
-        // Assign Colour
+        //! Assign Colour
     unsigned char red[3] = {255, 0, 0};
     unsigned char green[3] = {0, 255, 0};
     unsigned char blue[3] = {0, 0, 255};
@@ -1638,7 +1638,7 @@ int main(int argc, const char * argv[])
         colours->InsertNextTypedTuple(red);
         }
     
-        // Create PolyData
+        //! Create PolyData
     if(define_polydata.size() > static_polydata_counter)
         {
         define_polydata[static_polydata_counter]->Initialize();
@@ -1655,8 +1655,8 @@ int main(int argc, const char * argv[])
     vtkSmartPointer<vtkCoordinate> coordinate_system = vtkCoordinate::New();
     coordinate_system->SetCoordinateSystemToDisplay();
     
-        // Setup the text and add it to the renderer
-        // Build display text
+        //! Setup the text and add it to the renderer
+        //! Build display text
     vtkSmartPointer<vtkTextActor> text_actor;
     
     std::string textOptions[11][11];
@@ -1746,7 +1746,7 @@ int main(int argc, const char * argv[])
         define_textactors[text_loop]->GetTextProperty()->SetColor ( 1.0, 0.0, 0.0 );
         }
     
-        // Create polydata mapper and actor
+        //! Create polydata mapper and actor
     if(define_datamappers2D.size() > static_datamappers2D_counter)
         {
         define_datamappers2D[static_datamappers2D_counter] = vtkSmartPointer<vtkPolyDataMapper2D>::New();
@@ -1772,7 +1772,7 @@ int main(int argc, const char * argv[])
     define_actors2D[static_actors2D_counter]->SetMapper(define_datamappers2D[static_datamappers2D_counter]);
     define_actors2D[static_actors2D_counter]->GetProperty()->SetLineWidth(2);
     
-        // Create a renderer
+        //! Create a renderer
     if(define_renderers.size() > static_renderers_counter)
         {
         define_renderers[static_renderers_counter] = vtkSmartPointer<vtkRenderer>::New();
@@ -1782,9 +1782,9 @@ int main(int argc, const char * argv[])
         define_renderers.push_back(vtkSmartPointer<vtkRenderer>::New());
         }
     
-    define_renderers[static_renderers_counter]->SetBackground ( 0, 0, 0 ); // Set background colour to white
+    define_renderers[static_renderers_counter]->SetBackground ( 0, 0, 0 ); //! Set background colour to white
     
-        // Add the VTK actors to the scene
+        //! Add the VTK actors to the scene
     define_renderers[static_renderers_counter]->AddActor2D(define_actors2D[static_actors2D_counter]);
     define_actors2D[static_actors2D_counter]->GetProperty()->SetColor(0,1,0);
     define_actors2D[static_actors2D_counter]->GetProperty()->SetPointSize(2);
@@ -1793,31 +1793,31 @@ int main(int argc, const char * argv[])
         define_renderers[static_renderers_counter]->AddActor2D(define_textactors[i]);
         }
     
-        // Create a render window
+        //! Create a render window
     render_window = vtkSmartPointer<vtkRenderWindow>::New();
     render_window->AddRenderer ( define_renderers[static_renderers_counter] );
     render_window->SetSize(l_screenX, l_screenY);
     
-        // Create an interactor
+        //! Create an interactor
     render_window_interactor = vtkSmartPointer<vtkRenderWindowInteractor>::New();
     render_window_interactor->SetRenderWindow ( render_window );
     
-        // Set-up the simulation environment. Currently a skeletal environment.
+        //! Set-up the simulation environment. Currently a skeletal environment.
     std::cout << "Brain Harmonics - Using neuron concepts to solve problems" << std::endl << std::endl;
     std::cout << "First we need to create the environment:" << std::endl << std::endl;
     std::cout << "The Big Bang..." << std::endl;
     
-        // Synchronise events
+        //! Synchronise events
     event_time = std::chrono::high_resolution_clock::now();
     
-        // universe_list is a vector of pointers to the Universe objects.
-        // Typically use one Universe per experiment.
+        //! universe_list is a vector of pointers to the Universe objects.
+        //! Typically use one Universe per experiment.
     
-    universe_list.clear();    // Ensure vector is empty
+    universe_list.clear();    //! Ensure vector is empty
     
     for (int universe_loop = 0; universe_loop <= num_universes - 1 ; universe_loop++)
         {
-            // Pass the universe_list address to the create function to keep all Universes within the same vector
+            //! Pass the universe_list address to the create function to keep all Universes within the same vector
         status_of_call_request = CreateUniverse(event_time, &universe_list).size();
         
         if (status_of_call_request == 0)
@@ -1830,15 +1830,15 @@ int main(int argc, const char * argv[])
         
         std::cout << num_dimensions_in_universe[universe_loop] << " dimensions addresses to create." << std::endl;
         
-            // Cycle through Universes allocating n Dimensions and updating total with reported back size.
+            //! Cycle through Universes allocating n Dimensions and updating total with reported back size.
         num_dimensions_in_universe[universe_loop] = (universe_list[universe_loop]->AddDimensions(event_time, num_dimensions_in_universe[universe_loop])).size();
         
         std::cout << num_dimensions_in_universe[universe_loop] << " dimension addresses available in Universe: " << universe_loop << std::endl;
         
-            // Create new Elementary Particles - Quarks etc
+            //! Create new Elementary Particles - Quarks etc
         std::cout << num_elementary_particles_in_universe[universe_loop] << " elementary particle addresses to create." << std::endl;
         
-            // Cycle through Universes allocating n Elementary Particles and updating total with reported back size.
+            //! Cycle through Universes allocating n Elementary Particles and updating total with reported back size.
         num_elementary_particles_in_universe[universe_loop] = (universe_list[universe_loop]->AddElementaryParticles(event_time, num_elementary_particles_in_universe[universe_loop])).size();
         
         std::cout << num_elementary_particles_in_universe[universe_loop] << " elementary particle addresses available." << std::endl;
@@ -1850,15 +1850,15 @@ int main(int argc, const char * argv[])
             counter_Charge++;
             if(counter_Charge > 6) counter_Charge = 0;
             counter_Spin = int(1 - counter_Spin);
-                // Try to ensure we get variations of particles. Not all one type by changing Charge and Spin.
+                //! Try to ensure we get variations of particles. Not all one type by changing Charge and Spin.
             (universe_list[universe_loop]->GetElementaryParticles(event_time))[particle_loop]->SetCharge(event_time, counter_Charge);
             (universe_list[universe_loop]->GetElementaryParticles(event_time))[particle_loop]->SetSpin(event_time, counter_Spin);
             }
         
-            // Create new Elementary Forces
+            //! Create new Elementary Forces
         std::cout << num_elementary_forces_in_universe[universe_loop] << " elementary force addresses to create." << std::endl;
         
-            // Cycle through Universes allocating n Elementary Forces and updating total with reported back size.
+            //! Cycle through Universes allocating n Elementary Forces and updating total with reported back size.
         num_elementary_forces_in_universe[universe_loop] = (universe_list[universe_loop]->AddElementaryForces(event_time, num_elementary_forces_in_universe[universe_loop])).size();
         
         std::cout << num_elementary_forces_in_universe[universe_loop] << " elementary force addresses available." << std::endl;
@@ -1914,7 +1914,7 @@ int main(int argc, const char * argv[])
                 {
                 counter_stronresidual = 0;
                 }
-                // Try to ensure we get variations of forces. Not all one type by changing parameters.
+                //! Try to ensure we get variations of forces. Not all one type by changing parameters.
             (universe_list[universe_loop]->GetElementaryForces(event_time))[force_loop]->SetGravitation(event_time, counter_gravitation);
             (universe_list[universe_loop]->GetElementaryForces(event_time))[force_loop]->SetWeak(event_time, counter_weak);
             (universe_list[universe_loop]->GetElementaryForces(event_time))[force_loop]->SetWeakElectroweak(event_time, counter_weak_electroweak);
@@ -1925,10 +1925,10 @@ int main(int argc, const char * argv[])
             (universe_list[universe_loop]->GetElementaryForces(event_time))[force_loop]->SetStrongResidual(event_time, counter_stronresidual);
             }
         
-            // Create new Composite Force Particles - Protons / Neutrons
+            //! Create new Composite Force Particles - Protons / Neutrons
         std::cout << num_composite_forceparticles_in_universe[universe_loop] << " composite force particle addresses to create." << std::endl;
         
-            // Cycle through Universes allocating n Composite Force Particles and updating total with reported back size.
+            //! Cycle through Universes allocating n Composite Force Particles and updating total with reported back size.
         num_composite_forceparticles_in_universe[universe_loop] = (universe_list[universe_loop]->AddCompositeForceParticles(event_time, num_composite_forceparticles_in_universe[universe_loop])).size();
         
         std::cout << num_composite_forceparticles_in_universe[universe_loop] << " composite force particle addresses available." << std::endl;
@@ -1936,7 +1936,7 @@ int main(int argc, const char * argv[])
         how_many_particles = int(universe_list[universe_loop]->GetElementaryParticles(event_time).size());
         
         /*
-         // Rearrange vector of new Particles in an order closer to how they're likely to interact.
+         //! Rearrange vector of new Particles in an order closer to how they're likely to interact.
          for (int qloop = 0; qloop <= initial_particle_alignment * how_many_particles; qloop++)
          {
          counter_Walk = 0;
@@ -1950,7 +1950,7 @@ int main(int argc, const char * argv[])
          while(counter_Walk <= (how_many_particles - 3))
          {
          l_switch = CompareSwapElementaryParticle(universe_list[universe_loop]->GetElementaryParticles(event_time), counter_Walk, counter_Walk + 1, counter_Walk + 2);
-         if (l_switch) counter_Walk--; else counter_Walk++;// If Switch occurred retest previous Origin
+         if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
          if (counter_Walk < 0) counter_Walk = 0;
          
          l_origin = elementary_particle_list[counter_Walk]->GetCharge();
@@ -1988,7 +1988,7 @@ int main(int argc, const char * argv[])
          }
          */
         
-            // Make Elements - Hydrogen, Helium, Lithium etc
+            //! Make Elements - Hydrogen, Helium, Lithium etc
         matter_list.clear();
         /*
          std::vector<Matter*> matter_for_this_universe =  universe_list[1].AddMatter(event_time, initial_matter);
@@ -2004,7 +2004,7 @@ int main(int argc, const char * argv[])
          
          std::cout <<  matter_list.size() << " matter addresses created." << std::endl;
          */
-            // Make Monomers - Carbohydrates/Sugars etc
+            //! Make Monomers - Carbohydrates/Sugars etc
         monomer_list.clear();
         /*
          std::vector<Monomer*> monomer_for_this_universe =  universe_list[1].AddMonomer(event_time, initial_monomer);
@@ -2036,7 +2036,7 @@ int main(int argc, const char * argv[])
          std::cout <<  polymer_list.size() << " polymer addresses created." << std::endl;
          */
         
-            // Cycle through Universes allocating n Cognitive Networks and updating total with reported back size.
+            //! Cycle through Universes allocating n Cognitive Networks and updating total with reported back size.
         num_cognitive_networks_in_universe[universe_loop] = ( universe_list[universe_loop]->AddCognitiveNetworks(event_time, num_cognitive_networks_in_universe[universe_loop])).size();
         
         std::cout << num_cognitive_networks_in_universe[universe_loop] << " cognitive network addresses available." << std::endl;
@@ -2044,12 +2044,12 @@ int main(int argc, const char * argv[])
         auto current_universe_pointer = universe_list[universe_loop];
         for(int cognitive_network_loop; cognitive_network_loop < num_cognitive_networks_in_universe[universe_loop]; cognitive_network_loop++)
             {
-                // Add Orbital objects to Cognitive Network which is derived from Universe
+                //! Add Orbital objects to Cognitive Network which is derived from Universe
             auto current_cognitivenetwork_pointer = current_universe_pointer->GetCognitiveNetwork(event_time, cognitive_network_loop);
             
             if(auto cognitive_pointer = dynamic_cast<CognitiveNetwork*>(current_cognitivenetwork_pointer))
                 {
-                // Cause initialisation
+                //! Cause initialisation
                 cognitive_pointer->Update(event_time);
                 
                 num_orbitals_in_cognitive_network[cognitive_network_loop] = (cognitive_pointer->CreateOrbitals(event_time, num_orbitals_in_cognitive_network[cognitive_network_loop])).size();
@@ -2061,7 +2061,7 @@ int main(int argc, const char * argv[])
                 
                 std::cout << num_orbitals_in_cognitive_network[cognitive_network_loop] << " orbital addresses available." << std::endl;
                 
-                    // Add Neuron objects to Cognitive Network which is derived from Universe
+                    //! Add Neuron objects to Cognitive Network which is derived from Universe
                 num_neurons_in_cognitive_network[cognitive_network_loop] = (cognitive_pointer->CreateNeurons(event_time, num_neurons_in_cognitive_network[cognitive_network_loop])).size();
                 for(int init_loop = 0; init_loop < num_neurons_in_cognitive_network[cognitive_network_loop]; init_loop++)
                     {
@@ -2072,7 +2072,7 @@ int main(int argc, const char * argv[])
                 
                 std::cout << num_neurons_in_cognitive_network[cognitive_network_loop] << " neuron addresses available." << std::endl;
                 
-                    // Add Synapse objects to Cognitive Network which is derived from Universe
+                    //! Add Synapse objects to Cognitive Network which is derived from Universe
                 num_synapses_in_cognitive_network[cognitive_network_loop] = (cognitive_pointer->CreateSynapses(event_time, num_synapses_in_cognitive_network[cognitive_network_loop])).size();
                 for(int init_loop = 0; init_loop < num_synapses_in_cognitive_network[cognitive_network_loop]; init_loop++)
                     {
@@ -2082,7 +2082,7 @@ int main(int argc, const char * argv[])
                 
                 std::cout << num_synapses_in_cognitive_network[cognitive_network_loop] << " synapse addresses available." << std::endl;
                 
-                    // Add Neurotransmitter objects to Cognitive Network which is derived from Universe
+                    //! Add Neurotransmitter objects to Cognitive Network which is derived from Universe
                 num_neurotransmitters_in_cognitive_network[cognitive_network_loop] = (cognitive_pointer->CreateNeurotransmitters(event_time, num_neurotransmitters_in_cognitive_network[cognitive_network_loop]).size());
                 for(int init_loop = 0; init_loop < num_neurotransmitters_in_cognitive_network[cognitive_network_loop]; init_loop++)
                     {
@@ -2093,18 +2093,18 @@ int main(int argc, const char * argv[])
                 std::cout << num_neurotransmitters_in_cognitive_network[cognitive_network_loop] << " neurotransmitter addresses available." << std::endl;
                 }
             
-                // For later development if spikes need to be simulated per CognitiveNetwork
+                //! For later development if spikes need to be simulated per CognitiveNetwork
             /*
              Spike.clear();
              for(int nloop = 0;nloop < initial_spikes; nloop++)
              {
-             //                status_of_call_request = AddSpike(& Spike);
+             //!                status_of_call_request = AddSpike(& Spike);
              if (status_of_call_request)
              {
              std::cout << "Spike addition failed!" << std::endl;
              return EXIT_FAILURE;
              }
-             //                if (! Spike.empty())  Spike.back().creation();
+             //!                if (! Spike.empty())  Spike.back().creation();
              }
              
              std::cout <<  Spike.size() << " spike addresses created." << std::endl;
@@ -2113,28 +2113,28 @@ int main(int argc, const char * argv[])
         }
     
     int intDimensionsStart = 0;
-        // Physics dimensionality - calculating quark interactions
+        //! Physics dimensionality - calculating quark interactions
     int phyDimensionsStart = intDimensionsStart + num_dimensions_in_universe[0];
-        // Spatial dimensionality - real world representation
+        //! Spatial dimensionality - real world representation
     int spaDimensionsStart = phyDimensionsStart + num_dimensions_in_universe[1];
-        // Synapse delivery problem - separate project
+        //! Synapse delivery problem - separate project
     int ccpDimensionsStart = spaDimensionsStart + num_dimensions_in_universe[2];
-        // Focus on spikes
+        //! Focus on spikes
     int spkDimensionsStart = ccpDimensionsStart + num_dimensions_in_universe[3];
-        // Focus on neurotransmitter calculations
+        //! Focus on neurotransmitter calculations
     int ntrDimensionsStart = spkDimensionsStart + num_dimensions_in_universe[4];
-        // Focus on dendrite calculations
+        //! Focus on dendrite calculations
     int denDimensionsStart = ntrDimensionsStart + num_dimensions_in_universe[5];
-        // Focus on neuron calculations
+        //! Focus on neuron calculations
     int nrnDimensionsStart = denDimensionsStart + num_dimensions_in_universe[6];
-        // Focus on synapse calculations
+        //! Focus on synapse calculations
     int synDimensionsStart = nrnDimensionsStart + num_dimensions_in_universe[7];
-        // Focus on orbital example
+        //! Focus on orbital example
     int orbDimensionsStart = synDimensionsStart + num_dimensions_in_universe[8];
     
-        // After screen layout the second set of points is for the quantum environment
+        //! After screen layout the second set of points is for the quantum environment
         //
-        //    point_list.clear();
+        //!    point_list.clear();
     l_spaPointBase = 0;
     
     for(int universe_loop = 0; universe_loop < num_universes; universe_loop++)
@@ -2153,23 +2153,23 @@ int main(int argc, const char * argv[])
             ElementaryParticle* elementaryparticle_pointer1 = dynamic_cast<ElementaryParticle*>(current_elementaryparticle_pointer);
             ElementaryParticle* elementaryparticle_pointer2 = dynamic_cast<ElementaryParticle*>(previous_elementaryparticle_pointer);
             
-                // Work out the charge difference between neighbouring particles to indicate how far apart they should be.
+                //! Work out the charge difference between neighbouring particles to indicate how far apart they should be.
             l_lastCharge = l_charge;
             l_charge = double (3 - std::abs(int( elementaryparticle_pointer1->GetCharge(event_time) -  elementaryparticle_pointer2->GetCharge(event_time))));
-                //        std::cout << "Charge: " << l_charge << std::endl;
-                // This angle to later be dynamic to adjust for different particle types and considering placement of existing particles
-            s = (s + (180.0 - ((l_charge * l_lastCharge) * 10.0)) * DEG2RAD) / 2.0; // in Radians
-            t = (t + (180.0 - ((l_charge * l_lastCharge) * 10.0)) * DEG2RAD) / 2.0; // in Radians
+                //!        std::cout << "Charge: " << l_charge << std::endl;
+                //! This angle to later be dynamic to adjust for different particle types and considering placement of existing particles
+            s = (s + (180.0 - ((l_charge * l_lastCharge) * 10.0)) * DEG2RAD) / 2.0; //! in Radians
+            t = (t + (180.0 - ((l_charge * l_lastCharge) * 10.0)) * DEG2RAD) / 2.0; //! in Radians
             radialDistance = l_charge;
-                //        for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + num_dimensions[2]; nloop++) {
+                //!        for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + num_dimensions[2]; nloop++) {
             
-                // To calculate the position on the surface of a sphere is:
-                // ( where radialDistance is radius and s & t are angles in Radians. The Origin is 0,0,0 )
-                // x = radialDistance * cos(s) * sin(t)
-                // y = radialDistance * sin(s) * sin(t)
-                // z = radialDistance * cos(t)
+                //! To calculate the position on the surface of a sphere is:
+                //! ( where radialDistance is radius and s & t are angles in Radians. The Origin is 0,0,0 )
+                //! x = radialDistance * cos(s) * sin(t)
+                //! y = radialDistance * sin(s) * sin(t)
+                //! z = radialDistance * cos(t)
             
-                // radians = angleInDegrees * Math.PI / 180
+                //! radians = angleInDegrees * Math.PI / 180
             distance_to_move.clear();
             
             distance_to_move = {0.0,0.0,0.0,0.0};
@@ -2180,11 +2180,11 @@ int main(int argc, const char * argv[])
             
             point_origin =  point_pointer->GetPointPosition(event_time);
             
-                // Calculate position on the surface of a sphere
-                // The sphere takes the previous particle as it's Origin and the radius is related to the charge.
-                // The position on the surface will be affected by proximity to other particles.
+                //! Calculate position on the surface of a sphere
+                //! The sphere takes the previous particle as it's Origin and the radius is related to the charge.
+                //! The position on the surface will be affected by proximity to other particles.
             distance_to_move = {radialDistance * cos(s) * sin(t), radialDistance * sin(s) * sin(t), radialDistance * cos(t), 0.0};
-                //            break;
+                //!            break;
             
             point_pointer->SetPointPosition(event_time, distance_to_move);
             point_pointer->SetPointPositionMaxOverflow(event_time, {2});
@@ -2196,17 +2196,17 @@ int main(int argc, const char * argv[])
             }
         }
     
-        //           distance_to_move = distance_to_move + point_origin;
-        //            std::cout << "d:" << distance_to_move << " r:" << radialDistance << " s:" << s << " t:" << t << std::endl;
-        //            std::cout <<  current_universe_pointer->GetPoints(event_time).back().getPointPosition() << ", ";
-        //        }
-        //        std::cout << std::endl;
-        //    }
+        //!           distance_to_move = distance_to_move + point_origin;
+        //!            std::cout << "d:" << distance_to_move << " r:" << radialDistance << " s:" << s << " t:" << t << std::endl;
+        //!            std::cout <<  current_universe_pointer->GetPoints(event_time).back().getPointPosition() << ", ";
+        //!        }
+        //!        std::cout << std::endl;
+        //!    }
     
-        //   std::cout <<  current_universe_pointer->GetPoints(event_time).size() << " point addresses created." << std::endl;
+        //!   std::cout <<  current_universe_pointer->GetPoints(event_time).size() << " point addresses created." << std::endl;
     
     /*
-     // Add lines to points
+     //! Add lines to points
      for (int eloop = 1; eloop < int( elementary_particle_list.size()); eloop++)
      {
      for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + num_dimensions[2]; nloop++)
@@ -2222,17 +2222,14 @@ int main(int argc, const char * argv[])
      }
      }
      */
-    
-    
-        //    std::cout << "Capacitated Clustering Problem" << std::endl;
-    
+
     for(int universe_loop = 0; universe_loop < num_universes; universe_loop++)
         {
         auto current_universe_pointer = universe_list[universe_loop];
         
         for(int cognitivenetwork_loop = 0; cognitivenetwork_loop < num_cognitive_networks_in_universe[universe_loop]; cognitivenetwork_loop++)
             {
-                // Add Orbital objects to Cognitive Network which is derived from Universe
+                //! Add Orbital objects to Cognitive Network which is derived from Universe
             auto current_cognitivenetwork_pointer = current_universe_pointer->GetCognitiveNetwork(event_time, cognitivenetwork_loop);
             
             CognitiveNetwork* cognitive_pointer = dynamic_cast<CognitiveNetwork*>(current_cognitivenetwork_pointer);
@@ -2247,21 +2244,21 @@ int main(int argc, const char * argv[])
                 }
             else
                 {
-                    // Read number of synapses and initial number of neurons
+                    //! Read number of synapses and initial number of neurons
                 std::cout << "Reading: " << build_filename << std::endl;
                 entry = "";
                 std::getline(dataFile, entry);
                 iss.clear();
                 iss.str(entry);
                 buf = "";
-                    // Walks through 1 row of 2 numbers
+                    //! Walks through 1 row of 2 numbers
                 paramCounter = 0;
                 while (iss >> buf)
                     {
                     if(buf != "" && buf != " " && paramCounter < 10)
                         {
                         paramCounter++;
-                            //            std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
+                            //!            std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
                         l_inputData.push_back(buf);
                         }
                     }
@@ -2270,7 +2267,7 @@ int main(int argc, const char * argv[])
                 int initial_neurons = std::stoi(l_inputData[1],&sz);
                 
                     //neuron.clear();
-                    // Add initial 50 neurons
+                    //! Add initial 50 neurons
                 /*
                  for(int nloop = 0; nloop < 50; nloop++)
                  {
@@ -2285,7 +2282,7 @@ int main(int argc, const char * argv[])
                 
                 num_neurons_in_cognitive_network[2] = (cognitive_pointer->CreateNeurons(event_time, 50)).size();
                 
-                    // Read in synapse demand data from file
+                    //! Read in synapse demand data from file
                 l_inputData.clear();
                 
                 for(int nloop = 0; nloop < 5; nloop++)
@@ -2297,14 +2294,14 @@ int main(int argc, const char * argv[])
                         iss.clear();
                         iss.str(entry);
                         buf="";
-                            // Walks through 5 rows of 10 numbers
+                            //! Walks through 5 rows of 10 numbers
                         paramCounter = 0;
                         while (iss >> buf)
                             {
                             if(buf != "" && buf != " " && paramCounter < 10)
                                 {
                                 paramCounter++;
-                                    //                    std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
+                                    //!                    std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
                                 l_inputData.push_back(buf);
                                 }
                             }
@@ -2319,7 +2316,7 @@ int main(int argc, const char * argv[])
                  synapse.clear();
                  for(int nloop = 0; nloop < 50; nloop++)
                  {
-                 // Add synapse demands
+                 //! Add synapse demands
                  status_of_call_request = AddSynapse(& synapse, & neuron,  int( neuron.size() - 1));
                  if (status_of_call_request)
                  {
@@ -2329,15 +2326,15 @@ int main(int argc, const char * argv[])
                  if (! synapse.empty() && !l_inputData[nloop].empty())
                  {
                  synapse.back()->SetDemand(std::stoi(l_inputData[nloop],&sz));
-                 //            std::cout << "Synapse: " << nloop << " Demand: " <<  synapse.back().getDemand() << std::endl;
+                 //!            std::cout << "Synapse: " << nloop << " Demand: " <<  synapse.back().getDemand() << std::endl;
                  }
                  }
                  */
                 num_synapses_in_cognitive_network[1] = (cognitive_pointer->CreateSynapses(event_time, 50)).size();
                 
-                    //    std::cout << std::endl;
+                    //!    std::cout << std::endl;
                 
-                    // Load capacity data to each neuron
+                    //! Load capacity data to each neuron
                 l_inputData.clear();
                 
                 for(int nloop = 0; nloop < 5; nloop++)
@@ -2349,14 +2346,14 @@ int main(int argc, const char * argv[])
                         iss.clear();
                         iss.str(entry);
                         buf="";
-                            // Walks through 5 rows of 10 numbers
+                            //! Walks through 5 rows of 10 numbers
                         paramCounter = 0;
                         while (iss >> buf)
                             {
                             if(buf != "" && buf != " " && paramCounter < 10)
                                 {
                                 paramCounter++;
-                                    //                        std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
+                                    //!                        std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
                                 l_inputData.push_back(buf);
                                 }
                             }
@@ -2375,7 +2372,7 @@ int main(int argc, const char * argv[])
                     if (neuron_pointer && !l_inputData[nloop].empty()) neuron_pointer->SetCapacity(event_time, std::stoi(l_inputData[nloop],&sz));
                     }
                 
-                    // Load distance data from 50 synapses to each neuron
+                    //! Load distance data from 50 synapses to each neuron
                 l_inputData.clear();
                 
                 for(int xloop = 0; xloop < 50; xloop++)
@@ -2389,19 +2386,19 @@ int main(int argc, const char * argv[])
                             iss.clear();
                             iss.str(entry);
                             buf="";
-                                // Walks through 5 rows of 10 numbers
+                                //! Walks through 5 rows of 10 numbers
                             paramCounter = 0;
                             while (iss >> buf)
                                 {
                                 if(buf != "" && buf != " " && paramCounter < 10)
                                     {
-                                        //                        std::cout << buf << " ";
+                                        //!                        std::cout << buf << " ";
                                     paramCounter++;
-                                        //                        std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
+                                        //!                        std::copy(&buf, &buf + 1, std::back_inserter(l_inputData));
                                     l_inputData.push_back(buf);
                                     }
                                 }
-                                //                std::cout << std::endl;
+                                //!                std::cout << std::endl;
                             }
                         else
                             {
@@ -2410,24 +2407,24 @@ int main(int argc, const char * argv[])
                         }
                     }
                 
-                    // Close data file - all data read in.
+                    //! Close data file - all data read in.
                 iss.clear();
                 dataFile.close();
                 
-                    // Transfer distance data to synapse instances
+                    //! Transfer distance data to synapse instances
                 for(int xloop = 0; xloop < 50; xloop++)
                     {
                     for(int nloop = 0; nloop < (cognitive_pointer->GetSynapses(event_time).size()); nloop++)
                         {
                         auto current_synapse_pointer = cognitive_pointer->GetSynapse(event_time, nloop);
-                            //            std::cout << l_inputData[(xloop * 50) + nloop] << " ";
+                            //!            std::cout << l_inputData[(xloop * 50) + nloop] << " ";
                         if (current_synapse_pointer && !l_inputData[(xloop * 50) + nloop].empty())
                             {
-                                //                 current_synapse_pointer->AddDistance(& neuron[nloop], std::stod(l_inputData[(xloop * 50) + nloop],&sz));
+                                //!                 current_synapse_pointer->AddDistance(& neuron[nloop], std::stod(l_inputData[(xloop * 50) + nloop],&sz));
                             }
                         }
                     }
-                    //    std::cout << std::endl;
+                    //!    std::cout << std::endl;
                 
                 
                 /*
@@ -2442,7 +2439,7 @@ int main(int argc, const char * argv[])
                 
                 std::cout << how_many_Synapses << " synapses to consider." << std::endl;
                 
-                    // Rearrange new Synapses in an order closer to how they're likely to group with neurons.
+                    //! Rearrange new Synapses in an order closer to how they're likely to group with neurons.
                 /*
                  for (int qloop = 0; qloop <= initial_synapse_alignment * how_many_Synapses; qloop++)
                  {
@@ -2458,7 +2455,7 @@ int main(int argc, const char * argv[])
                  while(counter_Walk <= (how_many_Synapses - 3))
                  {
                  l_switch = compare_swapSynapse(& synapse, counter_Walk, counter_Walk + 1, counter_Walk + 2);
-                 if (l_switch) counter_Walk--; else counter_Walk++;// If Switch occurred retest previous Origin
+                 if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
                  if (counter_Walk < 0) counter_Walk = 0;
                  
                  l_origin =  synapse[counter_Walk].GetDemand(event_time);
@@ -2511,7 +2508,7 @@ int main(int argc, const char * argv[])
                 
                 int pollCapture = 0;
                 
-                    // Orbital function for interaction.
+                    //! Orbital function for interaction.
                 /*
                  for (int zloop = 0; zloop < num_orbitals_in_cognitive_network[current_cognitive_network]; zloop++)
                  {
@@ -2531,36 +2528,36 @@ int main(int argc, const char * argv[])
                 l_pointStart = int(l_spaPointBase);
                 l_ccpPointStart = int( current_universe_pointer->GetPoints(event_time).size());
                 /*
-                 // 50 synapses and 50 possible neurons
+                 //! 50 synapses and 50 possible neurons
                  for(int xloop = 0; xloop < 100; xloop++)
                  {
                  for (int nloop = ccpDimensionsStart; nloop < ccpDimensionsStart + num_dimensions[3]; nloop++)
                  {
-                 //        std::cout << "Dimension Loop: " << nloop << " ";
+                 //!        std::cout << "Dimension Loop: " << nloop << " ";
                  status_of_call_request = AddPoint(& current_universe_pointer->GetPoints(event_time), & dimension_list, nloop);
                  if (status_of_call_request)
                  {
                  std::cout << "Point addition failed!" << std::endl;
                  return EXIT_FAILURE;
                  }
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->resetPoint();  // Initialise first point to location zero.
-                 // Synapse points first
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->resetPoint();  //! Initialise first point to location zero.
+                 //! Synapse points first
                  if(xloop < 50)
                  {
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  // Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  //! Initialise to ne coordinate.
                  }
                  else
                  {
-                 // Neuron points second
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  // Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  // Initialise to ne coordinate.
+                 //! Neuron points second
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  //! Initialise to ne coordinate.
+                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  //! Initialise to ne coordinate.
                  }
                  }
                  }
@@ -2569,17 +2566,17 @@ int main(int argc, const char * argv[])
             }
         
         int l_ccpPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
-            // End of CCP draw points
+            //! End of CCP draw points
         
-            // Start of Spike draw points
+            //! Start of Spike draw points
         int l_spkPointStart = int( current_universe_pointer->GetPoints(event_time).size());
         int initial_spikes = 1;
         
         
         int l_spkPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
-            // End of CCP draw points
+            //! End of CCP draw points
         
-            // Start of Orbital draw points
+            //! Start of Orbital draw points
         int l_orbPointStart = int( current_universe_pointer->GetPoints(event_time).size());
         
         /*
@@ -2600,15 +2597,15 @@ int main(int argc, const char * argv[])
          }
          */
         int l_orbPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
-            // End of Orbital Points
+            //! End of Orbital Points
         int l_pointEnd = int( current_universe_pointer->GetPoints(event_time).size());
         }
     
-        // Configure Dynap-se, if attached to reflect simulation configuration
+        //! Configure Dynap-se, if attached to reflect simulation configuration
     
     if(device_attached)
         {
-            // Let's take a look at the information we have on the device.
+            //! Let's take a look at the information we have on the device.
         dynapse_info = caerDynapseInfoGet(usb_handle);
         
         printf("%s --- ID: %d, Master: %d,  Logic: %d.\n",
@@ -2624,7 +2621,7 @@ int main(int argc, const char * argv[])
         
         caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_ID, DYNAPSE_CONFIG_DYNAPSE_U2);
         
-            // force chip to be enable even if aer is off
+            //! force chip to be enable even if aer is off
         caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_MUX, DYNAPSE_CONFIG_MUX_FORCE_CHIP_BIAS_ENABLE, true);
         
         printf("Configuring low power biases...");
@@ -2644,7 +2641,7 @@ int main(int argc, const char * argv[])
         for(int coreId = 0; coreId < DYNAPSE_CONFIG_NUMCORES; coreId++)
             {
             destinationCoreId = 2^coreId;
-            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_MONITOR_NEU, coreId, 0); // core 0-3 neu 0
+            caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_MONITOR_NEU, coreId, 0); //! core 0-3 neu 0
             
             for(int neuronId = 0; neuronId < DYNAPSE_CONFIG_NUMNEURONS_CORE; neuronId++)
                 {
@@ -2652,19 +2649,19 @@ int main(int argc, const char * argv[])
                     {
                     genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dynap_Dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
                     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
-                        // Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
+                        //! Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
                         //caerDynapseWriteCam(usb_handle, neuronId, ((1 + neuronId) * ((neuronId % 3) > 0)), 0, DYNAPSE_CONFIG_CAMTYPE_F_EXC);
                     }
                 if(neuronId > 2 && (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))) > 0 && (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
                     {
                     genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dynap_Dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
                     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
-                        // Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
+                        //! Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type
                         //caerDynapseWriteCam(usb_handle, neuronId, (((neuronId - 2) * (((1 + neuronId) * ((neuronId % 3) > 0) == 0)) + (1 * ((neuronId % 3) == 0)))), 1, DYNAPSE_CONFIG_CAMTYPE_F_EXC);
                     }
                 for(int innerLoop = 2; innerLoop < 7; innerLoop++)
                     {
-                        //                    if(((int(neuronId / (2^(neuronId + 1))) + 8) * ((neuronId % 3) == 0)) > 0 && ((int(neuronId / (2^(innerLoop + 1))) + 8) * ((neuronId % 3) == 0)) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
+                        //!                    if(((int(neuronId / (2^(neuronId + 1))) + 8) * ((neuronId % 3) == 0)) > 0 && ((int(neuronId / (2^(innerLoop + 1))) + 8) * ((neuronId % 3) == 0)) < DYNAPSE_CONFIG_NUMNEURONS_CORE)
                         {
                         genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dynap_Dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
                         caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
@@ -2678,7 +2675,7 @@ int main(int argc, const char * argv[])
         }
     
     
-        // Now let's start getting some data from the device. We just loop, no notification needed.
+        //! Now let's start getting some data from the device. We just loop, no notification needed.
     if(device_attached)
         {
         caerDeviceDataStart(usb_handle, NULL, NULL, NULL, NULL, NULL);
@@ -2699,14 +2696,14 @@ int main(int argc, const char * argv[])
         define_renderers[add_renderers_loop]->ResetCamera();
         }
     
-        // Establish Screen
+        //! Establish Screen
     render_window_interactor->SetRenderWindow(render_window);
     render_window_interactor->Initialize();
-    render_window_interactor->CreateRepeatingTimer(100); // in milliseconds
+    render_window_interactor->CreateRepeatingTimer(100); //! in milliseconds
     UpdateAllCommand * update_all_callback = UpdateAllCommand::New();
     render_window_interactor->AddObserver(vtkCommand::TimerEvent, update_all_callback);
     
-        // The program will loop whilst the graphics window is open
+        //! The program will loop whilst the graphics window is open
     clockTime = std::chrono::high_resolution_clock::now();
     lastClockTime = clockTime;
     event_time = clockTime;
@@ -2716,23 +2713,25 @@ int main(int argc, const char * argv[])
     caerEventPacketContainer packetContainer;
     
     
-        // Remove Initialising banner from screen.
+        //! Remove Initialising banner from screen.
     define_textactors[0]->SetInput("");
-    render_window->SetWindowName("IBM Watson AI XPRIZE, Team: NeuralMimicry"); // Set the title
+    render_window->SetWindowName("BrainHarmonics (c) 2020, Linaro Ltd."); //! Set the title
     
-        // Begin visualisation
+        //! Begin visualisation
     render_window->Render();
-        // Prepared for multiscreen
-        //         screen =  screens[ screen]->runScreen(window);
+        //! Prepared for multiscreen
+        //!         screen =  screens[ screen]->runScreen(window);
     
     if(device_attached)
         {
-            // Retrieve data from Dynap-se (if any)
+            //! Retrieve data from Dynap-se (if any)
             //std::cout << "Retrieve data from device...";
         packetContainer = caerDeviceDataGet(usb_handle);
             //std::cout << " Complete." << std::endl;
         }
-    
+
+    std::cout << "Window rendered..." << std::endl;
+
     /*
      //std::cout << clockTime.time_since_epoch().count() << std::endl;
      duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
@@ -2755,19 +2754,19 @@ int main(int argc, const char * argv[])
      if (packetHeader == NULL)
      {
      //printf("Packet %d is empty (not present).\n", i);
-     continue; // Skip if nothing there.
+     continue; //! Skip if nothing there.
      }
      
      //printf("Packet %d of type %d -> size is %d.\n", i,
-     //   caerEventPacketHeaderGetEventType(packetHeader),
-     //   caerEventPacketHeaderGetEventNumber(packetHeader));
+     //!   caerEventPacketHeaderGetEventType(packetHeader),
+     //!   caerEventPacketHeaderGetEventNumber(packetHeader));
      
      if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
      {
      
      caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
      
-     // read all events
+     //! read all events
      CAER_SPIKE_ITERATOR_ALL_START(evts)
      
      uint64_t ts = caerSpikeEventGetTimestamp(
@@ -2775,11 +2774,11 @@ int main(int argc, const char * argv[])
      uint64_t neuronId = caerSpikeEventGetNeuronID(
      caerSpikeIteratorElement);
      uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(
-     caerSpikeIteratorElement); // which core is from
+     caerSpikeIteratorElement); //! which core is from
      uint64_t coreId = caerSpikeEventGetChipID(
-     caerSpikeIteratorElement);// destination core (used as chip id)
+     caerSpikeIteratorElement);//! destination core (used as chip id)
      
-     //                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
+     //!                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
      if(ts < dynapTime)
      {
      dynapTime = ts;
@@ -2814,7 +2813,7 @@ int main(int argc, const char * argv[])
      pauseLoop++;
      if(pauseLoop > 50000)
      {
-     // Synthetic periodic stimulus
+     //! Synthetic periodic stimulus
      if(!device_attached)
      {
      for (int nloop = 0; nloop < 6; nloop++)
@@ -2823,8 +2822,8 @@ int main(int argc, const char * argv[])
      }
      }
      pauseLoop = 0;
-     //            sleep(2);
-     //                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
+     //!            sleep(2);
+     //!                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
      }
      */
     /*
@@ -2834,7 +2833,7 @@ int main(int argc, const char * argv[])
      }
      */
     /*
-     // Early calculation for colliding elementary particles and the effect on direction and acceleration
+     //! Early calculation for colliding elementary particles and the effect on direction and acceleration
      for(int n = 0; n < l_pointEnd; n = n + 4)
      {
      for(int p = 0; p < l_pointEnd; p = p + 4)
@@ -2871,11 +2870,11 @@ int main(int argc, const char * argv[])
      {
      if (zloop < nloop)
      {
-     // Start of stimulus emulation
+     //! Start of stimulus emulation
      if( orbital[zloop].GetEnergy() > 1.0)
      {
      orbital[zloop].AddTemporalAdjustment(event_time, 1.0);
-     // orbital[nloop].AddTemporalAdjustment(event_time, 10.0);
+     //! orbital[nloop].AddTemporalAdjustment(event_time, 10.0);
      //iter_swap( orbital.begin() + (zloop),  orbital.begin() + (zloop + 1));
      OrbConnection myOrbConnection;
      myOrbConnection.OrbOne = zloop;
@@ -2943,20 +2942,20 @@ int main(int argc, const char * argv[])
      {
      std::cout << "Sending stimuli..." << std::endl;
      //Send spike to Dynapse
-     genBits = 1 << 20; // CAM address (8 bits)
-     genBits += 0 << 18; // Core address (2 bits)
-     genBits += 0 << 16; // Hard code (2 bits)
-     genBits += 0 << 14; // Padding (2 bits)
-     genBits += 1 << 13; // Hard code (1 bits)
-     genBits += 0 << 10; // Padding (3 bits)
-     genBits += 0 << 9; // N/S Direction (1 bit)
-     genBits += 0 << 7; // Skip chips (2 bits)
-     genBits += 0 << 6; // E/W Direction (1 bit)
-     genBits += 0 << 4; // Skip chips (2 bits)
-     genBits += 1; // Core (4 bits)
+     genBits = 1 << 20; //! CAM address (8 bits)
+     genBits += 0 << 18; //! Core address (2 bits)
+     genBits += 0 << 16; //! Hard code (2 bits)
+     genBits += 0 << 14; //! Padding (2 bits)
+     genBits += 1 << 13; //! Hard code (1 bits)
+     genBits += 0 << 10; //! Padding (3 bits)
+     genBits += 0 << 9; //! N/S Direction (1 bit)
+     genBits += 0 << 7; //! Skip chips (2 bits)
+     genBits += 0 << 6; //! E/W Direction (1 bit)
+     genBits += 0 << 4; //! Skip chips (2 bits)
+     genBits += 1; //! Core (4 bits)
      
      
-     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, 0, 0); // core 0-3 neu 0
+     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, 0, 0); //! core 0-3 neu 0
      
      genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
      
@@ -2964,7 +2963,7 @@ int main(int argc, const char * argv[])
      std::cout << "Sent stimuli." << std::endl;
      }
      
-     // Transfer orbital details to points
+     //! Transfer orbital details to points
      for (int nloop = l_orbPointStart; nloop < l_orbPointEnd; nloop++)
      {
      calcY =  orbital[nloop - l_orbPointStart].GetPosition(event_time);
@@ -2976,7 +2975,7 @@ int main(int argc, const char * argv[])
      current_universe_pointer->GetPoint(event_time, nloop]->SetPointPosition(event_time, calcY);
      //std::cout << calcX << "   ";
      }
-     // std::cout << std::endl;
+     //! std::cout << std::endl;
      */
     
     /*
@@ -2991,11 +2990,11 @@ int main(int argc, const char * argv[])
      nodeList.push_back(n);
      nodeList.push_back(n + 1);
      
-     //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
      
      status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
      
-     //                std::cout << "Retrieved : " <<  current_universe_pointer->GetPoint(event_time, nodeList[0]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[1]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[2]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[3]].GetPointDifferential(event_time) << std::endl;
+     //!                std::cout << "Retrieved : " <<  current_universe_pointer->GetPoint(event_time, nodeList[0]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[1]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[2]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[3]].GetPointDifferential(event_time) << std::endl;
      
      }
      }
@@ -3012,7 +3011,7 @@ int main(int argc, const char * argv[])
      nodeList.push_back(x);
      nodeList.push_back(x + 1);
      
-     //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
      
      status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
      
@@ -3020,7 +3019,7 @@ int main(int argc, const char * argv[])
      {
      l_demandCounter = l_demandCounter +  synapse[int((x - l_ccpPointStart)/2)].GetDemand(event_time);
      }
-     //                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " <<  synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
+     //!                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " <<  synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
      }
      }
      
@@ -3037,7 +3036,7 @@ int main(int argc, const char * argv[])
      nodeList.push_back(x);
      nodeList.push_back(x + 1);
      
-     //                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
      
      status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
      }
@@ -3049,33 +3048,33 @@ int main(int argc, const char * argv[])
      pTransferArray = NULL;
      pValue = NULL;
      pArgs = PyTuple_New(2);
-     //        pValue = PyInt_FromLong(3);
+     //!        pValue = PyInt_FromLong(3);
      npy_intp dims[2] = {2,15}
      pArrayArgs = PyArray_SimpleNew(2, dims, NPY_INT);
-     // The pointer to the array data is accessed using PyArray_DATA()
+     //! The pointer to the array data is accessed using PyArray_DATA()
      pTransferArray = (int *) PyArray_DATA(pArrayArgs);
-     // Copy the data from the "array of arrays" to the contiguous numpy array.
+     //! Copy the data from the "array of arrays" to the contiguous numpy array.
      l_transferArray.clear();
      for (int tloop = l_ccpPointStart; tloop < l_ccpPointStart + 30; tloop++)
      {
      l_transferArray.push_back((int)round( current_universe_pointer->GetPoint(event_time, tloop].GetPointPosition(event_time)));
-     //            std::cout << l_transferArray.back() << ", ";
+     //!            std::cout << l_transferArray.back() << ", ";
      }
-     //        std::cout << std::endl;
+     //!        std::cout << std::endl;
      std::memcpy(pTransferArray, &l_transferArray, sizeof(int) * 30);
      PyTuple_SetItem(pArgs,0,pArrayArgs);
      pValue = PyInt_FromLong(2);
      PyTuple_SetItem(pArgs,1,pValue);
      
-     //        pValue = PyObject_CallObject(pFunc, pArgs);
+     //!        pValue = PyObject_CallObject(pFunc, pArgs);
      pValue = PyObject_CallObject(pFunc, pArgs);
-     //        Py_DECREF(pArgs);
-     //        Py_DECREF(pArrayArgs);
+     //!        Py_DECREF(pArgs);
+     //!        Py_DECREF(pArrayArgs);
      if (pValue != NULL) {
-     //            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
-     //            Py_DECREF(pValue);
-     //            Py_DECREF(pTransferArray);
-     //            pValue = NULL;
+     //!            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
+     //!            Py_DECREF(pValue);
+     //!            Py_DECREF(pTransferArray);
+     //!            pValue = NULL;
      }
      else {
      Py_DECREF(pTransferArray);
@@ -3088,11 +3087,11 @@ int main(int argc, const char * argv[])
      
      for(int n = l_pointStart; n < l_pointEnd; n++)
      {
-     //            std::cout << n << " ";
+     //!            std::cout << n << " ";
      current_universe_pointer->GetPoint(event_time, n].PointPoll(event_time, 1);
      current_universe_pointer->GetPoint(event_time, n].OverflowPoll(event_time);
      }
-     //        std::cout << std::endl;
+     //!        std::cout << std::endl;
      */
     /*
      patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart, (l_ccpPointStart + 0) - num_dimensions[2], num_dimensions[2],1);
@@ -3102,8 +3101,8 @@ int main(int argc, const char * argv[])
      patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart, (l_pointEnd + 0) - num_dimensions[3], num_dimensions[3],1);
      patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart + 1, (l_pointEnd + 1) - num_dimensions[3], num_dimensions[3],2);
      */
-        // Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
-        //   define_points.clear();
+        //! Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
+        //!   define_points.clear();
     /*
      for(int n = l_pointStart; n < l_ccpPointStart; n = n + num_dimensions[2])
      {
@@ -3128,8 +3127,8 @@ int main(int argc, const char * argv[])
      calcY = l_screenY - (calcY + ( l_screenY / 2.0));
      
      define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,255,0,255)));
-     // define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2), l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
-     //            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
+     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2), l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+     //!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
      }
      */
     /*
@@ -3149,8 +3148,8 @@ int main(int argc, const char * argv[])
      calcY = l_screenY - (calcY + ( l_screenY / 2.0));
      
      define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(128,255,128,255)));
-     // define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(128,255,128,255)));
-     //            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
+     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(128,255,128,255)));
+     //!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
      }
      */
     /*
@@ -3170,11 +3169,11 @@ int main(int argc, const char * argv[])
      calcY = l_screenY - (calcY + ( l_screenY / 2.0));
      
      define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,0,0,255)));
-     // define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(255,0,0,255)));
-     //            std::cout <<  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) << ":" <<  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time) << ", ";
+     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(255,0,0,255)));
+     //!            std::cout <<  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) << ":" <<  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time) << ", ";
      }
      */
-        //        std::cout << std::endl;
+        //!        std::cout << std::endl;
     
     /*
      draw_lines.clear();
@@ -3291,53 +3290,54 @@ int main(int argc, const char * argv[])
      draw_lines.push_back(sf::Vertex(sf::Vector2f(( line_list[n].GetLineX2(event_time) * l_scale) + (l_screenX / 2), l_screenY - (( line_list[n].GetLineY2(event_time) * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) *  current_universe_pointer->GetPoint(event_time, n].GetXYTTL(event_time)),0,0,255)));
      }
      */
-        // window.clear();
+        //! window.clear();
     
-        //        window.pushGLStates();
-        //  window.draw(& drawQuads[0],  drawQuads.size(), sf::Quads);
-        //        window.popGLStates();
+        //!        window.pushGLStates();
+        //!  window.draw(& drawQuads[0],  drawQuads.size(), sf::Quads);
+        //!        window.popGLStates();
     
-        //        window.pushGLStates();
-        //  window.draw(& define_points[0],  define_points.size(), sf::Points);
-        //        window.popGLStates();
+        //!        window.pushGLStates();
+        //!  window.draw(& define_points[0],  define_points.size(), sf::Points);
+        //!        window.popGLStates();
     
-        //        window.pushGLStates();
-        //  window.draw(& draw_lines[0],  draw_lines.size(), sf::Lines);
-        //        window.popGLStates();
+        //!        window.pushGLStates();
+        //!  window.draw(& draw_lines[0],  draw_lines.size(), sf::Lines);
+        //!        window.popGLStates();
     
-        // Group quads
-        //         draw_rectangles[1].setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 *  toggle), 30));
+        //! Group quads
+        //!         draw_rectangles[1].setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 *  toggle), 30));
     /*
      for(int loopRectangles = 0; loopRectangles < int( draw_rectangles.size()); loopRectangles++)
      {
      draw_rectangles[loopRectangles].setPosition( current_universe_pointer->GetPoint(event_time, loopRectangles * 2.0].getPointPosition(),  current_universe_pointer->GetPoint(event_time, (loopRectangles * 2.0) + 1.0].GetPointPosition(event_time));
-     //            window.pushGLStates();
+     //!            window.pushGLStates();
      window.draw( draw_rectangles[loopRectangles]);
-     //            window.popGLStates();
+     //!            window.popGLStates();
      }
      
      for(int loopText = 1; loopText < int( draw_text.size()); loopText++)
      {
      draw_text[loopText].SetPosition(event_time, current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time),  current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + 1.0 + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time));
-     //            window.pushGLStates();
+     //!            window.pushGLStates();
      window.draw( draw_text[loopText]);
-     //            window.popGLStates();
-     //            std::cout << "X:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << " Y:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + 1 + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << std::endl;
+     //!            window.popGLStates();
+     //!            std::cout << "X:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << " Y:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + 1 + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << std::endl;
      }
      
      */
     
-        // Continue interaction until window closed
+        //! Continue interaction until window closed
     
     render_window_interactor->Start();
     
-    caerDeviceDataStop(usb_handle);
-    
-    caerDeviceClose(&usb_handle);
-    
-    printf("Dynap-se shutdown successful.\n");
-        // Empty vectors before exiting (in reverse of creation)
-        //    for(int dloop = int( current_universe_pointer->GetPoints(event_time).size()); dloop > 0; --dloop) delete (& current_universe_pointer->GetPoint(event_time, dloop - 1]);
+    if(device_attached)
+        {
+            caerDeviceDataStop(usb_handle);
+            caerDeviceClose(&usb_handle);
+            printf("Dynap-se shutdown successful.\n");
+        }
+        //! Empty vectors before exiting (in reverse of creation)
+        //!    for(int dloop = int( current_universe_pointer->GetPoints(event_time).size()); dloop > 0; --dloop) delete (& current_universe_pointer->GetPoint(event_time, dloop - 1]);
     std::cout << "Clearing memory..." << std::endl;
     Py_XDECREF(pFunc);
     Py_DECREF(pModule);
@@ -3346,7 +3346,7 @@ int main(int argc, const char * argv[])
     dendrite.clear();
     neuron.clear();
     Spike.clear();
-        //    point_list.clear();
+        //!    point_list.clear();
     matter_list.clear();
     composite_forceparticle_list.clear();
     elementary_force_list.clear();
@@ -3359,42 +3359,42 @@ int main(int argc, const char * argv[])
 
 vtkSmartPointer<vtkPolyData> TransformBack(vtkSmartPointer<vtkPoints> pt, vtkSmartPointer<vtkPolyData> pd)
 {
-        // The reconstructed surface is transformed back to where the
-        // original points are. (Hopefully) it is only a similarity
-        // transformation.
+        //! The reconstructed surface is transformed back to where the
+        //! original points are. (Hopefully) it is only a similarity
+        //! transformation.
     
-        // 1. Get bounding box of pt, get its minimum corner (left, bottom, least-z), at c0, pt_bounds
+        //! 1. Get bounding box of pt, get its minimum corner (left, bottom, least-z), at c0, pt_bounds
     
-        // 2. Get bounding box of surface pd, get its minimum corner (left, bottom, least-z), at c1, pd_bounds
+        //! 2. Get bounding box of surface pd, get its minimum corner (left, bottom, least-z), at c1, pd_bounds
     
-        // 3. compute scale as:
-        //       scale = (pt_bounds[1] - pt_bounds[0])/(pd_bounds[1] - pd_bounds[0]);
+        //! 3. compute scale as:
+        //!       scale = (pt_bounds[1] - pt_bounds[0])/(pd_bounds[1] - pd_bounds[0]);
     
-        // 4. transform the surface by T := T(pt_bounds[0], [2], [4]).S(scale).T(-pd_bounds[0], -[2], -[4])
+        //! 4. transform the surface by T := T(pt_bounds[0], [2], [4]).S(scale).T(-pd_bounds[0], -[2], -[4])
     
     
     
-        // 1.
-    double pt_bounds[6];  // (xmin,xmax, ymin,ymax, zmin,zmax)
+        //! 1.
+    double pt_bounds[6];  //! (xmin,xmax, ymin,ymax, zmin,zmax)
     pt->GetBounds(pt_bounds);
     
     
-        // 2.
-    double pd_bounds[6];  // (xmin,xmax, ymin,ymax, zmin,zmax)
+        //! 2.
+    double pd_bounds[6];  //! (xmin,xmax, ymin,ymax, zmin,zmax)
     pd->GetBounds(pd_bounds);
     
-        //   // test, make sure it is isotropic
-        //   std::cout<<(pt_bounds[1] - pt_bounds[0])/(pd_bounds[1] - pd_bounds[0])<<std::endl;
-        //   std::cout<<(pt_bounds[3] - pt_bounds[2])/(pd_bounds[3] - pd_bounds[2])<<std::endl;
-        //   std::cout<<(pt_bounds[5] - pt_bounds[4])/(pd_bounds[5] - pd_bounds[4])<<std::endl;
-        //   // TEST
+        //!   //! test, make sure it is isotropic
+        //!   std::cout<<(pt_bounds[1] - pt_bounds[0])/(pd_bounds[1] - pd_bounds[0])<<std::endl;
+        //!   std::cout<<(pt_bounds[3] - pt_bounds[2])/(pd_bounds[3] - pd_bounds[2])<<std::endl;
+        //!   std::cout<<(pt_bounds[5] - pt_bounds[4])/(pd_bounds[5] - pd_bounds[4])<<std::endl;
+        //!   //! TEST
     
     
-        // 3
+        //! 3
     double scale = (pt_bounds[1] - pt_bounds[0])/(pd_bounds[1] - pd_bounds[0]);
     
     
-        // 4.
+        //! 4.
     vtkSmartPointer<vtkTransform> transp = vtkSmartPointer<vtkTransform>::New();
     transp->Translate(pt_bounds[0], pt_bounds[2], pt_bounds[4]);
     transp->Scale(scale, scale, scale);
