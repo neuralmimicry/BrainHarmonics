@@ -1,73 +1,84 @@
-    //
-/*---------------------------------------------------------------------------------*/
-/* @file      main.cc                                                              */
-/* @details   Brain Harmonics - using harmonics to store and process neural spikes */
-/* @author    Paul Isaac's                                                         */
-/* @original_date      03.02.2016                                                  */
-/* @original_Copyright © 2016 Paul Isaac's. All rights reserved.                   */
-/* @date      08.04.2020                                                           */
-/* @Copyright © 2020 Linaro Limited. Open Source Software.                         */
-/*---------------------------------------------------------------------------------*/
+/*!
+ * @file      BrainHarmonics.cc
+ * @details   Brain Harmonics - using harmonics to store and process neural spikes
+ * @author    Paul B. Isaac's
+ * @original_date      03.02.2016
+ * @original_Copyright © 2016 Paul B. Isaac's. All rights reserved.
+ * @date      08.04.2020
+ * @copyright © 2020 Linaro Limited. Open Source Software.
+ */
 
-/* Code snippets used:                                                             */
-/* Syntax comparison - http://stackoverflow.com & http://cplusplus.com             */
-/* The program works on the principle of clustering data points received by        */
-/*                                                                                 */
-/* Using the hierarchical linking the aim is to develop the application to         */
-/* relate to real-world physics. This will then ease mapping between simulation,   */
-/* emulation and real-world Universes.                                             */
+/*!
+ * Code snippets used:
+ * Syntax comparison - http://stackoverflow.com & http://cplusplus.com
+ * Using hierarchical linking the aim is to develop the application to
+ * relate to real-world physics. This will then ease mapping between simulation,
+ * emulation and real-world Universes.
+ */
+
+/*!
+ * The Code is primarily C++ however, where optimisations are available C-calls
+ * will be used. For connectivity to other datascience resources Python-calls
+ * are also supported.
+ */
 
 extern "C" {
-#include <sys/time.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <assert.h>
-#include <time.h>
+#include <sys/time.h>           //! header defines the timeval structure
+#include <sys/types.h>          //! header defines a minimum set of type definitions
+#include <sys/socket.h>         //! makes available a type, socklen_t, which is an unsigned opaque integral
+#include <netinet/in.h>         //! defines at least in_port_t and in_addr_t
+#include <arpa/inet.h>          //! header makes available the type in_port_t and the type in_addr_t
+#include <stdio.h>              //! header defines three variable types, several macros, and various functions for performing input and output
+#include <stdlib.h>             //! This header defines several general purpose functions, including dynamic memory management, random number generation, communication with the environment, integer arithmetics, searching, sorting and converting.
+#include <fcntl.h>              //! header in the C POSIX library for the C programming language that contains constructs that refer to file control.
+#include <unistd.h>             //! header file that provides access to the POSIX operating system API.
+#include <assert.h>             //! header file in the standard library of the C programming language that defines the C preprocessor macro assert()
+#include <time.h>               //! header defines four variable types, two macro and various functions for manipulating date and time.
 }
 
     // Standard Template Libraries (STL)
-#include <array>                /**< For array in CRC-32 call                      */
-#include <cstring>              /**< For handling strings                          */
-#include <cstdint>              /**< For byte handling in CRC-32                   */
-#include <fstream>              /**< For reading files                             */
-#include <iomanip>              /**< Formatting output to console                  */
-#include <iostream>             /**< For output to console                         */
-#include <map>                  /**< For open and closed maps in A*                */
-#include <math.h>               /**< For Sine, Cosine, Power, Fabs & Sqrt functions*/
-#include <numeric>              /**< For CRC-32                                    */
-#include <queue>                /**< For assigning priority queue in A*            */
-#include <sstream>              /**< For stringstream input from console           */
-#include <string>               /**< For handling strings                          */
-#include <thread>               /**< For thread handling                           */
-#include <vector>               /**< To use vectors, which automatically handle resizing, as arrays to keep track of instances */
+#include <array>                //! For array in CRC-32 call
+#include <cstring>              //! For handling strings
+#include <cstdint>              //! For byte handling in CRC-32
+#include <fstream>              //! For reading files
+#include <iomanip>              //! Formatting output to console
+#include <iostream>             //! For output to console
+#include <map>                  //! For open and closed maps in A*
+#include <math.h>               //! For Sine, Cosine, Power, Fabs & Sqrt functions
+#include <numeric>              //! For CRC-32
+#include <queue>                //! For assigning priority queue in A*
+#include <sstream>              //! For stringstream input from console
+#include <string>               //! For handling strings
+#include <thread>               //! For thread handling
+#include <vector>               //! To use vectors, which automatically handle resizing, as arrays to keep track of instances
 
-    // libcaer c++ and Dynapse links
-#include <libcaercpp/devices/dynapse.hpp>
-#include <libcaercpp/libcaer.hpp>
-#include <libcaercpp/events/packetContainer.hpp>
-#include <csignal>
-#include <atomic>
+/*!
+ * The Addressable Event Representation is for asynchronous activation transmission.
+ * Initially, BrainHarmonics was written to make use of academic test hardware from
+ * the Institute of Neuroinformatics at the Univerisity of Zurich / ETH.
+ */
+#include <libcaercpp/devices/dynapse.hpp>          //! The Dynap-se is a neuromorphic device from UZH/ETH INI.
+#include <libcaercpp/libcaer.hpp>                  //! Addressable Event Representation (AER)
+#include <libcaercpp/events/packetContainer.hpp>   //! Package/Unpack events within packets
+#include <csignal>                                 //! C-library to handle signals
+#include <atomic>                                  //! Clarifies access method in multithreading
 
-#define DEFAULTBIASES "data/defaultbiases_values.txt"
-#define LOWPOWERBIASES "data/lowpowerbiases_values.txt"
+#define DEFAULTBIASES "data/defaultbiases_values.txt"     //! Initial bias settings for Dynap-se
+#define LOWPOWERBIASES "data/lowpowerbiases_values.txt"   //! Low-power bias settings for Dynap-se
 
-    // Port sniffer
-#include "sniffex.h"
+/*!
+ * Planned feature to use network traffic as an input stimulus to the neural network
+ */
+#include "sniffex.h"            //! Used along with pcap to capture streaming packets
 
-    // Originally designed to use SFML but switched to vtk to handle 3D computation
-
-    // The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
-    // Added path /usr/local/include/vtk-9.0/ due to Eclipse failure to successfully find include path
+/*!
+ * The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
+ *  Added path vtk-9.0/ due to Eclipse failure to successfully find include path
+ */
 #include <vtk-9.0/vtkAutoInit.h>
-VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
-VTK_MODULE_INIT(vtkRenderingFreeType);
-VTK_MODULE_INIT(vtkInteractionStyle);
+VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2 // @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkRenderingFreeType); // @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkInteractionStyle); // @suppress("Type cannot be resolved")
 #include <vtk-9.0/vtkVersion.h>
 #include <vtk-9.0/vtkActor.h>
 #include <vtk-9.0/vtkActor2D.h>
