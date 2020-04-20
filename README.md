@@ -1,9 +1,9 @@
 # BrainHarmonics
-# This file forms the basis of build requirements to get the software to compile.
-# Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's. 08-Apr-2020.
-# Ongoing code to be managed via Linaro
-# (c) Linaro 2020.
-# May be freely copied whilst maintaining reference to origin and copyright.
+## This file forms the basis of build requirements to get the software to compile.
+### Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's. 08-Apr-2020.
+### Ongoing code to be managed via Linaro
+## (c) Linaro 2020.
+## May be freely copied whilst maintaining reference to origin and copyright.
 
 For cross-platform compatibility
 
@@ -33,11 +33,21 @@ sudo apt-get install build-essential git gcc-5 cmake pkg-config libgl1-mesa-dev 
 sudo apt-get install build-essential git gcc cmake pkg-config libglfw3-dev libgl1-mesa-dev libxt-dev libpcap-dev libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg-dev libjpeg8-dev libtiff-dev libtiff5-dev libjasper-dev libpng-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy python2.7-dev python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
 
 ```
+For Red Hat Users
+```
+(for RHEL 8.x)
+sudo dnf update
+
+sudo dnf install glfw-devel opencv-devel libpcap-devel git autoconf automake meson ninja-build parallel rubygem-sass sassc optipng libffi-devel gcc redhat-rpm-config inkscape gtk3-devel gdk-pixbuf2-xlib glib2-devel glib2 libxml2-devel librsvg2-devel gnome-themes-standard gtk-murrine-engine gtk2-engines google-roboto-fonts google-noto-sans-fonts google-noto-sans-mono-fonts
+```
+
 Agree to all dependency install requirements
 
 Base folder is ~/Developer
+
+git clone git@github.com:Linaro/BrainHarmonics.git
+
 Folders created
-~/Developer/CMakeFiles
 ~/Developer/BrainHarmonics
 
 Install the QT/VTK toolkit
@@ -75,7 +85,7 @@ make -j2
 sudo make install
 ```
 
-Install OpenCV specifics (Ubuntu only)
+Install OpenCV specifics (Linux only)
 ```
 cd ~/Developer
 git clone https://github.com/opencv/opencv.git
@@ -99,7 +109,7 @@ sudo make install
 
 ```
 
-Install libcaer and its dependencies (Ubuntu & MacOS)
+Install libcaer and its dependencies (Linux & MacOS)
 
 ```
 cd ~/Developer
@@ -113,4 +123,18 @@ sudo make install
 
       
 How to build...
+
+
+How to run...
+
+Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics folder.
+
+Overview:
+Creates a number of simulation universes from which to create neurons/synapses.
+
+Skeletal framework exists to call Python routines if required.
+Currently minimal paramterisation files but elements are there.
+
+
+
 

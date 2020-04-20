@@ -1380,7 +1380,7 @@ int main(int argc, const char * argv[])
     double l_screenX = 1000.0;            /**< Define graphics window size, X axis*/
     double l_screenY = 800.0;            /**< Define graphics window size, Y axis*/
         //double l_scale = 300;               /**< Vertices are multiplied by this factor to enable fitting within the graphics window. Adjust to suit environment */
-    std::string l_screenTitle = "Neural Mimicry - an AARNN Cognitive AI System";
+    std::string l_screenTitle = "Developed from Project NeuralMimicry - the basis of an AARNN Cognitive AI System";
     std::stringstream l_displayString;
     
     int counter_Charge = -1; // Used to loop between min 0 and max 6
@@ -1509,7 +1509,7 @@ int main(int argc, const char * argv[])
         init_numpy(); // Numpy array initialisation
         }
     
-    pName = PyUnicode_FromString("pycompute");    // File to be called. Must be in the same folder as the C++ executable and Not have a .py extension
+    pName = PyUnicode_FromString("pycompute");    // File to be called. Must be in the same folder as the C++ executable and with a .py extension
     pModule = PyImport_Import(pName);
     Py_DECREF(pName);
     

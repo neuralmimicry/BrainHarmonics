@@ -180,6 +180,9 @@ var NAVTREEINDEX0 =
 "build_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___v_o_i_d___p_t_r_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[3,0,1,0,1,2,1],
 "build_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___v_o_i_d___p_t_r_8c.html#a70ed59adcb4159ac551058053e649640":[3,0,1,0,1,2,0],
 "build_2_c_make_files_2_check_type_size_2_s_i_z_e_o_f___v_o_i_d___p_t_r_8c_source.html":[3,0,1,0,1,2],
+"build_2pycompute_8py.html":[3,0,1,1],
+"build_2pycompute_8py.html#af7498e1653825e1a7a7a7d4a1e2701ac":[3,0,1,1,0],
+"build_2pycompute_8py_source.html":[3,0,1,1],
 "carbohydrates_8cpp.html":[3,0,0,14],
 "carbohydrates_8cpp_source.html":[3,0,0,14],
 "carbohydrates_8h.html":[3,0,0,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "class_axon_bouton.html#a8a2da76b259a5ebab397fbd89d8b0632":[2,0,4,1],
 "class_axon_bouton.html#a8dff077a40565f4e3a34388a6c38a603":[2,0,4,14],
 "class_axon_bouton.html#a93e33d72d90801d29d2b16ef94b59fab":[2,0,4,2],
-"class_axon_bouton.html#a95fc006b2436e2c7784af2cc0bc9522e":[2,0,4,17],
-"class_axon_bouton.html#ab24fa467ab7221d0577e54734684a491":[2,0,4,23],
-"class_axon_bouton.html#ab6f93f680d19d4f07476d1d1b3de776a":[2,0,4,4],
-"class_axon_bouton.html#acd6521d65ecb2b86abf2e3a8b322699e":[2,0,4,0]
+"class_axon_bouton.html#a95fc006b2436e2c7784af2cc0bc9522e":[2,0,4,17]
 };

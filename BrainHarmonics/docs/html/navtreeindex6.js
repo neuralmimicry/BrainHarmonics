@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"class_soma.html#ad51c97b76dd7a1f77dc987ae33fd89bc":[2,0,44,12],
+"class_soma.html#ae2876b37909f37e8922ce364eb06491f":[2,0,44,47],
+"class_soma.html#af6d6d3e3c94f06682cf05a7a72032a46":[2,0,44,18],
 "class_soma.html#af76f86d082c3f60442148ec843b586e7":[2,0,44,24],
 "class_soma.html#af93902336cddb974b282aef8b7b4243c":[2,0,44,52],
 "class_soma.html#afbdc1f4e4f54adefea9a16fdca50aab5":[2,0,44,30],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "cytoplasm_8h.html":[3,0,0,29],
 "cytoplasm_8h_source.html":[3,0,0,29],
 "dendrite_8cc.html":[3,0,0,30],
-"dendrite_8cc_source.html":[3,0,0,30],
-"dendrite_8h.html":[3,0,0,31],
-"dendrite_8h_source.html":[3,0,0,31],
-"dendritebranch_8cc.html":[3,0,0,32]
+"dendrite_8cc_source.html":[3,0,0,30]
 };

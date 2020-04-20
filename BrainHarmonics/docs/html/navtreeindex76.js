@@ -1,5 +1,8 @@
 var NAVTREEINDEX76 =
 {
+"triangles_8cpp.html#a68bc1dadbefed840bdbe84a66126eeb7":[3,0,16,5],
+"triangles_8cpp.html#a9f8f89ff3e07b5fc534327016b4ba7b4":[3,0,16,1],
+"triangles_8cpp.html#ab9c41a15d9aad2a7ba18566aada67d03":[3,0,16,7],
 "triangles_8cpp.html#ac0e905af3878e21de317eea54cb1e50a":[3,0,16,6],
 "triangles_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[3,0,16,2],
 "triangles_8cpp_source.html":[3,0,16],

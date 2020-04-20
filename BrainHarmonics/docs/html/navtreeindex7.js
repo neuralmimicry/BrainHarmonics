@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"dendrite_8h.html":[3,0,0,31],
+"dendrite_8h_source.html":[3,0,0,31],
+"dendritebranch_8cc.html":[3,0,0,32],
 "dendritebranch_8cc_source.html":[3,0,0,32],
 "dendritebranch_8h.html":[3,0,0,33],
 "dendritebranch_8h_source.html":[3,0,0,33],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "glad_8c.html#a0c32a33ece27dde64cf26796efde1fac":[3,0,4,1,0,281],
 "glad_8c.html#a0c35127b8e85a4d61e5c2e045abb6844":[3,0,4,1,0,701],
 "glad_8c.html#a0c43a1baf3a3e738e6a5d6af66f8eafc":[3,0,4,1,0,2195],
-"glad_8c.html#a0cbd84bba72766cfc608b3b246a8c34c":[3,0,4,1,0,2114],
-"glad_8c.html#a0cc752e48916fdf3b644815cca982198":[3,0,4,1,0,730],
-"glad_8c.html#a0cd8d8edd155695b9b5814275ef306d3":[3,0,4,1,0,127],
-"glad_8c.html#a0cdd8f3f915f755626c1f1da24e05ac7":[3,0,4,1,0,1034]
+"glad_8c.html#a0cbd84bba72766cfc608b3b246a8c34c":[3,0,4,1,0,2114]
 };
