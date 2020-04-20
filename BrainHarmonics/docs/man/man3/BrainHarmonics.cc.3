@@ -68,65 +68,77 @@ BrainHarmonics/BrainHarmonics.cc
 .br
 \fC#include 'sniffex\&.h'\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkAutoInit\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkAutoInit\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkVersion\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkVersion\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkActor\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkActor\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkActor2D\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkActor2D\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkCamera\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkCamera\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkCellArray\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkCellArray\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkCellData\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkCellData\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkColorTransferFunction\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkColorTransferFunction\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkContourFilter\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkContourFilter\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkFloatArray\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkCoordinate\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkParametricFunctionSource\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkFloatArray\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkPointData\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkMath\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkPolygon\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkParametricFunctionSource\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkPolyDataMapper\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPointData\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkPolyDataMapper2D\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPoints\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkAppendPolyData\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPolygon\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkProgrammableSource\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPolyData\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkProperty\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPolyDataMapper\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkProperty2D\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkPolyDataMapper2D\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderWindow\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkAppendPolyData\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderer\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkProgrammableSource\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkRenderWindowInteractor\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkProperty\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkReverseSense\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkProperty2D\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkSurfaceReconstructionFilter\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkRenderWindow\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkTextActor\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkRenderer\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkTextMapper\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkRenderWindowInteractor\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkTextProperty\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkReverseSense\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkUnsignedCharArray\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkSmartPointer\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkVertexGlyphFilter\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkSurfaceReconstructionFilter\&.h>\fP
 .br
-\fC#include </usr/local/include/vtk\-9\&.0/vtkXMLPolyDataWriter\&.h>\fP
+\fC#include <vtk\-9\&.0/vtkTextActor\&.h>\fP
+.br
+\fC#include <vtk\-9\&.0/vtkTextMapper\&.h>\fP
+.br
+\fC#include <vtk\-9\&.0/vtkTextProperty\&.h>\fP
+.br
+\fC#include <vtk\-9\&.0/vtkUnsignedCharArray\&.h>\fP
+.br
+\fC#include <vtk\-9\&.0/vtkVertexGlyphFilter\&.h>\fP
+.br
+\fC#include <vtk\-9\&.0/vtkXMLPolyDataWriter\&.h>\fP
+.br
+\fC#include <cmath>\fP
 .br
 \fC#include </usr/local/include/vtk\-9\&.0/vtkTransform\&.h>\fP
 .br

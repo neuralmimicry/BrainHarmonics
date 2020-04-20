@@ -4,20 +4,15 @@
 .SH NAME
 md__r_e_a_d_m_e \- BrainHarmonics 
 
-.SH "This file forms the basis of build requirements to get the software to compile\&."
+.SS "This file forms the basis of build requirements to get the software to compile\&."
 .PP
+.SS "Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's\&. 08-Apr-2020\&."
 .PP
-.SH "Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's\&. 08-Apr-2020\&."
+.SS "Ongoing code to be managed via Linaro"
 .PP
+.SS "(c) Linaro 2020\&."
 .PP
-.SH "Ongoing code to be managed via Linaro"
-.PP
-.PP
-.SH "(c) Linaro 2020\&."
-.PP
-.PP
-.SH "May be freely copied whilst maintaining reference to origin and copyright\&."
-.PP
+.SS "May be freely copied whilst maintaining reference to origin and copyright\&."
 .PP
 For cross-platform compatibility
 .PP
@@ -50,9 +45,24 @@ sudo apt-get install build-essential git gcc cmake pkg-config libglfw3-dev libgl
 
 .fi
 .PP
- Agree to all dependency install requirements
+ For Red Hat Users 
 .PP
-Base folder is ~/Developer Folders created ~/Developer/CMakeFiles ~/Developer/BrainHarmonics
+.nf
+(for RHEL 8\&.x)
+sudo dnf update
+
+sudo dnf install glfw-devel opencv-devel libpcap-devel git autoconf automake meson ninja-build parallel rubygem-sass sassc optipng libffi-devel gcc redhat-rpm-config inkscape gtk3-devel gdk-pixbuf2-xlib glib2-devel glib2 libxml2-devel librsvg2-devel gnome-themes-standard gtk-murrine-engine gtk2-engines google-roboto-fonts google-noto-sans-fonts google-noto-sans-mono-fonts
+
+.fi
+.PP
+.PP
+Agree to all dependency install requirements
+.PP
+Base folder is ~/Developer
+.PP
+git clone git@github.com:Linaro/BrainHarmonics\&.git
+.PP
+Folders created ~/Developer/BrainHarmonics
 .PP
 Install the QT/VTK toolkit
 .PP
@@ -93,7 +103,7 @@ sudo make install
 .fi
 .PP
 .PP
-Install OpenCV specifics (Ubuntu only) 
+Install OpenCV specifics (Linux only) 
 .PP
 .nf
 cd ~/Developer
@@ -124,7 +134,7 @@ sudo make install
 .fi
 .PP
 .PP
-Install libcaer and its dependencies (Ubuntu & MacOS)
+Install libcaer and its dependencies (Linux & MacOS)
 .PP
 .PP
 .nf
@@ -137,4 +147,12 @@ sudo make install
 .fi
 .PP
 .PP
-How to build\&.\&.\&. 
+How to build\&.\&.\&.
+.PP
+How to run\&.\&.\&.
+.PP
+Once built, execute \&./build/BrainHarmonics from the ~/Developer/BrainHarmonics folder\&.
+.PP
+Overview: Creates a number of simulation universes from which to create neurons/synapses\&.
+.PP
+Skeletal framework exists to call Python routines if required\&. Currently minimal paramterisation files but elements are there\&. 

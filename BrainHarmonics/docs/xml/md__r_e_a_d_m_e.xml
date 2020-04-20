@@ -6,11 +6,11 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><heading level="1">This file forms the basis of build requirements to get the software to compile.</heading>
-</para><para><heading level="1">Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac&apos;s. 08-Apr-2020.</heading>
-</para><para><heading level="1">Ongoing code to be managed via Linaro</heading>
-</para><para><heading level="1">(c) Linaro 2020.</heading>
-</para><para><heading level="1">May be freely copied whilst maintaining reference to origin and copyright.</heading>
+<para><heading level="2">This file forms the basis of build requirements to get the software to compile.</heading>
+</para><para><heading level="3">Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac&apos;s. 08-Apr-2020.</heading>
+</para><para><heading level="3">Ongoing code to be managed via Linaro</heading>
+</para><para><heading level="2">(c) Linaro 2020.</heading>
+</para><para><heading level="2">May be freely copied whilst maintaining reference to origin and copyright.</heading>
 </para><para>For cross-platform compatibility</para><para><programlisting><codeline><highlight class="normal">ln<sp/>-s<sp/>/home<sp/>/Users</highlight></codeline>
 </programlisting></para><para>For Mac Users: Ensure the xcode command line tools are installed using: xcode-select <ndash/>install The preference for compilation tools is to use MacPorts. Download from MacPorts.org After installing macports run:</para><para><programlisting><codeline><highlight class="normal">sudo<sp/>port<sp/>selfupdate</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>port<sp/>upgrade<sp/>outdated</highlight></codeline>
@@ -23,7 +23,11 @@
 <codeline></codeline>
 <codeline><highlight class="normal">(for<sp/>Ubuntu<sp/>18.x)</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>apt-get<sp/>install<sp/>build-essential<sp/>git<sp/>gcc<sp/>cmake<sp/>pkg-config<sp/>libglfw3-dev<sp/>libgl1-mesa-dev<sp/>libxt-dev<sp/>libpcap-dev<sp/>libmxml-dev<sp/>libuv1-dev<sp/>libusb-1.0-0-dev<sp/>liballegro5-dev<sp/>liballegro-ttf5-dev<sp/>libjpeg-dev<sp/>libjpeg8-dev<sp/>libtiff-dev<sp/>libtiff5-dev<sp/>libjasper-dev<sp/>libpng-dev<sp/>libpng12-dev<sp/>libavcodec-dev<sp/>libavformat-dev<sp/>libswscale-dev<sp/>libv4l-dev<sp/>libxvidcore-dev<sp/>libx264-dev<sp/>libgtk-3-dev<sp/>libatlas-base-dev<sp/>gfortran<sp/>python-dev<sp/>python-numpy<sp/>python2.7-dev<sp/>python3.5-dev<sp/>libgtk2.0-dev<sp/>libtbb2<sp/>libtbb-dev<sp/>libdc1394-22-dev</highlight></codeline>
-</programlisting> Agree to all dependency install requirements</para><para>Base folder is ~/Developer Folders created ~/Developer/CMakeFiles ~/Developer/BrainHarmonics</para><para>Install the QT/VTK toolkit</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+</programlisting> For Red Hat Users <programlisting><codeline><highlight class="normal">(for<sp/>RHEL<sp/>8.x)</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>dnf<sp/>update</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">sudo<sp/>dnf<sp/>install<sp/>glfw-devel<sp/>opencv-devel<sp/>libpcap-devel<sp/>git<sp/>autoconf<sp/>automake<sp/>meson<sp/>ninja-build<sp/>parallel<sp/>rubygem-sass<sp/>sassc<sp/>optipng<sp/>libffi-devel<sp/>gcc<sp/>redhat-rpm-config<sp/>inkscape<sp/>gtk3-devel<sp/>gdk-pixbuf2-xlib<sp/>glib2-devel<sp/>glib2<sp/>libxml2-devel<sp/>librsvg2-devel<sp/>gnome-themes-standard<sp/>gtk-murrine-engine<sp/>gtk2-engines<sp/>google-roboto-fonts<sp/>google-noto-sans-fonts<sp/>google-noto-sans-mono-fonts</highlight></codeline>
+</programlisting></para><para>Agree to all dependency install requirements</para><para>Base folder is ~/Developer</para><para>git clone <ulink url="mailto:git@github.com">git@github.com</ulink>:Linaro/BrainHarmonics.git</para><para>Folders created ~/Developer/BrainHarmonics</para><para>Install the QT/VTK toolkit</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
 <codeline><highlight class="normal">git<sp/>clone<sp/>git://vtk.org/VTK.git</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">mkdir<sp/>~/Developer/VTK-build</highlight></codeline>
@@ -49,7 +53,7 @@
 <codeline></codeline>
 <codeline><highlight class="normal">make<sp/>-j2</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
-</programlisting></para><para>Install OpenCV specifics (Ubuntu only) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+</programlisting></para><para>Install OpenCV specifics (Linux only) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
 <codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/opencv/opencv.git</highlight></codeline>
 <codeline><highlight class="normal">cd<sp/>~/Developer/opencv</highlight></codeline>
 <codeline><highlight class="normal">mkdir<sp/>release</highlight></codeline>
@@ -60,12 +64,12 @@
 </programlisting></para><para>(MacOS element) <programlisting><codeline><highlight class="normal">wget<sp/>http://download.qt.io/official_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg</highlight></codeline>
 </programlisting> Run the dmg to open the QT installer (skip account creation) and then install VTK (the make process is a Very long process) <programlisting><codeline><highlight class="normal">cd<sp/>~/Developer/VTK-build</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
-</programlisting></para><para>Install libcaer and its dependencies (Ubuntu &amp; MacOS)</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
+</programlisting></para><para>Install libcaer and its dependencies (Linux &amp; MacOS)</para><para><programlisting><codeline><highlight class="normal">cd<sp/>~/Developer</highlight></codeline>
 <codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/inilabs/libcaer.git</highlight></codeline>
 <codeline><highlight class="normal">cd<sp/>libcaer</highlight></codeline>
 <codeline><highlight class="normal">cmake<sp/>-DENABLE_OPENCV=1<sp/>-DCMAKE_INSTALL_PREFIX=/usr<sp/>.</highlight></codeline>
 <codeline><highlight class="normal">make</highlight></codeline>
 <codeline><highlight class="normal">sudo<sp/>make<sp/>install</highlight></codeline>
-</programlisting></para><para>How to build... </para>    </detaileddescription>
+</programlisting></para><para>How to build...</para><para>How to run...</para><para>Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics folder.</para><para>Overview: Creates a number of simulation universes from which to create neurons/synapses.</para><para>Skeletal framework exists to call Python routines if required. Currently minimal paramterisation files but elements are there. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

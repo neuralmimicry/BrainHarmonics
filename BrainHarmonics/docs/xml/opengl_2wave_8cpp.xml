@@ -12,68 +12,68 @@
     <includes local="no">stdlib.h</includes>
     <includes refid="linmath_8h" local="no">linmath.h</includes>
     <incdepgraph>
-      <node id="2318">
+      <node id="2267">
         <label>stdint.h</label>
       </node>
-      <node id="2325">
+      <node id="2274">
         <label>stdlib.h</label>
       </node>
-      <node id="2317">
+      <node id="2266">
         <label>KHR/khrplatform.h</label>
         <link refid="khrplatform_8h"/>
-        <childnode refid="2318" relation="include">
+        <childnode refid="2267" relation="include">
         </childnode>
       </node>
-      <node id="2320">
+      <node id="2269">
         <label>GLFW/glfw3.h</label>
       </node>
-      <node id="2315">
+      <node id="2264">
         <label>opengl/wave.cpp</label>
         <link refid="opengl_2wave_8cpp"/>
-        <childnode refid="2316" relation="include">
+        <childnode refid="2265" relation="include">
         </childnode>
-        <childnode refid="2319" relation="include">
+        <childnode refid="2268" relation="include">
         </childnode>
-        <childnode refid="2320" relation="include">
+        <childnode refid="2269" relation="include">
         </childnode>
-        <childnode refid="2321" relation="include">
+        <childnode refid="2270" relation="include">
         </childnode>
-        <childnode refid="2322" relation="include">
+        <childnode refid="2271" relation="include">
         </childnode>
-        <childnode refid="2323" relation="include">
+        <childnode refid="2272" relation="include">
         </childnode>
-        <childnode refid="2324" relation="include">
+        <childnode refid="2273" relation="include">
         </childnode>
-        <childnode refid="2325" relation="include">
+        <childnode refid="2274" relation="include">
         </childnode>
-        <childnode refid="2326" relation="include">
+        <childnode refid="2275" relation="include">
         </childnode>
       </node>
-      <node id="2322">
+      <node id="2271">
         <label>vector</label>
       </node>
-      <node id="2326">
+      <node id="2275">
         <label>linmath.h</label>
         <link refid="linmath_8h"/>
-        <childnode refid="2319" relation="include">
+        <childnode refid="2268" relation="include">
         </childnode>
       </node>
-      <node id="2319">
+      <node id="2268">
         <label>math.h</label>
       </node>
-      <node id="2321">
+      <node id="2270">
         <label>cstdlib</label>
       </node>
-      <node id="2323">
+      <node id="2272">
         <label>iostream</label>
       </node>
-      <node id="2316">
+      <node id="2265">
         <label>glad/glad.h</label>
         <link refid="glad_8h"/>
-        <childnode refid="2317" relation="include">
+        <childnode refid="2266" relation="include">
         </childnode>
       </node>
-      <node id="2324">
+      <node id="2273">
         <label>stdio.h</label>
       </node>
     </incdepgraph>

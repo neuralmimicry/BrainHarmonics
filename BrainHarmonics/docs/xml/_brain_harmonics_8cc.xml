@@ -33,9 +33,51 @@
     <includes local="no">csignal</includes>
     <includes local="no">atomic</includes>
     <includes refid="sniffex_8h" local="yes">sniffex.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkAutoInit.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDebugLeaksManager.h</includes>
+    <includes local="no">vtk-9.0/vtkAutoInit.h</includes>
+    <includes local="no">vtk-9.0/vtkVersion.h</includes>
+    <includes local="no">vtk-9.0/vtkActor.h</includes>
+    <includes local="no">vtk-9.0/vtkActor2D.h</includes>
+    <includes local="no">vtk-9.0/vtkCamera.h</includes>
+    <includes local="no">vtk-9.0/vtkCellArray.h</includes>
+    <includes local="no">vtk-9.0/vtkCellData.h</includes>
+    <includes local="no">vtk-9.0/vtkColorTransferFunction.h</includes>
+    <includes local="no">vtk-9.0/vtkContourFilter.h</includes>
+    <includes local="no">vtk-9.0/vtkCoordinate.h</includes>
+    <includes local="no">vtk-9.0/vtkFloatArray.h</includes>
+    <includes local="no">vtk-9.0/vtkMath.h</includes>
+    <includes local="no">vtk-9.0/vtkParametricFunctionSource.h</includes>
+    <includes local="no">vtk-9.0/vtkPointData.h</includes>
+    <includes local="no">vtk-9.0/vtkPoints.h</includes>
+    <includes local="no">vtk-9.0/vtkPolygon.h</includes>
+    <includes local="no">vtk-9.0/vtkPolyData.h</includes>
+    <includes local="no">vtk-9.0/vtkPolyDataMapper.h</includes>
+    <includes local="no">vtk-9.0/vtkPolyDataMapper2D.h</includes>
+    <includes local="no">vtk-9.0/vtkAppendPolyData.h</includes>
+    <includes local="no">vtk-9.0/vtkProgrammableSource.h</includes>
+    <includes local="no">vtk-9.0/vtkProperty.h</includes>
+    <includes local="no">vtk-9.0/vtkProperty2D.h</includes>
+    <includes local="no">vtk-9.0/vtkRenderWindow.h</includes>
+    <includes local="no">vtk-9.0/vtkRenderer.h</includes>
+    <includes local="no">vtk-9.0/vtkRenderWindowInteractor.h</includes>
+    <includes local="no">vtk-9.0/vtkReverseSense.h</includes>
+    <includes local="no">vtk-9.0/vtkSmartPointer.h</includes>
+    <includes local="no">vtk-9.0/vtkSurfaceReconstructionFilter.h</includes>
+    <includes local="no">vtk-9.0/vtkTextActor.h</includes>
+    <includes local="no">vtk-9.0/vtkTextMapper.h</includes>
+    <includes local="no">vtk-9.0/vtkTextProperty.h</includes>
+    <includes local="no">vtk-9.0/vtkUnsignedCharArray.h</includes>
+    <includes local="no">vtk-9.0/vtkVertexGlyphFilter.h</includes>
+    <includes local="no">vtk-9.0/vtkXMLPolyDataWriter.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">/usr/local/include/vtk-9.0/vtkTransform.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonTransformsModule.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkLinearTransform.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkHomogeneousTransform.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractTransform.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkObject.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonCoreModule.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkObjectBase.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkIndent.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkSystemIncludes.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkWin32Header.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkABI.h</includes>
@@ -52,45 +94,24 @@
     <includes local="yes">/usr/local/include/vtk-9.0/vtkOStreamWrapper.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkOStrStreamWrapper.h</includes>
     <includes local="no">string.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkTimeStamp.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkVersion.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkObject.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkObjectBase.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkIndent.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkSetGet.h</includes>
     <includes local="no">type_traits</includes>
     <includes local="no">typeinfo</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkTimeStamp.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkWeakPointerBase.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkActor.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkProp3D.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkProp.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkRenderingCoreModule.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkFiltersCoreModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkActor2D.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCoordinate.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkCamera.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkRect.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkVector.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkTuple.h</includes>
-    <includes local="no">cassert</includes>
-    <includes local="no">cmath</includes>
-    <includes local="no">cstdlib</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMath.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkSmartPointer.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkSmartPointerBase.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMeta.h</includes>
-    <includes local="no">utility</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkNew.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkTypeTraits.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMathConfigure.h</includes>
-    <includes local="no">float.h</includes>
-    <includes local="no">algorithm</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkCellArray.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkMatrix4x4.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonMathModule.h</includes>
+    <includes local="no">/usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkFiltersGeneralModule.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkPolyDataAlgorithm.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkAlgorithm.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonExecutionModelModule.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkPolyData.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonDataModelModule.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkAOSDataArrayTemplate.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkBuffer.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkObjectFactory.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkGenericDataArray.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkPointSet.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataSet.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataObject.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkPoints.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkDataArray.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractArray.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkVariant.h</includes>
@@ -99,10 +120,27 @@
     <includes local="yes">/usr/local/include/vtk-9.0/vtkVariantInlineOperators.h</includes>
     <includes local="no">climits</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkVTK_USE_SCALED_SOA_ARRAYS.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkCellArray.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkAOSDataArrayTemplate.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkBuffer.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkObjectFactory.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkDebugLeaksManager.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkGenericDataArray.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkGenericDataArrayLookupHelper.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkIdList.h</includes>
     <includes local="no">unordered_map</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkSmartPointer.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkSmartPointerBase.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkMeta.h</includes>
+    <includes local="no">utility</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkNew.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkTypeTraits.h</includes>
+    <includes local="no">cassert</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkGenericDataArray.txx</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkMath.h</includes>
+    <includes local="yes">/usr/local/include/vtk-9.0/vtkMathConfigure.h</includes>
+    <includes local="no">float.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkVariantCast.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkCell.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkCellType.h</includes>
@@ -123,78 +161,10 @@
     <includes local="yes">/usr/local/include/vtk-9.0/vtkTypeListMacros.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkTypeList.txx</includes>
     <includes local="no">initializer_list</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkCellData.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataSetAttributes.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataSetAttributesFieldList.h</includes>
-    <includes local="no">functional</includes>
-    <includes local="no">memory</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkFieldData.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkColorTransferFunction.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkScalarsToColors.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkContourFilter.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkPolyDataAlgorithm.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkAlgorithm.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonExecutionModelModule.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkPolyData.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkPointSet.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataSet.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataObject.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkPoints.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkCellLinks.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractCellLinks.h</includes>
     <includes local="yes">/usr/local/include/vtk-9.0/vtkPolyDataInternals.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkContourValues.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonMiscModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkFloatArray.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkParametricFunctionSource.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkFiltersSourcesModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkPointData.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkPolygon.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkPolyDataMapper.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMapper.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractMapper3D.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractMapper.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkPolyDataMapper2D.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMapper2D.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkAppendPolyData.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkProgrammableSource.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkDataObjectAlgorithm.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkProperty.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkProperty2D.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkRenderWindow.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkWindow.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkRenderer.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkViewport.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkActorCollection.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkPropCollection.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCollection.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkVolumeCollection.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkVolume.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommand.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkReverseSense.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkSurfaceReconstructionFilter.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkImageAlgorithm.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkImagingHybridModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkTextActor.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkTexturedActor2D.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkTextMapper.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkTextProperty.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkUnsignedCharArray.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkVertexGlyphFilter.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkFiltersGeneralModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkXMLPolyDataWriter.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkIOXMLModule.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkXMLUnstructuredDataWriter.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkXMLWriter.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkTransform.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonTransformsModule.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkLinearTransform.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkHomogeneousTransform.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkAbstractTransform.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkMatrix4x4.h</includes>
-    <includes local="yes">/usr/local/include/vtk-9.0/vtkCommonMathModule.h</includes>
-    <includes local="no">/usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h</includes>
+    <includes local="no">cstdlib</includes>
     <includes local="no">Python.h</includes>
     <includes local="no">numpy/arrayobject.h</includes>
     <includes local="no">GL/gl.h</includes>
@@ -241,49 +211,43 @@
     <includes refid="neurotransmitter_8h" local="yes">neurotransmitter.h</includes>
     <includes refid="spike_8h" local="yes">spike.h</includes>
     <incdepgraph>
-      <node id="362">
-        <label>/usr/local/include/vtk-9.0/vtkProperty.h</label>
-      </node>
-      <node id="254">
+      <node id="296">
         <label>/usr/local/include/vtk-9.0/vtkOStrStreamWrapper.h</label>
       </node>
-      <node id="281">
+      <node id="335">
         <label>/usr/local/include/vtk-9.0/vtkMeta.h</label>
       </node>
-      <node id="409">
+      <node id="379">
         <label>law.h</label>
         <link refid="law_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="338">
+      <node id="309">
         <label>/usr/local/include/vtk-9.0/vtkPolyData.h</label>
       </node>
-      <node id="251">
+      <node id="293">
         <label>stdbool.h</label>
       </node>
-      <node id="363">
-        <label>/usr/local/include/vtk-9.0/vtkProperty2D.h</label>
-      </node>
-      <node id="290">
+      <node id="324">
         <label>/usr/local/include/vtk-9.0/vtkAOSDataArrayTemplate.h</label>
       </node>
       <node id="231">
         <label>atomic</label>
       </node>
-      <node id="402">
+      <node id="372">
         <label>GL/glut.h</label>
       </node>
-      <node id="406">
+      <node id="376">
         <label>elementaryparticle.h</label>
         <link refid="elementaryparticle_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
       <node id="205">
@@ -292,216 +256,201 @@
       <node id="206">
         <label>arpa/inet.h</label>
       </node>
-      <node id="329">
-        <label>functional</label>
-      </node>
       <node id="217">
         <label>iomanip</label>
       </node>
       <node id="222">
         <label>queue</label>
       </node>
-      <node id="350">
-        <label>/usr/local/include/vtk-9.0/vtkFiltersSourcesModule.h</label>
-      </node>
-      <node id="396">
+      <node id="303">
         <label>/usr/local/include/vtk-9.0/vtkCommonMathModule.h</label>
       </node>
-      <node id="285">
+      <node id="342">
         <label>/usr/local/include/vtk-9.0/vtkMathConfigure.h</label>
       </node>
-      <node id="239">
+      <node id="279">
         <label>/usr/local/include/vtk-9.0/vtkCommonCoreModule.h</label>
+      </node>
+      <node id="251">
+        <label>vtk-9.0/vtkPoints.h</label>
       </node>
       <node id="211">
         <label>assert.h</label>
       </node>
-      <node id="414">
+      <node id="384">
         <label>polyhedron.h</label>
         <link refid="polyhedron_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="413" relation="include">
+        <childnode refid="383" relation="include">
         </childnode>
-        <childnode refid="415" relation="include">
+        <childnode refid="385" relation="include">
         </childnode>
       </node>
-      <node id="315">
+      <node id="353">
         <label>iterator</label>
       </node>
-      <node id="383">
-        <label>/usr/local/include/vtk-9.0/vtkUnsignedCharArray.h</label>
-      </node>
-      <node id="435">
+      <node id="405">
         <label>axonhillock.h</label>
         <link refid="axonhillock_8h"/>
-        <childnode refid="429" relation="include">
+        <childnode refid="399" relation="include">
         </childnode>
       </node>
-      <node id="286">
+      <node id="343">
         <label>float.h</label>
       </node>
-      <node id="324">
+      <node id="362">
         <label>/usr/local/include/vtk-9.0/vtkTypeList.txx</label>
       </node>
-      <node id="305">
+      <node id="340">
         <label>/usr/local/include/vtk-9.0/vtkGenericDataArray.txx</label>
       </node>
-      <node id="368">
-        <label>/usr/local/include/vtk-9.0/vtkActorCollection.h</label>
+      <node id="239">
+        <label>vtk-9.0/vtkActor.h</label>
       </node>
-      <node id="443">
+      <node id="413">
         <label>spike.h</label>
         <link refid="spike_8h"/>
         <childnode refid="207" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="312">
+      <node id="350">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayTupleRange_AOS.h</label>
       </node>
-      <node id="297">
+      <node id="318">
         <label>/usr/local/include/vtk-9.0/vtkStdString.h</label>
       </node>
       <node id="215">
         <label>cstdint</label>
       </node>
-      <node id="248">
+      <node id="290">
         <label>/usr/local/include/vtk-9.0/vtkkwiml/abi.h</label>
       </node>
-      <node id="408">
+      <node id="378">
         <label>compositeforceparticle.h</label>
         <link refid="compositeforceparticle_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="308">
+      <node id="346">
         <label>/usr/local/include/vtk-9.0/vtkCellType.h</label>
       </node>
-      <node id="421">
+      <node id="391">
         <label>cognitivenetwork.h</label>
         <link refid="cognitivenetwork_8h"/>
-        <childnode refid="405" relation="include">
+        <childnode refid="375" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="339">
+      <node id="261">
+        <label>vtk-9.0/vtkRenderer.h</label>
+      </node>
+      <node id="311">
         <label>/usr/local/include/vtk-9.0/vtkPointSet.h</label>
       </node>
-      <node id="320">
+      <node id="358">
         <label>/usr/local/include/vtk-9.0/vtkIntArray.h</label>
       </node>
-      <node id="263">
-        <label>/usr/local/include/vtk-9.0/vtkWeakPointerBase.h</label>
+      <node id="253">
+        <label>vtk-9.0/vtkPolyData.h</label>
       </node>
-      <node id="354">
-        <label>/usr/local/include/vtk-9.0/vtkMapper.h</label>
+      <node id="301">
+        <label>/usr/local/include/vtk-9.0/vtkWeakPointerBase.h</label>
       </node>
       <node id="208">
         <label>stdlib.h</label>
       </node>
-      <node id="260">
+      <node id="297">
         <label>/usr/local/include/vtk-9.0/vtkSetGet.h</label>
       </node>
-      <node id="321">
+      <node id="359">
         <label>/usr/local/include/vtk-9.0/vtkTypeInt64Array.h</label>
       </node>
       <node id="233">
         <label>pcap.h</label>
       </node>
-      <node id="269">
-        <label>/usr/local/include/vtk-9.0/vtkActor2D.h</label>
-      </node>
-      <node id="361">
-        <label>/usr/local/include/vtk-9.0/vtkDataObjectAlgorithm.h</label>
-      </node>
-      <node id="311">
+      <node id="349">
         <label>/usr/local/include/vtk-9.0/vtkAssume.h</label>
       </node>
-      <node id="438">
+      <node id="408">
         <label>myelinsheath.h</label>
         <link refid="myelinsheath_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="238">
+      <node id="327">
         <label>/usr/local/include/vtk-9.0/vtkDebugLeaksManager.h</label>
       </node>
-      <node id="302">
+      <node id="330">
         <label>/usr/local/include/vtk-9.0/vtkGenericDataArrayLookupHelper.h</label>
       </node>
-      <node id="413">
+      <node id="383">
         <label>solid.h</label>
         <link refid="solid_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="416">
+      <node id="386">
         <label>polygon.h</label>
         <link refid="polygon_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
       </node>
-      <node id="415">
+      <node id="385">
         <label>point.h</label>
         <link refid="point_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="316">
+      <node id="354">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayValueRange_AOS.h</label>
       </node>
-      <node id="276">
+      <node id="272">
         <label>cmath</label>
-      </node>
-      <node id="326">
-        <label>/usr/local/include/vtk-9.0/vtkCellData.h</label>
       </node>
       <node id="236">
         <label>errno.h</label>
       </node>
-      <node id="412">
+      <node id="382">
         <label>polymer.h</label>
         <link refid="polymer_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="275">
+      <node id="339">
         <label>cassert</label>
       </node>
-      <node id="242">
+      <node id="284">
         <label>/usr/local/include/vtk-9.0/vtkABI.h</label>
-      </node>
-      <node id="364">
-        <label>/usr/local/include/vtk-9.0/vtkRenderWindow.h</label>
       </node>
       <node id="209">
         <label>fcntl.h</label>
@@ -509,21 +458,21 @@
       <node id="221">
         <label>numeric</label>
       </node>
-      <node id="268">
-        <label>/usr/local/include/vtk-9.0/vtkFiltersCoreModule.h</label>
+      <node id="247">
+        <label>vtk-9.0/vtkFloatArray.h</label>
       </node>
-      <node id="271">
-        <label>/usr/local/include/vtk-9.0/vtkCamera.h</label>
+      <node id="252">
+        <label>vtk-9.0/vtkPolygon.h</label>
       </node>
-      <node id="351">
-        <label>/usr/local/include/vtk-9.0/vtkPointData.h</label>
+      <node id="244">
+        <label>vtk-9.0/vtkColorTransferFunction.h</label>
       </node>
-      <node id="424">
+      <node id="394">
         <label>orbital.h</label>
         <link refid="orbital_8h"/>
-        <childnode refid="287" relation="include">
+        <childnode refid="328" relation="include">
         </childnode>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
@@ -533,67 +482,49 @@
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="422">
+      <node id="392">
         <label>cognitiveinput.h</label>
         <link refid="cognitiveinput_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="356">
-        <label>/usr/local/include/vtk-9.0/vtkAbstractMapper.h</label>
-      </node>
-      <node id="392">
+      <node id="275">
         <label>/usr/local/include/vtk-9.0/vtkLinearTransform.h</label>
       </node>
-      <node id="272">
-        <label>/usr/local/include/vtk-9.0/vtkRect.h</label>
-      </node>
-      <node id="369">
-        <label>/usr/local/include/vtk-9.0/vtkPropCollection.h</label>
-      </node>
-      <node id="367">
-        <label>/usr/local/include/vtk-9.0/vtkViewport.h</label>
+      <node id="254">
+        <label>vtk-9.0/vtkPolyDataMapper.h</label>
       </node>
       <node id="224">
         <label>string</label>
       </node>
-      <node id="399">
+      <node id="369">
         <label>numpy/arrayobject.h</label>
-      </node>
-      <node id="381">
-        <label>/usr/local/include/vtk-9.0/vtkTextMapper.h</label>
-      </node>
-      <node id="370">
-        <label>/usr/local/include/vtk-9.0/vtkCollection.h</label>
       </node>
       <node id="219">
         <label>map</label>
       </node>
-      <node id="346">
-        <label>/usr/local/include/vtk-9.0/vtkContourValues.h</label>
-      </node>
-      <node id="394">
+      <node id="277">
         <label>/usr/local/include/vtk-9.0/vtkAbstractTransform.h</label>
       </node>
-      <node id="353">
-        <label>/usr/local/include/vtk-9.0/vtkPolyDataMapper.h</label>
+      <node id="265">
+        <label>vtk-9.0/vtkSurfaceReconstructionFilter.h</label>
       </node>
-      <node id="317">
+      <node id="355">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayValueRange_Generic.h</label>
       </node>
-      <node id="417">
+      <node id="387">
         <label>quad.h</label>
         <link refid="quad_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="416" relation="include">
+        <childnode refid="386" relation="include">
         </childnode>
       </node>
       <node id="201">
@@ -697,8 +628,6 @@
         </childnode>
         <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
-        </childnode>
         <childnode refid="255" relation="include">
         </childnode>
         <childnode refid="256" relation="include">
@@ -782,6 +711,8 @@
         <childnode refid="295" relation="include">
         </childnode>
         <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
         </childnode>
         <childnode refid="297" relation="include">
         </childnode>
@@ -937,8 +868,6 @@
         </childnode>
         <childnode refid="373" relation="include">
         </childnode>
-        <childnode refid="374" relation="include">
-        </childnode>
         <childnode refid="375" relation="include">
         </childnode>
         <childnode refid="376" relation="include">
@@ -959,13 +888,13 @@
         </childnode>
         <childnode refid="384" relation="include">
         </childnode>
-        <childnode refid="385" relation="include">
-        </childnode>
         <childnode refid="386" relation="include">
         </childnode>
         <childnode refid="387" relation="include">
         </childnode>
         <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
         </childnode>
         <childnode refid="389" relation="include">
         </childnode>
@@ -983,12 +912,6 @@
         </childnode>
         <childnode refid="396" relation="include">
         </childnode>
-        <childnode refid="397" relation="include">
-        </childnode>
-        <childnode refid="398" relation="include">
-        </childnode>
-        <childnode refid="399" relation="include">
-        </childnode>
         <childnode refid="400" relation="include">
         </childnode>
         <childnode refid="401" relation="include">
@@ -996,6 +919,14 @@
         <childnode refid="402" relation="include">
         </childnode>
         <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
         </childnode>
         <childnode refid="405" relation="include">
         </childnode>
@@ -1015,233 +946,170 @@
         </childnode>
         <childnode refid="413" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
-        </childnode>
-        <childnode refid="416" relation="include">
-        </childnode>
-        <childnode refid="417" relation="include">
-        </childnode>
-        <childnode refid="418" relation="include">
-        </childnode>
-        <childnode refid="415" relation="include">
-        </childnode>
-        <childnode refid="419" relation="include">
-        </childnode>
-        <childnode refid="420" relation="include">
-        </childnode>
-        <childnode refid="421" relation="include">
-        </childnode>
-        <childnode refid="422" relation="include">
-        </childnode>
-        <childnode refid="423" relation="include">
-        </childnode>
-        <childnode refid="424" relation="include">
-        </childnode>
-        <childnode refid="425" relation="include">
-        </childnode>
-        <childnode refid="426" relation="include">
-        </childnode>
-        <childnode refid="430" relation="include">
-        </childnode>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="432" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-        <childnode refid="434" relation="include">
-        </childnode>
-        <childnode refid="428" relation="include">
-        </childnode>
-        <childnode refid="427" relation="include">
-        </childnode>
-        <childnode refid="429" relation="include">
-        </childnode>
-        <childnode refid="435" relation="include">
-        </childnode>
-        <childnode refid="436" relation="include">
-        </childnode>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="438" relation="include">
-        </childnode>
-        <childnode refid="439" relation="include">
-        </childnode>
-        <childnode refid="440" relation="include">
-        </childnode>
-        <childnode refid="441" relation="include">
-        </childnode>
-        <childnode refid="442" relation="include">
-        </childnode>
-        <childnode refid="443" relation="include">
-        </childnode>
       </node>
-      <node id="309">
+      <node id="347">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayRange.h</label>
       </node>
-      <node id="294">
+      <node id="268">
+        <label>vtk-9.0/vtkTextProperty.h</label>
+      </node>
+      <node id="315">
         <label>/usr/local/include/vtk-9.0/vtkDataArray.h</label>
       </node>
-      <node id="307">
+      <node id="345">
         <label>/usr/local/include/vtk-9.0/vtkCell.h</label>
       </node>
-      <node id="342">
+      <node id="314">
         <label>/usr/local/include/vtk-9.0/vtkPoints.h</label>
       </node>
-      <node id="240">
+      <node id="282">
         <label>/usr/local/include/vtk-9.0/vtkSystemIncludes.h</label>
       </node>
-      <node id="322">
+      <node id="360">
         <label>/usr/local/include/vtk-9.0/vtkTypeList.h</label>
       </node>
-      <node id="314">
+      <node id="352">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayAccessor.h</label>
+      </node>
+      <node id="271">
+        <label>vtk-9.0/vtkXMLPolyDataWriter.h</label>
       </node>
       <node id="216">
         <label>fstream</label>
       </node>
-      <node id="349">
-        <label>/usr/local/include/vtk-9.0/vtkParametricFunctionSource.h</label>
+      <node id="249">
+        <label>vtk-9.0/vtkParametricFunctionSource.h</label>
       </node>
-      <node id="378">
-        <label>/usr/local/include/vtk-9.0/vtkImagingHybridModule.h</label>
-      </node>
-      <node id="293">
+      <node id="329">
         <label>/usr/local/include/vtk-9.0/vtkGenericDataArray.h</label>
       </node>
-      <node id="393">
+      <node id="276">
         <label>/usr/local/include/vtk-9.0/vtkHomogeneousTransform.h</label>
       </node>
-      <node id="401">
+      <node id="267">
+        <label>vtk-9.0/vtkTextMapper.h</label>
+      </node>
+      <node id="371">
         <label>GL/glu.h</label>
       </node>
-      <node id="365">
-        <label>/usr/local/include/vtk-9.0/vtkWindow.h</label>
-      </node>
-      <node id="246">
+      <node id="288">
         <label>/usr/local/include/vtk-9.0/vtkType.h</label>
       </node>
-      <node id="405">
+      <node id="375">
         <label>dimension.h</label>
         <link refid="dimension_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="436">
+      <node id="406">
         <label>axon.h</label>
         <link refid="axon_8h"/>
-        <childnode refid="435" relation="include">
+        <childnode refid="405" relation="include">
         </childnode>
       </node>
-      <node id="337">
+      <node id="308">
         <label>/usr/local/include/vtk-9.0/vtkCommonExecutionModelModule.h</label>
       </node>
-      <node id="431">
+      <node id="401">
         <label>synapse.h</label>
         <link refid="synapse_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="247">
+      <node id="289">
         <label>/usr/local/include/vtk-9.0/vtk_kwiml.h</label>
       </node>
-      <node id="442">
+      <node id="412">
         <label>neurotransmitter.h</label>
         <link refid="neurotransmitter_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="388">
-        <label>/usr/local/include/vtk-9.0/vtkXMLUnstructuredDataWriter.h</label>
-      </node>
-      <node id="244">
+      <node id="286">
         <label>/usr/local/include/vtk-9.0/vtkVersionMacros.h</label>
       </node>
-      <node id="319">
+      <node id="357">
         <label>/usr/local/include/vtk-9.0/vtkTypeInt32Array.h</label>
       </node>
-      <node id="336">
+      <node id="307">
         <label>/usr/local/include/vtk-9.0/vtkAlgorithm.h</label>
       </node>
-      <node id="333">
-        <label>/usr/local/include/vtk-9.0/vtkScalarsToColors.h</label>
+      <node id="263">
+        <label>vtk-9.0/vtkReverseSense.h</label>
       </node>
-      <node id="387">
-        <label>/usr/local/include/vtk-9.0/vtkIOXMLModule.h</label>
-      </node>
-      <node id="257">
+      <node id="278">
         <label>/usr/local/include/vtk-9.0/vtkObject.h</label>
       </node>
-      <node id="237">
-        <label>/usr/local/include/vtk-9.0/vtkAutoInit.h</label>
-      </node>
-      <node id="332">
-        <label>/usr/local/include/vtk-9.0/vtkColorTransferFunction.h</label>
-      </node>
-      <node id="423">
+      <node id="393">
         <label>cognitiveoutput.h</label>
         <link refid="cognitiveoutput_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
       <node id="228">
         <label>libcaercpp/libcaer.hpp</label>
       </node>
-      <node id="292">
+      <node id="326">
         <label>/usr/local/include/vtk-9.0/vtkObjectFactory.h</label>
       </node>
-      <node id="303">
+      <node id="331">
         <label>/usr/local/include/vtk-9.0/vtkIdList.h</label>
       </node>
       <node id="203">
         <label>sys/types.h</label>
       </node>
-      <node id="331">
-        <label>/usr/local/include/vtk-9.0/vtkFieldData.h</label>
+      <node id="250">
+        <label>vtk-9.0/vtkPointData.h</label>
       </node>
-      <node id="419">
+      <node id="389">
         <label>node.h</label>
         <link refid="node_8h"/>
         <childnode refid="220" relation="include">
         </childnode>
       </node>
-      <node id="310">
+      <node id="246">
+        <label>vtk-9.0/vtkCoordinate.h</label>
+      </node>
+      <node id="348">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayMeta.h</label>
       </node>
       <node id="234">
         <label>string.h</label>
       </node>
-      <node id="262">
+      <node id="299">
         <label>typeinfo</label>
       </node>
-      <node id="343">
+      <node id="256">
+        <label>vtk-9.0/vtkAppendPolyData.h</label>
+      </node>
+      <node id="364">
         <label>/usr/local/include/vtk-9.0/vtkCellLinks.h</label>
       </node>
-      <node id="289">
+      <node id="310">
         <label>/usr/local/include/vtk-9.0/vtkCommonDataModelModule.h</label>
       </node>
-      <node id="318">
+      <node id="356">
         <label>tuple</label>
       </node>
-      <node id="341">
+      <node id="313">
         <label>/usr/local/include/vtk-9.0/vtkDataObject.h</label>
       </node>
       <node id="232">
@@ -1268,40 +1136,40 @@
         <childnode refid="206" relation="include">
         </childnode>
       </node>
-      <node id="245">
+      <node id="287">
         <label>/usr/local/include/vtk-9.0/vtkIOStream.h</label>
       </node>
-      <node id="398">
+      <node id="368">
         <label>Python.h</label>
       </node>
-      <node id="432">
+      <node id="402">
         <label>interneuronspace.h</label>
         <link refid="interneuronspace_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
       <node id="210">
         <label>unistd.h</label>
       </node>
-      <node id="380">
-        <label>/usr/local/include/vtk-9.0/vtkTexturedActor2D.h</label>
-      </node>
       <node id="226">
         <label>vector</label>
       </node>
-      <node id="280">
+      <node id="334">
         <label>/usr/local/include/vtk-9.0/vtkSmartPointerBase.h</label>
       </node>
-      <node id="403">
+      <node id="238">
+        <label>vtk-9.0/vtkVersion.h</label>
+      </node>
+      <node id="373">
         <label>universe.h</label>
         <link refid="universe_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
@@ -1310,113 +1178,104 @@
         <childnode refid="226" relation="include">
         </childnode>
       </node>
-      <node id="372">
-        <label>/usr/local/include/vtk-9.0/vtkVolume.h</label>
-      </node>
-      <node id="283">
+      <node id="337">
         <label>/usr/local/include/vtk-9.0/vtkNew.h</label>
       </node>
-      <node id="389">
-        <label>/usr/local/include/vtk-9.0/vtkXMLWriter.h</label>
-      </node>
-      <node id="355">
-        <label>/usr/local/include/vtk-9.0/vtkAbstractMapper3D.h</label>
-      </node>
-      <node id="306">
+      <node id="344">
         <label>/usr/local/include/vtk-9.0/vtkVariantCast.h</label>
-      </node>
-      <node id="347">
-        <label>/usr/local/include/vtk-9.0/vtkCommonMiscModule.h</label>
       </node>
       <node id="229">
         <label>libcaercpp/events/packetContainer.hpp</label>
       </node>
-      <node id="345">
+      <node id="366">
         <label>/usr/local/include/vtk-9.0/vtkPolyDataInternals.h</label>
       </node>
       <node id="266">
-        <label>/usr/local/include/vtk-9.0/vtkProp.h</label>
+        <label>vtk-9.0/vtkTextActor.h</label>
       </node>
-      <node id="433">
+      <node id="403">
         <label>membrane.h</label>
         <link refid="membrane_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="425" relation="include">
+        <childnode refid="395" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
       </node>
-      <node id="282">
+      <node id="336">
         <label>utility</label>
       </node>
-      <node id="410">
+      <node id="380">
         <label>matter.h</label>
         <link refid="matter_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="352">
-        <label>/usr/local/include/vtk-9.0/vtkPolygon.h</label>
+      <node id="243">
+        <label>vtk-9.0/vtkCellData.h</label>
       </node>
       <node id="213">
         <label>array</label>
       </node>
+      <node id="245">
+        <label>vtk-9.0/vtkContourFilter.h</label>
+      </node>
       <node id="223">
         <label>sstream</label>
       </node>
-      <node id="375">
-        <label>/usr/local/include/vtk-9.0/vtkReverseSense.h</label>
-      </node>
-      <node id="385">
+      <node id="305">
         <label>/usr/local/include/vtk-9.0/vtkFiltersGeneralModule.h</label>
       </node>
-      <node id="340">
+      <node id="312">
         <label>/usr/local/include/vtk-9.0/vtkDataSet.h</label>
       </node>
-      <node id="328">
-        <label>/usr/local/include/vtk-9.0/vtkDataSetAttributesFieldList.h</label>
+      <node id="240">
+        <label>vtk-9.0/vtkActor2D.h</label>
       </node>
-      <node id="395">
+      <node id="302">
         <label>/usr/local/include/vtk-9.0/vtkMatrix4x4.h</label>
       </node>
-      <node id="379">
-        <label>/usr/local/include/vtk-9.0/vtkTextActor.h</label>
+      <node id="260">
+        <label>vtk-9.0/vtkRenderWindow.h</label>
       </node>
-      <node id="270">
-        <label>/usr/local/include/vtk-9.0/vtkCoordinate.h</label>
+      <node id="269">
+        <label>vtk-9.0/vtkUnsignedCharArray.h</label>
       </node>
-      <node id="428">
+      <node id="398">
         <label>dendrite.h</label>
         <link refid="dendrite_8h"/>
-        <childnode refid="429" relation="include">
+        <childnode refid="399" relation="include">
         </childnode>
       </node>
-      <node id="358">
-        <label>/usr/local/include/vtk-9.0/vtkMapper2D.h</label>
+      <node id="237">
+        <label>vtk-9.0/vtkAutoInit.h</label>
       </node>
-      <node id="427">
+      <node id="397">
         <label>dendritebranch.h</label>
         <link refid="dendritebranch_8h"/>
-        <childnode refid="428" relation="include">
+        <childnode refid="398" relation="include">
         </childnode>
       </node>
-      <node id="437">
+      <node id="241">
+        <label>vtk-9.0/vtkCamera.h</label>
+      </node>
+      <node id="242">
+        <label>vtk-9.0/vtkCellArray.h</label>
+      </node>
+      <node id="407">
         <label>axonbranch.h</label>
         <link refid="axonbranch_8h"/>
-        <childnode refid="436" relation="include">
+        <childnode refid="406" relation="include">
         </childnode>
       </node>
-      <node id="274">
-        <label>/usr/local/include/vtk-9.0/vtkTuple.h</label>
-      </node>
-      <node id="252">
+      <node id="294">
         <label>/usr/local/include/vtk-9.0/vtkWrappingHints.h</label>
       </node>
       <node id="212">
@@ -1425,40 +1284,34 @@
       <node id="220">
         <label>math.h</label>
       </node>
-      <node id="357">
-        <label>/usr/local/include/vtk-9.0/vtkPolyDataMapper2D.h</label>
-      </node>
-      <node id="273">
-        <label>/usr/local/include/vtk-9.0/vtkVector.h</label>
-      </node>
       <node id="264">
-        <label>/usr/local/include/vtk-9.0/vtkActor.h</label>
+        <label>vtk-9.0/vtkSmartPointer.h</label>
       </node>
-      <node id="277">
+      <node id="367">
         <label>cstdlib</label>
       </node>
-      <node id="430">
+      <node id="257">
+        <label>vtk-9.0/vtkProgrammableSource.h</label>
+      </node>
+      <node id="400">
         <label>neuroreceptor.h</label>
         <link refid="neuroreceptor_8h"/>
-        <childnode refid="426" relation="include">
+        <childnode refid="396" relation="include">
         </childnode>
       </node>
-      <node id="384">
-        <label>/usr/local/include/vtk-9.0/vtkVertexGlyphFilter.h</label>
-      </node>
-      <node id="313">
+      <node id="351">
         <label>/usr/local/include/vtk-9.0/vtkDataArrayTupleRange_Generic.h</label>
       </node>
-      <node id="255">
+      <node id="300">
         <label>/usr/local/include/vtk-9.0/vtkTimeStamp.h</label>
       </node>
-      <node id="425">
+      <node id="395">
         <label>neuron.h</label>
         <link refid="neuron_8h"/>
-        <childnode refid="421" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
       </node>
-      <node id="295">
+      <node id="316">
         <label>/usr/local/include/vtk-9.0/vtkAbstractArray.h</label>
       </node>
       <node id="202">
@@ -1467,251 +1320,218 @@
       <node id="218">
         <label>iostream</label>
       </node>
-      <node id="249">
+      <node id="291">
         <label>/usr/local/include/vtk-9.0/vtkkwiml/int.h</label>
       </node>
-      <node id="429">
+      <node id="399">
         <label>soma.h</label>
         <link refid="soma_8h"/>
-        <childnode refid="425" relation="include">
+        <childnode refid="395" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
       </node>
-      <node id="327">
-        <label>/usr/local/include/vtk-9.0/vtkDataSetAttributes.h</label>
-      </node>
-      <node id="439">
+      <node id="409">
         <label>schwanncell.h</label>
         <link refid="schwanncell_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="432" relation="include">
+        <childnode refid="402" relation="include">
         </childnode>
       </node>
-      <node id="258">
+      <node id="280">
         <label>/usr/local/include/vtk-9.0/vtkObjectBase.h</label>
       </node>
-      <node id="304">
+      <node id="332">
         <label>unordered_map</label>
       </node>
       <node id="235">
         <label>ctype.h</label>
       </node>
-      <node id="259">
+      <node id="281">
         <label>/usr/local/include/vtk-9.0/vtkIndent.h</label>
       </node>
-      <node id="300">
+      <node id="321">
         <label>climits</label>
       </node>
-      <node id="334">
-        <label>/usr/local/include/vtk-9.0/vtkContourFilter.h</label>
+      <node id="262">
+        <label>vtk-9.0/vtkRenderWindowInteractor.h</label>
       </node>
-      <node id="301">
+      <node id="258">
+        <label>vtk-9.0/vtkProperty.h</label>
+      </node>
+      <node id="322">
         <label>/usr/local/include/vtk-9.0/vtkVTK_USE_SCALED_SOA_ARRAYS.h</label>
       </node>
-      <node id="391">
+      <node id="274">
         <label>/usr/local/include/vtk-9.0/vtkCommonTransformsModule.h</label>
       </node>
-      <node id="335">
+      <node id="306">
         <label>/usr/local/include/vtk-9.0/vtkPolyDataAlgorithm.h</label>
       </node>
-      <node id="298">
+      <node id="319">
         <label>/usr/local/include/vtk-9.0/vtkUnicodeString.h</label>
       </node>
-      <node id="440">
+      <node id="410">
         <label>axonbouton.h</label>
         <link refid="axonbouton_8h"/>
-        <childnode refid="437" relation="include">
+        <childnode refid="407" relation="include">
         </childnode>
       </node>
-      <node id="284">
+      <node id="338">
         <label>/usr/local/include/vtk-9.0/vtkTypeTraits.h</label>
       </node>
-      <node id="404">
+      <node id="374">
         <label>chrono</label>
       </node>
-      <node id="243">
+      <node id="285">
         <label>/usr/local/include/vtk-9.0/vtkConfigure.h</label>
       </node>
-      <node id="291">
+      <node id="325">
         <label>/usr/local/include/vtk-9.0/vtkBuffer.h</label>
       </node>
-      <node id="241">
+      <node id="283">
         <label>/usr/local/include/vtk-9.0/vtkWin32Header.h</label>
-      </node>
-      <node id="373">
-        <label>/usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h</label>
       </node>
       <node id="230">
         <label>csignal</label>
       </node>
-      <node id="371">
-        <label>/usr/local/include/vtk-9.0/vtkVolumeCollection.h</label>
+      <node id="259">
+        <label>vtk-9.0/vtkProperty2D.h</label>
       </node>
-      <node id="441">
+      <node id="411">
         <label>synapticvesicle.h</label>
         <link refid="synapticvesicle_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="440" relation="include">
+        <childnode refid="410" relation="include">
         </childnode>
       </node>
       <node id="204">
         <label>sys/socket.h</label>
       </node>
-      <node id="377">
-        <label>/usr/local/include/vtk-9.0/vtkImageAlgorithm.h</label>
-      </node>
-      <node id="426">
+      <node id="396">
         <label>dendritecleft.h</label>
         <link refid="dendritecleft_8h"/>
-        <childnode refid="427" relation="include">
+        <childnode refid="397" relation="include">
         </childnode>
       </node>
-      <node id="267">
-        <label>/usr/local/include/vtk-9.0/vtkRenderingCoreModule.h</label>
+      <node id="270">
+        <label>vtk-9.0/vtkVertexGlyphFilter.h</label>
       </node>
-      <node id="407">
+      <node id="377">
         <label>elementaryforce.h</label>
         <link refid="elementaryforce_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
       <node id="225">
         <label>thread</label>
       </node>
-      <node id="418">
+      <node id="388">
         <label>line.h</label>
         <link refid="line_8h"/>
         <childnode refid="220" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="253">
+      <node id="295">
         <label>/usr/local/include/vtk-9.0/vtkOStreamWrapper.h</label>
       </node>
-      <node id="359">
-        <label>/usr/local/include/vtk-9.0/vtkAppendPolyData.h</label>
+      <node id="255">
+        <label>vtk-9.0/vtkPolyDataMapper2D.h</label>
       </node>
-      <node id="299">
+      <node id="320">
         <label>/usr/local/include/vtk-9.0/vtkVariantInlineOperators.h</label>
       </node>
-      <node id="261">
+      <node id="298">
         <label>type_traits</label>
       </node>
-      <node id="374">
-        <label>/usr/local/include/vtk-9.0/vtkCommand.h</label>
+      <node id="248">
+        <label>vtk-9.0/vtkMath.h</label>
       </node>
-      <node id="348">
-        <label>/usr/local/include/vtk-9.0/vtkFloatArray.h</label>
-      </node>
-      <node id="382">
-        <label>/usr/local/include/vtk-9.0/vtkTextProperty.h</label>
-      </node>
-      <node id="323">
+      <node id="361">
         <label>/usr/local/include/vtk-9.0/vtkTypeListMacros.h</label>
       </node>
-      <node id="287">
+      <node id="328">
         <label>algorithm</label>
-      </node>
-      <node id="386">
-        <label>/usr/local/include/vtk-9.0/vtkXMLPolyDataWriter.h</label>
       </node>
       <node id="227">
         <label>libcaercpp/devices/dynapse.hpp</label>
       </node>
-      <node id="390">
+      <node id="273">
         <label>/usr/local/include/vtk-9.0/vtkTransform.h</label>
       </node>
-      <node id="400">
+      <node id="370">
         <label>GL/gl.h</label>
       </node>
       <node id="207">
         <label>stdio.h</label>
       </node>
-      <node id="366">
-        <label>/usr/local/include/vtk-9.0/vtkRenderer.h</label>
-      </node>
-      <node id="296">
+      <node id="317">
         <label>/usr/local/include/vtk-9.0/vtkVariant.h</label>
       </node>
       <node id="214">
         <label>cstring</label>
       </node>
-      <node id="344">
+      <node id="365">
         <label>/usr/local/include/vtk-9.0/vtkAbstractCellLinks.h</label>
       </node>
-      <node id="360">
-        <label>/usr/local/include/vtk-9.0/vtkProgrammableSource.h</label>
-      </node>
-      <node id="376">
-        <label>/usr/local/include/vtk-9.0/vtkSurfaceReconstructionFilter.h</label>
-      </node>
-      <node id="256">
-        <label>/usr/local/include/vtk-9.0/vtkVersion.h</label>
-      </node>
-      <node id="265">
-        <label>/usr/local/include/vtk-9.0/vtkProp3D.h</label>
-      </node>
-      <node id="330">
-        <label>memory</label>
-      </node>
-      <node id="325">
+      <node id="363">
         <label>initializer_list</label>
       </node>
-      <node id="434">
+      <node id="404">
         <label>membranechannel.h</label>
         <link refid="membranechannel_8h"/>
-        <childnode refid="404" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="433" relation="include">
+        <childnode refid="403" relation="include">
         </childnode>
       </node>
-      <node id="411">
+      <node id="381">
         <label>monomer.h</label>
         <link refid="monomer_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
-      <node id="397">
-        <label>/usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h</label>
-      </node>
-      <node id="278">
+      <node id="341">
         <label>/usr/local/include/vtk-9.0/vtkMath.h</label>
       </node>
-      <node id="250">
+      <node id="304">
+        <label>/usr/local/include/vtk-9.0/vtkTransformPolyDataFilter.h</label>
+      </node>
+      <node id="292">
         <label>inttypes.h</label>
       </node>
-      <node id="288">
+      <node id="323">
         <label>/usr/local/include/vtk-9.0/vtkCellArray.h</label>
       </node>
-      <node id="279">
+      <node id="333">
         <label>/usr/local/include/vtk-9.0/vtkSmartPointer.h</label>
       </node>
-      <node id="420">
+      <node id="390">
         <label>apptimer.h</label>
         <link refid="apptimer_8h"/>
         <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="403" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -3615,44 +3435,44 @@
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>VTK_MODULE_INIT<sp/>is<sp/>definitely<sp/>required.<sp/>Without<sp/>it<sp/>NULL<sp/>is<sp/>returned<sp/>to<sp/>::New()<sp/>type<sp/>calls</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Added<sp/>path<sp/>/usr/local/include/vtk-9.0/<sp/>due<sp/>to<sp/>Eclipse<sp/>failure<sp/>to<sp/>successfully<sp/>find<sp/>include<sp/>path</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkAutoInit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkAutoInit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><ref refid="_brain_harmonics_8cc_1aa072a4b02405a5306cadd819b01e3cee" kindref="member">VTK_MODULE_INIT</ref>(vtkRenderingOpenGL2);<sp/></highlight><highlight class="comment">//<sp/>VTK<sp/>was<sp/>built<sp/>with<sp/>vtkRenderingOpenGL2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><ref refid="_brain_harmonics_8cc_1aa072a4b02405a5306cadd819b01e3cee" kindref="member">VTK_MODULE_INIT</ref>(vtkRenderingFreeType);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><ref refid="_brain_harmonics_8cc_1aa072a4b02405a5306cadd819b01e3cee" kindref="member">VTK_MODULE_INIT</ref>(vtkInteractionStyle);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkVersion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkActor2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkCamera.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkCellArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkCellData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkColorTransferFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkContourFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkCoordinate.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkFloatArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkMath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkParametricFunctionSource.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPointData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPoints.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPolygon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPolyData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPolyDataMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkPolyDataMapper2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkAppendPolyData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkProgrammableSource.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkProperty2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkRenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkRenderer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkReverseSense.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkSmartPointer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkSurfaceReconstructionFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkTextActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkTextMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkTextProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkUnsignedCharArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkVertexGlyphFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkXMLPolyDataWriter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkVersion.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkActor2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkCamera.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkCellArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkCellData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkColorTransferFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkContourFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkCoordinate.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkFloatArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkMath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkParametricFunctionSource.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPointData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPoints.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPolygon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPolyData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPolyDataMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkPolyDataMapper2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkAppendPolyData.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkProgrammableSource.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkProperty2D.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkRenderWindow.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkRenderer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkRenderWindowInteractor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkReverseSense.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkSmartPointer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkSurfaceReconstructionFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkTextActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkTextMapper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkTextProperty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkUnsignedCharArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkVertexGlyphFilter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vtk-9.0/vtkXMLPolyDataWriter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;/usr/local/include/vtk-9.0/vtkTransform.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -4926,7 +4746,7 @@
 <codeline lineno="1380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l_screenX<sp/>=<sp/>1000.0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l_screenY<sp/>=<sp/>800.0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//double<sp/>l_scale<sp/>=<sp/>300;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**&lt;<sp/>Vertices<sp/>are<sp/>multiplied<sp/>by<sp/>this<sp/>factor<sp/>to<sp/>enable<sp/>fitting<sp/>within<sp/>the<sp/>graphics<sp/>window.<sp/>Adjust<sp/>to<sp/>suit<sp/>environment<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>l_screenTitle<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Neural<sp/>Mimicry<sp/>-<sp/>an<sp/>AARNN<sp/>Cognitive<sp/>AI<sp/>System&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glad_8h_1ae84541b4f3d8e1ea24ec0f466a8c568b" kindref="member">std::string</ref><sp/>l_screenTitle<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Developed<sp/>from<sp/>Project<sp/>NeuralMimicry<sp/>-<sp/>the<sp/>basis<sp/>of<sp/>an<sp/>AARNN<sp/>Cognitive<sp/>AI<sp/>System&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1384"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>l_displayString;</highlight></codeline>
 <codeline lineno="1385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="1386"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter_Charge<sp/>=<sp/>-1;<sp/></highlight><highlight class="comment">//<sp/>Used<sp/>to<sp/>loop<sp/>between<sp/>min<sp/>0<sp/>and<sp/>max<sp/>6</highlight><highlight class="normal"></highlight></codeline>
@@ -5055,7 +4875,7 @@
 <codeline lineno="1509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_brain_harmonics_8cc_1a909ced1ec126d134c4c2bf71f5ead148" kindref="member">init_numpy</ref>();<sp/></highlight><highlight class="comment">//<sp/>Numpy<sp/>array<sp/>initialisation</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1512"><highlight class="normal"><sp/><sp/><sp/><sp/>pName<sp/>=<sp/>PyUnicode_FromString(</highlight><highlight class="stringliteral">&quot;pycompute&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>File<sp/>to<sp/>be<sp/>called.<sp/>Must<sp/>be<sp/>in<sp/>the<sp/>same<sp/>folder<sp/>as<sp/>the<sp/>C++<sp/>executable<sp/>and<sp/>Not<sp/>have<sp/>a<sp/>.py<sp/>extension</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1512"><highlight class="normal"><sp/><sp/><sp/><sp/>pName<sp/>=<sp/>PyUnicode_FromString(</highlight><highlight class="stringliteral">&quot;pycompute&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>File<sp/>to<sp/>be<sp/>called.<sp/>Must<sp/>be<sp/>in<sp/>the<sp/>same<sp/>folder<sp/>as<sp/>the<sp/>C++<sp/>executable<sp/>and<sp/>with<sp/>a<sp/>.py<sp/>extension</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1513"><highlight class="normal"><sp/><sp/><sp/><sp/>pModule<sp/>=<sp/>PyImport_Import(pName);</highlight></codeline>
 <codeline lineno="1514"><highlight class="normal"><sp/><sp/><sp/><sp/>Py_DECREF(pName);</highlight></codeline>
 <codeline lineno="1515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

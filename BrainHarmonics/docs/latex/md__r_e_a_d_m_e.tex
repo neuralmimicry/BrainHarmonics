@@ -1,12 +1,12 @@
-\section*{This file forms the basis of build requirements to get the software to compile.}
+\subsection*{This file forms the basis of build requirements to get the software to compile.}
 
-\section*{Original code donated to the Open Source community by the Neural\+Mimicry Project, Paul Isaac\textquotesingle{}s. 08-\/\+Apr-\/2020.}
+\subsubsection*{Original code donated to the Open Source community by the Neural\+Mimicry Project, Paul Isaac\textquotesingle{}s. 08-\/\+Apr-\/2020.}
 
-\section*{Ongoing code to be managed via Linaro}
+\subsubsection*{Ongoing code to be managed via Linaro}
 
-\section*{(c) Linaro 2020.}
+\subsection*{(c) Linaro 2020.}
 
-\section*{May be freely copied whilst maintaining reference to origin and copyright.}
+\subsection*{May be freely copied whilst maintaining reference to origin and copyright.}
 
 For cross-\/platform compatibility
 
@@ -44,9 +44,25 @@ sudo apt-get install build-essential git gcc cmake pkg-config libglfw3-dev libgl
        libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy
        python2.7-dev python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
 \end{DoxyCode}
- Agree to all dependency install requirements
+ For Red Hat Users 
+\begin{DoxyCode}
+(for RHEL 8.x)
+sudo dnf update
 
-Base folder is $\sim$/\+Developer Folders created $\sim$/\+Developer/\+C\+Make\+Files $\sim$/\+Developer/\+Brain\+Harmonics
+sudo dnf install glfw-devel opencv-devel libpcap-devel git autoconf automake meson ninja-build parallel
+       rubygem-sass sassc optipng libffi-devel gcc redhat-rpm-config inkscape gtk3-devel gdk-pixbuf2-xlib glib2-devel
+       glib2 libxml2-devel librsvg2-devel gnome-themes-standard gtk-murrine-engine gtk2-engines google-roboto-fonts
+       google-noto-sans-fonts google-noto-sans-mono-fonts
+\end{DoxyCode}
+
+
+Agree to all dependency install requirements
+
+Base folder is $\sim$/\+Developer
+
+git clone \href{mailto:git@github.com}{\tt git@github.\+com}\+:Linaro/\+Brain\+Harmonics.\+git
+
+Folders created $\sim$/\+Developer/\+Brain\+Harmonics
 
 Install the Q\+T/\+V\+TK toolkit
 
@@ -84,7 +100,7 @@ sudo make install
 \end{DoxyCode}
 
 
-Install Open\+CV specifics (Ubuntu only) 
+Install Open\+CV specifics (Linux only) 
 \begin{DoxyCode}
 cd ~/Developer
 git clone https://github.com/opencv/opencv.git
@@ -108,7 +124,7 @@ sudo make install
 \end{DoxyCode}
 
 
-Install libcaer and its dependencies (Ubuntu \& Mac\+OS)
+Install libcaer and its dependencies (Linux \& Mac\+OS)
 
 
 \begin{DoxyCode}
@@ -121,4 +137,12 @@ sudo make install
 \end{DoxyCode}
 
 
-How to build... 
+How to build...
+
+How to run...
+
+Once built, execute ./build/\+Brain\+Harmonics from the $\sim$/\+Developer/\+Brain\+Harmonics folder.
+
+Overview\+: Creates a number of simulation universes from which to create neurons/synapses.
+
+Skeletal framework exists to call Python routines if required. Currently minimal paramterisation files but elements are there. 

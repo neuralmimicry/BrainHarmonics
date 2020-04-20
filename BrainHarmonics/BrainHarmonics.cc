@@ -64,44 +64,44 @@ extern "C" {
 
     // The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
     // Added path /usr/local/include/vtk-9.0/ due to Eclipse failure to successfully find include path
-#include </usr/local/include/vtk-9.0/vtkAutoInit.h>
+#include <vtk-9.0/vtkAutoInit.h>
 VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
 VTK_MODULE_INIT(vtkRenderingFreeType);
 VTK_MODULE_INIT(vtkInteractionStyle);
-#include </usr/local/include/vtk-9.0/vtkVersion.h>
-#include </usr/local/include/vtk-9.0/vtkActor.h>
-#include </usr/local/include/vtk-9.0/vtkActor2D.h>
-#include </usr/local/include/vtk-9.0/vtkCamera.h>
-#include </usr/local/include/vtk-9.0/vtkCellArray.h>
-#include </usr/local/include/vtk-9.0/vtkCellData.h>
-#include </usr/local/include/vtk-9.0/vtkColorTransferFunction.h>
-#include </usr/local/include/vtk-9.0/vtkContourFilter.h>
-#include </usr/local/include/vtk-9.0/vtkCoordinate.h>
-#include </usr/local/include/vtk-9.0/vtkFloatArray.h>
-#include </usr/local/include/vtk-9.0/vtkMath.h>
-#include </usr/local/include/vtk-9.0/vtkParametricFunctionSource.h>
-#include </usr/local/include/vtk-9.0/vtkPointData.h>
-#include </usr/local/include/vtk-9.0/vtkPoints.h>
-#include </usr/local/include/vtk-9.0/vtkPolygon.h>
-#include </usr/local/include/vtk-9.0/vtkPolyData.h>
-#include </usr/local/include/vtk-9.0/vtkPolyDataMapper.h>
-#include </usr/local/include/vtk-9.0/vtkPolyDataMapper2D.h>
-#include </usr/local/include/vtk-9.0/vtkAppendPolyData.h>
-#include </usr/local/include/vtk-9.0/vtkProgrammableSource.h>
-#include </usr/local/include/vtk-9.0/vtkProperty.h>
-#include </usr/local/include/vtk-9.0/vtkProperty2D.h>
-#include </usr/local/include/vtk-9.0/vtkRenderWindow.h>
-#include </usr/local/include/vtk-9.0/vtkRenderer.h>
-#include </usr/local/include/vtk-9.0/vtkRenderWindowInteractor.h>
-#include </usr/local/include/vtk-9.0/vtkReverseSense.h>
-#include </usr/local/include/vtk-9.0/vtkSmartPointer.h>
-#include </usr/local/include/vtk-9.0/vtkSurfaceReconstructionFilter.h>
-#include </usr/local/include/vtk-9.0/vtkTextActor.h>
-#include </usr/local/include/vtk-9.0/vtkTextMapper.h>
-#include </usr/local/include/vtk-9.0/vtkTextProperty.h>
-#include </usr/local/include/vtk-9.0/vtkUnsignedCharArray.h>
-#include </usr/local/include/vtk-9.0/vtkVertexGlyphFilter.h>
-#include </usr/local/include/vtk-9.0/vtkXMLPolyDataWriter.h>
+#include <vtk-9.0/vtkVersion.h>
+#include <vtk-9.0/vtkActor.h>
+#include <vtk-9.0/vtkActor2D.h>
+#include <vtk-9.0/vtkCamera.h>
+#include <vtk-9.0/vtkCellArray.h>
+#include <vtk-9.0/vtkCellData.h>
+#include <vtk-9.0/vtkColorTransferFunction.h>
+#include <vtk-9.0/vtkContourFilter.h>
+#include <vtk-9.0/vtkCoordinate.h>
+#include <vtk-9.0/vtkFloatArray.h>
+#include <vtk-9.0/vtkMath.h>
+#include <vtk-9.0/vtkParametricFunctionSource.h>
+#include <vtk-9.0/vtkPointData.h>
+#include <vtk-9.0/vtkPoints.h>
+#include <vtk-9.0/vtkPolygon.h>
+#include <vtk-9.0/vtkPolyData.h>
+#include <vtk-9.0/vtkPolyDataMapper.h>
+#include <vtk-9.0/vtkPolyDataMapper2D.h>
+#include <vtk-9.0/vtkAppendPolyData.h>
+#include <vtk-9.0/vtkProgrammableSource.h>
+#include <vtk-9.0/vtkProperty.h>
+#include <vtk-9.0/vtkProperty2D.h>
+#include <vtk-9.0/vtkRenderWindow.h>
+#include <vtk-9.0/vtkRenderer.h>
+#include <vtk-9.0/vtkRenderWindowInteractor.h>
+#include <vtk-9.0/vtkReverseSense.h>
+#include <vtk-9.0/vtkSmartPointer.h>
+#include <vtk-9.0/vtkSurfaceReconstructionFilter.h>
+#include <vtk-9.0/vtkTextActor.h>
+#include <vtk-9.0/vtkTextMapper.h>
+#include <vtk-9.0/vtkTextProperty.h>
+#include <vtk-9.0/vtkUnsignedCharArray.h>
+#include <vtk-9.0/vtkVertexGlyphFilter.h>
+#include <vtk-9.0/vtkXMLPolyDataWriter.h>
 #include <cmath>
 
 #include </usr/local/include/vtk-9.0/vtkTransform.h>

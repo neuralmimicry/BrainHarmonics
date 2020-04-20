@@ -183,6 +183,7 @@ var dir_d748bd73cd9ede3205ca8bf8e0560932 =
     [ "proteins.h", "proteins_8h.html", [
       [ "Polymer", "class_polymer.html", "class_polymer" ]
     ] ],
+    [ "pycompute.py", "_brain_harmonics_2pycompute_8py.html", "_brain_harmonics_2pycompute_8py" ],
     [ "quad.cc", "quad_8cc.html", null ],
     [ "quad.h", "quad_8h.html", [
       [ "Quad", "class_quad.html", "class_quad" ]
