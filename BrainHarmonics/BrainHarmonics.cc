@@ -1497,7 +1497,7 @@ int main(int argc, const char * argv[])
     setenv("PYTHONPATH", ".", 0);
     
     int pyArgc = 4;
-        //!    const char pyArgv[] = { ' ','p','y','c','o','m','p','u','t','e',' ','m','u','l','t','i','p','l','y',' ','3',' ','4','\0'}
+        //!    const char pyArgv[] = { ' ','b','h','c','o','m','p','u','t','e',' ','m','u','l','t','i','p','l','y',' ','3',' ','4','\0'}
     
     PyObject *pName, *pModule, *pDict, *pFunc;
     PyObject *pArgs, *pValue;
@@ -1520,7 +1520,7 @@ int main(int argc, const char * argv[])
         init_numpy(); //! Numpy array initialisation
         }
     
-    pName = PyUnicode_FromString("pycompute");    //! File to be called. Must be in the same folder as the C++ executable and with a .py extension
+    pName = PyUnicode_FromString("bhcompute");    //! File to be called. Must be in the same folder as the C++ executable and with a .py extension
     pModule = PyImport_Import(pName);
     Py_DECREF(pName);
     
