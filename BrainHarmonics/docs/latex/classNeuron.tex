@@ -1,0 +1,796 @@
+\hypertarget{classNeuron}{}\section{Neuron Class Reference}
+\label{classNeuron}\index{Neuron@{Neuron}}
+
+
+{\ttfamily \#include $<$neuron.\+h$>$}
+
+Inheritance diagram for Neuron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classNeuron}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNeuron_1_1ObjectConnection}{Object\+Connection}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNeuron_a823487d01615fadb8ac19a2768dd9d96}{Neuron}} ()
+\item 
+\mbox{\hyperlink{classNeuron_acbc433cac4f27aa7f4e05be26c336aa5}{Neuron}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classNeuron_a4611499895417d44250c452d0fc719a6}{Neuron}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classNeuron_a6839febd20fb8f776151e00142411a56}{Neuron}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classNeuron_aecd41febe74ef417230cd74af0c8b801}{$\sim$\+Neuron}} ()
+\item 
+unsigned int \mbox{\hyperlink{classNeuron_a0b5fe55bf939808986b3697d18a834f4}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuron_a93cce70c19c8e70accaa31908d3f29f6}{Get\+Capacity}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuron_a8f5766ea61dc46b7a25361df540755ec}{Set\+Capacity}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+int \mbox{\hyperlink{classNeuron_a745b090da1b8f8fc7e3cf0ca06dfb117}{Get\+Usage}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuron_abf99856ac41b5c9c4948b3204bbc1590}{Set\+Usage}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+double \mbox{\hyperlink{classNeuron_a91dd5325856e246d98c2864e1c955972}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeuron_a94accac3223afdecd1edf25e6db59ace}{Get\+Gate\+Keeper}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeuron_a794c8fa270ea0600dab4fd13c25912fd}{Get\+Channel\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeuron_ae8b6c47bebe302e62721dc4a6e447ca2}{Get\+Channel\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classNeuron_adfee1a62df820344b84fe2020451b24f}{Get\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuron_a98f326ea86e6e8371b639609a4495c37}{Get\+Neuron\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeuron_a0573244d3c78a22a45c249db536cbb68}{Get\+Resting\+Potential}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuron_aff3a33f5d8ef5dacdec9c03df50f168c}{Get\+Neuron\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuron_aa6f1237ed89c48eb57610083edf43efa}{Get\+Soma\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuron_ae18e23983d02953fa6886bef0bbeb339}{Set\+Soma\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classNeuron_a92f942f6f0bd783c39bb550cf4bb8fd0}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classNeuron_a5efa690ce4d8ff2f8dfb1fbfd84c5279}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classNeuron_a492f597021faf1b74942bc75364c3c22}{Set\+Gate\+Keeper}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classNeuron_ae463ad8173c63e7970a5f4594667d481}{Set\+Channel\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classNeuron_aed1ba99e24b905cd91a519c33b5a62b0}{Set\+Channel\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classNeuron_af9ad96e27f7692e9e328d90e4c96977a}{Set\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, bool val)
+\item 
+void \mbox{\hyperlink{classNeuron_a32fe82aa21f8a68392d696eea3a34c99}{toggle\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuron_afc685a0444425fceab6685a6ee004b65}{Set\+Neuron\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classNeuron_aa06d0f1a129e4a901a60e7343bc43533}{Set\+Neuron\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classNeuron_ab371e2dacf2cdde8db5547b72fb45ca1}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \mbox{\hyperlink{classNeuron_a4c154fecb0b689d7da9d8d274f067ccf}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classNeuron_a82d0a4739244d79ff929be01eeb0be28}{Open\+Gate}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a32593a869b25c778c1856c36704f49cf}{Create\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a2016d83b02bfe9e5548d5c24ef31dded}{Create\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a7706e0f722c70138458423c07b6b153b}{Clone\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a508841fa635a6e89609c514a79ea59da}{Clone\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a6ff7510f73e29c31003b016bdcb4a70e}{Destroy\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a32b3a98eec58dc66481a2b877a7592cb}{Destroy\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a6198fa352056e3bbe1e979adf088b900}{Add\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a78a0f48a669b6ea20280829304e51de2}{Add\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a4f8c2f0c1b294493a7c581a7f46c2863}{Remove\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a976b1bab63d0bd21b1c8c8e1cfbd17fe}{Remove\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a8539a7965349078a7b1c1265895daefa}{Get\+Soma}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a867fbd498b54c115a2c8769f83c48020}{Get\+Somas}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_af06efbcc1a96af0290673e9e048267cf}{Create\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a5f6f460c6a98319a05c3ba06d14e6f60}{Create\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_ab85f7c42466657095efb3aca5a9ee71d}{Clone\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_ae119d77522a4f11f5d9b1e935a9c80ba}{Clone\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a127d1b915e976c63e731a94b7d27e0b1}{Destroy\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_ab77feff95ed7127400a4e02648641ff7}{Destroy\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a99d4b64f128e2bfbffec3c5d476a2ca3}{Add\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a9e1f79bf8e991893f4ef318841932a13}{Add\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a190ae0628482048bef95c8b318939322}{Remove\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a3cd5fc6f1a354d99bb8768df7ee40552}{Remove\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classNeuron_a5bc4e67c5f2d8a3bcd160aa3f5086aec}{Get\+Membrane}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_ac759d9589c0505332e8238cafbc8fa66}{Get\+Membranes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuron_a82b34717999a29e5413ebfcfa58c9356}{Growth}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuron_a06f45a5d1de890da84d3644fe58ea0a9}{Update\+Cycle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+void \mbox{\hyperlink{classNeuron_a55c72e8066caf1ad8e25a2b0b453ee69}{Update\+Cycle2}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+int \mbox{\hyperlink{classNeuron_a4d1dc3a9f30196fe2b09dfbfc0a567bb}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a9af31418d1232135bf5074f6a3d5dbf1}{Get\+Visualisation\+List}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_abb3745c6a8727f4ceb8db9e2258b90b5}{soma\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a878a5a42025ba8205adeb9a50b2c1457}{membrane\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classNeuron_a00b1e2e5f9d224759df1aa54093092ba}{visualisation\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structNeuron_1_1ObjectConnection}{Object\+Connection}} $>$ \mbox{\hyperlink{classNeuron_a8259952162df5c8bb66eb78126feafe6}{object\+\_\+connection\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNeuron_a182d8061d0beac5ede8b5ea9ac21a1c9}{neuron\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classNeuron_a8d900856e69534603cd984fef05811be}{m\+\_\+\+Tag}}
+\item 
+int \mbox{\hyperlink{classNeuron_abf8b1f840cd466fb23f2e778edef0a92}{membrane\+\_\+pool}} = 1
+\item 
+double \mbox{\hyperlink{classNeuron_ada166022e3abc5a5e32db25343f8f765}{object\+\_\+size}}
+\item 
+double \mbox{\hyperlink{classNeuron_a225fc0b7f0586a11fb62fee76f3f1acb}{m\+\_\+\+Resting\+Potential}}
+\item 
+bool \mbox{\hyperlink{classNeuron_ad936ed27ba3b0f5d8fe18d1dd2fd5fcf}{object\+\_\+initialised}}
+\item 
+bool \mbox{\hyperlink{classNeuron_a09ea127c2427653e15bfce989c717b3f}{object\+\_\+disabled}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeuron_aac5b1f8a26738f915778ebf25183f258}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeuron_ab66c0975e682e5339cabc50981732ae5}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classNeuron_ab3cea312e56a8b3bb4707a1c2654fc36}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+int \mbox{\hyperlink{classNeuron_a82f1de3ea8317c97f4968a06d13ec8ca}{m\+\_\+add\+Status}}
+\item 
+int \mbox{\hyperlink{classNeuron_ad6955bbce8c9b6c6ccde10c8022d9a07}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_a2dba550b29497723039a3aa193934ab2}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_ad0dd6393bdd85a09e35179cabd1083a2}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classNeuron_ab35fb4d7f3cc2b9491a2d9eb9d75c39a}{m\+\_\+\+Spike}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Spike\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_a44d4be63f49259ad3f475c695e38aa88}{m\+\_\+\+Gate\+Keeper}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Gate\+Keeper\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_aaba16c243f6b227b44609475e4e9a8cc}{m\+\_\+\+Channel\+Min}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Channel\+Min\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_a79b66d9cd9cc28601bffe154bee05525}{m\+\_\+\+Channel\+Max}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Channel\+Max\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuron_aa7f0b4aaf00fa2f9b8de0a0932d5fb65}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classNeuron_a6e0b63b5c0aada57da5f5e4fe71f3955}{m\+\_\+\+Time\+Threshold}}
+\item 
+unsigned int \mbox{\hyperlink{classNeuron_a2ca1ab8d7891fbd10646a936e272cb7d}{neuron\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+Particle\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNeuron_a56cdde5298abf121898ebd4ea99a738b}{neuron\+Capacity}}
+\item 
+int \mbox{\hyperlink{classNeuron_a785cf2a73a206d056db9633d447dbfb3}{neuron\+Usage}}
+\item 
+int \mbox{\hyperlink{classNeuron_a575bb396a026333541f5ff3ec1a90602}{soma\+\_\+pool}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classNeuron_a2ae3e36fe53bb2c406559e5a7c309027}{Orbital}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNeuron_a823487d01615fadb8ac19a2768dd9d96}\label{classNeuron_a823487d01615fadb8ac19a2768dd9d96}} 
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Neuron()}{Neuron()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Neuron\+::\+Neuron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_acbc433cac4f27aa7f4e05be26c336aa5}\label{classNeuron_acbc433cac4f27aa7f4e05be26c336aa5}} 
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Neuron()}{Neuron()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Neuron\+::\+Neuron (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a4611499895417d44250c452d0fc719a6}\label{classNeuron_a4611499895417d44250c452d0fc719a6}} 
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Neuron()}{Neuron()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Neuron\+::\+Neuron (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a6839febd20fb8f776151e00142411a56}\label{classNeuron_a6839febd20fb8f776151e00142411a56}} 
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Neuron()}{Neuron()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Neuron\+::\+Neuron (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_aecd41febe74ef417230cd74af0c8b801}\label{classNeuron_aecd41febe74ef417230cd74af0c8b801}} 
+\index{Neuron@{Neuron}!````~Neuron@{$\sim$\+Neuron}}
+\index{````~Neuron@{$\sim$\+Neuron}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{$\sim$\+Neuron()}{~Neuron()}}
+{\footnotesize\ttfamily virtual Neuron\+::$\sim$\+Neuron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeuron_a99d4b64f128e2bfbffec3c5d476a2ca3}\label{classNeuron_a99d4b64f128e2bfbffec3c5d476a2ca3}} 
+\index{Neuron@{Neuron}!Add\+Membrane@{Add\+Membrane}}
+\index{Add\+Membrane@{Add\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Add\+Membrane()}{AddMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Add\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a9e1f79bf8e991893f4ef318841932a13}\label{classNeuron_a9e1f79bf8e991893f4ef318841932a13}} 
+\index{Neuron@{Neuron}!Add\+Membranes@{Add\+Membranes}}
+\index{Add\+Membranes@{Add\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Add\+Membranes()}{AddMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Add\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a6198fa352056e3bbe1e979adf088b900}\label{classNeuron_a6198fa352056e3bbe1e979adf088b900}} 
+\index{Neuron@{Neuron}!Add\+Soma@{Add\+Soma}}
+\index{Add\+Soma@{Add\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Add\+Soma()}{AddSoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Add\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a78a0f48a669b6ea20280829304e51de2}\label{classNeuron_a78a0f48a669b6ea20280829304e51de2}} 
+\index{Neuron@{Neuron}!Add\+Somas@{Add\+Somas}}
+\index{Add\+Somas@{Add\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Add\+Somas()}{AddSomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Add\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_ab85f7c42466657095efb3aca5a9ee71d}\label{classNeuron_ab85f7c42466657095efb3aca5a9ee71d}} 
+\index{Neuron@{Neuron}!Clone\+Membrane@{Clone\+Membrane}}
+\index{Clone\+Membrane@{Clone\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Clone\+Membrane()}{CloneMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Clone\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_ae119d77522a4f11f5d9b1e935a9c80ba}\label{classNeuron_ae119d77522a4f11f5d9b1e935a9c80ba}} 
+\index{Neuron@{Neuron}!Clone\+Membranes@{Clone\+Membranes}}
+\index{Clone\+Membranes@{Clone\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Clone\+Membranes()}{CloneMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Clone\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a7706e0f722c70138458423c07b6b153b}\label{classNeuron_a7706e0f722c70138458423c07b6b153b}} 
+\index{Neuron@{Neuron}!Clone\+Soma@{Clone\+Soma}}
+\index{Clone\+Soma@{Clone\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Clone\+Soma()}{CloneSoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Clone\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a508841fa635a6e89609c514a79ea59da}\label{classNeuron_a508841fa635a6e89609c514a79ea59da}} 
+\index{Neuron@{Neuron}!Clone\+Somas@{Clone\+Somas}}
+\index{Clone\+Somas@{Clone\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Clone\+Somas()}{CloneSomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Clone\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_af06efbcc1a96af0290673e9e048267cf}\label{classNeuron_af06efbcc1a96af0290673e9e048267cf}} 
+\index{Neuron@{Neuron}!Create\+Membrane@{Create\+Membrane}}
+\index{Create\+Membrane@{Create\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Create\+Membrane()}{CreateMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Create\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a5f6f460c6a98319a05c3ba06d14e6f60}\label{classNeuron_a5f6f460c6a98319a05c3ba06d14e6f60}} 
+\index{Neuron@{Neuron}!Create\+Membranes@{Create\+Membranes}}
+\index{Create\+Membranes@{Create\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Create\+Membranes()}{CreateMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Create\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a32593a869b25c778c1856c36704f49cf}\label{classNeuron_a32593a869b25c778c1856c36704f49cf}} 
+\index{Neuron@{Neuron}!Create\+Soma@{Create\+Soma}}
+\index{Create\+Soma@{Create\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Create\+Soma()}{CreateSoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Create\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a2016d83b02bfe9e5548d5c24ef31dded}\label{classNeuron_a2016d83b02bfe9e5548d5c24ef31dded}} 
+\index{Neuron@{Neuron}!Create\+Somas@{Create\+Somas}}
+\index{Create\+Somas@{Create\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Create\+Somas()}{CreateSomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Create\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a127d1b915e976c63e731a94b7d27e0b1}\label{classNeuron_a127d1b915e976c63e731a94b7d27e0b1}} 
+\index{Neuron@{Neuron}!Destroy\+Membrane@{Destroy\+Membrane}}
+\index{Destroy\+Membrane@{Destroy\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Destroy\+Membrane()}{DestroyMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Destroy\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_ab77feff95ed7127400a4e02648641ff7}\label{classNeuron_ab77feff95ed7127400a4e02648641ff7}} 
+\index{Neuron@{Neuron}!Destroy\+Membranes@{Destroy\+Membranes}}
+\index{Destroy\+Membranes@{Destroy\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Destroy\+Membranes()}{DestroyMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Destroy\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a6ff7510f73e29c31003b016bdcb4a70e}\label{classNeuron_a6ff7510f73e29c31003b016bdcb4a70e}} 
+\index{Neuron@{Neuron}!Destroy\+Soma@{Destroy\+Soma}}
+\index{Destroy\+Soma@{Destroy\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Destroy\+Soma()}{DestroySoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Destroy\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a32b3a98eec58dc66481a2b877a7592cb}\label{classNeuron_a32b3a98eec58dc66481a2b877a7592cb}} 
+\index{Neuron@{Neuron}!Destroy\+Somas@{Destroy\+Somas}}
+\index{Destroy\+Somas@{Destroy\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Destroy\+Somas()}{DestroySomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Destroy\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a93cce70c19c8e70accaa31908d3f29f6}\label{classNeuron_a93cce70c19c8e70accaa31908d3f29f6}} 
+\index{Neuron@{Neuron}!Get\+Capacity@{Get\+Capacity}}
+\index{Get\+Capacity@{Get\+Capacity}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Capacity()}{GetCapacity()}}
+{\footnotesize\ttfamily int Neuron\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_ae8b6c47bebe302e62721dc4a6e447ca2}\label{classNeuron_ae8b6c47bebe302e62721dc4a6e447ca2}} 
+\index{Neuron@{Neuron}!Get\+Channel\+Max@{Get\+Channel\+Max}}
+\index{Get\+Channel\+Max@{Get\+Channel\+Max}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Channel\+Max()}{GetChannelMax()}}
+{\footnotesize\ttfamily double Neuron\+::\+Get\+Channel\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a794c8fa270ea0600dab4fd13c25912fd}\label{classNeuron_a794c8fa270ea0600dab4fd13c25912fd}} 
+\index{Neuron@{Neuron}!Get\+Channel\+Min@{Get\+Channel\+Min}}
+\index{Get\+Channel\+Min@{Get\+Channel\+Min}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Channel\+Min()}{GetChannelMin()}}
+{\footnotesize\ttfamily double Neuron\+::\+Get\+Channel\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a0b5fe55bf939808986b3697d18a834f4}\label{classNeuron_a0b5fe55bf939808986b3697d18a834f4}} 
+\index{Neuron@{Neuron}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Neuron\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_adfee1a62df820344b84fe2020451b24f}\label{classNeuron_adfee1a62df820344b84fe2020451b24f}} 
+\index{Neuron@{Neuron}!Get\+Disabled@{Get\+Disabled}}
+\index{Get\+Disabled@{Get\+Disabled}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Disabled()}{GetDisabled()}}
+{\footnotesize\ttfamily bool Neuron\+::\+Get\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a91dd5325856e246d98c2864e1c955972}\label{classNeuron_a91dd5325856e246d98c2864e1c955972}} 
+\index{Neuron@{Neuron}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Neuron\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a94accac3223afdecd1edf25e6db59ace}\label{classNeuron_a94accac3223afdecd1edf25e6db59ace}} 
+\index{Neuron@{Neuron}!Get\+Gate\+Keeper@{Get\+Gate\+Keeper}}
+\index{Get\+Gate\+Keeper@{Get\+Gate\+Keeper}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Gate\+Keeper()}{GetGateKeeper()}}
+{\footnotesize\ttfamily double Neuron\+::\+Get\+Gate\+Keeper (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a5bc4e67c5f2d8a3bcd160aa3f5086aec}\label{classNeuron_a5bc4e67c5f2d8a3bcd160aa3f5086aec}} 
+\index{Neuron@{Neuron}!Get\+Membrane@{Get\+Membrane}}
+\index{Get\+Membrane@{Get\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Membrane()}{GetMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Get\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_ac759d9589c0505332e8238cafbc8fa66}\label{classNeuron_ac759d9589c0505332e8238cafbc8fa66}} 
+\index{Neuron@{Neuron}!Get\+Membranes@{Get\+Membranes}}
+\index{Get\+Membranes@{Get\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Membranes()}{GetMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Get\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_aff3a33f5d8ef5dacdec9c03df50f168c}\label{classNeuron_aff3a33f5d8ef5dacdec9c03df50f168c}} 
+\index{Neuron@{Neuron}!Get\+Neuron\+Device\+Tag@{Get\+Neuron\+Device\+Tag}}
+\index{Get\+Neuron\+Device\+Tag@{Get\+Neuron\+Device\+Tag}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Neuron\+Device\+Tag()}{GetNeuronDeviceTag()}}
+{\footnotesize\ttfamily int Neuron\+::\+Get\+Neuron\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a98f326ea86e6e8371b639609a4495c37}\label{classNeuron_a98f326ea86e6e8371b639609a4495c37}} 
+\index{Neuron@{Neuron}!Get\+Neuron\+Type@{Get\+Neuron\+Type}}
+\index{Get\+Neuron\+Type@{Get\+Neuron\+Type}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Neuron\+Type()}{GetNeuronType()}}
+{\footnotesize\ttfamily int Neuron\+::\+Get\+Neuron\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a0573244d3c78a22a45c249db536cbb68}\label{classNeuron_a0573244d3c78a22a45c249db536cbb68}} 
+\index{Neuron@{Neuron}!Get\+Resting\+Potential@{Get\+Resting\+Potential}}
+\index{Get\+Resting\+Potential@{Get\+Resting\+Potential}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Resting\+Potential()}{GetRestingPotential()}}
+{\footnotesize\ttfamily double Neuron\+::\+Get\+Resting\+Potential (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a8539a7965349078a7b1c1265895daefa}\label{classNeuron_a8539a7965349078a7b1c1265895daefa}} 
+\index{Neuron@{Neuron}!Get\+Soma@{Get\+Soma}}
+\index{Get\+Soma@{Get\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Soma()}{GetSoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Get\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_aa6f1237ed89c48eb57610083edf43efa}\label{classNeuron_aa6f1237ed89c48eb57610083edf43efa}} 
+\index{Neuron@{Neuron}!Get\+Soma\+Pool@{Get\+Soma\+Pool}}
+\index{Get\+Soma\+Pool@{Get\+Soma\+Pool}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Soma\+Pool()}{GetSomaPool()}}
+{\footnotesize\ttfamily int Neuron\+::\+Get\+Soma\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a867fbd498b54c115a2c8769f83c48020}\label{classNeuron_a867fbd498b54c115a2c8769f83c48020}} 
+\index{Neuron@{Neuron}!Get\+Somas@{Get\+Somas}}
+\index{Get\+Somas@{Get\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Somas()}{GetSomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Get\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a745b090da1b8f8fc7e3cf0ca06dfb117}\label{classNeuron_a745b090da1b8f8fc7e3cf0ca06dfb117}} 
+\index{Neuron@{Neuron}!Get\+Usage@{Get\+Usage}}
+\index{Get\+Usage@{Get\+Usage}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Usage()}{GetUsage()}}
+{\footnotesize\ttfamily int Neuron\+::\+Get\+Usage (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a9af31418d1232135bf5074f6a3d5dbf1}\label{classNeuron_a9af31418d1232135bf5074f6a3d5dbf1}} 
+\index{Neuron@{Neuron}!Get\+Visualisation\+List@{Get\+Visualisation\+List}}
+\index{Get\+Visualisation\+List@{Get\+Visualisation\+List}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Get\+Visualisation\+List()}{GetVisualisationList()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Neuron\+::\+Get\+Visualisation\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a82b34717999a29e5413ebfcfa58c9356}\label{classNeuron_a82b34717999a29e5413ebfcfa58c9356}} 
+\index{Neuron@{Neuron}!Growth@{Growth}}
+\index{Growth@{Growth}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Neuron\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a82d0a4739244d79ff929be01eeb0be28}\label{classNeuron_a82d0a4739244d79ff929be01eeb0be28}} 
+\index{Neuron@{Neuron}!Open\+Gate@{Open\+Gate}}
+\index{Open\+Gate@{Open\+Gate}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Open\+Gate()}{OpenGate()}}
+{\footnotesize\ttfamily bool Neuron\+::\+Open\+Gate (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a190ae0628482048bef95c8b318939322}\label{classNeuron_a190ae0628482048bef95c8b318939322}} 
+\index{Neuron@{Neuron}!Remove\+Membrane@{Remove\+Membrane}}
+\index{Remove\+Membrane@{Remove\+Membrane}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Remove\+Membrane()}{RemoveMembrane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Remove\+Membrane (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a3cd5fc6f1a354d99bb8768df7ee40552}\label{classNeuron_a3cd5fc6f1a354d99bb8768df7ee40552}} 
+\index{Neuron@{Neuron}!Remove\+Membranes@{Remove\+Membranes}}
+\index{Remove\+Membranes@{Remove\+Membranes}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Remove\+Membranes()}{RemoveMembranes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Remove\+Membranes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a4f8c2f0c1b294493a7c581a7f46c2863}\label{classNeuron_a4f8c2f0c1b294493a7c581a7f46c2863}} 
+\index{Neuron@{Neuron}!Remove\+Soma@{Remove\+Soma}}
+\index{Remove\+Soma@{Remove\+Soma}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Remove\+Soma()}{RemoveSoma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ Neuron\+::\+Remove\+Soma (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a976b1bab63d0bd21b1c8c8e1cfbd17fe}\label{classNeuron_a976b1bab63d0bd21b1c8c8e1cfbd17fe}} 
+\index{Neuron@{Neuron}!Remove\+Somas@{Remove\+Somas}}
+\index{Remove\+Somas@{Remove\+Somas}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Remove\+Somas()}{RemoveSomas()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ $>$ Neuron\+::\+Remove\+Somas (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a4c154fecb0b689d7da9d8d274f067ccf}\label{classNeuron_a4c154fecb0b689d7da9d8d274f067ccf}} 
+\index{Neuron@{Neuron}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Neuron\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a8f5766ea61dc46b7a25361df540755ec}\label{classNeuron_a8f5766ea61dc46b7a25361df540755ec}} 
+\index{Neuron@{Neuron}!Set\+Capacity@{Set\+Capacity}}
+\index{Set\+Capacity@{Set\+Capacity}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Capacity()}{SetCapacity()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Capacity (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_aed1ba99e24b905cd91a519c33b5a62b0}\label{classNeuron_aed1ba99e24b905cd91a519c33b5a62b0}} 
+\index{Neuron@{Neuron}!Set\+Channel\+Max@{Set\+Channel\+Max}}
+\index{Set\+Channel\+Max@{Set\+Channel\+Max}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Channel\+Max()}{SetChannelMax()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Channel\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_ae463ad8173c63e7970a5f4594667d481}\label{classNeuron_ae463ad8173c63e7970a5f4594667d481}} 
+\index{Neuron@{Neuron}!Set\+Channel\+Min@{Set\+Channel\+Min}}
+\index{Set\+Channel\+Min@{Set\+Channel\+Min}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Channel\+Min()}{SetChannelMin()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Channel\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a92f942f6f0bd783c39bb550cf4bb8fd0}\label{classNeuron_a92f942f6f0bd783c39bb550cf4bb8fd0}} 
+\index{Neuron@{Neuron}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_af9ad96e27f7692e9e328d90e4c96977a}\label{classNeuron_af9ad96e27f7692e9e328d90e4c96977a}} 
+\index{Neuron@{Neuron}!Set\+Disabled@{Set\+Disabled}}
+\index{Set\+Disabled@{Set\+Disabled}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Disabled()}{SetDisabled()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a5efa690ce4d8ff2f8dfb1fbfd84c5279}\label{classNeuron_a5efa690ce4d8ff2f8dfb1fbfd84c5279}} 
+\index{Neuron@{Neuron}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a492f597021faf1b74942bc75364c3c22}\label{classNeuron_a492f597021faf1b74942bc75364c3c22}} 
+\index{Neuron@{Neuron}!Set\+Gate\+Keeper@{Set\+Gate\+Keeper}}
+\index{Set\+Gate\+Keeper@{Set\+Gate\+Keeper}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Gate\+Keeper()}{SetGateKeeper()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Gate\+Keeper (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_aa06d0f1a129e4a901a60e7343bc43533}\label{classNeuron_aa06d0f1a129e4a901a60e7343bc43533}} 
+\index{Neuron@{Neuron}!Set\+Neuron\+Device\+Tag@{Set\+Neuron\+Device\+Tag}}
+\index{Set\+Neuron\+Device\+Tag@{Set\+Neuron\+Device\+Tag}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Neuron\+Device\+Tag()}{SetNeuronDeviceTag()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Neuron\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_afc685a0444425fceab6685a6ee004b65}\label{classNeuron_afc685a0444425fceab6685a6ee004b65}} 
+\index{Neuron@{Neuron}!Set\+Neuron\+Type@{Set\+Neuron\+Type}}
+\index{Set\+Neuron\+Type@{Set\+Neuron\+Type}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Neuron\+Type()}{SetNeuronType()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Neuron\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_ab371e2dacf2cdde8db5547b72fb45ca1}\label{classNeuron_ab371e2dacf2cdde8db5547b72fb45ca1}} 
+\index{Neuron@{Neuron}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_ae18e23983d02953fa6886bef0bbeb339}\label{classNeuron_ae18e23983d02953fa6886bef0bbeb339}} 
+\index{Neuron@{Neuron}!Set\+Soma\+Pool@{Set\+Soma\+Pool}}
+\index{Set\+Soma\+Pool@{Set\+Soma\+Pool}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Soma\+Pool()}{SetSomaPool()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Soma\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_abf99856ac41b5c9c4948b3204bbc1590}\label{classNeuron_abf99856ac41b5c9c4948b3204bbc1590}} 
+\index{Neuron@{Neuron}!Set\+Usage@{Set\+Usage}}
+\index{Set\+Usage@{Set\+Usage}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Set\+Usage()}{SetUsage()}}
+{\footnotesize\ttfamily void Neuron\+::\+Set\+Usage (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a32fe82aa21f8a68392d696eea3a34c99}\label{classNeuron_a32fe82aa21f8a68392d696eea3a34c99}} 
+\index{Neuron@{Neuron}!toggle\+Disabled@{toggle\+Disabled}}
+\index{toggle\+Disabled@{toggle\+Disabled}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{toggle\+Disabled()}{toggleDisabled()}}
+{\footnotesize\ttfamily void Neuron\+::toggle\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuron_a4d1dc3a9f30196fe2b09dfbfc0a567bb}\label{classNeuron_a4d1dc3a9f30196fe2b09dfbfc0a567bb}} 
+\index{Neuron@{Neuron}!Update@{Update}}
+\index{Update@{Update}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Neuron\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a06f45a5d1de890da84d3644fe58ea0a9}\label{classNeuron_a06f45a5d1de890da84d3644fe58ea0a9}} 
+\index{Neuron@{Neuron}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Neuron\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuron_a55c72e8066caf1ad8e25a2b0b453ee69}\label{classNeuron_a55c72e8066caf1ad8e25a2b0b453ee69}} 
+\index{Neuron@{Neuron}!Update\+Cycle2@{Update\+Cycle2}}
+\index{Update\+Cycle2@{Update\+Cycle2}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Update\+Cycle2()}{UpdateCycle2()}}
+{\footnotesize\ttfamily void Neuron\+::\+Update\+Cycle2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classNeuron_a2ae3e36fe53bb2c406559e5a7c309027}\label{classNeuron_a2ae3e36fe53bb2c406559e5a7c309027}} 
+\index{Neuron@{Neuron}!Orbital@{Orbital}}
+\index{Orbital@{Orbital}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{Orbital}{Orbital}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classOrbital}{Orbital}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNeuron_ab3cea312e56a8b3bb4707a1c2654fc36}\label{classNeuron_ab3cea312e56a8b3bb4707a1c2654fc36}} 
+\index{Neuron@{Neuron}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Neuron\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a82f1de3ea8317c97f4968a06d13ec8ca}\label{classNeuron_a82f1de3ea8317c97f4968a06d13ec8ca}} 
+\index{Neuron@{Neuron}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Neuron\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a79b66d9cd9cc28601bffe154bee05525}\label{classNeuron_a79b66d9cd9cc28601bffe154bee05525}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Channel\+Max@{m\+\_\+\+Channel\+Max}}
+\index{m\+\_\+\+Channel\+Max@{m\+\_\+\+Channel\+Max}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Channel\+Max}{m\_ChannelMax}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Channel\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Channel\+Max\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_aaba16c243f6b227b44609475e4e9a8cc}\label{classNeuron_aaba16c243f6b227b44609475e4e9a8cc}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Channel\+Min@{m\+\_\+\+Channel\+Min}}
+\index{m\+\_\+\+Channel\+Min@{m\+\_\+\+Channel\+Min}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Channel\+Min}{m\_ChannelMin}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Channel\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Channel\+Min\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_ad6955bbce8c9b6c6ccde10c8022d9a07}\label{classNeuron_ad6955bbce8c9b6c6ccde10c8022d9a07}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily int Neuron\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_a44d4be63f49259ad3f475c695e38aa88}\label{classNeuron_a44d4be63f49259ad3f475c695e38aa88}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Gate\+Keeper@{m\+\_\+\+Gate\+Keeper}}
+\index{m\+\_\+\+Gate\+Keeper@{m\+\_\+\+Gate\+Keeper}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Gate\+Keeper}{m\_GateKeeper}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Gate\+Keeper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Gate\+Keeper\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_a225fc0b7f0586a11fb62fee76f3f1acb}\label{classNeuron_a225fc0b7f0586a11fb62fee76f3f1acb}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Resting\+Potential@{m\+\_\+\+Resting\+Potential}}
+\index{m\+\_\+\+Resting\+Potential@{m\+\_\+\+Resting\+Potential}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Resting\+Potential}{m\_RestingPotential}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Resting\+Potential\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_ab35fb4d7f3cc2b9491a2d9eb9d75c39a}\label{classNeuron_ab35fb4d7f3cc2b9491a2d9eb9d75c39a}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Spike@{m\+\_\+\+Spike}}
+\index{m\+\_\+\+Spike@{m\+\_\+\+Spike}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Spike}{m\_Spike}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Spike\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Spike\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_a8d900856e69534603cd984fef05811be}\label{classNeuron_a8d900856e69534603cd984fef05811be}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Tag@{m\+\_\+\+Tag}}
+\index{m\+\_\+\+Tag@{m\+\_\+\+Tag}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tag}{m\_Tag}}
+{\footnotesize\ttfamily int Neuron\+::m\+\_\+\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_aa7f0b4aaf00fa2f9b8de0a0932d5fb65}\label{classNeuron_aa7f0b4aaf00fa2f9b8de0a0932d5fb65}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a6e0b63b5c0aada57da5f5e4fe71f3955}\label{classNeuron_a6e0b63b5c0aada57da5f5e4fe71f3955}} 
+\index{Neuron@{Neuron}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Neuron\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a878a5a42025ba8205adeb9a50b2c1457}\label{classNeuron_a878a5a42025ba8205adeb9a50b2c1457}} 
+\index{Neuron@{Neuron}!membrane\+\_\+list@{membrane\+\_\+list}}
+\index{membrane\+\_\+list@{membrane\+\_\+list}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{membrane\+\_\+list}{membrane\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNeuron}{Neuron}}$\ast$$>$ Neuron\+::membrane\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNeuron_abf8b1f840cd466fb23f2e778edef0a92}\label{classNeuron_abf8b1f840cd466fb23f2e778edef0a92}} 
+\index{Neuron@{Neuron}!membrane\+\_\+pool@{membrane\+\_\+pool}}
+\index{membrane\+\_\+pool@{membrane\+\_\+pool}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{membrane\+\_\+pool}{membrane\_pool}}
+{\footnotesize\ttfamily int Neuron\+::membrane\+\_\+pool = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a182d8061d0beac5ede8b5ea9ac21a1c9}\label{classNeuron_a182d8061d0beac5ede8b5ea9ac21a1c9}} 
+\index{Neuron@{Neuron}!neuron\+\_\+type@{neuron\+\_\+type}}
+\index{neuron\+\_\+type@{neuron\+\_\+type}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{neuron\+\_\+type}{neuron\_type}}
+{\footnotesize\ttfamily int Neuron\+::neuron\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a56cdde5298abf121898ebd4ea99a738b}\label{classNeuron_a56cdde5298abf121898ebd4ea99a738b}} 
+\index{Neuron@{Neuron}!neuron\+Capacity@{neuron\+Capacity}}
+\index{neuron\+Capacity@{neuron\+Capacity}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{neuron\+Capacity}{neuronCapacity}}
+{\footnotesize\ttfamily int Neuron\+::neuron\+Capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a2ca1ab8d7891fbd10646a936e272cb7d}\label{classNeuron_a2ca1ab8d7891fbd10646a936e272cb7d}} 
+\index{Neuron@{Neuron}!neuron\+Counter@{neuron\+Counter}}
+\index{neuron\+Counter@{neuron\+Counter}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{neuron\+Counter}{neuronCounter}}
+{\footnotesize\ttfamily unsigned int Neuron\+::neuron\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+Particle\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_a785cf2a73a206d056db9633d447dbfb3}\label{classNeuron_a785cf2a73a206d056db9633d447dbfb3}} 
+\index{Neuron@{Neuron}!neuron\+Usage@{neuron\+Usage}}
+\index{neuron\+Usage@{neuron\+Usage}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{neuron\+Usage}{neuronUsage}}
+{\footnotesize\ttfamily int Neuron\+::neuron\+Usage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a8259952162df5c8bb66eb78126feafe6}\label{classNeuron_a8259952162df5c8bb66eb78126feafe6}} 
+\index{Neuron@{Neuron}!object\+\_\+connection\+\_\+list@{object\+\_\+connection\+\_\+list}}
+\index{object\+\_\+connection\+\_\+list@{object\+\_\+connection\+\_\+list}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+connection\+\_\+list}{object\_connection\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structNeuron_1_1ObjectConnection}{Object\+Connection}}$>$ Neuron\+::object\+\_\+connection\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNeuron_a09ea127c2427653e15bfce989c717b3f}\label{classNeuron_a09ea127c2427653e15bfce989c717b3f}} 
+\index{Neuron@{Neuron}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Neuron\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a2dba550b29497723039a3aa193934ab2}\label{classNeuron_a2dba550b29497723039a3aa193934ab2}} 
+\index{Neuron@{Neuron}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Neuron\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuron_ad0dd6393bdd85a09e35179cabd1083a2}\label{classNeuron_ad0dd6393bdd85a09e35179cabd1083a2}} 
+\index{Neuron@{Neuron}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Neuron\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_ad936ed27ba3b0f5d8fe18d1dd2fd5fcf}\label{classNeuron_ad936ed27ba3b0f5d8fe18d1dd2fd5fcf}} 
+\index{Neuron@{Neuron}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Neuron\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_ada166022e3abc5a5e32db25343f8f765}\label{classNeuron_ada166022e3abc5a5e32db25343f8f765}} 
+\index{Neuron@{Neuron}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Neuron\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_ab66c0975e682e5339cabc50981732ae5}\label{classNeuron_ab66c0975e682e5339cabc50981732ae5}} 
+\index{Neuron@{Neuron}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neuron\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_abb3745c6a8727f4ceb8db9e2258b90b5}\label{classNeuron_abb3745c6a8727f4ceb8db9e2258b90b5}} 
+\index{Neuron@{Neuron}!soma\+\_\+list@{soma\+\_\+list}}
+\index{soma\+\_\+list@{soma\+\_\+list}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{soma\+\_\+list}{soma\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classNeuron}{Neuron}}$\ast$$>$ Neuron\+::soma\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNeuron_a575bb396a026333541f5ff3ec1a90602}\label{classNeuron_a575bb396a026333541f5ff3ec1a90602}} 
+\index{Neuron@{Neuron}!soma\+\_\+pool@{soma\+\_\+pool}}
+\index{soma\+\_\+pool@{soma\+\_\+pool}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{soma\+\_\+pool}{soma\_pool}}
+{\footnotesize\ttfamily int Neuron\+::soma\+\_\+pool = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_aac5b1f8a26738f915778ebf25183f258}\label{classNeuron_aac5b1f8a26738f915778ebf25183f258}} 
+\index{Neuron@{Neuron}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neuron\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuron_a00b1e2e5f9d224759df1aa54093092ba}\label{classNeuron_a00b1e2e5f9d224759df1aa54093092ba}} 
+\index{Neuron@{Neuron}!visualisation\+\_\+list@{visualisation\+\_\+list}}
+\index{visualisation\+\_\+list@{visualisation\+\_\+list}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{visualisation\+\_\+list}{visualisation\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Neuron\+::visualisation\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neuron_8h}{neuron.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neuron_8cc}{neuron.\+cc}}\end{DoxyCompactItemize}

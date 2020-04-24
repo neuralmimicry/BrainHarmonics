@@ -1,0 +1,1674 @@
+\hypertarget{classCognitiveNetwork}{}\section{Cognitive\+Network Class Reference}
+\label{classCognitiveNetwork}\index{Cognitive\+Network@{Cognitive\+Network}}
+
+
+{\ttfamily \#include $<$cognitivenetwork.\+h$>$}
+
+Inheritance diagram for Cognitive\+Network\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{classCognitiveNetwork}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCognitiveNetwork_1_1OrbitalConnection}{Orbital\+Connection}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCognitiveNetwork_a3daddb316744336648d317e7f71ed371}{Cognitive\+Network}} ()
+\item 
+\mbox{\hyperlink{classCognitiveNetwork_a167b15e33bcbca43cb0a516159e890f2}{Cognitive\+Network}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork_ac7ba285d3468a929dac88756a2c4e4f9}{Cognitive\+Network}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork_a6ec49dcc8cc58cded71983291629179c}{Cognitive\+Network}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classCognitiveNetwork_a17142cc6f0bb3894e63f6c66fa401778}{$\sim$\+Cognitive\+Network}} ()
+\item 
+unsigned int \mbox{\hyperlink{classCognitiveNetwork_a160bb447671609eb14b1b8043639ac74}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a6bb3fc06029c260dd658d0db072625a7}{Get\+Capacity}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a055b3711835b8d134356298f8975f04d}{Set\+Capacity}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_ad293916cfa0e454ef40d7e228d0dcba3}{Get\+Usage}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a8b6b4afc47df279604be13bce77f5b0a}{Set\+Usage}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_af23b9bce2587ccf3c8204be33fc76c61}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a3a9be1c6697d063b0836cdcdc7a2600c}{Get\+Gate\+Keeper}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_ad7f5cc836340017d38c22b57e177fc91}{Get\+Channel\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_ab67da8690b83618d88f88411121d7071}{Get\+Channel\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classCognitiveNetwork_aa64c93ecec84b57b25e1fdb173795f9b}{Get\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a1c92a8f6c42788cf8ca890f062f853a3}{Get\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a03d744f9d0d420c1e044646bc6bd2552}{Get\+Resting\+Potential}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_af33f3ff9dd829da73d183d2624f24964}{Get\+Cognitive\+Network\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a23c6a11d9f15a141f69a9779f174bfb3}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_af2f96107858445a0b7be2be6af5b5c01}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a83bc4047721417212fa1bbbfa64da5ee}{Set\+Gate\+Keeper}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a6e2a6ced4ede9a4eef721d6c5aac433c}{Set\+Channel\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a9c208d66ee284adfceb3b2dd76532a00}{Set\+Channel\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_ac29e676c84244f5b64c0083a0efead28}{Set\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, bool val)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_abeac08d7cbf9df4b36de40aa9301e978}{toggle\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_af5995eaa4ba35c555a6b65d895451f25}{Get\+Orbital\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_af81132245e486c496a055f54a5a520d0}{Get\+Neuron\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_ae0068b9df823e1b10fed3c73f1cb4702}{Get\+Synapse\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a4e5b1d60cda4ddb4bd04d8dca42b7a5b}{Get\+Neurotransmitter\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_aeee6e2b2eb06b3c55a0f019b6c9cc250}{Set\+Orbital\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a2e1137387c4165dd3f91a758d2ce7f34}{Set\+Neuron\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a9d2b7d1de9e7148a403fc15f7f3fd1bf}{Set\+Synapse\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a84f808251f67ced0edad2e1dd4d47039}{Set\+Neurotransmitter\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_ad95a0b25c7f61fc52322938eb13c9e3e}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a0e8a64151a2446fc16a074ad2de325df}{Set\+Cognitive\+Network\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+bool \mbox{\hyperlink{classCognitiveNetwork_a8af8ed2605263e57a32e457aba2af99d}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_aa37dda869174e4eef986cca4ce3e55d2}{Update\+Cycle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a05dccc7759456df13a732899a8f1f4c4}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_add96197c3dc51d94d06edb480fbc4a38}{Create\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a0833f7b587f14e0c0778661a56bce957}{Create\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a058cb2b044d56268e36f153fac21084e}{Clone\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aeaf2883b25dbf1eefd11c2d92efe8816}{Clone\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a12e085cd47b7661190527fe55b6da8dc}{Destroy\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a00aa44de67dd0593a2498ce7a3b4c0f2}{Destroy\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a6af57693982286ac6a6831ca3010b760}{Add\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_afc92c9b378e7e0873d0164bc4f2635df}{Add\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_af79bf7f8b61d5392df7a87bd444eb550}{Remove\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aaaf93e7c732b1e1e81060f82ff73c93a}{Remove\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a2ff68a0d11cdb29af2f05a69a11911a4}{Get\+Cognitive\+Input}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a92b896643b881e4030401e0f7fd256bf}{Get\+Cognitive\+Inputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ac220350499bd323bd8f24ff0050cd60d}{Create\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a002df11f4389a122fc140c186ab665c9}{Create\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ab24f74115c11275f365245a4bb826c91}{Clone\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a5734aa5378e9b701dca5e98017c1ea35}{Clone\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a8475cf7277d25532bb31926e768600e8}{Destroy\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_ad08191cbab02f26f69d25bc7e6b5c1ee}{Destroy\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a8a9b533b89b7d62b21cf41bdf957ef14}{Add\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a6299433811b76f0ccb97cf69fe9bfb66}{Add\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a9874b11ac465c84ccf7baab0a40fb84e}{Remove\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a2f4956b004c828f0165f28c03e089144}{Remove\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a947fa4c50fecc4008d2bcfc96a272ffc}{Get\+Cognitive\+Output}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_acdf847165899c36d6d9d6843ecc27218}{Get\+Cognitive\+Outputs}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_af0dc86c7905baae6f2b5efb3a65b8819}{Create\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a2d671451d659079d5efb5cda10e48827}{Create\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a1eef76439fffb9daaa3edc4e3c012831}{Clone\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a5ee1d7b6df5bfe0048b4aea317c1974c}{Clone\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_acdda154177d3b3a92885c10f6b3dc274}{Destroy\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a718833496332e0471186c9a886005c4a}{Destroy\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ac6a7e01f097d0cb6434eb8fa7640c214}{Add\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aeafe16b9f44ae1316c072a85e726ee83}{Add\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a04e38cea356f1c7ac31c4df5e19d759c}{Remove\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a994c5f93447a82429809c89aa08d3dc1}{Remove\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a0119d61e86ea6b84ad7f69f88d59d008}{Get\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a4daf966882d527b784bd359794ad39ca}{Get\+Interneuron\+Spaces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a5e0a782afc45d75d57fef91dd5513546}{Create\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a46d4189cf3e6b9af6190abe7b79539b4}{Create\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_aa8992740f25d46b0be3d9d8344c39f67}{Clone\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a266b7baf2fd9d6b5c5652e251830020a}{Clone\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_aefecb3a2464f7f21449e522af5119c63}{Destroy\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a0ee8259d26e30779bf06471fb8a10bb5}{Destroy\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ab6caa285c25568259ae935cf9e746af4}{Add\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a9dbf4a9fab3b806d2bd6b2701b7a9548}{Add\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a6ed0e198f6dcfdd45d57df5d3ad5754c}{Remove\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_af7834d400995607c2a5a5eac7b5e006d}{Remove\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a69655ef1e12bac5f74c2eb85c72720f4}{Get\+Orbital}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aa21d28ffc3b507236a7dad64663f6c42}{Get\+Orbitals}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a9b5fcaf824d5b587775e7c44630affe6}{Create\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_af9b2a136584c962e44114a7ee3d2804a}{Create\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_abf42d64965d64836d6fcbd7ce33c8db4}{Clone\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a8852409e92434523ddbd48d699c5609f}{Clone\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ab3318f517da206ad4286b6cc22acf520}{Destroy\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_af2f706043a0c227b93877e29b056f3c9}{Destroy\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a8457342637fde2d814c54942c3367416}{Add\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_ade928e3355db97d3c5d99501ff4a3b69}{Add\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a33e911ec87d902a8fd8bb6d9e23c4261}{Remove\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a130985ff0aa14b2a17fc2c589e65f868}{Remove\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ac12f0af92d878d45dca7303dc065c383}{Get\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a0e9e37e976a7ca5ee625e2d7b36fd7ea}{Get\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ade8e9295b35790b136dca9084a1b7aa9}{Create\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_ae6ae16f401e7699032ac9459132763c0}{Create\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a40f88d3ce9d386ee4db5c1e0ad84dad2}{Clone\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a82fe792704bcbf7df56b3023266f5f70}{Clone\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a08b87aa9a0823355ef7cef77414dc6dc}{Destroy\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a141e9e8e6337d42fc19edd75bb50e47b}{Destroy\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a4bfdcd2affdfe2adb2da68dba60dff0e}{Add\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a09d9e01cbd8596af7fac626ce2753643}{Add\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a0764ede1c23caa7022a01657a0e3726b}{Remove\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a87d6628f388baed1edb8efda9062c443}{Remove\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a1944aaa13667bc267e6ef44892da969d}{Get\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aa3376f2e7aed9639c2b5ba27aa6fb314}{Get\+Synapses}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a53d1047ae3ec721540b64b05abe01559}{Create\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_ad877c495c9efdb582613a5af8d854ac3}{Create\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_af78d31471a121844e4735d809c900502}{Clone\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a2b2d40d179f95ff96e9aa0559234cc31}{Clone\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a0f943978df49ef879c43c15c81682a8a}{Destroy\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a7f705e562562e9778ee0b5260dda9f09}{Destroy\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ab80ffdc75ad4754463c356d36fb81ab4}{Add\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a085f61ab94b71406a0a5e11d789ed69c}{Add\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_ac0728c12a6d4bb87b6e8c9163435c8e6}{Remove\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a5e706084296ce84ff6884c1506213b03}{Remove\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classCognitiveNetwork_a85890c201376061b1ffbe8fdfc1a8633}{Get\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_ac56b1585864b372c8897dcb5720d00a7}{Get\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a99f801aeca299186cc706696696749b1}{Set\+Charge}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a3fc6d08413bfd4350f94d6f2627eedc7}{Set\+Spin}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a4b5150310288c52f00ecb745ae9e7f86}{Get\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a761db75ac8eab7b4625e5a398891bd12}{Get\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_aa6342c390fe8e7c648b4c6bc8f93ba4a}{Get\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a09e5a1c774c84529a7adfe56fadb7467}{Get\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a8c4e0454068f714691ae250f795cdb67}{Get\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a277247686f8af159e7a7beb0ec379225}{Get\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a942ca90561fedae46136de620accbfea}{Get\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_acfa5de663b3e686c4d9ea1a3bb483b11}{Get\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a7d3252977440a9a5c004f748647ce885}{Apply\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a46a15b24bd61049fa1c4f635268086a1}{Apply\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_ab8bc213d2806f0dc49c1284bf934fc24}{Apply\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_ae590ecb77db0a876425b9b74bcfe2bce}{Apply\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a9753f52c9e36ad44e9fac1d3e38a0770}{Apply\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a7a55750d3c42a277c4ffe04a87ab3b19}{Apply\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_af25bbd4f4d8f370cd2a48fd6db8302b9}{Apply\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a8b60fdb81d89a3a74d6c06cb29e7aad3}{Apply\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_af9f082a70f0cc25a3f818d9eace5a527}{Set\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_ab39c9eed50da6d3630c4498ae64b804e}{Set\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a116f6818986a622e4a318857859e2495}{Set\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a31764cd5746369d16b45f2ff74806a0b}{Set\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a270f6842ec14b3e5b80dedf7b48ea6f4}{Set\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a50f2a12c9873e623d6247318b041ba30}{Set\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_ac54286eea279f5caa98b642b9084fd55}{Set\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_a6f7210dd8c2786518329faa61b6e14d5}{Set\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classCognitiveNetwork_ac97c08a0af7dc0d02fbe059827b6be87}{Poll\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDimension}{Dimension}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a79f0541fde6dd50f8e87f3f46d849b95}{dimension\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a5a46cefb188858fdc023df3abbac0a47}{cognitiveinput\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a7a57ad82736c0d8b03e7607b5c603b00}{cognitiveoutput\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_aaf69f6e0cc0084eb748ef1540c773f85}{interneuronspace\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a263efd10857d5507c0e889e48f7329fe}{orbital\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_abbb9ff97e1b9cd61602d95f44c30132e}{neuron\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a9218de9d63b10b313df289d1312c81e0}{synapse\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classCognitiveNetwork_a7018bee3dbf538c3d0c81a64aa002ab8}{neurotransmitter\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a45bdf5b9f1ccc0ed1ad32e2a6b9e7dab}{cognitivenetwork\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_ad6e12ec54ab456f6fad0ac33ee5836d3}{m\+\_\+\+Tag}}
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a2d5ffaceb2676eeb45ed2879dc9be9ff}{object\+\_\+size}}
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a79cf90e648303fbae25128053e1e74d2}{m\+\_\+\+Resting\+Potential}}
+\item 
+bool \mbox{\hyperlink{classCognitiveNetwork_a1bfe6f5f289e2fe876f3f7ccd459cbc6}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classCognitiveNetwork_ae9c10ceb2a44c5458f93d4e66d02b245}{object\+\_\+initialised}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classCognitiveNetwork_a00751b9bc40bf22efd7a86a58478c760}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classCognitiveNetwork_a8b20f9cf5c0857072278036c26541de5}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a18e532233f30c3cd23a62d3a51361890}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_afe2b8f2a9decc4aa34e349c4b31132ca}{m\+\_\+add\+Status}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a97e0dfbeec1fda74336a6a01991252ad}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a121f4a2db12d5fbaf8d7b4f38d2b8af5}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a261409a3a19a76858743769605508278}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a6fca1826ad4e0140cb1f1060891a3322}{m\+\_\+\+Spike}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Spike\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a790c699ecb3c98be0f3dada86f795e0b}{m\+\_\+\+Gate\+Keeper}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Gate\+Keeper\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a5571556d812abd789a682a606e6678c8}{m\+\_\+\+Channel\+Min}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Channel\+Min\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_aceec291fd547c96cc0acdceb0b8ac395}{m\+\_\+\+Channel\+Max}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Channel\+Max\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveNetwork_a13ad3041f8dc46d58fd9ef6636fca04f}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classCognitiveNetwork_adcdba17a98dffbbb12b199630d0cb83e}{m\+\_\+\+Time\+Threshold}}
+\item 
+unsigned int \mbox{\hyperlink{classCognitiveNetwork_ab4cfbf213ee21aeeb16d145d269aa377}{cognitivenetwork\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+Particle\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a0a8f803f884cee0566bcd33ea9e0b01a}{cognitivenetwork\+Capacity}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a7410505d26ebadbc1547deed3a2d7eaa}{cognitivenetwork\+Usage}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a9ac40480942ca8287c09533a6e5997cd}{interneuronspace\+\_\+pool}} = 1
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_ad17a9880d3e4742cc4f2151d76b5e906}{cognitiveinput\+\_\+pool}} = 1
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_aabdf601ef8d8827cfeeacdc72fa85d37}{cognitiveoutput\+\_\+pool}} = 1
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a58920f62f4c0dc71bb62b1480c78a356}{orbital\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a8873930c11fbe7e1c8f1850961cc73ec}{neuron\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_acce7f5451dd50c27689d2239fbd66394}{synapse\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classCognitiveNetwork_a8fdef3aed1bd95b0980885c77f423a12}{neurotransmitter\+\_\+pool}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structCognitiveNetwork_1_1OrbitalConnection}{Orbital\+Connection}} $>$ \mbox{\hyperlink{classCognitiveNetwork_aaae2978be9a9acb8d7ff0de6495ec9b0}{orbital\+\_\+connection\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCognitiveNetwork_a3daddb316744336648d317e7f71ed371}\label{classCognitiveNetwork_a3daddb316744336648d317e7f71ed371}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Cognitive\+Network()}{CognitiveNetwork()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Cognitive\+Network\+::\+Cognitive\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a167b15e33bcbca43cb0a516159e890f2}\label{classCognitiveNetwork_a167b15e33bcbca43cb0a516159e890f2}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Cognitive\+Network()}{CognitiveNetwork()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Cognitive\+Network\+::\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac7ba285d3468a929dac88756a2c4e4f9}\label{classCognitiveNetwork_ac7ba285d3468a929dac88756a2c4e4f9}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Cognitive\+Network()}{CognitiveNetwork()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Cognitive\+Network\+::\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6ec49dcc8cc58cded71983291629179c}\label{classCognitiveNetwork_a6ec49dcc8cc58cded71983291629179c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\index{Cognitive\+Network@{Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Cognitive\+Network()}{CognitiveNetwork()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Cognitive\+Network\+::\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a17142cc6f0bb3894e63f6c66fa401778}\label{classCognitiveNetwork_a17142cc6f0bb3894e63f6c66fa401778}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!````~Cognitive\+Network@{$\sim$\+Cognitive\+Network}}
+\index{````~Cognitive\+Network@{$\sim$\+Cognitive\+Network}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{$\sim$\+Cognitive\+Network()}{~CognitiveNetwork()}}
+{\footnotesize\ttfamily virtual Cognitive\+Network\+::$\sim$\+Cognitive\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCognitiveNetwork_a6af57693982286ac6a6831ca3010b760}\label{classCognitiveNetwork_a6af57693982286ac6a6831ca3010b760}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Cognitive\+Input@{Add\+Cognitive\+Input}}
+\index{Add\+Cognitive\+Input@{Add\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Input()}{AddCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_afc92c9b378e7e0873d0164bc4f2635df}\label{classCognitiveNetwork_afc92c9b378e7e0873d0164bc4f2635df}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Cognitive\+Inputs@{Add\+Cognitive\+Inputs}}
+\index{Add\+Cognitive\+Inputs@{Add\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Inputs()}{AddCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8a9b533b89b7d62b21cf41bdf957ef14}\label{classCognitiveNetwork_a8a9b533b89b7d62b21cf41bdf957ef14}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Cognitive\+Output@{Add\+Cognitive\+Output}}
+\index{Add\+Cognitive\+Output@{Add\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Output()}{AddCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6299433811b76f0ccb97cf69fe9bfb66}\label{classCognitiveNetwork_a6299433811b76f0ccb97cf69fe9bfb66}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Cognitive\+Outputs@{Add\+Cognitive\+Outputs}}
+\index{Add\+Cognitive\+Outputs@{Add\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Outputs()}{AddCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac6a7e01f097d0cb6434eb8fa7640c214}\label{classCognitiveNetwork_ac6a7e01f097d0cb6434eb8fa7640c214}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Interneuron\+Space@{Add\+Interneuron\+Space}}
+\index{Add\+Interneuron\+Space@{Add\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Interneuron\+Space()}{AddInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aeafe16b9f44ae1316c072a85e726ee83}\label{classCognitiveNetwork_aeafe16b9f44ae1316c072a85e726ee83}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Interneuron\+Spaces@{Add\+Interneuron\+Spaces}}
+\index{Add\+Interneuron\+Spaces@{Add\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Interneuron\+Spaces()}{AddInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8457342637fde2d814c54942c3367416}\label{classCognitiveNetwork_a8457342637fde2d814c54942c3367416}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Neuron@{Add\+Neuron}}
+\index{Add\+Neuron@{Add\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Neuron()}{AddNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ade928e3355db97d3c5d99501ff4a3b69}\label{classCognitiveNetwork_ade928e3355db97d3c5d99501ff4a3b69}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Neurons@{Add\+Neurons}}
+\index{Add\+Neurons@{Add\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Neurons()}{AddNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab80ffdc75ad4754463c356d36fb81ab4}\label{classCognitiveNetwork_ab80ffdc75ad4754463c356d36fb81ab4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a085f61ab94b71406a0a5e11d789ed69c}\label{classCognitiveNetwork_a085f61ab94b71406a0a5e11d789ed69c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab6caa285c25568259ae935cf9e746af4}\label{classCognitiveNetwork_ab6caa285c25568259ae935cf9e746af4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Orbital@{Add\+Orbital}}
+\index{Add\+Orbital@{Add\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Orbital()}{AddOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9dbf4a9fab3b806d2bd6b2701b7a9548}\label{classCognitiveNetwork_a9dbf4a9fab3b806d2bd6b2701b7a9548}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Orbitals@{Add\+Orbitals}}
+\index{Add\+Orbitals@{Add\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Orbitals()}{AddOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a4bfdcd2affdfe2adb2da68dba60dff0e}\label{classCognitiveNetwork_a4bfdcd2affdfe2adb2da68dba60dff0e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Synapse@{Add\+Synapse}}
+\index{Add\+Synapse@{Add\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Synapse()}{AddSynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Add\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a09d9e01cbd8596af7fac626ce2753643}\label{classCognitiveNetwork_a09d9e01cbd8596af7fac626ce2753643}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Add\+Synapses@{Add\+Synapses}}
+\index{Add\+Synapses@{Add\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Add\+Synapses()}{AddSynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Add\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ae590ecb77db0a876425b9b74bcfe2bce}\label{classCognitiveNetwork_ae590ecb77db0a876425b9b74bcfe2bce}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1f787da78fa196ba635db21a9e91dabb}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9753f52c9e36ad44e9fac1d3e38a0770}\label{classCognitiveNetwork_a9753f52c9e36ad44e9fac1d3e38a0770}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7d3252977440a9a5c004f748647ce885}\label{classCognitiveNetwork_a7d3252977440a9a5c004f748647ce885}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7a55750d3c42a277c4ffe04a87ab3b19}\label{classCognitiveNetwork_a7a55750d3c42a277c4ffe04a87ab3b19}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_af25bbd4f4d8f370cd2a48fd6db8302b9}\label{classCognitiveNetwork_af25bbd4f4d8f370cd2a48fd6db8302b9}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a62789bcff84bd750b0366004381e2fdd}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8b60fdb81d89a3a74d6c06cb29e7aad3}\label{classCognitiveNetwork_a8b60fdb81d89a3a74d6c06cb29e7aad3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af7becebb347be9a85541d96a3eca1ca7}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a46a15b24bd61049fa1c4f635268086a1}\label{classCognitiveNetwork_a46a15b24bd61049fa1c4f635268086a1}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab8bc213d2806f0dc49c1284bf934fc24}\label{classCognitiveNetwork_ab8bc213d2806f0dc49c1284bf934fc24}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a058cb2b044d56268e36f153fac21084e}\label{classCognitiveNetwork_a058cb2b044d56268e36f153fac21084e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Cognitive\+Input@{Clone\+Cognitive\+Input}}
+\index{Clone\+Cognitive\+Input@{Clone\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Cognitive\+Input()}{CloneCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aeaf2883b25dbf1eefd11c2d92efe8816}\label{classCognitiveNetwork_aeaf2883b25dbf1eefd11c2d92efe8816}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Cognitive\+Inputs@{Clone\+Cognitive\+Inputs}}
+\index{Clone\+Cognitive\+Inputs@{Clone\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Cognitive\+Inputs()}{CloneCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab24f74115c11275f365245a4bb826c91}\label{classCognitiveNetwork_ab24f74115c11275f365245a4bb826c91}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Cognitive\+Output@{Clone\+Cognitive\+Output}}
+\index{Clone\+Cognitive\+Output@{Clone\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Cognitive\+Output()}{CloneCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a5734aa5378e9b701dca5e98017c1ea35}\label{classCognitiveNetwork_a5734aa5378e9b701dca5e98017c1ea35}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Cognitive\+Outputs@{Clone\+Cognitive\+Outputs}}
+\index{Clone\+Cognitive\+Outputs@{Clone\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Cognitive\+Outputs()}{CloneCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a1eef76439fffb9daaa3edc4e3c012831}\label{classCognitiveNetwork_a1eef76439fffb9daaa3edc4e3c012831}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Interneuron\+Space@{Clone\+Interneuron\+Space}}
+\index{Clone\+Interneuron\+Space@{Clone\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Interneuron\+Space()}{CloneInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a5ee1d7b6df5bfe0048b4aea317c1974c}\label{classCognitiveNetwork_a5ee1d7b6df5bfe0048b4aea317c1974c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Interneuron\+Spaces@{Clone\+Interneuron\+Spaces}}
+\index{Clone\+Interneuron\+Spaces@{Clone\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Interneuron\+Spaces()}{CloneInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_abf42d64965d64836d6fcbd7ce33c8db4}\label{classCognitiveNetwork_abf42d64965d64836d6fcbd7ce33c8db4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Neuron@{Clone\+Neuron}}
+\index{Clone\+Neuron@{Clone\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Neuron()}{CloneNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8852409e92434523ddbd48d699c5609f}\label{classCognitiveNetwork_a8852409e92434523ddbd48d699c5609f}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Neurons@{Clone\+Neurons}}
+\index{Clone\+Neurons@{Clone\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Neurons()}{CloneNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af78d31471a121844e4735d809c900502}\label{classCognitiveNetwork_af78d31471a121844e4735d809c900502}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2b2d40d179f95ff96e9aa0559234cc31}\label{classCognitiveNetwork_a2b2d40d179f95ff96e9aa0559234cc31}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa8992740f25d46b0be3d9d8344c39f67}\label{classCognitiveNetwork_aa8992740f25d46b0be3d9d8344c39f67}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Orbital@{Clone\+Orbital}}
+\index{Clone\+Orbital@{Clone\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Orbital()}{CloneOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a266b7baf2fd9d6b5c5652e251830020a}\label{classCognitiveNetwork_a266b7baf2fd9d6b5c5652e251830020a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Orbitals@{Clone\+Orbitals}}
+\index{Clone\+Orbitals@{Clone\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Orbitals()}{CloneOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a40f88d3ce9d386ee4db5c1e0ad84dad2}\label{classCognitiveNetwork_a40f88d3ce9d386ee4db5c1e0ad84dad2}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Synapse@{Clone\+Synapse}}
+\index{Clone\+Synapse@{Clone\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Synapse()}{CloneSynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Clone\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a82fe792704bcbf7df56b3023266f5f70}\label{classCognitiveNetwork_a82fe792704bcbf7df56b3023266f5f70}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Clone\+Synapses@{Clone\+Synapses}}
+\index{Clone\+Synapses@{Clone\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Clone\+Synapses()}{CloneSynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Clone\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_add96197c3dc51d94d06edb480fbc4a38}\label{classCognitiveNetwork_add96197c3dc51d94d06edb480fbc4a38}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Cognitive\+Input@{Create\+Cognitive\+Input}}
+\index{Create\+Cognitive\+Input@{Create\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Cognitive\+Input()}{CreateCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0833f7b587f14e0c0778661a56bce957}\label{classCognitiveNetwork_a0833f7b587f14e0c0778661a56bce957}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Cognitive\+Inputs@{Create\+Cognitive\+Inputs}}
+\index{Create\+Cognitive\+Inputs@{Create\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Cognitive\+Inputs()}{CreateCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac220350499bd323bd8f24ff0050cd60d}\label{classCognitiveNetwork_ac220350499bd323bd8f24ff0050cd60d}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Cognitive\+Output@{Create\+Cognitive\+Output}}
+\index{Create\+Cognitive\+Output@{Create\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Cognitive\+Output()}{CreateCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a002df11f4389a122fc140c186ab665c9}\label{classCognitiveNetwork_a002df11f4389a122fc140c186ab665c9}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Cognitive\+Outputs@{Create\+Cognitive\+Outputs}}
+\index{Create\+Cognitive\+Outputs@{Create\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Cognitive\+Outputs()}{CreateCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af0dc86c7905baae6f2b5efb3a65b8819}\label{classCognitiveNetwork_af0dc86c7905baae6f2b5efb3a65b8819}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Interneuron\+Space@{Create\+Interneuron\+Space}}
+\index{Create\+Interneuron\+Space@{Create\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Interneuron\+Space()}{CreateInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2d671451d659079d5efb5cda10e48827}\label{classCognitiveNetwork_a2d671451d659079d5efb5cda10e48827}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Interneuron\+Spaces@{Create\+Interneuron\+Spaces}}
+\index{Create\+Interneuron\+Spaces@{Create\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Interneuron\+Spaces()}{CreateInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9b5fcaf824d5b587775e7c44630affe6}\label{classCognitiveNetwork_a9b5fcaf824d5b587775e7c44630affe6}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Neuron@{Create\+Neuron}}
+\index{Create\+Neuron@{Create\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Neuron()}{CreateNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af9b2a136584c962e44114a7ee3d2804a}\label{classCognitiveNetwork_af9b2a136584c962e44114a7ee3d2804a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Neurons@{Create\+Neurons}}
+\index{Create\+Neurons@{Create\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Neurons()}{CreateNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a53d1047ae3ec721540b64b05abe01559}\label{classCognitiveNetwork_a53d1047ae3ec721540b64b05abe01559}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad877c495c9efdb582613a5af8d854ac3}\label{classCognitiveNetwork_ad877c495c9efdb582613a5af8d854ac3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a5e0a782afc45d75d57fef91dd5513546}\label{classCognitiveNetwork_a5e0a782afc45d75d57fef91dd5513546}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Orbital@{Create\+Orbital}}
+\index{Create\+Orbital@{Create\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Orbital()}{CreateOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a46d4189cf3e6b9af6190abe7b79539b4}\label{classCognitiveNetwork_a46d4189cf3e6b9af6190abe7b79539b4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Orbitals@{Create\+Orbitals}}
+\index{Create\+Orbitals@{Create\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Orbitals()}{CreateOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ade8e9295b35790b136dca9084a1b7aa9}\label{classCognitiveNetwork_ade8e9295b35790b136dca9084a1b7aa9}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Synapse@{Create\+Synapse}}
+\index{Create\+Synapse@{Create\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Synapse()}{CreateSynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Create\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ae6ae16f401e7699032ac9459132763c0}\label{classCognitiveNetwork_ae6ae16f401e7699032ac9459132763c0}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Create\+Synapses@{Create\+Synapses}}
+\index{Create\+Synapses@{Create\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Create\+Synapses()}{CreateSynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Create\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a12e085cd47b7661190527fe55b6da8dc}\label{classCognitiveNetwork_a12e085cd47b7661190527fe55b6da8dc}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Cognitive\+Input@{Destroy\+Cognitive\+Input}}
+\index{Destroy\+Cognitive\+Input@{Destroy\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Cognitive\+Input()}{DestroyCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a00aa44de67dd0593a2498ce7a3b4c0f2}\label{classCognitiveNetwork_a00aa44de67dd0593a2498ce7a3b4c0f2}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Cognitive\+Inputs@{Destroy\+Cognitive\+Inputs}}
+\index{Destroy\+Cognitive\+Inputs@{Destroy\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Cognitive\+Inputs()}{DestroyCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8475cf7277d25532bb31926e768600e8}\label{classCognitiveNetwork_a8475cf7277d25532bb31926e768600e8}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Cognitive\+Output@{Destroy\+Cognitive\+Output}}
+\index{Destroy\+Cognitive\+Output@{Destroy\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Cognitive\+Output()}{DestroyCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad08191cbab02f26f69d25bc7e6b5c1ee}\label{classCognitiveNetwork_ad08191cbab02f26f69d25bc7e6b5c1ee}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Cognitive\+Outputs@{Destroy\+Cognitive\+Outputs}}
+\index{Destroy\+Cognitive\+Outputs@{Destroy\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Cognitive\+Outputs()}{DestroyCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_acdda154177d3b3a92885c10f6b3dc274}\label{classCognitiveNetwork_acdda154177d3b3a92885c10f6b3dc274}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Interneuron\+Space@{Destroy\+Interneuron\+Space}}
+\index{Destroy\+Interneuron\+Space@{Destroy\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Interneuron\+Space()}{DestroyInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a718833496332e0471186c9a886005c4a}\label{classCognitiveNetwork_a718833496332e0471186c9a886005c4a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Interneuron\+Spaces@{Destroy\+Interneuron\+Spaces}}
+\index{Destroy\+Interneuron\+Spaces@{Destroy\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Interneuron\+Spaces()}{DestroyInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab3318f517da206ad4286b6cc22acf520}\label{classCognitiveNetwork_ab3318f517da206ad4286b6cc22acf520}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Neuron@{Destroy\+Neuron}}
+\index{Destroy\+Neuron@{Destroy\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Neuron()}{DestroyNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af2f706043a0c227b93877e29b056f3c9}\label{classCognitiveNetwork_af2f706043a0c227b93877e29b056f3c9}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Neurons@{Destroy\+Neurons}}
+\index{Destroy\+Neurons@{Destroy\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Neurons()}{DestroyNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0f943978df49ef879c43c15c81682a8a}\label{classCognitiveNetwork_a0f943978df49ef879c43c15c81682a8a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7f705e562562e9778ee0b5260dda9f09}\label{classCognitiveNetwork_a7f705e562562e9778ee0b5260dda9f09}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aefecb3a2464f7f21449e522af5119c63}\label{classCognitiveNetwork_aefecb3a2464f7f21449e522af5119c63}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Orbital@{Destroy\+Orbital}}
+\index{Destroy\+Orbital@{Destroy\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Orbital()}{DestroyOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0ee8259d26e30779bf06471fb8a10bb5}\label{classCognitiveNetwork_a0ee8259d26e30779bf06471fb8a10bb5}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Orbitals@{Destroy\+Orbitals}}
+\index{Destroy\+Orbitals@{Destroy\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Orbitals()}{DestroyOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a08b87aa9a0823355ef7cef77414dc6dc}\label{classCognitiveNetwork_a08b87aa9a0823355ef7cef77414dc6dc}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Synapse@{Destroy\+Synapse}}
+\index{Destroy\+Synapse@{Destroy\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Synapse()}{DestroySynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Destroy\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a141e9e8e6337d42fc19edd75bb50e47b}\label{classCognitiveNetwork_a141e9e8e6337d42fc19edd75bb50e47b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Destroy\+Synapses@{Destroy\+Synapses}}
+\index{Destroy\+Synapses@{Destroy\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Destroy\+Synapses()}{DestroySynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Destroy\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6bb3fc06029c260dd658d0db072625a7}\label{classCognitiveNetwork_a6bb3fc06029c260dd658d0db072625a7}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Capacity@{Get\+Capacity}}
+\index{Get\+Capacity@{Get\+Capacity}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Capacity()}{GetCapacity()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Capacity (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab67da8690b83618d88f88411121d7071}\label{classCognitiveNetwork_ab67da8690b83618d88f88411121d7071}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Channel\+Max@{Get\+Channel\+Max}}
+\index{Get\+Channel\+Max@{Get\+Channel\+Max}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Channel\+Max()}{GetChannelMax()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Channel\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad7f5cc836340017d38c22b57e177fc91}\label{classCognitiveNetwork_ad7f5cc836340017d38c22b57e177fc91}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Channel\+Min@{Get\+Channel\+Min}}
+\index{Get\+Channel\+Min@{Get\+Channel\+Min}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Channel\+Min()}{GetChannelMin()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Channel\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2ff68a0d11cdb29af2f05a69a11911a4}\label{classCognitiveNetwork_a2ff68a0d11cdb29af2f05a69a11911a4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Cognitive\+Input@{Get\+Cognitive\+Input}}
+\index{Get\+Cognitive\+Input@{Get\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Input()}{GetCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a92b896643b881e4030401e0f7fd256bf}\label{classCognitiveNetwork_a92b896643b881e4030401e0f7fd256bf}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Cognitive\+Inputs@{Get\+Cognitive\+Inputs}}
+\index{Get\+Cognitive\+Inputs@{Get\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Inputs()}{GetCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af33f3ff9dd829da73d183d2624f24964}\label{classCognitiveNetwork_af33f3ff9dd829da73d183d2624f24964}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Cognitive\+Network\+Device\+Tag@{Get\+Cognitive\+Network\+Device\+Tag}}
+\index{Get\+Cognitive\+Network\+Device\+Tag@{Get\+Cognitive\+Network\+Device\+Tag}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Network\+Device\+Tag()}{GetCognitiveNetworkDeviceTag()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Cognitive\+Network\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a947fa4c50fecc4008d2bcfc96a272ffc}\label{classCognitiveNetwork_a947fa4c50fecc4008d2bcfc96a272ffc}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Cognitive\+Output@{Get\+Cognitive\+Output}}
+\index{Get\+Cognitive\+Output@{Get\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Output()}{GetCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_acdf847165899c36d6d9d6843ecc27218}\label{classCognitiveNetwork_acdf847165899c36d6d9d6843ecc27218}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Cognitive\+Outputs@{Get\+Cognitive\+Outputs}}
+\index{Get\+Cognitive\+Outputs@{Get\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Outputs()}{GetCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a160bb447671609eb14b1b8043639ac74}\label{classCognitiveNetwork_a160bb447671609eb14b1b8043639ac74}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Cognitive\+Network\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa64c93ecec84b57b25e1fdb173795f9b}\label{classCognitiveNetwork_aa64c93ecec84b57b25e1fdb173795f9b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Disabled@{Get\+Disabled}}
+\index{Get\+Disabled@{Get\+Disabled}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Disabled()}{GetDisabled()}}
+{\footnotesize\ttfamily bool Cognitive\+Network\+::\+Get\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a09e5a1c774c84529a7adfe56fadb7467}\label{classCognitiveNetwork_a09e5a1c774c84529a7adfe56fadb7467}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a63b850ef3f3394313353109d222bf5d1}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8c4e0454068f714691ae250f795cdb67}\label{classCognitiveNetwork_a8c4e0454068f714691ae250f795cdb67}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_af23b9bce2587ccf3c8204be33fc76c61}\label{classCognitiveNetwork_af23b9bce2587ccf3c8204be33fc76c61}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a3a9be1c6697d063b0836cdcdc7a2600c}\label{classCognitiveNetwork_a3a9be1c6697d063b0836cdcdc7a2600c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Gate\+Keeper@{Get\+Gate\+Keeper}}
+\index{Get\+Gate\+Keeper@{Get\+Gate\+Keeper}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Gate\+Keeper()}{GetGateKeeper()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Gate\+Keeper (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a4b5150310288c52f00ecb745ae9e7f86}\label{classCognitiveNetwork_a4b5150310288c52f00ecb745ae9e7f86}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0119d61e86ea6b84ad7f69f88d59d008}\label{classCognitiveNetwork_a0119d61e86ea6b84ad7f69f88d59d008}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Interneuron\+Space@{Get\+Interneuron\+Space}}
+\index{Get\+Interneuron\+Space@{Get\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Interneuron\+Space()}{GetInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a4daf966882d527b784bd359794ad39ca}\label{classCognitiveNetwork_a4daf966882d527b784bd359794ad39ca}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Interneuron\+Spaces@{Get\+Interneuron\+Spaces}}
+\index{Get\+Interneuron\+Spaces@{Get\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Interneuron\+Spaces()}{GetInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac12f0af92d878d45dca7303dc065c383}\label{classCognitiveNetwork_ac12f0af92d878d45dca7303dc065c383}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neuron@{Get\+Neuron}}
+\index{Get\+Neuron@{Get\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neuron()}{GetNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af81132245e486c496a055f54a5a520d0}\label{classCognitiveNetwork_af81132245e486c496a055f54a5a520d0}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neuron\+Pool@{Get\+Neuron\+Pool}}
+\index{Get\+Neuron\+Pool@{Get\+Neuron\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neuron\+Pool()}{GetNeuronPool()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Neuron\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0e9e37e976a7ca5ee625e2d7b36fd7ea}\label{classCognitiveNetwork_a0e9e37e976a7ca5ee625e2d7b36fd7ea}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neurons@{Get\+Neurons}}
+\index{Get\+Neurons@{Get\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neurons()}{GetNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a85890c201376061b1ffbe8fdfc1a8633}\label{classCognitiveNetwork_a85890c201376061b1ffbe8fdfc1a8633}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a4e5b1d60cda4ddb4bd04d8dca42b7a5b}\label{classCognitiveNetwork_a4e5b1d60cda4ddb4bd04d8dca42b7a5b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neurotransmitter\+Pool@{Get\+Neurotransmitter\+Pool}}
+\index{Get\+Neurotransmitter\+Pool@{Get\+Neurotransmitter\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter\+Pool()}{GetNeurotransmitterPool()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Neurotransmitter\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac56b1585864b372c8897dcb5720d00a7}\label{classCognitiveNetwork_ac56b1585864b372c8897dcb5720d00a7}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a1c92a8f6c42788cf8ca890f062f853a3}\label{classCognitiveNetwork_a1c92a8f6c42788cf8ca890f062f853a3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Object\+Type@{Get\+Object\+Type}}
+\index{Get\+Object\+Type@{Get\+Object\+Type}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Object\+Type()}{GetObjectType()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a69655ef1e12bac5f74c2eb85c72720f4}\label{classCognitiveNetwork_a69655ef1e12bac5f74c2eb85c72720f4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Orbital@{Get\+Orbital}}
+\index{Get\+Orbital@{Get\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Orbital()}{GetOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af5995eaa4ba35c555a6b65d895451f25}\label{classCognitiveNetwork_af5995eaa4ba35c555a6b65d895451f25}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Orbital\+Pool@{Get\+Orbital\+Pool}}
+\index{Get\+Orbital\+Pool@{Get\+Orbital\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Orbital\+Pool()}{GetOrbitalPool()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Orbital\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa21d28ffc3b507236a7dad64663f6c42}\label{classCognitiveNetwork_aa21d28ffc3b507236a7dad64663f6c42}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Orbitals@{Get\+Orbitals}}
+\index{Get\+Orbitals@{Get\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Orbitals()}{GetOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a03d744f9d0d420c1e044646bc6bd2552}\label{classCognitiveNetwork_a03d744f9d0d420c1e044646bc6bd2552}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Resting\+Potential@{Get\+Resting\+Potential}}
+\index{Get\+Resting\+Potential@{Get\+Resting\+Potential}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Resting\+Potential()}{GetRestingPotential()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Resting\+Potential (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a277247686f8af159e7a7beb0ec379225}\label{classCognitiveNetwork_a277247686f8af159e7a7beb0ec379225}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_acb453ce71da418c5b5617fecede9571b}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a942ca90561fedae46136de620accbfea}\label{classCognitiveNetwork_a942ca90561fedae46136de620accbfea}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_acfa5de663b3e686c4d9ea1a3bb483b11}\label{classCognitiveNetwork_acfa5de663b3e686c4d9ea1a3bb483b11}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af0f4b81950061e63c2855eb40957a5b1}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a1944aaa13667bc267e6ef44892da969d}\label{classCognitiveNetwork_a1944aaa13667bc267e6ef44892da969d}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Synapse@{Get\+Synapse}}
+\index{Get\+Synapse@{Get\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Synapse()}{GetSynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Get\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ae0068b9df823e1b10fed3c73f1cb4702}\label{classCognitiveNetwork_ae0068b9df823e1b10fed3c73f1cb4702}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Synapse\+Pool@{Get\+Synapse\+Pool}}
+\index{Get\+Synapse\+Pool@{Get\+Synapse\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Synapse\+Pool()}{GetSynapsePool()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Synapse\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa3376f2e7aed9639c2b5ba27aa6fb314}\label{classCognitiveNetwork_aa3376f2e7aed9639c2b5ba27aa6fb314}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Synapses@{Get\+Synapses}}
+\index{Get\+Synapses@{Get\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Synapses()}{GetSynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Get\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad293916cfa0e454ef40d7e228d0dcba3}\label{classCognitiveNetwork_ad293916cfa0e454ef40d7e228d0dcba3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Usage@{Get\+Usage}}
+\index{Get\+Usage@{Get\+Usage}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Usage()}{GetUsage()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Get\+Usage (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a761db75ac8eab7b4625e5a398891bd12}\label{classCognitiveNetwork_a761db75ac8eab7b4625e5a398891bd12}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa6342c390fe8e7c648b4c6bc8f93ba4a}\label{classCognitiveNetwork_aa6342c390fe8e7c648b4c6bc8f93ba4a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac97c08a0af7dc0d02fbe059827b6be87}\label{classCognitiveNetwork_ac97c08a0af7dc0d02fbe059827b6be87}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0c485c504542409cbb5cfd8543c35b11}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_af79bf7f8b61d5392df7a87bd444eb550}\label{classCognitiveNetwork_af79bf7f8b61d5392df7a87bd444eb550}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Cognitive\+Input@{Remove\+Cognitive\+Input}}
+\index{Remove\+Cognitive\+Input@{Remove\+Cognitive\+Input}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Cognitive\+Input()}{RemoveCognitiveInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aaaf93e7c732b1e1e81060f82ff73c93a}\label{classCognitiveNetwork_aaaf93e7c732b1e1e81060f82ff73c93a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Cognitive\+Inputs@{Remove\+Cognitive\+Inputs}}
+\index{Remove\+Cognitive\+Inputs@{Remove\+Cognitive\+Inputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Cognitive\+Inputs()}{RemoveCognitiveInputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Cognitive\+Inputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9874b11ac465c84ccf7baab0a40fb84e}\label{classCognitiveNetwork_a9874b11ac465c84ccf7baab0a40fb84e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Cognitive\+Output@{Remove\+Cognitive\+Output}}
+\index{Remove\+Cognitive\+Output@{Remove\+Cognitive\+Output}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Cognitive\+Output()}{RemoveCognitiveOutput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Cognitive\+Output (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2f4956b004c828f0165f28c03e089144}\label{classCognitiveNetwork_a2f4956b004c828f0165f28c03e089144}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Cognitive\+Outputs@{Remove\+Cognitive\+Outputs}}
+\index{Remove\+Cognitive\+Outputs@{Remove\+Cognitive\+Outputs}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Cognitive\+Outputs()}{RemoveCognitiveOutputs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Cognitive\+Outputs (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a04e38cea356f1c7ac31c4df5e19d759c}\label{classCognitiveNetwork_a04e38cea356f1c7ac31c4df5e19d759c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Interneuron\+Space@{Remove\+Interneuron\+Space}}
+\index{Remove\+Interneuron\+Space@{Remove\+Interneuron\+Space}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Interneuron\+Space()}{RemoveInterneuronSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a994c5f93447a82429809c89aa08d3dc1}\label{classCognitiveNetwork_a994c5f93447a82429809c89aa08d3dc1}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Interneuron\+Spaces@{Remove\+Interneuron\+Spaces}}
+\index{Remove\+Interneuron\+Spaces@{Remove\+Interneuron\+Spaces}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Interneuron\+Spaces()}{RemoveInterneuronSpaces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Interneuron\+Spaces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a33e911ec87d902a8fd8bb6d9e23c4261}\label{classCognitiveNetwork_a33e911ec87d902a8fd8bb6d9e23c4261}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Neuron@{Remove\+Neuron}}
+\index{Remove\+Neuron@{Remove\+Neuron}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Neuron()}{RemoveNeuron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a130985ff0aa14b2a17fc2c589e65f868}\label{classCognitiveNetwork_a130985ff0aa14b2a17fc2c589e65f868}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Neurons@{Remove\+Neurons}}
+\index{Remove\+Neurons@{Remove\+Neurons}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Neurons()}{RemoveNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac0728c12a6d4bb87b6e8c9163435c8e6}\label{classCognitiveNetwork_ac0728c12a6d4bb87b6e8c9163435c8e6}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a5e706084296ce84ff6884c1506213b03}\label{classCognitiveNetwork_a5e706084296ce84ff6884c1506213b03}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6ed0e198f6dcfdd45d57df5d3ad5754c}\label{classCognitiveNetwork_a6ed0e198f6dcfdd45d57df5d3ad5754c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Orbital@{Remove\+Orbital}}
+\index{Remove\+Orbital@{Remove\+Orbital}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Orbital()}{RemoveOrbital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Orbital (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af7834d400995607c2a5a5eac7b5e006d}\label{classCognitiveNetwork_af7834d400995607c2a5a5eac7b5e006d}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Orbitals@{Remove\+Orbitals}}
+\index{Remove\+Orbitals@{Remove\+Orbitals}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Orbitals()}{RemoveOrbitals()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Orbitals (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0764ede1c23caa7022a01657a0e3726b}\label{classCognitiveNetwork_a0764ede1c23caa7022a01657a0e3726b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Synapse@{Remove\+Synapse}}
+\index{Remove\+Synapse@{Remove\+Synapse}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Synapse()}{RemoveSynapse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Cognitive\+Network\+::\+Remove\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a87d6628f388baed1edb8efda9062c443}\label{classCognitiveNetwork_a87d6628f388baed1edb8efda9062c443}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Remove\+Synapses@{Remove\+Synapses}}
+\index{Remove\+Synapses@{Remove\+Synapses}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Synapses()}{RemoveSynapses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Cognitive\+Network\+::\+Remove\+Synapses (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8af8ed2605263e57a32e457aba2af99d}\label{classCognitiveNetwork_a8af8ed2605263e57a32e457aba2af99d}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Cognitive\+Network\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a055b3711835b8d134356298f8975f04d}\label{classCognitiveNetwork_a055b3711835b8d134356298f8975f04d}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Capacity@{Set\+Capacity}}
+\index{Set\+Capacity@{Set\+Capacity}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Capacity()}{SetCapacity()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Capacity (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9c208d66ee284adfceb3b2dd76532a00}\label{classCognitiveNetwork_a9c208d66ee284adfceb3b2dd76532a00}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Channel\+Max@{Set\+Channel\+Max}}
+\index{Set\+Channel\+Max@{Set\+Channel\+Max}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Channel\+Max()}{SetChannelMax()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Channel\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6e2a6ced4ede9a4eef721d6c5aac433c}\label{classCognitiveNetwork_a6e2a6ced4ede9a4eef721d6c5aac433c}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Channel\+Min@{Set\+Channel\+Min}}
+\index{Set\+Channel\+Min@{Set\+Channel\+Min}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Channel\+Min()}{SetChannelMin()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Channel\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a99f801aeca299186cc706696696749b1}\label{classCognitiveNetwork_a99f801aeca299186cc706696696749b1}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Charge@{Set\+Charge}}
+\index{Set\+Charge@{Set\+Charge}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0e8a64151a2446fc16a074ad2de325df}\label{classCognitiveNetwork_a0e8a64151a2446fc16a074ad2de325df}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Cognitive\+Network\+Device\+Tag@{Set\+Cognitive\+Network\+Device\+Tag}}
+\index{Set\+Cognitive\+Network\+Device\+Tag@{Set\+Cognitive\+Network\+Device\+Tag}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Cognitive\+Network\+Device\+Tag()}{SetCognitiveNetworkDeviceTag()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Cognitive\+Network\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a23c6a11d9f15a141f69a9779f174bfb3}\label{classCognitiveNetwork_a23c6a11d9f15a141f69a9779f174bfb3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac29e676c84244f5b64c0083a0efead28}\label{classCognitiveNetwork_ac29e676c84244f5b64c0083a0efead28}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Disabled@{Set\+Disabled}}
+\index{Set\+Disabled@{Set\+Disabled}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Disabled()}{SetDisabled()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a31764cd5746369d16b45f2ff74806a0b}\label{classCognitiveNetwork_a31764cd5746369d16b45f2ff74806a0b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa981fc7e252b1fbbb675f0371860954d}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a270f6842ec14b3e5b80dedf7b48ea6f4}\label{classCognitiveNetwork_a270f6842ec14b3e5b80dedf7b48ea6f4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a608aa95698380f791a0ffba45cc1bee3}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_af2f96107858445a0b7be2be6af5b5c01}\label{classCognitiveNetwork_af2f96107858445a0b7be2be6af5b5c01}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a83bc4047721417212fa1bbbfa64da5ee}\label{classCognitiveNetwork_a83bc4047721417212fa1bbbfa64da5ee}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Gate\+Keeper@{Set\+Gate\+Keeper}}
+\index{Set\+Gate\+Keeper@{Set\+Gate\+Keeper}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Gate\+Keeper()}{SetGateKeeper()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Gate\+Keeper (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_af9f082a70f0cc25a3f818d9eace5a527}\label{classCognitiveNetwork_af9f082a70f0cc25a3f818d9eace5a527}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2e1137387c4165dd3f91a758d2ce7f34}\label{classCognitiveNetwork_a2e1137387c4165dd3f91a758d2ce7f34}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Neuron\+Pool@{Set\+Neuron\+Pool}}
+\index{Set\+Neuron\+Pool@{Set\+Neuron\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Neuron\+Pool()}{SetNeuronPool()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Neuron\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a84f808251f67ced0edad2e1dd4d47039}\label{classCognitiveNetwork_a84f808251f67ced0edad2e1dd4d47039}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Neurotransmitter\+Pool@{Set\+Neurotransmitter\+Pool}}
+\index{Set\+Neurotransmitter\+Pool@{Set\+Neurotransmitter\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Neurotransmitter\+Pool()}{SetNeurotransmitterPool()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Neurotransmitter\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad95a0b25c7f61fc52322938eb13c9e3e}\label{classCognitiveNetwork_ad95a0b25c7f61fc52322938eb13c9e3e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aeee6e2b2eb06b3c55a0f019b6c9cc250}\label{classCognitiveNetwork_aeee6e2b2eb06b3c55a0f019b6c9cc250}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Orbital\+Pool@{Set\+Orbital\+Pool}}
+\index{Set\+Orbital\+Pool@{Set\+Orbital\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Orbital\+Pool()}{SetOrbitalPool()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Orbital\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a3fc6d08413bfd4350f94d6f2627eedc7}\label{classCognitiveNetwork_a3fc6d08413bfd4350f94d6f2627eedc7}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Spin@{Set\+Spin}}
+\index{Set\+Spin@{Set\+Spin}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a50f2a12c9873e623d6247318b041ba30}\label{classCognitiveNetwork_a50f2a12c9873e623d6247318b041ba30}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_ac54286eea279f5caa98b642b9084fd55}\label{classCognitiveNetwork_ac54286eea279f5caa98b642b9084fd55}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aafec97a231126b71c73ac1258609a284}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6f7210dd8c2786518329faa61b6e14d5}\label{classCognitiveNetwork_a6f7210dd8c2786518329faa61b6e14d5}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9d2b7d1de9e7148a403fc15f7f3fd1bf}\label{classCognitiveNetwork_a9d2b7d1de9e7148a403fc15f7f3fd1bf}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Synapse\+Pool@{Set\+Synapse\+Pool}}
+\index{Set\+Synapse\+Pool@{Set\+Synapse\+Pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Synapse\+Pool()}{SetSynapsePool()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Synapse\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8b6b4afc47df279604be13bce77f5b0a}\label{classCognitiveNetwork_a8b6b4afc47df279604be13bce77f5b0a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Usage@{Set\+Usage}}
+\index{Set\+Usage@{Set\+Usage}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Usage()}{SetUsage()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Usage (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab39c9eed50da6d3630c4498ae64b804e}\label{classCognitiveNetwork_ab39c9eed50da6d3630c4498ae64b804e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_a116f6818986a622e4a318857859e2495}\label{classCognitiveNetwork_a116f6818986a622e4a318857859e2495}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a2d3d642bfdc863248e93535832fa4b00}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveNetwork_abeac08d7cbf9df4b36de40aa9301e978}\label{classCognitiveNetwork_abeac08d7cbf9df4b36de40aa9301e978}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!toggle\+Disabled@{toggle\+Disabled}}
+\index{toggle\+Disabled@{toggle\+Disabled}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{toggle\+Disabled()}{toggleDisabled()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::toggle\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a05dccc7759456df13a732899a8f1f4c4}\label{classCognitiveNetwork_a05dccc7759456df13a732899a8f1f4c4}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Update@{Update}}
+\index{Update@{Update}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aa37dda869174e4eef986cca4ce3e55d2}\label{classCognitiveNetwork_aa37dda869174e4eef986cca4ce3e55d2}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Cognitive\+Network\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCognitiveNetwork_a5a46cefb188858fdc023df3abbac0a47}\label{classCognitiveNetwork_a5a46cefb188858fdc023df3abbac0a47}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitiveinput\+\_\+list@{cognitiveinput\+\_\+list}}
+\index{cognitiveinput\+\_\+list@{cognitiveinput\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitiveinput\+\_\+list}{cognitiveinput\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::cognitiveinput\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad17a9880d3e4742cc4f2151d76b5e906}\label{classCognitiveNetwork_ad17a9880d3e4742cc4f2151d76b5e906}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitiveinput\+\_\+pool@{cognitiveinput\+\_\+pool}}
+\index{cognitiveinput\+\_\+pool@{cognitiveinput\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitiveinput\+\_\+pool}{cognitiveinput\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::cognitiveinput\+\_\+pool = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a45bdf5b9f1ccc0ed1ad32e2a6b9e7dab}\label{classCognitiveNetwork_a45bdf5b9f1ccc0ed1ad32e2a6b9e7dab}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitivenetwork\+\_\+type@{cognitivenetwork\+\_\+type}}
+\index{cognitivenetwork\+\_\+type@{cognitivenetwork\+\_\+type}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitivenetwork\+\_\+type}{cognitivenetwork\_type}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::cognitivenetwork\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a0a8f803f884cee0566bcd33ea9e0b01a}\label{classCognitiveNetwork_a0a8f803f884cee0566bcd33ea9e0b01a}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitivenetwork\+Capacity@{cognitivenetwork\+Capacity}}
+\index{cognitivenetwork\+Capacity@{cognitivenetwork\+Capacity}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitivenetwork\+Capacity}{cognitivenetworkCapacity}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::cognitivenetwork\+Capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ab4cfbf213ee21aeeb16d145d269aa377}\label{classCognitiveNetwork_ab4cfbf213ee21aeeb16d145d269aa377}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitivenetwork\+Counter@{cognitivenetwork\+Counter}}
+\index{cognitivenetwork\+Counter@{cognitivenetwork\+Counter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitivenetwork\+Counter}{cognitivenetworkCounter}}
+{\footnotesize\ttfamily unsigned int Cognitive\+Network\+::cognitivenetwork\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+Particle\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7410505d26ebadbc1547deed3a2d7eaa}\label{classCognitiveNetwork_a7410505d26ebadbc1547deed3a2d7eaa}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitivenetwork\+Usage@{cognitivenetwork\+Usage}}
+\index{cognitivenetwork\+Usage@{cognitivenetwork\+Usage}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitivenetwork\+Usage}{cognitivenetworkUsage}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::cognitivenetwork\+Usage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7a57ad82736c0d8b03e7607b5c603b00}\label{classCognitiveNetwork_a7a57ad82736c0d8b03e7607b5c603b00}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitiveoutput\+\_\+list@{cognitiveoutput\+\_\+list}}
+\index{cognitiveoutput\+\_\+list@{cognitiveoutput\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitiveoutput\+\_\+list}{cognitiveoutput\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::cognitiveoutput\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aabdf601ef8d8827cfeeacdc72fa85d37}\label{classCognitiveNetwork_aabdf601ef8d8827cfeeacdc72fa85d37}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!cognitiveoutput\+\_\+pool@{cognitiveoutput\+\_\+pool}}
+\index{cognitiveoutput\+\_\+pool@{cognitiveoutput\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{cognitiveoutput\+\_\+pool}{cognitiveoutput\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::cognitiveoutput\+\_\+pool = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a79f0541fde6dd50f8e87f3f46d849b95}\label{classCognitiveNetwork_a79f0541fde6dd50f8e87f3f46d849b95}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!dimension\+\_\+list@{dimension\+\_\+list}}
+\index{dimension\+\_\+list@{dimension\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{dimension\+\_\+list}{dimension\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classDimension}{Dimension}}$\ast$$>$ Cognitive\+Network\+::dimension\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a18e532233f30c3cd23a62d3a51361890}\label{classCognitiveNetwork_a18e532233f30c3cd23a62d3a51361890}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aaf69f6e0cc0084eb748ef1540c773f85}\label{classCognitiveNetwork_aaf69f6e0cc0084eb748ef1540c773f85}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!interneuronspace\+\_\+list@{interneuronspace\+\_\+list}}
+\index{interneuronspace\+\_\+list@{interneuronspace\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{interneuronspace\+\_\+list}{interneuronspace\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::interneuronspace\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9ac40480942ca8287c09533a6e5997cd}\label{classCognitiveNetwork_a9ac40480942ca8287c09533a6e5997cd}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!interneuronspace\+\_\+pool@{interneuronspace\+\_\+pool}}
+\index{interneuronspace\+\_\+pool@{interneuronspace\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{interneuronspace\+\_\+pool}{interneuronspace\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::interneuronspace\+\_\+pool = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_afe2b8f2a9decc4aa34e349c4b31132ca}\label{classCognitiveNetwork_afe2b8f2a9decc4aa34e349c4b31132ca}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aceec291fd547c96cc0acdceb0b8ac395}\label{classCognitiveNetwork_aceec291fd547c96cc0acdceb0b8ac395}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Channel\+Max@{m\+\_\+\+Channel\+Max}}
+\index{m\+\_\+\+Channel\+Max@{m\+\_\+\+Channel\+Max}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Channel\+Max}{m\_ChannelMax}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Channel\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Channel\+Max\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a5571556d812abd789a682a606e6678c8}\label{classCognitiveNetwork_a5571556d812abd789a682a606e6678c8}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Channel\+Min@{m\+\_\+\+Channel\+Min}}
+\index{m\+\_\+\+Channel\+Min@{m\+\_\+\+Channel\+Min}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Channel\+Min}{m\_ChannelMin}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Channel\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Channel\+Min\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a97e0dfbeec1fda74336a6a01991252ad}\label{classCognitiveNetwork_a97e0dfbeec1fda74336a6a01991252ad}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a790c699ecb3c98be0f3dada86f795e0b}\label{classCognitiveNetwork_a790c699ecb3c98be0f3dada86f795e0b}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Gate\+Keeper@{m\+\_\+\+Gate\+Keeper}}
+\index{m\+\_\+\+Gate\+Keeper@{m\+\_\+\+Gate\+Keeper}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Gate\+Keeper}{m\_GateKeeper}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Gate\+Keeper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Gate\+Keeper\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a79cf90e648303fbae25128053e1e74d2}\label{classCognitiveNetwork_a79cf90e648303fbae25128053e1e74d2}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Resting\+Potential@{m\+\_\+\+Resting\+Potential}}
+\index{m\+\_\+\+Resting\+Potential@{m\+\_\+\+Resting\+Potential}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Resting\+Potential}{m\_RestingPotential}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Resting\+Potential\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a6fca1826ad4e0140cb1f1060891a3322}\label{classCognitiveNetwork_a6fca1826ad4e0140cb1f1060891a3322}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Spike@{m\+\_\+\+Spike}}
+\index{m\+\_\+\+Spike@{m\+\_\+\+Spike}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Spike}{m\_Spike}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Spike\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Spike\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_ad6e12ec54ab456f6fad0ac33ee5836d3}\label{classCognitiveNetwork_ad6e12ec54ab456f6fad0ac33ee5836d3}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Tag@{m\+\_\+\+Tag}}
+\index{m\+\_\+\+Tag@{m\+\_\+\+Tag}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tag}{m\_Tag}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::m\+\_\+\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a13ad3041f8dc46d58fd9ef6636fca04f}\label{classCognitiveNetwork_a13ad3041f8dc46d58fd9ef6636fca04f}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_adcdba17a98dffbbb12b199630d0cb83e}\label{classCognitiveNetwork_adcdba17a98dffbbb12b199630d0cb83e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_abbb9ff97e1b9cd61602d95f44c30132e}\label{classCognitiveNetwork_abbb9ff97e1b9cd61602d95f44c30132e}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!neuron\+\_\+list@{neuron\+\_\+list}}
+\index{neuron\+\_\+list@{neuron\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{neuron\+\_\+list}{neuron\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::neuron\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8873930c11fbe7e1c8f1850961cc73ec}\label{classCognitiveNetwork_a8873930c11fbe7e1c8f1850961cc73ec}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!neuron\+\_\+pool@{neuron\+\_\+pool}}
+\index{neuron\+\_\+pool@{neuron\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{neuron\+\_\+pool}{neuron\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::neuron\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a7018bee3dbf538c3d0c81a64aa002ab8}\label{classCognitiveNetwork_a7018bee3dbf538c3d0c81a64aa002ab8}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8fdef3aed1bd95b0980885c77f423a12}\label{classCognitiveNetwork_a8fdef3aed1bd95b0980885c77f423a12}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}}
+\index{neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+pool}{neurotransmitter\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::neurotransmitter\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a1bfe6f5f289e2fe876f3f7ccd459cbc6}\label{classCognitiveNetwork_a1bfe6f5f289e2fe876f3f7ccd459cbc6}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Cognitive\+Network\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a121f4a2db12d5fbaf8d7b4f38d2b8af5}\label{classCognitiveNetwork_a121f4a2db12d5fbaf8d7b4f38d2b8af5}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveNetwork_a261409a3a19a76858743769605508278}\label{classCognitiveNetwork_a261409a3a19a76858743769605508278}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_ae9c10ceb2a44c5458f93d4e66d02b245}\label{classCognitiveNetwork_ae9c10ceb2a44c5458f93d4e66d02b245}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Cognitive\+Network\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a2d5ffaceb2676eeb45ed2879dc9be9ff}\label{classCognitiveNetwork_a2d5ffaceb2676eeb45ed2879dc9be9ff}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Cognitive\+Network\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_aaae2978be9a9acb8d7ff0de6495ec9b0}\label{classCognitiveNetwork_aaae2978be9a9acb8d7ff0de6495ec9b0}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!orbital\+\_\+connection\+\_\+list@{orbital\+\_\+connection\+\_\+list}}
+\index{orbital\+\_\+connection\+\_\+list@{orbital\+\_\+connection\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{orbital\+\_\+connection\+\_\+list}{orbital\_connection\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structCognitiveNetwork_1_1OrbitalConnection}{Orbital\+Connection}}$>$ Cognitive\+Network\+::orbital\+\_\+connection\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a263efd10857d5507c0e889e48f7329fe}\label{classCognitiveNetwork_a263efd10857d5507c0e889e48f7329fe}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!orbital\+\_\+list@{orbital\+\_\+list}}
+\index{orbital\+\_\+list@{orbital\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{orbital\+\_\+list}{orbital\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::orbital\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a58920f62f4c0dc71bb62b1480c78a356}\label{classCognitiveNetwork_a58920f62f4c0dc71bb62b1480c78a356}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!orbital\+\_\+pool@{orbital\+\_\+pool}}
+\index{orbital\+\_\+pool@{orbital\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{orbital\+\_\+pool}{orbital\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::orbital\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a8b20f9cf5c0857072278036c26541de5}\label{classCognitiveNetwork_a8b20f9cf5c0857072278036c26541de5}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Cognitive\+Network\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a9218de9d63b10b313df289d1312c81e0}\label{classCognitiveNetwork_a9218de9d63b10b313df289d1312c81e0}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!synapse\+\_\+list@{synapse\+\_\+list}}
+\index{synapse\+\_\+list@{synapse\+\_\+list}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{synapse\+\_\+list}{synapse\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Cognitive\+Network\+::synapse\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_acce7f5451dd50c27689d2239fbd66394}\label{classCognitiveNetwork_acce7f5451dd50c27689d2239fbd66394}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!synapse\+\_\+pool@{synapse\+\_\+pool}}
+\index{synapse\+\_\+pool@{synapse\+\_\+pool}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{synapse\+\_\+pool}{synapse\_pool}}
+{\footnotesize\ttfamily int Cognitive\+Network\+::synapse\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveNetwork_a00751b9bc40bf22efd7a86a58478c760}\label{classCognitiveNetwork_a00751b9bc40bf22efd7a86a58478c760}} 
+\index{Cognitive\+Network@{Cognitive\+Network}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Cognitive\+Network@{Cognitive\+Network}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Cognitive\+Network\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{cognitivenetwork_8h}{cognitivenetwork.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{cognitivenetwork_8cc}{cognitivenetwork.\+cc}}\end{DoxyCompactItemize}

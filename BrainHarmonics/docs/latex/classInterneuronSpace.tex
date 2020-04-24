@@ -1,0 +1,644 @@
+\hypertarget{classInterneuronSpace}{}\section{Interneuron\+Space Class Reference}
+\label{classInterneuronSpace}\index{Interneuron\+Space@{Interneuron\+Space}}
+
+
+{\ttfamily \#include $<$interneuronspace.\+h$>$}
+
+Inheritance diagram for Interneuron\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classInterneuronSpace}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structInterneuronSpace_1_1NearbyNeuron}{Nearby\+Neuron}}
+\item 
+struct \mbox{\hyperlink{structInterneuronSpace_1_1s__BindList}{s\+\_\+\+Bind\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInterneuronSpace_a4ad439037f087e7d5cb3e1d8c581ee5f}{Interneuron\+Space}} ()
+\item 
+\mbox{\hyperlink{classInterneuronSpace_a18d5d4920073a9a93ee3cb8f5efe9211}{Interneuron\+Space}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classInterneuronSpace_a753903f3c74415922607846040ac50a6}{Interneuron\+Space}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classInterneuronSpace_aa87eb8c7186542989fccdadc594c5915}{Interneuron\+Space}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classInterneuronSpace_aff0056e3c60b7eff3ad4ca12f6756628}{$\sim$\+Interneuron\+Space}} ()
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a677430712211956219767d4fa71d20e6}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_abd37d409a97acca62d11576314bdfcf4}{Get\+Tau\+Cycles\+Add}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a1024eadca0b56be9b54593ea47c5879f}{Get\+Tau\+Cycles\+Decay}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a90a2c950dd426ed3f015e3c186e877fd}{Get\+Charge\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_ae65bf091b84fa11459ef754ed1c7bf21}{Get\+Discharge\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a66b6683bab6872dfece6111a8ccfb1d7}{Get\+Interneuron\+Space\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a60a46f22a2e575d65031635a698a60a9}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a65ecd1914ab039707313beb1b8702e68}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_ad6c1387daa261a3e8e1dba1402101d5c}{Set\+Tau\+Cycles\+Add}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a7f44a965e377ecdc5c387af2b5d30d69}{Set\+Tau\+Cycles\+Decay}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a404aacb1adce30288bb7b4237344e4cc}{Set\+Charge\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a7fc404aae98d45ccad26b5c186fab6e2}{Set\+Discharge\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_ab34d72ef9135288690328217d7c0a388}{Set\+Interneuron\+Space\+Device\+Tag}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+bool \mbox{\hyperlink{classInterneuronSpace_a3a9776e4a77b87374204468ca7974157}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_a26d98a0ae78ce363ab93e92cf0c973e7}{Create\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_af69f7190226d77a30a80d66d7c28e0ba}{Create\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_a96149bba4c6efd03586700a6fe86960a}{Clone\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_a3defddf17eb839dbd799980f6116f895}{Clone\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_a41eb332165b0a67c3549bd73a8faa969}{Destroy\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_a9543932ffea18cce46fdfbf0fbb85b1b}{Destroy\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_afee7374310b2a8c08bac232d62ea7aa1}{Add\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_a1049397cd511c753d8c178db8f68a1a7}{Add\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_aa46b5ce238b49425a68fcfd53ba1d8b7}{Remove\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_a7b11f542ab7a3d293d5fcf5a1b522ac2}{Remove\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classInterneuronSpace_a7a60c95c8706cbff3084e74b7b15d75c}{Get\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_aaae45b76a4c059aae1e27bde3901371c}{Get\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_ae62237c3a84893c81e9998602ab16718}{Get\+Demand}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a634322f8b405ead2dc51afb0a5c3d725}{Get\+Distance}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a4b053dc94a921c8176d9f58d40169089}{Get\+Allocated\+Interneuron\+Space}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a243535a8f09f104c3a4488f6df4cfd57}{Get\+Minimum\+Distance}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_ae77729a0c140cfb8a9121e898be791b2}{Get\+Interneuron\+Space\+List}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_ad2225077a049e78ce583a79eee2d373f}{Set\+Demand}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a50aaa97f71011dafb583dc432817f477}{Set\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_ab56b0336c9e53f7b448e9d35e617e8c0}{Send\+Bare\+Spike}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classInterneuronSpace_a0a24da715aecafd4072d596fc271666f}{Send\+Transmitter\+Spike}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a72ce2431e1348dd2558fa9b8f864d306}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classInterneuronSpace_a51d51c2f71f6fcf65c478aa27457c4a3}{neurotransmitter\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_af520cb6f8766c77b1e575b2b65393cce}{interneuronspace\+\_\+type}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_aff15cb40feb85e4b75c1bdc31604f333}{object\+\_\+size}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_acfef881bda3b9184542530453075d1b1}{object\+\_\+energy}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a822a704e13dc60edfc5cb710e52150c3}{object\+\_\+energy\+\_\+threshold}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_aedb61682c1c2a374645e21abd4526825}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a5065916461ffbe096fe6bbb6503a767e}{neurotransmitter\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a5a4e1290b3bbb384597f111419be9c76}{m\+\_\+\+Tag}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a9f49bd1364861ea859f1a66c606cff8a}{m\+\_\+add\+Status}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_ae71819def096138a0fb466cbe3f4bf02}{m\+\_\+\+Tau\+Cycles\+Add}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_ac5c246784a31e7299aec57b2861a87e7}{m\+\_\+\+Tau\+Cycles\+Decay}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_aa8a5afd05659a9bbfd0934de9ea3cd53}{m\+\_\+\+Charge\+Type}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_abaa8436af9b85307c65de2755a010297}{m\+\_\+\+Discharge\+Type}}
+\item 
+bool \mbox{\hyperlink{classInterneuronSpace_a42f0a8cfca4592f0a6b47219df489396}{object\+\_\+disabled}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classInterneuronSpace_a5504d64df22fd330cdd14b4aca0171ea}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classInterneuronSpace_a28efcbf608d5dd02f9dd85bec76a7650}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_a7a5cfbb9b0a619283417044345b01578}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_aae1ef00c4fdc597fa12548771953b239}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a2cd3cbca541688d4eaf15fc6c8496dd1}{m\+\_\+\+Surface\+Area}}
+\item 
+unsigned int \mbox{\hyperlink{classInterneuronSpace_a854dc7cd9f9b8643b2c674d2eaa36873}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classInterneuronSpace_a97595972171f2fd0c37ad2d830f61fbb}{m\+\_\+axonlength}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a31182cce98aaecef1533fe17fc3e6786}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a16272fc7502a95a69ca60cbe4612f100}{m\+\_\+\+Time\+Threshold}}
+\item 
+bool \mbox{\hyperlink{classInterneuronSpace_af16aec913a2ec7b4f92f7da2487b4b00}{object\+\_\+initialised}} = false
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a9cb8dd97e4c6c18d3b84e0c0db6ca605}{m\+\_\+\+Reduce\+By}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a848666191c3e8c746d5b7d82b1b8d329}{m\+\_\+\+Reduced\+By}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structInterneuronSpace_1_1s__BindList}{s\+\_\+\+Bind\+List}} $>$ \mbox{\hyperlink{classInterneuronSpace_a37041f5f3a796a7dedcf4cb576c9dbcd}{m\+\_\+\+Bind\+List}}
+\item 
+int \mbox{\hyperlink{classInterneuronSpace_ae1196b764996aa441538d5f6909a2344}{interneuronspace\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}interneuronspace\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classInterneuronSpace_a6b6f5ac9671c40ea57d39824e76a7ccd}{interneuronspace\+Demand}}
+\item 
+double \mbox{\hyperlink{classInterneuronSpace_a7656441e3758dae6167e49903a916bf6}{minimum\+Distance}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structInterneuronSpace_1_1NearbyNeuron}{Nearby\+Neuron}} $>$ \mbox{\hyperlink{classInterneuronSpace_ac55f2a154e8abc403ac1459f0317f0cf}{neuron\+List}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structInterneuronSpace_1_1NearbyNeuron}{Nearby\+Neuron}} $>$\+::iterator \mbox{\hyperlink{classInterneuronSpace_a9643f76d9b5acf91152ed69f6c3dca49}{it}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInterneuronSpace_a4ad439037f087e7d5cb3e1d8c581ee5f}\label{classInterneuronSpace_a4ad439037f087e7d5cb3e1d8c581ee5f}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Interneuron\+Space()}{InterneuronSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Interneuron\+Space\+::\+Interneuron\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a18d5d4920073a9a93ee3cb8f5efe9211}\label{classInterneuronSpace_a18d5d4920073a9a93ee3cb8f5efe9211}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Interneuron\+Space()}{InterneuronSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Interneuron\+Space\+::\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a753903f3c74415922607846040ac50a6}\label{classInterneuronSpace_a753903f3c74415922607846040ac50a6}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Interneuron\+Space()}{InterneuronSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Interneuron\+Space\+::\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aa87eb8c7186542989fccdadc594c5915}\label{classInterneuronSpace_aa87eb8c7186542989fccdadc594c5915}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\index{Interneuron\+Space@{Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Interneuron\+Space()}{InterneuronSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Interneuron\+Space\+::\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aff0056e3c60b7eff3ad4ca12f6756628}\label{classInterneuronSpace_aff0056e3c60b7eff3ad4ca12f6756628}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!````~Interneuron\+Space@{$\sim$\+Interneuron\+Space}}
+\index{````~Interneuron\+Space@{$\sim$\+Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{$\sim$\+Interneuron\+Space()}{~InterneuronSpace()}}
+{\footnotesize\ttfamily virtual Interneuron\+Space\+::$\sim$\+Interneuron\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInterneuronSpace_afee7374310b2a8c08bac232d62ea7aa1}\label{classInterneuronSpace_afee7374310b2a8c08bac232d62ea7aa1}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a1049397cd511c753d8c178db8f68a1a7}\label{classInterneuronSpace_a1049397cd511c753d8c178db8f68a1a7}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a96149bba4c6efd03586700a6fe86960a}\label{classInterneuronSpace_a96149bba4c6efd03586700a6fe86960a}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a3defddf17eb839dbd799980f6116f895}\label{classInterneuronSpace_a3defddf17eb839dbd799980f6116f895}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a26d98a0ae78ce363ab93e92cf0c973e7}\label{classInterneuronSpace_a26d98a0ae78ce363ab93e92cf0c973e7}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_af69f7190226d77a30a80d66d7c28e0ba}\label{classInterneuronSpace_af69f7190226d77a30a80d66d7c28e0ba}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a41eb332165b0a67c3549bd73a8faa969}\label{classInterneuronSpace_a41eb332165b0a67c3549bd73a8faa969}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a9543932ffea18cce46fdfbf0fbb85b1b}\label{classInterneuronSpace_a9543932ffea18cce46fdfbf0fbb85b1b}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a4b053dc94a921c8176d9f58d40169089}\label{classInterneuronSpace_a4b053dc94a921c8176d9f58d40169089}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Allocated\+Interneuron\+Space@{Get\+Allocated\+Interneuron\+Space}}
+\index{Get\+Allocated\+Interneuron\+Space@{Get\+Allocated\+Interneuron\+Space}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Allocated\+Interneuron\+Space()}{GetAllocatedInterneuronSpace()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Allocated\+Interneuron\+Space (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a90a2c950dd426ed3f015e3c186e877fd}\label{classInterneuronSpace_a90a2c950dd426ed3f015e3c186e877fd}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Charge\+Type@{Get\+Charge\+Type}}
+\index{Get\+Charge\+Type@{Get\+Charge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Charge\+Type()}{GetChargeType()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Charge\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ae62237c3a84893c81e9998602ab16718}\label{classInterneuronSpace_ae62237c3a84893c81e9998602ab16718}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Demand@{Get\+Demand}}
+\index{Get\+Demand@{Get\+Demand}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Demand()}{GetDemand()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Demand (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_ae65bf091b84fa11459ef754ed1c7bf21}\label{classInterneuronSpace_ae65bf091b84fa11459ef754ed1c7bf21}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Discharge\+Type@{Get\+Discharge\+Type}}
+\index{Get\+Discharge\+Type@{Get\+Discharge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Discharge\+Type()}{GetDischargeType()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Discharge\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a634322f8b405ead2dc51afb0a5c3d725}\label{classInterneuronSpace_a634322f8b405ead2dc51afb0a5c3d725}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Distance@{Get\+Distance}}
+\index{Get\+Distance@{Get\+Distance}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Distance()}{GetDistance()}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::\+Get\+Distance (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a677430712211956219767d4fa71d20e6}\label{classInterneuronSpace_a677430712211956219767d4fa71d20e6}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a66b6683bab6872dfece6111a8ccfb1d7}\label{classInterneuronSpace_a66b6683bab6872dfece6111a8ccfb1d7}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Interneuron\+Space\+Device\+Tag@{Get\+Interneuron\+Space\+Device\+Tag}}
+\index{Get\+Interneuron\+Space\+Device\+Tag@{Get\+Interneuron\+Space\+Device\+Tag}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Interneuron\+Space\+Device\+Tag()}{GetInterneuronSpaceDeviceTag()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Interneuron\+Space\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ae77729a0c140cfb8a9121e898be791b2}\label{classInterneuronSpace_ae77729a0c140cfb8a9121e898be791b2}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Interneuron\+Space\+List@{Get\+Interneuron\+Space\+List}}
+\index{Get\+Interneuron\+Space\+List@{Get\+Interneuron\+Space\+List}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Interneuron\+Space\+List()}{GetInterneuronSpaceList()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Get\+Interneuron\+Space\+List (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a243535a8f09f104c3a4488f6df4cfd57}\label{classInterneuronSpace_a243535a8f09f104c3a4488f6df4cfd57}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Minimum\+Distance@{Get\+Minimum\+Distance}}
+\index{Get\+Minimum\+Distance@{Get\+Minimum\+Distance}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Minimum\+Distance()}{GetMinimumDistance()}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::\+Get\+Minimum\+Distance (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a7a60c95c8706cbff3084e74b7b15d75c}\label{classInterneuronSpace_a7a60c95c8706cbff3084e74b7b15d75c}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_aaae45b76a4c059aae1e27bde3901371c}\label{classInterneuronSpace_aaae45b76a4c059aae1e27bde3901371c}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_abd37d409a97acca62d11576314bdfcf4}\label{classInterneuronSpace_abd37d409a97acca62d11576314bdfcf4}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Tau\+Cycles\+Add@{Get\+Tau\+Cycles\+Add}}
+\index{Get\+Tau\+Cycles\+Add@{Get\+Tau\+Cycles\+Add}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Tau\+Cycles\+Add()}{GetTauCyclesAdd()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Tau\+Cycles\+Add (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a1024eadca0b56be9b54593ea47c5879f}\label{classInterneuronSpace_a1024eadca0b56be9b54593ea47c5879f}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Get\+Tau\+Cycles\+Decay@{Get\+Tau\+Cycles\+Decay}}
+\index{Get\+Tau\+Cycles\+Decay@{Get\+Tau\+Cycles\+Decay}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Get\+Tau\+Cycles\+Decay()}{GetTauCyclesDecay()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Get\+Tau\+Cycles\+Decay (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aa46b5ce238b49425a68fcfd53ba1d8b7}\label{classInterneuronSpace_aa46b5ce238b49425a68fcfd53ba1d8b7}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Interneuron\+Space\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a7b11f542ab7a3d293d5fcf5a1b522ac2}\label{classInterneuronSpace_a7b11f542ab7a3d293d5fcf5a1b522ac2}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Interneuron\+Space\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a3a9776e4a77b87374204468ca7974157}\label{classInterneuronSpace_a3a9776e4a77b87374204468ca7974157}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Interneuron\+Space\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+Set initial type value \mbox{\Hypertarget{classInterneuronSpace_ab56b0336c9e53f7b448e9d35e617e8c0}\label{classInterneuronSpace_ab56b0336c9e53f7b448e9d35e617e8c0}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Send\+Bare\+Spike@{Send\+Bare\+Spike}}
+\index{Send\+Bare\+Spike@{Send\+Bare\+Spike}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Send\+Bare\+Spike()}{SendBareSpike()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Send\+Bare\+Spike (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a0a24da715aecafd4072d596fc271666f}\label{classInterneuronSpace_a0a24da715aecafd4072d596fc271666f}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Send\+Transmitter\+Spike@{Send\+Transmitter\+Spike}}
+\index{Send\+Transmitter\+Spike@{Send\+Transmitter\+Spike}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Send\+Transmitter\+Spike()}{SendTransmitterSpike()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Send\+Transmitter\+Spike (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a404aacb1adce30288bb7b4237344e4cc}\label{classInterneuronSpace_a404aacb1adce30288bb7b4237344e4cc}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Charge\+Type@{Set\+Charge\+Type}}
+\index{Set\+Charge\+Type@{Set\+Charge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Charge\+Type()}{SetChargeType()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Charge\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a60a46f22a2e575d65031635a698a60a9}\label{classInterneuronSpace_a60a46f22a2e575d65031635a698a60a9}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSchwannCell_a067f87983cb937d5fdb882c267e27921}{Schwann\+Cell}}.
+
+\mbox{\Hypertarget{classInterneuronSpace_ad2225077a049e78ce583a79eee2d373f}\label{classInterneuronSpace_ad2225077a049e78ce583a79eee2d373f}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Demand@{Set\+Demand}}
+\index{Set\+Demand@{Set\+Demand}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Demand()}{SetDemand()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Demand (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_a7fc404aae98d45ccad26b5c186fab6e2}\label{classInterneuronSpace_a7fc404aae98d45ccad26b5c186fab6e2}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Discharge\+Type@{Set\+Discharge\+Type}}
+\index{Set\+Discharge\+Type@{Set\+Discharge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Discharge\+Type()}{SetDischargeType()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Discharge\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a65ecd1914ab039707313beb1b8702e68}\label{classInterneuronSpace_a65ecd1914ab039707313beb1b8702e68}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ab34d72ef9135288690328217d7c0a388}\label{classInterneuronSpace_ab34d72ef9135288690328217d7c0a388}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Interneuron\+Space\+Device\+Tag@{Set\+Interneuron\+Space\+Device\+Tag}}
+\index{Set\+Interneuron\+Space\+Device\+Tag@{Set\+Interneuron\+Space\+Device\+Tag}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Interneuron\+Space\+Device\+Tag()}{SetInterneuronSpaceDeviceTag()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Interneuron\+Space\+Device\+Tag (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a50aaa97f71011dafb583dc432817f477}\label{classInterneuronSpace_a50aaa97f71011dafb583dc432817f477}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Neuron@{Set\+Neuron}}
+\index{Set\+Neuron@{Set\+Neuron}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Neuron()}{SetNeuron()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInterneuronSpace_ad6c1387daa261a3e8e1dba1402101d5c}\label{classInterneuronSpace_ad6c1387daa261a3e8e1dba1402101d5c}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Tau\+Cycles\+Add@{Set\+Tau\+Cycles\+Add}}
+\index{Set\+Tau\+Cycles\+Add@{Set\+Tau\+Cycles\+Add}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Tau\+Cycles\+Add()}{SetTauCyclesAdd()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Tau\+Cycles\+Add (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a7f44a965e377ecdc5c387af2b5d30d69}\label{classInterneuronSpace_a7f44a965e377ecdc5c387af2b5d30d69}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Set\+Tau\+Cycles\+Decay@{Set\+Tau\+Cycles\+Decay}}
+\index{Set\+Tau\+Cycles\+Decay@{Set\+Tau\+Cycles\+Decay}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Set\+Tau\+Cycles\+Decay()}{SetTauCyclesDecay()}}
+{\footnotesize\ttfamily void Interneuron\+Space\+::\+Set\+Tau\+Cycles\+Decay (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a72ce2431e1348dd2558fa9b8f864d306}\label{classInterneuronSpace_a72ce2431e1348dd2558fa9b8f864d306}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!Update@{Update}}
+\index{Update@{Update}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classInterneuronSpace_a7a5cfbb9b0a619283417044345b01578}\label{classInterneuronSpace_a7a5cfbb9b0a619283417044345b01578}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_af520cb6f8766c77b1e575b2b65393cce}\label{classInterneuronSpace_af520cb6f8766c77b1e575b2b65393cce}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!interneuronspace\+\_\+type@{interneuronspace\+\_\+type}}
+\index{interneuronspace\+\_\+type@{interneuronspace\+\_\+type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{interneuronspace\+\_\+type}{interneuronspace\_type}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::interneuronspace\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ae1196b764996aa441538d5f6909a2344}\label{classInterneuronSpace_ae1196b764996aa441538d5f6909a2344}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!interneuronspace\+Counter@{interneuronspace\+Counter}}
+\index{interneuronspace\+Counter@{interneuronspace\+Counter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{interneuronspace\+Counter}{interneuronspaceCounter}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::interneuronspace\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}interneuronspace\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classInterneuronSpace_a6b6f5ac9671c40ea57d39824e76a7ccd}\label{classInterneuronSpace_a6b6f5ac9671c40ea57d39824e76a7ccd}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!interneuronspace\+Demand@{interneuronspace\+Demand}}
+\index{interneuronspace\+Demand@{interneuronspace\+Demand}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{interneuronspace\+Demand}{interneuronspaceDemand}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::interneuronspace\+Demand\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a9643f76d9b5acf91152ed69f6c3dca49}\label{classInterneuronSpace_a9643f76d9b5acf91152ed69f6c3dca49}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!it@{it}}
+\index{it@{it}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{it}{it}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structInterneuronSpace_1_1NearbyNeuron}{Nearby\+Neuron}}$>$\+::iterator Interneuron\+Space\+::it\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a9f49bd1364861ea859f1a66c606cff8a}\label{classInterneuronSpace_a9f49bd1364861ea859f1a66c606cff8a}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a97595972171f2fd0c37ad2d830f61fbb}\label{classInterneuronSpace_a97595972171f2fd0c37ad2d830f61fbb}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+axonlength@{m\+\_\+axonlength}}
+\index{m\+\_\+axonlength@{m\+\_\+axonlength}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+axonlength}{m\_axonlength}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+axonlength\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a37041f5f3a796a7dedcf4cb576c9dbcd}\label{classInterneuronSpace_a37041f5f3a796a7dedcf4cb576c9dbcd}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Bind\+List@{m\+\_\+\+Bind\+List}}
+\index{m\+\_\+\+Bind\+List@{m\+\_\+\+Bind\+List}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Bind\+List}{m\_BindList}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structInterneuronSpace_1_1s__BindList}{s\+\_\+\+Bind\+List}}$>$ Interneuron\+Space\+::m\+\_\+\+Bind\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aa8a5afd05659a9bbfd0934de9ea3cd53}\label{classInterneuronSpace_aa8a5afd05659a9bbfd0934de9ea3cd53}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Charge\+Type@{m\+\_\+\+Charge\+Type}}
+\index{m\+\_\+\+Charge\+Type@{m\+\_\+\+Charge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Charge\+Type}{m\_ChargeType}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Charge\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a854dc7cd9f9b8643b2c674d2eaa36873}\label{classInterneuronSpace_a854dc7cd9f9b8643b2c674d2eaa36873}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Interneuron\+Space\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classInterneuronSpace_abaa8436af9b85307c65de2755a010297}\label{classInterneuronSpace_abaa8436af9b85307c65de2755a010297}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Discharge\+Type@{m\+\_\+\+Discharge\+Type}}
+\index{m\+\_\+\+Discharge\+Type@{m\+\_\+\+Discharge\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Discharge\+Type}{m\_DischargeType}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Discharge\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aedb61682c1c2a374645e21abd4526825}\label{classInterneuronSpace_aedb61682c1c2a374645e21abd4526825}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a9cb8dd97e4c6c18d3b84e0c0db6ca605}\label{classInterneuronSpace_a9cb8dd97e4c6c18d3b84e0c0db6ca605}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Reduce\+By@{m\+\_\+\+Reduce\+By}}
+\index{m\+\_\+\+Reduce\+By@{m\+\_\+\+Reduce\+By}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reduce\+By}{m\_ReduceBy}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Reduce\+By\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a848666191c3e8c746d5b7d82b1b8d329}\label{classInterneuronSpace_a848666191c3e8c746d5b7d82b1b8d329}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Reduced\+By@{m\+\_\+\+Reduced\+By}}
+\index{m\+\_\+\+Reduced\+By@{m\+\_\+\+Reduced\+By}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Reduced\+By}{m\_ReducedBy}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Reduced\+By\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a2cd3cbca541688d4eaf15fc6c8496dd1}\label{classInterneuronSpace_a2cd3cbca541688d4eaf15fc6c8496dd1}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a5a4e1290b3bbb384597f111419be9c76}\label{classInterneuronSpace_a5a4e1290b3bbb384597f111419be9c76}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Tag@{m\+\_\+\+Tag}}
+\index{m\+\_\+\+Tag@{m\+\_\+\+Tag}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tag}{m\_Tag}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ae71819def096138a0fb466cbe3f4bf02}\label{classInterneuronSpace_ae71819def096138a0fb466cbe3f4bf02}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Tau\+Cycles\+Add@{m\+\_\+\+Tau\+Cycles\+Add}}
+\index{m\+\_\+\+Tau\+Cycles\+Add@{m\+\_\+\+Tau\+Cycles\+Add}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tau\+Cycles\+Add}{m\_TauCyclesAdd}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Tau\+Cycles\+Add\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ac5c246784a31e7299aec57b2861a87e7}\label{classInterneuronSpace_ac5c246784a31e7299aec57b2861a87e7}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Tau\+Cycles\+Decay@{m\+\_\+\+Tau\+Cycles\+Decay}}
+\index{m\+\_\+\+Tau\+Cycles\+Decay@{m\+\_\+\+Tau\+Cycles\+Decay}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tau\+Cycles\+Decay}{m\_TauCyclesDecay}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::m\+\_\+\+Tau\+Cycles\+Decay\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a31182cce98aaecef1533fe17fc3e6786}\label{classInterneuronSpace_a31182cce98aaecef1533fe17fc3e6786}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a16272fc7502a95a69ca60cbe4612f100}\label{classInterneuronSpace_a16272fc7502a95a69ca60cbe4612f100}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aae1ef00c4fdc597fa12548771953b239}\label{classInterneuronSpace_aae1ef00c4fdc597fa12548771953b239}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a7656441e3758dae6167e49903a916bf6}\label{classInterneuronSpace_a7656441e3758dae6167e49903a916bf6}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!minimum\+Distance@{minimum\+Distance}}
+\index{minimum\+Distance@{minimum\+Distance}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{minimum\+Distance}{minimumDistance}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::minimum\+Distance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_ac55f2a154e8abc403ac1459f0317f0cf}\label{classInterneuronSpace_ac55f2a154e8abc403ac1459f0317f0cf}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!neuron\+List@{neuron\+List}}
+\index{neuron\+List@{neuron\+List}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{neuron\+List}{neuronList}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structInterneuronSpace_1_1NearbyNeuron}{Nearby\+Neuron}}$>$ Interneuron\+Space\+::neuron\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a51d51c2f71f6fcf65c478aa27457c4a3}\label{classInterneuronSpace_a51d51c2f71f6fcf65c478aa27457c4a3}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Interneuron\+Space\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a5065916461ffbe096fe6bbb6503a767e}\label{classInterneuronSpace_a5065916461ffbe096fe6bbb6503a767e}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}}
+\index{neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+pool}{neurotransmitter\_pool}}
+{\footnotesize\ttfamily int Interneuron\+Space\+::neurotransmitter\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a42f0a8cfca4592f0a6b47219df489396}\label{classInterneuronSpace_a42f0a8cfca4592f0a6b47219df489396}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Interneuron\+Space\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_acfef881bda3b9184542530453075d1b1}\label{classInterneuronSpace_acfef881bda3b9184542530453075d1b1}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a822a704e13dc60edfc5cb710e52150c3}\label{classInterneuronSpace_a822a704e13dc60edfc5cb710e52150c3}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_af16aec913a2ec7b4f92f7da2487b4b00}\label{classInterneuronSpace_af16aec913a2ec7b4f92f7da2487b4b00}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Interneuron\+Space\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_aff15cb40feb85e4b75c1bdc31604f333}\label{classInterneuronSpace_aff15cb40feb85e4b75c1bdc31604f333}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Interneuron\+Space\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a28efcbf608d5dd02f9dd85bec76a7650}\label{classInterneuronSpace_a28efcbf608d5dd02f9dd85bec76a7650}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Interneuron\+Space\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInterneuronSpace_a5504d64df22fd330cdd14b4aca0171ea}\label{classInterneuronSpace_a5504d64df22fd330cdd14b4aca0171ea}} 
+\index{Interneuron\+Space@{Interneuron\+Space}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Interneuron\+Space@{Interneuron\+Space}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Interneuron\+Space\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{interneuronspace_8h}{interneuronspace.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{interneuronspace_8cc}{interneuronspace.\+cc}}\end{DoxyCompactItemize}

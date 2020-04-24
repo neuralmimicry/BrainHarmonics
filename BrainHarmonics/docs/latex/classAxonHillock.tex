@@ -1,0 +1,389 @@
+\hypertarget{classAxonHillock}{}\section{Axon\+Hillock Class Reference}
+\label{classAxonHillock}\index{Axon\+Hillock@{Axon\+Hillock}}
+
+
+{\ttfamily \#include $<$axonhillock.\+h$>$}
+
+Inheritance diagram for Axon\+Hillock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classAxonHillock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAxonHillock_a432095dfb25ece393cdd83b5eb4f097a}{Axon\+Hillock}} ()
+\item 
+\mbox{\hyperlink{classAxonHillock_a20a4da0885f32bfca34ab5cda2a13562}{Axon\+Hillock}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classAxonHillock_acc61c61c8dfddd603e868a2fcbfd5e9c}{Axon\+Hillock}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classAxonHillock_a250945e24a51475369b6c7881c0d955b}{Axon\+Hillock}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} \&soma\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classAxonHillock_ae86220026d7c87edc1c514521d66f992}{$\sim$\+Axon\+Hillock}} ()
+\item 
+unsigned int \mbox{\hyperlink{classAxonHillock_a429c9876d679fe8de4533725afc4875c}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classAxonHillock_ab5ac3ab8771b96acf7e3fa07152525a5}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classAxonHillock_a0220cee0ad99ddc48496982078c1856c}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classAxonHillock_a830afd18810e0eaa11a9e7a500b8f0c4}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classAxonHillock_acec1571ef0b74f7f5ce6699c9b459b4f}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_ae6b18ec6f2921b9d4461b89a9d72ab25}{Create\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_a15bf1a433f38b8b0c92e4a4efe22ec6f}{Create\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_ad54833cee03cfcacb5e88d174048aaa4}{Clone\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_aa65cead56b10bda66dc256c68764a553}{Clone\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_a031b2cc7292d023506a5124639a941a7}{Destroy\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_a083c918c64c60f3cea1d39aa8e0c6fba}{Destroy\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_a02bfbaea9ea7a160933f8500c8b41d6a}{Add\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_a54a82227b96757f1c0d7450df6a3df37}{Add\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_ae7c379ef3a70c8a43a0f105ccc94b54b}{Remove\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_a7f10edff727271408887d29a70e7e671}{Remove\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ \mbox{\hyperlink{classAxonHillock_a08fde7d1b8a40ba7a052315f95b743f0}{Get\+Axon}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_af35663768cbe818e092382519a6d73e3}{Get\+Axons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classAxonHillock_a5c5cd9008f1410898980528b959d668e}{Growth}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classAxonHillock_a5a6a6a93a98b32c303b9ee6320c09909}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ \mbox{\hyperlink{classAxonHillock_a110d655ded8e09306b224b6e940cd60b}{axon\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classAxonHillock_a1b3e5f60e24589baa3937c25d0fdaccb}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classAxonHillock_abcf4792c5f64683a2ba6b3ad11b36c3b}{axonhillock\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classAxonHillock_aceaf38b22f77d3377d96e79d44b6c3d6}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classAxonHillock_ac666d677d62505d33b1316f5688f1529}{object\+\_\+initialised}}
+\item 
+int \mbox{\hyperlink{classAxonHillock_a5128d2562b42d29b7bfc1492bfce7066}{axon\+\_\+pool}}
+\item 
+double \mbox{\hyperlink{classAxonHillock_ab475b735c12d372dc9227e84f8a5fe89}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classAxonHillock_ae8b94f0128e95735b088e2ed68bc1884}{m\+\_\+\+Surface\+Area}}
+\item 
+int \mbox{\hyperlink{classAxonHillock_a92b376c3bc0bf8f8a52f52e424f7a335}{m\+\_\+add\+Status}}
+\item 
+double \mbox{\hyperlink{classAxonHillock_a2b87848d4ae4bb3011347cb11656ee09}{object\+\_\+size}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classAxonHillock_ab8fe082b0aa59b58f6cf8ddb00202ae1}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classAxonHillock_a569d0a3da91ca87f6e88a8cdb0949e81}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classAxonHillock_a5b03b9c1c492e6c37b808d0756fce018}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+unsigned int \mbox{\hyperlink{classAxonHillock_a4ce4c0d7438dfb7a77f6412460e1adcc}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAxonHillock_a1ca9726d785ecc1dce0ac01933cf1dca}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAxonHillock_a1fc144064d284978f785b1534a290d86}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classAxonHillock_ad3b4b4553315421c5a22f37dd94e2e94}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classAxonHillock_acb8b1407116e6656c49e89c3a82bfd7c}{m\+\_\+\+Time\+Threshold}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAxonHillock_a432095dfb25ece393cdd83b5eb4f097a}\label{classAxonHillock_a432095dfb25ece393cdd83b5eb4f097a}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Axon\+Hillock()}{AxonHillock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Axon\+Hillock\+::\+Axon\+Hillock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_a20a4da0885f32bfca34ab5cda2a13562}\label{classAxonHillock_a20a4da0885f32bfca34ab5cda2a13562}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Axon\+Hillock()}{AxonHillock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Axon\+Hillock\+::\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_acc61c61c8dfddd603e868a2fcbfd5e9c}\label{classAxonHillock_acc61c61c8dfddd603e868a2fcbfd5e9c}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Axon\+Hillock()}{AxonHillock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Axon\+Hillock\+::\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_a250945e24a51475369b6c7881c0d955b}\label{classAxonHillock_a250945e24a51475369b6c7881c0d955b}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\index{Axon\+Hillock@{Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Axon\+Hillock()}{AxonHillock()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Axon\+Hillock\+::\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} \&}]{soma\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_ae86220026d7c87edc1c514521d66f992}\label{classAxonHillock_ae86220026d7c87edc1c514521d66f992}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!````~Axon\+Hillock@{$\sim$\+Axon\+Hillock}}
+\index{````~Axon\+Hillock@{$\sim$\+Axon\+Hillock}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{$\sim$\+Axon\+Hillock()}{~AxonHillock()}}
+{\footnotesize\ttfamily virtual Axon\+Hillock\+::$\sim$\+Axon\+Hillock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxonHillock_a02bfbaea9ea7a160933f8500c8b41d6a}\label{classAxonHillock_a02bfbaea9ea7a160933f8500c8b41d6a}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Add\+Axon@{Add\+Axon}}
+\index{Add\+Axon@{Add\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Add\+Axon()}{AddAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Add\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a54a82227b96757f1c0d7450df6a3df37}\label{classAxonHillock_a54a82227b96757f1c0d7450df6a3df37}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Add\+Axons@{Add\+Axons}}
+\index{Add\+Axons@{Add\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Add\+Axons()}{AddAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Add\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_ad54833cee03cfcacb5e88d174048aaa4}\label{classAxonHillock_ad54833cee03cfcacb5e88d174048aaa4}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Clone\+Axon@{Clone\+Axon}}
+\index{Clone\+Axon@{Clone\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Clone\+Axon()}{CloneAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Clone\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_aa65cead56b10bda66dc256c68764a553}\label{classAxonHillock_aa65cead56b10bda66dc256c68764a553}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Clone\+Axons@{Clone\+Axons}}
+\index{Clone\+Axons@{Clone\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Clone\+Axons()}{CloneAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Clone\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_ae6b18ec6f2921b9d4461b89a9d72ab25}\label{classAxonHillock_ae6b18ec6f2921b9d4461b89a9d72ab25}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Create\+Axon@{Create\+Axon}}
+\index{Create\+Axon@{Create\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Create\+Axon()}{CreateAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Create\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a15bf1a433f38b8b0c92e4a4efe22ec6f}\label{classAxonHillock_a15bf1a433f38b8b0c92e4a4efe22ec6f}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Create\+Axons@{Create\+Axons}}
+\index{Create\+Axons@{Create\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Create\+Axons()}{CreateAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Create\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a031b2cc7292d023506a5124639a941a7}\label{classAxonHillock_a031b2cc7292d023506a5124639a941a7}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Destroy\+Axon@{Destroy\+Axon}}
+\index{Destroy\+Axon@{Destroy\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Destroy\+Axon()}{DestroyAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Destroy\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a083c918c64c60f3cea1d39aa8e0c6fba}\label{classAxonHillock_a083c918c64c60f3cea1d39aa8e0c6fba}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Destroy\+Axons@{Destroy\+Axons}}
+\index{Destroy\+Axons@{Destroy\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Destroy\+Axons()}{DestroyAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Destroy\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a08fde7d1b8a40ba7a052315f95b743f0}\label{classAxonHillock_a08fde7d1b8a40ba7a052315f95b743f0}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Get\+Axon@{Get\+Axon}}
+\index{Get\+Axon@{Get\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Get\+Axon()}{GetAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Get\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_af35663768cbe818e092382519a6d73e3}\label{classAxonHillock_af35663768cbe818e092382519a6d73e3}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Get\+Axons@{Get\+Axons}}
+\index{Get\+Axons@{Get\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Get\+Axons()}{GetAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Get\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a429c9876d679fe8de4533725afc4875c}\label{classAxonHillock_a429c9876d679fe8de4533725afc4875c}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Axon\+Hillock\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_ab5ac3ab8771b96acf7e3fa07152525a5}\label{classAxonHillock_ab5ac3ab8771b96acf7e3fa07152525a5}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_a5c5cd9008f1410898980528b959d668e}\label{classAxonHillock_a5c5cd9008f1410898980528b959d668e}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Growth@{Growth}}
+\index{Growth@{Growth}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_ae7c379ef3a70c8a43a0f105ccc94b54b}\label{classAxonHillock_ae7c379ef3a70c8a43a0f105ccc94b54b}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Remove\+Axon@{Remove\+Axon}}
+\index{Remove\+Axon@{Remove\+Axon}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Remove\+Axon()}{RemoveAxon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ Axon\+Hillock\+::\+Remove\+Axon (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a7f10edff727271408887d29a70e7e671}\label{classAxonHillock_a7f10edff727271408887d29a70e7e671}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Remove\+Axons@{Remove\+Axons}}
+\index{Remove\+Axons@{Remove\+Axons}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Remove\+Axons()}{RemoveAxons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}} $\ast$ $>$ Axon\+Hillock\+::\+Remove\+Axons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_acec1571ef0b74f7f5ce6699c9b459b4f}\label{classAxonHillock_acec1571ef0b74f7f5ce6699c9b459b4f}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Axon\+Hillock\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonHillock_a0220cee0ad99ddc48496982078c1856c}\label{classAxonHillock_a0220cee0ad99ddc48496982078c1856c}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Axon\+Hillock\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}}.
+
+\mbox{\Hypertarget{classAxonHillock_a830afd18810e0eaa11a9e7a500b8f0c4}\label{classAxonHillock_a830afd18810e0eaa11a9e7a500b8f0c4}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Axon\+Hillock\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonHillock_a5a6a6a93a98b32c303b9ee6320c09909}\label{classAxonHillock_a5a6a6a93a98b32c303b9ee6320c09909}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!Update@{Update}}
+\index{Update@{Update}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAxonHillock_a110d655ded8e09306b224b6e940cd60b}\label{classAxonHillock_a110d655ded8e09306b224b6e940cd60b}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!axon\+\_\+list@{axon\+\_\+list}}
+\index{axon\+\_\+list@{axon\+\_\+list}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{axon\+\_\+list}{axon\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classAxonHillock}{Axon\+Hillock}}$\ast$$>$ Axon\+Hillock\+::axon\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAxonHillock_a5128d2562b42d29b7bfc1492bfce7066}\label{classAxonHillock_a5128d2562b42d29b7bfc1492bfce7066}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!axon\+\_\+pool@{axon\+\_\+pool}}
+\index{axon\+\_\+pool@{axon\+\_\+pool}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{axon\+\_\+pool}{axon\_pool}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::axon\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_abcf4792c5f64683a2ba6b3ad11b36c3b}\label{classAxonHillock_abcf4792c5f64683a2ba6b3ad11b36c3b}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!axonhillock\+\_\+type@{axonhillock\+\_\+type}}
+\index{axonhillock\+\_\+type@{axonhillock\+\_\+type}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{axonhillock\+\_\+type}{axonhillock\_type}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::axonhillock\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a5b03b9c1c492e6c37b808d0756fce018}\label{classAxonHillock_a5b03b9c1c492e6c37b808d0756fce018}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a92b376c3bc0bf8f8a52f52e424f7a335}\label{classAxonHillock_a92b376c3bc0bf8f8a52f52e424f7a335}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a4ce4c0d7438dfb7a77f6412460e1adcc}\label{classAxonHillock_a4ce4c0d7438dfb7a77f6412460e1adcc}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Axon\+Hillock\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classAxonHillock_a1b3e5f60e24589baa3937c25d0fdaccb}\label{classAxonHillock_a1b3e5f60e24589baa3937c25d0fdaccb}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Axon\+Hillock\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_ae8b94f0128e95735b088e2ed68bc1884}\label{classAxonHillock_ae8b94f0128e95735b088e2ed68bc1884}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_ad3b4b4553315421c5a22f37dd94e2e94}\label{classAxonHillock_ad3b4b4553315421c5a22f37dd94e2e94}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_acb8b1407116e6656c49e89c3a82bfd7c}\label{classAxonHillock_acb8b1407116e6656c49e89c3a82bfd7c}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_ab475b735c12d372dc9227e84f8a5fe89}\label{classAxonHillock_ab475b735c12d372dc9227e84f8a5fe89}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_aceaf38b22f77d3377d96e79d44b6c3d6}\label{classAxonHillock_aceaf38b22f77d3377d96e79d44b6c3d6}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Axon\+Hillock\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a1ca9726d785ecc1dce0ac01933cf1dca}\label{classAxonHillock_a1ca9726d785ecc1dce0ac01933cf1dca}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classAxonHillock_a1fc144064d284978f785b1534a290d86}\label{classAxonHillock_a1fc144064d284978f785b1534a290d86}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_ac666d677d62505d33b1316f5688f1529}\label{classAxonHillock_ac666d677d62505d33b1316f5688f1529}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Axon\+Hillock\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a2b87848d4ae4bb3011347cb11656ee09}\label{classAxonHillock_a2b87848d4ae4bb3011347cb11656ee09}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Axon\+Hillock\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_a569d0a3da91ca87f6e88a8cdb0949e81}\label{classAxonHillock_a569d0a3da91ca87f6e88a8cdb0949e81}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Axon\+Hillock\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonHillock_ab8fe082b0aa59b58f6cf8ddb00202ae1}\label{classAxonHillock_ab8fe082b0aa59b58f6cf8ddb00202ae1}} 
+\index{Axon\+Hillock@{Axon\+Hillock}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Axon\+Hillock@{Axon\+Hillock}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Axon\+Hillock\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{axonhillock_8h}{axonhillock.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{axonhillock_8cc}{axonhillock.\+cc}}\end{DoxyCompactItemize}

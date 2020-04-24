@@ -1,0 +1,278 @@
+\hypertarget{classNeurotransmitter}{}\section{Neurotransmitter Class Reference}
+\label{classNeurotransmitter}\index{Neurotransmitter@{Neurotransmitter}}
+
+
+{\ttfamily \#include $<$neurotransmitter.\+h$>$}
+
+Inheritance diagram for Neurotransmitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classNeurotransmitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNeurotransmitter_a05883c62f2c20b8034121a46c50de00f}{Neurotransmitter}} ()
+\item 
+\mbox{\hyperlink{classNeurotransmitter_adca6f02b1a9c98d269e3909e1e2f0463}{Neurotransmitter}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classNeurotransmitter_ac1c768a2769536a8a16569ae0dde1671}{Neurotransmitter}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classNeurotransmitter_ac9257a1b310a26eba8a08ffb4b93bb64}{Neurotransmitter}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classNeurotransmitter_a0ea63f67dc5a49d485b7a7034a8f7968}{$\sim$\+Neurotransmitter}} ()
+\item 
+unsigned int \mbox{\hyperlink{classNeurotransmitter_a94b3d1909cdd787f0583e28e1e9b58dd}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_a1e3e8134ea935f617b0afd2f7b5b5799}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_a45414c0d173758edbbf9318a7eccb623}{Get\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeurotransmitter_ae460ed5fac92ba136a80bba12ebce246}{Set\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classNeurotransmitter_ae16ec051609867d4f64fad5ba4449443}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classNeurotransmitter_a5ad51ddb1351868e1756e3c41bb88e04}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classNeurotransmitter_a6e7650d738bccfbbd49ede10970687aa}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_ac9f7be22ca7242207de76ec5e1b055b1}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_aaabafa90f31a1afd660c654d6066820b}{m\+\_\+\+Neurotransmitter\+Type}}
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_a53484821d08c351a07ea9774d09434b1}{neurotransmitter\+\_\+type}} = 0
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_ac15c7d29a34d8b8a75de5d851c3b5e73}{m\+\_\+add\+Status}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeurotransmitter_acad5444f7486ee9c2d3bff1b6b3f59ad}{time\+\_\+object\+\_\+created}} = std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$(std\+::chrono\+::nanoseconds\+::zero())
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeurotransmitter_a47efa9a5481fae796df7f1020a15e2f2}{previous\+\_\+event\+\_\+time}}
+\item 
+bool \mbox{\hyperlink{classNeurotransmitter_a27175b3f5400e9d341291b11828ea32e}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classNeurotransmitter_ab5e0c93e6f54bec95c294bc59427a54a}{object\+\_\+initialised}} = false
+\item 
+int \mbox{\hyperlink{classNeurotransmitter_acbf1efa25f5b69954d9baaacf273e8da}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_a82764f72535f859b74d419bad922253a}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_ae1dea2e0732f91027f4597a6ca4588fc}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_afed70401d85814b609c569a9c79f6a16}{object\+\_\+size}}
+\item 
+unsigned int \mbox{\hyperlink{classNeurotransmitter_a39531872ba361395e620745e28bdc8d4}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeurotransmitter_a3cc474a0f16ffe26d7f4403551cce222}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeurotransmitter_aa3e998b3dfc01ec3c0b02080ffeb0d46}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_ae04cfd2ef2be895457c293463e8ba24f}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classNeurotransmitter_a27b12315e40389dfd903c5e9cd188768}{m\+\_\+\+Time\+Threshold}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNeurotransmitter_a05883c62f2c20b8034121a46c50de00f}\label{classNeurotransmitter_a05883c62f2c20b8034121a46c50de00f}} 
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Neurotransmitter()}{Neurotransmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Neurotransmitter\+::\+Neurotransmitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_adca6f02b1a9c98d269e3909e1e2f0463}\label{classNeurotransmitter_adca6f02b1a9c98d269e3909e1e2f0463}} 
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Neurotransmitter()}{Neurotransmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Neurotransmitter\+::\+Neurotransmitter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ac1c768a2769536a8a16569ae0dde1671}\label{classNeurotransmitter_ac1c768a2769536a8a16569ae0dde1671}} 
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Neurotransmitter()}{Neurotransmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Neurotransmitter\+::\+Neurotransmitter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ac9257a1b310a26eba8a08ffb4b93bb64}\label{classNeurotransmitter_ac9257a1b310a26eba8a08ffb4b93bb64}} 
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\index{Neurotransmitter@{Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Neurotransmitter()}{Neurotransmitter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Neurotransmitter\+::\+Neurotransmitter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a0ea63f67dc5a49d485b7a7034a8f7968}\label{classNeurotransmitter_a0ea63f67dc5a49d485b7a7034a8f7968}} 
+\index{Neurotransmitter@{Neurotransmitter}!````~Neurotransmitter@{$\sim$\+Neurotransmitter}}
+\index{````~Neurotransmitter@{$\sim$\+Neurotransmitter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{$\sim$\+Neurotransmitter()}{~Neurotransmitter()}}
+{\footnotesize\ttfamily virtual Neurotransmitter\+::$\sim$\+Neurotransmitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeurotransmitter_a94b3d1909cdd787f0583e28e1e9b58dd}\label{classNeurotransmitter_a94b3d1909cdd787f0583e28e1e9b58dd}} 
+\index{Neurotransmitter@{Neurotransmitter}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Neurotransmitter\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a1e3e8134ea935f617b0afd2f7b5b5799}\label{classNeurotransmitter_a1e3e8134ea935f617b0afd2f7b5b5799}} 
+\index{Neurotransmitter@{Neurotransmitter}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Neurotransmitter\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a45414c0d173758edbbf9318a7eccb623}\label{classNeurotransmitter_a45414c0d173758edbbf9318a7eccb623}} 
+\index{Neurotransmitter@{Neurotransmitter}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily int Neurotransmitter\+::\+Get\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a6e7650d738bccfbbd49ede10970687aa}\label{classNeurotransmitter_a6e7650d738bccfbbd49ede10970687aa}} 
+\index{Neurotransmitter@{Neurotransmitter}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Neurotransmitter\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeurotransmitter_ae16ec051609867d4f64fad5ba4449443}\label{classNeurotransmitter_ae16ec051609867d4f64fad5ba4449443}} 
+\index{Neurotransmitter@{Neurotransmitter}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Neurotransmitter\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classNeurotransmitter_a5ad51ddb1351868e1756e3c41bb88e04}\label{classNeurotransmitter_a5ad51ddb1351868e1756e3c41bb88e04}} 
+\index{Neurotransmitter@{Neurotransmitter}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Neurotransmitter\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ae460ed5fac92ba136a80bba12ebce246}\label{classNeurotransmitter_ae460ed5fac92ba136a80bba12ebce246}} 
+\index{Neurotransmitter@{Neurotransmitter}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Neurotransmitter\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ac9f7be22ca7242207de76ec5e1b055b1}\label{classNeurotransmitter_ac9f7be22ca7242207de76ec5e1b055b1}} 
+\index{Neurotransmitter@{Neurotransmitter}!Update@{Update}}
+\index{Update@{Update}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Neurotransmitter\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNeurotransmitter_acbf1efa25f5b69954d9baaacf273e8da}\label{classNeurotransmitter_acbf1efa25f5b69954d9baaacf273e8da}} 
+\index{Neurotransmitter@{Neurotransmitter}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Neurotransmitter\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ac15c7d29a34d8b8a75de5d851c3b5e73}\label{classNeurotransmitter_ac15c7d29a34d8b8a75de5d851c3b5e73}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Neurotransmitter\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a39531872ba361395e620745e28bdc8d4}\label{classNeurotransmitter_a39531872ba361395e620745e28bdc8d4}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Neurotransmitter\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classNeurotransmitter_aaabafa90f31a1afd660c654d6066820b}\label{classNeurotransmitter_aaabafa90f31a1afd660c654d6066820b}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Neurotransmitter\+Type@{m\+\_\+\+Neurotransmitter\+Type}}
+\index{m\+\_\+\+Neurotransmitter\+Type@{m\+\_\+\+Neurotransmitter\+Type}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neurotransmitter\+Type}{m\_NeurotransmitterType}}
+{\footnotesize\ttfamily int Neurotransmitter\+::m\+\_\+\+Neurotransmitter\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ae1dea2e0732f91027f4597a6ca4588fc}\label{classNeurotransmitter_ae1dea2e0732f91027f4597a6ca4588fc}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Neurotransmitter\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ae04cfd2ef2be895457c293463e8ba24f}\label{classNeurotransmitter_ae04cfd2ef2be895457c293463e8ba24f}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Neurotransmitter\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a27b12315e40389dfd903c5e9cd188768}\label{classNeurotransmitter_a27b12315e40389dfd903c5e9cd188768}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Neurotransmitter\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a82764f72535f859b74d419bad922253a}\label{classNeurotransmitter_a82764f72535f859b74d419bad922253a}} 
+\index{Neurotransmitter@{Neurotransmitter}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Neurotransmitter\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a53484821d08c351a07ea9774d09434b1}\label{classNeurotransmitter_a53484821d08c351a07ea9774d09434b1}} 
+\index{Neurotransmitter@{Neurotransmitter}!neurotransmitter\+\_\+type@{neurotransmitter\+\_\+type}}
+\index{neurotransmitter\+\_\+type@{neurotransmitter\+\_\+type}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+type}{neurotransmitter\_type}}
+{\footnotesize\ttfamily int Neurotransmitter\+::neurotransmitter\+\_\+type = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a27175b3f5400e9d341291b11828ea32e}\label{classNeurotransmitter_a27175b3f5400e9d341291b11828ea32e}} 
+\index{Neurotransmitter@{Neurotransmitter}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Neurotransmitter\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a3cc474a0f16ffe26d7f4403551cce222}\label{classNeurotransmitter_a3cc474a0f16ffe26d7f4403551cce222}} 
+\index{Neurotransmitter@{Neurotransmitter}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Neurotransmitter\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classNeurotransmitter_aa3e998b3dfc01ec3c0b02080ffeb0d46}\label{classNeurotransmitter_aa3e998b3dfc01ec3c0b02080ffeb0d46}} 
+\index{Neurotransmitter@{Neurotransmitter}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Neurotransmitter\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_ab5e0c93e6f54bec95c294bc59427a54a}\label{classNeurotransmitter_ab5e0c93e6f54bec95c294bc59427a54a}} 
+\index{Neurotransmitter@{Neurotransmitter}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Neurotransmitter\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_afed70401d85814b609c569a9c79f6a16}\label{classNeurotransmitter_afed70401d85814b609c569a9c79f6a16}} 
+\index{Neurotransmitter@{Neurotransmitter}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Neurotransmitter\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_a47efa9a5481fae796df7f1020a15e2f2}\label{classNeurotransmitter_a47efa9a5481fae796df7f1020a15e2f2}} 
+\index{Neurotransmitter@{Neurotransmitter}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neurotransmitter\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeurotransmitter_acad5444f7486ee9c2d3bff1b6b3f59ad}\label{classNeurotransmitter_acad5444f7486ee9c2d3bff1b6b3f59ad}} 
+\index{Neurotransmitter@{Neurotransmitter}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Neurotransmitter@{Neurotransmitter}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neurotransmitter\+::time\+\_\+object\+\_\+created = std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$(std\+::chrono\+::nanoseconds\+::zero())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neurotransmitter_8h}{neurotransmitter.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neurotransmitter_8cc}{neurotransmitter.\+cc}}\end{DoxyCompactItemize}

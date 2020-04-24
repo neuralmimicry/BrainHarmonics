@@ -1,0 +1,1103 @@
+\hypertarget{classUniverse}{}\section{Universe Class Reference}
+\label{classUniverse}\index{Universe@{Universe}}
+
+
+{\ttfamily \#include $<$universe.\+h$>$}
+
+Inheritance diagram for Universe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classUniverse}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}{Universe}} ()
+\item 
+\mbox{\hyperlink{classUniverse_a1210ce56049f1fc67f53aeda223bb82b}{Universe}} (int interim\+\_\+object\+\_\+type)
+\item 
+\mbox{\hyperlink{classUniverse_a03af7455263d3028b55ca5dc93ebb6ba}{Universe}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+virtual \mbox{\hyperlink{classUniverse_ad4d90f6f2727992762c6b409d3d3d228}{$\sim$\+Universe}} ()
+\item 
+double \mbox{\hyperlink{classUniverse_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classUniverse_a868250e67d0fcb2483aa8bdd73c40a02}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+double \mbox{\hyperlink{classUniverse_a63e878aaf03f1800b255e9a089a72a8b}{Use\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+double \mbox{\hyperlink{classUniverse_aeda74e3902c0e56c0c09779854045cde}{Return\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double energy\+\_\+transfer)
+\item 
+void \mbox{\hyperlink{classUniverse_a28615baf47d4558cbe5eebeed6575024}{Creation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::string object\+\_\+title, int object\+\_\+type)
+\item 
+void \mbox{\hyperlink{classUniverse_a2274a54fbdc7504c897e4272162bf17a}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \mbox{\hyperlink{classUniverse_a1d92b2277564577571c802f6e0c206dd}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ \mbox{\hyperlink{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}{The\+Time\+Now}} ()
+\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ \mbox{\hyperlink{classUniverse_aa220508c4cc12b02c6fe494622ebb58d}{The\+Calculated\+Time\+Now}} (std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ time\+\_\+object\+\_\+created\+\_\+time, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double calculated\+\_\+scaled\+\_\+time)
+\item 
+void \mbox{\hyperlink{classUniverse_ac3443dd59b61ae3110f07f681f63ed0a}{Set\+Lifespan}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::chrono\+::nanoseconds life\+\_\+time)
+\item 
+void \mbox{\hyperlink{classUniverse_a982502e46868a00a9111738ccc9355c2}{Extend\+Life}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::chrono\+::nanoseconds life\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classUniverse_a8fdaa6d06584e1ef50c4c613b22b786e}{Is\+Dead}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}{Add\+Dimensions}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a6326158c47bf3f7fe9297299a9b5b7b7}{Add\+Dimension}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a1869fc7bf43827378bab5a701f7f917a}{Get\+Dimensions}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_ab79a380dee684c6dc304b571f4d28645}{Get\+Dimension}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a857cf7f208cd11c80736e82fa523feb5}{Add\+Elementary\+Particles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_ab9c84e0576de50aa4fa46655832ce5e4}{Add\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a168fd9bf7602adcba1de5dd93a212775}{Get\+Elementary\+Particles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_acef54e17666d17078c522388f8f6e4f9}{Get\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a81d294300346e9f901836ab609cce942}{Add\+Elementary\+Forces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a90c573dec55f2b3ad5680015356f5f25}{Add\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}{Get\+Elementary\+Forces}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a9506017d944cb64e67567477c1505a53}{Get\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a23d74e377203fca7cb74e0ffee7244b6}{Add\+Composite\+Force\+Particles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_ab2671c2218c98f0f1f487c5b3bb96e3c}{Add\+Composite\+Force\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}{Get\+Composite\+Force\+Particles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a3e2acc1d75765a6e8e852fca919c5b96}{Get\+Composite\+Force\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_ae00d10b2a23c9cedf1ff89e9da875563}{Add\+Matters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a090d9ad1b88d81364e872e17d65edca4}{Add\+Matter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a4307a62e183fed8cf2b92be0f6014688}{Get\+Matters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a69de663cf2e32e65ed28c44ae666db3a}{Get\+Matter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a95fe7f99971bb2048121a7c4e87b9f79}{Add\+Monomers}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a062a9472f0400e566ecc7dc056d989d9}{Add\+Monomer}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aca82a914e0f8bd7cd1ec80a7220f0a0e}{Get\+Monomers}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_aaa03fb8178d790afd992dd094bb64b47}{Get\+Monomer}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aed7cb25507d516a2821ebb69d5345c54}{Add\+Polymers}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a4ea0af5d2eb7b5070a83f7da29526fbd}{Add\+Polymer}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aac5d1c1a3a3ba56c8ca7115a85b2c239}{Get\+Polymers}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a2d5d3924a7d7ffd2a5f47be9f137d86e}{Get\+Polymer}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a410d5ba2224fe90584b1f1aa5b38b41c}{Add\+Solids}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a598799e2fcdf9ed60e83e9f5a61bfc05}{Add\+Solid}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a669fc068dd7820a5af309bfbe67199aa}{Get\+Solids}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a9f7b74fc21d45ddaa78aa18e9a337bcd}{Get\+Solid}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a5199f6c27b1a97c8b8c9847b8be686cf}{Add\+Cognitive\+Networks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_ab682307c963836cd81b35b5604bd7064}{Add\+Cognitive\+Network}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a06968a24194280a43f077c5b77379ea8}{Get\+Cognitive\+Networks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}{Get\+Cognitive\+Network}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aa48ced2078ba863723050d8283b3fa67}{Add\+Points}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a8508b791c6997d8abcdcc037a6776734}{Add\+Point}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a765c6c658b7a465cd92418690db846ae}{Get\+Points}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a3774f14a13a55827a1a4eea0a404edcb}{Get\+Point}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+void \mbox{\hyperlink{classUniverse_a0d79e614e1af951c06b78cb5768f9c8e}{Update\+Cycle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+int \mbox{\hyperlink{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a901e16db5e8af258c66af7ac75662fe0}{Add\+Temporal\+Adjustment}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double $\ast$point\+\_\+to\+\_\+counter, double pool, int interval, int shape)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a15aa20218286fd11ecb9b792dfb63be3}{Adjust\+Counters}} (std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ current\+Time)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}{Set\+Charge}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}{Set\+Spin}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}{Get\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}{Get\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}{Get\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a63b850ef3f3394313353109d222bf5d1}{Get\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}{Get\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_acb453ce71da418c5b5617fecede9571b}{Get\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}{Get\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_af0f4b81950061e63c2855eb40957a5b1}{Get\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}{Apply\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}{Apply\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}{Apply\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a1f787da78fa196ba635db21a9e91dabb}{Apply\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}{Apply\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}{Apply\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_a62789bcff84bd750b0366004381e2fdd}{Apply\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual double \mbox{\hyperlink{classUniverse_af7becebb347be9a85541d96a3eca1ca7}{Apply\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}{Set\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}{Set\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a2d3d642bfdc863248e93535832fa4b00}{Set\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_aa981fc7e252b1fbbb675f0371860954d}{Set\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a608aa95698380f791a0ffba45cc1bee3}{Set\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}{Set\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_aafec97a231126b71c73ac1258609a284}{Set\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Set\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+virtual void \mbox{\hyperlink{classUniverse_a0c485c504542409cbb5cfd8543c35b11}{Poll\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classUniverse_ab64777e25c83216e7a91d2761a10463c}{object\+\_\+energy}}
+\item 
+double \mbox{\hyperlink{classUniverse_a17c8d799331a5b32837f285c12cbe858}{object\+\_\+energy\+\_\+threshold}}
+\item 
+int \mbox{\hyperlink{classUniverse_a64f4f4025c9be1d84492c766a002a6d4}{object\+\_\+size}}
+\item 
+\mbox{\hyperlink{classUniverse}{Universe}} $\ast$ \mbox{\hyperlink{classUniverse_a3ce4365c727cb6eb5b650146a4188b9b}{time\+\_\+dimension\+\_\+pointer}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a7a0e9796ff0d650a8b1fbde5fa5b761f}{cognitive\+\_\+network\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_ae9795d06e406c4322637825aa545aa2f}{composite\+\_\+forceparticle\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a159461f7098c3a30274f54c8acff6eac}{dimension\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a015b19f6d5ad84ebaa9e3e7c8352389c}{elementary\+\_\+force\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_aeb2e63cf49f0b5595e6c15109863bd3b}{elementary\+\_\+particle\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a409650bc0425fc22c7713487a2a6dd8e}{matter\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a3d55ba29f95a9793b69c01f7942eca9f}{monomer\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a4d898757f2d67ca5ab5d504388d6199a}{polymer\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a747f9d3cf0b2caada4461cb7b12ea17b}{solid\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{classUniverse_a9dc8abd2f8f84318722184f38e1b8cc7}{point\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+friend \mbox{\hyperlink{classUniverse_aeccab978b0db45b64015aebdf44fa2d8}{Dimension}}
+\item 
+bool \mbox{\hyperlink{classUniverse_af8893059e57118d5da20d512b1df4d20}{object\+\_\+initialised}} = false
+\item 
+int \mbox{\hyperlink{classUniverse_a76279bc43f1ce7a7fc4ee2f6a2cf4228}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+int \mbox{\hyperlink{classUniverse_a6c530f6d3647d078794b1060afbb1acf}{default\+\_\+object\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classUniverse_ac7a26cb9cb97f61bb270a7bbef4a2ae2}{test\+\_\+subject\+\_\+one}} = 0
+\item 
+int \mbox{\hyperlink{classUniverse_ae4768ac314bcab322ffe484658b2bb06}{test\+\_\+subject\+\_\+two}} = 0
+\item 
+int \mbox{\hyperlink{classUniverse_a4332e3210a61dcfcb26e16b9f604d489}{universe\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}universe\+\_\+type\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classUniverse_a86742eff738f3d7812da8581a59f0812}{universe\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}universe\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classUniverse_a0406fae45a576526b0ea78b2b5a74ebb}{scaled\+\_\+time}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}scaled\+\_\+time\char`\"{}. \end{DoxyCompactList}\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classUniverse_a49ef0c3c2bd9ec438f5d9703c6aaa402}{time\+\_\+object\+\_\+created}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}time\+\_\+object\+\_\+created\char`\"{}. \end{DoxyCompactList}\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classUniverse_aacac76865f3600d5f308b83db9809184}{object\+\_\+expiration}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+expiration\char`\"{}. \end{DoxyCompactList}\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classUniverse_ad31a1d2865f16b1b8f4c597e116416e8}{previous\+\_\+event\+\_\+time}}
+\item 
+std\+::chrono\+::nanoseconds \mbox{\hyperlink{classUniverse_acb8bc2b083f0227a0427a5fbe6109286}{object\+\_\+lifespan}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+lifespan\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}\label{classUniverse_a4d137a146dd3c2514dfb692dfbab6984}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUniverse_a1210ce56049f1fc67f53aeda223bb82b}\label{classUniverse_a1210ce56049f1fc67f53aeda223bb82b}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}\item[{int}]{interim\+\_\+object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUniverse_a03af7455263d3028b55ca5dc93ebb6ba}\label{classUniverse_a03af7455263d3028b55ca5dc93ebb6ba}} 
+\index{Universe@{Universe}!Universe@{Universe}}
+\index{Universe@{Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Universe()}{Universe()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Universe\+::\+Universe (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUniverse_ad4d90f6f2727992762c6b409d3d3d228}\label{classUniverse_ad4d90f6f2727992762c6b409d3d3d228}} 
+\index{Universe@{Universe}!````~Universe@{$\sim$\+Universe}}
+\index{````~Universe@{$\sim$\+Universe}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{$\sim$\+Universe()}{~Universe()}}
+{\footnotesize\ttfamily virtual Universe\+::$\sim$\+Universe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUniverse_ab682307c963836cd81b35b5604bd7064}\label{classUniverse_ab682307c963836cd81b35b5604bd7064}} 
+\index{Universe@{Universe}!Add\+Cognitive\+Network@{Add\+Cognitive\+Network}}
+\index{Add\+Cognitive\+Network@{Add\+Cognitive\+Network}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Network()}{AddCognitiveNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a5199f6c27b1a97c8b8c9847b8be686cf}\label{classUniverse_a5199f6c27b1a97c8b8c9847b8be686cf}} 
+\index{Universe@{Universe}!Add\+Cognitive\+Networks@{Add\+Cognitive\+Networks}}
+\index{Add\+Cognitive\+Networks@{Add\+Cognitive\+Networks}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Cognitive\+Networks()}{AddCognitiveNetworks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Cognitive\+Networks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ab2671c2218c98f0f1f487c5b3bb96e3c}\label{classUniverse_ab2671c2218c98f0f1f487c5b3bb96e3c}} 
+\index{Universe@{Universe}!Add\+Composite\+Force\+Particle@{Add\+Composite\+Force\+Particle}}
+\index{Add\+Composite\+Force\+Particle@{Add\+Composite\+Force\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Composite\+Force\+Particle()}{AddCompositeForceParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Composite\+Force\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a23d74e377203fca7cb74e0ffee7244b6}\label{classUniverse_a23d74e377203fca7cb74e0ffee7244b6}} 
+\index{Universe@{Universe}!Add\+Composite\+Force\+Particles@{Add\+Composite\+Force\+Particles}}
+\index{Add\+Composite\+Force\+Particles@{Add\+Composite\+Force\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Composite\+Force\+Particles()}{AddCompositeForceParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Composite\+Force\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a6326158c47bf3f7fe9297299a9b5b7b7}\label{classUniverse_a6326158c47bf3f7fe9297299a9b5b7b7}} 
+\index{Universe@{Universe}!Add\+Dimension@{Add\+Dimension}}
+\index{Add\+Dimension@{Add\+Dimension}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Dimension()}{AddDimension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}\label{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}} 
+\index{Universe@{Universe}!Add\+Dimensions@{Add\+Dimensions}}
+\index{Add\+Dimensions@{Add\+Dimensions}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Dimensions()}{AddDimensions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a90c573dec55f2b3ad5680015356f5f25}\label{classUniverse_a90c573dec55f2b3ad5680015356f5f25}} 
+\index{Universe@{Universe}!Add\+Elementary\+Force@{Add\+Elementary\+Force}}
+\index{Add\+Elementary\+Force@{Add\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Force()}{AddElementaryForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a81d294300346e9f901836ab609cce942}\label{classUniverse_a81d294300346e9f901836ab609cce942}} 
+\index{Universe@{Universe}!Add\+Elementary\+Forces@{Add\+Elementary\+Forces}}
+\index{Add\+Elementary\+Forces@{Add\+Elementary\+Forces}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Forces()}{AddElementaryForces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Elementary\+Forces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ab9c84e0576de50aa4fa46655832ce5e4}\label{classUniverse_ab9c84e0576de50aa4fa46655832ce5e4}} 
+\index{Universe@{Universe}!Add\+Elementary\+Particle@{Add\+Elementary\+Particle}}
+\index{Add\+Elementary\+Particle@{Add\+Elementary\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Particle()}{AddElementaryParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a857cf7f208cd11c80736e82fa523feb5}\label{classUniverse_a857cf7f208cd11c80736e82fa523feb5}} 
+\index{Universe@{Universe}!Add\+Elementary\+Particles@{Add\+Elementary\+Particles}}
+\index{Add\+Elementary\+Particles@{Add\+Elementary\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Elementary\+Particles()}{AddElementaryParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Elementary\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a090d9ad1b88d81364e872e17d65edca4}\label{classUniverse_a090d9ad1b88d81364e872e17d65edca4}} 
+\index{Universe@{Universe}!Add\+Matter@{Add\+Matter}}
+\index{Add\+Matter@{Add\+Matter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Matter()}{AddMatter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Matter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ae00d10b2a23c9cedf1ff89e9da875563}\label{classUniverse_ae00d10b2a23c9cedf1ff89e9da875563}} 
+\index{Universe@{Universe}!Add\+Matters@{Add\+Matters}}
+\index{Add\+Matters@{Add\+Matters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Matters()}{AddMatters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Matters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a062a9472f0400e566ecc7dc056d989d9}\label{classUniverse_a062a9472f0400e566ecc7dc056d989d9}} 
+\index{Universe@{Universe}!Add\+Monomer@{Add\+Monomer}}
+\index{Add\+Monomer@{Add\+Monomer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Monomer()}{AddMonomer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Monomer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a95fe7f99971bb2048121a7c4e87b9f79}\label{classUniverse_a95fe7f99971bb2048121a7c4e87b9f79}} 
+\index{Universe@{Universe}!Add\+Monomers@{Add\+Monomers}}
+\index{Add\+Monomers@{Add\+Monomers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Monomers()}{AddMonomers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Monomers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a8508b791c6997d8abcdcc037a6776734}\label{classUniverse_a8508b791c6997d8abcdcc037a6776734}} 
+\index{Universe@{Universe}!Add\+Point@{Add\+Point}}
+\index{Add\+Point@{Add\+Point}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Point()}{AddPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aa48ced2078ba863723050d8283b3fa67}\label{classUniverse_aa48ced2078ba863723050d8283b3fa67}} 
+\index{Universe@{Universe}!Add\+Points@{Add\+Points}}
+\index{Add\+Points@{Add\+Points}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Points()}{AddPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Points (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a4ea0af5d2eb7b5070a83f7da29526fbd}\label{classUniverse_a4ea0af5d2eb7b5070a83f7da29526fbd}} 
+\index{Universe@{Universe}!Add\+Polymer@{Add\+Polymer}}
+\index{Add\+Polymer@{Add\+Polymer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Polymer()}{AddPolymer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Polymer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aed7cb25507d516a2821ebb69d5345c54}\label{classUniverse_aed7cb25507d516a2821ebb69d5345c54}} 
+\index{Universe@{Universe}!Add\+Polymers@{Add\+Polymers}}
+\index{Add\+Polymers@{Add\+Polymers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Polymers()}{AddPolymers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Polymers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a598799e2fcdf9ed60e83e9f5a61bfc05}\label{classUniverse_a598799e2fcdf9ed60e83e9f5a61bfc05}} 
+\index{Universe@{Universe}!Add\+Solid@{Add\+Solid}}
+\index{Add\+Solid@{Add\+Solid}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Solid()}{AddSolid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Solid (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a410d5ba2224fe90584b1f1aa5b38b41c}\label{classUniverse_a410d5ba2224fe90584b1f1aa5b38b41c}} 
+\index{Universe@{Universe}!Add\+Solids@{Add\+Solids}}
+\index{Add\+Solids@{Add\+Solids}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Solids()}{AddSolids()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Solids (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a901e16db5e8af258c66af7ac75662fe0}\label{classUniverse_a901e16db5e8af258c66af7ac75662fe0}} 
+\index{Universe@{Universe}!Add\+Temporal\+Adjustment@{Add\+Temporal\+Adjustment}}
+\index{Add\+Temporal\+Adjustment@{Add\+Temporal\+Adjustment}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Add\+Temporal\+Adjustment()}{AddTemporalAdjustment()}}
+{\footnotesize\ttfamily void Universe\+::\+Add\+Temporal\+Adjustment (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double $\ast$}]{point\+\_\+to\+\_\+counter,  }\item[{double}]{pool,  }\item[{int}]{interval,  }\item[{int}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classDimension_a278d8c3df7896eb01c55283482f8674a}{Dimension}}.
+
+\mbox{\Hypertarget{classUniverse_a15aa20218286fd11ecb9b792dfb63be3}\label{classUniverse_a15aa20218286fd11ecb9b792dfb63be3}} 
+\index{Universe@{Universe}!Adjust\+Counters@{Adjust\+Counters}}
+\index{Adjust\+Counters@{Adjust\+Counters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Adjust\+Counters()}{AdjustCounters()}}
+{\footnotesize\ttfamily void Universe\+::\+Adjust\+Counters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{current\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classDimension_a31e28c2777888449fad32843f6dd15ed}{Dimension}}.
+
+\mbox{\Hypertarget{classUniverse_a1f787da78fa196ba635db21a9e91dabb}\label{classUniverse_a1f787da78fa196ba635db21a9e91dabb}} 
+\index{Universe@{Universe}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ae590ecb77db0a876425b9b74bcfe2bce}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a65bcd3c09792cf53b1f614eff49cf111}{Dimension}}, \mbox{\hyperlink{classSolid_ab546d607d6f0bf70dc5e6bbac8baf287}{Solid}}, \mbox{\hyperlink{classMonomer_ae64dfbf82610ae26427be9c824aef70f}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a0045a3380e468c6cfdbefce829888c1f}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a418791aee2a9204a99d3a917b86fafd3}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_afa4dc18258722b3c85fbc9789a4297a5}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}\label{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}} 
+\index{Universe@{Universe}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a9753f52c9e36ad44e9fac1d3e38a0770}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ab13e8ed50a4373274636e542c917db01}{Dimension}}, \mbox{\hyperlink{classSolid_a46702e3109994b310eb4f1fba5610e0b}{Solid}}, \mbox{\hyperlink{classMonomer_a4c3f9894ea57047789bec32602f033cb}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a3764a27b11760b6ead2c8a23ff25d77a}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a4485046db890a95cea16573042a4f4f6}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a5f6aef9e15e2e5f346c7ede76ae6458b}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}\label{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}} 
+\index{Universe@{Universe}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a7d3252977440a9a5c004f748647ce885}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a9474b0dd3f6321a92bfe4375bb4b2266}{Dimension}}, \mbox{\hyperlink{classSolid_af2b3133138ce2482faa462d07aa23042}{Solid}}, \mbox{\hyperlink{classMonomer_a8747945cc2f7abd7ce0885345ad14ebc}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a655a2c9489bfbbf15e05ba4953628134}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a04efdc724335219ab0affdcffb55eea2}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ae26a03c2970a3825e8583a811339b28d}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}\label{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}} 
+\index{Universe@{Universe}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a7a55750d3c42a277c4ffe04a87ab3b19}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a621e8f7f24db86e836c5b3da0f019290}{Dimension}}, \mbox{\hyperlink{classSolid_a0801ec0382bc509191575bcf9f5c83c1}{Solid}}, \mbox{\hyperlink{classMonomer_acba5091693082fdf2d28f1a5a4ae19a1}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a8a16bff6b5df2b0ff918262bf6376ade}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_ab38659b209055df7e59f4bcd1b9e545a}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ac1464a04fbbca2d8927dfdbef0429878}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a62789bcff84bd750b0366004381e2fdd}\label{classUniverse_a62789bcff84bd750b0366004381e2fdd}} 
+\index{Universe@{Universe}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_af25bbd4f4d8f370cd2a48fd6db8302b9}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_afb01fb9e469da18899d4b14e5f095ece}{Dimension}}, \mbox{\hyperlink{classSolid_abd8fff76385306f97aa65dfd6b867fc6}{Solid}}, \mbox{\hyperlink{classMonomer_aa186454670f7796e196509238d419a35}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a80f1977e777aa0c8cce2124b666e6446}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a57d05f26e1c0ee953260ebd3780248f8}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a64fe19ee12d6ca0a69f650faa5bedb58}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_af7becebb347be9a85541d96a3eca1ca7}\label{classUniverse_af7becebb347be9a85541d96a3eca1ca7}} 
+\index{Universe@{Universe}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a8b60fdb81d89a3a74d6c06cb29e7aad3}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a2ae0b6a8ee17f6e28b6d2d3209df4bf4}{Dimension}}, \mbox{\hyperlink{classSolid_a07534fa79bb8a6eb32e081e5158ba9e5}{Solid}}, \mbox{\hyperlink{classMonomer_a921f7add2d446b8670513220ace6c4b2}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a185dc4e0b840505df27dbbed9fdcdc7b}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a266f86cdcc01e813249a2f192ab85eb3}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ae0937405e68dd40b19036d5a359f7e07}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}\label{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}} 
+\index{Universe@{Universe}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a46a15b24bd61049fa1c4f635268086a1}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a72b8ab8d676b4df6b9a6ef948f5693c9}{Dimension}}, \mbox{\hyperlink{classSolid_a49e35bf258104b7bce225dc21058affb}{Solid}}, \mbox{\hyperlink{classMonomer_a176a1a4dfed1eaddc6637bbfd2660aba}{Monomer}}, \mbox{\hyperlink{classElementaryForce_aabf66a859e6e808a65c6929cd16f7597}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a96ddd42403e3665c6070283ac201658d}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a1fd171a0c6fab0cbf9a45a0d24607bde}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}\label{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}} 
+\index{Universe@{Universe}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ab8bc213d2806f0dc49c1284bf934fc24}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_abf490cabd486afa660f17940ed0d17e6}{Dimension}}, \mbox{\hyperlink{classSolid_ad6c28ec896cbcf64e24a7132a144befd}{Solid}}, \mbox{\hyperlink{classMonomer_a64f65c128ebc2428c42739c930696ea1}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a2d3a5444c771f35d66d4151c62f53b12}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_ae8a5d1d09686d79f7814c8800791460b}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a3c1c0b427c633f0685f1d812e02b92ff}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a28615baf47d4558cbe5eebeed6575024}\label{classUniverse_a28615baf47d4558cbe5eebeed6575024}} 
+\index{Universe@{Universe}!Creation@{Creation}}
+\index{Creation@{Creation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Creation()}{Creation()}}
+{\footnotesize\ttfamily void Universe\+::\+Creation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::string}]{object\+\_\+title,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a982502e46868a00a9111738ccc9355c2}\label{classUniverse_a982502e46868a00a9111738ccc9355c2}} 
+\index{Universe@{Universe}!Extend\+Life@{Extend\+Life}}
+\index{Extend\+Life@{Extend\+Life}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Extend\+Life()}{ExtendLife()}}
+{\footnotesize\ttfamily void Universe\+::\+Extend\+Life (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}\label{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}} 
+\index{Universe@{Universe}!Get\+Cognitive\+Network@{Get\+Cognitive\+Network}}
+\index{Get\+Cognitive\+Network@{Get\+Cognitive\+Network}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Network()}{GetCognitiveNetwork()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Cognitive\+Network (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a06968a24194280a43f077c5b77379ea8}\label{classUniverse_a06968a24194280a43f077c5b77379ea8}} 
+\index{Universe@{Universe}!Get\+Cognitive\+Networks@{Get\+Cognitive\+Networks}}
+\index{Get\+Cognitive\+Networks@{Get\+Cognitive\+Networks}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Cognitive\+Networks()}{GetCognitiveNetworks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Cognitive\+Networks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a3e2acc1d75765a6e8e852fca919c5b96}\label{classUniverse_a3e2acc1d75765a6e8e852fca919c5b96}} 
+\index{Universe@{Universe}!Get\+Composite\+Force\+Particle@{Get\+Composite\+Force\+Particle}}
+\index{Get\+Composite\+Force\+Particle@{Get\+Composite\+Force\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particle()}{GetCompositeForceParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Composite\+Force\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}\label{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}} 
+\index{Universe@{Universe}!Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}}
+\index{Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particles()}{GetCompositeForceParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Composite\+Force\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ab79a380dee684c6dc304b571f4d28645}\label{classUniverse_ab79a380dee684c6dc304b571f4d28645}} 
+\index{Universe@{Universe}!Get\+Dimension@{Get\+Dimension}}
+\index{Get\+Dimension@{Get\+Dimension}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Dimension()}{GetDimension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a1869fc7bf43827378bab5a701f7f917a}\label{classUniverse_a1869fc7bf43827378bab5a701f7f917a}} 
+\index{Universe@{Universe}!Get\+Dimensions@{Get\+Dimensions}}
+\index{Get\+Dimensions@{Get\+Dimensions}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Dimensions()}{GetDimensions()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a63b850ef3f3394313353109d222bf5d1}\label{classUniverse_a63b850ef3f3394313353109d222bf5d1}} 
+\index{Universe@{Universe}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a09e5a1c774c84529a7adfe56fadb7467}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a21783c29a576518b722512f1245fa598}{Dimension}}, \mbox{\hyperlink{classSolid_a01cd3c441a4e339927c43536de6d9b5e}{Solid}}, \mbox{\hyperlink{classMonomer_ad23f4829d66cb20401cc72a9d72ac320}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a2c8bc3226f42710717775c73eee1644e}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a01eba6e68d2d8a717e2b4789be90853d}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a8ef336fed7e33d52a3baae4bd4dd32fd}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}\label{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}} 
+\index{Universe@{Universe}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a8c4e0454068f714691ae250f795cdb67}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ae1babb1fa280c35966d7ee3de6655e4d}{Dimension}}, \mbox{\hyperlink{classSolid_aff7ec13bcc584d8330e3f3a1b371bbe6}{Solid}}, \mbox{\hyperlink{classMonomer_a9b270cd1293bc9635813ead284bd3881}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a58e503f2f3a7410f034a2a04bca560d1}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_ae4ccaca7b78905f416f35f9556b1923c}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ac26d7aab0daefcf13c68aba9e0f2ed53}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a9506017d944cb64e67567477c1505a53}\label{classUniverse_a9506017d944cb64e67567477c1505a53}} 
+\index{Universe@{Universe}!Get\+Elementary\+Force@{Get\+Elementary\+Force}}
+\index{Get\+Elementary\+Force@{Get\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Force()}{GetElementaryForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}\label{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}} 
+\index{Universe@{Universe}!Get\+Elementary\+Forces@{Get\+Elementary\+Forces}}
+\index{Get\+Elementary\+Forces@{Get\+Elementary\+Forces}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Forces()}{GetElementaryForces()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Elementary\+Forces (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_acef54e17666d17078c522388f8f6e4f9}\label{classUniverse_acef54e17666d17078c522388f8f6e4f9}} 
+\index{Universe@{Universe}!Get\+Elementary\+Particle@{Get\+Elementary\+Particle}}
+\index{Get\+Elementary\+Particle@{Get\+Elementary\+Particle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Particle()}{GetElementaryParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a168fd9bf7602adcba1de5dd93a212775}\label{classUniverse_a168fd9bf7602adcba1de5dd93a212775}} 
+\index{Universe@{Universe}!Get\+Elementary\+Particles@{Get\+Elementary\+Particles}}
+\index{Get\+Elementary\+Particles@{Get\+Elementary\+Particles}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Elementary\+Particles()}{GetElementaryParticles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Elementary\+Particles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}\label{classUniverse_a3b25e7ce6552991b7d5e6a9eb6e8a7ff}} 
+\index{Universe@{Universe}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}\label{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}} 
+\index{Universe@{Universe}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a4b5150310288c52f00ecb745ae9e7f86}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a652220a2eb1b26c749ad032865d81788}{Dimension}}, \mbox{\hyperlink{classSolid_ab5ecb5598be93fe3cd2a21c0cfd363c8}{Solid}}, \mbox{\hyperlink{classMonomer_aa5f7b901e15c9a9eb6e1c3564cd06e4f}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a579afb8079668f0587096934d1de9c04}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a84bdc0c2ca97a9c19422018ff761b992}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a06483dc73c156679f34acf85aa5f924e}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a69de663cf2e32e65ed28c44ae666db3a}\label{classUniverse_a69de663cf2e32e65ed28c44ae666db3a}} 
+\index{Universe@{Universe}!Get\+Matter@{Get\+Matter}}
+\index{Get\+Matter@{Get\+Matter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Matter()}{GetMatter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Matter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a4307a62e183fed8cf2b92be0f6014688}\label{classUniverse_a4307a62e183fed8cf2b92be0f6014688}} 
+\index{Universe@{Universe}!Get\+Matters@{Get\+Matters}}
+\index{Get\+Matters@{Get\+Matters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Matters()}{GetMatters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Matters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aaa03fb8178d790afd992dd094bb64b47}\label{classUniverse_aaa03fb8178d790afd992dd094bb64b47}} 
+\index{Universe@{Universe}!Get\+Monomer@{Get\+Monomer}}
+\index{Get\+Monomer@{Get\+Monomer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Monomer()}{GetMonomer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Monomer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aca82a914e0f8bd7cd1ec80a7220f0a0e}\label{classUniverse_aca82a914e0f8bd7cd1ec80a7220f0a0e}} 
+\index{Universe@{Universe}!Get\+Monomers@{Get\+Monomers}}
+\index{Get\+Monomers@{Get\+Monomers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Monomers()}{GetMonomers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Monomers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a3774f14a13a55827a1a4eea0a404edcb}\label{classUniverse_a3774f14a13a55827a1a4eea0a404edcb}} 
+\index{Universe@{Universe}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Point()}{GetPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Point (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a765c6c658b7a465cd92418690db846ae}\label{classUniverse_a765c6c658b7a465cd92418690db846ae}} 
+\index{Universe@{Universe}!Get\+Points@{Get\+Points}}
+\index{Get\+Points@{Get\+Points}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Points()}{GetPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Points (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a2d5d3924a7d7ffd2a5f47be9f137d86e}\label{classUniverse_a2d5d3924a7d7ffd2a5f47be9f137d86e}} 
+\index{Universe@{Universe}!Get\+Polymer@{Get\+Polymer}}
+\index{Get\+Polymer@{Get\+Polymer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Polymer()}{GetPolymer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Polymer (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aac5d1c1a3a3ba56c8ca7115a85b2c239}\label{classUniverse_aac5d1c1a3a3ba56c8ca7115a85b2c239}} 
+\index{Universe@{Universe}!Get\+Polymers@{Get\+Polymers}}
+\index{Get\+Polymers@{Get\+Polymers}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Polymers()}{GetPolymers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Polymers (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a9f7b74fc21d45ddaa78aa18e9a337bcd}\label{classUniverse_a9f7b74fc21d45ddaa78aa18e9a337bcd}} 
+\index{Universe@{Universe}!Get\+Solid@{Get\+Solid}}
+\index{Get\+Solid@{Get\+Solid}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Solid()}{GetSolid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Solid (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a669fc068dd7820a5af309bfbe67199aa}\label{classUniverse_a669fc068dd7820a5af309bfbe67199aa}} 
+\index{Universe@{Universe}!Get\+Solids@{Get\+Solids}}
+\index{Get\+Solids@{Get\+Solids}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Solids()}{GetSolids()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Solids (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_acb453ce71da418c5b5617fecede9571b}\label{classUniverse_acb453ce71da418c5b5617fecede9571b}} 
+\index{Universe@{Universe}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a277247686f8af159e7a7beb0ec379225}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ae36aadad4ae84735a5ff73bff4eb97b1}{Dimension}}, \mbox{\hyperlink{classSolid_ae39d0166456b8feaa39547e5a21c9096}{Solid}}, \mbox{\hyperlink{classMonomer_aa35033340e88c46757d1d5ccba21a21e}{Monomer}}, \mbox{\hyperlink{classElementaryForce_aaa1cde27b1508831f67353eb39745a7e}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_afd94bf09dbaf5d5df36b8f093db02dd9}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a9818d469c9841eaf77fbe329b0953354}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}\label{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}} 
+\index{Universe@{Universe}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a942ca90561fedae46136de620accbfea}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ad0d067d7f9dc4841b0ad280979ebe7af}{Dimension}}, \mbox{\hyperlink{classSolid_ab3a972354b25ad1bbe8c3f3e7638e24c}{Solid}}, \mbox{\hyperlink{classMonomer_a4bc8b39086260e26a196b28b4fc6667f}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a0974d6537c07dac2453d2a607324fa21}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_afcdbea76524e5a52691fff7b526971e9}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_abc8597f3b4f7cf755ab4618bd624b046}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_af0f4b81950061e63c2855eb40957a5b1}\label{classUniverse_af0f4b81950061e63c2855eb40957a5b1}} 
+\index{Universe@{Universe}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_acfa5de663b3e686c4d9ea1a3bb483b11}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_aeee6025f17d9cd1bf7f324d715a30691}{Dimension}}, \mbox{\hyperlink{classSolid_a9cfde1c3a4b7c6d2a5a3719d74e27237}{Solid}}, \mbox{\hyperlink{classMonomer_a3b00168520f592098356f7cd3e663ad3}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a3478c8ad35bce240055da7d4a03e555e}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a70fb2a7710776c4e2315a1e29fe35eb6}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a24214566eb5b44340d5563b6583052e8}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}\label{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}} 
+\index{Universe@{Universe}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a761db75ac8eab7b4625e5a398891bd12}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a656ce92d07ea600cc0ec53865ad515e2}{Dimension}}, \mbox{\hyperlink{classSolid_ac8a7738735a6bda4e89414a2b0c370e1}{Solid}}, \mbox{\hyperlink{classMonomer_ac2070d7e39cd0b2a00aa6023ffd51f55}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a4669f2ce414e508c70ae4ce0df503ad1}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_a303c365b7a17997a63a74756fc72fba3}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ab5cc0893a4063cc353ea5d2404f27b0b}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}\label{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}} 
+\index{Universe@{Universe}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Universe\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_aa6342c390fe8e7c648b4c6bc8f93ba4a}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a5bb5a164564013a60728854cc2e5ddb3}{Dimension}}, \mbox{\hyperlink{classSolid_ac98f9c827d58a631627423e25dd611ba}{Solid}}, \mbox{\hyperlink{classMonomer_aec6e42dde40c5b3142fab880eabb346a}{Monomer}}, \mbox{\hyperlink{classElementaryForce_a928e06a1fa81b8d7ec4a426d959a0f98}{Elementary\+Force}}, \mbox{\hyperlink{classLaw_aad6e54da64a5d8499dcb6c232aa6748f}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a27762218af4e3c021c89ff4792d81b41}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a8fdaa6d06584e1ef50c4c613b22b786e}\label{classUniverse_a8fdaa6d06584e1ef50c4c613b22b786e}} 
+\index{Universe@{Universe}!Is\+Dead@{Is\+Dead}}
+\index{Is\+Dead@{Is\+Dead}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Is\+Dead()}{IsDead()}}
+{\footnotesize\ttfamily bool Universe\+::\+Is\+Dead (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a0c485c504542409cbb5cfd8543c35b11}\label{classUniverse_a0c485c504542409cbb5cfd8543c35b11}} 
+\index{Universe@{Universe}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Universe\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ac97c08a0af7dc0d02fbe059827b6be87}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a5b07f5c8558233c8f3488baf1fe3459a}{Dimension}}, \mbox{\hyperlink{classSolid_ae2a486e59f11f96a1a39756b3f3da53f}{Solid}}, \mbox{\hyperlink{classElementaryForce_aa5ab479744dbf3e8578f8d2974299ff7}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_a5b2375df1e19abdf6045c475d2ac23ca}{Monomer}}, and \mbox{\hyperlink{classLaw_af99520c95b2cd8af0af110b78b2288ef}{Law}}.
+
+\mbox{\Hypertarget{classUniverse_a1d92b2277564577571c802f6e0c206dd}\label{classUniverse_a1d92b2277564577571c802f6e0c206dd}} 
+\index{Universe@{Universe}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Universe\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_aeda74e3902c0e56c0c09779854045cde}\label{classUniverse_aeda74e3902c0e56c0c09779854045cde}} 
+\index{Universe@{Universe}!Return\+Energy@{Return\+Energy}}
+\index{Return\+Energy@{Return\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Return\+Energy()}{ReturnEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Return\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}\label{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}} 
+\index{Universe@{Universe}!Set\+Charge@{Set\+Charge}}
+\index{Set\+Charge@{Set\+Charge}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a99f801aeca299186cc706696696749b1}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a6d3f7fa4a26b92d8ae6161a1b8bb8220}{Dimension}}, \mbox{\hyperlink{classSolid_a37503e6b25f912254414e778af2e75cd}{Solid}}, \mbox{\hyperlink{classElementaryParticle_abbc6d3c58509c4121df55bfef716d2f1}{Elementary\+Particle}}, \mbox{\hyperlink{classMonomer_a1ee35c888318e590082e6cd1772bb430}{Monomer}}, and \mbox{\hyperlink{classLaw_a2e780573f6285f88d167d45a2e243d01}{Law}}.
+
+\mbox{\Hypertarget{classUniverse_aa22202ae740eb1355529afcb13285e91}\label{classUniverse_aa22202ae740eb1355529afcb13285e91}} 
+\index{Universe@{Universe}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classDimension_a75c6a1a1e09c40b5860dc11a83384d9f}{Dimension}}, \mbox{\hyperlink{classElementaryForce_a3762cf66ed266b310446417215dec3fa}{Elementary\+Force}}, \mbox{\hyperlink{classCompositeForceParticle_a41cee6bd5a75fbf67fa6e76a9e7d7605}{Composite\+Force\+Particle}}, \mbox{\hyperlink{classMembraneChannel_a61931feff8f3bb485eeb5c80125bb732}{Membrane\+Channel}}, \mbox{\hyperlink{classNeuroreceptor_a0660a316ef44cf723509f720acd16f24}{Neuroreceptor}}, \mbox{\hyperlink{classSoma_a9ef49d3fea8c0fbe6513f3910339f736}{Soma}}, \mbox{\hyperlink{classElementaryParticle_a141316fd968cce8ecc5aa11ce0757d63}{Elementary\+Particle}}, \mbox{\hyperlink{classMembrane_a4bff43b38d7046867f220392a39cc272}{Membrane}}, \mbox{\hyperlink{classMatter_a514b4a64589eb3fbc3db6b3b356bd687}{Matter}}, \mbox{\hyperlink{classDendrite_a7529495515de74fff2b9a92b12531057}{Dendrite}}, \mbox{\hyperlink{classSolid_aea949040518e505ed39b1456a360c5e0}{Solid}}, \mbox{\hyperlink{classOrbital_ae2a2fb06700d1d68501b0cbdea87cc08}{Orbital}}, \mbox{\hyperlink{classPolymer_a1500ffc682396af2f4306c7c7ea7fd87}{Polymer}}, \mbox{\hyperlink{classMonomer_a6f0dfa4382b3d4fa19b7ee0fb8fe7a55}{Monomer}}, \mbox{\hyperlink{classPolygon_ad12083d8c152a1979b04bead93b6b730}{Polygon}}, \mbox{\hyperlink{classAppTimer_a77d5d447d6b136a35304b0571a166ddc}{App\+Timer}}, \mbox{\hyperlink{classLaw_a408c401c8a44870c29ba9d08b45cb40f}{Law}}, \mbox{\hyperlink{classInterneuronSpace_a60a46f22a2e575d65031635a698a60a9}{Interneuron\+Space}}, \mbox{\hyperlink{classSynapse_aa1a990a7b89fbeaf1109a8b70d86111b}{Synapse}}, \mbox{\hyperlink{classCognitiveInput_a4f09c1f176b5406d95a14d7cb1ab75e6}{Cognitive\+Input}}, \mbox{\hyperlink{classCognitiveOutput_a087e8bdab9eb6020dbbe6d47f524c8b6}{Cognitive\+Output}}, \mbox{\hyperlink{classNeurotransmitter_ae16ec051609867d4f64fad5ba4449443}{Neurotransmitter}}, \mbox{\hyperlink{classSchwannCell_a067f87983cb937d5fdb882c267e27921}{Schwann\+Cell}}, \mbox{\hyperlink{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}}, \mbox{\hyperlink{classAxon_a3493cb97bde26bd66facc6084cd5f219}{Axon}}, \mbox{\hyperlink{classAxonHillock_a0220cee0ad99ddc48496982078c1856c}{Axon\+Hillock}}, \mbox{\hyperlink{classDendriteBranch_a2ce03fbad4a70564eeaafb62debd4d74}{Dendrite\+Branch}}, \mbox{\hyperlink{classMyelinSheath_afb9cd377a71881558f48cf8bb226af77}{Myelin\+Sheath}}, \mbox{\hyperlink{classAxonBouton_afe285478d414f2815afb98abe7b92898}{Axon\+Bouton}}, \mbox{\hyperlink{classDendriteCleft_a428b8e5117f381a382e0071b936d42a1}{Dendrite\+Cleft}}, \mbox{\hyperlink{classAxonBranch_a96ba30b18627563d637d4e02fac943be}{Axon\+Branch}}, and \mbox{\hyperlink{classAbstraction_a82cd32bf3de41f35ab76d80611fe6763}{Abstraction}}.
+
+\mbox{\Hypertarget{classUniverse_aa981fc7e252b1fbbb675f0371860954d}\label{classUniverse_aa981fc7e252b1fbbb675f0371860954d}} 
+\index{Universe@{Universe}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a31764cd5746369d16b45f2ff74806a0b}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ad8c18ce6358904e01594092dca9f1311}{Dimension}}, \mbox{\hyperlink{classSolid_a9a660f9d94f597712c67922aa1d4d795}{Solid}}, \mbox{\hyperlink{classElementaryForce_a67f6845bd715c29c17387d291b343a1b}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_a50e41be601b31450a97bfd15950cfb3d}{Monomer}}, \mbox{\hyperlink{classLaw_acabe1a3113c207368f3bb6fe81e13963}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a476c0d570c3be75c9e186df1ec2a5cda}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a608aa95698380f791a0ffba45cc1bee3}\label{classUniverse_a608aa95698380f791a0ffba45cc1bee3}} 
+\index{Universe@{Universe}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a270f6842ec14b3e5b80dedf7b48ea6f4}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_aead73fc6a25388d14b514b2170735b1b}{Dimension}}, \mbox{\hyperlink{classSolid_a6617ae9fe4707d760a23b54eddf00dec}{Solid}}, \mbox{\hyperlink{classElementaryForce_af4f12038c33d7edf9f13339fcd632ec9}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_aa034728b74053ed3df452ddc8f1b46e8}{Monomer}}, \mbox{\hyperlink{classLaw_aca9bb82839ddb46bd89f52b6211c5a54}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ad53c5d396b3c56241174a9bd78f9e07a}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a868250e67d0fcb2483aa8bdd73c40a02}\label{classUniverse_a868250e67d0fcb2483aa8bdd73c40a02}} 
+\index{Universe@{Universe}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}\label{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}} 
+\index{Universe@{Universe}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_af9f082a70f0cc25a3f818d9eace5a527}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_aeec6887382d09e3d78382582ff4e7c33}{Dimension}}, \mbox{\hyperlink{classSolid_ae237f2c713868c133e28ed7f75fc9125}{Solid}}, \mbox{\hyperlink{classElementaryForce_aa36d5875964f7e2fc981f6fc5431be7f}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_ab38d44b27a46d5630aeb5e889f927c09}{Monomer}}, \mbox{\hyperlink{classLaw_a908ccc2b0a561a7324a15393ec157219}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_ad9e1553ab0096230edd591e3135b223d}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_ac3443dd59b61ae3110f07f681f63ed0a}\label{classUniverse_ac3443dd59b61ae3110f07f681f63ed0a}} 
+\index{Universe@{Universe}!Set\+Lifespan@{Set\+Lifespan}}
+\index{Set\+Lifespan@{Set\+Lifespan}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Lifespan()}{SetLifespan()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Lifespan (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a2274a54fbdc7504c897e4272162bf17a}\label{classUniverse_a2274a54fbdc7504c897e4272162bf17a}} 
+\index{Universe@{Universe}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}\label{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}} 
+\index{Universe@{Universe}!Set\+Spin@{Set\+Spin}}
+\index{Set\+Spin@{Set\+Spin}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a3fc6d08413bfd4350f94d6f2627eedc7}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a8d73c050c67b0226572b4a1b08ae6594}{Dimension}}, \mbox{\hyperlink{classSolid_a615cb8d1ec1376781726bcefa86339cb}{Solid}}, \mbox{\hyperlink{classElementaryParticle_a437fa86d88157314b84662b158d52353}{Elementary\+Particle}}, \mbox{\hyperlink{classMonomer_ad24a86a4c1ac62d1b0ce8040d6b08adf}{Monomer}}, and \mbox{\hyperlink{classLaw_a3de75edea5e20db0a7b731de61f07dea}{Law}}.
+
+\mbox{\Hypertarget{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}\label{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}} 
+\index{Universe@{Universe}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a50f2a12c9873e623d6247318b041ba30}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_ab9021cb6727ed590026bf870c638576d}{Dimension}}, \mbox{\hyperlink{classSolid_a478e15cdf15c5bb01cbcbd5f584ef83a}{Solid}}, \mbox{\hyperlink{classElementaryForce_aa1b5708cfab2069049fec5c924e1f246}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_a10b864f6bcad43f11a2316dbbe4c4742}{Monomer}}, \mbox{\hyperlink{classLaw_a4cd0dd1908edbd02090dd1ba1387d722}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a06488ef0457335648b161d3ed746b643}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_aafec97a231126b71c73ac1258609a284}\label{classUniverse_aafec97a231126b71c73ac1258609a284}} 
+\index{Universe@{Universe}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ac54286eea279f5caa98b642b9084fd55}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a2de864aaa4b1074684395dbe928468c1}{Dimension}}, \mbox{\hyperlink{classSolid_a4342786a7785b1a3816d20de02105bcf}{Solid}}, \mbox{\hyperlink{classElementaryForce_afb00e9a10ec33eeb1daefce39b0468b7}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_ad9df06c1a8264bfdb514ef3ba04ef4c7}{Monomer}}, \mbox{\hyperlink{classLaw_a4a7c8caa24acf453c1a8782a1ec4acf4}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a28d835658edcbecf60162475a8cb1ab6}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}\label{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}} 
+\index{Universe@{Universe}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a6f7210dd8c2786518329faa61b6e14d5}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a9bd5480b1da689cd58bf61dac7169080}{Dimension}}, \mbox{\hyperlink{classSolid_a8b80ebe209fcd3afa4791968127753d0}{Solid}}, \mbox{\hyperlink{classElementaryForce_ac25021d38c1d54bf711096ab37a461f6}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_ae6ca57913da27fa749d33d1c4fed27ca}{Monomer}}, \mbox{\hyperlink{classLaw_ad4a05c77d11ddec40b1e07246cac449d}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_aeba1070d4ec6e52fd8276e38c6a6c2e1}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}\label{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}} 
+\index{Universe@{Universe}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ab39c9eed50da6d3630c4498ae64b804e}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a157cfa28dd6bc5518d622d01445ca827}{Dimension}}, \mbox{\hyperlink{classSolid_aa28e0f7e4de2fc0c1e28d385214296bf}{Solid}}, \mbox{\hyperlink{classElementaryForce_a093cdf0810e95f1d973bd9dc88c6788b}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_ad4fe1db33f493575281e1a2fb35004ca}{Monomer}}, \mbox{\hyperlink{classLaw_a1009b4e0bc0b91f41d48dc137529e97b}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a7899a6efda98b062051e37c25c214e2a}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_a2d3d642bfdc863248e93535832fa4b00}\label{classUniverse_a2d3d642bfdc863248e93535832fa4b00}} 
+\index{Universe@{Universe}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Universe\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a116f6818986a622e4a318857859e2495}{Cognitive\+Network}}, \mbox{\hyperlink{classDimension_a1d2accef9e6adf747f5cc143ae4527c9}{Dimension}}, \mbox{\hyperlink{classSolid_adb34befc66f8c681f3a85c44e0d00e3a}{Solid}}, \mbox{\hyperlink{classElementaryForce_a38d4f86f18a9f84a4198ee43bc90f6b4}{Elementary\+Force}}, \mbox{\hyperlink{classMonomer_ab887d7cfd2ecb557efb3ace59852019c}{Monomer}}, \mbox{\hyperlink{classLaw_a65e5e757041c1e72bb046eccbb6d66db}{Law}}, and \mbox{\hyperlink{classCompositeForceParticle_a73a3792ae1c334e74f945fea56083f0b}{Composite\+Force\+Particle}}.
+
+\mbox{\Hypertarget{classUniverse_aa220508c4cc12b02c6fe494622ebb58d}\label{classUniverse_aa220508c4cc12b02c6fe494622ebb58d}} 
+\index{Universe@{Universe}!The\+Calculated\+Time\+Now@{The\+Calculated\+Time\+Now}}
+\index{The\+Calculated\+Time\+Now@{The\+Calculated\+Time\+Now}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{The\+Calculated\+Time\+Now()}{TheCalculatedTimeNow()}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Calculated\+Time\+Now (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{time\+\_\+object\+\_\+created\+\_\+time,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{calculated\+\_\+scaled\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}\label{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}} 
+\index{Universe@{Universe}!The\+Time\+Now@{The\+Time\+Now}}
+\index{The\+Time\+Now@{The\+Time\+Now}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{The\+Time\+Now()}{TheTimeNow()}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Time\+Now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}\label{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}} 
+\index{Universe@{Universe}!Update@{Update}}
+\index{Update@{Update}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Universe\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a0d79e614e1af951c06b78cb5768f9c8e}\label{classUniverse_a0d79e614e1af951c06b78cb5768f9c8e}} 
+\index{Universe@{Universe}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Universe\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classUniverse_a63e878aaf03f1800b255e9a089a72a8b}\label{classUniverse_a63e878aaf03f1800b255e9a089a72a8b}} 
+\index{Universe@{Universe}!Use\+Energy@{Use\+Energy}}
+\index{Use\+Energy@{Use\+Energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Use\+Energy()}{UseEnergy()}}
+{\footnotesize\ttfamily double Universe\+::\+Use\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classUniverse_a7a0e9796ff0d650a8b1fbde5fa5b761f}\label{classUniverse_a7a0e9796ff0d650a8b1fbde5fa5b761f}} 
+\index{Universe@{Universe}!cognitive\+\_\+network\+\_\+list@{cognitive\+\_\+network\+\_\+list}}
+\index{cognitive\+\_\+network\+\_\+list@{cognitive\+\_\+network\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{cognitive\+\_\+network\+\_\+list}{cognitive\_network\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::cognitive\+\_\+network\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_ae9795d06e406c4322637825aa545aa2f}\label{classUniverse_ae9795d06e406c4322637825aa545aa2f}} 
+\index{Universe@{Universe}!composite\+\_\+forceparticle\+\_\+list@{composite\+\_\+forceparticle\+\_\+list}}
+\index{composite\+\_\+forceparticle\+\_\+list@{composite\+\_\+forceparticle\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{composite\+\_\+forceparticle\+\_\+list}{composite\_forceparticle\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::composite\+\_\+forceparticle\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_a6c530f6d3647d078794b1060afbb1acf}\label{classUniverse_a6c530f6d3647d078794b1060afbb1acf}} 
+\index{Universe@{Universe}!default\+\_\+object\+\_\+type@{default\+\_\+object\+\_\+type}}
+\index{default\+\_\+object\+\_\+type@{default\+\_\+object\+\_\+type}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{default\+\_\+object\+\_\+type}{default\_object\_type}}
+{\footnotesize\ttfamily int Universe\+::default\+\_\+object\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_aeccab978b0db45b64015aebdf44fa2d8}\label{classUniverse_aeccab978b0db45b64015aebdf44fa2d8}} 
+\index{Universe@{Universe}!Dimension@{Dimension}}
+\index{Dimension@{Dimension}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{Dimension}{Dimension}}
+{\footnotesize\ttfamily friend Universe\+::\+Dimension\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_a159461f7098c3a30274f54c8acff6eac}\label{classUniverse_a159461f7098c3a30274f54c8acff6eac}} 
+\index{Universe@{Universe}!dimension\+\_\+list@{dimension\+\_\+list}}
+\index{dimension\+\_\+list@{dimension\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{dimension\+\_\+list}{dimension\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::dimension\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_a76279bc43f1ce7a7fc4ee2f6a2cf4228}\label{classUniverse_a76279bc43f1ce7a7fc4ee2f6a2cf4228}} 
+\index{Universe@{Universe}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Universe\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_a015b19f6d5ad84ebaa9e3e7c8352389c}\label{classUniverse_a015b19f6d5ad84ebaa9e3e7c8352389c}} 
+\index{Universe@{Universe}!elementary\+\_\+force\+\_\+list@{elementary\+\_\+force\+\_\+list}}
+\index{elementary\+\_\+force\+\_\+list@{elementary\+\_\+force\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+list}{elementary\_force\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::elementary\+\_\+force\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_aeb2e63cf49f0b5595e6c15109863bd3b}\label{classUniverse_aeb2e63cf49f0b5595e6c15109863bd3b}} 
+\index{Universe@{Universe}!elementary\+\_\+particle\+\_\+list@{elementary\+\_\+particle\+\_\+list}}
+\index{elementary\+\_\+particle\+\_\+list@{elementary\+\_\+particle\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+list}{elementary\_particle\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::elementary\+\_\+particle\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_a409650bc0425fc22c7713487a2a6dd8e}\label{classUniverse_a409650bc0425fc22c7713487a2a6dd8e}} 
+\index{Universe@{Universe}!matter\+\_\+list@{matter\+\_\+list}}
+\index{matter\+\_\+list@{matter\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{matter\+\_\+list}{matter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::matter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_a3d55ba29f95a9793b69c01f7942eca9f}\label{classUniverse_a3d55ba29f95a9793b69c01f7942eca9f}} 
+\index{Universe@{Universe}!monomer\+\_\+list@{monomer\+\_\+list}}
+\index{monomer\+\_\+list@{monomer\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{monomer\+\_\+list}{monomer\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::monomer\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_ab64777e25c83216e7a91d2761a10463c}\label{classUniverse_ab64777e25c83216e7a91d2761a10463c}} 
+\index{Universe@{Universe}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Universe\+::object\+\_\+energy}
+
+\mbox{\Hypertarget{classUniverse_a17c8d799331a5b32837f285c12cbe858}\label{classUniverse_a17c8d799331a5b32837f285c12cbe858}} 
+\index{Universe@{Universe}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Universe\+::object\+\_\+energy\+\_\+threshold}
+
+\mbox{\Hypertarget{classUniverse_aacac76865f3600d5f308b83db9809184}\label{classUniverse_aacac76865f3600d5f308b83db9809184}} 
+\index{Universe@{Universe}!object\+\_\+expiration@{object\+\_\+expiration}}
+\index{object\+\_\+expiration@{object\+\_\+expiration}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+expiration}{object\_expiration}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Universe\+::object\+\_\+expiration\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+expiration\char`\"{}. 
+
+\mbox{\Hypertarget{classUniverse_af8893059e57118d5da20d512b1df4d20}\label{classUniverse_af8893059e57118d5da20d512b1df4d20}} 
+\index{Universe@{Universe}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Universe\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_acb8bc2b083f0227a0427a5fbe6109286}\label{classUniverse_acb8bc2b083f0227a0427a5fbe6109286}} 
+\index{Universe@{Universe}!object\+\_\+lifespan@{object\+\_\+lifespan}}
+\index{object\+\_\+lifespan@{object\+\_\+lifespan}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+lifespan}{object\_lifespan}}
+{\footnotesize\ttfamily std\+::chrono\+::nanoseconds Universe\+::object\+\_\+lifespan\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+lifespan\char`\"{}. 
+
+\mbox{\Hypertarget{classUniverse_a64f4f4025c9be1d84492c766a002a6d4}\label{classUniverse_a64f4f4025c9be1d84492c766a002a6d4}} 
+\index{Universe@{Universe}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily int Universe\+::object\+\_\+size}
+
+\mbox{\Hypertarget{classUniverse_a9dc8abd2f8f84318722184f38e1b8cc7}\label{classUniverse_a9dc8abd2f8f84318722184f38e1b8cc7}} 
+\index{Universe@{Universe}!point\+\_\+list@{point\+\_\+list}}
+\index{point\+\_\+list@{point\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{point\+\_\+list}{point\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::point\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_a4d898757f2d67ca5ab5d504388d6199a}\label{classUniverse_a4d898757f2d67ca5ab5d504388d6199a}} 
+\index{Universe@{Universe}!polymer\+\_\+list@{polymer\+\_\+list}}
+\index{polymer\+\_\+list@{polymer\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{polymer\+\_\+list}{polymer\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::polymer\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_ad31a1d2865f16b1b8f4c597e116416e8}\label{classUniverse_ad31a1d2865f16b1b8f4c597e116416e8}} 
+\index{Universe@{Universe}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Universe\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_a0406fae45a576526b0ea78b2b5a74ebb}\label{classUniverse_a0406fae45a576526b0ea78b2b5a74ebb}} 
+\index{Universe@{Universe}!scaled\+\_\+time@{scaled\+\_\+time}}
+\index{scaled\+\_\+time@{scaled\+\_\+time}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{scaled\+\_\+time}{scaled\_time}}
+{\footnotesize\ttfamily double Universe\+::scaled\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}scaled\+\_\+time\char`\"{}. 
+
+\mbox{\Hypertarget{classUniverse_a747f9d3cf0b2caada4461cb7b12ea17b}\label{classUniverse_a747f9d3cf0b2caada4461cb7b12ea17b}} 
+\index{Universe@{Universe}!solid\+\_\+list@{solid\+\_\+list}}
+\index{solid\+\_\+list@{solid\+\_\+list}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{solid\+\_\+list}{solid\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Universe\+::solid\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUniverse_ac7a26cb9cb97f61bb270a7bbef4a2ae2}\label{classUniverse_ac7a26cb9cb97f61bb270a7bbef4a2ae2}} 
+\index{Universe@{Universe}!test\+\_\+subject\+\_\+one@{test\+\_\+subject\+\_\+one}}
+\index{test\+\_\+subject\+\_\+one@{test\+\_\+subject\+\_\+one}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{test\+\_\+subject\+\_\+one}{test\_subject\_one}}
+{\footnotesize\ttfamily int Universe\+::test\+\_\+subject\+\_\+one = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_ae4768ac314bcab322ffe484658b2bb06}\label{classUniverse_ae4768ac314bcab322ffe484658b2bb06}} 
+\index{Universe@{Universe}!test\+\_\+subject\+\_\+two@{test\+\_\+subject\+\_\+two}}
+\index{test\+\_\+subject\+\_\+two@{test\+\_\+subject\+\_\+two}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{test\+\_\+subject\+\_\+two}{test\_subject\_two}}
+{\footnotesize\ttfamily int Universe\+::test\+\_\+subject\+\_\+two = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classUniverse_a3ce4365c727cb6eb5b650146a4188b9b}\label{classUniverse_a3ce4365c727cb6eb5b650146a4188b9b}} 
+\index{Universe@{Universe}!time\+\_\+dimension\+\_\+pointer@{time\+\_\+dimension\+\_\+pointer}}
+\index{time\+\_\+dimension\+\_\+pointer@{time\+\_\+dimension\+\_\+pointer}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{time\+\_\+dimension\+\_\+pointer}{time\_dimension\_pointer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}}$\ast$ Universe\+::time\+\_\+dimension\+\_\+pointer}
+
+\mbox{\Hypertarget{classUniverse_a49ef0c3c2bd9ec438f5d9703c6aaa402}\label{classUniverse_a49ef0c3c2bd9ec438f5d9703c6aaa402}} 
+\index{Universe@{Universe}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Universe\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}time\+\_\+object\+\_\+created\char`\"{}. 
+
+\mbox{\Hypertarget{classUniverse_a86742eff738f3d7812da8581a59f0812}\label{classUniverse_a86742eff738f3d7812da8581a59f0812}} 
+\index{Universe@{Universe}!universe\+\_\+energy@{universe\+\_\+energy}}
+\index{universe\+\_\+energy@{universe\+\_\+energy}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{universe\+\_\+energy}{universe\_energy}}
+{\footnotesize\ttfamily double Universe\+::universe\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}universe\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classUniverse_a4332e3210a61dcfcb26e16b9f604d489}\label{classUniverse_a4332e3210a61dcfcb26e16b9f604d489}} 
+\index{Universe@{Universe}!universe\+\_\+type@{universe\+\_\+type}}
+\index{universe\+\_\+type@{universe\+\_\+type}!Universe@{Universe}}
+\subsubsection{\texorpdfstring{universe\+\_\+type}{universe\_type}}
+{\footnotesize\ttfamily int Universe\+::universe\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}universe\+\_\+type\char`\"{}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{universe_8h}{universe.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{universe_8cc}{universe.\+cc}}\end{DoxyCompactItemize}

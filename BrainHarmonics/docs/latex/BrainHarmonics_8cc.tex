@@ -1,0 +1,2225 @@
+\hypertarget{BrainHarmonics_8cc}{}\section{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.cc File Reference}
+\label{BrainHarmonics_8cc}\index{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc@{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc}}
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$mpi.\+h$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$libcaercpp/devices/dynapse.\+hpp$>$}\newline
+{\ttfamily \#include $<$libcaercpp/libcaer.\+hpp$>$}\newline
+{\ttfamily \#include $<$libcaercpp/events/packet\+Container.\+hpp$>$}\newline
+{\ttfamily \#include $<$csignal$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include \char`\"{}sniffex.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vtk\+Auto\+Init.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Version.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Actor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Actor2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Camera.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Cell\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Cell\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Color\+Transfer\+Function.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Contour\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Coordinate.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Float\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Math.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Parametric\+Function\+Source.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Point\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Points.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Polygon.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data\+Mapper.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Poly\+Data\+Mapper2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Append\+Poly\+Data.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Programmable\+Source.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Property2\+D.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Render\+Window.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Renderer.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Render\+Window\+Interactor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Reverse\+Sense.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Smart\+Pointer.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Surface\+Reconstruction\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Actor.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Mapper.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Text\+Property.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Unsigned\+Char\+Array.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Vertex\+Glyph\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+X\+M\+L\+Poly\+Data\+Writer.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$vtk\+Transform.\+h$>$}\newline
+{\ttfamily \#include $<$vtk\+Transform\+Poly\+Data\+Filter.\+h$>$}\newline
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$numpy/arrayobject.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glu.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}universe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dimension.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}elementaryparticle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}elementaryforce.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}compositeforceparticle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}law.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}monomer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polymer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}solid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polyhedron.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}polygon.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}line.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}node.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apptimer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitivenetwork.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitiveinput.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cognitiveoutput.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}orbital.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neuron.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendritecleft.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neuroreceptor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}synapse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}interneuronspace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}membrane.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}membranechannel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendrite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dendritebranch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}soma.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonhillock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axon.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonbranch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}myelinsheath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}schwanncell.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}axonbouton.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}synapticvesicle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}neurotransmitter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spike.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}}~\char`\"{}data/defaultbiases\+\_\+values.\+txt\char`\"{}
+\begin{DoxyCompactList}\small\item\em header defines four variable types, two macro and various functions for manipulating date and time. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}}~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}}~true
+\begin{DoxyCompactList}\small\item\em Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}~-\/1
+\begin{DoxyCompactList}\small\item\em D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a633b0396ff93d336a088412a190a5072}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}}~-\/1
+\begin{DoxyCompactList}\small\item\em I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}}~9876
+\begin{DoxyCompactList}\small\item\em S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}~\char`\"{}192.\+168.\+42.\+56\char`\"{}
+\begin{DoxyCompactList}\small\item\em S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_a6801baa546c6112d19eb095111d24720}{G\+R\+A\+V\+I\+TY}}~6.\+67384e-\/11;
+\begin{DoxyCompactList}\small\item\em S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BrainHarmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Rendering\+Open\+G\+L2)
+\item 
+\mbox{\hyperlink{BrainHarmonics_8cc_a0887c3f67ba4e219d084c8d050597655}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Rendering\+Free\+Type)
+\begin{DoxyCompactList}\small\item\em V\+TK was built with vtk\+Rendering\+Open\+G\+L2 //! (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Interaction\+Style)
+\begin{DoxyCompactList}\small\item\em (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+static vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a822a13cf5274e0650ca477e82b16605c}{Transform\+Back}} (vtk\+Smart\+Pointer$<$ vtk\+Points $>$ pt, vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ pd)
+\item 
+static std\+::atomic\+\_\+bool \mbox{\hyperlink{BrainHarmonics_8cc_a750b53c1f2b32db320643808acfdd150}{global\+Shutdown}} (false)
+\begin{DoxyCompactList}\small\item\em Dynap-\/se shutdown. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{BrainHarmonics_8cc_a36cc519845200149cde840d403609023}{global\+Shutdown\+Signal\+Handler}} (int signal)
+\item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}{mshandling}} (std\+::vector$<$ std\+::string $>$ $\ast$m\+\_\+messages, bool m\+\_\+response, int m\+\_\+ok, int m\+\_\+fail)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}{Create\+Universe}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ $\ast$to\+Addto)
+\begin{DoxyCompactList}\small\item\em Function to create a \mbox{\hyperlink{classUniverse}{Universe}} instance. Universes could be simulation, emulation, real or contemplative (What-\/if) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}{Compare\+Swap\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+\begin{DoxyCompactList}\small\item\em Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}{Distance\+Between\+Nodes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$nodes\+Query, std\+::vector$<$ int $>$ $\ast$nodes\+\_\+list, int nodes\+Dimensions, double desired\+\_\+distance)
+\item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}{compare\+\_\+swap\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+\begin{DoxyCompactList}\small\item\em Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_a5611d454c4206879b20ed7a094a223b0}{analyse\+Stream}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$cognitive\+\_\+network, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ neuron\+\_\+list, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $\ast$$>$ a\+Point, int start\+\_\+point, int end\+\_\+point, int step\+Point, int neural\+\_\+sequence)
+\item 
+void \mbox{\hyperlink{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}{Clear\+Dimension\+Selection}} (std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list)
+\item 
+void \mbox{\hyperlink{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}{Select\+Dimension}} (const int Possible\+Dimensions\mbox{[}10\mbox{]}, std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list, int which\+Dimension)
+\item 
+void \mbox{\hyperlink{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}{Select\+Multi\+Dimensions}} (const int Possible\+Dimensions\mbox{[}10\mbox{]}, std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list, int how\+\_\+many\+Dimensions)
+\item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}{Clear\+Dynapse}} (caer\+Device\+Handle $\ast$usb\+\_\+handle)
+\item 
+void \mbox{\hyperlink{BrainHarmonics_8cc_a8760404347fd84a1ed5b49aae3737647}{exit\+CB}} ()
+\begin{DoxyCompactList}\small\item\em Clear memory to cleanly exit application. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}{init}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{BrainHarmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}{init\+\_\+numpy}} ()
+\begin{DoxyCompactList}\small\item\em Macro required otherwise return value upsets calling function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Render\+Window $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}{render\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+vtk\+Smart\+Pointer$<$ vtk\+Render\+Window\+Interactor $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}{render\+\_\+window\+\_\+interactor}}
+\item 
+vtk\+Smart\+Pointer$<$ vtk\+Points $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}{define\+\_\+points}} = vtk\+Smart\+Pointer$<$vtk\+Points$>$\+::New()
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Cell\+Array $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}{define\+\_\+cellarrays}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a529fb94c7498f38828c4955476e55520}{define\+\_\+polydata}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Surface\+Reconstruction\+Filter $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_aec36b51ac72634d7a58846776cb61d43}{define\+\_\+surfaces}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Contour\+Filter $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}{define\+\_\+contourfilters}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Reverse\+Sense $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}{define\+\_\+reversals}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data\+Mapper $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}{define\+\_\+datamappers}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data\+Mapper2D $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}{define\+\_\+datamappers2D}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Actor $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a564cb339c12906f6db5995be211dcda2}{define\+\_\+actors}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Actor2D $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a06728597be70303b9f19f653a5dc90ee}{define\+\_\+actors2D}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Text\+Actor $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a4929783757e2d051945177d626a74213}{define\+\_\+textactors}}
+\item 
+std\+::vector$<$ vtk\+Smart\+Pointer$<$ vtk\+Renderer $>$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}{define\+\_\+renderers}}
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a81f74579a7b9471085578a377b3c1525}{static\+\_\+points\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}{static\+\_\+polygons\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a0ac21544be2eca2667c5acc784111848}{static\+\_\+polydata\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}{static\+\_\+cellarrays\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_acdcbc10d39db69593dfc42972b200e46}{static\+\_\+surfaces\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}{static\+\_\+contourfilter\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}{static\+\_\+reversals\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ab96b88b97440e7d703e0ac1774115227}{static\+\_\+datamappers\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}{static\+\_\+datamappers2\+D\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}{static\+\_\+actors\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}{static\+\_\+actors2\+D\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}{static\+\_\+renderers\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}{dynamic\+\_\+points\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ae699a3513aa90202fa4779bacdf343da}{dynamic\+\_\+polygons\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a8a93118d63dacb49915b567fa41319a7}{dynamic\+\_\+polydata\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ac86282f96c64009746f9517e7f9d613a}{dynamic\+\_\+cellarrays\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}{dynamic\+\_\+surfaces\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}{dynamic\+\_\+contourfilter\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}{dynamic\+\_\+reversals\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}{dynamic\+\_\+datamappers\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}{dynamic\+\_\+datamappers2\+D\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}{dynamic\+\_\+actors\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_afabdd4a073eb734b7610de6f1769c050}{dynamic\+\_\+actors2\+D\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{BrainHarmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}{dynamic\+\_\+renderers\+\_\+counter}} = 0
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a602d3f70549216866d35be56a17fa06e}{universe\+\_\+list}}
+\begin{DoxyCompactList}\small\item\em Python interpreter. \end{DoxyCompactList}\item 
+struct caer\+\_\+dynapse\+\_\+info \mbox{\hyperlink{BrainHarmonics_8cc_af414029bac33d3b71ad5622dc83149d6}{dynapse\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em G\+R\+A\+V\+I\+TY. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Brain Harmonics -\/ using harmonics to store and process neural spikes \begin{DoxyAuthor}{Author}
+Paul B. Isaac\textquotesingle{}s, authored 03-\/\+F\+E\+B-\/2016 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+08-\/\+A\+P\+R-\/2020 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+© 2020 Linaro Limited. Open Source Software. 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}\label{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM@{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}}
+\index{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM@{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}{DEBUG\_PROGRAM}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM~true}
+
+
+
+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class. 
+
+Application specific add-\/ins\+Neuron container for other neuron components \mbox{\hyperlink{classSynapse}{Synapse}}, area of stimulus transmission/reception \mbox{\hyperlink{classDendrite}{Dendrite}}, pre-\/\+Soma component of a neuron \mbox{\hyperlink{classDendrite}{Dendrite}} branch, division/join of dendrites \mbox{\hyperlink{classSoma}{Soma}}, component of a neuron \mbox{\hyperlink{classAxon}{Axon}} Hillock, component of \mbox{\hyperlink{classSoma}{Soma}} \mbox{\hyperlink{classAxon}{Axon}}, connected to \mbox{\hyperlink{classAxon}{Axon}} Hillock \mbox{\hyperlink{classAxon}{Axon}} branch, division/join of \mbox{\hyperlink{classAxon}{Axon}} \mbox{\hyperlink{classAxon}{Axon}} synaptic cleft, output area of neuron Synaptic vesicle, container of neurotransmitters \mbox{\Hypertarget{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}\label{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}}
+\index{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}{DEFAULTBIASES}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES~\char`\"{}data/defaultbiases\+\_\+values.\+txt\char`\"{}}
+
+
+
+header defines four variable types, two macro and various functions for manipulating date and time. 
+
+Code snippets used\+: Syntax comparison -\/ \href{http://stackoverflow.com}{\tt http\+://stackoverflow.\+com} \& \href{http://cplusplus.com}{\tt http\+://cplusplus.\+com} Using hierarchical linking the aim is to develop the application to relate to real-\/world physics. This will then ease mapping between simulation, emulation and real-\/world Universes.
+
+The Code is primarily C++ however, where optimisations are available C-\/calls will be used. For connectivity to other datascience resources Python-\/calls are also supported.\+header defines the timeval structure header defines a minimum set of type definitions makes available a type, socklen\+\_\+t, which is an unsigned opaque integral defines at least in\+\_\+port\+\_\+t and in\+\_\+addr\+\_\+t header makes available the type in\+\_\+port\+\_\+t and the type in\+\_\+addr\+\_\+t header defines three variable types, several macros, and various functions for performing input and output This header defines several general purpose functions, including dynamic memory management, random number generation, communication with the environment, integer arithmetics, searching, sorting and converting. header in the C P\+O\+S\+IX library for the C programming language that contains constructs that refer to file control. header file that provides access to the P\+O\+S\+IX operating system A\+PI. header file in the standard library of the C programming language that defines the C preprocessor macro assert()Standard Template Libraries (S\+TL) For array in C\+R\+C-\/32 call For handling strings For byte handling in C\+R\+C-\/32 For reading files Formatting output to console For output to console For open and closed maps in A$\ast$ For Sine, Cosine, Power, Fabs \& Sqrt functions For Open M\+PI For C\+R\+C-\/32 For assigning priority queue in A$\ast$ For stringstream input from console For handling strings For thread handling To use vectors, which automatically handle resizing, as arrays to keep track of instances ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+
+
+The Addressable Event Representation is for asynchronous activation transmission. Initially, Brain\+Harmonics was written to make use of academic test hardware from the Institute of Neuroinformatics at the Univerisity of Zurich / E\+T\+H.\+The Dynap-\/se is a neuromorphic device from U\+Z\+H/\+E\+TH I\+NI. Addressable Event Representation (A\+ER) Package/\+Unpack events within packets C-\/library to handle signals Clarifies access method in multithreading \mbox{\Hypertarget{BrainHarmonics_8cc_a6801baa546c6112d19eb095111d24720}\label{BrainHarmonics_8cc_a6801baa546c6112d19eb095111d24720}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!G\+R\+A\+V\+I\+TY@{G\+R\+A\+V\+I\+TY}}
+\index{G\+R\+A\+V\+I\+TY@{G\+R\+A\+V\+I\+TY}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{G\+R\+A\+V\+I\+TY}{GRAVITY}}
+{\footnotesize\ttfamily \#define G\+R\+A\+V\+I\+TY~6.\+67384e-\/11;}
+
+
+
+S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS. 
+
+Handy conversions D\+E\+G2\+R\+AD R\+A\+D2\+D\+EG O\+N\+E\+R\+AD \mbox{\Hypertarget{BrainHarmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}\label{BrainHarmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}
+\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}{INVALID\_SOCKET}}
+{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET~-\/1}
+
+
+
+D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM. 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}\label{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}}
+\index{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}{LOWPOWERBIASES}}
+{\footnotesize\ttfamily \#define L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}\label{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}{SOCKET\_ADDRESS}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}192.\+168.\+42.\+56\char`\"{}}
+
+
+
+S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT. 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a633b0396ff93d336a088412a190a5072}\label{BrainHarmonics_8cc_a633b0396ff93d336a088412a190a5072}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR@{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR@{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR}{SOCKET\_ERROR}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR~-\/1}
+
+
+
+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET. 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}\label{BrainHarmonics_8cc_a120b3c12a694462fcedc15e429a53bd6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT@{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT@{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT}{SOCKET\_PORT}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+E\+T\+\_\+\+P\+O\+RT~9876}
+
+
+
+S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{BrainHarmonics_8cc_a5611d454c4206879b20ed7a094a223b0}\label{BrainHarmonics_8cc_a5611d454c4206879b20ed7a094a223b0}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!analyse\+Stream@{analyse\+Stream}}
+\index{analyse\+Stream@{analyse\+Stream}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{analyse\+Stream()}{analyseStream()}}
+{\footnotesize\ttfamily bool analyse\+Stream (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{cognitive\+\_\+network,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{neuron\+\_\+list,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $\ast$$>$}]{a\+Point,  }\item[{int}]{start\+\_\+point,  }\item[{int}]{end\+\_\+point,  }\item[{int}]{step\+Point,  }\item[{int}]{neural\+\_\+sequence }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}\label{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}}
+\index{Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Clear\+Dimension\+Selection()}{ClearDimensionSelection()}}
+{\footnotesize\ttfamily void Clear\+Dimension\+Selection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}\label{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dynapse@{Clear\+Dynapse}}
+\index{Clear\+Dynapse@{Clear\+Dynapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Clear\+Dynapse()}{ClearDynapse()}}
+{\footnotesize\ttfamily bool Clear\+Dynapse (\begin{DoxyParamCaption}\item[{caer\+Device\+Handle $\ast$}]{usb\+\_\+handle }\end{DoxyParamCaption})}
+
+Let\textquotesingle{}s take a look at the information we have on the device.
+
+Let\textquotesingle{}s turn on blocking data-\/get mode to avoid wasting resources.
+
+chip id is D\+Y\+N\+A\+P\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+Y\+N\+A\+P\+S\+E\+\_\+\+U2
+
+close config \mbox{\Hypertarget{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}\label{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}}
+\index{compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{compare\+\_\+swap\+Synapse()}{compare\_swapSynapse()}}
+{\footnotesize\ttfamily bool compare\+\_\+swap\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+
+
+
+Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. 
+
+Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}\label{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}}
+\index{Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}}
+{\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+
+
+
+Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. 
+
+Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}\label{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Create\+Universe@{Create\+Universe}}
+\index{Create\+Universe@{Create\+Universe}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Create\+Universe()}{CreateUniverse()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Create\+Universe (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ $\ast$}]{to\+Addto }\end{DoxyParamCaption})}
+
+
+
+Function to create a \mbox{\hyperlink{classUniverse}{Universe}} instance. Universes could be simulation, emulation, real or contemplative (What-\/if) 
+
+P\+L\+A\+C\+E\+H\+O\+L\+D\+ER for Open\+M\+PI code (Shashi to integrate) int openmpi\+Init(int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}) \{ int rank, size, next, prev, message, tag = 201;
+
+! Start up M\+PI \begin{DoxyVerb}MPI_Init(&argc, &argv);
+MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+MPI_Comm_size(MPI_COMM_WORLD, &size);
+\end{DoxyVerb}
+
+
+! Calculate the rank of the next process in the ring. Use the ! modulus operator so that the last process \char`\"{}wraps around\char`\"{} to ! rank zero. \begin{DoxyVerb}next = (rank + 1) % size;
+prev = (rank + size - 1) % size;
+\end{DoxyVerb}
+
+
+! If we are the \char`\"{}master\char`\"{} process (i.\+e., M\+P\+I\+\_\+\+C\+O\+M\+M\+\_\+\+W\+O\+R\+LD rank 0), ! put the number of times to go around the ring in the ! message. \begin{DoxyVerb}if (0 == rank) {
+    message = 10;
+
+    printf("Process 0 sending %d to %d, tag %d (%d processes in ring)\n",
+           message, next, tag, size);
+    MPI_Send(&message, 1, MPI_INT, next, tag, MPI_COMM_WORLD);
+    printf("Process 0 sent to %d\n", next);
+}
+\end{DoxyVerb}
+
+
+! Pass the message around the ring. The exit mechanism works as ! follows\+: the message (a positive integer) is passed around the ! ring. Each time it passes rank 0, it is decremented. When ! each processes receives a message containing a 0 value, it ! passes the message on to the next process and then quits. By ! passing the 0 message first, every process gets the 0 message ! and can quit normally. \begin{DoxyVerb}while (1) {
+    MPI_Recv(&message, 1, MPI_INT, prev, tag, MPI_COMM_WORLD,
+             MPI_STATUS_IGNORE);
+
+    if (0 == rank) {
+        --message;
+        printf("Process 0 decremented value: %d\n", message);
+    }
+
+    MPI_Send(&message, 1, MPI_INT, next, tag, MPI_COMM_WORLD);
+    if (0 == message) {
+        printf("Process %d exiting\n", rank);
+        break;
+    }
+}
+\end{DoxyVerb}
+
+
+! The last process does one extra send to process 0, which needs ! to be received before the program can exit \begin{DoxyVerb}if (0 == rank) {
+    MPI_Recv(&message, 1, MPI_INT, prev, tag, MPI_COMM_WORLD,
+             MPI_STATUS_IGNORE);
+}
+\end{DoxyVerb}
+
+
+! All done \begin{DoxyVerb}MPI_Finalize();
+return 0;
+\end{DoxyVerb}
+ \} First, there is nothing. Then there was something...
+
+Defined energy level of \mbox{\hyperlink{classUniverse}{Universe}} ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Begin with singularity
+
+Create instance of \mbox{\hyperlink{classUniverse}{Universe}} from \mbox{\hyperlink{classUniverse}{Universe}} class $\ast$/
+
+Set an energy level and attempt to maintain physics laws by keeping the total in the \mbox{\hyperlink{classUniverse}{Universe}} the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations $\ast$/
+
+Cause initialisation
+
+Use move not push\+\_\+back otherwise data is destroyed on exiting function std\+::copy(\&my\+Universe, \&my\+Universe + 1, std\+::back\+\_\+inserter($\ast$to\+Addto)); \mbox{\Hypertarget{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Distance\+Between\+Nodes@{Distance\+Between\+Nodes}}
+\index{Distance\+Between\+Nodes@{Distance\+Between\+Nodes}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Distance\+Between\+Nodes()}{DistanceBetweenNodes()}}
+{\footnotesize\ttfamily int Distance\+Between\+Nodes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$}]{nodes\+Query,  }\item[{std\+::vector$<$ int $>$ $\ast$}]{nodes\+\_\+list,  }\item[{int}]{nodes\+Dimensions,  }\item[{double}]{desired\+\_\+distance }\end{DoxyParamCaption})}
+
+diffX = 0; diffY = 0; ~\newline
+~\newline
+~\newline
+ ($\ast$nodes\+Query)\mbox{[}node\+\_\+loop\mbox{]}.Set\+Point\+Differential(((($\ast$nodes\+Query)\mbox{[}node\+\_\+loop\mbox{]}.Get\+Point\+Differential()\mbox{[}nloop\mbox{]} + diffX)/2.0))\mbox{[}nloop\mbox{]}; ($\ast$nodes\+Query)\mbox{[}node\+\_\+loop\mbox{]}.Set\+Point\+Differential(((($\ast$nodes\+Query)\mbox{[}node\+\_\+loop\mbox{]}.Get\+Point\+Differential()\mbox{[}nloop\mbox{]} + diffY)/2.0))\mbox{[}nloop\mbox{]}; ~\newline
+~\newline
+ ($\ast$nodes\+Query)\mbox{[}($\ast$nodes\+\_\+list)\mbox{[}2\mbox{]}\mbox{]}-\/$>$Set\+Point\+Differential(((($\ast$nodes\+Query)\mbox{[}($\ast$nodes\+\_\+list)\mbox{[}2\mbox{]}\mbox{]}.get\+Point\+Differential() -\/ diffX)/2)); ($\ast$nodes\+Query)\mbox{[}($\ast$nodes\+\_\+list)\mbox{[}3\mbox{]}\mbox{]}-\/$>$Set\+Point\+Differential(((($\ast$nodes\+Query)\mbox{[}($\ast$nodes\+\_\+list)\mbox{[}3\mbox{]}\mbox{]}.get\+Point\+Differential() -\/ diffY)/2)); ~\newline
+\begin{DoxyVerb}}
+\end{DoxyVerb}
+ \} \mbox{\Hypertarget{BrainHarmonics_8cc_a8760404347fd84a1ed5b49aae3737647}\label{BrainHarmonics_8cc_a8760404347fd84a1ed5b49aae3737647}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!exit\+CB@{exit\+CB}}
+\index{exit\+CB@{exit\+CB}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{exit\+C\+B()}{exitCB()}}
+{\footnotesize\ttfamily void exit\+CB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear memory to cleanly exit application. 
+
+Clear vectors in reverse order to free-\/up memory before exiting
+
+Remember to clear vectors / free memory before returning \mbox{\Hypertarget{BrainHarmonics_8cc_a750b53c1f2b32db320643808acfdd150}\label{BrainHarmonics_8cc_a750b53c1f2b32db320643808acfdd150}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!global\+Shutdown@{global\+Shutdown}}
+\index{global\+Shutdown@{global\+Shutdown}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{global\+Shutdown()}{globalShutdown()}}
+{\footnotesize\ttfamily static std\+::atomic\+\_\+bool global\+Shutdown (\begin{DoxyParamCaption}\item[{false}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dynap-\/se shutdown. 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a36cc519845200149cde840d403609023}\label{BrainHarmonics_8cc_a36cc519845200149cde840d403609023}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!global\+Shutdown\+Signal\+Handler@{global\+Shutdown\+Signal\+Handler}}
+\index{global\+Shutdown\+Signal\+Handler@{global\+Shutdown\+Signal\+Handler}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{global\+Shutdown\+Signal\+Handler()}{globalShutdownSignalHandler()}}
+{\footnotesize\ttfamily static void global\+Shutdown\+Signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simply set the running flag to false on S\+I\+G\+T\+E\+RM and S\+I\+G\+I\+NT (C\+T\+R\+L+C) for global shutdown. \mbox{\Hypertarget{BrainHarmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}\label{BrainHarmonics_8cc_a487a3c399210173e1b3d3a2f275a55b1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!init@{init}}
+\index{init@{init}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int init (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}\label{BrainHarmonics_8cc_a909ced1ec126d134c4c2bf71f5ead148}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!init\+\_\+numpy@{init\+\_\+numpy}}
+\index{init\+\_\+numpy@{init\+\_\+numpy}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{init\+\_\+numpy()}{init\_numpy()}}
+{\footnotesize\ttfamily void init\+\_\+numpy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Macro required otherwise return value upsets calling function. 
+
+import\+\_\+array(); \mbox{\Hypertarget{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}\label{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!main@{main}}
+\index{main@{main}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This application is designed to create an A\+A\+Re\+NN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets
+
+Initialise hardware if located
+
+Bool flag is set to false when communication fails to discover hardware
+
+Install Dynap-\/se signal handler for global shutdown.
+
+Verify connection to all Dynap-\/se boards/chips and then ensure the chips are set to a basic known configuration.
+
+Open the communication with Dynap-\/se, give it a device ID of 1, and don\textquotesingle{}t care about U\+SB bus or SN restrictions.
+
+return (E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE); //! Not required because this program can run without dedicated hardware.
+
+Verify or amend code to ensure all chips are reset at the beginning
+
+Now re-\/open the communication with Dynap-\/se for a clean connection.
+
+return (E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE);
+
+End of initial hardware detection. Further communications errors will disable hardware use
+
+Define bit-\/setting variables for hardware
+
+Index arrays for instances of classes described above Early versions of this software maintained direct pointers to all objects. Now it is recoded to access through Get/\+Set class methods with the exception of the initial \mbox{\hyperlink{classUniverse}{Universe}} class. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Add Dimensions for spatial identification $\ast$/
+
+Follow with the creation of quarks/leptons $\ast$/
+
+Define Force interaction between fundamentals $\ast$/
+
+Define Particle Force interaction between Composites, Protons/\+Neutrons $\ast$/
+
+Specify how Composites interact $\ast$/
+
+Composites form elements of periodic table $\ast$/
+
+Composites form molecules $\ast$/
+
+Composites form complex molecules $\ast$/
+
+Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} $\ast$/
+
+Materials can be formed into multi\+Dimensional shapes $\ast$/
+
+Complex shapes are a combination of simpler forms $\ast$/
+
+Reducing high Dimensions to lower $\ast$/
+
+Further reduction $\ast$/
+
+Fundamental spatial description ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ std\+::vector $<$\+Node$>$ Node; //! Node class for A$\ast$ search $\ast$/
+
+Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} $\ast$/
+
+Higher level of abstraction. Initial naming. Ideally use Get/\+Set methods rather than store pointers here.
+
+Network container for all AI components $\ast$/
+
+Example of orbital timing containing neurons $\ast$/
+
+\mbox{\hyperlink{classNeuron}{Neuron}} container for other neuron components $\ast$/
+
+Dendritic synaptic cleft, input to the neuron $\ast$/
+
+\mbox{\hyperlink{classNeuroreceptor}{Neuroreceptor}}, component of dendritic cleft $\ast$/
+
+\mbox{\hyperlink{classSynapse}{Synapse}}, area of stimulus transmission/reception $\ast$/
+
+Between neurons is an energy pool $\ast$/
+
+\mbox{\hyperlink{classMembrane}{Membrane}}, outer component of the neuron $\ast$/
+
+Potassium/\+Sodium channel, component of the membrane $\ast$/
+
+\mbox{\hyperlink{classDendrite}{Dendrite}}, pre-\/\+Soma component of a neuron $\ast$/
+
+\mbox{\hyperlink{classDendrite}{Dendrite}} branch, division/join of dendrites $\ast$/
+
+\mbox{\hyperlink{classSoma}{Soma}}, component of a neuron $\ast$/
+
+\mbox{\hyperlink{classAxon}{Axon}} Hillock, component of \mbox{\hyperlink{classSoma}{Soma}} $\ast$/
+
+\mbox{\hyperlink{classAxon}{Axon}}, connected to \mbox{\hyperlink{classAxon}{Axon}} Hillock $\ast$/
+
+\mbox{\hyperlink{classAxon}{Axon}} branch, division/join of \mbox{\hyperlink{classAxon}{Axon}} $\ast$/
+
+Myelin sheath, wraps around \mbox{\hyperlink{classAxon}{Axon}} $\ast$/
+
+Schwann Cell, component of a Myelin sheath $\ast$/
+
+\mbox{\hyperlink{classAxon}{Axon}} synaptic cleft, output area of neuron $\ast$/
+
+Synaptic vesicle, container of neurotransmitters $\ast$/
+
+\mbox{\hyperlink{classNeurotransmitter}{Neurotransmitter}}, transfer component between clefts $\ast$/
+
+\mbox{\hyperlink{classSpike}{Spike}} $\ast$/
+
+The initial parameters are to be read from an X\+ML Parameter file but for now are hard-\/coded.
+
+Internal display, Physical material and spatial references
+
+U1 = Internal Time, X, Y \& Z U2 = Physical U3 = Spatial X,Y,Z \& Time U4 = C\+PP U5 = Spikes U6 = Neurotransmitters U7 = Connectome U8 = Synapses U9 = \mbox{\hyperlink{classOrbital}{Orbital}} example ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Initial number of starting components for each subproject
+
+The Physics problem
+
+Attempt to stimulate particle bonding by moving attracted objects nearer to each other.
+
+The Cognitive problem
+
+Attempt to stimulate neuron pairing by moving attracted objects nearer to each other.
+
+The setup of neurons, orbitals and cognitive networks are initial. Changes to configuration occurs dynamically depending on stimulation.
+
+How many neuron groups in each layer. May want to add some random variation in layer values.
+
+Ensure the end value is also added.
+
+Brain calculations
+
+Define graphics window size, X axis$\ast$/
+
+Define graphics window size, Y axis$\ast$/
+
+Used to loop between min 0 and max 6
+
+Base of data points (Moves because of use by internal graphics for points control too
+
+std\+::string\+::size\+\_\+type sz; //! alias of size\+\_\+t
+
+C\+P\+L\+EX Environment
+
+Setup the Python environment for integrating K-\/means clustering solution
+
+const char py\+Argv\mbox{[}\mbox{]} = \{ \textquotesingle{} \textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}h\textquotesingle{},\textquotesingle{}c\textquotesingle{},\textquotesingle{}o\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}u\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}e\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}u\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}i\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}y\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}3\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}4\textquotesingle{},\textquotesingle{}\textbackslash{}0\textquotesingle{}\}
+
+int i;
+
+Numpy array initialisation
+
+File to be called. Must be in the same folder as the C++ executable and with a .py extension
+
+Prepare screens
+
+V\+TK Screens
+
+Setup rectangle points
+
+Create the polygon
+
+Add the polygon to a cell array
+
+Add the polygon to a cell array
+
+Test for correct polygon insertion
+
+the index inside the cell array
+
+Assign Colour
+
+Create Poly\+Data
+
+Setup the text and add it to the renderer Build display text ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Create polydata mapper and actor
+
+Create a renderer
+
+Set background colour to white
+
+Add the V\+TK actors to the scene
+
+Create a render window
+
+Create an interactor
+
+Set-\/up the simulation environment. Currently a skeletal environment.
+
+Synchronise events
+
+universe\+\_\+list is a vector of pointers to the \mbox{\hyperlink{classUniverse}{Universe}} objects. Typically use one \mbox{\hyperlink{classUniverse}{Universe}} per experiment. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Ensure vector is empty
+
+Pass the universe\+\_\+list address to the create function to keep all Universes within the same vector
+
+Cycle through Universes allocating n Dimensions and updating total with reported back size.
+
+Create new Elementary Particles -\/ Quarks etc
+
+Cycle through Universes allocating n Elementary Particles and updating total with reported back size.
+
+Try to ensure we get variations of particles. Not all one type by changing Charge and Spin.
+
+Create new Elementary Forces
+
+Cycle through Universes allocating n Elementary Forces and updating total with reported back size.
+
+Try to ensure we get variations of forces. Not all one type by changing parameters.
+
+Create new Composite Force Particles -\/ Protons / Neutrons
+
+Cycle through Universes allocating n Composite Force Particles and updating total with reported back size.
+
+Make Elements -\/ Hydrogen, Helium, Lithium etc
+
+Make Monomers -\/ Carbohydrates/\+Sugars etc
+
+Cycle through Universes allocating n Cognitive Networks and updating total with reported back size.
+
+Add \mbox{\hyperlink{classOrbital}{Orbital}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
+
+Cause initialisation
+
+Add \mbox{\hyperlink{classNeuron}{Neuron}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
+
+Add \mbox{\hyperlink{classSynapse}{Synapse}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
+
+Add \mbox{\hyperlink{classNeurotransmitter}{Neurotransmitter}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
+
+For later development if spikes need to be simulated per \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}
+
+Physics dimensionality -\/ calculating quark interactions
+
+Spatial dimensionality -\/ real world representation
+
+\mbox{\hyperlink{classSynapse}{Synapse}} delivery problem -\/ separate project
+
+Focus on spikes
+
+Focus on neurotransmitter calculations
+
+Focus on dendrite calculations
+
+Focus on neuron calculations
+
+Focus on synapse calculations
+
+Focus on orbital example
+
+After screen layout the second set of points is for the quantum environment
+
+point\+\_\+list.\+clear();
+
+Work out the charge difference between neighbouring particles to indicate how far apart they should be. \begin{DoxyVerb}   std::cout << "Charge: " << l_charge << std::endl;
+\end{DoxyVerb}
+ This angle to later be dynamic to adjust for different particle types and considering placement of existing particles ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ in Radians
+
+in Radians
+
+for (int nloop = spa\+Dimensions\+Start; nloop $<$ spa\+Dimensions\+Start + num\+\_\+dimensions\mbox{[}2\mbox{]}; nloop++) \{
+
+To calculate the position on the surface of a sphere is\+: ( where radial\+Distance is radius and s \& t are angles in Radians. The Origin is 0,0,0 ) x = radial\+Distance $\ast$ cos(s) $\ast$ sin(t) y = radial\+Distance $\ast$ sin(s) $\ast$ sin(t) z = radial\+Distance $\ast$ cos(t) ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ radians = angle\+In\+Degrees $\ast$ Math.\+PI / 180
+
+Calculate position on the surface of a sphere The sphere takes the previous particle as it\textquotesingle{}s Origin and the radius is related to the charge. The position on the surface will be affected by proximity to other particles. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ break; \begin{DoxyVerb}   distance_to_move = distance_to_move + point_origin;
+    std::cout << "d:" << distance_to_move << " r:" << radialDistance << " s:" << s << " t:" << t << std::endl;
+    std::cout <<  current_universe_pointer->GetPoints(event_time).back().getPointPosition() << ", ";
+}
+std::cout << std::endl;
+\end{DoxyVerb}
+ \} ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ std\+::cout $<$$<$ current\+\_\+universe\+\_\+pointer-\/$>$Get\+Points(event\+\_\+time).size() $<$$<$ \char`\"{} point addresses created.\char`\"{} $<$$<$ std\+::endl;
+
+Add \mbox{\hyperlink{classOrbital}{Orbital}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
+
+Read number of synapses and initial number of neurons
+
+Walks through 1 row of 2 numbers
+
+std\+::copy(\&buf, \&buf + 1, std\+::back\+\_\+inserter(l\+\_\+input\+Data));
+
+Add initial 50 neurons
+
+Read in synapse demand data from file
+
+Walks through 5 rows of 10 numbers
+
+std\+::copy(\&buf, \&buf + 1, std\+::back\+\_\+inserter(l\+\_\+input\+Data));
+
+std\+::cout $<$$<$ std\+::endl;
+
+Load capacity data to each neuron
+
+Walks through 5 rows of 10 numbers
+
+std\+::copy(\&buf, \&buf + 1, std\+::back\+\_\+inserter(l\+\_\+input\+Data));
+
+Load distance data from 50 synapses to each neuron
+
+Walks through 5 rows of 10 numbers
+
+std\+::cout $<$$<$ buf $<$$<$ \char`\"{} \char`\"{};
+
+std\+::copy(\&buf, \&buf + 1, std\+::back\+\_\+inserter(l\+\_\+input\+Data));
+
+std\+::cout $<$$<$ std\+::endl;
+
+Close data file -\/ all data read in.
+
+Transfer distance data to synapse instances
+
+std\+::cout $<$$<$ l\+\_\+input\+Data\mbox{[}(xloop $\ast$ 50) + nloop\mbox{]} $<$$<$ \char`\"{} \char`\"{};
+
+current\+\_\+synapse\+\_\+pointer-\/$>$Add\+Distance(\& neuron\mbox{[}nloop\mbox{]}, std\+::stod(l\+\_\+input\+Data\mbox{[}(xloop $\ast$ 50) + nloop\mbox{]},\&sz));
+
+std\+::cout $<$$<$ std\+::endl;
+
+Rearrange new Synapses in an order closer to how they\textquotesingle{}re likely to group with neurons.
+
+\mbox{\hyperlink{classOrbital}{Orbital}} function for interaction.
+
+End of C\+CP draw points
+
+Start of \mbox{\hyperlink{classSpike}{Spike}} draw points
+
+End of C\+CP draw points
+
+Start of \mbox{\hyperlink{classOrbital}{Orbital}} draw points
+
+End of \mbox{\hyperlink{classOrbital}{Orbital}} Points
+
+Configure Dynap-\/se, if attached to reflect simulation configuration
+
+Let\textquotesingle{}s take a look at the information we have on the device.
+
+force chip to be enable even if aer is off
+
+core 0-\/3 neu 0
+
+Handle, Pre\+Neuron\mbox{[}0,1023\mbox{]}, Post\+Neuron\mbox{[}0,1023\mbox{]}, Cam\mbox{[}0,63\mbox{]}, Type
+
+Handle, Pre\+Neuron\mbox{[}0,1023\mbox{]}, Post\+Neuron\mbox{[}0,1023\mbox{]}, Cam\mbox{[}0,63\mbox{]}, Type
+
+if(((int(neuron\+Id / (2$^\wedge$(neuron\+Id + 1))) + 8) $\ast$ ((neuron\+Id \% 3) == 0)) $>$ 0 \&\& ((int(neuron\+Id / (2$^\wedge$(inner\+Loop + 1))) + 8) $\ast$ ((neuron\+Id \% 3) == 0)) $<$ D\+Y\+N\+A\+P\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+U\+M\+N\+E\+U\+R\+O\+N\+S\+\_\+\+C\+O\+RE)
+
+Now let\textquotesingle{}s start getting some data from the device. We just loop, no notification needed.
+
+Establish Screen
+
+in milliseconds
+
+The program will loop whilst the graphics window is open
+
+Remove Initialising banner from screen.
+
+Set the title
+
+Begin visualisation
+
+Prepared for multiscreen screen = screens\mbox{[} screen\mbox{]}-\/$>$run\+Screen(window); ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Retrieve data from Dynap-\/se (if any)
+
+Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated. define\+\_\+points.\+clear(); ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ std\+::cout $<$$<$ std\+::endl;
+
+window.\+clear(); \begin{DoxyVerb}  window.pushGLStates();
+\end{DoxyVerb}
+ window.\+draw(\& draw\+Quads\mbox{[}0\mbox{]}, draw\+Quads.\+size(), sf\+::\+Quads); window.\+pop\+G\+L\+States(); ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ window.\+push\+G\+L\+States(); window.\+draw(\& define\+\_\+points\mbox{[}0\mbox{]}, define\+\_\+points.\+size(), sf\+::\+Points); window.\+pop\+G\+L\+States(); ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ window.\+push\+G\+L\+States(); window.\+draw(\& draw\+\_\+lines\mbox{[}0\mbox{]}, draw\+\_\+lines.\+size(), sf\+::\+Lines); window.\+pop\+G\+L\+States(); ~\newline
+~\newline
+~\newline
+~\newline
+ Group quads draw\+\_\+rectangles\mbox{[}1\mbox{]}.set\+Position(sf\+::\+Vector2f(((l\+\_\+screenX / 2 ) -\/ (20 / 2)) + (25 $\ast$ toggle), 30)); ~\newline
+~\newline
+~\newline
+ Continue interaction until window closed
+
+Empty vectors before exiting (in reverse of creation) for(int dloop = int( current\+\_\+universe\+\_\+pointer-\/$>$Get\+Points(event\+\_\+time).size()); dloop $>$ 0; --dloop) delete (\& current\+\_\+universe\+\_\+pointer-\/$>$Get\+Point(event\+\_\+time, dloop -\/ 1\mbox{]}); ~\newline
+ point\+\_\+list.\+clear(); \mbox{\Hypertarget{BrainHarmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}\label{BrainHarmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!mshandling@{mshandling}}
+\index{mshandling@{mshandling}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{mshandling()}{mshandling()}}
+{\footnotesize\ttfamily bool mshandling (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ $\ast$}]{m\+\_\+messages,  }\item[{bool}]{m\+\_\+response,  }\item[{int}]{m\+\_\+ok,  }\item[{int}]{m\+\_\+fail }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}\label{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Dimension@{Select\+Dimension}}
+\index{Select\+Dimension@{Select\+Dimension}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Select\+Dimension()}{SelectDimension()}}
+{\footnotesize\ttfamily void Select\+Dimension (\begin{DoxyParamCaption}\item[{const int}]{Possible\+Dimensions\mbox{[}10\mbox{]},  }\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list,  }\item[{int}]{which\+Dimension }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}\label{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}}
+\index{Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Select\+Multi\+Dimensions()}{SelectMultiDimensions()}}
+{\footnotesize\ttfamily void Select\+Multi\+Dimensions (\begin{DoxyParamCaption}\item[{const int}]{Possible\+Dimensions\mbox{[}10\mbox{]},  }\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list,  }\item[{int}]{how\+\_\+many\+Dimensions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a822a13cf5274e0650ca477e82b16605c}\label{BrainHarmonics_8cc_a822a13cf5274e0650ca477e82b16605c}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Transform\+Back@{Transform\+Back}}
+\index{Transform\+Back@{Transform\+Back}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Transform\+Back()}{TransformBack()}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ Transform\+Back (\begin{DoxyParamCaption}\item[{vtk\+Smart\+Pointer$<$ vtk\+Points $>$}]{pt,  }\item[{vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$}]{pd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The reconstructed surface is transformed back to where the original points are. (Hopefully) it is only a similarity transformation. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+
+\begin{DoxyEnumerate}
+\item Get bounding box of pt, get its minimum corner (left, bottom, least-\/z), at c0, pt\+\_\+bounds
+\item Get bounding box of surface pd, get its minimum corner (left, bottom, least-\/z), at c1, pd\+\_\+bounds
+\item compute scale as\+: scale = (pt\+\_\+bounds\mbox{[}1\mbox{]} -\/ pt\+\_\+bounds\mbox{[}0\mbox{]})/(pd\+\_\+bounds\mbox{[}1\mbox{]} -\/ pd\+\_\+bounds\mbox{[}0\mbox{]}); ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+
+\item transform the surface by T \+:= T(pt\+\_\+bounds\mbox{[}0\mbox{]}, \mbox{[}2\mbox{]}, \mbox{[}4\mbox{]}).S(scale).T(-\/pd\+\_\+bounds\mbox{[}0\mbox{]}, -\/\mbox{[}2\mbox{]}, -\/\mbox{[}4\mbox{]})
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item 
+\end{DoxyEnumerate}
+
+(xmin,xmax, ymin,ymax, zmin,zmax)
+
+
+\begin{DoxyEnumerate}
+\item 
+\end{DoxyEnumerate}
+
+(xmin,xmax, ymin,ymax, zmin,zmax)
+
+//! test, make sure it is isotropic std\+::cout$<$$<$(pt\+\_\+bounds\mbox{[}1\mbox{]} -\/ pt\+\_\+bounds\mbox{[}0\mbox{]})/(pd\+\_\+bounds\mbox{[}1\mbox{]} -\/ pd\+\_\+bounds\mbox{[}0\mbox{]})$<$$<$std\+::endl; std\+::cout$<$$<$(pt\+\_\+bounds\mbox{[}3\mbox{]} -\/ pt\+\_\+bounds\mbox{[}2\mbox{]})/(pd\+\_\+bounds\mbox{[}3\mbox{]} -\/ pd\+\_\+bounds\mbox{[}2\mbox{]})$<$$<$std\+::endl; std\+::cout$<$$<$(pt\+\_\+bounds\mbox{[}5\mbox{]} -\/ pt\+\_\+bounds\mbox{[}4\mbox{]})/(pd\+\_\+bounds\mbox{[}5\mbox{]} -\/ pd\+\_\+bounds\mbox{[}4\mbox{]})$<$$<$std\+::endl; //! T\+E\+ST ~\newline
+~\newline
+ 3
+
+
+\begin{DoxyEnumerate}
+\item 
+\end{DoxyEnumerate}\mbox{\Hypertarget{BrainHarmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}\label{BrainHarmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Rendering\+Open\+G\+L2}]{ }\end{DoxyParamCaption})}
+
+Planned feature to use network traffic as an input stimulus to the neural network
+
+The V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT is definitely required. Without it N\+U\+LL is returned to \+::\+New() type calls \mbox{\Hypertarget{BrainHarmonics_8cc_a0887c3f67ba4e219d084c8d050597655}\label{BrainHarmonics_8cc_a0887c3f67ba4e219d084c8d050597655}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Rendering\+Free\+Type}]{ }\end{DoxyParamCaption})}
+
+
+
+V\+TK was built with vtk\+Rendering\+Open\+G\+L2 //! (\char`\"{}\+Type cannot be resolved\char`\"{}) 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}\label{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
+\index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Interaction\+Style}]{ }\end{DoxyParamCaption})}
+
+
+
+(\char`\"{}\+Type cannot be resolved\char`\"{}) 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{BrainHarmonics_8cc_a564cb339c12906f6db5995be211dcda2}\label{BrainHarmonics_8cc_a564cb339c12906f6db5995be211dcda2}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+actors@{define\+\_\+actors}}
+\index{define\+\_\+actors@{define\+\_\+actors}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+actors}{define\_actors}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Actor$>$ $>$ define\+\_\+actors}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a06728597be70303b9f19f653a5dc90ee}\label{BrainHarmonics_8cc_a06728597be70303b9f19f653a5dc90ee}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+actors2D@{define\+\_\+actors2D}}
+\index{define\+\_\+actors2D@{define\+\_\+actors2D}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+actors2D}{define\_actors2D}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Actor2D$>$ $>$ define\+\_\+actors2D}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}\label{BrainHarmonics_8cc_aa97d4b3a68fbfaea550fe20234905b66}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+cellarrays@{define\+\_\+cellarrays}}
+\index{define\+\_\+cellarrays@{define\+\_\+cellarrays}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+cellarrays}{define\_cellarrays}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Cell\+Array$>$ $>$ define\+\_\+cellarrays}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}\label{BrainHarmonics_8cc_a60b4bc1ad91584494c1f04f858e34513}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+contourfilters@{define\+\_\+contourfilters}}
+\index{define\+\_\+contourfilters@{define\+\_\+contourfilters}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+contourfilters}{define\_contourfilters}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Contour\+Filter$>$ $>$ define\+\_\+contourfilters}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}\label{BrainHarmonics_8cc_a67ee26302d766e5112a5f935e33a85c6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+datamappers@{define\+\_\+datamappers}}
+\index{define\+\_\+datamappers@{define\+\_\+datamappers}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+datamappers}{define\_datamappers}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data\+Mapper$>$ $>$ define\+\_\+datamappers}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}\label{BrainHarmonics_8cc_a804c9adf98d06fdd2f125e84deb75433}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+datamappers2D@{define\+\_\+datamappers2D}}
+\index{define\+\_\+datamappers2D@{define\+\_\+datamappers2D}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+datamappers2D}{define\_datamappers2D}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data\+Mapper2D$>$ $>$ define\+\_\+datamappers2D}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}\label{BrainHarmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+points@{define\+\_\+points}}
+\index{define\+\_\+points@{define\+\_\+points}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+points}{define\_points}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Points$>$ define\+\_\+points = vtk\+Smart\+Pointer$<$vtk\+Points$>$\+::New()}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a529fb94c7498f38828c4955476e55520}\label{BrainHarmonics_8cc_a529fb94c7498f38828c4955476e55520}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+polydata@{define\+\_\+polydata}}
+\index{define\+\_\+polydata@{define\+\_\+polydata}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+polydata}{define\_polydata}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Poly\+Data$>$ $>$ define\+\_\+polydata}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}\label{BrainHarmonics_8cc_aab0f6cfd03b167486b3a0ebbb68922be}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+renderers@{define\+\_\+renderers}}
+\index{define\+\_\+renderers@{define\+\_\+renderers}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+renderers}{define\_renderers}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Renderer$>$ $>$ define\+\_\+renderers}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}\label{BrainHarmonics_8cc_a3f46d8452260ed4fbbdadf8ea634d866}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+reversals@{define\+\_\+reversals}}
+\index{define\+\_\+reversals@{define\+\_\+reversals}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+reversals}{define\_reversals}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Reverse\+Sense$>$ $>$ define\+\_\+reversals}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aec36b51ac72634d7a58846776cb61d43}\label{BrainHarmonics_8cc_aec36b51ac72634d7a58846776cb61d43}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+surfaces@{define\+\_\+surfaces}}
+\index{define\+\_\+surfaces@{define\+\_\+surfaces}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+surfaces}{define\_surfaces}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Surface\+Reconstruction\+Filter$>$ $>$ define\+\_\+surfaces}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a4929783757e2d051945177d626a74213}\label{BrainHarmonics_8cc_a4929783757e2d051945177d626a74213}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!define\+\_\+textactors@{define\+\_\+textactors}}
+\index{define\+\_\+textactors@{define\+\_\+textactors}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{define\+\_\+textactors}{define\_textactors}}
+{\footnotesize\ttfamily std\+::vector$<$vtk\+Smart\+Pointer$<$vtk\+Text\+Actor$>$ $>$ define\+\_\+textactors}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_afabdd4a073eb734b7610de6f1769c050}\label{BrainHarmonics_8cc_afabdd4a073eb734b7610de6f1769c050}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+actors2\+D\+\_\+counter@{dynamic\+\_\+actors2\+D\+\_\+counter}}
+\index{dynamic\+\_\+actors2\+D\+\_\+counter@{dynamic\+\_\+actors2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+actors2\+D\+\_\+counter}{dynamic\_actors2D\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+actors2\+D\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}\label{BrainHarmonics_8cc_a7d304e5a06130656fd9f36a54079bea4}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+actors\+\_\+counter@{dynamic\+\_\+actors\+\_\+counter}}
+\index{dynamic\+\_\+actors\+\_\+counter@{dynamic\+\_\+actors\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+actors\+\_\+counter}{dynamic\_actors\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+actors\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ac86282f96c64009746f9517e7f9d613a}\label{BrainHarmonics_8cc_ac86282f96c64009746f9517e7f9d613a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+cellarrays\+\_\+counter@{dynamic\+\_\+cellarrays\+\_\+counter}}
+\index{dynamic\+\_\+cellarrays\+\_\+counter@{dynamic\+\_\+cellarrays\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+cellarrays\+\_\+counter}{dynamic\_cellarrays\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+cellarrays\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}\label{BrainHarmonics_8cc_a4d42762d2c2ec0fe02455bab8d3cf4c9}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+contourfilter\+\_\+counter@{dynamic\+\_\+contourfilter\+\_\+counter}}
+\index{dynamic\+\_\+contourfilter\+\_\+counter@{dynamic\+\_\+contourfilter\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+contourfilter\+\_\+counter}{dynamic\_contourfilter\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+contourfilter\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}\label{BrainHarmonics_8cc_aafef3c73d5155f89a18f452d92f4e8a3}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+datamappers2\+D\+\_\+counter@{dynamic\+\_\+datamappers2\+D\+\_\+counter}}
+\index{dynamic\+\_\+datamappers2\+D\+\_\+counter@{dynamic\+\_\+datamappers2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+datamappers2\+D\+\_\+counter}{dynamic\_datamappers2D\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+datamappers2\+D\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}\label{BrainHarmonics_8cc_ac11e052aaba6bcf48f760388d655dd11}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+datamappers\+\_\+counter@{dynamic\+\_\+datamappers\+\_\+counter}}
+\index{dynamic\+\_\+datamappers\+\_\+counter@{dynamic\+\_\+datamappers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+datamappers\+\_\+counter}{dynamic\_datamappers\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+datamappers\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}\label{BrainHarmonics_8cc_adf365e8712584a5f83a2ae582e8a9fe3}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+points\+\_\+counter@{dynamic\+\_\+points\+\_\+counter}}
+\index{dynamic\+\_\+points\+\_\+counter@{dynamic\+\_\+points\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+points\+\_\+counter}{dynamic\_points\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+points\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a8a93118d63dacb49915b567fa41319a7}\label{BrainHarmonics_8cc_a8a93118d63dacb49915b567fa41319a7}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+polydata\+\_\+counter@{dynamic\+\_\+polydata\+\_\+counter}}
+\index{dynamic\+\_\+polydata\+\_\+counter@{dynamic\+\_\+polydata\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+polydata\+\_\+counter}{dynamic\_polydata\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+polydata\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ae699a3513aa90202fa4779bacdf343da}\label{BrainHarmonics_8cc_ae699a3513aa90202fa4779bacdf343da}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+polygons\+\_\+counter@{dynamic\+\_\+polygons\+\_\+counter}}
+\index{dynamic\+\_\+polygons\+\_\+counter@{dynamic\+\_\+polygons\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+polygons\+\_\+counter}{dynamic\_polygons\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+polygons\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}\label{BrainHarmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+renderers\+\_\+counter@{dynamic\+\_\+renderers\+\_\+counter}}
+\index{dynamic\+\_\+renderers\+\_\+counter@{dynamic\+\_\+renderers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+renderers\+\_\+counter}{dynamic\_renderers\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+renderers\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}\label{BrainHarmonics_8cc_a7e0e7dc174f686fe7ec2c1c10c33a5b7}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+reversals\+\_\+counter@{dynamic\+\_\+reversals\+\_\+counter}}
+\index{dynamic\+\_\+reversals\+\_\+counter@{dynamic\+\_\+reversals\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+reversals\+\_\+counter}{dynamic\_reversals\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+reversals\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}\label{BrainHarmonics_8cc_a32fdb8886e50e5a48cb78a26e9cf846d}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynamic\+\_\+surfaces\+\_\+counter@{dynamic\+\_\+surfaces\+\_\+counter}}
+\index{dynamic\+\_\+surfaces\+\_\+counter@{dynamic\+\_\+surfaces\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynamic\+\_\+surfaces\+\_\+counter}{dynamic\_surfaces\_counter}}
+{\footnotesize\ttfamily int dynamic\+\_\+surfaces\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_af414029bac33d3b71ad5622dc83149d6}\label{BrainHarmonics_8cc_af414029bac33d3b71ad5622dc83149d6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!dynapse\+\_\+info@{dynapse\+\_\+info}}
+\index{dynapse\+\_\+info@{dynapse\+\_\+info}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{dynapse\+\_\+info}{dynapse\_info}}
+{\footnotesize\ttfamily struct caer\+\_\+dynapse\+\_\+info dynapse\+\_\+info}
+
+
+
+G\+R\+A\+V\+I\+TY. 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}\label{BrainHarmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!render\+\_\+window@{render\+\_\+window}}
+\index{render\+\_\+window@{render\+\_\+window}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{render\+\_\+window}{render\_window}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Render\+Window$>$ render\+\_\+window}
+
+
+
+(\char`\"{}\+Type cannot be resolved\char`\"{}) 
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}\label{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}}
+\index{render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{render\+\_\+window\+\_\+interactor}{render\_window\_interactor}}
+{\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Render\+Window\+Interactor$>$ render\+\_\+window\+\_\+interactor}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}\label{BrainHarmonics_8cc_a3fe403ad89b282d8d1b8fa92bf05f42e}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+actors2\+D\+\_\+counter@{static\+\_\+actors2\+D\+\_\+counter}}
+\index{static\+\_\+actors2\+D\+\_\+counter@{static\+\_\+actors2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+actors2\+D\+\_\+counter}{static\_actors2D\_counter}}
+{\footnotesize\ttfamily int static\+\_\+actors2\+D\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}\label{BrainHarmonics_8cc_ad53e9035f7facd9c99c57107d9f84ac6}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+actors\+\_\+counter@{static\+\_\+actors\+\_\+counter}}
+\index{static\+\_\+actors\+\_\+counter@{static\+\_\+actors\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+actors\+\_\+counter}{static\_actors\_counter}}
+{\footnotesize\ttfamily int static\+\_\+actors\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}\label{BrainHarmonics_8cc_a3f51384611b8ff0bcedef8dc6f27bbc8}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+cellarrays\+\_\+counter@{static\+\_\+cellarrays\+\_\+counter}}
+\index{static\+\_\+cellarrays\+\_\+counter@{static\+\_\+cellarrays\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+cellarrays\+\_\+counter}{static\_cellarrays\_counter}}
+{\footnotesize\ttfamily int static\+\_\+cellarrays\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}\label{BrainHarmonics_8cc_af896e11b42f684e4fadc0d4a2826538a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+contourfilter\+\_\+counter@{static\+\_\+contourfilter\+\_\+counter}}
+\index{static\+\_\+contourfilter\+\_\+counter@{static\+\_\+contourfilter\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+contourfilter\+\_\+counter}{static\_contourfilter\_counter}}
+{\footnotesize\ttfamily int static\+\_\+contourfilter\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}\label{BrainHarmonics_8cc_a3e27beef07882d4684ad6d35239b7a60}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+datamappers2\+D\+\_\+counter@{static\+\_\+datamappers2\+D\+\_\+counter}}
+\index{static\+\_\+datamappers2\+D\+\_\+counter@{static\+\_\+datamappers2\+D\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+datamappers2\+D\+\_\+counter}{static\_datamappers2D\_counter}}
+{\footnotesize\ttfamily int static\+\_\+datamappers2\+D\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_ab96b88b97440e7d703e0ac1774115227}\label{BrainHarmonics_8cc_ab96b88b97440e7d703e0ac1774115227}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+datamappers\+\_\+counter@{static\+\_\+datamappers\+\_\+counter}}
+\index{static\+\_\+datamappers\+\_\+counter@{static\+\_\+datamappers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+datamappers\+\_\+counter}{static\_datamappers\_counter}}
+{\footnotesize\ttfamily int static\+\_\+datamappers\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a81f74579a7b9471085578a377b3c1525}\label{BrainHarmonics_8cc_a81f74579a7b9471085578a377b3c1525}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+points\+\_\+counter@{static\+\_\+points\+\_\+counter}}
+\index{static\+\_\+points\+\_\+counter@{static\+\_\+points\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+points\+\_\+counter}{static\_points\_counter}}
+{\footnotesize\ttfamily int static\+\_\+points\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a0ac21544be2eca2667c5acc784111848}\label{BrainHarmonics_8cc_a0ac21544be2eca2667c5acc784111848}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+polydata\+\_\+counter@{static\+\_\+polydata\+\_\+counter}}
+\index{static\+\_\+polydata\+\_\+counter@{static\+\_\+polydata\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+polydata\+\_\+counter}{static\_polydata\_counter}}
+{\footnotesize\ttfamily int static\+\_\+polydata\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}\label{BrainHarmonics_8cc_a3ef1f27168082fed53b34b6781b7fef1}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+polygons\+\_\+counter@{static\+\_\+polygons\+\_\+counter}}
+\index{static\+\_\+polygons\+\_\+counter@{static\+\_\+polygons\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+polygons\+\_\+counter}{static\_polygons\_counter}}
+{\footnotesize\ttfamily int static\+\_\+polygons\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}\label{BrainHarmonics_8cc_aad3d1808a6ab9363f0430c1e9650324d}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+renderers\+\_\+counter@{static\+\_\+renderers\+\_\+counter}}
+\index{static\+\_\+renderers\+\_\+counter@{static\+\_\+renderers\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+renderers\+\_\+counter}{static\_renderers\_counter}}
+{\footnotesize\ttfamily int static\+\_\+renderers\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}\label{BrainHarmonics_8cc_a4062a4c3764de7ed239d33608ca291ae}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+reversals\+\_\+counter@{static\+\_\+reversals\+\_\+counter}}
+\index{static\+\_\+reversals\+\_\+counter@{static\+\_\+reversals\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+reversals\+\_\+counter}{static\_reversals\_counter}}
+{\footnotesize\ttfamily int static\+\_\+reversals\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_acdcbc10d39db69593dfc42972b200e46}\label{BrainHarmonics_8cc_acdcbc10d39db69593dfc42972b200e46}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!static\+\_\+surfaces\+\_\+counter@{static\+\_\+surfaces\+\_\+counter}}
+\index{static\+\_\+surfaces\+\_\+counter@{static\+\_\+surfaces\+\_\+counter}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{static\+\_\+surfaces\+\_\+counter}{static\_surfaces\_counter}}
+{\footnotesize\ttfamily int static\+\_\+surfaces\+\_\+counter = 0}
+
+\mbox{\Hypertarget{BrainHarmonics_8cc_a602d3f70549216866d35be56a17fa06e}\label{BrainHarmonics_8cc_a602d3f70549216866d35be56a17fa06e}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!universe\+\_\+list@{universe\+\_\+list}}
+\index{universe\+\_\+list@{universe\+\_\+list}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{universe\+\_\+list}{universe\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ universe\+\_\+list}
+
+
+
+Python interpreter. 
+
+Interim calls to Python (3.\+8) to use existing A\+P\+Is to Neuromorphic hardware and/or Brain simulators
+
+G\+L\+UT on OS X El Capitan -\/ poor headers
+
+Homegrown add-\/ins\+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class Add Dimensions for spatial identification Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} Materials can be formed into multi\+Dimensional shapes Fundamental spatial description Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} 

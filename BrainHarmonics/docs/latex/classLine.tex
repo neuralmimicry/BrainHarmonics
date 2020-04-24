@@ -1,0 +1,497 @@
+\hypertarget{classLine}{}\section{Line Class Reference}
+\label{classLine}\index{Line@{Line}}
+
+
+{\ttfamily \#include $<$line.\+h$>$}
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLine_acc11b8a429d8cdd63ba6803dff5602b3}{Line}} ()
+\item 
+\mbox{\hyperlink{classLine_a4e3242660d8d3c1aa43e932560840552}{Line}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classLine_a5330353765ab0f965a4293bdc7c3564a}{Line}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classLine_a740aacdf468a1519f9a01d9cbd1f9219}{Line}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classLine_a4a95bafcefa28672b3999deb011b9e50}{$\sim$\+Line}} ()
+\item 
+bool \mbox{\hyperlink{classLine_af1756d1500ab0a5616313be6e213015a}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classLine_a20756feda4d42032955ec6cf12d89941}{Get\+Line\+ID}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a8752cfce7330fbeda936778b77e534d0}{Get\+Line\+X\+Y\+Bubble}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_ab14245ec4348e925b6e0f860e9254308}{Get\+Line\+X1}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_ac09a53b36a300c38191269f110c73eb1}{Get\+Line\+Y1}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_adc3c6c42d1b3d172e32fad59db2e3eaa}{Get\+Line\+X1\+Y1\+Bubble}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_a9cdf38d7aaeadfa35136dd417865c189}{Get\+Line\+X2}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_a6222d15f883f3183ec9eed085046916a}{Get\+Line\+Y2}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_a2432406f734963e4497541081a843131}{Get\+Line\+X2\+Y2\+Bubble}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+double \mbox{\hyperlink{classLine_ac4a6e8f232b529169d91b9f44496933b}{Get\+Line\+X\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_ae8151f5f3b102924b09de686f536e220}{Get\+Line\+Y\+Min}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a1393a4dcd9fa9e1ab1653c37d76c8c3a}{Get\+Line\+X\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_ab033cff3a24b67be829759d16f13c281}{Get\+Line\+Y\+Max}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a7b105f0af704489446cc93302c30813d}{Get\+Line\+Min\+Ordinal}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a3fc7779998759b641ec2b7bc8515563a}{Get\+Line\+Max\+Ordinal}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a2be3926d47a1a8849007a6c29a603dcf}{Get\+Slope}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a5319d68ecb254ff61e2a46d5928aec93}{Get\+Yint}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classLine_a5b9419146093908e5c7d740ac384fe39}{Get\+Line\+T\+TL}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+int \mbox{\hyperlink{classLine_a8764cb987ec4af839f30411dc47a835a}{Get\+Line\+Seq}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classLine_ac13c6405cfd2a586633b5a5eece05fff}{Get\+Line\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) const
+\item 
+bool \mbox{\hyperlink{classLine_a4c9d571599ebc5e9b6090b54a338fbde}{Get\+In\+Line}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double X1, double Y1, double X2, double Y2, double Threshold)
+\item 
+void \mbox{\hyperlink{classLine_aaa634bf320b9d1c4becb4083cd8324d4}{set\+Line\+ID}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classLine_ab8df9f66bffc86994db3150a4eb8ed29}{set\+Line\+X1}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_af236c5ddb0d125b388621b3597266a95}{set\+Line\+Y1}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_ade959bc4d4f69bb421ed4f69c0d77fb7}{set\+Line\+X2}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_a671f64c437fe1bef798476d93c675099}{set\+Line\+Y2}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_a3fb9e9eab13d146feff0bc891709eaf9}{set\+Slope}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_ad966eb3f1bd4cb29976b3e97811c344f}{set\+Yint}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_a602398c8c3131ec7236ccadbab8281d5}{set\+Line\+T\+TL}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classLine_a7c315c5ffdd4fa875918583738e2e157}{set\+Line\+Seq}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classLine_ab98abcf3c8546e266ae5bbea243d8b8d}{set\+Line\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+int \mbox{\hyperlink{classLine_a8c6dece66f5cd93ce40134002a40f505}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLine_a92cbc39dd66e02a0507132422a2a830c}{line\+Line\+ID}}
+\item 
+int \mbox{\hyperlink{classLine_aa5bac2c364a75b5212500dce6846ee0b}{line\+\_\+type}}
+\item 
+double \mbox{\hyperlink{classLine_ac581c18e7d6a976b14dd986d42cb8163}{line\+Line\+X1}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Line\+X1\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_a46e251350694d1bdf8425d9f9a24f896}{line\+Line\+Y1}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Line\+Y1\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_a795ef48c075a36f0dea1af10b5ff323d}{line\+Line\+X2}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Line\+X2\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_aa0f76375751fb3a75b9593161ecfc0e2}{line\+Line\+Y2}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Line\+Y2\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_afdf693a798435ec16076396f3631853e}{line\+Slope}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Slope\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_a35197c3051202d4c4f0bb7d122780368}{line\+Yint}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Yint\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLine_afb3c20f2415b40bc800ae36796b2f7c7}{line\+Line\+T\+TL}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}line\+Line\+T\+T\+L\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLine_a46a8187d5ccc8bf0dc9bc041836f241f}{line\+Line\+Seq}}
+\item 
+int \mbox{\hyperlink{classLine_a4fb7e6f35d49e0113755913b5179f922}{line\+Line\+Counter}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classLine_ad1d89d2499cf9455fc2499078e0acc32}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classLine_a1d6ddf845443fa6baa5d15d14baed9f8}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classLine_ab4c19eb7e67615c609de20d98a2d0b5f}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+bool \mbox{\hyperlink{classLine_ae9070a9da0afebb31910e31e62019301}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classLine_a53a3368bd95b126c281eea4736ebc282}{object\+\_\+initialised}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+$<$ For Sine, Cosine, Fabs \& Sqrt functions 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLine_acc11b8a429d8cdd63ba6803dff5602b3}\label{classLine_acc11b8a429d8cdd63ba6803dff5602b3}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a4e3242660d8d3c1aa43e932560840552}\label{classLine_a4e3242660d8d3c1aa43e932560840552}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a5330353765ab0f965a4293bdc7c3564a}\label{classLine_a5330353765ab0f965a4293bdc7c3564a}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a740aacdf468a1519f9a01d9cbd1f9219}\label{classLine_a740aacdf468a1519f9a01d9cbd1f9219}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Line()}{Line()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a4a95bafcefa28672b3999deb011b9e50}\label{classLine_a4a95bafcefa28672b3999deb011b9e50}} 
+\index{Line@{Line}!````~Line@{$\sim$\+Line}}
+\index{````~Line@{$\sim$\+Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{$\sim$\+Line()}{~Line()}}
+{\footnotesize\ttfamily virtual Line\+::$\sim$\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLine_a4c9d571599ebc5e9b6090b54a338fbde}\label{classLine_a4c9d571599ebc5e9b6090b54a338fbde}} 
+\index{Line@{Line}!Get\+In\+Line@{Get\+In\+Line}}
+\index{Get\+In\+Line@{Get\+In\+Line}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+In\+Line()}{GetInLine()}}
+{\footnotesize\ttfamily bool Line\+::\+Get\+In\+Line (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{X1,  }\item[{double}]{Y1,  }\item[{double}]{X2,  }\item[{double}]{Y2,  }\item[{double}]{Threshold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ac13c6405cfd2a586633b5a5eece05fff}\label{classLine_ac13c6405cfd2a586633b5a5eece05fff}} 
+\index{Line@{Line}!Get\+Line\+Counter@{Get\+Line\+Counter}}
+\index{Get\+Line\+Counter@{Get\+Line\+Counter}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Counter()}{GetLineCounter()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a20756feda4d42032955ec6cf12d89941}\label{classLine_a20756feda4d42032955ec6cf12d89941}} 
+\index{Line@{Line}!Get\+Line\+ID@{Get\+Line\+ID}}
+\index{Get\+Line\+ID@{Get\+Line\+ID}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+I\+D()}{GetLineID()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+ID (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a3fc7779998759b641ec2b7bc8515563a}\label{classLine_a3fc7779998759b641ec2b7bc8515563a}} 
+\index{Line@{Line}!Get\+Line\+Max\+Ordinal@{Get\+Line\+Max\+Ordinal}}
+\index{Get\+Line\+Max\+Ordinal@{Get\+Line\+Max\+Ordinal}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Max\+Ordinal()}{GetLineMaxOrdinal()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Max\+Ordinal (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a7b105f0af704489446cc93302c30813d}\label{classLine_a7b105f0af704489446cc93302c30813d}} 
+\index{Line@{Line}!Get\+Line\+Min\+Ordinal@{Get\+Line\+Min\+Ordinal}}
+\index{Get\+Line\+Min\+Ordinal@{Get\+Line\+Min\+Ordinal}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Min\+Ordinal()}{GetLineMinOrdinal()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Min\+Ordinal (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a8764cb987ec4af839f30411dc47a835a}\label{classLine_a8764cb987ec4af839f30411dc47a835a}} 
+\index{Line@{Line}!Get\+Line\+Seq@{Get\+Line\+Seq}}
+\index{Get\+Line\+Seq@{Get\+Line\+Seq}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Seq()}{GetLineSeq()}}
+{\footnotesize\ttfamily int Line\+::\+Get\+Line\+Seq (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a5b9419146093908e5c7d740ac384fe39}\label{classLine_a5b9419146093908e5c7d740ac384fe39}} 
+\index{Line@{Line}!Get\+Line\+T\+TL@{Get\+Line\+T\+TL}}
+\index{Get\+Line\+T\+TL@{Get\+Line\+T\+TL}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+T\+T\+L()}{GetLineTTL()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+T\+TL (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ab14245ec4348e925b6e0f860e9254308}\label{classLine_ab14245ec4348e925b6e0f860e9254308}} 
+\index{Line@{Line}!Get\+Line\+X1@{Get\+Line\+X1}}
+\index{Get\+Line\+X1@{Get\+Line\+X1}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X1()}{GetLineX1()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_adc3c6c42d1b3d172e32fad59db2e3eaa}\label{classLine_adc3c6c42d1b3d172e32fad59db2e3eaa}} 
+\index{Line@{Line}!Get\+Line\+X1\+Y1\+Bubble@{Get\+Line\+X1\+Y1\+Bubble}}
+\index{Get\+Line\+X1\+Y1\+Bubble@{Get\+Line\+X1\+Y1\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X1\+Y1\+Bubble()}{GetLineX1Y1Bubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X1\+Y1\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a9cdf38d7aaeadfa35136dd417865c189}\label{classLine_a9cdf38d7aaeadfa35136dd417865c189}} 
+\index{Line@{Line}!Get\+Line\+X2@{Get\+Line\+X2}}
+\index{Get\+Line\+X2@{Get\+Line\+X2}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X2()}{GetLineX2()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a2432406f734963e4497541081a843131}\label{classLine_a2432406f734963e4497541081a843131}} 
+\index{Line@{Line}!Get\+Line\+X2\+Y2\+Bubble@{Get\+Line\+X2\+Y2\+Bubble}}
+\index{Get\+Line\+X2\+Y2\+Bubble@{Get\+Line\+X2\+Y2\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X2\+Y2\+Bubble()}{GetLineX2Y2Bubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X2\+Y2\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a1393a4dcd9fa9e1ab1653c37d76c8c3a}\label{classLine_a1393a4dcd9fa9e1ab1653c37d76c8c3a}} 
+\index{Line@{Line}!Get\+Line\+X\+Max@{Get\+Line\+X\+Max}}
+\index{Get\+Line\+X\+Max@{Get\+Line\+X\+Max}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Max()}{GetLineXMax()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ac4a6e8f232b529169d91b9f44496933b}\label{classLine_ac4a6e8f232b529169d91b9f44496933b}} 
+\index{Line@{Line}!Get\+Line\+X\+Min@{Get\+Line\+X\+Min}}
+\index{Get\+Line\+X\+Min@{Get\+Line\+X\+Min}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Min()}{GetLineXMin()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a8752cfce7330fbeda936778b77e534d0}\label{classLine_a8752cfce7330fbeda936778b77e534d0}} 
+\index{Line@{Line}!Get\+Line\+X\+Y\+Bubble@{Get\+Line\+X\+Y\+Bubble}}
+\index{Get\+Line\+X\+Y\+Bubble@{Get\+Line\+X\+Y\+Bubble}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+X\+Y\+Bubble()}{GetLineXYBubble()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+X\+Y\+Bubble (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ac09a53b36a300c38191269f110c73eb1}\label{classLine_ac09a53b36a300c38191269f110c73eb1}} 
+\index{Line@{Line}!Get\+Line\+Y1@{Get\+Line\+Y1}}
+\index{Get\+Line\+Y1@{Get\+Line\+Y1}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y1()}{GetLineY1()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a6222d15f883f3183ec9eed085046916a}\label{classLine_a6222d15f883f3183ec9eed085046916a}} 
+\index{Line@{Line}!Get\+Line\+Y2@{Get\+Line\+Y2}}
+\index{Get\+Line\+Y2@{Get\+Line\+Y2}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y2()}{GetLineY2()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ab033cff3a24b67be829759d16f13c281}\label{classLine_ab033cff3a24b67be829759d16f13c281}} 
+\index{Line@{Line}!Get\+Line\+Y\+Max@{Get\+Line\+Y\+Max}}
+\index{Get\+Line\+Y\+Max@{Get\+Line\+Y\+Max}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y\+Max()}{GetLineYMax()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y\+Max (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ae8151f5f3b102924b09de686f536e220}\label{classLine_ae8151f5f3b102924b09de686f536e220}} 
+\index{Line@{Line}!Get\+Line\+Y\+Min@{Get\+Line\+Y\+Min}}
+\index{Get\+Line\+Y\+Min@{Get\+Line\+Y\+Min}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Line\+Y\+Min()}{GetLineYMin()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Line\+Y\+Min (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a2be3926d47a1a8849007a6c29a603dcf}\label{classLine_a2be3926d47a1a8849007a6c29a603dcf}} 
+\index{Line@{Line}!Get\+Slope@{Get\+Slope}}
+\index{Get\+Slope@{Get\+Slope}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Slope()}{GetSlope()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Slope (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a5319d68ecb254ff61e2a46d5928aec93}\label{classLine_a5319d68ecb254ff61e2a46d5928aec93}} 
+\index{Line@{Line}!Get\+Yint@{Get\+Yint}}
+\index{Get\+Yint@{Get\+Yint}!Line@{Line}}
+\subsubsection{\texorpdfstring{Get\+Yint()}{GetYint()}}
+{\footnotesize\ttfamily double Line\+::\+Get\+Yint (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_af1756d1500ab0a5616313be6e213015a}\label{classLine_af1756d1500ab0a5616313be6e213015a}} 
+\index{Line@{Line}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Line@{Line}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Line\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+Access line\+Counter \begin{DoxyReturn}{Returns}
+The current value of line\+Counter 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLine_ab98abcf3c8546e266ae5bbea243d8b8d}\label{classLine_ab98abcf3c8546e266ae5bbea243d8b8d}} 
+\index{Line@{Line}!set\+Line\+Counter@{set\+Line\+Counter}}
+\index{set\+Line\+Counter@{set\+Line\+Counter}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Counter()}{setLineCounter()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_aaa634bf320b9d1c4becb4083cd8324d4}\label{classLine_aaa634bf320b9d1c4becb4083cd8324d4}} 
+\index{Line@{Line}!set\+Line\+ID@{set\+Line\+ID}}
+\index{set\+Line\+ID@{set\+Line\+ID}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+I\+D()}{setLineID()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+ID (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set line\+Counter 
+\begin{DoxyParams}{Parameters}
+{\em val} & New value to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLine_a7c315c5ffdd4fa875918583738e2e157}\label{classLine_a7c315c5ffdd4fa875918583738e2e157}} 
+\index{Line@{Line}!set\+Line\+Seq@{set\+Line\+Seq}}
+\index{set\+Line\+Seq@{set\+Line\+Seq}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Seq()}{setLineSeq()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Seq (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a602398c8c3131ec7236ccadbab8281d5}\label{classLine_a602398c8c3131ec7236ccadbab8281d5}} 
+\index{Line@{Line}!set\+Line\+T\+TL@{set\+Line\+T\+TL}}
+\index{set\+Line\+T\+TL@{set\+Line\+T\+TL}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+T\+T\+L()}{setLineTTL()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+T\+TL (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ab8df9f66bffc86994db3150a4eb8ed29}\label{classLine_ab8df9f66bffc86994db3150a4eb8ed29}} 
+\index{Line@{Line}!set\+Line\+X1@{set\+Line\+X1}}
+\index{set\+Line\+X1@{set\+Line\+X1}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+X1()}{setLineX1()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+X1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ade959bc4d4f69bb421ed4f69c0d77fb7}\label{classLine_ade959bc4d4f69bb421ed4f69c0d77fb7}} 
+\index{Line@{Line}!set\+Line\+X2@{set\+Line\+X2}}
+\index{set\+Line\+X2@{set\+Line\+X2}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+X2()}{setLineX2()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+X2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_af236c5ddb0d125b388621b3597266a95}\label{classLine_af236c5ddb0d125b388621b3597266a95}} 
+\index{Line@{Line}!set\+Line\+Y1@{set\+Line\+Y1}}
+\index{set\+Line\+Y1@{set\+Line\+Y1}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Y1()}{setLineY1()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Y1 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a671f64c437fe1bef798476d93c675099}\label{classLine_a671f64c437fe1bef798476d93c675099}} 
+\index{Line@{Line}!set\+Line\+Y2@{set\+Line\+Y2}}
+\index{set\+Line\+Y2@{set\+Line\+Y2}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Line\+Y2()}{setLineY2()}}
+{\footnotesize\ttfamily void Line\+::set\+Line\+Y2 (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a3fb9e9eab13d146feff0bc891709eaf9}\label{classLine_a3fb9e9eab13d146feff0bc891709eaf9}} 
+\index{Line@{Line}!set\+Slope@{set\+Slope}}
+\index{set\+Slope@{set\+Slope}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Slope()}{setSlope()}}
+{\footnotesize\ttfamily void Line\+::set\+Slope (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_ad966eb3f1bd4cb29976b3e97811c344f}\label{classLine_ad966eb3f1bd4cb29976b3e97811c344f}} 
+\index{Line@{Line}!set\+Yint@{set\+Yint}}
+\index{set\+Yint@{set\+Yint}!Line@{Line}}
+\subsubsection{\texorpdfstring{set\+Yint()}{setYint()}}
+{\footnotesize\ttfamily void Line\+::set\+Yint (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classLine_a8c6dece66f5cd93ce40134002a40f505}\label{classLine_a8c6dece66f5cd93ce40134002a40f505}} 
+\index{Line@{Line}!Update@{Update}}
+\index{Update@{Update}!Line@{Line}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Line\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classLine_ab4c19eb7e67615c609de20d98a2d0b5f}\label{classLine_ab4c19eb7e67615c609de20d98a2d0b5f}} 
+\index{Line@{Line}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Line@{Line}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Line\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_aa5bac2c364a75b5212500dce6846ee0b}\label{classLine_aa5bac2c364a75b5212500dce6846ee0b}} 
+\index{Line@{Line}!line\+\_\+type@{line\+\_\+type}}
+\index{line\+\_\+type@{line\+\_\+type}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+\_\+type}{line\_type}}
+{\footnotesize\ttfamily int Line\+::line\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_a4fb7e6f35d49e0113755913b5179f922}\label{classLine_a4fb7e6f35d49e0113755913b5179f922}} 
+\index{Line@{Line}!line\+Line\+Counter@{line\+Line\+Counter}}
+\index{line\+Line\+Counter@{line\+Line\+Counter}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+Counter}{lineLineCounter}}
+{\footnotesize\ttfamily int Line\+::line\+Line\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_a92cbc39dd66e02a0507132422a2a830c}\label{classLine_a92cbc39dd66e02a0507132422a2a830c}} 
+\index{Line@{Line}!line\+Line\+ID@{line\+Line\+ID}}
+\index{line\+Line\+ID@{line\+Line\+ID}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+ID}{lineLineID}}
+{\footnotesize\ttfamily int Line\+::line\+Line\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_a46a8187d5ccc8bf0dc9bc041836f241f}\label{classLine_a46a8187d5ccc8bf0dc9bc041836f241f}} 
+\index{Line@{Line}!line\+Line\+Seq@{line\+Line\+Seq}}
+\index{line\+Line\+Seq@{line\+Line\+Seq}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+Seq}{lineLineSeq}}
+{\footnotesize\ttfamily int Line\+::line\+Line\+Seq\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_afb3c20f2415b40bc800ae36796b2f7c7}\label{classLine_afb3c20f2415b40bc800ae36796b2f7c7}} 
+\index{Line@{Line}!line\+Line\+T\+TL@{line\+Line\+T\+TL}}
+\index{line\+Line\+T\+TL@{line\+Line\+T\+TL}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+T\+TL}{lineLineTTL}}
+{\footnotesize\ttfamily double Line\+::line\+Line\+T\+TL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Line\+T\+T\+L\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_ac581c18e7d6a976b14dd986d42cb8163}\label{classLine_ac581c18e7d6a976b14dd986d42cb8163}} 
+\index{Line@{Line}!line\+Line\+X1@{line\+Line\+X1}}
+\index{line\+Line\+X1@{line\+Line\+X1}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+X1}{lineLineX1}}
+{\footnotesize\ttfamily double Line\+::line\+Line\+X1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Line\+X1\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_a795ef48c075a36f0dea1af10b5ff323d}\label{classLine_a795ef48c075a36f0dea1af10b5ff323d}} 
+\index{Line@{Line}!line\+Line\+X2@{line\+Line\+X2}}
+\index{line\+Line\+X2@{line\+Line\+X2}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+X2}{lineLineX2}}
+{\footnotesize\ttfamily double Line\+::line\+Line\+X2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Line\+X2\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_a46e251350694d1bdf8425d9f9a24f896}\label{classLine_a46e251350694d1bdf8425d9f9a24f896}} 
+\index{Line@{Line}!line\+Line\+Y1@{line\+Line\+Y1}}
+\index{line\+Line\+Y1@{line\+Line\+Y1}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+Y1}{lineLineY1}}
+{\footnotesize\ttfamily double Line\+::line\+Line\+Y1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Line\+Y1\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_aa0f76375751fb3a75b9593161ecfc0e2}\label{classLine_aa0f76375751fb3a75b9593161ecfc0e2}} 
+\index{Line@{Line}!line\+Line\+Y2@{line\+Line\+Y2}}
+\index{line\+Line\+Y2@{line\+Line\+Y2}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Line\+Y2}{lineLineY2}}
+{\footnotesize\ttfamily double Line\+::line\+Line\+Y2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Line\+Y2\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_afdf693a798435ec16076396f3631853e}\label{classLine_afdf693a798435ec16076396f3631853e}} 
+\index{Line@{Line}!line\+Slope@{line\+Slope}}
+\index{line\+Slope@{line\+Slope}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Slope}{lineSlope}}
+{\footnotesize\ttfamily double Line\+::line\+Slope\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Slope\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_a35197c3051202d4c4f0bb7d122780368}\label{classLine_a35197c3051202d4c4f0bb7d122780368}} 
+\index{Line@{Line}!line\+Yint@{line\+Yint}}
+\index{line\+Yint@{line\+Yint}!Line@{Line}}
+\subsubsection{\texorpdfstring{line\+Yint}{lineYint}}
+{\footnotesize\ttfamily double Line\+::line\+Yint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}line\+Yint\char`\"{}. 
+
+\mbox{\Hypertarget{classLine_ae9070a9da0afebb31910e31e62019301}\label{classLine_ae9070a9da0afebb31910e31e62019301}} 
+\index{Line@{Line}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Line@{Line}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Line\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_a53a3368bd95b126c281eea4736ebc282}\label{classLine_a53a3368bd95b126c281eea4736ebc282}} 
+\index{Line@{Line}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Line@{Line}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Line\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_a1d6ddf845443fa6baa5d15d14baed9f8}\label{classLine_a1d6ddf845443fa6baa5d15d14baed9f8}} 
+\index{Line@{Line}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Line@{Line}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Line\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classLine_ad1d89d2499cf9455fc2499078e0acc32}\label{classLine_ad1d89d2499cf9455fc2499078e0acc32}} 
+\index{Line@{Line}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Line@{Line}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Line\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{line_8h}{line.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{line_8cc}{line.\+cc}}\end{DoxyCompactItemize}

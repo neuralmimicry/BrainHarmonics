@@ -1,0 +1,55 @@
+\hypertarget{classUpdateAllCommand}{}\section{Update\+All\+Command Class Reference}
+\label{classUpdateAllCommand}\index{Update\+All\+Command@{Update\+All\+Command}}
+Inheritance diagram for Update\+All\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classUpdateAllCommand}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUpdateAllCommand_a228565b2a2306d425dc7eb3cda4d39a4}{vtk\+Type\+Macro}} (\mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}, vtk\+Command)
+\item 
+void \mbox{\hyperlink{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}{Execute}} (vtk\+Object $\ast$vtk\+Not\+Used(caller), unsigned long vtk\+Not\+Used(event\+Id), void $\ast$vtk\+Not\+Used(call\+Data)) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}} $\ast$ \mbox{\hyperlink{classUpdateAllCommand_a97cd6ef1c68bb473aef27c898b175517}{New}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}\label{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}} 
+\index{Update\+All\+Command@{Update\+All\+Command}!Execute@{Execute}}
+\index{Execute@{Execute}!Update\+All\+Command@{Update\+All\+Command}}
+\subsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Update\+All\+Command\+::\+Execute (\begin{DoxyParamCaption}\item[{vtk\+Object $\ast$}]{vtk\+Not\+Usedcaller,  }\item[{unsigned long }]{vtk\+Not\+Usedevent\+Id,  }\item[{void $\ast$}]{vtk\+Not\+Usedcall\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+Call universe update
+
+For each \mbox{\hyperlink{classUniverse}{Universe}} locate solids for visualisation
+
+Each solid is made up of a set of polyhedrons
+
+Each polyhedron is made up of a set of points
+
+Sometimes the contouring algorithm can create a volume whose gradient vector and ordering of polygon (using the right hand rule) are inconsistent. vtk\+Reverse\+Sense cures this problem. ~\newline
+ Add the actors to the renderer \mbox{\Hypertarget{classUpdateAllCommand_a97cd6ef1c68bb473aef27c898b175517}\label{classUpdateAllCommand_a97cd6ef1c68bb473aef27c898b175517}} 
+\index{Update\+All\+Command@{Update\+All\+Command}!New@{New}}
+\index{New@{New}!Update\+All\+Command@{Update\+All\+Command}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}$\ast$ Update\+All\+Command\+::\+New (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classUpdateAllCommand_a228565b2a2306d425dc7eb3cda4d39a4}\label{classUpdateAllCommand_a228565b2a2306d425dc7eb3cda4d39a4}} 
+\index{Update\+All\+Command@{Update\+All\+Command}!vtk\+Type\+Macro@{vtk\+Type\+Macro}}
+\index{vtk\+Type\+Macro@{vtk\+Type\+Macro}!Update\+All\+Command@{Update\+All\+Command}}
+\subsubsection{\texorpdfstring{vtk\+Type\+Macro()}{vtkTypeMacro()}}
+{\footnotesize\ttfamily Update\+All\+Command\+::vtk\+Type\+Macro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}}]{,  }\item[{vtk\+Command}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{BrainHarmonics_8cc}{Brain\+Harmonics.\+cc}}\end{DoxyCompactItemize}

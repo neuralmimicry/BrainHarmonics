@@ -1,0 +1,340 @@
+\hypertarget{classElementaryParticle}{}\section{Elementary\+Particle Class Reference}
+\label{classElementaryParticle}\index{Elementary\+Particle@{Elementary\+Particle}}
+
+
+{\ttfamily \#include $<$elementaryparticle.\+h$>$}
+
+Inheritance diagram for Elementary\+Particle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classElementaryParticle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElementaryParticle_a4035ffd6ce053ea3390632fa530c6e21}{Elementary\+Particle}} ()
+\item 
+\mbox{\hyperlink{classElementaryParticle_a6bd3ad699e15769c1860e3068020a824}{Elementary\+Particle}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classElementaryParticle_a371e2742ab8b5ce0fe55ef4adbaed3af}{Elementary\+Particle}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classElementaryParticle_a0b43033247b36096d0de2a7553c620a9}{Elementary\+Particle}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classElementaryParticle_a5adce47bf88a5381c88a4d40f87fe76f}{$\sim$\+Elementary\+Particle}} ()
+\item 
+unsigned int \mbox{\hyperlink{classElementaryParticle_a371b9b9bc520047c42d9e6d06b7f3dd9}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classElementaryParticle_a63fe7df86d2fba4a64a69dfa5757e94e}{Get\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classElementaryParticle_af3ebb984cfe957b2e76463c22e4b5bb5}{Get\+Charge}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classElementaryParticle_ad5f5a05770f94f4c8fee418d59098126}{Get\+Spin}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryParticle_a85400dc97f66c1ce23d9d961ddb6b8f3}{Get\+Mass}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_a141316fd968cce8ecc5aa11ce0757d63}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_a37d7718faf6be68d4374bcc56816f30a}{Set\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_abbc6d3c58509c4121df55bfef716d2f1}{Set\+Charge}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_a437fa86d88157314b84662b158d52353}{Set\+Spin}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_a8a3b91409772f4091a782624a34024e7}{Set\+Mass\+Index}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classElementaryParticle_a778ff8188ecb369e533521ed4f94b034}{Set\+Mass}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classElementaryParticle_ac0f85f34bdfc1d42324201eb7c38e85e}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classElementaryParticle_abf5114c3d032bc9511a14aa7368ec450}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classElementaryParticle_a2fae6ea0f434b01e6dee5479c74bebfb}{elementary\+\_\+particle\+\_\+counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+counter\char`\"{}. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classElementaryParticle_a68872e9f84702245f8c963b0dea2472d}{elementary\+\_\+particle\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+type\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElementaryParticle_a61555c6c0ba98944282f9f868260b698}{elementary\+\_\+particle\+\_\+charge}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+charge\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElementaryParticle_a599cb91c4a19db54599c8b47c18f1136}{elementary\+\_\+particle\+\_\+spin}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+spin\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classElementaryParticle_aaa8e3d6d924875e6dc63b8156181de48}{elementary\+\_\+particle\+\_\+mass}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+mass\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElementaryParticle_aff63a6097a70d03bf283fea0fc5e461c}{elementary\+\_\+particle\+\_\+mass\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+particle\+\_\+mass\+\_\+index\char`\"{}. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{classElementaryParticle_a4b00a86b2f7ad3165e5ea6bcd8771779}{k\+Unit\+KgeV}} = 1.\+783\+E-\/36
+\item 
+const double \mbox{\hyperlink{classElementaryParticle_a423723d503eb1761a98f4495f193d63f}{k\+Unit\+Kg\+MeV}} = 1.\+783\+E-\/30
+\item 
+const double \mbox{\hyperlink{classElementaryParticle_a1f3c4e9183754e2f36a14f915ec4be9b}{k\+Unit\+Kg\+GeV}} = 1.\+783\+E-\/27
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classElementaryParticle_af7a592e44e4ccc8f1b19cd4c49ab50c3}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classElementaryParticle_a8b0b30058853d850c0853fc101f5d45c}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classElementaryParticle_a7e518b7f634700ede48e59e266e09708}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+bool \mbox{\hyperlink{classElementaryParticle_a502537989e804d20788686a29c736657}{object\+\_\+initialised}}
+\item 
+bool \mbox{\hyperlink{classElementaryParticle_a32f8eadc6c761d991ccaff0354af398c}{object\+\_\+disabled}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classElementaryParticle_a9bc6eb2a4c20ce83728a7c9a31b91f19}{Composite\+Force\+Particle}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElementaryParticle_a4035ffd6ce053ea3390632fa530c6e21}\label{classElementaryParticle_a4035ffd6ce053ea3390632fa530c6e21}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Elementary\+Particle()}{ElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Elementary\+Particle\+::\+Elementary\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a6bd3ad699e15769c1860e3068020a824}\label{classElementaryParticle_a6bd3ad699e15769c1860e3068020a824}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Elementary\+Particle()}{ElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Elementary\+Particle\+::\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a371e2742ab8b5ce0fe55ef4adbaed3af}\label{classElementaryParticle_a371e2742ab8b5ce0fe55ef4adbaed3af}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Elementary\+Particle()}{ElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Elementary\+Particle\+::\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a0b43033247b36096d0de2a7553c620a9}\label{classElementaryParticle_a0b43033247b36096d0de2a7553c620a9}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\index{Elementary\+Particle@{Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Elementary\+Particle()}{ElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Elementary\+Particle\+::\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a5adce47bf88a5381c88a4d40f87fe76f}\label{classElementaryParticle_a5adce47bf88a5381c88a4d40f87fe76f}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!````~Elementary\+Particle@{$\sim$\+Elementary\+Particle}}
+\index{````~Elementary\+Particle@{$\sim$\+Elementary\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{$\sim$\+Elementary\+Particle()}{~ElementaryParticle()}}
+{\footnotesize\ttfamily virtual Elementary\+Particle\+::$\sim$\+Elementary\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElementaryParticle_af3ebb984cfe957b2e76463c22e4b5bb5}\label{classElementaryParticle_af3ebb984cfe957b2e76463c22e4b5bb5}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Get\+Charge@{Get\+Charge}}
+\index{Get\+Charge@{Get\+Charge}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Charge()}{GetCharge()}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::\+Get\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a371b9b9bc520047c42d9e6d06b7f3dd9}\label{classElementaryParticle_a371b9b9bc520047c42d9e6d06b7f3dd9}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Elementary\+Particle\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a85400dc97f66c1ce23d9d961ddb6b8f3}\label{classElementaryParticle_a85400dc97f66c1ce23d9d961ddb6b8f3}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Get\+Mass@{Get\+Mass}}
+\index{Get\+Mass@{Get\+Mass}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Mass()}{GetMass()}}
+{\footnotesize\ttfamily double Elementary\+Particle\+::\+Get\+Mass (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_ad5f5a05770f94f4c8fee418d59098126}\label{classElementaryParticle_ad5f5a05770f94f4c8fee418d59098126}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Get\+Spin@{Get\+Spin}}
+\index{Get\+Spin@{Get\+Spin}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Spin()}{GetSpin()}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::\+Get\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a63fe7df86d2fba4a64a69dfa5757e94e}\label{classElementaryParticle_a63fe7df86d2fba4a64a69dfa5757e94e}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily unsigned int Elementary\+Particle\+::\+Get\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_ac0f85f34bdfc1d42324201eb7c38e85e}\label{classElementaryParticle_ac0f85f34bdfc1d42324201eb7c38e85e}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Elementary\+Particle\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryParticle_abbc6d3c58509c4121df55bfef716d2f1}\label{classElementaryParticle_abbc6d3c58509c4121df55bfef716d2f1}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Charge@{Set\+Charge}}
+\index{Set\+Charge@{Set\+Charge}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryParticle_a141316fd968cce8ecc5aa11ce0757d63}\label{classElementaryParticle_a141316fd968cce8ecc5aa11ce0757d63}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryParticle_a778ff8188ecb369e533521ed4f94b034}\label{classElementaryParticle_a778ff8188ecb369e533521ed4f94b034}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Mass@{Set\+Mass}}
+\index{Set\+Mass@{Set\+Mass}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Mass()}{SetMass()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Mass (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryParticle_a8a3b91409772f4091a782624a34024e7}\label{classElementaryParticle_a8a3b91409772f4091a782624a34024e7}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Mass\+Index@{Set\+Mass\+Index}}
+\index{Set\+Mass\+Index@{Set\+Mass\+Index}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Mass\+Index()}{SetMassIndex()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Mass\+Index (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryParticle_a437fa86d88157314b84662b158d52353}\label{classElementaryParticle_a437fa86d88157314b84662b158d52353}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Spin@{Set\+Spin}}
+\index{Set\+Spin@{Set\+Spin}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryParticle_a37d7718faf6be68d4374bcc56816f30a}\label{classElementaryParticle_a37d7718faf6be68d4374bcc56816f30a}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Elementary\+Particle\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryParticle_abf5114c3d032bc9511a14aa7368ec450}\label{classElementaryParticle_abf5114c3d032bc9511a14aa7368ec450}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Update@{Update}}
+\index{Update@{Update}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classElementaryParticle_a9bc6eb2a4c20ce83728a7c9a31b91f19}\label{classElementaryParticle_a9bc6eb2a4c20ce83728a7c9a31b91f19}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!Composite\+Force\+Particle@{Composite\+Force\+Particle}}
+\index{Composite\+Force\+Particle@{Composite\+Force\+Particle}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{Composite\+Force\+Particle}{CompositeForceParticle}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCompositeForceParticle}{Composite\+Force\+Particle}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classElementaryParticle_a7e518b7f634700ede48e59e266e09708}\label{classElementaryParticle_a7e518b7f634700ede48e59e266e09708}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a61555c6c0ba98944282f9f868260b698}\label{classElementaryParticle_a61555c6c0ba98944282f9f868260b698}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+charge@{elementary\+\_\+particle\+\_\+charge}}
+\index{elementary\+\_\+particle\+\_\+charge@{elementary\+\_\+particle\+\_\+charge}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+charge}{elementary\_particle\_charge}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::elementary\+\_\+particle\+\_\+charge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+charge\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_a2fae6ea0f434b01e6dee5479c74bebfb}\label{classElementaryParticle_a2fae6ea0f434b01e6dee5479c74bebfb}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+counter@{elementary\+\_\+particle\+\_\+counter}}
+\index{elementary\+\_\+particle\+\_\+counter@{elementary\+\_\+particle\+\_\+counter}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+counter}{elementary\_particle\_counter}}
+{\footnotesize\ttfamily unsigned int Elementary\+Particle\+::elementary\+\_\+particle\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+counter\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_aaa8e3d6d924875e6dc63b8156181de48}\label{classElementaryParticle_aaa8e3d6d924875e6dc63b8156181de48}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+mass@{elementary\+\_\+particle\+\_\+mass}}
+\index{elementary\+\_\+particle\+\_\+mass@{elementary\+\_\+particle\+\_\+mass}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+mass}{elementary\_particle\_mass}}
+{\footnotesize\ttfamily double Elementary\+Particle\+::elementary\+\_\+particle\+\_\+mass\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+mass\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_aff63a6097a70d03bf283fea0fc5e461c}\label{classElementaryParticle_aff63a6097a70d03bf283fea0fc5e461c}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+mass\+\_\+index@{elementary\+\_\+particle\+\_\+mass\+\_\+index}}
+\index{elementary\+\_\+particle\+\_\+mass\+\_\+index@{elementary\+\_\+particle\+\_\+mass\+\_\+index}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+mass\+\_\+index}{elementary\_particle\_mass\_index}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::elementary\+\_\+particle\+\_\+mass\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+mass\+\_\+index\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_a599cb91c4a19db54599c8b47c18f1136}\label{classElementaryParticle_a599cb91c4a19db54599c8b47c18f1136}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+spin@{elementary\+\_\+particle\+\_\+spin}}
+\index{elementary\+\_\+particle\+\_\+spin@{elementary\+\_\+particle\+\_\+spin}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+spin}{elementary\_particle\_spin}}
+{\footnotesize\ttfamily int Elementary\+Particle\+::elementary\+\_\+particle\+\_\+spin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+spin\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_a68872e9f84702245f8c963b0dea2472d}\label{classElementaryParticle_a68872e9f84702245f8c963b0dea2472d}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!elementary\+\_\+particle\+\_\+type@{elementary\+\_\+particle\+\_\+type}}
+\index{elementary\+\_\+particle\+\_\+type@{elementary\+\_\+particle\+\_\+type}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{elementary\+\_\+particle\+\_\+type}{elementary\_particle\_type}}
+{\footnotesize\ttfamily unsigned int Elementary\+Particle\+::elementary\+\_\+particle\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+particle\+\_\+type\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryParticle_a4b00a86b2f7ad3165e5ea6bcd8771779}\label{classElementaryParticle_a4b00a86b2f7ad3165e5ea6bcd8771779}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!k\+Unit\+KgeV@{k\+Unit\+KgeV}}
+\index{k\+Unit\+KgeV@{k\+Unit\+KgeV}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{k\+Unit\+KgeV}{kUnitKgeV}}
+{\footnotesize\ttfamily const double Elementary\+Particle\+::k\+Unit\+KgeV = 1.\+783\+E-\/36\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a1f3c4e9183754e2f36a14f915ec4be9b}\label{classElementaryParticle_a1f3c4e9183754e2f36a14f915ec4be9b}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!k\+Unit\+Kg\+GeV@{k\+Unit\+Kg\+GeV}}
+\index{k\+Unit\+Kg\+GeV@{k\+Unit\+Kg\+GeV}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{k\+Unit\+Kg\+GeV}{kUnitKgGeV}}
+{\footnotesize\ttfamily const double Elementary\+Particle\+::k\+Unit\+Kg\+GeV = 1.\+783\+E-\/27\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a423723d503eb1761a98f4495f193d63f}\label{classElementaryParticle_a423723d503eb1761a98f4495f193d63f}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!k\+Unit\+Kg\+MeV@{k\+Unit\+Kg\+MeV}}
+\index{k\+Unit\+Kg\+MeV@{k\+Unit\+Kg\+MeV}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{k\+Unit\+Kg\+MeV}{kUnitKgMeV}}
+{\footnotesize\ttfamily const double Elementary\+Particle\+::k\+Unit\+Kg\+MeV = 1.\+783\+E-\/30\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a32f8eadc6c761d991ccaff0354af398c}\label{classElementaryParticle_a32f8eadc6c761d991ccaff0354af398c}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Elementary\+Particle\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a502537989e804d20788686a29c736657}\label{classElementaryParticle_a502537989e804d20788686a29c736657}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Elementary\+Particle\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_a8b0b30058853d850c0853fc101f5d45c}\label{classElementaryParticle_a8b0b30058853d850c0853fc101f5d45c}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Elementary\+Particle\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryParticle_af7a592e44e4ccc8f1b19cd4c49ab50c3}\label{classElementaryParticle_af7a592e44e4ccc8f1b19cd4c49ab50c3}} 
+\index{Elementary\+Particle@{Elementary\+Particle}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Elementary\+Particle@{Elementary\+Particle}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Elementary\+Particle\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{elementaryparticle_8h}{elementaryparticle.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{elementaryparticle_8cc}{elementaryparticle.\+cc}}\end{DoxyCompactItemize}

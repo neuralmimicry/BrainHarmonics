@@ -1,0 +1,129 @@
+\hypertarget{classAppTimer}{}\section{App\+Timer Class Reference}
+\label{classAppTimer}\index{App\+Timer@{App\+Timer}}
+
+
+{\ttfamily \#include $<$apptimer.\+h$>$}
+
+Inheritance diagram for App\+Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAppTimer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAppTimer_a59bf4eccdc9a3e16745b2cf9a122f935}{App\+Timer}} ()
+\item 
+\mbox{\hyperlink{classAppTimer_a06df15e33135f60f661c231e067951f3}{App\+Timer}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classAppTimer_a192075895ca575e9acb2663f3ebcecd6}{App\+Timer}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classAppTimer_af0836d131aa78b6812930199a5c7f9bd}{App\+Timer}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classAppTimer_a5ef0c072a0591cf5a3bcc07edbd3577f}{$\sim$\+App\+Timer}} ()
+\item 
+unsigned int \mbox{\hyperlink{classAppTimer_ab9bb2b5f283b02d6d2292e064ddbd2ab}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classAppTimer_a77d5d447d6b136a35304b0571a166ddc}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classAppTimer_addd53e74f8e65e44430bd20483592f98}{apptimer\+\_\+counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAppTimer_a96accb68b0b4d0f0477d230b6965c460}{apptimer\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classAppTimer_aa16315b1eff51bc0561c9c5bf024bcc2}{object\+\_\+disabled}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classAppTimer_aae18c05cc314b40c572fbf674a01ac40}{time\+\_\+object\+\_\+created}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAppTimer_a59bf4eccdc9a3e16745b2cf9a122f935}\label{classAppTimer_a59bf4eccdc9a3e16745b2cf9a122f935}} 
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{App\+Timer()}{AppTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily App\+Timer\+::\+App\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAppTimer_a06df15e33135f60f661c231e067951f3}\label{classAppTimer_a06df15e33135f60f661c231e067951f3}} 
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{App\+Timer()}{AppTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily App\+Timer\+::\+App\+Timer (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAppTimer_a192075895ca575e9acb2663f3ebcecd6}\label{classAppTimer_a192075895ca575e9acb2663f3ebcecd6}} 
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{App\+Timer()}{AppTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily App\+Timer\+::\+App\+Timer (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAppTimer_af0836d131aa78b6812930199a5c7f9bd}\label{classAppTimer_af0836d131aa78b6812930199a5c7f9bd}} 
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\index{App\+Timer@{App\+Timer}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{App\+Timer()}{AppTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily App\+Timer\+::\+App\+Timer (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAppTimer_a5ef0c072a0591cf5a3bcc07edbd3577f}\label{classAppTimer_a5ef0c072a0591cf5a3bcc07edbd3577f}} 
+\index{App\+Timer@{App\+Timer}!````~App\+Timer@{$\sim$\+App\+Timer}}
+\index{````~App\+Timer@{$\sim$\+App\+Timer}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{$\sim$\+App\+Timer()}{~AppTimer()}}
+{\footnotesize\ttfamily virtual App\+Timer\+::$\sim$\+App\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAppTimer_ab9bb2b5f283b02d6d2292e064ddbd2ab}\label{classAppTimer_ab9bb2b5f283b02d6d2292e064ddbd2ab}} 
+\index{App\+Timer@{App\+Timer}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int App\+Timer\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAppTimer_a77d5d447d6b136a35304b0571a166ddc}\label{classAppTimer_a77d5d447d6b136a35304b0571a166ddc}} 
+\index{App\+Timer@{App\+Timer}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void App\+Timer\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAppTimer_addd53e74f8e65e44430bd20483592f98}\label{classAppTimer_addd53e74f8e65e44430bd20483592f98}} 
+\index{App\+Timer@{App\+Timer}!apptimer\+\_\+counter@{apptimer\+\_\+counter}}
+\index{apptimer\+\_\+counter@{apptimer\+\_\+counter}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{apptimer\+\_\+counter}{apptimer\_counter}}
+{\footnotesize\ttfamily unsigned int App\+Timer\+::apptimer\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classAppTimer_a96accb68b0b4d0f0477d230b6965c460}\label{classAppTimer_a96accb68b0b4d0f0477d230b6965c460}} 
+\index{App\+Timer@{App\+Timer}!apptimer\+\_\+type@{apptimer\+\_\+type}}
+\index{apptimer\+\_\+type@{apptimer\+\_\+type}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{apptimer\+\_\+type}{apptimer\_type}}
+{\footnotesize\ttfamily int App\+Timer\+::apptimer\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAppTimer_aa16315b1eff51bc0561c9c5bf024bcc2}\label{classAppTimer_aa16315b1eff51bc0561c9c5bf024bcc2}} 
+\index{App\+Timer@{App\+Timer}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool App\+Timer\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAppTimer_aae18c05cc314b40c572fbf674a01ac40}\label{classAppTimer_aae18c05cc314b40c572fbf674a01ac40}} 
+\index{App\+Timer@{App\+Timer}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!App\+Timer@{App\+Timer}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ App\+Timer\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{apptimer_8h}{apptimer.\+h}}\end{DoxyCompactItemize}

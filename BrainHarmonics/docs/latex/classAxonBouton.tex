@@ -1,0 +1,381 @@
+\hypertarget{classAxonBouton}{}\section{Axon\+Bouton Class Reference}
+\label{classAxonBouton}\index{Axon\+Bouton@{Axon\+Bouton}}
+
+
+{\ttfamily \#include $<$axonbouton.\+h$>$}
+
+Inheritance diagram for Axon\+Bouton\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classAxonBouton}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAxonBouton_acd6521d65ecb2b86abf2e3a8b322699e}{Axon\+Bouton}} ()
+\item 
+\mbox{\hyperlink{classAxonBouton_a8a2da76b259a5ebab397fbd89d8b0632}{Axon\+Bouton}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classAxonBouton_a93e33d72d90801d29d2b16ef94b59fab}{Axon\+Bouton}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classAxonBouton_a6d671fc3b6bd8e617085c1bc7212400d}{Axon\+Bouton}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonBranch}{Axon\+Branch}} \&axonbranch\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classAxonBouton_ab6f93f680d19d4f07476d1d1b3de776a}{$\sim$\+Axon\+Bouton}} ()
+\item 
+unsigned int \mbox{\hyperlink{classAxonBouton_a251fc23f754c077cf43ee68991b81624}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classAxonBouton_a8dff077a40565f4e3a34388a6c38a603}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classAxonBouton_afe285478d414f2815afb98abe7b92898}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classAxonBouton_ab24fa467ab7221d0577e54734684a491}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classAxonBouton_a73d3721361c4e1ce6b110ffe1b4a7a88}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a2aa0abe381f6e7c87c702189d01dfbf2}{Create\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_a0cabe429536722f14ae800c8579168b7}{Create\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a0e739b20447539f8db3655e83575fcf4}{Clone\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_a7bf1d8db3287dc5357d0095233f5c47f}{Clone\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a75592b4ccc589db756183f4aaa694ffe}{Destroy\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_a0fa1c238a29d9e2b84b4d9c556452150}{Destroy\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a3009e5d49c699afa7f633b026b37ed77}{Add\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_a0e264da88f6ca5d77aa42f415cb4f3aa}{Add\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a1f0b13fa7ec408c9e0cfb22cea9bbe8c}{Remove\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_ae4119170ef72beaed3c8a0eb1d80ef14}{Remove\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ \mbox{\hyperlink{classAxonBouton_a847ab3d3d214ddc85bdfd463c6d95d54}{Get\+Synaptic\+Vesicle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_af9a35ff7a6c32ac291021cccb3d40c9b}{Get\+Synaptic\+Vesicles}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classAxonBouton_a95fc006b2436e2c7784af2cc0bc9522e}{Growth\+Surface}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double surf\+\_\+change)
+\item 
+int \mbox{\hyperlink{classAxonBouton_a10ac4446e777376a3944c87b2bcf26b5}{Growth\+Volume}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double vol\+\_\+change)
+\item 
+int \mbox{\hyperlink{classAxonBouton_a26f89bac681b8f0894fe1ae249733917}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ \mbox{\hyperlink{classAxonBouton_ad5b4e9b5fefb2ad9e6dfe5ad91be2dd7}{synapticvesicle\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classAxonBouton_a29ded5dabe0b9a52fc3f1612aec68cf3}{axonbouton\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classAxonBouton_a485081d54e0afcbe697877524cebe30d}{m\+\_\+add\+Status}}
+\item 
+int \mbox{\hyperlink{classAxonBouton_a6af09fee2eb7a38e8591770bc9c070ac}{synapticvesicle\+\_\+pool}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classAxonBouton_a26b17307437394ff14bfb5ef8dfad1e5}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classAxonBouton_a6382c6be1211fdde45dd497ae56d8bbb}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classAxonBouton_a04b61a53dc110ceb77484cf894ff3787}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classAxonBouton_ae994ae9fbfc40188b2379b61758d18c1}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classAxonBouton_a6a17c18e315806baa28a907e6799c6dd}{m\+\_\+\+Surface\+Area}}
+\item 
+unsigned int \mbox{\hyperlink{classAxonBouton_a043ef274a67fc10c6288044907533b27}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAxonBouton_a4878e6a13e75b8473dfb3bb79637fe3a}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAxonBouton_a9ac7a8e73e5f84db791a69d47863d684}{m\+\_\+axonlength}}
+\item 
+double \mbox{\hyperlink{classAxonBouton_ab83ac3e3436bd4080ef5f118ee6c57b4}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classAxonBouton_aaef78a821ff347809f9bcd3787c6de15}{m\+\_\+\+Time\+Threshold}}
+\item 
+bool \mbox{\hyperlink{classAxonBouton_a6760cc2afc8f7a42401d82979b2ac9bc}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classAxonBouton_a2d8bfbb162110b78489d059fb90e5cf3}{object\+\_\+initialised}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAxonBouton_acd6521d65ecb2b86abf2e3a8b322699e}\label{classAxonBouton_acd6521d65ecb2b86abf2e3a8b322699e}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Axon\+Bouton()}{AxonBouton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Axon\+Bouton\+::\+Axon\+Bouton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a8a2da76b259a5ebab397fbd89d8b0632}\label{classAxonBouton_a8a2da76b259a5ebab397fbd89d8b0632}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Axon\+Bouton()}{AxonBouton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Axon\+Bouton\+::\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a93e33d72d90801d29d2b16ef94b59fab}\label{classAxonBouton_a93e33d72d90801d29d2b16ef94b59fab}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Axon\+Bouton()}{AxonBouton()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Axon\+Bouton\+::\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a6d671fc3b6bd8e617085c1bc7212400d}\label{classAxonBouton_a6d671fc3b6bd8e617085c1bc7212400d}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\index{Axon\+Bouton@{Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Axon\+Bouton()}{AxonBouton()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Axon\+Bouton\+::\+Axon\+Bouton (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonBranch}{Axon\+Branch}} \&}]{axonbranch\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_ab6f93f680d19d4f07476d1d1b3de776a}\label{classAxonBouton_ab6f93f680d19d4f07476d1d1b3de776a}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!````~Axon\+Bouton@{$\sim$\+Axon\+Bouton}}
+\index{````~Axon\+Bouton@{$\sim$\+Axon\+Bouton}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{$\sim$\+Axon\+Bouton()}{~AxonBouton()}}
+{\footnotesize\ttfamily virtual Axon\+Bouton\+::$\sim$\+Axon\+Bouton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAxonBouton_a3009e5d49c699afa7f633b026b37ed77}\label{classAxonBouton_a3009e5d49c699afa7f633b026b37ed77}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Add\+Synaptic\+Vesicle@{Add\+Synaptic\+Vesicle}}
+\index{Add\+Synaptic\+Vesicle@{Add\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Add\+Synaptic\+Vesicle()}{AddSynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Add\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a0e264da88f6ca5d77aa42f415cb4f3aa}\label{classAxonBouton_a0e264da88f6ca5d77aa42f415cb4f3aa}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Add\+Synaptic\+Vesicles@{Add\+Synaptic\+Vesicles}}
+\index{Add\+Synaptic\+Vesicles@{Add\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Add\+Synaptic\+Vesicles()}{AddSynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Add\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a0e739b20447539f8db3655e83575fcf4}\label{classAxonBouton_a0e739b20447539f8db3655e83575fcf4}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Clone\+Synaptic\+Vesicle@{Clone\+Synaptic\+Vesicle}}
+\index{Clone\+Synaptic\+Vesicle@{Clone\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Clone\+Synaptic\+Vesicle()}{CloneSynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Clone\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a7bf1d8db3287dc5357d0095233f5c47f}\label{classAxonBouton_a7bf1d8db3287dc5357d0095233f5c47f}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Clone\+Synaptic\+Vesicles@{Clone\+Synaptic\+Vesicles}}
+\index{Clone\+Synaptic\+Vesicles@{Clone\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Clone\+Synaptic\+Vesicles()}{CloneSynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Clone\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a2aa0abe381f6e7c87c702189d01dfbf2}\label{classAxonBouton_a2aa0abe381f6e7c87c702189d01dfbf2}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Create\+Synaptic\+Vesicle@{Create\+Synaptic\+Vesicle}}
+\index{Create\+Synaptic\+Vesicle@{Create\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Create\+Synaptic\+Vesicle()}{CreateSynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Create\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a0cabe429536722f14ae800c8579168b7}\label{classAxonBouton_a0cabe429536722f14ae800c8579168b7}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Create\+Synaptic\+Vesicles@{Create\+Synaptic\+Vesicles}}
+\index{Create\+Synaptic\+Vesicles@{Create\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Create\+Synaptic\+Vesicles()}{CreateSynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Create\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a75592b4ccc589db756183f4aaa694ffe}\label{classAxonBouton_a75592b4ccc589db756183f4aaa694ffe}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Destroy\+Synaptic\+Vesicle@{Destroy\+Synaptic\+Vesicle}}
+\index{Destroy\+Synaptic\+Vesicle@{Destroy\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Destroy\+Synaptic\+Vesicle()}{DestroySynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Destroy\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a0fa1c238a29d9e2b84b4d9c556452150}\label{classAxonBouton_a0fa1c238a29d9e2b84b4d9c556452150}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Destroy\+Synaptic\+Vesicles@{Destroy\+Synaptic\+Vesicles}}
+\index{Destroy\+Synaptic\+Vesicles@{Destroy\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Destroy\+Synaptic\+Vesicles()}{DestroySynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Destroy\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a251fc23f754c077cf43ee68991b81624}\label{classAxonBouton_a251fc23f754c077cf43ee68991b81624}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Axon\+Bouton\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a8dff077a40565f4e3a34388a6c38a603}\label{classAxonBouton_a8dff077a40565f4e3a34388a6c38a603}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a847ab3d3d214ddc85bdfd463c6d95d54}\label{classAxonBouton_a847ab3d3d214ddc85bdfd463c6d95d54}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Get\+Synaptic\+Vesicle@{Get\+Synaptic\+Vesicle}}
+\index{Get\+Synaptic\+Vesicle@{Get\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Get\+Synaptic\+Vesicle()}{GetSynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Get\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_af9a35ff7a6c32ac291021cccb3d40c9b}\label{classAxonBouton_af9a35ff7a6c32ac291021cccb3d40c9b}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Get\+Synaptic\+Vesicles@{Get\+Synaptic\+Vesicles}}
+\index{Get\+Synaptic\+Vesicles@{Get\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Get\+Synaptic\+Vesicles()}{GetSynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Get\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a95fc006b2436e2c7784af2cc0bc9522e}\label{classAxonBouton_a95fc006b2436e2c7784af2cc0bc9522e}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Growth\+Surface@{Growth\+Surface}}
+\index{Growth\+Surface@{Growth\+Surface}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Growth\+Surface()}{GrowthSurface()}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::\+Growth\+Surface (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{surf\+\_\+change }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a10ac4446e777376a3944c87b2bcf26b5}\label{classAxonBouton_a10ac4446e777376a3944c87b2bcf26b5}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Growth\+Volume@{Growth\+Volume}}
+\index{Growth\+Volume@{Growth\+Volume}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Growth\+Volume()}{GrowthVolume()}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::\+Growth\+Volume (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{vol\+\_\+change }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a1f0b13fa7ec408c9e0cfb22cea9bbe8c}\label{classAxonBouton_a1f0b13fa7ec408c9e0cfb22cea9bbe8c}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Remove\+Synaptic\+Vesicle@{Remove\+Synaptic\+Vesicle}}
+\index{Remove\+Synaptic\+Vesicle@{Remove\+Synaptic\+Vesicle}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Remove\+Synaptic\+Vesicle()}{RemoveSynapticVesicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ Axon\+Bouton\+::\+Remove\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_ae4119170ef72beaed3c8a0eb1d80ef14}\label{classAxonBouton_ae4119170ef72beaed3c8a0eb1d80ef14}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Remove\+Synaptic\+Vesicles@{Remove\+Synaptic\+Vesicles}}
+\index{Remove\+Synaptic\+Vesicles@{Remove\+Synaptic\+Vesicles}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Remove\+Synaptic\+Vesicles()}{RemoveSynapticVesicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} $\ast$ $>$ Axon\+Bouton\+::\+Remove\+Synaptic\+Vesicles (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_a73d3721361c4e1ce6b110ffe1b4a7a88}\label{classAxonBouton_a73d3721361c4e1ce6b110ffe1b4a7a88}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Axon\+Bouton\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAxonBouton_afe285478d414f2815afb98abe7b92898}\label{classAxonBouton_afe285478d414f2815afb98abe7b92898}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Axon\+Bouton\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAxon_a3493cb97bde26bd66facc6084cd5f219}{Axon}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}}.
+
+\mbox{\Hypertarget{classAxonBouton_ab24fa467ab7221d0577e54734684a491}\label{classAxonBouton_ab24fa467ab7221d0577e54734684a491}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Axon\+Bouton\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAxonBouton_a26f89bac681b8f0894fe1ae249733917}\label{classAxonBouton_a26f89bac681b8f0894fe1ae249733917}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!Update@{Update}}
+\index{Update@{Update}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAxonBouton_a29ded5dabe0b9a52fc3f1612aec68cf3}\label{classAxonBouton_a29ded5dabe0b9a52fc3f1612aec68cf3}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!axonbouton\+\_\+type@{axonbouton\+\_\+type}}
+\index{axonbouton\+\_\+type@{axonbouton\+\_\+type}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{axonbouton\+\_\+type}{axonbouton\_type}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::axonbouton\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a04b61a53dc110ceb77484cf894ff3787}\label{classAxonBouton_a04b61a53dc110ceb77484cf894ff3787}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a485081d54e0afcbe697877524cebe30d}\label{classAxonBouton_a485081d54e0afcbe697877524cebe30d}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a9ac7a8e73e5f84db791a69d47863d684}\label{classAxonBouton_a9ac7a8e73e5f84db791a69d47863d684}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+axonlength@{m\+\_\+axonlength}}
+\index{m\+\_\+axonlength@{m\+\_\+axonlength}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+axonlength}{m\_axonlength}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::m\+\_\+axonlength\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a043ef274a67fc10c6288044907533b27}\label{classAxonBouton_a043ef274a67fc10c6288044907533b27}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Axon\+Bouton\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classAxonBouton_a6a17c18e315806baa28a907e6799c6dd}\label{classAxonBouton_a6a17c18e315806baa28a907e6799c6dd}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_ab83ac3e3436bd4080ef5f118ee6c57b4}\label{classAxonBouton_ab83ac3e3436bd4080ef5f118ee6c57b4}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_aaef78a821ff347809f9bcd3787c6de15}\label{classAxonBouton_aaef78a821ff347809f9bcd3787c6de15}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_ae994ae9fbfc40188b2379b61758d18c1}\label{classAxonBouton_ae994ae9fbfc40188b2379b61758d18c1}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a6760cc2afc8f7a42401d82979b2ac9bc}\label{classAxonBouton_a6760cc2afc8f7a42401d82979b2ac9bc}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Axon\+Bouton\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a4878e6a13e75b8473dfb3bb79637fe3a}\label{classAxonBouton_a4878e6a13e75b8473dfb3bb79637fe3a}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Axon\+Bouton\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classAxonBouton_a2d8bfbb162110b78489d059fb90e5cf3}\label{classAxonBouton_a2d8bfbb162110b78489d059fb90e5cf3}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Axon\+Bouton\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a6382c6be1211fdde45dd497ae56d8bbb}\label{classAxonBouton_a6382c6be1211fdde45dd497ae56d8bbb}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Axon\+Bouton\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_ad5b4e9b5fefb2ad9e6dfe5ad91be2dd7}\label{classAxonBouton_ad5b4e9b5fefb2ad9e6dfe5ad91be2dd7}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!synapticvesicle\+\_\+list@{synapticvesicle\+\_\+list}}
+\index{synapticvesicle\+\_\+list@{synapticvesicle\+\_\+list}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{synapticvesicle\+\_\+list}{synapticvesicle\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}}$\ast$$>$ Axon\+Bouton\+::synapticvesicle\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAxonBouton_a6af09fee2eb7a38e8591770bc9c070ac}\label{classAxonBouton_a6af09fee2eb7a38e8591770bc9c070ac}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!synapticvesicle\+\_\+pool@{synapticvesicle\+\_\+pool}}
+\index{synapticvesicle\+\_\+pool@{synapticvesicle\+\_\+pool}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{synapticvesicle\+\_\+pool}{synapticvesicle\_pool}}
+{\footnotesize\ttfamily int Axon\+Bouton\+::synapticvesicle\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAxonBouton_a26b17307437394ff14bfb5ef8dfad1e5}\label{classAxonBouton_a26b17307437394ff14bfb5ef8dfad1e5}} 
+\index{Axon\+Bouton@{Axon\+Bouton}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Axon\+Bouton@{Axon\+Bouton}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Axon\+Bouton\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{axonbouton_8h}{axonbouton.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{axonbouton_8cc}{axonbouton.\+cc}}\end{DoxyCompactItemize}

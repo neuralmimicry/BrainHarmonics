@@ -1,0 +1,286 @@
+\hypertarget{classCognitiveInput}{}\section{Cognitive\+Input Class Reference}
+\label{classCognitiveInput}\index{Cognitive\+Input@{Cognitive\+Input}}
+
+
+{\ttfamily \#include $<$cognitiveinput.\+h$>$}
+
+Inheritance diagram for Cognitive\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCognitiveInput}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCognitiveInput_a5c3c102dc3ec6cfec25eb849488e9782}{Cognitive\+Input}} ()
+\item 
+\mbox{\hyperlink{classCognitiveInput_a220c07f5be517afe47b4d3c486c4152e}{Cognitive\+Input}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classCognitiveInput_a31cc06426ab41c39ec8c795ab29d43de}{Cognitive\+Input}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveInput_a230ebb8f019af7e0bff51c13bc10c580}{Cognitive\+Input}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classCognitiveInput_a68007661b8fdd7ef39213a1fb3c06bd7}{$\sim$\+Cognitive\+Input}} ()
+\item 
+unsigned int \mbox{\hyperlink{classCognitiveInput_a695e7e57b717210b64f9e2c4e26c8044}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classCognitiveInput_a9bdb43198c1a36b97a6da125331bc927}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveInput_a0ad0919c7280b268493b27892bd7c784}{Get\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classCognitiveInput_a37d38512fb190431b4baf8f990c077a9}{Set\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classCognitiveInput_a4f09c1f176b5406d95a14d7cb1ab75e6}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classCognitiveInput_a3498a8b5333606ef4d089e6c427ddf74}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classCognitiveInput_a23f56d012233f655e1530ab61d80c27f}{Add\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classCognitiveInput_a943605b820cc279533e19d24e11405c6}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classCognitiveInput_a93bd9d88194a545c9a85512edcbb6044}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCognitiveInput_a7158317a0651e93fde965e74988e4817}{m\+\_\+\+Cognitive\+Input\+Type}}
+\item 
+int \mbox{\hyperlink{classCognitiveInput_ab2edb814888d1bd68a44d0547cf23691}{cognitiveinput\+\_\+type}} = 0
+\item 
+int \mbox{\hyperlink{classCognitiveInput_acb5b53899d51052d7ec18ecd1386fa33}{m\+\_\+add\+Status}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classCognitiveInput_a5ad1f0f7523ebfb32d43556b0c94ca70}{time\+\_\+object\+\_\+created}} = std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$(std\+::chrono\+::nanoseconds\+::zero())
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classCognitiveInput_a34d8fede9de24f5046f301f5326b3511}{previous\+\_\+event\+\_\+time}}
+\item 
+bool \mbox{\hyperlink{classCognitiveInput_a57ce1ed5b887f4a0b2efb3b9fc5c407f}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classCognitiveInput_aa60f8084d314063b5d32e4301f40ac37}{object\+\_\+initialised}} = false
+\item 
+int \mbox{\hyperlink{classCognitiveInput_a269476daa7243992fff92092007feff5}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classCognitiveInput_ac9a4b7de6f0475f45ff198bd5d4e6ae0}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classCognitiveInput_a47ee2b439761b314062d946850cb852b}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classCognitiveInput_a51a23a86f14e2cb0e60f6df2d8d8494e}{object\+\_\+size}}
+\item 
+unsigned int \mbox{\hyperlink{classCognitiveInput_a2cc357e24354d7016953475c1bc66a98}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveInput_a56cb85463a47cdd57f5cf2869d0e0761}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCognitiveInput_aea44f8591ccd7876a4f2ddf450244ea2}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classCognitiveInput_ad2726705c7242a842ad93272c6b7258a}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classCognitiveInput_a11d157d16bfe28880973320cdaef33bc}{m\+\_\+\+Time\+Threshold}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCognitiveInput_a5c3c102dc3ec6cfec25eb849488e9782}\label{classCognitiveInput_a5c3c102dc3ec6cfec25eb849488e9782}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Cognitive\+Input()}{CognitiveInput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Cognitive\+Input\+::\+Cognitive\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a220c07f5be517afe47b4d3c486c4152e}\label{classCognitiveInput_a220c07f5be517afe47b4d3c486c4152e}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Cognitive\+Input()}{CognitiveInput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Cognitive\+Input\+::\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a31cc06426ab41c39ec8c795ab29d43de}\label{classCognitiveInput_a31cc06426ab41c39ec8c795ab29d43de}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Cognitive\+Input()}{CognitiveInput()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Cognitive\+Input\+::\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a230ebb8f019af7e0bff51c13bc10c580}\label{classCognitiveInput_a230ebb8f019af7e0bff51c13bc10c580}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\index{Cognitive\+Input@{Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Cognitive\+Input()}{CognitiveInput()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Cognitive\+Input\+::\+Cognitive\+Input (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a68007661b8fdd7ef39213a1fb3c06bd7}\label{classCognitiveInput_a68007661b8fdd7ef39213a1fb3c06bd7}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!````~Cognitive\+Input@{$\sim$\+Cognitive\+Input}}
+\index{````~Cognitive\+Input@{$\sim$\+Cognitive\+Input}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{$\sim$\+Cognitive\+Input()}{~CognitiveInput()}}
+{\footnotesize\ttfamily virtual Cognitive\+Input\+::$\sim$\+Cognitive\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCognitiveInput_a23f56d012233f655e1530ab61d80c27f}\label{classCognitiveInput_a23f56d012233f655e1530ab61d80c27f}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Add\+Energy@{Add\+Energy}}
+\index{Add\+Energy@{Add\+Energy}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Add\+Energy()}{AddEnergy()}}
+{\footnotesize\ttfamily void Cognitive\+Input\+::\+Add\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a695e7e57b717210b64f9e2c4e26c8044}\label{classCognitiveInput_a695e7e57b717210b64f9e2c4e26c8044}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Cognitive\+Input\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a9bdb43198c1a36b97a6da125331bc927}\label{classCognitiveInput_a9bdb43198c1a36b97a6da125331bc927}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a0ad0919c7280b268493b27892bd7c784}\label{classCognitiveInput_a0ad0919c7280b268493b27892bd7c784}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::\+Get\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a943605b820cc279533e19d24e11405c6}\label{classCognitiveInput_a943605b820cc279533e19d24e11405c6}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Cognitive\+Input\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCognitiveInput_a4f09c1f176b5406d95a14d7cb1ab75e6}\label{classCognitiveInput_a4f09c1f176b5406d95a14d7cb1ab75e6}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Cognitive\+Input\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classCognitiveInput_a3498a8b5333606ef4d089e6c427ddf74}\label{classCognitiveInput_a3498a8b5333606ef4d089e6c427ddf74}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Cognitive\+Input\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a37d38512fb190431b4baf8f990c077a9}\label{classCognitiveInput_a37d38512fb190431b4baf8f990c077a9}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Cognitive\+Input\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a93bd9d88194a545c9a85512edcbb6044}\label{classCognitiveInput_a93bd9d88194a545c9a85512edcbb6044}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!Update@{Update}}
+\index{Update@{Update}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classCognitiveInput_ab2edb814888d1bd68a44d0547cf23691}\label{classCognitiveInput_ab2edb814888d1bd68a44d0547cf23691}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!cognitiveinput\+\_\+type@{cognitiveinput\+\_\+type}}
+\index{cognitiveinput\+\_\+type@{cognitiveinput\+\_\+type}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{cognitiveinput\+\_\+type}{cognitiveinput\_type}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::cognitiveinput\+\_\+type = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a269476daa7243992fff92092007feff5}\label{classCognitiveInput_a269476daa7243992fff92092007feff5}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_acb5b53899d51052d7ec18ecd1386fa33}\label{classCognitiveInput_acb5b53899d51052d7ec18ecd1386fa33}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a7158317a0651e93fde965e74988e4817}\label{classCognitiveInput_a7158317a0651e93fde965e74988e4817}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Cognitive\+Input\+Type@{m\+\_\+\+Cognitive\+Input\+Type}}
+\index{m\+\_\+\+Cognitive\+Input\+Type@{m\+\_\+\+Cognitive\+Input\+Type}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Cognitive\+Input\+Type}{m\_CognitiveInputType}}
+{\footnotesize\ttfamily int Cognitive\+Input\+::m\+\_\+\+Cognitive\+Input\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a2cc357e24354d7016953475c1bc66a98}\label{classCognitiveInput_a2cc357e24354d7016953475c1bc66a98}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Cognitive\+Input\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveInput_a47ee2b439761b314062d946850cb852b}\label{classCognitiveInput_a47ee2b439761b314062d946850cb852b}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_ad2726705c7242a842ad93272c6b7258a}\label{classCognitiveInput_ad2726705c7242a842ad93272c6b7258a}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a11d157d16bfe28880973320cdaef33bc}\label{classCognitiveInput_a11d157d16bfe28880973320cdaef33bc}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_ac9a4b7de6f0475f45ff198bd5d4e6ae0}\label{classCognitiveInput_ac9a4b7de6f0475f45ff198bd5d4e6ae0}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a57ce1ed5b887f4a0b2efb3b9fc5c407f}\label{classCognitiveInput_a57ce1ed5b887f4a0b2efb3b9fc5c407f}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Cognitive\+Input\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a56cb85463a47cdd57f5cf2869d0e0761}\label{classCognitiveInput_a56cb85463a47cdd57f5cf2869d0e0761}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classCognitiveInput_aea44f8591ccd7876a4f2ddf450244ea2}\label{classCognitiveInput_aea44f8591ccd7876a4f2ddf450244ea2}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_aa60f8084d314063b5d32e4301f40ac37}\label{classCognitiveInput_aa60f8084d314063b5d32e4301f40ac37}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Cognitive\+Input\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a51a23a86f14e2cb0e60f6df2d8d8494e}\label{classCognitiveInput_a51a23a86f14e2cb0e60f6df2d8d8494e}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Cognitive\+Input\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a34d8fede9de24f5046f301f5326b3511}\label{classCognitiveInput_a34d8fede9de24f5046f301f5326b3511}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Cognitive\+Input\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCognitiveInput_a5ad1f0f7523ebfb32d43556b0c94ca70}\label{classCognitiveInput_a5ad1f0f7523ebfb32d43556b0c94ca70}} 
+\index{Cognitive\+Input@{Cognitive\+Input}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Cognitive\+Input@{Cognitive\+Input}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Cognitive\+Input\+::time\+\_\+object\+\_\+created = std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$(std\+::chrono\+::nanoseconds\+::zero())\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{cognitiveinput_8h}{cognitiveinput.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{cognitiveinput_8cc}{cognitiveinput.\+cc}}\end{DoxyCompactItemize}

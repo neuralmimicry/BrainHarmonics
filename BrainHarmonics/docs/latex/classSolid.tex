@@ -1,0 +1,679 @@
+\hypertarget{classSolid}{}\section{Solid Class Reference}
+\label{classSolid}\index{Solid@{Solid}}
+
+
+{\ttfamily \#include $<$solid.\+h$>$}
+
+Inheritance diagram for Solid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classSolid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSolid_a2cf157c87df66dc3eb8722f9b3ee8f66}{Solid}} ()
+\item 
+\mbox{\hyperlink{classSolid_a00a71dfc929ca50ee9850bdfca5b3fd6}{Solid}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classSolid_a9f5476b751c749af38b349b9fc7e2ba5}{Solid}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSolid_a80746ad255dded6090e648fc3f0dbd93}{Solid}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classSolid_a07095e0808c0ef6b206bc70992ef557d}{$\sim$\+Solid}} ()
+\item 
+bool \mbox{\hyperlink{classSolid_ac43dc78fa7f6a3348fc99751ff6bbc52}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classSolid_a7ca41431033d05957f8be3f49c3aca23}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSolid_aea949040518e505ed39b1456a360c5e0}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classSolid_af6fe46af0be9a9533e114b1c0f186bfc}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_a231b2c469aab60b092fcc3a9525e5c80}{Create\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a40b2ea07e384aff138ba139c3c84f525}{Create\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_ae83094e9c002a7574db242ed0bff6288}{Clone\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSolid}{Solid}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a1e650b6d8437acfaf7b9384b885d77bf}{Clone\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_a0841900d8ef4b82292ac027c4852b59b}{Destroy\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSolid}{Solid}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_ab1652ee511ed51bbe6a0a3b1854b7974}{Destroy\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_a87a3b588f931ff20f09a5d46f6cb7907}{Add\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSolid}{Solid}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a649ba1103a9889bc9e45256633dc72c3}{Add\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_a1233a3fe43abca7d2a0f83d724fd6640}{Remove\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a0fc53641571eb796c9d6bc33ae7a7138}{Remove\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSolid}{Solid}} $\ast$ \mbox{\hyperlink{classSolid_a256ecadf461f7232eb05c28b6b4b438a}{Get\+Polyhedron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a7006714c19bf8a7b020f42f394e4edc0}{Get\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSolid_a94bb5df6d873c14a94355fc95557efd6}{Glue\+Polyhedrons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSolid_a17239817eba0e5870454311857dca736}{Update\+Cycle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+int \mbox{\hyperlink{classSolid_a248a5eab9fa0c584af7cdec2f86dc3a3}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSolid_a37503e6b25f912254414e778af2e75cd}{Set\+Charge}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val) final
+\item 
+void \mbox{\hyperlink{classSolid_a615cb8d1ec1376781726bcefa86339cb}{Set\+Spin}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val) final
+\item 
+double \mbox{\hyperlink{classSolid_ab5ecb5598be93fe3cd2a21c0cfd363c8}{Get\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_ac8a7738735a6bda4e89414a2b0c370e1}{Get\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_ac98f9c827d58a631627423e25dd611ba}{Get\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_a01cd3c441a4e339927c43536de6d9b5e}{Get\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_aff7ec13bcc584d8330e3f3a1b371bbe6}{Get\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_ae39d0166456b8feaa39547e5a21c9096}{Get\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_ab3a972354b25ad1bbe8c3f3e7638e24c}{Get\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_a9cfde1c3a4b7c6d2a5a3719d74e27237}{Get\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\item 
+double \mbox{\hyperlink{classSolid_af2b3133138ce2482faa462d07aa23042}{Apply\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_a49e35bf258104b7bce225dc21058affb}{Apply\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_ad6c28ec896cbcf64e24a7132a144befd}{Apply\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_ab546d607d6f0bf70dc5e6bbac8baf287}{Apply\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_a46702e3109994b310eb4f1fba5610e0b}{Apply\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_a0801ec0382bc509191575bcf9f5c83c1}{Apply\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_abd8fff76385306f97aa65dfd6b867fc6}{Apply\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+double \mbox{\hyperlink{classSolid_a07534fa79bb8a6eb32e081e5158ba9e5}{Apply\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_ae237f2c713868c133e28ed7f75fc9125}{Set\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_aa28e0f7e4de2fc0c1e28d385214296bf}{Set\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_adb34befc66f8c681f3a85c44e0d00e3a}{Set\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_a9a660f9d94f597712c67922aa1d4d795}{Set\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_a6617ae9fe4707d760a23b54eddf00dec}{Set\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_a478e15cdf15c5bb01cbcbd5f584ef83a}{Set\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_a4342786a7785b1a3816d20de02105bcf}{Set\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_a8b80ebe209fcd3afa4791968127753d0}{Set\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val) final
+\item 
+void \mbox{\hyperlink{classSolid_ae2a486e59f11f96a1a39756b3f3da53f}{Poll\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time) final
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classSolid_a67ef5cdd87e5629159660fa9bb5833c8}{polyhedron\+\_\+list}}
+\item 
+std\+::vector$<$ unsigned int $>$ \mbox{\hyperlink{classSolid_ad63206ff20f38b621db482b01801c4c5}{poly\+\_\+type\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classSolid_ab267c0a27586fa46a1b03bb0750caf5a}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classSolid_a4cb0429a28598d5501553787524b705d}{solid\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classSolid_ac521c984065957c82c239d5fb8be82ff}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classSolid_ac92543b277d9a01d4cfbdf7fd71d3e1f}{object\+\_\+initialised}} = false
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSolid_ab511520c2e523c203c1ca7b97f573f65}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSolid_ace5c8628a4f60d96029d8acea4580ab5}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classSolid_ad845ec39ddd38670049e9c6e046f2454}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+int \mbox{\hyperlink{classSolid_abd4b935f7835fd0f8b50b526f6399731}{polyhedron\+\_\+pool}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSolid_ad04bbaef84caa0d408ec09a1c1302f5f}{Cognitive\+Network}}
+\item 
+class \mbox{\hyperlink{classSolid_aa410d74ba34b18a9f6bdf24323c4ee5b}{Neuron}}
+\item 
+class \mbox{\hyperlink{classSolid_aaa07b7b364b620b9a781f30a5cd9f5ea}{Soma}}
+\item 
+class \mbox{\hyperlink{classSolid_ac790db405644a01723104c3c0c8128bb}{Membrane}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSolid_a2cf157c87df66dc3eb8722f9b3ee8f66}\label{classSolid_a2cf157c87df66dc3eb8722f9b3ee8f66}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSolid_a00a71dfc929ca50ee9850bdfca5b3fd6}\label{classSolid_a00a71dfc929ca50ee9850bdfca5b3fd6}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSolid_a9f5476b751c749af38b349b9fc7e2ba5}\label{classSolid_a9f5476b751c749af38b349b9fc7e2ba5}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSolid_a80746ad255dded6090e648fc3f0dbd93}\label{classSolid_a80746ad255dded6090e648fc3f0dbd93}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSolid_a07095e0808c0ef6b206bc70992ef557d}\label{classSolid_a07095e0808c0ef6b206bc70992ef557d}} 
+\index{Solid@{Solid}!````~Solid@{$\sim$\+Solid}}
+\index{````~Solid@{$\sim$\+Solid}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{$\sim$\+Solid()}{~Solid()}}
+{\footnotesize\ttfamily virtual Solid\+::$\sim$\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolid_a87a3b588f931ff20f09a5d46f6cb7907}\label{classSolid_a87a3b588f931ff20f09a5d46f6cb7907}} 
+\index{Solid@{Solid}!Add\+Polyhedron@{Add\+Polyhedron}}
+\index{Add\+Polyhedron@{Add\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Add\+Polyhedron()}{AddPolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Add\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSolid}{Solid}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a649ba1103a9889bc9e45256633dc72c3}\label{classSolid_a649ba1103a9889bc9e45256633dc72c3}} 
+\index{Solid@{Solid}!Add\+Polyhedrons@{Add\+Polyhedrons}}
+\index{Add\+Polyhedrons@{Add\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Add\+Polyhedrons()}{AddPolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Add\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_ab546d607d6f0bf70dc5e6bbac8baf287}\label{classSolid_ab546d607d6f0bf70dc5e6bbac8baf287}} 
+\index{Solid@{Solid}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1f787da78fa196ba635db21a9e91dabb}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a46702e3109994b310eb4f1fba5610e0b}\label{classSolid_a46702e3109994b310eb4f1fba5610e0b}} 
+\index{Solid@{Solid}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_af2b3133138ce2482faa462d07aa23042}\label{classSolid_af2b3133138ce2482faa462d07aa23042}} 
+\index{Solid@{Solid}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a0801ec0382bc509191575bcf9f5c83c1}\label{classSolid_a0801ec0382bc509191575bcf9f5c83c1}} 
+\index{Solid@{Solid}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_abd8fff76385306f97aa65dfd6b867fc6}\label{classSolid_abd8fff76385306f97aa65dfd6b867fc6}} 
+\index{Solid@{Solid}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a62789bcff84bd750b0366004381e2fdd}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a07534fa79bb8a6eb32e081e5158ba9e5}\label{classSolid_a07534fa79bb8a6eb32e081e5158ba9e5}} 
+\index{Solid@{Solid}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af7becebb347be9a85541d96a3eca1ca7}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a49e35bf258104b7bce225dc21058affb}\label{classSolid_a49e35bf258104b7bce225dc21058affb}} 
+\index{Solid@{Solid}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ad6c28ec896cbcf64e24a7132a144befd}\label{classSolid_ad6c28ec896cbcf64e24a7132a144befd}} 
+\index{Solid@{Solid}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Solid\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ae83094e9c002a7574db242ed0bff6288}\label{classSolid_ae83094e9c002a7574db242ed0bff6288}} 
+\index{Solid@{Solid}!Clone\+Polyhedron@{Clone\+Polyhedron}}
+\index{Clone\+Polyhedron@{Clone\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Clone\+Polyhedron()}{ClonePolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Clone\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSolid}{Solid}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a1e650b6d8437acfaf7b9384b885d77bf}\label{classSolid_a1e650b6d8437acfaf7b9384b885d77bf}} 
+\index{Solid@{Solid}!Clone\+Polyhedrons@{Clone\+Polyhedrons}}
+\index{Clone\+Polyhedrons@{Clone\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Clone\+Polyhedrons()}{ClonePolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Clone\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a231b2c469aab60b092fcc3a9525e5c80}\label{classSolid_a231b2c469aab60b092fcc3a9525e5c80}} 
+\index{Solid@{Solid}!Create\+Polyhedron@{Create\+Polyhedron}}
+\index{Create\+Polyhedron@{Create\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Create\+Polyhedron()}{CreatePolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Create\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a40b2ea07e384aff138ba139c3c84f525}\label{classSolid_a40b2ea07e384aff138ba139c3c84f525}} 
+\index{Solid@{Solid}!Create\+Polyhedrons@{Create\+Polyhedrons}}
+\index{Create\+Polyhedrons@{Create\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Create\+Polyhedrons()}{CreatePolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Create\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a0841900d8ef4b82292ac027c4852b59b}\label{classSolid_a0841900d8ef4b82292ac027c4852b59b}} 
+\index{Solid@{Solid}!Destroy\+Polyhedron@{Destroy\+Polyhedron}}
+\index{Destroy\+Polyhedron@{Destroy\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Destroy\+Polyhedron()}{DestroyPolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Destroy\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSolid}{Solid}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_ab1652ee511ed51bbe6a0a3b1854b7974}\label{classSolid_ab1652ee511ed51bbe6a0a3b1854b7974}} 
+\index{Solid@{Solid}!Destroy\+Polyhedrons@{Destroy\+Polyhedrons}}
+\index{Destroy\+Polyhedrons@{Destroy\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Destroy\+Polyhedrons()}{DestroyPolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Destroy\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a7ca41431033d05957f8be3f49c3aca23}\label{classSolid_a7ca41431033d05957f8be3f49c3aca23}} 
+\index{Solid@{Solid}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Solid\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a01cd3c441a4e339927c43536de6d9b5e}\label{classSolid_a01cd3c441a4e339927c43536de6d9b5e}} 
+\index{Solid@{Solid}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a63b850ef3f3394313353109d222bf5d1}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_aff7ec13bcc584d8330e3f3a1b371bbe6}\label{classSolid_aff7ec13bcc584d8330e3f3a1b371bbe6}} 
+\index{Solid@{Solid}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ab5ecb5598be93fe3cd2a21c0cfd363c8}\label{classSolid_ab5ecb5598be93fe3cd2a21c0cfd363c8}} 
+\index{Solid@{Solid}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a256ecadf461f7232eb05c28b6b4b438a}\label{classSolid_a256ecadf461f7232eb05c28b6b4b438a}} 
+\index{Solid@{Solid}!Get\+Polyhedron@{Get\+Polyhedron}}
+\index{Get\+Polyhedron@{Get\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Polyhedron()}{GetPolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Get\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a7006714c19bf8a7b020f42f394e4edc0}\label{classSolid_a7006714c19bf8a7b020f42f394e4edc0}} 
+\index{Solid@{Solid}!Get\+Polyhedrons@{Get\+Polyhedrons}}
+\index{Get\+Polyhedrons@{Get\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Polyhedrons()}{GetPolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Get\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_ae39d0166456b8feaa39547e5a21c9096}\label{classSolid_ae39d0166456b8feaa39547e5a21c9096}} 
+\index{Solid@{Solid}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_acb453ce71da418c5b5617fecede9571b}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ab3a972354b25ad1bbe8c3f3e7638e24c}\label{classSolid_ab3a972354b25ad1bbe8c3f3e7638e24c}} 
+\index{Solid@{Solid}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a9cfde1c3a4b7c6d2a5a3719d74e27237}\label{classSolid_a9cfde1c3a4b7c6d2a5a3719d74e27237}} 
+\index{Solid@{Solid}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af0f4b81950061e63c2855eb40957a5b1}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ac8a7738735a6bda4e89414a2b0c370e1}\label{classSolid_ac8a7738735a6bda4e89414a2b0c370e1}} 
+\index{Solid@{Solid}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ac98f9c827d58a631627423e25dd611ba}\label{classSolid_ac98f9c827d58a631627423e25dd611ba}} 
+\index{Solid@{Solid}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Solid\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a94bb5df6d873c14a94355fc95557efd6}\label{classSolid_a94bb5df6d873c14a94355fc95557efd6}} 
+\index{Solid@{Solid}!Glue\+Polyhedrons@{Glue\+Polyhedrons}}
+\index{Glue\+Polyhedrons@{Glue\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Glue\+Polyhedrons()}{GluePolyhedrons()}}
+{\footnotesize\ttfamily void Solid\+::\+Glue\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_ae2a486e59f11f96a1a39756b3f3da53f}\label{classSolid_ae2a486e59f11f96a1a39756b3f3da53f}} 
+\index{Solid@{Solid}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Solid\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0c485c504542409cbb5cfd8543c35b11}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a1233a3fe43abca7d2a0f83d724fd6640}\label{classSolid_a1233a3fe43abca7d2a0f83d724fd6640}} 
+\index{Solid@{Solid}!Remove\+Polyhedron@{Remove\+Polyhedron}}
+\index{Remove\+Polyhedron@{Remove\+Polyhedron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Remove\+Polyhedron()}{RemovePolyhedron()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSolid}{Solid}} $\ast$ Solid\+::\+Remove\+Polyhedron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a0fc53641571eb796c9d6bc33ae7a7138}\label{classSolid_a0fc53641571eb796c9d6bc33ae7a7138}} 
+\index{Solid@{Solid}!Remove\+Polyhedrons@{Remove\+Polyhedrons}}
+\index{Remove\+Polyhedrons@{Remove\+Polyhedrons}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Remove\+Polyhedrons()}{RemovePolyhedrons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ Solid\+::\+Remove\+Polyhedrons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_ac43dc78fa7f6a3348fc99751ff6bbc52}\label{classSolid_ac43dc78fa7f6a3348fc99751ff6bbc52}} 
+\index{Solid@{Solid}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Solid\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a37503e6b25f912254414e778af2e75cd}\label{classSolid_a37503e6b25f912254414e778af2e75cd}} 
+\index{Solid@{Solid}!Set\+Charge@{Set\+Charge}}
+\index{Set\+Charge@{Set\+Charge}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Charge (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_aea949040518e505ed39b1456a360c5e0}\label{classSolid_aea949040518e505ed39b1456a360c5e0}} 
+\index{Solid@{Solid}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a9a660f9d94f597712c67922aa1d4d795}\label{classSolid_a9a660f9d94f597712c67922aa1d4d795}} 
+\index{Solid@{Solid}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa981fc7e252b1fbbb675f0371860954d}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a6617ae9fe4707d760a23b54eddf00dec}\label{classSolid_a6617ae9fe4707d760a23b54eddf00dec}} 
+\index{Solid@{Solid}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a608aa95698380f791a0ffba45cc1bee3}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_ae237f2c713868c133e28ed7f75fc9125}\label{classSolid_ae237f2c713868c133e28ed7f75fc9125}} 
+\index{Solid@{Solid}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_af6fe46af0be9a9533e114b1c0f186bfc}\label{classSolid_af6fe46af0be9a9533e114b1c0f186bfc}} 
+\index{Solid@{Solid}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a615cb8d1ec1376781726bcefa86339cb}\label{classSolid_a615cb8d1ec1376781726bcefa86339cb}} 
+\index{Solid@{Solid}!Set\+Spin@{Set\+Spin}}
+\index{Set\+Spin@{Set\+Spin}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Spin (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a478e15cdf15c5bb01cbcbd5f584ef83a}\label{classSolid_a478e15cdf15c5bb01cbcbd5f584ef83a}} 
+\index{Solid@{Solid}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a4342786a7785b1a3816d20de02105bcf}\label{classSolid_a4342786a7785b1a3816d20de02105bcf}} 
+\index{Solid@{Solid}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aafec97a231126b71c73ac1258609a284}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a8b80ebe209fcd3afa4791968127753d0}\label{classSolid_a8b80ebe209fcd3afa4791968127753d0}} 
+\index{Solid@{Solid}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_aa28e0f7e4de2fc0c1e28d385214296bf}\label{classSolid_aa28e0f7e4de2fc0c1e28d385214296bf}} 
+\index{Solid@{Solid}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_adb34befc66f8c681f3a85c44e0d00e3a}\label{classSolid_adb34befc66f8c681f3a85c44e0d00e3a}} 
+\index{Solid@{Solid}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Solid\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a2d3d642bfdc863248e93535832fa4b00}{Universe}}.
+
+\mbox{\Hypertarget{classSolid_a248a5eab9fa0c584af7cdec2f86dc3a3}\label{classSolid_a248a5eab9fa0c584af7cdec2f86dc3a3}} 
+\index{Solid@{Solid}!Update@{Update}}
+\index{Update@{Update}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Solid\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSolid_a17239817eba0e5870454311857dca736}\label{classSolid_a17239817eba0e5870454311857dca736}} 
+\index{Solid@{Solid}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Solid\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classSolid_ad04bbaef84caa0d408ec09a1c1302f5f}\label{classSolid_ad04bbaef84caa0d408ec09a1c1302f5f}} 
+\index{Solid@{Solid}!Cognitive\+Network@{Cognitive\+Network}}
+\index{Cognitive\+Network@{Cognitive\+Network}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Cognitive\+Network}{CognitiveNetwork}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classSolid_ac790db405644a01723104c3c0c8128bb}\label{classSolid_ac790db405644a01723104c3c0c8128bb}} 
+\index{Solid@{Solid}!Membrane@{Membrane}}
+\index{Membrane@{Membrane}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Membrane}{Membrane}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classMembrane}{Membrane}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classSolid_aa410d74ba34b18a9f6bdf24323c4ee5b}\label{classSolid_aa410d74ba34b18a9f6bdf24323c4ee5b}} 
+\index{Solid@{Solid}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Neuron}{Neuron}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classNeuron}{Neuron}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classSolid_aaa07b7b364b620b9a781f30a5cd9f5ea}\label{classSolid_aaa07b7b364b620b9a781f30a5cd9f5ea}} 
+\index{Solid@{Solid}!Soma@{Soma}}
+\index{Soma@{Soma}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{Soma}{Soma}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSoma}{Soma}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSolid_ad845ec39ddd38670049e9c6e046f2454}\label{classSolid_ad845ec39ddd38670049e9c6e046f2454}} 
+\index{Solid@{Solid}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Solid\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_ab267c0a27586fa46a1b03bb0750caf5a}\label{classSolid_ab267c0a27586fa46a1b03bb0750caf5a}} 
+\index{Solid@{Solid}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Solid\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classSolid_ac521c984065957c82c239d5fb8be82ff}\label{classSolid_ac521c984065957c82c239d5fb8be82ff}} 
+\index{Solid@{Solid}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Solid\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_ac92543b277d9a01d4cfbdf7fd71d3e1f}\label{classSolid_ac92543b277d9a01d4cfbdf7fd71d3e1f}} 
+\index{Solid@{Solid}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Solid\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_ad63206ff20f38b621db482b01801c4c5}\label{classSolid_ad63206ff20f38b621db482b01801c4c5}} 
+\index{Solid@{Solid}!poly\+\_\+type\+\_\+list@{poly\+\_\+type\+\_\+list}}
+\index{poly\+\_\+type\+\_\+list@{poly\+\_\+type\+\_\+list}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{poly\+\_\+type\+\_\+list}{poly\_type\_list}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned int$>$ Solid\+::poly\+\_\+type\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSolid_a67ef5cdd87e5629159660fa9bb5833c8}\label{classSolid_a67ef5cdd87e5629159660fa9bb5833c8}} 
+\index{Solid@{Solid}!polyhedron\+\_\+list@{polyhedron\+\_\+list}}
+\index{polyhedron\+\_\+list@{polyhedron\+\_\+list}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{polyhedron\+\_\+list}{polyhedron\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSolid}{Solid}}$\ast$$>$ Solid\+::polyhedron\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSolid_abd4b935f7835fd0f8b50b526f6399731}\label{classSolid_abd4b935f7835fd0f8b50b526f6399731}} 
+\index{Solid@{Solid}!polyhedron\+\_\+pool@{polyhedron\+\_\+pool}}
+\index{polyhedron\+\_\+pool@{polyhedron\+\_\+pool}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{polyhedron\+\_\+pool}{polyhedron\_pool}}
+{\footnotesize\ttfamily int Solid\+::polyhedron\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_ace5c8628a4f60d96029d8acea4580ab5}\label{classSolid_ace5c8628a4f60d96029d8acea4580ab5}} 
+\index{Solid@{Solid}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Solid\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_a4cb0429a28598d5501553787524b705d}\label{classSolid_a4cb0429a28598d5501553787524b705d}} 
+\index{Solid@{Solid}!solid\+\_\+type@{solid\+\_\+type}}
+\index{solid\+\_\+type@{solid\+\_\+type}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{solid\+\_\+type}{solid\_type}}
+{\footnotesize\ttfamily unsigned int Solid\+::solid\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSolid_ab511520c2e523c203c1ca7b97f573f65}\label{classSolid_ab511520c2e523c203c1ca7b97f573f65}} 
+\index{Solid@{Solid}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Solid@{Solid}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Solid\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{solid_8h}{solid.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{solid_8cc}{solid.\+cc}}\end{DoxyCompactItemize}

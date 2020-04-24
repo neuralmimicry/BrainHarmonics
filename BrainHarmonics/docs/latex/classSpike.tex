@@ -1,0 +1,266 @@
+\hypertarget{classSpike}{}\section{Spike Class Reference}
+\label{classSpike}\index{Spike@{Spike}}
+
+
+{\ttfamily \#include $<$spike.\+h$>$}
+
+Inheritance diagram for Spike\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSpike}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpike_a1f82ea9e43a3a71b878261753c722dd9}{Spike}} ()
+\item 
+\mbox{\hyperlink{classSpike_a3e6dbba4e235f7adb02ade45c918b266}{Spike}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classSpike_a9368fb7b20887e5f02f3de6176f04c02}{Spike}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSpike_afecf811f48103b529016a73349b50fe4}{Spike}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classSpike_a6c2c62e81cb32ca4eb73bc686974d00d}{$\sim$\+Spike}} ()
+\item 
+bool \mbox{\hyperlink{classSpike_af4475560da7a33e70a0f2036197f000f}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSpike_a6266871881a2581aaee499f6a10e1841}{Get\+Spike\+Height\+Reset}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSpike_a872adf39d66b0f491fb179c9745d7d11}{Set\+Spike\+Height\+Reset}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSpike_acce1cc96e84e7cbf3b68010ab32f045e}{spike\+Reset}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSpike_ac465dbe6500f1eb1f5421f7174f91dd3}{poll\+Spike}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSpike_a683a0ca5e62e68777381fc85f4bf3019}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSpike_af683cd1e0da2d4310da1d0bb723dc42b}{m\+\_\+attack\+Begin}} = 10
+\item 
+double \mbox{\hyperlink{classSpike_ad3a40048454bb37ad94e3c06069c77d5}{m\+\_\+attack\+Length}} = 10
+\item 
+double \mbox{\hyperlink{classSpike_a052650828271cd24a9709a832faf42b3}{m\+\_\+attack\+Peak}} = 80
+\item 
+double \mbox{\hyperlink{classSpike_a11d8945cda206677a7adb5571647a914}{m\+\_\+sustain}} = 75
+\item 
+double \mbox{\hyperlink{classSpike_a48b134667f3825716ded6966f5f37d10}{m\+\_\+sustain\+Length}} = 1
+\item 
+double \mbox{\hyperlink{classSpike_a6b37740d10e157844a2f4ee3a108e3ad}{m\+\_\+refactory\+Begin}} = 10
+\item 
+double \mbox{\hyperlink{classSpike_af1ecee046a275bfa13b663a8bc4722be}{m\+\_\+refactory\+Length}} = 20
+\item 
+double \mbox{\hyperlink{classSpike_a8dd4a3bc280a171e4c7ea23b85b43649}{m\+\_\+refactory\+End}} =8
+\item 
+double \mbox{\hyperlink{classSpike_a6a060f633f9abbeddf66f9d4e96961e7}{m\+\_\+spike\+Height}} = 0
+\item 
+double \mbox{\hyperlink{classSpike_a62bf030de52397708ef944d41e95398c}{m\+\_\+spike\+Height\+Reset}} = 0
+\item 
+double \mbox{\hyperlink{classSpike_a74fa438d3749330d86a3f0a90848a5bc}{m\+\_\+spike\+Loop}} = 0
+\item 
+double \mbox{\hyperlink{classSpike_ab30604e73d58882c56bb51272595e3e5}{object\+\_\+energy}}
+\item 
+int \mbox{\hyperlink{classSpike_a64297f01535f97c833eb740082830daf}{spike\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classSpike_a25760759b2d19a819feab8d27f5f9bfa}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classSpike_ad700142996616c7cbc302baad6398e82}{object\+\_\+initialised}} = false
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSpike_ae9e73c1745176138c2f2474c4dfdf89e}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSpike_adee91141c43f3507017abd53cdcdab08}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classSpike_a572287432bfe6202f85b2dd1822715c1}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpike_a1f82ea9e43a3a71b878261753c722dd9}\label{classSpike_a1f82ea9e43a3a71b878261753c722dd9}} 
+\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Spike\+::\+Spike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_a3e6dbba4e235f7adb02ade45c918b266}\label{classSpike_a3e6dbba4e235f7adb02ade45c918b266}} 
+\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Spike\+::\+Spike (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_a9368fb7b20887e5f02f3de6176f04c02}\label{classSpike_a9368fb7b20887e5f02f3de6176f04c02}} 
+\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Spike\+::\+Spike (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_afecf811f48103b529016a73349b50fe4}\label{classSpike_afecf811f48103b529016a73349b50fe4}} 
+\index{Spike@{Spike}!Spike@{Spike}}
+\index{Spike@{Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Spike()}{Spike()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Spike\+::\+Spike (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_a6c2c62e81cb32ca4eb73bc686974d00d}\label{classSpike_a6c2c62e81cb32ca4eb73bc686974d00d}} 
+\index{Spike@{Spike}!````~Spike@{$\sim$\+Spike}}
+\index{````~Spike@{$\sim$\+Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{$\sim$\+Spike()}{~Spike()}}
+{\footnotesize\ttfamily virtual Spike\+::$\sim$\+Spike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpike_a6266871881a2581aaee499f6a10e1841}\label{classSpike_a6266871881a2581aaee499f6a10e1841}} 
+\index{Spike@{Spike}!Get\+Spike\+Height\+Reset@{Get\+Spike\+Height\+Reset}}
+\index{Get\+Spike\+Height\+Reset@{Get\+Spike\+Height\+Reset}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Get\+Spike\+Height\+Reset()}{GetSpikeHeightReset()}}
+{\footnotesize\ttfamily double Spike\+::\+Get\+Spike\+Height\+Reset (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_ac465dbe6500f1eb1f5421f7174f91dd3}\label{classSpike_ac465dbe6500f1eb1f5421f7174f91dd3}} 
+\index{Spike@{Spike}!poll\+Spike@{poll\+Spike}}
+\index{poll\+Spike@{poll\+Spike}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{poll\+Spike()}{pollSpike()}}
+{\footnotesize\ttfamily double Spike\+::poll\+Spike (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_af4475560da7a33e70a0f2036197f000f}\label{classSpike_af4475560da7a33e70a0f2036197f000f}} 
+\index{Spike@{Spike}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Spike\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSpike_a872adf39d66b0f491fb179c9745d7d11}\label{classSpike_a872adf39d66b0f491fb179c9745d7d11}} 
+\index{Spike@{Spike}!Set\+Spike\+Height\+Reset@{Set\+Spike\+Height\+Reset}}
+\index{Set\+Spike\+Height\+Reset@{Set\+Spike\+Height\+Reset}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Set\+Spike\+Height\+Reset()}{SetSpikeHeightReset()}}
+{\footnotesize\ttfamily void Spike\+::\+Set\+Spike\+Height\+Reset (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_acce1cc96e84e7cbf3b68010ab32f045e}\label{classSpike_acce1cc96e84e7cbf3b68010ab32f045e}} 
+\index{Spike@{Spike}!spike\+Reset@{spike\+Reset}}
+\index{spike\+Reset@{spike\+Reset}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{spike\+Reset()}{spikeReset()}}
+{\footnotesize\ttfamily void Spike\+::spike\+Reset (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpike_a683a0ca5e62e68777381fc85f4bf3019}\label{classSpike_a683a0ca5e62e68777381fc85f4bf3019}} 
+\index{Spike@{Spike}!Update@{Update}}
+\index{Update@{Update}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Spike\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSpike_a572287432bfe6202f85b2dd1822715c1}\label{classSpike_a572287432bfe6202f85b2dd1822715c1}} 
+\index{Spike@{Spike}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Spike\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_af683cd1e0da2d4310da1d0bb723dc42b}\label{classSpike_af683cd1e0da2d4310da1d0bb723dc42b}} 
+\index{Spike@{Spike}!m\+\_\+attack\+Begin@{m\+\_\+attack\+Begin}}
+\index{m\+\_\+attack\+Begin@{m\+\_\+attack\+Begin}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+attack\+Begin}{m\_attackBegin}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+attack\+Begin = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_ad3a40048454bb37ad94e3c06069c77d5}\label{classSpike_ad3a40048454bb37ad94e3c06069c77d5}} 
+\index{Spike@{Spike}!m\+\_\+attack\+Length@{m\+\_\+attack\+Length}}
+\index{m\+\_\+attack\+Length@{m\+\_\+attack\+Length}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+attack\+Length}{m\_attackLength}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+attack\+Length = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a052650828271cd24a9709a832faf42b3}\label{classSpike_a052650828271cd24a9709a832faf42b3}} 
+\index{Spike@{Spike}!m\+\_\+attack\+Peak@{m\+\_\+attack\+Peak}}
+\index{m\+\_\+attack\+Peak@{m\+\_\+attack\+Peak}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+attack\+Peak}{m\_attackPeak}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+attack\+Peak = 80\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a6b37740d10e157844a2f4ee3a108e3ad}\label{classSpike_a6b37740d10e157844a2f4ee3a108e3ad}} 
+\index{Spike@{Spike}!m\+\_\+refactory\+Begin@{m\+\_\+refactory\+Begin}}
+\index{m\+\_\+refactory\+Begin@{m\+\_\+refactory\+Begin}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+refactory\+Begin}{m\_refactoryBegin}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+refactory\+Begin = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a8dd4a3bc280a171e4c7ea23b85b43649}\label{classSpike_a8dd4a3bc280a171e4c7ea23b85b43649}} 
+\index{Spike@{Spike}!m\+\_\+refactory\+End@{m\+\_\+refactory\+End}}
+\index{m\+\_\+refactory\+End@{m\+\_\+refactory\+End}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+refactory\+End}{m\_refactoryEnd}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+refactory\+End =8\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_af1ecee046a275bfa13b663a8bc4722be}\label{classSpike_af1ecee046a275bfa13b663a8bc4722be}} 
+\index{Spike@{Spike}!m\+\_\+refactory\+Length@{m\+\_\+refactory\+Length}}
+\index{m\+\_\+refactory\+Length@{m\+\_\+refactory\+Length}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+refactory\+Length}{m\_refactoryLength}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+refactory\+Length = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a6a060f633f9abbeddf66f9d4e96961e7}\label{classSpike_a6a060f633f9abbeddf66f9d4e96961e7}} 
+\index{Spike@{Spike}!m\+\_\+spike\+Height@{m\+\_\+spike\+Height}}
+\index{m\+\_\+spike\+Height@{m\+\_\+spike\+Height}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+spike\+Height}{m\_spikeHeight}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+spike\+Height = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a62bf030de52397708ef944d41e95398c}\label{classSpike_a62bf030de52397708ef944d41e95398c}} 
+\index{Spike@{Spike}!m\+\_\+spike\+Height\+Reset@{m\+\_\+spike\+Height\+Reset}}
+\index{m\+\_\+spike\+Height\+Reset@{m\+\_\+spike\+Height\+Reset}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+spike\+Height\+Reset}{m\_spikeHeightReset}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+spike\+Height\+Reset = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a74fa438d3749330d86a3f0a90848a5bc}\label{classSpike_a74fa438d3749330d86a3f0a90848a5bc}} 
+\index{Spike@{Spike}!m\+\_\+spike\+Loop@{m\+\_\+spike\+Loop}}
+\index{m\+\_\+spike\+Loop@{m\+\_\+spike\+Loop}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+spike\+Loop}{m\_spikeLoop}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+spike\+Loop = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a11d8945cda206677a7adb5571647a914}\label{classSpike_a11d8945cda206677a7adb5571647a914}} 
+\index{Spike@{Spike}!m\+\_\+sustain@{m\+\_\+sustain}}
+\index{m\+\_\+sustain@{m\+\_\+sustain}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+sustain}{m\_sustain}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+sustain = 75\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a48b134667f3825716ded6966f5f37d10}\label{classSpike_a48b134667f3825716ded6966f5f37d10}} 
+\index{Spike@{Spike}!m\+\_\+sustain\+Length@{m\+\_\+sustain\+Length}}
+\index{m\+\_\+sustain\+Length@{m\+\_\+sustain\+Length}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{m\+\_\+sustain\+Length}{m\_sustainLength}}
+{\footnotesize\ttfamily double Spike\+::m\+\_\+sustain\+Length = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a25760759b2d19a819feab8d27f5f9bfa}\label{classSpike_a25760759b2d19a819feab8d27f5f9bfa}} 
+\index{Spike@{Spike}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Spike\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_ab30604e73d58882c56bb51272595e3e5}\label{classSpike_ab30604e73d58882c56bb51272595e3e5}} 
+\index{Spike@{Spike}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Spike\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_ad700142996616c7cbc302baad6398e82}\label{classSpike_ad700142996616c7cbc302baad6398e82}} 
+\index{Spike@{Spike}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Spike\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_adee91141c43f3507017abd53cdcdab08}\label{classSpike_adee91141c43f3507017abd53cdcdab08}} 
+\index{Spike@{Spike}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Spike\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_a64297f01535f97c833eb740082830daf}\label{classSpike_a64297f01535f97c833eb740082830daf}} 
+\index{Spike@{Spike}!spike\+\_\+type@{spike\+\_\+type}}
+\index{spike\+\_\+type@{spike\+\_\+type}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{spike\+\_\+type}{spike\_type}}
+{\footnotesize\ttfamily int Spike\+::spike\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpike_ae9e73c1745176138c2f2474c4dfdf89e}\label{classSpike_ae9e73c1745176138c2f2474c4dfdf89e}} 
+\index{Spike@{Spike}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Spike@{Spike}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Spike\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{spike_8h}{spike.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{spike_8cc}{spike.\+cc}}\end{DoxyCompactItemize}

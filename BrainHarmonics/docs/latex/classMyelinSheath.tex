@@ -1,0 +1,265 @@
+\hypertarget{classMyelinSheath}{}\section{Myelin\+Sheath Class Reference}
+\label{classMyelinSheath}\index{Myelin\+Sheath@{Myelin\+Sheath}}
+
+
+{\ttfamily \#include $<$myelinsheath.\+h$>$}
+
+Inheritance diagram for Myelin\+Sheath\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMyelinSheath}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyelinSheath_a298d69acb8d64de018f32443ea015287}{Myelin\+Sheath}} ()
+\item 
+\mbox{\hyperlink{classMyelinSheath_a9f9f90c853f341b5cbf4f2c5035a14af}{Myelin\+Sheath}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classMyelinSheath_a34a80a57ebcde58933a07ca9d99780eb}{Myelin\+Sheath}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classMyelinSheath_aac107d8f22ca3c02f2d346f44950e6d0}{Myelin\+Sheath}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classMyelinSheath_acf71a2a450e2df353f28eed6c7a4129a}{$\sim$\+Myelin\+Sheath}} ()
+\item 
+bool \mbox{\hyperlink{classMyelinSheath_af1174b93be36aa43506a4ba9857d92a4}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classMyelinSheath_a10eef8601d129e7e2f28e8ed1ebc975c}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMyelinSheath_ac0c4142b6066e5982c54583e8ac01271}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classMyelinSheath_afb9cd377a71881558f48cf8bb226af77}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classMyelinSheath_ad0f6dbae2819f6642a92b8e85ec8f775}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+int \mbox{\hyperlink{classMyelinSheath_af53c8f36ee963168dec09b74a6be8e4c}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classMyelinSheath_a7877f5feab5bae37903653bf89dc3d5b}{axonbranch\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMyelinSheath_a567eae60904df1812447cc55ecd43e70}{myelinsheath\+\_\+type}}
+\item 
+unsigned int \mbox{\hyperlink{classMyelinSheath_ab8aab14d9707ee30265faa73c601e7d6}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classMyelinSheath_ac30cc301a8bcbdf03c66dd0c73a65e13}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classMyelinSheath_a5099ab3d740d0127f4b6697b51d8f61b}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a780de7cd0440fa006b8e6fff6586c6dc}{object\+\_\+size}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a301d5466675d2bc58e367ca2b97c2680}{object\+\_\+energy\+Full}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a05dcc6e1cc6ddd322ea6d70c04294ac1}{m\+\_\+\+Ions}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a2c9fb3682ac15eb0a1c39acfbce6e284}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a8e8410a18e4464464ea4bc1629a95e68}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classMyelinSheath_a90f9cb23a8be59444dd997da5e184553}{m\+\_\+\+Length}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMyelinSheath_a93336530fb4a6210f7bd3ec297192042}{previous\+\_\+event\+\_\+time}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMyelinSheath_a5ff52b5d66d81809d62851ce6b8b12a8}{time\+\_\+object\+\_\+created}}
+\item 
+int \mbox{\hyperlink{classMyelinSheath_a71de35f1f6326d808253a588c3ca3636}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+bool \mbox{\hyperlink{classMyelinSheath_ac5859735cf21fa7456f7bed143f19f6c}{object\+\_\+initialised}}
+\item 
+bool \mbox{\hyperlink{classMyelinSheath_a60271f6802b2289945aa4f5536b55b34}{object\+\_\+disabled}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMyelinSheath_a298d69acb8d64de018f32443ea015287}\label{classMyelinSheath_a298d69acb8d64de018f32443ea015287}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Myelin\+Sheath()}{MyelinSheath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Myelin\+Sheath\+::\+Myelin\+Sheath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a9f9f90c853f341b5cbf4f2c5035a14af}\label{classMyelinSheath_a9f9f90c853f341b5cbf4f2c5035a14af}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Myelin\+Sheath()}{MyelinSheath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Myelin\+Sheath\+::\+Myelin\+Sheath (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a34a80a57ebcde58933a07ca9d99780eb}\label{classMyelinSheath_a34a80a57ebcde58933a07ca9d99780eb}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Myelin\+Sheath()}{MyelinSheath()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Myelin\+Sheath\+::\+Myelin\+Sheath (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_aac107d8f22ca3c02f2d346f44950e6d0}\label{classMyelinSheath_aac107d8f22ca3c02f2d346f44950e6d0}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Myelin\+Sheath()}{MyelinSheath()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Myelin\+Sheath\+::\+Myelin\+Sheath (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_acf71a2a450e2df353f28eed6c7a4129a}\label{classMyelinSheath_acf71a2a450e2df353f28eed6c7a4129a}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!````~Myelin\+Sheath@{$\sim$\+Myelin\+Sheath}}
+\index{````~Myelin\+Sheath@{$\sim$\+Myelin\+Sheath}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{$\sim$\+Myelin\+Sheath()}{~MyelinSheath()}}
+{\footnotesize\ttfamily virtual Myelin\+Sheath\+::$\sim$\+Myelin\+Sheath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyelinSheath_a10eef8601d129e7e2f28e8ed1ebc975c}\label{classMyelinSheath_a10eef8601d129e7e2f28e8ed1ebc975c}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Myelin\+Sheath\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_ac0c4142b6066e5982c54583e8ac01271}\label{classMyelinSheath_ac0c4142b6066e5982c54583e8ac01271}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_af1174b93be36aa43506a4ba9857d92a4}\label{classMyelinSheath_af1174b93be36aa43506a4ba9857d92a4}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Myelin\+Sheath\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMyelinSheath_afb9cd377a71881558f48cf8bb226af77}\label{classMyelinSheath_afb9cd377a71881558f48cf8bb226af77}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Myelin\+Sheath\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classMyelinSheath_ad0f6dbae2819f6642a92b8e85ec8f775}\label{classMyelinSheath_ad0f6dbae2819f6642a92b8e85ec8f775}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Myelin\+Sheath\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMyelinSheath_af53c8f36ee963168dec09b74a6be8e4c}\label{classMyelinSheath_af53c8f36ee963168dec09b74a6be8e4c}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!Update@{Update}}
+\index{Update@{Update}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Myelin\+Sheath\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMyelinSheath_a7877f5feab5bae37903653bf89dc3d5b}\label{classMyelinSheath_a7877f5feab5bae37903653bf89dc3d5b}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!axonbranch\+\_\+list@{axonbranch\+\_\+list}}
+\index{axonbranch\+\_\+list@{axonbranch\+\_\+list}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{axonbranch\+\_\+list}{axonbranch\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Myelin\+Sheath\+::axonbranch\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a71de35f1f6326d808253a588c3ca3636}\label{classMyelinSheath_a71de35f1f6326d808253a588c3ca3636}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Myelin\+Sheath\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_ab8aab14d9707ee30265faa73c601e7d6}\label{classMyelinSheath_ab8aab14d9707ee30265faa73c601e7d6}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Myelin\+Sheath\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classMyelinSheath_a05dcc6e1cc6ddd322ea6d70c04294ac1}\label{classMyelinSheath_a05dcc6e1cc6ddd322ea6d70c04294ac1}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!m\+\_\+\+Ions@{m\+\_\+\+Ions}}
+\index{m\+\_\+\+Ions@{m\+\_\+\+Ions}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Ions}{m\_Ions}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::m\+\_\+\+Ions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a90f9cb23a8be59444dd997da5e184553}\label{classMyelinSheath_a90f9cb23a8be59444dd997da5e184553}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!m\+\_\+\+Length@{m\+\_\+\+Length}}
+\index{m\+\_\+\+Length@{m\+\_\+\+Length}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Length}{m\_Length}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::m\+\_\+\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a8e8410a18e4464464ea4bc1629a95e68}\label{classMyelinSheath_a8e8410a18e4464464ea4bc1629a95e68}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a2c9fb3682ac15eb0a1c39acfbce6e284}\label{classMyelinSheath_a2c9fb3682ac15eb0a1c39acfbce6e284}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a567eae60904df1812447cc55ecd43e70}\label{classMyelinSheath_a567eae60904df1812447cc55ecd43e70}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!myelinsheath\+\_\+type@{myelinsheath\+\_\+type}}
+\index{myelinsheath\+\_\+type@{myelinsheath\+\_\+type}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{myelinsheath\+\_\+type}{myelinsheath\_type}}
+{\footnotesize\ttfamily int Myelin\+Sheath\+::myelinsheath\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a60271f6802b2289945aa4f5536b55b34}\label{classMyelinSheath_a60271f6802b2289945aa4f5536b55b34}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Myelin\+Sheath\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_ac30cc301a8bcbdf03c66dd0c73a65e13}\label{classMyelinSheath_ac30cc301a8bcbdf03c66dd0c73a65e13}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classMyelinSheath_a5099ab3d740d0127f4b6697b51d8f61b}\label{classMyelinSheath_a5099ab3d740d0127f4b6697b51d8f61b}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a301d5466675d2bc58e367ca2b97c2680}\label{classMyelinSheath_a301d5466675d2bc58e367ca2b97c2680}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+energy\+Full@{object\+\_\+energy\+Full}}
+\index{object\+\_\+energy\+Full@{object\+\_\+energy\+Full}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Full}{object\_energyFull}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::object\+\_\+energy\+Full\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_ac5859735cf21fa7456f7bed143f19f6c}\label{classMyelinSheath_ac5859735cf21fa7456f7bed143f19f6c}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Myelin\+Sheath\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a780de7cd0440fa006b8e6fff6586c6dc}\label{classMyelinSheath_a780de7cd0440fa006b8e6fff6586c6dc}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Myelin\+Sheath\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a93336530fb4a6210f7bd3ec297192042}\label{classMyelinSheath_a93336530fb4a6210f7bd3ec297192042}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Myelin\+Sheath\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyelinSheath_a5ff52b5d66d81809d62851ce6b8b12a8}\label{classMyelinSheath_a5ff52b5d66d81809d62851ce6b8b12a8}} 
+\index{Myelin\+Sheath@{Myelin\+Sheath}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Myelin\+Sheath@{Myelin\+Sheath}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Myelin\+Sheath\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{myelinsheath_8h}{myelinsheath.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{myelinsheath_8cc}{myelinsheath.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{classSchwannCell}{}\section{Schwann\+Cell Class Reference}
+\label{classSchwannCell}\index{Schwann\+Cell@{Schwann\+Cell}}
+
+
+{\ttfamily \#include $<$schwanncell.\+h$>$}
+
+Inheritance diagram for Schwann\+Cell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classSchwannCell}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSchwannCell_aab3414e0d6266c5b791a000c39359ca5}{Schwann\+Cell}} ()
+\item 
+\mbox{\hyperlink{classSchwannCell_a1387a5d8b87e485a507c72a657ab2864}{Schwann\+Cell}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classSchwannCell_ad8e9f6343a3617a44d8a03e4edbc92d6}{Schwann\+Cell}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSchwannCell_abaa1caff5e245ede16a538d1e1bcc1e7}{Schwann\+Cell}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classInterneuronSpace}{Interneuron\+Space}} \&interneuronspace\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classSchwannCell_af98a51e1f9c191bb57282dbbb16dd2a9}{$\sim$\+Schwann\+Cell}} ()
+\item 
+bool \mbox{\hyperlink{classSchwannCell_af60de27e9658b2ca9973931c2175fe74}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classSchwannCell_ab43faeb8f76529162985b2a0c53eb3f5}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSchwannCell_af6dd3963bc46763b34f2ee742a4c9fae}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSchwannCell_a067f87983cb937d5fdb882c267e27921}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classSchwannCell_aadc0a342e29ccacbd8686b9431fb41c6}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+int \mbox{\hyperlink{classSchwannCell_a765280afc21c2546ad6162db46089d40}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classSchwannCell_a6a72f907dbb2b8516f2292e0d82f887d}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSchwannCell_a16689a4b1f42cabe7de168440c815edd}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSchwannCell_a6b045b7f7bf629cd9f75b58c40f5b7c1}{schwanncell\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classSchwannCell_a3fe616a8aadf62602a0aeff0f3d4d491}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classSchwannCell_aa9264dbe039d439956f94391769fda5f}{object\+\_\+initialised}} = false
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSchwannCell_ac5c518c34e3c2afb70bc2780c1b74439}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSchwannCell_acea7e2f40d807a2ca973c4c8de90c879}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classSchwannCell_ad2281f878b3aec7ce7ba31f27f698daa}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSchwannCell_aab3414e0d6266c5b791a000c39359ca5}\label{classSchwannCell_aab3414e0d6266c5b791a000c39359ca5}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Schwann\+Cell()}{SchwannCell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Schwann\+Cell\+::\+Schwann\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a1387a5d8b87e485a507c72a657ab2864}\label{classSchwannCell_a1387a5d8b87e485a507c72a657ab2864}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Schwann\+Cell()}{SchwannCell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Schwann\+Cell\+::\+Schwann\+Cell (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_ad8e9f6343a3617a44d8a03e4edbc92d6}\label{classSchwannCell_ad8e9f6343a3617a44d8a03e4edbc92d6}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Schwann\+Cell()}{SchwannCell()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Schwann\+Cell\+::\+Schwann\+Cell (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_abaa1caff5e245ede16a538d1e1bcc1e7}\label{classSchwannCell_abaa1caff5e245ede16a538d1e1bcc1e7}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\index{Schwann\+Cell@{Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Schwann\+Cell()}{SchwannCell()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Schwann\+Cell\+::\+Schwann\+Cell (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classInterneuronSpace}{Interneuron\+Space}} \&}]{interneuronspace\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_af98a51e1f9c191bb57282dbbb16dd2a9}\label{classSchwannCell_af98a51e1f9c191bb57282dbbb16dd2a9}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!````~Schwann\+Cell@{$\sim$\+Schwann\+Cell}}
+\index{````~Schwann\+Cell@{$\sim$\+Schwann\+Cell}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{$\sim$\+Schwann\+Cell()}{~SchwannCell()}}
+{\footnotesize\ttfamily virtual Schwann\+Cell\+::$\sim$\+Schwann\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSchwannCell_ab43faeb8f76529162985b2a0c53eb3f5}\label{classSchwannCell_ab43faeb8f76529162985b2a0c53eb3f5}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Schwann\+Cell\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_af6dd3963bc46763b34f2ee742a4c9fae}\label{classSchwannCell_af6dd3963bc46763b34f2ee742a4c9fae}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Schwann\+Cell\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_af60de27e9658b2ca9973931c2175fe74}\label{classSchwannCell_af60de27e9658b2ca9973931c2175fe74}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Schwann\+Cell\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a067f87983cb937d5fdb882c267e27921}\label{classSchwannCell_a067f87983cb937d5fdb882c267e27921}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Schwann\+Cell\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Set m\+\_\+\+Counter 
+\begin{DoxyParams}{Parameters}
+{\em val} & New value to Set \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classInterneuronSpace_a60a46f22a2e575d65031635a698a60a9}{Interneuron\+Space}}.
+
+\mbox{\Hypertarget{classSchwannCell_aadc0a342e29ccacbd8686b9431fb41c6}\label{classSchwannCell_aadc0a342e29ccacbd8686b9431fb41c6}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Schwann\+Cell\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a765280afc21c2546ad6162db46089d40}\label{classSchwannCell_a765280afc21c2546ad6162db46089d40}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!Update@{Update}}
+\index{Update@{Update}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Schwann\+Cell\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSchwannCell_ad2281f878b3aec7ce7ba31f27f698daa}\label{classSchwannCell_ad2281f878b3aec7ce7ba31f27f698daa}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Schwann\+Cell\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a6a72f907dbb2b8516f2292e0d82f887d}\label{classSchwannCell_a6a72f907dbb2b8516f2292e0d82f887d}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Schwann\+Cell\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classSchwannCell_a3fe616a8aadf62602a0aeff0f3d4d491}\label{classSchwannCell_a3fe616a8aadf62602a0aeff0f3d4d491}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Schwann\+Cell\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a16689a4b1f42cabe7de168440c815edd}\label{classSchwannCell_a16689a4b1f42cabe7de168440c815edd}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Schwann\+Cell\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classSchwannCell_aa9264dbe039d439956f94391769fda5f}\label{classSchwannCell_aa9264dbe039d439956f94391769fda5f}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Schwann\+Cell\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_acea7e2f40d807a2ca973c4c8de90c879}\label{classSchwannCell_acea7e2f40d807a2ca973c4c8de90c879}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Schwann\+Cell\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_a6b045b7f7bf629cd9f75b58c40f5b7c1}\label{classSchwannCell_a6b045b7f7bf629cd9f75b58c40f5b7c1}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!schwanncell\+\_\+type@{schwanncell\+\_\+type}}
+\index{schwanncell\+\_\+type@{schwanncell\+\_\+type}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{schwanncell\+\_\+type}{schwanncell\_type}}
+{\footnotesize\ttfamily int Schwann\+Cell\+::schwanncell\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchwannCell_ac5c518c34e3c2afb70bc2780c1b74439}\label{classSchwannCell_ac5c518c34e3c2afb70bc2780c1b74439}} 
+\index{Schwann\+Cell@{Schwann\+Cell}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Schwann\+Cell@{Schwann\+Cell}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Schwann\+Cell\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{schwanncell_8h}{schwanncell.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{schwanncell_8cc}{schwanncell.\+cc}}\end{DoxyCompactItemize}

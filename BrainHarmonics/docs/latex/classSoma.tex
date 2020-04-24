@@ -1,0 +1,672 @@
+\hypertarget{classSoma}{}\section{Soma Class Reference}
+\label{classSoma}\index{Soma@{Soma}}
+
+
+{\ttfamily \#include $<$soma.\+h$>$}
+
+Inheritance diagram for Soma\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classSoma}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSoma_1_1ObjectConnection}{Object\+Connection}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSoma_abb9524743f65717d33797b45bff42441}{Soma}} ()
+\item 
+\mbox{\hyperlink{classSoma_a5c0fb24d35ef360cdb830887952f44e5}{Soma}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classSoma_a9c9388e5b6562c39689768856d59ca51}{Soma}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSoma_a451e3918aa5f3ec5670fa08d4d710dd6}{Soma}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} \&neuron\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classSoma_a482570e6b3e366db93396add6ba1922d}{$\sim$\+Soma}} ()
+\item 
+double \mbox{\hyperlink{classSoma_a926552007228732d39525ce127ee5a0d}{Time\+Function}} (double time\+Delay, double time\+Dilation)
+\item 
+unsigned int \mbox{\hyperlink{classSoma_a8bac091792e1ac47655bb549510e8960}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSoma_a91dca73d2f5f97247cae0217a8c1440a}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSoma_a5d698a7ad270ad4ea63a3de5f25fa760}{Get\+Energy\+Inc}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSoma_afbdc1f4e4f54adefea9a16fdca50aab5}{Get\+Energy\+Dec}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSoma_a0be69cd912f978f3ab3d94bebb9fbbaf}{Get\+Energy\+Leak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSoma_a0b45cc454565027bb25daa1396056a7e}{Get\+Energy\+Threshold}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSoma_a23dc309849522d9f857fdcc71ea85877}{Get\+Axon\+Hillock\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSoma_a67cdb8d00b7130b44d4ac75468f4b385}{Set\+Axon\+Hillock\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+int \mbox{\hyperlink{classSoma_a000d9eca00c61af853fd81a2c1569b0e}{Get\+Dendrite\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSoma_a08260f4dfa8f736611fb924cfd03c4ec}{Set\+Dendrite\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classSoma_a9ef49d3fea8c0fbe6513f3910339f736}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classSoma_a0d1c0271fc8eeacd6e8836f751dff331}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSoma_a414afd7eb780e29a432603198a9838ed}{Set\+Energy\+Inc}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSoma_a37081f7a8fc7832f8e89629221ddb8a6}{Set\+Energy\+Dec}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSoma_abca59a00940ca2d9c005a84b6785c12f}{Set\+Energy\+Leak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSoma_ae2876b37909f37e8922ce364eb06491f}{Set\+Energy\+Threshold}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classSoma_a85b4708eb51ab0962a6128b87aff0700}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \mbox{\hyperlink{classSoma_a82f016dc126f7d1053e5eb455d28c44b}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a42289635de3cb326bceeb5358b99c190}{Create\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_ab059a6d4a7dc41664d6d17794d09b260}{Create\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a31463fba2f535e9c7cb05c8622fe3562}{Clone\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a299c95b89f50576244d1e56f531a80be}{Clone\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_af6d6d3e3c94f06682cf05a7a72032a46}{Destroy\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a5220929442601962af1a1fad66a8c919}{Destroy\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a02e0e4656099531b35ab56ad1f7c945a}{Add\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a0fbede6e06b8e24a2cf22878c2f49165}{Add\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a2f75c0f716fa1f74f70697db9dfcd562}{Remove\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a7281585d74015a2549a19df6cb16e3fb}{Remove\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_ac8756f68dbaac8c70cfba435f7068a85}{Get\+Axon\+Hillock}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_af76f86d082c3f60442148ec843b586e7}{Get\+Axon\+Hillocks}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a0fab0c7cf54c2b7d36e90edcd3e21a16}{Create\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a68dc02eff2912ad045900ab1879f020e}{Create\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_ad51c97b76dd7a1f77dc987ae33fd89bc}{Clone\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a3975212d2e3d8675ca14fbc9879e5e54}{Clone\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a086cb5a05e82f6f58ac0bd8403e25e07}{Destroy\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_ac549a7caf885fdc0ac3a6adf393430af}{Destroy\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_acc198b8ec11c3f2e43d3ba9a16ce84db}{Add\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classSoma}{Soma}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_a9874f03b33413b06ca74a3143cc35331}{Add\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_a85c7d4b41486182c9528f5c43beaf7fd}{Remove\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_ad15baed4b2f5dab6f93e5df8fd1f7b23}{Remove\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classSoma}{Soma}} $\ast$ \mbox{\hyperlink{classSoma_ab86537170d550cda0e7da080f7640f84}{Get\+Dendrite}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_afdb0e40855f31f2d9a48f3b13c01b599}{Get\+Dendrites}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSoma_aa6162ca8a98a14cf49ba8310db129d47}{Growth}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSoma_a211587ef21a7932c2f8f0345b1d32f57}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_af93902336cddb974b282aef8b7b4243c}{axonhillock\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ \mbox{\hyperlink{classSoma_ab2d13b0adf2d10c242df0b8e62bcc01a}{dendrite\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structSoma_1_1ObjectConnection}{Object\+Connection}} $>$ \mbox{\hyperlink{classSoma_a84739acd533862b115bd5cbe56da6c98}{object\+\_\+connection\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNeuron}{Neuron}} $\ast$ \mbox{\hyperlink{classSoma_a02223dabe7a45cebcdb79b6eb159d2a9}{parent\+\_\+pointer}}
+\item 
+int \mbox{\hyperlink{classSoma_aba619b25aef756c8361d0444efb31cf3}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classSoma_ada423d58bc25a27df2a68adffb13718b}{soma\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classSoma_ab9887343fb7e5575677e7a526d7e7a69}{m\+\_\+add\+Status}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSoma_ac0e5b4b952e136b8a6c4c69f607ce4da}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSoma_ab6204961b77d4224199eec0b105e41dd}{previous\+\_\+event\+\_\+time}}
+\item 
+bool \mbox{\hyperlink{classSoma_af2b64c3b8490b302fcdd6461034271c0}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classSoma_ab85b5a30283f03bb8ff202704bec08fe}{object\+\_\+initialised}} = false
+\item 
+int \mbox{\hyperlink{classSoma_ab5ada1db9da44a5aac9a7b40364fc1b8}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classSoma_aa5c0b1a0db07052b76d2ccf4e7ef3e83}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classSoma_a66bfc792729e6f5d3827d57f2cf3780c}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classSoma_a803536eba7a6aecd3716cbdd32659fc4}{object\+\_\+size}}
+\item 
+unsigned int \mbox{\hyperlink{classSoma_a11f3e7371be45ce6d7a55eb19e98b006}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSoma_ac476da0d76368316b374839f60387176}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSoma_aa290cae75c0a834fbfe2556ed359a135}{object\+\_\+energy\+Inc}}
+\item 
+double \mbox{\hyperlink{classSoma_a49345275d3d890f9d3c44e09de5b3c8c}{object\+\_\+energy\+Dec}}
+\item 
+double \mbox{\hyperlink{classSoma_a7f8941a98528311a249f13ea73f14e3b}{object\+\_\+energy\+Leak}}
+\item 
+double \mbox{\hyperlink{classSoma_a4a9bab479f79acb47d57b7fb3730fd7d}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classSoma_a170d85686c1a30d045c2966df962ba3e}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classSoma_a1884a12afbda6576f64997ca9c349579}{m\+\_\+\+Time\+Threshold}}
+\item 
+int \mbox{\hyperlink{classSoma_a57dca929c2579efc29ee9d96bdb1b261}{axonhillock\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classSoma_ab9b22d223ef063b3bafb4686893dea33}{dendrite\+\_\+pool}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSoma_aabae1fdc220bf040d4f5c2c057abfcf5}{Dimension}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSoma_abb9524743f65717d33797b45bff42441}\label{classSoma_abb9524743f65717d33797b45bff42441}} 
+\index{Soma@{Soma}!Soma@{Soma}}
+\index{Soma@{Soma}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Soma()}{Soma()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Soma\+::\+Soma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a5c0fb24d35ef360cdb830887952f44e5}\label{classSoma_a5c0fb24d35ef360cdb830887952f44e5}} 
+\index{Soma@{Soma}!Soma@{Soma}}
+\index{Soma@{Soma}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Soma()}{Soma()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Soma\+::\+Soma (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a9c9388e5b6562c39689768856d59ca51}\label{classSoma_a9c9388e5b6562c39689768856d59ca51}} 
+\index{Soma@{Soma}!Soma@{Soma}}
+\index{Soma@{Soma}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Soma()}{Soma()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Soma\+::\+Soma (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a451e3918aa5f3ec5670fa08d4d710dd6}\label{classSoma_a451e3918aa5f3ec5670fa08d4d710dd6}} 
+\index{Soma@{Soma}!Soma@{Soma}}
+\index{Soma@{Soma}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Soma()}{Soma()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Soma\+::\+Soma (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} \&}]{neuron\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a482570e6b3e366db93396add6ba1922d}\label{classSoma_a482570e6b3e366db93396add6ba1922d}} 
+\index{Soma@{Soma}!````~Soma@{$\sim$\+Soma}}
+\index{````~Soma@{$\sim$\+Soma}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{$\sim$\+Soma()}{~Soma()}}
+{\footnotesize\ttfamily virtual Soma\+::$\sim$\+Soma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSoma_a02e0e4656099531b35ab56ad1f7c945a}\label{classSoma_a02e0e4656099531b35ab56ad1f7c945a}} 
+\index{Soma@{Soma}!Add\+Axon\+Hillock@{Add\+Axon\+Hillock}}
+\index{Add\+Axon\+Hillock@{Add\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Add\+Axon\+Hillock()}{AddAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Add\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a0fbede6e06b8e24a2cf22878c2f49165}\label{classSoma_a0fbede6e06b8e24a2cf22878c2f49165}} 
+\index{Soma@{Soma}!Add\+Axon\+Hillocks@{Add\+Axon\+Hillocks}}
+\index{Add\+Axon\+Hillocks@{Add\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Add\+Axon\+Hillocks()}{AddAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Add\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_acc198b8ec11c3f2e43d3ba9a16ce84db}\label{classSoma_acc198b8ec11c3f2e43d3ba9a16ce84db}} 
+\index{Soma@{Soma}!Add\+Dendrite@{Add\+Dendrite}}
+\index{Add\+Dendrite@{Add\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Add\+Dendrite()}{AddDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Add\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a9874f03b33413b06ca74a3143cc35331}\label{classSoma_a9874f03b33413b06ca74a3143cc35331}} 
+\index{Soma@{Soma}!Add\+Dendrites@{Add\+Dendrites}}
+\index{Add\+Dendrites@{Add\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Add\+Dendrites()}{AddDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Add\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a31463fba2f535e9c7cb05c8622fe3562}\label{classSoma_a31463fba2f535e9c7cb05c8622fe3562}} 
+\index{Soma@{Soma}!Clone\+Axon\+Hillock@{Clone\+Axon\+Hillock}}
+\index{Clone\+Axon\+Hillock@{Clone\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Clone\+Axon\+Hillock()}{CloneAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Clone\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a299c95b89f50576244d1e56f531a80be}\label{classSoma_a299c95b89f50576244d1e56f531a80be}} 
+\index{Soma@{Soma}!Clone\+Axon\+Hillocks@{Clone\+Axon\+Hillocks}}
+\index{Clone\+Axon\+Hillocks@{Clone\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Clone\+Axon\+Hillocks()}{CloneAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Clone\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_ad51c97b76dd7a1f77dc987ae33fd89bc}\label{classSoma_ad51c97b76dd7a1f77dc987ae33fd89bc}} 
+\index{Soma@{Soma}!Clone\+Dendrite@{Clone\+Dendrite}}
+\index{Clone\+Dendrite@{Clone\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Clone\+Dendrite()}{CloneDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Clone\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a3975212d2e3d8675ca14fbc9879e5e54}\label{classSoma_a3975212d2e3d8675ca14fbc9879e5e54}} 
+\index{Soma@{Soma}!Clone\+Dendrites@{Clone\+Dendrites}}
+\index{Clone\+Dendrites@{Clone\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Clone\+Dendrites()}{CloneDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Clone\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a42289635de3cb326bceeb5358b99c190}\label{classSoma_a42289635de3cb326bceeb5358b99c190}} 
+\index{Soma@{Soma}!Create\+Axon\+Hillock@{Create\+Axon\+Hillock}}
+\index{Create\+Axon\+Hillock@{Create\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Create\+Axon\+Hillock()}{CreateAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Create\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_ab059a6d4a7dc41664d6d17794d09b260}\label{classSoma_ab059a6d4a7dc41664d6d17794d09b260}} 
+\index{Soma@{Soma}!Create\+Axon\+Hillocks@{Create\+Axon\+Hillocks}}
+\index{Create\+Axon\+Hillocks@{Create\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Create\+Axon\+Hillocks()}{CreateAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Create\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a0fab0c7cf54c2b7d36e90edcd3e21a16}\label{classSoma_a0fab0c7cf54c2b7d36e90edcd3e21a16}} 
+\index{Soma@{Soma}!Create\+Dendrite@{Create\+Dendrite}}
+\index{Create\+Dendrite@{Create\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Create\+Dendrite()}{CreateDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Create\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a68dc02eff2912ad045900ab1879f020e}\label{classSoma_a68dc02eff2912ad045900ab1879f020e}} 
+\index{Soma@{Soma}!Create\+Dendrites@{Create\+Dendrites}}
+\index{Create\+Dendrites@{Create\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Create\+Dendrites()}{CreateDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Create\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_af6d6d3e3c94f06682cf05a7a72032a46}\label{classSoma_af6d6d3e3c94f06682cf05a7a72032a46}} 
+\index{Soma@{Soma}!Destroy\+Axon\+Hillock@{Destroy\+Axon\+Hillock}}
+\index{Destroy\+Axon\+Hillock@{Destroy\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Destroy\+Axon\+Hillock()}{DestroyAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Destroy\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a5220929442601962af1a1fad66a8c919}\label{classSoma_a5220929442601962af1a1fad66a8c919}} 
+\index{Soma@{Soma}!Destroy\+Axon\+Hillocks@{Destroy\+Axon\+Hillocks}}
+\index{Destroy\+Axon\+Hillocks@{Destroy\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Destroy\+Axon\+Hillocks()}{DestroyAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Destroy\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a086cb5a05e82f6f58ac0bd8403e25e07}\label{classSoma_a086cb5a05e82f6f58ac0bd8403e25e07}} 
+\index{Soma@{Soma}!Destroy\+Dendrite@{Destroy\+Dendrite}}
+\index{Destroy\+Dendrite@{Destroy\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrite()}{DestroyDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Destroy\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classSoma}{Soma}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_ac549a7caf885fdc0ac3a6adf393430af}\label{classSoma_ac549a7caf885fdc0ac3a6adf393430af}} 
+\index{Soma@{Soma}!Destroy\+Dendrites@{Destroy\+Dendrites}}
+\index{Destroy\+Dendrites@{Destroy\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrites()}{DestroyDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Destroy\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_ac8756f68dbaac8c70cfba435f7068a85}\label{classSoma_ac8756f68dbaac8c70cfba435f7068a85}} 
+\index{Soma@{Soma}!Get\+Axon\+Hillock@{Get\+Axon\+Hillock}}
+\index{Get\+Axon\+Hillock@{Get\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Axon\+Hillock()}{GetAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Get\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a23dc309849522d9f857fdcc71ea85877}\label{classSoma_a23dc309849522d9f857fdcc71ea85877}} 
+\index{Soma@{Soma}!Get\+Axon\+Hillock\+Pool@{Get\+Axon\+Hillock\+Pool}}
+\index{Get\+Axon\+Hillock\+Pool@{Get\+Axon\+Hillock\+Pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Axon\+Hillock\+Pool()}{GetAxonHillockPool()}}
+{\footnotesize\ttfamily int Soma\+::\+Get\+Axon\+Hillock\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_af76f86d082c3f60442148ec843b586e7}\label{classSoma_af76f86d082c3f60442148ec843b586e7}} 
+\index{Soma@{Soma}!Get\+Axon\+Hillocks@{Get\+Axon\+Hillocks}}
+\index{Get\+Axon\+Hillocks@{Get\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Axon\+Hillocks()}{GetAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Get\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a8bac091792e1ac47655bb549510e8960}\label{classSoma_a8bac091792e1ac47655bb549510e8960}} 
+\index{Soma@{Soma}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Soma\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_ab86537170d550cda0e7da080f7640f84}\label{classSoma_ab86537170d550cda0e7da080f7640f84}} 
+\index{Soma@{Soma}!Get\+Dendrite@{Get\+Dendrite}}
+\index{Get\+Dendrite@{Get\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Dendrite()}{GetDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Get\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a000d9eca00c61af853fd81a2c1569b0e}\label{classSoma_a000d9eca00c61af853fd81a2c1569b0e}} 
+\index{Soma@{Soma}!Get\+Dendrite\+Pool@{Get\+Dendrite\+Pool}}
+\index{Get\+Dendrite\+Pool@{Get\+Dendrite\+Pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Dendrite\+Pool()}{GetDendritePool()}}
+{\footnotesize\ttfamily int Soma\+::\+Get\+Dendrite\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_afdb0e40855f31f2d9a48f3b13c01b599}\label{classSoma_afdb0e40855f31f2d9a48f3b13c01b599}} 
+\index{Soma@{Soma}!Get\+Dendrites@{Get\+Dendrites}}
+\index{Get\+Dendrites@{Get\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Dendrites()}{GetDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Get\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a91dca73d2f5f97247cae0217a8c1440a}\label{classSoma_a91dca73d2f5f97247cae0217a8c1440a}} 
+\index{Soma@{Soma}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Soma\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_afbdc1f4e4f54adefea9a16fdca50aab5}\label{classSoma_afbdc1f4e4f54adefea9a16fdca50aab5}} 
+\index{Soma@{Soma}!Get\+Energy\+Dec@{Get\+Energy\+Dec}}
+\index{Get\+Energy\+Dec@{Get\+Energy\+Dec}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Dec()}{GetEnergyDec()}}
+{\footnotesize\ttfamily double Soma\+::\+Get\+Energy\+Dec (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a5d698a7ad270ad4ea63a3de5f25fa760}\label{classSoma_a5d698a7ad270ad4ea63a3de5f25fa760}} 
+\index{Soma@{Soma}!Get\+Energy\+Inc@{Get\+Energy\+Inc}}
+\index{Get\+Energy\+Inc@{Get\+Energy\+Inc}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Inc()}{GetEnergyInc()}}
+{\footnotesize\ttfamily double Soma\+::\+Get\+Energy\+Inc (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a0be69cd912f978f3ab3d94bebb9fbbaf}\label{classSoma_a0be69cd912f978f3ab3d94bebb9fbbaf}} 
+\index{Soma@{Soma}!Get\+Energy\+Leak@{Get\+Energy\+Leak}}
+\index{Get\+Energy\+Leak@{Get\+Energy\+Leak}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Leak()}{GetEnergyLeak()}}
+{\footnotesize\ttfamily double Soma\+::\+Get\+Energy\+Leak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a0b45cc454565027bb25daa1396056a7e}\label{classSoma_a0b45cc454565027bb25daa1396056a7e}} 
+\index{Soma@{Soma}!Get\+Energy\+Threshold@{Get\+Energy\+Threshold}}
+\index{Get\+Energy\+Threshold@{Get\+Energy\+Threshold}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Threshold()}{GetEnergyThreshold()}}
+{\footnotesize\ttfamily double Soma\+::\+Get\+Energy\+Threshold (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_aa6162ca8a98a14cf49ba8310db129d47}\label{classSoma_aa6162ca8a98a14cf49ba8310db129d47}} 
+\index{Soma@{Soma}!Growth@{Growth}}
+\index{Growth@{Growth}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Soma\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a2f75c0f716fa1f74f70697db9dfcd562}\label{classSoma_a2f75c0f716fa1f74f70697db9dfcd562}} 
+\index{Soma@{Soma}!Remove\+Axon\+Hillock@{Remove\+Axon\+Hillock}}
+\index{Remove\+Axon\+Hillock@{Remove\+Axon\+Hillock}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Remove\+Axon\+Hillock()}{RemoveAxonHillock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Remove\+Axon\+Hillock (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a7281585d74015a2549a19df6cb16e3fb}\label{classSoma_a7281585d74015a2549a19df6cb16e3fb}} 
+\index{Soma@{Soma}!Remove\+Axon\+Hillocks@{Remove\+Axon\+Hillocks}}
+\index{Remove\+Axon\+Hillocks@{Remove\+Axon\+Hillocks}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Remove\+Axon\+Hillocks()}{RemoveAxonHillocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Remove\+Axon\+Hillocks (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a85c7d4b41486182c9528f5c43beaf7fd}\label{classSoma_a85c7d4b41486182c9528f5c43beaf7fd}} 
+\index{Soma@{Soma}!Remove\+Dendrite@{Remove\+Dendrite}}
+\index{Remove\+Dendrite@{Remove\+Dendrite}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Remove\+Dendrite()}{RemoveDendrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSoma}{Soma}} $\ast$ Soma\+::\+Remove\+Dendrite (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_ad15baed4b2f5dab6f93e5df8fd1f7b23}\label{classSoma_ad15baed4b2f5dab6f93e5df8fd1f7b23}} 
+\index{Soma@{Soma}!Remove\+Dendrites@{Remove\+Dendrites}}
+\index{Remove\+Dendrites@{Remove\+Dendrites}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Remove\+Dendrites()}{RemoveDendrites()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSoma}{Soma}} $\ast$ $>$ Soma\+::\+Remove\+Dendrites (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a82f016dc126f7d1053e5eb455d28c44b}\label{classSoma_a82f016dc126f7d1053e5eb455d28c44b}} 
+\index{Soma@{Soma}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Soma\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a67cdb8d00b7130b44d4ac75468f4b385}\label{classSoma_a67cdb8d00b7130b44d4ac75468f4b385}} 
+\index{Soma@{Soma}!Set\+Axon\+Hillock\+Pool@{Set\+Axon\+Hillock\+Pool}}
+\index{Set\+Axon\+Hillock\+Pool@{Set\+Axon\+Hillock\+Pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Axon\+Hillock\+Pool()}{SetAxonHillockPool()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Axon\+Hillock\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a9ef49d3fea8c0fbe6513f3910339f736}\label{classSoma_a9ef49d3fea8c0fbe6513f3910339f736}} 
+\index{Soma@{Soma}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}{Synaptic\+Vesicle}}.
+
+\mbox{\Hypertarget{classSoma_a08260f4dfa8f736611fb924cfd03c4ec}\label{classSoma_a08260f4dfa8f736611fb924cfd03c4ec}} 
+\index{Soma@{Soma}!Set\+Dendrite\+Pool@{Set\+Dendrite\+Pool}}
+\index{Set\+Dendrite\+Pool@{Set\+Dendrite\+Pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Dendrite\+Pool()}{SetDendritePool()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Dendrite\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a0d1c0271fc8eeacd6e8836f751dff331}\label{classSoma_a0d1c0271fc8eeacd6e8836f751dff331}} 
+\index{Soma@{Soma}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a37081f7a8fc7832f8e89629221ddb8a6}\label{classSoma_a37081f7a8fc7832f8e89629221ddb8a6}} 
+\index{Soma@{Soma}!Set\+Energy\+Dec@{Set\+Energy\+Dec}}
+\index{Set\+Energy\+Dec@{Set\+Energy\+Dec}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Dec()}{SetEnergyDec()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Energy\+Dec (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a414afd7eb780e29a432603198a9838ed}\label{classSoma_a414afd7eb780e29a432603198a9838ed}} 
+\index{Soma@{Soma}!Set\+Energy\+Inc@{Set\+Energy\+Inc}}
+\index{Set\+Energy\+Inc@{Set\+Energy\+Inc}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Inc()}{SetEnergyInc()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Energy\+Inc (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_abca59a00940ca2d9c005a84b6785c12f}\label{classSoma_abca59a00940ca2d9c005a84b6785c12f}} 
+\index{Soma@{Soma}!Set\+Energy\+Leak@{Set\+Energy\+Leak}}
+\index{Set\+Energy\+Leak@{Set\+Energy\+Leak}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Leak()}{SetEnergyLeak()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Energy\+Leak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_ae2876b37909f37e8922ce364eb06491f}\label{classSoma_ae2876b37909f37e8922ce364eb06491f}} 
+\index{Soma@{Soma}!Set\+Energy\+Threshold@{Set\+Energy\+Threshold}}
+\index{Set\+Energy\+Threshold@{Set\+Energy\+Threshold}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Threshold()}{SetEnergyThreshold()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Energy\+Threshold (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a85b4708eb51ab0962a6128b87aff0700}\label{classSoma_a85b4708eb51ab0962a6128b87aff0700}} 
+\index{Soma@{Soma}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Soma\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSoma_a926552007228732d39525ce127ee5a0d}\label{classSoma_a926552007228732d39525ce127ee5a0d}} 
+\index{Soma@{Soma}!Time\+Function@{Time\+Function}}
+\index{Time\+Function@{Time\+Function}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Time\+Function()}{TimeFunction()}}
+{\footnotesize\ttfamily double Soma\+::\+Time\+Function (\begin{DoxyParamCaption}\item[{double}]{time\+Delay,  }\item[{double}]{time\+Dilation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSoma_a211587ef21a7932c2f8f0345b1d32f57}\label{classSoma_a211587ef21a7932c2f8f0345b1d32f57}} 
+\index{Soma@{Soma}!Update@{Update}}
+\index{Update@{Update}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Soma\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classSoma_aabae1fdc220bf040d4f5c2c057abfcf5}\label{classSoma_aabae1fdc220bf040d4f5c2c057abfcf5}} 
+\index{Soma@{Soma}!Dimension@{Dimension}}
+\index{Dimension@{Dimension}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{Dimension}{Dimension}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classDimension}{Dimension}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSoma_af93902336cddb974b282aef8b7b4243c}\label{classSoma_af93902336cddb974b282aef8b7b4243c}} 
+\index{Soma@{Soma}!axonhillock\+\_\+list@{axonhillock\+\_\+list}}
+\index{axonhillock\+\_\+list@{axonhillock\+\_\+list}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{axonhillock\+\_\+list}{axonhillock\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSoma}{Soma}}$\ast$$>$ Soma\+::axonhillock\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSoma_a57dca929c2579efc29ee9d96bdb1b261}\label{classSoma_a57dca929c2579efc29ee9d96bdb1b261}} 
+\index{Soma@{Soma}!axonhillock\+\_\+pool@{axonhillock\+\_\+pool}}
+\index{axonhillock\+\_\+pool@{axonhillock\+\_\+pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{axonhillock\+\_\+pool}{axonhillock\_pool}}
+{\footnotesize\ttfamily int Soma\+::axonhillock\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ab2d13b0adf2d10c242df0b8e62bcc01a}\label{classSoma_ab2d13b0adf2d10c242df0b8e62bcc01a}} 
+\index{Soma@{Soma}!dendrite\+\_\+list@{dendrite\+\_\+list}}
+\index{dendrite\+\_\+list@{dendrite\+\_\+list}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{dendrite\+\_\+list}{dendrite\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSoma}{Soma}}$\ast$$>$ Soma\+::dendrite\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSoma_ab9b22d223ef063b3bafb4686893dea33}\label{classSoma_ab9b22d223ef063b3bafb4686893dea33}} 
+\index{Soma@{Soma}!dendrite\+\_\+pool@{dendrite\+\_\+pool}}
+\index{dendrite\+\_\+pool@{dendrite\+\_\+pool}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{dendrite\+\_\+pool}{dendrite\_pool}}
+{\footnotesize\ttfamily int Soma\+::dendrite\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ab5ada1db9da44a5aac9a7b40364fc1b8}\label{classSoma_ab5ada1db9da44a5aac9a7b40364fc1b8}} 
+\index{Soma@{Soma}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Soma\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ab9887343fb7e5575677e7a526d7e7a69}\label{classSoma_ab9887343fb7e5575677e7a526d7e7a69}} 
+\index{Soma@{Soma}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Soma\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a11f3e7371be45ce6d7a55eb19e98b006}\label{classSoma_a11f3e7371be45ce6d7a55eb19e98b006}} 
+\index{Soma@{Soma}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Soma\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classSoma_aba619b25aef756c8361d0444efb31cf3}\label{classSoma_aba619b25aef756c8361d0444efb31cf3}} 
+\index{Soma@{Soma}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Soma\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a66bfc792729e6f5d3827d57f2cf3780c}\label{classSoma_a66bfc792729e6f5d3827d57f2cf3780c}} 
+\index{Soma@{Soma}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Soma\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a170d85686c1a30d045c2966df962ba3e}\label{classSoma_a170d85686c1a30d045c2966df962ba3e}} 
+\index{Soma@{Soma}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Soma\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a1884a12afbda6576f64997ca9c349579}\label{classSoma_a1884a12afbda6576f64997ca9c349579}} 
+\index{Soma@{Soma}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Soma\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_aa5c0b1a0db07052b76d2ccf4e7ef3e83}\label{classSoma_aa5c0b1a0db07052b76d2ccf4e7ef3e83}} 
+\index{Soma@{Soma}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Soma\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a84739acd533862b115bd5cbe56da6c98}\label{classSoma_a84739acd533862b115bd5cbe56da6c98}} 
+\index{Soma@{Soma}!object\+\_\+connection\+\_\+list@{object\+\_\+connection\+\_\+list}}
+\index{object\+\_\+connection\+\_\+list@{object\+\_\+connection\+\_\+list}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+connection\+\_\+list}{object\_connection\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structSoma_1_1ObjectConnection}{Object\+Connection}}$>$ Soma\+::object\+\_\+connection\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSoma_af2b64c3b8490b302fcdd6461034271c0}\label{classSoma_af2b64c3b8490b302fcdd6461034271c0}} 
+\index{Soma@{Soma}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Soma\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ac476da0d76368316b374839f60387176}\label{classSoma_ac476da0d76368316b374839f60387176}} 
+\index{Soma@{Soma}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classSoma_a4a9bab479f79acb47d57b7fb3730fd7d}\label{classSoma_a4a9bab479f79acb47d57b7fb3730fd7d}} 
+\index{Soma@{Soma}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a49345275d3d890f9d3c44e09de5b3c8c}\label{classSoma_a49345275d3d890f9d3c44e09de5b3c8c}} 
+\index{Soma@{Soma}!object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}}
+\index{object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Dec}{object\_energyDec}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+energy\+Dec\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_aa290cae75c0a834fbfe2556ed359a135}\label{classSoma_aa290cae75c0a834fbfe2556ed359a135}} 
+\index{Soma@{Soma}!object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}}
+\index{object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Inc}{object\_energyInc}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+energy\+Inc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a7f8941a98528311a249f13ea73f14e3b}\label{classSoma_a7f8941a98528311a249f13ea73f14e3b}} 
+\index{Soma@{Soma}!object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}}
+\index{object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Leak}{object\_energyLeak}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+energy\+Leak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ab85b5a30283f03bb8ff202704bec08fe}\label{classSoma_ab85b5a30283f03bb8ff202704bec08fe}} 
+\index{Soma@{Soma}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Soma\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a803536eba7a6aecd3716cbdd32659fc4}\label{classSoma_a803536eba7a6aecd3716cbdd32659fc4}} 
+\index{Soma@{Soma}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Soma\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_a02223dabe7a45cebcdb79b6eb159d2a9}\label{classSoma_a02223dabe7a45cebcdb79b6eb159d2a9}} 
+\index{Soma@{Soma}!parent\+\_\+pointer@{parent\+\_\+pointer}}
+\index{parent\+\_\+pointer@{parent\+\_\+pointer}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{parent\+\_\+pointer}{parent\_pointer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNeuron}{Neuron}}$\ast$ Soma\+::parent\+\_\+pointer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ab6204961b77d4224199eec0b105e41dd}\label{classSoma_ab6204961b77d4224199eec0b105e41dd}} 
+\index{Soma@{Soma}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Soma\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ada423d58bc25a27df2a68adffb13718b}\label{classSoma_ada423d58bc25a27df2a68adffb13718b}} 
+\index{Soma@{Soma}!soma\+\_\+type@{soma\+\_\+type}}
+\index{soma\+\_\+type@{soma\+\_\+type}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{soma\+\_\+type}{soma\_type}}
+{\footnotesize\ttfamily int Soma\+::soma\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSoma_ac0e5b4b952e136b8a6c4c69f607ce4da}\label{classSoma_ac0e5b4b952e136b8a6c4c69f607ce4da}} 
+\index{Soma@{Soma}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Soma@{Soma}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Soma\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{soma_8h}{soma.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{soma_8cc}{soma.\+cc}}\end{DoxyCompactItemize}

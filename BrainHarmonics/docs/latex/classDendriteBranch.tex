@@ -1,0 +1,481 @@
+\hypertarget{classDendriteBranch}{}\section{Dendrite\+Branch Class Reference}
+\label{classDendriteBranch}\index{Dendrite\+Branch@{Dendrite\+Branch}}
+
+
+{\ttfamily \#include $<$dendritebranch.\+h$>$}
+
+Inheritance diagram for Dendrite\+Branch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classDendriteBranch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDendriteBranch_af391f5fd2379539523b3d2523c59ea8b}{Dendrite\+Branch}} ()
+\item 
+\mbox{\hyperlink{classDendriteBranch_a391ba1440a6c29a0752b03eb60357370}{Dendrite\+Branch}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classDendriteBranch_a390bfee680074f5f3ddcd9aee54db679}{Dendrite\+Branch}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classDendriteBranch_a9b7e932b0614dad370edd76f31900c40}{Dendrite\+Branch}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classDendrite}{Dendrite}} \&dendrite\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classDendriteBranch_a38707cb6d1f9f07c6e8aa34a8a415051}{$\sim$\+Dendrite\+Branch}} ()
+\item 
+unsigned int \mbox{\hyperlink{classDendriteBranch_a4d4a4b1591dd612eef903d95605d50fd}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classDendriteBranch_afab2dd907fba115c3483cd9a217ccec0}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classDendriteBranch_a2ce03fbad4a70564eeaafb62debd4d74}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classDendriteBranch_a13dd0373022d653448c9067d075586a8}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classDendriteBranch_a70b5e63fc44166ccd7f0c7177660c250}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_a4f751442a537f2e3d7d0dc66a09bd84b}{Create\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a86d00d6ad66c8c83683e9e22d73a71b6}{Create\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_a45d2fea350165fe0c81f1f429aa96061}{Clone\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a3cf1e07fe5e0ea827965c0dc76881c9f}{Clone\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_a60225ab106eae6bce25eb8159166d5e9}{Destroy\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a454dd0483439353076df63fc124a24f7}{Destroy\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_a060f0c55b2e6cb65b68e160df0bbf563}{Add\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a2ddeff41db805e414c994ac169cbcf4b}{Add\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_afaca221cb4bba98e56f11b0f9e6370b5}{Remove\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_acd54003e5acb9abda7d7a42f248c14b0}{Remove\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ \mbox{\hyperlink{classDendriteBranch_a11f25ffce77011afad909acb593d2e42}{Get\+Dendrite\+Cleft}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a2be44a81b4b5213947e9545400a0453c}{Get\+Dendrite\+Clefts}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a4b950ef8a0856a11240d353bcfd1fba4}{Growth}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a8540dfafeb5bd45f782ab31b8231b10f}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ \mbox{\hyperlink{classDendriteBranch_a8015119958f7581d826dcac2c21919c9}{dendritecleft\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a9d7e5a41efbacc5bb7445a978191c2ca}{m\+\_\+\+Dendrite\+Branch\+Type}}
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a44ed56dc44bea543b97a6924024edaa8}{dendritebranch\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a14ca1ae99be78c8dbfea00ec0688ec3d}{m\+\_\+add\+Status}}
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a27d706db3dbe49fea1a33e835036be43}{dendritecleft\+\_\+pool}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classDendriteBranch_a253b94811cb4a0697446dc3d572f91de}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classDendriteBranch_a16bdc976d615cf2b1b5e3238241e19b6}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classDendriteBranch_a534b56c182fe5f07f012b452c22e59e9}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a06c7e10791bfbafa1f32ff5cc52e689e}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_ad7296b522c39f3dae64caf75733e7744}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a87bfabc1ab5a0e066085130808b11c30}{m\+\_\+\+Length}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a19c3bd5c518cf8b4fdae49586ad0df4b}{object\+\_\+size}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a0f736fff956d287d66d060865ef0a254}{m\+\_\+dendrite\+Length}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+dendrite\+Length\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDendriteBranch_a48ffaeeca1f0ffa9245d07f34d768f30}{m\+\_\+dendrite\+Diameter\+Start}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+dendrite\+Diameter\+Start\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDendriteBranch_ab87dfc434e138ad012bf23d8b8167650}{m\+\_\+dendrite\+Diameter\+End}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+dendrite\+Diameter\+End\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDendriteBranch_afc2202be6065e3bef5a7024d54f7d4c5}{m\+\_\+membrane\+Resistance}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_ac6fb4da55240b7502089d2a29507e05f}{m\+\_\+membrane\+Capacitance}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_aefc12ab16c6198a2bd261c47dd148787}{m\+\_\+internal\+Resistance}}
+\item 
+unsigned int \mbox{\hyperlink{classDendriteBranch_a3c2f2b113bc19eedfb1eead9a477616f}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDendriteBranch_a319e6e991af134f8f37bae3ed6da14d2}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDendriteBranch_a697663e490708e557511316e798cb7e8}{object\+\_\+energy\+Inc}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a5d77cb55a6f5d986d671970cf284bd7f}{object\+\_\+energy\+Dec}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_ac3fb26edaf6f895856c1ec6db8e50781}{object\+\_\+energy\+Leak}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a261cb8f1bc667b0f412b15f2308f63eb}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_a26ac4fd971258f19d15ccdc7d7f6b8c8}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classDendriteBranch_aab9a65d713c085277489bfdc6255ed36}{m\+\_\+\+Time\+Threshold}}
+\item 
+bool \mbox{\hyperlink{classDendriteBranch_adb05fc412eaeef001fe62550e543b9b1}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classDendriteBranch_a061380e64b7632973504c4b5ecb53d65}{object\+\_\+initialised}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDendriteBranch_af391f5fd2379539523b3d2523c59ea8b}\label{classDendriteBranch_af391f5fd2379539523b3d2523c59ea8b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a391ba1440a6c29a0752b03eb60357370}\label{classDendriteBranch_a391ba1440a6c29a0752b03eb60357370}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a390bfee680074f5f3ddcd9aee54db679}\label{classDendriteBranch_a390bfee680074f5f3ddcd9aee54db679}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a9b7e932b0614dad370edd76f31900c40}\label{classDendriteBranch_a9b7e932b0614dad370edd76f31900c40}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Dendrite\+Branch()}{DendriteBranch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Dendrite\+Branch\+::\+Dendrite\+Branch (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classDendrite}{Dendrite}} \&}]{dendrite\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a38707cb6d1f9f07c6e8aa34a8a415051}\label{classDendriteBranch_a38707cb6d1f9f07c6e8aa34a8a415051}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!````~Dendrite\+Branch@{$\sim$\+Dendrite\+Branch}}
+\index{````~Dendrite\+Branch@{$\sim$\+Dendrite\+Branch}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{$\sim$\+Dendrite\+Branch()}{~DendriteBranch()}}
+{\footnotesize\ttfamily virtual Dendrite\+Branch\+::$\sim$\+Dendrite\+Branch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDendriteBranch_a060f0c55b2e6cb65b68e160df0bbf563}\label{classDendriteBranch_a060f0c55b2e6cb65b68e160df0bbf563}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Add\+Dendrite\+Cleft@{Add\+Dendrite\+Cleft}}
+\index{Add\+Dendrite\+Cleft@{Add\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Dendrite\+Cleft()}{AddDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Add\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a2ddeff41db805e414c994ac169cbcf4b}\label{classDendriteBranch_a2ddeff41db805e414c994ac169cbcf4b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Add\+Dendrite\+Clefts@{Add\+Dendrite\+Clefts}}
+\index{Add\+Dendrite\+Clefts@{Add\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Add\+Dendrite\+Clefts()}{AddDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Add\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a45d2fea350165fe0c81f1f429aa96061}\label{classDendriteBranch_a45d2fea350165fe0c81f1f429aa96061}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Clone\+Dendrite\+Cleft@{Clone\+Dendrite\+Cleft}}
+\index{Clone\+Dendrite\+Cleft@{Clone\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Dendrite\+Cleft()}{CloneDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Clone\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a3cf1e07fe5e0ea827965c0dc76881c9f}\label{classDendriteBranch_a3cf1e07fe5e0ea827965c0dc76881c9f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Clone\+Dendrite\+Clefts@{Clone\+Dendrite\+Clefts}}
+\index{Clone\+Dendrite\+Clefts@{Clone\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Clone\+Dendrite\+Clefts()}{CloneDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Clone\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a4f751442a537f2e3d7d0dc66a09bd84b}\label{classDendriteBranch_a4f751442a537f2e3d7d0dc66a09bd84b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Create\+Dendrite\+Cleft@{Create\+Dendrite\+Cleft}}
+\index{Create\+Dendrite\+Cleft@{Create\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Dendrite\+Cleft()}{CreateDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Create\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a86d00d6ad66c8c83683e9e22d73a71b6}\label{classDendriteBranch_a86d00d6ad66c8c83683e9e22d73a71b6}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Create\+Dendrite\+Clefts@{Create\+Dendrite\+Clefts}}
+\index{Create\+Dendrite\+Clefts@{Create\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Create\+Dendrite\+Clefts()}{CreateDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Create\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a60225ab106eae6bce25eb8159166d5e9}\label{classDendriteBranch_a60225ab106eae6bce25eb8159166d5e9}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Destroy\+Dendrite\+Cleft@{Destroy\+Dendrite\+Cleft}}
+\index{Destroy\+Dendrite\+Cleft@{Destroy\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrite\+Cleft()}{DestroyDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Destroy\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a454dd0483439353076df63fc124a24f7}\label{classDendriteBranch_a454dd0483439353076df63fc124a24f7}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Destroy\+Dendrite\+Clefts@{Destroy\+Dendrite\+Clefts}}
+\index{Destroy\+Dendrite\+Clefts@{Destroy\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Destroy\+Dendrite\+Clefts()}{DestroyDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Destroy\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a4d4a4b1591dd612eef903d95605d50fd}\label{classDendriteBranch_a4d4a4b1591dd612eef903d95605d50fd}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Dendrite\+Branch\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a11f25ffce77011afad909acb593d2e42}\label{classDendriteBranch_a11f25ffce77011afad909acb593d2e42}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Dendrite\+Cleft@{Get\+Dendrite\+Cleft}}
+\index{Get\+Dendrite\+Cleft@{Get\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Dendrite\+Cleft()}{GetDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Get\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a2be44a81b4b5213947e9545400a0453c}\label{classDendriteBranch_a2be44a81b4b5213947e9545400a0453c}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Dendrite\+Clefts@{Get\+Dendrite\+Clefts}}
+\index{Get\+Dendrite\+Clefts@{Get\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Dendrite\+Clefts()}{GetDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Get\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_afab2dd907fba115c3483cd9a217ccec0}\label{classDendriteBranch_afab2dd907fba115c3483cd9a217ccec0}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a4b950ef8a0856a11240d353bcfd1fba4}\label{classDendriteBranch_a4b950ef8a0856a11240d353bcfd1fba4}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Growth@{Growth}}
+\index{Growth@{Growth}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_afaca221cb4bba98e56f11b0f9e6370b5}\label{classDendriteBranch_afaca221cb4bba98e56f11b0f9e6370b5}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Remove\+Dendrite\+Cleft@{Remove\+Dendrite\+Cleft}}
+\index{Remove\+Dendrite\+Cleft@{Remove\+Dendrite\+Cleft}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Dendrite\+Cleft()}{RemoveDendriteCleft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ Dendrite\+Branch\+::\+Remove\+Dendrite\+Cleft (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_acd54003e5acb9abda7d7a42f248c14b0}\label{classDendriteBranch_acd54003e5acb9abda7d7a42f248c14b0}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Remove\+Dendrite\+Clefts@{Remove\+Dendrite\+Clefts}}
+\index{Remove\+Dendrite\+Clefts@{Remove\+Dendrite\+Clefts}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Remove\+Dendrite\+Clefts()}{RemoveDendriteClefts()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}} $\ast$ $>$ Dendrite\+Branch\+::\+Remove\+Dendrite\+Clefts (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a70b5e63fc44166ccd7f0c7177660c250}\label{classDendriteBranch_a70b5e63fc44166ccd7f0c7177660c250}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Dendrite\+Branch\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDendriteBranch_a2ce03fbad4a70564eeaafb62debd4d74}\label{classDendriteBranch_a2ce03fbad4a70564eeaafb62debd4d74}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Dendrite\+Branch\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classDendrite_a7529495515de74fff2b9a92b12531057}{Dendrite}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classNeuroreceptor_a0660a316ef44cf723509f720acd16f24}{Neuroreceptor}}, and \mbox{\hyperlink{classDendriteCleft_a428b8e5117f381a382e0071b936d42a1}{Dendrite\+Cleft}}.
+
+\mbox{\Hypertarget{classDendriteBranch_a13dd0373022d653448c9067d075586a8}\label{classDendriteBranch_a13dd0373022d653448c9067d075586a8}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Dendrite\+Branch\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a8540dfafeb5bd45f782ab31b8231b10f}\label{classDendriteBranch_a8540dfafeb5bd45f782ab31b8231b10f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!Update@{Update}}
+\index{Update@{Update}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDendriteBranch_a44ed56dc44bea543b97a6924024edaa8}\label{classDendriteBranch_a44ed56dc44bea543b97a6924024edaa8}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!dendritebranch\+\_\+type@{dendritebranch\+\_\+type}}
+\index{dendritebranch\+\_\+type@{dendritebranch\+\_\+type}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{dendritebranch\+\_\+type}{dendritebranch\_type}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::dendritebranch\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a8015119958f7581d826dcac2c21919c9}\label{classDendriteBranch_a8015119958f7581d826dcac2c21919c9}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!dendritecleft\+\_\+list@{dendritecleft\+\_\+list}}
+\index{dendritecleft\+\_\+list@{dendritecleft\+\_\+list}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{dendritecleft\+\_\+list}{dendritecleft\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classDendriteBranch}{Dendrite\+Branch}}$\ast$$>$ Dendrite\+Branch\+::dendritecleft\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a27d706db3dbe49fea1a33e835036be43}\label{classDendriteBranch_a27d706db3dbe49fea1a33e835036be43}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!dendritecleft\+\_\+pool@{dendritecleft\+\_\+pool}}
+\index{dendritecleft\+\_\+pool@{dendritecleft\+\_\+pool}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{dendritecleft\+\_\+pool}{dendritecleft\_pool}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::dendritecleft\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a534b56c182fe5f07f012b452c22e59e9}\label{classDendriteBranch_a534b56c182fe5f07f012b452c22e59e9}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a14ca1ae99be78c8dbfea00ec0688ec3d}\label{classDendriteBranch_a14ca1ae99be78c8dbfea00ec0688ec3d}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a3c2f2b113bc19eedfb1eead9a477616f}\label{classDendriteBranch_a3c2f2b113bc19eedfb1eead9a477616f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Dendrite\+Branch\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classDendriteBranch_a9d7e5a41efbacc5bb7445a978191c2ca}\label{classDendriteBranch_a9d7e5a41efbacc5bb7445a978191c2ca}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Dendrite\+Branch\+Type@{m\+\_\+\+Dendrite\+Branch\+Type}}
+\index{m\+\_\+\+Dendrite\+Branch\+Type@{m\+\_\+\+Dendrite\+Branch\+Type}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Dendrite\+Branch\+Type}{m\_DendriteBranchType}}
+{\footnotesize\ttfamily int Dendrite\+Branch\+::m\+\_\+\+Dendrite\+Branch\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_ab87dfc434e138ad012bf23d8b8167650}\label{classDendriteBranch_ab87dfc434e138ad012bf23d8b8167650}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+dendrite\+Diameter\+End@{m\+\_\+dendrite\+Diameter\+End}}
+\index{m\+\_\+dendrite\+Diameter\+End@{m\+\_\+dendrite\+Diameter\+End}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+dendrite\+Diameter\+End}{m\_dendriteDiameterEnd}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+dendrite\+Diameter\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+dendrite\+Diameter\+End\char`\"{}. 
+
+\mbox{\Hypertarget{classDendriteBranch_a48ffaeeca1f0ffa9245d07f34d768f30}\label{classDendriteBranch_a48ffaeeca1f0ffa9245d07f34d768f30}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+dendrite\+Diameter\+Start@{m\+\_\+dendrite\+Diameter\+Start}}
+\index{m\+\_\+dendrite\+Diameter\+Start@{m\+\_\+dendrite\+Diameter\+Start}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+dendrite\+Diameter\+Start}{m\_dendriteDiameterStart}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+dendrite\+Diameter\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+dendrite\+Diameter\+Start\char`\"{}. 
+
+\mbox{\Hypertarget{classDendriteBranch_a0f736fff956d287d66d060865ef0a254}\label{classDendriteBranch_a0f736fff956d287d66d060865ef0a254}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+dendrite\+Length@{m\+\_\+dendrite\+Length}}
+\index{m\+\_\+dendrite\+Length@{m\+\_\+dendrite\+Length}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+dendrite\+Length}{m\_dendriteLength}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+dendrite\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+dendrite\+Length\char`\"{}. 
+
+\mbox{\Hypertarget{classDendriteBranch_aefc12ab16c6198a2bd261c47dd148787}\label{classDendriteBranch_aefc12ab16c6198a2bd261c47dd148787}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+internal\+Resistance@{m\+\_\+internal\+Resistance}}
+\index{m\+\_\+internal\+Resistance@{m\+\_\+internal\+Resistance}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+internal\+Resistance}{m\_internalResistance}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+internal\+Resistance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a87bfabc1ab5a0e066085130808b11c30}\label{classDendriteBranch_a87bfabc1ab5a0e066085130808b11c30}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Length@{m\+\_\+\+Length}}
+\index{m\+\_\+\+Length@{m\+\_\+\+Length}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Length}{m\_Length}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_ac6fb4da55240b7502089d2a29507e05f}\label{classDendriteBranch_ac6fb4da55240b7502089d2a29507e05f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+membrane\+Capacitance@{m\+\_\+membrane\+Capacitance}}
+\index{m\+\_\+membrane\+Capacitance@{m\+\_\+membrane\+Capacitance}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+membrane\+Capacitance}{m\_membraneCapacitance}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+membrane\+Capacitance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_afc2202be6065e3bef5a7024d54f7d4c5}\label{classDendriteBranch_afc2202be6065e3bef5a7024d54f7d4c5}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+membrane\+Resistance@{m\+\_\+membrane\+Resistance}}
+\index{m\+\_\+membrane\+Resistance@{m\+\_\+membrane\+Resistance}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+membrane\+Resistance}{m\_membraneResistance}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+membrane\+Resistance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_ad7296b522c39f3dae64caf75733e7744}\label{classDendriteBranch_ad7296b522c39f3dae64caf75733e7744}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a26ac4fd971258f19d15ccdc7d7f6b8c8}\label{classDendriteBranch_a26ac4fd971258f19d15ccdc7d7f6b8c8}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_aab9a65d713c085277489bfdc6255ed36}\label{classDendriteBranch_aab9a65d713c085277489bfdc6255ed36}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a06c7e10791bfbafa1f32ff5cc52e689e}\label{classDendriteBranch_a06c7e10791bfbafa1f32ff5cc52e689e}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_adb05fc412eaeef001fe62550e543b9b1}\label{classDendriteBranch_adb05fc412eaeef001fe62550e543b9b1}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Dendrite\+Branch\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a319e6e991af134f8f37bae3ed6da14d2}\label{classDendriteBranch_a319e6e991af134f8f37bae3ed6da14d2}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classDendriteBranch_a261cb8f1bc667b0f412b15f2308f63eb}\label{classDendriteBranch_a261cb8f1bc667b0f412b15f2308f63eb}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a5d77cb55a6f5d986d671970cf284bd7f}\label{classDendriteBranch_a5d77cb55a6f5d986d671970cf284bd7f}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}}
+\index{object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Dec}{object\_energyDec}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+energy\+Dec\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a697663e490708e557511316e798cb7e8}\label{classDendriteBranch_a697663e490708e557511316e798cb7e8}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}}
+\index{object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Inc}{object\_energyInc}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+energy\+Inc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_ac3fb26edaf6f895856c1ec6db8e50781}\label{classDendriteBranch_ac3fb26edaf6f895856c1ec6db8e50781}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}}
+\index{object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Leak}{object\_energyLeak}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+energy\+Leak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a061380e64b7632973504c4b5ecb53d65}\label{classDendriteBranch_a061380e64b7632973504c4b5ecb53d65}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Dendrite\+Branch\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a19c3bd5c518cf8b4fdae49586ad0df4b}\label{classDendriteBranch_a19c3bd5c518cf8b4fdae49586ad0df4b}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Dendrite\+Branch\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a16bdc976d615cf2b1b5e3238241e19b6}\label{classDendriteBranch_a16bdc976d615cf2b1b5e3238241e19b6}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Dendrite\+Branch\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classDendriteBranch_a253b94811cb4a0697446dc3d572f91de}\label{classDendriteBranch_a253b94811cb4a0697446dc3d572f91de}} 
+\index{Dendrite\+Branch@{Dendrite\+Branch}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Dendrite\+Branch@{Dendrite\+Branch}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Dendrite\+Branch\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{dendritebranch_8h}{dendritebranch.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{dendritebranch_8cc}{dendritebranch.\+cc}}\end{DoxyCompactItemize}

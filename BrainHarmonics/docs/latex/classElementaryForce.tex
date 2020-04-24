@@ -1,0 +1,580 @@
+\hypertarget{classElementaryForce}{}\section{Elementary\+Force Class Reference}
+\label{classElementaryForce}\index{Elementary\+Force@{Elementary\+Force}}
+
+
+{\ttfamily \#include $<$elementaryforce.\+h$>$}
+
+Inheritance diagram for Elementary\+Force\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classElementaryForce}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classElementaryForce_a1da5b85cdf3b79f3506dbdc4d877155a}{Elementary\+Force}} ()
+\item 
+\mbox{\hyperlink{classElementaryForce_a7aeb59eab2a299037e1fef94b9290b78}{Elementary\+Force}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classElementaryForce_a30f4a2259927de81cf3ef66c495f423c}{Elementary\+Force}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classElementaryForce_a1b466cc9aeb317161a7632cb5651a537}{Elementary\+Force}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classElementaryForce_afee0c87be3bd2a5221c9fcaddd70dfa6}{$\sim$\+Elementary\+Force}} ()
+\item 
+unsigned int \mbox{\hyperlink{classElementaryForce_a466c37c769c1826bd0f416f38bb09996}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_af608447a2b6380142e2345ada11d1c32}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a579afb8079668f0587096934d1de9c04}{Get\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a4669f2ce414e508c70ae4ce0df503ad1}{Get\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a928e06a1fa81b8d7ec4a426d959a0f98}{Get\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a2c8bc3226f42710717775c73eee1644e}{Get\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a58e503f2f3a7410f034a2a04bca560d1}{Get\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_aaa1cde27b1508831f67353eb39745a7e}{Get\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a0974d6537c07dac2453d2a607324fa21}{Get\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a3478c8ad35bce240055da7d4a03e555e}{Get\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a0961328b260cb4dfb2ba54f4e284f0e8}{Apply\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a655a2c9489bfbbf15e05ba4953628134}{Apply\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_aabf66a859e6e808a65c6929cd16f7597}{Apply\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a2d3a5444c771f35d66d4151c62f53b12}{Apply\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a0045a3380e468c6cfdbefce829888c1f}{Apply\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a3764a27b11760b6ead2c8a23ff25d77a}{Apply\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a8a16bff6b5df2b0ff918262bf6376ade}{Apply\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a80f1977e777aa0c8cce2124b666e6446}{Apply\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+double \mbox{\hyperlink{classElementaryForce_a185dc4e0b840505df27dbbed9fdcdc7b}{Apply\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_a3762cf66ed266b310446417215dec3fa}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_a466c84ee4a50a29ef1f0fc6509ae3161}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_aa36d5875964f7e2fc981f6fc5431be7f}{Set\+Gravitation}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_a093cdf0810e95f1d973bd9dc88c6788b}{Set\+Weak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_a38d4f86f18a9f84a4198ee43bc90f6b4}{Set\+Weak\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_a67f6845bd715c29c17387d291b343a1b}{Set\+Electromagnetic}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_af4f12038c33d7edf9f13339fcd632ec9}{Set\+Electromagnetic\+Electroweak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_aa1b5708cfab2069049fec5c924e1f246}{Set\+Strong}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_afb00e9a10ec33eeb1daefce39b0468b7}{Set\+Strong\+Fundamental}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_ac25021d38c1d54bf711096ab37a461f6}{Set\+Strong\+Residual}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classElementaryForce_aa5ab479744dbf3e8578f8d2974299ff7}{Poll\+Elementary\+Force}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classElementaryForce_a1dedcd23a538b87f71ecd43cb36a6db5}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classElementaryForce_a855c26eb8a542ff633af66940da5f90b}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classElementaryForce_a027c7a909b116a22470f0e359f8c6e5d}{elementary\+\_\+force\+\_\+counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}elementary\+\_\+force\+\_\+counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElementaryForce_a4e5bcb6ba1b0d2217c6fb757a9370dff}{elementary\+\_\+force\+\_\+type}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a994d23e57e813a14120658f883e6c721}{elementary\+\_\+force\+\_\+energy}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a6348f87d1bb920e9ab11e624cb543ae0}{elementary\+\_\+force\+\_\+gravitation}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a927269eaae5bf8ac3dbd0bc2fd260592}{elementary\+\_\+force\+\_\+weak}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a901032dde4f6c7a00d3dc51c5acecdff}{elementary\+\_\+force\+\_\+weak\+\_\+electroweak}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a0a26ca7f126214261958f67d5716c6f8}{elementary\+\_\+force\+\_\+electromagnetic}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a211ff8cdcd3b78c5fe1b6216bc908346}{elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a3137ccc3db3e58f16daaf0face93f98d}{elementary\+\_\+force\+\_\+strong}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a5a12a7faddd6d0adae5232d4014a9b01}{elementary\+\_\+force\+\_\+strong\+\_\+fundamental}}
+\item 
+double \mbox{\hyperlink{classElementaryForce_a73ccecd6e432bdf773832bdce6db15b5}{elementary\+\_\+force\+\_\+strong\+\_\+residual}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classElementaryForce_a3c0db9aacae297a036837e127a49741d}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classElementaryForce_ae61e8203d30c535260a473b0044e0070}{previous\+\_\+event\+\_\+time}}
+\item 
+bool \mbox{\hyperlink{classElementaryForce_ac5002305be13d4105a2c4a4ba79e2e49}{object\+\_\+initialised}}
+\item 
+bool \mbox{\hyperlink{classElementaryForce_a9854fb3352e6a66145dc1670026126b3}{object\+\_\+disabled}}
+\item 
+int \mbox{\hyperlink{classElementaryForce_a3d1e76c3faf50f2150df66b90c61b2f5}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classElementaryForce_a9bc6eb2a4c20ce83728a7c9a31b91f19}{Composite\+Force\+Particle}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElementaryForce_a1da5b85cdf3b79f3506dbdc4d877155a}\label{classElementaryForce_a1da5b85cdf3b79f3506dbdc4d877155a}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryForce_a7aeb59eab2a299037e1fef94b9290b78}\label{classElementaryForce_a7aeb59eab2a299037e1fef94b9290b78}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryForce_a30f4a2259927de81cf3ef66c495f423c}\label{classElementaryForce_a30f4a2259927de81cf3ef66c495f423c}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryForce_a1b466cc9aeb317161a7632cb5651a537}\label{classElementaryForce_a1b466cc9aeb317161a7632cb5651a537}} 
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\index{Elementary\+Force@{Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Elementary\+Force()}{ElementaryForce()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Elementary\+Force\+::\+Elementary\+Force (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classElementaryForce_afee0c87be3bd2a5221c9fcaddd70dfa6}\label{classElementaryForce_afee0c87be3bd2a5221c9fcaddd70dfa6}} 
+\index{Elementary\+Force@{Elementary\+Force}!````~Elementary\+Force@{$\sim$\+Elementary\+Force}}
+\index{````~Elementary\+Force@{$\sim$\+Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{$\sim$\+Elementary\+Force()}{~ElementaryForce()}}
+{\footnotesize\ttfamily virtual Elementary\+Force\+::$\sim$\+Elementary\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElementaryForce_a0045a3380e468c6cfdbefce829888c1f}\label{classElementaryForce_a0045a3380e468c6cfdbefce829888c1f}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Electromagnetic@{Apply\+Electromagnetic}}
+\index{Apply\+Electromagnetic@{Apply\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic()}{ApplyElectromagnetic()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1f787da78fa196ba635db21a9e91dabb}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a3764a27b11760b6ead2c8a23ff25d77a}\label{classElementaryForce_a3764a27b11760b6ead2c8a23ff25d77a}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}}
+\index{Apply\+Electromagnetic\+Electroweak@{Apply\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Electromagnetic\+Electroweak()}{ApplyElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4c36c1ab30db993307f88363dde5e8c5}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a0961328b260cb4dfb2ba54f4e284f0e8}\label{classElementaryForce_a0961328b260cb4dfb2ba54f4e284f0e8}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Energy@{Apply\+Energy}}
+\index{Apply\+Energy@{Apply\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Energy()}{ApplyEnergy()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryForce_a655a2c9489bfbbf15e05ba4953628134}\label{classElementaryForce_a655a2c9489bfbbf15e05ba4953628134}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Gravitation@{Apply\+Gravitation}}
+\index{Apply\+Gravitation@{Apply\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Gravitation()}{ApplyGravitation()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a76c0b5e63c2a7d1988c44db341c3d64c}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a8a16bff6b5df2b0ff918262bf6376ade}\label{classElementaryForce_a8a16bff6b5df2b0ff918262bf6376ade}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong@{Apply\+Strong}}
+\index{Apply\+Strong@{Apply\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong()}{ApplyStrong()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a906a88b37f10bfa630bef49dfd0e907a}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a80f1977e777aa0c8cce2124b666e6446}\label{classElementaryForce_a80f1977e777aa0c8cce2124b666e6446}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}}
+\index{Apply\+Strong\+Fundamental@{Apply\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Fundamental()}{ApplyStrongFundamental()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a62789bcff84bd750b0366004381e2fdd}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a185dc4e0b840505df27dbbed9fdcdc7b}\label{classElementaryForce_a185dc4e0b840505df27dbbed9fdcdc7b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Strong\+Residual@{Apply\+Strong\+Residual}}
+\index{Apply\+Strong\+Residual@{Apply\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Strong\+Residual()}{ApplyStrongResidual()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af7becebb347be9a85541d96a3eca1ca7}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_aabf66a859e6e808a65c6929cd16f7597}\label{classElementaryForce_aabf66a859e6e808a65c6929cd16f7597}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Weak@{Apply\+Weak}}
+\index{Apply\+Weak@{Apply\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Weak()}{ApplyWeak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a6d1226b3adec3c42a833afdbb6a65a92}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a2d3a5444c771f35d66d4151c62f53b12}\label{classElementaryForce_a2d3a5444c771f35d66d4151c62f53b12}} 
+\index{Elementary\+Force@{Elementary\+Force}!Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}}
+\index{Apply\+Weak\+Electroweak@{Apply\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Apply\+Weak\+Electroweak()}{ApplyWeakElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Apply\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a46a906baabb63e5d31f8b48ea1fae52e}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a466c37c769c1826bd0f416f38bb09996}\label{classElementaryForce_a466c37c769c1826bd0f416f38bb09996}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Elementary\+Force\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryForce_a2c8bc3226f42710717775c73eee1644e}\label{classElementaryForce_a2c8bc3226f42710717775c73eee1644e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Electromagnetic@{Get\+Electromagnetic}}
+\index{Get\+Electromagnetic@{Get\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a63b850ef3f3394313353109d222bf5d1}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a58e503f2f3a7410f034a2a04bca560d1}\label{classElementaryForce_a58e503f2f3a7410f034a2a04bca560d1}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}}
+\index{Get\+Electromagnetic\+Electroweak@{Get\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Electromagnetic\+Electroweak()}{GetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a9f099605c082e7fa755787a6a8cab7ba}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_af608447a2b6380142e2345ada11d1c32}\label{classElementaryForce_af608447a2b6380142e2345ada11d1c32}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryForce_a579afb8079668f0587096934d1de9c04}\label{classElementaryForce_a579afb8079668f0587096934d1de9c04}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Gravitation@{Get\+Gravitation}}
+\index{Get\+Gravitation@{Get\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_aaa1cde27b1508831f67353eb39745a7e}\label{classElementaryForce_aaa1cde27b1508831f67353eb39745a7e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong@{Get\+Strong}}
+\index{Get\+Strong@{Get\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong()}{GetStrong()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_acb453ce71da418c5b5617fecede9571b}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a0974d6537c07dac2453d2a607324fa21}\label{classElementaryForce_a0974d6537c07dac2453d2a607324fa21}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}}
+\index{Get\+Strong\+Fundamental@{Get\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Fundamental()}{GetStrongFundamental()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ab44daccba01ee7e3cf9b50bba83dd19e}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a3478c8ad35bce240055da7d4a03e555e}\label{classElementaryForce_a3478c8ad35bce240055da7d4a03e555e}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Strong\+Residual@{Get\+Strong\+Residual}}
+\index{Get\+Strong\+Residual@{Get\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Strong\+Residual()}{GetStrongResidual()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_af0f4b81950061e63c2855eb40957a5b1}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a4669f2ce414e508c70ae4ce0df503ad1}\label{classElementaryForce_a4669f2ce414e508c70ae4ce0df503ad1}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Weak@{Get\+Weak}}
+\index{Get\+Weak@{Get\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Weak()}{GetWeak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a4476b7e0a3fc1764909f556257fd9ec7}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a928e06a1fa81b8d7ec4a426d959a0f98}\label{classElementaryForce_a928e06a1fa81b8d7ec4a426d959a0f98}} 
+\index{Elementary\+Force@{Elementary\+Force}!Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}}
+\index{Get\+Weak\+Electroweak@{Get\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Get\+Weak\+Electroweak()}{GetWeakElectroweak()}}
+{\footnotesize\ttfamily double Elementary\+Force\+::\+Get\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a645299738e6b798a037f2a15a2e7cf4d}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_aa5ab479744dbf3e8578f8d2974299ff7}\label{classElementaryForce_aa5ab479744dbf3e8578f8d2974299ff7}} 
+\index{Elementary\+Force@{Elementary\+Force}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
+\index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Poll\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0c485c504542409cbb5cfd8543c35b11}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a1dedcd23a538b87f71ecd43cb36a6db5}\label{classElementaryForce_a1dedcd23a538b87f71ecd43cb36a6db5}} 
+\index{Elementary\+Force@{Elementary\+Force}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Elementary\+Force\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryForce_a3762cf66ed266b310446417215dec3fa}\label{classElementaryForce_a3762cf66ed266b310446417215dec3fa}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a67f6845bd715c29c17387d291b343a1b}\label{classElementaryForce_a67f6845bd715c29c17387d291b343a1b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Electromagnetic@{Set\+Electromagnetic}}
+\index{Set\+Electromagnetic@{Set\+Electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic()}{SetElectromagnetic()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Electromagnetic (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa981fc7e252b1fbbb675f0371860954d}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_af4f12038c33d7edf9f13339fcd632ec9}\label{classElementaryForce_af4f12038c33d7edf9f13339fcd632ec9}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}}
+\index{Set\+Electromagnetic\+Electroweak@{Set\+Electromagnetic\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Electromagnetic\+Electroweak()}{SetElectromagneticElectroweak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Electromagnetic\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a608aa95698380f791a0ffba45cc1bee3}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a466c84ee4a50a29ef1f0fc6509ae3161}\label{classElementaryForce_a466c84ee4a50a29ef1f0fc6509ae3161}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classElementaryForce_aa36d5875964f7e2fc981f6fc5431be7f}\label{classElementaryForce_aa36d5875964f7e2fc981f6fc5431be7f}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Gravitation@{Set\+Gravitation}}
+\index{Set\+Gravitation@{Set\+Gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Gravitation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_aa1b5708cfab2069049fec5c924e1f246}\label{classElementaryForce_aa1b5708cfab2069049fec5c924e1f246}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong@{Set\+Strong}}
+\index{Set\+Strong@{Set\+Strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong()}{SetStrong()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a5946c8f3d4cda305f3ecd10df21a2f94}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_afb00e9a10ec33eeb1daefce39b0468b7}\label{classElementaryForce_afb00e9a10ec33eeb1daefce39b0468b7}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}}
+\index{Set\+Strong\+Fundamental@{Set\+Strong\+Fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Fundamental()}{SetStrongFundamental()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong\+Fundamental (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aafec97a231126b71c73ac1258609a284}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_ac25021d38c1d54bf711096ab37a461f6}\label{classElementaryForce_ac25021d38c1d54bf711096ab37a461f6}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Strong\+Residual@{Set\+Strong\+Residual}}
+\index{Set\+Strong\+Residual@{Set\+Strong\+Residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Strong\+Residual()}{SetStrongResidual()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Strong\+Residual (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a1b2d6197ddf3d613cc30bd04d22ed8b7}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a093cdf0810e95f1d973bd9dc88c6788b}\label{classElementaryForce_a093cdf0810e95f1d973bd9dc88c6788b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Weak@{Set\+Weak}}
+\index{Set\+Weak@{Set\+Weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Weak()}{SetWeak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Weak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a0f5cd04081b41ee931c0557dc397f6fb}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a38d4f86f18a9f84a4198ee43bc90f6b4}\label{classElementaryForce_a38d4f86f18a9f84a4198ee43bc90f6b4}} 
+\index{Elementary\+Force@{Elementary\+Force}!Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}}
+\index{Set\+Weak\+Electroweak@{Set\+Weak\+Electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Set\+Weak\+Electroweak()}{SetWeakElectroweak()}}
+{\footnotesize\ttfamily void Elementary\+Force\+::\+Set\+Weak\+Electroweak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_a2d3d642bfdc863248e93535832fa4b00}{Universe}}.
+
+\mbox{\Hypertarget{classElementaryForce_a855c26eb8a542ff633af66940da5f90b}\label{classElementaryForce_a855c26eb8a542ff633af66940da5f90b}} 
+\index{Elementary\+Force@{Elementary\+Force}!Update@{Update}}
+\index{Update@{Update}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Elementary\+Force\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classElementaryForce_a9bc6eb2a4c20ce83728a7c9a31b91f19}\label{classElementaryForce_a9bc6eb2a4c20ce83728a7c9a31b91f19}} 
+\index{Elementary\+Force@{Elementary\+Force}!Composite\+Force\+Particle@{Composite\+Force\+Particle}}
+\index{Composite\+Force\+Particle@{Composite\+Force\+Particle}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{Composite\+Force\+Particle}{CompositeForceParticle}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCompositeForceParticle}{Composite\+Force\+Particle}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classElementaryForce_a3d1e76c3faf50f2150df66b90c61b2f5}\label{classElementaryForce_a3d1e76c3faf50f2150df66b90c61b2f5}} 
+\index{Elementary\+Force@{Elementary\+Force}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Elementary\+Force\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a027c7a909b116a22470f0e359f8c6e5d}\label{classElementaryForce_a027c7a909b116a22470f0e359f8c6e5d}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+counter@{elementary\+\_\+force\+\_\+counter}}
+\index{elementary\+\_\+force\+\_\+counter@{elementary\+\_\+force\+\_\+counter}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+counter}{elementary\_force\_counter}}
+{\footnotesize\ttfamily unsigned int Elementary\+Force\+::elementary\+\_\+force\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}elementary\+\_\+force\+\_\+counter\char`\"{}. 
+
+\mbox{\Hypertarget{classElementaryForce_a0a26ca7f126214261958f67d5716c6f8}\label{classElementaryForce_a0a26ca7f126214261958f67d5716c6f8}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+electromagnetic@{elementary\+\_\+force\+\_\+electromagnetic}}
+\index{elementary\+\_\+force\+\_\+electromagnetic@{elementary\+\_\+force\+\_\+electromagnetic}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+electromagnetic}{elementary\_force\_electromagnetic}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+electromagnetic\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a211ff8cdcd3b78c5fe1b6216bc908346}\label{classElementaryForce_a211ff8cdcd3b78c5fe1b6216bc908346}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak@{elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak}}
+\index{elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak@{elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak}{elementary\_force\_electromagnetic\_electroweak}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+electromagnetic\+\_\+electroweak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a994d23e57e813a14120658f883e6c721}\label{classElementaryForce_a994d23e57e813a14120658f883e6c721}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+energy@{elementary\+\_\+force\+\_\+energy}}
+\index{elementary\+\_\+force\+\_\+energy@{elementary\+\_\+force\+\_\+energy}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+energy}{elementary\_force\_energy}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a6348f87d1bb920e9ab11e624cb543ae0}\label{classElementaryForce_a6348f87d1bb920e9ab11e624cb543ae0}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+gravitation@{elementary\+\_\+force\+\_\+gravitation}}
+\index{elementary\+\_\+force\+\_\+gravitation@{elementary\+\_\+force\+\_\+gravitation}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+gravitation}{elementary\_force\_gravitation}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+gravitation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a3137ccc3db3e58f16daaf0face93f98d}\label{classElementaryForce_a3137ccc3db3e58f16daaf0face93f98d}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+strong@{elementary\+\_\+force\+\_\+strong}}
+\index{elementary\+\_\+force\+\_\+strong@{elementary\+\_\+force\+\_\+strong}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+strong}{elementary\_force\_strong}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+strong\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a5a12a7faddd6d0adae5232d4014a9b01}\label{classElementaryForce_a5a12a7faddd6d0adae5232d4014a9b01}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+strong\+\_\+fundamental@{elementary\+\_\+force\+\_\+strong\+\_\+fundamental}}
+\index{elementary\+\_\+force\+\_\+strong\+\_\+fundamental@{elementary\+\_\+force\+\_\+strong\+\_\+fundamental}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+strong\+\_\+fundamental}{elementary\_force\_strong\_fundamental}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+strong\+\_\+fundamental\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a73ccecd6e432bdf773832bdce6db15b5}\label{classElementaryForce_a73ccecd6e432bdf773832bdce6db15b5}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+strong\+\_\+residual@{elementary\+\_\+force\+\_\+strong\+\_\+residual}}
+\index{elementary\+\_\+force\+\_\+strong\+\_\+residual@{elementary\+\_\+force\+\_\+strong\+\_\+residual}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+strong\+\_\+residual}{elementary\_force\_strong\_residual}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+strong\+\_\+residual\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a4e5bcb6ba1b0d2217c6fb757a9370dff}\label{classElementaryForce_a4e5bcb6ba1b0d2217c6fb757a9370dff}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+type@{elementary\+\_\+force\+\_\+type}}
+\index{elementary\+\_\+force\+\_\+type@{elementary\+\_\+force\+\_\+type}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+type}{elementary\_force\_type}}
+{\footnotesize\ttfamily int Elementary\+Force\+::elementary\+\_\+force\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a927269eaae5bf8ac3dbd0bc2fd260592}\label{classElementaryForce_a927269eaae5bf8ac3dbd0bc2fd260592}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+weak@{elementary\+\_\+force\+\_\+weak}}
+\index{elementary\+\_\+force\+\_\+weak@{elementary\+\_\+force\+\_\+weak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+weak}{elementary\_force\_weak}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+weak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a901032dde4f6c7a00d3dc51c5acecdff}\label{classElementaryForce_a901032dde4f6c7a00d3dc51c5acecdff}} 
+\index{Elementary\+Force@{Elementary\+Force}!elementary\+\_\+force\+\_\+weak\+\_\+electroweak@{elementary\+\_\+force\+\_\+weak\+\_\+electroweak}}
+\index{elementary\+\_\+force\+\_\+weak\+\_\+electroweak@{elementary\+\_\+force\+\_\+weak\+\_\+electroweak}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{elementary\+\_\+force\+\_\+weak\+\_\+electroweak}{elementary\_force\_weak\_electroweak}}
+{\footnotesize\ttfamily double Elementary\+Force\+::elementary\+\_\+force\+\_\+weak\+\_\+electroweak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a9854fb3352e6a66145dc1670026126b3}\label{classElementaryForce_a9854fb3352e6a66145dc1670026126b3}} 
+\index{Elementary\+Force@{Elementary\+Force}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Elementary\+Force\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_ac5002305be13d4105a2c4a4ba79e2e49}\label{classElementaryForce_ac5002305be13d4105a2c4a4ba79e2e49}} 
+\index{Elementary\+Force@{Elementary\+Force}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Elementary\+Force\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_ae61e8203d30c535260a473b0044e0070}\label{classElementaryForce_ae61e8203d30c535260a473b0044e0070}} 
+\index{Elementary\+Force@{Elementary\+Force}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Elementary\+Force\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classElementaryForce_a3c0db9aacae297a036837e127a49741d}\label{classElementaryForce_a3c0db9aacae297a036837e127a49741d}} 
+\index{Elementary\+Force@{Elementary\+Force}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Elementary\+Force@{Elementary\+Force}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Elementary\+Force\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{elementaryforce_8h}{elementaryforce.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{elementaryforce_8cc}{elementaryforce.\+cc}}\end{DoxyCompactItemize}

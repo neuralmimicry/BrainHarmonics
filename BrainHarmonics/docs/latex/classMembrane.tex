@@ -1,0 +1,517 @@
+\hypertarget{classMembrane}{}\section{Membrane Class Reference}
+\label{classMembrane}\index{Membrane@{Membrane}}
+
+
+{\ttfamily \#include $<$membrane.\+h$>$}
+
+Inheritance diagram for Membrane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classMembrane}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMembrane_ae3db1e55d9a535226bfd41c2a9ac1f0c}{Membrane}} ()
+\item 
+\mbox{\hyperlink{classMembrane_a9e45fcb5a4e791f2697fce4d9fa78a3f}{Membrane}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classMembrane_afeb8292866a69bdc2b9be6dcd902b519}{Membrane}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classMembrane_a8d61894d90a7f63e427cd8b1a5eca380}{Membrane}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classNeuron}{Neuron}} \&neuron\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classMembrane_a8765daf8038c1e992e3ea3752db0042f}{$\sim$\+Membrane}} ()
+\item 
+double \mbox{\hyperlink{classMembrane_a8c3593b0747495c412bf2d99b7b10104}{Time\+Function}} (double time\+Delay, double time\+Dilation)
+\item 
+unsigned int \mbox{\hyperlink{classMembrane_a85f8b2633ff32f79b6fbb466ce690858}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMembrane_a50d39c596daa7af8da7dd7215d3a32ba}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMembrane_a00e038f0023186139467d490c6cd38a3}{Get\+Energy\+Inc}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMembrane_a874068c028004d4dde7ec41d999872eb}{Get\+Energy\+Dec}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMembrane_ac6c8d1f7348b24e448e8163260500b89}{Get\+Energy\+Leak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classMembrane_a7ce7398888bdad73ac848a2362261acf}{Get\+Energy\+Threshold}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classMembrane_a270278dd346edfe8c7bbd4c48929fdd5}{Get\+Membrane\+Channel\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classMembrane_aeda845ea9577e6a07690acad22ef375f}{Set\+Membrane\+Channel\+Pool}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int set\+\_\+pool)
+\item 
+void \mbox{\hyperlink{classMembrane_a4bff43b38d7046867f220392a39cc272}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classMembrane_a37beeb28761af644bc3a51d3509f14f1}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classMembrane_abd1c69b9b0260799afd3965c34f881ff}{Set\+Energy\+Inc}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classMembrane_acefb2fe781d7316b232614663777cde1}{Set\+Energy\+Dec}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classMembrane_a96618ef2c05a8af5d6bd8606c9b8eae8}{Set\+Energy\+Leak}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classMembrane_a6d0b96fb6d823cc113dd56b8889b1544}{Set\+Energy\+Threshold}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classMembrane_a5ba2bcb906f3984b28f1030207e106ad}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \mbox{\hyperlink{classMembrane_a9c49462cf63495381a52e2defc80b1e4}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a589b56529ac634a52b2a5fc78d356973}{Create\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_a72987fae41e552af5befcd9a62aa6e46}{Create\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a9514ca4d4378e6467d2059a9d5f9b99b}{Clone\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_aa9958ea461092c0d2aceb07c9c34373c}{Clone\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a12413d933a62b3bbb7931c6ab25de7de}{Destroy\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_aea71c4443f2fc22359ac3f770ff7755e}{Destroy\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a3e3b4f55f028541e7513f826d01a689a}{Add\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_aab591875e3266d6c5af0f7c5f7f21e8f}{Add\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a36d6927c8869cc752b55623dac661107}{Remove\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_ac33ffd86416112420dc5b0576287c44d}{Remove\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ \mbox{\hyperlink{classMembrane_a1e2bdb800f0f38254214ea7cbdc06941}{Get\+Membrane\+Channel}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_a7fac2929241b7ff9b8b7f1ec955b2cc5}{Get\+Membrane\+Channels}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classMembrane_a544742864485b9ac052f3b241ae5c6b4}{Growth}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classMembrane_a4af9710ea7f0bc6f1b6b6b6462612d51}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_ad41c9c20d5a1bc279f32f9001dee8c50}{membranechannel\+\_\+list}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSolid}{Solid}} $\ast$ $>$ \mbox{\hyperlink{classMembrane_a926d35c07f664b60deb6e9f87649fe89}{visualisation\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMembrane_a4ae44a3db559cbae5009c1ec4e63016f}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classMembrane_ac55bb1eede5e5c54f04c72c4d09dd6b4}{membrane\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classMembrane_a3d0f00801a39053adff2691816a443e7}{m\+\_\+add\+Status}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMembrane_a44eaaa3b258fc5169c1ece8bf7c9ab32}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMembrane_a2decce528a2588104fd75465a077aa2f}{previous\+\_\+event\+\_\+time}}
+\item 
+bool \mbox{\hyperlink{classMembrane_aca7993094a3bc7b7ba03892b61183e6b}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classMembrane_aaa2bd265c8d1d3c6ac73b04df4f08216}{object\+\_\+initialised}}
+\item 
+int \mbox{\hyperlink{classMembrane_a7e2df85f4d5a0aff0b02636e35a4aeaf}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classMembrane_a8049feca4d942ea33837aac2a13d18b3}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classMembrane_a8afe483ca9fa8447e1e05d9405571fe0}{m\+\_\+\+Surface\+Area}}
+\item 
+double \mbox{\hyperlink{classMembrane_a7e7d0df87bbe5f498e9042fcc687c74f}{object\+\_\+size}}
+\item 
+unsigned int \mbox{\hyperlink{classMembrane_a341a25633aa7a79f20781075b6c0c2bc}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classMembrane_a19ef43ccffe8974084f4018b7d539d03}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classMembrane_a013037dc858a1f81ba198434ba13701d}{object\+\_\+energy\+Inc}}
+\item 
+double \mbox{\hyperlink{classMembrane_a8cda5e365097454dc62f336a479a5777}{object\+\_\+energy\+Dec}}
+\item 
+double \mbox{\hyperlink{classMembrane_a4e80c2cad8bb2e5f026caf33ce90d7f0}{object\+\_\+energy\+Leak}}
+\item 
+double \mbox{\hyperlink{classMembrane_aa91a60ecdefc7dd375208bc4f73c6d80}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classMembrane_a28a7100c84ccee492664edd47fd206e3}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classMembrane_ade7f8f4b0839c78f33c95fe90a5187b9}{m\+\_\+\+Time\+Threshold}}
+\item 
+int \mbox{\hyperlink{classMembrane_a2d39f4e61a2cc3c5b4db5e5ff5689e76}{membranechannel\+\_\+pool}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMembrane_ae3db1e55d9a535226bfd41c2a9ac1f0c}\label{classMembrane_ae3db1e55d9a535226bfd41c2a9ac1f0c}} 
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Membrane()}{Membrane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Membrane\+::\+Membrane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a9e45fcb5a4e791f2697fce4d9fa78a3f}\label{classMembrane_a9e45fcb5a4e791f2697fce4d9fa78a3f}} 
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Membrane()}{Membrane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Membrane\+::\+Membrane (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_afeb8292866a69bdc2b9be6dcd902b519}\label{classMembrane_afeb8292866a69bdc2b9be6dcd902b519}} 
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Membrane()}{Membrane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Membrane\+::\+Membrane (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a8d61894d90a7f63e427cd8b1a5eca380}\label{classMembrane_a8d61894d90a7f63e427cd8b1a5eca380}} 
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\index{Membrane@{Membrane}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Membrane()}{Membrane()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Membrane\+::\+Membrane (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classNeuron}{Neuron}} \&}]{neuron\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a8765daf8038c1e992e3ea3752db0042f}\label{classMembrane_a8765daf8038c1e992e3ea3752db0042f}} 
+\index{Membrane@{Membrane}!````~Membrane@{$\sim$\+Membrane}}
+\index{````~Membrane@{$\sim$\+Membrane}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{$\sim$\+Membrane()}{~Membrane()}}
+{\footnotesize\ttfamily virtual Membrane\+::$\sim$\+Membrane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMembrane_a3e3b4f55f028541e7513f826d01a689a}\label{classMembrane_a3e3b4f55f028541e7513f826d01a689a}} 
+\index{Membrane@{Membrane}!Add\+Membrane\+Channel@{Add\+Membrane\+Channel}}
+\index{Add\+Membrane\+Channel@{Add\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Add\+Membrane\+Channel()}{AddMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Add\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_aab591875e3266d6c5af0f7c5f7f21e8f}\label{classMembrane_aab591875e3266d6c5af0f7c5f7f21e8f}} 
+\index{Membrane@{Membrane}!Add\+Membrane\+Channels@{Add\+Membrane\+Channels}}
+\index{Add\+Membrane\+Channels@{Add\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Add\+Membrane\+Channels()}{AddMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Add\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a9514ca4d4378e6467d2059a9d5f9b99b}\label{classMembrane_a9514ca4d4378e6467d2059a9d5f9b99b}} 
+\index{Membrane@{Membrane}!Clone\+Membrane\+Channel@{Clone\+Membrane\+Channel}}
+\index{Clone\+Membrane\+Channel@{Clone\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Clone\+Membrane\+Channel()}{CloneMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Clone\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_aa9958ea461092c0d2aceb07c9c34373c}\label{classMembrane_aa9958ea461092c0d2aceb07c9c34373c}} 
+\index{Membrane@{Membrane}!Clone\+Membrane\+Channels@{Clone\+Membrane\+Channels}}
+\index{Clone\+Membrane\+Channels@{Clone\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Clone\+Membrane\+Channels()}{CloneMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Clone\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a589b56529ac634a52b2a5fc78d356973}\label{classMembrane_a589b56529ac634a52b2a5fc78d356973}} 
+\index{Membrane@{Membrane}!Create\+Membrane\+Channel@{Create\+Membrane\+Channel}}
+\index{Create\+Membrane\+Channel@{Create\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Create\+Membrane\+Channel()}{CreateMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Create\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a72987fae41e552af5befcd9a62aa6e46}\label{classMembrane_a72987fae41e552af5befcd9a62aa6e46}} 
+\index{Membrane@{Membrane}!Create\+Membrane\+Channels@{Create\+Membrane\+Channels}}
+\index{Create\+Membrane\+Channels@{Create\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Create\+Membrane\+Channels()}{CreateMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Create\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a12413d933a62b3bbb7931c6ab25de7de}\label{classMembrane_a12413d933a62b3bbb7931c6ab25de7de}} 
+\index{Membrane@{Membrane}!Destroy\+Membrane\+Channel@{Destroy\+Membrane\+Channel}}
+\index{Destroy\+Membrane\+Channel@{Destroy\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Destroy\+Membrane\+Channel()}{DestroyMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Destroy\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classMembrane}{Membrane}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_aea71c4443f2fc22359ac3f770ff7755e}\label{classMembrane_aea71c4443f2fc22359ac3f770ff7755e}} 
+\index{Membrane@{Membrane}!Destroy\+Membrane\+Channels@{Destroy\+Membrane\+Channels}}
+\index{Destroy\+Membrane\+Channels@{Destroy\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Destroy\+Membrane\+Channels()}{DestroyMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Destroy\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a85f8b2633ff32f79b6fbb466ce690858}\label{classMembrane_a85f8b2633ff32f79b6fbb466ce690858}} 
+\index{Membrane@{Membrane}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Membrane\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a50d39c596daa7af8da7dd7215d3a32ba}\label{classMembrane_a50d39c596daa7af8da7dd7215d3a32ba}} 
+\index{Membrane@{Membrane}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Membrane\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a874068c028004d4dde7ec41d999872eb}\label{classMembrane_a874068c028004d4dde7ec41d999872eb}} 
+\index{Membrane@{Membrane}!Get\+Energy\+Dec@{Get\+Energy\+Dec}}
+\index{Get\+Energy\+Dec@{Get\+Energy\+Dec}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Dec()}{GetEnergyDec()}}
+{\footnotesize\ttfamily double Membrane\+::\+Get\+Energy\+Dec (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a00e038f0023186139467d490c6cd38a3}\label{classMembrane_a00e038f0023186139467d490c6cd38a3}} 
+\index{Membrane@{Membrane}!Get\+Energy\+Inc@{Get\+Energy\+Inc}}
+\index{Get\+Energy\+Inc@{Get\+Energy\+Inc}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Inc()}{GetEnergyInc()}}
+{\footnotesize\ttfamily double Membrane\+::\+Get\+Energy\+Inc (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_ac6c8d1f7348b24e448e8163260500b89}\label{classMembrane_ac6c8d1f7348b24e448e8163260500b89}} 
+\index{Membrane@{Membrane}!Get\+Energy\+Leak@{Get\+Energy\+Leak}}
+\index{Get\+Energy\+Leak@{Get\+Energy\+Leak}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Leak()}{GetEnergyLeak()}}
+{\footnotesize\ttfamily double Membrane\+::\+Get\+Energy\+Leak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a7ce7398888bdad73ac848a2362261acf}\label{classMembrane_a7ce7398888bdad73ac848a2362261acf}} 
+\index{Membrane@{Membrane}!Get\+Energy\+Threshold@{Get\+Energy\+Threshold}}
+\index{Get\+Energy\+Threshold@{Get\+Energy\+Threshold}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Energy\+Threshold()}{GetEnergyThreshold()}}
+{\footnotesize\ttfamily double Membrane\+::\+Get\+Energy\+Threshold (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a1e2bdb800f0f38254214ea7cbdc06941}\label{classMembrane_a1e2bdb800f0f38254214ea7cbdc06941}} 
+\index{Membrane@{Membrane}!Get\+Membrane\+Channel@{Get\+Membrane\+Channel}}
+\index{Get\+Membrane\+Channel@{Get\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Membrane\+Channel()}{GetMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Get\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a270278dd346edfe8c7bbd4c48929fdd5}\label{classMembrane_a270278dd346edfe8c7bbd4c48929fdd5}} 
+\index{Membrane@{Membrane}!Get\+Membrane\+Channel\+Pool@{Get\+Membrane\+Channel\+Pool}}
+\index{Get\+Membrane\+Channel\+Pool@{Get\+Membrane\+Channel\+Pool}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Membrane\+Channel\+Pool()}{GetMembraneChannelPool()}}
+{\footnotesize\ttfamily int Membrane\+::\+Get\+Membrane\+Channel\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a7fac2929241b7ff9b8b7f1ec955b2cc5}\label{classMembrane_a7fac2929241b7ff9b8b7f1ec955b2cc5}} 
+\index{Membrane@{Membrane}!Get\+Membrane\+Channels@{Get\+Membrane\+Channels}}
+\index{Get\+Membrane\+Channels@{Get\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Get\+Membrane\+Channels()}{GetMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Get\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a544742864485b9ac052f3b241ae5c6b4}\label{classMembrane_a544742864485b9ac052f3b241ae5c6b4}} 
+\index{Membrane@{Membrane}!Growth@{Growth}}
+\index{Growth@{Growth}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Growth()}{Growth()}}
+{\footnotesize\ttfamily int Membrane\+::\+Growth (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a36d6927c8869cc752b55623dac661107}\label{classMembrane_a36d6927c8869cc752b55623dac661107}} 
+\index{Membrane@{Membrane}!Remove\+Membrane\+Channel@{Remove\+Membrane\+Channel}}
+\index{Remove\+Membrane\+Channel@{Remove\+Membrane\+Channel}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Remove\+Membrane\+Channel()}{RemoveMembraneChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ Membrane\+::\+Remove\+Membrane\+Channel (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_ac33ffd86416112420dc5b0576287c44d}\label{classMembrane_ac33ffd86416112420dc5b0576287c44d}} 
+\index{Membrane@{Membrane}!Remove\+Membrane\+Channels@{Remove\+Membrane\+Channels}}
+\index{Remove\+Membrane\+Channels@{Remove\+Membrane\+Channels}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Remove\+Membrane\+Channels()}{RemoveMembraneChannels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMembrane}{Membrane}} $\ast$ $>$ Membrane\+::\+Remove\+Membrane\+Channels (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a9c49462cf63495381a52e2defc80b1e4}\label{classMembrane_a9c49462cf63495381a52e2defc80b1e4}} 
+\index{Membrane@{Membrane}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Membrane\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a4bff43b38d7046867f220392a39cc272}\label{classMembrane_a4bff43b38d7046867f220392a39cc272}} 
+\index{Membrane@{Membrane}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classMembraneChannel_a61931feff8f3bb485eeb5c80125bb732}{Membrane\+Channel}}.
+
+\mbox{\Hypertarget{classMembrane_a37beeb28761af644bc3a51d3509f14f1}\label{classMembrane_a37beeb28761af644bc3a51d3509f14f1}} 
+\index{Membrane@{Membrane}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_acefb2fe781d7316b232614663777cde1}\label{classMembrane_acefb2fe781d7316b232614663777cde1}} 
+\index{Membrane@{Membrane}!Set\+Energy\+Dec@{Set\+Energy\+Dec}}
+\index{Set\+Energy\+Dec@{Set\+Energy\+Dec}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Dec()}{SetEnergyDec()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Energy\+Dec (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_abd1c69b9b0260799afd3965c34f881ff}\label{classMembrane_abd1c69b9b0260799afd3965c34f881ff}} 
+\index{Membrane@{Membrane}!Set\+Energy\+Inc@{Set\+Energy\+Inc}}
+\index{Set\+Energy\+Inc@{Set\+Energy\+Inc}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Inc()}{SetEnergyInc()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Energy\+Inc (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a96618ef2c05a8af5d6bd8606c9b8eae8}\label{classMembrane_a96618ef2c05a8af5d6bd8606c9b8eae8}} 
+\index{Membrane@{Membrane}!Set\+Energy\+Leak@{Set\+Energy\+Leak}}
+\index{Set\+Energy\+Leak@{Set\+Energy\+Leak}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Leak()}{SetEnergyLeak()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Energy\+Leak (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a6d0b96fb6d823cc113dd56b8889b1544}\label{classMembrane_a6d0b96fb6d823cc113dd56b8889b1544}} 
+\index{Membrane@{Membrane}!Set\+Energy\+Threshold@{Set\+Energy\+Threshold}}
+\index{Set\+Energy\+Threshold@{Set\+Energy\+Threshold}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Energy\+Threshold()}{SetEnergyThreshold()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Energy\+Threshold (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_aeda845ea9577e6a07690acad22ef375f}\label{classMembrane_aeda845ea9577e6a07690acad22ef375f}} 
+\index{Membrane@{Membrane}!Set\+Membrane\+Channel\+Pool@{Set\+Membrane\+Channel\+Pool}}
+\index{Set\+Membrane\+Channel\+Pool@{Set\+Membrane\+Channel\+Pool}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Membrane\+Channel\+Pool()}{SetMembraneChannelPool()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Membrane\+Channel\+Pool (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{set\+\_\+pool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a5ba2bcb906f3984b28f1030207e106ad}\label{classMembrane_a5ba2bcb906f3984b28f1030207e106ad}} 
+\index{Membrane@{Membrane}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Membrane\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMembrane_a8c3593b0747495c412bf2d99b7b10104}\label{classMembrane_a8c3593b0747495c412bf2d99b7b10104}} 
+\index{Membrane@{Membrane}!Time\+Function@{Time\+Function}}
+\index{Time\+Function@{Time\+Function}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Time\+Function()}{TimeFunction()}}
+{\footnotesize\ttfamily double Membrane\+::\+Time\+Function (\begin{DoxyParamCaption}\item[{double}]{time\+Delay,  }\item[{double}]{time\+Dilation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMembrane_a4af9710ea7f0bc6f1b6b6b6462612d51}\label{classMembrane_a4af9710ea7f0bc6f1b6b6b6462612d51}} 
+\index{Membrane@{Membrane}!Update@{Update}}
+\index{Update@{Update}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Membrane\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMembrane_a7e2df85f4d5a0aff0b02636e35a4aeaf}\label{classMembrane_a7e2df85f4d5a0aff0b02636e35a4aeaf}} 
+\index{Membrane@{Membrane}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Membrane\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a3d0f00801a39053adff2691816a443e7}\label{classMembrane_a3d0f00801a39053adff2691816a443e7}} 
+\index{Membrane@{Membrane}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Membrane\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a341a25633aa7a79f20781075b6c0c2bc}\label{classMembrane_a341a25633aa7a79f20781075b6c0c2bc}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Membrane\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classMembrane_a4ae44a3db559cbae5009c1ec4e63016f}\label{classMembrane_a4ae44a3db559cbae5009c1ec4e63016f}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Membrane\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a8afe483ca9fa8447e1e05d9405571fe0}\label{classMembrane_a8afe483ca9fa8447e1e05d9405571fe0}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Membrane\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a28a7100c84ccee492664edd47fd206e3}\label{classMembrane_a28a7100c84ccee492664edd47fd206e3}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Membrane\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_ade7f8f4b0839c78f33c95fe90a5187b9}\label{classMembrane_ade7f8f4b0839c78f33c95fe90a5187b9}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Membrane\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a8049feca4d942ea33837aac2a13d18b3}\label{classMembrane_a8049feca4d942ea33837aac2a13d18b3}} 
+\index{Membrane@{Membrane}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Membrane\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_ac55bb1eede5e5c54f04c72c4d09dd6b4}\label{classMembrane_ac55bb1eede5e5c54f04c72c4d09dd6b4}} 
+\index{Membrane@{Membrane}!membrane\+\_\+type@{membrane\+\_\+type}}
+\index{membrane\+\_\+type@{membrane\+\_\+type}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{membrane\+\_\+type}{membrane\_type}}
+{\footnotesize\ttfamily int Membrane\+::membrane\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_ad41c9c20d5a1bc279f32f9001dee8c50}\label{classMembrane_ad41c9c20d5a1bc279f32f9001dee8c50}} 
+\index{Membrane@{Membrane}!membranechannel\+\_\+list@{membranechannel\+\_\+list}}
+\index{membranechannel\+\_\+list@{membranechannel\+\_\+list}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{membranechannel\+\_\+list}{membranechannel\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMembrane}{Membrane}}$\ast$$>$ Membrane\+::membranechannel\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMembrane_a2d39f4e61a2cc3c5b4db5e5ff5689e76}\label{classMembrane_a2d39f4e61a2cc3c5b4db5e5ff5689e76}} 
+\index{Membrane@{Membrane}!membranechannel\+\_\+pool@{membranechannel\+\_\+pool}}
+\index{membranechannel\+\_\+pool@{membranechannel\+\_\+pool}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{membranechannel\+\_\+pool}{membranechannel\_pool}}
+{\footnotesize\ttfamily int Membrane\+::membranechannel\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_aca7993094a3bc7b7ba03892b61183e6b}\label{classMembrane_aca7993094a3bc7b7ba03892b61183e6b}} 
+\index{Membrane@{Membrane}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Membrane\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a19ef43ccffe8974084f4018b7d539d03}\label{classMembrane_a19ef43ccffe8974084f4018b7d539d03}} 
+\index{Membrane@{Membrane}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classMembrane_aa91a60ecdefc7dd375208bc4f73c6d80}\label{classMembrane_aa91a60ecdefc7dd375208bc4f73c6d80}} 
+\index{Membrane@{Membrane}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a8cda5e365097454dc62f336a479a5777}\label{classMembrane_a8cda5e365097454dc62f336a479a5777}} 
+\index{Membrane@{Membrane}!object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}}
+\index{object\+\_\+energy\+Dec@{object\+\_\+energy\+Dec}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Dec}{object\_energyDec}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+energy\+Dec\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a013037dc858a1f81ba198434ba13701d}\label{classMembrane_a013037dc858a1f81ba198434ba13701d}} 
+\index{Membrane@{Membrane}!object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}}
+\index{object\+\_\+energy\+Inc@{object\+\_\+energy\+Inc}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Inc}{object\_energyInc}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+energy\+Inc\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a4e80c2cad8bb2e5f026caf33ce90d7f0}\label{classMembrane_a4e80c2cad8bb2e5f026caf33ce90d7f0}} 
+\index{Membrane@{Membrane}!object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}}
+\index{object\+\_\+energy\+Leak@{object\+\_\+energy\+Leak}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Leak}{object\_energyLeak}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+energy\+Leak\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_aaa2bd265c8d1d3c6ac73b04df4f08216}\label{classMembrane_aaa2bd265c8d1d3c6ac73b04df4f08216}} 
+\index{Membrane@{Membrane}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Membrane\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a7e7d0df87bbe5f498e9042fcc687c74f}\label{classMembrane_a7e7d0df87bbe5f498e9042fcc687c74f}} 
+\index{Membrane@{Membrane}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Membrane\+::object\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a2decce528a2588104fd75465a077aa2f}\label{classMembrane_a2decce528a2588104fd75465a077aa2f}} 
+\index{Membrane@{Membrane}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Membrane\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a44eaaa3b258fc5169c1ece8bf7c9ab32}\label{classMembrane_a44eaaa3b258fc5169c1ece8bf7c9ab32}} 
+\index{Membrane@{Membrane}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Membrane\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMembrane_a926d35c07f664b60deb6e9f87649fe89}\label{classMembrane_a926d35c07f664b60deb6e9f87649fe89}} 
+\index{Membrane@{Membrane}!visualisation\+\_\+list@{visualisation\+\_\+list}}
+\index{visualisation\+\_\+list@{visualisation\+\_\+list}!Membrane@{Membrane}}
+\subsubsection{\texorpdfstring{visualisation\+\_\+list}{visualisation\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSolid}{Solid}}$\ast$$>$ Membrane\+::visualisation\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{membrane_8h}{membrane.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{membrane_8cc}{membrane.\+cc}}\end{DoxyCompactItemize}

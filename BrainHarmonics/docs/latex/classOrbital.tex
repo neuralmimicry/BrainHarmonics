@@ -1,0 +1,366 @@
+\hypertarget{classOrbital}{}\section{Orbital Class Reference}
+\label{classOrbital}\index{Orbital@{Orbital}}
+
+
+{\ttfamily \#include $<$orbital.\+h$>$}
+
+Inheritance diagram for Orbital\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classOrbital}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOrbital_ac6f5367141eaa6fb4fa825262da4593a}{Orbital}} ()
+\item 
+\mbox{\hyperlink{classOrbital_a1c7dd9f58b740ce5058ce04aab54292c}{Orbital}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classOrbital_a099b2f1d77a36181fdf1820a6089a05b}{Orbital}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classOrbital_ac54161437f3bd23cc1e6e85e702239c8}{Orbital}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&cognitivenetwork\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classOrbital_af3c531d6dd6f3951dca836a2a9787c2c}{$\sim$\+Orbital}} ()
+\item 
+unsigned int \mbox{\hyperlink{classOrbital_ae46443496d38a22f1da8f7f063d420bc}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classOrbital_a6748a8f75bfd255c1a53a5061d4e14e1}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classOrbital_aea872758f844534806a638080a39507e}{Get\+Position}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classOrbital_ad891e4a65c01e94c72ad36cda114cc2a}{Get\+Phase}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classOrbital_aeb7758cc920cb862fdc33374c26cb585}{Get\+Tau}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classOrbital_a16ff46f7e720f2f7aed332585310a9b8}{Set\+Position}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classOrbital_ac1c58fcb56e4d5c19c4ab39cc09c88ad}{Set\+Phase}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classOrbital_afd09baa67f1a9bff08c74dcf60e1398a}{Set\+Tau}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classOrbital_ae2a2fb06700d1d68501b0cbdea87cc08}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classOrbital_a20b0f4d549fd9024df89603a5adcc214}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classOrbital_afd0dfd382d4bf7d9fbace315bd37fa85}{Set\+Object\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int object\+\_\+type)
+\item 
+bool \mbox{\hyperlink{classOrbital_acc6137a5a79be91a255f685a2f065330}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classOrbital_a44230cebc40357d186c442bfac2507a4}{Add\+To\+Neuron\+List}} (\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$neuron\+\_\+pointer)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classOrbital_a57480cdd63dd1bf731864f513767800d}{Add\+Neuron}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ list\+\_\+to\+\_\+add)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classOrbital_a7d7e4b7cb0d009a5e7224b6f758d7b6b}{Get\+Neurons}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classOrbital_a5aa5edbae517ff393fc1eb0ae2422123}{Calc\+Position}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double Duration)
+\item 
+void \mbox{\hyperlink{classOrbital_afbf72ba4e260627422c9f53dea793923}{Update\+Cycle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ set\+\_\+of\+\_\+update\+\_\+pointers, unsigned int pointer\+\_\+type)
+\item 
+virtual int \mbox{\hyperlink{classOrbital_a837289c3b2af844724c381707dee40d0}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classOrbital_a504f1b3e8621e7eb7e682c3cec48272d}{neuron\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classOrbital_aa372740124e986fd28903fc0a58b9c76}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classOrbital_ac625d580da26f03f2222352c92b9e61e}{object\+\_\+energy}}
+\item 
+int \mbox{\hyperlink{classOrbital_a00b10dd18889b7ab0f3a60de0c6bdcf5}{orbital\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classOrbital_a39c9d2d348dc7c20970bb16c01c7649e}{m\+\_\+\+Tau}}
+\item 
+double \mbox{\hyperlink{classOrbital_a16163ba33abccd079bbf5f4bcb9d9054}{m\+\_\+\+Position}}
+\item 
+double \mbox{\hyperlink{classOrbital_a74299cf4fcffa5078b836c66204439cc}{m\+\_\+\+Phase}}
+\item 
+int \mbox{\hyperlink{classOrbital_a890367094e4fd52818480127d4cf5083}{m\+\_\+\+Duration}}
+\item 
+int \mbox{\hyperlink{classOrbital_a8aa88a5fe3fc3bc9c662886ca890360c}{m\+\_\+\+Internal\+Clock}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classOrbital_aa3a9163f5de9d49cd8fa11c87502a67b}{m\+\_\+\+Old\+Clock}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classOrbital_a0c5c5ea93a03de69e7aa0267d74d8740}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classOrbital_aa7389103c601bdc29ae97f52d85966a2}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classOrbital_a8deef7437a3b111b12a78e9bc9919604}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+bool \mbox{\hyperlink{classOrbital_ae2f3114681ba00fdfeea23d60efea869}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classOrbital_a41d2c8c2ecad75d258acf7991468a684}{object\+\_\+initialised}} = false
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classOrbital_aa410d74ba34b18a9f6bdf24323c4ee5b}{Neuron}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+$<$ For Sine, Cosine, Power, Fabs \& Sqrt functions 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOrbital_ac6f5367141eaa6fb4fa825262da4593a}\label{classOrbital_ac6f5367141eaa6fb4fa825262da4593a}} 
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Orbital()}{Orbital()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Orbital\+::\+Orbital (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a1c7dd9f58b740ce5058ce04aab54292c}\label{classOrbital_a1c7dd9f58b740ce5058ce04aab54292c}} 
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Orbital()}{Orbital()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Orbital\+::\+Orbital (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a099b2f1d77a36181fdf1820a6089a05b}\label{classOrbital_a099b2f1d77a36181fdf1820a6089a05b}} 
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Orbital()}{Orbital()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Orbital\+::\+Orbital (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_ac54161437f3bd23cc1e6e85e702239c8}\label{classOrbital_ac54161437f3bd23cc1e6e85e702239c8}} 
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\index{Orbital@{Orbital}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Orbital()}{Orbital()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Orbital\+::\+Orbital (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} \&}]{cognitivenetwork\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_af3c531d6dd6f3951dca836a2a9787c2c}\label{classOrbital_af3c531d6dd6f3951dca836a2a9787c2c}} 
+\index{Orbital@{Orbital}!````~Orbital@{$\sim$\+Orbital}}
+\index{````~Orbital@{$\sim$\+Orbital}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{$\sim$\+Orbital()}{~Orbital()}}
+{\footnotesize\ttfamily virtual Orbital\+::$\sim$\+Orbital (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOrbital_a57480cdd63dd1bf731864f513767800d}\label{classOrbital_a57480cdd63dd1bf731864f513767800d}} 
+\index{Orbital@{Orbital}!Add\+Neuron@{Add\+Neuron}}
+\index{Add\+Neuron@{Add\+Neuron}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Add\+Neuron()}{AddNeuron()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Orbital\+::\+Add\+Neuron (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{list\+\_\+to\+\_\+add }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_a44230cebc40357d186c442bfac2507a4}\label{classOrbital_a44230cebc40357d186c442bfac2507a4}} 
+\index{Orbital@{Orbital}!Add\+To\+Neuron\+List@{Add\+To\+Neuron\+List}}
+\index{Add\+To\+Neuron\+List@{Add\+To\+Neuron\+List}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Add\+To\+Neuron\+List()}{AddToNeuronList()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Orbital\+::\+Add\+To\+Neuron\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{neuron\+\_\+pointer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_a5aa5edbae517ff393fc1eb0ae2422123}\label{classOrbital_a5aa5edbae517ff393fc1eb0ae2422123}} 
+\index{Orbital@{Orbital}!Calc\+Position@{Calc\+Position}}
+\index{Calc\+Position@{Calc\+Position}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Calc\+Position()}{CalcPosition()}}
+{\footnotesize\ttfamily void Orbital\+::\+Calc\+Position (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{Duration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_ae46443496d38a22f1da8f7f063d420bc}\label{classOrbital_ae46443496d38a22f1da8f7f063d420bc}} 
+\index{Orbital@{Orbital}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Orbital\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a6748a8f75bfd255c1a53a5061d4e14e1}\label{classOrbital_a6748a8f75bfd255c1a53a5061d4e14e1}} 
+\index{Orbital@{Orbital}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Orbital\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a7d7e4b7cb0d009a5e7224b6f758d7b6b}\label{classOrbital_a7d7e4b7cb0d009a5e7224b6f758d7b6b}} 
+\index{Orbital@{Orbital}!Get\+Neurons@{Get\+Neurons}}
+\index{Get\+Neurons@{Get\+Neurons}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Neurons()}{GetNeurons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Orbital\+::\+Get\+Neurons (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_ad891e4a65c01e94c72ad36cda114cc2a}\label{classOrbital_ad891e4a65c01e94c72ad36cda114cc2a}} 
+\index{Orbital@{Orbital}!Get\+Phase@{Get\+Phase}}
+\index{Get\+Phase@{Get\+Phase}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Phase()}{GetPhase()}}
+{\footnotesize\ttfamily double Orbital\+::\+Get\+Phase (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_aea872758f844534806a638080a39507e}\label{classOrbital_aea872758f844534806a638080a39507e}} 
+\index{Orbital@{Orbital}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily double Orbital\+::\+Get\+Position (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_aeb7758cc920cb862fdc33374c26cb585}\label{classOrbital_aeb7758cc920cb862fdc33374c26cb585}} 
+\index{Orbital@{Orbital}!Get\+Tau@{Get\+Tau}}
+\index{Get\+Tau@{Get\+Tau}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Get\+Tau()}{GetTau()}}
+{\footnotesize\ttfamily double Orbital\+::\+Get\+Tau (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_acc6137a5a79be91a255f685a2f065330}\label{classOrbital_acc6137a5a79be91a255f685a2f065330}} 
+\index{Orbital@{Orbital}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Orbital\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_ae2a2fb06700d1d68501b0cbdea87cc08}\label{classOrbital_ae2a2fb06700d1d68501b0cbdea87cc08}} 
+\index{Orbital@{Orbital}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classOrbital_a20b0f4d549fd9024df89603a5adcc214}\label{classOrbital_a20b0f4d549fd9024df89603a5adcc214}} 
+\index{Orbital@{Orbital}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_afd0dfd382d4bf7d9fbace315bd37fa85}\label{classOrbital_afd0dfd382d4bf7d9fbace315bd37fa85}} 
+\index{Orbital@{Orbital}!Set\+Object\+Type@{Set\+Object\+Type}}
+\index{Set\+Object\+Type@{Set\+Object\+Type}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classOrbital_ac1c58fcb56e4d5c19c4ab39cc09c88ad}\label{classOrbital_ac1c58fcb56e4d5c19c4ab39cc09c88ad}} 
+\index{Orbital@{Orbital}!Set\+Phase@{Set\+Phase}}
+\index{Set\+Phase@{Set\+Phase}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Phase()}{SetPhase()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Phase (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a16ff46f7e720f2f7aed332585310a9b8}\label{classOrbital_a16ff46f7e720f2f7aed332585310a9b8}} 
+\index{Orbital@{Orbital}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_afd09baa67f1a9bff08c74dcf60e1398a}\label{classOrbital_afd09baa67f1a9bff08c74dcf60e1398a}} 
+\index{Orbital@{Orbital}!Set\+Tau@{Set\+Tau}}
+\index{Set\+Tau@{Set\+Tau}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Set\+Tau()}{SetTau()}}
+{\footnotesize\ttfamily void Orbital\+::\+Set\+Tau (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOrbital_a837289c3b2af844724c381707dee40d0}\label{classOrbital_a837289c3b2af844724c381707dee40d0}} 
+\index{Orbital@{Orbital}!Update@{Update}}
+\index{Update@{Update}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Orbital\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classOrbital_afbf72ba4e260627422c9f53dea793923}\label{classOrbital_afbf72ba4e260627422c9f53dea793923}} 
+\index{Orbital@{Orbital}!Update\+Cycle@{Update\+Cycle}}
+\index{Update\+Cycle@{Update\+Cycle}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Update\+Cycle()}{UpdateCycle()}}
+{\footnotesize\ttfamily void Orbital\+::\+Update\+Cycle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{set\+\_\+of\+\_\+update\+\_\+pointers,  }\item[{unsigned int}]{pointer\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classOrbital_aa410d74ba34b18a9f6bdf24323c4ee5b}\label{classOrbital_aa410d74ba34b18a9f6bdf24323c4ee5b}} 
+\index{Orbital@{Orbital}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{Neuron}{Neuron}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classNeuron}{Neuron}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classOrbital_a8deef7437a3b111b12a78e9bc9919604}\label{classOrbital_a8deef7437a3b111b12a78e9bc9919604}} 
+\index{Orbital@{Orbital}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Orbital\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_aa372740124e986fd28903fc0a58b9c76}\label{classOrbital_aa372740124e986fd28903fc0a58b9c76}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Orbital\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classOrbital_a890367094e4fd52818480127d4cf5083}\label{classOrbital_a890367094e4fd52818480127d4cf5083}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Duration@{m\+\_\+\+Duration}}
+\index{m\+\_\+\+Duration@{m\+\_\+\+Duration}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Duration}{m\_Duration}}
+{\footnotesize\ttfamily int Orbital\+::m\+\_\+\+Duration\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a8aa88a5fe3fc3bc9c662886ca890360c}\label{classOrbital_a8aa88a5fe3fc3bc9c662886ca890360c}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Internal\+Clock@{m\+\_\+\+Internal\+Clock}}
+\index{m\+\_\+\+Internal\+Clock@{m\+\_\+\+Internal\+Clock}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Internal\+Clock}{m\_InternalClock}}
+{\footnotesize\ttfamily int Orbital\+::m\+\_\+\+Internal\+Clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_aa3a9163f5de9d49cd8fa11c87502a67b}\label{classOrbital_aa3a9163f5de9d49cd8fa11c87502a67b}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Old\+Clock@{m\+\_\+\+Old\+Clock}}
+\index{m\+\_\+\+Old\+Clock@{m\+\_\+\+Old\+Clock}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Old\+Clock}{m\_OldClock}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Orbital\+::m\+\_\+\+Old\+Clock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a74299cf4fcffa5078b836c66204439cc}\label{classOrbital_a74299cf4fcffa5078b836c66204439cc}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Phase@{m\+\_\+\+Phase}}
+\index{m\+\_\+\+Phase@{m\+\_\+\+Phase}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Phase}{m\_Phase}}
+{\footnotesize\ttfamily double Orbital\+::m\+\_\+\+Phase\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a16163ba33abccd079bbf5f4bcb9d9054}\label{classOrbital_a16163ba33abccd079bbf5f4bcb9d9054}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Position@{m\+\_\+\+Position}}
+\index{m\+\_\+\+Position@{m\+\_\+\+Position}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Position}{m\_Position}}
+{\footnotesize\ttfamily double Orbital\+::m\+\_\+\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a39c9d2d348dc7c20970bb16c01c7649e}\label{classOrbital_a39c9d2d348dc7c20970bb16c01c7649e}} 
+\index{Orbital@{Orbital}!m\+\_\+\+Tau@{m\+\_\+\+Tau}}
+\index{m\+\_\+\+Tau@{m\+\_\+\+Tau}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tau}{m\_Tau}}
+{\footnotesize\ttfamily int Orbital\+::m\+\_\+\+Tau\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a504f1b3e8621e7eb7e682c3cec48272d}\label{classOrbital_a504f1b3e8621e7eb7e682c3cec48272d}} 
+\index{Orbital@{Orbital}!neuron\+\_\+list@{neuron\+\_\+list}}
+\index{neuron\+\_\+list@{neuron\+\_\+list}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{neuron\+\_\+list}{neuron\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Orbital\+::neuron\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classOrbital_ae2f3114681ba00fdfeea23d60efea869}\label{classOrbital_ae2f3114681ba00fdfeea23d60efea869}} 
+\index{Orbital@{Orbital}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Orbital\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_ac625d580da26f03f2222352c92b9e61e}\label{classOrbital_ac625d580da26f03f2222352c92b9e61e}} 
+\index{Orbital@{Orbital}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Orbital\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a41d2c8c2ecad75d258acf7991468a684}\label{classOrbital_a41d2c8c2ecad75d258acf7991468a684}} 
+\index{Orbital@{Orbital}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Orbital\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a00b10dd18889b7ab0f3a60de0c6bdcf5}\label{classOrbital_a00b10dd18889b7ab0f3a60de0c6bdcf5}} 
+\index{Orbital@{Orbital}!orbital\+\_\+type@{orbital\+\_\+type}}
+\index{orbital\+\_\+type@{orbital\+\_\+type}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{orbital\+\_\+type}{orbital\_type}}
+{\footnotesize\ttfamily int Orbital\+::orbital\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_aa7389103c601bdc29ae97f52d85966a2}\label{classOrbital_aa7389103c601bdc29ae97f52d85966a2}} 
+\index{Orbital@{Orbital}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Orbital\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classOrbital_a0c5c5ea93a03de69e7aa0267d74d8740}\label{classOrbital_a0c5c5ea93a03de69e7aa0267d74d8740}} 
+\index{Orbital@{Orbital}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Orbital@{Orbital}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Orbital\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{orbital_8h}{orbital.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{orbital_8cc}{orbital.\+cc}}\end{DoxyCompactItemize}

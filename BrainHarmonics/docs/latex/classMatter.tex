@@ -1,0 +1,184 @@
+\hypertarget{classMatter}{}\section{Matter Class Reference}
+\label{classMatter}\index{Matter@{Matter}}
+
+
+{\ttfamily \#include $<$matter.\+h$>$}
+
+Inheritance diagram for Matter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMatter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMatter_ac2dc2f5eeef03d3bdf41a68334ae49b4}{Matter}} ()
+\item 
+\mbox{\hyperlink{classMatter_a7e2328c2a17dcc7b57af59d1d5c9ea96}{Matter}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classMatter_ae15b0b8d811fb2ffd01ea039777d1b95}{Matter}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classMatter_a724543a0439d3099f5fc0eae68110b75}{Matter}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classUniverse}{Universe}} \&universe\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classMatter_a646fca3d4176950aed6173e1378664e3}{$\sim$\+Matter}} ()
+\item 
+bool \mbox{\hyperlink{classMatter_adfd93d323e43d09fa8d8b7cdd2258611}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classMatter_ac667a2f3b6d5d2ce8469efe1596cdd62}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classMatter_a514b4a64589eb3fbc3db6b3b356bd687}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+int \mbox{\hyperlink{classMatter_a56898dd51e5a675832bc82de285b3ef7}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classMatter_aaa9afd2c589feed49f7ac3c8ba1e2ae1}{matter\+\_\+counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}matter\+\_\+counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatter_a03bdd796ec849635193fea2f7e6c3e03}{matter\+\_\+type}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMatter_abce05beb1ad51f3b4bddefcd35731a2f}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classMatter_a4e4a62161c81e4c2ba70b3ff41b95b56}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classMatter_af50b6a357e77f2cd81264234148686ba}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+bool \mbox{\hyperlink{classMatter_a570c6b0584f1e67d24f0a7661d3cc790}{object\+\_\+initialised}}
+\item 
+bool \mbox{\hyperlink{classMatter_a51eb653f21084e8d7494ea87059072ea}{object\+\_\+disabled}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMatter_a9bc6eb2a4c20ce83728a7c9a31b91f19}{Composite\+Force\+Particle}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMatter_ac2dc2f5eeef03d3bdf41a68334ae49b4}\label{classMatter_ac2dc2f5eeef03d3bdf41a68334ae49b4}} 
+\index{Matter@{Matter}!Matter@{Matter}}
+\index{Matter@{Matter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Matter()}{Matter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Matter\+::\+Matter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMatter_a7e2328c2a17dcc7b57af59d1d5c9ea96}\label{classMatter_a7e2328c2a17dcc7b57af59d1d5c9ea96}} 
+\index{Matter@{Matter}!Matter@{Matter}}
+\index{Matter@{Matter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Matter()}{Matter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Matter\+::\+Matter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMatter_ae15b0b8d811fb2ffd01ea039777d1b95}\label{classMatter_ae15b0b8d811fb2ffd01ea039777d1b95}} 
+\index{Matter@{Matter}!Matter@{Matter}}
+\index{Matter@{Matter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Matter()}{Matter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Matter\+::\+Matter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMatter_a724543a0439d3099f5fc0eae68110b75}\label{classMatter_a724543a0439d3099f5fc0eae68110b75}} 
+\index{Matter@{Matter}!Matter@{Matter}}
+\index{Matter@{Matter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Matter()}{Matter()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Matter\+::\+Matter (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classUniverse}{Universe}} \&}]{universe\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMatter_a646fca3d4176950aed6173e1378664e3}\label{classMatter_a646fca3d4176950aed6173e1378664e3}} 
+\index{Matter@{Matter}!````~Matter@{$\sim$\+Matter}}
+\index{````~Matter@{$\sim$\+Matter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{$\sim$\+Matter()}{~Matter()}}
+{\footnotesize\ttfamily virtual Matter\+::$\sim$\+Matter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatter_ac667a2f3b6d5d2ce8469efe1596cdd62}\label{classMatter_ac667a2f3b6d5d2ce8469efe1596cdd62}} 
+\index{Matter@{Matter}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Matter\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMatter_adfd93d323e43d09fa8d8b7cdd2258611}\label{classMatter_adfd93d323e43d09fa8d8b7cdd2258611}} 
+\index{Matter@{Matter}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Matter\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMatter_a514b4a64589eb3fbc3db6b3b356bd687}\label{classMatter_a514b4a64589eb3fbc3db6b3b356bd687}} 
+\index{Matter@{Matter}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Matter\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classMatter_a56898dd51e5a675832bc82de285b3ef7}\label{classMatter_a56898dd51e5a675832bc82de285b3ef7}} 
+\index{Matter@{Matter}!Update@{Update}}
+\index{Update@{Update}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Matter\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMatter_a9bc6eb2a4c20ce83728a7c9a31b91f19}\label{classMatter_a9bc6eb2a4c20ce83728a7c9a31b91f19}} 
+\index{Matter@{Matter}!Composite\+Force\+Particle@{Composite\+Force\+Particle}}
+\index{Composite\+Force\+Particle@{Composite\+Force\+Particle}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{Composite\+Force\+Particle}{CompositeForceParticle}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classCompositeForceParticle}{Composite\+Force\+Particle}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMatter_af50b6a357e77f2cd81264234148686ba}\label{classMatter_af50b6a357e77f2cd81264234148686ba}} 
+\index{Matter@{Matter}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Matter\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMatter_aaa9afd2c589feed49f7ac3c8ba1e2ae1}\label{classMatter_aaa9afd2c589feed49f7ac3c8ba1e2ae1}} 
+\index{Matter@{Matter}!matter\+\_\+counter@{matter\+\_\+counter}}
+\index{matter\+\_\+counter@{matter\+\_\+counter}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{matter\+\_\+counter}{matter\_counter}}
+{\footnotesize\ttfamily unsigned int Matter\+::matter\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}matter\+\_\+counter\char`\"{}. 
+
+\mbox{\Hypertarget{classMatter_a03bdd796ec849635193fea2f7e6c3e03}\label{classMatter_a03bdd796ec849635193fea2f7e6c3e03}} 
+\index{Matter@{Matter}!matter\+\_\+type@{matter\+\_\+type}}
+\index{matter\+\_\+type@{matter\+\_\+type}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{matter\+\_\+type}{matter\_type}}
+{\footnotesize\ttfamily int Matter\+::matter\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMatter_a51eb653f21084e8d7494ea87059072ea}\label{classMatter_a51eb653f21084e8d7494ea87059072ea}} 
+\index{Matter@{Matter}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Matter\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMatter_a570c6b0584f1e67d24f0a7661d3cc790}\label{classMatter_a570c6b0584f1e67d24f0a7661d3cc790}} 
+\index{Matter@{Matter}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Matter\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMatter_a4e4a62161c81e4c2ba70b3ff41b95b56}\label{classMatter_a4e4a62161c81e4c2ba70b3ff41b95b56}} 
+\index{Matter@{Matter}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Matter\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMatter_abce05beb1ad51f3b4bddefcd35731a2f}\label{classMatter_abce05beb1ad51f3b4bddefcd35731a2f}} 
+\index{Matter@{Matter}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Matter@{Matter}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Matter\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{matter_8h}{matter.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{matter_8cc}{matter.\+cc}}\end{DoxyCompactItemize}

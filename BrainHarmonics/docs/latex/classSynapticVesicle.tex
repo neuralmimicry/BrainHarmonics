@@ -1,0 +1,409 @@
+\hypertarget{classSynapticVesicle}{}\section{Synaptic\+Vesicle Class Reference}
+\label{classSynapticVesicle}\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+
+
+{\ttfamily \#include $<$synapticvesicle.\+h$>$}
+
+Inheritance diagram for Synaptic\+Vesicle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classSynapticVesicle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSynapticVesicle_ac3f899ed25281a6d337ecefe1da41c67}{Synaptic\+Vesicle}} ()
+\item 
+\mbox{\hyperlink{classSynapticVesicle_aefd8a743e80077235a1c9a9fd133cc9d}{Synaptic\+Vesicle}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classSynapticVesicle_a6602b03ba498129b46c173e8fa66927b}{Synaptic\+Vesicle}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classSynapticVesicle_a0f86278b771137978d03bb6cf460a527}{Synaptic\+Vesicle}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} \&axonbouton\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classSynapticVesicle_a9bbc23a1c9757d8522a10bb28e0f575b}{$\sim$\+Synaptic\+Vesicle}} ()
+\item 
+unsigned int \mbox{\hyperlink{classSynapticVesicle_a42a3ab6704c27ca55531864c46f0fc2b}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classSynapticVesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}{Get\+Release\+State}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classSynapticVesicle_ac98f9c8ccaabbccc38151c51d204dfec}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+bool \mbox{\hyperlink{classSynapticVesicle_add2f2815448729977fbcdbd5a59ec7b4}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_a89f4fd3ed27a7dc768de215534325d6a}{Create\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_a052b85a42c2d55ca146665c40cbabffd}{Create\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_aa811e68d1a3220c07140847eb3ebc8b3}{Clone\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_aa610e38786a8c9978d9c00bca40a5200}{Clone\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_a5ab4ecfb4a880bc729078f5529c547bc}{Destroy\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_a37817cc68b212d89ef8aa08c73631cbb}{Destroy\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_a56d406fdd01f267d868caedb390080ff}{Add\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_ac924e6b7b824066a89136e52f2d5ce80}{Add\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_a7ea7841bd1a7a17c78a023db8860cc22}{Remove\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_aab1e61b4910399d56071ca59f2758e72}{Remove\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classSynapticVesicle_a3bdf4423899d438b5a1d2246c52c8c45}{Get\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_ada95d85873125115208ff51f60fa72e9}{Get\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a045f27b28b8b11edc884568b390c22fe}{Growth\+Surface}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double surf\+\_\+change)
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a0d4a4a03405593b3abc0e734c1758830}{Growth\+Volume}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double vol\+\_\+change)
+\item 
+void \mbox{\hyperlink{classSynapticVesicle_a2509969e82fee789cc56fb0978f27662}{Release\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a49c8e82147e634c83f7b4c3ef9894e2d}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classSynapticVesicle_a6b7fb63806105b89ddad8fd0f56b76f6}{neurotransmitter\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a2c71a4e09837c1b4ef2111e0eb634030}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_afa30c67ce14495976bc167cbd8528cdf}{neurotransmitter\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a568770c79ad49a55129076a1bc625db2}{synapticvesicle\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a8a06e1643fa04b7f317523382786f200}{m\+\_\+add\+Status}}
+\item 
+bool \mbox{\hyperlink{classSynapticVesicle_ad50cf0b70327fd52cd6b2894e19e5842}{object\+\_\+disabled}}
+\item 
+bool \mbox{\hyperlink{classSynapticVesicle_aef65466f1440e00ad7d352095fe019de}{object\+\_\+initialised}}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_a73a7ecd250c4750d9b414c543e534a96}{m\+\_\+\+Release\+State}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSynapticVesicle_af025ff605f37a683bd4a00d9140a217b}{time\+\_\+object\+\_\+created}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classSynapticVesicle_a9ba999fc5ee77df5a962592ea4935329}{previous\+\_\+event\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classSynapticVesicle_add9c814d77d3059a436d5a8ed80b3636}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classSynapticVesicle_a4cdf034bf90a4131ca05ea5e9ea5fc5e}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classSynapticVesicle_aed6d83381706ed28500d3aa9032fd6d0}{m\+\_\+\+Surface\+Area}}
+\item 
+unsigned int \mbox{\hyperlink{classSynapticVesicle_ad429db4636b70c355d39c212824c9bf4}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSynapticVesicle_ad97b48b851a719a0dc2cda6d4c5e3d1b}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSynapticVesicle_aafcd5ff5201db3b6d6af126361302607}{m\+\_\+axonlength}}
+\item 
+double \mbox{\hyperlink{classSynapticVesicle_abedd5d5b6ab7783fc98967c39fbb8acc}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classSynapticVesicle_a98b593024ea14db5ab7ab5e899c5a733}{m\+\_\+\+Time\+Threshold}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSynapticVesicle_ac3f899ed25281a6d337ecefe1da41c67}\label{classSynapticVesicle_ac3f899ed25281a6d337ecefe1da41c67}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_aefd8a743e80077235a1c9a9fd133cc9d}\label{classSynapticVesicle_aefd8a743e80077235a1c9a9fd133cc9d}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a6602b03ba498129b46c173e8fa66927b}\label{classSynapticVesicle_a6602b03ba498129b46c173e8fa66927b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a0f86278b771137978d03bb6cf460a527}\label{classSynapticVesicle_a0f86278b771137978d03bb6cf460a527}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Synaptic\+Vesicle()}{SynapticVesicle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Synaptic\+Vesicle\+::\+Synaptic\+Vesicle (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classAxonBouton}{Axon\+Bouton}} \&}]{axonbouton\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a9bbc23a1c9757d8522a10bb28e0f575b}\label{classSynapticVesicle_a9bbc23a1c9757d8522a10bb28e0f575b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!````~Synaptic\+Vesicle@{$\sim$\+Synaptic\+Vesicle}}
+\index{````~Synaptic\+Vesicle@{$\sim$\+Synaptic\+Vesicle}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{$\sim$\+Synaptic\+Vesicle()}{~SynapticVesicle()}}
+{\footnotesize\ttfamily virtual Synaptic\+Vesicle\+::$\sim$\+Synaptic\+Vesicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSynapticVesicle_a56d406fdd01f267d868caedb390080ff}\label{classSynapticVesicle_a56d406fdd01f267d868caedb390080ff}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_ac924e6b7b824066a89136e52f2d5ce80}\label{classSynapticVesicle_ac924e6b7b824066a89136e52f2d5ce80}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_aa811e68d1a3220c07140847eb3ebc8b3}\label{classSynapticVesicle_aa811e68d1a3220c07140847eb3ebc8b3}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_aa610e38786a8c9978d9c00bca40a5200}\label{classSynapticVesicle_aa610e38786a8c9978d9c00bca40a5200}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a89f4fd3ed27a7dc768de215534325d6a}\label{classSynapticVesicle_a89f4fd3ed27a7dc768de215534325d6a}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a052b85a42c2d55ca146665c40cbabffd}\label{classSynapticVesicle_a052b85a42c2d55ca146665c40cbabffd}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a5ab4ecfb4a880bc729078f5529c547bc}\label{classSynapticVesicle_a5ab4ecfb4a880bc729078f5529c547bc}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a37817cc68b212d89ef8aa08c73631cbb}\label{classSynapticVesicle_a37817cc68b212d89ef8aa08c73631cbb}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a42a3ab6704c27ca55531864c46f0fc2b}\label{classSynapticVesicle_a42a3ab6704c27ca55531864c46f0fc2b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Synaptic\+Vesicle\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}\label{classSynapticVesicle_a0c4d7e936023cf0f719d0a4d3f315c9c}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a3bdf4423899d438b5a1d2246c52c8c45}\label{classSynapticVesicle_a3bdf4423899d438b5a1d2246c52c8c45}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_ada95d85873125115208ff51f60fa72e9}\label{classSynapticVesicle_ada95d85873125115208ff51f60fa72e9}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}\label{classSynapticVesicle_a6cc0018a0fd02cf99f1ba0ad31f495bc}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Get\+Release\+State@{Get\+Release\+State}}
+\index{Get\+Release\+State@{Get\+Release\+State}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Get\+Release\+State()}{GetReleaseState()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Get\+Release\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a045f27b28b8b11edc884568b390c22fe}\label{classSynapticVesicle_a045f27b28b8b11edc884568b390c22fe}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Growth\+Surface@{Growth\+Surface}}
+\index{Growth\+Surface@{Growth\+Surface}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Growth\+Surface()}{GrowthSurface()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Growth\+Surface (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{surf\+\_\+change }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a0d4a4a03405593b3abc0e734c1758830}\label{classSynapticVesicle_a0d4a4a03405593b3abc0e734c1758830}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Growth\+Volume@{Growth\+Volume}}
+\index{Growth\+Volume@{Growth\+Volume}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Growth\+Volume()}{GrowthVolume()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Growth\+Volume (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{vol\+\_\+change }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a2509969e82fee789cc56fb0978f27662}\label{classSynapticVesicle_a2509969e82fee789cc56fb0978f27662}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Release\+Neurotransmitters@{Release\+Neurotransmitters}}
+\index{Release\+Neurotransmitters@{Release\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Release\+Neurotransmitters()}{ReleaseNeurotransmitters()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Release\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a7ea7841bd1a7a17c78a023db8860cc22}\label{classSynapticVesicle_a7ea7841bd1a7a17c78a023db8860cc22}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Synaptic\+Vesicle\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_aab1e61b4910399d56071ca59f2758e72}\label{classSynapticVesicle_aab1e61b4910399d56071ca59f2758e72}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Synaptic\+Vesicle\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_add2f2815448729977fbcdbd5a59ec7b4}\label{classSynapticVesicle_add2f2815448729977fbcdbd5a59ec7b4}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Synaptic\+Vesicle\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}\label{classSynapticVesicle_a7fd7cfce5eccb904206d968866f85220}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAxonBouton_afe285478d414f2815afb98abe7b92898}{Axon\+Bouton}}.
+
+\mbox{\Hypertarget{classSynapticVesicle_ac98f9c8ccaabbccc38151c51d204dfec}\label{classSynapticVesicle_ac98f9c8ccaabbccc38151c51d204dfec}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Synaptic\+Vesicle\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a49c8e82147e634c83f7b4c3ef9894e2d}\label{classSynapticVesicle_a49c8e82147e634c83f7b4c3ef9894e2d}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!Update@{Update}}
+\index{Update@{Update}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSynapticVesicle_add9c814d77d3059a436d5a8ed80b3636}\label{classSynapticVesicle_add9c814d77d3059a436d5a8ed80b3636}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a8a06e1643fa04b7f317523382786f200}\label{classSynapticVesicle_a8a06e1643fa04b7f317523382786f200}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_aafcd5ff5201db3b6d6af126361302607}\label{classSynapticVesicle_aafcd5ff5201db3b6d6af126361302607}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+axonlength@{m\+\_\+axonlength}}
+\index{m\+\_\+axonlength@{m\+\_\+axonlength}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+axonlength}{m\_axonlength}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::m\+\_\+axonlength\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_ad429db4636b70c355d39c212824c9bf4}\label{classSynapticVesicle_ad429db4636b70c355d39c212824c9bf4}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Synaptic\+Vesicle\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classSynapticVesicle_a2c71a4e09837c1b4ef2111e0eb634030}\label{classSynapticVesicle_a2c71a4e09837c1b4ef2111e0eb634030}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a73a7ecd250c4750d9b414c543e534a96}\label{classSynapticVesicle_a73a7ecd250c4750d9b414c543e534a96}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Release\+State@{m\+\_\+\+Release\+State}}
+\index{m\+\_\+\+Release\+State@{m\+\_\+\+Release\+State}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Release\+State}{m\_ReleaseState}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::m\+\_\+\+Release\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_aed6d83381706ed28500d3aa9032fd6d0}\label{classSynapticVesicle_aed6d83381706ed28500d3aa9032fd6d0}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_abedd5d5b6ab7783fc98967c39fbb8acc}\label{classSynapticVesicle_abedd5d5b6ab7783fc98967c39fbb8acc}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a98b593024ea14db5ab7ab5e899c5a733}\label{classSynapticVesicle_a98b593024ea14db5ab7ab5e899c5a733}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a4cdf034bf90a4131ca05ea5e9ea5fc5e}\label{classSynapticVesicle_a4cdf034bf90a4131ca05ea5e9ea5fc5e}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a6b7fb63806105b89ddad8fd0f56b76f6}\label{classSynapticVesicle_a6b7fb63806105b89ddad8fd0f56b76f6}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Synaptic\+Vesicle\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_afa30c67ce14495976bc167cbd8528cdf}\label{classSynapticVesicle_afa30c67ce14495976bc167cbd8528cdf}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}}
+\index{neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+pool}{neurotransmitter\_pool}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::neurotransmitter\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_ad50cf0b70327fd52cd6b2894e19e5842}\label{classSynapticVesicle_ad50cf0b70327fd52cd6b2894e19e5842}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Synaptic\+Vesicle\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_ad97b48b851a719a0dc2cda6d4c5e3d1b}\label{classSynapticVesicle_ad97b48b851a719a0dc2cda6d4c5e3d1b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Synaptic\+Vesicle\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classSynapticVesicle_aef65466f1440e00ad7d352095fe019de}\label{classSynapticVesicle_aef65466f1440e00ad7d352095fe019de}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Synaptic\+Vesicle\+::object\+\_\+initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a9ba999fc5ee77df5a962592ea4935329}\label{classSynapticVesicle_a9ba999fc5ee77df5a962592ea4935329}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Synaptic\+Vesicle\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_a568770c79ad49a55129076a1bc625db2}\label{classSynapticVesicle_a568770c79ad49a55129076a1bc625db2}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!synapticvesicle\+\_\+type@{synapticvesicle\+\_\+type}}
+\index{synapticvesicle\+\_\+type@{synapticvesicle\+\_\+type}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{synapticvesicle\+\_\+type}{synapticvesicle\_type}}
+{\footnotesize\ttfamily int Synaptic\+Vesicle\+::synapticvesicle\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSynapticVesicle_af025ff605f37a683bd4a00d9140a217b}\label{classSynapticVesicle_af025ff605f37a683bd4a00d9140a217b}} 
+\index{Synaptic\+Vesicle@{Synaptic\+Vesicle}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Synaptic\+Vesicle@{Synaptic\+Vesicle}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Synaptic\+Vesicle\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{synapticvesicle_8h}{synapticvesicle.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{synapticvesicle_8cc}{synapticvesicle.\+cc}}\end{DoxyCompactItemize}

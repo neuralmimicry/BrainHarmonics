@@ -1,0 +1,170 @@
+\hypertarget{classPolygon}{}\section{Polygon Class Reference}
+\label{classPolygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$polygon.\+h$>$}
+
+Inheritance diagram for Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classPolygon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolygon_ac183e712f8be1e13f1c9d5b4d4512ead}{Polygon}} ()
+\item 
+\mbox{\hyperlink{classPolygon_a023fe85caf3682e46fb6d15d03da3435}{Polygon}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classPolygon_aa2a7d4a8a7765c45b834a7ecc198e0c3}{Polygon}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classPolygon_a581ad88f80bf40668e6c8b928c908bcb}{Polygon}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classPolyhedron}{Polyhedron}} \&polyhedron\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classPolygon_a873f9acee059f717277b6414102dab16}{$\sim$\+Polygon}} ()
+\item 
+bool \mbox{\hyperlink{classPolygon_a0e2824d12cd6b18c8b14c64ef4b2bf97}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+unsigned int \mbox{\hyperlink{classPolygon_a344626b07ee8dc40c71c3bec1480d2c2}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classPolygon_ad12083d8c152a1979b04bead93b6b730}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+int \mbox{\hyperlink{classPolygon_ab3fe58d8ffce2e16589958def88aa188}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classPolygon_a4292b71e5bf6d76a09f582dedf81c862}{polygon\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}polygon\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPolygon_aba437ec0b8ab34ca435e1a653c69b558}{polygon\+\_\+type}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classPolygon_a46fa35a90ffcf375c8eceb2cf8a169d0}{previous\+\_\+event\+\_\+time}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classPolygon_af5b19b47f12f4984521d6f48a45c1428}{time\+\_\+object\+\_\+created}}
+\item 
+bool \mbox{\hyperlink{classPolygon_ada7d263fdf6c7a6138c71ca93bbea02f}{object\+\_\+disabled}} = true
+\item 
+bool \mbox{\hyperlink{classPolygon_a1c59030523e7784edf3c17dad240c821}{object\+\_\+initialised}} = false
+\item 
+int \mbox{\hyperlink{classPolygon_a06161c2266baa0d3ef7afeeeccc0547b}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPolygon_ac183e712f8be1e13f1c9d5b4d4512ead}\label{classPolygon_ac183e712f8be1e13f1c9d5b4d4512ead}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_a023fe85caf3682e46fb6d15d03da3435}\label{classPolygon_a023fe85caf3682e46fb6d15d03da3435}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_aa2a7d4a8a7765c45b834a7ecc198e0c3}\label{classPolygon_aa2a7d4a8a7765c45b834a7ecc198e0c3}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_a581ad88f80bf40668e6c8b928c908bcb}\label{classPolygon_a581ad88f80bf40668e6c8b928c908bcb}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classPolyhedron}{Polyhedron}} \&}]{polyhedron\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_a873f9acee059f717277b6414102dab16}\label{classPolygon_a873f9acee059f717277b6414102dab16}} 
+\index{Polygon@{Polygon}!````~Polygon@{$\sim$\+Polygon}}
+\index{````~Polygon@{$\sim$\+Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{$\sim$\+Polygon()}{~Polygon()}}
+{\footnotesize\ttfamily virtual Polygon\+::$\sim$\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolygon_a0e2824d12cd6b18c8b14c64ef4b2bf97}\label{classPolygon_a0e2824d12cd6b18c8b14c64ef4b2bf97}} 
+\index{Polygon@{Polygon}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Polygon\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPolygon_a344626b07ee8dc40c71c3bec1480d2c2}\label{classPolygon_a344626b07ee8dc40c71c3bec1480d2c2}} 
+\index{Polygon@{Polygon}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Polygon\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPolygon_ad12083d8c152a1979b04bead93b6b730}\label{classPolygon_ad12083d8c152a1979b04bead93b6b730}} 
+\index{Polygon@{Polygon}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Polygon\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classUniverse_aa22202ae740eb1355529afcb13285e91}{Universe}}.
+
+\mbox{\Hypertarget{classPolygon_ab3fe58d8ffce2e16589958def88aa188}\label{classPolygon_ab3fe58d8ffce2e16589958def88aa188}} 
+\index{Polygon@{Polygon}!Update@{Update}}
+\index{Update@{Update}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Polygon\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPolygon_a06161c2266baa0d3ef7afeeeccc0547b}\label{classPolygon_a06161c2266baa0d3ef7afeeeccc0547b}} 
+\index{Polygon@{Polygon}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Polygon\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPolygon_ada7d263fdf6c7a6138c71ca93bbea02f}\label{classPolygon_ada7d263fdf6c7a6138c71ca93bbea02f}} 
+\index{Polygon@{Polygon}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Polygon\+::object\+\_\+disabled = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPolygon_a1c59030523e7784edf3c17dad240c821}\label{classPolygon_a1c59030523e7784edf3c17dad240c821}} 
+\index{Polygon@{Polygon}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Polygon\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPolygon_aba437ec0b8ab34ca435e1a653c69b558}\label{classPolygon_aba437ec0b8ab34ca435e1a653c69b558}} 
+\index{Polygon@{Polygon}!polygon\+\_\+type@{polygon\+\_\+type}}
+\index{polygon\+\_\+type@{polygon\+\_\+type}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{polygon\+\_\+type}{polygon\_type}}
+{\footnotesize\ttfamily int Polygon\+::polygon\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPolygon_a4292b71e5bf6d76a09f582dedf81c862}\label{classPolygon_a4292b71e5bf6d76a09f582dedf81c862}} 
+\index{Polygon@{Polygon}!polygon\+Counter@{polygon\+Counter}}
+\index{polygon\+Counter@{polygon\+Counter}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{polygon\+Counter}{polygonCounter}}
+{\footnotesize\ttfamily unsigned int Polygon\+::polygon\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}polygon\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classPolygon_a46fa35a90ffcf375c8eceb2cf8a169d0}\label{classPolygon_a46fa35a90ffcf375c8eceb2cf8a169d0}} 
+\index{Polygon@{Polygon}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Polygon\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classPolygon_af5b19b47f12f4984521d6f48a45c1428}\label{classPolygon_af5b19b47f12f4984521d6f48a45c1428}} 
+\index{Polygon@{Polygon}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Polygon\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{polygon_8h}{polygon.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{polygon_8cc}{polygon.\+cc}}\end{DoxyCompactItemize}

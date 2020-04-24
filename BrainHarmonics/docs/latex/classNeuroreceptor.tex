@@ -1,0 +1,513 @@
+\hypertarget{classNeuroreceptor}{}\section{Neuroreceptor Class Reference}
+\label{classNeuroreceptor}\index{Neuroreceptor@{Neuroreceptor}}
+
+
+{\ttfamily \#include $<$neuroreceptor.\+h$>$}
+
+Inheritance diagram for Neuroreceptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.000000cm]{classNeuroreceptor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNeuroreceptor_a70d2c87f9932f6fc113da815b6aecb7f}{Neuroreceptor}} ()
+\item 
+\mbox{\hyperlink{classNeuroreceptor_a4628bf1ab69e010dc42b3adfd4dee72b}{Neuroreceptor}} (unsigned int object\+\_\+type)
+\item 
+\mbox{\hyperlink{classNeuroreceptor_a600273e92c3a4b076273d41fa58b58e9}{Neuroreceptor}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classNeuroreceptor_ab002bab3b4ffeed402f60e574ce0263e}{Neuroreceptor}} (unsigned int object\+\_\+type, std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classDendriteCleft}{Dendrite\+Cleft}} \&dendritecleft\+\_\+connector)
+\item 
+virtual \mbox{\hyperlink{classNeuroreceptor_ac9c1e9e985ed85712c14c85e306bebc9}{$\sim$\+Neuroreceptor}} ()
+\item 
+unsigned int \mbox{\hyperlink{classNeuroreceptor_a4a49cfc2f741d7f7b7888929651f7be3}{Get\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_abc151381ec5e7c39bb45f87a9fd17b9a}{Get\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_afbcf31596170f09292e4d8057c0215e8}{Get\+Receptor\+Binding\+State}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a3ef0065a7670a2c156e34851140e0fa8}{Get\+Receptor\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_aff4754990dc5b8d0105db281c02031d7}{Get\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a69103180d9b335b9504b4ae3c203d0ea}{Get\+Ions}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_a75adddd7e615af57b8f3f841ec25463c}{Set\+Receptor\+Binding\+State}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, bool val)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_ace41227d30a8f50e1a6efadc86573f80}{Toggle\+Receptor\+Binding\+State}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_a8a339a4d0f150bbdfbc2650155625196}{Toggle\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_aeec8bb2442e04700d4e9d80bb2d6e47e}{Set\+Disabled}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, bool val)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_a0e6e88d6c5b357872f055edbddb54d4c}{Set\+Receptor\+Type}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_a0660a316ef44cf723509f720acd16f24}{Set\+Counter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, unsigned int val)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_ac1189f9c40e3cd07e4b1dc11115ad882}{Set\+Energy}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, double val)
+\item 
+void \mbox{\hyperlink{classNeuroreceptor_a36a548475e752631130a2b4ec67c66b6}{Set\+Ions}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int val)
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_a30debeb0311d92eb6abe354409c15d09}{Reset\+Parameters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_af671059884336eadbc367f9d8556eb3f}{Create\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_aa0037379ecb214ff982429e054f2a194}{Create\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_a5629a3d463cc963138ff017ec499720d}{Clone\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$clone\+\_\+object, double perfection\+\_\+membership)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_af953abb478f4a3a1843b4b61f9969274}{Clone\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ cloning\+\_\+list, double perfection\+\_\+membership)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_a35beb8e355f9b567b327e9323f5552a0}{Destroy\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$destroy\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_acd500abfb25bd08167b2002e85e8b788}{Destroy\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ destruction\+\_\+list)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_a900b21f6feb6334d4ff8a3fd5244bf05}{Add\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$add\+\_\+object)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_a2e4cbd9debd555091923f57f8aa11fe4}{Add\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ add\+\_\+objects)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_a7e94ac827de7abbac585639edfd4f985}{Remove\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_ad760106ce6194ac02959c1882bd0f327}{Remove\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int quantity)
+\item 
+\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ \mbox{\hyperlink{classNeuroreceptor_a526d41738265399c19c67068db450851}{Get\+Neurotransmitter}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int selector)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_a4267220ee11105b7628bf39049ef7cc5}{Get\+Neurotransmitters}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_a5d54ca353f0be78522aacc4fca06db63}{Compatibility\+Check}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, int neurotransmitter\+Type)
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_ab8f288a095fb028793e7246a42de233b}{Update}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ \mbox{\hyperlink{classNeuroreceptor_aeb769732421531614a47bcab8ae21f8e}{neurotransmitter\+\_\+list}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_ab851e887c0570177192a0ff0c0e97e6b}{m\+\_\+\+Neuron\+Type}}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a7fa3fda8a40bf5d42f687a6c8d0c90e8}{neuroreceptor\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a12960bf3fcc399426d49a4c6b43b98e7}{neurotransmitter\+\_\+pool}}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a72e33b87787c22588d891857ee3b3d89}{m\+\_\+add\+Status}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeuroreceptor_a135d843eb579212e0e5307b6062304d5}{previous\+\_\+event\+\_\+time}}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ \mbox{\hyperlink{classNeuroreceptor_a1ca4d66356d1e59850ea2d7591873ff5}{time\+\_\+object\+\_\+created}}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_af3b19cf8ef91627d66c718944ff3c67d}{duration\+\_\+since\+\_\+last\+\_\+event}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_a38da9f3b9e759374eaa27039c5cd7eb1}{m\+\_\+\+Volume}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_a635db1419140d67306d3164e7727087f}{m\+\_\+\+Surface\+Area}}
+\item 
+unsigned int \mbox{\hyperlink{classNeuroreceptor_a934ea2375feb82cc4b3ca94373542f57}{m\+\_\+\+Counter}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuroreceptor_a80028c9ce2c6146d9b9df7bd66ac431e}{object\+\_\+energy}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}object\+\_\+energy\char`\"{}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classNeuroreceptor_a314c6c2312e947d17c1159806c6fbd60}{object\+\_\+energy\+\_\+threshold}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_aed2feaadd9a22823d58d0b3dfbb99f4e}{m\+\_\+\+Time\+Dilation}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_a2f9a114bc07e75721dde5f8ec0d94944}{m\+\_\+\+Time\+Threshold}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_a2633c2cb6dbeb3aa0d0a6a71ea1235fa}{m\+\_\+\+Length}}
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_a31a18ad0a083d4d9b40bb4ad3eb45458}{object\+\_\+initialised}} = false
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_ad7cec01383ddbdfce87ed5510703d21b}{object\+\_\+disabled}}
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_abfff414d8cd3e762fd73f303908fdb03}{object\+\_\+size}} = 0
+\item 
+double \mbox{\hyperlink{classNeuroreceptor_a51c4fde4d12804418451b1e3212d3b9e}{object\+\_\+energy\+Full}}
+\item 
+int \mbox{\hyperlink{classNeuroreceptor_a78a8356b686482232ccb9e65ed733c12}{m\+\_\+\+Ions}}
+\item 
+bool \mbox{\hyperlink{classNeuroreceptor_add9d0f75226881200221d886bcdcc6ab}{m\+\_\+bound\+Receptor}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+bound\+Receptor\char`\"{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNeuroreceptor_a1bd49f13829d154ecd9b91488bd63035}{m\+\_\+type\+Receptor}}
+\begin{DoxyCompactList}\small\item\em Member variable \char`\"{}m\+\_\+type\+Receptor\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNeuroreceptor_a70d2c87f9932f6fc113da815b6aecb7f}\label{classNeuroreceptor_a70d2c87f9932f6fc113da815b6aecb7f}} 
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Neuroreceptor()}{Neuroreceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Neuroreceptor\+::\+Neuroreceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a4628bf1ab69e010dc42b3adfd4dee72b}\label{classNeuroreceptor_a4628bf1ab69e010dc42b3adfd4dee72b}} 
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Neuroreceptor()}{Neuroreceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Neuroreceptor\+::\+Neuroreceptor (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a600273e92c3a4b076273d41fa58b58e9}\label{classNeuroreceptor_a600273e92c3a4b076273d41fa58b58e9}} 
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Neuroreceptor()}{Neuroreceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Neuroreceptor\+::\+Neuroreceptor (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ab002bab3b4ffeed402f60e574ce0263e}\label{classNeuroreceptor_ab002bab3b4ffeed402f60e574ce0263e}} 
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\index{Neuroreceptor@{Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Neuroreceptor()}{Neuroreceptor()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Neuroreceptor\+::\+Neuroreceptor (\begin{DoxyParamCaption}\item[{unsigned int}]{object\+\_\+type,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classDendriteCleft}{Dendrite\+Cleft}} \&}]{dendritecleft\+\_\+connector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ac9c1e9e985ed85712c14c85e306bebc9}\label{classNeuroreceptor_ac9c1e9e985ed85712c14c85e306bebc9}} 
+\index{Neuroreceptor@{Neuroreceptor}!````~Neuroreceptor@{$\sim$\+Neuroreceptor}}
+\index{````~Neuroreceptor@{$\sim$\+Neuroreceptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{$\sim$\+Neuroreceptor()}{~Neuroreceptor()}}
+{\footnotesize\ttfamily virtual Neuroreceptor\+::$\sim$\+Neuroreceptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeuroreceptor_a900b21f6feb6334d4ff8a3fd5244bf05}\label{classNeuroreceptor_a900b21f6feb6334d4ff8a3fd5244bf05}} 
+\index{Neuroreceptor@{Neuroreceptor}!Add\+Neurotransmitter@{Add\+Neurotransmitter}}
+\index{Add\+Neurotransmitter@{Add\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitter()}{AddNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Add\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{add\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a2e4cbd9debd555091923f57f8aa11fe4}\label{classNeuroreceptor_a2e4cbd9debd555091923f57f8aa11fe4}} 
+\index{Neuroreceptor@{Neuroreceptor}!Add\+Neurotransmitters@{Add\+Neurotransmitters}}
+\index{Add\+Neurotransmitters@{Add\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Add\+Neurotransmitters()}{AddNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Add\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{add\+\_\+objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a5629a3d463cc963138ff017ec499720d}\label{classNeuroreceptor_a5629a3d463cc963138ff017ec499720d}} 
+\index{Neuroreceptor@{Neuroreceptor}!Clone\+Neurotransmitter@{Clone\+Neurotransmitter}}
+\index{Clone\+Neurotransmitter@{Clone\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitter()}{CloneNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Clone\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{clone\+\_\+object,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_af953abb478f4a3a1843b4b61f9969274}\label{classNeuroreceptor_af953abb478f4a3a1843b4b61f9969274}} 
+\index{Neuroreceptor@{Neuroreceptor}!Clone\+Neurotransmitters@{Clone\+Neurotransmitters}}
+\index{Clone\+Neurotransmitters@{Clone\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Clone\+Neurotransmitters()}{CloneNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Clone\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{cloning\+\_\+list,  }\item[{double}]{perfection\+\_\+membership }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a5d54ca353f0be78522aacc4fca06db63}\label{classNeuroreceptor_a5d54ca353f0be78522aacc4fca06db63}} 
+\index{Neuroreceptor@{Neuroreceptor}!Compatibility\+Check@{Compatibility\+Check}}
+\index{Compatibility\+Check@{Compatibility\+Check}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Compatibility\+Check()}{CompatibilityCheck()}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::\+Compatibility\+Check (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{neurotransmitter\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_af671059884336eadbc367f9d8556eb3f}\label{classNeuroreceptor_af671059884336eadbc367f9d8556eb3f}} 
+\index{Neuroreceptor@{Neuroreceptor}!Create\+Neurotransmitter@{Create\+Neurotransmitter}}
+\index{Create\+Neurotransmitter@{Create\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitter()}{CreateNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Create\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_aa0037379ecb214ff982429e054f2a194}\label{classNeuroreceptor_aa0037379ecb214ff982429e054f2a194}} 
+\index{Neuroreceptor@{Neuroreceptor}!Create\+Neurotransmitters@{Create\+Neurotransmitters}}
+\index{Create\+Neurotransmitters@{Create\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Create\+Neurotransmitters()}{CreateNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Create\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a35beb8e355f9b567b327e9323f5552a0}\label{classNeuroreceptor_a35beb8e355f9b567b327e9323f5552a0}} 
+\index{Neuroreceptor@{Neuroreceptor}!Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}}
+\index{Destroy\+Neurotransmitter@{Destroy\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitter()}{DestroyNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Destroy\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{destroy\+\_\+object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_acd500abfb25bd08167b2002e85e8b788}\label{classNeuroreceptor_acd500abfb25bd08167b2002e85e8b788}} 
+\index{Neuroreceptor@{Neuroreceptor}!Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}}
+\index{Destroy\+Neurotransmitters@{Destroy\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Destroy\+Neurotransmitters()}{DestroyNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Destroy\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{destruction\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a4a49cfc2f741d7f7b7888929651f7be3}\label{classNeuroreceptor_a4a49cfc2f741d7f7b7888929651f7be3}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Counter@{Get\+Counter}}
+\index{Get\+Counter@{Get\+Counter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Counter()}{GetCounter()}}
+{\footnotesize\ttfamily unsigned int Neuroreceptor\+::\+Get\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_aff4754990dc5b8d0105db281c02031d7}\label{classNeuroreceptor_aff4754990dc5b8d0105db281c02031d7}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Disabled@{Get\+Disabled}}
+\index{Get\+Disabled@{Get\+Disabled}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Disabled()}{GetDisabled()}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::\+Get\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_abc151381ec5e7c39bb45f87a9fd17b9a}\label{classNeuroreceptor_abc151381ec5e7c39bb45f87a9fd17b9a}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Energy@{Get\+Energy}}
+\index{Get\+Energy@{Get\+Energy}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
+{\footnotesize\ttfamily double Neuroreceptor\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a69103180d9b335b9504b4ae3c203d0ea}\label{classNeuroreceptor_a69103180d9b335b9504b4ae3c203d0ea}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Ions@{Get\+Ions}}
+\index{Get\+Ions@{Get\+Ions}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Ions()}{GetIons()}}
+{\footnotesize\ttfamily int Neuroreceptor\+::\+Get\+Ions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a526d41738265399c19c67068db450851}\label{classNeuroreceptor_a526d41738265399c19c67068db450851}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Neurotransmitter@{Get\+Neurotransmitter}}
+\index{Get\+Neurotransmitter@{Get\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitter()}{GetNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Get\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a4267220ee11105b7628bf39049ef7cc5}\label{classNeuroreceptor_a4267220ee11105b7628bf39049ef7cc5}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Neurotransmitters@{Get\+Neurotransmitters}}
+\index{Get\+Neurotransmitters@{Get\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Neurotransmitters()}{GetNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Get\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_afbcf31596170f09292e4d8057c0215e8}\label{classNeuroreceptor_afbcf31596170f09292e4d8057c0215e8}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Receptor\+Binding\+State@{Get\+Receptor\+Binding\+State}}
+\index{Get\+Receptor\+Binding\+State@{Get\+Receptor\+Binding\+State}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Receptor\+Binding\+State()}{GetReceptorBindingState()}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::\+Get\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a3ef0065a7670a2c156e34851140e0fa8}\label{classNeuroreceptor_a3ef0065a7670a2c156e34851140e0fa8}} 
+\index{Neuroreceptor@{Neuroreceptor}!Get\+Receptor\+Type@{Get\+Receptor\+Type}}
+\index{Get\+Receptor\+Type@{Get\+Receptor\+Type}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Get\+Receptor\+Type()}{GetReceptorType()}}
+{\footnotesize\ttfamily int Neuroreceptor\+::\+Get\+Receptor\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a7e94ac827de7abbac585639edfd4f985}\label{classNeuroreceptor_a7e94ac827de7abbac585639edfd4f985}} 
+\index{Neuroreceptor@{Neuroreceptor}!Remove\+Neurotransmitter@{Remove\+Neurotransmitter}}
+\index{Remove\+Neurotransmitter@{Remove\+Neurotransmitter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitter()}{RemoveNeurotransmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ Neuroreceptor\+::\+Remove\+Neurotransmitter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_ad760106ce6194ac02959c1882bd0f327}\label{classNeuroreceptor_ad760106ce6194ac02959c1882bd0f327}} 
+\index{Neuroreceptor@{Neuroreceptor}!Remove\+Neurotransmitters@{Remove\+Neurotransmitters}}
+\index{Remove\+Neurotransmitters@{Remove\+Neurotransmitters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Remove\+Neurotransmitters()}{RemoveNeurotransmitters()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$ $>$ Neuroreceptor\+::\+Remove\+Neurotransmitters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a30debeb0311d92eb6abe354409c15d09}\label{classNeuroreceptor_a30debeb0311d92eb6abe354409c15d09}} 
+\index{Neuroreceptor@{Neuroreceptor}!Reset\+Parameters@{Reset\+Parameters}}
+\index{Reset\+Parameters@{Reset\+Parameters}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classNeuroreceptor_a0660a316ef44cf723509f720acd16f24}\label{classNeuroreceptor_a0660a316ef44cf723509f720acd16f24}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Counter@{Set\+Counter}}
+\index{Set\+Counter@{Set\+Counter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Counter()}{SetCounter()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Counter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{unsigned int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classDendriteCleft_a428b8e5117f381a382e0071b936d42a1}{Dendrite\+Cleft}}.
+
+\mbox{\Hypertarget{classNeuroreceptor_aeec8bb2442e04700d4e9d80bb2d6e47e}\label{classNeuroreceptor_aeec8bb2442e04700d4e9d80bb2d6e47e}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Disabled@{Set\+Disabled}}
+\index{Set\+Disabled@{Set\+Disabled}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Disabled()}{SetDisabled()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ac1189f9c40e3cd07e4b1dc11115ad882}\label{classNeuroreceptor_ac1189f9c40e3cd07e4b1dc11115ad882}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Energy@{Set\+Energy}}
+\index{Set\+Energy@{Set\+Energy}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a36a548475e752631130a2b4ec67c66b6}\label{classNeuroreceptor_a36a548475e752631130a2b4ec67c66b6}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Ions@{Set\+Ions}}
+\index{Set\+Ions@{Set\+Ions}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Ions()}{SetIons()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Ions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a75adddd7e615af57b8f3f841ec25463c}\label{classNeuroreceptor_a75adddd7e615af57b8f3f841ec25463c}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Receptor\+Binding\+State@{Set\+Receptor\+Binding\+State}}
+\index{Set\+Receptor\+Binding\+State@{Set\+Receptor\+Binding\+State}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Receptor\+Binding\+State()}{SetReceptorBindingState()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a0e6e88d6c5b357872f055edbddb54d4c}\label{classNeuroreceptor_a0e6e88d6c5b357872f055edbddb54d4c}} 
+\index{Neuroreceptor@{Neuroreceptor}!Set\+Receptor\+Type@{Set\+Receptor\+Type}}
+\index{Set\+Receptor\+Type@{Set\+Receptor\+Type}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Set\+Receptor\+Type()}{SetReceptorType()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Set\+Receptor\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a8a339a4d0f150bbdfbc2650155625196}\label{classNeuroreceptor_a8a339a4d0f150bbdfbc2650155625196}} 
+\index{Neuroreceptor@{Neuroreceptor}!Toggle\+Disabled@{Toggle\+Disabled}}
+\index{Toggle\+Disabled@{Toggle\+Disabled}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Toggle\+Disabled()}{ToggleDisabled()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Toggle\+Disabled (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ace41227d30a8f50e1a6efadc86573f80}\label{classNeuroreceptor_ace41227d30a8f50e1a6efadc86573f80}} 
+\index{Neuroreceptor@{Neuroreceptor}!Toggle\+Receptor\+Binding\+State@{Toggle\+Receptor\+Binding\+State}}
+\index{Toggle\+Receptor\+Binding\+State@{Toggle\+Receptor\+Binding\+State}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Toggle\+Receptor\+Binding\+State()}{ToggleReceptorBindingState()}}
+{\footnotesize\ttfamily void Neuroreceptor\+::\+Toggle\+Receptor\+Binding\+State (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ab8f288a095fb028793e7246a42de233b}\label{classNeuroreceptor_ab8f288a095fb028793e7246a42de233b}} 
+\index{Neuroreceptor@{Neuroreceptor}!Update@{Update}}
+\index{Update@{Update}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int Neuroreceptor\+::\+Update (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classNeuroreceptor_af3b19cf8ef91627d66c718944ff3c67d}\label{classNeuroreceptor_af3b19cf8ef91627d66c718944ff3c67d}} 
+\index{Neuroreceptor@{Neuroreceptor}!duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}}
+\index{duration\+\_\+since\+\_\+last\+\_\+event@{duration\+\_\+since\+\_\+last\+\_\+event}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{duration\+\_\+since\+\_\+last\+\_\+event}{duration\_since\_last\_event}}
+{\footnotesize\ttfamily int Neuroreceptor\+::duration\+\_\+since\+\_\+last\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a72e33b87787c22588d891857ee3b3d89}\label{classNeuroreceptor_a72e33b87787c22588d891857ee3b3d89}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+add\+Status@{m\+\_\+add\+Status}}
+\index{m\+\_\+add\+Status@{m\+\_\+add\+Status}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+add\+Status}{m\_addStatus}}
+{\footnotesize\ttfamily int Neuroreceptor\+::m\+\_\+add\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_add9d0f75226881200221d886bcdcc6ab}\label{classNeuroreceptor_add9d0f75226881200221d886bcdcc6ab}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+bound\+Receptor@{m\+\_\+bound\+Receptor}}
+\index{m\+\_\+bound\+Receptor@{m\+\_\+bound\+Receptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+bound\+Receptor}{m\_boundReceptor}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::m\+\_\+bound\+Receptor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+bound\+Receptor\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuroreceptor_a934ea2375feb82cc4b3ca94373542f57}\label{classNeuroreceptor_a934ea2375feb82cc4b3ca94373542f57}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Counter@{m\+\_\+\+Counter}}
+\index{m\+\_\+\+Counter@{m\+\_\+\+Counter}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Counter}{m\_Counter}}
+{\footnotesize\ttfamily unsigned int Neuroreceptor\+::m\+\_\+\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+\+Counter\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuroreceptor_a78a8356b686482232ccb9e65ed733c12}\label{classNeuroreceptor_a78a8356b686482232ccb9e65ed733c12}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Ions@{m\+\_\+\+Ions}}
+\index{m\+\_\+\+Ions@{m\+\_\+\+Ions}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Ions}{m\_Ions}}
+{\footnotesize\ttfamily int Neuroreceptor\+::m\+\_\+\+Ions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a2633c2cb6dbeb3aa0d0a6a71ea1235fa}\label{classNeuroreceptor_a2633c2cb6dbeb3aa0d0a6a71ea1235fa}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Length@{m\+\_\+\+Length}}
+\index{m\+\_\+\+Length@{m\+\_\+\+Length}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Length}{m\_Length}}
+{\footnotesize\ttfamily double Neuroreceptor\+::m\+\_\+\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ab851e887c0570177192a0ff0c0e97e6b}\label{classNeuroreceptor_ab851e887c0570177192a0ff0c0e97e6b}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}}
+\index{m\+\_\+\+Neuron\+Type@{m\+\_\+\+Neuron\+Type}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Neuron\+Type}{m\_NeuronType}}
+{\footnotesize\ttfamily int Neuroreceptor\+::m\+\_\+\+Neuron\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a635db1419140d67306d3164e7727087f}\label{classNeuroreceptor_a635db1419140d67306d3164e7727087f}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}}
+\index{m\+\_\+\+Surface\+Area@{m\+\_\+\+Surface\+Area}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Surface\+Area}{m\_SurfaceArea}}
+{\footnotesize\ttfamily double Neuroreceptor\+::m\+\_\+\+Surface\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_aed2feaadd9a22823d58d0b3dfbb99f4e}\label{classNeuroreceptor_aed2feaadd9a22823d58d0b3dfbb99f4e}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}}
+\index{m\+\_\+\+Time\+Dilation@{m\+\_\+\+Time\+Dilation}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Dilation}{m\_TimeDilation}}
+{\footnotesize\ttfamily double Neuroreceptor\+::m\+\_\+\+Time\+Dilation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a2f9a114bc07e75721dde5f8ec0d94944}\label{classNeuroreceptor_a2f9a114bc07e75721dde5f8ec0d94944}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}}
+\index{m\+\_\+\+Time\+Threshold@{m\+\_\+\+Time\+Threshold}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Time\+Threshold}{m\_TimeThreshold}}
+{\footnotesize\ttfamily double Neuroreceptor\+::m\+\_\+\+Time\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a1bd49f13829d154ecd9b91488bd63035}\label{classNeuroreceptor_a1bd49f13829d154ecd9b91488bd63035}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+type\+Receptor@{m\+\_\+type\+Receptor}}
+\index{m\+\_\+type\+Receptor@{m\+\_\+type\+Receptor}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+type\+Receptor}{m\_typeReceptor}}
+{\footnotesize\ttfamily int Neuroreceptor\+::m\+\_\+type\+Receptor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}m\+\_\+type\+Receptor\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuroreceptor_a38da9f3b9e759374eaa27039c5cd7eb1}\label{classNeuroreceptor_a38da9f3b9e759374eaa27039c5cd7eb1}} 
+\index{Neuroreceptor@{Neuroreceptor}!m\+\_\+\+Volume@{m\+\_\+\+Volume}}
+\index{m\+\_\+\+Volume@{m\+\_\+\+Volume}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Volume}{m\_Volume}}
+{\footnotesize\ttfamily double Neuroreceptor\+::m\+\_\+\+Volume\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a7fa3fda8a40bf5d42f687a6c8d0c90e8}\label{classNeuroreceptor_a7fa3fda8a40bf5d42f687a6c8d0c90e8}} 
+\index{Neuroreceptor@{Neuroreceptor}!neuroreceptor\+\_\+type@{neuroreceptor\+\_\+type}}
+\index{neuroreceptor\+\_\+type@{neuroreceptor\+\_\+type}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{neuroreceptor\+\_\+type}{neuroreceptor\_type}}
+{\footnotesize\ttfamily int Neuroreceptor\+::neuroreceptor\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_aeb769732421531614a47bcab8ae21f8e}\label{classNeuroreceptor_aeb769732421531614a47bcab8ae21f8e}} 
+\index{Neuroreceptor@{Neuroreceptor}!neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}}
+\index{neurotransmitter\+\_\+list@{neurotransmitter\+\_\+list}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+list}{neurotransmitter\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}}$\ast$$>$ Neuroreceptor\+::neurotransmitter\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a12960bf3fcc399426d49a4c6b43b98e7}\label{classNeuroreceptor_a12960bf3fcc399426d49a4c6b43b98e7}} 
+\index{Neuroreceptor@{Neuroreceptor}!neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}}
+\index{neurotransmitter\+\_\+pool@{neurotransmitter\+\_\+pool}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{neurotransmitter\+\_\+pool}{neurotransmitter\_pool}}
+{\footnotesize\ttfamily int Neuroreceptor\+::neurotransmitter\+\_\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_ad7cec01383ddbdfce87ed5510703d21b}\label{classNeuroreceptor_ad7cec01383ddbdfce87ed5510703d21b}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+disabled@{object\+\_\+disabled}}
+\index{object\+\_\+disabled@{object\+\_\+disabled}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+disabled}{object\_disabled}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::object\+\_\+disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a80028c9ce2c6146d9b9df7bd66ac431e}\label{classNeuroreceptor_a80028c9ce2c6146d9b9df7bd66ac431e}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+energy@{object\+\_\+energy}}
+\index{object\+\_\+energy@{object\+\_\+energy}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+energy}{object\_energy}}
+{\footnotesize\ttfamily double Neuroreceptor\+::object\+\_\+energy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Member variable \char`\"{}object\+\_\+energy\char`\"{}. 
+
+\mbox{\Hypertarget{classNeuroreceptor_a314c6c2312e947d17c1159806c6fbd60}\label{classNeuroreceptor_a314c6c2312e947d17c1159806c6fbd60}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}}
+\index{object\+\_\+energy\+\_\+threshold@{object\+\_\+energy\+\_\+threshold}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+\_\+threshold}{object\_energy\_threshold}}
+{\footnotesize\ttfamily double Neuroreceptor\+::object\+\_\+energy\+\_\+threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a51c4fde4d12804418451b1e3212d3b9e}\label{classNeuroreceptor_a51c4fde4d12804418451b1e3212d3b9e}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+energy\+Full@{object\+\_\+energy\+Full}}
+\index{object\+\_\+energy\+Full@{object\+\_\+energy\+Full}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+energy\+Full}{object\_energyFull}}
+{\footnotesize\ttfamily double Neuroreceptor\+::object\+\_\+energy\+Full\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a31a18ad0a083d4d9b40bb4ad3eb45458}\label{classNeuroreceptor_a31a18ad0a083d4d9b40bb4ad3eb45458}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+initialised@{object\+\_\+initialised}}
+\index{object\+\_\+initialised@{object\+\_\+initialised}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+initialised}{object\_initialised}}
+{\footnotesize\ttfamily bool Neuroreceptor\+::object\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_abfff414d8cd3e762fd73f303908fdb03}\label{classNeuroreceptor_abfff414d8cd3e762fd73f303908fdb03}} 
+\index{Neuroreceptor@{Neuroreceptor}!object\+\_\+size@{object\+\_\+size}}
+\index{object\+\_\+size@{object\+\_\+size}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{object\+\_\+size}{object\_size}}
+{\footnotesize\ttfamily double Neuroreceptor\+::object\+\_\+size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a135d843eb579212e0e5307b6062304d5}\label{classNeuroreceptor_a135d843eb579212e0e5307b6062304d5}} 
+\index{Neuroreceptor@{Neuroreceptor}!previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}}
+\index{previous\+\_\+event\+\_\+time@{previous\+\_\+event\+\_\+time}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{previous\+\_\+event\+\_\+time}{previous\_event\_time}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neuroreceptor\+::previous\+\_\+event\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNeuroreceptor_a1ca4d66356d1e59850ea2d7591873ff5}\label{classNeuroreceptor_a1ca4d66356d1e59850ea2d7591873ff5}} 
+\index{Neuroreceptor@{Neuroreceptor}!time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}}
+\index{time\+\_\+object\+\_\+created@{time\+\_\+object\+\_\+created}!Neuroreceptor@{Neuroreceptor}}
+\subsubsection{\texorpdfstring{time\+\_\+object\+\_\+created}{time\_object\_created}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$\mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}}$>$ Neuroreceptor\+::time\+\_\+object\+\_\+created\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neuroreceptor_8h}{neuroreceptor.\+h}}\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\mbox{\hyperlink{neuroreceptor_8cc}{neuroreceptor.\+cc}}\end{DoxyCompactItemize}
