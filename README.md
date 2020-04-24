@@ -120,14 +120,24 @@ make
 sudo make install
 ```
 
+Build procedure.
 
-      
-How to build...
+```
+mkdir ~/Developer/BrainHarmonics/build
+cd ~/Developer/BrainHarmonics/build
+cmake ../
+make
 
+mkdir ~/Developer/BrainHarmonics/BrainHarmonics/build
+cd ~/Developer/BrainHarmonics/BrainHarmonics/build
+cmake ../
+make all
+
+```
 
 How to run...
 
-Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics folder.
+Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics/BrainHarmonics folder.
 
 Overview:
 Creates a number of simulation universes from which to create neurons/synapses.
