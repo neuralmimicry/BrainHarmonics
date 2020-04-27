@@ -11,21 +11,26 @@ Inheritance diagram for Update\+All\+Command\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classUpdateAllCommand_a228565b2a2306d425dc7eb3cda4d39a4}{vtk\+Type\+Macro}} (\mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}, vtk\+Command)
 \item 
-void \mbox{\hyperlink{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}{Execute}} (vtk\+Object $\ast$vtk\+Not\+Used(caller), unsigned long vtk\+Not\+Used(event\+Id), void $\ast$vtk\+Not\+Used(call\+Data)) override
+virtual void \mbox{\hyperlink{classUpdateAllCommand_a0a2dab315be55642c65d7fa1b2892ec8}{Execute}} (vtk\+Object $\ast$vtk\+Not\+Used(caller), unsigned long event\+Id, void $\ast$vtk\+Not\+Used(call\+Data))
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}} $\ast$ \mbox{\hyperlink{classUpdateAllCommand_a97cd6ef1c68bb473aef27c898b175517}{New}} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classUpdateAllCommand_a66ba9400072105306ca48a58470014dc}{Timer\+Count}}
+\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}\label{classUpdateAllCommand_aa836cd5d538016289656d8118da879c5}} 
+\mbox{\Hypertarget{classUpdateAllCommand_a0a2dab315be55642c65d7fa1b2892ec8}\label{classUpdateAllCommand_a0a2dab315be55642c65d7fa1b2892ec8}} 
 \index{Update\+All\+Command@{Update\+All\+Command}!Execute@{Execute}}
 \index{Execute@{Execute}!Update\+All\+Command@{Update\+All\+Command}}
 \subsubsection{\texorpdfstring{Execute()}{Execute()}}
-{\footnotesize\ttfamily void Update\+All\+Command\+::\+Execute (\begin{DoxyParamCaption}\item[{vtk\+Object $\ast$}]{vtk\+Not\+Usedcaller,  }\item[{unsigned long }]{vtk\+Not\+Usedevent\+Id,  }\item[{void $\ast$}]{vtk\+Not\+Usedcall\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+{\footnotesize\ttfamily virtual void Update\+All\+Command\+::\+Execute (\begin{DoxyParamCaption}\item[{vtk\+Object $\ast$}]{vtk\+Not\+Usedcaller,  }\item[{unsigned long}]{event\+Id,  }\item[{void $\ast$}]{vtk\+Not\+Usedcall\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Call universe update
 
@@ -47,6 +52,15 @@ Sometimes the contouring algorithm can create a volume whose gradient vector and
 \index{vtk\+Type\+Macro@{vtk\+Type\+Macro}!Update\+All\+Command@{Update\+All\+Command}}
 \subsubsection{\texorpdfstring{vtk\+Type\+Macro()}{vtkTypeMacro()}}
 {\footnotesize\ttfamily Update\+All\+Command\+::vtk\+Type\+Macro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}}]{,  }\item[{vtk\+Command}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classUpdateAllCommand_a66ba9400072105306ca48a58470014dc}\label{classUpdateAllCommand_a66ba9400072105306ca48a58470014dc}} 
+\index{Update\+All\+Command@{Update\+All\+Command}!Timer\+Count@{Timer\+Count}}
+\index{Timer\+Count@{Timer\+Count}!Update\+All\+Command@{Update\+All\+Command}}
+\subsubsection{\texorpdfstring{Timer\+Count}{TimerCount}}
+{\footnotesize\ttfamily int Update\+All\+Command\+::\+Timer\+Count\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

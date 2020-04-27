@@ -238,10 +238,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ac72744f7bdb5df7bb5088e5260589486"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ac72744f7bdb5df7bb5088e5260589486">mshandling</a> (std::vector&lt; std::string &gt; *m_messages, bool m_response, int m_ok, int m_fail)</td></tr>
 <tr class="separator:ac72744f7bdb5df7bb5088e5260589486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b7bc303552f00bc26a7b5bf962f3376"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a5b7bc303552f00bc26a7b5bf962f3376">CreateUniverse</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> *&gt; *toAddto)</td></tr>
-<tr class="memdesc:a5b7bc303552f00bc26a7b5bf962f3376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to create a <a class="el" href="classUniverse.html">Universe</a> instance. Universes could be simulation, emulation, real or contemplative (What-if)  <a href="#a5b7bc303552f00bc26a7b5bf962f3376">More...</a><br /></td></tr>
 <tr class="separator:a5b7bc303552f00bc26a7b5bf962f3376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b04070a3ed092a2de7fd1496edb94ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a9b04070a3ed092a2de7fd1496edb94ec">CompareSwapElementaryParticle</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classElementaryParticle.html">ElementaryParticle</a> *&gt; &amp;origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
-<tr class="memdesc:a9b04070a3ed092a2de7fd1496edb94ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.  <a href="#a9b04070a3ed092a2de7fd1496edb94ec">More...</a><br /></td></tr>
 <tr class="separator:a9b04070a3ed092a2de7fd1496edb94ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e8231d206ab9486cd74390d97e12fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ad9e8231d206ab9486cd74390d97e12fe">DistanceBetweenNodes</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classPoint.html">Point</a> &gt; *nodesQuery, std::vector&lt; int &gt; *nodes_list, int nodesDimensions, double desired_distance)</td></tr>
 <tr class="separator:ad9e8231d206ab9486cd74390d97e12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,7 +371,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Top of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> class. </p>
-<p>Application specific add-insNeuron container for other neuron components <a class="el" href="classSynapse.html">Synapse</a>, area of stimulus transmission/reception <a class="el" href="classDendrite.html">Dendrite</a>, pre-Soma component of a neuron <a class="el" href="classDendrite.html">Dendrite</a> branch, division/join of dendrites <a class="el" href="classSoma.html">Soma</a>, component of a neuron <a class="el" href="classAxon.html">Axon</a> Hillock, component of <a class="el" href="classSoma.html">Soma</a> <a class="el" href="classAxon.html">Axon</a>, connected to <a class="el" href="classAxon.html">Axon</a> Hillock <a class="el" href="classAxon.html">Axon</a> branch, division/join of <a class="el" href="classAxon.html">Axon</a> <a class="el" href="classAxon.html">Axon</a> synaptic cleft, output area of neuron Synaptic vesicle, container of neurotransmitters </p>
+<p>Application specific add-ins Focusing on the biology to be mimicked. Which is how the original project of NeuralMimicry got its name.This is where emergent properties can develop <a class="el" href="classNeuron.html">Neuron</a> container for other neuron components <a class="el" href="classSynapse.html">Synapse</a>, area of stimulus transmission/reception <a class="el" href="classDendrite.html">Dendrite</a>, pre-Soma component of a neuron <a class="el" href="classDendrite.html">Dendrite</a> branch, division/join of dendrites <a class="el" href="classSoma.html">Soma</a>, component of a neuron <a class="el" href="classAxon.html">Axon</a> Hillock, component of <a class="el" href="classSoma.html">Soma</a> <a class="el" href="classAxon.html">Axon</a>, connected to <a class="el" href="classAxon.html">Axon</a> Hillock <a class="el" href="classAxon.html">Axon</a> branch, division/join of <a class="el" href="classAxon.html">Axon</a> <a class="el" href="classAxon.html">Axon</a> synaptic cleft, output area of neuron Synaptic vesicle, container of neurotransmitters </p>
 
 </div>
 </div>
@@ -390,6 +388,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>header defines four variable types, two macro and various functions for manipulating date and time. </p>
+<p>BrainHarmonics is the first code designed to implement Autonomic Asynchronous Recursive Neuromorphic Network. It is an infrastructure designed to enable the creation of emergent properties. A - Self maintaining A - Event/Stimulus driven R - Massive replication of interdependent small objects N - Dynamic self-learning N - Interconnected for scale</p>
 <p>Code snippets used: Syntax comparison - <a href="http://stackoverflow.com">http://stackoverflow.com</a> &amp; <a href="http://cplusplus.com">http://cplusplus.com</a> Using hierarchical linking the aim is to develop the application to relate to real-world physics. This will then ease mapping between simulation, emulation and real-world Universes.</p>
 <p>The Code is primarily C++ however, where optimisations are available C-calls will be used. For connectivity to other datascience resources Python-calls are also supported.header defines the timeval structure header defines a minimum set of type definitions makes available a type, socklen_t, which is an unsigned opaque integral defines at least in_port_t and in_addr_t header makes available the type in_port_t and the type in_addr_t header defines three variable types, several macros, and various functions for performing input and output This header defines several general purpose functions, including dynamic memory management, random number generation, communication with the environment, integer arithmetics, searching, sorting and converting. header in the C POSIX library for the C programming language that contains constructs that refer to file control. header file that provides access to the POSIX operating system API. header file in the standard library of the C programming language that defines the C preprocessor macro assert()Standard Template Libraries (STL) For array in CRC-32 call For handling strings For byte handling in CRC-32 For reading files Formatting output to console For output to console For open and closed maps in A* For Sine, Cosine, Power, Fabs &amp; Sqrt functions For Open MPI For CRC-32 For assigning priority queue in A* For stringstream input from console For handling strings For thread handling To use vectors, which automatically handle resizing, as arrays to keep track of instances <br />
 <br />
@@ -432,6 +431,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DEBUG_PROGRAM. </p>
+<p>Socket definition was firstly to establish a communication path between independent cognitive networks. The current steps are to scale first with Open MP for single node computation, then Open MPI for same cluster communication. Then to expand to federated cognitive networks. Sockets can also be used as a way to get input and output stimulus through the networks. </p>
 
 </div>
 </div>
@@ -694,10 +694,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. </p>
 <p>Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant </p>
-<p>Return answering whether or not an exchange occurred </p>
+<p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.</p>
+<p>Return, answering whether or not an exchange occurred </p>
 
 </div>
 </div>
@@ -726,8 +725,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Function to create a <a class="el" href="classUniverse.html">Universe</a> instance. Universes could be simulation, emulation, real or contemplative (What-if) </p>
 <p>PLACEHOLDER for OpenMPI code (Shashi to integrate) int openmpiInit(int argc, char *argv[]) { int rank, size, next, prev, message, tag = 201;</p>
 <p>! Start up MPI </p><pre class="fragment">MPI_Init(&amp;argc, &amp;argv);
 MPI_Comm_rank(MPI_COMM_WORLD, &amp;rank);
@@ -764,17 +761,15 @@ prev = (rank + size - 1) % size;
 </pre><p>! All done </p><pre class="fragment">MPI_Finalize();
 return 0;
 </pre><p> } </p>
+<p>Function to create a <a class="el" href="classUniverse.html">Universe</a> instance. Universes could be simulation, emulation, real or contemplative (What-if)</p>
 <p>First, there is nothing. Then there was something...</p>
-<p>Defined energy level of <a class="el" href="classUniverse.html">Universe</a> <br />
-<br />
-<br />
-<br />
-<br />
- Begin with singularity</p>
-<p>Create instance of <a class="el" href="classUniverse.html">Universe</a> from <a class="el" href="classUniverse.html">Universe</a> class */</p>
-<p>Set an energy level and attempt to maintain physics laws by keeping the total in the <a class="el" href="classUniverse.html">Universe</a> the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations */</p>
+<p>Defined energy level of <a class="el" href="classUniverse.html">Universe</a></p>
+<p>Begin with singularity</p>
+<p>Create instance of <a class="el" href="classUniverse.html">Universe</a> from <a class="el" href="classUniverse.html">Universe</a> class</p>
+<p>Set an energy level and attempt to maintain physics laws by keeping the total in the <a class="el" href="classUniverse.html">Universe</a> the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations</p>
 <p>Cause initialisation</p>
-<p>Use move not push_back otherwise data is destroyed on exiting function std::copy(&amp;myUniverse, &amp;myUniverse + 1, std::back_inserter(*toAddto)); </p>
+<p>Use move not push_back otherwise data is destroyed on exiting function std::copy(&amp;myUniverse, &amp;myUniverse + 1, std::back_inserter(*toAddto)); <br />
+ Return with pointer to the expanded list of Universes. </p>
 
 </div>
 </div>
@@ -981,8 +976,8 @@ return 0;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This application is designed to create an AAReNN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets</p>
-<p>Initialise hardware if located</p>
+<p>This application is designed to create an AARNN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets</p>
+<p>Initialise hardware if located. Additional coding is required to enable hot-pluggable and failed accelerator. Extension needs to account for multiple accelerators rather than simply a bool answer.</p>
 <p>Bool flag is set to false when communication fails to discover hardware</p>
 <p>Install Dynap-se signal handler for global shutdown.</p>
 <p>Verify connection to all Dynap-se boards/chips and then ensure the chips are set to a basic known configuration.</p>
@@ -1512,9 +1507,9 @@ return 0;
 <br />
 <br />
  Initial number of starting components for each subproject</p>
-<p>The Physics problem</p>
+<p>The Physics problem. Periodic checking of elemental forces helps to align the emulated environment beyond a simple simulation.</p>
 <p>Attempt to stimulate particle bonding by moving attracted objects nearer to each other.</p>
-<p>The Cognitive problem</p>
+<p>The Cognitive problem. Support objects such that the interaction enables emergent properties. This is the fundamental core of AARNN. Cognitive objects are made up of orbital stimuli that in turn are made up of neurons.</p>
 <p>Attempt to stimulate neuron pairing by moving attracted objects nearer to each other.</p>
 <p>The setup of neurons, orbitals and cognitive networks are initial. Changes to configuration occurs dynamically depending on stimulation.</p>
 <p>How many neuron groups in each layer. May want to add some random variation in layer values.</p>
@@ -1525,16 +1520,15 @@ return 0;
 <p>Used to loop between min 0 and max 6</p>
 <p>Base of data points (Moves because of use by internal graphics for points control too</p>
 <p>std::string::size_type sz; //! alias of size_t</p>
-<p>CPLEX Environment</p>
-<p>Setup the Python environment for integrating K-means clustering solution</p>
+<p>Setup the Python environment for integrating K-means clustering solution or other frameworks</p>
 <p>const char pyArgv[] = { ' ','b','h','c','o','m','p','u','t','e',' ','m','u','l','t','i','p','l','y',' ','3',' ','4','\0'}</p>
 <p>int i;</p>
 <p>Numpy array initialisation</p>
 <p>File to be called. Must be in the same folder as the C++ executable and with a .py extension</p>
-<p>Prepare screens</p>
+<p>Prepare screens for visualisation</p>
 <p>VTK Screens</p>
-<p>Setup rectangle points</p>
-<p>Create the polygon</p>
+<p>Setup rectangle points for drawing screen</p>
+<p>Create the polygon that defines a rectangle from the points added.</p>
 <p>Add the polygon to a cell array</p>
 <p>Add the polygon to a cell array</p>
 <p>Test for correct polygon insertion</p>
@@ -1647,12 +1641,14 @@ return 0;
 <br />
 <br />
 <br />
+<br />
  Create polydata mapper and actor</p>
 <p>Create a renderer</p>
 <p>Set background colour to white</p>
 <p>Add the VTK actors to the scene</p>
 <p>Create a render window</p>
 <p>Create an interactor</p>
+<p>render_window_interactor-&gt;SetRenderWindow ( render_window );</p>
 <p>Set-up the simulation environment. Currently a skeletal environment.</p>
 <p>Synchronise events</p>
 <p>universe_list is a vector of pointers to the <a class="el" href="classUniverse.html">Universe</a> objects. Typically use one <a class="el" href="classUniverse.html">Universe</a> per experiment. <br />
@@ -2069,11 +2065,11 @@ std::cout &lt;&lt; std::endl;
 <p>Handle, PreNeuron[0,1023], PostNeuron[0,1023], Cam[0,63], Type</p>
 <p>if(((int(neuronId / (2^(neuronId + 1))) + 8) * ((neuronId % 3) == 0)) &gt; 0 &amp;&amp; ((int(neuronId / (2^(innerLoop + 1))) + 8) * ((neuronId % 3) == 0)) &lt; DYNAPSE_CONFIG_NUMNEURONS_CORE)</p>
 <p>Now let's start getting some data from the device. We just loop, no notification needed.</p>
-<p>Establish Screen</p>
-<p>in milliseconds</p>
 <p>The program will loop whilst the graphics window is open</p>
 <p>Remove Initialising banner from screen.</p>
 <p>Set the title</p>
+<p>Establish Screen</p>
+<p>in milliseconds</p>
 <p>Begin visualisation</p>
 <p>Prepared for multiscreen screen = screens[ screen]-&gt;runScreen(window); <br />
 <br />
@@ -2159,6 +2155,7 @@ std::cout &lt;&lt; std::endl;
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Provides configurable message display for completion of stages of operation </p>
 
 </div>
 </div>
@@ -2931,7 +2928,7 @@ std::cout &lt;&lt; std::endl;
 <p>Python interpreter. </p>
 <p>Interim calls to Python (3.8) to use existing APIs to Neuromorphic hardware and/or Brain simulators</p>
 <p>GLUT on OS X El Capitan - poor headers</p>
-<p>Homegrown add-insTop of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> class Add Dimensions for spatial identification Materials are a combination of <a class="el" href="classMatter.html">Matter</a> Materials can be formed into multiDimensional shapes Fundamental spatial description Interim function describing time before inclusion as <a class="el" href="classDimension.html">Dimension</a> </p>
+<p>Homegrown add-ins Real-time emulation at the sub-atomic level across 86 billion neurons of the human brain is not currently practical. BrainHarmonics abstracts and calculates small-scale reference models to guide the sub-set emulation rather than being the whole emulation. Further software enhancement will be to utilise GROMACS for supplemental modelling.Top of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> class Add Dimensions for spatial identification Materials are a combination of <a class="el" href="classMatter.html">Matter</a> Materials can be formed into multiDimensional shapes Fundamental spatial description Interim function describing time before inclusion as <a class="el" href="classDimension.html">Dimension</a> </p>
 
 </div>
 </div>

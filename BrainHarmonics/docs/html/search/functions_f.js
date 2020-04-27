@@ -90,7 +90,7 @@ var searchData=
   ['setquady2',['SetQuadY2',['../classQuad.html#afcec579c40a3763c34d1ace417888bf9',1,'Quad']]],
   ['setquady3',['SetQuadY3',['../classQuad.html#a1774a89a5d668aadf94966867270c0c5',1,'Quad']]],
   ['setquady4',['SetQuadY4',['../classQuad.html#ae299f75dcd479f5eb6ba8efed578961b',1,'Quad']]],
-  ['setreceptorbindingstate',['SetReceptorBindingState',['../classNeuroreceptor.html#a75adddd7e615af57b8f3f841ec25463c',1,'Neuroreceptor::SetReceptorBindingState()'],['../classMembraneChannel.html#a9f5c69ab1f4dce6113fceebaaa4f15f4',1,'MembraneChannel::setReceptorBindingState()']]],
+  ['setreceptorbindingstate',['setReceptorBindingState',['../classMembraneChannel.html#a9f5c69ab1f4dce6113fceebaaa4f15f4',1,'MembraneChannel::setReceptorBindingState()'],['../classNeuroreceptor.html#a75adddd7e615af57b8f3f841ec25463c',1,'Neuroreceptor::SetReceptorBindingState()']]],
   ['setreceptortype',['setReceptorType',['../classMembraneChannel.html#a7f40594845bb0aa6a03fd9c08a836d7e',1,'MembraneChannel::setReceptorType()'],['../classNeuroreceptor.html#a0e6e88d6c5b357872f055edbddb54d4c',1,'Neuroreceptor::SetReceptorType()']]],
   ['setscale',['SetScale',['../classDimension.html#a7f655ea002e8f9614a8c5cfa1807c49c',1,'Dimension']]],
   ['setslope',['setSlope',['../classLine.html#a3fb9e9eab13d146feff0bc891709eaf9',1,'Line']]],

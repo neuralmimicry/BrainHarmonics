@@ -157,9 +157,9 @@ static void \mbox{\hyperlink{BrainHarmonics_8cc_a36cc519845200149cde840d40360902
 bool \mbox{\hyperlink{BrainHarmonics_8cc_ac72744f7bdb5df7bb5088e5260589486}{mshandling}} (std\+::vector$<$ std\+::string $>$ $\ast$m\+\_\+messages, bool m\+\_\+response, int m\+\_\+ok, int m\+\_\+fail)
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}{Create\+Universe}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ $\ast$to\+Addto)
-\begin{DoxyCompactList}\small\item\em Function to create a \mbox{\hyperlink{classUniverse}{Universe}} instance. Universes could be simulation, emulation, real or contemplative (What-\/if) \end{DoxyCompactList}\item 
+\item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}{Compare\+Swap\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
-\begin{DoxyCompactList}\small\item\em Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. \end{DoxyCompactList}\item 
+\item 
 int \mbox{\hyperlink{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}{Distance\+Between\+Nodes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$nodes\+Query, std\+::vector$<$ int $>$ $\ast$nodes\+\_\+list, int nodes\+Dimensions, double desired\+\_\+distance)
 \item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}{compare\+\_\+swap\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
@@ -290,7 +290,7 @@ Paul B. Isaac\textquotesingle{}s, authored 03-\/\+F\+E\+B-\/2016
 
 Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class. 
 
-Application specific add-\/ins\+Neuron container for other neuron components \mbox{\hyperlink{classSynapse}{Synapse}}, area of stimulus transmission/reception \mbox{\hyperlink{classDendrite}{Dendrite}}, pre-\/\+Soma component of a neuron \mbox{\hyperlink{classDendrite}{Dendrite}} branch, division/join of dendrites \mbox{\hyperlink{classSoma}{Soma}}, component of a neuron \mbox{\hyperlink{classAxon}{Axon}} Hillock, component of \mbox{\hyperlink{classSoma}{Soma}} \mbox{\hyperlink{classAxon}{Axon}}, connected to \mbox{\hyperlink{classAxon}{Axon}} Hillock \mbox{\hyperlink{classAxon}{Axon}} branch, division/join of \mbox{\hyperlink{classAxon}{Axon}} \mbox{\hyperlink{classAxon}{Axon}} synaptic cleft, output area of neuron Synaptic vesicle, container of neurotransmitters \mbox{\Hypertarget{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}\label{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}} 
+Application specific add-\/ins Focusing on the biology to be mimicked. Which is how the original project of Neural\+Mimicry got its name.\+This is where emergent properties can develop \mbox{\hyperlink{classNeuron}{Neuron}} container for other neuron components \mbox{\hyperlink{classSynapse}{Synapse}}, area of stimulus transmission/reception \mbox{\hyperlink{classDendrite}{Dendrite}}, pre-\/\+Soma component of a neuron \mbox{\hyperlink{classDendrite}{Dendrite}} branch, division/join of dendrites \mbox{\hyperlink{classSoma}{Soma}}, component of a neuron \mbox{\hyperlink{classAxon}{Axon}} Hillock, component of \mbox{\hyperlink{classSoma}{Soma}} \mbox{\hyperlink{classAxon}{Axon}}, connected to \mbox{\hyperlink{classAxon}{Axon}} Hillock \mbox{\hyperlink{classAxon}{Axon}} branch, division/join of \mbox{\hyperlink{classAxon}{Axon}} \mbox{\hyperlink{classAxon}{Axon}} synaptic cleft, output area of neuron Synaptic vesicle, container of neurotransmitters \mbox{\Hypertarget{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}\label{BrainHarmonics_8cc_a5abc2fe5dd32fab087839bf8b005e6c9}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}}
 \index{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES@{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+B\+I\+A\+S\+ES}{DEFAULTBIASES}}
@@ -299,6 +299,8 @@ Application specific add-\/ins\+Neuron container for other neuron components \mb
 
 
 header defines four variable types, two macro and various functions for manipulating date and time. 
+
+Brain\+Harmonics is the first code designed to implement Autonomic Asynchronous Recursive Neuromorphic Network. It is an infrastructure designed to enable the creation of emergent properties. A -\/ Self maintaining A -\/ Event/\+Stimulus driven R -\/ Massive replication of interdependent small objects N -\/ Dynamic self-\/learning N -\/ Interconnected for scale
 
 Code snippets used\+: Syntax comparison -\/ \href{http://stackoverflow.com}{\tt http\+://stackoverflow.\+com} \& \href{http://cplusplus.com}{\tt http\+://cplusplus.\+com} Using hierarchical linking the aim is to develop the application to relate to real-\/world physics. This will then ease mapping between simulation, emulation and real-\/world Universes.
 
@@ -330,7 +332,7 @@ Handy conversions D\+E\+G2\+R\+AD R\+A\+D2\+D\+EG O\+N\+E\+R\+AD \mbox{\Hypertar
 
 D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM. 
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}\label{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}} 
+Socket definition was firstly to establish a communication path between independent cognitive networks. The current steps are to scale first with Open MP for single node computation, then Open M\+PI for same cluster communication. Then to expand to federated cognitive networks. Sockets can also be used as a way to get input and output stimulus through the networks. \mbox{\Hypertarget{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}\label{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}}
 \index{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES@{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}{LOWPOWERBIASES}}
@@ -409,19 +411,13 @@ Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHar
 \subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}}
 {\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
 
+Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 
-
-Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. 
-
-Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}\label{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}} 
+Return, answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}\label{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Create\+Universe@{Create\+Universe}}
 \index{Create\+Universe@{Create\+Universe}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Create\+Universe()}{CreateUniverse()}}
 {\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classUniverse}{Universe}}$\ast$$>$ Create\+Universe (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ $\ast$}]{to\+Addto }\end{DoxyParamCaption})}
-
-
-
-Function to create a \mbox{\hyperlink{classUniverse}{Universe}} instance. Universes could be simulation, emulation, real or contemplative (What-\/if) 
 
 P\+L\+A\+C\+E\+H\+O\+L\+D\+ER for Open\+M\+PI code (Shashi to integrate) int openmpi\+Init(int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}) \{ int rank, size, next, prev, message, tag = 201;
 
@@ -475,22 +471,22 @@ prev = (rank + size - 1) % size;
 ! All done \begin{DoxyVerb}MPI_Finalize();
 return 0;
 \end{DoxyVerb}
- \} First, there is nothing. Then there was something...
+ \} Function to create a \mbox{\hyperlink{classUniverse}{Universe}} instance. Universes could be simulation, emulation, real or contemplative (What-\/if)
 
-Defined energy level of \mbox{\hyperlink{classUniverse}{Universe}} ~\newline
-~\newline
-~\newline
-~\newline
-~\newline
- Begin with singularity
+First, there is nothing. Then there was something...
 
-Create instance of \mbox{\hyperlink{classUniverse}{Universe}} from \mbox{\hyperlink{classUniverse}{Universe}} class $\ast$/
+Defined energy level of \mbox{\hyperlink{classUniverse}{Universe}}
 
-Set an energy level and attempt to maintain physics laws by keeping the total in the \mbox{\hyperlink{classUniverse}{Universe}} the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations $\ast$/
+Begin with singularity
+
+Create instance of \mbox{\hyperlink{classUniverse}{Universe}} from \mbox{\hyperlink{classUniverse}{Universe}} class
+
+Set an energy level and attempt to maintain physics laws by keeping the total in the \mbox{\hyperlink{classUniverse}{Universe}} the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations
 
 Cause initialisation
 
-Use move not push\+\_\+back otherwise data is destroyed on exiting function std\+::copy(\&my\+Universe, \&my\+Universe + 1, std\+::back\+\_\+inserter($\ast$to\+Addto)); \mbox{\Hypertarget{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
+Use move not push\+\_\+back otherwise data is destroyed on exiting function std\+::copy(\&my\+Universe, \&my\+Universe + 1, std\+::back\+\_\+inserter($\ast$to\+Addto)); ~\newline
+ Return with pointer to the expanded list of Universes. \mbox{\Hypertarget{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Distance\+Between\+Nodes@{Distance\+Between\+Nodes}}
 \index{Distance\+Between\+Nodes@{Distance\+Between\+Nodes}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Distance\+Between\+Nodes()}{DistanceBetweenNodes()}}
@@ -554,9 +550,9 @@ import\+\_\+array(); \mbox{\Hypertarget{BrainHarmonics_8cc_ac0f2228420376f4db7e1
 \subsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
-This application is designed to create an A\+A\+Re\+NN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets
+This application is designed to create an A\+A\+R\+NN Cognitive AI network constructed using either simulated neurons or emulated neuromorphic chipsets
 
-Initialise hardware if located
+Initialise hardware if located. Additional coding is required to enable hot-\/pluggable and failed accelerator. Extension needs to account for multiple accelerators rather than simply a bool answer.
 
 Bool flag is set to false when communication fails to discover hardware
 
@@ -1137,11 +1133,11 @@ U1 = Internal Time, X, Y \& Z U2 = Physical U3 = Spatial X,Y,Z \& Time U4 = C\+P
 ~\newline
  Initial number of starting components for each subproject
 
-The Physics problem
+The Physics problem. Periodic checking of elemental forces helps to align the emulated environment beyond a simple simulation.
 
 Attempt to stimulate particle bonding by moving attracted objects nearer to each other.
 
-The Cognitive problem
+The Cognitive problem. Support objects such that the interaction enables emergent properties. This is the fundamental core of A\+A\+R\+NN. Cognitive objects are made up of orbital stimuli that in turn are made up of neurons.
 
 Attempt to stimulate neuron pairing by moving attracted objects nearer to each other.
 
@@ -1163,9 +1159,7 @@ Base of data points (Moves because of use by internal graphics for points contro
 
 std\+::string\+::size\+\_\+type sz; //! alias of size\+\_\+t
 
-C\+P\+L\+EX Environment
-
-Setup the Python environment for integrating K-\/means clustering solution
+Setup the Python environment for integrating K-\/means clustering solution or other frameworks
 
 const char py\+Argv\mbox{[}\mbox{]} = \{ \textquotesingle{} \textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}h\textquotesingle{},\textquotesingle{}c\textquotesingle{},\textquotesingle{}o\textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}u\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}e\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}m\textquotesingle{},\textquotesingle{}u\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}t\textquotesingle{},\textquotesingle{}i\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}l\textquotesingle{},\textquotesingle{}y\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}3\textquotesingle{},\textquotesingle{} \textquotesingle{},\textquotesingle{}4\textquotesingle{},\textquotesingle{}\textbackslash{}0\textquotesingle{}\}
 
@@ -1175,13 +1169,13 @@ Numpy array initialisation
 
 File to be called. Must be in the same folder as the C++ executable and with a .py extension
 
-Prepare screens
+Prepare screens for visualisation
 
 V\+TK Screens
 
-Setup rectangle points
+Setup rectangle points for drawing screen
 
-Create the polygon
+Create the polygon that defines a rectangle from the points added.
 
 Add the polygon to a cell array
 
@@ -1301,6 +1295,7 @@ Setup the text and add it to the renderer Build display text ~\newline
 ~\newline
 ~\newline
 ~\newline
+~\newline
  Create polydata mapper and actor
 
 Create a renderer
@@ -1312,6 +1307,8 @@ Add the V\+TK actors to the scene
 Create a render window
 
 Create an interactor
+
+render\+\_\+window\+\_\+interactor-\/$>$Set\+Render\+Window ( render\+\_\+window );
 
 Set-\/up the simulation environment. Currently a skeletal environment.
 
@@ -1806,15 +1803,15 @@ if(((int(neuron\+Id / (2$^\wedge$(neuron\+Id + 1))) + 8) $\ast$ ((neuron\+Id \% 
 
 Now let\textquotesingle{}s start getting some data from the device. We just loop, no notification needed.
 
-Establish Screen
-
-in milliseconds
-
 The program will loop whilst the graphics window is open
 
 Remove Initialising banner from screen.
 
 Set the title
+
+Establish Screen
+
+in milliseconds
 
 Begin visualisation
 
@@ -1871,7 +1868,7 @@ Empty vectors before exiting (in reverse of creation) for(int dloop = int( curre
 \subsubsection{\texorpdfstring{mshandling()}{mshandling()}}
 {\footnotesize\ttfamily bool mshandling (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ $\ast$}]{m\+\_\+messages,  }\item[{bool}]{m\+\_\+response,  }\item[{int}]{m\+\_\+ok,  }\item[{int}]{m\+\_\+fail }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}\label{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}} 
+Provides configurable message display for completion of stages of operation \mbox{\Hypertarget{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}\label{BrainHarmonics_8cc_ab8cdde3a90c31c1e2f30432b507359c1}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Dimension@{Select\+Dimension}}
 \index{Select\+Dimension@{Select\+Dimension}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Select\+Dimension()}{SelectDimension()}}
@@ -2222,4 +2219,4 @@ Interim calls to Python (3.\+8) to use existing A\+P\+Is to Neuromorphic hardwar
 
 G\+L\+UT on OS X El Capitan -\/ poor headers
 
-Homegrown add-\/ins\+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class Add Dimensions for spatial identification Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} Materials can be formed into multi\+Dimensional shapes Fundamental spatial description Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} 
+Homegrown add-\/ins Real-\/time emulation at the sub-\/atomic level across 86 billion neurons of the human brain is not currently practical. Brain\+Harmonics abstracts and calculates small-\/scale reference models to guide the sub-\/set emulation rather than being the whole emulation. Further software enhancement will be to utilise G\+R\+O\+M\+A\+CS for supplemental modelling.\+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class Add Dimensions for spatial identification Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} Materials can be formed into multi\+Dimensional shapes Fundamental spatial description Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} 
