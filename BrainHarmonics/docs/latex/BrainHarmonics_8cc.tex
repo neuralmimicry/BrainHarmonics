@@ -163,7 +163,7 @@ bool \mbox{\hyperlink{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}{Comp
 int \mbox{\hyperlink{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}{Distance\+Between\+Nodes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$nodes\+Query, std\+::vector$<$ int $>$ $\ast$nodes\+\_\+list, int nodes\+Dimensions, double desired\+\_\+distance)
 \item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}{compare\+\_\+swap\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
-\begin{DoxyCompactList}\small\item\em Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. \end{DoxyCompactList}\item 
+\item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_a5611d454c4206879b20ed7a094a223b0}{analyse\+Stream}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$cognitive\+\_\+network, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ neuron\+\_\+list, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $\ast$$>$ a\+Point, int start\+\_\+point, int end\+\_\+point, int step\+Point, int neural\+\_\+sequence)
 \item 
 void \mbox{\hyperlink{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}{Clear\+Dimension\+Selection}} (std\+::vector$<$ int $>$ $\ast$dimension\+\_\+list)
@@ -377,17 +377,19 @@ S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+R\+OR.
 \subsubsection{\texorpdfstring{analyse\+Stream()}{analyseStream()}}
 {\footnotesize\ttfamily bool analyse\+Stream (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{\mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$}]{cognitive\+\_\+network,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$}]{neuron\+\_\+list,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $\ast$$>$}]{a\+Point,  }\item[{int}]{start\+\_\+point,  }\item[{int}]{end\+\_\+point,  }\item[{int}]{step\+Point,  }\item[{int}]{neural\+\_\+sequence }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}\label{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}} 
+Provide an input stream of data to the Cognitive Network\mbox{\Hypertarget{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}\label{BrainHarmonics_8cc_ac9572b51d93c224b7db42a9e06854242}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}}
 \index{Clear\+Dimension\+Selection@{Clear\+Dimension\+Selection}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Clear\+Dimension\+Selection()}{ClearDimensionSelection()}}
 {\footnotesize\ttfamily void Clear\+Dimension\+Selection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}\label{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}} 
+Empty the Dimensions list\mbox{\Hypertarget{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}\label{BrainHarmonics_8cc_aefff80cf47ae6c975b4aed196c12d92a}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Clear\+Dynapse@{Clear\+Dynapse}}
 \index{Clear\+Dynapse@{Clear\+Dynapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Clear\+Dynapse()}{ClearDynapse()}}
 {\footnotesize\ttfamily bool Clear\+Dynapse (\begin{DoxyParamCaption}\item[{caer\+Device\+Handle $\ast$}]{usb\+\_\+handle }\end{DoxyParamCaption})}
+
+This is accelerator specific to reset the Dynap-\/se. Accelerator configuration should move to a set of selectable modules to allow for different and multiple accelerators to be simultaneously configured.
 
 Let\textquotesingle{}s take a look at the information we have on the device.
 
@@ -401,9 +403,7 @@ close config \mbox{\Hypertarget{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f8
 \subsubsection{\texorpdfstring{compare\+\_\+swap\+Synapse()}{compare\_swapSynapse()}}
 {\footnotesize\ttfamily bool compare\+\_\+swap\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
 
-
-
-Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. 
+Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 
 Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}\label{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}}
@@ -411,7 +411,7 @@ Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHar
 \subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}}
 {\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
 
-Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
+Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 
 Return, answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}\label{BrainHarmonics_8cc_a5b7bc303552f00bc26a7b5bf962f3376}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Create\+Universe@{Create\+Universe}}
@@ -485,12 +485,15 @@ Set an energy level and attempt to maintain physics laws by keeping the total in
 
 Cause initialisation
 
-Use move not push\+\_\+back otherwise data is destroyed on exiting function std\+::copy(\&my\+Universe, \&my\+Universe + 1, std\+::back\+\_\+inserter($\ast$to\+Addto)); ~\newline
- Return with pointer to the expanded list of Universes. \mbox{\Hypertarget{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
+Use copy otherwise data is destroyed on exiting function
+
+Return with pointer to the expanded list of Universes. \mbox{\Hypertarget{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}\label{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Distance\+Between\+Nodes@{Distance\+Between\+Nodes}}
 \index{Distance\+Between\+Nodes@{Distance\+Between\+Nodes}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Distance\+Between\+Nodes()}{DistanceBetweenNodes()}}
 {\footnotesize\ttfamily int Distance\+Between\+Nodes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$}]{nodes\+Query,  }\item[{std\+::vector$<$ int $>$ $\ast$}]{nodes\+\_\+list,  }\item[{int}]{nodes\+Dimensions,  }\item[{double}]{desired\+\_\+distance }\end{DoxyParamCaption})}
+
+Provide distance between two nodes
 
 diffX = 0; diffY = 0; ~\newline
 ~\newline
@@ -509,6 +512,8 @@ diffX = 0; diffY = 0; ~\newline
 
 
 Clear memory to cleanly exit application. 
+
+First call to exit the program cleanly.
 
 Clear vectors in reverse order to free-\/up memory before exiting
 
@@ -544,7 +549,7 @@ Simply set the running flag to false on S\+I\+G\+T\+E\+RM and S\+I\+G\+I\+NT (C\
 
 Macro required otherwise return value upsets calling function. 
 
-import\+\_\+array(); \mbox{\Hypertarget{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}\label{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}} 
+Simple initialisation to ready Numpy for potential use within application\mbox{\Hypertarget{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}\label{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!main@{main}}
 \index{main@{main}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{main()}{main()}}
@@ -1874,7 +1879,7 @@ Provides configurable message display for completion of stages of operation \mbo
 \subsubsection{\texorpdfstring{Select\+Dimension()}{SelectDimension()}}
 {\footnotesize\ttfamily void Select\+Dimension (\begin{DoxyParamCaption}\item[{const int}]{Possible\+Dimensions\mbox{[}10\mbox{]},  }\item[{std\+::vector$<$ int $>$ $\ast$}]{dimension\+\_\+list,  }\item[{int}]{which\+Dimension }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}\label{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}} 
+Brain\+Harmonics can work beyond 2D or 3D space but the dimensions do need careful handling.\mbox{\Hypertarget{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}\label{BrainHarmonics_8cc_aeab5d0ce3757048194ec88e39b7fa82b}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}}
 \index{Select\+Multi\+Dimensions@{Select\+Multi\+Dimensions}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{Select\+Multi\+Dimensions()}{SelectMultiDimensions()}}

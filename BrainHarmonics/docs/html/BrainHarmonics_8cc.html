@@ -244,7 +244,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9e8231d206ab9486cd74390d97e12fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ad9e8231d206ab9486cd74390d97e12fe">DistanceBetweenNodes</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classPoint.html">Point</a> &gt; *nodesQuery, std::vector&lt; int &gt; *nodes_list, int nodesDimensions, double desired_distance)</td></tr>
 <tr class="separator:ad9e8231d206ab9486cd74390d97e12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0bef70f5c895e9fe4271808d3f87a96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ac0bef70f5c895e9fe4271808d3f87a96">compare_swapSynapse</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classSynapse.html">Synapse</a> *&gt; origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
-<tr class="memdesc:ac0bef70f5c895e9fe4271808d3f87a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.  <a href="#ac0bef70f5c895e9fe4271808d3f87a96">More...</a><br /></td></tr>
 <tr class="separator:ac0bef70f5c895e9fe4271808d3f87a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5611d454c4206879b20ed7a094a223b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a5611d454c4206879b20ed7a094a223b0">analyseStream</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, <a class="el" href="classCognitiveNetwork.html">CognitiveNetwork</a> *cognitive_network, std::vector&lt; <a class="el" href="classNeuron.html">Neuron</a> *&gt; neuron_list, std::vector&lt; <a class="el" href="classPoint.html">Point</a> *&gt; aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)</td></tr>
 <tr class="separator:a5611d454c4206879b20ed7a094a223b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,6 +558,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Provide an input stream of data to the Cognitive Network</p>
 
 </div>
 </div>
@@ -577,6 +577,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Empty the Dimensions list</p>
 
 </div>
 </div>
@@ -595,6 +596,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is accelerator specific to reset the Dynap-se. Accelerator configuration should move to a set of selectable modules to allow for different and multiple accelerators to be simultaneously configured.</p>
 <p>Let's take a look at the information we have on the device.</p>
 <p>Let's turn on blocking data-get mode to avoid wasting resources.</p>
 <p>chip id is DYNAPSE_CONFIG_DYNAPSE_U2</p>
@@ -645,8 +647,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin. </p>
+<p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.</p>
 <p>Return answering whether or not an exchange occurred </p>
 
 </div>
@@ -694,7 +695,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adding Dimensions enables physical and spatial calculations Possible to use this as a basis for higher dimensionality if it becomes relevant </p>
 <p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.</p>
 <p>Return, answering whether or not an exchange occurred </p>
 
@@ -768,8 +768,8 @@ return 0;
 <p>Create instance of <a class="el" href="classUniverse.html">Universe</a> from <a class="el" href="classUniverse.html">Universe</a> class</p>
 <p>Set an energy level and attempt to maintain physics laws by keeping the total in the <a class="el" href="classUniverse.html">Universe</a> the same. Uses the maximum value for double. Levels of abstraction used to cater for environment limitations</p>
 <p>Cause initialisation</p>
-<p>Use move not push_back otherwise data is destroyed on exiting function std::copy(&amp;myUniverse, &amp;myUniverse + 1, std::back_inserter(*toAddto)); <br />
- Return with pointer to the expanded list of Universes. </p>
+<p>Use copy otherwise data is destroyed on exiting function</p>
+<p>Return with pointer to the expanded list of Universes. </p>
 
 </div>
 </div>
@@ -816,6 +816,7 @@ return 0;
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Provide distance between two nodes</p>
 <p>diffX = 0; diffY = 0; <br />
 <br />
 <br />
@@ -843,6 +844,7 @@ return 0;
 </div><div class="memdoc">
 
 <p>Clear memory to cleanly exit application. </p>
+<p>First call to exit the program cleanly.</p>
 <p>Clear vectors in reverse order to free-up memory before exiting</p>
 <p>Remember to clear vectors / free memory before returning </p>
 
@@ -947,7 +949,7 @@ return 0;
 </div><div class="memdoc">
 
 <p>Macro required otherwise return value upsets calling function. </p>
-<p>import_array(); </p>
+<p>Simple initialisation to ready Numpy for potential use within application</p>
 
 </div>
 </div>
@@ -2190,6 +2192,7 @@ std::cout &lt;&lt; std::endl;
         </tr>
       </table>
 </div><div class="memdoc">
+<p>BrainHarmonics can work beyond 2D or 3D space but the dimensions do need careful handling.</p>
 
 </div>
 </div>

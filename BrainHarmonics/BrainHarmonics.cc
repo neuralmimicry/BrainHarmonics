@@ -398,9 +398,10 @@ int openmpiInit(int argc, char *argv[])
  */
 
 std::vector<Universe*> CreateUniverse(std::chrono::time_point<Clock> event_time, std::vector<Universe*> *toAddto)
-		{
-	/*! Function to create a Universe instance. Universes could be simulation, emulation,
-	 *  real or contemplative (What-if)
+{
+	/*!
+	 * Function to create a Universe instance. Universes could be simulation, emulation,
+	 * real or contemplative (What-if)
 	 */
 
 	//! First, there is nothing. Then there was something...
@@ -410,233 +411,25 @@ std::vector<Universe*> CreateUniverse(std::chrono::time_point<Clock> event_time,
 	Universe* myUniverse; //! Create instance of Universe from Universe class
 	myUniverse = new Universe();
 
-	/*! Set an energy level and attempt to maintain physics laws by keeping the total in the
-	 *  Universe the same. Uses the maximum value for double. Levels of abstraction used to
-	 *  cater for environment limitations
+	/*!
+	 * Set an energy level and attempt to maintain physics laws by keeping the total in the
+	 * Universe the same. Uses the maximum value for double. Levels of abstraction used to
+	 * cater for environment limitations
 	 */
 	myUniverse->SetEnergy(event_time, UniverseEnergy);
 	myUniverse->Update(event_time); //! Cause initialisation
 
-	//! Use move not push_back otherwise data is destroyed on exiting function
-	//!    std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
+	//! Use copy otherwise data is destroyed on exiting function
 	std::copy(&myUniverse, &myUniverse + 1, std::back_inserter(*toAddto));
 
 	return *toAddto; //! Return with pointer to the expanded list of Universes.
-		}
+}
 
-//! Adding Dimensions enables physical and spatial calculations
-//! Possible to use this as a basis for higher dimensionality if it becomes relevant
-/*
- int AddDimension(std::vector<Dimension> *toAddto, std::vector<Universe> *aPartof, int arrayEntry)
- {
- Dimension myDimension((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myDimension, &myDimension + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Each Add function creates an instance of the respective class and links back to the base class
- //! For definition of quarks and leptons when simulating real-world environment
- int AddElementaryParticle(std::vector<ElementaryParticle> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- ElementaryParticle myElementaryParticle((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myElementaryParticle, &myElementaryParticle + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! For real-world definition of protons & neutrons. Other combinations in artificial environments
- int AddCompositeParticle(std::vector<CompositeParticle> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
- {
- CompositeParticle myCompositeParticle((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myCompositeParticle, &myCompositeParticle + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Methods in this class to define interaction. Which may be different between artificial, simulation and real environments
- int AddElementaryForce(std::vector<ElementaryForce> *toAddto, std::vector<ElementaryParticle> *aPartof, int arrayEntry)
- {
- ElementaryForce myForce((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- int AddCompositeForce(std::vector<CompositeForce> *toAddto, std::vector<CompositeParticle> *aPartof, int arrayEntry)
- {
- CompositeForce myForce((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myForce, &myForce + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Add methods to describe Force interactions such as gravity
- int AddLaw(std::vector<CompositeForce> *toAddto, int arrayEntry, std::vector<CompositeParticle> *toAddto2, int arrayEntry2)
- {
- //!    law myLaw(aPartof[arrayEntry], toAddto2[arrayEntry2]);
- //! Use move not push_back otherwise data is destroyed on exiting function
-
- return 0;                       //! Return Success = 0
- }
-
- //! Class for definition of periodic table of elements
- int AddMatter(std::vector<Matter> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- Matter myMatter((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myMatter, &myMatter + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Class for definition of simple molecules
- int AddMonomer(std::vector<Monomer> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- Monomer myMonomer((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myMonomer, &myMonomer + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Class for definition of complex molecules
- int AddPolymer(std::vector<Polymer> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- Polymer myPolymer((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myPolymer, &myPolymer + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Description of material
- int AddSolid(std::vector<Solid> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- Solid mySolid((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&mySolid, &mySolid + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Fundamental spatial element
- int AddPoint(std::vector<Point> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- //! Begin with shape singularity
- Point myPoint((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myPoint, &myPoint + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Complex shapes
- int AddPolyhedron(std::vector<Polyhedron> *toAddto, std::vector<Solid> *aPartof, int arrayEntry)
- {
- Polyhedron myPolyhedron((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myPolyhedron, &myPolyhedron + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Components of complex shapes
- int AddPolygon(std::vector<Polygon> *toAddto, std::vector<Polyhedron> *aPartof, int arrayEntry)
- {
- Polygon myPolygon((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myPolygon, &myPolygon + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Base 2D shapes
- int AddQuad(std::vector<Quad> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
- {
- Quad myQuad((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myQuad, &myQuad + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Component of shapes, straight, curved or complex
- int AddLine(std::vector<Line> *toAddto, std::vector<Polygon> *aPartof, int arrayEntry)
- {
- Line myLine((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myLine, &myLine + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Component of the brain
- int AddNeuron(std::vector<Neuron> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- //int AddNeuron(std::vector<Neuron> *toAddto)
- {
- Neuron myNeuron((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myNeuron, &myNeuron + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- int AddSpike(std::vector<Spike> *toAddto)
- {
- Spike mySpike;
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&mySpike, &mySpike + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- int AddDendrite(std::vector<Dendrite> *toAddto)
- {
- Dendrite myDendrite;
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myDendrite, &myDendrite + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- int AddSynapse(std::vector<Synapse> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry)
- {
- Synapse mySynapse((*aPartof)[arrayEntry]);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&mySynapse, &mySynapse + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- int AddOrbital(std::vector<Orbital> *toAddto, std::vector<Dimension> *aPartof, int arrayEntry, int orbType)
- {
- Orbital myOrbital((*aPartof)[arrayEntry], std::chrono::high_resolution_clock::now(), orbType);
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myOrbital, &myOrbital + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
-
- //! Adding application timer temporarily until integrated into Dimension class
- int AddApptimer(std::vector<AppTimer> *toAddto)
- {
- AppTimer myApptimer;
- //! Use move not push_back otherwise data is destroyed on exiting function
- std::copy(&myApptimer, &myApptimer + 1, std::back_inserter(*toAddto));
-
- return 0;                       //! Return Success = 0
- }
- */
 
 bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, std::vector<ElementaryParticle*>& origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
-	/*! Test which Candidate is closest to being 3 away in the charge values and move that
+	/*!
+	 * Test which Candidate is closest to being 3 away in the charge values and move that
 	 * Candidate next to the Origin.
 	 */
 	bool l_switch = true;
@@ -661,6 +454,9 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
 
 int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<Point> *nodesQuery, std::vector<int> *nodes_list, int nodesDimensions, double desired_distance )
 {
+	/*!
+	 * Provide distance between two nodes
+	 */
 	double firstX;
 	double firstY;
 	double firstZ;
@@ -772,9 +568,12 @@ int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<
 	return EXIT_SUCCESS;
 }
 
-//! Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<Synapse*> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
+	/*!
+	 * Test which Candidate is closest to being 3 away in the charge values and move that
+	 * Candidate next to the Origin.
+	 */
 	bool l_switch = true;
 	int l_origin = origin[l_origin_Swap]->GetDemand(event_time);
 	int l_origin_Test1 = origin[l_origin_Candidate1]->GetDemand(event_time);
@@ -798,6 +597,9 @@ bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<
 
 bool analyseStream(std::chrono::time_point<Clock> event_time, CognitiveNetwork* cognitive_network, std::vector<Neuron*> neuron_list, std::vector<Point*> aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)
 {
+	/*!
+	 * Provide an input stream of data to the Cognitive Network
+	 */
 	double feed;
 	bool neuronStimulated = false;
 	/*
@@ -862,11 +664,18 @@ bool analyseStream(std::chrono::time_point<Clock> event_time, CognitiveNetwork* 
 
 void ClearDimensionSelection(std::vector<int> *dimension_list)
 {
+	/*!
+	 * Empty the Dimensions list
+	 */
 	dimension_list->clear();
 }
 
 void SelectDimension(const int PossibleDimensions[10], std::vector<int> *dimension_list, int whichDimension)
 {
+	/*!
+	 * BrainHarmonics can work beyond 2D or 3D space but the dimensions do need
+	 * careful handling.
+	 */
 	int l_counter = 0;
 	for(int nloop = 0; nloop < 10; nloop++)
 	{
@@ -887,19 +696,17 @@ void SelectMultiDimensions(const int PossibleDimensions[10], std::vector<int> *d
 	{
 		SelectDimension(PossibleDimensions, &(*dimension_list), nloop);
 	}
-	/*
-     std::cout << "Dimensions selected: ";
-     for(int zloop = 0; zloop < dimension_list->size(); zloop++)
-     {
-     std::cout << (*dimension_list)[zloop] << " ";
-     }
-     std::cout << std::endl;
-	 */
 }
 
 
 bool ClearDynapse(caerDeviceHandle *usb_handle)
 {
+	/*!
+	 * This is accelerator specific to reset the Dynap-se. Accelerator configuration should
+	 * move to a set of selectable modules to allow for different and multiple accelerators to
+	 * be simultaneously configured.
+	 */
+
 	//! Let's take a look at the information we have on the device.
 	dynapse_info = caerDynapseInfoGet(*usb_handle);
 
@@ -948,71 +755,14 @@ bool ClearDynapse(caerDeviceHandle *usb_handle)
 	return true;
 }
 
-/*
- Menu1.setFont(Font);
- Menu1.setCharacterSize(20);
- Menu1.setString("Add item");
- Menu1.setPosition( 280.0, 160.0 );
-
- Menu2.setFont(Font);
- Menu2.setCharacterSize(20);
- Menu2.setString("Remove item");
- Menu2.setPosition( 280.0, 220.0 );
-
- Menu3.setFont(Font);
- Menu3.setCharacterSize(20);
- Menu3.setString("Up level");
- Menu3.setPosition( 280.0, 280.0 );
-
- Menu4.setFont(Font);
- Menu4.setCharacterSize(20);
- Menu4.setString("Down level");
- Menu4.setPosition( 280.0, 320.0 );
-
- while (Running)
- {
- while(app.pollEvent(Event))
- {
- //! Window closed
- if (Event.type == sf::Event::Closed)
- {
- return (-1);
- }
- }
- if (menu == 0)
- {
- Menu1.setOutlineColor(sf::Color(255, 0, 0, 255));
- Menu1.setFillColor(sf::Color(255, 0, 0, 255));
- Menu2.setOutlineColor(sf::Color(255, 255, 255, 255));
- Menu2.setFillColor(sf::Color(255, 255, 255, 255));
- Menu3.setOutlineColor(sf::Color(255, 0, 0, 255));
- Menu3.setFillColor(sf::Color(255, 0, 0, 255));
- Menu4.setOutlineColor(sf::Color(255, 0, 0, 255));
- Menu4.setFillColor(sf::Color(255, 0, 0, 255));
- }
- else
- {
- Menu1.setOutlineColor(sf::Color(255, 255, 255, 255));
- Menu1.setFillColor(sf::Color(255, 255, 255, 255));
- Menu2.setOutlineColor(sf::Color(255, 0, 0, 255));
- Menu2.setFillColor(sf::Color(255, 0, 0, 255));
- Menu3.setOutlineColor(sf::Color(255, 255, 255, 255));
- Menu3.setFillColor(sf::Color(255, 255, 255, 255));
- Menu4.setOutlineColor(sf::Color(255, 255, 255, 255));
- Menu4.setFillColor(sf::Color(255, 255, 255, 255));
- }
-
- app.clear();
- app.display();
- }
- return (-1);
- }
-
- */
 //! Clear memory to cleanly exit application
 void exitCB()
 {
-#ifdef _WIN32
+	/*!
+	 * First call to exit the program cleanly.
+	 */
+
+	#ifdef _WIN32
 	std::cout << "Exiting Program. Press Any key to complete." << std::endl;
 	/* A pause for Any key to be pressed, only needed for Windows to stop console window closing*/
 	std::cin.get();
@@ -1040,7 +790,10 @@ void
 #endif
 init_numpy()
 {
-	//!    import_array();
+	/*!
+	 * Simple initialisation to ready Numpy for potential use within application
+	 */
+    import_array();
 #if PY_MAJOR_VERSION >= 3
 	return 0;
 #endif
@@ -1048,6 +801,10 @@ init_numpy()
 
 class UpdateAllCommand : public vtkCommand
 {
+	/*!
+	 * Regularly called to provide calculation updates across all objects and then select
+	 * a subset for display.
+	 */
 public:
 	vtkTypeMacro(UpdateAllCommand, vtkCommand);
 
