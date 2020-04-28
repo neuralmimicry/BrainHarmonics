@@ -1,9 +1,22 @@
 /*!
  * @file      BrainHarmonics.cc
- * @details   Brain Harmonics - using harmonics to store and process neural spikes
+ * @details   BrainHarmonics - using harmonics to store and process neural spikes
  * @author    Paul B. Isaac's, authored 03-FEB-2016
  * @date      08-APR-2020
- * @copyright © 2020 Linaro Limited. Open Source Software.
+ * @copyright © 2020 Linaro Limited.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 /*!
@@ -15,6 +28,8 @@
  * R - Massive replication of interdependent small objects
  * N - Dynamic self-learning
  * N - Interconnected for scale
+ *
+ * Based on: https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN
  */
 
 /*!
@@ -455,7 +470,9 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
 int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<Point> *nodesQuery, std::vector<int> *nodes_list, int nodesDimensions, double desired_distance )
 {
 	/*!
-	 * Provide distance between two nodes
+	 * Provide distance between two nodes.
+	 * For optimisation, may be replaced with vtkMath::Distance2BetweenPoints(p0, p1) but adapted
+	 * to multiple dimensions.
 	 */
 	double firstX;
 	double firstY;

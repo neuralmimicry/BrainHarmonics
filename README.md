@@ -4,6 +4,26 @@
 ### Ongoing code to be managed via Linaro
 ## (c) Linaro 2020.
 ## May be freely copied whilst maintaining reference to origin and copyright.
+#### Based on an original idea: https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN
+
+### NOTE: This is pre-alpha raw software in active development. At least 50% of which
+### is still needed to be written down. It will break/is broken but you are welcome to
+### join in the journey of development. The goal IS aspirational!
+
+BrainHarmonics is the first code designed to implement Autonomic Asynchronous
+Recursive Neuromorphic Network. It is an infrastructure designed to enable
+the creation of emergent properties.
+
+Stimuli are represented as spatio-temporal activations that cause interaction with
+emulated oscillations existing in loops of simulated neurons. When different groups of neurons
+are oscillating at different frequencies there will still be moments when points
+on the waveforms are in phase. This combined simulated energy combination causes
+onward stimuli to occur.
+
+The software aims to make use of available scalability options such as Open MP for
+multi-threading on the same node; Open MPI for inter-node communication; Heterogeneous
+accelerators where available and appropriate.
+
 
 For cross-platform compatibility
 
