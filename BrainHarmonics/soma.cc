@@ -336,7 +336,12 @@ int Soma::Update(std::chrono::time_point<Clock> event_time)
     if(!object_initialised)
         {
         object_initialised = ResetParameters(event_time);
-        
+
+	/* return on null parent_pointer to avoid crash.
+	 * Todo:- assess the exact return type to be added in this scenario
+	 */
+        if(parent_pointer == nullptr) return 0;
+
         auto parent_visualisation_pointer = dynamic_cast<Solid*>(parent_pointer->GetVisualisationList()[0]);
         auto visualisation_pointer = dynamic_cast<Solid*>(parent_visualisation_pointer->CreatePolyhedron(event_time));
         visualisation_pointer->SetObjectType(event_time, TYPE_SOLID_POLYHEDRON_SOMA_GEN1);

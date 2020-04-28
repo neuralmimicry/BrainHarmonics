@@ -353,13 +353,15 @@ void Neuron::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<
                 case 1:
                 {
                 auto update_pointer = dynamic_cast<Soma*>(update_iter);
-                update_pointer->Update(event_time);
+		if(update_pointer != nullptr)
+                    update_pointer->Update(event_time);
                 break;
                 }
                 case 2:
                 {
                 auto update_pointer = dynamic_cast<Membrane*>(update_iter);
-                update_pointer->Update(event_time);
+		if(update_pointer != nullptr)
+                    update_pointer->Update(event_time);
                 break;
                 }
             }
@@ -380,7 +382,8 @@ void Neuron::UpdateCycle2(std::chrono::time_point<Clock> event_time, std::vector
                 break;
                 }
             }
-        update_pointer->Update(event_time);
+	if(update_pointer != nullptr)
+            update_pointer->Update(event_time);
         }
 }
 

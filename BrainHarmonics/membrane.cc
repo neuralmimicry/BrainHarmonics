@@ -219,9 +219,13 @@ int Membrane::Update(std::chrono::time_point<Clock> event_time)
     if(!object_initialised)
         {
         object_initialised = ResetParameters(event_time);
-        auto visualisation_pointer = dynamic_cast<Solid*>(dynamic_cast<Neuron*>(visualisation_list[0]))->CreatePolyhedron(event_time);
+	/*
+	 * commented the following lines to avoid crash.
+	 * Todo:- debug the cause and uncomment once fixed
+	 */
+        /*auto visualisation_pointer = dynamic_cast<Solid*>(dynamic_cast<Neuron*>(visualisation_list[0]))->CreatePolyhedron(event_time);
         visualisation_pointer->SetObjectType(event_time, TYPE_SOLID_POLYHEDRON_MEMBRANE_GEN1);
-        visualisation_list.push_back(visualisation_pointer);
+        visualisation_list.push_back(visualisation_pointer);*/
         }
     
     if(event_time != previous_event_time)
