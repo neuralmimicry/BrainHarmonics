@@ -1,18 +1,28 @@
-/*------------------------------------------------------------------------------*/
-/* @file      universe.h                                                        */
-/* @details   Base class of all operations                                      */
-/* @author    Paul Isaac's                                                      */
-/* @date      16.02.2016                                                        */
-/* @Copyright © 2016 Paul Isaac's. All rights reserved.                         */
-/*------------------------------------------------------------------------------*/
-
-/* Code snippets used:                                                          */
-/* Syntax comparison - http://stackoverflow.com & http://cplusplus.com          */
-/* The class defines a base and the operations that can be carried out on it.   */
-/*                                                                              */
-/* Using the hierarchical linking the aim is to develop the application to      */
-/* relate to real-world physics and physical electronic circuits. This will     */
-/* then ease mapping between simulation, emulation and real-world universes.    */
+/*!
+ * @file      universe.h
+ * @details   Base class of all operations
+ * @author    Paul B. Isaac's, authored 03-FEB-2016
+ * @date      08-APR-2020
+ * @copyright © 2020 Linaro Limited.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ *
+ * Using the hierarchical linking the aim is to develop the application to
+ * relate to real-world physics. This will then ease mapping between simulation,
+ * emulation and real-world universes.
+ */
 
     // Handy conversions
 #ifndef DEG2RAD

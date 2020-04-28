@@ -1,18 +1,28 @@
-/*------------------------------------------------------------------------------*/
-/* @file      universe.cc                                                       */
-/* @details   Base class of all operations                                      */
-/* @author    Paul Isaac's                                                      */
-/* @date      16.02.2016                                                        */
-/* @Copyright © 2016 Paul Isaac's. All rights reserved.                         */
-/*------------------------------------------------------------------------------*/
-
-/* Code snippets used:                                                          */
-/* Syntax comparison - http://stackoverflow.com & http://cplusplus.com          */
-/* The class defines a data point and the operations that can be carried out on */
-/* it.                                                                          */
-/* Using the hierarchical linking the aim is to develop the application to      */
-/* relate to real-world physics. This will then ease mapping between simulation,*/
-/* emulation and real-world universes.                                          */
+/*!
+ * @file      universe.cc
+ * @details   Base class of all operations
+ * @author    Paul B. Isaac's, authored 03-FEB-2016
+ * @date      08-APR-2020
+ * @copyright © 2020 Linaro Limited.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ *
+ * Using the hierarchical linking the aim is to develop the application to
+ * relate to real-world physics. This will then ease mapping between simulation,
+ * emulation and real-world universes.
+ */
 
 #include "universe.h"
 #include "cognitivenetwork.h"
@@ -26,19 +36,29 @@
 #include "solid.h"
 #include "point.h"
 
-    // The object has finite energy that can be redistributed to child objects to control information flow
 double Universe::GetEnergy(std::chrono::time_point<Clock> event_time)
 {
+    /*!
+     * The object has finite energy that can be redistributed to child objects to control information flow.
+     * It can be used as an audit method for leaks.
+     */
     return universe_energy;
 }
 
 void Universe::SetEnergy(std::chrono::time_point<Clock> event_time, double energy_transfer)
 {
+	/*!
+	 * During construction specify the amount of energy available
+	 */
     universe_energy = energy_transfer;
 }
 
 double Universe::UseEnergy(std::chrono::time_point<Clock> event_time, double energy_transfer)
 {
+	/*!
+	 * Each time a new child object is created then it is given a share of the Universe energy.
+	 * Negative energy is not enabled and so when the pool is low only the remainder is returned.
+	 */
     universe_energy -= energy_transfer;
     if (universe_energy < 0)
         {
@@ -50,24 +70,46 @@ double Universe::UseEnergy(std::chrono::time_point<Clock> event_time, double ene
 
 double Universe::ReturnEnergy(std::chrono::time_point<Clock> event_time, double energy_transfer)
 {
+	/*!
+	 * If a child object is destroyed then its remaining energy is returned to the pool.
+	 */
     universe_energy += energy_transfer;
     return universe_energy;
 }
 
 void Universe::Creation(std::chrono::time_point<Clock> event_time, std::string object_title, int object_type)
 {
-        // Each object has a type. When the object is created this function is called to announce the creation.
+        /*!
+         * Each object has a type. When the object is created this function is called to announce
+         * the creation. Primarily used as a debug point.
+         */
         // std::cout << object_title << " type: " << object_type << " created @" << event_time.time_since_epoch().count() << std::endl;
 }
 
 void Universe::SetObjectType(std::chrono::time_point<Clock> event_time, int object_type)
 {
+	/*!
+	 * ObjectType helps differentiate between the universes. Such as graphical, physical, simulated etc.
+	 * U1 = Internal Time, X, Y & Z
+     * U2 = Physical
+	 * U3 = Spatial X,Y,Z & Time
+	 * U4 = CPP
+	 * U5 = Spikes
+	 * U6 = Neurotransmitters
+	 * U7 = Connectome
+	 * U8 = Synapses
+	 * U9 = Orbital example
+	 */
     universe_type = object_type;
     Universe::ResetParameters(event_time);
 }
 
 bool Universe::ResetParameters(std::chrono::time_point<Clock> event_time)
 {
+	/*!
+	 * Tidies up the construction of the Universe
+	 */
+
         // If object instantiated without a time specified then add one.
     if(time_object_created == std::chrono::time_point<Clock>(std::chrono::nanoseconds::zero()))
         {
@@ -75,24 +117,23 @@ bool Universe::ResetParameters(std::chrono::time_point<Clock> event_time)
         srand((std::chrono::duration_cast<std::chrono::seconds>(TheTimeNow().time_since_epoch()).count()));
         }
     
-        // If object instantiated without a type specified the set one.
+        // If object instantiated without a type specified then set one.
     if(universe_type < 1)
         {
         universe_type = 1;
         }
 
-    universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
-    scaled_time = 1.0;            // To spped up or slow down with relation to system time.
-    time_object_created = event_time;  // According to function time, when the object was created.
-    SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
-    
     switch(universe_type)
     {
+    /*!
+     * Establish base parameters depending on object type.
+     * This should be parameterised in a config file.
+     */
         case 0:
         {
             // Blank
         universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
-        scaled_time = 1.0;            // To spped up or slow down with relation to system time.
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
         time_object_created = event_time;  // According to function time, when the object was created.
         SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
         break;
@@ -100,9 +141,82 @@ bool Universe::ResetParameters(std::chrono::time_point<Clock> event_time)
         case 1:
         {
         universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
-        scaled_time = 1.0;            // To spped up or slow down with relation to system time.
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
         time_object_created = event_time;  // According to function time, when the object was created.
         SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 2:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 3:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 4:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 5:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 6:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 7:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 8:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        case 9:
+        {
+        universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+        scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+        time_object_created = event_time;  // According to function time, when the object was created.
+        SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+        break;
+        }
+        default:
+        {
+            universe_energy = 10^12;      // Potential audit, energy cannot be created or destroyed, only redistributed
+            scaled_time = 1.0;            // To speed up or slow down with relation to system time.
+            time_object_created = event_time;  // According to function time, when the object was created.
+            SetLifespan(event_time, std::chrono::nanoseconds(10^12));   // 10^12 nanoseconds default lifespan. Will destruct when no child objects remain after countdown.
+            universe_type = 1;
         }
     }
     return true;
@@ -110,22 +224,36 @@ bool Universe::ResetParameters(std::chrono::time_point<Clock> event_time)
 
 std::chrono::time_point<std::chrono::high_resolution_clock> Universe::TheTimeNow()
 {
+	/*!
+	 * Event-driven asynchronous solutions that are being simulated require timestamps to
+	 * help identify which events across the whole system occur at the same time.
+	 * Also when attempting to simulate biological speed there is a need to slow down events.
+	 */
     return Universe::TheCalculatedTimeNow(time_object_created, std::chrono::high_resolution_clock::now(), scaled_time);
 }
 
 std::chrono::time_point<std::chrono::high_resolution_clock> Universe::TheCalculatedTimeNow(std::chrono::time_point<std::chrono::high_resolution_clock> time_object_created_time, std::chrono::time_point<Clock> event_time, double calculated_scaled_time)
 {
+	/*!
+	 * Scales time
+	 */
     return time_object_created_time + std::chrono::nanoseconds(int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - time_object_created_time).count() * calculated_scaled_time));
 }
 
 void Universe::SetLifespan(std::chrono::time_point<Clock> event_time, std::chrono::nanoseconds life_time)
 {
-    object_lifespan = life_time;
+    /*!
+     * Limit object lifespan
+     */
+	object_lifespan = life_time;
     object_expiration = time_object_created + object_lifespan;
 }
 
 void Universe::ExtendLife(std::chrono::time_point<Clock> event_time, std::chrono::nanoseconds life_time)
 {
+	/*!
+	 * Extend object lifespan
+	 */
     if(IsDead(event_time))
         {
         object_expiration = TheTimeNow();
@@ -134,9 +262,13 @@ void Universe::ExtendLife(std::chrono::time_point<Clock> event_time, std::chrono
     object_lifespan = std::chrono::nanoseconds(std::chrono::duration_cast<std::chrono::nanoseconds>(object_expiration - time_object_created).count());
 }
 
-    // Has lifespan expired?
 bool Universe::IsDead(std::chrono::time_point<Clock> event_time)
 {
+	/*!
+	 * Has lifespan expired?
+	 * When a lifespan expires it is up to the main program to decide what happens.
+	 * Cleanup would be required. It could spawn a new fresh object.
+	 */
     if (TheTimeNow() > object_expiration or object_energy <= 0)
         {
         return true;
@@ -150,8 +282,11 @@ bool Universe::IsDead(std::chrono::time_point<Clock> event_time)
 
 std::vector<Universe*> Universe::AddDimensions(std::chrono::time_point<Clock> event_time, int quantity)
 {
-        // Only create a rational number of objects
-    if( quantity > 0 && quantity < 100 )
+	/*!
+	 * Every Universe should have at least 1 dimension.
+	 */
+        // Only create a rational number of initial objects
+    if( quantity > 0 && quantity < 20 )
         {
         for (int nloop = 0; nloop < quantity; nloop++)
             {
@@ -165,20 +300,38 @@ std::vector<Universe*> Universe::AddDimensions(std::chrono::time_point<Clock> ev
 
 Universe* Universe::AddDimension(std::chrono::time_point<Clock> event_time)
 {
-        // In a massively parallel environment you cannot trust that .back will give you Your object just allocated
-        // if another process just carried out the same thing in the same address space.
-        // Future development will add a signature to the request that can be compared on the return to get the right allocation.
+	/*!
+	 * Add a single dimension.
+	 */
+
+    /*!
+     * In a massively parallel environment you cannot trust that .back will give you Your object
+     * just allocated if another process just carried out the same thing in the same address space.
+     * Future development will add a signature to the request that can be compared on the return
+     * to get the right allocation.
+     */
     return AddDimensions(event_time, 1).back();
 }
 
 std::vector<Universe*> Universe::GetDimensions(std::chrono::time_point<Clock> event_time)
 {
+	/*!
+	 * Return the list of pointers to the dimensions in this universe instance.
+	 */
     return dimension_list;
 }
 
 Universe* Universe::GetDimension(std::chrono::time_point<Clock> event_time, int selector)
 {
-    return dimension_list[selector];
+	/*!
+	 * Return a specific dimension pointer from the list of pointers to the dimensions
+	 * in this universe instance.
+	 */
+
+	/*!
+	 * Needs test to verify selector is not out of bounds
+	 */
+    return GetDimensions(event_time)[selector];
 }
 
 
@@ -204,6 +357,9 @@ std::vector<Universe*> Universe::GetElementaryParticles(std::chrono::time_point<
 
 Universe* Universe::GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector)
 {
+	/*!
+	 * Needs test to verify selector is not out of bounds
+	 */
     return elementary_particle_list[selector];
 }
 
@@ -230,6 +386,9 @@ std::vector<Universe*> Universe::GetElementaryForces(std::chrono::time_point<Clo
 
 Universe* Universe::GetElementaryForce(std::chrono::time_point<Clock> event_time, int selector)
 {
+	/*!
+	 * Needs test to verify selector is not out of bounds
+	 */
     return elementary_force_list[selector];
 }
 
@@ -256,6 +415,9 @@ std::vector<Universe*> Universe::GetCompositeForceParticles(std::chrono::time_po
 
 Universe* Universe::GetCompositeForceParticle(std::chrono::time_point<Clock> event_time, int selector)
 {
+	/*!
+	 * Needs test to verify selector is not out of bounds
+	 */
     return composite_forceparticle_list[selector];
 }
 
@@ -282,6 +444,9 @@ std::vector<Universe*> Universe::GetMatters(std::chrono::time_point<Clock> event
 
 Universe* Universe::GetMatter(std::chrono::time_point<Clock> event_time, int selector)
 {
+	/*!
+	 * Needs test to verify selector is not out of bounds
+	 */
     return matter_list[selector];
 }
 
@@ -493,16 +658,16 @@ int Universe::Update(std::chrono::time_point<Clock> event_time)
     if(event_time != previous_event_time)
         {
     
-    UpdateCycle(event_time, cognitive_network_list, 1);
-    UpdateCycle(event_time, composite_forceparticle_list, 2);
+    //if (!cognitive_network_list.empty()) {UpdateCycle(event_time, cognitive_network_list, 1);}
+    //UpdateCycle(event_time, composite_forceparticle_list, 2);
         //UpdateCycle(event_time, dimension_list, 3);
-    UpdateCycle(event_time, elementary_force_list, 4);
-    UpdateCycle(event_time, elementary_particle_list, 5);
-    UpdateCycle(event_time, matter_list, 6);
-    UpdateCycle(event_time, monomer_list, 7);
-    UpdateCycle(event_time, polymer_list, 8);
-    UpdateCycle(event_time, solid_list, 9);
-    UpdateCycle(event_time, point_list, 10);
+    //UpdateCycle(event_time, elementary_force_list, 4);
+    //UpdateCycle(event_time, elementary_particle_list, 5);
+    //UpdateCycle(event_time, matter_list, 6);
+    //UpdateCycle(event_time, monomer_list, 7);
+    //UpdateCycle(event_time, polymer_list, 8);
+    //UpdateCycle(event_time, solid_list, 9);
+    //UpdateCycle(event_time, point_list, 10);
 
     // time_dimension_pointer->AdjustCounters(event_time);
     

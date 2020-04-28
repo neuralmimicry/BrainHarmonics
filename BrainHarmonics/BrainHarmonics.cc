@@ -827,6 +827,9 @@ public:
 
 	static UpdateAllCommand *New()
 	{
+		/*!
+		 * Define an UpdateAll callback object
+		 */
 		UpdateAllCommand *update_all_callback = new UpdateAllCommand;
 		update_all_callback->TimerCount = 0;
 		return update_all_callback;
@@ -834,6 +837,9 @@ public:
 
 	virtual void Execute(vtkObject * vtkNotUsed(caller), unsigned long eventId, void *vtkNotUsed(callData))
 	{
+		/*!
+		 * When the event time matches the defined interval time execute the update code
+		 */
 		if (vtkCommand::TimerEvent == eventId)
 		{
 			++this->TimerCount;
@@ -850,12 +856,18 @@ public:
 			int renderers_group_counter = static_renderers_counter + 1;
 			auto event_time = std::chrono::high_resolution_clock::now();
 
+			/*!
+			 * A multi-verse is utilised to update simultaneously across a combination of
+			 * abstraction layers
+			 * Each Universe can update in parallel. Ideal candidate for multi-threading.
+			 */
 			std::vector<Universe*> set_of_update_pointers;
 			std::vector<Universe*>::iterator universe_iter;
+
 			for(universe_iter = universe_list.begin(); universe_iter != universe_list.end(); ++universe_iter)
 			{
 				//! Call universe update
-				//(*universe_iter)->Update(event_time);
+				(*universe_iter)->Update(event_time);
 				std::cout << ".";
 
 				//! For each Universe locate solids for visualisation
