@@ -353,9 +353,12 @@ Variables</h2></td></tr>
 <tr class="separator:af414029bac33d3b71ad5622dc83149d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Brain Harmonics - using harmonics to store and process neural spikes </p><dl class="section author"><dt>Author</dt><dd>Paul B. Isaac's, authored 03-FEB-2016 </dd></dl>
+<div class="textblock"><p>BrainHarmonics - using harmonics to store and process neural spikes </p><dl class="section author"><dt>Author</dt><dd>Paul B. Isaac's, authored 03-FEB-2016 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>08-APR-2020 </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>© 2020 Linaro Limited. Open Source Software. </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>© 2020 Linaro Limited.</dd></dl>
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad25fb949974c3ffe51bb4a887ea0aedc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad25fb949974c3ffe51bb4a887ea0aedc">&#9670;&nbsp;</a></span>DEBUG_PROGRAM</h2>
@@ -388,6 +391,7 @@ Variables</h2></td></tr>
 
 <p>header defines four variable types, two macro and various functions for manipulating date and time. </p>
 <p>BrainHarmonics is the first code designed to implement Autonomic Asynchronous Recursive Neuromorphic Network. It is an infrastructure designed to enable the creation of emergent properties. A - Self maintaining A - Event/Stimulus driven R - Massive replication of interdependent small objects N - Dynamic self-learning N - Interconnected for scale</p>
+<p>Based on: <a href="https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN">https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN</a></p>
 <p>Code snippets used: Syntax comparison - <a href="http://stackoverflow.com">http://stackoverflow.com</a> &amp; <a href="http://cplusplus.com">http://cplusplus.com</a> Using hierarchical linking the aim is to develop the application to relate to real-world physics. This will then ease mapping between simulation, emulation and real-world Universes.</p>
 <p>The Code is primarily C++ however, where optimisations are available C-calls will be used. For connectivity to other datascience resources Python-calls are also supported.header defines the timeval structure header defines a minimum set of type definitions makes available a type, socklen_t, which is an unsigned opaque integral defines at least in_port_t and in_addr_t header makes available the type in_port_t and the type in_addr_t header defines three variable types, several macros, and various functions for performing input and output This header defines several general purpose functions, including dynamic memory management, random number generation, communication with the environment, integer arithmetics, searching, sorting and converting. header in the C POSIX library for the C programming language that contains constructs that refer to file control. header file that provides access to the POSIX operating system API. header file in the standard library of the C programming language that defines the C preprocessor macro assert()Standard Template Libraries (STL) For array in CRC-32 call For handling strings For byte handling in CRC-32 For reading files Formatting output to console For output to console For open and closed maps in A* For Sine, Cosine, Power, Fabs &amp; Sqrt functions For Open MPI For CRC-32 For assigning priority queue in A* For stringstream input from console For handling strings For thread handling To use vectors, which automatically handle resizing, as arrays to keep track of instances <br />
 <br />
@@ -816,7 +820,7 @@ return 0;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Provide distance between two nodes</p>
+<p>Provide distance between two nodes. For optimisation, may be replaced with vtkMath::Distance2BetweenPoints(p0, p1) but adapted to multiple dimensions.</p>
 <p>diffX = 0; diffY = 0; <br />
 <br />
 <br />

@@ -24,6 +24,8 @@ The software aims to make use of available scalability options such as Open MP f
 multi-threading on the same node; Open MPI for inter-node communication; Heterogeneous
 accelerators where available and appropriate.
 
+Ensure you are using CMAKE v3.12 or greater.
+When libraries for the respective distro are not found, they should be compiled from source.
 
 For cross-platform compatibility
 
@@ -58,6 +60,10 @@ For Red Hat Users
 (for RHEL 8.x)
 sudo dnf update
 
+sudo dnf group install "System Tools" "Development Tools"
+
+There are Many libraries that can be interdependent for successful operation. Please refer to RHEL8.2-aarch64.txt for an indication of libraries that will be installed from a base OS.
+
 sudo dnf install glfw-devel opencv-devel libpcap-devel git autoconf automake meson ninja-build parallel rubygem-sass sassc optipng libffi-devel gcc redhat-rpm-config inkscape gtk3-devel gdk-pixbuf2-xlib glib2-devel glib2 libxml2-devel librsvg2-devel gnome-themes-standard gtk-murrine-engine gtk2-engines google-roboto-fonts google-noto-sans-fonts google-noto-sans-mono-fonts
 ```
 
@@ -70,7 +76,7 @@ git clone git@github.com:Linaro/BrainHarmonics.git
 Folders created
 ~/Developer/BrainHarmonics
 
-Install the QT/VTK toolkit
+Install the VTK toolkit
 
 ```
 cd ~/Developer
@@ -78,7 +84,6 @@ git clone git://vtk.org/VTK.git
 
 mkdir ~/Developer/VTK-build
 mkdir ~/Developer/VTK-Release-build
-mkdir ~/Developer/QT
 cd ~/Developer/VTK-build
 cmake ~/Developer/VTK
 
@@ -163,7 +168,7 @@ Overview:
 Creates a number of simulation universes from which to create neurons/synapses.
 
 Skeletal framework exists to call Python routines if required.
-Currently minimal paramterisation files but elements are there.
+Currently minimal parameterisation files but elements are there.
 
 
 

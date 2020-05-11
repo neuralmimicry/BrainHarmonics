@@ -268,16 +268,20 @@ struct caer\+\_\+dynapse\+\_\+info \mbox{\hyperlink{BrainHarmonics_8cc_af414029b
 
 
 \subsection{Detailed Description}
-Brain Harmonics -\/ using harmonics to store and process neural spikes \begin{DoxyAuthor}{Author}
+Brain\+Harmonics -\/ using harmonics to store and process neural spikes \begin{DoxyAuthor}{Author}
 Paul B. Isaac\textquotesingle{}s, authored 03-\/\+F\+E\+B-\/2016 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
 08-\/\+A\+P\+R-\/2020 
 \end{DoxyDate}
 \begin{DoxyCopyright}{Copyright}
-© 2020 Linaro Limited. Open Source Software. 
+© 2020 Linaro Limited.
 \end{DoxyCopyright}
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
 
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program. If not, see \href{https://www.gnu.org/licenses/}{\tt https\+://www.\+gnu.\+org/licenses/}. 
 
 \subsection{Macro Definition Documentation}
 \mbox{\Hypertarget{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}\label{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}} 
@@ -301,6 +305,8 @@ Application specific add-\/ins Focusing on the biology to be mimicked. Which is 
 header defines four variable types, two macro and various functions for manipulating date and time. 
 
 Brain\+Harmonics is the first code designed to implement Autonomic Asynchronous Recursive Neuromorphic Network. It is an infrastructure designed to enable the creation of emergent properties. A -\/ Self maintaining A -\/ Event/\+Stimulus driven R -\/ Massive replication of interdependent small objects N -\/ Dynamic self-\/learning N -\/ Interconnected for scale
+
+Based on\+: \href{https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN}{\tt https\+://www.\+researchgate.\+net/publication/325069661\+\_\+\+An\+\_\+\+Outline\+\_\+of\+\_\+\+Artificial\+\_\+\+Intelligence\+\_\+and\+\_\+\+Neuromorphic\+\_\+technology\+\_\+to\+\_\+introduce\+\_\+\+Auto-\/\+Asynchronous\+\_\+\+Recursive\+\_\+\+Neural\+\_\+\+Networks\+\_\+\+A\+A\+R\+NN}
 
 Code snippets used\+: Syntax comparison -\/ \href{http://stackoverflow.com}{\tt http\+://stackoverflow.\+com} \& \href{http://cplusplus.com}{\tt http\+://cplusplus.\+com} Using hierarchical linking the aim is to develop the application to relate to real-\/world physics. This will then ease mapping between simulation, emulation and real-\/world Universes.
 
@@ -493,7 +499,7 @@ Return with pointer to the expanded list of Universes. \mbox{\Hypertarget{BrainH
 \subsubsection{\texorpdfstring{Distance\+Between\+Nodes()}{DistanceBetweenNodes()}}
 {\footnotesize\ttfamily int Distance\+Between\+Nodes (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$}]{nodes\+Query,  }\item[{std\+::vector$<$ int $>$ $\ast$}]{nodes\+\_\+list,  }\item[{int}]{nodes\+Dimensions,  }\item[{double}]{desired\+\_\+distance }\end{DoxyParamCaption})}
 
-Provide distance between two nodes
+Provide distance between two nodes. For optimisation, may be replaced with vtk\+Math\+::\+Distance2\+Between\+Points(p0, p1) but adapted to multiple dimensions.
 
 diffX = 0; diffY = 0; ~\newline
 ~\newline

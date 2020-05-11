@@ -312,13 +312,15 @@ std\+::chrono\+::nanoseconds \mbox{\hyperlink{classUniverse_acb8bc2b083f0227a042
 \subsubsection{\texorpdfstring{Add\+Dimension()}{AddDimension()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Add\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}\label{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}} 
+Add a single dimension.
+
+In a massively parallel environment you cannot trust that .back will give you Your object just allocated if another process just carried out the same thing in the same address space. Future development will add a signature to the request that can be compared on the return to get the right allocation.\mbox{\Hypertarget{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}\label{classUniverse_a03bdf5f7fea4209241e9bf5316d45517}} 
 \index{Universe@{Universe}!Add\+Dimensions@{Add\+Dimensions}}
 \index{Add\+Dimensions@{Add\+Dimensions}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Add\+Dimensions()}{AddDimensions()}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Add\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{quantity }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a90c573dec55f2b3ad5680015356f5f25}\label{classUniverse_a90c573dec55f2b3ad5680015356f5f25}} 
+Every \mbox{\hyperlink{classUniverse}{Universe}} should have at least 1 dimension.\mbox{\Hypertarget{classUniverse_a90c573dec55f2b3ad5680015356f5f25}\label{classUniverse_a90c573dec55f2b3ad5680015356f5f25}} 
 \index{Universe@{Universe}!Add\+Elementary\+Force@{Add\+Elementary\+Force}}
 \index{Add\+Elementary\+Force@{Add\+Elementary\+Force}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Add\+Elementary\+Force()}{AddElementaryForce()}}
@@ -508,13 +510,13 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ab8bc213d2806f0dc49c1284
 \subsubsection{\texorpdfstring{Creation()}{Creation()}}
 {\footnotesize\ttfamily void Universe\+::\+Creation (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::string}]{object\+\_\+title,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a982502e46868a00a9111738ccc9355c2}\label{classUniverse_a982502e46868a00a9111738ccc9355c2}} 
+Each object has a type. When the object is created this function is called to announce the creation. Primarily used as a debug point.\mbox{\Hypertarget{classUniverse_a982502e46868a00a9111738ccc9355c2}\label{classUniverse_a982502e46868a00a9111738ccc9355c2}} 
 \index{Universe@{Universe}!Extend\+Life@{Extend\+Life}}
 \index{Extend\+Life@{Extend\+Life}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Extend\+Life()}{ExtendLife()}}
 {\footnotesize\ttfamily void Universe\+::\+Extend\+Life (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}\label{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}} 
+Extend object lifespan\mbox{\Hypertarget{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}\label{classUniverse_a1ea2b7e438bfdc7dd599aa59c310b126}} 
 \index{Universe@{Universe}!Get\+Cognitive\+Network@{Get\+Cognitive\+Network}}
 \index{Get\+Cognitive\+Network@{Get\+Cognitive\+Network}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Cognitive\+Network()}{GetCognitiveNetwork()}}
@@ -532,7 +534,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ab8bc213d2806f0dc49c1284
 \subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particle()}{GetCompositeForceParticle()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Composite\+Force\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}\label{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}} 
+Needs test to verify selector is not out of bounds\mbox{\Hypertarget{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}\label{classUniverse_aed37d7224b4e31bdfb0632e39bf19694}} 
 \index{Universe@{Universe}!Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}}
 \index{Get\+Composite\+Force\+Particles@{Get\+Composite\+Force\+Particles}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Composite\+Force\+Particles()}{GetCompositeForceParticles()}}
@@ -544,13 +546,15 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ab8bc213d2806f0dc49c1284
 \subsubsection{\texorpdfstring{Get\+Dimension()}{GetDimension()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Dimension (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a1869fc7bf43827378bab5a701f7f917a}\label{classUniverse_a1869fc7bf43827378bab5a701f7f917a}} 
+Return a specific dimension pointer from the list of pointers to the dimensions in this universe instance.
+
+Needs test to verify selector is not out of bounds\mbox{\Hypertarget{classUniverse_a1869fc7bf43827378bab5a701f7f917a}\label{classUniverse_a1869fc7bf43827378bab5a701f7f917a}} 
 \index{Universe@{Universe}!Get\+Dimensions@{Get\+Dimensions}}
 \index{Get\+Dimensions@{Get\+Dimensions}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Dimensions()}{GetDimensions()}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ Universe\+::\+Get\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a63b850ef3f3394313353109d222bf5d1}\label{classUniverse_a63b850ef3f3394313353109d222bf5d1}} 
+Return the list of pointers to the dimensions in this universe instance.\mbox{\Hypertarget{classUniverse_a63b850ef3f3394313353109d222bf5d1}\label{classUniverse_a63b850ef3f3394313353109d222bf5d1}} 
 \index{Universe@{Universe}!Get\+Electromagnetic@{Get\+Electromagnetic}}
 \index{Get\+Electromagnetic@{Get\+Electromagnetic}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Electromagnetic()}{GetElectromagnetic()}}
@@ -576,7 +580,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a8c4e0454068f714691ae250
 \subsubsection{\texorpdfstring{Get\+Elementary\+Force()}{GetElementaryForce()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Elementary\+Force (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}\label{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}} 
+Needs test to verify selector is not out of bounds\mbox{\Hypertarget{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}\label{classUniverse_a6a8ed579b2eedd3aceebda9f3d78aa0e}} 
 \index{Universe@{Universe}!Get\+Elementary\+Forces@{Get\+Elementary\+Forces}}
 \index{Get\+Elementary\+Forces@{Get\+Elementary\+Forces}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Elementary\+Forces()}{GetElementaryForces()}}
@@ -588,7 +592,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a8c4e0454068f714691ae250
 \subsubsection{\texorpdfstring{Get\+Elementary\+Particle()}{GetElementaryParticle()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a168fd9bf7602adcba1de5dd93a212775}\label{classUniverse_a168fd9bf7602adcba1de5dd93a212775}} 
+Needs test to verify selector is not out of bounds\mbox{\Hypertarget{classUniverse_a168fd9bf7602adcba1de5dd93a212775}\label{classUniverse_a168fd9bf7602adcba1de5dd93a212775}} 
 \index{Universe@{Universe}!Get\+Elementary\+Particles@{Get\+Elementary\+Particles}}
 \index{Get\+Elementary\+Particles@{Get\+Elementary\+Particles}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Elementary\+Particles()}{GetElementaryParticles()}}
@@ -600,7 +604,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a8c4e0454068f714691ae250
 \subsubsection{\texorpdfstring{Get\+Energy()}{GetEnergy()}}
 {\footnotesize\ttfamily double Universe\+::\+Get\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}\label{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}} 
+The object has finite energy that can be redistributed to child objects to control information flow. It can be used as an audit method for leaks.\mbox{\Hypertarget{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}\label{classUniverse_ab0404e774ee0ed66b597ff5b8e989446}} 
 \index{Universe@{Universe}!Get\+Gravitation@{Get\+Gravitation}}
 \index{Get\+Gravitation@{Get\+Gravitation}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Gravitation()}{GetGravitation()}}
@@ -616,7 +620,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a4b5150310288c52f00ecb74
 \subsubsection{\texorpdfstring{Get\+Matter()}{GetMatter()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ Universe\+::\+Get\+Matter (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{selector }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a4307a62e183fed8cf2b92be0f6014688}\label{classUniverse_a4307a62e183fed8cf2b92be0f6014688}} 
+Needs test to verify selector is not out of bounds\mbox{\Hypertarget{classUniverse_a4307a62e183fed8cf2b92be0f6014688}\label{classUniverse_a4307a62e183fed8cf2b92be0f6014688}} 
 \index{Universe@{Universe}!Get\+Matters@{Get\+Matters}}
 \index{Get\+Matters@{Get\+Matters}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Get\+Matters()}{GetMatters()}}
@@ -726,7 +730,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_aa6342c390fe8e7c648b4c6b
 \subsubsection{\texorpdfstring{Is\+Dead()}{IsDead()}}
 {\footnotesize\ttfamily bool Universe\+::\+Is\+Dead (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a0c485c504542409cbb5cfd8543c35b11}\label{classUniverse_a0c485c504542409cbb5cfd8543c35b11}} 
+Has lifespan expired? When a lifespan expires it is up to the main program to decide what happens. Cleanup would be required. It could spawn a new fresh object.\mbox{\Hypertarget{classUniverse_a0c485c504542409cbb5cfd8543c35b11}\label{classUniverse_a0c485c504542409cbb5cfd8543c35b11}} 
 \index{Universe@{Universe}!Poll\+Elementary\+Force@{Poll\+Elementary\+Force}}
 \index{Poll\+Elementary\+Force@{Poll\+Elementary\+Force}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Poll\+Elementary\+Force()}{PollElementaryForce()}}
@@ -742,13 +746,15 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_ac97c08a0af7dc0d02fbe059
 \subsubsection{\texorpdfstring{Reset\+Parameters()}{ResetParameters()}}
 {\footnotesize\ttfamily bool Universe\+::\+Reset\+Parameters (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_aeda74e3902c0e56c0c09779854045cde}\label{classUniverse_aeda74e3902c0e56c0c09779854045cde}} 
+Tidies up the construction of the \mbox{\hyperlink{classUniverse}{Universe}}
+
+Establish base parameters depending on object type. This should be parameterised in a config file.\mbox{\Hypertarget{classUniverse_aeda74e3902c0e56c0c09779854045cde}\label{classUniverse_aeda74e3902c0e56c0c09779854045cde}} 
 \index{Universe@{Universe}!Return\+Energy@{Return\+Energy}}
 \index{Return\+Energy@{Return\+Energy}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Return\+Energy()}{ReturnEnergy()}}
 {\footnotesize\ttfamily double Universe\+::\+Return\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}\label{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}} 
+If a child object is destroyed then its remaining energy is returned to the pool.\mbox{\Hypertarget{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}\label{classUniverse_a3b3da7c86a7b75e5e5c0b7972ac82a87}} 
 \index{Universe@{Universe}!Set\+Charge@{Set\+Charge}}
 \index{Set\+Charge@{Set\+Charge}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Set\+Charge()}{SetCharge()}}
@@ -794,7 +800,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a270f6842ec14b3e5b80dedf
 \subsubsection{\texorpdfstring{Set\+Energy()}{SetEnergy()}}
 {\footnotesize\ttfamily void Universe\+::\+Set\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}\label{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}} 
+During construction specify the amount of energy available\mbox{\Hypertarget{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}\label{classUniverse_ae0cb8d86b2fbb8396d605160344b42f5}} 
 \index{Universe@{Universe}!Set\+Gravitation@{Set\+Gravitation}}
 \index{Set\+Gravitation@{Set\+Gravitation}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Set\+Gravitation()}{SetGravitation()}}
@@ -810,13 +816,13 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_af9f082a70f0cc25a3f818d9
 \subsubsection{\texorpdfstring{Set\+Lifespan()}{SetLifespan()}}
 {\footnotesize\ttfamily void Universe\+::\+Set\+Lifespan (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::chrono\+::nanoseconds}]{life\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a2274a54fbdc7504c897e4272162bf17a}\label{classUniverse_a2274a54fbdc7504c897e4272162bf17a}} 
+Limit object lifespan\mbox{\Hypertarget{classUniverse_a2274a54fbdc7504c897e4272162bf17a}\label{classUniverse_a2274a54fbdc7504c897e4272162bf17a}} 
 \index{Universe@{Universe}!Set\+Object\+Type@{Set\+Object\+Type}}
 \index{Set\+Object\+Type@{Set\+Object\+Type}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Set\+Object\+Type()}{SetObjectType()}}
 {\footnotesize\ttfamily void Universe\+::\+Set\+Object\+Type (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{int}]{object\+\_\+type }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}\label{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}} 
+Object\+Type helps differentiate between the universes. Such as graphical, physical, simulated etc. U1 = Internal Time, X, Y \& Z U2 = Physical U3 = Spatial X,Y,Z \& Time U4 = C\+PP U5 = Spikes U6 = Neurotransmitters U7 = Connectome U8 = Synapses U9 = \mbox{\hyperlink{classOrbital}{Orbital}} example\mbox{\Hypertarget{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}\label{classUniverse_ae2ae1c3b3e4cde2c18f5f6a814761ec8}} 
 \index{Universe@{Universe}!Set\+Spin@{Set\+Spin}}
 \index{Set\+Spin@{Set\+Spin}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Set\+Spin()}{SetSpin()}}
@@ -882,13 +888,13 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a116f6818986a622e4a31885
 \subsubsection{\texorpdfstring{The\+Calculated\+Time\+Now()}{TheCalculatedTimeNow()}}
 {\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Calculated\+Time\+Now (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$}]{time\+\_\+object\+\_\+created\+\_\+time,  }\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{calculated\+\_\+scaled\+\_\+time }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}\label{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}} 
+Scales time\mbox{\Hypertarget{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}\label{classUniverse_ae54d34c5d695917e074b8e07e8820bdb}} 
 \index{Universe@{Universe}!The\+Time\+Now@{The\+Time\+Now}}
 \index{The\+Time\+Now@{The\+Time\+Now}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{The\+Time\+Now()}{TheTimeNow()}}
 {\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ Universe\+::\+The\+Time\+Now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}\label{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}} 
+Event-\/driven asynchronous solutions that are being simulated require timestamps to help identify which events across the whole system occur at the same time. Also when attempting to simulate biological speed there is a need to slow down events.\mbox{\Hypertarget{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}\label{classUniverse_a64ee5a2c7e86c56fa426acb750438ce9}} 
 \index{Universe@{Universe}!Update@{Update}}
 \index{Update@{Update}!Universe@{Universe}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
@@ -906,7 +912,7 @@ Reimplemented in \mbox{\hyperlink{classCognitiveNetwork_a116f6818986a622e4a31885
 \subsubsection{\texorpdfstring{Use\+Energy()}{UseEnergy()}}
 {\footnotesize\ttfamily double Universe\+::\+Use\+Energy (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{double}]{energy\+\_\+transfer }\end{DoxyParamCaption})}
 
-
+Each time a new child object is created then it is given a share of the \mbox{\hyperlink{classUniverse}{Universe}} energy. Negative energy is not enabled and so when the pool is low only the remainder is returned.
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classUniverse_a7a0e9796ff0d650a8b1fbde5fa5b761f}\label{classUniverse_a7a0e9796ff0d650a8b1fbde5fa5b761f}} 
