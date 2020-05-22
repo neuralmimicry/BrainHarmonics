@@ -1,0 +1,17 @@
+About:-
+
+This MPIApp defines the possible structure of communication interface that could be used by BrainHarmonics to pass spikes between neurons.
+
+The file include/CommIntf.h defines an abstract base class which defines the methods to be implemented by underlying communication modes i.e MPI or MP
+The file include/MpiComm.h implements the methods inherited from CommIntf.h to handle MPI communication mode
+Implementor of MP needs to create a new file under include/ and inherit the baseclass CommIntf.h to implement the virtual methods to handle MP specific communication
+
+
+Build Instructions:-
+
+1) mkdir MpiApp/build
+2) cd build
+3) cmake -D CMAKE_CXX_COMPILER=mpic++ ../  (ensure mpic++ and related mpi tools are installed and the path set in $PATH variable)
+4) make
+5) To run the app 
+   mpirun -np 2 testMpi
