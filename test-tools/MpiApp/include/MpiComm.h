@@ -21,6 +21,7 @@ class MpiComm: public CommIntf
 
 	void Send_Data(AER_Msg_t const &);
 	AER_Msg_t& Recv_Data();
+	AER_Msg_t* Bcast_Data(AER_Msg_t const &, std::vector<int>ranks);
 
     private:
     	int world_rank;
