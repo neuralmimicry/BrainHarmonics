@@ -1,4 +1,5 @@
 # BrainHarmonics
+# We're hiring! - https://www.linkedin.com/feed/update/urn:li:activity:6689561031225745408/
 \#\# This file forms the basis of build requirements to get the software to compile.</br>
 \#\#\# Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's. 08-Apr-2020.</br>
 \#\#\# Ongoing code to be managed via Linaro</br>
