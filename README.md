@@ -80,7 +80,7 @@ Install the VTK toolkit
 
 ```
 cd ~/Developer
-git clone git://vtk.org/VTK.git
+git clone https://gitlab.kitware.com/vtk/vtk.git
 
 mkdir ~/Developer/VTK-build
 mkdir ~/Developer/VTK-Release-build
@@ -150,11 +150,6 @@ Build procedure.
 ```
 mkdir ~/Developer/BrainHarmonics/build
 cd ~/Developer/BrainHarmonics/build
-cmake ../
-make
-
-mkdir ~/Developer/BrainHarmonics/BrainHarmonics/build
-cd ~/Developer/BrainHarmonics/BrainHarmonics/build
 cmake ../
 make all
 
