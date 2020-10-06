@@ -105,6 +105,9 @@ cmake -DVTK_QT_VERSION:STRING=5 \
       -DCMAKE_PREFIX_PATH:PATH=~/Qt5.9.2/5.9.2/gcc_64/lib/cmake  \
       -DBUILD_SHARED_LIBS:BOOL=ON \
       ~/Developer/VTK
+```
+(Common)
+```
 
 make -j2
 sudo make install
@@ -157,7 +160,7 @@ make all
 
 How to run...
 
-Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics/BrainHarmonics folder.
+Once built, execute ./build/BrainHarmonics from the ~/Developer/BrainHarmonics folder.
 
 Overview:
 Creates a number of simulation universes from which to create neurons/synapses.
