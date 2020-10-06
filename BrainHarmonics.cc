@@ -467,6 +467,35 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
 	return l_switch; //! Return, answering whether or not an exchange occurred
 }
 
+bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, std::vector<Universe*>& origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
+{
+	/*!
+	 * Test which Candidate is closest to being 3 away in the charge values and move that
+	 * Candidate next to the Origin.
+	 */
+	/*
+	bool l_switch = true;
+	int l_origin = origin[l_origin_Swap]->GetCharge(event_time);
+	int l_origin_Test1 = origin[l_origin_Candidate1]->GetCharge(event_time);
+	int l_origin_Test2 = origin[l_origin_Candidate2]->GetCharge(event_time);
+	int l_origin_Test3 = std::abs(l_origin - l_origin_Test1);
+	int l_origin_Test4 = std::abs(l_origin - l_origin_Test2);
+	int l_origin_Test5 = (3.0 - l_origin_Test3);
+	int l_origin_Test6 = (3.0 - l_origin_Test4);
+
+	l_switch = false;
+
+	if(l_origin_Test5 > l_origin_Test6 && l_origin != l_origin_Candidate2)
+	{
+		iter_swap(origin.begin() + l_origin_Candidate1, origin.begin() + l_origin_Candidate2);
+		l_switch = true;
+	}
+
+	return l_switch; //! Return, answering whether or not an exchange occurred
+	*/
+	return false;
+}
+
 int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<Point> *nodesQuery, std::vector<int> *nodes_list, int nodesDimensions, double desired_distance )
 {
 	/*!
@@ -1841,59 +1870,58 @@ int main(int argc, const char * argv[])
 		std::cout << num_composite_forceparticles_in_universe[universe_loop] << " composite force particle addresses available." << std::endl;
 
 		how_many_particles = int(universe_list[universe_loop]->GetElementaryParticles(event_time).size());
+		elementary_particle_list = universe_list[universe_loop]->GetElementaryParticles(event_time);
 
-		/*
-         //! Rearrange vector of new Particles in an order closer to how they're likely to interact.
-         for (int qloop = 0; qloop <= initial_particle_alignment * how_many_particles; qloop++)
-         {
-         counter_Walk = 0;
-         current_Distance = 0;
-         counter_infinite_loop_prevention = 0;
+        //! Rearrange vector of new Particles in an order closer to how they're likely to interact.
+        for (int qloop = 0; qloop <= initial_particle_alignment * how_many_particles; qloop++)
+        {
+			counter_Walk = 0;
+			current_Distance = 0;
+			counter_infinite_loop_prevention = 0;
 
-         do {
-         counter_infinite_loop_prevention++;
-         max_Distance = current_Distance;
-         current_Distance = 0;
-         while(counter_Walk <= (how_many_particles - 3))
-         {
-         l_switch = CompareSwapElementaryParticle(universe_list[universe_loop]->GetElementaryParticles(event_time), counter_Walk, counter_Walk + 1, counter_Walk + 2);
-         if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
-         if (counter_Walk < 0) counter_Walk = 0;
+			do {
+				counter_infinite_loop_prevention++;
+				max_Distance = current_Distance;
+				current_Distance = 0;
+				while(counter_Walk <= (how_many_particles - 3))
+				{
+					l_switch = CompareSwapElementaryParticle(event_time, elementary_particle_list, counter_Walk, counter_Walk + 1, counter_Walk + 2);
+					if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
+					if (counter_Walk < 0) counter_Walk = 0;
 
-         l_origin = elementary_particle_list[counter_Walk]->GetCharge();
-         l_origin_Test1 = elementary_particle_list[counter_Walk + 1]->GetCharge();
-         l_origin_Test3 = l_origin_Test1 - l_origin;
-         l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
-         current_Distance = current_Distance + l_origin_Test5;
-         }
-         } while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
+					l_origin = elementary_particle_list[counter_Walk]->GetCharge(event_time);
+					l_origin_Test1 = elementary_particle_list[counter_Walk + 1]->GetCharge(event_time);
+					l_origin_Test3 = l_origin_Test1 - l_origin;
+					l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+					current_Distance = current_Distance + l_origin_Test5;
+				}
+			} while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
 
 
-         counter_Walk = (how_many_particles - 1);
-         current_Distance = 0;
-         counter_infinite_loop_prevention = 0;
+			counter_Walk = (how_many_particles - 1);
+			current_Distance = 0;
+			counter_infinite_loop_prevention = 0;
 
-         do
-         {
-         counter_infinite_loop_prevention++;
-         max_Distance = current_Distance;
-         current_Distance = 0;
-         while(counter_Walk >= 2)
-         {
-         l_switch = CompareSwapElementaryParticle(elementary_particle_list, counter_Walk, counter_Walk - 1, counter_Walk - 2);
-         if (l_switch) counter_Walk++; else counter_Walk--;
-         if (counter_Walk > (how_many_particles - 1)) counter_Walk = (how_many_particles - 1);
+			do
+			{
+				counter_infinite_loop_prevention++;
+				max_Distance = current_Distance;
+				current_Distance = 0;
+				while(counter_Walk >= 2)
+				{
+					l_switch = CompareSwapElementaryParticle(event_time, elementary_particle_list, counter_Walk, counter_Walk - 1, counter_Walk - 2);
+					if (l_switch) counter_Walk++; else counter_Walk--;
+					if (counter_Walk > (how_many_particles - 1)) counter_Walk = (how_many_particles - 1);
 
-         l_origin = elementary_particle_list[counter_Walk]->GetCharge();
-         l_origin_Test1 = elementary_particle_list[counter_Walk - 1]->GetCharge();
-         l_origin_Test3 = l_origin_Test1 - l_origin;
-         l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
-         current_Distance = current_Distance + l_origin_Test5;
-         }
-         }
-         while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
-         }
-		 */
+					l_origin = elementary_particle_list[counter_Walk]->GetCharge(event_time);
+					l_origin_Test1 = elementary_particle_list[counter_Walk - 1]->GetCharge(event_time);
+					l_origin_Test3 = l_origin_Test1 - l_origin;
+					l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+					current_Distance = current_Distance + l_origin_Test5;
+				}
+			}
+			while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
+        }
 
 		//! Make Elements - Hydrogen, Helium, Lithium etc
 		matter_list.clear();

@@ -335,7 +335,7 @@ Universe* Universe::GetDimension(std::chrono::time_point<Clock> event_time, int 
 }
 
 
-std::vector<Universe*> Universe::AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity)
+std::vector<ElementaryParticle*> Universe::AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity)
 {
     for (int nloop = 0; nloop < quantity; nloop++)
         {
@@ -345,17 +345,17 @@ std::vector<Universe*> Universe::AddElementaryParticles(std::chrono::time_point<
     return elementary_particle_list;
 }
 
-Universe* Universe::AddElementaryParticle(std::chrono::time_point<Clock> event_time)
+ElementaryParticle* Universe::AddElementaryParticle(std::chrono::time_point<Clock> event_time)
 {
     return AddElementaryParticles(event_time, 1).back();
 }
 
-std::vector<Universe*> Universe::GetElementaryParticles(std::chrono::time_point<Clock> event_time)
+std::vector<ElementaryParticle*> Universe::GetElementaryParticles(std::chrono::time_point<Clock> event_time)
 {
     return elementary_particle_list;
 }
 
-Universe* Universe::GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector)
+ElementaryParticle* Universe::GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector)
 {
 	/*!
 	 * Needs test to verify selector is not out of bounds
