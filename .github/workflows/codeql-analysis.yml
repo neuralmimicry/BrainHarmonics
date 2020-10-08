@@ -29,14 +29,17 @@ jobs:
         # https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#overriding-automatic-language-detection
 
     steps:
-    - name: Install packages
-      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev
-
     - name: Add PPA
       run: sudo add-apt-repository ppa:inivation-ppa/inivation
 
+    - name: Add Universe
+      run: sudo add-apt-repository universe
+
     - name: Update index
       run: sudo apt update
+
+    - name: Install packages
+      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev
 
     - name: Install libcaer
       run: sudo apt install libcaer-dev
