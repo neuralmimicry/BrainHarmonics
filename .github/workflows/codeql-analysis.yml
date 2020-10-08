@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Install packages
-      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev
+      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev
 
     - name: Add PPA
       run: sudo add-apt-repository ppa:inivation-ppa/inivation
