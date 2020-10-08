@@ -32,6 +32,15 @@ jobs:
     - name: Install packages
       run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev
 
+    - name: Add PPA
+      run: sudo add-apt-repository ppa:inivation-ppa/inivation
+
+    - name: Update index
+      run: sudo apt update
+
+    - name: Install libcaer
+      run: sudo apt install libcaer-dev
+
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
