@@ -125,21 +125,25 @@ std::vector<Soma*> Soma::CreateAxonHillocks(std::chrono::time_point<Clock> event
 std::vector<Soma*> Soma::CloneAxonHillocks(std::chrono::time_point<Clock> event_time, std::vector<Soma*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::CloneAxonHillock(std::chrono::time_point<Clock> event_time, Soma* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Soma*> Soma::DestroyAxonHillocks(std::chrono::time_point<Clock> event_time, std::vector<Soma*> destruction_list)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::DestroyAxonHillock(std::chrono::time_point<Clock> event_time, Soma* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Soma*  Soma::AddAxonHillock(std::chrono::time_point<Clock> event_time, Soma* add_object)
@@ -184,6 +188,7 @@ Soma*  Soma::RemoveAxonHillock(std::chrono::time_point<Clock> event_time)
 std::vector<Soma*> Soma::RemoveAxonHillocks(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::GetAxonHillock(std::chrono::time_point<Clock> event_time, int selector)
@@ -233,21 +238,25 @@ std::vector<Soma*> Soma::CreateDendrites(std::chrono::time_point<Clock> event_ti
 std::vector<Soma*> Soma::CloneDendrites(std::chrono::time_point<Clock> event_time, std::vector<Soma*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::CloneDendrite(std::chrono::time_point<Clock> event_time, Soma* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Soma*> Soma::DestroyDendrites(std::chrono::time_point<Clock> event_time, std::vector<Soma*> destruction_list)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::DestroyDendrite(std::chrono::time_point<Clock> event_time, Soma* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Soma*  Soma::AddDendrite(std::chrono::time_point<Clock> event_time, Soma* add_object)
@@ -292,6 +301,7 @@ Soma*  Soma::RemoveDendrite(std::chrono::time_point<Clock> event_time)
 std::vector<Soma*> Soma::RemoveDendrites(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Soma*>();
 }
 
 Soma*  Soma::GetDendrite(std::chrono::time_point<Clock> event_time, int selector)

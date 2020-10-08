@@ -107,21 +107,25 @@ std::vector<CognitiveNetwork*> MembraneChannel::CreateNeurotransmitters(std::chr
 std::vector<CognitiveNetwork*> MembraneChannel::CloneNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  MembraneChannel::CloneNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> MembraneChannel::DestroyNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  MembraneChannel::DestroyNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  MembraneChannel::AddNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -166,6 +170,7 @@ CognitiveNetwork*  MembraneChannel::RemoveNeurotransmitter(std::chrono::time_poi
 std::vector<CognitiveNetwork*> MembraneChannel::RemoveNeurotransmitters(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  MembraneChannel::GetNeurotransmitter(std::chrono::time_point<Clock> event_time, int selector)
@@ -209,7 +214,7 @@ bool MembraneChannel::CompatibilityCheck(std::chrono::time_point<Clock> event_ti
         }
         return false;
     }
-    
+    return false;
 }
 
 int MembraneChannel::Update(std::chrono::time_point<Clock> event_time)

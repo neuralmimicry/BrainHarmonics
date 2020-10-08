@@ -95,21 +95,25 @@ std::vector<AxonBouton*> AxonBouton::CreateSynapticVesicles(std::chrono::time_po
 std::vector<AxonBouton*> AxonBouton::CloneSynapticVesicles(std::chrono::time_point<Clock> event_time, std::vector<AxonBouton*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<AxonBouton*>();
 }
 
 AxonBouton*  AxonBouton::CloneSynapticVesicle(std::chrono::time_point<Clock> event_time, AxonBouton* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<AxonBouton*> AxonBouton::DestroySynapticVesicles(std::chrono::time_point<Clock> event_time, std::vector<AxonBouton*> destruction_list)
 {
         // Function TBD
+	return std::vector<AxonBouton*>();
 }
 
 AxonBouton*  AxonBouton::DestroySynapticVesicle(std::chrono::time_point<Clock> event_time, AxonBouton* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 AxonBouton*  AxonBouton::AddSynapticVesicle(std::chrono::time_point<Clock> event_time, AxonBouton* add_object)
@@ -154,6 +158,7 @@ AxonBouton*  AxonBouton::RemoveSynapticVesicle(std::chrono::time_point<Clock> ev
 std::vector<AxonBouton*> AxonBouton::RemoveSynapticVesicles(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<AxonBouton*>();
 }
 
 AxonBouton*  AxonBouton::GetSynapticVesicle(std::chrono::time_point<Clock> event_time, int selector)

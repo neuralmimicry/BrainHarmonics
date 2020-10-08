@@ -142,21 +142,25 @@ std::vector<Neuron*> Neuron::CreateSomas(std::chrono::time_point<Clock> event_ti
 std::vector<Neuron*> Neuron::CloneSomas(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::CloneSoma(std::chrono::time_point<Clock> event_time, Neuron* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Neuron*> Neuron::DestroySomas(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> destruction_list)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::DestroySoma(std::chrono::time_point<Clock> event_time, Neuron* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Neuron*  Neuron::AddSoma(std::chrono::time_point<Clock> event_time, Neuron* add_object)
@@ -201,6 +205,7 @@ Neuron*  Neuron::RemoveSoma(std::chrono::time_point<Clock> event_time)
 std::vector<Neuron*> Neuron::RemoveSomas(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::GetSoma(std::chrono::time_point<Clock> event_time, int selector)
@@ -250,21 +255,25 @@ std::vector<Neuron*> Neuron::CreateMembranes(std::chrono::time_point<Clock> even
 std::vector<Neuron*> Neuron::CloneMembranes(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::CloneMembrane(std::chrono::time_point<Clock> event_time, Neuron* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Neuron*> Neuron::DestroyMembranes(std::chrono::time_point<Clock> event_time, std::vector<Neuron*> destruction_list)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::DestroyMembrane(std::chrono::time_point<Clock> event_time, Neuron* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Neuron*  Neuron::AddMembrane(std::chrono::time_point<Clock> event_time, Neuron* add_object)
@@ -309,6 +318,7 @@ Neuron*  Neuron::RemoveMembrane(std::chrono::time_point<Clock> event_time)
 std::vector<Neuron*> Neuron::RemoveMembranes(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Neuron*>();
 }
 
 Neuron*  Neuron::GetMembrane(std::chrono::time_point<Clock> event_time, int selector)

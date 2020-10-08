@@ -90,7 +90,7 @@ public:
     
     bool ResetParameters(std::chrono::time_point<Clock> event_time);
     
-    int Update(std::chrono::time_point<Clock> event_time);
+    void Update(std::chrono::time_point<Clock> event_time);
 
 protected:
 

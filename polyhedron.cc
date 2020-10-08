@@ -158,21 +158,25 @@ std::vector<Polyhedron*> Polyhedron::CreatePolygons(std::chrono::time_point<Cloc
 std::vector<Polyhedron*> Polyhedron::ClonePolygons(std::chrono::time_point<Clock> event_time, std::vector<Polyhedron*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Polyhedron*>();
 }
 
 Polyhedron*  Polyhedron::ClonePolygon(std::chrono::time_point<Clock> event_time, Polyhedron* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Polyhedron*> Polyhedron::DestroyPolygons(std::chrono::time_point<Clock> event_time, std::vector<Polyhedron*> destruction_list)
 {
         // Function TBD
+	return std::vector<Polyhedron*>();
 }
 
 Polyhedron*  Polyhedron::DestroyPolygon(std::chrono::time_point<Clock> event_time, Polyhedron* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Polyhedron*  Polyhedron::AddPolygon(std::chrono::time_point<Clock> event_time, Polyhedron* add_object)
@@ -217,6 +221,7 @@ Polyhedron*  Polyhedron::RemovePolygon(std::chrono::time_point<Clock> event_time
 std::vector<Polyhedron*> Polyhedron::RemovePolygons(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Polyhedron*>();
 }
 
 Polyhedron*  Polyhedron::GetPolygon(std::chrono::time_point<Clock> event_time, int selector)

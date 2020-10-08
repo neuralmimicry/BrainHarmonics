@@ -230,21 +230,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateCognitiveInputs(std::chro
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneCognitiveInputs(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneCognitiveInput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyCognitiveInputs(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyCognitiveInput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddCognitiveInput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -289,6 +293,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveCognitiveInput(std::chrono::time_poin
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveCognitiveInputs(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetCognitiveInput(std::chrono::time_point<Clock> event_time, int selector)
@@ -338,21 +343,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateCognitiveOutputs(std::chr
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneCognitiveOutputs(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneCognitiveOutput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyCognitiveOutputs(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyCognitiveOutput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddCognitiveOutput(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -397,6 +406,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveCognitiveOutput(std::chrono::time_poi
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveCognitiveOutputs(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetCognitiveOutput(std::chrono::time_point<Clock> event_time, int selector)
@@ -448,21 +458,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateInterneuronSpaces(std::ch
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneInterneuronSpaces(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneInterneuronSpace(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyInterneuronSpaces(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyInterneuronSpace(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddInterneuronSpace(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -507,6 +521,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveInterneuronSpace(std::chrono::time_po
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveInterneuronSpaces(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetInterneuronSpace(std::chrono::time_point<Clock> event_time, int selector)
@@ -556,21 +571,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateOrbitals(std::chrono::tim
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneOrbitals(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneOrbital(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyOrbitals(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyOrbital(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddOrbital(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -615,6 +634,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveOrbital(std::chrono::time_point<Clock
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveOrbitals(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetOrbital(std::chrono::time_point<Clock> event_time, int selector)
@@ -670,21 +690,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateNeurons(std::chrono::time
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneNeurons(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneNeuron(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyNeurons(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyNeuron(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddNeuron(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -729,6 +753,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveNeuron(std::chrono::time_point<Clock>
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveNeurons(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetNeuron(std::chrono::time_point<Clock> event_time, int selector)
@@ -778,21 +803,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateSynapses(std::chrono::tim
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneSynapses(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneSynapse(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroySynapses(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroySynapse(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddSynapse(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -837,6 +866,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveSynapse(std::chrono::time_point<Clock
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveSynapses(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetSynapse(std::chrono::time_point<Clock> event_time, int selector)
@@ -886,21 +916,25 @@ std::vector<CognitiveNetwork*> CognitiveNetwork::CreateNeurotransmitters(std::ch
 std::vector<CognitiveNetwork*> CognitiveNetwork::CloneNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::CloneNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> CognitiveNetwork::DestroyNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::DestroyNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  CognitiveNetwork::AddNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -945,6 +979,7 @@ CognitiveNetwork*  CognitiveNetwork::RemoveNeurotransmitter(std::chrono::time_po
 std::vector<CognitiveNetwork*> CognitiveNetwork::RemoveNeurotransmitters(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  CognitiveNetwork::GetNeurotransmitter(std::chrono::time_point<Clock> event_time, int selector)

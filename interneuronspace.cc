@@ -103,21 +103,25 @@ std::vector<CognitiveNetwork*> InterneuronSpace::CreateNeurotransmitters(std::ch
 std::vector<CognitiveNetwork*> InterneuronSpace::CloneNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  InterneuronSpace::CloneNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<CognitiveNetwork*> InterneuronSpace::DestroyNeurotransmitters(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> destruction_list)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  InterneuronSpace::DestroyNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 CognitiveNetwork*  InterneuronSpace::AddNeurotransmitter(std::chrono::time_point<Clock> event_time, CognitiveNetwork* add_object)
@@ -162,6 +166,7 @@ CognitiveNetwork*  InterneuronSpace::RemoveNeurotransmitter(std::chrono::time_po
 std::vector<CognitiveNetwork*> InterneuronSpace::RemoveNeurotransmitters(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<CognitiveNetwork*>();
 }
 
 CognitiveNetwork*  InterneuronSpace::GetNeurotransmitter(std::chrono::time_point<Clock> event_time, int selector)

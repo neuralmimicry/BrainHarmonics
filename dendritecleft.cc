@@ -112,21 +112,25 @@ std::vector<DendriteCleft*> DendriteCleft::CreateNeuroreceptors(std::chrono::tim
 std::vector<DendriteCleft*> DendriteCleft::CloneNeuroreceptors(std::chrono::time_point<Clock> event_time, std::vector<DendriteCleft*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<DendriteCleft*>();
 }
 
 DendriteCleft*  DendriteCleft::CloneNeuroreceptor(std::chrono::time_point<Clock> event_time, DendriteCleft* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<DendriteCleft*> DendriteCleft::DestroyNeuroreceptors(std::chrono::time_point<Clock> event_time, std::vector<DendriteCleft*> destruction_list)
 {
         // Function TBD
+	return std::vector<DendriteCleft*>();
 }
 
 DendriteCleft*  DendriteCleft::DestroyNeuroreceptor(std::chrono::time_point<Clock> event_time, DendriteCleft* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 DendriteCleft*  DendriteCleft::AddNeuroreceptor(std::chrono::time_point<Clock> event_time, DendriteCleft* add_object)
@@ -171,6 +175,7 @@ DendriteCleft*  DendriteCleft::RemoveNeuroreceptor(std::chrono::time_point<Clock
 std::vector<DendriteCleft*> DendriteCleft::RemoveNeuroreceptors(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<DendriteCleft*>();
 }
 
 DendriteCleft*  DendriteCleft::GetNeuroreceptor(std::chrono::time_point<Clock> event_time, int selector)

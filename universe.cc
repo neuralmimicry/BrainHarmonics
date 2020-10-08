@@ -768,23 +768,23 @@ void Universe::AdjustCounters(std::chrono::time_point<std::chrono::high_resoluti
 
 void Universe::SetCharge(std::chrono::time_point<Clock> event_time, int val) {}
 void Universe::SetSpin(std::chrono::time_point<Clock> event_time, int val) {}
-double Universe::GetGravitation(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetWeak(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetWeakElectroweak(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetElectromagnetic(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetElectromagneticElectroweak(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetStrong(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetStrongFundamental(std::chrono::time_point<Clock> event_time) {}
- double Universe::GetStrongResidual(std::chrono::time_point<Clock> event_time) {}
+double Universe::GetGravitation(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetWeak(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetWeakElectroweak(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetElectromagnetic(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetElectromagneticElectroweak(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetStrong(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetStrongFundamental(std::chrono::time_point<Clock> event_time) { return 0.0; }
+ double Universe::GetStrongResidual(std::chrono::time_point<Clock> event_time) { return 0.0; }
 
- double Universe::ApplyGravitation(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyWeak(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyWeakElectroweak(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyElectromagnetic(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyElectromagneticElectroweak(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyStrong(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyStrongFundamental(std::chrono::time_point<Clock> event_time, double val) {}
- double Universe::ApplyStrongResidual(std::chrono::time_point<Clock> event_time, double val) {}
+ double Universe::ApplyGravitation(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyWeak(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyWeakElectroweak(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyElectromagnetic(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyElectromagneticElectroweak(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyStrong(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyStrongFundamental(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
+ double Universe::ApplyStrongResidual(std::chrono::time_point<Clock> event_time, double val) { return 0.0; }
 
  void Universe::SetCounter(std::chrono::time_point<Clock> event_time, unsigned int val) {}
  void Universe::SetGravitation(std::chrono::time_point<Clock> event_time, double val) {}

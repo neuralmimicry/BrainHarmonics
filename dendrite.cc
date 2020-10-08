@@ -99,21 +99,25 @@ std::vector<Dendrite*> Dendrite::CreateDendriteBranches(std::chrono::time_point<
 std::vector<Dendrite*> Dendrite::CloneDendriteBranches(std::chrono::time_point<Clock> event_time, std::vector<Dendrite*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Dendrite*>();
 }
 
 Dendrite*  Dendrite::CloneDendriteBranch(std::chrono::time_point<Clock> event_time, Dendrite* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Dendrite*> Dendrite::DestroyDendriteBranches(std::chrono::time_point<Clock> event_time, std::vector<Dendrite*> destruction_list)
 {
         // Function TBD
+	return std::vector<Dendrite*>();
 }
 
 Dendrite*  Dendrite::DestroyDendriteBranch(std::chrono::time_point<Clock> event_time, Dendrite* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Dendrite*  Dendrite::AddDendriteBranch(std::chrono::time_point<Clock> event_time, Dendrite* add_object)
@@ -158,6 +162,7 @@ Dendrite*  Dendrite::RemoveDendriteBranch(std::chrono::time_point<Clock> event_t
 std::vector<Dendrite*> Dendrite::RemoveDendriteBranches(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Dendrite*>();
 }
 
 Dendrite*  Dendrite::GetDendriteBranch(std::chrono::time_point<Clock> event_time, int selector)

@@ -76,6 +76,7 @@ bool Orbital::ResetParameters(std::chrono::time_point<Clock> event_time)
 std::vector<CognitiveNetwork*> Orbital::AddToNeuronList(CognitiveNetwork* neuron_pointer)
 {
     neuron_list.push_back(neuron_pointer);
+    return neuron_list;
 }
 
 std::vector<CognitiveNetwork*> Orbital::AddNeuron(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> list_to_add)

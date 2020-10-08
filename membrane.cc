@@ -118,21 +118,25 @@ std::vector<Membrane*> Membrane::CreateMembraneChannels(std::chrono::time_point<
 std::vector<Membrane*> Membrane::CloneMembraneChannels(std::chrono::time_point<Clock> event_time, std::vector<Membrane*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Membrane*>();
 }
 
 Membrane*  Membrane::CloneMembraneChannel(std::chrono::time_point<Clock> event_time, Membrane* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Membrane*> Membrane::DestroyMembraneChannels(std::chrono::time_point<Clock> event_time, std::vector<Membrane*> destruction_list)
 {
         // Function TBD
+	return std::vector<Membrane*>();
 }
 
 Membrane*  Membrane::DestroyMembraneChannel(std::chrono::time_point<Clock> event_time, Membrane* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Membrane*  Membrane::AddMembraneChannel(std::chrono::time_point<Clock> event_time, Membrane* add_object)
@@ -177,6 +181,7 @@ Membrane*  Membrane::RemoveMembraneChannel(std::chrono::time_point<Clock> event_
 std::vector<Membrane*> Membrane::RemoveMembraneChannels(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Membrane*>();
 }
 
 Membrane*  Membrane::GetMembraneChannel(std::chrono::time_point<Clock> event_time, int selector)

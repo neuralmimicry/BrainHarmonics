@@ -101,21 +101,25 @@ std::vector<AxonHillock*> AxonHillock::CreateAxons(std::chrono::time_point<Clock
 std::vector<AxonHillock*> AxonHillock::CloneAxons(std::chrono::time_point<Clock> event_time, std::vector<AxonHillock*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<AxonHillock*>();
 }
 
 AxonHillock*  AxonHillock::CloneAxon(std::chrono::time_point<Clock> event_time, AxonHillock* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<AxonHillock*> AxonHillock::DestroyAxons(std::chrono::time_point<Clock> event_time, std::vector<AxonHillock*> destruction_list)
 {
         // Function TBD
+	return std::vector<AxonHillock*>();
 }
 
 AxonHillock*  AxonHillock::DestroyAxon(std::chrono::time_point<Clock> event_time, AxonHillock* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 AxonHillock*  AxonHillock::AddAxon(std::chrono::time_point<Clock> event_time, AxonHillock* add_object)
@@ -160,6 +164,7 @@ AxonHillock*  AxonHillock::RemoveAxon(std::chrono::time_point<Clock> event_time)
 std::vector<AxonHillock*> AxonHillock::RemoveAxons(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<AxonHillock*>();
 }
 
 AxonHillock*  AxonHillock::GetAxon(std::chrono::time_point<Clock> event_time, int selector)

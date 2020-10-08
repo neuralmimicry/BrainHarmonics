@@ -142,21 +142,25 @@ std::vector<Solid*> Solid::CreatePolyhedrons(std::chrono::time_point<Clock> even
 std::vector<Solid*> Solid::ClonePolyhedrons(std::chrono::time_point<Clock> event_time, std::vector<Solid*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<Solid*>();
 }
 
 Solid*  Solid::ClonePolyhedron(std::chrono::time_point<Clock> event_time, Solid* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<Solid*> Solid::DestroyPolyhedrons(std::chrono::time_point<Clock> event_time, std::vector<Solid*> destruction_list)
 {
         // Function TBD
+	return std::vector<Solid*>();
 }
 
 Solid*  Solid::DestroyPolyhedron(std::chrono::time_point<Clock> event_time, Solid* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 Solid*  Solid::AddPolyhedron(std::chrono::time_point<Clock> event_time, Solid* add_object)
@@ -201,6 +205,7 @@ Solid*  Solid::RemovePolyhedron(std::chrono::time_point<Clock> event_time)
 std::vector<Solid*> Solid::RemovePolyhedrons(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<Solid*>();
 }
 
 Solid*  Solid::GetPolyhedron(std::chrono::time_point<Clock> event_time, int selector)

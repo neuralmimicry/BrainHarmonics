@@ -95,21 +95,25 @@ std::vector<AxonBranch*> AxonBranch::CreateAxonBoutons(std::chrono::time_point<C
 std::vector<AxonBranch*> AxonBranch::CloneAxonBoutons(std::chrono::time_point<Clock> event_time, std::vector<AxonBranch*> cloning_list, double perfection_membership)
 {
         // Function TBD
+	return std::vector<AxonBranch*>();
 }
 
 AxonBranch*  AxonBranch::CloneAxonBouton(std::chrono::time_point<Clock> event_time, AxonBranch* clone_object, double perfection_membership)
 {
         // Function TBD
+	return nullptr;
 }
 
 std::vector<AxonBranch*> AxonBranch::DestroyAxonBoutons(std::chrono::time_point<Clock> event_time, std::vector<AxonBranch*> destruction_list)
 {
         // Function TBD
+	return std::vector<AxonBranch*>();
 }
 
 AxonBranch*  AxonBranch::DestroyAxonBouton(std::chrono::time_point<Clock> event_time, AxonBranch* destroy_object)
 {
         // Function TBD
+	return nullptr;
 }
 
 AxonBranch*  AxonBranch::AddAxonBouton(std::chrono::time_point<Clock> event_time, AxonBranch* add_object)
@@ -154,6 +158,7 @@ AxonBranch*  AxonBranch::RemoveAxonBouton(std::chrono::time_point<Clock> event_t
 std::vector<AxonBranch*> AxonBranch::RemoveAxonBoutons(std::chrono::time_point<Clock> event_time, int quantity)
 {
         // Function TBD
+	return std::vector<AxonBranch*>();
 }
 
 AxonBranch*  AxonBranch::GetAxonBouton(std::chrono::time_point<Clock> event_time, int selector)

@@ -77,7 +77,7 @@ void ElementaryForce::SetStrongResidual(std::chrono::time_point<Clock> event_tim
 void ElementaryForce::PollElementaryForce(std::chrono::time_point<Clock> event_time) {}
 
 
-int ElementaryForce::Update(std::chrono::time_point<Clock> event_time)
+void ElementaryForce::Update(std::chrono::time_point<Clock> event_time)
 {
         // If this is the first time that Update is called after object instantiation use the setup parameters.
         // object_initialised should then report true and then not be re-run.
@@ -88,22 +88,22 @@ int ElementaryForce::Update(std::chrono::time_point<Clock> event_time)
     
     if(event_time != previous_event_time)
         {
-    // time_dimension_pointer->AdjustCounters(event_time);
+		// time_dimension_pointer->AdjustCounters(event_time);
+
+		duration_since_last_event = std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - previous_event_time).count();
+		if (duration_since_last_event < 0)
+			{
+			duration_since_last_event = 0;
+			}
     
-    duration_since_last_event = std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - previous_event_time).count();
-    if (duration_since_last_event < 0)
-        {
-        duration_since_last_event = 0;
-        }
+		if (object_energy < 0)
+			{
+			object_energy = 0;
+			}
     
-    if (object_energy < 0)
-        {
-        object_energy = 0;
-        }
-    
-    if (duration_since_last_event > 0 && object_energy > 0)
-        {
-        }
-        previous_event_time = event_time;
-        }
+		if (duration_since_last_event > 0 && object_energy > 0)
+			{
+			}
+		previous_event_time = event_time;
+		}
 }
