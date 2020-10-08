@@ -42,7 +42,7 @@ jobs:
       run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev
 
     - name: Install libcaer
-      run: sudo apt install libcaer-dev
+      run: sudo apt install libcaer-dev libserialport0 libserialport-dev
 
     - name: Checkout repository
       uses: actions/checkout@v2
