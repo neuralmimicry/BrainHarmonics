@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Install packages
-      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev
+      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev opencv opencv-dev
 
     - name: Checkout repository
       uses: actions/checkout@v2
