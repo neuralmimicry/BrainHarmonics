@@ -44,11 +44,10 @@ jobs:
     - name: Install libcaer
       run: sudo apt install libcaer-dev libserialport0 libserialport-dev
 
-    - name: Load module command
-      run: source /etc/profile.d/modules.sh
-
-    - name: Load Open MPI
-      run: module load mpi
+    - name: Load openmpi module
+      run: |
+        source /etc/profile.d/modules.sh
+        module load mpi
 
     - name: Checkout repository
       uses: actions/checkout@v2
