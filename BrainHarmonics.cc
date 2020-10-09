@@ -1977,7 +1977,7 @@ int main(int argc, const char * argv[])
 		std::cout << num_cognitive_networks_in_universe[universe_loop] << " cognitive network addresses available." << std::endl;
 
 		auto current_universe_pointer = universe_list[universe_loop];
-		for(int cognitive_network_loop; cognitive_network_loop < num_cognitive_networks_in_universe[universe_loop]; cognitive_network_loop++)
+		for(int cognitive_network_loop = 0; cognitive_network_loop < num_cognitive_networks_in_universe[universe_loop]; cognitive_network_loop++)
 		{
 			//! Add Orbital objects to Cognitive Network which is derived from Universe
 			auto current_cognitivenetwork_pointer = current_universe_pointer->GetCognitiveNetwork(event_time, cognitive_network_loop);
