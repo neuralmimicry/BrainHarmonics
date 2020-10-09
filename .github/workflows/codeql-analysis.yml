@@ -39,10 +39,13 @@ jobs:
       run: sudo apt update
 
     - name: Install packages
-      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev libpcap-dev libopenmpi2 libopenmpi-dev
+      run: sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev libpcap-dev libopenmpi2 libopenmpi-dev environment-modules
 
     - name: Install libcaer
       run: sudo apt install libcaer-dev libserialport0 libserialport-dev
+
+    - name: Load Open MPI
+      run: module load mpi
 
     - name: Checkout repository
       uses: actions/checkout@v2
