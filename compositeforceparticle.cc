@@ -48,7 +48,6 @@ bool CompositeForceParticle::ResetParameters(std::chrono::time_point<Clock> even
 void CompositeForceParticle::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<CompositeForceParticle*> set_of_update_pointers, unsigned int pointer_type)
 {
     std::vector<CompositeForceParticle*>::iterator update_iter;
-    CompositeForceParticle* update_pointer;
     for(update_iter = set_of_update_pointers.begin(); update_iter != set_of_update_pointers.end(); ++update_iter)
         {
         switch(pointer_type)
@@ -56,15 +55,18 @@ void CompositeForceParticle::UpdateCycle(std::chrono::time_point<Clock> event_ti
                 case 1:
                 {
                 auto update_pointer = dynamic_cast<ElementaryParticle*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 2:
                 {
                 auto update_pointer = dynamic_cast<ElementaryForce*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
             }
-        update_pointer->Update(event_time);
         }
 }
 

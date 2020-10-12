@@ -97,7 +97,6 @@ bool CognitiveNetwork::ResetParameters(std::chrono::time_point<Clock> event_time
 void CognitiveNetwork::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> set_of_update_pointers, unsigned int pointer_type)
 {
     std::vector<CognitiveNetwork*>::iterator update_iter;
-    CognitiveNetwork* update_pointer;
     for(update_iter = set_of_update_pointers.begin(); update_iter != set_of_update_pointers.end(); ++update_iter)
         {
         switch(pointer_type)
@@ -105,40 +104,53 @@ void CognitiveNetwork::UpdateCycle(std::chrono::time_point<Clock> event_time, st
                 case 1:
                 {
                 auto update_pointer = dynamic_cast<CognitiveInput*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 2:
                 {
                 auto update_pointer = dynamic_cast<CognitiveOutput*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 3:
                 {
                 auto update_pointer = dynamic_cast<InterneuronSpace*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 4:
                 {
                 auto update_pointer = dynamic_cast<Orbital*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 5:
                 {
                 auto update_pointer = dynamic_cast<Neuron*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 6:
                 {
                 auto update_pointer = dynamic_cast<Synapse*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
                 case 7:
                 {
                 auto update_pointer = dynamic_cast<Neurotransmitter*>(*update_iter);
+		if (update_pointer != nullptr)
+			update_pointer->Update(event_time);
                 break;
                 }
             }
-        update_pointer->Update(event_time);
         }
 }
 

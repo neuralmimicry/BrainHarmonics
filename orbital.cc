@@ -120,7 +120,6 @@ void Orbital::CalcPosition(std::chrono::time_point<Clock> event_time, double Dur
 void Orbital::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> set_of_update_pointers, unsigned int pointer_type)
 {
     std::vector<CognitiveNetwork*>::iterator update_iter;
-    CognitiveNetwork* update_pointer;
     for(update_iter = set_of_update_pointers.begin(); update_iter != set_of_update_pointers.end(); ++update_iter)
         {
         switch(pointer_type)
@@ -128,10 +127,11 @@ void Orbital::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector
                 case 1:
                 {
                 auto update_pointer = dynamic_cast<Neuron*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
             }
-        update_pointer->Update(event_time);
         }
 }
 

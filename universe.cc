@@ -290,6 +290,7 @@ std::vector<Universe*> Universe::AddDimensions(std::chrono::time_point<Clock> ev
         {
         for (int nloop = 0; nloop < quantity; nloop++)
             {
+        	std::cout << "Size: " << dimension_list.size() << std::endl;
                 // Future development create a Struct containing a request signature for operation
             Dimension* new_object = new Dimension();
             dimension_list.push_back(new_object);
@@ -583,7 +584,6 @@ Universe* Universe::GetPoint(std::chrono::time_point<Clock> event_time, int sele
 void Universe::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<Universe*> set_of_update_pointers, unsigned int pointer_type)
 {
     std::vector<Universe*>::iterator update_iter;
-    Universe* update_pointer;
     for(update_iter = set_of_update_pointers.begin(); update_iter != set_of_update_pointers.end(); ++update_iter)
         {
         switch(pointer_type)
@@ -591,55 +591,74 @@ void Universe::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vecto
                 case 1:
                 {
                 auto update_pointer = dynamic_cast<CognitiveNetwork*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 2:
                 {
                 auto update_pointer = dynamic_cast<CompositeForceParticle*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 3:
                 {
                 auto update_pointer = dynamic_cast<Dimension*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 4:
                 {
                 auto update_pointer = dynamic_cast<ElementaryForce*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 5:
                 {
                 auto update_pointer = dynamic_cast<ElementaryParticle*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 6:
                 {
                 auto update_pointer = dynamic_cast<Matter*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 7:
                 {
                 auto update_pointer = dynamic_cast<Monomer*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 8:
                 {
                 auto update_pointer = dynamic_cast<Polymer*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 9:
                 {
                 auto update_pointer = dynamic_cast<Solid*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
                 case 10:
                 {
                 auto update_pointer = dynamic_cast<Point*>(*update_iter);
+                if (update_pointer != nullptr)
+                	update_pointer->Update(event_time);
                 break;
                 }
             }
-        update_pointer->Update(event_time);
         }
 }
 

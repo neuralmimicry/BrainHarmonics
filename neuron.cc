@@ -381,19 +381,18 @@ void Neuron::UpdateCycle(std::chrono::time_point<Clock> event_time, std::vector<
 void Neuron::UpdateCycle2(std::chrono::time_point<Clock> event_time, std::vector<Universe*> set_of_update_pointers, unsigned int pointer_type)
 {
     std::vector<Universe*>::iterator update_iter;
-    Universe* update_pointer;
     for(update_iter = set_of_update_pointers.begin(); update_iter != set_of_update_pointers.end(); ++update_iter)
         {
         switch(pointer_type)
             {
                 case 1:
                 {
-                auto update_pointer = dynamic_cast<Solid*>(*update_iter);
-                break;
+					auto update_pointer = dynamic_cast<Solid*>(*update_iter);
+					if(update_pointer != nullptr)
+							update_pointer->Update(event_time);
+					break;
                 }
             }
-	if(update_pointer != nullptr)
-            update_pointer->Update(event_time);
         }
 }
 
@@ -404,9 +403,9 @@ int Neuron::Update(std::chrono::time_point<Clock> event_time)
     std::cout << "N";
     if(!object_initialised)
         {
-            //std::cout << "Initialising neuron..." << std::endl;
+        //std::cout << "Initialising neuron..." << std::endl;
         object_initialised = ResetParameters(event_time);
-        
+
         auto visualisation_pointer = dynamic_cast<Solid*>(AddSolid(event_time));
         visualisation_pointer->SetObjectType(event_time, TYPE_SOLID_NEURON_GEN1);
         visualisation_list.push_back(visualisation_pointer);
@@ -441,7 +440,7 @@ int Neuron::Update(std::chrono::time_point<Clock> event_time)
     
     if (duration_since_last_event > 0 && object_energy > 0)
         {
-    
+
     for(std::vector<Neuron*>::iterator it = soma_list.begin(); it != soma_list.end(); ++it)
         {
         (*it)->Update(event_time);
