@@ -290,7 +290,6 @@ std::vector<Universe*> Universe::AddDimensions(std::chrono::time_point<Clock> ev
         {
         for (int nloop = 0; nloop < quantity; nloop++)
             {
-        	std::cout << "Size: " << dimension_list.size() << std::endl;
                 // Future development create a Struct containing a request signature for operation
             Dimension* new_object = new Dimension();
             dimension_list.push_back(new_object);
