@@ -335,27 +335,27 @@ Universe* Universe::GetDimension(std::chrono::time_point<Clock> event_time, int 
 }
 
 
-std::vector<ElementaryParticle*> Universe::AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity)
+std::vector<Universe*> Universe::AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity)
 {
     for (int nloop = 0; nloop < quantity; nloop++)
         {
-        ElementaryParticle* new_object = new ElementaryParticle();
+    	Universe* new_object = new ElementaryParticle();
         elementary_particle_list.push_back(new_object);
         }
     return elementary_particle_list;
 }
 
-ElementaryParticle* Universe::AddElementaryParticle(std::chrono::time_point<Clock> event_time)
+Universe* Universe::AddElementaryParticle(std::chrono::time_point<Clock> event_time)
 {
     return AddElementaryParticles(event_time, 1).back();
 }
 
-std::vector<ElementaryParticle*> Universe::GetElementaryParticles(std::chrono::time_point<Clock> event_time)
+std::vector<Universe*> Universe::GetElementaryParticles(std::chrono::time_point<Clock> event_time)
 {
     return elementary_particle_list;
 }
 
-ElementaryParticle* Universe::GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector)
+Universe* Universe::GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector)
 {
 	/*!
 	 * Needs test to verify selector is not out of bounds
@@ -676,16 +676,16 @@ int Universe::Update(std::chrono::time_point<Clock> event_time)
     if(event_time != previous_event_time)
         {
     
-    //if (!cognitive_network_list.empty()) {UpdateCycle(event_time, cognitive_network_list, 1);}
-    //UpdateCycle(event_time, composite_forceparticle_list, 2);
-        //UpdateCycle(event_time, dimension_list, 3);
-    //UpdateCycle(event_time, elementary_force_list, 4);
-    //UpdateCycle(event_time, elementary_particle_list, 5);
-    //UpdateCycle(event_time, matter_list, 6);
-    //UpdateCycle(event_time, monomer_list, 7);
-    //UpdateCycle(event_time, polymer_list, 8);
-    //UpdateCycle(event_time, solid_list, 9);
-    //UpdateCycle(event_time, point_list, 10);
+    if (!cognitive_network_list.empty()) {UpdateCycle(event_time, cognitive_network_list, 1);}
+    UpdateCycle(event_time, composite_forceparticle_list, 2);
+    UpdateCycle(event_time, dimension_list, 3);
+    UpdateCycle(event_time, elementary_force_list, 4);
+    UpdateCycle(event_time, elementary_particle_list, 5);
+    UpdateCycle(event_time, matter_list, 6);
+    UpdateCycle(event_time, monomer_list, 7);
+    UpdateCycle(event_time, polymer_list, 8);
+    UpdateCycle(event_time, solid_list, 9);
+    UpdateCycle(event_time, point_list, 10);
 
     // time_dimension_pointer->AdjustCounters(event_time);
     

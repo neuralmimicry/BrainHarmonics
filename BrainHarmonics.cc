@@ -192,6 +192,7 @@ static vtkSmartPointer<vtkPolyData> TransformBack(vtkSmartPointer<vtkPoints> pt,
  * Interim calls to Python (3.8) to use existing APIs to Neuromorphic hardware and/or Brain simulators
  */
 #include <Python.h>             //! Python interpreter
+#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
 #include <numpy/arrayobject.h>
 
 /*!
@@ -473,11 +474,10 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
 	 * Test which Candidate is closest to being 3 away in the charge values and move that
 	 * Candidate next to the Origin.
 	 */
-	/*
 	bool l_switch = true;
-	int l_origin = origin[l_origin_Swap]->GetCharge(event_time);
-	int l_origin_Test1 = origin[l_origin_Candidate1]->GetCharge(event_time);
-	int l_origin_Test2 = origin[l_origin_Candidate2]->GetCharge(event_time);
+	int l_origin = dynamic_cast<ElementaryParticle*>(origin[l_origin_Swap])->GetCharge(event_time);
+	int l_origin_Test1 = dynamic_cast<ElementaryParticle*>(origin[l_origin_Candidate1])->GetCharge(event_time);
+	int l_origin_Test2 = dynamic_cast<ElementaryParticle*>(origin[l_origin_Candidate2])->GetCharge(event_time);
 	int l_origin_Test3 = std::abs(l_origin - l_origin_Test1);
 	int l_origin_Test4 = std::abs(l_origin - l_origin_Test2);
 	int l_origin_Test5 = (3.0 - l_origin_Test3);
@@ -492,8 +492,6 @@ bool CompareSwapElementaryParticle(std::chrono::time_point<Clock> event_time, st
 	}
 
 	return l_switch; //! Return, answering whether or not an exchange occurred
-	*/
-	return false;
 }
 
 int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<Point> *nodesQuery, std::vector<int> *nodes_list, int nodesDimensions, double desired_distance )
@@ -1200,7 +1198,7 @@ int main(int argc, const char * argv[])
 	//! Early versions of this software maintained direct pointers to all objects. Now it is recoded
 	//! to access through Get/Set class methods with the exception of the initial Universe class.
 	std::vector <Dimension*>          dimension_list;          //! Add Dimensions for spatial identification     */
-	std::vector <ElementaryParticle*> elementary_particle_list; //! Follow with the creation of quarks/leptons    */
+	std::vector <Universe*>           elementary_particle_list; //! Follow with the creation of quarks/leptons    */
 	std::vector <ElementaryForce*>    elementary_force_list;    //! Define Force interaction between fundamentals */
 	std::vector <CompositeForceParticle*>     composite_forceparticle_list;     //! Define Particle Force interaction between Composites, Protons/Neutrons   */
 	std::vector <Law*>                law_list;                //! Specify how Composites interact               */
@@ -1889,8 +1887,8 @@ int main(int argc, const char * argv[])
 					if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
 					if (counter_Walk < 0) counter_Walk = 0;
 
-					l_origin = elementary_particle_list[counter_Walk]->GetCharge(event_time);
-					l_origin_Test1 = elementary_particle_list[counter_Walk + 1]->GetCharge(event_time);
+					l_origin = dynamic_cast<ElementaryParticle*>(elementary_particle_list[counter_Walk])->GetCharge(event_time);
+					l_origin_Test1 = dynamic_cast<ElementaryParticle*>(elementary_particle_list[counter_Walk + 1])->GetCharge(event_time);
 					l_origin_Test3 = l_origin_Test1 - l_origin;
 					l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
 					current_Distance = current_Distance + l_origin_Test5;
@@ -1913,8 +1911,8 @@ int main(int argc, const char * argv[])
 					if (l_switch) counter_Walk++; else counter_Walk--;
 					if (counter_Walk > (how_many_particles - 1)) counter_Walk = (how_many_particles - 1);
 
-					l_origin = elementary_particle_list[counter_Walk]->GetCharge(event_time);
-					l_origin_Test1 = elementary_particle_list[counter_Walk - 1]->GetCharge(event_time);
+					l_origin = dynamic_cast<ElementaryParticle*>(elementary_particle_list[counter_Walk])->GetCharge(event_time);
+					l_origin_Test1 = dynamic_cast<ElementaryParticle*>(elementary_particle_list[counter_Walk - 1])->GetCharge(event_time);
 					l_origin_Test3 = l_origin_Test1 - l_origin;
 					l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
 					current_Distance = current_Distance + l_origin_Test5;

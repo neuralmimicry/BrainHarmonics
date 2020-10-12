@@ -160,13 +160,13 @@ public:
                 Universe*  GetDimension(std::chrono::time_point<Clock> event_time, int selector);
 
     
-    std::vector<ElementaryParticle*> AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity);
+    std::vector<Universe*> AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity);
     
-                ElementaryParticle*  AddElementaryParticle(std::chrono::time_point<Clock> event_time);
+    			Universe*  AddElementaryParticle(std::chrono::time_point<Clock> event_time);
     
-    std::vector<ElementaryParticle*> GetElementaryParticles(std::chrono::time_point<Clock> event_time);
+    std::vector<Universe*> GetElementaryParticles(std::chrono::time_point<Clock> event_time);
     
-                ElementaryParticle*  GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector);
+    			Universe*  GetElementaryParticle(std::chrono::time_point<Clock> event_time, int selector);
 
     
     std::vector<Universe*> AddElementaryForces(std::chrono::time_point<Clock> event_time, int quantity);
@@ -303,7 +303,7 @@ protected:
     std::vector<Universe*> composite_forceparticle_list;
     std::vector<Universe*> dimension_list;
     std::vector<Universe*> elementary_force_list;
-    std::vector<ElementaryParticle*> elementary_particle_list;
+    std::vector<Universe*> elementary_particle_list;
     std::vector<Universe*> matter_list;
     std::vector<Universe*> monomer_list;
     std::vector<Universe*> polymer_list;
