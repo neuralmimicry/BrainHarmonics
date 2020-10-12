@@ -170,4 +170,41 @@ Currently minimal parameterisation files but elements are there.
 
 
 
+Running inside a VM
+===================
 
+BrainHarmonics execution relies on a graphical interface and it uses OpenGL. Although it
+is possible to implement support entirely in software, it has been designed to be mostly or
+entirely in hardware. There exist several options when working with BrainHarmonics inside a VM:
+
+ 1) assign a graphics card device to the VM.
+ 2) use X forwarding with ssh.
+ 3) use virtio VGA drivers.
+
+From a performance point of view 1) is the best option. Note this can require to assign a full
+device or just partially through SRIOV (VFs or mediated devices). If there is not support for
+SRIOV, assigning the device to the VM implies the Host not being able to use it which can be
+problematic in most desktop systems.
+
+X forwarding has a main problem: apps using DRI calls after. This option allows an X server in
+the Host doing the rendering, but that is helpless if X clients go straight to the device through
+DRI before redirecting to the X server.
+
+Virtio-gpu is likely the best/easiest option as it is a mature technology now thanks to the
+Virgil3d project.
+
+Using this option requires a QEMU executable supporting SDL and OpenGL, options "--enable-sdl" and
+"--enable-opengl" when configuring sources before compilation. With that support, qemu needs to be
+launched with "-device virtio-gpu-pci -display sdl,gl=on". A graphical interface is created and it
+will be used for showing BH window.
+
+Running a graphical app is not usually supported by default if you are using an image offered by
+distributions to be used on VMs. If that is the case the X11 server package needs to be installed.
+But you do not need a full graphical interface but just to run the X server for BH:
+
+startx "${HOME}/Developer/BrainHarmonics/build/BrainHarmonics"
+
+This requires to give permissions for using the graphical console to the user running that command.
+Adding next line to /etc/X11/Xwrapper.config will solve the problem:
+
+allowed_users = anybody
