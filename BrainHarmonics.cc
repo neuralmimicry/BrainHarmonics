@@ -612,16 +612,16 @@ int DistanceBetweenNodes(std::chrono::time_point<Clock> event_time, std::vector<
 	return EXIT_SUCCESS;
 }
 
-bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<Synapse*> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
+bool compare_swapSynapse(std::chrono::time_point<Clock> event_time, std::vector<CognitiveNetwork*> origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)
 {
 	/*!
 	 * Test which Candidate is closest to being 3 away in the charge values and move that
 	 * Candidate next to the Origin.
 	 */
 	bool l_switch = true;
-	int l_origin = origin[l_origin_Swap]->GetDemand(event_time);
-	int l_origin_Test1 = origin[l_origin_Candidate1]->GetDemand(event_time);
-	int l_origin_Test2 = origin[l_origin_Candidate2]->GetDemand(event_time);
+	int l_origin = dynamic_cast<Synapse*>(origin[l_origin_Swap])->GetDemand(event_time);
+	int l_origin_Test1 = dynamic_cast<Synapse*>(origin[l_origin_Candidate1])->GetDemand(event_time);
+	int l_origin_Test2 = dynamic_cast<Synapse*>(origin[l_origin_Candidate2])->GetDemand(event_time);
 	int l_origin_Test3 = std::abs(l_origin - l_origin_Test1);
 	int l_origin_Test4 = std::abs(l_origin - l_origin_Test2);
 	int l_origin_Test5 = (l_origin_Test3);
@@ -1220,7 +1220,7 @@ int main(int argc, const char * argv[])
 	std::vector <Neuron*> neuron;                      //! Neuron container for other neuron components  */
 	std::vector <DendriteCleft*> dendritecleft;        //! Dendritic synaptic cleft, input to the neuron */
 	std::vector <Neuroreceptor*> neuroreceptor;        //! Neuroreceptor, component of dendritic cleft   */
-	std::vector <Synapse*> synapse;                    //! Synapse, area of stimulus transmission/reception */
+	std::vector <CognitiveNetwork*> synapse;           //! Synapse, area of stimulus transmission/reception */
 	std::vector <InterneuronSpace*> interneuronspace;  //! Between neurons is an energy pool */
 	std::vector <Membrane*> membrane;                  //! Membrane, outer component of the neuron       */
 	std::vector <MembraneChannel*> membranechannel;    //! Potassium/Sodium channel, component of the membrane  */
@@ -2142,19 +2142,19 @@ int main(int argc, const char * argv[])
      //! Add lines to points
      for (int eloop = 1; eloop < int( elementary_particle_list.size()); eloop++)
      {
-     for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + num_dimensions[2]; nloop++)
-     {
-     status_of_call_request = AddLine(& line_list, & polygon_list, nloop);
-     if (status_of_call_request)
-     {
-     std::cout << "Line addition failed!" << std::endl;
-     return EXIT_FAILURE;
+		 for (int nloop = spaDimensionsStart; nloop < spaDimensionsStart + num_dimensions_in_universe[2]; nloop++)
+		 {
+			 status_of_call_request = AddLine(& line_list, & polygon_list, nloop);
+			 if (status_of_call_request)
+			 {
+				 std::cout << "Line addition failed!" << std::endl;
+				 return EXIT_FAILURE;
+			 }
+			 if (! line_list.empty())  line_list.back().creation();
+			 if (! line_list.empty())  line_list.back().resetLine();
+		 }
      }
-     if (! line_list.empty())  line_list.back().creation();
-     if (! line_list.empty())  line_list.back().resetLine();
-     }
-     }
-	 */
+     */
 
 	for(int universe_loop = 0; universe_loop < num_universes; universe_loop++)
 	{
@@ -2371,58 +2371,57 @@ int main(int argc, const char * argv[])
 				how_many_Synapses = int((cognitive_pointer->GetSynapses(event_time)).size());
 
 				std::cout << how_many_Synapses << " synapses to consider." << std::endl;
+				synapse = cognitive_pointer->GetSynapses(event_time);
 
 				//! Rearrange new Synapses in an order closer to how they're likely to group with neurons.
-				/*
-                 for (int qloop = 0; qloop <= initial_synapse_alignment * how_many_Synapses; qloop++)
-                 {
+                for (int qloop = 0; qloop <= initial_synapse_alignment * how_many_Synapses; qloop++)
+                {
+					counter_Walk = 0;
+					current_Distance = 0;
+					counter_infinite_loop_prevention = 0;
 
-                 counter_Walk = 0;
-                 current_Distance = 0;
-                 counter_infinite_loop_prevention = 0;
+					do {
+						counter_infinite_loop_prevention++;
+						max_Distance = current_Distance;
+						current_Distance = 0;
+						while(counter_Walk <= (how_many_Synapses - 3))
+						{
+							l_switch = compare_swapSynapse(event_time, synapse, counter_Walk, counter_Walk + 1, counter_Walk + 2);
+							if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
+							if (counter_Walk < 0) counter_Walk = 0;
 
-                 do {
-                 counter_infinite_loop_prevention++;
-                 max_Distance = current_Distance;
-                 current_Distance = 0;
-                 while(counter_Walk <= (how_many_Synapses - 3))
-                 {
-                 l_switch = compare_swapSynapse(& synapse, counter_Walk, counter_Walk + 1, counter_Walk + 2);
-                 if (l_switch) counter_Walk--; else counter_Walk++;//! If Switch occurred retest previous Origin
-                 if (counter_Walk < 0) counter_Walk = 0;
-
-                 l_origin =  synapse[counter_Walk].GetDemand(event_time);
-                 l_origin_Test1 =  synapse[counter_Walk + 1].GetDemand(event_time);
-                 l_origin_Test3 = l_origin_Test1 - l_origin;
-                 l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
-                 current_Distance = current_Distance + l_origin_Test5;
-                 }
-                 } while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
+							l_origin =  dynamic_cast<Synapse*>(synapse[counter_Walk])->GetDemand(event_time);
+							l_origin_Test1 =  dynamic_cast<Synapse*>(synapse[counter_Walk + 1])->GetDemand(event_time);
+							l_origin_Test3 = l_origin_Test1 - l_origin;
+							l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+							current_Distance = current_Distance + l_origin_Test5;
+						}
+					} while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
 
 
-                 counter_Walk = (how_many_Synapses - 1);
-                 current_Distance = 0;
-                 counter_infinite_loop_prevention = 0;
+					counter_Walk = (how_many_Synapses - 1);
+					current_Distance = 0;
+					counter_infinite_loop_prevention = 0;
 
-                 do {
-                 counter_infinite_loop_prevention++;
-                 max_Distance = current_Distance;
-                 current_Distance = 0;
-                 while(counter_Walk >= 2)
-                 {
-                 l_switch = compare_swapSynapse(& synapse, counter_Walk, counter_Walk - 1, counter_Walk - 2);
-                 if (l_switch) counter_Walk++; else counter_Walk--;
-                 if (counter_Walk > (how_many_Synapses - 1)) counter_Walk = (how_many_Synapses - 1);
+					do {
+						counter_infinite_loop_prevention++;
+						max_Distance = current_Distance;
+						current_Distance = 0;
+						while(counter_Walk >= 2)
+						{
+							l_switch = compare_swapSynapse(event_time, synapse, counter_Walk, counter_Walk - 1, counter_Walk - 2);
+							if (l_switch) counter_Walk++; else counter_Walk--;
+							if (counter_Walk > (how_many_Synapses - 1)) counter_Walk = (how_many_Synapses - 1);
 
-                 l_origin =  synapse[counter_Walk].GetDemand(event_time);
-                 l_origin_Test1 =  synapse[counter_Walk - 1].GetDemand(event_time);
-                 l_origin_Test3 = l_origin_Test1 - l_origin;
-                 l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
-                 current_Distance = current_Distance + l_origin_Test5;
-                 }
-                 } while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
-                 }
-				 */
+							l_origin =  dynamic_cast<Synapse*>(synapse[counter_Walk])->GetDemand(event_time);
+							l_origin_Test1 =  dynamic_cast<Synapse*>(synapse[counter_Walk - 1])->GetDemand(event_time);
+							l_origin_Test3 = l_origin_Test1 - l_origin;
+							l_origin_Test5 = l_origin_Test3 * l_origin_Test3;
+							current_Distance = current_Distance + l_origin_Test5;
+						}
+					} while ( current_Distance < max_Distance && counter_infinite_loop_prevention < infinite_loop_prevention_threshold);
+                }
+
 				int maxCapacity = 120;
 				int currentCapacity = 0;
 
@@ -2442,59 +2441,45 @@ int main(int argc, const char * argv[])
 				int pollCapture = 0;
 
 				//! Orbital function for interaction.
-				/*
-                 for (int zloop = 0; zloop < num_orbitals_in_cognitive_network[current_cognitive_network]; zloop++)
-                 {
-                 for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions[9]; nloop++)
-                 {
-                 status_of_call_request = AddOrbital(& orbital, & dimension_list, nloop, 0);
-                 if (status_of_call_request)
-                 {
-                 std::cout << "Orbital addition failed!" << std::endl;
-                 return EXIT_FAILURE;
-                 }
-                 if (! orbital.empty())  orbital.back()->SetPhase(TWORAD / zloop);
-                 }
-                 }
-				 */
+                for (int zloop = 0; zloop < num_orbitals_in_cognitive_network[universe_loop]; zloop++)
+                {
+					for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
+					{
+						cognitive_pointer->CreateOrbital(event_time);
+						if (! orbital.empty())  orbital.back()->SetPhase(event_time, TWORAD / zloop);
+					}
+                }
 
 				l_pointStart = int(l_spaPointBase);
 				l_ccpPointStart = int( current_universe_pointer->GetPoints(event_time).size());
-				/*
-                 //! 50 synapses and 50 possible neurons
-                 for(int xloop = 0; xloop < 100; xloop++)
-                 {
-                 for (int nloop = ccpDimensionsStart; nloop < ccpDimensionsStart + num_dimensions[3]; nloop++)
-                 {
-                 //!        std::cout << "Dimension Loop: " << nloop << " ";
-                 status_of_call_request = AddPoint(& current_universe_pointer->GetPoints(event_time), & dimension_list, nloop);
-                 if (status_of_call_request)
-                 {
-                 std::cout << "Point addition failed!" << std::endl;
-                 return EXIT_FAILURE;
-                 }
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->resetPoint();  //! Initialise first point to location zero.
-                 //! Synapse points first
-                 if(xloop < 50)
-                 {
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  //! Initialise to ne coordinate.
-                 }
-                 else
-                 {
-                 //! Neuron points second
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(rand() % 2 - 1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMin(-1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMinOverflow(2.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMax(1.0);  //! Initialise to ne coordinate.
-                 if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPositionMaxOverflow(2.0);  //! Initialise to ne coordinate.
-                 }
-                 }
-                 }
-				 */
+                //! 50 synapses and 50 possible neurons
+                for(int xloop = 0; xloop < 100; xloop++)
+                {
+					for (int nloop = ccpDimensionsStart; nloop < ccpDimensionsStart + num_dimensions_in_universe[3]; nloop++)
+					{
+						//!        std::cout << "Dimension Loop: " << nloop << " ";
+						current_universe_pointer->AddPoint(event_time);
+						if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->ResetParameters(event_time);  //! Initialise first point to location zero.
+						//! Synapse points first
+						if(xloop < 50)
+						{
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPosition(event_time, {rand() % 2 - 1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMin(event_time, {-1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMinOverflow(event_time, {2});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMax(event_time, {1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMaxOverflow(event_time, {2});  //! Initialise to ne coordinate.
+						}
+						else
+						{
+							//! Neuron points second
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPosition(event_time, {rand() % 2 - 1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMin(event_time, {-1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMinOverflow(event_time, {2});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMax(event_time, {1.0});  //! Initialise to ne coordinate.
+							if (! current_universe_pointer->GetPoints(event_time).empty())  dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPositionMaxOverflow(event_time, {2});  //! Initialise to ne coordinate.
+						}
+					}
+                }
 			}
 		}
 
@@ -2507,28 +2492,23 @@ int main(int argc, const char * argv[])
 
 
 		int l_spkPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
-		//! End of CCP draw points
+		//! End of Spike draw points
 
 		//! Start of Orbital draw points
 		int l_orbPointStart = int( current_universe_pointer->GetPoints(event_time).size());
-
 		/*
-         for(int qloop = 0; qloop < num_orbitals_in_cognitive_network[current_cognitive_network][0]; qloop++)
-         {
-         for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
-         {
-         dimension_list[nloop]->SetOffset(0);
-         dimension_list[nloop]->SetScale(100);
-         status_of_call_request = AddPoint(& current_universe_pointer->GetPoints(event_time), & dimension_list, nloop);
-         if (status_of_call_request)
-         {
-         std::cout << "Point addition failed!" << std::endl;
-         return EXIT_FAILURE;
-         }
-         if (! current_universe_pointer->GetPoints(event_time).empty())  current_universe_pointer->GetPoints(event_time).back()->SetPointPosition(qloop);
-         }
-         }
-		 */
+        for(int qloop = 0; qloop < num_orbitals_in_cognitive_network[universe_loop]; qloop++)
+        {
+			for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
+			{
+				dynamic_cast<Dimension*>(dimension_list[nloop])->SetOffset(event_time, 0);
+				dynamic_cast<Dimension*>(dimension_list[nloop])->SetScale(event_time, 100);
+				current_universe_pointer->AddPoint(event_time);
+				if (! current_universe_pointer->GetPoints(event_time).empty())
+					dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPosition(event_time, {qloop / 100.0});
+			}
+        }
+		*/
 		int l_orbPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
 		//! End of Orbital Points
 		int l_pointEnd = int( current_universe_pointer->GetPoints(event_time).size());
