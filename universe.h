@@ -159,6 +159,7 @@ public:
     
                 Universe*  GetDimension(std::chrono::time_point<Clock> event_time, int selector);
 
+                Dimension* GetTimeDimension(std::chrono::time_point<Clock> event_time);
     
     std::vector<Universe*> AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity);
     

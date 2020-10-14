@@ -1197,7 +1197,7 @@ int main(int argc, const char * argv[])
 	//! Index arrays for instances of classes described above
 	//! Early versions of this software maintained direct pointers to all objects. Now it is recoded
 	//! to access through Get/Set class methods with the exception of the initial Universe class.
-	std::vector <Dimension*>          dimension_list;          //! Add Dimensions for spatial identification     */
+	std::vector <Universe*>           dimension_list;          //! Add Dimensions for spatial identification     */
 	std::vector <Universe*>           elementary_particle_list; //! Follow with the creation of quarks/leptons    */
 	std::vector <ElementaryForce*>    elementary_force_list;    //! Define Force interaction between fundamentals */
 	std::vector <CompositeForceParticle*>     composite_forceparticle_list;     //! Define Particle Force interaction between Composites, Protons/Neutrons   */
@@ -2496,19 +2496,20 @@ int main(int argc, const char * argv[])
 
 		//! Start of Orbital draw points
 		int l_orbPointStart = int( current_universe_pointer->GetPoints(event_time).size());
-		/*
+
+		dimension_list = current_universe_pointer->GetDimensions(event_time);
         for(int qloop = 0; qloop < num_orbitals_in_cognitive_network[universe_loop]; qloop++)
         {
 			for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
 			{
-				dynamic_cast<Dimension*>(dimension_list[nloop])->SetOffset(event_time, 0);
-				dynamic_cast<Dimension*>(dimension_list[nloop])->SetScale(event_time, 100);
+				dynamic_cast<Dimension*>(dimension_list[nloop - orbDimensionsStart])->SetOffset(event_time, 0);
+				dynamic_cast<Dimension*>(dimension_list[nloop - orbDimensionsStart])->SetScale(event_time, 100);
 				current_universe_pointer->AddPoint(event_time);
 				if (! current_universe_pointer->GetPoints(event_time).empty())
 					dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPosition(event_time, {qloop / 100.0});
 			}
         }
-		*/
+
 		int l_orbPointEnd = int( current_universe_pointer->GetPoints(event_time).size());
 		//! End of Orbital Points
 		int l_pointEnd = int( current_universe_pointer->GetPoints(event_time).size());
@@ -2646,101 +2647,100 @@ int main(int argc, const char * argv[])
 
 	std::cout << "Window rendered..." << std::endl;
 	sleep(5);
-
 	/*
-     //std::cout << clockTime.time_since_epoch().count() << std::endl;
-     duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
-     duration *=  dimension_list[0]->GetTime();
-     //std::cout << duration << std::endl;
-     event_time += std::chrono::nanoseconds(duration);
-     lastClockTime = clockTime;
+    //std::cout << clockTime.time_since_epoch().count() << std::endl;
+    duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
+    duration *=  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
+    //std::cout << duration << std::endl;
+    event_time += std::chrono::nanoseconds(duration);
+    lastClockTime = clockTime;
 
-     if(device_attached)
-     {
-     if (packetContainer != NULL)
-     {
-     int32_t packetNum = caerEventPacketContainerGetEventPacketsNumber(packetContainer);
+    if(device_attached)
+    {
+		if (packetContainer != NULL)
+		{
+			int32_t packetNum = caerEventPacketContainerGetEventPacketsNumber(packetContainer);
 
-     //printf("\nGot event container with %d packets (allocated).\n", packetNum);
+			//printf("\nGot event container with %d packets (allocated).\n", packetNum);
 
-     for (int32_t i = 0; i < packetNum; i++)
-     {
-     caerEventPacketHeader packetHeader = caerEventPacketContainerGetEventPacket(packetContainer, i);
-     if (packetHeader == NULL)
-     {
-     //printf("Packet %d is empty (not present).\n", i);
-     continue; //! Skip if nothing there.
-     }
+			for (int32_t i = 0; i < packetNum; i++)
+			{
+				caerEventPacketHeader packetHeader = caerEventPacketContainerGetEventPacket(packetContainer, i);
+				if (packetHeader == NULL)
+				{
+					//printf("Packet %d is empty (not present).\n", i);
+					continue; //! Skip if nothing there.
+				}
 
-     //printf("Packet %d of type %d -> size is %d.\n", i,
-     //!   caerEventPacketHeaderGetEventType(packetHeader),
-     //!   caerEventPacketHeaderGetEventNumber(packetHeader));
+				//printf("Packet %d of type %d -> size is %d.\n", i,
+				//!   caerEventPacketHeaderGetEventType(packetHeader),
+				//!   caerEventPacketHeaderGetEventNumber(packetHeader));
 
-     if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
-     {
+				if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
+				{
 
-     caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
+					caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
 
-     //! read all events
-     CAER_SPIKE_ITERATOR_ALL_START(evts)
+					//! read all events
+					CAER_SPIKE_ITERATOR_ALL_START(evts)
 
-     uint64_t ts = caerSpikeEventGetTimestamp(
-     caerSpikeIteratorElement);
-     uint64_t neuronId = caerSpikeEventGetNeuronID(
-     caerSpikeIteratorElement);
-     uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(
-     caerSpikeIteratorElement); //! which core is from
-     uint64_t coreId = caerSpikeEventGetChipID(
-     caerSpikeIteratorElement);//! destination core (used as chip id)
+					uint64_t ts = caerSpikeEventGetTimestamp(
+					caerSpikeIteratorElement);
+					uint64_t neuronId = caerSpikeEventGetNeuronID(
+					caerSpikeIteratorElement);
+					uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(
+					caerSpikeIteratorElement); //! which core is from
+					uint64_t coreId = caerSpikeEventGetChipID(
+					caerSpikeIteratorElement);//! destination core (used as chip id)
 
-     //!                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
-     if(ts < dynapTime)
-     {
-     dynapTime = ts;
-     }
-     uint64_t syncTime = (ts - dynapTime) *  dimension_list[0]->GetTime();
-     if(int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) < 0)
-     {
-     event_time = startTime + std::chrono::microseconds(syncTime);
-     }
-     if(neuronId <  orbital.size())
-     {
-     orbital[int(neuronId)].AddTemporalAdjustment(startTime + std::chrono::microseconds(syncTime), 20000.0);
-     }
-     //std::cout << int((neuronId)) << " ";
+					//!                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
+					if(ts < dynapTime)
+					{
+						dynapTime = ts;
+					}
+					uint64_t syncTime = (ts - dynapTime) *  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
+					if(int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) < 0)
+					{
+						event_time = startTime + std::chrono::microseconds(syncTime);
+					}
+					if(neuronId <  orbital.size())
+					{
+						orbital[int(neuronId)]->AddTemporalAdjustment(event_time, startTime + std::chrono::microseconds(syncTime), 20000.0);
+					}
+					//std::cout << int((neuronId)) << " ";
 
-     //std::cout << int((neuronId % 6)) << " " << syncTime << " " << int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) << "  " <<  orbital[int(neuronId % 6)].GetEnergy() << std::endl;
-     CAER_SPIKE_ITERATOR_ALL_END
-     }
-     }
+					//std::cout << int((neuronId % 6)) << " " << syncTime << " " << int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) << "  " <<  orbital[int(neuronId % 6)].GetEnergy() << std::endl;
+					CAER_SPIKE_ITERATOR_ALL_END
+				}
+			}
 
-     caerEventPacketContainerFree(packetContainer);
-     }
-     }
+			caerEventPacketContainerFree(packetContainer);
+		}
+    }
 
-     poll_capture = sniffex(2,list<char>& {"sniffex","en0"});
+    poll_capture = sniffex(2,list<char>& {"sniffex","en0"});
 
-     for (int nloop = 0; nloop < num_orbitals_in_cognitive_network[current_cognitive_network]; nloop++)
-     {
-     orbital[nloop].Update(event_time);
-     }
+    for (int nloop = 0; nloop < num_orbitals_in_cognitive_network[current_cognitive_network]; nloop++)
+    {
+    	orbital[nloop]->Update(event_time);
+    }
 
-     pauseLoop++;
-     if(pauseLoop > 50000)
-     {
-     //! Synthetic periodic stimulus
-     if(!device_attached)
-     {
-     for (int nloop = 0; nloop < 6; nloop++)
-     {
-     orbital[nloop].AddTemporalAdjustment(event_time, 20000.0);
-     }
-     }
-     pauseLoop = 0;
-     //!            sleep(2);
-     //!                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
-     }
-	 */
+    pauseLoop++;
+    if(pauseLoop > 50000)
+    {
+		//! Synthetic periodic stimulus
+		if(!device_attached)
+		{
+			for (int nloop = 0; nloop < 6; nloop++)
+			{
+				orbital[nloop]->AddTemporalAdjustment(event_time, 20000.0);
+			}
+		}
+		pauseLoop = 0;
+		//!            sleep(2);
+		//!                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
+    }
+	*/
 	/*
      for(int ploop = 0; ploop < 10000; ploop++)
      {

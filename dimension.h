@@ -77,6 +77,9 @@ public:
     double GetScale(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return (dimension_scale/100); }
 
     double GetOffset(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return dimension_offset; }
+
+    double GetTime(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return dimension_time_counter; }
+
     int duration_since_last_event;
     
     std::chrono::time_point<std::chrono::high_resolution_clock> TheTimeNow();

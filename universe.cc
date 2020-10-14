@@ -334,6 +334,13 @@ Universe* Universe::GetDimension(std::chrono::time_point<Clock> event_time, int 
     return GetDimensions(event_time)[selector];
 }
 
+Dimension* Universe::GetTimeDimension(std::chrono::time_point<Clock> event_time)
+{
+	/*!
+	 * Return the dimension used for time
+	 */
+	return dynamic_cast<Dimension*>(time_dimension_pointer);
+}
 
 std::vector<Universe*> Universe::AddElementaryParticles(std::chrono::time_point<Clock> event_time, int quantity)
 {
