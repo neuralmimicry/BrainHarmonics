@@ -233,6 +233,7 @@ int Sniffex::sniffexmain(int argc, char **argv)
     char *dev = NULL;			/* capture device name */
     char errbuf[PCAP_ERRBUF_SIZE];		/* error buffer */
     pcap_t *handle;				/* packet capture handle */
+    pcap_if_t *alldevsp = NULL;
     
     char filter_exp[] = "ip";		/* filter expression [3] */
     struct bpf_program fp;			/* compiled filter program (expression) */
@@ -253,7 +254,15 @@ int Sniffex::sniffexmain(int argc, char **argv)
     }
     else {
         /* find a capture device if not specified on command-line */
-        dev = pcap_lookupdev(errbuf);
+    	if (pcap_findalldevs(&alldevsp, errbuf) == -1) {
+    		fprintf(stderr, "Could not get list of devices %s\n", errbuf);
+    		exit(EXIT_FAILURE);
+    	} else {
+    		if (alldevsp != NULL) {
+    			dev = strdup(alldevsp->name);
+    		}
+    		pcap_freealldevs(alldevsp);
+    	}
         if (dev == NULL) {
             fprintf(stderr, "Couldn't find default device: %s\n",
                     errbuf);
@@ -305,6 +314,7 @@ int Sniffex::sniffexmain(int argc, char **argv)
         //    pcap_loop(handle, num_packets, got_packet(argv,handle,handle), NULL);
     
     /* cleanup */
+    free(dev);
     pcap_freecode(&fp);
     pcap_close(handle);
     
