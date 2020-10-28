@@ -26,7 +26,7 @@ bool Point::ResetParameters(std::chrono::time_point<Clock> event_time)
         srand((std::chrono::duration_cast<std::chrono::seconds>(TheTimeNow().time_since_epoch()).count()));
         }
     
-        // If object instantiated without a type specified the set one.
+        // If object instantiated without a type specified then set one.
     if(point_type < 1)
         {
         point_type = 1;
