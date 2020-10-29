@@ -106,7 +106,7 @@ Neuron*  Neuron::CreateSoma(std::chrono::time_point<Clock> event_time)
 {
     if(soma_list.size() < soma_pool)
         {
-        Soma* new_object = new Soma();
+        Soma* new_object = new Soma(0, event_time, *this);
         return new_object;
         }
     else

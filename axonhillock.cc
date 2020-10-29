@@ -17,6 +17,12 @@
 #include "axon.h"
 #include "axonhillock.h"
 
+void AxonHillock::SetObjectType(std::chrono::time_point<Clock> event_time, int object_type)
+{
+	axonhillock_type = object_type;
+    AxonHillock::ResetParameters(event_time);
+}
+
 bool AxonHillock::ResetParameters(std::chrono::time_point<Clock> event_time)
 {
         // If object instantiated without a time specified then add one.

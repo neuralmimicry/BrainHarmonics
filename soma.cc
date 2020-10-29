@@ -49,7 +49,7 @@ bool Soma::ResetParameters(std::chrono::time_point<Clock> event_time)
     object_energy = 5.0;
     
 
-    axonhillock_pool = 0;
+    axonhillock_pool = 1;
     dendrite_pool = 0;
     m_Volume = 100;
     m_SurfaceArea = 100;
@@ -93,7 +93,7 @@ Soma*  Soma::CreateAxonHillock(std::chrono::time_point<Clock> event_time)
 {
     if(axonhillock_list.size() < axonhillock_pool)
         {
-        AxonHillock* new_object = new AxonHillock();
+        AxonHillock* new_object = new AxonHillock(0, event_time, *this);
         return new_object;
         }
     else
@@ -358,7 +358,7 @@ int Soma::Update(std::chrono::time_point<Clock> event_time)
         visualisation_list.push_back(visualisation_pointer);
         
         Soma* axonhillock_pointer = CreateAxonHillock(event_time);
-        axonhillock_pointer->SetObjectType(event_time, TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1);
+        dynamic_cast<AxonHillock*>(axonhillock_pointer)->SetObjectType(event_time, TYPE_NEURON_PYRAMIDAL_SOMA_AXONHILLOCK_GEN1);
         axonhillock_list.push_back(axonhillock_pointer);
         
         object_connection_list.push_back({TYPE_SOLID_POLYHEDRON_SOMA_GEN1,0,TYPE_SOLID_POLYHEDRON_SOMA_AXONHILLOCK_GEN1,0,1.0,1.0,1.0});

@@ -40,6 +40,7 @@ public:
     double GetEnergy(std::chrono::time_point<Clock> event_time) { std::chrono::time_point<Clock> last_event_time = event_time; return object_energy; }
     void SetCounter(std::chrono::time_point<Clock> event_time, unsigned int val) { m_Counter = val; }
     void SetEnergy(std::chrono::time_point<Clock> event_time, double val) { object_energy = val; }
+    void SetObjectType(std::chrono::time_point<Clock> event_time, int object_type);
     
     bool ResetParameters(std::chrono::time_point<Clock> event_time);
     
