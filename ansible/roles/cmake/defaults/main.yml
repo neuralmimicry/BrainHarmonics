@@ -1,0 +1,20 @@
+---
+arch: "aarch64"
+distribution: "el8"
+
+python3: "/usr/bin/python3"
+user: "builder"
+
+dir_root: "/home/{{ user }}/src"
+
+# cmake variables
+cmake_version: "3.18.4"
+cmake_dir_base: "{{ dir_root }}/cmake/{{ cmake_version}}"
+cmake_dir_src: "{{ cmake_dir_base }}/cmake-{{ cmake_version }}"
+cmake_dir_output: "{{ cmake_dir_src }}/dist"
+cmake:
+       release_url: "https://github.com/Kitware/CMake/releases/download/v{{ cmake_version }}/cmake-{{ cmake_version }}.zip"
+       release_zip: "cmake-{{ cmake_version }}.zip"
+       release_sha256: "16df4f582cce7785d9c9f760d0cd8d1480d158a8b32e80f4570732c5eb205a4c"
+       patching_required: false
+

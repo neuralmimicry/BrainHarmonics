@@ -1,0 +1,13 @@
+---
+- name: Create build dirs
+  file:
+          path: "{{ item }}"
+          state: directory
+          mode: '0755'
+          owner: builder
+          group: builder
+  with_items:
+          - "{{ dir_root }}"
+          - "{{ dir_home }}"
+          - "{{ dir_repo }}"
+          - "{{ dir_built }}"

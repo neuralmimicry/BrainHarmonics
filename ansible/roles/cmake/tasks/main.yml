@@ -1,0 +1,13 @@
+---
+- name: Install dependencies
+  import_tasks: cmake_dependencies.yml
+
+- name: Build cmake
+  import_tasks: build_cmake.yml
+  become: yes
+  become_user: "{{ user }}"
+  become_method: su
+  become_flags: "-s /bin/bash"
+
+- name: Install cmake
+  import_tasks: install_cmake.yml

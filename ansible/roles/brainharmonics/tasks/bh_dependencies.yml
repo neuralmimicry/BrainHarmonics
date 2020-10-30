@@ -1,0 +1,58 @@
+---
+- name: Add key for EPEL 7
+  rpm_key:
+     state: present
+     key: http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "7")
+
+- name: Enable EPEL and NumPy for RHEL/CentOS 7
+  package:
+     name: ['epel-release', 'numpy']
+     state: present
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "7")
+
+- name: Install packages just for RHEL/CentOS 8
+  package:
+     name: ['python3-numpy']
+     state: present
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8")
+
+- name: Enable PowerTools for CentOS 8
+  community.general.ini_file:
+     path: /etc/yum.repos.d/CentOS-PowerTools.repo
+     section: PowerTools
+     option: enabled
+     value: '1'
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version == "8")
+
+- name: Add key for EPEL 8
+  rpm_key:
+     state: present
+     key: http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8")
+
+- name: Enable EPEL for RHEL/CentOS 8
+  package:
+     name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+     state: present
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8")
+
+- name: Enable code ready build repo
+  community.general.rhsm_repository:
+     name: codeready-builder-for-rhel-8-aarch64-rpms
+  when: (ansible_distribution == "RedHat" and ansible_distribution_major_version == "8")
+
+- name: Install needed packages
+  yum:
+     name: ['@Development Tools', '@System Tools', 'opencv-devel', 'mpi', 'google-noto-sans-fonts', 'google-roboto-fonts', 'gnome-themes-standard', 'librsvg2-devel', 'libxml2-devel', 'glib2']
+     state: present
+
+- name: Install more needed packages
+  yum:
+     name: ['glib2-devel', 'gtk3-devel', 'inkscape', 'redhat-rpm-config', 'gcc', 'gcc-c++', 'make', 'libffi-devel', 'optipng', 'parallel', 'libusbx', 'libusbx-devel']
+     state: present
+
+- name: Install yet more needed packages
+  yum:
+     name: ['ninja-build', 'meson', 'automake', 'autoconf', 'git', 'libpcap-devel', 'openmpi', 'libusb', 'libusb-devel', 'freeglut', 'freeglut-devel', 'gcc-gfortran', 'openmpi-devel']
+     state: present

@@ -1,0 +1,42 @@
+---
+arch: "aarch64"
+distribution: "el8"
+
+python3: "/usr/bin/python3"
+user: "builder"
+build_id: "1"
+dir_root: "/home/{{ user }}/{{ build_id }}"
+dir_home: "{{ dir_root }}/brainharmonics_build"
+dir_repo: "{{ dir_root }}/repo_brainharmonics"
+dir_built: "{{ dir_root }}/built_tarballs"
+venv_path: "{{ dir_root }}/virtualenv"
+
+# rpm build variables
+dir_rpmbuilt: "/home/{{ user }}/rpmbuild/RPMS/{{ arch }}"
+
+# VTK variables
+vtk_version: "9.0"
+vtk_minor_version: "1"
+vtk_dir_base: "{{ dir_home }}/vtk/{{ vtk_version }}.{{ vtk_minor_version }}"
+vtk_dir_src: "{{ vtk_dir_base }}/vtk-{{ vtk_version }}.{{ vtk_minor_version }}"
+vtk_dir_output: "{{ vtk_dir_base }}/VTK-Build"
+vtk:
+        git_url: "https://gitlab.kitware.com/vtk/vtk.git"
+        patching_required: false
+
+# libcaer variables
+libcaer_version: "3.3.8"
+libcaer_dir_base: "{{ dir_home }}/libcaer/{{ libcaer_version }}"
+libcaer_dir_src: "{{ libcaer_dir_base }}/libcaer-{{ libcaer_version }}"
+libcaer_dir_output: "{{ libcaer_dir_base }}/libcaer-build"
+libcaer:
+        git_url: "https://github.com/inilabs/libcaer.git"
+        patching_required: false
+
+# BrainHarmonics variables
+bh_dir_base: "{{ dir_home }}/brainharmonics/latest_git"
+bh_dir_src: "{{ bh_dir_base }}/BrainHarmonics"
+bh_dir_output: "{{ bh_dir_src }}/build"
+bh:
+        git_url: "https://github.com/Linaro/BrainHarmonics.git"
+        patching_required: false

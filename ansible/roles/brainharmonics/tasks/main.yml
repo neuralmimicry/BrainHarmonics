@@ -1,0 +1,33 @@
+---
+- name: Update environment
+  import_tasks: pre_build.yml
+
+- name: Install dependencies
+  import_tasks: bh_dependencies.yml
+
+- name: Build VTK
+  import_tasks: build_vtk.yml
+  become: yes
+  become_user: "{{ user }}"
+  become_method: su
+  become_flags: "-s /bin/bash"
+
+- name: Install VTK
+  import_tasks: install_vtk.yml
+
+- name: Build libcaer
+  import_tasks: build_libcaer.yml
+  become: yes
+  become_user: "{{ user }}"
+  become_method: su
+  become_flags: "-s /bin/bash"
+
+- name: Install libcaer
+  import_tasks: install_libcaer.yml
+
+- name: Build BrainHarmonics
+  import_tasks: build_bh.yml
+  become: yes
+  become_user: "{{ user }}"
+  become_method: su
+  become_flags: "-s /bin/bash"

@@ -1,0 +1,31 @@
+---
+- name: Create BrainHarmonics directory
+  file:
+          path: "{{ bh_dir_base }}"       
+          state: directory
+          mode: '0755'
+          owner: "{{ user }}"
+          group: "{{ user }}"
+
+- name: Fetch BrainHarmonics git source tree
+  git:
+          repo: "{{ bh.git_url }}"
+          dest: "{{ bh_dir_src }}"
+
+- name: Create BrainHarmonics build directory
+  file:
+          path: "{{ bh_dir_output }}"
+          state: directory
+          mode: '0755'
+          owner: "{{ user }}"
+          group: "{{ user }}"
+
+- name: CMake and make BrainHarmonics
+  shell: |
+          export PATH=$PATH:/usr/lib64/openmpi/bin
+          cmake {{ bh_dir_src }}
+          make -j32
+  args:
+          chdir: "{{ bh_dir_output }}"
+          executable: "/bin/bash"
+          creates: "{{ bh_dir_output }}/BrainHarmonics"

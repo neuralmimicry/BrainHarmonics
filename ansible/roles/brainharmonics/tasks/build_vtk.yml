@@ -1,0 +1,25 @@
+---
+- name: Build VTK
+  file:
+          path: "{{ item }}"       
+          state: directory
+          mode: '0755'
+          owner: "{{ user }}"
+          group: "{{ user }}"
+  with_items:
+          - "{{ vtk_dir_base }}"
+          - "{{ vtk_dir_src }}"
+          - "{{ vtk_dir_output }}"
+
+- name: Fetch vtk git source tree and checkout requested version
+  git:
+          repo: "{{ vtk.git_url }}"
+          dest: "{{ vtk_dir_src }}"
+          version: "v{{ vtk_version }}.{{ vtk_minor_version }}"
+
+- name: CMake and make VTK
+  shell: "cmake {{ vtk_dir_src }} && make -j32"
+  args:
+          chdir: "{{ vtk_dir_output }}"
+          executable: "/bin/bash"
+          creates: "{{ vtk_dir_output }}/lib64/libvtkCommonCore-{{ vtk_version }}.so.{{ vtk_version }}.{{ vtk_minor_version }}"

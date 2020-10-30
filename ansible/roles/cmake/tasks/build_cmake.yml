@@ -1,0 +1,33 @@
+---
+- name: Create build dirs cmake
+  file:
+          path: "{{ item }}"       
+          state: directory
+          mode: '0755'
+          owner: "{{ user }}"
+          group: "{{ user }}"
+  with_items:
+          - "{{ cmake_dir_base }}"
+          - "{{ cmake_dir_src }}"
+          - "{{ cmake_dir_output }}"
+
+- name: Fetch cmake release tarball
+  get_url:
+          url: "{{ cmake.release_url }}"
+          dest: "{{ cmake_dir_base }}"
+          checksum: "sha256:{{ cmake.release_sha256 }}"
+
+- name: Unzip the release
+  unarchive:
+          src: "{{ cmake_dir_base }}/{{ cmake.release_zip }}"
+          remote_src: yes
+          dest: "{{ cmake_dir_base }}"
+          creates: "{{ cmake_dir_src }}/bootstrap"
+  no_log: true
+
+- name: Bootstrap and make the build
+  shell: "{{ cmake_dir_src }}/bootstrap && make -j32"
+  args:
+          chdir: "{{ cmake_dir_output }}"
+          executable: "/bin/bash"
+          creates: "{{ cmake_dir_output }}/bin/cmake"

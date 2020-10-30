@@ -1,0 +1,17 @@
+---
+- name: Make sure wheel is NOPASS
+  template:
+          src: sudoers.j2
+          dest: /etc/sudoers
+          validate: "visudo -cf %s"
+          owner: root
+          group: root
+          mode: 0440
+
+- name: Create builder user
+  user:
+          name: builder
+          shell: /bin/bash
+          groups: wheel
+          append: yes
+

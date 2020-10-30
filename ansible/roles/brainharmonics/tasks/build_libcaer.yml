@@ -1,0 +1,25 @@
+---
+- name: Build libcaer
+  file:
+          path: "{{ item }}"       
+          state: directory
+          mode: '0755'
+          owner: "{{ user }}"
+          group: "{{ user }}"
+  with_items:
+          - "{{ libcaer_dir_base }}"
+          - "{{ libcaer_dir_src }}"
+          - "{{ libcaer_dir_output }}"
+
+- name: Fetch libcaer git source tree and checkout requested version
+  git:
+          repo: "{{ libcaer.git_url }}"
+          dest: "{{ libcaer_dir_src }}"
+          version: "{{ libcaer_version }}"
+
+- name: CMake and make libcaer
+  shell: "cmake -DENABLE_OPENCV=1 -DCMAKE_INSTALL_PREFIX=/usr {{ libcaer_dir_src }} && make -j32"
+  args:
+          chdir: "{{ libcaer_dir_output }}"
+          executable: "/bin/bash"
+          creates: "{{ libcaer_dir_output }}/src/libcaer.so.{{ libcaer_version }}"

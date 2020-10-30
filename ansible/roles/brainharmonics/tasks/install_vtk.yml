@@ -1,0 +1,7 @@
+---
+- name: Install VTK
+  shell: "make install"
+  args:
+          chdir: "{{ vtk_dir_output }}"
+          executable: "/bin/bash"
+          creates: "/usr/local/lib64/libvtkCommonCore-{{ vtk_version }}.so.{{ vtk_version }}.{{ vtk_minor_version }}"

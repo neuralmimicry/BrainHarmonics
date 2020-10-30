@@ -1,0 +1,7 @@
+---
+- name: Install libcaer
+  shell: "make install"
+  args:
+          chdir: "{{ libcaer_dir_output }}"
+          executable: "/bin/bash"
+          creates: "/usr/lib64/libcaer.so.{{ libcaer_version }}"
