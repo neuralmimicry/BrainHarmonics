@@ -1506,7 +1506,7 @@ int main(int argc, const char * argv[])
 		define_points->InsertNextPoint(lower_right_x, lower_right_y, 0.0);
 		define_points->InsertNextPoint(upper_right_x, upper_right_y, 0.0);
 		define_points->InsertNextPoint(upper_left_x, upper_left_y, 0.0);
-		static_points_counter+=4;
+		static_points_counter += 4;
 
 		//! Create the polygon that defines a rectangle from the points added.
 		vtkSmartPointer<vtkPolygon> define_polygon = vtkSmartPointer<vtkPolygon>::New();
@@ -1532,7 +1532,7 @@ int main(int argc, const char * argv[])
 	define_points->InsertNextPoint(lower_right_x, lower_right_y, 0.0);
 	define_points->InsertNextPoint(upper_right_x, upper_right_y, 0.0);
 	define_points->InsertNextPoint(upper_left_x, upper_left_y, 0.0);
-	static_points_counter+=4;
+	static_points_counter += 4;
 
 	vtkSmartPointer<vtkPolygon> define_polygon = vtkSmartPointer<vtkPolygon>::New();
 	define_polygon->GetPointIds()->SetNumberOfIds(4);
@@ -2443,10 +2443,10 @@ int main(int argc, const char * argv[])
 				//! Orbital function for interaction.
                 for (int zloop = 0; zloop < num_orbitals_in_cognitive_network[universe_loop]; zloop++)
                 {
-					for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
+					for (int nloop = 0; nloop < num_dimensions_in_universe[9]; nloop++)
 					{
-						cognitive_pointer->CreateOrbital(event_time);
-						if (! orbital.empty())  orbital.back()->SetPhase(event_time, TWORAD / zloop);
+						CognitiveNetwork* tmpOrbital = cognitive_pointer->CreateOrbital(event_time);
+						if (tmpOrbital != nullptr)  dynamic_cast<Orbital*>(tmpOrbital)->SetPhase(event_time, TWORAD / zloop);
 					}
                 }
 
@@ -2455,7 +2455,7 @@ int main(int argc, const char * argv[])
                 //! 50 synapses and 50 possible neurons
                 for(int xloop = 0; xloop < 100; xloop++)
                 {
-					for (int nloop = ccpDimensionsStart; nloop < ccpDimensionsStart + num_dimensions_in_universe[3]; nloop++)
+					for (int nloop = 0; nloop < num_dimensions_in_universe[3]; nloop++)
 					{
 						//!        std::cout << "Dimension Loop: " << nloop << " ";
 						current_universe_pointer->AddPoint(event_time);
@@ -2500,10 +2500,10 @@ int main(int argc, const char * argv[])
 		dimension_list = current_universe_pointer->GetDimensions(event_time);
         for(int qloop = 0; qloop < num_orbitals_in_cognitive_network[universe_loop]; qloop++)
         {
-			for (int nloop = orbDimensionsStart; nloop < orbDimensionsStart + num_dimensions_in_universe[9]; nloop++)
+			for (int nloop = 0; nloop < num_dimensions_in_universe[9]; nloop++)
 			{
-				dynamic_cast<Dimension*>(dimension_list[nloop - orbDimensionsStart])->SetOffset(event_time, 0);
-				dynamic_cast<Dimension*>(dimension_list[nloop - orbDimensionsStart])->SetScale(event_time, 100);
+				dynamic_cast<Dimension*>(dimension_list[nloop])->SetOffset(event_time, 0);
+				dynamic_cast<Dimension*>(dimension_list[nloop])->SetScale(event_time, 100);
 				current_universe_pointer->AddPoint(event_time);
 				if (! current_universe_pointer->GetPoints(event_time).empty())
 					dynamic_cast<Point*>(current_universe_pointer->GetPoints(event_time).back())->SetPointPosition(event_time, {qloop / 100.0});
@@ -2620,6 +2620,10 @@ int main(int argc, const char * argv[])
 	int duration = 0;
 	caerEventPacketContainer packetContainer;
 
+	if (!getenv("DISPLAY")) {
+		std::cout << "No DISPLAY defined, will exit before segfault happens." << std::endl;
+		exit(-1);
+	}
 
 	//! Remove Initialising banner from screen.
 	define_textactors[0]->SetInput("");
@@ -2647,599 +2651,620 @@ int main(int argc, const char * argv[])
 
 	std::cout << "Window rendered..." << std::endl;
 	sleep(5);
-	/*
-    //std::cout << clockTime.time_since_epoch().count() << std::endl;
-    duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
-    duration *=  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
-    //std::cout << duration << std::endl;
-    event_time += std::chrono::nanoseconds(duration);
-    lastClockTime = clockTime;
 
-    if(device_attached)
-    {
-		if (packetContainer != NULL)
+	for(int universe_loop = 0; universe_loop < num_universes; universe_loop++)
+	{
+		auto current_universe_pointer = universe_list[universe_loop];
+		//std::cout << clockTime.time_since_epoch().count() << std::endl;
+		duration = std::chrono::duration_cast<std::chrono::nanoseconds>(clockTime - lastClockTime).count();
+		duration *=  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
+		//std::cout << duration << std::endl;
+		event_time += std::chrono::nanoseconds(duration);
+		lastClockTime = clockTime;
+		/*
+		if(device_attached)
 		{
-			int32_t packetNum = caerEventPacketContainerGetEventPacketsNumber(packetContainer);
-
-			//printf("\nGot event container with %d packets (allocated).\n", packetNum);
-
-			for (int32_t i = 0; i < packetNum; i++)
+			if (packetContainer != NULL)
 			{
-				caerEventPacketHeader packetHeader = caerEventPacketContainerGetEventPacket(packetContainer, i);
-				if (packetHeader == NULL)
+				int32_t packetNum = caerEventPacketContainerGetEventPacketsNumber(packetContainer);
+
+				//printf("\nGot event container with %d packets (allocated).\n", packetNum);
+
+				for (int32_t i = 0; i < packetNum; i++)
 				{
-					//printf("Packet %d is empty (not present).\n", i);
-					continue; //! Skip if nothing there.
+					caerEventPacketHeader packetHeader = caerEventPacketContainerGetEventPacket(packetContainer, i);
+					if (packetHeader == NULL)
+					{
+						//printf("Packet %d is empty (not present).\n", i);
+						continue; //! Skip if nothing there.
+					}
+
+					//printf("Packet %d of type %d -> size is %d.\n", i,
+					//!   caerEventPacketHeaderGetEventType(packetHeader),
+					//!   caerEventPacketHeaderGetEventNumber(packetHeader));
+
+					if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
+					{
+
+						caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
+
+						//! read all events
+						CAER_SPIKE_ITERATOR_ALL_START(evts)
+
+						uint64_t ts = caerSpikeEventGetTimestamp(caerSpikeIteratorElement);
+						uint64_t neuronId = caerSpikeEventGetNeuronID(caerSpikeIteratorElement);
+						uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(caerSpikeIteratorElement); //! which core is from
+						uint64_t coreId = caerSpikeEventGetChipID(caerSpikeIteratorElement);//! destination core (used as chip id)
+
+						//!                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
+						if(ts < dynapTime)
+						{
+							dynapTime = ts;
+						}
+						uint64_t syncTime = (ts - dynapTime) *  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
+						if(int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) < 0)
+						{
+							event_time = startTime + std::chrono::microseconds(syncTime);
+						}
+						// TODO need to get orbital_list for current universe and cognitive network
+						if(neuronId <  orbital.size())
+						{
+							orbital[int(neuronId)]->AddTemporalAdjustment(event_time, startTime + std::chrono::microseconds(syncTime), 20000.0);
+						}
+						//std::cout << int((neuronId)) << " ";
+
+						//std::cout << int((neuronId % 6)) << " " << syncTime << " " << int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) << "  " <<  orbital[int(neuronId % 6)].GetEnergy() << std::endl;
+						CAER_SPIKE_ITERATOR_ALL_END
+					}
 				}
 
-				//printf("Packet %d of type %d -> size is %d.\n", i,
-				//!   caerEventPacketHeaderGetEventType(packetHeader),
-				//!   caerEventPacketHeaderGetEventNumber(packetHeader));
+				caerEventPacketContainerFree(packetContainer);
+			}
+		}
 
-				if (caerEventPacketHeaderGetEventType(packetHeader) == SPIKE_EVENT)
+		poll_capture = sniffex(2,list<char>& {"sniffex","en0"});
+		*/
+
+		for (int cognitivenetwork_loop = 0; cognitivenetwork_loop < num_cognitive_networks_in_universe[universe_loop]; cognitivenetwork_loop++)
+		{
+			auto current_cognitivenetwork_pointer = current_universe_pointer->GetCognitiveNetwork(event_time, cognitivenetwork_loop);
+			std::vector<CognitiveNetwork*> orbital_list;
+			CognitiveNetwork* cognitive_pointer = dynamic_cast<CognitiveNetwork*>(current_cognitivenetwork_pointer);
+
+			orbital_list = cognitive_pointer->GetOrbitals(event_time);
+
+			for (int nloop = 0; nloop < num_orbitals_in_cognitive_network[cognitivenetwork_loop]; nloop++)
+			{
+				dynamic_cast<Orbital*>(orbital_list[nloop])->Update(event_time);
+			}
+		}
+
+		pauseLoop++;
+		if(pauseLoop > 50000)
+		{
+			//! Synthetic periodic stimulus
+			if(!device_attached)
+			{
+				for (int cognitivenetwork_loop = 0; cognitivenetwork_loop < num_cognitive_networks_in_universe[universe_loop]; cognitivenetwork_loop++)
 				{
+					auto current_cognitivenetwork_pointer = current_universe_pointer->GetCognitiveNetwork(event_time, cognitivenetwork_loop);
+					std::vector<CognitiveNetwork*> orbital_list;
+					CognitiveNetwork* cognitive_pointer = dynamic_cast<CognitiveNetwork*>(current_cognitivenetwork_pointer);
 
-					caerSpikeEventPacket evts = (caerSpikeEventPacket) packetHeader;
+					orbital_list = cognitive_pointer->GetOrbitals(event_time);
 
-					//! read all events
-					CAER_SPIKE_ITERATOR_ALL_START(evts)
-
-					uint64_t ts = caerSpikeEventGetTimestamp(
-					caerSpikeIteratorElement);
-					uint64_t neuronId = caerSpikeEventGetNeuronID(
-					caerSpikeIteratorElement);
-					uint64_t sourcecoreId = caerSpikeEventGetSourceCoreID(
-					caerSpikeIteratorElement); //! which core is from
-					uint64_t coreId = caerSpikeEventGetChipID(
-					caerSpikeIteratorElement);//! destination core (used as chip id)
-
-					//!                    printf("SPIKE: ts %llu , neuronID: %llu , sourcecoreID: %llu, ascoreID: %llu\n",ts, neuronId, sourcecoreId, coreId);
-					if(ts < dynapTime)
+					for (int nloop = 0; nloop < num_orbitals_in_cognitive_network[cognitivenetwork_loop]; nloop++)
 					{
-						dynapTime = ts;
+						double dtemp;
+						dynamic_cast<Orbital*>(orbital_list[nloop])->AddTemporalAdjustment(event_time, &dtemp, 20000.0, 0, 0);
 					}
-					uint64_t syncTime = (ts - dynapTime) *  universe_list[0]->GetTimeDimension(event_time)->GetTime(event_time);
-					if(int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) < 0)
-					{
-						event_time = startTime + std::chrono::microseconds(syncTime);
-					}
-					if(neuronId <  orbital.size())
-					{
-						orbital[int(neuronId)]->AddTemporalAdjustment(event_time, startTime + std::chrono::microseconds(syncTime), 20000.0);
-					}
-					//std::cout << int((neuronId)) << " ";
-
-					//std::cout << int((neuronId % 6)) << " " << syncTime << " " << int(std::chrono::duration_cast<std::chrono::nanoseconds>(event_time - (startTime + std::chrono::microseconds(syncTime))).count()) << "  " <<  orbital[int(neuronId % 6)].GetEnergy() << std::endl;
-					CAER_SPIKE_ITERATOR_ALL_END
 				}
 			}
-
-			caerEventPacketContainerFree(packetContainer);
+			pauseLoop = 0;
+			//!            sleep(2);
+			//!                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
 		}
-    }
 
-    poll_capture = sniffex(2,list<char>& {"sniffex","en0"});
-
-    for (int nloop = 0; nloop < num_orbitals_in_cognitive_network[current_cognitive_network]; nloop++)
-    {
-    	orbital[nloop]->Update(event_time);
-    }
-
-    pauseLoop++;
-    if(pauseLoop > 50000)
-    {
-		//! Synthetic periodic stimulus
-		if(!device_attached)
+		/*
+		for(int ploop = 0; ploop < 10000; ploop++)
 		{
-			for (int nloop = 0; nloop < 6; nloop++)
+
+		}
+		 */
+		/*
+		//! Early calculation for colliding elementary particles and the effect on direction and acceleration
+		int l_pointEnd = int( current_universe_pointer->GetPoints(event_time).size());
+		for(int n = 0; n < l_pointEnd; n = n + 4)
+		{
+			for(int p = 0; p < l_pointEnd; p = p + 4)
 			{
-				orbital[nloop]->AddTemporalAdjustment(event_time, 20000.0);
+				if(n != p)
+				{
+					xd =  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p))->GetPointPosition(event_time) -  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n))->GetPointPosition(event_time);
+					yd =  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 1))->GetPointPosition(event_time) -  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 1))->GetPointPosition(event_time);
+					zd =  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 2))->GetPointPosition(event_time) -  dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 2))->GetPointPosition(event_time);
+					pointDistance2 = (xd * xd + yd * yd + zd * zd);
+					effect = 1 + (1 / pointDistance2);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n))->GetPointDifferential(event_time) * effect);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p))->GetPointDifferential(event_time) * effect);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 1))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 1))->GetPointDifferential(event_time) * effect);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 1))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 1))->GetPointDifferential(event_time) * effect);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 2))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n + 2))->GetPointDifferential(event_time) * effect);
+					dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 2))->SetPointDifferential( dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, p + 2))->GetPointDifferential(event_time) * effect);
+				}
 			}
 		}
-		pauseLoop = 0;
-		//!            sleep(2);
-		//!                std::cout << "Actual: " << time(0) << " Virtual: " <<  universe_list[0].theTimeNow() << std::endl;
-    }
-	*/
-	/*
-     for(int ploop = 0; ploop < 10000; ploop++)
-     {
+		*/
+		/*
+		for (int qloop = 0; qloop < orbital_layers.size() - 1; qloop++)
+		{
+			for (int zloop = orbital_layers[qloop]; zloop <= (orbital_layers[qloop + 1]); zloop++)
+			{
+				for (int nloop = orbital_layers[qloop]; nloop <= (orbital_layers[qloop + 1]); nloop++)
+				{
+					if (zloop != nloop)
+					{
+						compareFirst =  orbital[zloop].GetPosition(event_time) /  orbital[nloop].GetPosition(event_time);
+						if(0.5 - compareFirst > -0.1f && 0.5 - compareFirst < 0.1f)
+						{
+							if (zloop < nloop)
+							{
+								//! Start of stimulus emulation
+								if( orbital[zloop].GetEnergy() > 1.0)
+								{
+									orbital[zloop].AddTemporalAdjustment(event_time, 1.0);
+									//! orbital[nloop].AddTemporalAdjustment(event_time, 10.0);
+									//iter_swap( orbital.begin() + (zloop),  orbital.begin() + (zloop + 1));
+									OrbConnection myOrbConnection;
+									myOrbConnection.OrbOne = zloop;
+									myOrbConnection.OrbTwo = nloop;
+									myOrbConnection.OrbConnectionStrength = 5.0;
+									myOrbConnection.OrbConnectionModifier = 1.0;
+									myOrbConnection.OrbSpike = true;
+									myOrbConnection.OrbOnePosition = 0.0;
+									myOrbConnection.OrbTwoPosition = 0.0;
+									OrbConnectionList.push_back(myOrbConnection);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
-     }
-	 */
-	/*
-     //! Early calculation for colliding elementary particles and the effect on direction and acceleration
-     for(int n = 0; n < l_pointEnd; n = n + 4)
-     {
-     for(int p = 0; p < l_pointEnd; p = p + 4)
-     {
-     if(n != p)
-     {
-     xd =  current_universe_pointer->GetPoint(event_time, p].getPointPosition() -  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
-     yd =  current_universe_pointer->GetPoint(event_time, p + 1].getPointPosition() -  current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time);
-     zd =  current_universe_pointer->GetPoint(event_time, p + 2].getPointPosition() -  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time);
-     pointDistance2 = (xd * xd + yd * yd + zd * zd);
-     effect = 1 + (1 / pointDistance2);
-     current_universe_pointer->GetPoint(event_time, n]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, n].GetPointDifferential(event_time) * effect);
-     current_universe_pointer->GetPoint(event_time, p]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, p].GetPointDifferential(event_time) * effect);
-     current_universe_pointer->GetPoint(event_time, n + 1]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, n + 1].GetPointDifferential(event_time) * effect);
-     current_universe_pointer->GetPoint(event_time, p + 1]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, p + 1].GetPointDifferential(event_time) * effect);
-     current_universe_pointer->GetPoint(event_time, n + 2]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, n + 2].GetPointDifferential(event_time) * effect);
-     current_universe_pointer->GetPoint(event_time, p + 2]->SetPointDifferential( current_universe_pointer->GetPoint(event_time, p + 2].GetPointDifferential(event_time) * effect);
-     }
-     }
-     }
-	 */
+		for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
+		{
+			for(int zloop = qloop + 1; zloop < OrbConnectionList.size(); zloop++)
+			{
+				if(OrbConnectionList[qloop].OrbOne == OrbConnectionList[zloop].OrbOne)
+				{
+					if(OrbConnectionList[qloop].OrbTwo == OrbConnectionList[zloop].OrbTwo)
+					{
+						OrbConnectionList[qloop].OrbConnectionStrength += OrbConnectionList[zloop].OrbConnectionStrength;
+						OrbConnectionList[zloop].OrbConnectionStrength = 0.0;
+						OrbConnectionList[qloop].OrbConnectionModifier *= OrbConnectionList[zloop].OrbConnectionModifier;
+						OrbConnectionList[zloop].OrbConnectionModifier = 0.0;
+						OrbConnectionList[qloop].OrbSpike = true;
+					}
+				}
+			}
+		}
+		if(pauseLoop % 1 == 0)
+		{
+			OrbConnectionList.erase( std::remove_if(OrbConnectionList.begin(), OrbConnectionList.end(), []( const OrbConnection& item) { return (item.OrbConnectionStrength < 0.1f ); }), OrbConnectionList.end());
+		}
 
-	/*
-     for (int qloop = 0; qloop < orbital_layers.size() - 1; qloop++)
-     {
-     for (int zloop = orbital_layers[qloop]; zloop <= (orbital_layers[qloop + 1]); zloop++)
-     {
-     for (int nloop = orbital_layers[qloop]; nloop <= (orbital_layers[qloop + 1]); nloop++)
-     {
-     if (zloop != nloop)
-     {
-     compareFirst =  orbital[zloop].GetPosition(event_time) /  orbital[nloop].GetPosition(event_time);
-     if(0.5 - compareFirst > -0.1f && 0.5 - compareFirst < 0.1f)
-     {
-     if (zloop < nloop)
-     {
-     //! Start of stimulus emulation
-     if( orbital[zloop].GetEnergy() > 1.0)
-     {
-     orbital[zloop].AddTemporalAdjustment(event_time, 1.0);
-     //! orbital[nloop].AddTemporalAdjustment(event_time, 10.0);
-     //iter_swap( orbital.begin() + (zloop),  orbital.begin() + (zloop + 1));
-     OrbConnection myOrbConnection;
-     myOrbConnection.OrbOne = zloop;
-     myOrbConnection.OrbTwo = nloop;
-     myOrbConnection.OrbConnectionStrength = 5.0;
-     myOrbConnection.OrbConnectionModifier = 1.0;
-     myOrbConnection.OrbSpike = true;
-     myOrbConnection.OrbOnePosition = 0.0;
-     myOrbConnection.OrbTwoPosition = 0.0;
-     OrbConnectionList.push_back(myOrbConnection);
-     }
-     }
-     }
-     }
-     }
-     }
-     }
+		for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
+		{
+			if(OrbConnectionList[qloop].OrbSpike)
+			{
+				if( orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time) > (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier)
+				{
+					orbital[OrbConnectionList[qloop].OrbOne].AddTemporalAdjustment(event_time, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
+					orbital[OrbConnectionList[qloop].OrbTwo].AddTemporalAdjustment(event_time, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
+				}
+				else
+				{
+					orbital[OrbConnectionList[qloop].OrbOne].AddTemporalAdjustment(event_time,  orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time));
+					orbital[OrbConnectionList[qloop].OrbTwo].AddTemporalAdjustment(event_time,  orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time));
+				}
+				OrbConnectionList[qloop].OrbSpike = false;
+			}
+			else
+			{
+				OrbConnectionList[qloop].OrbConnectionStrength *= 0.99;
+				OrbConnectionList[qloop].OrbConnectionModifier *= 0.99;
+			}
+		}
 
-     for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
-     {
-     for(int zloop = qloop + 1; zloop < OrbConnectionList.size(); zloop++)
-     {
-     if(OrbConnectionList[qloop].OrbOne == OrbConnectionList[zloop].OrbOne)
-     {
-     if(OrbConnectionList[qloop].OrbTwo == OrbConnectionList[zloop].OrbTwo)
-     {
-     OrbConnectionList[qloop].OrbConnectionStrength += OrbConnectionList[zloop].OrbConnectionStrength;
-     OrbConnectionList[zloop].OrbConnectionStrength = 0.0;
-     OrbConnectionList[qloop].OrbConnectionModifier *= OrbConnectionList[zloop].OrbConnectionModifier;
-     OrbConnectionList[zloop].OrbConnectionModifier = 0.0;
-     OrbConnectionList[qloop].OrbSpike = true;
-     }
-     }
-     }
-     }
-     if(pauseLoop % 1 == 0)
-     {
-     OrbConnectionList.erase( std::remove_if(OrbConnectionList.begin(), OrbConnectionList.end(), []( const OrbConnection& item) { return (item.OrbConnectionStrength < 0.1f ); }), OrbConnectionList.end());
-     }
-
-     for(int qloop = 0; qloop < OrbConnectionList.size() - 1; qloop++)
-     {
-     if(OrbConnectionList[qloop].OrbSpike)
-     {
-     if( orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time) > (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier)
-     {
-     orbital[OrbConnectionList[qloop].OrbOne].AddTemporalAdjustment(event_time, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
-     orbital[OrbConnectionList[qloop].OrbTwo].AddTemporalAdjustment(event_time, (OrbConnectionList[qloop].OrbConnectionStrength) * OrbConnectionList[qloop].OrbConnectionModifier);
-     }
-     else
-     {
-     orbital[OrbConnectionList[qloop].OrbOne].AddTemporalAdjustment(event_time,  orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time));
-     orbital[OrbConnectionList[qloop].OrbTwo].AddTemporalAdjustment(event_time,  orbital[OrbConnectionList[qloop].OrbOne].GetEnergy(event_time));
-     }
-     OrbConnectionList[qloop].OrbSpike = false;
-     }
-     else
-     {
-     OrbConnectionList[qloop].OrbConnectionStrength *= 0.99;
-     OrbConnectionList[qloop].OrbConnectionModifier *= 0.99;
-     }
-     }
-
-     if(pauseLoop % 2500 == 0)
-     {
-     std::cout << "Sending stimuli..." << std::endl;
-     //Send spike to Dynapse
-     genBits = 1 << 20; //! CAM address (8 bits)
-     genBits += 0 << 18; //! Core address (2 bits)
-     genBits += 0 << 16; //! Hard code (2 bits)
-     genBits += 0 << 14; //! Padding (2 bits)
-     genBits += 1 << 13; //! Hard code (1 bits)
-     genBits += 0 << 10; //! Padding (3 bits)
-     genBits += 0 << 9; //! N/S Direction (1 bit)
-     genBits += 0 << 7; //! Skip chips (2 bits)
-     genBits += 0 << 6; //! E/W Direction (1 bit)
-     genBits += 0 << 4; //! Skip chips (2 bits)
-     genBits += 1; //! Core (4 bits)
+		if (device_attached && (pauseLoop % 2500 == 0))
+		{
+			std::cout << "Sending stimuli..." << std::endl;
+			//Send spike to Dynapse
+			genBits = 1 << 20; //! CAM address (8 bits)
+			genBits += 0 << 18; //! Core address (2 bits)
+			genBits += 0 << 16; //! Hard code (2 bits)
+			genBits += 0 << 14; //! Padding (2 bits)
+			genBits += 1 << 13; //! Hard code (1 bits)
+			genBits += 0 << 10; //! Padding (3 bits)
+			genBits += 0 << 9; //! N/S Direction (1 bit)
+			genBits += 0 << 7; //! Skip chips (2 bits)
+			genBits += 0 << 6; //! E/W Direction (1 bit)
+			genBits += 0 << 4; //! Skip chips (2 bits)
+			genBits += 1; //! Core (4 bits)
 
 
-     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, 0, 0); //! core 0-3 neu 0
+			caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, 0, 0); //! core 0-3 neu 0
 
-     genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
+			genBits = neuronId << 7 | sramId << 5 | coreId << 15 | 1 << 17 | 1 << 4 | destinationCoreId << 18 | dynap_Sy << 27 | dy << 25 | dynap_Dx << 22 | dynap_Sx << 24 | coreId << 28;
 
-     caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
-     std::cout << "Sent stimuli." << std::endl;
-     }
+			caerDeviceConfigSet(usb_handle, DYNAPSE_CONFIG_CHIP, DYNAPSE_CONFIG_CHIP_CONTENT, genBits);
+			std::cout << "Sent stimuli." << std::endl;
+		}
 
-     //! Transfer orbital details to points
-     for (int nloop = l_orbPointStart; nloop < l_orbPointEnd; nloop++)
-     {
-     calcY =  orbital[nloop - l_orbPointStart].GetPosition(event_time);
-     calcYoffset =  dimension_list[orbDimensionsStart + ((nloop - l_orbPointStart) % num_dimensions[9])].GetOffset(event_time);
-     calcYscale =  dimension_list[orbDimensionsStart + ((nloop - l_orbPointStart) % num_dimensions[9])].GetScale(event_time);
-     calcY = calcY + calcYoffset;
-     calcY = calcY * calcYscale;
+		//! Transfer orbital details to points
+		for (int nloop = l_orbPointStart; nloop < l_orbPointEnd; nloop++)
+		{
+		calcY =  orbital[nloop - l_orbPointStart].GetPosition(event_time);
+		calcYoffset =  dimension_list[orbDimensionsStart + ((nloop - l_orbPointStart) % num_dimensions[9])].GetOffset(event_time);
+		calcYscale =  dimension_list[orbDimensionsStart + ((nloop - l_orbPointStart) % num_dimensions[9])].GetScale(event_time);
+		calcY = calcY + calcYoffset;
+		calcY = calcY * calcYscale;
 
-     current_universe_pointer->GetPoint(event_time, nloop]->SetPointPosition(event_time, calcY);
-     //std::cout << calcX << "   ";
-     }
-     //! std::cout << std::endl;
-	 */
+		current_universe_pointer->GetPoint(event_time, nloop]->SetPointPosition(event_time, calcY);
+		//std::cout << calcX << "   ";
+		}
+		//! std::cout << std::endl;
+		 */
 
-	/*
-     for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
-     {
-     for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
-     {
-     l_desired_distance =  synapse[int((x - l_ccpPointStart)/2)].GetDistance(event_time, int((n - (l_ccpPointStart + 100))/2.0));
-     nodeList.clear();
-     nodeList.push_back(x);
-     nodeList.push_back(x + 1);
-     nodeList.push_back(n);
-     nodeList.push_back(n + 1);
+		/*
+		for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
+		{
+		for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+		{
+		l_desired_distance =  synapse[int((x - l_ccpPointStart)/2)].GetDistance(event_time, int((n - (l_ccpPointStart + 100))/2.0));
+		nodeList.clear();
+		nodeList.push_back(x);
+		nodeList.push_back(x + 1);
+		nodeList.push_back(n);
+		nodeList.push_back(n + 1);
 
-     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+		//!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
 
-     status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
+		status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
 
-     //!                std::cout << "Retrieved : " <<  current_universe_pointer->GetPoint(event_time, nodeList[0]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[1]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[2]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[3]].GetPointDifferential(event_time) << std::endl;
+		//!                std::cout << "Retrieved : " <<  current_universe_pointer->GetPoint(event_time, nodeList[0]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[1]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[2]].GetPointDifferential(event_time) << ", " <<  current_universe_pointer->GetPoint(event_time, nodeList[3]].GetPointDifferential(event_time) << std::endl;
 
-     }
-     }
+		}
+		}
 
-     for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
-     {
-     l_demandCounter = 0;
-     for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
-     {
-     l_desired_distance =  synapse[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2.0));
-     nodeList.clear();
-     nodeList.push_back(n);
-     nodeList.push_back(n + 1);
-     nodeList.push_back(x);
-     nodeList.push_back(x + 1);
+		for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+		{
+		l_demandCounter = 0;
+		for(int x = l_ccpPointStart; x < l_ccpPointStart + 100; x = x + 2)
+		{
+		l_desired_distance =  synapse[int((x - l_ccpPointStart)/2)].getDistance(int((n - (l_ccpPointStart + 100))/2.0));
+		nodeList.clear();
+		nodeList.push_back(n);
+		nodeList.push_back(n + 1);
+		nodeList.push_back(x);
+		nodeList.push_back(x + 1);
 
-     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+		//!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
 
-     status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
+		status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
 
-     if( synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) == int( n - (l_ccpPointStart + 100 ))/2)
-     {
-     l_demandCounter = l_demandCounter +  synapse[int((x - l_ccpPointStart)/2)].GetDemand(event_time);
-     }
-     //!                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " <<  synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
-     }
-     }
+		if( synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) == int( n - (l_ccpPointStart + 100 ))/2)
+		{
+		l_demandCounter = l_demandCounter +  synapse[int((x - l_ccpPointStart)/2)].GetDemand(event_time);
+		}
+		//!                std::cout << ((n - (l_ccpPointStart + 100)) / 2) << " - " <<  synapse[int((x - l_ccpPointStart)/2)].GetAllocatedNeuron(event_time) << " - " << int( n - (l_ccpPointStart + 100 ))/2 << " - " << l_demandCounter << std::endl;
+		}
+		}
 
-     for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
-     {
-     for(int x = l_ccpPointStart + 100; x < l_ccpPointStart + 200; x = x + 2)
-     {
-     if (n != x)
-     {
-     l_desired_distance = 0.1;
-     nodeList.clear();
-     nodeList.push_back(n);
-     nodeList.push_back(n + 1);
-     nodeList.push_back(x);
-     nodeList.push_back(x + 1);
+		for(int n = l_ccpPointStart + 100; n < l_ccpPointStart + 200 ; n = n + 2)
+		{
+		for(int x = l_ccpPointStart + 100; x < l_ccpPointStart + 200; x = x + 2)
+		{
+		if (n != x)
+		{
+		l_desired_distance = 0.1;
+		nodeList.clear();
+		nodeList.push_back(n);
+		nodeList.push_back(n + 1);
+		nodeList.push_back(x);
+		nodeList.push_back(x + 1);
 
-     //!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
+		//!                std::cout << "Request nodes: " << nodeList[0] << ", " << nodeList[1] << ", " << nodeList[2] << ", " << nodeList[3] << " Dist:" << l_desired_distance << std::endl;
 
-     status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
-     }
-     }
-     }
+		status_of_call_request = DistanceBetweenNodes(& current_universe_pointer->GetPoints(event_time), &nodeList, 2, l_desired_distance);
+		}
+		}
+		}
 
-     pArgs = NULL;
-     pArrayArgs = NULL;
-     pTransferArray = NULL;
-     pValue = NULL;
-     pArgs = PyTuple_New(2);
-     //!        pValue = PyInt_FromLong(3);
-     npy_intp dims[2] = {2,15}
-     pArrayArgs = PyArray_SimpleNew(2, dims, NPY_INT);
-     //! The pointer to the array data is accessed using PyArray_DATA()
-     pTransferArray = (int *) PyArray_DATA(pArrayArgs);
-     //! Copy the data from the "array of arrays" to the contiguous numpy array.
-     l_transferArray.clear();
-     for (int tloop = l_ccpPointStart; tloop < l_ccpPointStart + 30; tloop++)
-     {
-     l_transferArray.push_back((int)round( current_universe_pointer->GetPoint(event_time, tloop].GetPointPosition(event_time)));
-     //!            std::cout << l_transferArray.back() << ", ";
-     }
-     //!        std::cout << std::endl;
-     std::memcpy(pTransferArray, &l_transferArray, sizeof(int) * 30);
-     PyTuple_SetItem(pArgs,0,pArrayArgs);
-     pValue = PyInt_FromLong(2);
-     PyTuple_SetItem(pArgs,1,pValue);
+		pArgs = NULL;
+		pArrayArgs = NULL;
+		pTransferArray = NULL;
+		pValue = NULL;
+		pArgs = PyTuple_New(2);
+		//!        pValue = PyInt_FromLong(3);
+		npy_intp dims[2] = {2,15}
+		pArrayArgs = PyArray_SimpleNew(2, dims, NPY_INT);
+		//! The pointer to the array data is accessed using PyArray_DATA()
+		pTransferArray = (int *) PyArray_DATA(pArrayArgs);
+		//! Copy the data from the "array of arrays" to the contiguous numpy array.
+		l_transferArray.clear();
+		for (int tloop = l_ccpPointStart; tloop < l_ccpPointStart + 30; tloop++)
+		{
+		l_transferArray.push_back((int)round( current_universe_pointer->GetPoint(event_time, tloop].GetPointPosition(event_time)));
+		//!            std::cout << l_transferArray.back() << ", ";
+		}
+		//!        std::cout << std::endl;
+		std::memcpy(pTransferArray, &l_transferArray, sizeof(int) * 30);
+		PyTuple_SetItem(pArgs,0,pArrayArgs);
+		pValue = PyInt_FromLong(2);
+		PyTuple_SetItem(pArgs,1,pValue);
 
-     //!        pValue = PyObject_CallObject(pFunc, pArgs);
-     pValue = PyObject_CallObject(pFunc, pArgs);
-     //!        Py_DECREF(pArgs);
-     //!        Py_DECREF(pArrayArgs);
-     if (pValue != NULL) {
-     //!            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
-     //!            Py_DECREF(pValue);
-     //!            Py_DECREF(pTransferArray);
-     //!            pValue = NULL;
-     }
-     else {
-     Py_DECREF(pTransferArray);
-     Py_DECREF(pFunc);
-     Py_DECREF(pModule);
-     PyErr_Print();
-     fprintf(stderr,"Call failed\n");
-     return EXIT_FAILURE;
-     }
+		//!        pValue = PyObject_CallObject(pFunc, pArgs);
+		pValue = PyObject_CallObject(pFunc, pArgs);
+		//!        Py_DECREF(pArgs);
+		//!        Py_DECREF(pArrayArgs);
+		if (pValue != NULL) {
+		//!            printf("Result of call: %ld\n", PyInt_AsLong(pValue));
+		//!            Py_DECREF(pValue);
+		//!            Py_DECREF(pTransferArray);
+		//!            pValue = NULL;
+		}
+		else {
+		Py_DECREF(pTransferArray);
+		Py_DECREF(pFunc);
+		Py_DECREF(pModule);
+		PyErr_Print();
+		fprintf(stderr,"Call failed\n");
+		return EXIT_FAILURE;
+		}
 
-     for(int n = l_pointStart; n < l_pointEnd; n++)
-     {
-     //!            std::cout << n << " ";
-     current_universe_pointer->GetPoint(event_time, n].PointPoll(event_time, 1);
-     current_universe_pointer->GetPoint(event_time, n].OverflowPoll(event_time);
-     }
-     //!        std::cout << std::endl;
-	 */
-	/*
-     patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart, (l_ccpPointStart + 0) - num_dimensions[2], num_dimensions[2],1);
-     patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart + 1, (l_ccpPointStart + 1) - num_dimensions[2], num_dimensions[2],2);
-     patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart + 2, (l_ccpPointStart + 2) - num_dimensions[2], num_dimensions[2],3);
+		for(int n = 0; n < int(current_universe_pointer->GetPoints(event_time).size()); n++)
+		{
+			//!            std::cout << n << " ";
+			dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n))->PointPoll(event_time, 1);
+			dynamic_cast<Point*>(current_universe_pointer->GetPoint(event_time, n))->OverflowPoll(event_time);
+		}
+		//!        std::cout << std::endl;
+		*/
+		/*
+		patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart, (l_ccpPointStart + 0) - num_dimensions[2], num_dimensions[2],1);
+		patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart + 1, (l_ccpPointStart + 1) - num_dimensions[2], num_dimensions[2],2);
+		patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_pointStart + 2, (l_ccpPointStart + 2) - num_dimensions[2], num_dimensions[2],3);
 
-     patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart, (l_pointEnd + 0) - num_dimensions[3], num_dimensions[3],1);
-     patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart + 1, (l_pointEnd + 1) - num_dimensions[3], num_dimensions[3],2);
-	 */
-	//! Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
-	//!   define_points.clear();
-	/*
-     for(int n = l_pointStart; n < l_ccpPointStart; n = n + num_dimensions[2])
-     {
-     calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
-     calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
-     calcZ =  current_universe_pointer->GetPoint(event_time, n+2].GetPointPosition(event_time);
-     calcXoffset =  dimension_list[0].GetOffset(event_time);
-     calcYoffset =  dimension_list[1].GetOffset(event_time);
-     calcZoffset =  dimension_list[2].GetOffset(event_time);
-     calcXscale =  dimension_list[0].GetScale(event_time);
-     calcYscale =  dimension_list[1].GetScale(event_time);
-     calcZscale =  dimension_list[2].GetScale(event_time);
-     calcX = calcX + calcXoffset;
-     calcY = calcY + calcYoffset;
-     calcZ = calcZ + calcZoffset;
-     calcX = calcX * calcXscale;
-     calcY = calcY * calcYscale;
-     calcZ = calcZ * calcZscale;
-     calcX = calcX / calcZ;
-     calcY = calcY / calcZ;
-     calcX = calcX + ( l_screenX / 2.0);
-     calcY = l_screenY - (calcY + ( l_screenY / 2.0));
+		patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart, (l_pointEnd + 0) - num_dimensions[3], num_dimensions[3],1);
+		patternFound = analyseStream(& neuron, & current_universe_pointer->GetPoints(event_time), l_ccpPointStart + 1, (l_pointEnd + 1) - num_dimensions[3], num_dimensions[3],2);
+		 */
+		//! Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated.
+		//!   define_points.clear();
+		/*
+		for(int n = l_pointStart; n < l_ccpPointStart; n = n + num_dimensions[2])
+		{
+		calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
+		calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
+		calcZ =  current_universe_pointer->GetPoint(event_time, n+2].GetPointPosition(event_time);
+		calcXoffset =  dimension_list[0].GetOffset(event_time);
+		calcYoffset =  dimension_list[1].GetOffset(event_time);
+		calcZoffset =  dimension_list[2].GetOffset(event_time);
+		calcXscale =  dimension_list[0].GetScale(event_time);
+		calcYscale =  dimension_list[1].GetScale(event_time);
+		calcZscale =  dimension_list[2].GetScale(event_time);
+		calcX = calcX + calcXoffset;
+		calcY = calcY + calcYoffset;
+		calcZ = calcZ + calcZoffset;
+		calcX = calcX * calcXscale;
+		calcY = calcY * calcYscale;
+		calcZ = calcZ * calcZscale;
+		calcX = calcX / calcZ;
+		calcY = calcY / calcZ;
+		calcX = calcX + ( l_screenX / 2.0);
+		calcY = l_screenY - (calcY + ( l_screenY / 2.0));
 
-     define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,255,0,255)));
-     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2), l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
-     //!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
-     }
-	 */
-	/*
-     for(int n = l_ccpPointStart; n < l_ccpPointEnd; n = n + num_dimensions[3])
-     {
-     calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
-     calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
-     calcXoffset =  dimension_list[0].GetOffset(event_time);
-     calcYoffset =  dimension_list[1].GetOffset(event_time);
-     calcXscale =  dimension_list[0].GetScale(event_time);
-     calcYscale =  dimension_list[1].GetScale(event_time);
-     calcX = calcX + calcXoffset;
-     calcY = calcY + calcYoffset;
-     calcX = calcX * calcXscale;
-     calcY = calcY * calcYscale;
-     calcX = calcX + ( l_screenX / 2.0);
-     calcY = l_screenY - (calcY + ( l_screenY / 2.0));
+		define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,255,0,255)));
+		//! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2), l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2))), sf::Color(255,255,0,255)));
+		//!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
+		}
+		 */
+		/*
+		for(int n = l_ccpPointStart; n < l_ccpPointEnd; n = n + num_dimensions[3])
+		{
+		calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
+		calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
+		calcXoffset =  dimension_list[0].GetOffset(event_time);
+		calcYoffset =  dimension_list[1].GetOffset(event_time);
+		calcXscale =  dimension_list[0].GetScale(event_time);
+		calcYscale =  dimension_list[1].GetScale(event_time);
+		calcX = calcX + calcXoffset;
+		calcY = calcY + calcYoffset;
+		calcX = calcX * calcXscale;
+		calcY = calcY * calcYscale;
+		calcX = calcX + ( l_screenX / 2.0);
+		calcY = l_screenY - (calcY + ( l_screenY / 2.0));
 
-     define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(128,255,128,255)));
-     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(128,255,128,255)));
-     //!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
-     }
-	 */
-	/*
-     for(int n = l_spkPointStart; n < l_spkPointEnd; n = n + num_dimensions[4])
-     {
-     calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
-     calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
-     calcXoffset =  dimension_list[0].GetOffset(event_time);
-     calcYoffset =  dimension_list[1].GetOffset(event_time);
-     calcXscale =  dimension_list[0].GetScale(event_time);
-     calcYscale =  dimension_list[1].GetScale(event_time);
-     calcX = calcX + calcXoffset;
-     calcY = calcY + calcYoffset;
-     calcX = calcX * calcXscale;
-     calcY = calcY * calcYscale;
-     calcX = calcX + ( l_screenX / 2.0);
-     calcY = l_screenY - (calcY + ( l_screenY / 2.0));
+		define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(128,255,128,255)));
+		//! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(128,255,128,255)));
+		//!            std::cout << n << " = " << (( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenX / 2) << " : " << l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time) /  current_universe_pointer->GetPoint(event_time, n + 2].GetPointPosition(event_time)) * l_scale) + (l_screenY / 2)) << std::endl;
+		}
+		 */
+		/*
+		for(int n = l_spkPointStart; n < l_spkPointEnd; n = n + num_dimensions[4])
+		{
+		calcX =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
+		calcY =  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time);
+		calcXoffset =  dimension_list[0].GetOffset(event_time);
+		calcYoffset =  dimension_list[1].GetOffset(event_time);
+		calcXscale =  dimension_list[0].GetScale(event_time);
+		calcYscale =  dimension_list[1].GetScale(event_time);
+		calcX = calcX + calcXoffset;
+		calcY = calcY + calcYoffset;
+		calcX = calcX * calcXscale;
+		calcY = calcY * calcYscale;
+		calcX = calcX + ( l_screenX / 2.0);
+		calcY = l_screenY - (calcY + ( l_screenY / 2.0));
 
-     define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,0,0,255)));
-     //! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(255,0,0,255)));
-     //!            std::cout <<  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) << ":" <<  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time) << ", ";
-     }
-	 */
-	//!        std::cout << std::endl;
+		define_points.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(255,0,0,255)));
+		//! define_points.push_back(sf::Vertex(sf::Vector2f((( current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time)))+100, l_screenY - ((( current_universe_pointer->GetPoint(event_time, n + 1].GetPointPosition(event_time)))+100)), sf::Color(255,0,0,255)));
+		//!            std::cout <<  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time) << ":" <<  current_universe_pointer->GetPoint(event_time, n+1].GetPointPosition(event_time) << ", ";
+		}
+		 */
+		//!        std::cout << std::endl;
 
-	/*
-     draw_lines.clear();
-     colourMax = 0.0;
-     for(int n2 = 0; n2 <= l_orbPointEnd - l_orbPointStart; n2 = n2 + num_dimensions[9])
-     {
-     if( orbital[n2].GetEnergy(event_time) > colourMax)
-     colourMax =  orbital[n2].GetEnergy(event_time);
-     }
-     colourMax = 255.0 / colourMax;
-     for(int n = l_orbPointStart; n < l_orbPointEnd; n = n + num_dimensions[9])
-     {
-     if( orbital[n - l_orbPointStart].GetEnergy(event_time) > 0)
-     {
-     calcX = ((2.0 / (l_orbPointEnd - l_orbPointStart)) * (n - l_orbPointStart)) - 1.0;
-     //std::cout << "X: " << calcX << std::endl;
-     calcY =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
-     calcXoffset =  dimension_list[0].GetOffset(event_time);
-     calcYoffset =  dimension_list[1].GetOffset(event_time);
-     calcXscale =  dimension_list[0].GetScale(event_time);
-     calcYscale =  dimension_list[1].GetScale(event_time);
-     calcX = calcX + calcXoffset;
-     calcY = calcY + calcYoffset;
-     calcX = calcX * calcXscale;
-     calcY = calcY * calcYscale;
-     calcX = calcX * 320.0;
-     calcY = calcY * 50.0;
-     for (int zloop = 0; zloop < orbital_layers.size() - 1; zloop++)
-     {
-     if ((n - l_orbPointStart) >= orbital_layers[zloop] && (n - l_orbPointStart) < orbital_layers[zloop + 1])
-     {
-     calcX += (zloop * 10);
-     }
-     }
-     calcX = calcX + ( l_screenX / 2.0);
-     calcY = l_screenY - (calcY + ( l_screenY / 2.0));
-     colourY = int(colourMax *  orbital[n - l_orbPointStart].GetEnergy(event_time));
+		/*
+		draw_lines.clear();
+		colourMax = 0.0;
+		for(int n2 = 0; n2 <= l_orbPointEnd - l_orbPointStart; n2 = n2 + num_dimensions[9])
+		{
+		if( orbital[n2].GetEnergy(event_time) > colourMax)
+		colourMax =  orbital[n2].GetEnergy(event_time);
+		}
+		colourMax = 255.0 / colourMax;
+		for(int n = l_orbPointStart; n < l_orbPointEnd; n = n + num_dimensions[9])
+		{
+		if( orbital[n - l_orbPointStart].GetEnergy(event_time) > 0)
+		{
+		calcX = ((2.0 / (l_orbPointEnd - l_orbPointStart)) * (n - l_orbPointStart)) - 1.0;
+		//std::cout << "X: " << calcX << std::endl;
+		calcY =  current_universe_pointer->GetPoint(event_time, n].GetPointPosition(event_time);
+		calcXoffset =  dimension_list[0].GetOffset(event_time);
+		calcYoffset =  dimension_list[1].GetOffset(event_time);
+		calcXscale =  dimension_list[0].GetScale(event_time);
+		calcYscale =  dimension_list[1].GetScale(event_time);
+		calcX = calcX + calcXoffset;
+		calcY = calcY + calcYoffset;
+		calcX = calcX * calcXscale;
+		calcY = calcY * calcYscale;
+		calcX = calcX * 320.0;
+		calcY = calcY * 50.0;
+		for (int zloop = 0; zloop < orbital_layers.size() - 1; zloop++)
+		{
+		if ((n - l_orbPointStart) >= orbital_layers[zloop] && (n - l_orbPointStart) < orbital_layers[zloop + 1])
+		{
+		calcX += (zloop * 10);
+		}
+		}
+		calcX = calcX + ( l_screenX / 2.0);
+		calcY = l_screenY - (calcY + ( l_screenY / 2.0));
+		colourY = int(colourMax *  orbital[n - l_orbPointStart].GetEnergy(event_time));
 
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(calcX, l_screenY - ( l_screenY / 2)), sf::Color(0,0,255,255)));
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(int(( current_universe_pointer->GetPoint(event_time, n].getPointPosition()+1)*127),colourY,255,255)));
-     //std::cout << "X: " << calcX << "  Y: " << calcY << std::endl;
-     for (int zloop = 0; zloop < OrbConnectionList.size(); zloop++ )
-     {
-     if (n - l_orbPointStart == OrbConnectionList[zloop].OrbOne &&  orbital[OrbConnectionList[zloop].OrbOne].GetEnergy(event_time) > 0)
-     {
-     OrbConnectionList[zloop].OrbOnePosition = calcX;
-     }
-     if (n - l_orbPointStart == OrbConnectionList[zloop].OrbTwo &&  orbital[OrbConnectionList[zloop].OrbTwo].GetEnergy(event_time) > 0)
-     {
-     OrbConnectionList[zloop].OrbTwoPosition = calcX;
-     }
-     }
-     }
-     }
-     if(pauseLoop % 1 == 0)
-     {
-     double connectionLength = 0.0;
-     for (int n = 0; n < OrbConnectionList.size(); n++ )
-     {
-     connectionLength = OrbConnectionList[n].OrbTwoPosition - OrbConnectionList[n].OrbOnePosition;
-     for (int z = n + 1; z < OrbConnectionList.size(); z++ )
-     {
-     if(connectionLength > OrbConnectionList[z].OrbTwoPosition - OrbConnectionList[z].OrbOnePosition)
-     {
-     iter_swap(OrbConnectionList.begin() + (n), OrbConnectionList.begin() + (z));
-     }
-     }
-     }
-     double xx2 = 0.0;
-     for (int n = 0; n < OrbConnectionList.size(); n++ )
-     {
-     xx2 = OrbConnectionList[n].OrbTwoPosition;
-     for (int z = n + 1; z < OrbConnectionList.size(); z++ )
-     {
-     if(OrbConnectionList[z].OrbOnePosition >= xx2)
-     {
-     xx2 = OrbConnectionList[z].OrbTwoPosition;
-     OrbConnectionList.insert(OrbConnectionList.begin() + (n + 1), OrbConnectionList[z]);
-     iter_swap(OrbConnectionList.begin() + (n + 1), OrbConnectionList.begin() + (z + 1));
-     OrbConnectionList.erase(OrbConnectionList.begin() + (z + 1));
-     n++;
-     }
-     }
-     }
-     }
-     int yy = 350;
-     double xx = 0;
-     for (int n = 0; n < OrbConnectionList.size(); n++ )
-     {
-     if (OrbConnectionList[n].OrbOnePosition > 0.0 && OrbConnectionList[n].OrbTwoPosition > 0.0 &&  orbital[OrbConnectionList[n].OrbOne].GetEnergy(event_time) > 0 &&  orbital[OrbConnectionList[n].OrbTwo].GetEnergy(event_time) > 0)
-     {
-     if(yy > 0)
-     {
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbOnePosition, yy), sf::Color( orbital[OrbConnectionList[n].OrbOne].GetEnergy(event_time),OrbConnectionList[n].OrbConnectionStrength,255,255)));
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbTwoPosition, yy), sf::Color( orbital[OrbConnectionList[n].OrbTwo].GetEnergy(event_time),OrbConnectionList[n].OrbConnectionStrength,255,255)));
-     }
-     if (OrbConnectionList[n].OrbOnePosition >= xx)
-     {
-     xx = OrbConnectionList[n].OrbTwoPosition;
-     }
-     else
-     {
-     xx = 0;
-     yy--;
-     }
-     }
-     }
+		draw_lines.push_back(sf::Vertex(sf::Vector2f(calcX, l_screenY - ( l_screenY / 2)), sf::Color(0,0,255,255)));
+		draw_lines.push_back(sf::Vertex(sf::Vector2f(calcX, calcY), sf::Color(int(( current_universe_pointer->GetPoint(event_time, n].getPointPosition()+1)*127),colourY,255,255)));
+		//std::cout << "X: " << calcX << "  Y: " << calcY << std::endl;
+		for (int zloop = 0; zloop < OrbConnectionList.size(); zloop++ )
+		{
+		if (n - l_orbPointStart == OrbConnectionList[zloop].OrbOne &&  orbital[OrbConnectionList[zloop].OrbOne].GetEnergy(event_time) > 0)
+		{
+		OrbConnectionList[zloop].OrbOnePosition = calcX;
+		}
+		if (n - l_orbPointStart == OrbConnectionList[zloop].OrbTwo &&  orbital[OrbConnectionList[zloop].OrbTwo].GetEnergy(event_time) > 0)
+		{
+		OrbConnectionList[zloop].OrbTwoPosition = calcX;
+		}
+		}
+		}
+		}
+		if(pauseLoop % 1 == 0)
+		{
+		double connectionLength = 0.0;
+		for (int n = 0; n < OrbConnectionList.size(); n++ )
+		{
+		connectionLength = OrbConnectionList[n].OrbTwoPosition - OrbConnectionList[n].OrbOnePosition;
+		for (int z = n + 1; z < OrbConnectionList.size(); z++ )
+		{
+		if(connectionLength > OrbConnectionList[z].OrbTwoPosition - OrbConnectionList[z].OrbOnePosition)
+		{
+		iter_swap(OrbConnectionList.begin() + (n), OrbConnectionList.begin() + (z));
+		}
+		}
+		}
+		double xx2 = 0.0;
+		for (int n = 0; n < OrbConnectionList.size(); n++ )
+		{
+		xx2 = OrbConnectionList[n].OrbTwoPosition;
+		for (int z = n + 1; z < OrbConnectionList.size(); z++ )
+		{
+		if(OrbConnectionList[z].OrbOnePosition >= xx2)
+		{
+		xx2 = OrbConnectionList[z].OrbTwoPosition;
+		OrbConnectionList.insert(OrbConnectionList.begin() + (n + 1), OrbConnectionList[z]);
+		iter_swap(OrbConnectionList.begin() + (n + 1), OrbConnectionList.begin() + (z + 1));
+		OrbConnectionList.erase(OrbConnectionList.begin() + (z + 1));
+		n++;
+		}
+		}
+		}
+		}
+		int yy = 350;
+		double xx = 0;
+		for (int n = 0; n < OrbConnectionList.size(); n++ )
+		{
+		if (OrbConnectionList[n].OrbOnePosition > 0.0 && OrbConnectionList[n].OrbTwoPosition > 0.0 &&  orbital[OrbConnectionList[n].OrbOne].GetEnergy(event_time) > 0 &&  orbital[OrbConnectionList[n].OrbTwo].GetEnergy(event_time) > 0)
+		{
+		if(yy > 0)
+		{
+		draw_lines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbOnePosition, yy), sf::Color( orbital[OrbConnectionList[n].OrbOne].GetEnergy(event_time),OrbConnectionList[n].OrbConnectionStrength,255,255)));
+		draw_lines.push_back(sf::Vertex(sf::Vector2f(OrbConnectionList[n].OrbTwoPosition, yy), sf::Color( orbital[OrbConnectionList[n].OrbTwo].GetEnergy(event_time),OrbConnectionList[n].OrbConnectionStrength,255,255)));
+		}
+		if (OrbConnectionList[n].OrbOnePosition >= xx)
+		{
+		xx = OrbConnectionList[n].OrbTwoPosition;
+		}
+		else
+		{
+		xx = 0;
+		yy--;
+		}
+		}
+		}
 
-	 */
-	/*
-     for(int n = 0; n < l_LineEnd; n++)
-     {
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(( line_list[n].GetLineX1(event_time) * l_scale) + (l_screenX / 2), l_screenY - (( line_list[n].GetLineY1(event_time) * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) *  current_universe_pointer->GetPoint(event_time, n].GetXYTTL(event_time)),0,0,255)));
-     draw_lines.push_back(sf::Vertex(sf::Vector2f(( line_list[n].GetLineX2(event_time) * l_scale) + (l_screenX / 2), l_screenY - (( line_list[n].GetLineY2(event_time) * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) *  current_universe_pointer->GetPoint(event_time, n].GetXYTTL(event_time)),0,0,255)));
-     }
-	 */
-	//! window.clear();
+		 */
+		/*
+		for(int n = 0; n < l_LineEnd; n++)
+		{
+			draw_lines.push_back(sf::Vertex(sf::Vector2f(( line_list[n].GetLineX1(event_time) * l_scale) + (l_screenX / 2), l_screenY - (( line_list[n].GetLineY1(event_time) * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) *  current_universe_pointer->GetPoint(event_time, n].GetXYTTL(event_time)),0,0,255)));
+			draw_lines.push_back(sf::Vertex(sf::Vector2f(( line_list[n].GetLineX2(event_time) * l_scale) + (l_screenX / 2), l_screenY - (( line_list[n].GetLineY2(event_time) * l_scale) + (l_screenY / 2))), sf::Color::Color(255 - (int(255 / 8) *  current_universe_pointer->GetPoint(event_time, n].GetXYTTL(event_time)),0,0,255)));
+		}
+		 */
+		//! window.clear();
 
-	//!        window.pushGLStates();
-	//!  window.draw(& drawQuads[0],  drawQuads.size(), sf::Quads);
-	//!        window.popGLStates();
+		//!        window.pushGLStates();
+		//!  window.draw(& drawQuads[0],  drawQuads.size(), sf::Quads);
+		//!        window.popGLStates();
 
-	//!        window.pushGLStates();
-	//!  window.draw(& define_points[0],  define_points.size(), sf::Points);
-	//!        window.popGLStates();
+		//!        window.pushGLStates();
+		//!  window.draw(& define_points[0],  define_points.size(), sf::Points);
+		//!        window.popGLStates();
 
-	//!        window.pushGLStates();
-	//!  window.draw(& draw_lines[0],  draw_lines.size(), sf::Lines);
-	//!        window.popGLStates();
+		//!        window.pushGLStates();
+		//!  window.draw(& draw_lines[0],  draw_lines.size(), sf::Lines);
+		//!        window.popGLStates();
 
-	//! Group quads
-	//!         draw_rectangles[1].setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 *  toggle), 30));
-	/*
-     for(int loopRectangles = 0; loopRectangles < int( draw_rectangles.size()); loopRectangles++)
-     {
-     draw_rectangles[loopRectangles].setPosition( current_universe_pointer->GetPoint(event_time, loopRectangles * 2.0].getPointPosition(),  current_universe_pointer->GetPoint(event_time, (loopRectangles * 2.0) + 1.0].GetPointPosition(event_time));
-     //!            window.pushGLStates();
-     window.draw( draw_rectangles[loopRectangles]);
-     //!            window.popGLStates();
-     }
+		//! Group quads
+		//!         draw_rectangles[1].setPosition(sf::Vector2f(((l_screenX / 2 ) - (20 / 2)) + (25 *  toggle), 30));
+		/*
+		for(int loopRectangles = 0; loopRectangles < int( draw_rectangles.size()); loopRectangles++)
+		{
+			draw_rectangles[loopRectangles].setPosition( current_universe_pointer->GetPoint(event_time, loopRectangles * 2.0].getPointPosition(),  current_universe_pointer->GetPoint(event_time, (loopRectangles * 2.0) + 1.0].GetPointPosition(event_time));
+			//!            window.pushGLStates();
+			window.draw( draw_rectangles[loopRectangles]);
+			//!            window.popGLStates();
+		}
 
-     for(int loopText = 1; loopText < int( draw_text.size()); loopText++)
-     {
-     draw_text[loopText].SetPosition(event_time, current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time),  current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + 1.0 + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time));
-     //!            window.pushGLStates();
-     window.draw( draw_text[loopText]);
-     //!            window.popGLStates();
-     //!            std::cout << "X:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << " Y:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + 1 + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << std::endl;
-     }
+		for(int loopText = 1; loopText < int( draw_text.size()); loopText++)
+		{
+			draw_text[loopText].SetPosition(event_time, current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time),  current_universe_pointer->GetPoint(event_time, (loopText * 2.0) + 1.0 + (int( draw_rectangles.size()) * 2.0)].GetPointPosition(event_time));
+			//!            window.pushGLStates();
+			window.draw( draw_text[loopText]);
+			//!            window.popGLStates();
+			//!            std::cout << "X:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << " Y:" <<  current_universe_pointer->GetPoint(event_time, (loopText * 2) + 1 + (int( draw_rectangles.size())*2)].GetPointPosition(event_time) << std::endl;
+		}
 
-	 */
+		 */
+	}
 
 	//! Continue interaction until window closed
 
