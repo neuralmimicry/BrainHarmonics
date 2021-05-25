@@ -1,5 +1,5 @@
-\hypertarget{BrainHarmonics_8cc}{}\section{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.cc File Reference}
-\label{BrainHarmonics_8cc}\index{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc@{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc}}
+\hypertarget{BrainHarmonics_8cc}{}\section{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics.cc File Reference}
+\label{BrainHarmonics_8cc}\index{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc@{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\+Brain\+Harmonics.\+cc}}
 {\ttfamily \#include $<$sys/time.\+h$>$}\newline
 {\ttfamily \#include $<$sys/types.\+h$>$}\newline
 {\ttfamily \#include $<$sys/socket.\+h$>$}\newline
@@ -70,6 +70,7 @@
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include $<$vtk\+Transform.\+h$>$}\newline
 {\ttfamily \#include $<$vtk\+Transform\+Poly\+Data\+Filter.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Mpi\+Comm.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$Python.\+h$>$}\newline
 {\ttfamily \#include $<$numpy/arrayobject.\+h$>$}\newline
 {\ttfamily \#include $<$G\+L/gl.\+h$>$}\newline
@@ -127,6 +128,8 @@ class \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}
 \begin{DoxyCompactList}\small\item\em header defines four variable types, two macro and various functions for manipulating date and time. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{BrainHarmonics_8cc_a0146dd22f0f9d4398188379a2bcb8d32}{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}}~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}
 \item 
+\#define \mbox{\hyperlink{BrainHarmonics_8cc_ab6e6ee86736f9ebb56e74ae21bf3ff8a}{N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI}}~N\+P\+Y\+\_\+1\+\_\+7\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON
+\begin{DoxyCompactList}\small\item\em Python interpreter. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{BrainHarmonics_8cc_ad25fb949974c3ffe51bb4a887ea0aedc}{D\+E\+B\+U\+G\+\_\+\+P\+R\+O\+G\+R\+AM}}~true
 \begin{DoxyCompactList}\small\item\em Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{BrainHarmonics_8cc_a26769957ec1a2beaf223f33b66ee64ab}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET}}~-\/1
@@ -145,9 +148,9 @@ class \mbox{\hyperlink{classUpdateAllCommand}{Update\+All\+Command}}
 \mbox{\hyperlink{BrainHarmonics_8cc_aa072a4b02405a5306cadd819b01e3cee}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Rendering\+Open\+G\+L2)
 \item 
 \mbox{\hyperlink{BrainHarmonics_8cc_a0887c3f67ba4e219d084c8d050597655}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Rendering\+Free\+Type)
-\begin{DoxyCompactList}\small\item\em V\+TK was built with vtk\+Rendering\+Open\+G\+L2 //! (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em V\+TK was built with vtk\+Rendering\+Open\+G\+L2. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}} (vtk\+Interaction\+Style)
-\begin{DoxyCompactList}\small\item\em (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+\item 
 static vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a822a13cf5274e0650ca477e82b16605c}{Transform\+Back}} (vtk\+Smart\+Pointer$<$ vtk\+Points $>$ pt, vtk\+Smart\+Pointer$<$ vtk\+Poly\+Data $>$ pd)
 \item 
 static std\+::atomic\+\_\+bool \mbox{\hyperlink{BrainHarmonics_8cc_a750b53c1f2b32db320643808acfdd150}{global\+Shutdown}} (false)
@@ -160,9 +163,11 @@ std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hy
 \item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}{Compare\+Swap\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
 \item 
+bool \mbox{\hyperlink{BrainHarmonics_8cc_ae08ce1c75c629947fef54f198642b8c5}{Compare\+Swap\+Elementary\+Particle}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ \&origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+\item 
 int \mbox{\hyperlink{BrainHarmonics_8cc_ad9e8231d206ab9486cd74390d97e12fe}{Distance\+Between\+Nodes}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ $\ast$nodes\+Query, std\+::vector$<$ int $>$ $\ast$nodes\+\_\+list, int nodes\+Dimensions, double desired\+\_\+distance)
 \item 
-bool \mbox{\hyperlink{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}{compare\+\_\+swap\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
+bool \mbox{\hyperlink{BrainHarmonics_8cc_a626dcd4c8df2fa7a2d823c0c0dfcf306}{compare\+\_\+swap\+Synapse}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$ origin, int l\+\_\+origin\+\_\+\+Swap, int l\+\_\+origin\+\_\+\+Candidate1, int l\+\_\+origin\+\_\+\+Candidate2)
 \item 
 bool \mbox{\hyperlink{BrainHarmonics_8cc_a5611d454c4206879b20ed7a094a223b0}{analyse\+Stream}} (std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$ event\+\_\+time, \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$cognitive\+\_\+network, std\+::vector$<$ \mbox{\hyperlink{classNeuron}{Neuron}} $\ast$$>$ neuron\+\_\+list, std\+::vector$<$ \mbox{\hyperlink{classPoint}{Point}} $\ast$$>$ a\+Point, int start\+\_\+point, int end\+\_\+point, int step\+Point, int neural\+\_\+sequence)
 \item 
@@ -186,7 +191,7 @@ int \mbox{\hyperlink{BrainHarmonics_8cc_ac0f2228420376f4db7e1274f2b41667c}{main}
 \begin{DoxyCompactItemize}
 \item 
 vtk\+Smart\+Pointer$<$ vtk\+Render\+Window $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a6ce111e58fd1f4622e6a322cefd19b26}{render\+\_\+window}}
-\begin{DoxyCompactList}\small\item\em (\char`\"{}\+Type cannot be resolved\char`\"{}) \end{DoxyCompactList}\item 
+\item 
 vtk\+Smart\+Pointer$<$ vtk\+Render\+Window\+Interactor $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}{render\+\_\+window\+\_\+interactor}}
 \item 
 vtk\+Smart\+Pointer$<$ vtk\+Points $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a459726c3dbd394d957c5e0e8fad43f71}{define\+\_\+points}} = vtk\+Smart\+Pointer$<$vtk\+Points$>$\+::New()
@@ -262,7 +267,7 @@ int \mbox{\hyperlink{BrainHarmonics_8cc_afabdd4a073eb734b7610de6f1769c050}{dynam
 int \mbox{\hyperlink{BrainHarmonics_8cc_a295208b91ea89b7e23a14a2d431f4b33}{dynamic\+\_\+renderers\+\_\+counter}} = 0
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$ $>$ \mbox{\hyperlink{BrainHarmonics_8cc_a602d3f70549216866d35be56a17fa06e}{universe\+\_\+list}}
-\begin{DoxyCompactList}\small\item\em Python interpreter. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Add Dimensions for spatial identification. \end{DoxyCompactList}\item 
 struct caer\+\_\+dynapse\+\_\+info \mbox{\hyperlink{BrainHarmonics_8cc_af414029bac33d3b71ad5622dc83149d6}{dynapse\+\_\+info}}
 \begin{DoxyCompactList}\small\item\em G\+R\+A\+V\+I\+TY. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -344,7 +349,17 @@ Socket definition was firstly to establish a communication path between independ
 \subsubsection{\texorpdfstring{L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES}{LOWPOWERBIASES}}
 {\footnotesize\ttfamily \#define L\+O\+W\+P\+O\+W\+E\+R\+B\+I\+A\+S\+ES~\char`\"{}data/lowpowerbiases\+\_\+values.\+txt\char`\"{}}
 
-\mbox{\Hypertarget{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}\label{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}} 
+\mbox{\Hypertarget{BrainHarmonics_8cc_ab6e6ee86736f9ebb56e74ae21bf3ff8a}\label{BrainHarmonics_8cc_ab6e6ee86736f9ebb56e74ae21bf3ff8a}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI@{N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI}}
+\index{N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI@{N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI}{NPY\_NO\_DEPRECATED\_API}}
+{\footnotesize\ttfamily \#define N\+P\+Y\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+PI~N\+P\+Y\+\_\+1\+\_\+7\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+ON}
+
+
+
+Python interpreter. 
+
+Interim calls to Python (3.\+8) to use existing A\+P\+Is to Neuromorphic hardware and/or Brain simulators \mbox{\Hypertarget{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}\label{BrainHarmonics_8cc_a8cccdb3b239ce7cf58e9781af267072b}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}
 \index{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{S\+O\+C\+K\+E\+T\+\_\+\+A\+D\+D\+R\+E\+SS}{SOCKET\_ADDRESS}}
@@ -403,19 +418,27 @@ Let\textquotesingle{}s turn on blocking data-\/get mode to avoid wasting resourc
 
 chip id is D\+Y\+N\+A\+P\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+Y\+N\+A\+P\+S\+E\+\_\+\+U2
 
-close config \mbox{\Hypertarget{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}\label{BrainHarmonics_8cc_ac0bef70f5c895e9fe4271808d3f87a96}} 
+close config \mbox{\Hypertarget{BrainHarmonics_8cc_a626dcd4c8df2fa7a2d823c0c0dfcf306}\label{BrainHarmonics_8cc_a626dcd4c8df2fa7a2d823c0c0dfcf306}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}}
 \index{compare\+\_\+swap\+Synapse@{compare\+\_\+swap\+Synapse}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{compare\+\_\+swap\+Synapse()}{compare\_swapSynapse()}}
-{\footnotesize\ttfamily bool compare\+\_\+swap\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classSynapse}{Synapse}} $\ast$$>$}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool compare\+\_\+swap\+Synapse (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classCognitiveNetwork}{Cognitive\+Network}} $\ast$$>$}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
 
 Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 
 Return answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}\label{BrainHarmonics_8cc_a9b04070a3ed092a2de7fd1496edb94ec}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}}
 \index{Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
-\subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}}
+\subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classElementaryParticle}{Elementary\+Particle}} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
+
+Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
+
+Return, answering whether or not an exchange occurred \mbox{\Hypertarget{BrainHarmonics_8cc_ae08ce1c75c629947fef54f198642b8c5}\label{BrainHarmonics_8cc_ae08ce1c75c629947fef54f198642b8c5}} 
+\index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}}
+\index{Compare\+Swap\+Elementary\+Particle@{Compare\+Swap\+Elementary\+Particle}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
+\subsubsection{\texorpdfstring{Compare\+Swap\+Elementary\+Particle()}{CompareSwapElementaryParticle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Compare\+Swap\+Elementary\+Particle (\begin{DoxyParamCaption}\item[{std\+::chrono\+::time\+\_\+point$<$ \mbox{\hyperlink{universe_8h_a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80}{Clock}} $>$}]{event\+\_\+time,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classUniverse}{Universe}} $\ast$$>$ \&}]{origin,  }\item[{int}]{l\+\_\+origin\+\_\+\+Swap,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate1,  }\item[{int}]{l\+\_\+origin\+\_\+\+Candidate2 }\end{DoxyParamCaption})}
 
 Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.
 
@@ -586,6 +609,26 @@ End of initial hardware detection. Further communications errors will disable ha
 Define bit-\/setting variables for hardware
 
 Index arrays for instances of classes described above Early versions of this software maintained direct pointers to all objects. Now it is recoded to access through Get/\+Set class methods with the exception of the initial \mbox{\hyperlink{classUniverse}{Universe}} class. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -953,6 +996,26 @@ Fundamental spatial description ~\newline
 ~\newline
 ~\newline
 ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
  std\+::vector $<$\+Node$>$ Node; //! Node class for A$\ast$ search $\ast$/
 
 Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} $\ast$/
@@ -1006,6 +1069,26 @@ The initial parameters are to be read from an X\+ML Parameter file but for now a
 Internal display, Physical material and spatial references
 
 U1 = Internal Time, X, Y \& Z U2 = Physical U3 = Spatial X,Y,Z \& Time U4 = C\+PP U5 = Spikes U6 = Neurotransmitters U7 = Connectome U8 = Synapses U9 = \mbox{\hyperlink{classOrbital}{Orbital}} example ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -1307,6 +1390,26 @@ Setup the text and add it to the renderer Build display text ~\newline
 ~\newline
 ~\newline
 ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
  Create polydata mapper and actor
 
 Create a renderer
@@ -1326,6 +1429,26 @@ Set-\/up the simulation environment. Currently a skeletal environment.
 Synchronise events
 
 universe\+\_\+list is a vector of pointers to the \mbox{\hyperlink{classUniverse}{Universe}} objects. Typically use one \mbox{\hyperlink{classUniverse}{Universe}} per experiment. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -1444,6 +1567,10 @@ Create new Composite Force Particles -\/ Protons / Neutrons
 
 Cycle through Universes allocating n Composite Force Particles and updating total with reported back size.
 
+Rearrange vector of new Particles in an order closer to how they\textquotesingle{}re likely to interact.
+
+If Switch occurred retest previous Origin
+
 Make Elements -\/ Hydrogen, Helium, Lithium etc
 
 Make Monomers -\/ Carbohydrates/\+Sugars etc
@@ -1487,6 +1614,24 @@ point\+\_\+list.\+clear();
 Work out the charge difference between neighbouring particles to indicate how far apart they should be. \begin{DoxyVerb}   std::cout << "Charge: " << l_charge << std::endl;
 \end{DoxyVerb}
  This angle to later be dynamic to adjust for different particle types and considering placement of existing particles ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -1616,9 +1761,45 @@ To calculate the position on the surface of a sphere is\+: ( where radial\+Dista
 ~\newline
 ~\newline
 ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
  radians = angle\+In\+Degrees $\ast$ Math.\+PI / 180
 
 Calculate position on the surface of a sphere The sphere takes the previous particle as it\textquotesingle{}s Origin and the radius is related to the charge. The position on the surface will be affected by proximity to other particles. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -1738,6 +1919,24 @@ std::cout << std::endl;
 ~\newline
 ~\newline
 ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
  std\+::cout $<$$<$ current\+\_\+universe\+\_\+pointer-\/$>$Get\+Points(event\+\_\+time).size() $<$$<$ \char`\"{} point addresses created.\char`\"{} $<$$<$ std\+::endl;
 
 Add \mbox{\hyperlink{classOrbital}{Orbital}} objects to Cognitive Network which is derived from \mbox{\hyperlink{classUniverse}{Universe}}
@@ -1786,13 +1985,88 @@ std\+::cout $<$$<$ std\+::endl;
 
 Rearrange new Synapses in an order closer to how they\textquotesingle{}re likely to group with neurons.
 
+If Switch occurred retest previous Origin
+
 \mbox{\hyperlink{classOrbital}{Orbital}} function for interaction.
+
+50 synapses and 50 possible neurons
+
+std\+::cout $<$$<$ \char`\"{}\+Dimension Loop\+: \char`\"{} $<$$<$ nloop $<$$<$ \char`\"{} \char`\"{};
+
+Initialise first point to location zero. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ \mbox{\hyperlink{classSynapse}{Synapse}} points first
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+\mbox{\hyperlink{classNeuron}{Neuron}} points second
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
+
+Initialise to ne coordinate.
 
 End of C\+CP draw points
 
 Start of \mbox{\hyperlink{classSpike}{Spike}} draw points
 
-End of C\+CP draw points
+End of \mbox{\hyperlink{classSpike}{Spike}} draw points
 
 Start of \mbox{\hyperlink{classOrbital}{Orbital}} draw points
 
@@ -1837,9 +2111,23 @@ Prepared for multiscreen screen = screens\mbox{[} screen\mbox{]}-\/$>$run\+Scree
 ~\newline
 ~\newline
 ~\newline
+~\newline
+~\newline
  Retrieve data from Dynap-\/se (if any)
 
-Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated. define\+\_\+points.\+clear(); ~\newline
+Synthetic periodic stimulus
+
+sleep(2); std\+::cout $<$$<$ \char`\"{}\+Actual\+: \char`\"{} $<$$<$ time(0) $<$$<$ \char`\"{} Virtual\+: \char`\"{} $<$$<$ universe\+\_\+list\mbox{[}0\mbox{]}.the\+Time\+Now() $<$$<$ std\+::endl; ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated. define\+\_\+points.\+clear(); ~\newline
 ~\newline
 ~\newline
 ~\newline
@@ -1959,17 +2247,13 @@ The V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT is definitely required. With
 
 
 
-V\+TK was built with vtk\+Rendering\+Open\+G\+L2 //! (\char`\"{}\+Type cannot be resolved\char`\"{}) 
+V\+TK was built with vtk\+Rendering\+Open\+G\+L2. 
 
 \mbox{\Hypertarget{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}\label{BrainHarmonics_8cc_a80dd3a08d1ff10381e3ef1ca1231f4b5}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}}
 \index{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT@{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
 \subsubsection{\texorpdfstring{V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+I\+T()}{VTK\_MODULE\_INIT()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily V\+T\+K\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+N\+IT (\begin{DoxyParamCaption}\item[{vtk\+Interaction\+Style}]{ }\end{DoxyParamCaption})}
-
-
-
-(\char`\"{}\+Type cannot be resolved\char`\"{}) 
 
 
 
@@ -2134,10 +2418,6 @@ G\+R\+A\+V\+I\+TY.
 \subsubsection{\texorpdfstring{render\+\_\+window}{render\_window}}
 {\footnotesize\ttfamily vtk\+Smart\+Pointer$<$vtk\+Render\+Window$>$ render\+\_\+window}
 
-
-
-(\char`\"{}\+Type cannot be resolved\char`\"{}) 
-
 \mbox{\Hypertarget{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}\label{BrainHarmonics_8cc_a65b7a900454637a30df23b1044e07e07}} 
 \index{Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}!render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}}
 \index{render\+\_\+window\+\_\+interactor@{render\+\_\+window\+\_\+interactor}!Brain\+Harmonics.\+cc@{Brain\+Harmonics.\+cc}}
@@ -2224,10 +2504,8 @@ G\+R\+A\+V\+I\+TY.
 
 
 
-Python interpreter. 
-
-Interim calls to Python (3.\+8) to use existing A\+P\+Is to Neuromorphic hardware and/or Brain simulators
+Add Dimensions for spatial identification. 
 
 G\+L\+UT on OS X El Capitan -\/ poor headers
 
-Homegrown add-\/ins Real-\/time emulation at the sub-\/atomic level across 86 billion neurons of the human brain is not currently practical. Brain\+Harmonics abstracts and calculates small-\/scale reference models to guide the sub-\/set emulation rather than being the whole emulation. Further software enhancement will be to utilise G\+R\+O\+M\+A\+CS for supplemental modelling.\+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class Add Dimensions for spatial identification Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} Materials can be formed into multi\+Dimensional shapes Fundamental spatial description Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} 
+Homegrown add-\/ins Real-\/time emulation at the sub-\/atomic level across 86 billion neurons of the human brain is not currently practical. Brain\+Harmonics abstracts and calculates small-\/scale reference models to guide the sub-\/set emulation rather than being the whole emulation. Further software enhancement will be to utilise G\+R\+O\+M\+A\+CS for supplemental modelling.\+Top of the tree, begin with \mbox{\hyperlink{classUniverse}{Universe}} class\+Materials are a combination of \mbox{\hyperlink{classMatter}{Matter}} Materials can be formed into multi\+Dimensional shapes Fundamental spatial description Interim function describing time before inclusion as \mbox{\hyperlink{classDimension}{Dimension}} 

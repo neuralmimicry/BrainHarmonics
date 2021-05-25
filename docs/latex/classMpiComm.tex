@@ -1,0 +1,119 @@
+\hypertarget{classMpiComm}{}\section{Mpi\+Comm Class Reference}
+\label{classMpiComm}\index{Mpi\+Comm@{Mpi\+Comm}}
+
+
+{\ttfamily \#include $<$Mpi\+Comm.\+h$>$}
+
+Inheritance diagram for Mpi\+Comm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMpiComm}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMpiComm_a5f3b643e2c276746cc21094ab4ba6db8}{Mpi\+Comm}} ()
+\item 
+\mbox{\hyperlink{classMpiComm_afd95c093aeb063ee31de39a1a9104b5c}{$\sim$\+Mpi\+Comm}} ()
+\item 
+void \mbox{\hyperlink{classMpiComm_aa7615632d7ad06a163ea9d4fc641a85a}{Send\+\_\+\+Data}} (\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&)
+\item 
+\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} \& \mbox{\hyperlink{classMpiComm_a9ff0e7421ac75131c2ce4f0bba8c2839}{Recv\+\_\+\+Data}} ()
+\item 
+\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} $\ast$ \mbox{\hyperlink{classMpiComm_a696c567ded2b842b368b82dee950de5b}{Bcast\+\_\+\+Data}} (\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&, std\+::vector$<$ int $>$ranks)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+M\+P\+I\+\_\+\+Datatype \mbox{\hyperlink{classMpiComm_aa74193c044a832b15768b4173141695d}{register\+\_\+mpi\+\_\+type}} (\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&)
+\item 
+void \mbox{\hyperlink{classMpiComm_a1ed8ee3ad0b45b8120d1665f03d22566}{deregister\+\_\+mpi\+\_\+type}} (M\+P\+I\+\_\+\+Datatype type)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMpiComm_acb84b9a6b593438b99c633933547ca09}{world\+\_\+rank}}
+\item 
+int \mbox{\hyperlink{classMpiComm_a2e1fb05065d45c4af5cf2c3a56a7687f}{world\+\_\+size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMpiComm_a5f3b643e2c276746cc21094ab4ba6db8}\label{classMpiComm_a5f3b643e2c276746cc21094ab4ba6db8}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!Mpi\+Comm@{Mpi\+Comm}}
+\index{Mpi\+Comm@{Mpi\+Comm}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{Mpi\+Comm()}{MpiComm()}}
+{\footnotesize\ttfamily Mpi\+Comm\+::\+Mpi\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classMpiComm_afd95c093aeb063ee31de39a1a9104b5c}\label{classMpiComm_afd95c093aeb063ee31de39a1a9104b5c}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!````~Mpi\+Comm@{$\sim$\+Mpi\+Comm}}
+\index{````~Mpi\+Comm@{$\sim$\+Mpi\+Comm}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{$\sim$\+Mpi\+Comm()}{~MpiComm()}}
+{\footnotesize\ttfamily Mpi\+Comm\+::$\sim$\+Mpi\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMpiComm_a696c567ded2b842b368b82dee950de5b}\label{classMpiComm_a696c567ded2b842b368b82dee950de5b}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!Bcast\+\_\+\+Data@{Bcast\+\_\+\+Data}}
+\index{Bcast\+\_\+\+Data@{Bcast\+\_\+\+Data}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{Bcast\+\_\+\+Data()}{Bcast\_Data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}}$\ast$ Mpi\+Comm\+::\+Bcast\+\_\+\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&}]{,  }\item[{std\+::vector$<$ int $>$}]{ranks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classCommIntf_a9ed907991869cc7b6ebac4688d085147}{Comm\+Intf}}.
+
+\mbox{\Hypertarget{classMpiComm_a1ed8ee3ad0b45b8120d1665f03d22566}\label{classMpiComm_a1ed8ee3ad0b45b8120d1665f03d22566}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!deregister\+\_\+mpi\+\_\+type@{deregister\+\_\+mpi\+\_\+type}}
+\index{deregister\+\_\+mpi\+\_\+type@{deregister\+\_\+mpi\+\_\+type}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{deregister\+\_\+mpi\+\_\+type()}{deregister\_mpi\_type()}}
+{\footnotesize\ttfamily void Mpi\+Comm\+::deregister\+\_\+mpi\+\_\+type (\begin{DoxyParamCaption}\item[{M\+P\+I\+\_\+\+Datatype}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMpiComm_a9ff0e7421ac75131c2ce4f0bba8c2839}\label{classMpiComm_a9ff0e7421ac75131c2ce4f0bba8c2839}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!Recv\+\_\+\+Data@{Recv\+\_\+\+Data}}
+\index{Recv\+\_\+\+Data@{Recv\+\_\+\+Data}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{Recv\+\_\+\+Data()}{Recv\_Data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}}\& Mpi\+Comm\+::\+Recv\+\_\+\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classCommIntf_a910fdc340f2451051c492a7ee2803b84}{Comm\+Intf}}.
+
+\mbox{\Hypertarget{classMpiComm_aa74193c044a832b15768b4173141695d}\label{classMpiComm_aa74193c044a832b15768b4173141695d}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!register\+\_\+mpi\+\_\+type@{register\+\_\+mpi\+\_\+type}}
+\index{register\+\_\+mpi\+\_\+type@{register\+\_\+mpi\+\_\+type}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{register\+\_\+mpi\+\_\+type()}{register\_mpi\_type()}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Datatype Mpi\+Comm\+::register\+\_\+mpi\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMpiComm_aa7615632d7ad06a163ea9d4fc641a85a}\label{classMpiComm_aa7615632d7ad06a163ea9d4fc641a85a}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!Send\+\_\+\+Data@{Send\+\_\+\+Data}}
+\index{Send\+\_\+\+Data@{Send\+\_\+\+Data}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{Send\+\_\+\+Data()}{Send\_Data()}}
+{\footnotesize\ttfamily void Mpi\+Comm\+::\+Send\+\_\+\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classCommIntf_a86cc885716df0db3a644b2db2e2a72bb}{Comm\+Intf}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMpiComm_acb84b9a6b593438b99c633933547ca09}\label{classMpiComm_acb84b9a6b593438b99c633933547ca09}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!world\+\_\+rank@{world\+\_\+rank}}
+\index{world\+\_\+rank@{world\+\_\+rank}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{world\+\_\+rank}{world\_rank}}
+{\footnotesize\ttfamily int Mpi\+Comm\+::world\+\_\+rank\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMpiComm_a2e1fb05065d45c4af5cf2c3a56a7687f}\label{classMpiComm_a2e1fb05065d45c4af5cf2c3a56a7687f}} 
+\index{Mpi\+Comm@{Mpi\+Comm}!world\+\_\+size@{world\+\_\+size}}
+\index{world\+\_\+size@{world\+\_\+size}!Mpi\+Comm@{Mpi\+Comm}}
+\subsubsection{\texorpdfstring{world\+\_\+size}{world\_size}}
+{\footnotesize\ttfamily int Mpi\+Comm\+::world\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\mbox{\hyperlink{MpiComm_8h}{Mpi\+Comm.\+h}}\end{DoxyCompactItemize}

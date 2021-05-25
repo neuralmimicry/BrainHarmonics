@@ -1,7 +1,10 @@
 var searchData=
 [
   ['rad2deg',['RAD2DEG',['../universe_8h.html#ac5a945020d3528355cda82d383676736',1,'universe.h']]],
-  ['reconstruct_5fpath',['reconstruct_path',['../implementation_01orig_8cpp.html#af7ae297639a56db32da98fa801049faa',1,'reconstruct_path(Location start, Location goal, unordered_map&lt; Location, Location &gt; &amp;came_from):&#160;implementation orig.cpp'],['../search_8cpp.html#af7ae297639a56db32da98fa801049faa',1,'reconstruct_path(Location start, Location goal, unordered_map&lt; Location, Location &gt; &amp;came_from):&#160;search.cpp']]],
+  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
+  ['reconstruct_5fpath',['reconstruct_path',['../implementation_01orig_8cc.html#af7ae297639a56db32da98fa801049faa',1,'reconstruct_path(Location start, Location goal, unordered_map&lt; Location, Location &gt; &amp;came_from):&#160;implementation orig.cc'],['../search_8cpp.html#af7ae297639a56db32da98fa801049faa',1,'reconstruct_path(Location start, Location goal, unordered_map&lt; Location, Location &gt; &amp;came_from):&#160;search.cpp']]],
+  ['recv_5fdata',['Recv_Data',['../classCommIntf.html#a910fdc340f2451051c492a7ee2803b84',1,'CommIntf::Recv_Data()'],['../classMpiComm.html#a9ff0e7421ac75131c2ce4f0bba8c2839',1,'MpiComm::Recv_Data()']]],
+  ['register_5fmpi_5ftype',['register_mpi_type',['../classMpiComm.html#aa74193c044a832b15768b4173141695d',1,'MpiComm']]],
   ['releaseneurotransmitters',['ReleaseNeurotransmitters',['../classSynapticVesicle.html#a2509969e82fee789cc56fb0978f27662',1,'SynapticVesicle']]],
   ['removeaxon',['RemoveAxon',['../classAxonHillock.html#ae7c379ef3a70c8a43a0f105ccc94b54b',1,'AxonHillock']]],
   ['removeaxonbouton',['RemoveAxonBouton',['../classAxonBranch.html#a06753a2a61941a59d86510e51ba44b15',1,'AxonBranch']]],

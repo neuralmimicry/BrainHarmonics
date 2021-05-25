@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['a_5fstar_5fsearch',['a_star_search',['../implementation_01orig_8cpp.html#a9b1566d7e8a1017f075720664601abb0',1,'a_star_search(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far):&#160;implementation orig.cpp'],['../search_8cpp.html#a9b1566d7e8a1017f075720664601abb0',1,'a_star_search(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far):&#160;search.cpp']]],
+  ['a_5fstar_5fsearch',['a_star_search',['../implementation_01orig_8cc.html#a9b1566d7e8a1017f075720664601abb0',1,'a_star_search(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far):&#160;implementation orig.cc'],['../search_8cpp.html#a9b1566d7e8a1017f075720664601abb0',1,'a_star_search(Graph graph, typename Graph::Location start, typename Graph::Location goal, unordered_map&lt; typename Graph::Location, typename Graph::Location &gt; &amp;came_from, unordered_map&lt; typename Graph::Location, int &gt; &amp;cost_so_far):&#160;search.cpp']]],
   ['abstraction',['Abstraction',['../classAbstraction.html',1,'Abstraction'],['../classAbstraction.html#af4bf8b0e2bfd07d50ffc28b98f35b2ee',1,'Abstraction::Abstraction()']]],
   ['abstraction_2ecc',['abstraction.cc',['../abstraction_8cc.html',1,'']]],
   ['abstraction_2eh',['abstraction.h',['../abstraction_8h.html',1,'']]],
-  ['add_5frect',['add_rect',['../implementation_01orig_8cpp.html#accbfe5247dbef4f79673a2ff5dd05045',1,'add_rect(SquareGrid &amp;grid, int x1, int y1, int x2, int y2):&#160;implementation orig.cpp'],['../search_8cpp.html#accbfe5247dbef4f79673a2ff5dd05045',1,'add_rect(SquareGrid &amp;grid, int x1, int y1, int x2, int y2):&#160;search.cpp']]],
+  ['add_5frect',['add_rect',['../implementation_01orig_8cc.html#accbfe5247dbef4f79673a2ff5dd05045',1,'add_rect(SquareGrid &amp;grid, int x1, int y1, int x2, int y2):&#160;implementation orig.cc'],['../search_8cpp.html#accbfe5247dbef4f79673a2ff5dd05045',1,'add_rect(SquareGrid &amp;grid, int x1, int y1, int x2, int y2):&#160;search.cpp']]],
   ['addaxon',['AddAxon',['../classAxonHillock.html#a02bfbaea9ea7a160933f8500c8b41d6a',1,'AxonHillock']]],
   ['addaxonbouton',['AddAxonBouton',['../classAxonBranch.html#a88e6af84b45bb6f6f8900a6d4aec446c',1,'AxonBranch']]],
   ['addaxonboutons',['AddAxonBoutons',['../classAxonBranch.html#a788ca8cc7e6f60f07b9e19a8e3022b64',1,'AxonBranch']]],
@@ -71,6 +71,7 @@ var searchData=
   ['addtemporaladjustment',['AddTemporalAdjustment',['../classDimension.html#a278d8c3df7896eb01c55283482f8674a',1,'Dimension::AddTemporalAdjustment()'],['../classUniverse.html#a901e16db5e8af258c66af7ac75662fe0',1,'Universe::AddTemporalAdjustment()']]],
   ['addtoneuronlist',['AddToNeuronList',['../classOrbital.html#a44230cebc40357d186c442bfac2507a4',1,'Orbital']]],
   ['adjustcounters',['AdjustCounters',['../classDimension.html#a31e28c2777888449fad32843f6dd15ed',1,'Dimension::AdjustCounters()'],['../classUniverse.html#a15aa20218286fd11ecb9b792dfb63be3',1,'Universe::AdjustCounters()']]],
+  ['aer_5fmsg_5ft',['AER_Msg_t',['../structAER__Msg__t.html',1,'']]],
   ['analysestream',['analyseStream',['../BrainHarmonics_8cc.html#a5611d454c4206879b20ed7a094a223b0',1,'BrainHarmonics.cc']]],
   ['app_5fcopyright',['APP_COPYRIGHT',['../sniffex_8h.html#a9cf15f62d0ce89ef66e46d834242993e',1,'sniffex.h']]],
   ['app_5fdesc',['APP_DESC',['../sniffex_8h.html#a97559a7d956f0ee6aeae5f3886a2159e',1,'sniffex.h']]],

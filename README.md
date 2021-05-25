@@ -1,14 +1,14 @@
 # BrainHarmonics
-\#\# This file forms the basis of build requirements to get the software to compile.</br>
-\#\#\# Original code donated to the Open Source community by the NeuralMimicry Project, Paul Isaac's. 08-Apr-2020.</br>
-\#\#\# Ongoing code to be managed via Linaro</br>
-\#\# (c) Linaro 2020.</br>
-\#\# May be freely copied whilst maintaining reference to origin and copyright.</br>
-\#\#\#\# Based on an original idea: https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN</br>
+\#\# This file forms the basis of build requirements to get the software to compile.
+\#\#\# Original code created by the NeuralMimicry Project, Paul Isaac's.
+\#\#\# 
+\#\# (c) Paul Isaac's 2021.
+\#\# May be freely copied whilst maintaining reference to origin and copyright.
+\#\#\#\# Based on an original idea: https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN
 
-\#\#\# NOTE: This is pre-alpha raw software in active development. At least 50% of which</br>
-\#\#\# is still needed to be written down. It will break/is broken but you are welcome to</br>
-\#\#\# join in the journey of development. The goal IS aspirational!</br>
+\#\#\# NOTE: This is pre-alpha raw software in active development. At least 50% of which
+\#\#\# is still needed to be written down. It will break/is broken but you are welcome to
+\#\#\# join in the journey of development. The goal IS aspirational!
 
 BrainHarmonics is the first code designed to implement Autonomic Asynchronous
 Recursive Neuromorphic Network. It is an infrastructure designed to enable

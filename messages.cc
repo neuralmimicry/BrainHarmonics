@@ -8,24 +8,21 @@
 
 #include <cstdlib>
 #include <cstring>
-#include "messages.hpp"
+#include "messages.h"
 
 Messages::Messages() :
 m_messages  (NULL) {}
-
-Messages::~Messages()
-{
-    cleanup();
-}
 
 bool Messages::loadFromFile(const std::string& filename)
 {
 }
 
+/*
 const Messages::Info& Font::getInfo() const
 {
     return m_info;
 }
+*/
 
 void Messages::cleanup()
 {
@@ -50,4 +47,9 @@ void Messages::cleanup()
         // Reset members
     m_messages   = NULL;
     m_refCount  = NULL;
+}
+
+Messages::~Messages()
+{
+    cleanup();
 }

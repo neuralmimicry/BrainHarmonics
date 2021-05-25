@@ -100,9 +100,9 @@ extern "C" {
  * The VTK_MODULE_INIT is definitely required. Without it NULL is returned to ::New() type calls
  */
 #include <vtkAutoInit.h>
-VTK_MODULE_INIT(vtkRenderingOpenGL2); //! VTK was built with vtkRenderingOpenGL2 //! @suppress("Type cannot be resolved")
-VTK_MODULE_INIT(vtkRenderingFreeType); //! @suppress("Type cannot be resolved")
-VTK_MODULE_INIT(vtkInteractionStyle); //! @suppress("Type cannot be resolved")
+VTK_MODULE_INIT(vtkRenderingOpenGL2); //! VTK was built with vtkRenderingOpenGL2
+VTK_MODULE_INIT(vtkRenderingFreeType); //! 
+VTK_MODULE_INIT(vtkInteractionStyle); //! 
 #include <vtkVersion.h>
 #include <vtkActor.h>
 #include <vtkActor2D.h>
@@ -141,6 +141,16 @@ VTK_MODULE_INIT(vtkInteractionStyle); //! @suppress("Type cannot be resolved")
 
 #include <vtkTransform.h>
 #include <vtkTransformPolyDataFilter.h>
+
+/*
+Add inter-agent communication
+ */
+#include "MpiComm.h"
+
+
+/*
+Setup VTK environment
+ */
 
 vtkSmartPointer<vtkRenderWindow> render_window;
 vtkSmartPointer<vtkRenderWindowInteractor> render_window_interactor;

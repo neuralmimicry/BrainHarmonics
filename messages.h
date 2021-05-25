@@ -1,13 +1,13 @@
 //
-//  messages.hpp
+//  messages.h
 //  BrainHarmonics
 //
 //  Created by Paul Isaac's on 22/03/16.
 //  Copyright © 2016 Paul Isaac's. All rights reserved.
 //
 
-#ifndef messages_hpp
-#define messages_hpp
+#ifndef messages_h
+#define messages_h
 
 #include <stdio.h>
 #include <iostream>
@@ -47,4 +47,4 @@ private:
     double m_Energy; //!< Member variable "m_Energy"
 };
 
-#endif /* messages_hpp */
+#endif /* messages_h */

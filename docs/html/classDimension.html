@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6985e3d8738202530cb2cd428b5b884c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58009cd435ead4b7b2f395a11fda0ae8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDimension.html#a58009cd435ead4b7b2f395a11fda0ae8">GetOffset</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
 <tr class="separator:a58009cd435ead4b7b2f395a11fda0ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b4f856e62a70bb3dff96528315f3c9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDimension.html#ae0b4f856e62a70bb3dff96528315f3c9">GetTime</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
+<tr class="separator:ae0b4f856e62a70bb3dff96528315f3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39b7ff253ade59c5c2d807c511b4028"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDimension.html#ab39b7ff253ade59c5c2d807c511b4028">TheTimeNow</a> ()</td></tr>
 <tr class="separator:ab39b7ff253ade59c5c2d807c511b4028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c6a1a1e09c40b5860dc11a83384d9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDimension.html#a75c6a1a1e09c40b5860dc11a83384d9f">SetCounter</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, unsigned int val)</td></tr>
@@ -237,6 +239,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1869fc7bf43827378bab5a701f7f917a inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79a380dee684c6dc304b571f4d28645 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUniverse.html">Universe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#ab79a380dee684c6dc304b571f4d28645">GetDimension</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, int selector)</td></tr>
 <tr class="separator:ab79a380dee684c6dc304b571f4d28645 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b95c06aadea69cec3b51046cd9e0f8 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDimension.html">Dimension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#a79b95c06aadea69cec3b51046cd9e0f8">GetTimeDimension</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
+<tr class="separator:a79b95c06aadea69cec3b51046cd9e0f8 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857cf7f208cd11c80736e82fa523feb5 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#a857cf7f208cd11c80736e82fa523feb5">AddElementaryParticles</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, int quantity)</td></tr>
 <tr class="separator:a857cf7f208cd11c80736e82fa523feb5 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c84e0576de50aa4fa46655832ce5e4 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUniverse.html">Universe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#ab9c84e0576de50aa4fa46655832ce5e4">AddElementaryParticle</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
@@ -1333,6 +1337,32 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classUniverse.html#af0f4b81950061e63c2855eb40957a5b1">Universe</a>.</p>
+
+</div>
+</div>
+<a id="ae0b4f856e62a70bb3dff96528315f3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b4f856e62a70bb3dff96528315f3c9">&#9670;&nbsp;</a></span>GetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Dimension::GetTime </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt;&#160;</td>
+          <td class="paramname"><em>event_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2854,8 +2884,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/<a class="el" href="dimension_8h_source.html">dimension.h</a></li>
-<li>/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/<a class="el" href="dimension_8cc.html">dimension.cc</a></li>
+<li>/home/pbisaacs/Developer/BrainHarmonics/<a class="el" href="dimension_8h_source.html">dimension.h</a></li>
+<li>/home/pbisaacs/Developer/BrainHarmonics/<a class="el" href="dimension_8cc.html">dimension.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

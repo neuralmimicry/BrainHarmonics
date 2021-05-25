@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BrainHarmonics: /home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/BrainHarmonics.cc File Reference</title>
+<title>BrainHarmonics: /home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/BrainHarmonics.cc File Reference</div>  </div>
+<div class="title">/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;sys/time.h&gt;</code><br />
@@ -141,6 +141,7 @@ $(function() {
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;vtkTransform.h&gt;</code><br />
 <code>#include &lt;vtkTransformPolyDataFilter.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="MpiComm_8h_source.html">MpiComm.h</a>&quot;</code><br />
 <code>#include &lt;Python.h&gt;</code><br />
 <code>#include &lt;numpy/arrayobject.h&gt;</code><br />
 <code>#include &lt;GL/gl.h&gt;</code><br />
@@ -199,6 +200,9 @@ Macros</h2></td></tr>
 <tr class="separator:a5abc2fe5dd32fab087839bf8b005e6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0146dd22f0f9d4398188379a2bcb8d32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a0146dd22f0f9d4398188379a2bcb8d32">LOWPOWERBIASES</a>&#160;&#160;&#160;&quot;data/lowpowerbiases_values.txt&quot;</td></tr>
 <tr class="separator:a0146dd22f0f9d4398188379a2bcb8d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e6ee86736f9ebb56e74ae21bf3ff8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ab6e6ee86736f9ebb56e74ae21bf3ff8a">NPY_NO_DEPRECATED_API</a>&#160;&#160;&#160;NPY_1_7_API_VERSION</td></tr>
+<tr class="memdesc:ab6e6ee86736f9ebb56e74ae21bf3ff8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Python interpreter.  <a href="#ab6e6ee86736f9ebb56e74ae21bf3ff8a">More...</a><br /></td></tr>
+<tr class="separator:ab6e6ee86736f9ebb56e74ae21bf3ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25fb949974c3ffe51bb4a887ea0aedc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ad25fb949974c3ffe51bb4a887ea0aedc">DEBUG_PROGRAM</a>&#160;&#160;&#160;true</td></tr>
 <tr class="memdesc:ad25fb949974c3ffe51bb4a887ea0aedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> class.  <a href="#ad25fb949974c3ffe51bb4a887ea0aedc">More...</a><br /></td></tr>
 <tr class="separator:ad25fb949974c3ffe51bb4a887ea0aedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,10 +227,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa072a4b02405a5306cadd819b01e3cee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#aa072a4b02405a5306cadd819b01e3cee">VTK_MODULE_INIT</a> (vtkRenderingOpenGL2)</td></tr>
 <tr class="separator:aa072a4b02405a5306cadd819b01e3cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0887c3f67ba4e219d084c8d050597655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a0887c3f67ba4e219d084c8d050597655">VTK_MODULE_INIT</a> (vtkRenderingFreeType)</td></tr>
-<tr class="memdesc:a0887c3f67ba4e219d084c8d050597655"><td class="mdescLeft">&#160;</td><td class="mdescRight">VTK was built with vtkRenderingOpenGL2 //! ("Type cannot be resolved")  <a href="#a0887c3f67ba4e219d084c8d050597655">More...</a><br /></td></tr>
+<tr class="memdesc:a0887c3f67ba4e219d084c8d050597655"><td class="mdescLeft">&#160;</td><td class="mdescRight">VTK was built with vtkRenderingOpenGL2.  <a href="#a0887c3f67ba4e219d084c8d050597655">More...</a><br /></td></tr>
 <tr class="separator:a0887c3f67ba4e219d084c8d050597655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80dd3a08d1ff10381e3ef1ca1231f4b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a80dd3a08d1ff10381e3ef1ca1231f4b5">VTK_MODULE_INIT</a> (vtkInteractionStyle)</td></tr>
-<tr class="memdesc:a80dd3a08d1ff10381e3ef1ca1231f4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">("Type cannot be resolved")  <a href="#a80dd3a08d1ff10381e3ef1ca1231f4b5">More...</a><br /></td></tr>
 <tr class="separator:a80dd3a08d1ff10381e3ef1ca1231f4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a822a13cf5274e0650ca477e82b16605c"><td class="memItemLeft" align="right" valign="top">static vtkSmartPointer&lt; vtkPolyData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a822a13cf5274e0650ca477e82b16605c">TransformBack</a> (vtkSmartPointer&lt; vtkPoints &gt; pt, vtkSmartPointer&lt; vtkPolyData &gt; pd)</td></tr>
 <tr class="separator:a822a13cf5274e0650ca477e82b16605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,10 +244,12 @@ Functions</h2></td></tr>
 <tr class="separator:a5b7bc303552f00bc26a7b5bf962f3376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b04070a3ed092a2de7fd1496edb94ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a9b04070a3ed092a2de7fd1496edb94ec">CompareSwapElementaryParticle</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classElementaryParticle.html">ElementaryParticle</a> *&gt; &amp;origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
 <tr class="separator:a9b04070a3ed092a2de7fd1496edb94ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08ce1c75c629947fef54f198642b8c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ae08ce1c75c629947fef54f198642b8c5">CompareSwapElementaryParticle</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> *&gt; &amp;origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
+<tr class="separator:ae08ce1c75c629947fef54f198642b8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e8231d206ab9486cd74390d97e12fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ad9e8231d206ab9486cd74390d97e12fe">DistanceBetweenNodes</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classPoint.html">Point</a> &gt; *nodesQuery, std::vector&lt; int &gt; *nodes_list, int nodesDimensions, double desired_distance)</td></tr>
 <tr class="separator:ad9e8231d206ab9486cd74390d97e12fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bef70f5c895e9fe4271808d3f87a96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ac0bef70f5c895e9fe4271808d3f87a96">compare_swapSynapse</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classSynapse.html">Synapse</a> *&gt; origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
-<tr class="separator:ac0bef70f5c895e9fe4271808d3f87a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626dcd4c8df2fa7a2d823c0c0dfcf306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a626dcd4c8df2fa7a2d823c0c0dfcf306">compare_swapSynapse</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, std::vector&lt; <a class="el" href="classCognitiveNetwork.html">CognitiveNetwork</a> *&gt; origin, int l_origin_Swap, int l_origin_Candidate1, int l_origin_Candidate2)</td></tr>
+<tr class="separator:a626dcd4c8df2fa7a2d823c0c0dfcf306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5611d454c4206879b20ed7a094a223b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a5611d454c4206879b20ed7a094a223b0">analyseStream</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, <a class="el" href="classCognitiveNetwork.html">CognitiveNetwork</a> *cognitive_network, std::vector&lt; <a class="el" href="classNeuron.html">Neuron</a> *&gt; neuron_list, std::vector&lt; <a class="el" href="classPoint.html">Point</a> *&gt; aPoint, int start_point, int end_point, int stepPoint, int neural_sequence)</td></tr>
 <tr class="separator:a5611d454c4206879b20ed7a094a223b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9572b51d93c224b7db42a9e06854242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#ac9572b51d93c224b7db42a9e06854242">ClearDimensionSelection</a> (std::vector&lt; int &gt; *dimension_list)</td></tr>
@@ -269,7 +274,6 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a6ce111e58fd1f4622e6a322cefd19b26"><td class="memItemLeft" align="right" valign="top">vtkSmartPointer&lt; vtkRenderWindow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a6ce111e58fd1f4622e6a322cefd19b26">render_window</a></td></tr>
-<tr class="memdesc:a6ce111e58fd1f4622e6a322cefd19b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">("Type cannot be resolved")  <a href="#a6ce111e58fd1f4622e6a322cefd19b26">More...</a><br /></td></tr>
 <tr class="separator:a6ce111e58fd1f4622e6a322cefd19b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b7a900454637a30df23b1044e07e07"><td class="memItemLeft" align="right" valign="top">vtkSmartPointer&lt; vtkRenderWindowInteractor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a65b7a900454637a30df23b1044e07e07">render_window_interactor</a></td></tr>
 <tr class="separator:a65b7a900454637a30df23b1044e07e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,7 +350,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a295208b91ea89b7e23a14a2d431f4b33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a295208b91ea89b7e23a14a2d431f4b33">dynamic_renderers_counter</a> = 0</td></tr>
 <tr class="separator:a295208b91ea89b7e23a14a2d431f4b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602d3f70549216866d35be56a17fa06e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#a602d3f70549216866d35be56a17fa06e">universe_list</a></td></tr>
-<tr class="memdesc:a602d3f70549216866d35be56a17fa06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Python interpreter.  <a href="#a602d3f70549216866d35be56a17fa06e">More...</a><br /></td></tr>
+<tr class="memdesc:a602d3f70549216866d35be56a17fa06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Dimensions for spatial identification.  <a href="#a602d3f70549216866d35be56a17fa06e">More...</a><br /></td></tr>
 <tr class="separator:a602d3f70549216866d35be56a17fa06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af414029bac33d3b71ad5622dc83149d6"><td class="memItemLeft" align="right" valign="top">struct caer_dynapse_info&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BrainHarmonics_8cc.html#af414029bac33d3b71ad5622dc83149d6">dynapse_info</a></td></tr>
 <tr class="memdesc:af414029bac33d3b71ad5622dc83149d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">GRAVITY.  <a href="#af414029bac33d3b71ad5622dc83149d6">More...</a><br /></td></tr>
@@ -449,6 +453,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6e6ee86736f9ebb56e74ae21bf3ff8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e6ee86736f9ebb56e74ae21bf3ff8a">&#9670;&nbsp;</a></span>NPY_NO_DEPRECATED_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NPY_NO_DEPRECATED_API&#160;&#160;&#160;NPY_1_7_API_VERSION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Python interpreter. </p>
+<p>Interim calls to Python (3.8) to use existing APIs to Neuromorphic hardware and/or Brain simulators </p>
 
 </div>
 </div>
@@ -608,8 +629,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0bef70f5c895e9fe4271808d3f87a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0bef70f5c895e9fe4271808d3f87a96">&#9670;&nbsp;</a></span>compare_swapSynapse()</h2>
+<a id="a626dcd4c8df2fa7a2d823c0c0dfcf306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626dcd4c8df2fa7a2d823c0c0dfcf306">&#9670;&nbsp;</a></span>compare_swapSynapse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -623,7 +644,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classSynapse.html">Synapse</a> *&gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classCognitiveNetwork.html">CognitiveNetwork</a> *&gt;&#160;</td>
           <td class="paramname"><em>origin</em>, </td>
         </tr>
         <tr>
@@ -657,7 +678,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a9b04070a3ed092a2de7fd1496edb94ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b04070a3ed092a2de7fd1496edb94ec">&#9670;&nbsp;</a></span>CompareSwapElementaryParticle()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b04070a3ed092a2de7fd1496edb94ec">&#9670;&nbsp;</a></span>CompareSwapElementaryParticle() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,6 +693,54 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classElementaryParticle.html">ElementaryParticle</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l_origin_Swap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l_origin_Candidate1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l_origin_Candidate2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test which Candidate is closest to being 3 away in the charge values and move that Candidate next to the Origin.</p>
+<p>Return, answering whether or not an exchange occurred </p>
+
+</div>
+</div>
+<a id="ae08ce1c75c629947fef54f198642b8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08ce1c75c629947fef54f198642b8c5">&#9670;&nbsp;</a></span>CompareSwapElementaryParticle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CompareSwapElementaryParticle </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt;&#160;</td>
+          <td class="paramname"><em>event_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>origin</em>, </td>
         </tr>
         <tr>
@@ -1172,6 +1241,26 @@ return 0;
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
  Add Dimensions for spatial identification */</p>
 <p>Follow with the creation of quarks/leptons */</p>
 <p>Define Force interaction between fundamentals */</p>
@@ -1186,6 +1275,26 @@ return 0;
 <p>Reducing high Dimensions to lower */</p>
 <p>Further reduction */</p>
 <p>Fundamental spatial description <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -1512,6 +1621,26 @@ return 0;
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
  Initial number of starting components for each subproject</p>
 <p>The Physics problem. Periodic checking of elemental forces helps to align the emulated environment beyond a simple simulation.</p>
 <p>Attempt to stimulate particle bonding by moving attracted objects nearer to each other.</p>
@@ -1542,6 +1671,26 @@ return 0;
 <p>Assign Colour</p>
 <p>Create PolyData</p>
 <p>Setup the text and add it to the renderer Build display text <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -1754,6 +1903,26 @@ return 0;
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
  Ensure vector is empty</p>
 <p>Pass the universe_list address to the create function to keep all Universes within the same vector</p>
 <p>Cycle through Universes allocating n Dimensions and updating total with reported back size.</p>
@@ -1765,6 +1934,8 @@ return 0;
 <p>Try to ensure we get variations of forces. Not all one type by changing parameters.</p>
 <p>Create new Composite Force Particles - Protons / Neutrons</p>
 <p>Cycle through Universes allocating n Composite Force Particles and updating total with reported back size.</p>
+<p>Rearrange vector of new Particles in an order closer to how they're likely to interact.</p>
+<p>If Switch occurred retest previous Origin</p>
 <p>Make Elements - Hydrogen, Helium, Lithium etc</p>
 <p>Make Monomers - Carbohydrates/Sugars etc</p>
 <p>Cycle through Universes allocating n Cognitive Networks and updating total with reported back size.</p>
@@ -1787,6 +1958,24 @@ return 0;
 <p>point_list.clear();</p>
 <p>Work out the charge difference between neighbouring particles to indicate how far apart they should be. </p><pre class="fragment">   std::cout &lt;&lt; "Charge: " &lt;&lt; l_charge &lt;&lt; std::endl;
 </pre><p> This angle to later be dynamic to adjust for different particle types and considering placement of existing particles <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -1913,8 +2102,44 @@ return 0;
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
  radians = angleInDegrees * Math.PI / 180</p>
 <p>Calculate position on the surface of a sphere The sphere takes the previous particle as it's Origin and the radius is related to the charge. The position on the surface will be affected by proximity to other particles. <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -2033,6 +2258,24 @@ std::cout &lt;&lt; std::endl;
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
  std::cout &lt;&lt; current_universe_pointer-&gt;GetPoints(event_time).size() &lt;&lt; " point addresses created." &lt;&lt; std::endl;</p>
 <p>Add <a class="el" href="classOrbital.html">Orbital</a> objects to Cognitive Network which is derived from <a class="el" href="classUniverse.html">Universe</a></p>
 <p>Read number of synapses and initial number of neurons</p>
@@ -2057,10 +2300,70 @@ std::cout &lt;&lt; std::endl;
 <p>current_synapse_pointer-&gt;AddDistance(&amp; neuron[nloop], std::stod(l_inputData[(xloop * 50) + nloop],&amp;sz));</p>
 <p>std::cout &lt;&lt; std::endl;</p>
 <p>Rearrange new Synapses in an order closer to how they're likely to group with neurons.</p>
+<p>If Switch occurred retest previous Origin</p>
 <p><a class="el" href="classOrbital.html">Orbital</a> function for interaction.</p>
+<p>50 synapses and 50 possible neurons</p>
+<p>std::cout &lt;&lt; "Dimension Loop: " &lt;&lt; nloop &lt;&lt; " ";</p>
+<p>Initialise first point to location zero. <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+ <a class="el" href="classSynapse.html">Synapse</a> points first</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p><a class="el" href="classNeuron.html">Neuron</a> points second</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
+<p>Initialise to ne coordinate.</p>
 <p>End of CCP draw points</p>
 <p>Start of <a class="el" href="classSpike.html">Spike</a> draw points</p>
-<p>End of CCP draw points</p>
+<p>End of <a class="el" href="classSpike.html">Spike</a> draw points</p>
 <p>Start of <a class="el" href="classOrbital.html">Orbital</a> draw points</p>
 <p>End of <a class="el" href="classOrbital.html">Orbital</a> Points</p>
 <p>Configure Dynap-se, if attached to reflect simulation configuration</p>
@@ -2088,8 +2391,21 @@ std::cout &lt;&lt; std::endl;
 <br />
 <br />
 <br />
+<br />
+<br />
  Retrieve data from Dynap-se (if any)</p>
-<p>Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated. define_points.clear(); <br />
+<p>Synthetic periodic stimulus</p>
+<p>sleep(2); std::cout &lt;&lt; "Actual: " &lt;&lt; time(0) &lt;&lt; " Virtual: " &lt;&lt; universe_list[0].theTimeNow() &lt;&lt; std::endl; <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+ Now to put all the calculations into something visual. Drawing to the screen. Scaled and orientated. define_points.clear(); <br />
 <br />
 <br />
 <br />
@@ -2345,7 +2661,7 @@ std::cout &lt;&lt; std::endl;
       </table>
 </div><div class="memdoc">
 
-<p>VTK was built with vtkRenderingOpenGL2 //! ("Type cannot be resolved") </p>
+<p>VTK was built with vtkRenderingOpenGL2. </p>
 
 </div>
 </div>
@@ -2364,8 +2680,6 @@ std::cout &lt;&lt; std::endl;
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>("Type cannot be resolved") </p>
 
 </div>
 </div>
@@ -2734,8 +3048,6 @@ std::cout &lt;&lt; std::endl;
       </table>
 </div><div class="memdoc">
 
-<p>("Type cannot be resolved") </p>
-
 </div>
 </div>
 <a id="a65b7a900454637a30df23b1044e07e07"></a>
@@ -2932,10 +3244,9 @@ std::cout &lt;&lt; std::endl;
       </table>
 </div><div class="memdoc">
 
-<p>Python interpreter. </p>
-<p>Interim calls to Python (3.8) to use existing APIs to Neuromorphic hardware and/or Brain simulators</p>
+<p>Add Dimensions for spatial identification. </p>
 <p>GLUT on OS X El Capitan - poor headers</p>
-<p>Homegrown add-ins Real-time emulation at the sub-atomic level across 86 billion neurons of the human brain is not currently practical. BrainHarmonics abstracts and calculates small-scale reference models to guide the sub-set emulation rather than being the whole emulation. Further software enhancement will be to utilise GROMACS for supplemental modelling.Top of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> class Add Dimensions for spatial identification Materials are a combination of <a class="el" href="classMatter.html">Matter</a> Materials can be formed into multiDimensional shapes Fundamental spatial description Interim function describing time before inclusion as <a class="el" href="classDimension.html">Dimension</a> </p>
+<p>Homegrown add-ins Real-time emulation at the sub-atomic level across 86 billion neurons of the human brain is not currently practical. BrainHarmonics abstracts and calculates small-scale reference models to guide the sub-set emulation rather than being the whole emulation. Further software enhancement will be to utilise GROMACS for supplemental modelling.Top of the tree, begin with <a class="el" href="classUniverse.html">Universe</a> classMaterials are a combination of <a class="el" href="classMatter.html">Matter</a> Materials can be formed into multiDimensional shapes Fundamental spatial description Interim function describing time before inclusion as <a class="el" href="classDimension.html">Dimension</a> </p>
 
 </div>
 </div>

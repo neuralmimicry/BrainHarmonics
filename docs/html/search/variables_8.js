@@ -12,5 +12,6 @@ var searchData=
   ['lineliney1',['lineLineY1',['../classLine.html#a46e251350694d1bdf8425d9f9a24f896',1,'Line']]],
   ['lineliney2',['lineLineY2',['../classLine.html#aa0f76375751fb3a75b9593161ecfc0e2',1,'Line']]],
   ['lineslope',['lineSlope',['../classLine.html#afdf693a798435ec16076396f3631853e',1,'Line']]],
-  ['lineyint',['lineYint',['../classLine.html#a35197c3051202d4c4f0bb7d122780368',1,'Line']]]
+  ['lineyint',['lineYint',['../classLine.html#a35197c3051202d4c4f0bb7d122780368',1,'Line']]],
+  ['localunitaddr',['LocalUnitAddr',['../structAER__Msg__t.html#accdeb4a04e38cd3482a833a614578361',1,'AER_Msg_t']]]
 ];

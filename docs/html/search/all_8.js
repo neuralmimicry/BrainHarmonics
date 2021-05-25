@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['implementation_20orig_2ecpp',['implementation orig.cpp',['../implementation_01orig_8cpp.html',1,'']]],
+  ['implementation_20orig_2ecc',['implementation orig.cc',['../implementation_01orig_8cc.html',1,'']]],
   ['in_5fbounds',['in_bounds',['../structSquareGrid.html#a84bbaa9dad618228a2d6d3196254b86b',1,'SquareGrid::in_bounds(Location id)'],['../structSquareGrid.html#a84bbaa9dad618228a2d6d3196254b86b',1,'SquareGrid::in_bounds(Location id)']]],
   ['incoffset',['IncOffset',['../classDimension.html#aaf18cc220562b30f9e7aee92f16cc08e',1,'Dimension']]],
   ['incscale',['IncScale',['../classDimension.html#aa323eaa2c592e498d48e0739009ec313',1,'Dimension']]],
@@ -18,6 +18,7 @@ var searchData=
   ['interneuronspacedemand',['interneuronspaceDemand',['../classInterneuronSpace.html#a6b6f5ac9671c40ea57d39824e76a7ccd',1,'InterneuronSpace']]],
   ['interneuronspacegravitationalattraction',['interneuronspaceGravitationalAttraction',['../structInterneuronSpace_1_1NearbyNeuron.html#a5cb224a1735249e1e50b934bdfd2ff3f',1,'InterneuronSpace::NearbyNeuron']]],
   ['interval',['interval',['../structDimension_1_1CounterAdjustment.html#a8962b1845d310b35b374988034c3866c',1,'Dimension::CounterAdjustment']]],
+  ['invalid',['INVALID',['../CommIntf_8h.html#a4a41663c0a0289ab5685ccdca171ebc2aef2863a469df3ea6871d640e3669a2f2',1,'CommIntf.h']]],
   ['invalid_5fsocket',['INVALID_SOCKET',['../BrainHarmonics_8cc.html#a26769957ec1a2beaf223f33b66ee64ab',1,'BrainHarmonics.cc']]],
   ['ip_5fdf',['IP_DF',['../sniffex_8h.html#ae2473f4a88d141d5298f92a4335b714a',1,'sniffex.h']]],
   ['ip_5fdst',['ip_dst',['../structSniffex_1_1sniff__ip.html#abf8550a1a90663dc9f529f50ecee72ee',1,'Sniffex::sniff_ip']]],

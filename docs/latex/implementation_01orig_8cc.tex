@@ -1,0 +1,136 @@
+\hypertarget{implementation_01orig_8cc}{}\section{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/implementation orig.\+cc File Reference}
+\label{implementation_01orig_8cc}\index{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/implementation orig.\+cc@{/home/pbisaacs/\+Developer/\+Brain\+Harmonics/implementation orig.\+cc}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGraph}{Graph$<$ L $>$}}
+\item 
+struct \mbox{\hyperlink{structstd_1_1hash_3_01tuple_3_01int_00_01int_01_4_01_4}{std\+::hash$<$ tuple$<$ int, int $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structSquareGrid}{Square\+Grid}}
+\item 
+struct \mbox{\hyperlink{structGridWithWeights}{Grid\+With\+Weights}}
+\item 
+struct \mbox{\hyperlink{structPriorityQueue}{Priority\+Queue$<$ T, Number $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacestd}{std}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \& \mbox{\hyperlink{implementation_01orig_8cc_a14bbb7e7d9701d4b4f1839f5f7608fa5}{operator$<$$<$}} (std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \&out, tuple$<$ int, int $>$ loc)
+\item 
+{\footnotesize template$<$class Graph $>$ }\\void \mbox{\hyperlink{implementation_01orig_8cc_a788438e9f72bf881df6ae25ba857a9f6}{draw\+\_\+grid}} (const \mbox{\hyperlink{structGraph}{Graph}} \&graph, int field\+\_\+width, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ $\ast$distances=nullptr, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ $\ast$point\+\_\+to=nullptr, vector$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ $\ast$path=nullptr)
+\item 
+void \mbox{\hyperlink{implementation_01orig_8cc_accbfe5247dbef4f79673a2ff5dd05045}{add\+\_\+rect}} (\mbox{\hyperlink{structSquareGrid}{Square\+Grid}} \&grid, int x1, int y1, int x2, int y2)
+\item 
+\mbox{\hyperlink{structSquareGrid}{Square\+Grid}} \mbox{\hyperlink{implementation_01orig_8cc_a3e35f7b5b37cf00a0f0a2c6221c3f05e}{make\+\_\+diagram1}} ()
+\item 
+\mbox{\hyperlink{structGridWithWeights}{Grid\+With\+Weights}} \mbox{\hyperlink{implementation_01orig_8cc_a78b3dfdcdf5ef633f554ecca192e5328}{make\+\_\+diagram4}} ()
+\item 
+{\footnotesize template$<$typename Graph $>$ }\\void \mbox{\hyperlink{implementation_01orig_8cc_ae5dda031f20466b1a419ca983a3dc474}{dijkstra\+\_\+search}} (\mbox{\hyperlink{structGraph}{Graph}} graph, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} start, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} goal, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ \&came\+\_\+from, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ \&cost\+\_\+so\+\_\+far)
+\item 
+{\footnotesize template$<$typename Location $>$ }\\vector$<$ Location $>$ \mbox{\hyperlink{implementation_01orig_8cc_af7ae297639a56db32da98fa801049faa}{reconstruct\+\_\+path}} (Location start, Location goal, unordered\+\_\+map$<$ Location, Location $>$ \&came\+\_\+from)
+\item 
+int \mbox{\hyperlink{implementation_01orig_8cc_a394ba0076283a1523c29842e95aa897d}{heuristic}} (\mbox{\hyperlink{structSquareGrid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}} a, \mbox{\hyperlink{structSquareGrid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}} b)
+\item 
+{\footnotesize template$<$typename Graph $>$ }\\void \mbox{\hyperlink{implementation_01orig_8cc_a9b1566d7e8a1017f075720664601abb0}{a\+\_\+star\+\_\+search}} (\mbox{\hyperlink{structGraph}{Graph}} graph, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} start, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} goal, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ \&came\+\_\+from, unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ \&cost\+\_\+so\+\_\+far)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structGraph}{Graph}}$<$ char $>$ \mbox{\hyperlink{implementation_01orig_8cc_a6bf00a88b62b9e264eeaac21edbd181b}{example\+\_\+graph}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{implementation_01orig_8cc_a9b1566d7e8a1017f075720664601abb0}\label{implementation_01orig_8cc_a9b1566d7e8a1017f075720664601abb0}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!a\+\_\+star\+\_\+search@{a\+\_\+star\+\_\+search}}
+\index{a\+\_\+star\+\_\+search@{a\+\_\+star\+\_\+search}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{a\+\_\+star\+\_\+search()}{a\_star\_search()}}
+{\footnotesize\ttfamily template$<$typename Graph $>$ \\
+void a\+\_\+star\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}}}]{graph,  }\item[{typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}}]{start,  }\item[{typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}}]{goal,  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ \&}]{came\+\_\+from,  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ \&}]{cost\+\_\+so\+\_\+far }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_accbfe5247dbef4f79673a2ff5dd05045}\label{implementation_01orig_8cc_accbfe5247dbef4f79673a2ff5dd05045}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!add\+\_\+rect@{add\+\_\+rect}}
+\index{add\+\_\+rect@{add\+\_\+rect}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{add\+\_\+rect()}{add\_rect()}}
+{\footnotesize\ttfamily void add\+\_\+rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSquareGrid}{Square\+Grid}} \&}]{grid,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_ae5dda031f20466b1a419ca983a3dc474}\label{implementation_01orig_8cc_ae5dda031f20466b1a419ca983a3dc474}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!dijkstra\+\_\+search@{dijkstra\+\_\+search}}
+\index{dijkstra\+\_\+search@{dijkstra\+\_\+search}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{dijkstra\+\_\+search()}{dijkstra\_search()}}
+{\footnotesize\ttfamily template$<$typename Graph $>$ \\
+void dijkstra\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}}}]{graph,  }\item[{typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}}]{start,  }\item[{typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}}]{goal,  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ \&}]{came\+\_\+from,  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ \&}]{cost\+\_\+so\+\_\+far }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_a788438e9f72bf881df6ae25ba857a9f6}\label{implementation_01orig_8cc_a788438e9f72bf881df6ae25ba857a9f6}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!draw\+\_\+grid@{draw\+\_\+grid}}
+\index{draw\+\_\+grid@{draw\+\_\+grid}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{draw\+\_\+grid()}{draw\_grid()}}
+{\footnotesize\ttfamily template$<$class Graph $>$ \\
+void draw\+\_\+grid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structGraph}{Graph}} \&}]{graph,  }\item[{int}]{field\+\_\+width,  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, int $>$ $\ast$}]{distances = {\ttfamily nullptr},  }\item[{unordered\+\_\+map$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}}, typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ $\ast$}]{point\+\_\+to = {\ttfamily nullptr},  }\item[{vector$<$ typename \mbox{\hyperlink{structGraph_aea7d42bb67163fe692353674435a1426}{Graph\+::\+Location}} $>$ $\ast$}]{path = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_a394ba0076283a1523c29842e95aa897d}\label{implementation_01orig_8cc_a394ba0076283a1523c29842e95aa897d}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!heuristic@{heuristic}}
+\index{heuristic@{heuristic}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{heuristic()}{heuristic()}}
+{\footnotesize\ttfamily int heuristic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSquareGrid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}}}]{a,  }\item[{\mbox{\hyperlink{structSquareGrid_a2c9a2cbd3912aa48ac97289abc3f1c0f}{Square\+Grid\+::\+Location}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_a3e35f7b5b37cf00a0f0a2c6221c3f05e}\label{implementation_01orig_8cc_a3e35f7b5b37cf00a0f0a2c6221c3f05e}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!make\+\_\+diagram1@{make\+\_\+diagram1}}
+\index{make\+\_\+diagram1@{make\+\_\+diagram1}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{make\+\_\+diagram1()}{make\_diagram1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSquareGrid}{Square\+Grid}} make\+\_\+diagram1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_a78b3dfdcdf5ef633f554ecca192e5328}\label{implementation_01orig_8cc_a78b3dfdcdf5ef633f554ecca192e5328}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!make\+\_\+diagram4@{make\+\_\+diagram4}}
+\index{make\+\_\+diagram4@{make\+\_\+diagram4}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{make\+\_\+diagram4()}{make\_diagram4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGridWithWeights}{Grid\+With\+Weights}} make\+\_\+diagram4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_a14bbb7e7d9701d4b4f1839f5f7608fa5}\label{implementation_01orig_8cc_a14bbb7e7d9701d4b4f1839f5f7608fa5}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::basic\+\_\+iostream$<$char$>$\+::basic\+\_\+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+iostream$<$ char $>$\+::basic\+\_\+ostream \&}]{out,  }\item[{tuple$<$ int, int $>$}]{loc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{implementation_01orig_8cc_af7ae297639a56db32da98fa801049faa}\label{implementation_01orig_8cc_af7ae297639a56db32da98fa801049faa}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!reconstruct\+\_\+path@{reconstruct\+\_\+path}}
+\index{reconstruct\+\_\+path@{reconstruct\+\_\+path}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{reconstruct\+\_\+path()}{reconstruct\_path()}}
+{\footnotesize\ttfamily template$<$typename Location $>$ \\
+vector$<$Location$>$ reconstruct\+\_\+path (\begin{DoxyParamCaption}\item[{Location}]{start,  }\item[{Location}]{goal,  }\item[{unordered\+\_\+map$<$ Location, Location $>$ \&}]{came\+\_\+from }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{implementation_01orig_8cc_a6bf00a88b62b9e264eeaac21edbd181b}\label{implementation_01orig_8cc_a6bf00a88b62b9e264eeaac21edbd181b}} 
+\index{implementation orig.\+cc@{implementation orig.\+cc}!example\+\_\+graph@{example\+\_\+graph}}
+\index{example\+\_\+graph@{example\+\_\+graph}!implementation orig.\+cc@{implementation orig.\+cc}}
+\subsubsection{\texorpdfstring{example\+\_\+graph}{example\_graph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}}$<$char$>$ example\+\_\+graph}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{\{
+    \{\textcolor{charliteral}{'A'}, \{\textcolor{charliteral}{'B'}\}\},
+    \{\textcolor{charliteral}{'B'}, \{\textcolor{charliteral}{'A'}, \textcolor{charliteral}{'C'}, \textcolor{charliteral}{'D'}\}\},
+    \{\textcolor{charliteral}{'C'}, \{\textcolor{charliteral}{'A'}\}\},
+    \{\textcolor{charliteral}{'D'}, \{\textcolor{charliteral}{'E'}, \textcolor{charliteral}{'A'}\}\},
+    \{\textcolor{charliteral}{'E'}, \{\textcolor{charliteral}{'B'}\}\}
+  \}\}
+\end{DoxyCode}

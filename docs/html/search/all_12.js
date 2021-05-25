@@ -29,7 +29,7 @@ var searchData=
   ['timefunction',['TimeFunction',['../classMembrane.html#a8c3593b0747495c412bf2d99b7b10104',1,'Membrane::TimeFunction()'],['../classSoma.html#a926552007228732d39525ce127ee5a0d',1,'Soma::TimeFunction()']]],
   ['timercount',['TimerCount',['../classUpdateAllCommand.html#a66ba9400072105306ca48a58470014dc',1,'UpdateAllCommand']]],
   ['toggledisabled',['ToggleDisabled',['../classNeuroreceptor.html#a8a339a4d0f150bbdfbc2650155625196',1,'Neuroreceptor::ToggleDisabled()'],['../classCognitiveNetwork.html#abeac08d7cbf9df4b36de40aa9301e978',1,'CognitiveNetwork::toggleDisabled()'],['../classMembraneChannel.html#aabbadec31782704dd497848154dfe0fc',1,'MembraneChannel::toggleDisabled()'],['../classNeuron.html#a32fe82aa21f8a68392d696eea3a34c99',1,'Neuron::toggleDisabled()']]],
-  ['togglereceptorbindingstate',['toggleReceptorBindingState',['../classMembraneChannel.html#a289ec477e64eec5d2a1f88f4a677650c',1,'MembraneChannel::toggleReceptorBindingState()'],['../classNeuroreceptor.html#ace41227d30a8f50e1a6efadc86573f80',1,'Neuroreceptor::ToggleReceptorBindingState()']]],
+  ['togglereceptorbindingstate',['ToggleReceptorBindingState',['../classNeuroreceptor.html#ace41227d30a8f50e1a6efadc86573f80',1,'Neuroreceptor::ToggleReceptorBindingState()'],['../classMembraneChannel.html#a289ec477e64eec5d2a1f88f4a677650c',1,'MembraneChannel::toggleReceptorBindingState()']]],
   ['transformback',['TransformBack',['../BrainHarmonics_8cc.html#a822a13cf5274e0650ca477e82b16605c',1,'BrainHarmonics.cc']]],
   ['tworad',['TWORAD',['../universe_8h.html#a5abfe2e697fbc57169f4285aad22ea6c',1,'universe.h']]],
   ['type_5fneuron_5fgen1',['TYPE_NEURON_GEN1',['../universe_8h.html#a25adbb97ffa9d069c11f142f99b01fe1',1,'universe.h']]],

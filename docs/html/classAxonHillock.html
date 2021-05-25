@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0220cee0ad99ddc48496982078c1856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830afd18810e0eaa11a9e7a500b8f0c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAxonHillock.html#a830afd18810e0eaa11a9e7a500b8f0c4">SetEnergy</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, double val)</td></tr>
 <tr class="separator:a830afd18810e0eaa11a9e7a500b8f0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c1890796e6f72ef631abb17a4b6532"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAxonHillock.html#ad2c1890796e6f72ef631abb17a4b6532">SetObjectType</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, int object_type)</td></tr>
+<tr class="separator:ad2c1890796e6f72ef631abb17a4b6532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec1571ef0b74f7f5ce6699c9b459b4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAxonHillock.html#acec1571ef0b74f7f5ce6699c9b459b4f">ResetParameters</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
 <tr class="separator:acec1571ef0b74f7f5ce6699c9b459b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b18ec6f2921b9d4461b89a9d72ab25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAxonHillock.html">AxonHillock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAxonHillock.html#ae6b18ec6f2921b9d4461b89a9d72ab25">CreateAxon</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
@@ -704,6 +706,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1869fc7bf43827378bab5a701f7f917a inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79a380dee684c6dc304b571f4d28645 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUniverse.html">Universe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#ab79a380dee684c6dc304b571f4d28645">GetDimension</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, int selector)</td></tr>
 <tr class="separator:ab79a380dee684c6dc304b571f4d28645 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b95c06aadea69cec3b51046cd9e0f8 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDimension.html">Dimension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#a79b95c06aadea69cec3b51046cd9e0f8">GetTimeDimension</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
+<tr class="separator:a79b95c06aadea69cec3b51046cd9e0f8 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857cf7f208cd11c80736e82fa523feb5 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUniverse.html">Universe</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#a857cf7f208cd11c80736e82fa523feb5">AddElementaryParticles</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time, int quantity)</td></tr>
 <tr class="separator:a857cf7f208cd11c80736e82fa523feb5 inherit pub_methods_classUniverse"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c84e0576de50aa4fa46655832ce5e4 inherit pub_methods_classUniverse"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUniverse.html">Universe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUniverse.html#ab9c84e0576de50aa4fa46655832ce5e4">AddElementaryParticle</a> (std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt; event_time)</td></tr>
@@ -1534,6 +1538,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2c1890796e6f72ef631abb17a4b6532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c1890796e6f72ef631abb17a4b6532">&#9670;&nbsp;</a></span>SetObjectType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AxonHillock::SetObjectType </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::time_point&lt; <a class="el" href="universe_8h.html#a0ef8d951d1ca5ab3cfaf7ab4c7a6fd80">Clock</a> &gt;&#160;</td>
+          <td class="paramname"><em>event_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>object_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5a6a6a93a98b32c303b9ee6320c09909"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a6a6a93a98b32c303b9ee6320c09909">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -1954,8 +1986,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/<a class="el" href="axonhillock_8h_source.html">axonhillock.h</a></li>
-<li>/home/pbisaacs/Developer/BrainHarmonics/BrainHarmonics/<a class="el" href="axonhillock_8cc.html">axonhillock.cc</a></li>
+<li>/home/pbisaacs/Developer/BrainHarmonics/<a class="el" href="axonhillock_8h_source.html">axonhillock.h</a></li>
+<li>/home/pbisaacs/Developer/BrainHarmonics/<a class="el" href="axonhillock_8cc.html">axonhillock.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,48 +1,74 @@
 ---
-- name: Remove outdated cmake
-  package:
-     name: cmake
-     state: absent
+- block:
+  - name: Add key for EPEL 7
+    rpm_key:
+       state: present
+       key: http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
 
-- name: Add key for EPEL 7
-  rpm_key:
-     state: present
-     key: http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
-  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "7")
-
-- name: Enable EPEL for RHEL/CentOS 7
-  package:
-     name: ['epel-release']
-     state: present
+  - name: Enable EPEL for RHEL/CentOS 7
+    package:
+       name: ['epel-release']
+       state: present
   when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "7")
 
 - name: Enable PowerTools for CentOS 8
-  community.general.ini_file:
-     path: /etc/yum.repos.d/CentOS-PowerTools.repo
-     section: PowerTools
-     option: enabled
-     value: '1'
+  shell:
+          cmd: |-
+            dnf config-manager --set-enabled powertools
+          warn: false
+  args:
+          executable: "/bin/bash"
+  become: true
+  become_user: root
   when: (ansible_distribution == "CentOS" and ansible_distribution_major_version == "8")
 
 - name: Add key for EPEL 8
   rpm_key:
      state: present
      key: http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8
-  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8")
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8" and ansible_distribution_release != "NA")
 
 - name: Enable EPEL for RHEL/CentOS 8
   package:
      name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
      state: present
+  become: true
+  when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8" and ansible_distribution_release != "NA")
+
+- name: Enable Extras for CentOS Stream 8 (Alternative to EPEL on previous versions)
+  shell:
+          cmd: |-
+            dnf config-manager --set-enabled extras
+          warn: false
+  args:
+          executable: "/bin/bash"
+  become: true
+  become_user: root
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version == "8")
+
+  #- name: Enable code ready build repo
+  #community.general.rhsm_repository:
+  #   name: "codeready-builder-for-rhel-8-{{ ansible_architecture }}-rpms"
+  #become: true
+  #when: (ansible_distribution == "RedHat" and ansible_distribution_major_version == "8")
+
+- name: Install System Tools for RHEL/CentOS 8
+  dnf:
+     name: ['@System Tools']
+     state: present
+  become: true
+  become_user: root
   when: (ansible_os_family == "RedHat" and ansible_distribution_major_version == "8")
 
-- name: Enable code ready build repo
-  community.general.rhsm_repository:
-     name: codeready-builder-for-rhel-8-aarch64-rpms
-  when: (ansible_distribution == "RedHat" and ansible_distribution_major_version == "8")
+- name: Install needed packages for RedHat OS family
+  dnf:
+     name: ['@Development Tools']
+  become: true
+  become_user: root
+  when: ansible_os_family == 'RedHat'
 
-- name: Install needed packages
-  yum:
-     name: ['@Development Tools', '@System Tools', 'redhat-rpm-config', 'gcc', 'gcc-c++', 'make', 'automake', 'autoconf', 'git', 'openssl-devel']
+- name: Install needed packages for Debian OS family
+  apt:
+     name: ['build-essential']
      state: present
-
+  when: (ansible_os_family == "Debian")

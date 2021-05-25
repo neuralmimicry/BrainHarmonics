@@ -1,0 +1,187 @@
+\#\# This file forms the basis of build requirements to get the software to compile. \#\#\# Original code donated to the Open Source community by the Neural\+Mimicry Project, Paul Isaac\textquotesingle{}s. 08-\/\+Apr-\/2020. \#\#\# Ongoing code to be managed via Linaro \#\# (c) Linaro 2020. \#\# May be freely copied whilst maintaining reference to origin and copyright. \#\#\#\# Based on an original idea\+: \href{https://www.researchgate.net/publication/325069661_An_Outline_of_Artificial_Intelligence_and_Neuromorphic_technology_to_introduce_Auto-Asynchronous_Recursive_Neural_Networks_AARNN}{\tt https\+://www.\+researchgate.\+net/publication/325069661\+\_\+\+An\+\_\+\+Outline\+\_\+of\+\_\+\+Artificial\+\_\+\+Intelligence\+\_\+and\+\_\+\+Neuromorphic\+\_\+technology\+\_\+to\+\_\+introduce\+\_\+\+Auto-\/\+Asynchronous\+\_\+\+Recursive\+\_\+\+Neural\+\_\+\+Networks\+\_\+\+A\+A\+R\+NN}
+
+\#\#\# N\+O\+TE\+: This is pre-\/alpha raw software in active development. At least 50\% of which \#\#\# is still needed to be written down. It will break/is broken but you are welcome to \#\#\# join in the journey of development. The goal IS aspirational!
+
+Brain\+Harmonics is the first code designed to implement Autonomic Asynchronous Recursive Neuromorphic Network. It is an infrastructure designed to enable the creation of emergent properties.
+
+Stimuli are represented as spatio-\/temporal activations that cause interaction with emulated oscillations existing in loops of simulated neurons. When different groups of neurons are oscillating at different frequencies there will still be moments when points on the waveforms are in phase. This combined simulated energy combination causes onward stimuli to occur.
+
+The software aims to make use of available scalability options such as Open MP for multi-\/threading on the same node; Open M\+PI for inter-\/node communication; Heterogeneous accelerators where available and appropriate.
+
+Ensure you are using C\+M\+A\+KE v3.\+12 or greater. When libraries for the respective distro are not found, they should be compiled from source.
+
+For cross-\/platform compatibility
+
+
+\begin{DoxyCode}
+ln -s /home /Users
+\end{DoxyCode}
+
+
+For Mac Users\+: Ensure the xcode command line tools are installed using\+: xcode-\/select --install The preference for compilation tools is to use Mac\+Ports. Download from Mac\+Ports.\+org After installing macports run\+:
+
+
+\begin{DoxyCode}
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port install atlas cmake doxygen gcc5 graphviz gtk2 gtk3 libdc1394 libpcap libpng libusb libuv mesa
+       opencv pkgconfig python27 py27-numpy python36 py36-numpy tbb xorg-libXt x264 XviD
+\end{DoxyCode}
+ For Ubuntu Users 
+\begin{DoxyCode}
+sudo apt-get update
+sudo apt-get upgrade
+
+(for Ubuntu 14.x)
+sudo apt-get install build-essential git gcc-5 cmake pkg-config libgl1-mesa-dev libxt-dev libpcap-dev
+       libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg-dev libjpeg8-dev libtiff-dev
+       libtiff5-dev libjasper-dev libpng-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+       libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy python2.7-dev
+       python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
+
+(for Ubuntu 18.x)
+sudo apt-get install build-essential git gcc cmake pkg-config libglfw3-dev libgl1-mesa-dev libxt-dev
+       libpcap-dev libmxml-dev libuv1-dev libusb-1.0-0-dev liballegro5-dev liballegro-ttf5-dev libjpeg-dev libjpeg8-dev
+       libtiff-dev libtiff5-dev libjasper-dev libpng-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev
+       libv4l-dev libxvidcore-dev libx264-dev libgtk-3-dev libatlas-base-dev gfortran python-dev python-numpy
+       python2.7-dev python3.5-dev libgtk2.0-dev libtbb2 libtbb-dev libdc1394-22-dev
+\end{DoxyCode}
+ For Red Hat Users 
+\begin{DoxyCode}
+(for RHEL 8.x)
+sudo dnf update
+
+sudo dnf group install "System Tools" "Development Tools"
+
+There are Many libraries that can be interdependent for successful operation. Please refer to
+       RHEL8.2-aarch64.txt for an indication of libraries that will be installed from a base OS.
+
+sudo dnf install glfw-devel opencv-devel libpcap-devel git autoconf automake meson ninja-build parallel
+       rubygem-sass sassc optipng libffi-devel gcc redhat-rpm-config inkscape gtk3-devel gdk-pixbuf2-xlib glib2-devel
+       glib2 libxml2-devel librsvg2-devel gnome-themes-standard gtk-murrine-engine gtk2-engines google-roboto-fonts
+       google-noto-sans-fonts google-noto-sans-mono-fonts
+\end{DoxyCode}
+
+
+Agree to all dependency install requirements
+
+Base folder is $\sim$/\+Developer
+
+git clone \href{mailto:git@github.com}{\tt git@github.\+com}\+:Linaro/\+Brain\+Harmonics.\+git
+
+Folders created $\sim$/\+Developer/\+Brain\+Harmonics
+
+Install the V\+TK toolkit
+
+
+\begin{DoxyCode}
+cd ~/Developer
+git clone https://gitlab.kitware.com/vtk/vtk.git
+
+mkdir ~/Developer/VTK-build
+mkdir ~/Developer/VTK-Release-build
+cd ~/Developer/VTK-build
+cmake ~/Developer/VTK
+\end{DoxyCode}
+ (Ubuntu element) 
+\begin{DoxyCode}
+cd ~/Developer/VTK-Release-build
+cmake -DCMAKE\_BUILD\_TYPE:STRING=Release ~/Developer/VTK
+
+cd ~/Developer/QT
+wget http://download.qt-project.org/official\_releases/qt/5.9/5.9.2/qt-opensource-linux-x64-5.9.2.run
+chmod +x qt-opensource-linux-x64-5.9.2.run
+./qt-opensource-linux-x64-5.9.2.run
+
+cd ~/Developer/VTK-Release-build
+cmake -DVTK\_QT\_VERSION:STRING=5 \(\backslash\)
+      -DQT\_QMAKE\_EXECUTABLE:PATH=~/Qt5.9.2/5.9.2/gcc\_64/bin/qmake \(\backslash\)
+      -DVTK\_Group\_Qt:BOOL=ON \(\backslash\)
+      -DCMAKE\_PREFIX\_PATH:PATH=~/Qt5.9.2/5.9.2/gcc\_64/lib/cmake  \(\backslash\)
+      -DBUILD\_SHARED\_LIBS:BOOL=ON \(\backslash\)
+      ~/Developer/VTK
+\end{DoxyCode}
+ (Common) 
+\begin{DoxyCode}
+make -j2
+sudo make install
+\end{DoxyCode}
+
+
+Install Open\+CV specifics (Linux only) 
+\begin{DoxyCode}
+cd ~/Developer
+git clone https://github.com/opencv/opencv.git
+cd ~/Developer/opencv
+mkdir release
+cd release
+cmake -D CMAKE\_BUILD\_TYPE=RELEASE -D CMAKE\_CXX\_FLAGS=-std=c++11 ..
+make
+sudo make install
+\end{DoxyCode}
+
+
+(Mac\+OS element) 
+\begin{DoxyCode}
+wget http://download.qt.io/official\_releases/qt/5.9/5.9.2/qt-opensource-mac-x64-5.9.2.dmg
+\end{DoxyCode}
+ Run the dmg to open the QT installer (skip account creation) and then install V\+TK (the make process is a Very long process) 
+\begin{DoxyCode}
+cd ~/Developer/VTK-build
+sudo make install
+\end{DoxyCode}
+
+
+Install libcaer and its dependencies (Linux \& Mac\+OS)
+
+
+\begin{DoxyCode}
+cd ~/Developer
+git clone https://github.com/inilabs/libcaer.git
+cd libcaer
+cmake -DENABLE\_OPENCV=1 -DCMAKE\_INSTALL\_PREFIX=/usr .
+make
+sudo make install
+\end{DoxyCode}
+
+
+Build procedure.
+
+
+\begin{DoxyCode}
+mkdir ~/Developer/BrainHarmonics/build
+cd ~/Developer/BrainHarmonics/build
+cmake ../
+make all
+\end{DoxyCode}
+
+
+How to run...
+
+Once built, execute ./build/\+Brain\+Harmonics from the $\sim$/\+Developer/\+Brain\+Harmonics folder.
+
+Overview\+: Creates a number of simulation universes from which to create neurons/synapses.
+
+Skeletal framework exists to call Python routines if required. Currently minimal parameterisation files but elements are there.
+
+\section*{Running inside a VM }
+
+Brain\+Harmonics execution relies on a graphical interface and it uses Open\+GL. Although it is possible to implement support entirely in software, it has been designed to be mostly or entirely in hardware. There exist several options when working with Brain\+Harmonics inside a VM\+:
+
+1) assign a graphics card device to the VM. 2) use X forwarding with ssh. 3) use virtio V\+GA drivers.
+
+From a performance point of view 1) is the best option. Note this can require to assign a full device or just partially through S\+R\+I\+OV (V\+Fs or mediated devices). If there is not support for S\+R\+I\+OV, assigning the device to the VM implies the Host not being able to use it which can be problematic in most desktop systems.
+
+X forwarding has a main problem\+: apps using D\+RI calls after. This option allows an X server in the Host doing the rendering, but that is helpless if X clients go straight to the device through D\+RI before redirecting to the X server.
+
+Virtio-\/gpu is likely the best/easiest option as it is a mature technology now thanks to the Virgil3d project.
+
+Using this option requires a Q\+E\+MU executable supporting S\+DL and Open\+GL, options \char`\"{}-\/-\/enable-\/sdl\char`\"{} and \char`\"{}-\/-\/enable-\/opengl\char`\"{} when configuring sources before compilation. With that support, qemu needs to be launched with \char`\"{}-\/device virtio-\/gpu-\/pci -\/display sdl,gl=on\char`\"{}. A graphical interface is created and it will be used for showing BH window.
+
+Running a graphical app is not usually supported by default if you are using an image offered by distributions to be used on V\+Ms. If that is the case the X11 server package needs to be installed. But you do not need a full graphical interface but just to run the X server for BH\+:
+
+startx \char`\"{}\$\{\+H\+O\+M\+E\}/\+Developer/\+Brain\+Harmonics/build/\+Brain\+Harmonics\char`\"{}
+
+This requires to give permissions for using the graphical console to the user running that command. Adding next line to /etc/\+X11/\+Xwrapper.config will solve the problem\+:
+
+allowed\+\_\+users = anybody 

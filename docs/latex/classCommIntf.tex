@@ -1,0 +1,78 @@
+\hypertarget{classCommIntf}{}\section{Comm\+Intf Class Reference}
+\label{classCommIntf}\index{Comm\+Intf@{Comm\+Intf}}
+
+
+{\ttfamily \#include $<$Comm\+Intf.\+h$>$}
+
+Inheritance diagram for Comm\+Intf\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCommIntf}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCommIntf_aa1f0610186930d23cff2c53d5059d0f2}{Comm\+Intf}} ()
+\item 
+virtual \mbox{\hyperlink{classCommIntf_a036b261d1e2ff312a278f6498fe396f8}{$\sim$\+Comm\+Intf}} ()
+\item 
+virtual void \mbox{\hyperlink{classCommIntf_a86cc885716df0db3a644b2db2e2a72bb}{Send\+\_\+\+Data}} (\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&)=0
+\item 
+virtual \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} \& \mbox{\hyperlink{classCommIntf_a910fdc340f2451051c492a7ee2803b84}{Recv\+\_\+\+Data}} ()=0
+\item 
+virtual \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} $\ast$ \mbox{\hyperlink{classCommIntf_a9ed907991869cc7b6ebac4688d085147}{Bcast\+\_\+\+Data}} (\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&, std\+::vector$<$ int $>$ranks)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommIntf_aa1f0610186930d23cff2c53d5059d0f2}\label{classCommIntf_aa1f0610186930d23cff2c53d5059d0f2}} 
+\index{Comm\+Intf@{Comm\+Intf}!Comm\+Intf@{Comm\+Intf}}
+\index{Comm\+Intf@{Comm\+Intf}!Comm\+Intf@{Comm\+Intf}}
+\subsubsection{\texorpdfstring{Comm\+Intf()}{CommIntf()}}
+{\footnotesize\ttfamily Comm\+Intf\+::\+Comm\+Intf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCommIntf_a036b261d1e2ff312a278f6498fe396f8}\label{classCommIntf_a036b261d1e2ff312a278f6498fe396f8}} 
+\index{Comm\+Intf@{Comm\+Intf}!````~Comm\+Intf@{$\sim$\+Comm\+Intf}}
+\index{````~Comm\+Intf@{$\sim$\+Comm\+Intf}!Comm\+Intf@{Comm\+Intf}}
+\subsubsection{\texorpdfstring{$\sim$\+Comm\+Intf()}{~CommIntf()}}
+{\footnotesize\ttfamily virtual Comm\+Intf\+::$\sim$\+Comm\+Intf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommIntf_a9ed907991869cc7b6ebac4688d085147}\label{classCommIntf_a9ed907991869cc7b6ebac4688d085147}} 
+\index{Comm\+Intf@{Comm\+Intf}!Bcast\+\_\+\+Data@{Bcast\+\_\+\+Data}}
+\index{Bcast\+\_\+\+Data@{Bcast\+\_\+\+Data}!Comm\+Intf@{Comm\+Intf}}
+\subsubsection{\texorpdfstring{Bcast\+\_\+\+Data()}{Bcast\_Data()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}}$\ast$ Comm\+Intf\+::\+Bcast\+\_\+\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&}]{,  }\item[{std\+::vector$<$ int $>$}]{ranks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMpiComm_a696c567ded2b842b368b82dee950de5b}{Mpi\+Comm}}.
+
+\mbox{\Hypertarget{classCommIntf_a910fdc340f2451051c492a7ee2803b84}\label{classCommIntf_a910fdc340f2451051c492a7ee2803b84}} 
+\index{Comm\+Intf@{Comm\+Intf}!Recv\+\_\+\+Data@{Recv\+\_\+\+Data}}
+\index{Recv\+\_\+\+Data@{Recv\+\_\+\+Data}!Comm\+Intf@{Comm\+Intf}}
+\subsubsection{\texorpdfstring{Recv\+\_\+\+Data()}{Recv\_Data()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}}\& Comm\+Intf\+::\+Recv\+\_\+\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMpiComm_a9ff0e7421ac75131c2ce4f0bba8c2839}{Mpi\+Comm}}.
+
+\mbox{\Hypertarget{classCommIntf_a86cc885716df0db3a644b2db2e2a72bb}\label{classCommIntf_a86cc885716df0db3a644b2db2e2a72bb}} 
+\index{Comm\+Intf@{Comm\+Intf}!Send\+\_\+\+Data@{Send\+\_\+\+Data}}
+\index{Send\+\_\+\+Data@{Send\+\_\+\+Data}!Comm\+Intf@{Comm\+Intf}}
+\subsubsection{\texorpdfstring{Send\+\_\+\+Data()}{Send\_Data()}}
+{\footnotesize\ttfamily virtual void Comm\+Intf\+::\+Send\+\_\+\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAER__Msg__t}{A\+E\+R\+\_\+\+Msg\+\_\+t}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMpiComm_aa7615632d7ad06a163ea9d4fc641a85a}{Mpi\+Comm}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/pbisaacs/\+Developer/\+Brain\+Harmonics/\mbox{\hyperlink{CommIntf_8h}{Comm\+Intf.\+h}}\end{DoxyCompactItemize}

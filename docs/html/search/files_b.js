@@ -8,6 +8,6 @@ var searchData=
   ['polyhedron_2eh',['polyhedron.h',['../polyhedron_8h.html',1,'']]],
   ['polymer_2ecc',['polymer.cc',['../polymer_8cc.html',1,'']]],
   ['polymer_2eh',['polymer.h',['../polymer_8h.html',1,'']]],
-  ['proteins_2ecpp',['proteins.cpp',['../proteins_8cpp.html',1,'']]],
+  ['proteins_2ecc',['proteins.cc',['../proteins_8cc.html',1,'']]],
   ['proteins_2eh',['proteins.h',['../proteins_8h.html',1,'']]]
 ];
