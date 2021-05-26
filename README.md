@@ -1,6 +1,6 @@
 <p align="center">
-  <img width="200" src="https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrylogo.png" alt="NeuralMimicry">
-  <img width="200" src="https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png" alt="BTC Wallet - 1LEZYEKKpb2Y3ePxUAAtkjH25mUHB4HdLR">
+  <img width="250" src="https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrylogo.png" alt="NeuralMimicry">
+  <img width="150" src="https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png" alt="BTC Wallet - 1LEZYEKKpb2Y3ePxUAAtkjH25mUHB4HdLR">
 </p>
 <p align="center">
 To sponsor BrainHarmonics development please use the QR code to send Bitcoin (BTC) - Thank you.
