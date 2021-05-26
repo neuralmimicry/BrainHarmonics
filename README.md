@@ -1,3 +1,5 @@
+[![Donate Bitcoin](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)
+
 # BrainHarmonics
 \#\# This file forms the basis of build requirements to get the software to compile.
 \#\#\# Original code created by the NeuralMimicry Project, Paul Isaac's.
