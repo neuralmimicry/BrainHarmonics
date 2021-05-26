@@ -1,4 +1,4 @@
-[![Donate Bitcoin](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)
+To sponsor BrainHarmonics development please use the QR code to send Bitcoin (BTC) - Thank you. [![Donate Bitcoin](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)](https://neuralmimicry.github.io/BrainHarmonics/neuralmimicrybitcoindonation.png)
 
 # BrainHarmonics
 \#\# This file forms the basis of build requirements to get the software to compile.
