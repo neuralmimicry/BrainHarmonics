@@ -13,6 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Check OCI source labels
+      shell: bash
+      run: |
+        # GHCR links a package to its repo via org.opencontainers.image.source;
+        # every Containerfile/Dockerfile (incl. templates) must carry it.
+        want="org.opencontainers.image.source=\"https://github.com/${GITHUB_REPOSITORY}\""
+        status=0
+        while IFS= read -r f; do
+          grep -qF "$want" "$f" || { echo "::error file=$f::missing $want"; status=1; }
+        done < <(git ls-files | grep -iE '(^|/)(containerfile|dockerfile)[^/]*$|\.(containerfile|dockerfile)(\.j2)?$' | grep -viE '\.(md|py|sh|txt|ya?ml|json)$')
+        exit "$status"
     - name: configure
       run: ./configure
     - name: make
