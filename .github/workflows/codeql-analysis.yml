@@ -17,7 +17,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64]
 
     strategy:
       fail-fast: false
@@ -29,25 +29,16 @@ jobs:
         # https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#overriding-automatic-language-detection
 
     steps:
+    # Persistent self-hosted runner: do not add PPAs or switch the host's
+    # default compiler (update-alternatives) from CI.
     - name: Record which OS we are running on
       run: cat /etc/os-release
-
-    - name: Add PPA
-      run: sudo add-apt-repository ppa:inivation-ppa/inivation
-
-    - name: Add Universe
-      run: sudo add-apt-repository universe
 
     - name: Update index
       run: sudo apt update
 
     - name: Install packages
       run: sudo apt install -y build-essential gcc-8 g++-8 libusb-1.0-0 libusb-1.0-0-dev libopencv-core-dev libopencv-dev vtk7 libvtk7-dev libpcap-dev libopenmpi2 libopenmpi-dev freeglut3 freeglut3-dev python3-numpy
-
-    - name: Use GCC 8
-      run: |
-        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /usr/bin/g++ g++ /usr/bin/g++-7
-        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
 
     - name: Install libcaer
       run: sudo apt install libcaer-dev libserialport0 libserialport-dev
