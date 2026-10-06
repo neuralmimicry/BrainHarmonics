@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
  
 # General build settings
 IF (NOT CMAKE_BUILD_TYPE)
@@ -171,8 +171,12 @@ INCLUDE(FindPkgConfig)
 
 # Basic USB device support
 PKG_CHECK_MODULES(LIBUSB1 REQUIRED libusb-1.0>=1.0.17)
-# Check OpenCV support
-PKG_CHECK_MODULES(OPENCV REQUIRED opencv>=3.0)
+# Check OpenCV support. Current Ubuntu releases publish the OpenCV 4 module as
+# `opencv4`; retain `opencv` as a fallback for older distributions.
+PKG_CHECK_MODULES(OPENCV QUIET opencv4>=4.0)
+IF (NOT OPENCV_FOUND)
+	PKG_CHECK_MODULES(OPENCV REQUIRED opencv>=3.0)
+ENDIF()
 # LibCAER Dynapse support. Available from gitlab.com/inivation/dv/libcaer
 PKG_CHECK_MODULES(LIBCAER REQUIRED libcaer>=2.0)
 # Threads support
@@ -288,4 +292,3 @@ MESSAGE(STATUS "Linked libraries are: ${BRAINHARMONICS_LIBS}")
 MESSAGE(STATUS "Compiled source files are: ${BRAINHARMONICS_SRC_FILES}")
 MESSAGE(STATUS "Final install libdir is: ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}")
 MESSAGE(STATUS "Final install includedir is: ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_INCLUDEDIR}/${CMAKE_PROJECT_NAME}")
-
